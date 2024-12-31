@@ -163,3 +163,8 @@ Explore our HuatuoGPT series:
       url={https://arxiv.org/abs/2412.18925}, 
 }
 ```
+
+
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=FreedomIntelligence/HuatuoGPT-o1&type=Date)](https://star-history.com/#FreedomIntelligence/HuatuoGPT-o1&Date)
