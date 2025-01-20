@@ -1,4 +1,8 @@
-# %%
+"""
+Here is the Chinese version of `search_for_complex_reasoning_path.py`.  
+By using it, it will generate reasoning paths in Chinese, along with the thought process and responses in Chinese.  
+If you need to generate data in English, please use the original `search_for_complex_reasoning_path.py`.
+"""
 
 import os
 import random
