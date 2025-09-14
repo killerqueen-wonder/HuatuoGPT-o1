@@ -1,0 +1,103 @@
+{
+  "question": "沙特某公司在华招聘一名中国籍雇员张某。为规避中国法律关于劳动者权益保护的强制性规定，劳动合同约定排他性地适用菲律宾法。后因劳动合同产生纠纷，张某向中国法院提起诉讼。关于该劳动合同的法律适用，下列哪一选项是正确的？",
+  "options": {
+    "A": "适用沙特法",
+    "B": "因涉及劳动者权益保护，直接适用中国的强制性规定",
+    "C": "在沙特法、中国法与菲律宾法中选择适用对张某最有利的法律",
+    "D": "适用菲律宾法"
+  },
+  "answer_idx": "B",
+  "answer": "因涉及劳动者权益保护，直接适用中国的强制性规定",
+  "process_id": 175,
+  "options_str": "A. 适用沙特法\nB. 因涉及劳动者权益保护，直接适用中国的强制性规定\nC. 在沙特法、中国法与菲律宾法中选择适用对张某最有利的法律\nD. 适用菲律宾法",
+  "gpt_filter_query": "<Multiple-choice Question>\n沙特某公司在华招聘一名中国籍雇员张某。为规避中国法律关于劳动者权益保护的强制性规定，劳动合同约定排他性地适用菲律宾法。后因劳动合同产生纠纷，张某向中国法院提起诉讼。关于该劳动合同的法律适用，下列哪一选项是正确的？\nA. 适用沙特法\nB. 因涉及劳动者权益保护，直接适用中国的强制性规定\nC. 在沙特法、中国法与菲律宾法中选择适用对张某最有利的法律\nD. 适用菲律宾法\nCorrect Answer: 因涉及劳动者权益保护，直接适用中国的强制性规定\n</Multiple-choice Question>\n\nYou are an expert in filtering and evaluating multiple-choice questions for advanced reasoning tasks. Your job is to evaluate a given question and determine whether it meets the following criteria: \n1. **Depth of Reasoning:** The question should require deeper reasoning. If the question appears too simple, mark it as \"Too Simple\".\n2. **Unambiguous Correct Answer:** The question must have a unique and unambiguous correct answer. If the question asks for \"incorrect options\" or allows for multiple correct answers, mark it as \"Ambiguous Answer\".\n3. **Open-Ended Reformulation Feasibility:** The question should be suitable for reformatting into an open-ended format. If the question cannot be easily reformulated into an open-ended problem and a clear ground-truth answer, mark it as \"Not Reformulatable\".\n\nFor each question, provide one of the following evaluations:  \n- \"Pass\" (The question meets all the criteria.)  \n- \"Too Simple\"  \n- \"Ambiguous Answer\"  \n- \"Not Reformulatable\" ",
+  "gpt_filter_response": "Pass",
+  "gpt_reformat_query": "I will provide you with a multiple-choice question, and your task is to rewrite it into an open-ended question, along with a Ground-True Answer. The requirements are:\n\n1. The question must be specific, targeting the point being tested in the original multiple-choice question. Ensure it is open-ended, meaning no options are provided, but there must be a definitive Ground-True Answer.\n2. Based on the correct answer from the original question, provide a concise Ground-True Answer. The answer should allow for precise matching to determine whether the model's response is correct.\n\nHere is the multiple-choice question for you to rewrite:\n<Multiple-choice Question>\n沙特某公司在华招聘一名中国籍雇员张某。为规避中国法律关于劳动者权益保护的强制性规定，劳动合同约定排他性地适用菲律宾法。后因劳动合同产生纠纷，张某向中国法院提起诉讼。关于该劳动合同的法律适用，下列哪一选项是正确的？\nA. 适用沙特法\nB. 因涉及劳动者权益保护，直接适用中国的强制性规定\nC. 在沙特法、中国法与菲律宾法中选择适用对张某最有利的法律\nD. 适用菲律宾法\nCorrect Answer: 因涉及劳动者权益保护，直接适用中国的强制性规定\n</Multiple-choice Question>\n\nPlease output the result in the following JSON format:\n```json\n{\n\"Open-ended Verifiable Question\": \"...\",\n\"Ground-True Answer\": \"...\"\n}\n```",
+  "gpt_reformat_response": "{\n\"Open-ended Verifiable Question\": \"一家沙特公司在中国境内招聘中国公民张某，并在劳动合同中约定排他适用菲律宾法以规避中国关于劳动者权益保护的强制性规定。合同发生争议后，张某向中国法院起诉。在中国法院审理该劳动争议时，应优先适用哪一类法律规则？请给出明确结论。\",\n\"Ground-True Answer\": \"直接适用中国的强制性规定（劳动者权益保护的强制性规范）。\"\n}",
+  "Open-ended Verifiable Question": "一家沙特公司在中国境内招聘中国公民张某，并在劳动合同中约定排他适用菲律宾法以规避中国关于劳动者权益保护的强制性规定。合同发生争议后，张某向中国法院起诉。在中国法院审理该劳动争议时，应优先适用哪一类法律规则？请给出明确结论。",
+  "Ground-True Answer": "直接适用中国的强制性规定（劳动者权益保护的强制性规范）。",
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "明确争议的核心问题",
+      "content": "本案涉及劳务合同的法律适用问题，特别是在张某与沙特公司订立的合同中明确选择适用菲律宾法以规避中国劳动保护强制性法律规定的前提下。需要明确中国法律在此问题上的处理原则。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "分析中国法律对涉外民事关系法律适用的规定",
+      "content": "根据《中华人民共和国涉外民事关系法律适用法》第4条规定，当事人可以明示选择适用的法律；但同时第5条规定，对于适用法律可能违背公共利益的，适用中国法律。此外，第41条规定，与劳动合同有关的法律适用问题将优先适用劳动合同履行地法的强制性规定。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "判断劳动者权益保护的强制性法律是否优先适用",
+      "content": "根据《劳动合同法》和《涉外民事关系法律适用法》第41条，中国法律对劳动者权益的保护属于强制性规定，尤其是最低工资、工时、劳动安全等。因此，即使合同约定适用外国法律，但如果该约定意图规避中国法律的强制性规定，则中国法院应优先适用中国相关劳动法律。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "结合具体情境分析",
+      "content": "本案中，张某作为中国公民，在中国境内履行劳动合同，而合同约定选择菲律宾法意图规避中国劳动保护立法的强制性规定。从中国法院处理此类案件的实际角度来看，中国劳动法的强制性规定应优先适用，以保障劳动者的合法权益。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "在中国法院审理该劳动争议时，应优先适用中国劳动法及相关强制性法律规则，而非菲律宾法。"
+    },
+    {
+      "action": "Verification",
+      "content": "结合《中华人民共和国劳动合同法》和《涉外民事关系法律适用法》的相关规定，中国劳动法中关于劳动者权益保护的强制性规定具有优先适用效力。本案应优先适用中国的强制性规定，最终结论正确。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n一家沙特公司在中国境内招聘中国公民张某，并在劳动合同中约定排他适用菲律宾法以规避中国关于劳动者权益保护的强制性规定。合同发生争议后，张某向中国法院起诉。在中国法院审理该劳动争议时，应优先适用哪一类法律规则？请给出明确结论。\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **'Inner Thinking'**: This is the step where thinking is done. Note that multiple 'Inner Thinking' steps are required to describe thorough reasoning. Each step should first generate a brief title.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n在中国法院审理该劳动争议时，应优先适用中国劳动法及相关强制性法律规则，而非菲律宾法。  \n</Model Response>  \n\n<Reference Answer>  \n直接适用中国的强制性规定（劳动者权益保护的强制性规范）。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 明确争议的核心问题\n本案涉及劳务合同的法律适用问题，特别是在张某与沙特公司订立的合同中明确选择适用菲律宾法以规避中国劳动保护强制性法律规定的前提下。需要明确中国法律在此问题上的处理原则。\n\n### 分析中国法律对涉外民事关系法律适用的规定\n根据《中华人民共和国涉外民事关系法律适用法》第4条规定，当事人可以明示选择适用的法律；但同时第5条规定，对于适用法律可能违背公共利益的，适用中国法律。此外，第41条规定，与劳动合同有关的法律适用问题将优先适用劳动合同履行地法的强制性规定。\n\n### 判断劳动者权益保护的强制性法律是否优先适用\n根据《劳动合同法》和《涉外民事关系法律适用法》第41条，中国法律对劳动者权益的保护属于强制性规定，尤其是最低工资、工时、劳动安全等。因此，即使合同约定适用外国法律，但如果该约定意图规避中国法律的强制性规定，则中国法院应优先适用中国相关劳动法律。\n\n### 结合具体情境分析\n本案中，张某作为中国公民，在中国境内履行劳动合同，而合同约定选择菲律宾法意图规避中国劳动保护立法的强制性规定。从中国法院处理此类案件的实际角度来看，中国劳动法的强制性规定应优先适用，以保障劳动者的合法权益。\n\n### Conclusion\n在中国法院审理该劳动争议时，应优先适用中国劳动法及相关强制性法律规则，而非菲律宾法。\n\n### Verification\n结合《中华人民共和国劳动合同法》和《涉外民事关系法律适用法》的相关规定，中国劳动法中关于劳动者权益保护的强制性规定具有优先适用效力。本案应优先适用中国的强制性规定，最终结论正确。\n</Thought Process>\n\n<Question>\n一家沙特公司在中国境内招聘中国公民张某，并在劳动合同中约定排他适用菲律宾法以规避中国关于劳动者权益保护的强制性规定。合同发生争议后，张某向中国法院起诉。在中国法院审理该劳动争议时，应优先适用哪一类法律规则？请给出明确结论。\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n嗯，先想一下这个问题的关键点。张某跟沙特公司签订的劳动合同中约定了适用菲律宾法，而且看起来沙特公司似乎是有意通过这种方式规避中国劳动法对劳动者的保护。这是一个关于涉外劳动合同法律适用的问题。那这里，中国法律会怎么处理呢？\n\n想起来了，中国有一部《涉外民事关系法律适用法》。根据这部法律，确实允许当事人自由选择适用的法律，这是第4条的规定。但是，并不是所有情况下这个选择都有效。第5条又说了，如果适用某个法律会违背中国的公共利益，那中国的法律可以被优先适用。哦，对了，这就意味着，如果菲律宾法的适用会影响公共利益，那中国法律可能会介入。\n\n还有更直接的规定，我记得第41条是专门讲劳动合同的法律适用问题的。这条很明确，说的是劳动合同履行地的强制性规定需要优先适用。也就是说，不管合同上选了哪个国家的法律，如果劳动关系是在中国履行的，中国劳动法的强制性规定还是优先的。尤其是那些特别保护劳动者权益的内容，比如最低工资、工时、劳动安全这些，都是中国法律明确写进强制性规定里的。\n\n所以继续理一下。张某是中国公民，工作地点又是在中国。那其实从法律上看，这种情况下，合同约定用菲律宾法本身就可能是不被支持的，因为明显会影响到中国劳动者的保护政策。而且即便张某同意了这个约定，也不能因为个人选择就绕开中国的强制性规定。中国法律可不允许在劳动保护上打折扣。\n\n综合来看，这个案件最核心的问题还是在于中国劳动法的强制性规则会不会被优先适用。答案是会的。因为一旦案件到了中国法院，法院一定会按照中国的法律优先保护劳动者的权益。这是法律的底线，也是为了保障劳动者不被任意剥削。\n\n哦对，另外再想一想，如果允许沙特公司这样绕开中国劳动法，会不会在今后出现更多这样的情况？那确实不行啊，这不仅对劳动者不公平，也可能破坏中国在国际上的劳动保护形象。所以，中国法院肯定会优先适用中国劳动法，而不是菲律宾法。\n\n嗯，最终结论就是，在这个案件中，中国法院审理时应该优先适用关于劳动者权益保护的中国劳动法及其强制性规定，不会支持规避中国法律的行为。\n</Internal Thinking>\n\n<Question>\n一家沙特公司在中国境内招聘中国公民张某，并在劳动合同中约定排他适用菲律宾法以规避中国关于劳动者权益保护的强制性规定。合同发生争议后，张某向中国法院起诉。在中国法院审理该劳动争议时，应优先适用哪一类法律规则？请给出明确结论。\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"明确争议的核心问题\",\n      \"content\": \"本案涉及劳务合同的法律适用问题，特别是在张某与沙特公司订立的合同中明确选择适用菲律宾法以规避中国劳动保护强制性法律规定的前提下。需要明确中国法律在此问题上的处理原则。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析中国法律对涉外民事关系法律适用的规定\",\n      \"content\": \"根据《中华人民共和国涉外民事关系法律适用法》第4条规定，当事人可以明示选择适用的法律；但同时第5条规定，对于适用法律可能违背公共利益的，适用中国法律。此外，第41条规定，与劳动合同有关的法律适用问题将优先适用劳动合同履行地法的强制性规定。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"判断劳动者权益保护的强制性法律是否优先适用\",\n      \"content\": \"根据《劳动合同法》和《涉外民事关系法律适用法》第41条，中国法律对劳动者权益的保护属于强制性规定，尤其是最低工资、工时、劳动安全等。因此，即使合同约定适用外国法律，但如果该约定意图规避中国法律的强制性规定，则中国法院应优先适用中国相关劳动法律。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"结合具体情境分析\",\n      \"content\": \"本案中，张某作为中国公民，在中国境内履行劳动合同，而合同约定选择菲律宾法意图规避中国劳动保护立法的强制性规定。从中国法院处理此类案件的实际角度来看，中国劳动法的强制性规定应优先适用，以保障劳动者的合法权益。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"在中国法院审理该劳动争议时，应优先适用中国劳动法及相关强制性法律规则，而非菲律宾法。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"结合《中华人民共和国劳动合同法》和《涉外民事关系法律适用法》的相关规定，中国劳动法中关于劳动者权益保护的强制性规定具有优先适用效力。本案应优先适用中国的强制性规定，最终结论正确。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"嗯，先想一下这个问题的关键点。张某跟沙特公司签订的劳动合同中约定了适用菲律宾法，而且看起来沙特公司似乎是有意通过这种方式规避中国劳动法对劳动者的保护。这是一个关于涉外劳动合同法律适用的问题。那这里，中国法律会怎么处理呢？\\n\\n想起来了，中国有一部《涉外民事关系法律适用法》。根据这部法律，确实允许当事人自由选择适用的法律，这是第4条的规定。但是，并不是所有情况下这个选择都有效。第5条又说了，如果适用某个法律会违背中国的公共利益，那中国的法律可以被优先适用。哦，对了，这就意味着，如果菲律宾法的适用会影响公共利益，那中国法律可能会介入。\\n\\n还有更直接的规定，我记得第41条是专门讲劳动合同的法律适用问题的。这条很明确，说的是劳动合同履行地的强制性规定需要优先适用。也就是说，不管合同上选了哪个国家的法律，如果劳动关系是在中国履行的，中国劳动法的强制性规定还是优先的。尤其是那些特别保护劳动者权益的内容，比如最低工资、工时、劳动安全这些，都是中国法律明确写进强制性规定里的。\\n\\n所以继续理一下。张某是中国公民，工作地点又是在中国。那其实从法律上看，这种情况下，合同约定用菲律宾法本身就可能是不被支持的，因为明显会影响到中国劳动者的保护政策。而且即便张某同意了这个约定，也不能因为个人选择就绕开中国的强制性规定。中国法律可不允许在劳动保护上打折扣。\\n\\n综合来看，这个案件最核心的问题还是在于中国劳动法的强制性规则会不会被优先适用。答案是会的。因为一旦案件到了中国法院，法院一定会按照中国的法律优先保护劳动者的权益。这是法律的底线，也是为了保障劳动者不被任意剥削。\\n\\n哦对，另外再想一想，如果允许沙特公司这样绕开中国劳动法，会不会在今后出现更多这样的情况？那确实不行啊，这不仅对劳动者不公平，也可能破坏中国在国际上的劳动保护形象。所以，中国法院肯定会优先适用中国劳动法，而不是菲律宾法。\\n\\n嗯，最终结论就是，在这个案件中，中国法院审理时应该优先适用关于劳动者权益保护的中国劳动法及其强制性规定，不会支持规避中国法律的行为。\"\n}\n```",
+    "在该劳动争议案件中，中国法院进行审理时，应优先适用中国法律中关于劳动者权益保护的强制性规定。\n\n根据《中华人民共和国涉外民事关系法律适用法》的相关规定，劳动合同当事人虽然可以选择适用的法律，但如果合同履行地在中国，中国的强制性法律规定将优先适用（第41条）。这些强制性规定致力于保护劳动者的基本权益，例如最低工资标准、工时限制和劳动安全措施等。因此，即便合同中约定适用菲律宾法，也不能排除中国劳动法的强制性适用，特别是在此类涉及劳动者权益保护的核心问题上。\n\n此外，《涉外民事关系法律适用法》第5条还指出，若适用外国法律可能违反中国的公共利益，中国的法律规定应优先适用。显然，规避中国劳动法可能对中国的劳动者保护政策乃至社会公平造成不利影响，因此中国的强制性法律规定在此案中具有优先适用性。\n\n因此，尽管劳动合同约定排他适用菲律宾法，该约定并不能规避中国关于保护劳动者权益的强制性法律规定。中国法院在审理过程中将依据中国的劳动法律规则审查和处理争议，以切实保障劳动者的合法权益。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "明确争议的核心问题",
+        "content": "本案涉及劳务合同的法律适用问题，特别是在张某与沙特公司订立的合同中明确选择适用菲律宾法以规避中国劳动保护强制性法律规定的前提下。需要明确中国法律在此问题上的处理原则。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "分析中国法律对涉外民事关系法律适用的规定",
+        "content": "根据《中华人民共和国涉外民事关系法律适用法》第4条规定，当事人可以明示选择适用的法律；但同时第5条规定，对于适用法律可能违背公共利益的，适用中国法律。此外，第41条规定，与劳动合同有关的法律适用问题将优先适用劳动合同履行地法的强制性规定。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "判断劳动者权益保护的强制性法律是否优先适用",
+        "content": "根据《劳动合同法》和《涉外民事关系法律适用法》第41条，中国法律对劳动者权益的保护属于强制性规定，尤其是最低工资、工时、劳动安全等。因此，即使合同约定适用外国法律，但如果该约定意图规避中国法律的强制性规定，则中国法院应优先适用中国相关劳动法律。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "结合具体情境分析",
+        "content": "本案中，张某作为中国公民，在中国境内履行劳动合同，而合同约定选择菲律宾法意图规避中国劳动保护立法的强制性规定。从中国法院处理此类案件的实际角度来看，中国劳动法的强制性规定应优先适用，以保障劳动者的合法权益。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "在中国法院审理该劳动争议时，应优先适用中国劳动法及相关强制性法律规则，而非菲律宾法。"
+      },
+      {
+        "action": "Verification",
+        "content": "结合《中华人民共和国劳动合同法》和《涉外民事关系法律适用法》的相关规定，中国劳动法中关于劳动者权益保护的强制性规定具有优先适用效力。本案应优先适用中国的强制性规定，最终结论正确。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "嗯，先想一下这个问题的关键点。张某跟沙特公司签订的劳动合同中约定了适用菲律宾法，而且看起来沙特公司似乎是有意通过这种方式规避中国劳动法对劳动者的保护。这是一个关于涉外劳动合同法律适用的问题。那这里，中国法律会怎么处理呢？\n\n想起来了，中国有一部《涉外民事关系法律适用法》。根据这部法律，确实允许当事人自由选择适用的法律，这是第4条的规定。但是，并不是所有情况下这个选择都有效。第5条又说了，如果适用某个法律会违背中国的公共利益，那中国的法律可以被优先适用。哦，对了，这就意味着，如果菲律宾法的适用会影响公共利益，那中国法律可能会介入。\n\n还有更直接的规定，我记得第41条是专门讲劳动合同的法律适用问题的。这条很明确，说的是劳动合同履行地的强制性规定需要优先适用。也就是说，不管合同上选了哪个国家的法律，如果劳动关系是在中国履行的，中国劳动法的强制性规定还是优先的。尤其是那些特别保护劳动者权益的内容，比如最低工资、工时、劳动安全这些，都是中国法律明确写进强制性规定里的。\n\n所以继续理一下。张某是中国公民，工作地点又是在中国。那其实从法律上看，这种情况下，合同约定用菲律宾法本身就可能是不被支持的，因为明显会影响到中国劳动者的保护政策。而且即便张某同意了这个约定，也不能因为个人选择就绕开中国的强制性规定。中国法律可不允许在劳动保护上打折扣。\n\n综合来看，这个案件最核心的问题还是在于中国劳动法的强制性规则会不会被优先适用。答案是会的。因为一旦案件到了中国法院，法院一定会按照中国的法律优先保护劳动者的权益。这是法律的底线，也是为了保障劳动者不被任意剥削。\n\n哦对，另外再想一想，如果允许沙特公司这样绕开中国劳动法，会不会在今后出现更多这样的情况？那确实不行啊，这不仅对劳动者不公平，也可能破坏中国在国际上的劳动保护形象。所以，中国法院肯定会优先适用中国劳动法，而不是菲律宾法。\n\n嗯，最终结论就是，在这个案件中，中国法院审理时应该优先适用关于劳动者权益保护的中国劳动法及其强制性规定，不会支持规避中国法律的行为。",
+  "Response": "在该劳动争议案件中，中国法院进行审理时，应优先适用中国法律中关于劳动者权益保护的强制性规定。\n\n根据《中华人民共和国涉外民事关系法律适用法》的相关规定，劳动合同当事人虽然可以选择适用的法律，但如果合同履行地在中国，中国的强制性法律规定将优先适用（第41条）。这些强制性规定致力于保护劳动者的基本权益，例如最低工资标准、工时限制和劳动安全措施等。因此，即便合同中约定适用菲律宾法，也不能排除中国劳动法的强制性适用，特别是在此类涉及劳动者权益保护的核心问题上。\n\n此外，《涉外民事关系法律适用法》第5条还指出，若适用外国法律可能违反中国的公共利益，中国的法律规定应优先适用。显然，规避中国劳动法可能对中国的劳动者保护政策乃至社会公平造成不利影响，因此中国的强制性法律规定在此案中具有优先适用性。\n\n因此，尽管劳动合同约定排他适用菲律宾法，该约定并不能规避中国关于保护劳动者权益的强制性法律规定。中国法院在审理过程中将依据中国的劳动法律规则审查和处理争议，以切实保障劳动者的合法权益。",
+  "Question": "一家沙特公司在中国境内招聘中国公民张某，并在劳动合同中约定排他适用菲律宾法以规避中国关于劳动者权益保护的强制性规定。合同发生争议后，张某向中国法院起诉。在中国法院审理该劳动争议时，应优先适用哪一类法律规则？请给出明确结论。"
+}

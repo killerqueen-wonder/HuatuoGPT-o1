@@ -1,0 +1,19 @@
+{
+  "question": "中国某公司进口了一批皮制品，信用证方式支付，以海运方式运输并投保了一切险。中国收货人持正本提单提货时发现货物已被他人提走。依相关司法解释和国际惯例，下列哪一选项是正确的？",
+  "options": {
+    "A": "承运人应赔偿收货人因其无单放货造成的货物成本加利润损失",
+    "B": "因该批货物已投保一切险，故保险人应对货主赔偿无单放货造成的损失",
+    "C": "因货物已放予他人，收货人不再需要向卖方支付信用证项下的货款",
+    "D": "如交单人提交的单证符合信用证的要求，银行即应付款"
+  },
+  "answer_idx": "D",
+  "answer": "如交单人提交的单证符合信用证的要求，银行即应付款",
+  "process_id": 103,
+  "options_str": "A. 承运人应赔偿收货人因其无单放货造成的货物成本加利润损失\nB. 因该批货物已投保一切险，故保险人应对货主赔偿无单放货造成的损失\nC. 因货物已放予他人，收货人不再需要向卖方支付信用证项下的货款\nD. 如交单人提交的单证符合信用证的要求，银行即应付款",
+  "gpt_filter_query": "<Multiple-choice Question>\n中国某公司进口了一批皮制品，信用证方式支付，以海运方式运输并投保了一切险。中国收货人持正本提单提货时发现货物已被他人提走。依相关司法解释和国际惯例，下列哪一选项是正确的？\nA. 承运人应赔偿收货人因其无单放货造成的货物成本加利润损失\nB. 因该批货物已投保一切险，故保险人应对货主赔偿无单放货造成的损失\nC. 因货物已放予他人，收货人不再需要向卖方支付信用证项下的货款\nD. 如交单人提交的单证符合信用证的要求，银行即应付款\nCorrect Answer: 如交单人提交的单证符合信用证的要求，银行即应付款\n</Multiple-choice Question>\n\nYou are an expert in filtering and evaluating multiple-choice questions for advanced reasoning tasks. Your job is to evaluate a given question and determine whether it meets the following criteria: \n1. **Depth of Reasoning:** The question should require deeper reasoning. If the question appears too simple, mark it as \"Too Simple\".\n2. **Unambiguous Correct Answer:** The question must have a unique and unambiguous correct answer. If the question asks for \"incorrect options\" or allows for multiple correct answers, mark it as \"Ambiguous Answer\".\n3. **Open-Ended Reformulation Feasibility:** The question should be suitable for reformatting into an open-ended format. If the question cannot be easily reformulated into an open-ended problem and a clear ground-truth answer, mark it as \"Not Reformulatable\".\n\nFor each question, provide one of the following evaluations:  \n- \"Pass\" (The question meets all the criteria.)  \n- \"Too Simple\"  \n- \"Ambiguous Answer\"  \n- \"Not Reformulatable\" ",
+  "gpt_filter_response": "Pass",
+  "gpt_reformat_query": "I will provide you with a multiple-choice question, and your task is to rewrite it into an open-ended question, along with a Ground-True Answer. The requirements are:\n\n1. The question must be specific, targeting the point being tested in the original multiple-choice question. Ensure it is open-ended, meaning no options are provided, but there must be a definitive Ground-True Answer.\n2. Based on the correct answer from the original question, provide a concise Ground-True Answer. The answer should allow for precise matching to determine whether the model's response is correct.\n\nHere is the multiple-choice question for you to rewrite:\n<Multiple-choice Question>\n中国某公司进口了一批皮制品，信用证方式支付，以海运方式运输并投保了一切险。中国收货人持正本提单提货时发现货物已被他人提走。依相关司法解释和国际惯例，下列哪一选项是正确的？\nA. 承运人应赔偿收货人因其无单放货造成的货物成本加利润损失\nB. 因该批货物已投保一切险，故保险人应对货主赔偿无单放货造成的损失\nC. 因货物已放予他人，收货人不再需要向卖方支付信用证项下的货款\nD. 如交单人提交的单证符合信用证的要求，银行即应付款\nCorrect Answer: 如交单人提交的单证符合信用证的要求，银行即应付款\n</Multiple-choice Question>\n\nPlease output the result in the following JSON format:\n```json\n{\n\"Open-ended Verifiable Question\": \"...\",\n\"Ground-True Answer\": \"...\"\n}\n```",
+  "gpt_reformat_response": "{\n\"Open-ended Verifiable Question\": \"在中国公司以信用证方式支付并通过海运进口皮制品、且已投保一切险的情况下，若收货人持正本提单提货时发现货物已被他人提走，根据相关司法解释和国际惯例，银行在何种条件下仍应向受益人付款？请给出明确条件。\",\n\"Ground-True Answer\": \"当受益人提交的单据与信用证条款相符（单证相符）时，银行应付款。\"\n}",
+  "Open-ended Verifiable Question": "在中国公司以信用证方式支付并通过海运进口皮制品、且已投保一切险的情况下，若收货人持正本提单提货时发现货物已被他人提走，根据相关司法解释和国际惯例，银行在何种条件下仍应向受益人付款？请给出明确条件。",
+  "Ground-True Answer": "当受益人提交的单据与信用证条款相符（单证相符）时，银行应付款。"
+}

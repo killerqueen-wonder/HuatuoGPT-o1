@@ -1,0 +1,19 @@
+{
+  "question": "甲国与乙国基于传统友好关系，兼顾公平与效率原则，同意任命德高望重并富有外交经验的丙国公民布朗作为甲乙两国的领事官员派遣至丁国。根据《维也纳领事关系公约》，下列哪一选项是正确的？",
+  "options": {
+    "A": "布朗既非甲国公民，也非乙国公民，此做法违反《公约》",
+    "B": "《公约》没有限制，此做法无须征得丁国同意",
+    "C": "如丁国明示同意，此做法是被《公约》允许的",
+    "D": "如丙国与丁国均明示同意，此做法才被《公约》允许"
+  },
+  "answer_idx": "C",
+  "answer": "如丁国明示同意，此做法是被《公约》允许的",
+  "process_id": 35,
+  "options_str": "A. 布朗既非甲国公民，也非乙国公民，此做法违反《公约》\nB. 《公约》没有限制，此做法无须征得丁国同意\nC. 如丁国明示同意，此做法是被《公约》允许的\nD. 如丙国与丁国均明示同意，此做法才被《公约》允许",
+  "gpt_filter_query": "<Multiple-choice Question>\n甲国与乙国基于传统友好关系，兼顾公平与效率原则，同意任命德高望重并富有外交经验的丙国公民布朗作为甲乙两国的领事官员派遣至丁国。根据《维也纳领事关系公约》，下列哪一选项是正确的？\nA. 布朗既非甲国公民，也非乙国公民，此做法违反《公约》\nB. 《公约》没有限制，此做法无须征得丁国同意\nC. 如丁国明示同意，此做法是被《公约》允许的\nD. 如丙国与丁国均明示同意，此做法才被《公约》允许\nCorrect Answer: 如丁国明示同意，此做法是被《公约》允许的\n</Multiple-choice Question>\n\nYou are an expert in filtering and evaluating multiple-choice questions for advanced reasoning tasks. Your job is to evaluate a given question and determine whether it meets the following criteria: \n1. **Depth of Reasoning:** The question should require deeper reasoning. If the question appears too simple, mark it as \"Too Simple\".\n2. **Unambiguous Correct Answer:** The question must have a unique and unambiguous correct answer. If the question asks for \"incorrect options\" or allows for multiple correct answers, mark it as \"Ambiguous Answer\".\n3. **Open-Ended Reformulation Feasibility:** The question should be suitable for reformatting into an open-ended format. If the question cannot be easily reformulated into an open-ended problem and a clear ground-truth answer, mark it as \"Not Reformulatable\".\n\nFor each question, provide one of the following evaluations:  \n- \"Pass\" (The question meets all the criteria.)  \n- \"Too Simple\"  \n- \"Ambiguous Answer\"  \n- \"Not Reformulatable\" ",
+  "gpt_filter_response": "Pass",
+  "gpt_reformat_query": "I will provide you with a multiple-choice question, and your task is to rewrite it into an open-ended question, along with a Ground-True Answer. The requirements are:\n\n1. The question must be specific, targeting the point being tested in the original multiple-choice question. Ensure it is open-ended, meaning no options are provided, but there must be a definitive Ground-True Answer.\n2. Based on the correct answer from the original question, provide a concise Ground-True Answer. The answer should allow for precise matching to determine whether the model's response is correct.\n\nHere is the multiple-choice question for you to rewrite:\n<Multiple-choice Question>\n甲国与乙国基于传统友好关系，兼顾公平与效率原则，同意任命德高望重并富有外交经验的丙国公民布朗作为甲乙两国的领事官员派遣至丁国。根据《维也纳领事关系公约》，下列哪一选项是正确的？\nA. 布朗既非甲国公民，也非乙国公民，此做法违反《公约》\nB. 《公约》没有限制，此做法无须征得丁国同意\nC. 如丁国明示同意，此做法是被《公约》允许的\nD. 如丙国与丁国均明示同意，此做法才被《公约》允许\nCorrect Answer: 如丁国明示同意，此做法是被《公约》允许的\n</Multiple-choice Question>\n\nPlease output the result in the following JSON format:\n```json\n{\n\"Open-ended Verifiable Question\": \"...\",\n\"Ground-True Answer\": \"...\"\n}\n```",
+  "gpt_reformat_response": "{\n\"Open-ended Verifiable Question\": \"根据《维也纳领事关系公约》，甲国与乙国拟共同任命丙国公民布朗为其在丁国的领事官员。该任命在何种条件下才符合《公约》的允许？请明确说明需由哪一国作出何种表示。\",\n\"Ground-True Answer\": \"经受领国丁国明示同意即可被《公约》允许。\"\n}",
+  "Open-ended Verifiable Question": "根据《维也纳领事关系公约》，甲国与乙国拟共同任命丙国公民布朗为其在丁国的领事官员。该任命在何种条件下才符合《公约》的允许？请明确说明需由哪一国作出何种表示。",
+  "Ground-True Answer": "经受领国丁国明示同意即可被《公约》允许。"
+}

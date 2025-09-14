@@ -1,0 +1,93 @@
+{
+  "question": "关于正当防卫与紧急避险的比较，下列哪一选项是正确的？",
+  "options": {
+    "A": "正当防卫中的不法“侵害”的范围，与紧急避险中的“危险”相同",
+    "B": "对正当防卫中不法侵害是否“正在进行”的认定，与紧急避险中危险是否“正在发生”的认定相同",
+    "C": "对正当防卫中防卫行为“必要限度”的认定，与紧急避险中避险行为“必要限度”的认定相同",
+    "D": "若正当防卫需具有防卫意图，则紧急避险也须具有避险意图"
+  },
+  "answer_idx": "D",
+  "answer": "若正当防卫需具有防卫意图，则紧急避险也须具有避险意图",
+  "process_id": 15,
+  "options_str": "A. 正当防卫中的不法“侵害”的范围，与紧急避险中的“危险”相同\nB. 对正当防卫中不法侵害是否“正在进行”的认定，与紧急避险中危险是否“正在发生”的认定相同\nC. 对正当防卫中防卫行为“必要限度”的认定，与紧急避险中避险行为“必要限度”的认定相同\nD. 若正当防卫需具有防卫意图，则紧急避险也须具有避险意图",
+  "gpt_filter_query": "<Multiple-choice Question>\n关于正当防卫与紧急避险的比较，下列哪一选项是正确的？\nA. 正当防卫中的不法“侵害”的范围，与紧急避险中的“危险”相同\nB. 对正当防卫中不法侵害是否“正在进行”的认定，与紧急避险中危险是否“正在发生”的认定相同\nC. 对正当防卫中防卫行为“必要限度”的认定，与紧急避险中避险行为“必要限度”的认定相同\nD. 若正当防卫需具有防卫意图，则紧急避险也须具有避险意图\nCorrect Answer: 若正当防卫需具有防卫意图，则紧急避险也须具有避险意图\n</Multiple-choice Question>\n\nYou are an expert in filtering and evaluating multiple-choice questions for advanced reasoning tasks. Your job is to evaluate a given question and determine whether it meets the following criteria: \n1. **Depth of Reasoning:** The question should require deeper reasoning. If the question appears too simple, mark it as \"Too Simple\".\n2. **Unambiguous Correct Answer:** The question must have a unique and unambiguous correct answer. If the question asks for \"incorrect options\" or allows for multiple correct answers, mark it as \"Ambiguous Answer\".\n3. **Open-Ended Reformulation Feasibility:** The question should be suitable for reformatting into an open-ended format. If the question cannot be easily reformulated into an open-ended problem and a clear ground-truth answer, mark it as \"Not Reformulatable\".\n\nFor each question, provide one of the following evaluations:  \n- \"Pass\" (The question meets all the criteria.)  \n- \"Too Simple\"  \n- \"Ambiguous Answer\"  \n- \"Not Reformulatable\" ",
+  "gpt_filter_response": "Pass",
+  "gpt_reformat_query": "I will provide you with a multiple-choice question, and your task is to rewrite it into an open-ended question, along with a Ground-True Answer. The requirements are:\n\n1. The question must be specific, targeting the point being tested in the original multiple-choice question. Ensure it is open-ended, meaning no options are provided, but there must be a definitive Ground-True Answer.\n2. Based on the correct answer from the original question, provide a concise Ground-True Answer. The answer should allow for precise matching to determine whether the model's response is correct.\n\nHere is the multiple-choice question for you to rewrite:\n<Multiple-choice Question>\n关于正当防卫与紧急避险的比较，下列哪一选项是正确的？\nA. 正当防卫中的不法“侵害”的范围，与紧急避险中的“危险”相同\nB. 对正当防卫中不法侵害是否“正在进行”的认定，与紧急避险中危险是否“正在发生”的认定相同\nC. 对正当防卫中防卫行为“必要限度”的认定，与紧急避险中避险行为“必要限度”的认定相同\nD. 若正当防卫需具有防卫意图，则紧急避险也须具有避险意图\nCorrect Answer: 若正当防卫需具有防卫意图，则紧急避险也须具有避险意图\n</Multiple-choice Question>\n\nPlease output the result in the following JSON format:\n```json\n{\n\"Open-ended Verifiable Question\": \"...\",\n\"Ground-True Answer\": \"...\"\n}\n```",
+  "gpt_reformat_response": "{\n\"Open-ended Verifiable Question\": \"在比较正当防卫与紧急避险时，关于主观心态的要求应如何认定？具体而言：如果认为正当防卫需要具有防卫意图，那么紧急避险在主观上是否也相应需要具备避险意图？请给出明确结论。\",\n\"Ground-True Answer\": \"是，需要。如正当防卫要求防卫意图，则紧急避险也需具备避险意图。\"\n}",
+  "Open-ended Verifiable Question": "在比较正当防卫与紧急避险时，关于主观心态的要求应如何认定？具体而言：如果认为正当防卫需要具有防卫意图，那么紧急避险在主观上是否也相应需要具备避险意图？请给出明确结论。",
+  "Ground-True Answer": "是，需要。如正当防卫要求防卫意图，则紧急避险也需具备避险意图。",
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "正当防卫的主观心态分析",
+      "content": "正当防卫在法理上要求行为人具有防卫意图，即使行为人客观上实施了抵御不法侵害的行为，但如果缺乏防卫意图，则可能无法认定为正当防卫。这是因为正当防卫的正当性来源于其制止不法侵害、保护合法权益的目的性。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "紧急避险的特性与主观心态分析",
+      "content": "紧急避险是一种为了避免法律规定的更大危险而主动采取损害较小法益的行为。从其本质特性看，其正当性来源于行为“避险”的目的。因此，紧急避险也需要具备一定的避险意图，即行为人主观上需要有避免危险发生或损害减小的主观心态。如果避险意图缺失，比如行为人采取了损害行为但不存在主观上减轻损害的决策，则可能无法构成紧急避险。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "“防卫意图”与“避险意图”的共性和差异",
+      "content": "正当防卫与紧急避险都要求行为人在主观上对其行为的正当性拥有一定的认识和意图。这种主观心态不同于一般犯罪的犯罪故意，更强调行为的正当目的。两者的差异在于：‘防卫意图’集中于制止不法侵害，而‘避险意图’则着眼于避免更大的危险。因此，两者尽管在具体表达上有所不同，但其对主观心态的基本逻辑是一致的。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "正当防卫需要具有防卫意图，而紧急避险在主观上也相应需要具备避险意图。两者对主观心态的要求同样基于目的正当性，并且缺乏相应的主观意图将可能导致行为正当性被否定。"
+    },
+    {
+      "action": "Verification",
+      "content": "通过分析正当防卫和紧急避险的法理基础及对主观心态的需求，可以确认它们在主观意图上的一致性要求。结论逻辑严谨且一贯，符合法律理论及逻辑，因此结论有效。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n在比较正当防卫与紧急避险时，关于主观心态的要求应如何认定？具体而言：如果认为正当防卫需要具有防卫意图，那么紧急避险在主观上是否也相应需要具备避险意图？请给出明确结论。\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **'Inner Thinking'**: This is the step where thinking is done. Note that multiple 'Inner Thinking' steps are required to describe thorough reasoning. Each step should first generate a brief title.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n正当防卫需要具有防卫意图，而紧急避险在主观上也相应需要具备避险意图。两者对主观心态的要求同样基于目的正当性，并且缺乏相应的主观意图将可能导致行为正当性被否定。  \n</Model Response>  \n\n<Reference Answer>  \n是，需要。如正当防卫要求防卫意图，则紧急避险也需具备避险意图。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 正当防卫的主观心态分析\n正当防卫在法理上要求行为人具有防卫意图，即使行为人客观上实施了抵御不法侵害的行为，但如果缺乏防卫意图，则可能无法认定为正当防卫。这是因为正当防卫的正当性来源于其制止不法侵害、保护合法权益的目的性。\n\n### 紧急避险的特性与主观心态分析\n紧急避险是一种为了避免法律规定的更大危险而主动采取损害较小法益的行为。从其本质特性看，其正当性来源于行为“避险”的目的。因此，紧急避险也需要具备一定的避险意图，即行为人主观上需要有避免危险发生或损害减小的主观心态。如果避险意图缺失，比如行为人采取了损害行为但不存在主观上减轻损害的决策，则可能无法构成紧急避险。\n\n### “防卫意图”与“避险意图”的共性和差异\n正当防卫与紧急避险都要求行为人在主观上对其行为的正当性拥有一定的认识和意图。这种主观心态不同于一般犯罪的犯罪故意，更强调行为的正当目的。两者的差异在于：‘防卫意图’集中于制止不法侵害，而‘避险意图’则着眼于避免更大的危险。因此，两者尽管在具体表达上有所不同，但其对主观心态的基本逻辑是一致的。\n\n### Conclusion\n正当防卫需要具有防卫意图，而紧急避险在主观上也相应需要具备避险意图。两者对主观心态的要求同样基于目的正当性，并且缺乏相应的主观意图将可能导致行为正当性被否定。\n\n### Verification\n通过分析正当防卫和紧急避险的法理基础及对主观心态的需求，可以确认它们在主观意图上的一致性要求。结论逻辑严谨且一贯，符合法律理论及逻辑，因此结论有效。\n</Thought Process>\n\n<Question>\n在比较正当防卫与紧急避险时，关于主观心态的要求应如何认定？具体而言：如果认为正当防卫需要具有防卫意图，那么紧急避险在主观上是否也相应需要具备避险意图？请给出明确结论。\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n嗯，如果要比较正当防卫和紧急避险的话，首先需要从它们各自的性质和核心要求入手。正当防卫的关键点在于它是一种对不法侵害的主动抵抗，这是一个比较有针对性的行为。而且，它的正当性来自于行为人想要制止这种不法侵害、保护自身或者他人合法权益的动机。所以，从这个角度来说，行为人在主观上必须有一个明确的“防卫意图”。比如，如果你的行为虽然客观上看起来像是在防卫一个侵害，但实际上你并没有这个动机，那恐怕就很难成立正当防卫了。\n\n再来看紧急避险，这种情况就稍微有点不一样了。紧急避险更多是主动去“选择”一个损失较小的方式来避免更大的危险发生。它虽然也涉及到法益损害，但因为是为了躲避更大的威胁，所以法律是允许的。不过，它的前提一样需要行为人主观上有一个明确的“避险意图”，也就是你做出这个行为的目的就是为了避免危险，或者至少是试图减轻可能的损害。如果行为人完全没有这种意图，只是出于其他目的去行为，那同样不能算是避险的正当性。\n\n然后，我觉得需要对比一下这两者的主观心态有什么共性和差异。两者确实有一些共性，比如都强调了行为的正当目的，不能让行为人滥用。也就是说，行为人主观上必须对自己的行为有一定的认识并基于某种正当目的去行动。但它们的主要区别在于目的的具体方向不一样。正当防卫的主观重点是“对抗不法侵害”，而紧急避险更倾向于“规避更大的危险”。这样看，两者虽然主观要求上逻辑一致，但实际用意有所不同。\n\n综合起来，正当防卫需要有防卫意图，而紧急避险也需要具备避险意图。这两者都对主观心态有明确的要求，缺少这样的主观目的往往会导致行为的正当性被否定。这也挺好理解，因为如果缺乏这种意图，本质上可能就难以和一般的违法行为区别开。\n\n最后，我再仔细想想有没有问题，嗯，整体来看逻辑是通的。正当防卫和紧急避险虽然具体条件和适用场景不同，但它们都要求主观心态上的“正当性”。这种要求合理而且必要，结论是有效的。\n</Internal Thinking>\n\n<Question>\n在比较正当防卫与紧急避险时，关于主观心态的要求应如何认定？具体而言：如果认为正当防卫需要具有防卫意图，那么紧急避险在主观上是否也相应需要具备避险意图？请给出明确结论。\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"正当防卫的主观心态分析\",\n      \"content\": \"正当防卫在法理上要求行为人具有防卫意图，即使行为人客观上实施了抵御不法侵害的行为，但如果缺乏防卫意图，则可能无法认定为正当防卫。这是因为正当防卫的正当性来源于其制止不法侵害、保护合法权益的目的性。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"紧急避险的特性与主观心态分析\",\n      \"content\": \"紧急避险是一种为了避免法律规定的更大危险而主动采取损害较小法益的行为。从其本质特性看，其正当性来源于行为“避险”的目的。因此，紧急避险也需要具备一定的避险意图，即行为人主观上需要有避免危险发生或损害减小的主观心态。如果避险意图缺失，比如行为人采取了损害行为但不存在主观上减轻损害的决策，则可能无法构成紧急避险。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"“防卫意图”与“避险意图”的共性和差异\",\n      \"content\": \"正当防卫与紧急避险都要求行为人在主观上对其行为的正当性拥有一定的认识和意图。这种主观心态不同于一般犯罪的犯罪故意，更强调行为的正当目的。两者的差异在于：‘防卫意图’集中于制止不法侵害，而‘避险意图’则着眼于避免更大的危险。因此，两者尽管在具体表达上有所不同，但其对主观心态的基本逻辑是一致的。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"正当防卫需要具有防卫意图，而紧急避险在主观上也相应需要具备避险意图。两者对主观心态的要求同样基于目的正当性，并且缺乏相应的主观意图将可能导致行为正当性被否定。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"通过分析正当防卫和紧急避险的法理基础及对主观心态的需求，可以确认它们在主观意图上的一致性要求。结论逻辑严谨且一贯，符合法律理论及逻辑，因此结论有效。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"嗯，如果要比较正当防卫和紧急避险的话，首先需要从它们各自的性质和核心要求入手。正当防卫的关键点在于它是一种对不法侵害的主动抵抗，这是一个比较有针对性的行为。而且，它的正当性来自于行为人想要制止这种不法侵害、保护自身或者他人合法权益的动机。所以，从这个角度来说，行为人在主观上必须有一个明确的“防卫意图”。比如，如果你的行为虽然客观上看起来像是在防卫一个侵害，但实际上你并没有这个动机，那恐怕就很难成立正当防卫了。\\n\\n再来看紧急避险，这种情况就稍微有点不一样了。紧急避险更多是主动去“选择”一个损失较小的方式来避免更大的危险发生。它虽然也涉及到法益损害，但因为是为了躲避更大的威胁，所以法律是允许的。不过，它的前提一样需要行为人主观上有一个明确的“避险意图”，也就是你做出这个行为的目的就是为了避免危险，或者至少是试图减轻可能的损害。如果行为人完全没有这种意图，只是出于其他目的去行为，那同样不能算是避险的正当性。\\n\\n然后，我觉得需要对比一下这两者的主观心态有什么共性和差异。两者确实有一些共性，比如都强调了行为的正当目的，不能让行为人滥用。也就是说，行为人主观上必须对自己的行为有一定的认识并基于某种正当目的去行动。但它们的主要区别在于目的的具体方向不一样。正当防卫的主观重点是“对抗不法侵害”，而紧急避险更倾向于“规避更大的危险”。这样看，两者虽然主观要求上逻辑一致，但实际用意有所不同。\\n\\n综合起来，正当防卫需要有防卫意图，而紧急避险也需要具备避险意图。这两者都对主观心态有明确的要求，缺少这样的主观目的往往会导致行为的正当性被否定。这也挺好理解，因为如果缺乏这种意图，本质上可能就难以和一般的违法行为区别开。\\n\\n最后，我再仔细想想有没有问题，嗯，整体来看逻辑是通的。正当防卫和紧急避险虽然具体条件和适用场景不同，但它们都要求主观心态上的“正当性”。这种要求合理而且必要，结论是有效的。\"\n}\n```",
+    "关于正当防卫与紧急避险在主观心态上的要求，可明确回答如下：\n\n正当防卫确实需要具备“防卫意图”。也就是说，行为人必须主观上明确其行为是为了制止正在进行的不法侵害，从而保护自身或他人的合法权益。如果缺乏这种防卫意图，即便行为在客观上造成了“不法侵害的停止”，也无法认定为正当防卫。\n\n同理，紧急避险在主观上也需要具备“避险意图”。具体而言，行为人必须基于回避当前危险、避免更大损害的目的而采取相关行动。如果行为人缺乏这种避险意图，而仅仅因其他目的（如个人利益驱动）实施损害行为，则不能被认定为成立紧急避险。\n\n归纳来看，正当防卫与紧急避险虽然性质与适用条件不同，但都对行为人的主观心态提出了明确的要求，且这种主观上的“正当性意图”是认定两种行为合法性的核心要素。从具体方向来看，正当防卫聚焦于“对抗不法侵害”，而紧急避险则强调“规避更大的危险”。尽管二者的动机不同，逻辑依然一致：只有当行为人具备明确的正当意图，并将其内化于其行为中，才能满足法律对行为正当性的基本要求。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "正当防卫的主观心态分析",
+        "content": "正当防卫在法理上要求行为人具有防卫意图，即使行为人客观上实施了抵御不法侵害的行为，但如果缺乏防卫意图，则可能无法认定为正当防卫。这是因为正当防卫的正当性来源于其制止不法侵害、保护合法权益的目的性。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "紧急避险的特性与主观心态分析",
+        "content": "紧急避险是一种为了避免法律规定的更大危险而主动采取损害较小法益的行为。从其本质特性看，其正当性来源于行为“避险”的目的。因此，紧急避险也需要具备一定的避险意图，即行为人主观上需要有避免危险发生或损害减小的主观心态。如果避险意图缺失，比如行为人采取了损害行为但不存在主观上减轻损害的决策，则可能无法构成紧急避险。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "“防卫意图”与“避险意图”的共性和差异",
+        "content": "正当防卫与紧急避险都要求行为人在主观上对其行为的正当性拥有一定的认识和意图。这种主观心态不同于一般犯罪的犯罪故意，更强调行为的正当目的。两者的差异在于：‘防卫意图’集中于制止不法侵害，而‘避险意图’则着眼于避免更大的危险。因此，两者尽管在具体表达上有所不同，但其对主观心态的基本逻辑是一致的。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "正当防卫需要具有防卫意图，而紧急避险在主观上也相应需要具备避险意图。两者对主观心态的要求同样基于目的正当性，并且缺乏相应的主观意图将可能导致行为正当性被否定。"
+      },
+      {
+        "action": "Verification",
+        "content": "通过分析正当防卫和紧急避险的法理基础及对主观心态的需求，可以确认它们在主观意图上的一致性要求。结论逻辑严谨且一贯，符合法律理论及逻辑，因此结论有效。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "嗯，如果要比较正当防卫和紧急避险的话，首先需要从它们各自的性质和核心要求入手。正当防卫的关键点在于它是一种对不法侵害的主动抵抗，这是一个比较有针对性的行为。而且，它的正当性来自于行为人想要制止这种不法侵害、保护自身或者他人合法权益的动机。所以，从这个角度来说，行为人在主观上必须有一个明确的“防卫意图”。比如，如果你的行为虽然客观上看起来像是在防卫一个侵害，但实际上你并没有这个动机，那恐怕就很难成立正当防卫了。\n\n再来看紧急避险，这种情况就稍微有点不一样了。紧急避险更多是主动去“选择”一个损失较小的方式来避免更大的危险发生。它虽然也涉及到法益损害，但因为是为了躲避更大的威胁，所以法律是允许的。不过，它的前提一样需要行为人主观上有一个明确的“避险意图”，也就是你做出这个行为的目的就是为了避免危险，或者至少是试图减轻可能的损害。如果行为人完全没有这种意图，只是出于其他目的去行为，那同样不能算是避险的正当性。\n\n然后，我觉得需要对比一下这两者的主观心态有什么共性和差异。两者确实有一些共性，比如都强调了行为的正当目的，不能让行为人滥用。也就是说，行为人主观上必须对自己的行为有一定的认识并基于某种正当目的去行动。但它们的主要区别在于目的的具体方向不一样。正当防卫的主观重点是“对抗不法侵害”，而紧急避险更倾向于“规避更大的危险”。这样看，两者虽然主观要求上逻辑一致，但实际用意有所不同。\n\n综合起来，正当防卫需要有防卫意图，而紧急避险也需要具备避险意图。这两者都对主观心态有明确的要求，缺少这样的主观目的往往会导致行为的正当性被否定。这也挺好理解，因为如果缺乏这种意图，本质上可能就难以和一般的违法行为区别开。\n\n最后，我再仔细想想有没有问题，嗯，整体来看逻辑是通的。正当防卫和紧急避险虽然具体条件和适用场景不同，但它们都要求主观心态上的“正当性”。这种要求合理而且必要，结论是有效的。",
+  "Response": "关于正当防卫与紧急避险在主观心态上的要求，可明确回答如下：\n\n正当防卫确实需要具备“防卫意图”。也就是说，行为人必须主观上明确其行为是为了制止正在进行的不法侵害，从而保护自身或他人的合法权益。如果缺乏这种防卫意图，即便行为在客观上造成了“不法侵害的停止”，也无法认定为正当防卫。\n\n同理，紧急避险在主观上也需要具备“避险意图”。具体而言，行为人必须基于回避当前危险、避免更大损害的目的而采取相关行动。如果行为人缺乏这种避险意图，而仅仅因其他目的（如个人利益驱动）实施损害行为，则不能被认定为成立紧急避险。\n\n归纳来看，正当防卫与紧急避险虽然性质与适用条件不同，但都对行为人的主观心态提出了明确的要求，且这种主观上的“正当性意图”是认定两种行为合法性的核心要素。从具体方向来看，正当防卫聚焦于“对抗不法侵害”，而紧急避险则强调“规避更大的危险”。尽管二者的动机不同，逻辑依然一致：只有当行为人具备明确的正当意图，并将其内化于其行为中，才能满足法律对行为正当性的基本要求。",
+  "Question": "在比较正当防卫与紧急避险时，关于主观心态的要求应如何认定？具体而言：如果认为正当防卫需要具有防卫意图，那么紧急避险在主观上是否也相应需要具备避险意图？请给出明确结论。"
+}
