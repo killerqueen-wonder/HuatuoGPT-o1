@@ -1,0 +1,93 @@
+{
+  "question": "50.2019年3月1日，赵某因涉嫌贪污被G县监察委员会立案调查，3月15日被留置。5月13H,G县监察委员会将赵某移送G县检察院审查起诉。关于本案的期间，下列说法正确的是？",
+  "options": {
+    "A": "如赵某符合逮捕条件，G县检察院至迟应当在5月23日作出逮捕的决定",
+    "B": "G县检察院从5月13日开始计算审查起诉的期限",
+    "C": "如赵某认罪认罚，G县检察院至迟应当在15日以内作出起诉的决定",
+    "D": "如赵某被判处有期徒刑4年，留置1日可以折抵刑期1日"
+  },
+  "answer_idx": "D",
+  "answer": "如赵某被判处有期徒刑4年，留置1日可以折抵刑期1日",
+  "process_id": 119,
+  "options_str": "A. 如赵某符合逮捕条件，G县检察院至迟应当在5月23日作出逮捕的决定\nB. G县检察院从5月13日开始计算审查起诉的期限\nC. 如赵某认罪认罚，G县检察院至迟应当在15日以内作出起诉的决定\nD. 如赵某被判处有期徒刑4年，留置1日可以折抵刑期1日",
+  "gpt_filter_query": "<Multiple-choice Question>\n50.2019年3月1日，赵某因涉嫌贪污被G县监察委员会立案调查，3月15日被留置。5月13H,G县监察委员会将赵某移送G县检察院审查起诉。关于本案的期间，下列说法正确的是？\nA. 如赵某符合逮捕条件，G县检察院至迟应当在5月23日作出逮捕的决定\nB. G县检察院从5月13日开始计算审查起诉的期限\nC. 如赵某认罪认罚，G县检察院至迟应当在15日以内作出起诉的决定\nD. 如赵某被判处有期徒刑4年，留置1日可以折抵刑期1日\nCorrect Answer: 如赵某被判处有期徒刑4年，留置1日可以折抵刑期1日\n</Multiple-choice Question>\n\nYou are an expert in filtering and evaluating multiple-choice questions for advanced reasoning tasks. Your job is to evaluate a given question and determine whether it meets the following criteria: \n1. **Depth of Reasoning:** The question should require deeper reasoning. If the question appears too simple, mark it as \"Too Simple\".\n2. **Unambiguous Correct Answer:** The question must have a unique and unambiguous correct answer. If the question asks for \"incorrect options\" or allows for multiple correct answers, mark it as \"Ambiguous Answer\".\n3. **Open-Ended Reformulation Feasibility:** The question should be suitable for reformatting into an open-ended format. If the question cannot be easily reformulated into an open-ended problem and a clear ground-truth answer, mark it as \"Not Reformulatable\".\n\nFor each question, provide one of the following evaluations:  \n- \"Pass\" (The question meets all the criteria.)  \n- \"Too Simple\"  \n- \"Ambiguous Answer\"  \n- \"Not Reformulatable\" ",
+  "gpt_filter_response": "Pass",
+  "gpt_reformat_query": "I will provide you with a multiple-choice question, and your task is to rewrite it into an open-ended question, along with a Ground-True Answer. The requirements are:\n\n1. The question must be specific, targeting the point being tested in the original multiple-choice question. Ensure it is open-ended, meaning no options are provided, but there must be a definitive Ground-True Answer.\n2. Based on the correct answer from the original question, provide a concise Ground-True Answer. The answer should allow for precise matching to determine whether the model's response is correct.\n\nHere is the multiple-choice question for you to rewrite:\n<Multiple-choice Question>\n50.2019年3月1日，赵某因涉嫌贪污被G县监察委员会立案调查，3月15日被留置。5月13H,G县监察委员会将赵某移送G县检察院审查起诉。关于本案的期间，下列说法正确的是？\nA. 如赵某符合逮捕条件，G县检察院至迟应当在5月23日作出逮捕的决定\nB. G县检察院从5月13日开始计算审查起诉的期限\nC. 如赵某认罪认罚，G县检察院至迟应当在15日以内作出起诉的决定\nD. 如赵某被判处有期徒刑4年，留置1日可以折抵刑期1日\nCorrect Answer: 如赵某被判处有期徒刑4年，留置1日可以折抵刑期1日\n</Multiple-choice Question>\n\nPlease output the result in the following JSON format:\n```json\n{\n\"Open-ended Verifiable Question\": \"...\",\n\"Ground-True Answer\": \"...\"\n}\n```",
+  "gpt_reformat_response": "{\n\"Open-ended Verifiable Question\": \"在该案中，赵某于2019年3月15日被留置，后被移送起诉并最终被判处有期徒刑4年。依据相关法律规定，留置期间能否折抵刑期？若可以，折抵的换算标准是什么？\",\n\"Ground-True Answer\": \"可以折抵；留置1日折抵刑期1日。\"\n}",
+  "Open-ended Verifiable Question": "在该案中，赵某于2019年3月15日被留置，后被移送起诉并最终被判处有期徒刑4年。依据相关法律规定，留置期间能否折抵刑期？若可以，折抵的换算标准是什么？",
+  "Ground-True Answer": "可以折抵；留置1日折抵刑期1日。",
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "法律依据中留置是否可以折抵刑期",
+      "content": "依据《中华人民共和国监察法》第四十四条的规定，留置是一种由监察机关适用的强制措施，其目的是调查涉嫌职务违法或职务犯罪的行为。当事人被留置后，其人身自由受到限制，因此留置期间的性质与刑事诉讼中的羁押相似，可以按照法律规定折抵刑期。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "具体折抵刑期的换算标准",
+      "content": "依据《中华人民共和国刑法》第四十一条相关条款说明，留置期间可以折抵刑期，其换算标准为“一日折抵刑期一日”。因此，被留置的时间应当按照这一规则计算，并在判决后从实际执行的刑期中扣除。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "结合案例具体时间的折抵分析",
+      "content": "赵某自2019年3月15日起被监委留置，之后被移送起诉并判处有期徒刑4年。判决公布后，其留置时间应计入刑期，按照“一日折抵一日”的标准，从2019年3月15日起至移送至看守所或执行机构的时间为止。这段时间可以从其判决后实际执行的刑期中扣除。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "依据相关法律规定，赵某在留置期间是可以折抵刑期的，且标准为“留置一日折抵刑期一日”。赵某的留置时间应从2019年3月15日起计算至其被移送至看守所或其他执行机构之日止，折抵的具体天数应当减去判决的4年刑期中相应的部分。"
+    },
+    {
+      "action": "Verification",
+      "content": "通过确认《中华人民共和国监察法》第四十四条以及《中华人民共和国刑法》第四十一条规定，留置期间确可折抵刑期，且换算标准为“一日折抵一日”，上述结论准确无误，无需补充。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n在该案中，赵某于2019年3月15日被留置，后被移送起诉并最终被判处有期徒刑4年。依据相关法律规定，留置期间能否折抵刑期？若可以，折抵的换算标准是什么？\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **'Inner Thinking'**: This is the step where thinking is done. Note that multiple 'Inner Thinking' steps are required to describe thorough reasoning. Each step should first generate a brief title.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n依据相关法律规定，赵某在留置期间是可以折抵刑期的，且标准为“留置一日折抵刑期一日”。赵某的留置时间应从2019年3月15日起计算至其被移送至看守所或其他执行机构之日止，折抵的具体天数应当减去判决的4年刑期中相应的部分。  \n</Model Response>  \n\n<Reference Answer>  \n可以折抵；留置1日折抵刑期1日。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 法律依据中留置是否可以折抵刑期\n依据《中华人民共和国监察法》第四十四条的规定，留置是一种由监察机关适用的强制措施，其目的是调查涉嫌职务违法或职务犯罪的行为。当事人被留置后，其人身自由受到限制，因此留置期间的性质与刑事诉讼中的羁押相似，可以按照法律规定折抵刑期。\n\n### 具体折抵刑期的换算标准\n依据《中华人民共和国刑法》第四十一条相关条款说明，留置期间可以折抵刑期，其换算标准为“一日折抵刑期一日”。因此，被留置的时间应当按照这一规则计算，并在判决后从实际执行的刑期中扣除。\n\n### 结合案例具体时间的折抵分析\n赵某自2019年3月15日起被监委留置，之后被移送起诉并判处有期徒刑4年。判决公布后，其留置时间应计入刑期，按照“一日折抵一日”的标准，从2019年3月15日起至移送至看守所或执行机构的时间为止。这段时间可以从其判决后实际执行的刑期中扣除。\n\n### Conclusion\n依据相关法律规定，赵某在留置期间是可以折抵刑期的，且标准为“留置一日折抵刑期一日”。赵某的留置时间应从2019年3月15日起计算至其被移送至看守所或其他执行机构之日止，折抵的具体天数应当减去判决的4年刑期中相应的部分。\n\n### Verification\n通过确认《中华人民共和国监察法》第四十四条以及《中华人民共和国刑法》第四十一条规定，留置期间确可折抵刑期，且换算标准为“一日折抵一日”，上述结论准确无误，无需补充。\n</Thought Process>\n\n<Question>\n在该案中，赵某于2019年3月15日被留置，后被移送起诉并最终被判处有期徒刑4年。依据相关法律规定，留置期间能否折抵刑期？若可以，折抵的换算标准是什么？\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n嗯，我先想想，这个问题的关键是留置期间能不能折抵刑期，还有具体的折抵标准是什么。其实留置这种情况还是挺特殊的，属于监察机关为了调查涉嫌职务违法或职务犯罪采取的一种措施。根据《中华人民共和国监察法》第四十四条的规定，留置明确会限制当事人的人身自由，从这个角度来看，它确实和刑事诉讼中的羁押有点类似。既然性质上有些相似，那能不能折抵刑期就要看法律上有没有明确规定。\n\n接下来，我需要查一下具体的法律条文。哦，找到了，《中华人民共和国刑法》第四十一条里面有规定，像羁押这种限制人身自由的措施，确实是可以折抵刑期的，而且换算的标准是“一日折抵刑期一日”。虽然《刑法》没直接提到留置，但结合《监察法》的性质和规定，留置算是符合这种限制人身自由的情况，应该也是可以折抵的。而且现实中，在处理职务犯罪案件时，留置期间折抵刑期是被实际操作过的，所以这个是可行的。\n\n再想想，具体的计算应该怎么操作呢？假设是赵某的案子，他是在2019年3月15日被留置的，一直到被移送起诉并判决为止。这段时间里的每一天都应该按照“一天折抵一天”的标准算进去。再说得准确一点，这个折抵的起点就是2019年3月15日，终点是他被移送到看守所或者其他执行机构的那一天。不过，这个确切的天数得看案件里的具体记录，我暂时只能用假设来说明。\n\n总之，赵某如果最终被判了有期徒刑4年，他留置的这部分时间应直接从4年刑期里扣掉，换句话说，这部分时间其实已经算是刑期的一部分。按照法律上来说，这样的处理完全没问题，既合规也合理。\n\n所以总结来说：首先，留置期间是可以折抵刑期的；其次，折抵的标准是“一天折抵一天”，刚好和刑事羁押的计算方法一样；最后，赵某的留置时间从2019年3月15日开始算起，具体天数需要结合他的实际移送日期才能完全确定。法律依据主要是《中华人民共和国监察法》和《中华人民共和国刑法》，没什么疑问。\n</Internal Thinking>\n\n<Question>\n在该案中，赵某于2019年3月15日被留置，后被移送起诉并最终被判处有期徒刑4年。依据相关法律规定，留置期间能否折抵刑期？若可以，折抵的换算标准是什么？\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"法律依据中留置是否可以折抵刑期\",\n      \"content\": \"依据《中华人民共和国监察法》第四十四条的规定，留置是一种由监察机关适用的强制措施，其目的是调查涉嫌职务违法或职务犯罪的行为。当事人被留置后，其人身自由受到限制，因此留置期间的性质与刑事诉讼中的羁押相似，可以按照法律规定折抵刑期。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"具体折抵刑期的换算标准\",\n      \"content\": \"依据《中华人民共和国刑法》第四十一条相关条款说明，留置期间可以折抵刑期，其换算标准为“一日折抵刑期一日”。因此，被留置的时间应当按照这一规则计算，并在判决后从实际执行的刑期中扣除。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"结合案例具体时间的折抵分析\",\n      \"content\": \"赵某自2019年3月15日起被监委留置，之后被移送起诉并判处有期徒刑4年。判决公布后，其留置时间应计入刑期，按照“一日折抵一日”的标准，从2019年3月15日起至移送至看守所或执行机构的时间为止。这段时间可以从其判决后实际执行的刑期中扣除。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"依据相关法律规定，赵某在留置期间是可以折抵刑期的，且标准为“留置一日折抵刑期一日”。赵某的留置时间应从2019年3月15日起计算至其被移送至看守所或其他执行机构之日止，折抵的具体天数应当减去判决的4年刑期中相应的部分。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"通过确认《中华人民共和国监察法》第四十四条以及《中华人民共和国刑法》第四十一条规定，留置期间确可折抵刑期，且换算标准为“一日折抵一日”，上述结论准确无误，无需补充。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"嗯，我先想想，这个问题的关键是留置期间能不能折抵刑期，还有具体的折抵标准是什么。其实留置这种情况还是挺特殊的，属于监察机关为了调查涉嫌职务违法或职务犯罪采取的一种措施。根据《中华人民共和国监察法》第四十四条的规定，留置明确会限制当事人的人身自由，从这个角度来看，它确实和刑事诉讼中的羁押有点类似。既然性质上有些相似，那能不能折抵刑期就要看法律上有没有明确规定。\\n\\n接下来，我需要查一下具体的法律条文。哦，找到了，《中华人民共和国刑法》第四十一条里面有规定，像羁押这种限制人身自由的措施，确实是可以折抵刑期的，而且换算的标准是“一日折抵刑期一日”。虽然《刑法》没直接提到留置，但结合《监察法》的性质和规定，留置算是符合这种限制人身自由的情况，应该也是可以折抵的。而且现实中，在处理职务犯罪案件时，留置期间折抵刑期是被实际操作过的，所以这个是可行的。\\n\\n再想想，具体的计算应该怎么操作呢？假设是赵某的案子，他是在2019年3月15日被留置的，一直到被移送起诉并判决为止。这段时间里的每一天都应该按照“一天折抵一天”的标准算进去。再说得准确一点，这个折抵的起点就是2019年3月15日，终点是他被移送到看守所或者其他执行机构的那一天。不过，这个确切的天数得看案件里的具体记录，我暂时只能用假设来说明。\\n\\n总之，赵某如果最终被判了有期徒刑4年，他留置的这部分时间应直接从4年刑期里扣掉，换句话说，这部分时间其实已经算是刑期的一部分。按照法律上来说，这样的处理完全没问题，既合规也合理。\\n\\n所以总结来说：首先，留置期间是可以折抵刑期的；其次，折抵的标准是“一天折抵一天”，刚好和刑事羁押的计算方法一样；最后，赵某的留置时间从2019年3月15日开始算起，具体天数需要结合他的实际移送日期才能完全确定。法律依据主要是《中华人民共和国监察法》和《中华人民共和国刑法》，没什么疑问。\"\n}\n```",
+    "根据相关法律规定，留置期间可以折抵刑期。依据《中华人民共和国监察法》第四十四条和《中华人民共和国刑法》第四十一条的规定，监察机关对赵某采取的留置措施属于限制人身自由的情形，因此可以在刑期中折抵。折抵的换算标准是“留置一日折抵刑期一日”。\n\n具体到本案中，赵某自2019年3月15日被留置至移送起诉期间的所有留置时间，都将按照上述标准从其判处的4年有期徒刑中扣减。实际能够折抵的天数需要根据赵某被移送的具体日期计算。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "法律依据中留置是否可以折抵刑期",
+        "content": "依据《中华人民共和国监察法》第四十四条的规定，留置是一种由监察机关适用的强制措施，其目的是调查涉嫌职务违法或职务犯罪的行为。当事人被留置后，其人身自由受到限制，因此留置期间的性质与刑事诉讼中的羁押相似，可以按照法律规定折抵刑期。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "具体折抵刑期的换算标准",
+        "content": "依据《中华人民共和国刑法》第四十一条相关条款说明，留置期间可以折抵刑期，其换算标准为“一日折抵刑期一日”。因此，被留置的时间应当按照这一规则计算，并在判决后从实际执行的刑期中扣除。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "结合案例具体时间的折抵分析",
+        "content": "赵某自2019年3月15日起被监委留置，之后被移送起诉并判处有期徒刑4年。判决公布后，其留置时间应计入刑期，按照“一日折抵一日”的标准，从2019年3月15日起至移送至看守所或执行机构的时间为止。这段时间可以从其判决后实际执行的刑期中扣除。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "依据相关法律规定，赵某在留置期间是可以折抵刑期的，且标准为“留置一日折抵刑期一日”。赵某的留置时间应从2019年3月15日起计算至其被移送至看守所或其他执行机构之日止，折抵的具体天数应当减去判决的4年刑期中相应的部分。"
+      },
+      {
+        "action": "Verification",
+        "content": "通过确认《中华人民共和国监察法》第四十四条以及《中华人民共和国刑法》第四十一条规定，留置期间确可折抵刑期，且换算标准为“一日折抵一日”，上述结论准确无误，无需补充。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "嗯，我先想想，这个问题的关键是留置期间能不能折抵刑期，还有具体的折抵标准是什么。其实留置这种情况还是挺特殊的，属于监察机关为了调查涉嫌职务违法或职务犯罪采取的一种措施。根据《中华人民共和国监察法》第四十四条的规定，留置明确会限制当事人的人身自由，从这个角度来看，它确实和刑事诉讼中的羁押有点类似。既然性质上有些相似，那能不能折抵刑期就要看法律上有没有明确规定。\n\n接下来，我需要查一下具体的法律条文。哦，找到了，《中华人民共和国刑法》第四十一条里面有规定，像羁押这种限制人身自由的措施，确实是可以折抵刑期的，而且换算的标准是“一日折抵刑期一日”。虽然《刑法》没直接提到留置，但结合《监察法》的性质和规定，留置算是符合这种限制人身自由的情况，应该也是可以折抵的。而且现实中，在处理职务犯罪案件时，留置期间折抵刑期是被实际操作过的，所以这个是可行的。\n\n再想想，具体的计算应该怎么操作呢？假设是赵某的案子，他是在2019年3月15日被留置的，一直到被移送起诉并判决为止。这段时间里的每一天都应该按照“一天折抵一天”的标准算进去。再说得准确一点，这个折抵的起点就是2019年3月15日，终点是他被移送到看守所或者其他执行机构的那一天。不过，这个确切的天数得看案件里的具体记录，我暂时只能用假设来说明。\n\n总之，赵某如果最终被判了有期徒刑4年，他留置的这部分时间应直接从4年刑期里扣掉，换句话说，这部分时间其实已经算是刑期的一部分。按照法律上来说，这样的处理完全没问题，既合规也合理。\n\n所以总结来说：首先，留置期间是可以折抵刑期的；其次，折抵的标准是“一天折抵一天”，刚好和刑事羁押的计算方法一样；最后，赵某的留置时间从2019年3月15日开始算起，具体天数需要结合他的实际移送日期才能完全确定。法律依据主要是《中华人民共和国监察法》和《中华人民共和国刑法》，没什么疑问。",
+  "Response": "根据相关法律规定，留置期间可以折抵刑期。依据《中华人民共和国监察法》第四十四条和《中华人民共和国刑法》第四十一条的规定，监察机关对赵某采取的留置措施属于限制人身自由的情形，因此可以在刑期中折抵。折抵的换算标准是“留置一日折抵刑期一日”。\n\n具体到本案中，赵某自2019年3月15日被留置至移送起诉期间的所有留置时间，都将按照上述标准从其判处的4年有期徒刑中扣减。实际能够折抵的天数需要根据赵某被移送的具体日期计算。",
+  "Question": "在该案中，赵某于2019年3月15日被留置，后被移送起诉并最终被判处有期徒刑4年。依据相关法律规定，留置期间能否折抵刑期？若可以，折抵的换算标准是什么？"
+}

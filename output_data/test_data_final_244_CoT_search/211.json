@@ -1,0 +1,103 @@
+{
+  "question": "关于职业禁止，下列哪一选项是正确的？",
+  "options": {
+    "A": "利用职务上的便利实施犯罪的，不一定都属于“利用职业便利”实施犯罪",
+    "B": "行为人违反职业禁止的决定，情节严重的，应以拒不执行判决、裁定罪定罪处罚",
+    "C": "判处有期徒刑并附加剥夺政治权利，同时决定职业禁止的，在有期徒刑与剥夺政治权利均执行完毕后，才能执行职业禁止",
+    "D": "职业禁止的期限均为3年至5年"
+  },
+  "answer_idx": "B",
+  "answer": "行为人违反职业禁止的决定，情节严重的，应以拒不执行判决、裁定罪定罪处罚",
+  "process_id": 211,
+  "options_str": "A. 利用职务上的便利实施犯罪的，不一定都属于“利用职业便利”实施犯罪\nB. 行为人违反职业禁止的决定，情节严重的，应以拒不执行判决、裁定罪定罪处罚\nC. 判处有期徒刑并附加剥夺政治权利，同时决定职业禁止的，在有期徒刑与剥夺政治权利均执行完毕后，才能执行职业禁止\nD. 职业禁止的期限均为3年至5年",
+  "gpt_filter_query": "<Multiple-choice Question>\n关于职业禁止，下列哪一选项是正确的？\nA. 利用职务上的便利实施犯罪的，不一定都属于“利用职业便利”实施犯罪\nB. 行为人违反职业禁止的决定，情节严重的，应以拒不执行判决、裁定罪定罪处罚\nC. 判处有期徒刑并附加剥夺政治权利，同时决定职业禁止的，在有期徒刑与剥夺政治权利均执行完毕后，才能执行职业禁止\nD. 职业禁止的期限均为3年至5年\nCorrect Answer: 行为人违反职业禁止的决定，情节严重的，应以拒不执行判决、裁定罪定罪处罚\n</Multiple-choice Question>\n\nYou are an expert in filtering and evaluating multiple-choice questions for advanced reasoning tasks. Your job is to evaluate a given question and determine whether it meets the following criteria: \n1. **Depth of Reasoning:** The question should require deeper reasoning. If the question appears too simple, mark it as \"Too Simple\".\n2. **Unambiguous Correct Answer:** The question must have a unique and unambiguous correct answer. If the question asks for \"incorrect options\" or allows for multiple correct answers, mark it as \"Ambiguous Answer\".\n3. **Open-Ended Reformulation Feasibility:** The question should be suitable for reformatting into an open-ended format. If the question cannot be easily reformulated into an open-ended problem and a clear ground-truth answer, mark it as \"Not Reformulatable\".\n\nFor each question, provide one of the following evaluations:  \n- \"Pass\" (The question meets all the criteria.)  \n- \"Too Simple\"  \n- \"Ambiguous Answer\"  \n- \"Not Reformulatable\" ",
+  "gpt_filter_response": "Pass",
+  "gpt_reformat_query": "I will provide you with a multiple-choice question, and your task is to rewrite it into an open-ended question, along with a Ground-True Answer. The requirements are:\n\n1. The question must be specific, targeting the point being tested in the original multiple-choice question. Ensure it is open-ended, meaning no options are provided, but there must be a definitive Ground-True Answer.\n2. Based on the correct answer from the original question, provide a concise Ground-True Answer. The answer should allow for precise matching to determine whether the model's response is correct.\n\nHere is the multiple-choice question for you to rewrite:\n<Multiple-choice Question>\n关于职业禁止，下列哪一选项是正确的？\nA. 利用职务上的便利实施犯罪的，不一定都属于“利用职业便利”实施犯罪\nB. 行为人违反职业禁止的决定，情节严重的，应以拒不执行判决、裁定罪定罪处罚\nC. 判处有期徒刑并附加剥夺政治权利，同时决定职业禁止的，在有期徒刑与剥夺政治权利均执行完毕后，才能执行职业禁止\nD. 职业禁止的期限均为3年至5年\nCorrect Answer: 行为人违反职业禁止的决定，情节严重的，应以拒不执行判决、裁定罪定罪处罚\n</Multiple-choice Question>\n\nPlease output the result in the following JSON format:\n```json\n{\n\"Open-ended Verifiable Question\": \"...\",\n\"Ground-True Answer\": \"...\"\n}\n```",
+  "gpt_reformat_response": "{\n\"Open-ended Verifiable Question\": \"在我国刑法关于职业禁止的规定中，如果行为人在被决定职业禁止后违反该决定且情节严重，应当以何罪名定罪处罚？\",\n\"Ground-True Answer\": \"拒不执行判决、裁定罪\"\n}",
+  "Open-ended Verifiable Question": "在我国刑法关于职业禁止的规定中，如果行为人在被决定职业禁止后违反该决定且情节严重，应当以何罪名定罪处罚？",
+  "Ground-True Answer": "拒不执行判决、裁定罪",
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "分析职业禁止的法律基础",
+      "content": "我国《刑法》第37条之一对职业禁止进行了详细规定，明确了对某些职业存在较高风险的犯罪分子可以采取职业禁止措施。同时，如果行为人在职业禁止期间违反了该决定，则可能涉及刑事责任问题。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "职业禁止期间违反决定的法律性质",
+      "content": "职业禁止是刑法中一种附加刑或者限制性措施，其决定是一种具有法律约束力的命令。行为人违反职业禁止的决定，可能会影响司法权威及公共秩序。如果情节严重，则不单纯属于行政违法行为，而可能构成犯罪。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "寻找相关罪名规定",
+      "content": "在我国《刑法》中，与拒不执行具有法律效力的判决、裁定相关的罪名是《刑法》第313条规定的拒不执行判决、裁定罪。如果行为人违反职业禁止的决定且情节严重，符合拒不执行判决、裁定罪的构成要件。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "情节严重的认定标准",
+      "content": "根据司法实践，‘情节严重’通常指行为人多次违反职业禁止规定，造成了较大的社会危害性或对社会秩序、法律权威形成了严重破坏。这进一步表明，如果情节严重，适用拒不执行判决、裁定罪具有合理性。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "根据我国刑法规定，如果行为人在被决定职业禁止后违反该决定且情节严重，应当以拒不执行判决、裁定罪定罪处罚。"
+    },
+    {
+      "action": "Verification",
+      "content": "依据《刑法》第313条以及司法解释，职业禁止期间违反决定且情节严重确实符合拒不执行判决、裁定罪的构成要件，因此结论正确无误。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n在我国刑法关于职业禁止的规定中，如果行为人在被决定职业禁止后违反该决定且情节严重，应当以何罪名定罪处罚？\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **'Inner Thinking'**: This is the step where thinking is done. Note that multiple 'Inner Thinking' steps are required to describe thorough reasoning. Each step should first generate a brief title.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n根据我国刑法规定，如果行为人在被决定职业禁止后违反该决定且情节严重，应当以拒不执行判决、裁定罪定罪处罚。  \n</Model Response>  \n\n<Reference Answer>  \n拒不执行判决、裁定罪\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 分析职业禁止的法律基础\n我国《刑法》第37条之一对职业禁止进行了详细规定，明确了对某些职业存在较高风险的犯罪分子可以采取职业禁止措施。同时，如果行为人在职业禁止期间违反了该决定，则可能涉及刑事责任问题。\n\n### 职业禁止期间违反决定的法律性质\n职业禁止是刑法中一种附加刑或者限制性措施，其决定是一种具有法律约束力的命令。行为人违反职业禁止的决定，可能会影响司法权威及公共秩序。如果情节严重，则不单纯属于行政违法行为，而可能构成犯罪。\n\n### 寻找相关罪名规定\n在我国《刑法》中，与拒不执行具有法律效力的判决、裁定相关的罪名是《刑法》第313条规定的拒不执行判决、裁定罪。如果行为人违反职业禁止的决定且情节严重，符合拒不执行判决、裁定罪的构成要件。\n\n### 情节严重的认定标准\n根据司法实践，‘情节严重’通常指行为人多次违反职业禁止规定，造成了较大的社会危害性或对社会秩序、法律权威形成了严重破坏。这进一步表明，如果情节严重，适用拒不执行判决、裁定罪具有合理性。\n\n### Conclusion\n根据我国刑法规定，如果行为人在被决定职业禁止后违反该决定且情节严重，应当以拒不执行判决、裁定罪定罪处罚。\n\n### Verification\n依据《刑法》第313条以及司法解释，职业禁止期间违反决定且情节严重确实符合拒不执行判决、裁定罪的构成要件，因此结论正确无误。\n</Thought Process>\n\n<Question>\n在我国刑法关于职业禁止的规定中，如果行为人在被决定职业禁止后违反该决定且情节严重，应当以何罪名定罪处罚？\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n嗯，先仔细想想职业禁止在法律上的依据吧。根据我国《刑法》第37条之一的规定，职业禁止其实是一种针对犯罪分子的特殊限制措施，尤其是那些从事某些职业可能带来较大风险的人，比如严重侵犯职业安全的人，有必要对他们限制从事相关职业。另外，这种职业禁止还具有法律强制力，如果有人在职业禁止的期间违反了相关决定，那他肯定是要承担相应法律责任的。\n\n再理一下，职业禁止是怎么被归类的呢？职业禁止通常是在刑法上作为一种附加刑或者限制措施，看似简单但其实很严肃。换句话说，这是法院做出的一个有法律效力的命令，当然必须遵守。如果违反了，那就不只是简单的行政层面的违法行为了，而是可能直接触及刑法范围。\n\n那接下来要想的是，违反职业禁止这种行为具体在哪种情形下会构成犯罪呢？在《刑法》中，和“不执行法律效力的判决或裁定”相关的一条规定是《刑法》第313条的拒不执行判决、裁定罪。也就是说，如果违反职业禁止的行为严重到影响法律权威或者公共秩序，那可能就不再是一般的违法，而是符合上述罪名的构成要件。\n\n那么，什么叫‘情节严重’呢？这可不是一个随意的概念，而是需要结合实际案件来衡量。从以往的司法实践来看，如果行为人反复、多人次违反职业禁止的决定，甚至造成了严重的后果，比如引发社会安全隐患，或直接对法律的公信力造成冲击，这种情况就可以认定为情节严重了。所以说，情节严重时把它入罪处理是有法律依据和实践依据的。\n\n再进一步想想，如果把这一系列推论放在法律框架里，是不是结论更稳妥？嗯，拿《刑法》第313条和相关司法解释来验证一下。的确，当情节严重时，违反职业禁止的行为符合拒不执行判决、裁定罪的要件。换句话说，如果这种行为持续发生且危害大，直接用这个罪名来定罪完全可以说得过去。\n\n那么结合所有分析来看，如果在我国刑法的职业禁止规定下，一个人在职业禁止期间违反决定且情节严重的，确实应该按照拒不执行判决、裁定罪来定罪处罚。这种处理方式既维护了法律权威也起到了威慑作用，不会让这种行为失控。\n\n再仔细回头检查一下这个推论，嗯，依据清楚、逻辑连贯，结论没错！\n</Internal Thinking>\n\n<Question>\n在我国刑法关于职业禁止的规定中，如果行为人在被决定职业禁止后违反该决定且情节严重，应当以何罪名定罪处罚？\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析职业禁止的法律基础\",\n      \"content\": \"我国《刑法》第37条之一对职业禁止进行了详细规定，明确了对某些职业存在较高风险的犯罪分子可以采取职业禁止措施。同时，如果行为人在职业禁止期间违反了该决定，则可能涉及刑事责任问题。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"职业禁止期间违反决定的法律性质\",\n      \"content\": \"职业禁止是刑法中一种附加刑或者限制性措施，其决定是一种具有法律约束力的命令。行为人违反职业禁止的决定，可能会影响司法权威及公共秩序。如果情节严重，则不单纯属于行政违法行为，而可能构成犯罪。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"寻找相关罪名规定\",\n      \"content\": \"在我国《刑法》中，与拒不执行具有法律效力的判决、裁定相关的罪名是《刑法》第313条规定的拒不执行判决、裁定罪。如果行为人违反职业禁止的决定且情节严重，符合拒不执行判决、裁定罪的构成要件。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"情节严重的认定标准\",\n      \"content\": \"根据司法实践，‘情节严重’通常指行为人多次违反职业禁止规定，造成了较大的社会危害性或对社会秩序、法律权威形成了严重破坏。这进一步表明，如果情节严重，适用拒不执行判决、裁定罪具有合理性。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"根据我国刑法规定，如果行为人在被决定职业禁止后违反该决定且情节严重，应当以拒不执行判决、裁定罪定罪处罚。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"依据《刑法》第313条以及司法解释，职业禁止期间违反决定且情节严重确实符合拒不执行判决、裁定罪的构成要件，因此结论正确无误。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"嗯，先仔细想想职业禁止在法律上的依据吧。根据我国《刑法》第37条之一的规定，职业禁止其实是一种针对犯罪分子的特殊限制措施，尤其是那些从事某些职业可能带来较大风险的人，比如严重侵犯职业安全的人，有必要对他们限制从事相关职业。另外，这种职业禁止还具有法律强制力，如果有人在职业禁止的期间违反了相关决定，那他肯定是要承担相应法律责任的。\\n\\n再理一下，职业禁止是怎么被归类的呢？职业禁止通常是在刑法上作为一种附加刑或者限制措施，看似简单但其实很严肃。换句话说，这是法院做出的一个有法律效力的命令，当然必须遵守。如果违反了，那就不只是简单的行政层面的违法行为了，而是可能直接触及刑法范围。\\n\\n那接下来要想的是，违反职业禁止这种行为具体在哪种情形下会构成犯罪呢？在《刑法》中，和“不执行法律效力的判决或裁定”相关的一条规定是《刑法》第313条的拒不执行判决、裁定罪。也就是说，如果违反职业禁止的行为严重到影响法律权威或者公共秩序，那可能就不再是一般的违法，而是符合上述罪名的构成要件。\\n\\n那么，什么叫‘情节严重’呢？这可不是一个随意的概念，而是需要结合实际案件来衡量。从以往的司法实践来看，如果行为人反复、多人次违反职业禁止的决定，甚至造成了严重的后果，比如引发社会安全隐患，或直接对法律的公信力造成冲击，这种情况就可以认定为情节严重了。所以说，情节严重时把它入罪处理是有法律依据和实践依据的。\\n\\n再进一步想想，如果把这一系列推论放在法律框架里，是不是结论更稳妥？嗯，拿《刑法》第313条和相关司法解释来验证一下。的确，当情节严重时，违反职业禁止的行为符合拒不执行判决、裁定罪的要件。换句话说，如果这种行为持续发生且危害大，直接用这个罪名来定罪完全可以说得过去。\\n\\n那么结合所有分析来看，如果在我国刑法的职业禁止规定下，一个人在职业禁止期间违反决定且情节严重的，确实应该按照拒不执行判决、裁定罪来定罪处罚。这种处理方式既维护了法律权威也起到了威慑作用，不会让这种行为失控。\\n\\n再仔细回头检查一下这个推论，嗯，依据清楚、逻辑连贯，结论没错！\"\n}\n```",
+    "根据我国《刑法》第37条之一的规定，职业禁止是一种限制犯罪人从事特定职业的特殊法律措施。如果行为人在被决定职业禁止后违反该决定且情节严重，根据《刑法》第313条的规定，应当以拒不执行判决、裁定罪定罪处罚。  \n依据该条法律，拒不执行具有法律效力的判决、裁定，情节严重的，将被追究刑事责任。因此，职业禁止决定的违反如影响法律权威或造成严重后果，则符合拒不执行判决、裁定罪的构成要件，可以依法以该罪名定罪处理。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "分析职业禁止的法律基础",
+        "content": "我国《刑法》第37条之一对职业禁止进行了详细规定，明确了对某些职业存在较高风险的犯罪分子可以采取职业禁止措施。同时，如果行为人在职业禁止期间违反了该决定，则可能涉及刑事责任问题。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "职业禁止期间违反决定的法律性质",
+        "content": "职业禁止是刑法中一种附加刑或者限制性措施，其决定是一种具有法律约束力的命令。行为人违反职业禁止的决定，可能会影响司法权威及公共秩序。如果情节严重，则不单纯属于行政违法行为，而可能构成犯罪。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "寻找相关罪名规定",
+        "content": "在我国《刑法》中，与拒不执行具有法律效力的判决、裁定相关的罪名是《刑法》第313条规定的拒不执行判决、裁定罪。如果行为人违反职业禁止的决定且情节严重，符合拒不执行判决、裁定罪的构成要件。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "情节严重的认定标准",
+        "content": "根据司法实践，‘情节严重’通常指行为人多次违反职业禁止规定，造成了较大的社会危害性或对社会秩序、法律权威形成了严重破坏。这进一步表明，如果情节严重，适用拒不执行判决、裁定罪具有合理性。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "根据我国刑法规定，如果行为人在被决定职业禁止后违反该决定且情节严重，应当以拒不执行判决、裁定罪定罪处罚。"
+      },
+      {
+        "action": "Verification",
+        "content": "依据《刑法》第313条以及司法解释，职业禁止期间违反决定且情节严重确实符合拒不执行判决、裁定罪的构成要件，因此结论正确无误。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "嗯，先仔细想想职业禁止在法律上的依据吧。根据我国《刑法》第37条之一的规定，职业禁止其实是一种针对犯罪分子的特殊限制措施，尤其是那些从事某些职业可能带来较大风险的人，比如严重侵犯职业安全的人，有必要对他们限制从事相关职业。另外，这种职业禁止还具有法律强制力，如果有人在职业禁止的期间违反了相关决定，那他肯定是要承担相应法律责任的。\n\n再理一下，职业禁止是怎么被归类的呢？职业禁止通常是在刑法上作为一种附加刑或者限制措施，看似简单但其实很严肃。换句话说，这是法院做出的一个有法律效力的命令，当然必须遵守。如果违反了，那就不只是简单的行政层面的违法行为了，而是可能直接触及刑法范围。\n\n那接下来要想的是，违反职业禁止这种行为具体在哪种情形下会构成犯罪呢？在《刑法》中，和“不执行法律效力的判决或裁定”相关的一条规定是《刑法》第313条的拒不执行判决、裁定罪。也就是说，如果违反职业禁止的行为严重到影响法律权威或者公共秩序，那可能就不再是一般的违法，而是符合上述罪名的构成要件。\n\n那么，什么叫‘情节严重’呢？这可不是一个随意的概念，而是需要结合实际案件来衡量。从以往的司法实践来看，如果行为人反复、多人次违反职业禁止的决定，甚至造成了严重的后果，比如引发社会安全隐患，或直接对法律的公信力造成冲击，这种情况就可以认定为情节严重了。所以说，情节严重时把它入罪处理是有法律依据和实践依据的。\n\n再进一步想想，如果把这一系列推论放在法律框架里，是不是结论更稳妥？嗯，拿《刑法》第313条和相关司法解释来验证一下。的确，当情节严重时，违反职业禁止的行为符合拒不执行判决、裁定罪的要件。换句话说，如果这种行为持续发生且危害大，直接用这个罪名来定罪完全可以说得过去。\n\n那么结合所有分析来看，如果在我国刑法的职业禁止规定下，一个人在职业禁止期间违反决定且情节严重的，确实应该按照拒不执行判决、裁定罪来定罪处罚。这种处理方式既维护了法律权威也起到了威慑作用，不会让这种行为失控。\n\n再仔细回头检查一下这个推论，嗯，依据清楚、逻辑连贯，结论没错！",
+  "Response": "根据我国《刑法》第37条之一的规定，职业禁止是一种限制犯罪人从事特定职业的特殊法律措施。如果行为人在被决定职业禁止后违反该决定且情节严重，根据《刑法》第313条的规定，应当以拒不执行判决、裁定罪定罪处罚。  \n依据该条法律，拒不执行具有法律效力的判决、裁定，情节严重的，将被追究刑事责任。因此，职业禁止决定的违反如影响法律权威或造成严重后果，则符合拒不执行判决、裁定罪的构成要件，可以依法以该罪名定罪处理。",
+  "Question": "在我国刑法关于职业禁止的规定中，如果行为人在被决定职业禁止后违反该决定且情节严重，应当以何罪名定罪处罚？"
+}

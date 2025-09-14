@@ -1,0 +1,151 @@
+{
+  "question": "甲和乙因故意杀人被中级人民法院分别判处死刑立即执行和无期徒刑。甲、乙上诉后，高级人民法院裁定维持原判。关于本案，下列哪一选项是正确的？",
+  "options": {
+    "A": "高级人民法院裁定维持原判后，对乙的判决即已生效",
+    "B": "髙级人民法院应先复核再报请最高人民法院核准",
+    "C": "最高人民法院如认为原判决对乙的犯罪事实未查清，可查清后对乙改判并核准甲的死刑",
+    "D": "最高人民法院如认为甲的犯罪事实不清、证据不足，不予核准死刑的，只能使用裁定"
+  },
+  "answer_idx": "D",
+  "answer": "最高人民法院如认为甲的犯罪事实不清、证据不足，不予核准死刑的，只能使用裁定",
+  "process_id": 218,
+  "options_str": "A. 高级人民法院裁定维持原判后，对乙的判决即已生效\nB. 髙级人民法院应先复核再报请最高人民法院核准\nC. 最高人民法院如认为原判决对乙的犯罪事实未查清，可查清后对乙改判并核准甲的死刑\nD. 最高人民法院如认为甲的犯罪事实不清、证据不足，不予核准死刑的，只能使用裁定",
+  "gpt_filter_query": "<Multiple-choice Question>\n甲和乙因故意杀人被中级人民法院分别判处死刑立即执行和无期徒刑。甲、乙上诉后，高级人民法院裁定维持原判。关于本案，下列哪一选项是正确的？\nA. 高级人民法院裁定维持原判后，对乙的判决即已生效\nB. 髙级人民法院应先复核再报请最高人民法院核准\nC. 最高人民法院如认为原判决对乙的犯罪事实未查清，可查清后对乙改判并核准甲的死刑\nD. 最高人民法院如认为甲的犯罪事实不清、证据不足，不予核准死刑的，只能使用裁定\nCorrect Answer: 最高人民法院如认为甲的犯罪事实不清、证据不足，不予核准死刑的，只能使用裁定\n</Multiple-choice Question>\n\nYou are an expert in filtering and evaluating multiple-choice questions for advanced reasoning tasks. Your job is to evaluate a given question and determine whether it meets the following criteria: \n1. **Depth of Reasoning:** The question should require deeper reasoning. If the question appears too simple, mark it as \"Too Simple\".\n2. **Unambiguous Correct Answer:** The question must have a unique and unambiguous correct answer. If the question asks for \"incorrect options\" or allows for multiple correct answers, mark it as \"Ambiguous Answer\".\n3. **Open-Ended Reformulation Feasibility:** The question should be suitable for reformatting into an open-ended format. If the question cannot be easily reformulated into an open-ended problem and a clear ground-truth answer, mark it as \"Not Reformulatable\".\n\nFor each question, provide one of the following evaluations:  \n- \"Pass\" (The question meets all the criteria.)  \n- \"Too Simple\"  \n- \"Ambiguous Answer\"  \n- \"Not Reformulatable\" ",
+  "gpt_filter_response": "Pass",
+  "gpt_reformat_query": "I will provide you with a multiple-choice question, and your task is to rewrite it into an open-ended question, along with a Ground-True Answer. The requirements are:\n\n1. The question must be specific, targeting the point being tested in the original multiple-choice question. Ensure it is open-ended, meaning no options are provided, but there must be a definitive Ground-True Answer.\n2. Based on the correct answer from the original question, provide a concise Ground-True Answer. The answer should allow for precise matching to determine whether the model's response is correct.\n\nHere is the multiple-choice question for you to rewrite:\n<Multiple-choice Question>\n甲和乙因故意杀人被中级人民法院分别判处死刑立即执行和无期徒刑。甲、乙上诉后，高级人民法院裁定维持原判。关于本案，下列哪一选项是正确的？\nA. 高级人民法院裁定维持原判后，对乙的判决即已生效\nB. 髙级人民法院应先复核再报请最高人民法院核准\nC. 最高人民法院如认为原判决对乙的犯罪事实未查清，可查清后对乙改判并核准甲的死刑\nD. 最高人民法院如认为甲的犯罪事实不清、证据不足，不予核准死刑的，只能使用裁定\nCorrect Answer: 最高人民法院如认为甲的犯罪事实不清、证据不足，不予核准死刑的，只能使用裁定\n</Multiple-choice Question>\n\nPlease output the result in the following JSON format:\n```json\n{\n\"Open-ended Verifiable Question\": \"...\",\n\"Ground-True Answer\": \"...\"\n}\n```",
+  "gpt_reformat_response": "{\n\"Open-ended Verifiable Question\": \"在一起案件中，甲因故意杀人被判处死刑立即执行，乙被判处无期徒刑。二人上诉后，高级人民法院裁定维持原判，案件报请最高人民法院复核死刑。若最高人民法院认为甲的犯罪事实不清、证据不足，决定不予核准死刑，此时最高人民法院应当作出何种形式的法律文书？\",\n\"Ground-True Answer\": \"裁定\"\n}",
+  "Open-ended Verifiable Question": "在一起案件中，甲因故意杀人被判处死刑立即执行，乙被判处无期徒刑。二人上诉后，高级人民法院裁定维持原判，案件报请最高人民法院复核死刑。若最高人民法院认为甲的犯罪事实不清、证据不足，决定不予核准死刑，此时最高人民法院应当作出何种形式的法律文书？",
+  "Ground-True Answer": "裁定",
+  "verify": [
+    false,
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "分析最高人民法院对死刑复核案件的处理程序",
+      "content": "根据《中华人民共和国刑事诉讼法》第239条的规定，死刑须经最高人民法院核准。在死刑复核程序中，最高人民法院负责查明案件事实，并对相关证据进行审查。如果发现原判决事实不清或证据不足，最高人民法院可不予核准死刑，并根据情况发回重审或依法改判。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "不予核准死刑的法律效果",
+      "content": "若最高人民法院决定不予核准死刑，则表明原有的死刑立即执行判决无法生效。此时，最高人民法院应根据案件具体情况作出新的决定，这包括可以直接改判为其他刑罚，或将案件发回重审。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "法律文书的形式要求",
+      "content": "最高人民法院根据对案件的复核情况，会制作相应的法律文书。如果决定不予核准死刑，且依程序直接改判或发回重审，则需要将其处理结果以裁定形式作出。依据法律通常是制作《刑事裁定书》，以明确具体处理结果。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "最高人民法院若认为甲犯故意杀人案件事实不清、证据不足，决定不予核准死刑，应制作《刑事裁定书》，明确不核准死刑的决定及后续处理方式。"
+    },
+    {
+      "action": "Verification",
+      "content": "之前的推理存在遗漏问题。最高人民法院决定不予核准死刑后，具体的法律文书形式不仅与是否改判或发回重审有关，还需要考虑根据《刑事诉讼法》的实际情况制作恰当的文书类型。之前的结论过于笼统且不够明确，需要进一步分析和纠正。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "分析不予核准死刑后的合法程序",
+      "content": "依据《中华人民共和国刑事诉讼法》第239条，如果最高人民法院认为案件事实不清、证据不足，不予核准死刑的情况下，最高人民法院可以选择以下两种处理方式：（1）直接改判；（2）发回原审法院重新审判。因此，不予核准死刑的法律后果需明确具体处理决定。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "确定文书类型与适用条件",
+      "content": "根据《最高人民法院关于适用<中华人民共和国刑事诉讼法>的解释》的规定，如果最高人民法院决定不予核准死刑，需要制作《刑事裁定书》。具体而言，当决定直接改判时，裁定书中需写明新判决内容；当决定发回重审时，则需说明发回重审的理由及指令。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "适用本案的处理方式分析",
+      "content": "在本案中，若最高人民法院认为甲故意杀人案件事实不清、证据不足，此时根据法律规定，其主要可采取的措施是发回重审。因为案件事实需要进一步查清，直接改判的可能性较小。因此，制作裁定书并指令发回重审更符合司法程序。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "最高人民法院若认为甲因故意杀人案件事实不清、证据不足，决定不予核准死刑，应当制作《刑事裁定书》，将案件发回原审法院重新审判。"
+    },
+    {
+      "action": "Verification",
+      "content": "本次推理和结论符合相关法律规定和程序要求，确认最终结论正确无误。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n在一起案件中，甲因故意杀人被判处死刑立即执行，乙被判处无期徒刑。二人上诉后，高级人民法院裁定维持原判，案件报请最高人民法院复核死刑。若最高人民法院认为甲的犯罪事实不清、证据不足，决定不予核准死刑，此时最高人民法院应当作出何种形式的法律文书？\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **'Inner Thinking'**: This is the step where thinking is done. Note that multiple 'Inner Thinking' steps are required to describe thorough reasoning. Each step should first generate a brief title.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n最高人民法院若认为甲犯故意杀人案件事实不清、证据不足，决定不予核准死刑，应制作《刑事裁定书》，明确不核准死刑的决定及后续处理方式。  \n</Model Response>  \n\n<Reference Answer>  \n裁定\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<question>\n在一起案件中，甲因故意杀人被判处死刑立即执行，乙被判处无期徒刑。二人上诉后，高级人民法院裁定维持原判，案件报请最高人民法院复核死刑。若最高人民法院认为甲的犯罪事实不清、证据不足，决定不予核准死刑，此时最高人民法院应当作出何种形式的法律文书？\n</question>\n\n<previous reasoning>\n[\n  {\n    \"action\": \"Inner Thinking\",\n    \"title\": \"分析最高人民法院对死刑复核案件的处理程序\",\n    \"content\": \"根据《中华人民共和国刑事诉讼法》第239条的规定，死刑须经最高人民法院核准。在死刑复核程序中，最高人民法院负责查明案件事实，并对相关证据进行审查。如果发现原判决事实不清或证据不足，最高人民法院可不予核准死刑，并根据情况发回重审或依法改判。\"\n  },\n  {\n    \"action\": \"Inner Thinking\",\n    \"title\": \"不予核准死刑的法律效果\",\n    \"content\": \"若最高人民法院决定不予核准死刑，则表明原有的死刑立即执行判决无法生效。此时，最高人民法院应根据案件具体情况作出新的决定，这包括可以直接改判为其他刑罚，或将案件发回重审。\"\n  },\n  {\n    \"action\": \"Inner Thinking\",\n    \"title\": \"法律文书的形式要求\",\n    \"content\": \"最高人民法院根据对案件的复核情况，会制作相应的法律文书。如果决定不予核准死刑，且依程序直接改判或发回重审，则需要将其处理结果以裁定形式作出。依据法律通常是制作《刑事裁定书》，以明确具体处理结果。\"\n  },\n  {\n    \"action\": \"Final Conclusion\",\n    \"content\": \"最高人民法院若认为甲犯故意杀人案件事实不清、证据不足，决定不予核准死刑，应制作《刑事裁定书》，明确不核准死刑的决定及后续处理方式。\"\n  }\n]\n<previous reasoning>\n\n<response requirements>\nYour response must include the following steps, each composed of three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n1. **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.\n2. **Final Conclusion**: Summarize the correct reasoning from all previous 'Inner Thinking' steps and provide the final answer. No title is needed for this section.\n3. **Verification**: Verify the accuracy of the \"Final Conclusion\". If it holds, conclude the process. Otherwise, return to \"Inner Thinking\" for further refinement.\n\n</response requirements>\n\n<question> represents the question to be answered, and <previous reasoning> contains your prior reasoning. Your task is to continue from the current 'Verification' step. I have manually reviewed the reasoning and determined that the **Final Conclusion** is false. Your 'Verification' results must align with mine. Proceed to refine the reasoning by making precise **corrections** to address prior flaws and construct a new Final Conclusion.\n\n### Output Format\nStrictly follow the JSON structure below. All content within the JSON fields must be written in **Chinese**. You do not need to repeat your previous reasoning. Begin directly from the next 'Verification' stage.\n\n```json\n{\n\"CoT\": [\n    {\"action\": \"Verification\", \"content\": \"...\"},\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n]\n}\n```",
+    "<Model Response>  \n最高人民法院若认为甲因故意杀人案件事实不清、证据不足，决定不予核准死刑，应当制作《刑事裁定书》，将案件发回原审法院重新审判。  \n</Model Response>  \n\n<Reference Answer>  \n裁定\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 分析最高人民法院对死刑复核案件的处理程序\n根据《中华人民共和国刑事诉讼法》第239条的规定，死刑须经最高人民法院核准。在死刑复核程序中，最高人民法院负责查明案件事实，并对相关证据进行审查。如果发现原判决事实不清或证据不足，最高人民法院可不予核准死刑，并根据情况发回重审或依法改判。\n\n### 不予核准死刑的法律效果\n若最高人民法院决定不予核准死刑，则表明原有的死刑立即执行判决无法生效。此时，最高人民法院应根据案件具体情况作出新的决定，这包括可以直接改判为其他刑罚，或将案件发回重审。\n\n### 法律文书的形式要求\n最高人民法院根据对案件的复核情况，会制作相应的法律文书。如果决定不予核准死刑，且依程序直接改判或发回重审，则需要将其处理结果以裁定形式作出。依据法律通常是制作《刑事裁定书》，以明确具体处理结果。\n\n### Conclusion\n最高人民法院若认为甲犯故意杀人案件事实不清、证据不足，决定不予核准死刑，应制作《刑事裁定书》，明确不核准死刑的决定及后续处理方式。\n\n### Verification\n之前的推理存在遗漏问题。最高人民法院决定不予核准死刑后，具体的法律文书形式不仅与是否改判或发回重审有关，还需要考虑根据《刑事诉讼法》的实际情况制作恰当的文书类型。之前的结论过于笼统且不够明确，需要进一步分析和纠正。\n\n### 分析不予核准死刑后的合法程序\n依据《中华人民共和国刑事诉讼法》第239条，如果最高人民法院认为案件事实不清、证据不足，不予核准死刑的情况下，最高人民法院可以选择以下两种处理方式：（1）直接改判；（2）发回原审法院重新审判。因此，不予核准死刑的法律后果需明确具体处理决定。\n\n### 确定文书类型与适用条件\n根据《最高人民法院关于适用<中华人民共和国刑事诉讼法>的解释》的规定，如果最高人民法院决定不予核准死刑，需要制作《刑事裁定书》。具体而言，当决定直接改判时，裁定书中需写明新判决内容；当决定发回重审时，则需说明发回重审的理由及指令。\n\n### 适用本案的处理方式分析\n在本案中，若最高人民法院认为甲故意杀人案件事实不清、证据不足，此时根据法律规定，其主要可采取的措施是发回重审。因为案件事实需要进一步查清，直接改判的可能性较小。因此，制作裁定书并指令发回重审更符合司法程序。\n\n### Conclusion\n最高人民法院若认为甲因故意杀人案件事实不清、证据不足，决定不予核准死刑，应当制作《刑事裁定书》，将案件发回原审法院重新审判。\n\n### Verification\n本次推理和结论符合相关法律规定和程序要求，确认最终结论正确无误。\n</Thought Process>\n\n<Question>\n在一起案件中，甲因故意杀人被判处死刑立即执行，乙被判处无期徒刑。二人上诉后，高级人民法院裁定维持原判，案件报请最高人民法院复核死刑。若最高人民法院认为甲的犯罪事实不清、证据不足，决定不予核准死刑，此时最高人民法院应当作出何种形式的法律文书？\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n嗯，先看一下案件的背景情况。甲因故意杀人被判处死刑立即执行，乙被判无期徒刑。两人上诉后，高级人民法院裁定维持原判，现在案件到了最高人民法院进行死刑复核。根据《刑事诉讼法》第239条的规定，死刑判决必须经过最高人民法院核准，这很重要，因为它是最后的保障程序。那如果最高人民法院发现甲的犯罪事实不清或者证据不足呢？\n\n首先，根据法律规定，最高人民法院在死刑复核时会重新审查案件事实和证据。假如发现案件存在事实不清、证据不足的情况，那死刑自然不能核准。毕竟，死刑是最严厉的刑罚，要求证据确凿、事实清楚才行。\n\n然后，接下来要考虑的是，最高人民法院在不核准死刑的情况下，有哪些选择。按照《刑事诉讼法》第239条的规定，最高人民法院可以直接改判，这意味着他们会根据现有的证据和事实，作出新的、更合适的判决，比如把死刑改为其他刑罚。不过，如果案件的问题是事实不清或者需要补充证据，那直接改判的可能性就比较低，因为案件的基础事实都没有搞清楚，怎么能直接下结论呢？\n\n所以更合理的办法是发回原审法院重新审判，让原审法院在更详细、更充分地查明事实后，再次作出判决。这个程序也能更加体现司法公正。\n\n接下来我们看看法律文书的问题。最高人民法院作出的任何决定，都需要通过法律文书来正式表达。如果他们决定不核准死刑，那按照相关规定，他们需要出具《刑事裁定书》。简单来说，这个裁定书会明确写出最高人民法院的决定，比如不核准死刑，同时会说明是改判还是发回重审。\n\n对于这个案件来说，最高人民法院既然认为甲的犯罪事实不清、证据不足，那最可能的处理方式就是发回重审，而不是直接改判。因为案件本身的问题是事实查明不够，发回重审更符合程序要求。这也意味着《刑事裁定书》上会写明发回重审的理由和指令，要求原审法院重新审查。（当然，如果证据略有瑕疵但仍足以定罪，最高法也可能直接改判为较轻的刑罚，但这种情况在事实不清时的可能性相对较小。）\n\n所以，结论是这样的：最高人民法院如果决定不核准死刑，同时认为案件事实需要进一步查明，那么就应当制作《刑事裁定书》，并将案件发回重审。这既符合《刑事诉讼法》的规定，也能保障司法审判的公平性。\n\n嗯，这种处理方式也是整个司法体系中多次复核的重要体现，能够最大程度地避免错判。\n</Internal Thinking>\n\n<Question>\n在一起案件中，甲因故意杀人被判处死刑立即执行，乙被判处无期徒刑。二人上诉后，高级人民法院裁定维持原判，案件报请最高人民法院复核死刑。若最高人民法院认为甲的犯罪事实不清、证据不足，决定不予核准死刑，此时最高人民法院应当作出何种形式的法律文书？\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析最高人民法院对死刑复核案件的处理程序\",\n      \"content\": \"根据《中华人民共和国刑事诉讼法》第239条的规定，死刑须经最高人民法院核准。在死刑复核程序中，最高人民法院负责查明案件事实，并对相关证据进行审查。如果发现原判决事实不清或证据不足，最高人民法院可不予核准死刑，并根据情况发回重审或依法改判。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"不予核准死刑的法律效果\",\n      \"content\": \"若最高人民法院决定不予核准死刑，则表明原有的死刑立即执行判决无法生效。此时，最高人民法院应根据案件具体情况作出新的决定，这包括可以直接改判为其他刑罚，或将案件发回重审。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"法律文书的形式要求\",\n      \"content\": \"最高人民法院根据对案件的复核情况，会制作相应的法律文书。如果决定不予核准死刑，且依程序直接改判或发回重审，则需要将其处理结果以裁定形式作出。依据法律通常是制作《刑事裁定书》，以明确具体处理结果。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"最高人民法院若认为甲犯故意杀人案件事实不清、证据不足，决定不予核准死刑，应制作《刑事裁定书》，明确不核准死刑的决定及后续处理方式。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"根据相关法律法规与司法实践，不核准死刑的决定属于重大裁决事项，规范要求采用《刑事裁定书》的形式予以确认，且实际操作中也会通知相关各方。因此，结论正确，分析终止。\"\n    }\n  ]\n}\n```",
+    "False",
+    "```json\n{\n\"CoT\": [\n    {\"action\": \"Verification\", \"content\": \"之前的推理存在遗漏问题。最高人民法院决定不予核准死刑后，具体的法律文书形式不仅与是否改判或发回重审有关，还需要考虑根据《刑事诉讼法》的实际情况制作恰当的文书类型。之前的结论过于笼统且不够明确，需要进一步分析和纠正。\"},\n    {\"action\": \"Inner Thinking\", \"title\": \"分析不予核准死刑后的合法程序\", \"content\": \"依据《中华人民共和国刑事诉讼法》第239条，如果最高人民法院认为案件事实不清、证据不足，不予核准死刑的情况下，最高人民法院可以选择以下两种处理方式：（1）直接改判；（2）发回原审法院重新审判。因此，不予核准死刑的法律后果需明确具体处理决定。\"},\n    {\"action\": \"Inner Thinking\", \"title\": \"确定文书类型与适用条件\", \"content\": \"根据《最高人民法院关于适用<中华人民共和国刑事诉讼法>的解释》的规定，如果最高人民法院决定不予核准死刑，需要制作《刑事裁定书》。具体而言，当决定直接改判时，裁定书中需写明新判决内容；当决定发回重审时，则需说明发回重审的理由及指令。\"},\n    {\"action\": \"Inner Thinking\", \"title\": \"适用本案的处理方式分析\", \"content\": \"在本案中，若最高人民法院认为甲故意杀人案件事实不清、证据不足，此时根据法律规定，其主要可采取的措施是发回重审。因为案件事实需要进一步查清，直接改判的可能性较小。因此，制作裁定书并指令发回重审更符合司法程序。\"},\n    {\"action\": \"Final Conclusion\", \"content\": \"最高人民法院若认为甲因故意杀人案件事实不清、证据不足，决定不予核准死刑，应当制作《刑事裁定书》，将案件发回原审法院重新审判。\"},\n    {\"action\": \"Verification\", \"content\": \"本次推理和结论符合相关法律规定和程序要求，确认最终结论正确无误。\"}\n]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"嗯，先看一下案件的背景情况。甲因故意杀人被判处死刑立即执行，乙被判无期徒刑。两人上诉后，高级人民法院裁定维持原判，现在案件到了最高人民法院进行死刑复核。根据《刑事诉讼法》第239条的规定，死刑判决必须经过最高人民法院核准，这很重要，因为它是最后的保障程序。那如果最高人民法院发现甲的犯罪事实不清或者证据不足呢？\\n\\n首先，根据法律规定，最高人民法院在死刑复核时会重新审查案件事实和证据。假如发现案件存在事实不清、证据不足的情况，那死刑自然不能核准。毕竟，死刑是最严厉的刑罚，要求证据确凿、事实清楚才行。\\n\\n然后，接下来要考虑的是，最高人民法院在不核准死刑的情况下，有哪些选择。按照《刑事诉讼法》第239条的规定，最高人民法院可以直接改判，这意味着他们会根据现有的证据和事实，作出新的、更合适的判决，比如把死刑改为其他刑罚。不过，如果案件的问题是事实不清或者需要补充证据，那直接改判的可能性就比较低，因为案件的基础事实都没有搞清楚，怎么能直接下结论呢？\\n\\n所以更合理的办法是发回原审法院重新审判，让原审法院在更详细、更充分地查明事实后，再次作出判决。这个程序也能更加体现司法公正。\\n\\n接下来我们看看法律文书的问题。最高人民法院作出的任何决定，都需要通过法律文书来正式表达。如果他们决定不核准死刑，那按照相关规定，他们需要出具《刑事裁定书》。简单来说，这个裁定书会明确写出最高人民法院的决定，比如不核准死刑，同时会说明是改判还是发回重审。\\n\\n对于这个案件来说，最高人民法院既然认为甲的犯罪事实不清、证据不足，那最可能的处理方式就是发回重审，而不是直接改判。因为案件本身的问题是事实查明不够，发回重审更符合程序要求。这也意味着《刑事裁定书》上会写明发回重审的理由和指令，要求原审法院重新审查。（当然，如果证据略有瑕疵但仍足以定罪，最高法也可能直接改判为较轻的刑罚，但这种情况在事实不清时的可能性相对较小。）\\n\\n所以，结论是这样的：最高人民法院如果决定不核准死刑，同时认为案件事实需要进一步查明，那么就应当制作《刑事裁定书》，并将案件发回重审。这既符合《刑事诉讼法》的规定，也能保障司法审判的公平性。\\n\\n嗯，这种处理方式也是整个司法体系中多次复核的重要体现，能够最大程度地避免错判。\"\n}\n```",
+    "根据《中华人民共和国刑事诉讼法》第239条的规定，最高人民法院在复核死刑案件时，如果发现甲的犯罪事实不清或者证据不足，决定不核准死刑，那么最高人民法院应当制作《刑事裁定书》。在裁定书中，最高人民法院会明确裁定不核准死刑，并可能根据情况作出以下处理：\n\n1. 如果案件事实存在明显不清或证据不足的问题，最高人民法院通常会裁定将案件发回原审法院重新审判，要求原审法院进一步查明事实后再行判决。这种处理方式在证据不足或案件存在重大事实问题时较为常见，体现了依法审慎处理死刑案件的原则。\n\n2. 如果最高人民法院认为现有证据能够认定犯罪事实，但不足以支持死刑判决，则可能直接在《刑事裁定书》中改判为较轻的刑罚。\n\n结合题中情形，最高人民法院最可能的处理方式是作出《刑事裁定书》，裁定不核准甲的死刑，并将案件发回原审法院重新审判，以保证案件审理的事实清楚、证据确凿，体现司法公正与慎重原则。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "分析最高人民法院对死刑复核案件的处理程序",
+        "content": "根据《中华人民共和国刑事诉讼法》第239条的规定，死刑须经最高人民法院核准。在死刑复核程序中，最高人民法院负责查明案件事实，并对相关证据进行审查。如果发现原判决事实不清或证据不足，最高人民法院可不予核准死刑，并根据情况发回重审或依法改判。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "不予核准死刑的法律效果",
+        "content": "若最高人民法院决定不予核准死刑，则表明原有的死刑立即执行判决无法生效。此时，最高人民法院应根据案件具体情况作出新的决定，这包括可以直接改判为其他刑罚，或将案件发回重审。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "法律文书的形式要求",
+        "content": "最高人民法院根据对案件的复核情况，会制作相应的法律文书。如果决定不予核准死刑，且依程序直接改判或发回重审，则需要将其处理结果以裁定形式作出。依据法律通常是制作《刑事裁定书》，以明确具体处理结果。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "最高人民法院若认为甲犯故意杀人案件事实不清、证据不足，决定不予核准死刑，应制作《刑事裁定书》，明确不核准死刑的决定及后续处理方式。"
+      },
+      {
+        "action": "Verification",
+        "content": "根据相关法律法规与司法实践，不核准死刑的决定属于重大裁决事项，规范要求采用《刑事裁定书》的形式予以确认，且实际操作中也会通知相关各方。因此，结论正确，分析终止。"
+      }
+    ],
+    [
+      {
+        "action": "Verification",
+        "content": "之前的推理存在遗漏问题。最高人民法院决定不予核准死刑后，具体的法律文书形式不仅与是否改判或发回重审有关，还需要考虑根据《刑事诉讼法》的实际情况制作恰当的文书类型。之前的结论过于笼统且不够明确，需要进一步分析和纠正。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "分析不予核准死刑后的合法程序",
+        "content": "依据《中华人民共和国刑事诉讼法》第239条，如果最高人民法院认为案件事实不清、证据不足，不予核准死刑的情况下，最高人民法院可以选择以下两种处理方式：（1）直接改判；（2）发回原审法院重新审判。因此，不予核准死刑的法律后果需明确具体处理决定。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "确定文书类型与适用条件",
+        "content": "根据《最高人民法院关于适用<中华人民共和国刑事诉讼法>的解释》的规定，如果最高人民法院决定不予核准死刑，需要制作《刑事裁定书》。具体而言，当决定直接改判时，裁定书中需写明新判决内容；当决定发回重审时，则需说明发回重审的理由及指令。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "适用本案的处理方式分析",
+        "content": "在本案中，若最高人民法院认为甲故意杀人案件事实不清、证据不足，此时根据法律规定，其主要可采取的措施是发回重审。因为案件事实需要进一步查清，直接改判的可能性较小。因此，制作裁定书并指令发回重审更符合司法程序。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "最高人民法院若认为甲因故意杀人案件事实不清、证据不足，决定不予核准死刑，应当制作《刑事裁定书》，将案件发回原审法院重新审判。"
+      },
+      {
+        "action": "Verification",
+        "content": "本次推理和结论符合相关法律规定和程序要求，确认最终结论正确无误。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT",
+    "Re_CoT_Correction"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "嗯，先看一下案件的背景情况。甲因故意杀人被判处死刑立即执行，乙被判无期徒刑。两人上诉后，高级人民法院裁定维持原判，现在案件到了最高人民法院进行死刑复核。根据《刑事诉讼法》第239条的规定，死刑判决必须经过最高人民法院核准，这很重要，因为它是最后的保障程序。那如果最高人民法院发现甲的犯罪事实不清或者证据不足呢？\n\n首先，根据法律规定，最高人民法院在死刑复核时会重新审查案件事实和证据。假如发现案件存在事实不清、证据不足的情况，那死刑自然不能核准。毕竟，死刑是最严厉的刑罚，要求证据确凿、事实清楚才行。\n\n然后，接下来要考虑的是，最高人民法院在不核准死刑的情况下，有哪些选择。按照《刑事诉讼法》第239条的规定，最高人民法院可以直接改判，这意味着他们会根据现有的证据和事实，作出新的、更合适的判决，比如把死刑改为其他刑罚。不过，如果案件的问题是事实不清或者需要补充证据，那直接改判的可能性就比较低，因为案件的基础事实都没有搞清楚，怎么能直接下结论呢？\n\n所以更合理的办法是发回原审法院重新审判，让原审法院在更详细、更充分地查明事实后，再次作出判决。这个程序也能更加体现司法公正。\n\n接下来我们看看法律文书的问题。最高人民法院作出的任何决定，都需要通过法律文书来正式表达。如果他们决定不核准死刑，那按照相关规定，他们需要出具《刑事裁定书》。简单来说，这个裁定书会明确写出最高人民法院的决定，比如不核准死刑，同时会说明是改判还是发回重审。\n\n对于这个案件来说，最高人民法院既然认为甲的犯罪事实不清、证据不足，那最可能的处理方式就是发回重审，而不是直接改判。因为案件本身的问题是事实查明不够，发回重审更符合程序要求。这也意味着《刑事裁定书》上会写明发回重审的理由和指令，要求原审法院重新审查。（当然，如果证据略有瑕疵但仍足以定罪，最高法也可能直接改判为较轻的刑罚，但这种情况在事实不清时的可能性相对较小。）\n\n所以，结论是这样的：最高人民法院如果决定不核准死刑，同时认为案件事实需要进一步查明，那么就应当制作《刑事裁定书》，并将案件发回重审。这既符合《刑事诉讼法》的规定，也能保障司法审判的公平性。\n\n嗯，这种处理方式也是整个司法体系中多次复核的重要体现，能够最大程度地避免错判。",
+  "Response": "根据《中华人民共和国刑事诉讼法》第239条的规定，最高人民法院在复核死刑案件时，如果发现甲的犯罪事实不清或者证据不足，决定不核准死刑，那么最高人民法院应当制作《刑事裁定书》。在裁定书中，最高人民法院会明确裁定不核准死刑，并可能根据情况作出以下处理：\n\n1. 如果案件事实存在明显不清或证据不足的问题，最高人民法院通常会裁定将案件发回原审法院重新审判，要求原审法院进一步查明事实后再行判决。这种处理方式在证据不足或案件存在重大事实问题时较为常见，体现了依法审慎处理死刑案件的原则。\n\n2. 如果最高人民法院认为现有证据能够认定犯罪事实，但不足以支持死刑判决，则可能直接在《刑事裁定书》中改判为较轻的刑罚。\n\n结合题中情形，最高人民法院最可能的处理方式是作出《刑事裁定书》，裁定不核准甲的死刑，并将案件发回原审法院重新审判，以保证案件审理的事实清楚、证据确凿，体现司法公正与慎重原则。",
+  "Question": "在一起案件中，甲因故意杀人被判处死刑立即执行，乙被判处无期徒刑。二人上诉后，高级人民法院裁定维持原判，案件报请最高人民法院复核死刑。若最高人民法院认为甲的犯罪事实不清、证据不足，决定不予核准死刑，此时最高人民法院应当作出何种形式的法律文书？"
+}

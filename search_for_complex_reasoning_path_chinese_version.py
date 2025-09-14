@@ -18,6 +18,7 @@ import argparse
 import re
 import traceback
 import copy
+from openai import OpenAI
 
 class GPT:
     def __init__(self, model_name, api_url, api_key):
@@ -27,22 +28,31 @@ class GPT:
         print(f"Using model: {self.model_name}")
 
     def call(self, content, additional_args={}):
-        headers = {
-            "Content-Type": "application/json",
-            "Authorization": f"Bearer {self.api_key}"
-        }
-        payload = {
-            "model": self.model_name,
-            "messages": [{'role': 'user', 'content': content}],
-            **additional_args,
-        }
-        response = requests.post(self.api_url, headers=headers, json=payload)
-        response_data = response.json()
+        # headers = {
+        #     "Content-Type": "application/json",
+        #     "Authorization": f"Bearer {self.api_key}"
+        # }
+        # payload = {
+        #     "model": self.model_name,
+        #     "messages": [{'role': 'user', 'content': content}],
+        #     **additional_args,
+        # }
+        # response = requests.post(self.api_url, headers=headers, json=payload)
+        # response_data = response.json()
+        client = OpenAI(api_key=self.api_key, base_url=self.api_url)
+
+        response = client.chat.completions.create(
+            model=self.model_name,
+            messages=[{"role": "user", "content": content}],
+            
+            stream=False
+        )
+        response_data=response.choices[0].message.content
 
         if 'error' in response_data:
             raise ValueError(f"API Error: {response_data}")
 
-        return response_data['choices'][0]['message']['content']
+        return response_data
 
     @retry(wait_fixed=3000, stop_max_attempt_number=3)
     def retry_call(self, content, additional_args={"max_tokens": 8192}):
@@ -65,7 +75,7 @@ query_prompt_init = """<question>
 
 Please respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **"Inner Thinking"**, **"Final Conclusion"**, and **"Verification"**:
 
-- **'Inner Thinking'**: This is the step where thinking is done. Note that multiple 'Inner Thinking' steps are required to describe thorough reasoning. Each step should first generate a brief title.
+- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new entity, output the object to be searched using the following format: <search>"keyword"</search>, where "keyword" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>"search results"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>"final answer"</answer>.
 - **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.
 - **'Verification'**: At this stage, you verify the conclusion from the "Final Conclusion" step. If the conclusion holds, end the process. If not, return to "Inner Thinking" for further reasoning. No title is required here.
 
@@ -92,7 +102,7 @@ gen_prompt_rethink_Backtracking = """<question>
 <response requirements>
 Your response must include the following steps, each composed of three types of actions: **"Inner Thinking"**, **"Final Conclusion"**, and **"Verification"**:
 
-1. **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.
+1. **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new entity, output the object to be searched using the following format: <search>"keyword"</search>, where "keyword" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>"search results"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>"final answer"</answer>.
 2. **Final Conclusion**: Summarize the correct reasoning from all previous 'Inner Thinking' steps and provide the final answer. No title is needed for this section.
 3. **Verification**: Verify the accuracy of the "Final Conclusion". If it holds, conclude the process. Otherwise, return to "Inner Thinking" for further refinement.
 
@@ -126,7 +136,7 @@ gen_prompt_rethink_Exploring_New_Path = """<question>
 <response requirements>
 Your response must include the following steps, each composed of three types of actions: **"Inner Thinking"**, **"Final Conclusion"**, and **"Verification"**:
 
-1. **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.
+1. **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new entity, output the object to be searched using the following format: <search>"keyword"</search>, where "keyword" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>"search results"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>"final answer"</answer>.
 2. **Final Conclusion**: Summarize the correct reasoning from all previous 'Inner Thinking' steps and provide the final answer. No title is needed for this section.
 3. **Verification**: Verify the accuracy of the "Final Conclusion". If it holds, conclude the process. Otherwise, return to "Inner Thinking" for further refinement.
 
@@ -160,7 +170,7 @@ gen_prompt_rethink_Verification = """<question>
 <response requirements>
 Your response must include the following steps, each composed of three types of actions: **"Inner Thinking"**, **"Final Conclusion"**, and **"Verification"**:
 
-1. **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.
+1. **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new entity, output the object to be searched using the following format: <search>"keyword"</search>, where "keyword" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>"search results"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>"final answer"</answer>.
 2. **Final Conclusion**: Summarize the correct reasoning from all previous 'Inner Thinking' steps and provide the final answer. No title is needed for this section.
 3. **Verification**: Verify the accuracy of the "Final Conclusion". If it holds, conclude the process. Otherwise, return to "Inner Thinking" for further refinement.
 
@@ -194,7 +204,7 @@ gen_prompt_rethink_Correction = """<question>
 <response requirements>
 Your response must include the following steps, each composed of three types of actions: **"Inner Thinking"**, **"Final Conclusion"**, and **"Verification"**:
 
-1. **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.
+1. **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new entity, output the object to be searched using the following format: <search>"keyword"</search>, where "keyword" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>"search results"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>"final answer"</answer>.
 2. **Final Conclusion**: Summarize the correct reasoning from all previous 'Inner Thinking' steps and provide the final answer. No title is needed for this section.
 3. **Verification**: Verify the accuracy of the "Final Conclusion". If it holds, conclude the process. Otherwise, return to "Inner Thinking" for further refinement.
 
@@ -228,7 +238,7 @@ gen_prompt_w_label = """<question>
 <response requirements>
 Your response must include the following steps, each composed of three types of actions: **"Inner Thinking"**, **"Final Conclusion"**, and **"Verification"**:
 
-1. **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.
+1. **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new entity, output the object to be searched using the following format: <search>"keyword"</search>, where "keyword" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>"search results"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>"final answer"</answer>.
 2. **Final Conclusion**: Summarize the correct reasoning from all previous 'Inner Thinking' steps and provide the final answer. No title is needed for this section.
 3. **Verification**: Verify the accuracy of the "Final Conclusion". If it holds, conclude the process. Otherwise, return to "Inner Thinking" for further refinement.
 
@@ -251,6 +261,26 @@ Strictly follow the JSON structure below. All content within the JSON fields mus
 }}
 ```"""
 
+# reformat_to_complex_cot_prompt = """<Thought Process>
+# {}
+# </Thought Process>
+
+# <Question>
+# {}
+# </Question>
+
+# The <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:
+
+# 1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.
+# 2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as "hmm," "oh," "also," or "wait."
+# 4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.
+
+# Return directly the revised natural thinking in JSON format as follows:
+# ```json
+# {{
+#   "NaturalReasoning": "..."
+# }}
+# ```"""
 reformat_to_complex_cot_prompt = """<Thought Process>
 {}
 </Thought Process>
@@ -263,6 +293,7 @@ The <Thought Process> above reflects the model's reasoning based on the <Questio
 
 1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.
 2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as "hmm," "oh," "also," or "wait."
+3. Preserve all essential intermediate steps , including <search>"keyword"</search> and <information>"search results"</information> tags.
 4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.
 
 Return directly the revised natural thinking in JSON format as follows:
@@ -309,6 +340,8 @@ def parse_gpt_response(response):
 
 def parse_gpt_response_reformat(response):
     try:
+        if not response:
+            raise ValueError("Empty response received from GPT")
         if '{' != response[0]:
             response = extract_bracket_content(response)
         da = json.loads(response.replace('\n',''))
@@ -356,7 +389,7 @@ def main():
         print(f"Original data size: {len(tmpdata)}, Filtered data size: {len(filtered_data)}")
         return filtered_data
 
-    with open(args.data_path) as f:
+    with open(args.data_path, 'r', encoding='utf-8') as f:
         tmpdata = json.load(f)
 
     tmp_id = 1

@@ -8,6 +8,7 @@ import argparse
 import traceback
 import re
 import requests
+from openai import OpenAI
 
 class GPT:
     def __init__(self, model_name, api_url, api_key):
@@ -17,22 +18,32 @@ class GPT:
         print(f"Using model: {self.model_name}")
 
     def call(self, content, additional_args={}):
-        headers = {
-            "Content-Type": "application/json",
-            "Authorization": f"Bearer {self.api_key}"
-        }
-        payload = {
-            "model": self.model_name,
-            "messages": [{'role': 'user', 'content': content}],
-            **additional_args,
-        }
-        response = requests.post(self.api_url, headers=headers, json=payload)
-        response_data = response.json()
+        # headers = {
+        #     "Content-Type": "application/json",
+        #     "Authorization": f"Bearer {self.api_key}"
+        # }
+        # payload = {
+        #     "model": self.model_name,
+        #     "messages": [{'role': 'user', 'content': content}],
+        #     **additional_args,
+        # }
+        # response = requests.post(self.api_url, headers=headers, json=payload)
+        # response_data = response.json()
+        client = OpenAI(api_key=self.api_key, base_url=self.api_url)
+
+        response = client.chat.completions.create(
+            model=self.model_name,
+            messages=[{"role": "user", "content": content}],
+            
+            
+            stream=False
+        )
+        response_data=response.choices[0].message.content
 
         if 'error' in response_data:
             raise ValueError(f"API Error: {response_data}")
 
-        return response_data['choices'][0]['message']['content']
+        return response_data
 
     @retry(wait_fixed=3000, stop_max_attempt_number=3)
     def retry_call(self, content, additional_args={"max_tokens": 8192}):
@@ -55,6 +66,9 @@ def extract_bracket_content(text):
     return match.group(0) if match else None
 
 def parse_gpt_response(response):
+    #clean extra content
+    response = response.strip().strip("```").replace("json", "", 1).strip()
+
     try:
         if not response.startswith('{'):
             response = extract_bracket_content(response)
@@ -83,6 +97,7 @@ def process_single_item(item, gpt_instance, save_directory, filter_prompt, refor
             filter_query = filter_prompt.format(question_text, item['answer'])
             item['gpt_filter_query'] = filter_query
             response = gpt_instance.retry_call(filter_query)
+
             item['gpt_filter_response'] = response
 
             if 'pass' not in response.lower():
@@ -135,7 +150,8 @@ def main():
     args = parse_arguments()
 
     # Load input data
-    with open(args.data_path, 'r') as file:
+    with open(args.data_path, 'r', encoding='utf-8') as file:
+    # with open(args.data_path, 'r') as file:
         input_data = json.load(file)
 
     # Assign unique process IDs to each item

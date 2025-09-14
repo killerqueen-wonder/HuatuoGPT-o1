@@ -1,0 +1,93 @@
+{
+  "question": "某普通合伙企业为内部管理与拓展市场的需要，决定聘请陈东为企业经营管理人。对此，下列哪一表述是正确的？",
+  "options": {
+    "A": "陈东可以同时具有合伙人身份",
+    "B": "对陈东的聘任须经全体合伙人的一致同意",
+    "C": "陈东作为经营管理人，有权以合伙企业的名义对外签订合同",
+    "D": "合伙企业对陈东对外代表合伙企业权利的限制，不得对抗第三人"
+  },
+  "answer_idx": "B",
+  "answer": "对陈东的聘任须经全体合伙人的一致同意",
+  "process_id": 196,
+  "options_str": "A. 陈东可以同时具有合伙人身份\nB. 对陈东的聘任须经全体合伙人的一致同意\nC. 陈东作为经营管理人，有权以合伙企业的名义对外签订合同\nD. 合伙企业对陈东对外代表合伙企业权利的限制，不得对抗第三人",
+  "gpt_filter_query": "<Multiple-choice Question>\n某普通合伙企业为内部管理与拓展市场的需要，决定聘请陈东为企业经营管理人。对此，下列哪一表述是正确的？\nA. 陈东可以同时具有合伙人身份\nB. 对陈东的聘任须经全体合伙人的一致同意\nC. 陈东作为经营管理人，有权以合伙企业的名义对外签订合同\nD. 合伙企业对陈东对外代表合伙企业权利的限制，不得对抗第三人\nCorrect Answer: 对陈东的聘任须经全体合伙人的一致同意\n</Multiple-choice Question>\n\nYou are an expert in filtering and evaluating multiple-choice questions for advanced reasoning tasks. Your job is to evaluate a given question and determine whether it meets the following criteria: \n1. **Depth of Reasoning:** The question should require deeper reasoning. If the question appears too simple, mark it as \"Too Simple\".\n2. **Unambiguous Correct Answer:** The question must have a unique and unambiguous correct answer. If the question asks for \"incorrect options\" or allows for multiple correct answers, mark it as \"Ambiguous Answer\".\n3. **Open-Ended Reformulation Feasibility:** The question should be suitable for reformatting into an open-ended format. If the question cannot be easily reformulated into an open-ended problem and a clear ground-truth answer, mark it as \"Not Reformulatable\".\n\nFor each question, provide one of the following evaluations:  \n- \"Pass\" (The question meets all the criteria.)  \n- \"Too Simple\"  \n- \"Ambiguous Answer\"  \n- \"Not Reformulatable\" ",
+  "gpt_filter_response": "Pass",
+  "gpt_reformat_query": "I will provide you with a multiple-choice question, and your task is to rewrite it into an open-ended question, along with a Ground-True Answer. The requirements are:\n\n1. The question must be specific, targeting the point being tested in the original multiple-choice question. Ensure it is open-ended, meaning no options are provided, but there must be a definitive Ground-True Answer.\n2. Based on the correct answer from the original question, provide a concise Ground-True Answer. The answer should allow for precise matching to determine whether the model's response is correct.\n\nHere is the multiple-choice question for you to rewrite:\n<Multiple-choice Question>\n某普通合伙企业为内部管理与拓展市场的需要，决定聘请陈东为企业经营管理人。对此，下列哪一表述是正确的？\nA. 陈东可以同时具有合伙人身份\nB. 对陈东的聘任须经全体合伙人的一致同意\nC. 陈东作为经营管理人，有权以合伙企业的名义对外签订合同\nD. 合伙企业对陈东对外代表合伙企业权利的限制，不得对抗第三人\nCorrect Answer: 对陈东的聘任须经全体合伙人的一致同意\n</Multiple-choice Question>\n\nPlease output the result in the following JSON format:\n```json\n{\n\"Open-ended Verifiable Question\": \"...\",\n\"Ground-True Answer\": \"...\"\n}\n```",
+  "gpt_reformat_response": "{\n\"Open-ended Verifiable Question\": \"在我国普通合伙企业中，如因内部管理与市场拓展需要拟聘任一名非合伙人的经营管理人（如陈东），该聘任决议需满足何种表决条件才能有效？请给出明确的法律要求。\",\n\"Ground-True Answer\": \"须经全体合伙人一致同意\"\n}",
+  "Open-ended Verifiable Question": "在我国普通合伙企业中，如因内部管理与市场拓展需要拟聘任一名非合伙人的经营管理人（如陈东），该聘任决议需满足何种表决条件才能有效？请给出明确的法律要求。",
+  "Ground-True Answer": "须经全体合伙人一致同意",
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "合伙企业相关决议的法律依据",
+      "content": "根据《中华人民共和国合伙企业法》，普通合伙企业的内部管理事务由全体合伙人共同决定，尤其在涉及企业经营管理的重要问题上，需要全体合伙人就具体事项作出决议。因此，首先需要查明是否存在明确法律条款规定针对聘任非合伙人的经营管理人的具体表决条件。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "聘请非合伙人管理者的特殊性",
+      "content": "聘任非合伙人作为经营管理人涉及普通合伙企业的权利分配及经营管理安排。这并非常规事务管理，而是一种可能涉及重大运营权委托的事务，因此一般需要全体合伙人一致同意才具备法律效力。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "合伙企业法相关条款分析",
+      "content": "《中华人民共和国合伙企业法》第三十八条第（三）项明确规定，涉及“聘任不担任合伙人的经营管理人员，应当由全体合伙人一致同意”。因此，该行为需以全体合伙人一致同意的表决条件为前提。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "根据《中华人民共和国合伙企业法》第三十八条第（三）项，普通合伙企业在聘任非合伙人担任经营管理人时，要求全体合伙人一致同意。即以全体合伙人一致同意作为有效的表决条件。"
+    },
+    {
+      "action": "Verification",
+      "content": "通过比对《中华人民共和国合伙企业法》的明确规定，聘任非合伙人经营管理人的决议确实需要全体合伙人一致同意，结论有效且符合法律要求。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n在我国普通合伙企业中，如因内部管理与市场拓展需要拟聘任一名非合伙人的经营管理人（如陈东），该聘任决议需满足何种表决条件才能有效？请给出明确的法律要求。\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **'Inner Thinking'**: This is the step where thinking is done. Note that multiple 'Inner Thinking' steps are required to describe thorough reasoning. Each step should first generate a brief title.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n根据《中华人民共和国合伙企业法》第三十八条第（三）项，普通合伙企业在聘任非合伙人担任经营管理人时，要求全体合伙人一致同意。即以全体合伙人一致同意作为有效的表决条件。  \n</Model Response>  \n\n<Reference Answer>  \n须经全体合伙人一致同意\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 合伙企业相关决议的法律依据\n根据《中华人民共和国合伙企业法》，普通合伙企业的内部管理事务由全体合伙人共同决定，尤其在涉及企业经营管理的重要问题上，需要全体合伙人就具体事项作出决议。因此，首先需要查明是否存在明确法律条款规定针对聘任非合伙人的经营管理人的具体表决条件。\n\n### 聘请非合伙人管理者的特殊性\n聘任非合伙人作为经营管理人涉及普通合伙企业的权利分配及经营管理安排。这并非常规事务管理，而是一种可能涉及重大运营权委托的事务，因此一般需要全体合伙人一致同意才具备法律效力。\n\n### 合伙企业法相关条款分析\n《中华人民共和国合伙企业法》第三十八条第（三）项明确规定，涉及“聘任不担任合伙人的经营管理人员，应当由全体合伙人一致同意”。因此，该行为需以全体合伙人一致同意的表决条件为前提。\n\n### Conclusion\n根据《中华人民共和国合伙企业法》第三十八条第（三）项，普通合伙企业在聘任非合伙人担任经营管理人时，要求全体合伙人一致同意。即以全体合伙人一致同意作为有效的表决条件。\n\n### Verification\n通过比对《中华人民共和国合伙企业法》的明确规定，聘任非合伙人经营管理人的决议确实需要全体合伙人一致同意，结论有效且符合法律要求。\n</Thought Process>\n\n<Question>\n在我国普通合伙企业中，如因内部管理与市场拓展需要拟聘任一名非合伙人的经营管理人（如陈东），该聘任决议需满足何种表决条件才能有效？请给出明确的法律要求。\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n嗯，先想一下，普通合伙企业的决策一般是由全体合伙人共同决定的吧？特别是一些重要事项，应该需要有明确的法律规定说明怎么表决或者通过吧。那就先从法律里找找看相关条款好了。\n\n仔细想想，聘任一个非合伙人来当经营管理人这个事情好像不太常见，感觉这比一般的日常经营决策要重要得多。毕竟，这个相当于把企业的部分经营权交给一个不是合伙人的外部人士，这确实挺重大的，应该不可能随便就能决定吧？\n\n然后我翻了《中华人民共和国合伙企业法》，这部法律里面应该是有对这种情况的直接说明的啊。看看……对了，第三十八条第三项，没错，这里明确规定了“聘任不担任合伙人的经营管理人员，应当由全体合伙人一致同意”。也就是说，这不是简单的多数通过，而是所有合伙人都必须点头才可以。\n\n仔细想想，这样的规定也挺合理的。因为普通合伙企业本来就是所有合伙人共同参与和管理的模式。要是请个外人来管，不管对企业经营还是合伙人的利益来说，都算是比较敏感的事，所以必须大家都同意才能确保公平。\n\n总结一下，聘用非合伙人作为管理人员，按照《合伙企业法》的规定，最基本的法律要求就是——必须全体合伙人一致同意才行。只有满足这个条件，这个决议才算有效，法律上才站得住脚。\n\n再想想有没有漏掉的条件？应该没有了吧，法律条文已经说得很清楚了。这条款本来就是专门针对这种特殊情况的定义，所以答案是经得起推敲的。\n</Internal Thinking>\n\n<Question>\n在我国普通合伙企业中，如因内部管理与市场拓展需要拟聘任一名非合伙人的经营管理人（如陈东），该聘任决议需满足何种表决条件才能有效？请给出明确的法律要求。\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"合伙企业相关决议的法律依据\",\n      \"content\": \"根据《中华人民共和国合伙企业法》，普通合伙企业的内部管理事务由全体合伙人共同决定，尤其在涉及企业经营管理的重要问题上，需要全体合伙人就具体事项作出决议。因此，首先需要查明是否存在明确法律条款规定针对聘任非合伙人的经营管理人的具体表决条件。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"聘请非合伙人管理者的特殊性\",\n      \"content\": \"聘任非合伙人作为经营管理人涉及普通合伙企业的权利分配及经营管理安排。这并非常规事务管理，而是一种可能涉及重大运营权委托的事务，因此一般需要全体合伙人一致同意才具备法律效力。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"合伙企业法相关条款分析\",\n      \"content\": \"《中华人民共和国合伙企业法》第三十八条第（三）项明确规定，涉及“聘任不担任合伙人的经营管理人员，应当由全体合伙人一致同意”。因此，该行为需以全体合伙人一致同意的表决条件为前提。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"根据《中华人民共和国合伙企业法》第三十八条第（三）项，普通合伙企业在聘任非合伙人担任经营管理人时，要求全体合伙人一致同意。即以全体合伙人一致同意作为有效的表决条件。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"通过比对《中华人民共和国合伙企业法》的明确规定，聘任非合伙人经营管理人的决议确实需要全体合伙人一致同意，结论有效且符合法律要求。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"嗯，先想一下，普通合伙企业的决策一般是由全体合伙人共同决定的吧？特别是一些重要事项，应该需要有明确的法律规定说明怎么表决或者通过吧。那就先从法律里找找看相关条款好了。\\n\\n仔细想想，聘任一个非合伙人来当经营管理人这个事情好像不太常见，感觉这比一般的日常经营决策要重要得多。毕竟，这个相当于把企业的部分经营权交给一个不是合伙人的外部人士，这确实挺重大的，应该不可能随便就能决定吧？\\n\\n然后我翻了《中华人民共和国合伙企业法》，这部法律里面应该是有对这种情况的直接说明的啊。看看……对了，第三十八条第三项，没错，这里明确规定了“聘任不担任合伙人的经营管理人员，应当由全体合伙人一致同意”。也就是说，这不是简单的多数通过，而是所有合伙人都必须点头才可以。\\n\\n仔细想想，这样的规定也挺合理的。因为普通合伙企业本来就是所有合伙人共同参与和管理的模式。要是请个外人来管，不管对企业经营还是合伙人的利益来说，都算是比较敏感的事，所以必须大家都同意才能确保公平。\\n\\n总结一下，聘用非合伙人作为管理人员，按照《合伙企业法》的规定，最基本的法律要求就是——必须全体合伙人一致同意才行。只有满足这个条件，这个决议才算有效，法律上才站得住脚。\\n\\n再想想有没有漏掉的条件？应该没有了吧，法律条文已经说得很清楚了。这条款本来就是专门针对这种特殊情况的定义，所以答案是经得起推敲的。\"\n}\n```",
+    "根据《中华人民共和国合伙企业法》第三十八条第三款的规定，普通合伙企业中如果拟聘任一名非合伙人担任经营管理人员，此事项需要经过全体合伙人**一致同意**才能有效。\n\n具体来说，由于聘任非合伙人作为经营管理人员属于合伙企业的重大决策事项，为保障合伙人权益，这类决议必须在所有合伙人均表示同意的情况下通过，而不是仅仅通过多数表决或者某些比例通过即可。因此，该聘任决议只有在全体合伙人一致同意时，才能满足法律要求并生效。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "合伙企业相关决议的法律依据",
+        "content": "根据《中华人民共和国合伙企业法》，普通合伙企业的内部管理事务由全体合伙人共同决定，尤其在涉及企业经营管理的重要问题上，需要全体合伙人就具体事项作出决议。因此，首先需要查明是否存在明确法律条款规定针对聘任非合伙人的经营管理人的具体表决条件。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "聘请非合伙人管理者的特殊性",
+        "content": "聘任非合伙人作为经营管理人涉及普通合伙企业的权利分配及经营管理安排。这并非常规事务管理，而是一种可能涉及重大运营权委托的事务，因此一般需要全体合伙人一致同意才具备法律效力。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "合伙企业法相关条款分析",
+        "content": "《中华人民共和国合伙企业法》第三十八条第（三）项明确规定，涉及“聘任不担任合伙人的经营管理人员，应当由全体合伙人一致同意”。因此，该行为需以全体合伙人一致同意的表决条件为前提。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "根据《中华人民共和国合伙企业法》第三十八条第（三）项，普通合伙企业在聘任非合伙人担任经营管理人时，要求全体合伙人一致同意。即以全体合伙人一致同意作为有效的表决条件。"
+      },
+      {
+        "action": "Verification",
+        "content": "通过比对《中华人民共和国合伙企业法》的明确规定，聘任非合伙人经营管理人的决议确实需要全体合伙人一致同意，结论有效且符合法律要求。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "嗯，先想一下，普通合伙企业的决策一般是由全体合伙人共同决定的吧？特别是一些重要事项，应该需要有明确的法律规定说明怎么表决或者通过吧。那就先从法律里找找看相关条款好了。\n\n仔细想想，聘任一个非合伙人来当经营管理人这个事情好像不太常见，感觉这比一般的日常经营决策要重要得多。毕竟，这个相当于把企业的部分经营权交给一个不是合伙人的外部人士，这确实挺重大的，应该不可能随便就能决定吧？\n\n然后我翻了《中华人民共和国合伙企业法》，这部法律里面应该是有对这种情况的直接说明的啊。看看……对了，第三十八条第三项，没错，这里明确规定了“聘任不担任合伙人的经营管理人员，应当由全体合伙人一致同意”。也就是说，这不是简单的多数通过，而是所有合伙人都必须点头才可以。\n\n仔细想想，这样的规定也挺合理的。因为普通合伙企业本来就是所有合伙人共同参与和管理的模式。要是请个外人来管，不管对企业经营还是合伙人的利益来说，都算是比较敏感的事，所以必须大家都同意才能确保公平。\n\n总结一下，聘用非合伙人作为管理人员，按照《合伙企业法》的规定，最基本的法律要求就是——必须全体合伙人一致同意才行。只有满足这个条件，这个决议才算有效，法律上才站得住脚。\n\n再想想有没有漏掉的条件？应该没有了吧，法律条文已经说得很清楚了。这条款本来就是专门针对这种特殊情况的定义，所以答案是经得起推敲的。",
+  "Response": "根据《中华人民共和国合伙企业法》第三十八条第三款的规定，普通合伙企业中如果拟聘任一名非合伙人担任经营管理人员，此事项需要经过全体合伙人**一致同意**才能有效。\n\n具体来说，由于聘任非合伙人作为经营管理人员属于合伙企业的重大决策事项，为保障合伙人权益，这类决议必须在所有合伙人均表示同意的情况下通过，而不是仅仅通过多数表决或者某些比例通过即可。因此，该聘任决议只有在全体合伙人一致同意时，才能满足法律要求并生效。",
+  "Question": "在我国普通合伙企业中，如因内部管理与市场拓展需要拟聘任一名非合伙人的经营管理人（如陈东），该聘任决议需满足何种表决条件才能有效？请给出明确的法律要求。"
+}

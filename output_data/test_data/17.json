@@ -1,0 +1,19 @@
+{
+  "question": "甲公司通知乙公司将其对乙公司的10万元债权出质给了丙银行，担保其9万元贷款。出质前，乙公司对甲公司享有2万元到期债权。如乙公司提出抗辩，关于丙银行可向乙公司行使质权的最大数额，下列哪一选项是正确的？",
+  "options": {
+    "A": "10万元",
+    "B": "9万元",
+    "C": "8万元",
+    "D": "7万元"
+  },
+  "answer_idx": "C",
+  "answer": "8万元",
+  "process_id": 17,
+  "options_str": "A. 10万元\nB. 9万元\nC. 8万元\nD. 7万元",
+  "gpt_filter_query": "<Multiple-choice Question>\n甲公司通知乙公司将其对乙公司的10万元债权出质给了丙银行，担保其9万元贷款。出质前，乙公司对甲公司享有2万元到期债权。如乙公司提出抗辩，关于丙银行可向乙公司行使质权的最大数额，下列哪一选项是正确的？\nA. 10万元\nB. 9万元\nC. 8万元\nD. 7万元\nCorrect Answer: 8万元\n</Multiple-choice Question>\n\nYou are an expert in filtering and evaluating multiple-choice questions for advanced reasoning tasks. Your job is to evaluate a given question and determine whether it meets the following criteria: \n1. **Depth of Reasoning:** The question should require deeper reasoning. If the question appears too simple, mark it as \"Too Simple\".\n2. **Unambiguous Correct Answer:** The question must have a unique and unambiguous correct answer. If the question asks for \"incorrect options\" or allows for multiple correct answers, mark it as \"Ambiguous Answer\".\n3. **Open-Ended Reformulation Feasibility:** The question should be suitable for reformatting into an open-ended format. If the question cannot be easily reformulated into an open-ended problem and a clear ground-truth answer, mark it as \"Not Reformulatable\".\n\nFor each question, provide one of the following evaluations:  \n- \"Pass\" (The question meets all the criteria.)  \n- \"Too Simple\"  \n- \"Ambiguous Answer\"  \n- \"Not Reformulatable\" ",
+  "gpt_filter_response": "Pass",
+  "gpt_reformat_query": "I will provide you with a multiple-choice question, and your task is to rewrite it into an open-ended question, along with a Ground-True Answer. The requirements are:\n\n1. The question must be specific, targeting the point being tested in the original multiple-choice question. Ensure it is open-ended, meaning no options are provided, but there must be a definitive Ground-True Answer.\n2. Based on the correct answer from the original question, provide a concise Ground-True Answer. The answer should allow for precise matching to determine whether the model's response is correct.\n\nHere is the multiple-choice question for you to rewrite:\n<Multiple-choice Question>\n甲公司通知乙公司将其对乙公司的10万元债权出质给了丙银行，担保其9万元贷款。出质前，乙公司对甲公司享有2万元到期债权。如乙公司提出抗辩，关于丙银行可向乙公司行使质权的最大数额，下列哪一选项是正确的？\nA. 10万元\nB. 9万元\nC. 8万元\nD. 7万元\nCorrect Answer: 8万元\n</Multiple-choice Question>\n\nPlease output the result in the following JSON format:\n```json\n{\n\"Open-ended Verifiable Question\": \"...\",\n\"Ground-True Answer\": \"...\"\n}\n```",
+  "gpt_reformat_response": "{\n\"Open-ended Verifiable Question\": \"甲公司将其对乙公司的10万元债权出质给丙银行以担保9万元贷款。出质前，乙公司对甲公司享有2万元到期债权并提出抵销抗辩。在乙公司主张抵销成立的情况下，丙银行对乙公司所能行使的质权最大数额是多少？请给出具体金额。\",\n\"Ground-True Answer\": \"8万元\"\n}",
+  "Open-ended Verifiable Question": "甲公司将其对乙公司的10万元债权出质给丙银行以担保9万元贷款。出质前，乙公司对甲公司享有2万元到期债权并提出抵销抗辩。在乙公司主张抵销成立的情况下，丙银行对乙公司所能行使的质权最大数额是多少？请给出具体金额。",
+  "Ground-True Answer": "8万元"
+}

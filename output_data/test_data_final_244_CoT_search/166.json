@@ -1,0 +1,83 @@
+{
+  "question": "通源商务中心为一家普通合伙企业，合伙人为赵某、钱某、孙某、李某、周某。就合伙事务的执行，合伙协议约定由赵某、钱某二人负责。下列哪些表述是正确的？",
+  "options": {
+    "A": "孙某仍有权以合伙企业的名义对外签订合同",
+    "B": "对赵某、钱某的业务执行行为，李某享有监督权",
+    "C": "对赵某、钱某的业务执行行为，周某享有异议权",
+    "D": "赵某以合伙企业名义对外签订合同时，钱某享有异议权"
+  },
+  "answer_idx": "BD",
+  "answer": "对赵某、钱某的业务执行行为，李某享有监督权。赵某以合伙企业名义对外签订合同时，钱某享有异议权",
+  "process_id": 166,
+  "options_str": "A. 孙某仍有权以合伙企业的名义对外签订合同\nB. 对赵某、钱某的业务执行行为，李某享有监督权\nC. 对赵某、钱某的业务执行行为，周某享有异议权\nD. 赵某以合伙企业名义对外签订合同时，钱某享有异议权",
+  "gpt_filter_query": "<Multiple-choice Question>\n通源商务中心为一家普通合伙企业，合伙人为赵某、钱某、孙某、李某、周某。就合伙事务的执行，合伙协议约定由赵某、钱某二人负责。下列哪些表述是正确的？\nA. 孙某仍有权以合伙企业的名义对外签订合同\nB. 对赵某、钱某的业务执行行为，李某享有监督权\nC. 对赵某、钱某的业务执行行为，周某享有异议权\nD. 赵某以合伙企业名义对外签订合同时，钱某享有异议权\nCorrect Answer: 对赵某、钱某的业务执行行为，李某享有监督权。赵某以合伙企业名义对外签订合同时，钱某享有异议权\n</Multiple-choice Question>\n\nYou are an expert in filtering and evaluating multiple-choice questions for advanced reasoning tasks. Your job is to evaluate a given question and determine whether it meets the following criteria: \n1. **Depth of Reasoning:** The question should require deeper reasoning. If the question appears too simple, mark it as \"Too Simple\".\n2. **Unambiguous Correct Answer:** The question must have a unique and unambiguous correct answer. If the question asks for \"incorrect options\" or allows for multiple correct answers, mark it as \"Ambiguous Answer\".\n3. **Open-Ended Reformulation Feasibility:** The question should be suitable for reformatting into an open-ended format. If the question cannot be easily reformulated into an open-ended problem and a clear ground-truth answer, mark it as \"Not Reformulatable\".\n\nFor each question, provide one of the following evaluations:  \n- \"Pass\" (The question meets all the criteria.)  \n- \"Too Simple\"  \n- \"Ambiguous Answer\"  \n- \"Not Reformulatable\" ",
+  "gpt_filter_response": "Pass",
+  "gpt_reformat_query": "I will provide you with a multiple-choice question, and your task is to rewrite it into an open-ended question, along with a Ground-True Answer. The requirements are:\n\n1. The question must be specific, targeting the point being tested in the original multiple-choice question. Ensure it is open-ended, meaning no options are provided, but there must be a definitive Ground-True Answer.\n2. Based on the correct answer from the original question, provide a concise Ground-True Answer. The answer should allow for precise matching to determine whether the model's response is correct.\n\nHere is the multiple-choice question for you to rewrite:\n<Multiple-choice Question>\n通源商务中心为一家普通合伙企业，合伙人为赵某、钱某、孙某、李某、周某。就合伙事务的执行，合伙协议约定由赵某、钱某二人负责。下列哪些表述是正确的？\nA. 孙某仍有权以合伙企业的名义对外签订合同\nB. 对赵某、钱某的业务执行行为，李某享有监督权\nC. 对赵某、钱某的业务执行行为，周某享有异议权\nD. 赵某以合伙企业名义对外签订合同时，钱某享有异议权\nCorrect Answer: 对赵某、钱某的业务执行行为，李某享有监督权。赵某以合伙企业名义对外签订合同时，钱某享有异议权\n</Multiple-choice Question>\n\nPlease output the result in the following JSON format:\n```json\n{\n\"Open-ended Verifiable Question\": \"...\",\n\"Ground-True Answer\": \"...\"\n}\n```",
+  "gpt_reformat_response": "{\n\"Open-ended Verifiable Question\": \"在普通合伙企业通源商务中心中，合伙协议约定仅由赵某、钱某执行合伙事务。请说明：在此约定下，（1）其他合伙人李某是否对赵某、钱某的业务执行行为享有监督权？（2）当赵某以合伙企业名义对外签订合同时，钱某是否享有异议权？请分别作出明确判断。\",\n\"Ground-True Answer\": \"（1）是，李某享有监督权；（2）是，钱某享有异议权。\"\n}",
+  "Open-ended Verifiable Question": "在普通合伙企业通源商务中心中，合伙协议约定仅由赵某、钱某执行合伙事务。请说明：在此约定下，（1）其他合伙人李某是否对赵某、钱某的业务执行行为享有监督权？（2）当赵某以合伙企业名义对外签订合同时，钱某是否享有异议权？请分别作出明确判断。",
+  "Ground-True Answer": "（1）是，李某享有监督权；（2）是，钱某享有异议权。",
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "分析合伙事务执行权限对监督权的约束",
+      "content": "根据《合伙企业法》的规定，普通合伙企业可以通过合伙协议约定由部分合伙人执行合伙事务。在本案中，合伙协议明确约定仅由赵某、钱某执行合伙事务，这意味着其他合伙人如李某无法直接参与日常事务的执行。但同时，法律为了保护所有合伙人的权益，仍然赋予非执行事务合伙人对执行事务的监督权。因此，李某虽然不能干预赵某、钱某的具体事务执行，但有权进行监督。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "分析合伙事务执行人之间的异议权",
+      "content": "根据《合伙企业法》第二十六条的规定，合伙事务由约定的执行事务合伙人共同决定。当多个合伙人共同执行事务时，如果对某一事务产生异议，应当按照合伙协议的约定处理；若无明确约定，则需要通过合伙人一致同意的原则处理。在本案中，赵某代表合伙企业签订合同时，钱某作为另一名执行事务合伙人对该事务拥有异议权。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "（1）其他合伙人李某对赵某、钱某的业务执行行为享有监督权；（2）当赵某以合伙企业名义对外签订合同时，钱某享有异议权。"
+    },
+    {
+      "action": "Verification",
+      "content": "根据《合伙企业法》的相关条文，普通合伙企业中，非执行事务合伙人享有对事务执行行为的监督权，且执行事务合伙人之间享有对事务的异议权。结论符合法律规定，因此结论正确。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n在普通合伙企业通源商务中心中，合伙协议约定仅由赵某、钱某执行合伙事务。请说明：在此约定下，（1）其他合伙人李某是否对赵某、钱某的业务执行行为享有监督权？（2）当赵某以合伙企业名义对外签订合同时，钱某是否享有异议权？请分别作出明确判断。\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **'Inner Thinking'**: This is the step where thinking is done. Note that multiple 'Inner Thinking' steps are required to describe thorough reasoning. Each step should first generate a brief title.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n（1）其他合伙人李某对赵某、钱某的业务执行行为享有监督权；（2）当赵某以合伙企业名义对外签订合同时，钱某享有异议权。  \n</Model Response>  \n\n<Reference Answer>  \n（1）是，李某享有监督权；（2）是，钱某享有异议权。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 分析合伙事务执行权限对监督权的约束\n根据《合伙企业法》的规定，普通合伙企业可以通过合伙协议约定由部分合伙人执行合伙事务。在本案中，合伙协议明确约定仅由赵某、钱某执行合伙事务，这意味着其他合伙人如李某无法直接参与日常事务的执行。但同时，法律为了保护所有合伙人的权益，仍然赋予非执行事务合伙人对执行事务的监督权。因此，李某虽然不能干预赵某、钱某的具体事务执行，但有权进行监督。\n\n### 分析合伙事务执行人之间的异议权\n根据《合伙企业法》第二十六条的规定，合伙事务由约定的执行事务合伙人共同决定。当多个合伙人共同执行事务时，如果对某一事务产生异议，应当按照合伙协议的约定处理；若无明确约定，则需要通过合伙人一致同意的原则处理。在本案中，赵某代表合伙企业签订合同时，钱某作为另一名执行事务合伙人对该事务拥有异议权。\n\n### Conclusion\n（1）其他合伙人李某对赵某、钱某的业务执行行为享有监督权；（2）当赵某以合伙企业名义对外签订合同时，钱某享有异议权。\n\n### Verification\n根据《合伙企业法》的相关条文，普通合伙企业中，非执行事务合伙人享有对事务执行行为的监督权，且执行事务合伙人之间享有对事务的异议权。结论符合法律规定，因此结论正确。\n</Thought Process>\n\n<Question>\n在普通合伙企业通源商务中心中，合伙协议约定仅由赵某、钱某执行合伙事务。请说明：在此约定下，（1）其他合伙人李某是否对赵某、钱某的业务执行行为享有监督权？（2）当赵某以合伙企业名义对外签订合同时，钱某是否享有异议权？请分别作出明确判断。\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n好的，关于这个问题，我们先分析合伙企业的法律规定。普通合伙企业的一个重要特点是，合伙人之间在权利与义务上的分工可以通过合伙协议加以明确规定。根据《合伙企业法》的相关规定，普通合伙企业中可以通过合伙协议约定，由部分合伙人执行合伙事务。哦，也就是说，如果合伙协议中明确写明只有特定的人负责执行合伙事务，其他人就不能介入日常事务的决策和处理。\n\n不过，尽管不能直接参与执行事务，法律仍然保护非执行事务合伙人的权利。根据《合伙企业法》，非执行事务的合伙人是享有监督权的。换句话说，这类合伙人可以监督事务执行合伙人是否按照合伙企业的利益和合伙协议的规定行事。就本案来看，合伙协议约定只有赵某和钱某执行合伙事务，因此李某虽然不能直接参与事务执行，但他依然有权监督赵某和钱某的行为，确保他们的操作没有违背合伙企业的利益。\n\n然后，我们再来看第二个问题，也就是关于执行事务合伙人之间的互动。根据《合伙企业法》第二十六条，当事务执行权被赋予多个合伙人时，他们之间具有共同决定权。这就意味着，如果两个或多个执行事务合伙人对某个事务产生意见分歧，应该先按照合伙协议中的条款处理。如果合伙协议中没有明确规定处理的方式，那么法律要求默认采用“合伙人一致同意”的原则来解决分歧。\n\n那么具体到这起案件中，赵某是执行事务合伙人之一，他以合伙企业的名义对外签订合同，应该是基于他作为执行事务合伙人的职权进行的操作。但是，如果钱某作为另一名执行事务合伙人不同意这项事务，那么他对赵某的操作是可以提出异议的。假如两人最终就这个问题产生分歧，那要么按照合伙协议的相关约定处理，要么就必须通过全部合伙人的一致同意解决。\n\n总结一下：（1）李某虽然不能直接参与执行事务，但他作为非执行事务合伙人，享有监督赵某和钱某事务执行行为的权利，这是法律赋予他的基本权利；（2）赵某作为执行事务合伙人签订合同时，钱某可以提出异议，如果两人无法达成一致，就需要依照合伙协议或合伙人全体同意的原则来解决。这些结论与《合伙企业法》的规定完全一致，所以是准确的。\n</Internal Thinking>\n\n<Question>\n在普通合伙企业通源商务中心中，合伙协议约定仅由赵某、钱某执行合伙事务。请说明：在此约定下，（1）其他合伙人李某是否对赵某、钱某的业务执行行为享有监督权？（2）当赵某以合伙企业名义对外签订合同时，钱某是否享有异议权？请分别作出明确判断。\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析合伙事务执行权限对监督权的约束\",\n      \"content\": \"根据《合伙企业法》的规定，普通合伙企业可以通过合伙协议约定由部分合伙人执行合伙事务。在本案中，合伙协议明确约定仅由赵某、钱某执行合伙事务，这意味着其他合伙人如李某无法直接参与日常事务的执行。但同时，法律为了保护所有合伙人的权益，仍然赋予非执行事务合伙人对执行事务的监督权。因此，李某虽然不能干预赵某、钱某的具体事务执行，但有权进行监督。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析合伙事务执行人之间的异议权\",\n      \"content\": \"根据《合伙企业法》第二十六条的规定，合伙事务由约定的执行事务合伙人共同决定。当多个合伙人共同执行事务时，如果对某一事务产生异议，应当按照合伙协议的约定处理；若无明确约定，则需要通过合伙人一致同意的原则处理。在本案中，赵某代表合伙企业签订合同时，钱某作为另一名执行事务合伙人对该事务拥有异议权。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"（1）其他合伙人李某对赵某、钱某的业务执行行为享有监督权；（2）当赵某以合伙企业名义对外签订合同时，钱某享有异议权。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"根据《合伙企业法》的相关条文，普通合伙企业中，非执行事务合伙人享有对事务执行行为的监督权，且执行事务合伙人之间享有对事务的异议权。结论符合法律规定，因此结论正确。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"好的，关于这个问题，我们先分析合伙企业的法律规定。普通合伙企业的一个重要特点是，合伙人之间在权利与义务上的分工可以通过合伙协议加以明确规定。根据《合伙企业法》的相关规定，普通合伙企业中可以通过合伙协议约定，由部分合伙人执行合伙事务。哦，也就是说，如果合伙协议中明确写明只有特定的人负责执行合伙事务，其他人就不能介入日常事务的决策和处理。\\n\\n不过，尽管不能直接参与执行事务，法律仍然保护非执行事务合伙人的权利。根据《合伙企业法》，非执行事务的合伙人是享有监督权的。换句话说，这类合伙人可以监督事务执行合伙人是否按照合伙企业的利益和合伙协议的规定行事。就本案来看，合伙协议约定只有赵某和钱某执行合伙事务，因此李某虽然不能直接参与事务执行，但他依然有权监督赵某和钱某的行为，确保他们的操作没有违背合伙企业的利益。\\n\\n然后，我们再来看第二个问题，也就是关于执行事务合伙人之间的互动。根据《合伙企业法》第二十六条，当事务执行权被赋予多个合伙人时，他们之间具有共同决定权。这就意味着，如果两个或多个执行事务合伙人对某个事务产生意见分歧，应该先按照合伙协议中的条款处理。如果合伙协议中没有明确规定处理的方式，那么法律要求默认采用“合伙人一致同意”的原则来解决分歧。\\n\\n那么具体到这起案件中，赵某是执行事务合伙人之一，他以合伙企业的名义对外签订合同，应该是基于他作为执行事务合伙人的职权进行的操作。但是，如果钱某作为另一名执行事务合伙人不同意这项事务，那么他对赵某的操作是可以提出异议的。假如两人最终就这个问题产生分歧，那要么按照合伙协议的相关约定处理，要么就必须通过全部合伙人的一致同意解决。\\n\\n总结一下：（1）李某虽然不能直接参与执行事务，但他作为非执行事务合伙人，享有监督赵某和钱某事务执行行为的权利，这是法律赋予他的基本权利；（2）赵某作为执行事务合伙人签订合同时，钱某可以提出异议，如果两人无法达成一致，就需要依照合伙协议或合伙人全体同意的原则来解决。这些结论与《合伙企业法》的规定完全一致，所以是准确的。\"\n}\n```",
+    "（1）根据《中华人民共和国合伙企业法》的规定，普通合伙企业中，非执行事务的合伙人仍享有对事务执行合伙人行为的监督权。虽然合伙协议约定仅由赵某和钱某执行合伙事务，但其他合伙人李某作为该合伙企业的合伙人，具有对赵某和钱某履行事务执行职责情况进行监督的权利。这是法律赋予非执行事务合伙人的基本权利，因此李某享有监督赵某、钱某业务执行行为的权利。\n\n（2）《合伙企业法》第二十六条规定，当合伙协议约定由多个合伙人共同执行合伙事务时，这些执行事务合伙人之间在重大事务上需协商一致。如果双方发生分歧，应按照合伙协议中对分歧处理的相关约定执行，若协议未明确则遵循“合伙人一致同意”规则。因此，赵某以合伙企业名义签订合同时，钱某作为另一位执行事务合伙人，有权对该行为提出异议。如果两人无法就分歧达成一致，需依合伙协议或经过全体合伙人一致同意解决。\n\n综上：（1）李某对赵某、钱某的事务执行行为享有监督权；（2）钱某对赵某以合伙企业名义签订合同的行为享有异议权。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "分析合伙事务执行权限对监督权的约束",
+        "content": "根据《合伙企业法》的规定，普通合伙企业可以通过合伙协议约定由部分合伙人执行合伙事务。在本案中，合伙协议明确约定仅由赵某、钱某执行合伙事务，这意味着其他合伙人如李某无法直接参与日常事务的执行。但同时，法律为了保护所有合伙人的权益，仍然赋予非执行事务合伙人对执行事务的监督权。因此，李某虽然不能干预赵某、钱某的具体事务执行，但有权进行监督。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "分析合伙事务执行人之间的异议权",
+        "content": "根据《合伙企业法》第二十六条的规定，合伙事务由约定的执行事务合伙人共同决定。当多个合伙人共同执行事务时，如果对某一事务产生异议，应当按照合伙协议的约定处理；若无明确约定，则需要通过合伙人一致同意的原则处理。在本案中，赵某代表合伙企业签订合同时，钱某作为另一名执行事务合伙人对该事务拥有异议权。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "（1）其他合伙人李某对赵某、钱某的业务执行行为享有监督权；（2）当赵某以合伙企业名义对外签订合同时，钱某享有异议权。"
+      },
+      {
+        "action": "Verification",
+        "content": "根据《合伙企业法》的相关条文，普通合伙企业中，非执行事务合伙人享有对事务执行行为的监督权，且执行事务合伙人之间享有对事务的异议权。结论符合法律规定，因此结论正确。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "好的，关于这个问题，我们先分析合伙企业的法律规定。普通合伙企业的一个重要特点是，合伙人之间在权利与义务上的分工可以通过合伙协议加以明确规定。根据《合伙企业法》的相关规定，普通合伙企业中可以通过合伙协议约定，由部分合伙人执行合伙事务。哦，也就是说，如果合伙协议中明确写明只有特定的人负责执行合伙事务，其他人就不能介入日常事务的决策和处理。\n\n不过，尽管不能直接参与执行事务，法律仍然保护非执行事务合伙人的权利。根据《合伙企业法》，非执行事务的合伙人是享有监督权的。换句话说，这类合伙人可以监督事务执行合伙人是否按照合伙企业的利益和合伙协议的规定行事。就本案来看，合伙协议约定只有赵某和钱某执行合伙事务，因此李某虽然不能直接参与事务执行，但他依然有权监督赵某和钱某的行为，确保他们的操作没有违背合伙企业的利益。\n\n然后，我们再来看第二个问题，也就是关于执行事务合伙人之间的互动。根据《合伙企业法》第二十六条，当事务执行权被赋予多个合伙人时，他们之间具有共同决定权。这就意味着，如果两个或多个执行事务合伙人对某个事务产生意见分歧，应该先按照合伙协议中的条款处理。如果合伙协议中没有明确规定处理的方式，那么法律要求默认采用“合伙人一致同意”的原则来解决分歧。\n\n那么具体到这起案件中，赵某是执行事务合伙人之一，他以合伙企业的名义对外签订合同，应该是基于他作为执行事务合伙人的职权进行的操作。但是，如果钱某作为另一名执行事务合伙人不同意这项事务，那么他对赵某的操作是可以提出异议的。假如两人最终就这个问题产生分歧，那要么按照合伙协议的相关约定处理，要么就必须通过全部合伙人的一致同意解决。\n\n总结一下：（1）李某虽然不能直接参与执行事务，但他作为非执行事务合伙人，享有监督赵某和钱某事务执行行为的权利，这是法律赋予他的基本权利；（2）赵某作为执行事务合伙人签订合同时，钱某可以提出异议，如果两人无法达成一致，就需要依照合伙协议或合伙人全体同意的原则来解决。这些结论与《合伙企业法》的规定完全一致，所以是准确的。",
+  "Response": "（1）根据《中华人民共和国合伙企业法》的规定，普通合伙企业中，非执行事务的合伙人仍享有对事务执行合伙人行为的监督权。虽然合伙协议约定仅由赵某和钱某执行合伙事务，但其他合伙人李某作为该合伙企业的合伙人，具有对赵某和钱某履行事务执行职责情况进行监督的权利。这是法律赋予非执行事务合伙人的基本权利，因此李某享有监督赵某、钱某业务执行行为的权利。\n\n（2）《合伙企业法》第二十六条规定，当合伙协议约定由多个合伙人共同执行合伙事务时，这些执行事务合伙人之间在重大事务上需协商一致。如果双方发生分歧，应按照合伙协议中对分歧处理的相关约定执行，若协议未明确则遵循“合伙人一致同意”规则。因此，赵某以合伙企业名义签订合同时，钱某作为另一位执行事务合伙人，有权对该行为提出异议。如果两人无法就分歧达成一致，需依合伙协议或经过全体合伙人一致同意解决。\n\n综上：（1）李某对赵某、钱某的事务执行行为享有监督权；（2）钱某对赵某以合伙企业名义签订合同的行为享有异议权。",
+  "Question": "在普通合伙企业通源商务中心中，合伙协议约定仅由赵某、钱某执行合伙事务。请说明：在此约定下，（1）其他合伙人李某是否对赵某、钱某的业务执行行为享有监督权？（2）当赵某以合伙企业名义对外签订合同时，钱某是否享有异议权？请分别作出明确判断。"
+}

@@ -1,0 +1,103 @@
+{
+  "question": "中国某公司进口了一批皮制品，信用证方式支付，以海运方式运输并投保了一切险。中国收货人持正本提单提货时发现货物已被他人提走。依相关司法解释和国际惯例，下列哪一选项是正确的？",
+  "options": {
+    "A": "承运人应赔偿收货人因其无单放货造成的货物成本加利润损失",
+    "B": "因该批货物已投保一切险，故保险人应对货主赔偿无单放货造成的损失",
+    "C": "因货物已放予他人，收货人不再需要向卖方支付信用证项下的货款",
+    "D": "如交单人提交的单证符合信用证的要求，银行即应付款"
+  },
+  "answer_idx": "D",
+  "answer": "如交单人提交的单证符合信用证的要求，银行即应付款",
+  "process_id": 6,
+  "options_str": "A. 承运人应赔偿收货人因其无单放货造成的货物成本加利润损失\nB. 因该批货物已投保一切险，故保险人应对货主赔偿无单放货造成的损失\nC. 因货物已放予他人，收货人不再需要向卖方支付信用证项下的货款\nD. 如交单人提交的单证符合信用证的要求，银行即应付款",
+  "gpt_filter_query": "<Multiple-choice Question>\n中国某公司进口了一批皮制品，信用证方式支付，以海运方式运输并投保了一切险。中国收货人持正本提单提货时发现货物已被他人提走。依相关司法解释和国际惯例，下列哪一选项是正确的？\nA. 承运人应赔偿收货人因其无单放货造成的货物成本加利润损失\nB. 因该批货物已投保一切险，故保险人应对货主赔偿无单放货造成的损失\nC. 因货物已放予他人，收货人不再需要向卖方支付信用证项下的货款\nD. 如交单人提交的单证符合信用证的要求，银行即应付款\nCorrect Answer: 如交单人提交的单证符合信用证的要求，银行即应付款\n</Multiple-choice Question>\n\nYou are an expert in filtering and evaluating multiple-choice questions for advanced reasoning tasks. Your job is to evaluate a given question and determine whether it meets the following criteria: \n1. **Depth of Reasoning:** The question should require deeper reasoning. If the question appears too simple, mark it as \"Too Simple\".\n2. **Unambiguous Correct Answer:** The question must have a unique and unambiguous correct answer. If the question asks for \"incorrect options\" or allows for multiple correct answers, mark it as \"Ambiguous Answer\".\n3. **Open-Ended Reformulation Feasibility:** The question should be suitable for reformatting into an open-ended format. If the question cannot be easily reformulated into an open-ended problem and a clear ground-truth answer, mark it as \"Not Reformulatable\".\n\nFor each question, provide one of the following evaluations:  \n- \"Pass\" (The question meets all the criteria.)  \n- \"Too Simple\"  \n- \"Ambiguous Answer\"  \n- \"Not Reformulatable\" ",
+  "gpt_filter_response": "Pass",
+  "gpt_reformat_query": "I will provide you with a multiple-choice question, and your task is to rewrite it into an open-ended question, along with a Ground-True Answer. The requirements are:\n\n1. The question must be specific, targeting the point being tested in the original multiple-choice question. Ensure it is open-ended, meaning no options are provided, but there must be a definitive Ground-True Answer.\n2. Based on the correct answer from the original question, provide a concise Ground-True Answer. The answer should allow for precise matching to determine whether the model's response is correct.\n\nHere is the multiple-choice question for you to rewrite:\n<Multiple-choice Question>\n中国某公司进口了一批皮制品，信用证方式支付，以海运方式运输并投保了一切险。中国收货人持正本提单提货时发现货物已被他人提走。依相关司法解释和国际惯例，下列哪一选项是正确的？\nA. 承运人应赔偿收货人因其无单放货造成的货物成本加利润损失\nB. 因该批货物已投保一切险，故保险人应对货主赔偿无单放货造成的损失\nC. 因货物已放予他人，收货人不再需要向卖方支付信用证项下的货款\nD. 如交单人提交的单证符合信用证的要求，银行即应付款\nCorrect Answer: 如交单人提交的单证符合信用证的要求，银行即应付款\n</Multiple-choice Question>\n\nPlease output the result in the following JSON format:\n```json\n{\n\"Open-ended Verifiable Question\": \"...\",\n\"Ground-True Answer\": \"...\"\n}\n```",
+  "gpt_reformat_response": "{\n\"Open-ended Verifiable Question\": \"在中国公司以信用证方式支付并通过海运进口皮制品、且已投保一切险的情况下，若收货人持正本提单提货时发现货物已被他人提走，根据相关司法解释和国际惯例，银行在何种条件下仍应向受益人付款？请给出明确条件。\",\n\"Ground-True Answer\": \"当受益人提交的单据与信用证条款相符（单证相符）时，银行应付款。\"\n}",
+  "Open-ended Verifiable Question": "在中国公司以信用证方式支付并通过海运进口皮制品、且已投保一切险的情况下，若收货人持正本提单提货时发现货物已被他人提走，根据相关司法解释和国际惯例，银行在何种条件下仍应向受益人付款？请给出明确条件。",
+  "Ground-True Answer": "当受益人提交的单据与信用证条款相符（单证相符）时，银行应付款。",
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "信用证付款原则分析",
+      "content": "根据国际惯例《跟单信用证统一惯例》(UCP 600)，信用证是一种独立于基础交易的付款工具。银行的付款义务基于单据是否符合信用证的条款，而非货物的实际状况或最终交付。因此，银行只需对单据的表面一致性进行审查，而无需考虑货物是否已被提走。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "保险和海运环节的影响",
+      "content": "货物已经投保一切险，其损失或被提走的问题可以通过保险公司获得补偿，而不是银行的责任范围。同时，海运中提货凭证如提单的交接与货物的损失属于承运人管理范畴，进一步说明银行无需对此负责。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "提单合法性及银行审核责任",
+      "content": "正本提单是信用证项下交易的重要单据，也是收货人提货的依据。如果受益人提交的单据（包括提单）表面上符合信用证要求，银行的付款义务就成立。这种情况下，持有正本提单的收货人提货失败或发现货物被提走，并不影响银行付款的合法性。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "相关司法解释与国际惯例的结合",
+      "content": "中国司法解释通常参照信用证独立性原则，强调单据交易的独立性以及银行严格履行信用证条款的义务。因此，只要单据表面上与信用证一致，并且无明显瑕疵，银行仍应在付款条件得到满足时付款。货物提货纠纷可以通过其他途径解决。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "在持正本提单提货时发现货物已被他人提走的情况下，根据信用证独立性原则、《跟单信用证统一惯例》(UCP 600)，以及中国相关司法解释，如果受益人提交的单据表面上与信用证条款一致，且无明显瑕疵，银行仍应向受益人付款。货物被提走的问题应通过保险或承运人的责任追究途径解决，而非影响银行的付款义务。"
+    },
+    {
+      "action": "Verification",
+      "content": "结论符合信用证独立性原则（UCP 600）与中国司法解释的一致性要求，且逻辑得到验证，没有违背国际惯例和法律条文。因此，结论成立。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n在中国公司以信用证方式支付并通过海运进口皮制品、且已投保一切险的情况下，若收货人持正本提单提货时发现货物已被他人提走，根据相关司法解释和国际惯例，银行在何种条件下仍应向受益人付款？请给出明确条件。\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **'Inner Thinking'**: This is the step where thinking is done. Note that multiple 'Inner Thinking' steps are required to describe thorough reasoning. Each step should first generate a brief title.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n在持正本提单提货时发现货物已被他人提走的情况下，根据信用证独立性原则、《跟单信用证统一惯例》(UCP 600)，以及中国相关司法解释，如果受益人提交的单据表面上与信用证条款一致，且无明显瑕疵，银行仍应向受益人付款。货物被提走的问题应通过保险或承运人的责任追究途径解决，而非影响银行的付款义务。  \n</Model Response>  \n\n<Reference Answer>  \n当受益人提交的单据与信用证条款相符（单证相符）时，银行应付款。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 信用证付款原则分析\n根据国际惯例《跟单信用证统一惯例》(UCP 600)，信用证是一种独立于基础交易的付款工具。银行的付款义务基于单据是否符合信用证的条款，而非货物的实际状况或最终交付。因此，银行只需对单据的表面一致性进行审查，而无需考虑货物是否已被提走。\n\n### 保险和海运环节的影响\n货物已经投保一切险，其损失或被提走的问题可以通过保险公司获得补偿，而不是银行的责任范围。同时，海运中提货凭证如提单的交接与货物的损失属于承运人管理范畴，进一步说明银行无需对此负责。\n\n### 提单合法性及银行审核责任\n正本提单是信用证项下交易的重要单据，也是收货人提货的依据。如果受益人提交的单据（包括提单）表面上符合信用证要求，银行的付款义务就成立。这种情况下，持有正本提单的收货人提货失败或发现货物被提走，并不影响银行付款的合法性。\n\n### 相关司法解释与国际惯例的结合\n中国司法解释通常参照信用证独立性原则，强调单据交易的独立性以及银行严格履行信用证条款的义务。因此，只要单据表面上与信用证一致，并且无明显瑕疵，银行仍应在付款条件得到满足时付款。货物提货纠纷可以通过其他途径解决。\n\n### Conclusion\n在持正本提单提货时发现货物已被他人提走的情况下，根据信用证独立性原则、《跟单信用证统一惯例》(UCP 600)，以及中国相关司法解释，如果受益人提交的单据表面上与信用证条款一致，且无明显瑕疵，银行仍应向受益人付款。货物被提走的问题应通过保险或承运人的责任追究途径解决，而非影响银行的付款义务。\n\n### Verification\n结论符合信用证独立性原则（UCP 600）与中国司法解释的一致性要求，且逻辑得到验证，没有违背国际惯例和法律条文。因此，结论成立。\n</Thought Process>\n\n<Question>\n在中国公司以信用证方式支付并通过海运进口皮制品、且已投保一切险的情况下，若收货人持正本提单提货时发现货物已被他人提走，根据相关司法解释和国际惯例，银行在何种条件下仍应向受益人付款？请给出明确条件。\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n嗯，这件事的关键其实是在信用证的独立性原则上。信用证本来就是一种独立于基础交易的支付工具，核心重点是单据而不是货物本身。这也被《跟单信用证统一惯例》(UCP 600)明确规定了，银行只负责检查提交的单据是否与信用证条款一致，而不需要去验证货物的实际状况是否符合或是否正常交付。所以，如果单据本身没有问题，银行一般是需要履行付款义务的。\n\n再说到货物被提走的问题，这显然是让人懊恼的，但其实并不在银行的责任范围内。因为信用证只对单据负责，不对货物负责呀。而且，这种情况下，其实货物已经投保了一切险，损失完全可以通过保险公司来要求赔偿。另外，物流上涉及的提单是承运人与货主之间的关键文件，如果提单合法且符合信用证的要求，那银行还是只根据单据付款，至于货物提走的问题，更可能是承运人管理上出了问题，和银行没有直接关系。\n\n说到提单的合法性，这就很重要了。在信用证项下的交易里，正本提单是绝对不容忽视的关键单据。它是收货人能够成功提货的依据，只要受益人提交的正本提单等单据和信用证条款表面上完全一致，银行其实是没有理由拒绝付款的。哪怕收货人后来拿到提单却发现货物出了问题，比如已经被别人提走了，这也不会影响银行履行付款责任。银行的工作范围从头到尾都是围绕单据的，这点不能搞混。\n\n还有，在中国司法实践中，司法解释通常是站在信用证独立性原则的立场上的，也就是说只要单据表面上符合信用证的要求，银行就会被要求严格履行付款义务，除非单据存在明显的瑕疵。所以，只要单据上看不出什么问题，银行肯定是要付款的。\n\n综合来看，这种情况下，受益人提交的所有单据如果表面一致、条款匹配，且没有发现明显的瑕疵，那么银行就应该付款。至于货物的问题，应该通过保险理赔或者追究承运人的责任来解决，而不是让银行来承担这个损失。\n\n嗯，最后再想想，银行的付款责任和货物的状况没有直接关联，这其实在国际惯例（比如UCP 600）和中国的司法解释层面都已经反复强调过了。所有这些逻辑结合起来，结论是明确的：只要单据没有问题，银行依然得付款，而货物被提走这样的事情另有解决途径。\n</Internal Thinking>\n\n<Question>\n在中国公司以信用证方式支付并通过海运进口皮制品、且已投保一切险的情况下，若收货人持正本提单提货时发现货物已被他人提走，根据相关司法解释和国际惯例，银行在何种条件下仍应向受益人付款？请给出明确条件。\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"信用证付款原则分析\",\n      \"content\": \"根据国际惯例《跟单信用证统一惯例》(UCP 600)，信用证是一种独立于基础交易的付款工具。银行的付款义务基于单据是否符合信用证的条款，而非货物的实际状况或最终交付。因此，银行只需对单据的表面一致性进行审查，而无需考虑货物是否已被提走。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"保险和海运环节的影响\",\n      \"content\": \"货物已经投保一切险，其损失或被提走的问题可以通过保险公司获得补偿，而不是银行的责任范围。同时，海运中提货凭证如提单的交接与货物的损失属于承运人管理范畴，进一步说明银行无需对此负责。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"提单合法性及银行审核责任\",\n      \"content\": \"正本提单是信用证项下交易的重要单据，也是收货人提货的依据。如果受益人提交的单据（包括提单）表面上符合信用证要求，银行的付款义务就成立。这种情况下，持有正本提单的收货人提货失败或发现货物被提走，并不影响银行付款的合法性。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"相关司法解释与国际惯例的结合\",\n      \"content\": \"中国司法解释通常参照信用证独立性原则，强调单据交易的独立性以及银行严格履行信用证条款的义务。因此，只要单据表面上与信用证一致，并且无明显瑕疵，银行仍应在付款条件得到满足时付款。货物提货纠纷可以通过其他途径解决。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"在持正本提单提货时发现货物已被他人提走的情况下，根据信用证独立性原则、《跟单信用证统一惯例》(UCP 600)，以及中国相关司法解释，如果受益人提交的单据表面上与信用证条款一致，且无明显瑕疵，银行仍应向受益人付款。货物被提走的问题应通过保险或承运人的责任追究途径解决，而非影响银行的付款义务。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"结论符合信用证独立性原则（UCP 600）与中国司法解释的一致性要求，且逻辑得到验证，没有违背国际惯例和法律条文。因此，结论成立。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"嗯，这件事的关键其实是在信用证的独立性原则上。信用证本来就是一种独立于基础交易的支付工具，核心重点是单据而不是货物本身。这也被《跟单信用证统一惯例》(UCP 600)明确规定了，银行只负责检查提交的单据是否与信用证条款一致，而不需要去验证货物的实际状况是否符合或是否正常交付。所以，如果单据本身没有问题，银行一般是需要履行付款义务的。\\n\\n再说到货物被提走的问题，这显然是让人懊恼的，但其实并不在银行的责任范围内。因为信用证只对单据负责，不对货物负责呀。而且，这种情况下，其实货物已经投保了一切险，损失完全可以通过保险公司来要求赔偿。另外，物流上涉及的提单是承运人与货主之间的关键文件，如果提单合法且符合信用证的要求，那银行还是只根据单据付款，至于货物提走的问题，更可能是承运人管理上出了问题，和银行没有直接关系。\\n\\n说到提单的合法性，这就很重要了。在信用证项下的交易里，正本提单是绝对不容忽视的关键单据。它是收货人能够成功提货的依据，只要受益人提交的正本提单等单据和信用证条款表面上完全一致，银行其实是没有理由拒绝付款的。哪怕收货人后来拿到提单却发现货物出了问题，比如已经被别人提走了，这也不会影响银行履行付款责任。银行的工作范围从头到尾都是围绕单据的，这点不能搞混。\\n\\n还有，在中国司法实践中，司法解释通常是站在信用证独立性原则的立场上的，也就是说只要单据表面上符合信用证的要求，银行就会被要求严格履行付款义务，除非单据存在明显的瑕疵。所以，只要单据上看不出什么问题，银行肯定是要付款的。\\n\\n综合来看，这种情况下，受益人提交的所有单据如果表面一致、条款匹配，且没有发现明显的瑕疵，那么银行就应该付款。至于货物的问题，应该通过保险理赔或者追究承运人的责任来解决，而不是让银行来承担这个损失。\\n\\n嗯，最后再想想，银行的付款责任和货物的状况没有直接关联，这其实在国际惯例（比如UCP 600）和中国的司法解释层面都已经反复强调过了。所有这些逻辑结合起来，结论是明确的：只要单据没有问题，银行依然得付款，而货物被提走这样的事情另有解决途径。\"\n}\n```",
+    "根据中国司法解释及国际惯例（如《跟单信用证统一惯例》(UCP 600)）的相关规定，银行在下列条件下仍应向受益人付款：  \n\n1. **单据表面一致**：受益人提交的单据，包括正本提单等，必须在表面上与信用证的条款和要求完全一致。银行根据独立性原则，仅依据单据进行审核，而不涉及货物的真实状况。  \n\n2. **单据无明显瑕疵**：单据中不得存在表面上可以识别的缺陷，银行不会对单据以外的情况（如货物的实际交付情况）进行调查或负责。  \n\n3. **银行已履行审查义务**：银行按照《UCP 600》第十四条要求，在合理时间内对单据进行了恰当的审查，确认单据表面符合信用证要求的情况下，银行即履行了其审查义务。  \n\n由上述原则可得，货物被他人提走的问题并不在银行的管理与责任范围内。只要单据表面合规，银行仍需履行其支付义务。而对于货物被提走造成的损失，买方可以通过保险公司索赔或向承运人追责来解决。  "
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "信用证付款原则分析",
+        "content": "根据国际惯例《跟单信用证统一惯例》(UCP 600)，信用证是一种独立于基础交易的付款工具。银行的付款义务基于单据是否符合信用证的条款，而非货物的实际状况或最终交付。因此，银行只需对单据的表面一致性进行审查，而无需考虑货物是否已被提走。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "保险和海运环节的影响",
+        "content": "货物已经投保一切险，其损失或被提走的问题可以通过保险公司获得补偿，而不是银行的责任范围。同时，海运中提货凭证如提单的交接与货物的损失属于承运人管理范畴，进一步说明银行无需对此负责。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "提单合法性及银行审核责任",
+        "content": "正本提单是信用证项下交易的重要单据，也是收货人提货的依据。如果受益人提交的单据（包括提单）表面上符合信用证要求，银行的付款义务就成立。这种情况下，持有正本提单的收货人提货失败或发现货物被提走，并不影响银行付款的合法性。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "相关司法解释与国际惯例的结合",
+        "content": "中国司法解释通常参照信用证独立性原则，强调单据交易的独立性以及银行严格履行信用证条款的义务。因此，只要单据表面上与信用证一致，并且无明显瑕疵，银行仍应在付款条件得到满足时付款。货物提货纠纷可以通过其他途径解决。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "在持正本提单提货时发现货物已被他人提走的情况下，根据信用证独立性原则、《跟单信用证统一惯例》(UCP 600)，以及中国相关司法解释，如果受益人提交的单据表面上与信用证条款一致，且无明显瑕疵，银行仍应向受益人付款。货物被提走的问题应通过保险或承运人的责任追究途径解决，而非影响银行的付款义务。"
+      },
+      {
+        "action": "Verification",
+        "content": "结论符合信用证独立性原则（UCP 600）与中国司法解释的一致性要求，且逻辑得到验证，没有违背国际惯例和法律条文。因此，结论成立。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "嗯，这件事的关键其实是在信用证的独立性原则上。信用证本来就是一种独立于基础交易的支付工具，核心重点是单据而不是货物本身。这也被《跟单信用证统一惯例》(UCP 600)明确规定了，银行只负责检查提交的单据是否与信用证条款一致，而不需要去验证货物的实际状况是否符合或是否正常交付。所以，如果单据本身没有问题，银行一般是需要履行付款义务的。\n\n再说到货物被提走的问题，这显然是让人懊恼的，但其实并不在银行的责任范围内。因为信用证只对单据负责，不对货物负责呀。而且，这种情况下，其实货物已经投保了一切险，损失完全可以通过保险公司来要求赔偿。另外，物流上涉及的提单是承运人与货主之间的关键文件，如果提单合法且符合信用证的要求，那银行还是只根据单据付款，至于货物提走的问题，更可能是承运人管理上出了问题，和银行没有直接关系。\n\n说到提单的合法性，这就很重要了。在信用证项下的交易里，正本提单是绝对不容忽视的关键单据。它是收货人能够成功提货的依据，只要受益人提交的正本提单等单据和信用证条款表面上完全一致，银行其实是没有理由拒绝付款的。哪怕收货人后来拿到提单却发现货物出了问题，比如已经被别人提走了，这也不会影响银行履行付款责任。银行的工作范围从头到尾都是围绕单据的，这点不能搞混。\n\n还有，在中国司法实践中，司法解释通常是站在信用证独立性原则的立场上的，也就是说只要单据表面上符合信用证的要求，银行就会被要求严格履行付款义务，除非单据存在明显的瑕疵。所以，只要单据上看不出什么问题，银行肯定是要付款的。\n\n综合来看，这种情况下，受益人提交的所有单据如果表面一致、条款匹配，且没有发现明显的瑕疵，那么银行就应该付款。至于货物的问题，应该通过保险理赔或者追究承运人的责任来解决，而不是让银行来承担这个损失。\n\n嗯，最后再想想，银行的付款责任和货物的状况没有直接关联，这其实在国际惯例（比如UCP 600）和中国的司法解释层面都已经反复强调过了。所有这些逻辑结合起来，结论是明确的：只要单据没有问题，银行依然得付款，而货物被提走这样的事情另有解决途径。",
+  "Response": "根据中国司法解释及国际惯例（如《跟单信用证统一惯例》(UCP 600)）的相关规定，银行在下列条件下仍应向受益人付款：  \n\n1. **单据表面一致**：受益人提交的单据，包括正本提单等，必须在表面上与信用证的条款和要求完全一致。银行根据独立性原则，仅依据单据进行审核，而不涉及货物的真实状况。  \n\n2. **单据无明显瑕疵**：单据中不得存在表面上可以识别的缺陷，银行不会对单据以外的情况（如货物的实际交付情况）进行调查或负责。  \n\n3. **银行已履行审查义务**：银行按照《UCP 600》第十四条要求，在合理时间内对单据进行了恰当的审查，确认单据表面符合信用证要求的情况下，银行即履行了其审查义务。  \n\n由上述原则可得，货物被他人提走的问题并不在银行的管理与责任范围内。只要单据表面合规，银行仍需履行其支付义务。而对于货物被提走造成的损失，买方可以通过保险公司索赔或向承运人追责来解决。  ",
+  "Question": "在中国公司以信用证方式支付并通过海运进口皮制品、且已投保一切险的情况下，若收货人持正本提单提货时发现货物已被他人提走，根据相关司法解释和国际惯例，银行在何种条件下仍应向受益人付款？请给出明确条件。"
+}
