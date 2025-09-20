@@ -63,6 +63,11 @@ HuatuoGPT-o1 adopts a *thinks-before-it-answers* approach, with outputs formatte
 [Output]
 ```
 
+## 📚 Setup
+```bash
+pip install torch==2.5.1 --index-url https://download.pytorch.org/whl/cu121
+pip install -i https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple trl==0.13.0 transformers==4.46.2 deepspeed==0.15.4 xformers==0.0.28 vllm==0.6.4 torchvision==0.20.1
+```
 ## 📚 Data
 - **Data Access**
 
