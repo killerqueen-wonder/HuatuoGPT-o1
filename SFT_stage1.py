@@ -190,18 +190,42 @@ def train(args):
             if accelerator.state.deepspeed_plugin.zero_stage!=3:
                 model.save_pretrained(output_dir,state_dict=accelerator.get_state_dict(model))
             tokenizer.save_pretrained(output_dir)
+
+            # 如果 args.model_path 不存在，尝试用 TRANSFORMERS_CACHE 补全路径
+            model_path_to_copy = args.model_path
+            if not os.path.exists(model_path_to_copy):
+                cache_dir = os.environ.get("TRANSFORMERS_CACHE", "~/.cache/huggingface")
+                model_path_to_copy = os.path.join(cache_dir, "models--" + args.model_path.replace("/", "--"))
+                model_path_to_copy = os.path.expanduser(model_path_to_copy)
+
             copy_files = []
-            for item in os.listdir(args.model_path):
-                if os.path.exists(os.path.join(output_dir,item)):
-                    continue
-                if item.startswith("pytorch_model") and item.endswith(".bin"):
-                    continue
-                if item.endswith(".index.json") or item.endswith(".safetensors"):
-                    continue
-                s = os.path.join(args.model_path, item)
-                if os.path.isfile(s):
-                    shutil.copy(s, os.path.join(output_dir,item))
-                copy_files.append(item)
+            # for item in os.listdir(args.model_path):
+            #     if os.path.exists(os.path.join(output_dir,item)):
+            #         continue
+            #     if item.startswith("pytorch_model") and item.endswith(".bin"):
+            #         continue
+            #     if item.endswith(".index.json") or item.endswith(".safetensors"):
+            #         continue
+            #     s = os.path.join(args.model_path, item)
+            #     if os.path.isfile(s):
+            #         shutil.copy(s, os.path.join(output_dir,item))
+            #     copy_files.append(item)
+
+            if os.path.exists(model_path_to_copy):
+                for item in os.listdir(model_path_to_copy):
+                    src_path = os.path.join(model_path_to_copy, item)
+                    dst_path = os.path.join(output_dir, item)
+                    if os.path.exists(dst_path):
+                        continue
+                    if item.startswith("pytorch_model") and item.endswith(".bin"):
+                        continue
+                    if item.endswith(".index.json") or item.endswith(".safetensors"):
+                        continue
+                    if os.path.isfile(src_path):
+                        shutil.copy(src_path, dst_path)
+                        copy_files.append(item)
+            else:
+                print(f"[Warning] 模型路径 {model_path_to_copy} 不存在，跳过原始模型文件拷贝")
             print(f'huggingface model save in {output_dir}, copy file:{copy_files}')
 
         if accelerator.state.deepspeed_plugin.zero_stage==3:
