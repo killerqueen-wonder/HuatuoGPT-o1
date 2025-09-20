@@ -67,6 +67,8 @@ HuatuoGPT-o1 adopts a *thinks-before-it-answers* approach, with outputs formatte
 ```bash
 pip install torch==2.5.1 --index-url https://download.pytorch.org/whl/cu121
 pip install -i https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple trl==0.13.0 transformers==4.46.2 deepspeed==0.15.4 xformers==0.0.28 vllm==0.6.4 torchvision==0.20.1
+pip install ninja packaging
+pip install flash-attn --no-build-isolation
 ```
 ## 📚 Data
 - **Data Access**
@@ -98,8 +100,6 @@ python search_for_complex_reasoning_path.py --data_path  data/demo_data.json --e
 Fine-tune the model on an 8-GPU setup:
 ```bash
 accelerate launch --config_file ./configs/deepspeed_zero3.yaml \
-    --num_processes 8  \
-    --num_machines 1 \
     --machine_rank 0 \
     --deepspeed_multinode_launcher standard SFT_stage1.py \
     --model_path [meta-llama/Llama-3.1-8B-Instruct] \
