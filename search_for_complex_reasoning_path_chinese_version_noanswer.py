@@ -263,6 +263,7 @@ def main():
     parser.add_argument("--efficient_search", type=bool, default=True, help="Enable efficient search strategy.")
     parser.add_argument("--num_process", type=int, default=5, help="Number of parallel processes.")
     parser.add_argument("--limit_num", type=int, help="Limit the number of processed items.")
+    parser.add_argument("--out_path", type=str,default='', help="the path to save output data")
     
     args = parser.parse_args()
 
@@ -311,7 +312,7 @@ def main():
     print(f"read data:{len(data)}")
 
     task_name = f'{os.path.split(args.data_path)[-1].replace(".json","")}_CoT_search'
-    save_dir = f'output_data/{task_name}'
+    save_dir = f'{args.out_path}/{task_name}'
 
     gpt_instance = GPT(model_name=args.model_name, api_url=args.api_url, api_key=args.api_key)
 
