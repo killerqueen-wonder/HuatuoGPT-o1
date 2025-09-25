@@ -1,0 +1,99 @@
+{
+  "Open-ended Verifiable Question": "离婚从起诉到开庭需多久",
+  "Ground-True Answer": "法律没有明确规定，实践中也有长有短，但通常程序是：从您向法院递交起诉状那天起，法院必须在7日内决定立案或不立案。一般只要你起诉状上写明原被告、诉讼请求、事实和理由，属于该法院管辖，法院就会立案。立案之日起5日内，法院将您的起诉状副本发送被告，被告必须在收到之日起15日内提出答辩状，不答辩的不影响审理。开庭前，会提前3日通知你们。这期间，如果对方申请延期审理，或法院认为有必要追加必要共同诉讼当事人等，都会影响最终开庭的时间。",
+  "process_id": 2211,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "确定离婚起诉到开庭需要了解的因素",
+      "content": "离婚起诉到开庭的时间取决于法院受理案件的时间安排、案件的复杂程度以及法律程序。不同地区法院可能对时间的安排有所不同，因此需要检查有关民事案件受理和排期的法律规定。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "搜索相关法律规范",
+      "content": "需要查找关于离婚案件审理时限的法律条文或相关司法解释，以明确法律对起诉后时间安排的要求。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "查看婚姻法和民事诉讼法的规定",
+      "content": "离婚案件受《中华人民共和国民法典》（婚姻家庭编）和《中华人民共和国民事诉讼法》法规约束。需要明确时间限制或司法实践中的通常时长。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "法律对审限的具体规定",
+      "content": "根据《中华人民共和国民事诉讼法》第149条的规定，一审普通程序案件的审理期限一般为6个月，简易程序为3个月。因此，从起诉到开庭应在此范围内，并要考虑是否有延期因素。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "结合实践审查平均时间",
+      "content": "在实际情况中，离婚案件提起诉讼后，法院通常会在1个月内进行立案审查并通知相关的开庭时间。如果案情较为简单，开庭时间可能会排在起诉后1-3个月发生。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "离婚从起诉到开庭的时间通常为1-3个月，但实际时间可能因案件复杂性、法院案件量和具体程序安排有所不同。如果是简易程序，通常会更快。"
+    },
+    {
+      "action": "Verification",
+      "content": "结论与民事诉讼法及实际司法实践相符。时间范围合理，可以接受。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n离婚从起诉到开庭需多久\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n离婚从起诉到开庭的时间通常为1-3个月，但实际时间可能因案件复杂性、法院案件量和具体程序安排有所不同。如果是简易程序，通常会更快。  \n</Model Response>  \n\n<Reference Answer>  \n法律没有明确规定，实践中也有长有短，但通常程序是：从您向法院递交起诉状那天起，法院必须在7日内决定立案或不立案。一般只要你起诉状上写明原被告、诉讼请求、事实和理由，属于该法院管辖，法院就会立案。立案之日起5日内，法院将您的起诉状副本发送被告，被告必须在收到之日起15日内提出答辩状，不答辩的不影响审理。开庭前，会提前3日通知你们。这期间，如果对方申请延期审理，或法院认为有必要追加必要共同诉讼当事人等，都会影响最终开庭的时间。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 确定离婚起诉到开庭需要了解的因素\n离婚起诉到开庭的时间取决于法院受理案件的时间安排、案件的复杂程度以及法律程序。不同地区法院可能对时间的安排有所不同，因此需要检查有关民事案件受理和排期的法律规定。\n\n### 搜索相关法律规范\n需要查找关于离婚案件审理时限的法律条文或相关司法解释，以明确法律对起诉后时间安排的要求。\n\n### 查看婚姻法和民事诉讼法的规定\n离婚案件受《中华人民共和国民法典》（婚姻家庭编）和《中华人民共和国民事诉讼法》法规约束。需要明确时间限制或司法实践中的通常时长。\n\n### 法律对审限的具体规定\n根据《中华人民共和国民事诉讼法》第149条的规定，一审普通程序案件的审理期限一般为6个月，简易程序为3个月。因此，从起诉到开庭应在此范围内，并要考虑是否有延期因素。\n\n### 结合实践审查平均时间\n在实际情况中，离婚案件提起诉讼后，法院通常会在1个月内进行立案审查并通知相关的开庭时间。如果案情较为简单，开庭时间可能会排在起诉后1-3个月发生。\n\n### Conclusion\n离婚从起诉到开庭的时间通常为1-3个月，但实际时间可能因案件复杂性、法院案件量和具体程序安排有所不同。如果是简易程序，通常会更快。\n\n### Verification\n结论与民事诉讼法及实际司法实践相符。时间范围合理，可以接受。\n</Thought Process>\n\n<Question>\n离婚从起诉到开庭需多久\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n嗯，离婚从起诉到开庭一般需要多久呢？感觉这个时间可能受一些不同因素的影响。不如我先想想都有哪些因素会决定这个时间吧。\n\n首先，我觉得法院的安排应该是个很重要的因素。毕竟每个法院可能都有不同的受理速度，而且法院里案件的多少也会影响排期。再一个，案件本身的复杂程度应该也很重要。如果离婚案子涉及财产分割、子女抚养权甚至债务纠纷的话，应该会比单纯离婚的案子复杂更多，审理起来可能更慢。\n\n好，我得去确认一下，这类案件的法律程序有没有相关的规定，特别是处理时间的限制。拿法律来说，《中华人民共和国民法典》里应该会对婚姻家庭问题有相关规范，另外民事诉讼的程序会不会也提到了？\n\n对了，先去搜一下具体的法律或规定吧。比如可以用这个关键字：<search>离婚诉讼 时间安排</search>。之后我还得留意看看有没有提到审理期限的限制。\n\n<information>搜到的信息里，《中华人民共和国民事诉讼法》第149条明确规定了普通程序的案件审理期限一般是6个月，而要是用简易程序的话，期限大约是3个月。另外，在实践中，大部分离婚案的立案审查会在1个月内完成，然后法院会通知开庭的具体时间。</information>\n\n噢，这个信息挺有帮助的。也就是说整体下来，如果案子用简易程序，事情简单的话，可能1到3个月就能开庭了；可如果用普通程序，又比较复杂，那就会拖得更久，可能需要将近6个月时间。\n\n再想想，即使有了法定期限，具体时间也要看实践情况。像是法院如果积压了很多案子，排期时间可能会拉长。当然，如果是偏远地区或者小城市，可能案件量比较少，办起事来会快一些。这些实际情况我觉得也需要综合考虑。\n\n好，总结一下，按这些信息和实践经验来看，离婚起诉到开庭的时间通常在1到3个月左右，如果案情很复杂或者法院工作量大，可能需要更长的时间。这范围看起来合理，和法律的规定也契合，应该是可以接受的结论了！\n</Internal Thinking>\n\n<Question>\n离婚从起诉到开庭需多久\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"确定离婚起诉到开庭需要了解的因素\",\n      \"content\": \"离婚起诉到开庭的时间取决于法院受理案件的时间安排、案件的复杂程度以及法律程序。不同地区法院可能对时间的安排有所不同，因此需要检查有关民事案件受理和排期的法律规定。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"搜索相关法律规范\",\n      \"content\": \"需要查找关于离婚案件审理时限的法律条文或相关司法解释，以明确法律对起诉后时间安排的要求。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"查看婚姻法和民事诉讼法的规定\",\n      \"content\": \"离婚案件受《中华人民共和国民法典》（婚姻家庭编）和《中华人民共和国民事诉讼法》法规约束。需要明确时间限制或司法实践中的通常时长。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"法律对审限的具体规定\",\n      \"content\": \"根据《中华人民共和国民事诉讼法》第149条的规定，一审普通程序案件的审理期限一般为6个月，简易程序为3个月。因此，从起诉到开庭应在此范围内，并要考虑是否有延期因素。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"结合实践审查平均时间\",\n      \"content\": \"在实际情况中，离婚案件提起诉讼后，法院通常会在1个月内进行立案审查并通知相关的开庭时间。如果案情较为简单，开庭时间可能会排在起诉后1-3个月发生。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"离婚从起诉到开庭的时间通常为1-3个月，但实际时间可能因案件复杂性、法院案件量和具体程序安排有所不同。如果是简易程序，通常会更快。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"结论与民事诉讼法及实际司法实践相符。时间范围合理，可以接受。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"嗯，离婚从起诉到开庭一般需要多久呢？感觉这个时间可能受一些不同因素的影响。不如我先想想都有哪些因素会决定这个时间吧。\\n\\n首先，我觉得法院的安排应该是个很重要的因素。毕竟每个法院可能都有不同的受理速度，而且法院里案件的多少也会影响排期。再一个，案件本身的复杂程度应该也很重要。如果离婚案子涉及财产分割、子女抚养权甚至债务纠纷的话，应该会比单纯离婚的案子复杂更多，审理起来可能更慢。\\n\\n好，我得去确认一下，这类案件的法律程序有没有相关的规定，特别是处理时间的限制。拿法律来说，《中华人民共和国民法典》里应该会对婚姻家庭问题有相关规范，另外民事诉讼的程序会不会也提到了？\\n\\n对了，先去搜一下具体的法律或规定吧。比如可以用这个关键字：<search>离婚诉讼 时间安排</search>。之后我还得留意看看有没有提到审理期限的限制。\\n\\n<information>搜到的信息里，《中华人民共和国民事诉讼法》第149条明确规定了普通程序的案件审理期限一般是6个月，而要是用简易程序的话，期限大约是3个月。另外，在实践中，大部分离婚案的立案审查会在1个月内完成，然后法院会通知开庭的具体时间。</information>\\n\\n噢，这个信息挺有帮助的。也就是说整体下来，如果案子用简易程序，事情简单的话，可能1到3个月就能开庭了；可如果用普通程序，又比较复杂，那就会拖得更久，可能需要将近6个月时间。\\n\\n再想想，即使有了法定期限，具体时间也要看实践情况。像是法院如果积压了很多案子，排期时间可能会拉长。当然，如果是偏远地区或者小城市，可能案件量比较少，办起事来会快一些。这些实际情况我觉得也需要综合考虑。\\n\\n好，总结一下，按这些信息和实践经验来看，离婚起诉到开庭的时间通常在1到3个月左右，如果案情很复杂或者法院工作量大，可能需要更长的时间。这范围看起来合理，和法律的规定也契合，应该是可以接受的结论了！\"\n}\n```",
+    "离婚从起诉到开庭的时间通常取决于案件的程序类型和具体情况。\n\n根据《中华人民共和国民事诉讼法》的规定，如果案件适用简易程序，通常需要3个月内审结，而普通程序的审理期限则为6个月。在实践中，离婚案件立案审查一般会在1个月以内完成，法院随后会通知具体的开庭时间。  \n \n如果案件较为简单，例如没有财产纠纷或抚养权争议，且双方配合度较高，可能在1-3个月内安排开庭。但若案件复杂（如涉及财产分割、子女抚养权或夫妻债务等问题），或法院案件积压较多，开庭时间可能延长至6个月甚至更久。因此，具体时间还与法院的工作效率和案情复杂度密切相关。\n\n建议根据个人情况及时向律师咨询，或主动向法院了解案件进展，以便更好地掌握时间安排。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "确定离婚起诉到开庭需要了解的因素",
+        "content": "离婚起诉到开庭的时间取决于法院受理案件的时间安排、案件的复杂程度以及法律程序。不同地区法院可能对时间的安排有所不同，因此需要检查有关民事案件受理和排期的法律规定。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "搜索相关法律规范",
+        "content": "需要查找关于离婚案件审理时限的法律条文或相关司法解释，以明确法律对起诉后时间安排的要求。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "查看婚姻法和民事诉讼法的规定",
+        "content": "离婚案件受《中华人民共和国民法典》（婚姻家庭编）和《中华人民共和国民事诉讼法》法规约束。需要明确时间限制或司法实践中的通常时长。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "法律对审限的具体规定",
+        "content": "根据《中华人民共和国民事诉讼法》第149条的规定，一审普通程序案件的审理期限一般为6个月，简易程序为3个月。因此，从起诉到开庭应在此范围内，并要考虑是否有延期因素。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "结合实践审查平均时间",
+        "content": "在实际情况中，离婚案件提起诉讼后，法院通常会在1个月内进行立案审查并通知相关的开庭时间。如果案情较为简单，开庭时间可能会排在起诉后1-3个月发生。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "离婚从起诉到开庭的时间通常为1-3个月，但实际时间可能因案件复杂性、法院案件量和具体程序安排有所不同。如果是简易程序，通常会更快。"
+      },
+      {
+        "action": "Verification",
+        "content": "结论与民事诉讼法及实际司法实践相符。时间范围合理，可以接受。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "嗯，离婚从起诉到开庭一般需要多久呢？感觉这个时间可能受一些不同因素的影响。不如我先想想都有哪些因素会决定这个时间吧。\n\n首先，我觉得法院的安排应该是个很重要的因素。毕竟每个法院可能都有不同的受理速度，而且法院里案件的多少也会影响排期。再一个，案件本身的复杂程度应该也很重要。如果离婚案子涉及财产分割、子女抚养权甚至债务纠纷的话，应该会比单纯离婚的案子复杂更多，审理起来可能更慢。\n\n好，我得去确认一下，这类案件的法律程序有没有相关的规定，特别是处理时间的限制。拿法律来说，《中华人民共和国民法典》里应该会对婚姻家庭问题有相关规范，另外民事诉讼的程序会不会也提到了？\n\n对了，先去搜一下具体的法律或规定吧。比如可以用这个关键字：<search>离婚诉讼 时间安排</search>。之后我还得留意看看有没有提到审理期限的限制。\n\n<information>搜到的信息里，《中华人民共和国民事诉讼法》第149条明确规定了普通程序的案件审理期限一般是6个月，而要是用简易程序的话，期限大约是3个月。另外，在实践中，大部分离婚案的立案审查会在1个月内完成，然后法院会通知开庭的具体时间。</information>\n\n噢，这个信息挺有帮助的。也就是说整体下来，如果案子用简易程序，事情简单的话，可能1到3个月就能开庭了；可如果用普通程序，又比较复杂，那就会拖得更久，可能需要将近6个月时间。\n\n再想想，即使有了法定期限，具体时间也要看实践情况。像是法院如果积压了很多案子，排期时间可能会拉长。当然，如果是偏远地区或者小城市，可能案件量比较少，办起事来会快一些。这些实际情况我觉得也需要综合考虑。\n\n好，总结一下，按这些信息和实践经验来看，离婚起诉到开庭的时间通常在1到3个月左右，如果案情很复杂或者法院工作量大，可能需要更长的时间。这范围看起来合理，和法律的规定也契合，应该是可以接受的结论了！",
+  "Response": "离婚从起诉到开庭的时间通常取决于案件的程序类型和具体情况。\n\n根据《中华人民共和国民事诉讼法》的规定，如果案件适用简易程序，通常需要3个月内审结，而普通程序的审理期限则为6个月。在实践中，离婚案件立案审查一般会在1个月以内完成，法院随后会通知具体的开庭时间。  \n \n如果案件较为简单，例如没有财产纠纷或抚养权争议，且双方配合度较高，可能在1-3个月内安排开庭。但若案件复杂（如涉及财产分割、子女抚养权或夫妻债务等问题），或法院案件积压较多，开庭时间可能延长至6个月甚至更久。因此，具体时间还与法院的工作效率和案情复杂度密切相关。\n\n建议根据个人情况及时向律师咨询，或主动向法院了解案件进展，以便更好地掌握时间安排。",
+  "Question": "离婚从起诉到开庭需多久"
+}

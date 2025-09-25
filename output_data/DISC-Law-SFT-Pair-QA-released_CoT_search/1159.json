@@ -1,0 +1,99 @@
+{
+  "Open-ended Verifiable Question": "对方有婚内过错，离婚时会少分割夫妻财产吗？",
+  "Ground-True Answer": "结婚之后双方组成了一个家庭，但是婚姻生活并不是一帆风顺的，一个人的生活充满着酸甜苦辣，两个人的生活同样如此。夫妻之间，也会发生一些不愉快的经历，例如有可能会存在一方出现婚内过错的情况，那么在离婚的时候，过错方能不能少分财产呢？\n（1）首先需要明确的是，一般的婚外情行为（比如：婚内精神出轨，与异性暧昧不清或者偶尔的婚外性行为等）有错，但是不属于法律上的过错，（法律上的过错是指：重婚、有配偶者与他人同居、实施家庭暴力、虐待或遗弃家庭成员），也不是法定的影响财产分割的依据，但是在实践中，如果是男方被认定有婚外情行为，即使没有达法律上的过错，法院一般也会参照照顾妇女儿童权益适当倾斜，进而可能影响财产的分配，但是不会太多。而女方往往不受此影响。\n（2）如果构成婚姻法上的过错，实践中，无论有过错的是哪一方，一般都会影响财产分配比例。\n此外，法律还设置了损害赔偿的处罚方式，无过错方有权要求损害赔偿，法律没有明确的赔偿标准，实践中一般不超过10万元，2-5万居多。\n离婚时双方可以对财产分配的问题进行协商，如果协商一致，可以在离婚协议书中表示出来，并在离婚后按照离婚协议来执行。",
+  "process_id": 1159,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "明确问题和法律范围",
+      "content": "问题讨论的是婚内过错是否会影响离婚时的夫妻财产分割。需要明确两点：1. 婚姻法是否规定婚内过错导致财产分割比例变化。2. 具体婚内过错行为被法律如何认定（如重婚、家暴等）。需要查询相关法律规定。<search>婚姻法 婚内过错 财产分割</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "获取相关法律信息",
+      "content": "<information>《中华人民共和国民法典》（2021年1月1日生效）中有相关财产分割的规定。根据《民法典》第1087条，夫妻共同财产原则上平均分割，但对于有重大过错的一方，当另一方提出时，可以适当少分。</information>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "分析婚内过错对财产分割影响",
+      "content": "《民法典》第1087条明确表明，婚内若一方存在重大过错（如重婚、与他人同居、实施家庭暴力、虐待遗弃家庭成员等），则在离婚财产分割时，过错方可能少分。这需要以对方提出主张并经法院认定过错方的行为为前提。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "判断应用条件是否满足",
+      "content": "还需进一步明确哪些情形符合'重大过错'的认定标准。<search>民法典 重大过错 情形</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "确认重大过错具体情形",
+      "content": "<information>根据《民法典》第1091条明确列举了重大过错情形，包括重婚、与他人同居、实施家庭暴力、虐待或者遗弃家庭成员等。同时，必须由无过错方举证并提出减分诉求，法院在离婚判决中才会参考进行相应裁量。</information>"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "根据《民法典》第1087条和第1091条的规定，如果对方存在婚内重大过错行为且无过错方在诉讼时提出主张，经法院认定后，过错方在离婚时可能会被判决少分夫妻共同财产。"
+    },
+    {
+      "action": "Verification",
+      "content": "结论符合《民法典》相关条款的规定和司法实践的要求，可以确认答案无误。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n对方有婚内过错，离婚时会少分割夫妻财产吗？\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n根据《民法典》第1087条和第1091条的规定，如果对方存在婚内重大过错行为且无过错方在诉讼时提出主张，经法院认定后，过错方在离婚时可能会被判决少分夫妻共同财产。  \n</Model Response>  \n\n<Reference Answer>  \n结婚之后双方组成了一个家庭，但是婚姻生活并不是一帆风顺的，一个人的生活充满着酸甜苦辣，两个人的生活同样如此。夫妻之间，也会发生一些不愉快的经历，例如有可能会存在一方出现婚内过错的情况，那么在离婚的时候，过错方能不能少分财产呢？\n（1）首先需要明确的是，一般的婚外情行为（比如：婚内精神出轨，与异性暧昧不清或者偶尔的婚外性行为等）有错，但是不属于法律上的过错，（法律上的过错是指：重婚、有配偶者与他人同居、实施家庭暴力、虐待或遗弃家庭成员），也不是法定的影响财产分割的依据，但是在实践中，如果是男方被认定有婚外情行为，即使没有达法律上的过错，法院一般也会参照照顾妇女儿童权益适当倾斜，进而可能影响财产的分配，但是不会太多。而女方往往不受此影响。\n（2）如果构成婚姻法上的过错，实践中，无论有过错的是哪一方，一般都会影响财产分配比例。\n此外，法律还设置了损害赔偿的处罚方式，无过错方有权要求损害赔偿，法律没有明确的赔偿标准，实践中一般不超过10万元，2-5万居多。\n离婚时双方可以对财产分配的问题进行协商，如果协商一致，可以在离婚协议书中表示出来，并在离婚后按照离婚协议来执行。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 明确问题和法律范围\n问题讨论的是婚内过错是否会影响离婚时的夫妻财产分割。需要明确两点：1. 婚姻法是否规定婚内过错导致财产分割比例变化。2. 具体婚内过错行为被法律如何认定（如重婚、家暴等）。需要查询相关法律规定。<search>婚姻法 婚内过错 财产分割</search>\n\n### 获取相关法律信息\n<information>《中华人民共和国民法典》（2021年1月1日生效）中有相关财产分割的规定。根据《民法典》第1087条，夫妻共同财产原则上平均分割，但对于有重大过错的一方，当另一方提出时，可以适当少分。</information>\n\n### 分析婚内过错对财产分割影响\n《民法典》第1087条明确表明，婚内若一方存在重大过错（如重婚、与他人同居、实施家庭暴力、虐待遗弃家庭成员等），则在离婚财产分割时，过错方可能少分。这需要以对方提出主张并经法院认定过错方的行为为前提。\n\n### 判断应用条件是否满足\n还需进一步明确哪些情形符合'重大过错'的认定标准。<search>民法典 重大过错 情形</search>\n\n### 确认重大过错具体情形\n<information>根据《民法典》第1091条明确列举了重大过错情形，包括重婚、与他人同居、实施家庭暴力、虐待或者遗弃家庭成员等。同时，必须由无过错方举证并提出减分诉求，法院在离婚判决中才会参考进行相应裁量。</information>\n\n### Conclusion\n根据《民法典》第1087条和第1091条的规定，如果对方存在婚内重大过错行为且无过错方在诉讼时提出主张，经法院认定后，过错方在离婚时可能会被判决少分夫妻共同财产。\n\n### Verification\n结论符合《民法典》相关条款的规定和司法实践的要求，可以确认答案无误。\n</Thought Process>\n\n<Question>\n对方有婚内过错，离婚时会少分割夫妻财产吗？\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n婚内过错会不会影响离婚时的财产分割呢？嗯，这个问题得先搞清楚法律上有没有相关规定。尤其是婚姻法里有没有提到这一条。如果婚内过错真有影响，那过错具体指哪些行为，法律怎么认定，这也得弄清楚。不然没准绕偏了。先找找看吧，搜一下相关法规。<search>婚姻法 婚内过错 财产分割</search>\n\n搜到了点东西，来看一下。<information>《中华人民共和国民法典》（2021年1月1日生效）规定了一些关于离婚时财产分割的内容。根据《民法典》第1087条，夫妻共同财产在离婚时一般按平均分。不过，如果有一方有“重大过错”，那么在另一方面提出要求的时候，可以适当少分一点。</information>\n\n哦，原来是《民法典》第1087条有提到，婚姻里如果出现了“重大过错”，比如对婚姻造成了很大的伤害，那过错方在财产分割中可以少分。但这得有对方提出要求才行，不是自动就少分的。嗯，那接下来是不是得明确一下，什么叫“重大过错”？法律上可能有更详细的描述。再搜搜看吧！<search>民法典 重大过错 情形</search>\n\n这回找到了点更具体的内容，看看细则是什么。<information>《民法典》第1091条列出了关于婚内“重大过错”的情形，包括重婚、与他人同居、实施家庭暴力、虐待或者遗弃家庭成员等。这些情况下都可以算作重大过错。但是，需要由无过错的一方提出证据来证明，并在诉讼中提出来，法院认定后才会考虑对过错方少分财产。</information>\n\n哦，原来是这样。“重大过错”不是说所有小问题都行，而是特指某些明确的严重行为，比如重婚啊、找小三同居啊、家暴啦、虐待或者遗弃家人这些。如果对方有类似行为，作为无过错方，我得拿出证据证明，而且还要在法院里明确提出来才行。做不到这一点，分财产时不会自动少分。\n\n总结一下，按照《民法典》第1087条和第1091条，如果一方真的有这些很严重的过错，而且另一方有证据并主动要求法院调整财产分割，确实是有可能让过错方少分一点的。不过，过错得是那些法律列出来的明确情形，不是简单地婚姻不和或者冲突矛盾。嗯，了解了，这应该是结论没跑了。\n</Internal Thinking>\n\n<Question>\n对方有婚内过错，离婚时会少分割夫妻财产吗？\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"明确问题和法律范围\",\n      \"content\": \"问题讨论的是婚内过错是否会影响离婚时的夫妻财产分割。需要明确两点：1. 婚姻法是否规定婚内过错导致财产分割比例变化。2. 具体婚内过错行为被法律如何认定（如重婚、家暴等）。需要查询相关法律规定。<search>婚姻法 婚内过错 财产分割</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"获取相关法律信息\",\n      \"content\": \"<information>《中华人民共和国民法典》（2021年1月1日生效）中有相关财产分割的规定。根据《民法典》第1087条，夫妻共同财产原则上平均分割，但对于有重大过错的一方，当另一方提出时，可以适当少分。</information>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析婚内过错对财产分割影响\",\n      \"content\": \"《民法典》第1087条明确表明，婚内若一方存在重大过错（如重婚、与他人同居、实施家庭暴力、虐待遗弃家庭成员等），则在离婚财产分割时，过错方可能少分。这需要以对方提出主张并经法院认定过错方的行为为前提。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"判断应用条件是否满足\",\n      \"content\": \"还需进一步明确哪些情形符合'重大过错'的认定标准。<search>民法典 重大过错 情形</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"确认重大过错具体情形\",\n      \"content\": \"<information>根据《民法典》第1091条明确列举了重大过错情形，包括重婚、与他人同居、实施家庭暴力、虐待或者遗弃家庭成员等。同时，必须由无过错方举证并提出减分诉求，法院在离婚判决中才会参考进行相应裁量。</information>\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"根据《民法典》第1087条和第1091条的规定，如果对方存在婚内重大过错行为且无过错方在诉讼时提出主张，经法院认定后，过错方在离婚时可能会被判决少分夫妻共同财产。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"结论符合《民法典》相关条款的规定和司法实践的要求，可以确认答案无误。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"婚内过错会不会影响离婚时的财产分割呢？嗯，这个问题得先搞清楚法律上有没有相关规定。尤其是婚姻法里有没有提到这一条。如果婚内过错真有影响，那过错具体指哪些行为，法律怎么认定，这也得弄清楚。不然没准绕偏了。先找找看吧，搜一下相关法规。<search>婚姻法 婚内过错 财产分割</search>\\n\\n搜到了点东西，来看一下。<information>《中华人民共和国民法典》（2021年1月1日生效）规定了一些关于离婚时财产分割的内容。根据《民法典》第1087条，夫妻共同财产在离婚时一般按平均分。不过，如果有一方有“重大过错”，那么在另一方面提出要求的时候，可以适当少分一点。</information>\\n\\n哦，原来是《民法典》第1087条有提到，婚姻里如果出现了“重大过错”，比如对婚姻造成了很大的伤害，那过错方在财产分割中可以少分。但这得有对方提出要求才行，不是自动就少分的。嗯，那接下来是不是得明确一下，什么叫“重大过错”？法律上可能有更详细的描述。再搜搜看吧！<search>民法典 重大过错 情形</search>\\n\\n这回找到了点更具体的内容，看看细则是什么。<information>《民法典》第1091条列出了关于婚内“重大过错”的情形，包括重婚、与他人同居、实施家庭暴力、虐待或者遗弃家庭成员等。这些情况下都可以算作重大过错。但是，需要由无过错的一方提出证据来证明，并在诉讼中提出来，法院认定后才会考虑对过错方少分财产。</information>\\n\\n哦，原来是这样。“重大过错”不是说所有小问题都行，而是特指某些明确的严重行为，比如重婚啊、找小三同居啊、家暴啦、虐待或者遗弃家人这些。如果对方有类似行为，作为无过错方，我得拿出证据证明，而且还要在法院里明确提出来才行。做不到这一点，分财产时不会自动少分。\\n\\n总结一下，按照《民法典》第1087条和第1091条，如果一方真的有这些很严重的过错，而且另一方有证据并主动要求法院调整财产分割，确实是有可能让过错方少分一点的。不过，过错得是那些法律列出来的明确情形，不是简单地婚姻不和或者冲突矛盾。嗯，了解了，这应该是结论没跑了。\"\n}\n```",
+    "根据《中华人民共和国民法典》的相关规定，婚内过错确实可能会影响离婚时的财产分割。如果一方在婚姻关系存续期间存在“重大过错”，如重婚、与他人同居、实施家庭暴力、虐待或遗弃家庭成员等行为，并且无过错方在离婚时向法院提出要求，那么法院可以在分割夫妻共同财产时，对有重大过错的一方适当少分。\n\n需要注意的是，“重大过错”并不是指一般的夫妻矛盾或婚姻不和，而是法律明确列举的以及法院认定的特定情形。此外，无过错方需要提供充分的证据证明对方的过错行为，并向法院提出要求，法院审理后才会根据具体情况决定是否调整财产分割比例。\n\n总结来说，如果对方有婚内“重大过错”，且您能够提供证据，并在离婚时明确提出要求，是有可能让对方少分夫妻共同财产的。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "明确问题和法律范围",
+        "content": "问题讨论的是婚内过错是否会影响离婚时的夫妻财产分割。需要明确两点：1. 婚姻法是否规定婚内过错导致财产分割比例变化。2. 具体婚内过错行为被法律如何认定（如重婚、家暴等）。需要查询相关法律规定。<search>婚姻法 婚内过错 财产分割</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "获取相关法律信息",
+        "content": "<information>《中华人民共和国民法典》（2021年1月1日生效）中有相关财产分割的规定。根据《民法典》第1087条，夫妻共同财产原则上平均分割，但对于有重大过错的一方，当另一方提出时，可以适当少分。</information>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "分析婚内过错对财产分割影响",
+        "content": "《民法典》第1087条明确表明，婚内若一方存在重大过错（如重婚、与他人同居、实施家庭暴力、虐待遗弃家庭成员等），则在离婚财产分割时，过错方可能少分。这需要以对方提出主张并经法院认定过错方的行为为前提。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "判断应用条件是否满足",
+        "content": "还需进一步明确哪些情形符合'重大过错'的认定标准。<search>民法典 重大过错 情形</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "确认重大过错具体情形",
+        "content": "<information>根据《民法典》第1091条明确列举了重大过错情形，包括重婚、与他人同居、实施家庭暴力、虐待或者遗弃家庭成员等。同时，必须由无过错方举证并提出减分诉求，法院在离婚判决中才会参考进行相应裁量。</information>"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "根据《民法典》第1087条和第1091条的规定，如果对方存在婚内重大过错行为且无过错方在诉讼时提出主张，经法院认定后，过错方在离婚时可能会被判决少分夫妻共同财产。"
+      },
+      {
+        "action": "Verification",
+        "content": "结论符合《民法典》相关条款的规定和司法实践的要求，可以确认答案无误。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "婚内过错会不会影响离婚时的财产分割呢？嗯，这个问题得先搞清楚法律上有没有相关规定。尤其是婚姻法里有没有提到这一条。如果婚内过错真有影响，那过错具体指哪些行为，法律怎么认定，这也得弄清楚。不然没准绕偏了。先找找看吧，搜一下相关法规。<search>婚姻法 婚内过错 财产分割</search>\n\n搜到了点东西，来看一下。<information>《中华人民共和国民法典》（2021年1月1日生效）规定了一些关于离婚时财产分割的内容。根据《民法典》第1087条，夫妻共同财产在离婚时一般按平均分。不过，如果有一方有“重大过错”，那么在另一方面提出要求的时候，可以适当少分一点。</information>\n\n哦，原来是《民法典》第1087条有提到，婚姻里如果出现了“重大过错”，比如对婚姻造成了很大的伤害，那过错方在财产分割中可以少分。但这得有对方提出要求才行，不是自动就少分的。嗯，那接下来是不是得明确一下，什么叫“重大过错”？法律上可能有更详细的描述。再搜搜看吧！<search>民法典 重大过错 情形</search>\n\n这回找到了点更具体的内容，看看细则是什么。<information>《民法典》第1091条列出了关于婚内“重大过错”的情形，包括重婚、与他人同居、实施家庭暴力、虐待或者遗弃家庭成员等。这些情况下都可以算作重大过错。但是，需要由无过错的一方提出证据来证明，并在诉讼中提出来，法院认定后才会考虑对过错方少分财产。</information>\n\n哦，原来是这样。“重大过错”不是说所有小问题都行，而是特指某些明确的严重行为，比如重婚啊、找小三同居啊、家暴啦、虐待或者遗弃家人这些。如果对方有类似行为，作为无过错方，我得拿出证据证明，而且还要在法院里明确提出来才行。做不到这一点，分财产时不会自动少分。\n\n总结一下，按照《民法典》第1087条和第1091条，如果一方真的有这些很严重的过错，而且另一方有证据并主动要求法院调整财产分割，确实是有可能让过错方少分一点的。不过，过错得是那些法律列出来的明确情形，不是简单地婚姻不和或者冲突矛盾。嗯，了解了，这应该是结论没跑了。",
+  "Response": "根据《中华人民共和国民法典》的相关规定，婚内过错确实可能会影响离婚时的财产分割。如果一方在婚姻关系存续期间存在“重大过错”，如重婚、与他人同居、实施家庭暴力、虐待或遗弃家庭成员等行为，并且无过错方在离婚时向法院提出要求，那么法院可以在分割夫妻共同财产时，对有重大过错的一方适当少分。\n\n需要注意的是，“重大过错”并不是指一般的夫妻矛盾或婚姻不和，而是法律明确列举的以及法院认定的特定情形。此外，无过错方需要提供充分的证据证明对方的过错行为，并向法院提出要求，法院审理后才会根据具体情况决定是否调整财产分割比例。\n\n总结来说，如果对方有婚内“重大过错”，且您能够提供证据，并在离婚时明确提出要求，是有可能让对方少分夫妻共同财产的。",
+  "Question": "对方有婚内过错，离婚时会少分割夫妻财产吗？"
+}

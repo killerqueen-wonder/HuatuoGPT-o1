@@ -1,0 +1,79 @@
+{
+  "Open-ended Verifiable Question": "判决离婚的条件有哪些?",
+  "Ground-True Answer": "夫妻双方在离婚时，经法院调解无效的，符合以下情形的，准许离婚：\n1、重婚或者与他人同居\n2、实施家庭暴力或者虐待、遗弃家庭成员\n3、有赌博、吸毒等恶习屡教不改\n4、因感情不和分居满二年\n5、一方被宣告失踪，另一方提起离婚诉讼的，应当准予离婚\n6、经人民法院判决不准离婚后，双方又分居满一年，一方再次提起离婚诉讼的，应当准予离婚。\n以上便是《民法典》规定的法院准许离婚的条件，夫妻离婚，最要满足的条件是夫妻感情破裂。满足了夫妻感情破裂条件，法院基本上就会判决离婚。认定考察感情是否破裂，应从婚姻基础、婚后感情、离婚原因、夫妻关系的现状和有无和好的可能等方面综合分析。\n法院判决离婚需要满足特定的条件，而这些条件就成为能否离婚的关键。但实践中，很多当事人其实并不是很清楚法院判决离婚的条件包括什么，这对打离婚官司来讲是不利的，最后的判决结果可能会与其预想的相差较远。",
+  "process_id": 7862,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "明确问题涉及的法律领域",
+      "content": "判决离婚涉及的是婚姻法等相关法律的规定。需要确定具体条件适用哪些条款或法律规定并分析内容。为了进一步说明条件，将进行相关搜索以获取具体法律依据。<search>中国婚姻法 离婚条件</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "检索相关法律规定",
+      "content": "<information>《中华人民共和国民法典》第五编《婚姻家庭》规定了有关离婚的法律条款，这些条款包括离婚申请的条件、法院判决离婚的情形以及涉及家庭、财产安排等具体细节。根据《民法典》第1079条，法院审理离婚案件时，应首先调解，如调解无效，则会根据夫妻感情破裂的具体情况作出判决。以下是可能导致夫妻感情破裂并适用于判决离婚的主要情况：1. 重婚或与他人同居；2. 家庭暴力或虐待、遗弃；3. 有重大过错导致夫妻关系破裂；4. 分居满两年且感情确已破裂；5. 其他导致感情破裂的情形。</information>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "分析条件适用",
+      "content": "根据《民法典》的相关规定，判决离婚的核心条件是夫妻感情确已破裂，而 '夫妻感情确已破裂' 的标准包括上述具体情形。这意味着，法院应根据提交的证据评估这些情况是否存在，以及它们是否导致了无法修复的感情破裂。与此同时，调解过程也是判决前的必要阶段，调解无效后才能进入判决流程。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "根据《中华人民共和国民法典》第1079条，法院判决离婚的条件主要包括以下情形：1. 重婚或与他人同居；2. 实施家庭暴力或虐待、遗弃；3. 有其他重大过错导致夫妻关系破裂；4. 分居满两年且感情确已破裂；5. 其他导致夫妻感情确已破裂的情形。这些条件需以证据佐证感情确已破裂，同时调解无效后方可进入判决离婚程序。"
+    },
+    {
+      "action": "Verification",
+      "content": "搜索和分析结果均明确指出判决离婚的条件，以及调解无效作为前置程序的必要性。这与《民法典》婚姻家庭编的主要内容一致，因此结论是正确的，不需进一步修正。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n判决离婚的条件有哪些?\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n根据《中华人民共和国民法典》第1079条，法院判决离婚的条件主要包括以下情形：1. 重婚或与他人同居；2. 实施家庭暴力或虐待、遗弃；3. 有其他重大过错导致夫妻关系破裂；4. 分居满两年且感情确已破裂；5. 其他导致夫妻感情确已破裂的情形。这些条件需以证据佐证感情确已破裂，同时调解无效后方可进入判决离婚程序。  \n</Model Response>  \n\n<Reference Answer>  \n夫妻双方在离婚时，经法院调解无效的，符合以下情形的，准许离婚：\n1、重婚或者与他人同居\n2、实施家庭暴力或者虐待、遗弃家庭成员\n3、有赌博、吸毒等恶习屡教不改\n4、因感情不和分居满二年\n5、一方被宣告失踪，另一方提起离婚诉讼的，应当准予离婚\n6、经人民法院判决不准离婚后，双方又分居满一年，一方再次提起离婚诉讼的，应当准予离婚。\n以上便是《民法典》规定的法院准许离婚的条件，夫妻离婚，最要满足的条件是夫妻感情破裂。满足了夫妻感情破裂条件，法院基本上就会判决离婚。认定考察感情是否破裂，应从婚姻基础、婚后感情、离婚原因、夫妻关系的现状和有无和好的可能等方面综合分析。\n法院判决离婚需要满足特定的条件，而这些条件就成为能否离婚的关键。但实践中，很多当事人其实并不是很清楚法院判决离婚的条件包括什么，这对打离婚官司来讲是不利的，最后的判决结果可能会与其预想的相差较远。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 明确问题涉及的法律领域\n判决离婚涉及的是婚姻法等相关法律的规定。需要确定具体条件适用哪些条款或法律规定并分析内容。为了进一步说明条件，将进行相关搜索以获取具体法律依据。<search>中国婚姻法 离婚条件</search>\n\n### 检索相关法律规定\n<information>《中华人民共和国民法典》第五编《婚姻家庭》规定了有关离婚的法律条款，这些条款包括离婚申请的条件、法院判决离婚的情形以及涉及家庭、财产安排等具体细节。根据《民法典》第1079条，法院审理离婚案件时，应首先调解，如调解无效，则会根据夫妻感情破裂的具体情况作出判决。以下是可能导致夫妻感情破裂并适用于判决离婚的主要情况：1. 重婚或与他人同居；2. 家庭暴力或虐待、遗弃；3. 有重大过错导致夫妻关系破裂；4. 分居满两年且感情确已破裂；5. 其他导致感情破裂的情形。</information>\n\n### 分析条件适用\n根据《民法典》的相关规定，判决离婚的核心条件是夫妻感情确已破裂，而 '夫妻感情确已破裂' 的标准包括上述具体情形。这意味着，法院应根据提交的证据评估这些情况是否存在，以及它们是否导致了无法修复的感情破裂。与此同时，调解过程也是判决前的必要阶段，调解无效后才能进入判决流程。\n\n### Conclusion\n根据《中华人民共和国民法典》第1079条，法院判决离婚的条件主要包括以下情形：1. 重婚或与他人同居；2. 实施家庭暴力或虐待、遗弃；3. 有其他重大过错导致夫妻关系破裂；4. 分居满两年且感情确已破裂；5. 其他导致夫妻感情确已破裂的情形。这些条件需以证据佐证感情确已破裂，同时调解无效后方可进入判决离婚程序。\n\n### Verification\n搜索和分析结果均明确指出判决离婚的条件，以及调解无效作为前置程序的必要性。这与《民法典》婚姻家庭编的主要内容一致，因此结论是正确的，不需进一步修正。\n</Thought Process>\n\n<Question>\n判决离婚的条件有哪些?\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n判决离婚的条件是什么呢？得先搞清楚，这属于哪个法律领域。嗯，离婚应该是跟婚姻法相关吧，但现在是用《民法典》来规范婚姻家庭问题。好像涉及法条还挺多的，我得再查查具体的条件是怎么规定的。<search>中国婚姻法 离婚条件</search>\n\n<information>找到了，让我看看结果。《中华人民共和国民法典》第五编《婚姻家庭》里有针对离婚的相关规定，尤其是第1079条。条文里面说，如果夫妻要离婚，法院审理时先要调解；调解不成的情况下，才会根据实际情况决定是否判离婚。而其中的关键就是看夫妻感情是否“确已破裂”。这个用词听起来挺严谨，但继续看下去，感情破裂的判断标准其实列了几个具体情况，比如：重婚或者和其他人同居；实施家庭暴力，或者对家人有虐待、遗弃行为；因为重大过错让夫妻关系破裂；分居两年且感情破裂；或者其他导致感情破裂的情况。嗯，这些情形都挺现实的。</information>\n\n所以，实际操作来看，法院决定判不判离婚挺依赖证据的。比如说，如果是重婚或者家暴，这些需要提供明确的证据才能认定；如果是分居两年，那就要证明确实分开住了，而且这期间感情也没法修复。总之，核心还是要判断感情是不是已经破裂到无法挽回。\n\n还有一个很重要的点是在法庭判决前，调解是必须的。这是法律规定的程序性要求，调解失败了之后才能走到判决的阶段。这么看，法律还是想尽量给双方一个试图和解的机会。\n\n总结一下，根据《民法典》第1079条，法院判决离婚一般会参考以下几点：第一，看是不是发生了重婚或者一方跟别人长期同居；第二，是否存在家庭暴力、虐待或者遗弃行为；第三，有没有其他让婚姻破裂的重大过错；第四，夫妻双方是不是分居满两年且感情破裂了；最后，就是一些可能特殊但足以说明感情破裂的其他情况。一切都围绕着“夫妻感情确已破裂”这一核心条件，外加调解无效这一前提。\n\n嗯，看起来逻辑挺清楚的，这些条件既符合常识，也符合法律精神。如果有证据能够证明这些情形存在，而且双方确实无法挽回，那么法律就会支持离婚。\n</Internal Thinking>\n\n<Question>\n判决离婚的条件有哪些?\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"明确问题涉及的法律领域\",\n      \"content\": \"判决离婚涉及的是婚姻法等相关法律的规定。需要确定具体条件适用哪些条款或法律规定并分析内容。为了进一步说明条件，将进行相关搜索以获取具体法律依据。<search>中国婚姻法 离婚条件</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"检索相关法律规定\",\n      \"content\": \"<information>《中华人民共和国民法典》第五编《婚姻家庭》规定了有关离婚的法律条款，这些条款包括离婚申请的条件、法院判决离婚的情形以及涉及家庭、财产安排等具体细节。根据《民法典》第1079条，法院审理离婚案件时，应首先调解，如调解无效，则会根据夫妻感情破裂的具体情况作出判决。以下是可能导致夫妻感情破裂并适用于判决离婚的主要情况：1. 重婚或与他人同居；2. 家庭暴力或虐待、遗弃；3. 有重大过错导致夫妻关系破裂；4. 分居满两年且感情确已破裂；5. 其他导致感情破裂的情形。</information>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析条件适用\",\n      \"content\": \"根据《民法典》的相关规定，判决离婚的核心条件是夫妻感情确已破裂，而 '夫妻感情确已破裂' 的标准包括上述具体情形。这意味着，法院应根据提交的证据评估这些情况是否存在，以及它们是否导致了无法修复的感情破裂。与此同时，调解过程也是判决前的必要阶段，调解无效后才能进入判决流程。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"根据《中华人民共和国民法典》第1079条，法院判决离婚的条件主要包括以下情形：1. 重婚或与他人同居；2. 实施家庭暴力或虐待、遗弃；3. 有其他重大过错导致夫妻关系破裂；4. 分居满两年且感情确已破裂；5. 其他导致夫妻感情确已破裂的情形。这些条件需以证据佐证感情确已破裂，同时调解无效后方可进入判决离婚程序。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"搜索和分析结果均明确指出判决离婚的条件，以及调解无效作为前置程序的必要性。这与《民法典》婚姻家庭编的主要内容一致，因此结论是正确的，不需进一步修正。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"判决离婚的条件是什么呢？得先搞清楚，这属于哪个法律领域。嗯，离婚应该是跟婚姻法相关吧，但现在是用《民法典》来规范婚姻家庭问题。好像涉及法条还挺多的，我得再查查具体的条件是怎么规定的。<search>中国婚姻法 离婚条件</search>\\n\\n<information>找到了，让我看看结果。《中华人民共和国民法典》第五编《婚姻家庭》里有针对离婚的相关规定，尤其是第1079条。条文里面说，如果夫妻要离婚，法院审理时先要调解；调解不成的情况下，才会根据实际情况决定是否判离婚。而其中的关键就是看夫妻感情是否“确已破裂”。这个用词听起来挺严谨，但继续看下去，感情破裂的判断标准其实列了几个具体情况，比如：重婚或者和其他人同居；实施家庭暴力，或者对家人有虐待、遗弃行为；因为重大过错让夫妻关系破裂；分居两年且感情破裂；或者其他导致感情破裂的情况。嗯，这些情形都挺现实的。</information>\\n\\n所以，实际操作来看，法院决定判不判离婚挺依赖证据的。比如说，如果是重婚或者家暴，这些需要提供明确的证据才能认定；如果是分居两年，那就要证明确实分开住了，而且这期间感情也没法修复。总之，核心还是要判断感情是不是已经破裂到无法挽回。\\n\\n还有一个很重要的点是在法庭判决前，调解是必须的。这是法律规定的程序性要求，调解失败了之后才能走到判决的阶段。这么看，法律还是想尽量给双方一个试图和解的机会。\\n\\n总结一下，根据《民法典》第1079条，法院判决离婚一般会参考以下几点：第一，看是不是发生了重婚或者一方跟别人长期同居；第二，是否存在家庭暴力、虐待或者遗弃行为；第三，有没有其他让婚姻破裂的重大过错；第四，夫妻双方是不是分居满两年且感情破裂了；最后，就是一些可能特殊但足以说明感情破裂的其他情况。一切都围绕着“夫妻感情确已破裂”这一核心条件，外加调解无效这一前提。\\n\\n嗯，看起来逻辑挺清楚的，这些条件既符合常识，也符合法律精神。如果有证据能够证明这些情形存在，而且双方确实无法挽回，那么法律就会支持离婚。\"\n}\n```",
+    "根据《中华人民共和国民法典》第1079条的规定，法院判决离婚的关键条件是“夫妻感情确已破裂”，同时需要经过调解无效的程序性前提。以下是法律对“感情确已破裂”的具体判断标准：\n\n1. **重婚或与他人同居**：一方存在重婚行为或与其他人长期同居，这些情况严重破坏了婚姻关系。\n\n2. **家庭暴力、虐待或遗弃行为**：一方实施家庭暴力，或者对配偶或其他家庭成员存在虐待、遗弃行为。\n\n3. **重大过错导致婚姻破裂**：因一方的重大过错行为（如赌博、吸毒等）导致夫妻关系难以维系。\n\n4. **分居满两年且感情破裂**：夫妻因感情不和分居满两年的情况下，双方关系已难以修复。\n\n5. **其他因素**：法律规定可以综合审查其他足以认定夫妻感情已经破裂的特殊情况。\n\n需要注意的是，法院在审理离婚案件时会优先进行调解，只有在调解无效的情况下，才会作出是否离婚的判决。因此，核心在于提供能够证明夫妻感情确已破裂的证据，例如重婚的证据、家暴或虐待的记录、分居两年的证明等。\n\n综上，满足上述条件之一、调解无效且有充分证据支撑，法院才可能判决离婚。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "明确问题涉及的法律领域",
+        "content": "判决离婚涉及的是婚姻法等相关法律的规定。需要确定具体条件适用哪些条款或法律规定并分析内容。为了进一步说明条件，将进行相关搜索以获取具体法律依据。<search>中国婚姻法 离婚条件</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "检索相关法律规定",
+        "content": "<information>《中华人民共和国民法典》第五编《婚姻家庭》规定了有关离婚的法律条款，这些条款包括离婚申请的条件、法院判决离婚的情形以及涉及家庭、财产安排等具体细节。根据《民法典》第1079条，法院审理离婚案件时，应首先调解，如调解无效，则会根据夫妻感情破裂的具体情况作出判决。以下是可能导致夫妻感情破裂并适用于判决离婚的主要情况：1. 重婚或与他人同居；2. 家庭暴力或虐待、遗弃；3. 有重大过错导致夫妻关系破裂；4. 分居满两年且感情确已破裂；5. 其他导致感情破裂的情形。</information>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "分析条件适用",
+        "content": "根据《民法典》的相关规定，判决离婚的核心条件是夫妻感情确已破裂，而 '夫妻感情确已破裂' 的标准包括上述具体情形。这意味着，法院应根据提交的证据评估这些情况是否存在，以及它们是否导致了无法修复的感情破裂。与此同时，调解过程也是判决前的必要阶段，调解无效后才能进入判决流程。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "根据《中华人民共和国民法典》第1079条，法院判决离婚的条件主要包括以下情形：1. 重婚或与他人同居；2. 实施家庭暴力或虐待、遗弃；3. 有其他重大过错导致夫妻关系破裂；4. 分居满两年且感情确已破裂；5. 其他导致夫妻感情确已破裂的情形。这些条件需以证据佐证感情确已破裂，同时调解无效后方可进入判决离婚程序。"
+      },
+      {
+        "action": "Verification",
+        "content": "搜索和分析结果均明确指出判决离婚的条件，以及调解无效作为前置程序的必要性。这与《民法典》婚姻家庭编的主要内容一致，因此结论是正确的，不需进一步修正。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "判决离婚的条件是什么呢？得先搞清楚，这属于哪个法律领域。嗯，离婚应该是跟婚姻法相关吧，但现在是用《民法典》来规范婚姻家庭问题。好像涉及法条还挺多的，我得再查查具体的条件是怎么规定的。<search>中国婚姻法 离婚条件</search>\n\n<information>找到了，让我看看结果。《中华人民共和国民法典》第五编《婚姻家庭》里有针对离婚的相关规定，尤其是第1079条。条文里面说，如果夫妻要离婚，法院审理时先要调解；调解不成的情况下，才会根据实际情况决定是否判离婚。而其中的关键就是看夫妻感情是否“确已破裂”。这个用词听起来挺严谨，但继续看下去，感情破裂的判断标准其实列了几个具体情况，比如：重婚或者和其他人同居；实施家庭暴力，或者对家人有虐待、遗弃行为；因为重大过错让夫妻关系破裂；分居两年且感情破裂；或者其他导致感情破裂的情况。嗯，这些情形都挺现实的。</information>\n\n所以，实际操作来看，法院决定判不判离婚挺依赖证据的。比如说，如果是重婚或者家暴，这些需要提供明确的证据才能认定；如果是分居两年，那就要证明确实分开住了，而且这期间感情也没法修复。总之，核心还是要判断感情是不是已经破裂到无法挽回。\n\n还有一个很重要的点是在法庭判决前，调解是必须的。这是法律规定的程序性要求，调解失败了之后才能走到判决的阶段。这么看，法律还是想尽量给双方一个试图和解的机会。\n\n总结一下，根据《民法典》第1079条，法院判决离婚一般会参考以下几点：第一，看是不是发生了重婚或者一方跟别人长期同居；第二，是否存在家庭暴力、虐待或者遗弃行为；第三，有没有其他让婚姻破裂的重大过错；第四，夫妻双方是不是分居满两年且感情破裂了；最后，就是一些可能特殊但足以说明感情破裂的其他情况。一切都围绕着“夫妻感情确已破裂”这一核心条件，外加调解无效这一前提。\n\n嗯，看起来逻辑挺清楚的，这些条件既符合常识，也符合法律精神。如果有证据能够证明这些情形存在，而且双方确实无法挽回，那么法律就会支持离婚。",
+  "Response": "根据《中华人民共和国民法典》第1079条的规定，法院判决离婚的关键条件是“夫妻感情确已破裂”，同时需要经过调解无效的程序性前提。以下是法律对“感情确已破裂”的具体判断标准：\n\n1. **重婚或与他人同居**：一方存在重婚行为或与其他人长期同居，这些情况严重破坏了婚姻关系。\n\n2. **家庭暴力、虐待或遗弃行为**：一方实施家庭暴力，或者对配偶或其他家庭成员存在虐待、遗弃行为。\n\n3. **重大过错导致婚姻破裂**：因一方的重大过错行为（如赌博、吸毒等）导致夫妻关系难以维系。\n\n4. **分居满两年且感情破裂**：夫妻因感情不和分居满两年的情况下，双方关系已难以修复。\n\n5. **其他因素**：法律规定可以综合审查其他足以认定夫妻感情已经破裂的特殊情况。\n\n需要注意的是，法院在审理离婚案件时会优先进行调解，只有在调解无效的情况下，才会作出是否离婚的判决。因此，核心在于提供能够证明夫妻感情确已破裂的证据，例如重婚的证据、家暴或虐待的记录、分居两年的证明等。\n\n综上，满足上述条件之一、调解无效且有充分证据支撑，法院才可能判决离婚。",
+  "Question": "判决离婚的条件有哪些?"
+}

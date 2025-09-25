@@ -1,0 +1,103 @@
+{
+  "Open-ended Verifiable Question": "交通事故责任承担方式？",
+  "Ground-True Answer": "交通事故责任的承担方式？根据道路交通安全法第七十六条的规定，机动车发生交通事故造成人身伤亡、财产损失的，由保险公司在机动车第三者责任强制保险责任限额范围内予以赔偿；不足的部分，按照下列规定承担赔偿责任： 1、机动车之间发生物，由有过错的一方承担赔偿责任；双方都有过错的，按照各自过错的比例分担责任； 2、机动车与非机动车驾驶人、行人之间发生交通事故，非机动车驾驶人、行人没有过错的，由机动车一方承担赔偿责任；有证据证明非机动车驾驶人、行人有过错的，根据过错程度适当减轻机动车一方的赔偿责任；机动车一方没有过错的，承担不超过百分之十的赔偿责任。 交通事故的损失是由非机动车驾驶人、行人故意碰撞机动车造成的，机动车一方不承担赔偿责任。 根据本规定，在发生交通事故存在损失的情况下，首先由保险公司在责任限额范围内予以赔偿，超出部分再根据双方的责任承担结果确定责任承担的方式。",
+  "process_id": 7999,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "明确交通事故责任承担的法律依据",
+      "content": "交通事故的责任承担方式通常由相关的法律法规明确规定。首先，需要查阅相关法律法规以确定其法律依据，比如《道路交通安全法》或《民法典》中涉及交通事故责任的条款。为此，搜索相关条款内容。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "搜索《道路交通安全法》的规定",
+      "content": "查找《道路交通安全法》中关于交通事故责任划分和承担的具体条款内容，以获取具体依据。",
+      "search": "道路交通安全法 交通事故责任"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "搜索结果分析",
+      "content": "《道路交通安全法》规定，交通事故的责任划分根据事故认定书判定的责任比例确定，包括全责、主责、次责和无责。同时，《民法典》中也对侵权责任的承担方式做了补充性规定。",
+      "information": "《道路交通安全法》第76条、《民法典》有关侵权责任条款明确了交通事故责任划分规则和赔偿承担方式。具体内容：机动车驾驶人承担主要责任时，由其保险公司在责任限额范围内予以赔偿；超出保险限额部分则由责任人承担。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "交通事故责任划分原则",
+      "content": "根据上述规定，交通事故责任根据具体过错行为划分为全责、主责、次责或无责。同时，机动车与非机动车或行人发生事故时，机动车一方通常承受更高的赔偿义务，除非有证据表明非机动车或行人行为是主要原因。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "总结责任承担方式",
+      "content": "结合法律规定，交通事故责任承担方式通常包括保险赔付和责任人个人赔付两个部分：1. 保险赔付：由责任人投保的保险公司根据责任比例在限额内赔偿；2. 个人赔付：若赔偿金额超出保险限额或保险未覆盖，则由责任人依据认定的责任比例赔偿。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "交通事故责任承担方式主要包括两部分：第一，保险赔付，由责任人一方的保险公司根据责任比例和保险限额进行赔偿；第二，超出保险赔付范围或无保险保障时，由责任人根据责任划分按比例个人承担。同时，依据事故认定书和相关法律法规确定具体责任。"
+    },
+    {
+      "action": "Verification",
+      "content": "经验证，结论符合《道路交通安全法》和《民法典》的相关规定，关于责任划分和赔偿承担的描述准确无误，可以明确回答问题。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n交通事故责任承担方式？\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n交通事故责任承担方式主要包括两部分：第一，保险赔付，由责任人一方的保险公司根据责任比例和保险限额进行赔偿；第二，超出保险赔付范围或无保险保障时，由责任人根据责任划分按比例个人承担。同时，依据事故认定书和相关法律法规确定具体责任。  \n</Model Response>  \n\n<Reference Answer>  \n交通事故责任的承担方式？根据道路交通安全法第七十六条的规定，机动车发生交通事故造成人身伤亡、财产损失的，由保险公司在机动车第三者责任强制保险责任限额范围内予以赔偿；不足的部分，按照下列规定承担赔偿责任： 1、机动车之间发生物，由有过错的一方承担赔偿责任；双方都有过错的，按照各自过错的比例分担责任； 2、机动车与非机动车驾驶人、行人之间发生交通事故，非机动车驾驶人、行人没有过错的，由机动车一方承担赔偿责任；有证据证明非机动车驾驶人、行人有过错的，根据过错程度适当减轻机动车一方的赔偿责任；机动车一方没有过错的，承担不超过百分之十的赔偿责任。 交通事故的损失是由非机动车驾驶人、行人故意碰撞机动车造成的，机动车一方不承担赔偿责任。 根据本规定，在发生交通事故存在损失的情况下，首先由保险公司在责任限额范围内予以赔偿，超出部分再根据双方的责任承担结果确定责任承担的方式。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 明确交通事故责任承担的法律依据\n交通事故的责任承担方式通常由相关的法律法规明确规定。首先，需要查阅相关法律法规以确定其法律依据，比如《道路交通安全法》或《民法典》中涉及交通事故责任的条款。为此，搜索相关条款内容。\n\n### 搜索《道路交通安全法》的规定\n查找《道路交通安全法》中关于交通事故责任划分和承担的具体条款内容，以获取具体依据。\n\n### 搜索结果分析\n《道路交通安全法》规定，交通事故的责任划分根据事故认定书判定的责任比例确定，包括全责、主责、次责和无责。同时，《民法典》中也对侵权责任的承担方式做了补充性规定。\n\n### 交通事故责任划分原则\n根据上述规定，交通事故责任根据具体过错行为划分为全责、主责、次责或无责。同时，机动车与非机动车或行人发生事故时，机动车一方通常承受更高的赔偿义务，除非有证据表明非机动车或行人行为是主要原因。\n\n### 总结责任承担方式\n结合法律规定，交通事故责任承担方式通常包括保险赔付和责任人个人赔付两个部分：1. 保险赔付：由责任人投保的保险公司根据责任比例在限额内赔偿；2. 个人赔付：若赔偿金额超出保险限额或保险未覆盖，则由责任人依据认定的责任比例赔偿。\n\n### Conclusion\n交通事故责任承担方式主要包括两部分：第一，保险赔付，由责任人一方的保险公司根据责任比例和保险限额进行赔偿；第二，超出保险赔付范围或无保险保障时，由责任人根据责任划分按比例个人承担。同时，依据事故认定书和相关法律法规确定具体责任。\n\n### Verification\n经验证，结论符合《道路交通安全法》和《民法典》的相关规定，关于责任划分和赔偿承担的描述准确无误，可以明确回答问题。\n</Thought Process>\n\n<Question>\n交通事故责任承担方式？\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n交通事故责任的承担好像是要看相关的法律怎么规定吧？首先应该找找看《道路交通安全法》和《民法典》，这些法律里应该有明确的条款来讲这个事情。嗯，不如搜索一下相关的法律条款，看看它们怎么说。\n\n<search>《道路交通安全法》交通事故责任条款</search>\n\n<information>《道路交通安全法》中提到，交通事故责任主要通过事故认定书来判定。交管部门会根据当事人的行为过错来划分责任，比如分成全责、主责、次责和无责。而且还提到，机动车与非机动车或者行人发生事故时，机动车通常需要承担更大的赔偿责任，除非有充分证据证明非机动车或者行人是主要原因。</information>\n\n哦，这样的话原来交通责任认定是这么划分的。那保险赔偿应该也是按照这些认定来进行吧？不过保险赔偿不是不限额的，所以超出限额的部分应该要由责任人自己承担。不知道《民法典》有没有更多补充的规定，搜索一下。\n\n<search>《民法典》侵权责任条款</search>\n\n<information>《民法典》也提到了侵权责任的承担方式，侵权行为发生后，受害人有权要求赔偿损失，而赔偿责任在具体划分之后，会根据责任比例和具体过错由责任人承担。此外，《民法典》还强调保险在赔偿中的作用，通常情况下责任人已经购买的保险会先赔偿损害，剩下超出的部分由责任人个人承担。</information>\n\n哦，原来《民法典》也进一步解释了侵权责任的具体承担方式，和《道路交通安全法》结合起来的话应该可以明确了交通事故的赔付逻辑。责任划分主要看责任认定书，而赔偿通常分成两部分：第一部分是保险公司按照责任比例和保险限额进行赔付；第二部分超出保险保障范围的部分就得责任人自己掏钱。\n\n不过还有个细节，机动车和非机动车或者行人的事故中，机动车好像哪怕不是主要责任，也容易被要求承担更大的赔款，这可能是法律加强对弱势群体的保护吧。\n\n所以，交通事故责任怎么承担应该可以进一步总结一下了：首先是保险赔偿，保险公司根据认定的责任比例和限额进行赔付；如果超出保险范围或者事故中保险不能覆盖，就要责任人自己根据责任认定书的比例来承担赔款。而这些依据主要来自《道路交通安全法》和《民法典》的规定。\n\n好，看起来条理清楚了，交通事故的责任承担方式就这么回事。\n</Internal Thinking>\n\n<Question>\n交通事故责任承担方式？\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"明确交通事故责任承担的法律依据\",\n      \"content\": \"交通事故的责任承担方式通常由相关的法律法规明确规定。首先，需要查阅相关法律法规以确定其法律依据，比如《道路交通安全法》或《民法典》中涉及交通事故责任的条款。为此，搜索相关条款内容。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"搜索《道路交通安全法》的规定\",\n      \"content\": \"查找《道路交通安全法》中关于交通事故责任划分和承担的具体条款内容，以获取具体依据。\",\n      \"search\": \"道路交通安全法 交通事故责任\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"搜索结果分析\",\n      \"content\": \"《道路交通安全法》规定，交通事故的责任划分根据事故认定书判定的责任比例确定，包括全责、主责、次责和无责。同时，《民法典》中也对侵权责任的承担方式做了补充性规定。\",\n      \"information\": \"《道路交通安全法》第76条、《民法典》有关侵权责任条款明确了交通事故责任划分规则和赔偿承担方式。具体内容：机动车驾驶人承担主要责任时，由其保险公司在责任限额范围内予以赔偿；超出保险限额部分则由责任人承担。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"交通事故责任划分原则\",\n      \"content\": \"根据上述规定，交通事故责任根据具体过错行为划分为全责、主责、次责或无责。同时，机动车与非机动车或行人发生事故时，机动车一方通常承受更高的赔偿义务，除非有证据表明非机动车或行人行为是主要原因。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"总结责任承担方式\",\n      \"content\": \"结合法律规定，交通事故责任承担方式通常包括保险赔付和责任人个人赔付两个部分：1. 保险赔付：由责任人投保的保险公司根据责任比例在限额内赔偿；2. 个人赔付：若赔偿金额超出保险限额或保险未覆盖，则由责任人依据认定的责任比例赔偿。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"交通事故责任承担方式主要包括两部分：第一，保险赔付，由责任人一方的保险公司根据责任比例和保险限额进行赔偿；第二，超出保险赔付范围或无保险保障时，由责任人根据责任划分按比例个人承担。同时，依据事故认定书和相关法律法规确定具体责任。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"经验证，结论符合《道路交通安全法》和《民法典》的相关规定，关于责任划分和赔偿承担的描述准确无误，可以明确回答问题。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"交通事故责任的承担好像是要看相关的法律怎么规定吧？首先应该找找看《道路交通安全法》和《民法典》，这些法律里应该有明确的条款来讲这个事情。嗯，不如搜索一下相关的法律条款，看看它们怎么说。\\n\\n<search>《道路交通安全法》交通事故责任条款</search>\\n\\n<information>《道路交通安全法》中提到，交通事故责任主要通过事故认定书来判定。交管部门会根据当事人的行为过错来划分责任，比如分成全责、主责、次责和无责。而且还提到，机动车与非机动车或者行人发生事故时，机动车通常需要承担更大的赔偿责任，除非有充分证据证明非机动车或者行人是主要原因。</information>\\n\\n哦，这样的话原来交通责任认定是这么划分的。那保险赔偿应该也是按照这些认定来进行吧？不过保险赔偿不是不限额的，所以超出限额的部分应该要由责任人自己承担。不知道《民法典》有没有更多补充的规定，搜索一下。\\n\\n<search>《民法典》侵权责任条款</search>\\n\\n<information>《民法典》也提到了侵权责任的承担方式，侵权行为发生后，受害人有权要求赔偿损失，而赔偿责任在具体划分之后，会根据责任比例和具体过错由责任人承担。此外，《民法典》还强调保险在赔偿中的作用，通常情况下责任人已经购买的保险会先赔偿损害，剩下超出的部分由责任人个人承担。</information>\\n\\n哦，原来《民法典》也进一步解释了侵权责任的具体承担方式，和《道路交通安全法》结合起来的话应该可以明确了交通事故的赔付逻辑。责任划分主要看责任认定书，而赔偿通常分成两部分：第一部分是保险公司按照责任比例和保险限额进行赔付；第二部分超出保险保障范围的部分就得责任人自己掏钱。\\n\\n不过还有个细节，机动车和非机动车或者行人的事故中，机动车好像哪怕不是主要责任，也容易被要求承担更大的赔款，这可能是法律加强对弱势群体的保护吧。\\n\\n所以，交通事故责任怎么承担应该可以进一步总结一下了：首先是保险赔偿，保险公司根据认定的责任比例和限额进行赔付；如果超出保险范围或者事故中保险不能覆盖，就要责任人自己根据责任认定书的比例来承担赔款。而这些依据主要来自《道路交通安全法》和《民法典》的规定。\\n\\n好，看起来条理清楚了，交通事故的责任承担方式就这么回事。\"\n}\n```",
+    "交通事故的责任承担方式主要依据《道路交通安全法》和《民法典》的相关规定，具体如下：\n\n1. **责任认定**  \n   交通事故责任首先由交管部门根据事故责任认定书划分，责任通常分为全责、主要责任、次要责任和无责任。\n\n2. **保险优先赔偿**  \n   在交通事故中，通常先由肇事者投保的车辆保险公司按照责任比例对受害人进行赔偿。其中，保险公司根据责任比例和保险合同中的赔偿限额进行赔付。\n\n3. **超出保险范围的部分由责任人承担**  \n   如果实际损失超过保险赔偿限额，超出部分由事故责任人按照责任比例进一步承担。这部分赔偿可以通过协商、诉讼等方式确认。\n\n4. **机动车与非机动车或行人事故中的特殊规则**  \n   根据《道路交通安全法》，若机动车与非机动车或行人发生事故，即使机动车一方不是主要责任，通常为了保护弱势群体（如行人），机动车一方仍需承担较大的赔偿责任。\n   - 若机动车一方无过错，也需承担不超过10%的赔偿责任。\n   - 如果有证据证明是非机动车或行人一方的故意行为，则机动车方可以无需赔偿。\n\n5. **《民法典》的补充规定**  \n   《民法典》进一步明确了侵权责任中责任分担的原则，包括过错责任、无过错责任和公平责任，强调保险赔偿的优先性以及责任人对剩余损失的分担。\n\n**总结：**交通事故责任的承担当中要点是在保险理赔的基础上，结合事故责任比例，由责任方进行进一步赔偿。具体赔偿过程需参照责任认定书以及相关法律规定的原则。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "明确交通事故责任承担的法律依据",
+        "content": "交通事故的责任承担方式通常由相关的法律法规明确规定。首先，需要查阅相关法律法规以确定其法律依据，比如《道路交通安全法》或《民法典》中涉及交通事故责任的条款。为此，搜索相关条款内容。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "搜索《道路交通安全法》的规定",
+        "content": "查找《道路交通安全法》中关于交通事故责任划分和承担的具体条款内容，以获取具体依据。",
+        "search": "道路交通安全法 交通事故责任"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "搜索结果分析",
+        "content": "《道路交通安全法》规定，交通事故的责任划分根据事故认定书判定的责任比例确定，包括全责、主责、次责和无责。同时，《民法典》中也对侵权责任的承担方式做了补充性规定。",
+        "information": "《道路交通安全法》第76条、《民法典》有关侵权责任条款明确了交通事故责任划分规则和赔偿承担方式。具体内容：机动车驾驶人承担主要责任时，由其保险公司在责任限额范围内予以赔偿；超出保险限额部分则由责任人承担。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "交通事故责任划分原则",
+        "content": "根据上述规定，交通事故责任根据具体过错行为划分为全责、主责、次责或无责。同时，机动车与非机动车或行人发生事故时，机动车一方通常承受更高的赔偿义务，除非有证据表明非机动车或行人行为是主要原因。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "总结责任承担方式",
+        "content": "结合法律规定，交通事故责任承担方式通常包括保险赔付和责任人个人赔付两个部分：1. 保险赔付：由责任人投保的保险公司根据责任比例在限额内赔偿；2. 个人赔付：若赔偿金额超出保险限额或保险未覆盖，则由责任人依据认定的责任比例赔偿。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "交通事故责任承担方式主要包括两部分：第一，保险赔付，由责任人一方的保险公司根据责任比例和保险限额进行赔偿；第二，超出保险赔付范围或无保险保障时，由责任人根据责任划分按比例个人承担。同时，依据事故认定书和相关法律法规确定具体责任。"
+      },
+      {
+        "action": "Verification",
+        "content": "经验证，结论符合《道路交通安全法》和《民法典》的相关规定，关于责任划分和赔偿承担的描述准确无误，可以明确回答问题。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "交通事故责任的承担好像是要看相关的法律怎么规定吧？首先应该找找看《道路交通安全法》和《民法典》，这些法律里应该有明确的条款来讲这个事情。嗯，不如搜索一下相关的法律条款，看看它们怎么说。\n\n<search>《道路交通安全法》交通事故责任条款</search>\n\n<information>《道路交通安全法》中提到，交通事故责任主要通过事故认定书来判定。交管部门会根据当事人的行为过错来划分责任，比如分成全责、主责、次责和无责。而且还提到，机动车与非机动车或者行人发生事故时，机动车通常需要承担更大的赔偿责任，除非有充分证据证明非机动车或者行人是主要原因。</information>\n\n哦，这样的话原来交通责任认定是这么划分的。那保险赔偿应该也是按照这些认定来进行吧？不过保险赔偿不是不限额的，所以超出限额的部分应该要由责任人自己承担。不知道《民法典》有没有更多补充的规定，搜索一下。\n\n<search>《民法典》侵权责任条款</search>\n\n<information>《民法典》也提到了侵权责任的承担方式，侵权行为发生后，受害人有权要求赔偿损失，而赔偿责任在具体划分之后，会根据责任比例和具体过错由责任人承担。此外，《民法典》还强调保险在赔偿中的作用，通常情况下责任人已经购买的保险会先赔偿损害，剩下超出的部分由责任人个人承担。</information>\n\n哦，原来《民法典》也进一步解释了侵权责任的具体承担方式，和《道路交通安全法》结合起来的话应该可以明确了交通事故的赔付逻辑。责任划分主要看责任认定书，而赔偿通常分成两部分：第一部分是保险公司按照责任比例和保险限额进行赔付；第二部分超出保险保障范围的部分就得责任人自己掏钱。\n\n不过还有个细节，机动车和非机动车或者行人的事故中，机动车好像哪怕不是主要责任，也容易被要求承担更大的赔款，这可能是法律加强对弱势群体的保护吧。\n\n所以，交通事故责任怎么承担应该可以进一步总结一下了：首先是保险赔偿，保险公司根据认定的责任比例和限额进行赔付；如果超出保险范围或者事故中保险不能覆盖，就要责任人自己根据责任认定书的比例来承担赔款。而这些依据主要来自《道路交通安全法》和《民法典》的规定。\n\n好，看起来条理清楚了，交通事故的责任承担方式就这么回事。",
+  "Response": "交通事故的责任承担方式主要依据《道路交通安全法》和《民法典》的相关规定，具体如下：\n\n1. **责任认定**  \n   交通事故责任首先由交管部门根据事故责任认定书划分，责任通常分为全责、主要责任、次要责任和无责任。\n\n2. **保险优先赔偿**  \n   在交通事故中，通常先由肇事者投保的车辆保险公司按照责任比例对受害人进行赔偿。其中，保险公司根据责任比例和保险合同中的赔偿限额进行赔付。\n\n3. **超出保险范围的部分由责任人承担**  \n   如果实际损失超过保险赔偿限额，超出部分由事故责任人按照责任比例进一步承担。这部分赔偿可以通过协商、诉讼等方式确认。\n\n4. **机动车与非机动车或行人事故中的特殊规则**  \n   根据《道路交通安全法》，若机动车与非机动车或行人发生事故，即使机动车一方不是主要责任，通常为了保护弱势群体（如行人），机动车一方仍需承担较大的赔偿责任。\n   - 若机动车一方无过错，也需承担不超过10%的赔偿责任。\n   - 如果有证据证明是非机动车或行人一方的故意行为，则机动车方可以无需赔偿。\n\n5. **《民法典》的补充规定**  \n   《民法典》进一步明确了侵权责任中责任分担的原则，包括过错责任、无过错责任和公平责任，强调保险赔偿的优先性以及责任人对剩余损失的分担。\n\n**总结：**交通事故责任的承担当中要点是在保险理赔的基础上，结合事故责任比例，由责任方进行进一步赔偿。具体赔偿过程需参照责任认定书以及相关法律规定的原则。",
+  "Question": "交通事故责任承担方式？"
+}

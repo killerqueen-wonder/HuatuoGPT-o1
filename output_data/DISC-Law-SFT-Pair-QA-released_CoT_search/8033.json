@@ -1,0 +1,119 @@
+{
+  "Open-ended Verifiable Question": "债权人能否要求显名或者冒名的股东承担责任?",
+  "Ground-True Answer": "股东的赔偿责任是指在股东未履行或者未全面履行出资义务及抽逃出资的情况下，对公司不能清偿的债务在应当补缴、填补、返还出资的本息范围内对公司债权人承担的补充赔偿责任。通常情况下，当股权构成与实际情况不一致且涉及善意债权人的权益时，为保护债权人的合理信赖，维护市场交易环境的稳定与平衡，公司法实行外观主义，即股权构成以登记为准，债权人可主张由登记股东承担相应的股东义务。但被冒名股东被登记为公司股东并非出于其真实意愿，公司、其他股东或者公司债权人以未履行出资义务为由，请求被冒名登记为股东的承担补足出资责任或者对公司债务不能清偿部分的赔偿责任的，人民法院不予支持。",
+  "process_id": 8033,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "分析问题背景",
+      "content": "债权人要求显名或冒名股东承担责任的问题涉及公司法中的股东权利和义务的界定，以及涉及债务纠纷时股东的对外责任情况。需要明确显名股东和冒名股东的法律定义及适用规则。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "查找显名股东和冒名股东的定义",
+      "content": "<search>显名股东与冒名股东的定义</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "解析查找结果",
+      "content": "<information>显名股东通常指在公司注册登记中明确记载为股东的人，而冒名股东是指非真实出资人以他人名义登记为股东。根据公司法和司法解释，冒名股东可能涉及虚假登记或名义出资问题。</information>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "确定债权人要求显名股东承担责任的依据",
+      "content": "显名股东对外是公司登记的合法股东，其职责和权利依据《公司法》的规定而明确。因此，显名股东原则上应对公司债务承担有限责任，但须考量其出资是否到位以及债权是否合法。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "确定债权人要求冒名股东承担责任的依据",
+      "content": "冒名股东的法律责任需基于具体情况判断。如果冒名股东未实际履行出资或参与公司经营，则其可能不具备法律上的股东资格。需要分析债权人是否可要求其实际承担责任，依据《公司法》和相关司法解释处理冒名的问题。<search>公司法对虚假股东责任的规定</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "解析查找结果",
+      "content": "<information>根据《公司法司法解释（三）》第25条的规定，如冒名股东作为登记股东未实际履行出资，其实际出资人可能需承担责任。同时，债权人可针对冒名股东和实际出资人提出法律诉求。</information>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "总结债权人要求责任的条件",
+      "content": "显名股东需承担责任是基于其登记的股东身份，法律原则支持债权人向显名股东追偿。而涉及冒名股东时，需具体分析登记信息是否虚假、是否实际出资、以及实际控制人角色，以此判断是否存在责任承担可能性。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "债权人可以要求显名股东承担责任，因为显名股东登记在册且对公司债务负有限责任。但对冒名股东，需具体情况判断，如果冒名股东未实际出资，则债权人可依据《公司法司法解释（三）》追究该股东及实际出资人的责任。"
+    },
+    {
+      "action": "Verification",
+      "content": "以上结论符合公司法及其司法解释的规定，显名股东承担责任的原则明确，而冒名股东需根据具体情况判断是否承担责任。因此该结论正确。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n债权人能否要求显名或者冒名的股东承担责任?\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n债权人可以要求显名股东承担责任，因为显名股东登记在册且对公司债务负有限责任。但对冒名股东，需具体情况判断，如果冒名股东未实际出资，则债权人可依据《公司法司法解释（三）》追究该股东及实际出资人的责任。  \n</Model Response>  \n\n<Reference Answer>  \n股东的赔偿责任是指在股东未履行或者未全面履行出资义务及抽逃出资的情况下，对公司不能清偿的债务在应当补缴、填补、返还出资的本息范围内对公司债权人承担的补充赔偿责任。通常情况下，当股权构成与实际情况不一致且涉及善意债权人的权益时，为保护债权人的合理信赖，维护市场交易环境的稳定与平衡，公司法实行外观主义，即股权构成以登记为准，债权人可主张由登记股东承担相应的股东义务。但被冒名股东被登记为公司股东并非出于其真实意愿，公司、其他股东或者公司债权人以未履行出资义务为由，请求被冒名登记为股东的承担补足出资责任或者对公司债务不能清偿部分的赔偿责任的，人民法院不予支持。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 分析问题背景\n债权人要求显名或冒名股东承担责任的问题涉及公司法中的股东权利和义务的界定，以及涉及债务纠纷时股东的对外责任情况。需要明确显名股东和冒名股东的法律定义及适用规则。\n\n### 查找显名股东和冒名股东的定义\n<search>显名股东与冒名股东的定义</search>\n\n### 解析查找结果\n<information>显名股东通常指在公司注册登记中明确记载为股东的人，而冒名股东是指非真实出资人以他人名义登记为股东。根据公司法和司法解释，冒名股东可能涉及虚假登记或名义出资问题。</information>\n\n### 确定债权人要求显名股东承担责任的依据\n显名股东对外是公司登记的合法股东，其职责和权利依据《公司法》的规定而明确。因此，显名股东原则上应对公司债务承担有限责任，但须考量其出资是否到位以及债权是否合法。\n\n### 确定债权人要求冒名股东承担责任的依据\n冒名股东的法律责任需基于具体情况判断。如果冒名股东未实际履行出资或参与公司经营，则其可能不具备法律上的股东资格。需要分析债权人是否可要求其实际承担责任，依据《公司法》和相关司法解释处理冒名的问题。<search>公司法对虚假股东责任的规定</search>\n\n### 解析查找结果\n<information>根据《公司法司法解释（三）》第25条的规定，如冒名股东作为登记股东未实际履行出资，其实际出资人可能需承担责任。同时，债权人可针对冒名股东和实际出资人提出法律诉求。</information>\n\n### 总结债权人要求责任的条件\n显名股东需承担责任是基于其登记的股东身份，法律原则支持债权人向显名股东追偿。而涉及冒名股东时，需具体分析登记信息是否虚假、是否实际出资、以及实际控制人角色，以此判断是否存在责任承担可能性。\n\n### Conclusion\n债权人可以要求显名股东承担责任，因为显名股东登记在册且对公司债务负有限责任。但对冒名股东，需具体情况判断，如果冒名股东未实际出资，则债权人可依据《公司法司法解释（三）》追究该股东及实际出资人的责任。\n\n### Verification\n以上结论符合公司法及其司法解释的规定，显名股东承担责任的原则明确，而冒名股东需根据具体情况判断是否承担责任。因此该结论正确。\n</Thought Process>\n\n<Question>\n债权人能否要求显名或者冒名的股东承担责任?\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n好，先看看问题到底是什么。债权人能不能要求显名或冒名股东承担责任？这个问题涉及到公司法关于股东权利和责任的规定。显名股东和冒名股东的法律状态差别挺大的，我得先搞清楚它们的定义是什么。\n\n<search>显名股东与冒名股东的定义</search>\n\n<information>显名股东是在公司注册登记中明确记载为股东的人，冒名股东则是非真实的出资人，用别人的名义登记为股东。这种情况可能涉及虚假出资或者名义股东问题。</information>\n\n哦，原来如此，显名股东就是在系统里能看到记载的股东，而冒名股东则是假借别人名义登记的。所以显名股东在法律上应该是公司债务的有限责任主体，那冒名股东有点复杂，还要看具体情况。\n\n接下来要看看法律上怎么说。显名股东作为登记在册的正式股东，依据《公司法》，原则上当然是有限责任的。但问题是，债权人怎么才能追偿到显名股东那里呢？首先，显名股东应该出资到位，如果出资不足，可能会影响到他们的责任承担范围。如果出资是合法的，债权人理论上是可以要求显名股东承担的。\n\n不过，冒名股东的责任就不是那么直接了，因为他们可能根本没真正参与公司的资本投入。这种情况下，冒名股东到底算不算真正的股东呢？这个我得再查查相关的法律条文。\n\n<search>公司法对虚假股东责任的规定</search>\n\n<information>根据《公司法司法解释（三）》第25条，如果冒名股东登记在册，但未实际履行出资，则要追溯到实际的出资人。在这种情况下，债权人可以追究实际出资人的责任，而冒名股东不一定需要承担全部责任。</information>\n\n哦，明白了。如果冒名股东没真出资，只是名字挂在那儿，那真正应该负责的是实际出资人。不过，债权人还是可以对登记在册的冒名股东提起诉讼，具体怎么判得看案件的情况。\n\n总结一下吧。显名股东既然合法登记在册，他们的责任原则上不会推脱，如果有债务纠纷，债权人是能要求他们负责的。但冒名股东就不一定了。他们可能只是个挂名的，并没有真正出资，要看具体的贡献和角色。如果他们没实际出资，那么根据司法解释，这责任可以转移到实际的出资人身上，而债权人也可以一并追偿他们。\n\n所以，总的来说，债权人要求显名股东承担责任没问题；冒名股东得具体分析，看情况决定他该不该承担责任，也要看实际出资人的角色是不是明确。嗯，这个解释起来还是讲得通，合乎法律规定。\n</Internal Thinking>\n\n<Question>\n债权人能否要求显名或者冒名的股东承担责任?\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析问题背景\",\n      \"content\": \"债权人要求显名或冒名股东承担责任的问题涉及公司法中的股东权利和义务的界定，以及涉及债务纠纷时股东的对外责任情况。需要明确显名股东和冒名股东的法律定义及适用规则。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"查找显名股东和冒名股东的定义\",\n      \"content\": \"<search>显名股东与冒名股东的定义</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"解析查找结果\",\n      \"content\": \"<information>显名股东通常指在公司注册登记中明确记载为股东的人，而冒名股东是指非真实出资人以他人名义登记为股东。根据公司法和司法解释，冒名股东可能涉及虚假登记或名义出资问题。</information>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"确定债权人要求显名股东承担责任的依据\",\n      \"content\": \"显名股东对外是公司登记的合法股东，其职责和权利依据《公司法》的规定而明确。因此，显名股东原则上应对公司债务承担有限责任，但须考量其出资是否到位以及债权是否合法。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"确定债权人要求冒名股东承担责任的依据\",\n      \"content\": \"冒名股东的法律责任需基于具体情况判断。如果冒名股东未实际履行出资或参与公司经营，则其可能不具备法律上的股东资格。需要分析债权人是否可要求其实际承担责任，依据《公司法》和相关司法解释处理冒名的问题。<search>公司法对虚假股东责任的规定</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"解析查找结果\",\n      \"content\": \"<information>根据《公司法司法解释（三）》第25条的规定，如冒名股东作为登记股东未实际履行出资，其实际出资人可能需承担责任。同时，债权人可针对冒名股东和实际出资人提出法律诉求。</information>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"总结债权人要求责任的条件\",\n      \"content\": \"显名股东需承担责任是基于其登记的股东身份，法律原则支持债权人向显名股东追偿。而涉及冒名股东时，需具体分析登记信息是否虚假、是否实际出资、以及实际控制人角色，以此判断是否存在责任承担可能性。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"债权人可以要求显名股东承担责任，因为显名股东登记在册且对公司债务负有限责任。但对冒名股东，需具体情况判断，如果冒名股东未实际出资，则债权人可依据《公司法司法解释（三）》追究该股东及实际出资人的责任。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"以上结论符合公司法及其司法解释的规定，显名股东承担责任的原则明确，而冒名股东需根据具体情况判断是否承担责任。因此该结论正确。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"好，先看看问题到底是什么。债权人能不能要求显名或冒名股东承担责任？这个问题涉及到公司法关于股东权利和责任的规定。显名股东和冒名股东的法律状态差别挺大的，我得先搞清楚它们的定义是什么。\\n\\n<search>显名股东与冒名股东的定义</search>\\n\\n<information>显名股东是在公司注册登记中明确记载为股东的人，冒名股东则是非真实的出资人，用别人的名义登记为股东。这种情况可能涉及虚假出资或者名义股东问题。</information>\\n\\n哦，原来如此，显名股东就是在系统里能看到记载的股东，而冒名股东则是假借别人名义登记的。所以显名股东在法律上应该是公司债务的有限责任主体，那冒名股东有点复杂，还要看具体情况。\\n\\n接下来要看看法律上怎么说。显名股东作为登记在册的正式股东，依据《公司法》，原则上当然是有限责任的。但问题是，债权人怎么才能追偿到显名股东那里呢？首先，显名股东应该出资到位，如果出资不足，可能会影响到他们的责任承担范围。如果出资是合法的，债权人理论上是可以要求显名股东承担的。\\n\\n不过，冒名股东的责任就不是那么直接了，因为他们可能根本没真正参与公司的资本投入。这种情况下，冒名股东到底算不算真正的股东呢？这个我得再查查相关的法律条文。\\n\\n<search>公司法对虚假股东责任的规定</search>\\n\\n<information>根据《公司法司法解释（三）》第25条，如果冒名股东登记在册，但未实际履行出资，则要追溯到实际的出资人。在这种情况下，债权人可以追究实际出资人的责任，而冒名股东不一定需要承担全部责任。</information>\\n\\n哦，明白了。如果冒名股东没真出资，只是名字挂在那儿，那真正应该负责的是实际出资人。不过，债权人还是可以对登记在册的冒名股东提起诉讼，具体怎么判得看案件的情况。\\n\\n总结一下吧。显名股东既然合法登记在册，他们的责任原则上不会推脱，如果有债务纠纷，债权人是能要求他们负责的。但冒名股东就不一定了。他们可能只是个挂名的，并没有真正出资，要看具体的贡献和角色。如果他们没实际出资，那么根据司法解释，这责任可以转移到实际的出资人身上，而债权人也可以一并追偿他们。\\n\\n所以，总的来说，债权人要求显名股东承担责任没问题；冒名股东得具体分析，看情况决定他该不该承担责任，也要看实际出资人的角色是不是明确。嗯，这个解释起来还是讲得通，合乎法律规定。\"\n}\n```",
+    "债权人能否要求显名或冒名股东承担责任需要分具体情况分析：\n\n1. **显名股东的责任**  \n显名股东是公司注册登记中正式记载的股东，根据《公司法》的相关规定，他们对公司所负债务承担有限责任。也就是说，显名股东的责任范围通常以其认缴的出资额为限。但在以下情形下，显名股东可能需要承担额外的责任：  \n   - 显名股东未依法足额履行出资义务。债权人可以要求其补足出资，以弥补公司的财产缺口。  \n   - 显名股东存在抽逃出资的行为。债权人可以要求其返还抽逃的资金，用于清偿公司债务。  \n因此，显名股东作为登记在册的股东，债权人是可以根据法律规定要求其承担相应责任的，前提是其责任范围受到公司法有限责任制度的限制。\n\n2. **冒名股东的责任**  \n冒名股东是指未实际出资而仅以他人名义登记为股东的人。其责任的认定需区分不同情况：  \n   - 如果冒名股东未实际出资，仅为挂名登记，根据《公司法司法解释（三）》第25条，法律上一般认定该责任应由实际出资人承担。债权人可以追究实际出资人的责任，而冒名股东通常不需要对公司债务承担责任。  \n   - 然而，债权人在不知情的情况下，可以依据公司登记信息依法对登记在册的冒名股东提起诉讼。冒名股东可能需要举证，证明其并非实际股东，责任应转移到实际出资人身上。  \n\n**总结：**  \n债权人有权要求显名股东承担责任，因为显名股东是正式登记的合法主体，法律对其有限责任有明确规定。但对于冒名股东，责任认定需结合是否实际出资和对债权人的影响具体分析。如果冒名股东未实际出资，其责任可能会转移到实际出资人身上。而债权人则可以选择通过法律手段追偿两者中任何一方，但最终责任需经法院裁定。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "分析问题背景",
+        "content": "债权人要求显名或冒名股东承担责任的问题涉及公司法中的股东权利和义务的界定，以及涉及债务纠纷时股东的对外责任情况。需要明确显名股东和冒名股东的法律定义及适用规则。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "查找显名股东和冒名股东的定义",
+        "content": "<search>显名股东与冒名股东的定义</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "解析查找结果",
+        "content": "<information>显名股东通常指在公司注册登记中明确记载为股东的人，而冒名股东是指非真实出资人以他人名义登记为股东。根据公司法和司法解释，冒名股东可能涉及虚假登记或名义出资问题。</information>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "确定债权人要求显名股东承担责任的依据",
+        "content": "显名股东对外是公司登记的合法股东，其职责和权利依据《公司法》的规定而明确。因此，显名股东原则上应对公司债务承担有限责任，但须考量其出资是否到位以及债权是否合法。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "确定债权人要求冒名股东承担责任的依据",
+        "content": "冒名股东的法律责任需基于具体情况判断。如果冒名股东未实际履行出资或参与公司经营，则其可能不具备法律上的股东资格。需要分析债权人是否可要求其实际承担责任，依据《公司法》和相关司法解释处理冒名的问题。<search>公司法对虚假股东责任的规定</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "解析查找结果",
+        "content": "<information>根据《公司法司法解释（三）》第25条的规定，如冒名股东作为登记股东未实际履行出资，其实际出资人可能需承担责任。同时，债权人可针对冒名股东和实际出资人提出法律诉求。</information>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "总结债权人要求责任的条件",
+        "content": "显名股东需承担责任是基于其登记的股东身份，法律原则支持债权人向显名股东追偿。而涉及冒名股东时，需具体分析登记信息是否虚假、是否实际出资、以及实际控制人角色，以此判断是否存在责任承担可能性。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "债权人可以要求显名股东承担责任，因为显名股东登记在册且对公司债务负有限责任。但对冒名股东，需具体情况判断，如果冒名股东未实际出资，则债权人可依据《公司法司法解释（三）》追究该股东及实际出资人的责任。"
+      },
+      {
+        "action": "Verification",
+        "content": "以上结论符合公司法及其司法解释的规定，显名股东承担责任的原则明确，而冒名股东需根据具体情况判断是否承担责任。因此该结论正确。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "好，先看看问题到底是什么。债权人能不能要求显名或冒名股东承担责任？这个问题涉及到公司法关于股东权利和责任的规定。显名股东和冒名股东的法律状态差别挺大的，我得先搞清楚它们的定义是什么。\n\n<search>显名股东与冒名股东的定义</search>\n\n<information>显名股东是在公司注册登记中明确记载为股东的人，冒名股东则是非真实的出资人，用别人的名义登记为股东。这种情况可能涉及虚假出资或者名义股东问题。</information>\n\n哦，原来如此，显名股东就是在系统里能看到记载的股东，而冒名股东则是假借别人名义登记的。所以显名股东在法律上应该是公司债务的有限责任主体，那冒名股东有点复杂，还要看具体情况。\n\n接下来要看看法律上怎么说。显名股东作为登记在册的正式股东，依据《公司法》，原则上当然是有限责任的。但问题是，债权人怎么才能追偿到显名股东那里呢？首先，显名股东应该出资到位，如果出资不足，可能会影响到他们的责任承担范围。如果出资是合法的，债权人理论上是可以要求显名股东承担的。\n\n不过，冒名股东的责任就不是那么直接了，因为他们可能根本没真正参与公司的资本投入。这种情况下，冒名股东到底算不算真正的股东呢？这个我得再查查相关的法律条文。\n\n<search>公司法对虚假股东责任的规定</search>\n\n<information>根据《公司法司法解释（三）》第25条，如果冒名股东登记在册，但未实际履行出资，则要追溯到实际的出资人。在这种情况下，债权人可以追究实际出资人的责任，而冒名股东不一定需要承担全部责任。</information>\n\n哦，明白了。如果冒名股东没真出资，只是名字挂在那儿，那真正应该负责的是实际出资人。不过，债权人还是可以对登记在册的冒名股东提起诉讼，具体怎么判得看案件的情况。\n\n总结一下吧。显名股东既然合法登记在册，他们的责任原则上不会推脱，如果有债务纠纷，债权人是能要求他们负责的。但冒名股东就不一定了。他们可能只是个挂名的，并没有真正出资，要看具体的贡献和角色。如果他们没实际出资，那么根据司法解释，这责任可以转移到实际的出资人身上，而债权人也可以一并追偿他们。\n\n所以，总的来说，债权人要求显名股东承担责任没问题；冒名股东得具体分析，看情况决定他该不该承担责任，也要看实际出资人的角色是不是明确。嗯，这个解释起来还是讲得通，合乎法律规定。",
+  "Response": "债权人能否要求显名或冒名股东承担责任需要分具体情况分析：\n\n1. **显名股东的责任**  \n显名股东是公司注册登记中正式记载的股东，根据《公司法》的相关规定，他们对公司所负债务承担有限责任。也就是说，显名股东的责任范围通常以其认缴的出资额为限。但在以下情形下，显名股东可能需要承担额外的责任：  \n   - 显名股东未依法足额履行出资义务。债权人可以要求其补足出资，以弥补公司的财产缺口。  \n   - 显名股东存在抽逃出资的行为。债权人可以要求其返还抽逃的资金，用于清偿公司债务。  \n因此，显名股东作为登记在册的股东，债权人是可以根据法律规定要求其承担相应责任的，前提是其责任范围受到公司法有限责任制度的限制。\n\n2. **冒名股东的责任**  \n冒名股东是指未实际出资而仅以他人名义登记为股东的人。其责任的认定需区分不同情况：  \n   - 如果冒名股东未实际出资，仅为挂名登记，根据《公司法司法解释（三）》第25条，法律上一般认定该责任应由实际出资人承担。债权人可以追究实际出资人的责任，而冒名股东通常不需要对公司债务承担责任。  \n   - 然而，债权人在不知情的情况下，可以依据公司登记信息依法对登记在册的冒名股东提起诉讼。冒名股东可能需要举证，证明其并非实际股东，责任应转移到实际出资人身上。  \n\n**总结：**  \n债权人有权要求显名股东承担责任，因为显名股东是正式登记的合法主体，法律对其有限责任有明确规定。但对于冒名股东，责任认定需结合是否实际出资和对债权人的影响具体分析。如果冒名股东未实际出资，其责任可能会转移到实际出资人身上。而债权人则可以选择通过法律手段追偿两者中任何一方，但最终责任需经法院裁定。",
+  "Question": "债权人能否要求显名或者冒名的股东承担责任?"
+}

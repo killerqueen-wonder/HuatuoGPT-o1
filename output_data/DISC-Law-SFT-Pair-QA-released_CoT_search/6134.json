@@ -1,0 +1,89 @@
+{
+  "Open-ended Verifiable Question": "遗产继承人有哪些?",
+  "Ground-True Answer": "我国的《继承法》规定：法定继承人的范围包括被继承人的配偶、父母、子女、兄弟姐妹、祖父母和外祖父母。\n二、遗产继承比例\n遗产是公民死亡时遗留的个人合法财产，包括：\n（一）公民的收入；\n（二）公民的房屋、储蓄和生活用品；\n（三）公民的林木、牲畜和家禽；\n（四）公民的文物、图书资料；\n（五）法律允许公民所有的生产资料；\n（六）公民的著作权、专利权中的财产权利；\n（七）公民的其他合法财产。\n夫妻在婚姻关系存续期间所得的共同所有的财产，除有约定的以外，如果分割遗产，应当先将共同所有的财产的一半分出为配偶所有，其余的为被继承人的遗产。\n同一顺序继承人继承遗产的份额，一般应当均等。对生活有特殊困难的缺乏劳动能力的继承人，分配遗产时，应当予以照顾。对被继承人尽了主要扶养义务或者与被继承人共同生活的继承人，分配遗产时，可以多分。有扶养能力和有扶养条件的继承人，不尽扶养义务的，分配遗产时，应当不分或者少分。继承人协商同意的，也可以不均等。五、对继承人以外的依靠被继承人扶养的缺乏劳动能力又没有生活来源的人，或者继承人以外的对被继承人扶养较多的人，可以分给他们适当的遗产。\n三、遗产继承分割诉讼时效\n1、继承权纠纷提起诉讼的期限为二年，自继承人知道或者应当知道其权利被侵犯之日起计算。但是，自继承开始之日起超过二十年的，不得再提起诉讼。\n2、继承人在知道自己的权利受到侵犯之日起的二年之内，其遗产继承权纠纷确在人民调解委员会进行调解期间，可按中止诉讼时效处理。\n3、继承人因遗产继承纠纷向人民法院提起诉讼，诉讼时效即为中断。\n4、自继承开始之日起的第18年后至第20年期间内，继承人才知道自己的权利被侵犯的，其提起诉讼的权利，应当在继承开始之日起的20年之内行使，超过20年的，不得再行提起诉讼。",
+  "process_id": 6134,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "确定遗产继承的法律依据",
+      "content": "遗产继承的适用法律通常会涉及民法体系。需要明确遗产继承的法定继承人类别和顺序。为了更清楚地了解，需查阅相关法律条文，例如《继承法》或《民法典》中的继承部分。<search>继承法 遗产继承人类别</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "查阅法律信息",
+      "content": "<information>《民法典》第1127条明确规定了法定继承人的范围及顺序：1. 第一顺序继承人包括配偶、子女、父母；2. 第二顺序继承人包括兄弟姐妹、祖父母、外祖父母。只有在没有第一顺序继承人或者第一顺序继承人放弃继承权的情况下，第二顺序继承人才会继承。</information>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "分析法定继承人与遗嘱继承的适用情况",
+      "content": "根据民法典，遗产继承可以分为法定继承和遗嘱继承。如果遗嘱存在且合法有效，遗嘱继承优先于法定继承。在没有遗嘱或遗嘱无效的情况下，则按照法定继承顺序继承遗产。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "总结遗产继承人的范围",
+      "content": "依据法律信息和分析可得，遗产继承人包括法定继承人和通过遗嘱指定的继承人。法定继承人分为两个顺序：第一顺序包括配偶、子女及父母；第二顺序包括兄弟姐妹、祖父母和外祖父母。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "遗产继承人包括两类：1. 遗嘱继承人，即根据有效遗嘱指定的继承人；2. 法定继承人，其中第一顺序为配偶、子女、父母，第二顺序为兄弟姐妹、祖父母、外祖父母。在遗嘱无效或不存在时，依次按照法定继承顺序进行继承。"
+    },
+    {
+      "action": "Verification",
+      "content": "通过查阅《民法典》的相关条款和分析其内容，可以确认上述结论正确无误，并符合法律规定。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n遗产继承人有哪些?\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n遗产继承人包括两类：1. 遗嘱继承人，即根据有效遗嘱指定的继承人；2. 法定继承人，其中第一顺序为配偶、子女、父母，第二顺序为兄弟姐妹、祖父母、外祖父母。在遗嘱无效或不存在时，依次按照法定继承顺序进行继承。  \n</Model Response>  \n\n<Reference Answer>  \n我国的《继承法》规定：法定继承人的范围包括被继承人的配偶、父母、子女、兄弟姐妹、祖父母和外祖父母。\n二、遗产继承比例\n遗产是公民死亡时遗留的个人合法财产，包括：\n（一）公民的收入；\n（二）公民的房屋、储蓄和生活用品；\n（三）公民的林木、牲畜和家禽；\n（四）公民的文物、图书资料；\n（五）法律允许公民所有的生产资料；\n（六）公民的著作权、专利权中的财产权利；\n（七）公民的其他合法财产。\n夫妻在婚姻关系存续期间所得的共同所有的财产，除有约定的以外，如果分割遗产，应当先将共同所有的财产的一半分出为配偶所有，其余的为被继承人的遗产。\n同一顺序继承人继承遗产的份额，一般应当均等。对生活有特殊困难的缺乏劳动能力的继承人，分配遗产时，应当予以照顾。对被继承人尽了主要扶养义务或者与被继承人共同生活的继承人，分配遗产时，可以多分。有扶养能力和有扶养条件的继承人，不尽扶养义务的，分配遗产时，应当不分或者少分。继承人协商同意的，也可以不均等。五、对继承人以外的依靠被继承人扶养的缺乏劳动能力又没有生活来源的人，或者继承人以外的对被继承人扶养较多的人，可以分给他们适当的遗产。\n三、遗产继承分割诉讼时效\n1、继承权纠纷提起诉讼的期限为二年，自继承人知道或者应当知道其权利被侵犯之日起计算。但是，自继承开始之日起超过二十年的，不得再提起诉讼。\n2、继承人在知道自己的权利受到侵犯之日起的二年之内，其遗产继承权纠纷确在人民调解委员会进行调解期间，可按中止诉讼时效处理。\n3、继承人因遗产继承纠纷向人民法院提起诉讼，诉讼时效即为中断。\n4、自继承开始之日起的第18年后至第20年期间内，继承人才知道自己的权利被侵犯的，其提起诉讼的权利，应当在继承开始之日起的20年之内行使，超过20年的，不得再行提起诉讼。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 确定遗产继承的法律依据\n遗产继承的适用法律通常会涉及民法体系。需要明确遗产继承的法定继承人类别和顺序。为了更清楚地了解，需查阅相关法律条文，例如《继承法》或《民法典》中的继承部分。<search>继承法 遗产继承人类别</search>\n\n### 查阅法律信息\n<information>《民法典》第1127条明确规定了法定继承人的范围及顺序：1. 第一顺序继承人包括配偶、子女、父母；2. 第二顺序继承人包括兄弟姐妹、祖父母、外祖父母。只有在没有第一顺序继承人或者第一顺序继承人放弃继承权的情况下，第二顺序继承人才会继承。</information>\n\n### 分析法定继承人与遗嘱继承的适用情况\n根据民法典，遗产继承可以分为法定继承和遗嘱继承。如果遗嘱存在且合法有效，遗嘱继承优先于法定继承。在没有遗嘱或遗嘱无效的情况下，则按照法定继承顺序继承遗产。\n\n### 总结遗产继承人的范围\n依据法律信息和分析可得，遗产继承人包括法定继承人和通过遗嘱指定的继承人。法定继承人分为两个顺序：第一顺序包括配偶、子女及父母；第二顺序包括兄弟姐妹、祖父母和外祖父母。\n\n### Conclusion\n遗产继承人包括两类：1. 遗嘱继承人，即根据有效遗嘱指定的继承人；2. 法定继承人，其中第一顺序为配偶、子女、父母，第二顺序为兄弟姐妹、祖父母、外祖父母。在遗嘱无效或不存在时，依次按照法定继承顺序进行继承。\n\n### Verification\n通过查阅《民法典》的相关条款和分析其内容，可以确认上述结论正确无误，并符合法律规定。\n</Thought Process>\n\n<Question>\n遗产继承人有哪些?\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n要回答遗产继承人有哪些，我得先搞清楚遗产继承的法律依据。一般来说，遗产继承会涉及到民法中的一些规定，尤其是继承法那部分。嗯，我记得继承这块好像不仅仅是一个简单的顺序问题，还涉及一些具体的条文。为了更准确一点，我还是查一下相关的法律内容吧，看看具体是怎么规定的。<search>继承法 遗产继承人类别</search>\n\n哦，这里找到了点信息。《民法典》第1127条有提到，这里面明确写了法定继承人的范围和顺序，挺详细的。它是这么说的：第一顺序的继承人是配偶、子女和父母；而第二顺序的继承人是兄弟姐妹、祖父母和外祖父母。这里还特别说明了，只有在没有第一顺序继承人，或者第一顺序继承人明确放弃继承权的时候，才轮到第二顺序继承人。\n\n所以，按照这个逻辑，法定继承人其实是分成两组的。第一顺序先继承，如果这一顺序没问题，第二顺序根本不用参与。那么，除了法定继承人，遗产的继承好像还有另一种情况，就是遗嘱继承。嗯，对，应该是如果被继承人生前立了合法有效的遗嘱，那遗嘱优先，这时继承就不用看法定的顺序了。但是如果压根儿没有遗嘱，或者遗嘱无效，那就只能按法定的来。\n\n这么一分析的话，遗产继承人可以分为两类。一类是遗嘱继承人，这个没啥好说的，就是遗嘱里面写了谁继承，谁就是继承人；另一类是法定继承人，根据法律规定来的。这些法定继承人分两组：一组是第一顺序，配偶、子女和父母；另一组是第二顺序，兄弟姐妹、祖父母、外祖父母。对了，第一顺序比第二顺序优先。\n\n综上看来，如果有遗嘱，就按遗嘱走；如果没有遗嘱，就看法定继承的顺序，也就是配偶、子女、父母优先。而兄弟姐妹等第二顺序的人，只有在第一顺序的人没了或者不要的时候，才可以继承。\n\n这样捋一遍下来，我对答案很确定了。遗产继承人的范围和分类就是这样没错了，完全符合法律的规定。\n</Internal Thinking>\n\n<Question>\n遗产继承人有哪些?\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"确定遗产继承的法律依据\",\n      \"content\": \"遗产继承的适用法律通常会涉及民法体系。需要明确遗产继承的法定继承人类别和顺序。为了更清楚地了解，需查阅相关法律条文，例如《继承法》或《民法典》中的继承部分。<search>继承法 遗产继承人类别</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"查阅法律信息\",\n      \"content\": \"<information>《民法典》第1127条明确规定了法定继承人的范围及顺序：1. 第一顺序继承人包括配偶、子女、父母；2. 第二顺序继承人包括兄弟姐妹、祖父母、外祖父母。只有在没有第一顺序继承人或者第一顺序继承人放弃继承权的情况下，第二顺序继承人才会继承。</information>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析法定继承人与遗嘱继承的适用情况\",\n      \"content\": \"根据民法典，遗产继承可以分为法定继承和遗嘱继承。如果遗嘱存在且合法有效，遗嘱继承优先于法定继承。在没有遗嘱或遗嘱无效的情况下，则按照法定继承顺序继承遗产。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"总结遗产继承人的范围\",\n      \"content\": \"依据法律信息和分析可得，遗产继承人包括法定继承人和通过遗嘱指定的继承人。法定继承人分为两个顺序：第一顺序包括配偶、子女及父母；第二顺序包括兄弟姐妹、祖父母和外祖父母。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"遗产继承人包括两类：1. 遗嘱继承人，即根据有效遗嘱指定的继承人；2. 法定继承人，其中第一顺序为配偶、子女、父母，第二顺序为兄弟姐妹、祖父母、外祖父母。在遗嘱无效或不存在时，依次按照法定继承顺序进行继承。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"通过查阅《民法典》的相关条款和分析其内容，可以确认上述结论正确无误，并符合法律规定。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"要回答遗产继承人有哪些，我得先搞清楚遗产继承的法律依据。一般来说，遗产继承会涉及到民法中的一些规定，尤其是继承法那部分。嗯，我记得继承这块好像不仅仅是一个简单的顺序问题，还涉及一些具体的条文。为了更准确一点，我还是查一下相关的法律内容吧，看看具体是怎么规定的。<search>继承法 遗产继承人类别</search>\\n\\n哦，这里找到了点信息。《民法典》第1127条有提到，这里面明确写了法定继承人的范围和顺序，挺详细的。它是这么说的：第一顺序的继承人是配偶、子女和父母；而第二顺序的继承人是兄弟姐妹、祖父母和外祖父母。这里还特别说明了，只有在没有第一顺序继承人，或者第一顺序继承人明确放弃继承权的时候，才轮到第二顺序继承人。\\n\\n所以，按照这个逻辑，法定继承人其实是分成两组的。第一顺序先继承，如果这一顺序没问题，第二顺序根本不用参与。那么，除了法定继承人，遗产的继承好像还有另一种情况，就是遗嘱继承。嗯，对，应该是如果被继承人生前立了合法有效的遗嘱，那遗嘱优先，这时继承就不用看法定的顺序了。但是如果压根儿没有遗嘱，或者遗嘱无效，那就只能按法定的来。\\n\\n这么一分析的话，遗产继承人可以分为两类。一类是遗嘱继承人，这个没啥好说的，就是遗嘱里面写了谁继承，谁就是继承人；另一类是法定继承人，根据法律规定来的。这些法定继承人分两组：一组是第一顺序，配偶、子女和父母；另一组是第二顺序，兄弟姐妹、祖父母、外祖父母。对了，第一顺序比第二顺序优先。\\n\\n综上看来，如果有遗嘱，就按遗嘱走；如果没有遗嘱，就看法定继承的顺序，也就是配偶、子女、父母优先。而兄弟姐妹等第二顺序的人，只有在第一顺序的人没了或者不要的时候，才可以继承。\\n\\n这样捋一遍下来，我对答案很确定了。遗产继承人的范围和分类就是这样没错了，完全符合法律的规定。\"\n}\n```",
+    "遗产继承人主要分为以下两类：\n\n1. **遗嘱继承人**  \n   若被继承人在生前立下合法有效的遗嘱，按照遗嘱的内容，遗嘱中指定的继承人为遗嘱继承人。在这种情况下，遗产分配以遗嘱为准，不再依据法定顺序。\n\n2. **法定继承人**  \n   在没有遗嘱或者遗嘱无效的情况下，根据《中华人民共和国民法典》第1127条的规定，法定继承人按照以下顺序确定：  \n   - **第一顺序继承人**：配偶、子女、父母。  \n   - **第二顺序继承人**（仅在没有第一顺序继承人或第一顺序继承人放弃继承时适用）：兄弟姐妹、祖父母、外祖父母。  \n\n需要注意的是，第一顺序的继承人具有优先权，只有在不存在第一顺序继承人或第一顺序继承人放弃继承的情况下，遗产才会由第二顺序继承人继承。\n\n因此，遗产继承人范围的确定，需视具体情况而定，通过遗嘱继承或法定继承途径进行确认。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "确定遗产继承的法律依据",
+        "content": "遗产继承的适用法律通常会涉及民法体系。需要明确遗产继承的法定继承人类别和顺序。为了更清楚地了解，需查阅相关法律条文，例如《继承法》或《民法典》中的继承部分。<search>继承法 遗产继承人类别</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "查阅法律信息",
+        "content": "<information>《民法典》第1127条明确规定了法定继承人的范围及顺序：1. 第一顺序继承人包括配偶、子女、父母；2. 第二顺序继承人包括兄弟姐妹、祖父母、外祖父母。只有在没有第一顺序继承人或者第一顺序继承人放弃继承权的情况下，第二顺序继承人才会继承。</information>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "分析法定继承人与遗嘱继承的适用情况",
+        "content": "根据民法典，遗产继承可以分为法定继承和遗嘱继承。如果遗嘱存在且合法有效，遗嘱继承优先于法定继承。在没有遗嘱或遗嘱无效的情况下，则按照法定继承顺序继承遗产。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "总结遗产继承人的范围",
+        "content": "依据法律信息和分析可得，遗产继承人包括法定继承人和通过遗嘱指定的继承人。法定继承人分为两个顺序：第一顺序包括配偶、子女及父母；第二顺序包括兄弟姐妹、祖父母和外祖父母。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "遗产继承人包括两类：1. 遗嘱继承人，即根据有效遗嘱指定的继承人；2. 法定继承人，其中第一顺序为配偶、子女、父母，第二顺序为兄弟姐妹、祖父母、外祖父母。在遗嘱无效或不存在时，依次按照法定继承顺序进行继承。"
+      },
+      {
+        "action": "Verification",
+        "content": "通过查阅《民法典》的相关条款和分析其内容，可以确认上述结论正确无误，并符合法律规定。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "要回答遗产继承人有哪些，我得先搞清楚遗产继承的法律依据。一般来说，遗产继承会涉及到民法中的一些规定，尤其是继承法那部分。嗯，我记得继承这块好像不仅仅是一个简单的顺序问题，还涉及一些具体的条文。为了更准确一点，我还是查一下相关的法律内容吧，看看具体是怎么规定的。<search>继承法 遗产继承人类别</search>\n\n哦，这里找到了点信息。《民法典》第1127条有提到，这里面明确写了法定继承人的范围和顺序，挺详细的。它是这么说的：第一顺序的继承人是配偶、子女和父母；而第二顺序的继承人是兄弟姐妹、祖父母和外祖父母。这里还特别说明了，只有在没有第一顺序继承人，或者第一顺序继承人明确放弃继承权的时候，才轮到第二顺序继承人。\n\n所以，按照这个逻辑，法定继承人其实是分成两组的。第一顺序先继承，如果这一顺序没问题，第二顺序根本不用参与。那么，除了法定继承人，遗产的继承好像还有另一种情况，就是遗嘱继承。嗯，对，应该是如果被继承人生前立了合法有效的遗嘱，那遗嘱优先，这时继承就不用看法定的顺序了。但是如果压根儿没有遗嘱，或者遗嘱无效，那就只能按法定的来。\n\n这么一分析的话，遗产继承人可以分为两类。一类是遗嘱继承人，这个没啥好说的，就是遗嘱里面写了谁继承，谁就是继承人；另一类是法定继承人，根据法律规定来的。这些法定继承人分两组：一组是第一顺序，配偶、子女和父母；另一组是第二顺序，兄弟姐妹、祖父母、外祖父母。对了，第一顺序比第二顺序优先。\n\n综上看来，如果有遗嘱，就按遗嘱走；如果没有遗嘱，就看法定继承的顺序，也就是配偶、子女、父母优先。而兄弟姐妹等第二顺序的人，只有在第一顺序的人没了或者不要的时候，才可以继承。\n\n这样捋一遍下来，我对答案很确定了。遗产继承人的范围和分类就是这样没错了，完全符合法律的规定。",
+  "Response": "遗产继承人主要分为以下两类：\n\n1. **遗嘱继承人**  \n   若被继承人在生前立下合法有效的遗嘱，按照遗嘱的内容，遗嘱中指定的继承人为遗嘱继承人。在这种情况下，遗产分配以遗嘱为准，不再依据法定顺序。\n\n2. **法定继承人**  \n   在没有遗嘱或者遗嘱无效的情况下，根据《中华人民共和国民法典》第1127条的规定，法定继承人按照以下顺序确定：  \n   - **第一顺序继承人**：配偶、子女、父母。  \n   - **第二顺序继承人**（仅在没有第一顺序继承人或第一顺序继承人放弃继承时适用）：兄弟姐妹、祖父母、外祖父母。  \n\n需要注意的是，第一顺序的继承人具有优先权，只有在不存在第一顺序继承人或第一顺序继承人放弃继承的情况下，遗产才会由第二顺序继承人继承。\n\n因此，遗产继承人范围的确定，需视具体情况而定，通过遗嘱继承或法定继承途径进行确认。",
+  "Question": "遗产继承人有哪些?"
+}

@@ -1,0 +1,89 @@
+{
+  "Open-ended Verifiable Question": "骨股粉碎性骨折可保外就医吗?",
+  "Ground-True Answer": "骨股粉碎性骨折可不可以保外就医骨股粉碎性骨折不符合法律规定情况，不可以可以申请保外就医。《保外就医严重疾病范围》罪犯有下列严重疾病之一，久治不愈，严重影响其身心健康的，属于适用保外就医的疾病范围：十一、各种严重骨、关节疾病及损伤1.双上肢，双下肢，一侧上肢和一侧下肢因伤、病在腕或踝关节以上截肢或失去功能不能恢复。双手完全失去功能或伤、病致手指缺损6个以上，且6个缺损的手指中有半数以上在掌指关节处离断，且必须包括两个拇指缺失。2.脊柱并一个主要关节或两个以上主要关节(肩、膝、髋、肘)因伤、病发生强直畸形，经规范治疗未见好转，脊柱伸屈功能完全丧失。3.严重骨盆骨折合并尿道损伤，经治疗后遗有运动功能障碍或遗有尿道狭窄、闭塞或感染，经规范治疗未见好转。4.主要长骨的慢性化脓性骨髓炎，反复急性发作，病灶内出现大块死骨或合并病理性骨折，经规范治疗未见好转。",
+  "process_id": 6929,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "分析保外就医的法律规定",
+      "content": "骨股粉碎性骨折是否可以保外就医要取决于相关的法律规定，例如中国关于保外就医的司法解释或规章制度。需要明确保外就医的适用条件，例如疾病的严重程度是否符合规定，以及是否对关押人构成生命危险。首先查找关于保外就医的相关法律条文。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "查找相关法律或规定",
+      "content": "<search>保外就医司法解释</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "理解保外就医规定内容",
+      "content": "<information>《最高人民法院、最高人民检察院、公安部、国家安全部、司法部关于罪犯保外就医的暂行规定》指出，只有符合一定条件的疾病，如危及生命或中长期难以恢复的重症患者，才可以申请保外就医。这些条件包括身体严重残疾或患有严重疾病且无法在监狱用现有条件治疗的情况。骨股粉碎性骨折需要医院证明其是否符合危及生命或严重残疾的条件。</information>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "结合骨股粉碎性骨折的医疗特点",
+      "content": "骨股粉碎性骨折是一种严重的骨科损伤，可能影响患者的行动能力和生活质量。但该病是否达到规定中的'危及生命'或'中长期难以恢复'的标准，需要根据具体的医学诊断报告，由司法部门委托医学专家或相关机构进行鉴定。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "骨股粉碎性骨折是否可以申请保外就医取决于具体情况。根据《罪犯保外就医暂行规定》，如果骨股粉碎性骨折导致严重残疾或存在生命危险，而医疗条件在监狱无法满足，则可以满足保外就医的条件。但需要通过医疗鉴定和司法审批才能最终确定。"
+    },
+    {
+      "action": "Verification",
+      "content": "结论符合法律规定及疾病特点的分析逻辑，骨股粉碎性骨折的具体是否符合条件需要结合病例的实际情况进行司法鉴定。因此，结论无误。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n骨股粉碎性骨折可保外就医吗?\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n骨股粉碎性骨折是否可以申请保外就医取决于具体情况。根据《罪犯保外就医暂行规定》，如果骨股粉碎性骨折导致严重残疾或存在生命危险，而医疗条件在监狱无法满足，则可以满足保外就医的条件。但需要通过医疗鉴定和司法审批才能最终确定。  \n</Model Response>  \n\n<Reference Answer>  \n骨股粉碎性骨折可不可以保外就医骨股粉碎性骨折不符合法律规定情况，不可以可以申请保外就医。《保外就医严重疾病范围》罪犯有下列严重疾病之一，久治不愈，严重影响其身心健康的，属于适用保外就医的疾病范围：十一、各种严重骨、关节疾病及损伤1.双上肢，双下肢，一侧上肢和一侧下肢因伤、病在腕或踝关节以上截肢或失去功能不能恢复。双手完全失去功能或伤、病致手指缺损6个以上，且6个缺损的手指中有半数以上在掌指关节处离断，且必须包括两个拇指缺失。2.脊柱并一个主要关节或两个以上主要关节(肩、膝、髋、肘)因伤、病发生强直畸形，经规范治疗未见好转，脊柱伸屈功能完全丧失。3.严重骨盆骨折合并尿道损伤，经治疗后遗有运动功能障碍或遗有尿道狭窄、闭塞或感染，经规范治疗未见好转。4.主要长骨的慢性化脓性骨髓炎，反复急性发作，病灶内出现大块死骨或合并病理性骨折，经规范治疗未见好转。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 分析保外就医的法律规定\n骨股粉碎性骨折是否可以保外就医要取决于相关的法律规定，例如中国关于保外就医的司法解释或规章制度。需要明确保外就医的适用条件，例如疾病的严重程度是否符合规定，以及是否对关押人构成生命危险。首先查找关于保外就医的相关法律条文。\n\n### 查找相关法律或规定\n<search>保外就医司法解释</search>\n\n### 理解保外就医规定内容\n<information>《最高人民法院、最高人民检察院、公安部、国家安全部、司法部关于罪犯保外就医的暂行规定》指出，只有符合一定条件的疾病，如危及生命或中长期难以恢复的重症患者，才可以申请保外就医。这些条件包括身体严重残疾或患有严重疾病且无法在监狱用现有条件治疗的情况。骨股粉碎性骨折需要医院证明其是否符合危及生命或严重残疾的条件。</information>\n\n### 结合骨股粉碎性骨折的医疗特点\n骨股粉碎性骨折是一种严重的骨科损伤，可能影响患者的行动能力和生活质量。但该病是否达到规定中的'危及生命'或'中长期难以恢复'的标准，需要根据具体的医学诊断报告，由司法部门委托医学专家或相关机构进行鉴定。\n\n### Conclusion\n骨股粉碎性骨折是否可以申请保外就医取决于具体情况。根据《罪犯保外就医暂行规定》，如果骨股粉碎性骨折导致严重残疾或存在生命危险，而医疗条件在监狱无法满足，则可以满足保外就医的条件。但需要通过医疗鉴定和司法审批才能最终确定。\n\n### Verification\n结论符合法律规定及疾病特点的分析逻辑，骨股粉碎性骨折的具体是否符合条件需要结合病例的实际情况进行司法鉴定。因此，结论无误。\n</Thought Process>\n\n<Question>\n骨股粉碎性骨折可保外就医吗?\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n保外就医这件事，得看罪犯的疾病有没有达到法律要求。骨股粉碎性骨折听起来挺严重的，那是不是能申请保外就医呢？我觉得得先查一下关于保外就医的法律规定，看看具体需要什么条件。<search>保外就医司法解释</search>\n\n找到了一个规定，名字是《最高人民法院、最高人民检察院、公安部、国家安全部、司法部关于罪犯保外就医的暂行规定》。里面说得很明确，只有一些特别严重的病，比如可能危及生命的那种，或者长期治不好、监狱里没法提供适合治疗条件的情况，才可以申请保外就医。好像还提到严重残疾也算一种符合条件的情况。骨股粉碎性骨折得看是不是属于这些情况才行。<information>《最高人民法院、最高人民检察院、公安部、国家安全部、司法部关于罪犯保外就医的暂行规定》指出，只有符合一定条件的疾病，如危及生命或中长期难以恢复的重症患者，才可以申请保外就医。这些条件包括身体严重残疾或患有严重疾病且无法在监狱用现有条件治疗的情况。</information>\n\n骨股粉碎性骨折是一种比较严重的骨科问题，通常会影响人的行动能力，尤其是恢复起来需要很长的治疗期。不过它是不是能算到危及生命这个程度呢？这就需要专业的医学报告来证明了。如果病情非常严重，比如对生命造成威胁，或者导致活动能力永久性丧失，那可能会符合保外就医的法律要求。但光是我们自己推测不够，应该司法部门会让医学专家来进行鉴定，看看情况到底有多严重。当然，监狱里的医疗条件也是一个关键点。如果监狱的医疗条件确实无法满足治疗需求，那就可能成为申请保外就医的理由之一。\n\n综上来说，骨股粉碎性骨折是否能申请保外就医，这件事完全得看实际情况。如果这个骨折导致的后果特别严重，像是严重残疾或者生命危险，而监狱条件又治不了，那就可能符合保外就医的条件。不过最后还要经过医疗鉴定和司法审批，不能只是靠个人判断。看来这件事还是挺复杂的，得具体分析病例才行。\n</Internal Thinking>\n\n<Question>\n骨股粉碎性骨折可保外就医吗?\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析保外就医的法律规定\",\n      \"content\": \"骨股粉碎性骨折是否可以保外就医要取决于相关的法律规定，例如中国关于保外就医的司法解释或规章制度。需要明确保外就医的适用条件，例如疾病的严重程度是否符合规定，以及是否对关押人构成生命危险。首先查找关于保外就医的相关法律条文。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"查找相关法律或规定\",\n      \"content\": \"<search>保外就医司法解释</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"理解保外就医规定内容\",\n      \"content\": \"<information>《最高人民法院、最高人民检察院、公安部、国家安全部、司法部关于罪犯保外就医的暂行规定》指出，只有符合一定条件的疾病，如危及生命或中长期难以恢复的重症患者，才可以申请保外就医。这些条件包括身体严重残疾或患有严重疾病且无法在监狱用现有条件治疗的情况。骨股粉碎性骨折需要医院证明其是否符合危及生命或严重残疾的条件。</information>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"结合骨股粉碎性骨折的医疗特点\",\n      \"content\": \"骨股粉碎性骨折是一种严重的骨科损伤，可能影响患者的行动能力和生活质量。但该病是否达到规定中的'危及生命'或'中长期难以恢复'的标准，需要根据具体的医学诊断报告，由司法部门委托医学专家或相关机构进行鉴定。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"骨股粉碎性骨折是否可以申请保外就医取决于具体情况。根据《罪犯保外就医暂行规定》，如果骨股粉碎性骨折导致严重残疾或存在生命危险，而医疗条件在监狱无法满足，则可以满足保外就医的条件。但需要通过医疗鉴定和司法审批才能最终确定。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"结论符合法律规定及疾病特点的分析逻辑，骨股粉碎性骨折的具体是否符合条件需要结合病例的实际情况进行司法鉴定。因此，结论无误。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"保外就医这件事，得看罪犯的疾病有没有达到法律要求。骨股粉碎性骨折听起来挺严重的，那是不是能申请保外就医呢？我觉得得先查一下关于保外就医的法律规定，看看具体需要什么条件。<search>保外就医司法解释</search>\\n\\n找到了一个规定，名字是《最高人民法院、最高人民检察院、公安部、国家安全部、司法部关于罪犯保外就医的暂行规定》。里面说得很明确，只有一些特别严重的病，比如可能危及生命的那种，或者长期治不好、监狱里没法提供适合治疗条件的情况，才可以申请保外就医。好像还提到严重残疾也算一种符合条件的情况。骨股粉碎性骨折得看是不是属于这些情况才行。<information>《最高人民法院、最高人民检察院、公安部、国家安全部、司法部关于罪犯保外就医的暂行规定》指出，只有符合一定条件的疾病，如危及生命或中长期难以恢复的重症患者，才可以申请保外就医。这些条件包括身体严重残疾或患有严重疾病且无法在监狱用现有条件治疗的情况。</information>\\n\\n骨股粉碎性骨折是一种比较严重的骨科问题，通常会影响人的行动能力，尤其是恢复起来需要很长的治疗期。不过它是不是能算到危及生命这个程度呢？这就需要专业的医学报告来证明了。如果病情非常严重，比如对生命造成威胁，或者导致活动能力永久性丧失，那可能会符合保外就医的法律要求。但光是我们自己推测不够，应该司法部门会让医学专家来进行鉴定，看看情况到底有多严重。当然，监狱里的医疗条件也是一个关键点。如果监狱的医疗条件确实无法满足治疗需求，那就可能成为申请保外就医的理由之一。\\n\\n综上来说，骨股粉碎性骨折是否能申请保外就医，这件事完全得看实际情况。如果这个骨折导致的后果特别严重，像是严重残疾或者生命危险，而监狱条件又治不了，那就可能符合保外就医的条件。不过最后还要经过医疗鉴定和司法审批，不能只是靠个人判断。看来这件事还是挺复杂的，得具体分析病例才行。\"\n}\n```",
+    "骨股粉碎性骨折是否可以申请保外就医，需要根据具体情况进行判断，并由司法部门依据相关法律规定进行审核和审批。\n\n根据我国《最高人民法院、最高人民检察院、公安部、国家安全部、司法部关于罪犯保外就医的暂行规定》，符合保外就医的条件通常包括以下几点：\n1. 患有危及生命的重症疾病；\n2. 长期或中期难以治愈的严重疾病；\n3. 身体严重残疾或在监狱中无法通过现有医疗条件进行有效治疗。\n\n骨股粉碎性骨折通常是一种严重的伤病，可能导致行动能力严重受限或永久性损伤。从医学角度来看，其严重程度需要通过专业医疗鉴定确认。如果该病情导致患者存在生命危险或长期无法康复，并且监狱现有医疗条件无法提供有效治疗，则可能符合保外就医的条件。此外，病情对日常生活能力和康复的影响也是重要的判断依据。\n\n具体是否能申请成功，需由司法部门依规委托医疗专家进行医疗鉴定，并综合监狱的医疗条件、病情的严重性以及罪犯的具体情况来最终决定。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "分析保外就医的法律规定",
+        "content": "骨股粉碎性骨折是否可以保外就医要取决于相关的法律规定，例如中国关于保外就医的司法解释或规章制度。需要明确保外就医的适用条件，例如疾病的严重程度是否符合规定，以及是否对关押人构成生命危险。首先查找关于保外就医的相关法律条文。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "查找相关法律或规定",
+        "content": "<search>保外就医司法解释</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "理解保外就医规定内容",
+        "content": "<information>《最高人民法院、最高人民检察院、公安部、国家安全部、司法部关于罪犯保外就医的暂行规定》指出，只有符合一定条件的疾病，如危及生命或中长期难以恢复的重症患者，才可以申请保外就医。这些条件包括身体严重残疾或患有严重疾病且无法在监狱用现有条件治疗的情况。骨股粉碎性骨折需要医院证明其是否符合危及生命或严重残疾的条件。</information>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "结合骨股粉碎性骨折的医疗特点",
+        "content": "骨股粉碎性骨折是一种严重的骨科损伤，可能影响患者的行动能力和生活质量。但该病是否达到规定中的'危及生命'或'中长期难以恢复'的标准，需要根据具体的医学诊断报告，由司法部门委托医学专家或相关机构进行鉴定。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "骨股粉碎性骨折是否可以申请保外就医取决于具体情况。根据《罪犯保外就医暂行规定》，如果骨股粉碎性骨折导致严重残疾或存在生命危险，而医疗条件在监狱无法满足，则可以满足保外就医的条件。但需要通过医疗鉴定和司法审批才能最终确定。"
+      },
+      {
+        "action": "Verification",
+        "content": "结论符合法律规定及疾病特点的分析逻辑，骨股粉碎性骨折的具体是否符合条件需要结合病例的实际情况进行司法鉴定。因此，结论无误。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "保外就医这件事，得看罪犯的疾病有没有达到法律要求。骨股粉碎性骨折听起来挺严重的，那是不是能申请保外就医呢？我觉得得先查一下关于保外就医的法律规定，看看具体需要什么条件。<search>保外就医司法解释</search>\n\n找到了一个规定，名字是《最高人民法院、最高人民检察院、公安部、国家安全部、司法部关于罪犯保外就医的暂行规定》。里面说得很明确，只有一些特别严重的病，比如可能危及生命的那种，或者长期治不好、监狱里没法提供适合治疗条件的情况，才可以申请保外就医。好像还提到严重残疾也算一种符合条件的情况。骨股粉碎性骨折得看是不是属于这些情况才行。<information>《最高人民法院、最高人民检察院、公安部、国家安全部、司法部关于罪犯保外就医的暂行规定》指出，只有符合一定条件的疾病，如危及生命或中长期难以恢复的重症患者，才可以申请保外就医。这些条件包括身体严重残疾或患有严重疾病且无法在监狱用现有条件治疗的情况。</information>\n\n骨股粉碎性骨折是一种比较严重的骨科问题，通常会影响人的行动能力，尤其是恢复起来需要很长的治疗期。不过它是不是能算到危及生命这个程度呢？这就需要专业的医学报告来证明了。如果病情非常严重，比如对生命造成威胁，或者导致活动能力永久性丧失，那可能会符合保外就医的法律要求。但光是我们自己推测不够，应该司法部门会让医学专家来进行鉴定，看看情况到底有多严重。当然，监狱里的医疗条件也是一个关键点。如果监狱的医疗条件确实无法满足治疗需求，那就可能成为申请保外就医的理由之一。\n\n综上来说，骨股粉碎性骨折是否能申请保外就医，这件事完全得看实际情况。如果这个骨折导致的后果特别严重，像是严重残疾或者生命危险，而监狱条件又治不了，那就可能符合保外就医的条件。不过最后还要经过医疗鉴定和司法审批，不能只是靠个人判断。看来这件事还是挺复杂的，得具体分析病例才行。",
+  "Response": "骨股粉碎性骨折是否可以申请保外就医，需要根据具体情况进行判断，并由司法部门依据相关法律规定进行审核和审批。\n\n根据我国《最高人民法院、最高人民检察院、公安部、国家安全部、司法部关于罪犯保外就医的暂行规定》，符合保外就医的条件通常包括以下几点：\n1. 患有危及生命的重症疾病；\n2. 长期或中期难以治愈的严重疾病；\n3. 身体严重残疾或在监狱中无法通过现有医疗条件进行有效治疗。\n\n骨股粉碎性骨折通常是一种严重的伤病，可能导致行动能力严重受限或永久性损伤。从医学角度来看，其严重程度需要通过专业医疗鉴定确认。如果该病情导致患者存在生命危险或长期无法康复，并且监狱现有医疗条件无法提供有效治疗，则可能符合保外就医的条件。此外，病情对日常生活能力和康复的影响也是重要的判断依据。\n\n具体是否能申请成功，需由司法部门依规委托医疗专家进行医疗鉴定，并综合监狱的医疗条件、病情的严重性以及罪犯的具体情况来最终决定。",
+  "Question": "骨股粉碎性骨折可保外就医吗?"
+}

@@ -1,0 +1,89 @@
+{
+  "Open-ended Verifiable Question": "自动离职和被迫解除劳动合同都有赔偿吗?",
+  "Ground-True Answer": "劳动者被迫解除劳动关系，不要求继续履行劳动合同或者劳动合同已经不能继续履行的，用人单位应当依照经济补偿标准的二倍向劳动者支付赔偿金。经济补偿按劳动者在本单位工作的年限，每满一年支付一个月工资的标准向劳动者支付。 自动离职无经济补偿金，除非用人单位存在： 1、用人单位的规章制度违反法律、法规的规定，损害劳动者权益的； 2、未及时足额支付劳动报酬； 3、未依法为劳动者缴纳社会保险费等。 依据我国相关法律的规定，员工自动离职的，一般是没有经济补偿的，但如果劳动者是因用人单位不支付劳动报酬等原因离职的，可以要求经济补偿金。",
+  "process_id": 8650,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "明确问题背景并判断主要法律依据",
+      "content": "自动离职和被迫解除劳动合同属于两种不同的劳动合同终止情形。需要明确自动离职是否由劳动者主动选择，以及被迫解除合同是否符合法律规定的'经济补偿'或赔偿条件。查询与劳动合同解除相关的法律规定。<search>《中华人民共和国劳动合同法》解除劳动合同经济补偿</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "查询并分析相关法律规定",
+      "content": "<information>《中华人民共和国劳动合同法》第36条至第50条规定了解除劳动合同的情形及经济补偿适用性。第46条明确列举了劳动者可获得经济补偿的情况，包括劳动者被迫解除劳动合同，以及用人单位违法解除或终止劳动合同的情况。</information>根据查询结果，需要分别分析自动离职和被迫解除劳动合同在法律上的性质，判断是否符合经济补偿条件。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "分析自动离职情形",
+      "content": "自动离职通常是指劳动者自行选择不继续履行合同，属于劳动者单方面解除合同的行为。这种行为通常不需要用人单位支付经济补偿，除非劳动者依据《劳动合同法》第38条提出解除劳动合同，且该解除源于用人单位存在违法行为，例如未依法支付劳动报酬或未提供劳动条件。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "分析被迫解除劳动合同情形",
+      "content": "被迫解除劳动合同一般是由用人单位提出解除合同，或者劳动者在依法合规的情况下被迫解约。如果用人单位违反劳动法的规定单方解除劳动合同，例如未提前通知或未支付经济补偿，那么劳动者可以依据《劳动合同法》第46条和第47条获得经济补偿。此外，如果用人单位违法解除劳动合同，劳动者还能要求赔偿。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "自动离职是否有赔偿取决于具体情况。如果劳动者依据《劳动合同法》第38条合法解除合同，且原因在于用人单位违法，则有经济补偿，否则没有。而被迫解除劳动合同在多数情况下劳动者可获得经济补偿，若用人单位存在违法行为，还可能需要支付赔偿金。"
+    },
+    {
+      "action": "Verification",
+      "content": "通过分析《中华人民共和国劳动合同法》相关条款，自动离职和被迫解除劳动合同的赔偿条件是符合法律规定的最终结论。因此得出答案正确。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n自动离职和被迫解除劳动合同都有赔偿吗?\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n自动离职是否有赔偿取决于具体情况。如果劳动者依据《劳动合同法》第38条合法解除合同，且原因在于用人单位违法，则有经济补偿，否则没有。而被迫解除劳动合同在多数情况下劳动者可获得经济补偿，若用人单位存在违法行为，还可能需要支付赔偿金。  \n</Model Response>  \n\n<Reference Answer>  \n劳动者被迫解除劳动关系，不要求继续履行劳动合同或者劳动合同已经不能继续履行的，用人单位应当依照经济补偿标准的二倍向劳动者支付赔偿金。经济补偿按劳动者在本单位工作的年限，每满一年支付一个月工资的标准向劳动者支付。 自动离职无经济补偿金，除非用人单位存在： 1、用人单位的规章制度违反法律、法规的规定，损害劳动者权益的； 2、未及时足额支付劳动报酬； 3、未依法为劳动者缴纳社会保险费等。 依据我国相关法律的规定，员工自动离职的，一般是没有经济补偿的，但如果劳动者是因用人单位不支付劳动报酬等原因离职的，可以要求经济补偿金。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 明确问题背景并判断主要法律依据\n自动离职和被迫解除劳动合同属于两种不同的劳动合同终止情形。需要明确自动离职是否由劳动者主动选择，以及被迫解除合同是否符合法律规定的'经济补偿'或赔偿条件。查询与劳动合同解除相关的法律规定。<search>《中华人民共和国劳动合同法》解除劳动合同经济补偿</search>\n\n### 查询并分析相关法律规定\n<information>《中华人民共和国劳动合同法》第36条至第50条规定了解除劳动合同的情形及经济补偿适用性。第46条明确列举了劳动者可获得经济补偿的情况，包括劳动者被迫解除劳动合同，以及用人单位违法解除或终止劳动合同的情况。</information>根据查询结果，需要分别分析自动离职和被迫解除劳动合同在法律上的性质，判断是否符合经济补偿条件。\n\n### 分析自动离职情形\n自动离职通常是指劳动者自行选择不继续履行合同，属于劳动者单方面解除合同的行为。这种行为通常不需要用人单位支付经济补偿，除非劳动者依据《劳动合同法》第38条提出解除劳动合同，且该解除源于用人单位存在违法行为，例如未依法支付劳动报酬或未提供劳动条件。\n\n### 分析被迫解除劳动合同情形\n被迫解除劳动合同一般是由用人单位提出解除合同，或者劳动者在依法合规的情况下被迫解约。如果用人单位违反劳动法的规定单方解除劳动合同，例如未提前通知或未支付经济补偿，那么劳动者可以依据《劳动合同法》第46条和第47条获得经济补偿。此外，如果用人单位违法解除劳动合同，劳动者还能要求赔偿。\n\n### Conclusion\n自动离职是否有赔偿取决于具体情况。如果劳动者依据《劳动合同法》第38条合法解除合同，且原因在于用人单位违法，则有经济补偿，否则没有。而被迫解除劳动合同在多数情况下劳动者可获得经济补偿，若用人单位存在违法行为，还可能需要支付赔偿金。\n\n### Verification\n通过分析《中华人民共和国劳动合同法》相关条款，自动离职和被迫解除劳动合同的赔偿条件是符合法律规定的最终结论。因此得出答案正确。\n</Thought Process>\n\n<Question>\n自动离职和被迫解除劳动合同都有赔偿吗?\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n嗯，先来搞清楚自动离职和被迫解除劳动合同到底是什么。自动离职听起来就是劳动者自己决定不做了，主动终止劳动合同。而被迫解除劳动合同，好像是劳动者被某种情况逼得不得不解除合约，可能和用人单位有关。不管是哪种情况，我得先看一下法律里有没有具体规定两种情形的赔偿问题。<search>《中华人民共和国劳动合同法》解除劳动合同经济补偿</search> \n\n查到了一些重要信息：根据《中华人民共和国劳动合同法》第36条到第50条，解除劳动合同的情形和经济补偿的制度都有提到。其中，第46条说只有在一些特定的情况下，劳动者可以获得经济补偿，比如用人单位违法解除合同，或者劳动者不得不因用人单位违规提出解除。\n\n现在可以深入分析一下。先从自动离职开始。自动离职如果是劳动者单方面决定不干了，基本上是劳动者主动提出的，不太可能会有赔偿，因为这个是出于个人选择。不过，如果劳动者是因为用人单位违反法律，比如没发工资、不给劳动条件等等，这种情况下，用人单位其实是有责任的，劳动者可以依据《劳动合同法》第38条解除合同，这种就不是普通的自动离职了，而是带有合理理由的解约，用人单位要给经济补偿。\n\n再看看被迫解除劳动合同的情况。被迫解约通常是劳动者所在的单位做了什么不对的事，比如违反规定解约、没提前通知、没按时支付补偿等等，劳动者被迫辞职其实是被保护的一方。在《劳动合同法》里确实提到，在这种情况下，应该给劳动者经济补偿。如果单位行为违法，比方说直接强制解约，还可能涉及赔偿问题。\n\n看来问题的答案很清楚了，能不能赔偿要看情况。如果是劳动者主动离职，那绝大多数情况下公司不用赔。但是如果劳动者离职的原因是单位那边有违规行为，或者属于劳动法规定的情形下的被迫辞职，单位就得按照规矩赔钱了。\n\n最后确认一下，我查的依据就是《中华人民共和国劳动合同法》，从经济补偿的几个条款可以看出，虽然自动和被迫解除劳动合同听起来像是两种截然不同的类型，但核心还是要看是否符合法律规定的补偿条件。所以，答案是，看具体情况来决定。\n</Internal Thinking>\n\n<Question>\n自动离职和被迫解除劳动合同都有赔偿吗?\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"明确问题背景并判断主要法律依据\",\n      \"content\": \"自动离职和被迫解除劳动合同属于两种不同的劳动合同终止情形。需要明确自动离职是否由劳动者主动选择，以及被迫解除合同是否符合法律规定的'经济补偿'或赔偿条件。查询与劳动合同解除相关的法律规定。<search>《中华人民共和国劳动合同法》解除劳动合同经济补偿</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"查询并分析相关法律规定\",\n      \"content\": \"<information>《中华人民共和国劳动合同法》第36条至第50条规定了解除劳动合同的情形及经济补偿适用性。第46条明确列举了劳动者可获得经济补偿的情况，包括劳动者被迫解除劳动合同，以及用人单位违法解除或终止劳动合同的情况。</information>根据查询结果，需要分别分析自动离职和被迫解除劳动合同在法律上的性质，判断是否符合经济补偿条件。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析自动离职情形\",\n      \"content\": \"自动离职通常是指劳动者自行选择不继续履行合同，属于劳动者单方面解除合同的行为。这种行为通常不需要用人单位支付经济补偿，除非劳动者依据《劳动合同法》第38条提出解除劳动合同，且该解除源于用人单位存在违法行为，例如未依法支付劳动报酬或未提供劳动条件。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析被迫解除劳动合同情形\",\n      \"content\": \"被迫解除劳动合同一般是由用人单位提出解除合同，或者劳动者在依法合规的情况下被迫解约。如果用人单位违反劳动法的规定单方解除劳动合同，例如未提前通知或未支付经济补偿，那么劳动者可以依据《劳动合同法》第46条和第47条获得经济补偿。此外，如果用人单位违法解除劳动合同，劳动者还能要求赔偿。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"自动离职是否有赔偿取决于具体情况。如果劳动者依据《劳动合同法》第38条合法解除合同，且原因在于用人单位违法，则有经济补偿，否则没有。而被迫解除劳动合同在多数情况下劳动者可获得经济补偿，若用人单位存在违法行为，还可能需要支付赔偿金。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"通过分析《中华人民共和国劳动合同法》相关条款，自动离职和被迫解除劳动合同的赔偿条件是符合法律规定的最终结论。因此得出答案正确。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"嗯，先来搞清楚自动离职和被迫解除劳动合同到底是什么。自动离职听起来就是劳动者自己决定不做了，主动终止劳动合同。而被迫解除劳动合同，好像是劳动者被某种情况逼得不得不解除合约，可能和用人单位有关。不管是哪种情况，我得先看一下法律里有没有具体规定两种情形的赔偿问题。<search>《中华人民共和国劳动合同法》解除劳动合同经济补偿</search> \\n\\n查到了一些重要信息：根据《中华人民共和国劳动合同法》第36条到第50条，解除劳动合同的情形和经济补偿的制度都有提到。其中，第46条说只有在一些特定的情况下，劳动者可以获得经济补偿，比如用人单位违法解除合同，或者劳动者不得不因用人单位违规提出解除。\\n\\n现在可以深入分析一下。先从自动离职开始。自动离职如果是劳动者单方面决定不干了，基本上是劳动者主动提出的，不太可能会有赔偿，因为这个是出于个人选择。不过，如果劳动者是因为用人单位违反法律，比如没发工资、不给劳动条件等等，这种情况下，用人单位其实是有责任的，劳动者可以依据《劳动合同法》第38条解除合同，这种就不是普通的自动离职了，而是带有合理理由的解约，用人单位要给经济补偿。\\n\\n再看看被迫解除劳动合同的情况。被迫解约通常是劳动者所在的单位做了什么不对的事，比如违反规定解约、没提前通知、没按时支付补偿等等，劳动者被迫辞职其实是被保护的一方。在《劳动合同法》里确实提到，在这种情况下，应该给劳动者经济补偿。如果单位行为违法，比方说直接强制解约，还可能涉及赔偿问题。\\n\\n看来问题的答案很清楚了，能不能赔偿要看情况。如果是劳动者主动离职，那绝大多数情况下公司不用赔。但是如果劳动者离职的原因是单位那边有违规行为，或者属于劳动法规定的情形下的被迫辞职，单位就得按照规矩赔钱了。\\n\\n最后确认一下，我查的依据就是《中华人民共和国劳动合同法》，从经济补偿的几个条款可以看出，虽然自动和被迫解除劳动合同听起来像是两种截然不同的类型，但核心还是要看是否符合法律规定的补偿条件。所以，答案是，看具体情况来决定。\"\n}\n```",
+    "自动离职和被迫解除劳动合同是否有赔偿，取决于具体情况。\n\n1. **自动离职**：一般情况下，如果劳动者主动离职，比如因为个人原因单方面提出辞职，并且不是由于用人单位违法或违约行为导致的，劳动者通常是无法获得经济补偿的。但是，如果劳动者离职的原因是用人单位存在违法行为（如未及时支付工资、未提供必要的工作条件等），劳动者可以依据《中华人民共和国劳动合同法》第38条提出解除劳动合同，这种情况下，用人单位需要按照规定支付经济补偿。\n\n2. **被迫解除劳动合同**：如果劳动者被迫解除劳动合同是由于用人单位违法（例如严重违反劳动法、无理由单方面解除合同），劳动者有权获得经济补偿。《中华人民共和国劳动合同法》第46条明确规定，如果是用人单位的违规行为导致劳动者被迫提出解除劳动合同，用人单位需支付经济补偿。此外，如果用人单位违背规定强制解除劳动合同，还有可能依法承担赔偿责任。\n\n总而言之，是否有赔偿取决于用人单位是否存在违法或违约行为。如果是劳动者主动离职并且不涉及用人单位的违规，一般没有赔偿；若离职是因用人单位违法导致的，被迫解除劳动合同则可以依法获得经济补偿。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "明确问题背景并判断主要法律依据",
+        "content": "自动离职和被迫解除劳动合同属于两种不同的劳动合同终止情形。需要明确自动离职是否由劳动者主动选择，以及被迫解除合同是否符合法律规定的'经济补偿'或赔偿条件。查询与劳动合同解除相关的法律规定。<search>《中华人民共和国劳动合同法》解除劳动合同经济补偿</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "查询并分析相关法律规定",
+        "content": "<information>《中华人民共和国劳动合同法》第36条至第50条规定了解除劳动合同的情形及经济补偿适用性。第46条明确列举了劳动者可获得经济补偿的情况，包括劳动者被迫解除劳动合同，以及用人单位违法解除或终止劳动合同的情况。</information>根据查询结果，需要分别分析自动离职和被迫解除劳动合同在法律上的性质，判断是否符合经济补偿条件。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "分析自动离职情形",
+        "content": "自动离职通常是指劳动者自行选择不继续履行合同，属于劳动者单方面解除合同的行为。这种行为通常不需要用人单位支付经济补偿，除非劳动者依据《劳动合同法》第38条提出解除劳动合同，且该解除源于用人单位存在违法行为，例如未依法支付劳动报酬或未提供劳动条件。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "分析被迫解除劳动合同情形",
+        "content": "被迫解除劳动合同一般是由用人单位提出解除合同，或者劳动者在依法合规的情况下被迫解约。如果用人单位违反劳动法的规定单方解除劳动合同，例如未提前通知或未支付经济补偿，那么劳动者可以依据《劳动合同法》第46条和第47条获得经济补偿。此外，如果用人单位违法解除劳动合同，劳动者还能要求赔偿。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "自动离职是否有赔偿取决于具体情况。如果劳动者依据《劳动合同法》第38条合法解除合同，且原因在于用人单位违法，则有经济补偿，否则没有。而被迫解除劳动合同在多数情况下劳动者可获得经济补偿，若用人单位存在违法行为，还可能需要支付赔偿金。"
+      },
+      {
+        "action": "Verification",
+        "content": "通过分析《中华人民共和国劳动合同法》相关条款，自动离职和被迫解除劳动合同的赔偿条件是符合法律规定的最终结论。因此得出答案正确。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "嗯，先来搞清楚自动离职和被迫解除劳动合同到底是什么。自动离职听起来就是劳动者自己决定不做了，主动终止劳动合同。而被迫解除劳动合同，好像是劳动者被某种情况逼得不得不解除合约，可能和用人单位有关。不管是哪种情况，我得先看一下法律里有没有具体规定两种情形的赔偿问题。<search>《中华人民共和国劳动合同法》解除劳动合同经济补偿</search> \n\n查到了一些重要信息：根据《中华人民共和国劳动合同法》第36条到第50条，解除劳动合同的情形和经济补偿的制度都有提到。其中，第46条说只有在一些特定的情况下，劳动者可以获得经济补偿，比如用人单位违法解除合同，或者劳动者不得不因用人单位违规提出解除。\n\n现在可以深入分析一下。先从自动离职开始。自动离职如果是劳动者单方面决定不干了，基本上是劳动者主动提出的，不太可能会有赔偿，因为这个是出于个人选择。不过，如果劳动者是因为用人单位违反法律，比如没发工资、不给劳动条件等等，这种情况下，用人单位其实是有责任的，劳动者可以依据《劳动合同法》第38条解除合同，这种就不是普通的自动离职了，而是带有合理理由的解约，用人单位要给经济补偿。\n\n再看看被迫解除劳动合同的情况。被迫解约通常是劳动者所在的单位做了什么不对的事，比如违反规定解约、没提前通知、没按时支付补偿等等，劳动者被迫辞职其实是被保护的一方。在《劳动合同法》里确实提到，在这种情况下，应该给劳动者经济补偿。如果单位行为违法，比方说直接强制解约，还可能涉及赔偿问题。\n\n看来问题的答案很清楚了，能不能赔偿要看情况。如果是劳动者主动离职，那绝大多数情况下公司不用赔。但是如果劳动者离职的原因是单位那边有违规行为，或者属于劳动法规定的情形下的被迫辞职，单位就得按照规矩赔钱了。\n\n最后确认一下，我查的依据就是《中华人民共和国劳动合同法》，从经济补偿的几个条款可以看出，虽然自动和被迫解除劳动合同听起来像是两种截然不同的类型，但核心还是要看是否符合法律规定的补偿条件。所以，答案是，看具体情况来决定。",
+  "Response": "自动离职和被迫解除劳动合同是否有赔偿，取决于具体情况。\n\n1. **自动离职**：一般情况下，如果劳动者主动离职，比如因为个人原因单方面提出辞职，并且不是由于用人单位违法或违约行为导致的，劳动者通常是无法获得经济补偿的。但是，如果劳动者离职的原因是用人单位存在违法行为（如未及时支付工资、未提供必要的工作条件等），劳动者可以依据《中华人民共和国劳动合同法》第38条提出解除劳动合同，这种情况下，用人单位需要按照规定支付经济补偿。\n\n2. **被迫解除劳动合同**：如果劳动者被迫解除劳动合同是由于用人单位违法（例如严重违反劳动法、无理由单方面解除合同），劳动者有权获得经济补偿。《中华人民共和国劳动合同法》第46条明确规定，如果是用人单位的违规行为导致劳动者被迫提出解除劳动合同，用人单位需支付经济补偿。此外，如果用人单位违背规定强制解除劳动合同，还有可能依法承担赔偿责任。\n\n总而言之，是否有赔偿取决于用人单位是否存在违法或违约行为。如果是劳动者主动离职并且不涉及用人单位的违规，一般没有赔偿；若离职是因用人单位违法导致的，被迫解除劳动合同则可以依法获得经济补偿。",
+  "Question": "自动离职和被迫解除劳动合同都有赔偿吗?"
+}

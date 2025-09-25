@@ -1,0 +1,99 @@
+{
+  "Open-ended Verifiable Question": "拆迁不同意,如何处理?",
+  "Ground-True Answer": "依据我国相关法律的规定，被拆迁人不同意拆迁的，拆迁部门强制拆迁时，被拆迁人对强制拆迁不服的，可以申请行政复议或者提起行政诉讼。房屋征收部门与被征收人在征收补偿方案确定的签约期限内达不成补偿协议，或者被征收房屋所有权人不明确的，由房屋征收部门报请作出房屋征收决定的市、县级人民政府依照本条例的规定，按照征收补偿方案作出补偿决定，并在房屋征收范围内予以公告。\n【法律法规】\n《国有土地上房屋征收与补偿条例》第二十八条\n被征收人在法定期限内不申请行政复议或者不提起行政诉讼，在补偿决定规定的期限内又不搬迁的，由作出房屋征收决定的市、县级人民政府依法申请人民法院强制执行。\n强制执行申请书应当附具补偿金额和专户存储账号、产权调换房屋和周转用房的地点和面积等材料。",
+  "process_id": 130,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "确定拆迁纠纷的关键问题",
+      "content": "首先需要明确拆迁不同意的具体原因，比如拆迁补偿是否合理，是否涉及违法拆迁或强制拆迁。然后根据具体问题选择法律途径来解决纠纷，比如协商、行政复议或诉讼。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "查找相关法律法规",
+      "content": "为了进一步了解拆迁相关的法律依据，需要搜索《中华人民共和国土地管理法》《国有土地上房屋征收与补偿条例》等内容作为依据。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "检索法律条款的内容",
+      "content": "<search>中华人民共和国土地管理法</search><search>国有土地上房屋征收与补偿条例</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "分析搜索到的法律信息",
+      "content": "<information>《中华人民共和国土地管理法》规定，任何拆迁和征收土地都应依法进行，涉及征地的补偿必须公平合理；《国有土地上房屋征收与补偿条例》明确，拆迁补偿需包括货币补偿或产权置换，且需经过用户明确同意。</information>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "选择合法途径维护权益",
+      "content": "根据获取的信息，如果拆迁人未按照法律规定进行补偿或存在违规操作，可以向相关行政机关申请复议；如果复议结果不满意，可以通过法院诉讼维护权益。同时也可以与拆迁方协商，条件允许时达成一致补偿方案。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "拆迁过程中如果不同意，可以选择以下步骤处理：第一，与拆迁方协商寻求公平补偿；第二，如协商未果，可向当地政府或相关拆迁主管部门申请行政复议；第三，如仍无法解决，可依法向法院提起诉讼，维护自身合法权益。切记，在任何情况下都需要保留相关证据文件，并依法进行维权。"
+    },
+    {
+      "action": "Verification",
+      "content": "结论合理且与现行法律法规一致，建议步骤清晰且可执行。可以依据协商、行政复议和诉讼途径解决拆迁纠纷。验证通过。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n拆迁不同意,如何处理?\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n拆迁过程中如果不同意，可以选择以下步骤处理：第一，与拆迁方协商寻求公平补偿；第二，如协商未果，可向当地政府或相关拆迁主管部门申请行政复议；第三，如仍无法解决，可依法向法院提起诉讼，维护自身合法权益。切记，在任何情况下都需要保留相关证据文件，并依法进行维权。  \n</Model Response>  \n\n<Reference Answer>  \n依据我国相关法律的规定，被拆迁人不同意拆迁的，拆迁部门强制拆迁时，被拆迁人对强制拆迁不服的，可以申请行政复议或者提起行政诉讼。房屋征收部门与被征收人在征收补偿方案确定的签约期限内达不成补偿协议，或者被征收房屋所有权人不明确的，由房屋征收部门报请作出房屋征收决定的市、县级人民政府依照本条例的规定，按照征收补偿方案作出补偿决定，并在房屋征收范围内予以公告。\n【法律法规】\n《国有土地上房屋征收与补偿条例》第二十八条\n被征收人在法定期限内不申请行政复议或者不提起行政诉讼，在补偿决定规定的期限内又不搬迁的，由作出房屋征收决定的市、县级人民政府依法申请人民法院强制执行。\n强制执行申请书应当附具补偿金额和专户存储账号、产权调换房屋和周转用房的地点和面积等材料。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 确定拆迁纠纷的关键问题\n首先需要明确拆迁不同意的具体原因，比如拆迁补偿是否合理，是否涉及违法拆迁或强制拆迁。然后根据具体问题选择法律途径来解决纠纷，比如协商、行政复议或诉讼。\n\n### 查找相关法律法规\n为了进一步了解拆迁相关的法律依据，需要搜索《中华人民共和国土地管理法》《国有土地上房屋征收与补偿条例》等内容作为依据。\n\n### 检索法律条款的内容\n<search>中华人民共和国土地管理法</search><search>国有土地上房屋征收与补偿条例</search>\n\n### 分析搜索到的法律信息\n<information>《中华人民共和国土地管理法》规定，任何拆迁和征收土地都应依法进行，涉及征地的补偿必须公平合理；《国有土地上房屋征收与补偿条例》明确，拆迁补偿需包括货币补偿或产权置换，且需经过用户明确同意。</information>\n\n### 选择合法途径维护权益\n根据获取的信息，如果拆迁人未按照法律规定进行补偿或存在违规操作，可以向相关行政机关申请复议；如果复议结果不满意，可以通过法院诉讼维护权益。同时也可以与拆迁方协商，条件允许时达成一致补偿方案。\n\n### Conclusion\n拆迁过程中如果不同意，可以选择以下步骤处理：第一，与拆迁方协商寻求公平补偿；第二，如协商未果，可向当地政府或相关拆迁主管部门申请行政复议；第三，如仍无法解决，可依法向法院提起诉讼，维护自身合法权益。切记，在任何情况下都需要保留相关证据文件，并依法进行维权。\n\n### Verification\n结论合理且与现行法律法规一致，建议步骤清晰且可执行。可以依据协商、行政复议和诉讼途径解决拆迁纠纷。验证通过。\n</Thought Process>\n\n<Question>\n拆迁不同意,如何处理?\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n嗯，拆迁的时候如果遇到不同意的情况，得先想清楚具体是因为什么不同意。是不是补偿太低？还是补偿方式不合理？或者是不是拆迁项目本身有些问题，比如手续不全或者涉嫌强制拆迁？这个问题得先搞明白。如果是补偿问题，比如钱太少了，或者置换的房子位置不好，那就要看看相关法律规定怎么样才算合理。如果是项目或者拆迁流程的问题，那可能涉及违法操作，需要找依据来判断。 \n\n想要搞清楚这些问题，得查一查《中华人民共和国土地管理法》和《国有土地上房屋征收与补偿条例》。这样才能确定到底拆迁方是不是在按照法律办事。我赶紧搜一下这些内容。<search>中华人民共和国土地管理法</search><search>国有土地上房屋征收与补偿条例</search>\n\n搜到的内容显示，《中华人民共和国土地管理法》规定，不管是征地还是拆迁，都必须依法进行，补偿得公平合理才行。而《国有土地上房屋征收与补偿条例》提到，拆迁方的补偿可以是给钱，也可以是用房子置换，但不管怎么样，最终的补偿方案必须得到被拆迁人的明确同意，不能强迫人家接受。<information>《中华人民共和国土地管理法》规定，任何拆迁和征收土地都应依法进行，涉及征地的补偿必须公平合理；《国有土地上房屋征收与补偿条例》明确，拆迁补偿需包括货币补偿或产权置换，且需经过用户明确同意。</information>\n\n这样的话，拆迁的问题就清楚多了。如果拆迁补偿不合理或者有违法行为，我觉得首先得试试和拆迁方协商，看看能不能把条件争取得更公平一些。如果协商不成，那可以向拆迁的主管部门，比如当地的住房和城乡建设部门，提交一份行政复议申请。复议的过程就是让上一级的部门来判断拆迁方是否合法。\n\n当然，如果行政复议的结果还是不能接受，那就只有通过法律的途径解决问题了。也就是向法院提起诉讼，保护自己的权益。但是不管是复议还是诉讼，关键是得有证据证明拆迁方存在问题。比如说拆迁补偿协议的内容，拆迁通知的文件，或者对方在沟通中的录音、视频之类的，这些都得保留下来。\n\n总的来说，如果对拆迁不同意，可以按照这样的顺序处理：先协商，尽量争取合理的补偿；协商不成就申请行政复议；如果复议结果还是不满意，那可以向法院提起诉讼来解决。过程中一定要保证自己依法维权，不被逼迫接受不合法的条件，这样条理清楚、证据充分，保护自己是没问题的。\n</Internal Thinking>\n\n<Question>\n拆迁不同意,如何处理?\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"确定拆迁纠纷的关键问题\",\n      \"content\": \"首先需要明确拆迁不同意的具体原因，比如拆迁补偿是否合理，是否涉及违法拆迁或强制拆迁。然后根据具体问题选择法律途径来解决纠纷，比如协商、行政复议或诉讼。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"查找相关法律法规\",\n      \"content\": \"为了进一步了解拆迁相关的法律依据，需要搜索《中华人民共和国土地管理法》《国有土地上房屋征收与补偿条例》等内容作为依据。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"检索法律条款的内容\",\n      \"content\": \"<search>中华人民共和国土地管理法</search><search>国有土地上房屋征收与补偿条例</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析搜索到的法律信息\",\n      \"content\": \"<information>《中华人民共和国土地管理法》规定，任何拆迁和征收土地都应依法进行，涉及征地的补偿必须公平合理；《国有土地上房屋征收与补偿条例》明确，拆迁补偿需包括货币补偿或产权置换，且需经过用户明确同意。</information>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"选择合法途径维护权益\",\n      \"content\": \"根据获取的信息，如果拆迁人未按照法律规定进行补偿或存在违规操作，可以向相关行政机关申请复议；如果复议结果不满意，可以通过法院诉讼维护权益。同时也可以与拆迁方协商，条件允许时达成一致补偿方案。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"拆迁过程中如果不同意，可以选择以下步骤处理：第一，与拆迁方协商寻求公平补偿；第二，如协商未果，可向当地政府或相关拆迁主管部门申请行政复议；第三，如仍无法解决，可依法向法院提起诉讼，维护自身合法权益。切记，在任何情况下都需要保留相关证据文件，并依法进行维权。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"结论合理且与现行法律法规一致，建议步骤清晰且可执行。可以依据协商、行政复议和诉讼途径解决拆迁纠纷。验证通过。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"嗯，拆迁的时候如果遇到不同意的情况，得先想清楚具体是因为什么不同意。是不是补偿太低？还是补偿方式不合理？或者是不是拆迁项目本身有些问题，比如手续不全或者涉嫌强制拆迁？这个问题得先搞明白。如果是补偿问题，比如钱太少了，或者置换的房子位置不好，那就要看看相关法律规定怎么样才算合理。如果是项目或者拆迁流程的问题，那可能涉及违法操作，需要找依据来判断。 \\n\\n想要搞清楚这些问题，得查一查《中华人民共和国土地管理法》和《国有土地上房屋征收与补偿条例》。这样才能确定到底拆迁方是不是在按照法律办事。我赶紧搜一下这些内容。<search>中华人民共和国土地管理法</search><search>国有土地上房屋征收与补偿条例</search>\\n\\n搜到的内容显示，《中华人民共和国土地管理法》规定，不管是征地还是拆迁，都必须依法进行，补偿得公平合理才行。而《国有土地上房屋征收与补偿条例》提到，拆迁方的补偿可以是给钱，也可以是用房子置换，但不管怎么样，最终的补偿方案必须得到被拆迁人的明确同意，不能强迫人家接受。<information>《中华人民共和国土地管理法》规定，任何拆迁和征收土地都应依法进行，涉及征地的补偿必须公平合理；《国有土地上房屋征收与补偿条例》明确，拆迁补偿需包括货币补偿或产权置换，且需经过用户明确同意。</information>\\n\\n这样的话，拆迁的问题就清楚多了。如果拆迁补偿不合理或者有违法行为，我觉得首先得试试和拆迁方协商，看看能不能把条件争取得更公平一些。如果协商不成，那可以向拆迁的主管部门，比如当地的住房和城乡建设部门，提交一份行政复议申请。复议的过程就是让上一级的部门来判断拆迁方是否合法。\\n\\n当然，如果行政复议的结果还是不能接受，那就只有通过法律的途径解决问题了。也就是向法院提起诉讼，保护自己的权益。但是不管是复议还是诉讼，关键是得有证据证明拆迁方存在问题。比如说拆迁补偿协议的内容，拆迁通知的文件，或者对方在沟通中的录音、视频之类的，这些都得保留下来。\\n\\n总的来说，如果对拆迁不同意，可以按照这样的顺序处理：先协商，尽量争取合理的补偿；协商不成就申请行政复议；如果复议结果还是不满意，那可以向法院提起诉讼来解决。过程中一定要保证自己依法维权，不被逼迫接受不合法的条件，这样条理清楚、证据充分，保护自己是没问题的。\"\n}\n```",
+    "如果您对拆迁不同意，处理步骤可以分为以下几个阶段：\n\n### 1. **分析不同意的原因**\n首先明确您不同意拆迁的具体原因，包括：\n- 补偿标准是否合理？是否过低？\n- 补偿方式是否让您满意？是货币补偿还是房屋置换？\n- 拆迁项目手续是否齐全？是否涉嫌违法或强制拆迁？\n\n### 2. **了解相关法律依据**\n拆迁必须依照法律规定进行，您可以参考以下两部法律文件：\n- **《中华人民共和国土地管理法》**：规定拆迁与征地必须依法进行，补偿需公平合理。\n- **《国有土地上房屋征收与补偿条例》**：明确拆迁补偿可以通过货币补偿或产权置换的方式进行，且必须经被拆迁人同意，严禁强制拆迁。\n\n### 3. **尝试协商解决**\n如果您对补偿标准或方式不满意，可以首先与拆迁方协商：\n- 详细审查补偿方案，提出具体诉求。\n- 在协商过程中保留书面或录音记录，以确保沟通内容可以作为后续的证据。\n\n### 4. **申请行政复议**\n如果协商无法达成一致，您可以向相关主管部门（通常是当地的住房和城乡建设部门）提出行政复议：\n- 行政复议是由上级部门对拆迁行为和补偿方案进行合法性审查的过程。\n- 提交行政复议申请时，准备好相关证明材料，例如拆迁通知书、补偿协议等。\n\n### 5. **提起法律诉讼**\n如果行政复议的结果仍不满意，您可以向法院提起诉讼。这是保护自身权益的最后途径：\n- 根据诉讼法，您可以就补偿不合理或拆迁行为违法等提出诉求。\n- 保留完整的证据，包括拆迁文件、通信记录、补偿方案等，确保维权有据可依。\n\n### 6. **注意事项**\n- 始终坚持依法维权，避免受到压力或胁迫而草率签署任何协议。\n- 如果对法律条款不熟悉，可以寻求专业律师的帮助，加强个人权益保障。\n  \n通过上述步骤，您可以条理清晰地处理拆迁争议，维护自身合法权益。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "确定拆迁纠纷的关键问题",
+        "content": "首先需要明确拆迁不同意的具体原因，比如拆迁补偿是否合理，是否涉及违法拆迁或强制拆迁。然后根据具体问题选择法律途径来解决纠纷，比如协商、行政复议或诉讼。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "查找相关法律法规",
+        "content": "为了进一步了解拆迁相关的法律依据，需要搜索《中华人民共和国土地管理法》《国有土地上房屋征收与补偿条例》等内容作为依据。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "检索法律条款的内容",
+        "content": "<search>中华人民共和国土地管理法</search><search>国有土地上房屋征收与补偿条例</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "分析搜索到的法律信息",
+        "content": "<information>《中华人民共和国土地管理法》规定，任何拆迁和征收土地都应依法进行，涉及征地的补偿必须公平合理；《国有土地上房屋征收与补偿条例》明确，拆迁补偿需包括货币补偿或产权置换，且需经过用户明确同意。</information>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "选择合法途径维护权益",
+        "content": "根据获取的信息，如果拆迁人未按照法律规定进行补偿或存在违规操作，可以向相关行政机关申请复议；如果复议结果不满意，可以通过法院诉讼维护权益。同时也可以与拆迁方协商，条件允许时达成一致补偿方案。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "拆迁过程中如果不同意，可以选择以下步骤处理：第一，与拆迁方协商寻求公平补偿；第二，如协商未果，可向当地政府或相关拆迁主管部门申请行政复议；第三，如仍无法解决，可依法向法院提起诉讼，维护自身合法权益。切记，在任何情况下都需要保留相关证据文件，并依法进行维权。"
+      },
+      {
+        "action": "Verification",
+        "content": "结论合理且与现行法律法规一致，建议步骤清晰且可执行。可以依据协商、行政复议和诉讼途径解决拆迁纠纷。验证通过。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "嗯，拆迁的时候如果遇到不同意的情况，得先想清楚具体是因为什么不同意。是不是补偿太低？还是补偿方式不合理？或者是不是拆迁项目本身有些问题，比如手续不全或者涉嫌强制拆迁？这个问题得先搞明白。如果是补偿问题，比如钱太少了，或者置换的房子位置不好，那就要看看相关法律规定怎么样才算合理。如果是项目或者拆迁流程的问题，那可能涉及违法操作，需要找依据来判断。 \n\n想要搞清楚这些问题，得查一查《中华人民共和国土地管理法》和《国有土地上房屋征收与补偿条例》。这样才能确定到底拆迁方是不是在按照法律办事。我赶紧搜一下这些内容。<search>中华人民共和国土地管理法</search><search>国有土地上房屋征收与补偿条例</search>\n\n搜到的内容显示，《中华人民共和国土地管理法》规定，不管是征地还是拆迁，都必须依法进行，补偿得公平合理才行。而《国有土地上房屋征收与补偿条例》提到，拆迁方的补偿可以是给钱，也可以是用房子置换，但不管怎么样，最终的补偿方案必须得到被拆迁人的明确同意，不能强迫人家接受。<information>《中华人民共和国土地管理法》规定，任何拆迁和征收土地都应依法进行，涉及征地的补偿必须公平合理；《国有土地上房屋征收与补偿条例》明确，拆迁补偿需包括货币补偿或产权置换，且需经过用户明确同意。</information>\n\n这样的话，拆迁的问题就清楚多了。如果拆迁补偿不合理或者有违法行为，我觉得首先得试试和拆迁方协商，看看能不能把条件争取得更公平一些。如果协商不成，那可以向拆迁的主管部门，比如当地的住房和城乡建设部门，提交一份行政复议申请。复议的过程就是让上一级的部门来判断拆迁方是否合法。\n\n当然，如果行政复议的结果还是不能接受，那就只有通过法律的途径解决问题了。也就是向法院提起诉讼，保护自己的权益。但是不管是复议还是诉讼，关键是得有证据证明拆迁方存在问题。比如说拆迁补偿协议的内容，拆迁通知的文件，或者对方在沟通中的录音、视频之类的，这些都得保留下来。\n\n总的来说，如果对拆迁不同意，可以按照这样的顺序处理：先协商，尽量争取合理的补偿；协商不成就申请行政复议；如果复议结果还是不满意，那可以向法院提起诉讼来解决。过程中一定要保证自己依法维权，不被逼迫接受不合法的条件，这样条理清楚、证据充分，保护自己是没问题的。",
+  "Response": "如果您对拆迁不同意，处理步骤可以分为以下几个阶段：\n\n### 1. **分析不同意的原因**\n首先明确您不同意拆迁的具体原因，包括：\n- 补偿标准是否合理？是否过低？\n- 补偿方式是否让您满意？是货币补偿还是房屋置换？\n- 拆迁项目手续是否齐全？是否涉嫌违法或强制拆迁？\n\n### 2. **了解相关法律依据**\n拆迁必须依照法律规定进行，您可以参考以下两部法律文件：\n- **《中华人民共和国土地管理法》**：规定拆迁与征地必须依法进行，补偿需公平合理。\n- **《国有土地上房屋征收与补偿条例》**：明确拆迁补偿可以通过货币补偿或产权置换的方式进行，且必须经被拆迁人同意，严禁强制拆迁。\n\n### 3. **尝试协商解决**\n如果您对补偿标准或方式不满意，可以首先与拆迁方协商：\n- 详细审查补偿方案，提出具体诉求。\n- 在协商过程中保留书面或录音记录，以确保沟通内容可以作为后续的证据。\n\n### 4. **申请行政复议**\n如果协商无法达成一致，您可以向相关主管部门（通常是当地的住房和城乡建设部门）提出行政复议：\n- 行政复议是由上级部门对拆迁行为和补偿方案进行合法性审查的过程。\n- 提交行政复议申请时，准备好相关证明材料，例如拆迁通知书、补偿协议等。\n\n### 5. **提起法律诉讼**\n如果行政复议的结果仍不满意，您可以向法院提起诉讼。这是保护自身权益的最后途径：\n- 根据诉讼法，您可以就补偿不合理或拆迁行为违法等提出诉求。\n- 保留完整的证据，包括拆迁文件、通信记录、补偿方案等，确保维权有据可依。\n\n### 6. **注意事项**\n- 始终坚持依法维权，避免受到压力或胁迫而草率签署任何协议。\n- 如果对法律条款不熟悉，可以寻求专业律师的帮助，加强个人权益保障。\n  \n通过上述步骤，您可以条理清晰地处理拆迁争议，维护自身合法权益。",
+  "Question": "拆迁不同意,如何处理?"
+}

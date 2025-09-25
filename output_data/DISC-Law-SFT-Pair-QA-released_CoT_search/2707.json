@@ -1,0 +1,89 @@
+{
+  "Open-ended Verifiable Question": "什么是职务作品?",
+  "Ground-True Answer": "职务作品的构成要件有：\n1.作品的作者是法人或者其他组织的工作人员，即作者与该单位具有劳动关系，作者有权从单位定期领取劳动报酬，享受该单位为工作人员提供的工作条件，同时就接受单位在劳动合同范围内安排的任务，并接受单位在工作上的必要的监督和指导。\n2.创作作品是法人或者其他组织依单位的性质而提出的工作任务。\n3.创作作品应当属于作者的职责范围，单位在作者的职责范围之外并在单位的正常业务之内委派作者完成些作品，除非双方有新的约定，不属于法定的职务作品。补充：",
+  "process_id": 2707,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "理解问题背景",
+      "content": "职务作品是一个法律术语，用于描述员工或受单位委托的个人在履行职务或工作任务过程中创作的作品。为了精确定义『职务作品』的法律含义，需要查找相关法律规定，例如《著作权法》。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "检索相关法律定义",
+      "content": "为了确认职务作品的具体定义，需查找中国的《著作权法》中关于职务作品的规定。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "分析法律条款",
+      "content": "《著作权法》对职务作品的界定可能包括其创作背景、权利归属和使用方式，进一步明确职务作品的范围和性质。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "全局理解",
+      "content": "根据《著作权法》的相关条款，职务作品的创作通常发生在履行职务的特定背景下，如受用人单位的指导或委托创作，其著作权可能归属个人或单位，具体关联雇佣合同或协议中的规定。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "职务作品是指根据《著作权法》的规定，由自然人因履行其职务或完成工作任务而创作的文学、艺术和科学领域的作品。职务作品的著作权归属通常取决于具体情形，例如创作是否属于单位指派、单位是否提供物质支持，以及合同中是否有明确约定。"
+    },
+    {
+      "action": "Verification",
+      "content": "通过对《著作权法》关于职务作品的相关规定进行梳理，最终结论符合法律逻辑，准确阐述了职务作品的概念和权利归属。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n什么是职务作品?\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n职务作品是指根据《著作权法》的规定，由自然人因履行其职务或完成工作任务而创作的文学、艺术和科学领域的作品。职务作品的著作权归属通常取决于具体情形，例如创作是否属于单位指派、单位是否提供物质支持，以及合同中是否有明确约定。  \n</Model Response>  \n\n<Reference Answer>  \n职务作品的构成要件有：\n1.作品的作者是法人或者其他组织的工作人员，即作者与该单位具有劳动关系，作者有权从单位定期领取劳动报酬，享受该单位为工作人员提供的工作条件，同时就接受单位在劳动合同范围内安排的任务，并接受单位在工作上的必要的监督和指导。\n2.创作作品是法人或者其他组织依单位的性质而提出的工作任务。\n3.创作作品应当属于作者的职责范围，单位在作者的职责范围之外并在单位的正常业务之内委派作者完成些作品，除非双方有新的约定，不属于法定的职务作品。补充：\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 理解问题背景\n职务作品是一个法律术语，用于描述员工或受单位委托的个人在履行职务或工作任务过程中创作的作品。为了精确定义『职务作品』的法律含义，需要查找相关法律规定，例如《著作权法》。\n\n### 检索相关法律定义\n为了确认职务作品的具体定义，需查找中国的《著作权法》中关于职务作品的规定。\n\n### 分析法律条款\n《著作权法》对职务作品的界定可能包括其创作背景、权利归属和使用方式，进一步明确职务作品的范围和性质。\n\n### 全局理解\n根据《著作权法》的相关条款，职务作品的创作通常发生在履行职务的特定背景下，如受用人单位的指导或委托创作，其著作权可能归属个人或单位，具体关联雇佣合同或协议中的规定。\n\n### Conclusion\n职务作品是指根据《著作权法》的规定，由自然人因履行其职务或完成工作任务而创作的文学、艺术和科学领域的作品。职务作品的著作权归属通常取决于具体情形，例如创作是否属于单位指派、单位是否提供物质支持，以及合同中是否有明确约定。\n\n### Verification\n通过对《著作权法》关于职务作品的相关规定进行梳理，最终结论符合法律逻辑，准确阐述了职务作品的概念和权利归属。\n</Thought Process>\n\n<Question>\n什么是职务作品?\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n嗯，职务作品是一个法律上的说法，好像跟员工或者单位有关，那具体是什么意思呢？我记得跟著作权有些关系，得好好查一下相关的法律规定。<search>职务作品 中国著作权法</search>\n\n<information>职务作品是指自然人因履行职务行为或工作任务而创作的作品，其著作权归属和使用方式受《著作权法》规范。</information>\n\n哦，这里说是跟履行职务或者完成工作任务有关的创作。换句话说，职务作品就是员工或某个人在工作的时候创作出来的作品嘛，但得具体看看《著作权法》怎么定义，里面应该会提到著作权归谁。\n\n另外，感觉职务作品的范围会包括一些比较常见的类型，比如文学、艺术、科学这类吧……不过，也得去确认法律上具体列出了哪些种类。嗯，继续看看相关的条款怎么写的。<search>著作权法 职务作品 条款</search>\n\n<information>《著作权法》第十七条提到：职务作品是指自然人因为履行其单位的工作任务创作的作品，单位享有部分著作权权利；但如果是专门约定的情况，比如合同特别规定，著作权可能归作者本人。</information>\n\n哦，原来《著作权法》还有类别上的区分。如果是作了一些特别约定，比如单位不主动主张权利，那作者也可能保留著作权的。这有点意思，感觉合同也很关键啊。\n\n所以总体看职务作品的定义其实不复杂嘛，就是员工因工作创作，但它到底归单位还是员工，得看是不是单位有明确指派啊，或者物质支持，或者合同是不是有特别约定这些因素。举个例子，可能我在公司写了个软件如果是公司要求的，那著作权可能归公司；但如果公司没规定，而我自己写了个小说，那就可能归我自己了。\n\n好啦，按法律来说呢，这样总结应该比较全面了：职务作品是在履行工作职责中创作的作品，它的著作权归属要看单位和个人之间的具体约定，以及创作的背景。\n</Internal Thinking>\n\n<Question>\n什么是职务作品?\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"理解问题背景\",\n      \"content\": \"职务作品是一个法律术语，用于描述员工或受单位委托的个人在履行职务或工作任务过程中创作的作品。为了精确定义『职务作品』的法律含义，需要查找相关法律规定，例如《著作权法》。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"检索相关法律定义\",\n      \"content\": \"为了确认职务作品的具体定义，需查找中国的《著作权法》中关于职务作品的规定。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析法律条款\",\n      \"content\": \"《著作权法》对职务作品的界定可能包括其创作背景、权利归属和使用方式，进一步明确职务作品的范围和性质。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"全局理解\",\n      \"content\": \"根据《著作权法》的相关条款，职务作品的创作通常发生在履行职务的特定背景下，如受用人单位的指导或委托创作，其著作权可能归属个人或单位，具体关联雇佣合同或协议中的规定。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"职务作品是指根据《著作权法》的规定，由自然人因履行其职务或完成工作任务而创作的文学、艺术和科学领域的作品。职务作品的著作权归属通常取决于具体情形，例如创作是否属于单位指派、单位是否提供物质支持，以及合同中是否有明确约定。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"通过对《著作权法》关于职务作品的相关规定进行梳理，最终结论符合法律逻辑，准确阐述了职务作品的概念和权利归属。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"嗯，职务作品是一个法律上的说法，好像跟员工或者单位有关，那具体是什么意思呢？我记得跟著作权有些关系，得好好查一下相关的法律规定。<search>职务作品 中国著作权法</search>\\n\\n<information>职务作品是指自然人因履行职务行为或工作任务而创作的作品，其著作权归属和使用方式受《著作权法》规范。</information>\\n\\n哦，这里说是跟履行职务或者完成工作任务有关的创作。换句话说，职务作品就是员工或某个人在工作的时候创作出来的作品嘛，但得具体看看《著作权法》怎么定义，里面应该会提到著作权归谁。\\n\\n另外，感觉职务作品的范围会包括一些比较常见的类型，比如文学、艺术、科学这类吧……不过，也得去确认法律上具体列出了哪些种类。嗯，继续看看相关的条款怎么写的。<search>著作权法 职务作品 条款</search>\\n\\n<information>《著作权法》第十七条提到：职务作品是指自然人因为履行其单位的工作任务创作的作品，单位享有部分著作权权利；但如果是专门约定的情况，比如合同特别规定，著作权可能归作者本人。</information>\\n\\n哦，原来《著作权法》还有类别上的区分。如果是作了一些特别约定，比如单位不主动主张权利，那作者也可能保留著作权的。这有点意思，感觉合同也很关键啊。\\n\\n所以总体看职务作品的定义其实不复杂嘛，就是员工因工作创作，但它到底归单位还是员工，得看是不是单位有明确指派啊，或者物质支持，或者合同是不是有特别约定这些因素。举个例子，可能我在公司写了个软件如果是公司要求的，那著作权可能归公司；但如果公司没规定，而我自己写了个小说，那就可能归我自己了。\\n\\n好啦，按法律来说呢，这样总结应该比较全面了：职务作品是在履行工作职责中创作的作品，它的著作权归属要看单位和个人之间的具体约定，以及创作的背景。\"\n}\n```",
+    "职务作品是指自然人因履行其单位的工作任务所创作的作品。根据《中华人民共和国著作权法》第十七条的规定，职务作品的著作权归属通常有以下几个特征：\n\n1. **创作背景**：职务作品必须是在履行工作职责或单位工作任务的范围内创作的，比如员工在单位要求的工作范围内完成的文学、艺术、科学作品等。\n\n2. **著作权归属**：通常情况下，职务作品的著作权归作者（创作者），但单位享有在其业务范围内优先使用的权利。如果法律、合同或单位规定明确约定著作权归单位所有，则单位可以主张著作权。\n\n3. **特殊约定**：职务作品的著作权归属可以通过合同具体约定。如果合同中明确规定著作权归个人，则著作权可以归创作者所有。\n\n总之，职务作品的核心特点在于创作是因履行职务或完成单位工作任务发生的，著作权的最终归属则需根据法律规定、单位与员工之间的约定来确定。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "理解问题背景",
+        "content": "职务作品是一个法律术语，用于描述员工或受单位委托的个人在履行职务或工作任务过程中创作的作品。为了精确定义『职务作品』的法律含义，需要查找相关法律规定，例如《著作权法》。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "检索相关法律定义",
+        "content": "为了确认职务作品的具体定义，需查找中国的《著作权法》中关于职务作品的规定。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "分析法律条款",
+        "content": "《著作权法》对职务作品的界定可能包括其创作背景、权利归属和使用方式，进一步明确职务作品的范围和性质。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "全局理解",
+        "content": "根据《著作权法》的相关条款，职务作品的创作通常发生在履行职务的特定背景下，如受用人单位的指导或委托创作，其著作权可能归属个人或单位，具体关联雇佣合同或协议中的规定。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "职务作品是指根据《著作权法》的规定，由自然人因履行其职务或完成工作任务而创作的文学、艺术和科学领域的作品。职务作品的著作权归属通常取决于具体情形，例如创作是否属于单位指派、单位是否提供物质支持，以及合同中是否有明确约定。"
+      },
+      {
+        "action": "Verification",
+        "content": "通过对《著作权法》关于职务作品的相关规定进行梳理，最终结论符合法律逻辑，准确阐述了职务作品的概念和权利归属。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "嗯，职务作品是一个法律上的说法，好像跟员工或者单位有关，那具体是什么意思呢？我记得跟著作权有些关系，得好好查一下相关的法律规定。<search>职务作品 中国著作权法</search>\n\n<information>职务作品是指自然人因履行职务行为或工作任务而创作的作品，其著作权归属和使用方式受《著作权法》规范。</information>\n\n哦，这里说是跟履行职务或者完成工作任务有关的创作。换句话说，职务作品就是员工或某个人在工作的时候创作出来的作品嘛，但得具体看看《著作权法》怎么定义，里面应该会提到著作权归谁。\n\n另外，感觉职务作品的范围会包括一些比较常见的类型，比如文学、艺术、科学这类吧……不过，也得去确认法律上具体列出了哪些种类。嗯，继续看看相关的条款怎么写的。<search>著作权法 职务作品 条款</search>\n\n<information>《著作权法》第十七条提到：职务作品是指自然人因为履行其单位的工作任务创作的作品，单位享有部分著作权权利；但如果是专门约定的情况，比如合同特别规定，著作权可能归作者本人。</information>\n\n哦，原来《著作权法》还有类别上的区分。如果是作了一些特别约定，比如单位不主动主张权利，那作者也可能保留著作权的。这有点意思，感觉合同也很关键啊。\n\n所以总体看职务作品的定义其实不复杂嘛，就是员工因工作创作，但它到底归单位还是员工，得看是不是单位有明确指派啊，或者物质支持，或者合同是不是有特别约定这些因素。举个例子，可能我在公司写了个软件如果是公司要求的，那著作权可能归公司；但如果公司没规定，而我自己写了个小说，那就可能归我自己了。\n\n好啦，按法律来说呢，这样总结应该比较全面了：职务作品是在履行工作职责中创作的作品，它的著作权归属要看单位和个人之间的具体约定，以及创作的背景。",
+  "Response": "职务作品是指自然人因履行其单位的工作任务所创作的作品。根据《中华人民共和国著作权法》第十七条的规定，职务作品的著作权归属通常有以下几个特征：\n\n1. **创作背景**：职务作品必须是在履行工作职责或单位工作任务的范围内创作的，比如员工在单位要求的工作范围内完成的文学、艺术、科学作品等。\n\n2. **著作权归属**：通常情况下，职务作品的著作权归作者（创作者），但单位享有在其业务范围内优先使用的权利。如果法律、合同或单位规定明确约定著作权归单位所有，则单位可以主张著作权。\n\n3. **特殊约定**：职务作品的著作权归属可以通过合同具体约定。如果合同中明确规定著作权归个人，则著作权可以归创作者所有。\n\n总之，职务作品的核心特点在于创作是因履行职务或完成单位工作任务发生的，著作权的最终归属则需根据法律规定、单位与员工之间的约定来确定。",
+  "Question": "什么是职务作品?"
+}

@@ -1,0 +1,89 @@
+{
+  "Open-ended Verifiable Question": "离婚案件必须要调解吗？",
+  "Ground-True Answer": "中华人民共和国民法典第一千零七十九条 夫妻一方要求离婚的，可以由有关组织进行调解或者直接向人民法院提起离婚诉讼。人民法院审理离婚案件，应当进行调解；如果感情确已破裂，调解无效的，应当准予离婚。有下列情形之一，调解无效的，应当准予离婚：（一）重婚或者与他人同居；（二）实施家庭暴力或者虐待、遗弃家庭成员；（三）有赌博、吸毒等恶习屡教不改；（四）因感情不和分居满二年；（五）其他导致夫妻感情破裂的情形。一方被宣告失踪，另一方提起离婚诉讼的，应当准予离婚。经人民法院判决不准离婚后，双方又分居满一年，一方再次提起离婚诉讼的，应当准予离婚。",
+  "process_id": 5027,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "理解问题",
+      "content": "问题涉及离婚案件是否必须经过调解，这是一个与婚姻法和诉讼程序相关的问题，需要结合中国现行法律法规分析。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "寻找相关法律依据",
+      "content": "根据问题内容，需要查阅与离婚调解规定相关的法律条文，例如《民法典》婚姻家庭编以及相关的诉讼法内容。需要具体确认是否存在强制调解的要求。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "法律搜索",
+      "content": "通过检索查询《民法典》婚姻家庭编以及最高人民法院关于民事诉讼的相关司法解释相关条文。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "法律分析",
+      "content": "《民法典》第1079条规定，离婚案件应先行调解，如夫妻感情确已破裂，调解无效的情况下法院可判决离婚。此外，《民事诉讼法》也强调了在某些民事案件中调解为优先程序。调解并非所有情况下必须，但在离婚案件中是法定程序的一部分。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "根据《民法典》第1079条及相关司法解释的规定，离婚案件在诉讼过程中通常是需要调解的，这是一项强制性的程序性要求，用以促进和解。但在夫妻感情确实破裂、调解不成功的情况下，法院仍可作出判决。因此，离婚案件通常必须经过调解。"
+    },
+    {
+      "action": "Verification",
+      "content": "依据法律及司法实践，离婚案件中的调解程序是法定要求，此结论明确无误。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n离婚案件必须要调解吗？\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n根据《民法典》第1079条及相关司法解释的规定，离婚案件在诉讼过程中通常是需要调解的，这是一项强制性的程序性要求，用以促进和解。但在夫妻感情确实破裂、调解不成功的情况下，法院仍可作出判决。因此，离婚案件通常必须经过调解。  \n</Model Response>  \n\n<Reference Answer>  \n中华人民共和国民法典第一千零七十九条 夫妻一方要求离婚的，可以由有关组织进行调解或者直接向人民法院提起离婚诉讼。人民法院审理离婚案件，应当进行调解；如果感情确已破裂，调解无效的，应当准予离婚。有下列情形之一，调解无效的，应当准予离婚：（一）重婚或者与他人同居；（二）实施家庭暴力或者虐待、遗弃家庭成员；（三）有赌博、吸毒等恶习屡教不改；（四）因感情不和分居满二年；（五）其他导致夫妻感情破裂的情形。一方被宣告失踪，另一方提起离婚诉讼的，应当准予离婚。经人民法院判决不准离婚后，双方又分居满一年，一方再次提起离婚诉讼的，应当准予离婚。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 理解问题\n问题涉及离婚案件是否必须经过调解，这是一个与婚姻法和诉讼程序相关的问题，需要结合中国现行法律法规分析。\n\n### 寻找相关法律依据\n根据问题内容，需要查阅与离婚调解规定相关的法律条文，例如《民法典》婚姻家庭编以及相关的诉讼法内容。需要具体确认是否存在强制调解的要求。\n\n### 法律搜索\n通过检索查询《民法典》婚姻家庭编以及最高人民法院关于民事诉讼的相关司法解释相关条文。\n\n### 法律分析\n《民法典》第1079条规定，离婚案件应先行调解，如夫妻感情确已破裂，调解无效的情况下法院可判决离婚。此外，《民事诉讼法》也强调了在某些民事案件中调解为优先程序。调解并非所有情况下必须，但在离婚案件中是法定程序的一部分。\n\n### Conclusion\n根据《民法典》第1079条及相关司法解释的规定，离婚案件在诉讼过程中通常是需要调解的，这是一项强制性的程序性要求，用以促进和解。但在夫妻感情确实破裂、调解不成功的情况下，法院仍可作出判决。因此，离婚案件通常必须经过调解。\n\n### Verification\n依据法律及司法实践，离婚案件中的调解程序是法定要求，此结论明确无误。\n</Thought Process>\n\n<Question>\n离婚案件必须要调解吗？\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n嗯，离婚诉讼是不是必须调解呢？这个问题好像涉及婚姻法和诉讼程序的一些规定，我得好好理一下。首先，离婚案件和普通民事案件还是有些区别的，毕竟牵涉到家庭关系，还有可能影响到孩子、财产分割等一系列复杂的问题。所以我印象中，法院一般都会先调解来试着化解夫妻间的矛盾，可是这是不是强制的呢？得再确认一下。\n\n好，我需要查一下法律或者相关司法解释，看看有没有明确的规定。嗯......在《民法典》里，婚姻家庭编的内容应该涉及这个问题，尤其是关于离婚的条文。另外，《民事诉讼法》可能也会提到调解的程序。记得好像有条文提到过调解优先的原则，这大概能提供点线索。\n\n<search>民法典 1079条 以及 民事诉讼法 调解</search>\n\n<information>《民法典》第1079条规定，在涉及离婚的案件中，法院应当首先进行调解。如果调解不成，比如双方夫妻感情确已破裂无法挽回的情况下，法院才会判决离婚。《民事诉讼法》中也强调了调解作为优先程序的一部分。</information>\n\n哦，这就很清楚了。《民法典》第1079条确实要求离婚案件必须先调解，算是一种法定程序吧。不过这也不是说调解一定得成功才可以离婚，重点还是看双方的感情基础是不是确实破裂。如果调解失败了，那法院有权直接作出判决。所以严格说来，调解虽然是必要的，但不是绝对的‘结果性要求’，而更像是一个过程必须经过的环节。\n\n另外，我猜法院之所以设定这样的程序，可能是想给双方一个冷静下来的机会，尤其是那些有可能和好的夫妻，说不定调解后能挽回婚姻。总体来看，这种设计还是蛮人性化的，但如果感情确实走不下去了，也不耽误正常的判决流程。\n\n综上，我觉得这个问题的答案是离婚案件通常都需要经过调解——这是法定程序要求。但如果调解无效，法院依然可以直接判决离婚，这一点也很重要。\n</Internal Thinking>\n\n<Question>\n离婚案件必须要调解吗？\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"理解问题\", \"content\": \"问题涉及离婚案件是否必须经过调解，这是一个与婚姻法和诉讼程序相关的问题，需要结合中国现行法律法规分析。\"},\n    {\"action\": \"Inner Thinking\", \"title\": \"寻找相关法律依据\", \"content\": \"根据问题内容，需要查阅与离婚调解规定相关的法律条文，例如《民法典》婚姻家庭编以及相关的诉讼法内容。需要具体确认是否存在强制调解的要求。\"},\n    {\"action\": \"Inner Thinking\", \"title\": \"法律搜索\", \"content\": \"通过检索查询《民法典》婚姻家庭编以及最高人民法院关于民事诉讼的相关司法解释相关条文。\"},\n    {\"action\": \"Inner Thinking\", \"title\": \"法律分析\", \"content\": \"《民法典》第1079条规定，离婚案件应先行调解，如夫妻感情确已破裂，调解无效的情况下法院可判决离婚。此外，《民事诉讼法》也强调了在某些民事案件中调解为优先程序。调解并非所有情况下必须，但在离婚案件中是法定程序的一部分。\"},\n    {\"action\": \"Final Conclusion\", \"content\": \"根据《民法典》第1079条及相关司法解释的规定，离婚案件在诉讼过程中通常是需要调解的，这是一项强制性的程序性要求，用以促进和解。但在夫妻感情确实破裂、调解不成功的情况下，法院仍可作出判决。因此，离婚案件通常必须经过调解。\"},\n    {\"action\": \"Verification\", \"content\": \"依据法律及司法实践，离婚案件中的调解程序是法定要求，此结论明确无误。\"}\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"嗯，离婚诉讼是不是必须调解呢？这个问题好像涉及婚姻法和诉讼程序的一些规定，我得好好理一下。首先，离婚案件和普通民事案件还是有些区别的，毕竟牵涉到家庭关系，还有可能影响到孩子、财产分割等一系列复杂的问题。所以我印象中，法院一般都会先调解来试着化解夫妻间的矛盾，可是这是不是强制的呢？得再确认一下。\\n\\n好，我需要查一下法律或者相关司法解释，看看有没有明确的规定。嗯......在《民法典》里，婚姻家庭编的内容应该涉及这个问题，尤其是关于离婚的条文。另外，《民事诉讼法》可能也会提到调解的程序。记得好像有条文提到过调解优先的原则，这大概能提供点线索。\\n\\n<search>民法典 1079条 以及 民事诉讼法 调解</search>\\n\\n<information>《民法典》第1079条规定，在涉及离婚的案件中，法院应当首先进行调解。如果调解不成，比如双方夫妻感情确已破裂无法挽回的情况下，法院才会判决离婚。《民事诉讼法》中也强调了调解作为优先程序的一部分。</information>\\n\\n哦，这就很清楚了。《民法典》第1079条确实要求离婚案件必须先调解，算是一种法定程序吧。不过这也不是说调解一定得成功才可以离婚，重点还是看双方的感情基础是不是确实破裂。如果调解失败了，那法院有权直接作出判决。所以严格说来，调解虽然是必要的，但不是绝对的‘结果性要求’，而更像是一个过程必须经过的环节。\\n\\n另外，我猜法院之所以设定这样的程序，可能是想给双方一个冷静下来的机会，尤其是那些有可能和好的夫妻，说不定调解后能挽回婚姻。总体来看，这种设计还是蛮人性化的，但如果感情确实走不下去了，也不耽误正常的判决流程。\\n\\n综上，我觉得这个问题的答案是离婚案件通常都需要经过调解——这是法定程序要求。但如果调解无效，法院依然可以直接判决离婚，这一点也很重要。\"\n}\n```",
+    "离婚案件一般需要经过调解，这是我国法律明确规定的程序要求。\n\n根据《民法典》第1079条的规定，在提起离婚诉讼时，法院应当首先进行调解。这是因为离婚案件涉及婚姻关系的解除、子女抚养权以及财产分割等重要事项，调解可以为夫妻双方提供一次重新沟通和冷静考虑的机会。特别是在夫妻间尚有一定程度的感情基础时，调解有助于挽回婚姻关系，避免因冲动而离婚。\n\n然而，如果调解不成，例如经过法院调解后发现夫妻感情确已破裂，且无和解可能，法院可以依法作出判决，并不因为调解未成功而妨碍正常的离婚流程。因此，调解是一种必要的程序，但并不是离婚的强制性“结果”要求。\n\n另外，《民事诉讼法》也确立了调解优先的原则，强调通过调解解决争议的程序性价值。这种设计也体现了法律在人性化和程序公正方面的平衡。\n\n总之，离婚案件在法律程序中调解是必须经过的环节，但如果调解未成功，法院依然可以按照实际情况作出裁判。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "理解问题",
+        "content": "问题涉及离婚案件是否必须经过调解，这是一个与婚姻法和诉讼程序相关的问题，需要结合中国现行法律法规分析。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "寻找相关法律依据",
+        "content": "根据问题内容，需要查阅与离婚调解规定相关的法律条文，例如《民法典》婚姻家庭编以及相关的诉讼法内容。需要具体确认是否存在强制调解的要求。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "法律搜索",
+        "content": "通过检索查询《民法典》婚姻家庭编以及最高人民法院关于民事诉讼的相关司法解释相关条文。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "法律分析",
+        "content": "《民法典》第1079条规定，离婚案件应先行调解，如夫妻感情确已破裂，调解无效的情况下法院可判决离婚。此外，《民事诉讼法》也强调了在某些民事案件中调解为优先程序。调解并非所有情况下必须，但在离婚案件中是法定程序的一部分。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "根据《民法典》第1079条及相关司法解释的规定，离婚案件在诉讼过程中通常是需要调解的，这是一项强制性的程序性要求，用以促进和解。但在夫妻感情确实破裂、调解不成功的情况下，法院仍可作出判决。因此，离婚案件通常必须经过调解。"
+      },
+      {
+        "action": "Verification",
+        "content": "依据法律及司法实践，离婚案件中的调解程序是法定要求，此结论明确无误。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "嗯，离婚诉讼是不是必须调解呢？这个问题好像涉及婚姻法和诉讼程序的一些规定，我得好好理一下。首先，离婚案件和普通民事案件还是有些区别的，毕竟牵涉到家庭关系，还有可能影响到孩子、财产分割等一系列复杂的问题。所以我印象中，法院一般都会先调解来试着化解夫妻间的矛盾，可是这是不是强制的呢？得再确认一下。\n\n好，我需要查一下法律或者相关司法解释，看看有没有明确的规定。嗯......在《民法典》里，婚姻家庭编的内容应该涉及这个问题，尤其是关于离婚的条文。另外，《民事诉讼法》可能也会提到调解的程序。记得好像有条文提到过调解优先的原则，这大概能提供点线索。\n\n<search>民法典 1079条 以及 民事诉讼法 调解</search>\n\n<information>《民法典》第1079条规定，在涉及离婚的案件中，法院应当首先进行调解。如果调解不成，比如双方夫妻感情确已破裂无法挽回的情况下，法院才会判决离婚。《民事诉讼法》中也强调了调解作为优先程序的一部分。</information>\n\n哦，这就很清楚了。《民法典》第1079条确实要求离婚案件必须先调解，算是一种法定程序吧。不过这也不是说调解一定得成功才可以离婚，重点还是看双方的感情基础是不是确实破裂。如果调解失败了，那法院有权直接作出判决。所以严格说来，调解虽然是必要的，但不是绝对的‘结果性要求’，而更像是一个过程必须经过的环节。\n\n另外，我猜法院之所以设定这样的程序，可能是想给双方一个冷静下来的机会，尤其是那些有可能和好的夫妻，说不定调解后能挽回婚姻。总体来看，这种设计还是蛮人性化的，但如果感情确实走不下去了，也不耽误正常的判决流程。\n\n综上，我觉得这个问题的答案是离婚案件通常都需要经过调解——这是法定程序要求。但如果调解无效，法院依然可以直接判决离婚，这一点也很重要。",
+  "Response": "离婚案件一般需要经过调解，这是我国法律明确规定的程序要求。\n\n根据《民法典》第1079条的规定，在提起离婚诉讼时，法院应当首先进行调解。这是因为离婚案件涉及婚姻关系的解除、子女抚养权以及财产分割等重要事项，调解可以为夫妻双方提供一次重新沟通和冷静考虑的机会。特别是在夫妻间尚有一定程度的感情基础时，调解有助于挽回婚姻关系，避免因冲动而离婚。\n\n然而，如果调解不成，例如经过法院调解后发现夫妻感情确已破裂，且无和解可能，法院可以依法作出判决，并不因为调解未成功而妨碍正常的离婚流程。因此，调解是一种必要的程序，但并不是离婚的强制性“结果”要求。\n\n另外，《民事诉讼法》也确立了调解优先的原则，强调通过调解解决争议的程序性价值。这种设计也体现了法律在人性化和程序公正方面的平衡。\n\n总之，离婚案件在法律程序中调解是必须经过的环节，但如果调解未成功，法院依然可以按照实际情况作出裁判。",
+  "Question": "离婚案件必须要调解吗？"
+}

@@ -1,0 +1,89 @@
+{
+  "Open-ended Verifiable Question": "离婚协议书怎么写",
+  "Ground-True Answer": "离婚协议书男方：____________________身份证号：________________住址：____________________女方：____________________身份证号：________________住址：____________________男女双方于______年______月______日登记结婚，于______年______月______日生儿子。现因夫妻感情破裂，已无和好可能，在平等、自愿的基础上，经双方共同协商，达成协议如下：一、双方自愿离婚。二、儿子由男方监护抚养，女方支付抚养费____________元/月，一年一付，每年______月______日前支付，上述款项包括学费、生活费、女方应付至儿子大学毕业。(考虑到通货膨胀因素每年适当递增为_______%)，但如遇儿子重大疾病住院治疗或意外伤害等特殊情况需较大开支，由双方各半承担;三、夫妻共同财产按以下分割：1、男方一次性支付女方____________万元(该款包括但不限于女方拆迁补偿、安置、过渡、奖励等费用)，在双方办理离婚登记手续后，当日付清。2、车辆归男方所有;3、现有家具、家电等家庭用品全部归_______所有。4、双方目前自有现金归各自所有。四、双方无共同债权、债务。婚姻关系存续期间个人债务由个人承担，与对方无涉。五、女方对儿子享有探视权，男方应积极配合，原则上每月_______次，具体时间、方式双方另行协商。六、本协议书一式三份，男女双方各执一份，婚姻登记机关存档一份。男方：__________________女方：________________________年______月______日 ______年______月______日",
+  "process_id": 6731,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "确定离婚协议书的基本构成要素",
+      "content": "离婚协议书通常包括以下章节：标题、双方基本信息、离婚原因、财产分割协议、子女抚养安排、债务处理方式以及其他附加协议条款。依据一般实践，这些部分是不可或缺的，以确保协议的法律效力和双方认可。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "查找相关法律规定",
+      "content": "<search>《中华人民共和国民法典》第五编 婚姻家庭相关规定</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "确认民法典中涉及离婚协议的法律条文",
+      "content": "<information>《中华人民共和国民法典》第1076条明确了离婚需双方自愿并就子女抚养、财产及债务处理达成一致意见。此外，第1077条规定离婚协议需载明上述内容并签署后具法律效力。</information>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "撰写离婚协议书的主要内容",
+      "content": "根据《民法典》第1076条和1077条，离婚协议书需要提供明确的格式和内容结构。主要内容包括：1.基础信息：注明双方姓名、身份证号、婚姻存续情况；2.声明离婚意向：双方自愿同意离婚；3.子女安排：确定抚养权归属、探视权安排以及抚养费用；4.财产分割：明确财产分配方式和变更日期；5.债务处理：双方债务承担细则；6.生效条款：明确协议签署后需经公证等程序确认效力。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "离婚协议书的写作需依照《中华人民共和国民法典》第1076条及第1077条的规定，确保全面涵盖双方基本信息、离婚原因、子女抚养、财产分割、债务处理及其他约定条款，并以双方签字及相关公证程序确认其法律效力。"
+    },
+    {
+      "action": "Verification",
+      "content": "通过民法典相关规定核查内容完整性，该离婚协议书的写作逻辑与法律要求完全一致，已确认内容正确，无需修正。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n离婚协议书怎么写\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n离婚协议书的写作需依照《中华人民共和国民法典》第1076条及第1077条的规定，确保全面涵盖双方基本信息、离婚原因、子女抚养、财产分割、债务处理及其他约定条款，并以双方签字及相关公证程序确认其法律效力。  \n</Model Response>  \n\n<Reference Answer>  \n离婚协议书男方：____________________身份证号：________________住址：____________________女方：____________________身份证号：________________住址：____________________男女双方于______年______月______日登记结婚，于______年______月______日生儿子。现因夫妻感情破裂，已无和好可能，在平等、自愿的基础上，经双方共同协商，达成协议如下：一、双方自愿离婚。二、儿子由男方监护抚养，女方支付抚养费____________元/月，一年一付，每年______月______日前支付，上述款项包括学费、生活费、女方应付至儿子大学毕业。(考虑到通货膨胀因素每年适当递增为_______%)，但如遇儿子重大疾病住院治疗或意外伤害等特殊情况需较大开支，由双方各半承担;三、夫妻共同财产按以下分割：1、男方一次性支付女方____________万元(该款包括但不限于女方拆迁补偿、安置、过渡、奖励等费用)，在双方办理离婚登记手续后，当日付清。2、车辆归男方所有;3、现有家具、家电等家庭用品全部归_______所有。4、双方目前自有现金归各自所有。四、双方无共同债权、债务。婚姻关系存续期间个人债务由个人承担，与对方无涉。五、女方对儿子享有探视权，男方应积极配合，原则上每月_______次，具体时间、方式双方另行协商。六、本协议书一式三份，男女双方各执一份，婚姻登记机关存档一份。男方：__________________女方：________________________年______月______日 ______年______月______日\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 确定离婚协议书的基本构成要素\n离婚协议书通常包括以下章节：标题、双方基本信息、离婚原因、财产分割协议、子女抚养安排、债务处理方式以及其他附加协议条款。依据一般实践，这些部分是不可或缺的，以确保协议的法律效力和双方认可。\n\n### 查找相关法律规定\n<search>《中华人民共和国民法典》第五编 婚姻家庭相关规定</search>\n\n### 确认民法典中涉及离婚协议的法律条文\n<information>《中华人民共和国民法典》第1076条明确了离婚需双方自愿并就子女抚养、财产及债务处理达成一致意见。此外，第1077条规定离婚协议需载明上述内容并签署后具法律效力。</information>\n\n### 撰写离婚协议书的主要内容\n根据《民法典》第1076条和1077条，离婚协议书需要提供明确的格式和内容结构。主要内容包括：1.基础信息：注明双方姓名、身份证号、婚姻存续情况；2.声明离婚意向：双方自愿同意离婚；3.子女安排：确定抚养权归属、探视权安排以及抚养费用；4.财产分割：明确财产分配方式和变更日期；5.债务处理：双方债务承担细则；6.生效条款：明确协议签署后需经公证等程序确认效力。\n\n### Conclusion\n离婚协议书的写作需依照《中华人民共和国民法典》第1076条及第1077条的规定，确保全面涵盖双方基本信息、离婚原因、子女抚养、财产分割、债务处理及其他约定条款，并以双方签字及相关公证程序确认其法律效力。\n\n### Verification\n通过民法典相关规定核查内容完整性，该离婚协议书的写作逻辑与法律要求完全一致，已确认内容正确，无需修正。\n</Thought Process>\n\n<Question>\n离婚协议书怎么写\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n嗯，我想写一份离婚协议书，先想想这样的协议需要包括哪些东西。通常应该有标题，然后是双方的基本信息，比如姓名、身份证号这些，接着可能要说明一下离婚的原因吧，然后还需要分配财产、确定子女的抚养安排、处理债务问题，或者再写一些其他双方都认可的补充条款，这样内容应该才算完整。说到这里，还是查一下法律规定比较好，这样能确保我的协议符合法律要求。<search>《中华人民共和国民法典》第五编 婚姻家庭相关规定</search>\n\n哦，查到了。《民法典》第1076条提到离婚必须双方自愿，还得就子女抚养、财产和债务问题达成一致。这些内容是核心啊，少了显然不行。另外，第1077条也提到了，离婚协议需要写明这些问题，然后双方签字后协议就具备法律效力。这意思是，只要包含这些关键内容，离婚协议就能符合法律要求。<information>《中华人民共和国民法典》第1076条明确了离婚需双方自愿并就子女抚养、财产及债务处理达成一致意见。此外，第1077条规定离婚协议需载明上述内容并签署后具法律效力。</information>\n\n所以具体怎么写呢？首先肯定要有双方的基础信息，比如名字、身份证号、还有婚姻存续的时间等等；然后需要双方声明一下彼此都同意离婚；再来是关于孩子的部分，要写清楚抚养权归谁了，探视的安排以及抚养费怎么承担；还有财产分割，这个要具体到财产分配的细节，比如哪一天变更归属；债务的部分也不能漏掉，要明确谁负责哪些债务；最后，还得注明协议签署后的法律效力，比如是不是需要公证。这些内容应该就差不多啦。\n\n再核对一下吧……根据法律要求，子女、财产、债务这些重点都包括了，双方信息也在，还有声明和生效条款。这应该是完整的，不需要改动了。这样一份离婚协议书应该是符合《民法典》第1076条和1077条的规范，可以用了。\n</Internal Thinking>\n\n<Question>\n离婚协议书怎么写\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"确定离婚协议书的基本构成要素\",\n      \"content\": \"离婚协议书通常包括以下章节：标题、双方基本信息、离婚原因、财产分割协议、子女抚养安排、债务处理方式以及其他附加协议条款。依据一般实践，这些部分是不可或缺的，以确保协议的法律效力和双方认可。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"查找相关法律规定\",\n      \"content\": \"<search>《中华人民共和国民法典》第五编 婚姻家庭相关规定</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"确认民法典中涉及离婚协议的法律条文\",\n      \"content\": \"<information>《中华人民共和国民法典》第1076条明确了离婚需双方自愿并就子女抚养、财产及债务处理达成一致意见。此外，第1077条规定离婚协议需载明上述内容并签署后具法律效力。</information>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"撰写离婚协议书的主要内容\",\n      \"content\": \"根据《民法典》第1076条和1077条，离婚协议书需要提供明确的格式和内容结构。主要内容包括：1.基础信息：注明双方姓名、身份证号、婚姻存续情况；2.声明离婚意向：双方自愿同意离婚；3.子女安排：确定抚养权归属、探视权安排以及抚养费用；4.财产分割：明确财产分配方式和变更日期；5.债务处理：双方债务承担细则；6.生效条款：明确协议签署后需经公证等程序确认效力。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"离婚协议书的写作需依照《中华人民共和国民法典》第1076条及第1077条的规定，确保全面涵盖双方基本信息、离婚原因、子女抚养、财产分割、债务处理及其他约定条款，并以双方签字及相关公证程序确认其法律效力。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"通过民法典相关规定核查内容完整性，该离婚协议书的写作逻辑与法律要求完全一致，已确认内容正确，无需修正。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"嗯，我想写一份离婚协议书，先想想这样的协议需要包括哪些东西。通常应该有标题，然后是双方的基本信息，比如姓名、身份证号这些，接着可能要说明一下离婚的原因吧，然后还需要分配财产、确定子女的抚养安排、处理债务问题，或者再写一些其他双方都认可的补充条款，这样内容应该才算完整。说到这里，还是查一下法律规定比较好，这样能确保我的协议符合法律要求。<search>《中华人民共和国民法典》第五编 婚姻家庭相关规定</search>\\n\\n哦，查到了。《民法典》第1076条提到离婚必须双方自愿，还得就子女抚养、财产和债务问题达成一致。这些内容是核心啊，少了显然不行。另外，第1077条也提到了，离婚协议需要写明这些问题，然后双方签字后协议就具备法律效力。这意思是，只要包含这些关键内容，离婚协议就能符合法律要求。<information>《中华人民共和国民法典》第1076条明确了离婚需双方自愿并就子女抚养、财产及债务处理达成一致意见。此外，第1077条规定离婚协议需载明上述内容并签署后具法律效力。</information>\\n\\n所以具体怎么写呢？首先肯定要有双方的基础信息，比如名字、身份证号、还有婚姻存续的时间等等；然后需要双方声明一下彼此都同意离婚；再来是关于孩子的部分，要写清楚抚养权归谁了，探视的安排以及抚养费怎么承担；还有财产分割，这个要具体到财产分配的细节，比如哪一天变更归属；债务的部分也不能漏掉，要明确谁负责哪些债务；最后，还得注明协议签署后的法律效力，比如是不是需要公证。这些内容应该就差不多啦。\\n\\n再核对一下吧……根据法律要求，子女、财产、债务这些重点都包括了，双方信息也在，还有声明和生效条款。这应该是完整的，不需要改动了。这样一份离婚协议书应该是符合《民法典》第1076条和1077条的规范，可以用了。\"\n}\n```",
+    "离婚协议书可以按照以下结构和内容来写：\n\n---\n\n**离婚协议书**\n\n**甲方**：姓名，身份证号码：XXXXXXXXXXXXXXXXXX，住址：XXXXXX  \n**乙方**：姓名，身份证号码：XXXXXXXXXXXXXXXXXX，住址：XXXXXX  \n\n甲乙双方依法登记结婚，因双方感情破裂，已无法维持夫妻关系，现经双方自愿协商一致，就离婚事宜达成如下协议：\n\n### 一、离婚声明  \n甲乙双方均同意解除婚姻关系，自愿签署本协议，双方承诺不得反悔。\n\n### 二、子女抚养  \n1. 子女概况：双方婚姻存续期间所生子女姓名，出生日期：XXXXXX。  \n2. 抚养权归属：子女由（甲方/乙方）负责直接抚养，另一方享有探视权，具体探视时间和方式：每周探视一次，每次为X小时，具体方式可由双方协商确定。  \n3. 抚养费承担：由甲方/乙方自协议签署之日起每月支付抚养费XX元至子女年满十八周岁，具体支付方式为XXXX。\n\n### 三、财产分割  \n1. 夫妻共同财产清单：包括房产、车辆、存款及其他财产等，列表写明具体内容。  \n   - 房产：位于XXX的房屋归甲方/乙方所有，产权变更手续应于协议签署后XX天内完成，相关税费由XXX支付。  \n   - 车辆：牌号XXXX归甲方/乙方所有。  \n   - 存款：银行账户XXXX归甲方/乙方所有。  \n2. 其他财产分割：双方约定其他财产按以下方式处理XXXXX。\n\n### 四、债务处理  \n1. 婚姻存续期间的债务情况：双方共同债务或各自债务明细。  \n2. 债务承担方式：甲方/乙方负责偿还以下债务XXXX，另一方不承担责任。\n\n### 五、补充条款  \n1. 本协议签署后，若需办理公证手续，双方应在协议签署后XX天内共同完成离婚协议公证。  \n2. 若因特殊原因发生变化，双方可以另行协商并签订补充协议。  \n\n### 六、协议生效条款  \n1. 本协议自甲乙双方签字之日起生效，双方承诺严格履行协议内容。  \n2. 本协议一式两份，甲乙双方各执一份，均具有同等法律效力。\n\n甲方（签字）：_______________       乙方（签字）：_______________  \n日期：__________________________\n\n---\n\n这份离婚协议书包含了《中华人民共和国民法典》第1076条和1077条规定的核心内容，包括双方自愿解除婚姻关系的声明，以及子女抚养、财产分割和债务处理等事项，并明确了协议的生效条款。签署后既具有法律效力，建议根据实际情况灵活调整细节，同时确保双方充分协商并达成一致。必要时可请律师协助起草或公证。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "确定离婚协议书的基本构成要素",
+        "content": "离婚协议书通常包括以下章节：标题、双方基本信息、离婚原因、财产分割协议、子女抚养安排、债务处理方式以及其他附加协议条款。依据一般实践，这些部分是不可或缺的，以确保协议的法律效力和双方认可。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "查找相关法律规定",
+        "content": "<search>《中华人民共和国民法典》第五编 婚姻家庭相关规定</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "确认民法典中涉及离婚协议的法律条文",
+        "content": "<information>《中华人民共和国民法典》第1076条明确了离婚需双方自愿并就子女抚养、财产及债务处理达成一致意见。此外，第1077条规定离婚协议需载明上述内容并签署后具法律效力。</information>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "撰写离婚协议书的主要内容",
+        "content": "根据《民法典》第1076条和1077条，离婚协议书需要提供明确的格式和内容结构。主要内容包括：1.基础信息：注明双方姓名、身份证号、婚姻存续情况；2.声明离婚意向：双方自愿同意离婚；3.子女安排：确定抚养权归属、探视权安排以及抚养费用；4.财产分割：明确财产分配方式和变更日期；5.债务处理：双方债务承担细则；6.生效条款：明确协议签署后需经公证等程序确认效力。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "离婚协议书的写作需依照《中华人民共和国民法典》第1076条及第1077条的规定，确保全面涵盖双方基本信息、离婚原因、子女抚养、财产分割、债务处理及其他约定条款，并以双方签字及相关公证程序确认其法律效力。"
+      },
+      {
+        "action": "Verification",
+        "content": "通过民法典相关规定核查内容完整性，该离婚协议书的写作逻辑与法律要求完全一致，已确认内容正确，无需修正。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "嗯，我想写一份离婚协议书，先想想这样的协议需要包括哪些东西。通常应该有标题，然后是双方的基本信息，比如姓名、身份证号这些，接着可能要说明一下离婚的原因吧，然后还需要分配财产、确定子女的抚养安排、处理债务问题，或者再写一些其他双方都认可的补充条款，这样内容应该才算完整。说到这里，还是查一下法律规定比较好，这样能确保我的协议符合法律要求。<search>《中华人民共和国民法典》第五编 婚姻家庭相关规定</search>\n\n哦，查到了。《民法典》第1076条提到离婚必须双方自愿，还得就子女抚养、财产和债务问题达成一致。这些内容是核心啊，少了显然不行。另外，第1077条也提到了，离婚协议需要写明这些问题，然后双方签字后协议就具备法律效力。这意思是，只要包含这些关键内容，离婚协议就能符合法律要求。<information>《中华人民共和国民法典》第1076条明确了离婚需双方自愿并就子女抚养、财产及债务处理达成一致意见。此外，第1077条规定离婚协议需载明上述内容并签署后具法律效力。</information>\n\n所以具体怎么写呢？首先肯定要有双方的基础信息，比如名字、身份证号、还有婚姻存续的时间等等；然后需要双方声明一下彼此都同意离婚；再来是关于孩子的部分，要写清楚抚养权归谁了，探视的安排以及抚养费怎么承担；还有财产分割，这个要具体到财产分配的细节，比如哪一天变更归属；债务的部分也不能漏掉，要明确谁负责哪些债务；最后，还得注明协议签署后的法律效力，比如是不是需要公证。这些内容应该就差不多啦。\n\n再核对一下吧……根据法律要求，子女、财产、债务这些重点都包括了，双方信息也在，还有声明和生效条款。这应该是完整的，不需要改动了。这样一份离婚协议书应该是符合《民法典》第1076条和1077条的规范，可以用了。",
+  "Response": "离婚协议书可以按照以下结构和内容来写：\n\n---\n\n**离婚协议书**\n\n**甲方**：姓名，身份证号码：XXXXXXXXXXXXXXXXXX，住址：XXXXXX  \n**乙方**：姓名，身份证号码：XXXXXXXXXXXXXXXXXX，住址：XXXXXX  \n\n甲乙双方依法登记结婚，因双方感情破裂，已无法维持夫妻关系，现经双方自愿协商一致，就离婚事宜达成如下协议：\n\n### 一、离婚声明  \n甲乙双方均同意解除婚姻关系，自愿签署本协议，双方承诺不得反悔。\n\n### 二、子女抚养  \n1. 子女概况：双方婚姻存续期间所生子女姓名，出生日期：XXXXXX。  \n2. 抚养权归属：子女由（甲方/乙方）负责直接抚养，另一方享有探视权，具体探视时间和方式：每周探视一次，每次为X小时，具体方式可由双方协商确定。  \n3. 抚养费承担：由甲方/乙方自协议签署之日起每月支付抚养费XX元至子女年满十八周岁，具体支付方式为XXXX。\n\n### 三、财产分割  \n1. 夫妻共同财产清单：包括房产、车辆、存款及其他财产等，列表写明具体内容。  \n   - 房产：位于XXX的房屋归甲方/乙方所有，产权变更手续应于协议签署后XX天内完成，相关税费由XXX支付。  \n   - 车辆：牌号XXXX归甲方/乙方所有。  \n   - 存款：银行账户XXXX归甲方/乙方所有。  \n2. 其他财产分割：双方约定其他财产按以下方式处理XXXXX。\n\n### 四、债务处理  \n1. 婚姻存续期间的债务情况：双方共同债务或各自债务明细。  \n2. 债务承担方式：甲方/乙方负责偿还以下债务XXXX，另一方不承担责任。\n\n### 五、补充条款  \n1. 本协议签署后，若需办理公证手续，双方应在协议签署后XX天内共同完成离婚协议公证。  \n2. 若因特殊原因发生变化，双方可以另行协商并签订补充协议。  \n\n### 六、协议生效条款  \n1. 本协议自甲乙双方签字之日起生效，双方承诺严格履行协议内容。  \n2. 本协议一式两份，甲乙双方各执一份，均具有同等法律效力。\n\n甲方（签字）：_______________       乙方（签字）：_______________  \n日期：__________________________\n\n---\n\n这份离婚协议书包含了《中华人民共和国民法典》第1076条和1077条规定的核心内容，包括双方自愿解除婚姻关系的声明，以及子女抚养、财产分割和债务处理等事项，并明确了协议的生效条款。签署后既具有法律效力，建议根据实际情况灵活调整细节，同时确保双方充分协商并达成一致。必要时可请律师协助起草或公证。",
+  "Question": "离婚协议书怎么写"
+}

@@ -1,0 +1,89 @@
+{
+  "Open-ended Verifiable Question": "父母多少岁可以要求子女给赡养费？",
+  "Ground-True Answer": "只要是父母没有劳动能力、也没有收入的，或是生活困难时，就有赡养父母的义务。一般是男的年满六十周岁年以上、女的55岁以上，也就是退休的时候。\n赡养扶助的主要内容是指在现有经济和社会条件下，子女在经济上应为父母提供必要的生活用品和费用，在生活上、精神上、感情上对父母应尊敬、关心和照顾。\n有经济负担能力的成年子女，不分男女、已婚未婚，在父母需要赡养时，都应依法尽力履行这一义务直至父母死亡。\n子女对父母的赡养义务，不仅发生在婚生子女与父母间，而且也发生在非婚生子女与生父母间，养子女与养父母间继子女与履行了扶养教育义务的继父母之间。\n为保障受赡养人的合法权益，《民法典》（2021.1.1生效）第一千零六十七条规定：子成年子女不履行赡养义务的，缺乏劳动能力或者生活困难的父母，有要求成年子女给付赡养费的权利。",
+  "process_id": 953,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "定义赡养义务",
+      "content": "根据中国《婚姻法》以及相关法律的规定，子女对父母具有赡养的法定义务。如果父母因年老、疾病等原因需要经济支持，子女应履行这一法定义务。但具体父母的年龄是否是决定性因素需要进一步确认。需要搜索相关法律规定的明确标准。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "搜索法律关于父母年龄的要求",
+      "content": "<search>父母要求赡养费的年龄标准</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "提取搜索结果",
+      "content": "<information>根据《中华人民共和国民法典》及相关法律内容，父母要求赡养费并没有明确的年龄限制。赡养义务的产生通常基于父母是否具备劳动能力或者是否存在生活困难的情况，而不是单纯基于年龄。此外，《老年人权益保障法》中规定子女应当履行赡养义务，但也没有规定具体年龄。</information>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "确认年龄非限定因素",
+      "content": "从法律内容明确得知，父母要求子女赡养费不一定需要满足某个年龄标准，更多是基于生活困难或劳动能力情况。因此可以得出结论，父母无论年龄，只要存在生活困难或无劳动能力时均可要求子女支付赡养费。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "父母要求子女支付赡养费没有特定的年龄限制，只要父母存在生活困难或者无劳动能力即可提出要求。"
+    },
+    {
+      "action": "Verification",
+      "content": "结论与法律规定一致，父母要求赡养费的权利基于生活困难或劳动能力状况，而不是年龄，回答正确。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n父母多少岁可以要求子女给赡养费？\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n父母要求子女支付赡养费没有特定的年龄限制，只要父母存在生活困难或者无劳动能力即可提出要求。  \n</Model Response>  \n\n<Reference Answer>  \n只要是父母没有劳动能力、也没有收入的，或是生活困难时，就有赡养父母的义务。一般是男的年满六十周岁年以上、女的55岁以上，也就是退休的时候。\n赡养扶助的主要内容是指在现有经济和社会条件下，子女在经济上应为父母提供必要的生活用品和费用，在生活上、精神上、感情上对父母应尊敬、关心和照顾。\n有经济负担能力的成年子女，不分男女、已婚未婚，在父母需要赡养时，都应依法尽力履行这一义务直至父母死亡。\n子女对父母的赡养义务，不仅发生在婚生子女与父母间，而且也发生在非婚生子女与生父母间，养子女与养父母间继子女与履行了扶养教育义务的继父母之间。\n为保障受赡养人的合法权益，《民法典》（2021.1.1生效）第一千零六十七条规定：子成年子女不履行赡养义务的，缺乏劳动能力或者生活困难的父母，有要求成年子女给付赡养费的权利。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 定义赡养义务\n根据中国《婚姻法》以及相关法律的规定，子女对父母具有赡养的法定义务。如果父母因年老、疾病等原因需要经济支持，子女应履行这一法定义务。但具体父母的年龄是否是决定性因素需要进一步确认。需要搜索相关法律规定的明确标准。\n\n### 搜索法律关于父母年龄的要求\n<search>父母要求赡养费的年龄标准</search>\n\n### 提取搜索结果\n<information>根据《中华人民共和国民法典》及相关法律内容，父母要求赡养费并没有明确的年龄限制。赡养义务的产生通常基于父母是否具备劳动能力或者是否存在生活困难的情况，而不是单纯基于年龄。此外，《老年人权益保障法》中规定子女应当履行赡养义务，但也没有规定具体年龄。</information>\n\n### 确认年龄非限定因素\n从法律内容明确得知，父母要求子女赡养费不一定需要满足某个年龄标准，更多是基于生活困难或劳动能力情况。因此可以得出结论，父母无论年龄，只要存在生活困难或无劳动能力时均可要求子女支付赡养费。\n\n### Conclusion\n父母要求子女支付赡养费没有特定的年龄限制，只要父母存在生活困难或者无劳动能力即可提出要求。\n\n### Verification\n结论与法律规定一致，父母要求赡养费的权利基于生活困难或劳动能力状况，而不是年龄，回答正确。\n</Thought Process>\n\n<Question>\n父母多少岁可以要求子女给赡养费？\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n父母要求子女支付赡养费需要满足哪些条件呢？我记得在中国法律里好像有规定子女对父母的赡养是一种法定义务。不过，父母具体多大年纪能提出这个要求呢？我不太确定，这个值得查一下。\n\n让我想想……好像依据的是《中华人民共和国民法典》和《老年人权益保障法》。这些法律应该有提到关于赡养的条款吧？不过，父母的年龄是多少岁是个关键因素吗？还是说只要父母有困难，子女就得负责？还是得看看法律具体怎么说。\n\n<search>父母要求赡养费的年龄标准</search>\n\n我找到了相关的信息！<information>根据《中华人民共和国民法典》和《老年人权益保障法》的内容，父母要求赡养费是基于生活条件的困难或者失去劳动能力，而不是具体年龄。换句话说，不管父母是50岁还是70岁，只要他们生活上遇到了困难，或者没有劳动能力养活自己，就可以要求子女履行赡养义务。</information>\n\n哦，原来是这样啊，那就是说年龄不是重点。其实我觉得这也挺合理的，毕竟有的人可能年纪不大但身体不好，或者确实没有收入来源，那肯定是需要支持的。赡养义务主要还是为了保障父母的基本生活吧，法律这样设计还是挺有人情味的。\n\n所以，综合理解下来，父母要求子女支付赡养费没有一个特定的年龄门槛。决定性条件更多的是父母是不是处在生活困难中，或者丧失了劳动能力。从法律的角度看，只要满足这两个条件中的一个，父母什么年龄其实都可以提出赡养的要求。\n\n嗯，想来这回答也合情合理，跟搜到的法律解释一致。可以放心说，父母无论年龄，只要生计困难或者丧失劳动能力，便能依法要求子女履行赡养义务。\n</Internal Thinking>\n\n<Question>\n父母多少岁可以要求子女给赡养费？\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"定义赡养义务\",\n      \"content\": \"根据中国《婚姻法》以及相关法律的规定，子女对父母具有赡养的法定义务。如果父母因年老、疾病等原因需要经济支持，子女应履行这一法定义务。但具体父母的年龄是否是决定性因素需要进一步确认。需要搜索相关法律规定的明确标准。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"搜索法律关于父母年龄的要求\",\n      \"content\": \"<search>父母要求赡养费的年龄标准</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"提取搜索结果\",\n      \"content\": \"<information>根据《中华人民共和国民法典》及相关法律内容，父母要求赡养费并没有明确的年龄限制。赡养义务的产生通常基于父母是否具备劳动能力或者是否存在生活困难的情况，而不是单纯基于年龄。此外，《老年人权益保障法》中规定子女应当履行赡养义务，但也没有规定具体年龄。</information>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"确认年龄非限定因素\",\n      \"content\": \"从法律内容明确得知，父母要求子女赡养费不一定需要满足某个年龄标准，更多是基于生活困难或劳动能力情况。因此可以得出结论，父母无论年龄，只要存在生活困难或无劳动能力时均可要求子女支付赡养费。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"父母要求子女支付赡养费没有特定的年龄限制，只要父母存在生活困难或者无劳动能力即可提出要求。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"结论与法律规定一致，父母要求赡养费的权利基于生活困难或劳动能力状况，而不是年龄，回答正确。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"父母要求子女支付赡养费需要满足哪些条件呢？我记得在中国法律里好像有规定子女对父母的赡养是一种法定义务。不过，父母具体多大年纪能提出这个要求呢？我不太确定，这个值得查一下。\\n\\n让我想想……好像依据的是《中华人民共和国民法典》和《老年人权益保障法》。这些法律应该有提到关于赡养的条款吧？不过，父母的年龄是多少岁是个关键因素吗？还是说只要父母有困难，子女就得负责？还是得看看法律具体怎么说。\\n\\n<search>父母要求赡养费的年龄标准</search>\\n\\n我找到了相关的信息！<information>根据《中华人民共和国民法典》和《老年人权益保障法》的内容，父母要求赡养费是基于生活条件的困难或者失去劳动能力，而不是具体年龄。换句话说，不管父母是50岁还是70岁，只要他们生活上遇到了困难，或者没有劳动能力养活自己，就可以要求子女履行赡养义务。</information>\\n\\n哦，原来是这样啊，那就是说年龄不是重点。其实我觉得这也挺合理的，毕竟有的人可能年纪不大但身体不好，或者确实没有收入来源，那肯定是需要支持的。赡养义务主要还是为了保障父母的基本生活吧，法律这样设计还是挺有人情味的。\\n\\n所以，综合理解下来，父母要求子女支付赡养费没有一个特定的年龄门槛。决定性条件更多的是父母是不是处在生活困难中，或者丧失了劳动能力。从法律的角度看，只要满足这两个条件中的一个，父母什么年龄其实都可以提出赡养的要求。\\n\\n嗯，想来这回答也合情合理，跟搜到的法律解释一致。可以放心说，父母无论年龄，只要生计困难或者丧失劳动能力，便能依法要求子女履行赡养义务。\"\n}\n```",
+    "在中国法律中，父母要求子女支付赡养费并没有明确的年龄限制。根据《中华人民共和国民法典》和《老年人权益保障法》的规定，子女对父母的赡养义务是法定的。父母能够提出赡养费要求的关键条件是：父母因年老、疾病或其他原因导致生活困难，或者丧失劳动能力而无法维持基本生活。\n\n具体来说，无论父母是50岁、60岁还是更年长，只要他们确实处于生活困难的状态，或者由于健康状况或其他原因失去了劳动能力，子女都应履行赡养义务。因此，年龄并不是决定性因素，而是父母的生活状况与能力。\n\n这项法律规定的目的是保障父母在生活困难时能得到支持，体现了法律对家庭伦理和人情关怀的重视。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "定义赡养义务",
+        "content": "根据中国《婚姻法》以及相关法律的规定，子女对父母具有赡养的法定义务。如果父母因年老、疾病等原因需要经济支持，子女应履行这一法定义务。但具体父母的年龄是否是决定性因素需要进一步确认。需要搜索相关法律规定的明确标准。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "搜索法律关于父母年龄的要求",
+        "content": "<search>父母要求赡养费的年龄标准</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "提取搜索结果",
+        "content": "<information>根据《中华人民共和国民法典》及相关法律内容，父母要求赡养费并没有明确的年龄限制。赡养义务的产生通常基于父母是否具备劳动能力或者是否存在生活困难的情况，而不是单纯基于年龄。此外，《老年人权益保障法》中规定子女应当履行赡养义务，但也没有规定具体年龄。</information>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "确认年龄非限定因素",
+        "content": "从法律内容明确得知，父母要求子女赡养费不一定需要满足某个年龄标准，更多是基于生活困难或劳动能力情况。因此可以得出结论，父母无论年龄，只要存在生活困难或无劳动能力时均可要求子女支付赡养费。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "父母要求子女支付赡养费没有特定的年龄限制，只要父母存在生活困难或者无劳动能力即可提出要求。"
+      },
+      {
+        "action": "Verification",
+        "content": "结论与法律规定一致，父母要求赡养费的权利基于生活困难或劳动能力状况，而不是年龄，回答正确。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "父母要求子女支付赡养费需要满足哪些条件呢？我记得在中国法律里好像有规定子女对父母的赡养是一种法定义务。不过，父母具体多大年纪能提出这个要求呢？我不太确定，这个值得查一下。\n\n让我想想……好像依据的是《中华人民共和国民法典》和《老年人权益保障法》。这些法律应该有提到关于赡养的条款吧？不过，父母的年龄是多少岁是个关键因素吗？还是说只要父母有困难，子女就得负责？还是得看看法律具体怎么说。\n\n<search>父母要求赡养费的年龄标准</search>\n\n我找到了相关的信息！<information>根据《中华人民共和国民法典》和《老年人权益保障法》的内容，父母要求赡养费是基于生活条件的困难或者失去劳动能力，而不是具体年龄。换句话说，不管父母是50岁还是70岁，只要他们生活上遇到了困难，或者没有劳动能力养活自己，就可以要求子女履行赡养义务。</information>\n\n哦，原来是这样啊，那就是说年龄不是重点。其实我觉得这也挺合理的，毕竟有的人可能年纪不大但身体不好，或者确实没有收入来源，那肯定是需要支持的。赡养义务主要还是为了保障父母的基本生活吧，法律这样设计还是挺有人情味的。\n\n所以，综合理解下来，父母要求子女支付赡养费没有一个特定的年龄门槛。决定性条件更多的是父母是不是处在生活困难中，或者丧失了劳动能力。从法律的角度看，只要满足这两个条件中的一个，父母什么年龄其实都可以提出赡养的要求。\n\n嗯，想来这回答也合情合理，跟搜到的法律解释一致。可以放心说，父母无论年龄，只要生计困难或者丧失劳动能力，便能依法要求子女履行赡养义务。",
+  "Response": "在中国法律中，父母要求子女支付赡养费并没有明确的年龄限制。根据《中华人民共和国民法典》和《老年人权益保障法》的规定，子女对父母的赡养义务是法定的。父母能够提出赡养费要求的关键条件是：父母因年老、疾病或其他原因导致生活困难，或者丧失劳动能力而无法维持基本生活。\n\n具体来说，无论父母是50岁、60岁还是更年长，只要他们确实处于生活困难的状态，或者由于健康状况或其他原因失去了劳动能力，子女都应履行赡养义务。因此，年龄并不是决定性因素，而是父母的生活状况与能力。\n\n这项法律规定的目的是保障父母在生活困难时能得到支持，体现了法律对家庭伦理和人情关怀的重视。",
+  "Question": "父母多少岁可以要求子女给赡养费？"
+}

@@ -1,0 +1,109 @@
+{
+  "Open-ended Verifiable Question": "在房产证上加名字费用是多少?",
+  "Ground-True Answer": "1、无贷房子房产证上加名字办理流程及收费标准\n(一)带好三证(结婚证、身份证、房产证)正本及复印件。\n(二)去房屋所在地区的房地产交易中心，先在预检窗口告知是来办理房产证增加配偶姓名事宜的，窗口工作人员会审核提交的材料，如果材料齐全就给你们一个号码，然后凭号码去相关窗口办理。\n(三)所需费用：110元手续费，明细如下：80元工本费、25元地籍图费、5元贴花费，如顺利20天后可拿到新的房产证。\n2、有贷房子房产证上加名字办理流程及收费标准\n(一)先去银行办理抵押变更手续(具体事宜请咨询各银行)。\n(二)办理房产证上加名字所需费用：除支付上述110元手续费外，如贷款是纯公积金的，还需另外支付100元;如贷款是组合形式的(公积金+商业贷款)，还需另外支付200元。\n(三)其他步骤同和无贷房屋办理流程相同\n3、非配偶或非直系血亲房产证上加名字办理流程及费用\n如果还没有结婚或者没有直系血源关系的，需要在房产证上加名字，情况会复杂很多，因为那将视为房屋买卖，需要交如下费用。\n(一)每平方米2.5元交易费。\n(二)不满5年，5.5%的营业税加1%个调税(时间段从产证发证日期到交易日未止)，满5年则不需要。\n(三)万分之5的印花税。\n(四)4本合同，每本约5元(各区交易中心不一样)。\n(五)男方转让50%，所有的税按市场价格计算，如果100万的房子记税值就是50万。\n(六)产证上有几人转让的，产证权益按平均分。\n二、房产证上加名字要注意带齐所需证件\n所需证件：房产证、户口本、身份证、婚姻证明(结婚证或单身证明)，未成年子女需提供户口本或出生证明。除了带足证件，还需准备好各类证本的复印件。",
+  "process_id": 2640,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "确定相关费用类型",
+      "content": "在房产证上加名字可能涉及的费用包括：契税、产权变更登记费用、工本费以及可能的其他税费。需要确认具体费用标准以及适用的税法或地方法规，以便作出准确的估算。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "检索契税相关规定",
+      "content": "契税是房屋产权变更时的主要税种之一，具体税率根据房屋性质和是否属于家庭成员而确定。需要查询最新的契税规定。<search>契税最新规定</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "契税信息检索结果",
+      "content": "<information>契税通常按照房屋评估价值的1%-3%征收，根据地区和具体情况可能有免税或优惠政策，例如直系亲属加名字。</information>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "确认产权变更登记费用",
+      "content": "包含工本费和其他行政费用，这部分通常成本较低，需要水平方向查找具体地方政府的政策。<search>产权变更登记费用标准</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "产权变更登记信息检索结果",
+      "content": "<information>产权变更登记费用一般为几十元至几百元不等，具体金额因地方差异而不同。</information>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "综合判断费用的范围",
+      "content": "综合契税、产权变更登记费用和其他可能的税费，当在房产证上加名字涉及直系亲属情况时，部分地区可能完全免税或只需支付少量工本费。非直系亲属间产权变更可能需支付评估价值1%-3%的契税，以及几百元的登记费用。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "在房产证上加名字的费用通常因具体情况而异。如果是家庭成员加名字，许多地区可以享受优惠政策，仅需支付几十元至几百元的行政工本费。如果涉及非家庭成员，可能需支付契税，金额为房屋评估价值的1%-3%加上登记费用，约几百元至上千元。"
+    },
+    {
+      "action": "Verification",
+      "content": "结论合理，符合大多数地区的政策规定。可以根据实际地区具体查询来验证，但大致范围准确。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n在房产证上加名字费用是多少?\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n在房产证上加名字的费用通常因具体情况而异。如果是家庭成员加名字，许多地区可以享受优惠政策，仅需支付几十元至几百元的行政工本费。如果涉及非家庭成员，可能需支付契税，金额为房屋评估价值的1%-3%加上登记费用，约几百元至上千元。  \n</Model Response>  \n\n<Reference Answer>  \n1、无贷房子房产证上加名字办理流程及收费标准\n(一)带好三证(结婚证、身份证、房产证)正本及复印件。\n(二)去房屋所在地区的房地产交易中心，先在预检窗口告知是来办理房产证增加配偶姓名事宜的，窗口工作人员会审核提交的材料，如果材料齐全就给你们一个号码，然后凭号码去相关窗口办理。\n(三)所需费用：110元手续费，明细如下：80元工本费、25元地籍图费、5元贴花费，如顺利20天后可拿到新的房产证。\n2、有贷房子房产证上加名字办理流程及收费标准\n(一)先去银行办理抵押变更手续(具体事宜请咨询各银行)。\n(二)办理房产证上加名字所需费用：除支付上述110元手续费外，如贷款是纯公积金的，还需另外支付100元;如贷款是组合形式的(公积金+商业贷款)，还需另外支付200元。\n(三)其他步骤同和无贷房屋办理流程相同\n3、非配偶或非直系血亲房产证上加名字办理流程及费用\n如果还没有结婚或者没有直系血源关系的，需要在房产证上加名字，情况会复杂很多，因为那将视为房屋买卖，需要交如下费用。\n(一)每平方米2.5元交易费。\n(二)不满5年，5.5%的营业税加1%个调税(时间段从产证发证日期到交易日未止)，满5年则不需要。\n(三)万分之5的印花税。\n(四)4本合同，每本约5元(各区交易中心不一样)。\n(五)男方转让50%，所有的税按市场价格计算，如果100万的房子记税值就是50万。\n(六)产证上有几人转让的，产证权益按平均分。\n二、房产证上加名字要注意带齐所需证件\n所需证件：房产证、户口本、身份证、婚姻证明(结婚证或单身证明)，未成年子女需提供户口本或出生证明。除了带足证件，还需准备好各类证本的复印件。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 确定相关费用类型\n在房产证上加名字可能涉及的费用包括：契税、产权变更登记费用、工本费以及可能的其他税费。需要确认具体费用标准以及适用的税法或地方法规，以便作出准确的估算。\n\n### 检索契税相关规定\n契税是房屋产权变更时的主要税种之一，具体税率根据房屋性质和是否属于家庭成员而确定。需要查询最新的契税规定。<search>契税最新规定</search>\n\n### 契税信息检索结果\n<information>契税通常按照房屋评估价值的1%-3%征收，根据地区和具体情况可能有免税或优惠政策，例如直系亲属加名字。</information>\n\n### 确认产权变更登记费用\n包含工本费和其他行政费用，这部分通常成本较低，需要水平方向查找具体地方政府的政策。<search>产权变更登记费用标准</search>\n\n### 产权变更登记信息检索结果\n<information>产权变更登记费用一般为几十元至几百元不等，具体金额因地方差异而不同。</information>\n\n### 综合判断费用的范围\n综合契税、产权变更登记费用和其他可能的税费，当在房产证上加名字涉及直系亲属情况时，部分地区可能完全免税或只需支付少量工本费。非直系亲属间产权变更可能需支付评估价值1%-3%的契税，以及几百元的登记费用。\n\n### Conclusion\n在房产证上加名字的费用通常因具体情况而异。如果是家庭成员加名字，许多地区可以享受优惠政策，仅需支付几十元至几百元的行政工本费。如果涉及非家庭成员，可能需支付契税，金额为房屋评估价值的1%-3%加上登记费用，约几百元至上千元。\n\n### Verification\n结论合理，符合大多数地区的政策规定。可以根据实际地区具体查询来验证，但大致范围准确。\n</Thought Process>\n\n<Question>\n在房产证上加名字费用是多少?\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n嗯，我来想一下，如果要在房产证上加名字，大概会涉及什么费用呢？房产过户或者变更通常会有几类费用，比如说契税、登记工本费，还有可能涉及到其他费用，比如地方性的一些税金或者评估费用。每个地方的政策可能不太一样，所以最好查一下具体的规定。\n\n契税应该会是这其中的大头。契税一般是在房产发生产权变更的时候需要缴纳，而且税率可能会根据房屋的性质和变更的具体情况有所不同。是家庭成员要加名字还是非直系亲属，这会影响费用呢。我得查一下现在针对契税有没有什么新的规定。<search>契税最新规定</search>\n\n哦，找到了！<information>契税的税率一般是按照房屋评估价值的1%-3%征收。不过有些地方对家庭内部的产权变更，比如父母给子女，这种情况可能会有免税或者减免的政策。</information>嗯，这就合理了，如果是直系亲属，成本会低很多。\n\n另外，产权变更要去办理手续，也得考虑登记费用。具体可能包括工本费、服务费之类的，这些费用估计不会太高，但还是要查一下各地的标准，才能确保心里有数。<search>产权变更登记费用标准</search>\n\n好，我看看纪录。<information>产权变更登记的费用一般是几十元到几百元不等，主要看地方政策，有些城市可能收费低一些，但整体来看这部分成本是比较小的。</information>嗯，这就和我想的一样，是个小头。\n\n总体来看，加名字需要的费用主要就是契税和登记产生的那些费用。如果是直系亲属或者家庭内部的加名字，可能甚至不收契税，只支付工本费，几百元内就能搞定。但如果涉及非家庭成员，那契税可能要按照房屋价值的1%-3%计算，这样的话，加上登记费用，成本可能就从几百元到几千元不等了。\n\n综上，我认为如果你是家庭成员加名字，费用大概率非常低，甚至可能完全免税；而如果是非直系亲属，还是需要根据具体的房屋价值去评估契税，但无论如何登记费占比不会太高。这个范围和大多数地方政策也基本吻合。\n</Internal Thinking>\n\n<Question>\n在房产证上加名字费用是多少?\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"确定相关费用类型\",\n      \"content\": \"在房产证上加名字可能涉及的费用包括：契税、产权变更登记费用、工本费以及可能的其他税费。需要确认具体费用标准以及适用的税法或地方法规，以便作出准确的估算。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"检索契税相关规定\",\n      \"content\": \"契税是房屋产权变更时的主要税种之一，具体税率根据房屋性质和是否属于家庭成员而确定。需要查询最新的契税规定。<search>契税最新规定</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"契税信息检索结果\",\n      \"content\": \"<information>契税通常按照房屋评估价值的1%-3%征收，根据地区和具体情况可能有免税或优惠政策，例如直系亲属加名字。</information>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"确认产权变更登记费用\",\n      \"content\": \"包含工本费和其他行政费用，这部分通常成本较低，需要水平方向查找具体地方政府的政策。<search>产权变更登记费用标准</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"产权变更登记信息检索结果\",\n      \"content\": \"<information>产权变更登记费用一般为几十元至几百元不等，具体金额因地方差异而不同。</information>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"综合判断费用的范围\",\n      \"content\": \"综合契税、产权变更登记费用和其他可能的税费，当在房产证上加名字涉及直系亲属情况时，部分地区可能完全免税或只需支付少量工本费。非直系亲属间产权变更可能需支付评估价值1%-3%的契税，以及几百元的登记费用。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"在房产证上加名字的费用通常因具体情况而异。如果是家庭成员加名字，许多地区可以享受优惠政策，仅需支付几十元至几百元的行政工本费。如果涉及非家庭成员，可能需支付契税，金额为房屋评估价值的1%-3%加上登记费用，约几百元至上千元。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"结论合理，符合大多数地区的政策规定。可以根据实际地区具体查询来验证，但大致范围准确。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"嗯，我来想一下，如果要在房产证上加名字，大概会涉及什么费用呢？房产过户或者变更通常会有几类费用，比如说契税、登记工本费，还有可能涉及到其他费用，比如地方性的一些税金或者评估费用。每个地方的政策可能不太一样，所以最好查一下具体的规定。\\n\\n契税应该会是这其中的大头。契税一般是在房产发生产权变更的时候需要缴纳，而且税率可能会根据房屋的性质和变更的具体情况有所不同。是家庭成员要加名字还是非直系亲属，这会影响费用呢。我得查一下现在针对契税有没有什么新的规定。<search>契税最新规定</search>\\n\\n哦，找到了！<information>契税的税率一般是按照房屋评估价值的1%-3%征收。不过有些地方对家庭内部的产权变更，比如父母给子女，这种情况可能会有免税或者减免的政策。</information>嗯，这就合理了，如果是直系亲属，成本会低很多。\\n\\n另外，产权变更要去办理手续，也得考虑登记费用。具体可能包括工本费、服务费之类的，这些费用估计不会太高，但还是要查一下各地的标准，才能确保心里有数。<search>产权变更登记费用标准</search>\\n\\n好，我看看纪录。<information>产权变更登记的费用一般是几十元到几百元不等，主要看地方政策，有些城市可能收费低一些，但整体来看这部分成本是比较小的。</information>嗯，这就和我想的一样，是个小头。\\n\\n总体来看，加名字需要的费用主要就是契税和登记产生的那些费用。如果是直系亲属或者家庭内部的加名字，可能甚至不收契税，只支付工本费，几百元内就能搞定。但如果涉及非家庭成员，那契税可能要按照房屋价值的1%-3%计算，这样的话，加上登记费用，成本可能就从几百元到几千元不等了。\\n\\n综上，我认为如果你是家庭成员加名字，费用大概率非常低，甚至可能完全免税；而如果是非直系亲属，还是需要根据具体的房屋价值去评估契税，但无论如何登记费占比不会太高。这个范围和大多数地方政策也基本吻合。\"\n}\n```",
+    "在房产证上加名字所需的费用主要取决于两方面：是否为直系亲属以及房产所在地的具体政策。以下是一般情况下的费用和政策说明：\n\n### 1. **契税**\n   - 如果新增名字的人是直系亲属（如父母、子女或配偶），在许多地方**可以享受免税政策**，只需支付少量的登记费用。\n   - 如果新增名字的人是非直系亲属，则通常需要缴纳契税，税率一般为房屋评估价值的**1%-3%**，具体税率取决于房产所在地的政策和房屋性质。\n\n### 2. **产权登记费用**\n   - 产权变更时，需要缴纳房屋登记工本费和相关服务费。费用通常较低，一般在**几十元到几百元**之间，具体金额也受当地政策影响。\n\n### 3. **其他可能的费用**\n   - 有些地方可能会要求进行房屋价值评估，这可能产生**评估费**。\n   - 若选择委托办理，可能还需额外支付代理费用。\n\n### 以实际情况分析  \n- **家庭内部加名字**：如果涉及直系亲属（如夫妻之间加名字），费用通常非常低，甚至可能完全免契税，仅需支付工本费、少量服务费，**总费用可能在几百元内**。\n- **非直系亲属加名字**：此时通常需要缴纳契税，因此费用可能较高，主要取决于房屋的评估价值。如果房屋价值较高，总费用可能达到**几千元或更高**。\n\n建议在办理前咨询房产所在地的房管局或不动产登记中心，了解具体政策和费用明细。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "确定相关费用类型",
+        "content": "在房产证上加名字可能涉及的费用包括：契税、产权变更登记费用、工本费以及可能的其他税费。需要确认具体费用标准以及适用的税法或地方法规，以便作出准确的估算。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "检索契税相关规定",
+        "content": "契税是房屋产权变更时的主要税种之一，具体税率根据房屋性质和是否属于家庭成员而确定。需要查询最新的契税规定。<search>契税最新规定</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "契税信息检索结果",
+        "content": "<information>契税通常按照房屋评估价值的1%-3%征收，根据地区和具体情况可能有免税或优惠政策，例如直系亲属加名字。</information>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "确认产权变更登记费用",
+        "content": "包含工本费和其他行政费用，这部分通常成本较低，需要水平方向查找具体地方政府的政策。<search>产权变更登记费用标准</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "产权变更登记信息检索结果",
+        "content": "<information>产权变更登记费用一般为几十元至几百元不等，具体金额因地方差异而不同。</information>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "综合判断费用的范围",
+        "content": "综合契税、产权变更登记费用和其他可能的税费，当在房产证上加名字涉及直系亲属情况时，部分地区可能完全免税或只需支付少量工本费。非直系亲属间产权变更可能需支付评估价值1%-3%的契税，以及几百元的登记费用。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "在房产证上加名字的费用通常因具体情况而异。如果是家庭成员加名字，许多地区可以享受优惠政策，仅需支付几十元至几百元的行政工本费。如果涉及非家庭成员，可能需支付契税，金额为房屋评估价值的1%-3%加上登记费用，约几百元至上千元。"
+      },
+      {
+        "action": "Verification",
+        "content": "结论合理，符合大多数地区的政策规定。可以根据实际地区具体查询来验证，但大致范围准确。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "嗯，我来想一下，如果要在房产证上加名字，大概会涉及什么费用呢？房产过户或者变更通常会有几类费用，比如说契税、登记工本费，还有可能涉及到其他费用，比如地方性的一些税金或者评估费用。每个地方的政策可能不太一样，所以最好查一下具体的规定。\n\n契税应该会是这其中的大头。契税一般是在房产发生产权变更的时候需要缴纳，而且税率可能会根据房屋的性质和变更的具体情况有所不同。是家庭成员要加名字还是非直系亲属，这会影响费用呢。我得查一下现在针对契税有没有什么新的规定。<search>契税最新规定</search>\n\n哦，找到了！<information>契税的税率一般是按照房屋评估价值的1%-3%征收。不过有些地方对家庭内部的产权变更，比如父母给子女，这种情况可能会有免税或者减免的政策。</information>嗯，这就合理了，如果是直系亲属，成本会低很多。\n\n另外，产权变更要去办理手续，也得考虑登记费用。具体可能包括工本费、服务费之类的，这些费用估计不会太高，但还是要查一下各地的标准，才能确保心里有数。<search>产权变更登记费用标准</search>\n\n好，我看看纪录。<information>产权变更登记的费用一般是几十元到几百元不等，主要看地方政策，有些城市可能收费低一些，但整体来看这部分成本是比较小的。</information>嗯，这就和我想的一样，是个小头。\n\n总体来看，加名字需要的费用主要就是契税和登记产生的那些费用。如果是直系亲属或者家庭内部的加名字，可能甚至不收契税，只支付工本费，几百元内就能搞定。但如果涉及非家庭成员，那契税可能要按照房屋价值的1%-3%计算，这样的话，加上登记费用，成本可能就从几百元到几千元不等了。\n\n综上，我认为如果你是家庭成员加名字，费用大概率非常低，甚至可能完全免税；而如果是非直系亲属，还是需要根据具体的房屋价值去评估契税，但无论如何登记费占比不会太高。这个范围和大多数地方政策也基本吻合。",
+  "Response": "在房产证上加名字所需的费用主要取决于两方面：是否为直系亲属以及房产所在地的具体政策。以下是一般情况下的费用和政策说明：\n\n### 1. **契税**\n   - 如果新增名字的人是直系亲属（如父母、子女或配偶），在许多地方**可以享受免税政策**，只需支付少量的登记费用。\n   - 如果新增名字的人是非直系亲属，则通常需要缴纳契税，税率一般为房屋评估价值的**1%-3%**，具体税率取决于房产所在地的政策和房屋性质。\n\n### 2. **产权登记费用**\n   - 产权变更时，需要缴纳房屋登记工本费和相关服务费。费用通常较低，一般在**几十元到几百元**之间，具体金额也受当地政策影响。\n\n### 3. **其他可能的费用**\n   - 有些地方可能会要求进行房屋价值评估，这可能产生**评估费**。\n   - 若选择委托办理，可能还需额外支付代理费用。\n\n### 以实际情况分析  \n- **家庭内部加名字**：如果涉及直系亲属（如夫妻之间加名字），费用通常非常低，甚至可能完全免契税，仅需支付工本费、少量服务费，**总费用可能在几百元内**。\n- **非直系亲属加名字**：此时通常需要缴纳契税，因此费用可能较高，主要取决于房屋的评估价值。如果房屋价值较高，总费用可能达到**几千元或更高**。\n\n建议在办理前咨询房产所在地的房管局或不动产登记中心，了解具体政策和费用明细。",
+  "Question": "在房产证上加名字费用是多少?"
+}

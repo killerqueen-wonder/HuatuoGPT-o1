@@ -1,0 +1,79 @@
+{
+  "Open-ended Verifiable Question": "民营企业有特殊工种吗?",
+  "Ground-True Answer": "1、民营企业有特殊工种；\n法律依据：《关于制止和纠正违反国家规定办理企业职工提前退休有关问题的通知》规定：(1)国家法定的企业职工正常退休年龄是：男子年满60周岁，女工人年满50周岁，女干部年满55周岁；(2)有从事井下、高空、高温、特别繁重体力劳动或其他有害身体健康工作(以下称特殊工种)的，退休年龄为男年满55周岁、女年满45周岁；(3)因病或非因工致残，由医院证明并经劳动鉴定委员会确认完全丧失劳动能力的，退休年龄为男年满50周岁、女年满45周岁；(4)规定中对于职工各类情况的退休年龄做了明确规定和限制，符合其中条件的职工即可按规定办理。二、特殊工种目录有哪些1、电工作业；含发电、送电、变电、配电工，电气设备的安装、运行、检修(维修)、试验工，矿山井下电钳工；\n2、金属焊接、切割作业；含焊接工，切割工；\n3、起重机械作业；含起重机司机，司索工，信号指挥工，安装与维修工；\n4、企业内机动车辆驾驶；含在企业内及码头、货场等生产作业区域和施工现场行驶的各类机动车辆的驾驶人员；\n5、登高架设作业；含2米以上登高架设、拆除、维修工、高层建(构)筑物表面清洗工；\n6、锅炉作业(含水质化验)；含承压锅炉的操作工，锅炉水质化验工；\n7、压力容器作业；含压力容器罐装工、检验工、运输押运工、大型空气压缩机操作工；\n8、制冷作业；含制冷设备安装工、操作工、维修工；\n9、爆破作业；含地面工程爆破、井下爆破工；\n10、矿山通风作业；含主扇机操作工，瓦斯抽放工，通风安全监测工，测风测尘工；\n11、矿山排水作业；含矿井主排水泵工，尾矿坝作业工；\n12、矿山安全检查作业；含安全检查工，瓦斯检验工，电气设备防爆检查工；\n13、矿山提升运输作业；含主提升机操作工，(上、下山)绞车操作工，固定胶带输送机操作工，信号工，拥罐(把勾)工；\n14、采掘(剥)作业；含采煤机司机，掘进机司机，耙岩机司机，凿岩机司机；\n15、矿山救护作业；\n16、危险物品作业；含危险化学品、民用爆炸品、放射性物品的操作工、运输押运工、储存保管员；\n17、经国家局批准的其它作业；综上所述，特殊工种，不同于特种作业，一般明确特殊工种的范围由各行业主管部门或劳动部门确定；特殊工种不是一个正式的概念，只是约定俗成的叫法",
+  "process_id": 7004,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "分析问题范围",
+      "content": "问题提问的是民营企业是否有特殊工种，这涉及到对特殊工种的定义和适用范围进行了解。此外，还需考虑是否民营企业员工的特殊工种受法律法规的定义约束。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "确认特殊工种的定义和范围",
+      "content": "特殊工种通常指因工作环境、工作条件等因素对身体健康或安全有潜在危害的工作类别，需要查看我国法律法规对特殊工种的定义及其相关适用，以确认是否包括民营企业员工。<search>特殊工种定义 中国法律</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "确认信息并理解适用范围",
+      "content": "<information>特殊工种是指从事有害健康或存在特殊安全风险的工作的工种。根据《劳动法》及相关法规，特殊工种适用于所有企业，包括民营企业和国有企业。</information>根据法律规定，特殊工种的界定不区分企业性质，任何企业都需要遵守相关劳动保护规定，包括对特殊工种的认定和保护。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "民营企业有特殊工种。根据《劳动法》和相关法规，特殊工种的适用范围涵盖所有企业，包括民营企业。民营企业从事有特殊风险或危害的工种也会被认定为特殊工种，并受到法律保护和规范。"
+    },
+    {
+      "action": "Verification",
+      "content": "结论成立。法律对特殊工种的定义与范围适用没有区分企业类型，民营企业员工同样适用特殊工种的制度。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n民营企业有特殊工种吗?\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n民营企业有特殊工种。根据《劳动法》和相关法规，特殊工种的适用范围涵盖所有企业，包括民营企业。民营企业从事有特殊风险或危害的工种也会被认定为特殊工种，并受到法律保护和规范。  \n</Model Response>  \n\n<Reference Answer>  \n1、民营企业有特殊工种；\n法律依据：《关于制止和纠正违反国家规定办理企业职工提前退休有关问题的通知》规定：(1)国家法定的企业职工正常退休年龄是：男子年满60周岁，女工人年满50周岁，女干部年满55周岁；(2)有从事井下、高空、高温、特别繁重体力劳动或其他有害身体健康工作(以下称特殊工种)的，退休年龄为男年满55周岁、女年满45周岁；(3)因病或非因工致残，由医院证明并经劳动鉴定委员会确认完全丧失劳动能力的，退休年龄为男年满50周岁、女年满45周岁；(4)规定中对于职工各类情况的退休年龄做了明确规定和限制，符合其中条件的职工即可按规定办理。二、特殊工种目录有哪些1、电工作业；含发电、送电、变电、配电工，电气设备的安装、运行、检修(维修)、试验工，矿山井下电钳工；\n2、金属焊接、切割作业；含焊接工，切割工；\n3、起重机械作业；含起重机司机，司索工，信号指挥工，安装与维修工；\n4、企业内机动车辆驾驶；含在企业内及码头、货场等生产作业区域和施工现场行驶的各类机动车辆的驾驶人员；\n5、登高架设作业；含2米以上登高架设、拆除、维修工、高层建(构)筑物表面清洗工；\n6、锅炉作业(含水质化验)；含承压锅炉的操作工，锅炉水质化验工；\n7、压力容器作业；含压力容器罐装工、检验工、运输押运工、大型空气压缩机操作工；\n8、制冷作业；含制冷设备安装工、操作工、维修工；\n9、爆破作业；含地面工程爆破、井下爆破工；\n10、矿山通风作业；含主扇机操作工，瓦斯抽放工，通风安全监测工，测风测尘工；\n11、矿山排水作业；含矿井主排水泵工，尾矿坝作业工；\n12、矿山安全检查作业；含安全检查工，瓦斯检验工，电气设备防爆检查工；\n13、矿山提升运输作业；含主提升机操作工，(上、下山)绞车操作工，固定胶带输送机操作工，信号工，拥罐(把勾)工；\n14、采掘(剥)作业；含采煤机司机，掘进机司机，耙岩机司机，凿岩机司机；\n15、矿山救护作业；\n16、危险物品作业；含危险化学品、民用爆炸品、放射性物品的操作工、运输押运工、储存保管员；\n17、经国家局批准的其它作业；综上所述，特殊工种，不同于特种作业，一般明确特殊工种的范围由各行业主管部门或劳动部门确定；特殊工种不是一个正式的概念，只是约定俗成的叫法\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 分析问题范围\n问题提问的是民营企业是否有特殊工种，这涉及到对特殊工种的定义和适用范围进行了解。此外，还需考虑是否民营企业员工的特殊工种受法律法规的定义约束。\n\n### 确认特殊工种的定义和范围\n特殊工种通常指因工作环境、工作条件等因素对身体健康或安全有潜在危害的工作类别，需要查看我国法律法规对特殊工种的定义及其相关适用，以确认是否包括民营企业员工。<search>特殊工种定义 中国法律</search>\n\n### 确认信息并理解适用范围\n<information>特殊工种是指从事有害健康或存在特殊安全风险的工作的工种。根据《劳动法》及相关法规，特殊工种适用于所有企业，包括民营企业和国有企业。</information>根据法律规定，特殊工种的界定不区分企业性质，任何企业都需要遵守相关劳动保护规定，包括对特殊工种的认定和保护。\n\n### Conclusion\n民营企业有特殊工种。根据《劳动法》和相关法规，特殊工种的适用范围涵盖所有企业，包括民营企业。民营企业从事有特殊风险或危害的工种也会被认定为特殊工种，并受到法律保护和规范。\n\n### Verification\n结论成立。法律对特殊工种的定义与范围适用没有区分企业类型，民营企业员工同样适用特殊工种的制度。\n</Thought Process>\n\n<Question>\n民营企业有特殊工种吗?\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n民营企业有没有特殊工种呢？这个问题好像不难，但仔细想想，好像得先搞清楚什么是“特殊工种”。嗯，感觉这个词好像和工作环境、劳动安全这些东西有关。要不先查一下我国法律中是怎么定义特殊工种的，应该会有明确的说法吧。<search>特殊工种定义 中国法律</search>\n\n找到了，这里写的是：<information>特殊工种是指从事有害健康或存在特殊安全风险的工作的工种。根据《劳动法》及相关法规，特殊工种适用于所有企业，包括民营企业和国有企业。</information>。原来是这样啊，特殊工种主要是看工作内容和风险，并不是看企业性质。也就是说，不管是国企，还是民营企业，只要从事这样的工作，就是特殊工种。\n\n不过，等等，法律是不是明确说了适用于所有企业？嗯，刚刚信息里确实提到是适用所有企业，没有把民营企业排除在外。那是不是可以理解为，如果民营企业的某些员工从事有害健康或者有特殊安全风险的工作，那这些岗位同样可以被归为特殊工种呢？看起来是这样的。毕竟《劳动法》对企业性质没有特别的区分，而是统一适用。\n\n好吧，整理一下结论，民营企业是有特殊工种的，因为法律不仅仅针对国企，任何类型的企业——只要工作条件符合特殊工种的界定，就适用相关规定。而这当然包括民营企业。如果民营企业里有那些危险性高或者对健康有潜在危害的工种，那这些员工从事的就是特殊工种。\n\n嗯，感觉这个逻辑还挺清晰的。确认一下，总之，民营企业是有特殊工种的，理由也是基于法律规定，是没有企业性质限制的。\n</Internal Thinking>\n\n<Question>\n民营企业有特殊工种吗?\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析问题范围\",\n      \"content\": \"问题提问的是民营企业是否有特殊工种，这涉及到对特殊工种的定义和适用范围进行了解。此外，还需考虑是否民营企业员工的特殊工种受法律法规的定义约束。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"确认特殊工种的定义和范围\",\n      \"content\": \"特殊工种通常指因工作环境、工作条件等因素对身体健康或安全有潜在危害的工作类别，需要查看我国法律法规对特殊工种的定义及其相关适用，以确认是否包括民营企业员工。<search>特殊工种定义 中国法律</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"确认信息并理解适用范围\",\n      \"content\": \"<information>特殊工种是指从事有害健康或存在特殊安全风险的工作的工种。根据《劳动法》及相关法规，特殊工种适用于所有企业，包括民营企业和国有企业。</information>根据法律规定，特殊工种的界定不区分企业性质，任何企业都需要遵守相关劳动保护规定，包括对特殊工种的认定和保护。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"民营企业有特殊工种。根据《劳动法》和相关法规，特殊工种的适用范围涵盖所有企业，包括民营企业。民营企业从事有特殊风险或危害的工种也会被认定为特殊工种，并受到法律保护和规范。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"结论成立。法律对特殊工种的定义与范围适用没有区分企业类型，民营企业员工同样适用特殊工种的制度。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"民营企业有没有特殊工种呢？这个问题好像不难，但仔细想想，好像得先搞清楚什么是“特殊工种”。嗯，感觉这个词好像和工作环境、劳动安全这些东西有关。要不先查一下我国法律中是怎么定义特殊工种的，应该会有明确的说法吧。<search>特殊工种定义 中国法律</search>\\n\\n找到了，这里写的是：<information>特殊工种是指从事有害健康或存在特殊安全风险的工作的工种。根据《劳动法》及相关法规，特殊工种适用于所有企业，包括民营企业和国有企业。</information>。原来是这样啊，特殊工种主要是看工作内容和风险，并不是看企业性质。也就是说，不管是国企，还是民营企业，只要从事这样的工作，就是特殊工种。\\n\\n不过，等等，法律是不是明确说了适用于所有企业？嗯，刚刚信息里确实提到是适用所有企业，没有把民营企业排除在外。那是不是可以理解为，如果民营企业的某些员工从事有害健康或者有特殊安全风险的工作，那这些岗位同样可以被归为特殊工种呢？看起来是这样的。毕竟《劳动法》对企业性质没有特别的区分，而是统一适用。\\n\\n好吧，整理一下结论，民营企业是有特殊工种的，因为法律不仅仅针对国企，任何类型的企业——只要工作条件符合特殊工种的界定，就适用相关规定。而这当然包括民营企业。如果民营企业里有那些危险性高或者对健康有潜在危害的工种，那这些员工从事的就是特殊工种。\\n\\n嗯，感觉这个逻辑还挺清晰的。确认一下，总之，民营企业是有特殊工种的，理由也是基于法律规定，是没有企业性质限制的。\"\n}\n```",
+    "民营企业有特殊工种。\n\n根据《劳动法》及相关法规的规定，特殊工种是指从事有害健康或存在特殊安全风险的工作的工种，这与企业的性质无关。因此，只要民营企业中的某些岗位具备工作环境有害或存在特殊风险的特点，这些岗位便可以被认定为特殊工种。法律对特殊工种的适用范围涵盖了所有企业类型，包括国有企业、私营企业和外资企业等。因此，民营企业中如果存在符合特殊工种定义的岗位，同样需要依据法律规定给予相关的劳动保护措施和待遇。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "分析问题范围",
+        "content": "问题提问的是民营企业是否有特殊工种，这涉及到对特殊工种的定义和适用范围进行了解。此外，还需考虑是否民营企业员工的特殊工种受法律法规的定义约束。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "确认特殊工种的定义和范围",
+        "content": "特殊工种通常指因工作环境、工作条件等因素对身体健康或安全有潜在危害的工作类别，需要查看我国法律法规对特殊工种的定义及其相关适用，以确认是否包括民营企业员工。<search>特殊工种定义 中国法律</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "确认信息并理解适用范围",
+        "content": "<information>特殊工种是指从事有害健康或存在特殊安全风险的工作的工种。根据《劳动法》及相关法规，特殊工种适用于所有企业，包括民营企业和国有企业。</information>根据法律规定，特殊工种的界定不区分企业性质，任何企业都需要遵守相关劳动保护规定，包括对特殊工种的认定和保护。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "民营企业有特殊工种。根据《劳动法》和相关法规，特殊工种的适用范围涵盖所有企业，包括民营企业。民营企业从事有特殊风险或危害的工种也会被认定为特殊工种，并受到法律保护和规范。"
+      },
+      {
+        "action": "Verification",
+        "content": "结论成立。法律对特殊工种的定义与范围适用没有区分企业类型，民营企业员工同样适用特殊工种的制度。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "民营企业有没有特殊工种呢？这个问题好像不难，但仔细想想，好像得先搞清楚什么是“特殊工种”。嗯，感觉这个词好像和工作环境、劳动安全这些东西有关。要不先查一下我国法律中是怎么定义特殊工种的，应该会有明确的说法吧。<search>特殊工种定义 中国法律</search>\n\n找到了，这里写的是：<information>特殊工种是指从事有害健康或存在特殊安全风险的工作的工种。根据《劳动法》及相关法规，特殊工种适用于所有企业，包括民营企业和国有企业。</information>。原来是这样啊，特殊工种主要是看工作内容和风险，并不是看企业性质。也就是说，不管是国企，还是民营企业，只要从事这样的工作，就是特殊工种。\n\n不过，等等，法律是不是明确说了适用于所有企业？嗯，刚刚信息里确实提到是适用所有企业，没有把民营企业排除在外。那是不是可以理解为，如果民营企业的某些员工从事有害健康或者有特殊安全风险的工作，那这些岗位同样可以被归为特殊工种呢？看起来是这样的。毕竟《劳动法》对企业性质没有特别的区分，而是统一适用。\n\n好吧，整理一下结论，民营企业是有特殊工种的，因为法律不仅仅针对国企，任何类型的企业——只要工作条件符合特殊工种的界定，就适用相关规定。而这当然包括民营企业。如果民营企业里有那些危险性高或者对健康有潜在危害的工种，那这些员工从事的就是特殊工种。\n\n嗯，感觉这个逻辑还挺清晰的。确认一下，总之，民营企业是有特殊工种的，理由也是基于法律规定，是没有企业性质限制的。",
+  "Response": "民营企业有特殊工种。\n\n根据《劳动法》及相关法规的规定，特殊工种是指从事有害健康或存在特殊安全风险的工作的工种，这与企业的性质无关。因此，只要民营企业中的某些岗位具备工作环境有害或存在特殊风险的特点，这些岗位便可以被认定为特殊工种。法律对特殊工种的适用范围涵盖了所有企业类型，包括国有企业、私营企业和外资企业等。因此，民营企业中如果存在符合特殊工种定义的岗位，同样需要依据法律规定给予相关的劳动保护措施和待遇。",
+  "Question": "民营企业有特殊工种吗?"
+}

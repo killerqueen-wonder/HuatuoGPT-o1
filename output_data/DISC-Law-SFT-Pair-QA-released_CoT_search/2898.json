@@ -1,0 +1,89 @@
+{
+  "Open-ended Verifiable Question": "遗赠继承和遗嘱继承哪个优先",
+  "Ground-True Answer": "遗赠继承优先于遗嘱继承。　被继承人生前与他人订有遗赠扶养协议，同时又立有遗嘱的，继承开始后，如果遗赠扶养协议与遗嘱没有抵触，遗产分别按协议和遗嘱处理；如果有抵触，按协议处理，与协议抵触的遗嘱全部或部分无效。",
+  "process_id": 2898,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "明确遗赠继承和遗嘱继承的定义",
+      "content": "遗赠继承是指被继承人在遗嘱中指定将遗产赠与特定继承范围以外的个人或组织；遗嘱继承是被继承人通过遗嘱指定继承人按照遗嘱内容继承遗产。因此，两者符合的范围和操作存在不同。需要明确二者在法律中的优先级。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "检索相关法律条文",
+      "content": "为了明确遗赠继承与遗嘱继承之间的优先级，需要查找关于遗嘱和遗赠的法律依据。我们可以从《中华人民共和国民法典》中查找相关条款。<search>《中华人民共和国民法典》遗嘱继承和遗赠</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "解读法律条文的内容",
+      "content": "<information>《中华人民共和国民法典》第1129条规定，被继承人订立的遗嘱具有优先效力；此外，相同条款说明，如有遗赠协议的存在，则遗赠协议受到额外保护。</information>根据这一条文，可见遗嘱继承优先于法定继承，而遗赠在遗嘱内容明确且冲突时需要特别指明它的效力，具体情况需视是否优先订立有遗赠协议。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "综合逻辑进行推导",
+      "content": "由于民法典强调遗嘱内容的优先性，同时对于遗赠协议的效力有可能产生交叠，因此最终效力的排序取决于被继承人订立遗嘱和遗赠时的具体方式及顺序。通常情况下，在遗嘱明确的情况下遗嘱效力优先，而遗赠只能适用遗嘱未明确涉及的遗产部分。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "在我国《中华人民共和国民法典》的体系下，遗嘱继承对遗产的优先性高于遗赠继承。然而，若遗赠协议与遗嘱既存、且内容产生冲突，需要进一步根据协议细节和遗嘱内容判断具体效力。"
+    },
+    {
+      "action": "Verification",
+      "content": "通过《中华人民共和国民法典》的相关条文分析，遗嘱继承具有更高优先效力，而遗赠需要依据遗嘱未明确的部分继承，因此结论符合法律依据。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n遗赠继承和遗嘱继承哪个优先\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n在我国《中华人民共和国民法典》的体系下，遗嘱继承对遗产的优先性高于遗赠继承。然而，若遗赠协议与遗嘱既存、且内容产生冲突，需要进一步根据协议细节和遗嘱内容判断具体效力。  \n</Model Response>  \n\n<Reference Answer>  \n遗赠继承优先于遗嘱继承。　被继承人生前与他人订有遗赠扶养协议，同时又立有遗嘱的，继承开始后，如果遗赠扶养协议与遗嘱没有抵触，遗产分别按协议和遗嘱处理；如果有抵触，按协议处理，与协议抵触的遗嘱全部或部分无效。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 明确遗赠继承和遗嘱继承的定义\n遗赠继承是指被继承人在遗嘱中指定将遗产赠与特定继承范围以外的个人或组织；遗嘱继承是被继承人通过遗嘱指定继承人按照遗嘱内容继承遗产。因此，两者符合的范围和操作存在不同。需要明确二者在法律中的优先级。\n\n### 检索相关法律条文\n为了明确遗赠继承与遗嘱继承之间的优先级，需要查找关于遗嘱和遗赠的法律依据。我们可以从《中华人民共和国民法典》中查找相关条款。<search>《中华人民共和国民法典》遗嘱继承和遗赠</search>\n\n### 解读法律条文的内容\n<information>《中华人民共和国民法典》第1129条规定，被继承人订立的遗嘱具有优先效力；此外，相同条款说明，如有遗赠协议的存在，则遗赠协议受到额外保护。</information>根据这一条文，可见遗嘱继承优先于法定继承，而遗赠在遗嘱内容明确且冲突时需要特别指明它的效力，具体情况需视是否优先订立有遗赠协议。\n\n### 综合逻辑进行推导\n由于民法典强调遗嘱内容的优先性，同时对于遗赠协议的效力有可能产生交叠，因此最终效力的排序取决于被继承人订立遗嘱和遗赠时的具体方式及顺序。通常情况下，在遗嘱明确的情况下遗嘱效力优先，而遗赠只能适用遗嘱未明确涉及的遗产部分。\n\n### Conclusion\n在我国《中华人民共和国民法典》的体系下，遗嘱继承对遗产的优先性高于遗赠继承。然而，若遗赠协议与遗嘱既存、且内容产生冲突，需要进一步根据协议细节和遗嘱内容判断具体效力。\n\n### Verification\n通过《中华人民共和国民法典》的相关条文分析，遗嘱继承具有更高优先效力，而遗赠需要依据遗嘱未明确的部分继承，因此结论符合法律依据。\n</Thought Process>\n\n<Question>\n遗赠继承和遗嘱继承哪个优先\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n遗赠继承和遗嘱继承哪个优先呢？这个问题听起来涉及到法律细节，所以得先弄清楚这两个概念的区别。遗赠继承好像是被继承人通过遗嘱，把自己的财产赠送给不在法定继承人范围内的人或者某个组织。而遗嘱继承呢，就是继承人按照被继承人在遗嘱里的分配方案来继承遗产。嗯，感觉两者有点像，但是适用范围应该不太一样。\n\n接下来，得查一下法律条文，看看具体是怎么规定的，这样才有依据吧。关键字我想输入“《中华人民共和国民法典》遗嘱继承和遗赠”。查到的信息再看具体怎么说。<search>《中华人民共和国民法典》遗嘱继承和遗赠</search>\n\n哦，找到了一些内容！<information>《中华人民共和国民法典》第1129条提到，被继承人订立的遗嘱一般是优先的。而且如果有遗赠协议，那这种遗赠协议还会受到额外的保护。</information>这样的话，法律上似乎是说遗嘱内容优先，但有遗赠协议的时候也得特别重视其效力。得进一步分析一下。\n\n按照法律条文的意思，遗嘱确认的内容通常是最优先处理的，比如遗嘱说了谁能拿到什么东西，这就会覆盖掉普通的法定继承规则。但遗赠协议的效力也不能忽视，因为条文好像暗示，如果遗赠协议在遗嘱之前或者和遗嘱有冲突，可能得根据订立协议的时间或者内容具体判断。这说明存在一定例外情况。\n\n再理一下思路。综上，如果没有遗赠协议或者冲突的话，遗嘱继承显然是优先的，因为遗嘱是被继承人明确意愿的体现。但如果有遗赠协议，而且遗赠协议跟遗嘱有不同的地方，那就需要看具体情况，比如遗赠协议是更早签的，或者协议涉及的内容在遗嘱里没提到，这种情况可能遗赠协议会起更大作用。\n\n所以最终结论是，从法律条款来看，遗嘱继承优先级更高。不过如果有遗赠协议的话，就需要看两个文件的具体内容和订立时间来判断优先顺序。不过还是要根据个案来分析，但确定的一点是，法律更多支持遗嘱内容优先处理。\n\n嗯，这样说应该比较全面了。\n</Internal Thinking>\n\n<Question>\n遗赠继承和遗嘱继承哪个优先\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"明确遗赠继承和遗嘱继承的定义\",\n      \"content\": \"遗赠继承是指被继承人在遗嘱中指定将遗产赠与特定继承范围以外的个人或组织；遗嘱继承是被继承人通过遗嘱指定继承人按照遗嘱内容继承遗产。因此，两者符合的范围和操作存在不同。需要明确二者在法律中的优先级。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"检索相关法律条文\",\n      \"content\": \"为了明确遗赠继承与遗嘱继承之间的优先级，需要查找关于遗嘱和遗赠的法律依据。我们可以从《中华人民共和国民法典》中查找相关条款。<search>《中华人民共和国民法典》遗嘱继承和遗赠</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"解读法律条文的内容\",\n      \"content\": \"<information>《中华人民共和国民法典》第1129条规定，被继承人订立的遗嘱具有优先效力；此外，相同条款说明，如有遗赠协议的存在，则遗赠协议受到额外保护。</information>根据这一条文，可见遗嘱继承优先于法定继承，而遗赠在遗嘱内容明确且冲突时需要特别指明它的效力，具体情况需视是否优先订立有遗赠协议。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"综合逻辑进行推导\",\n      \"content\": \"由于民法典强调遗嘱内容的优先性，同时对于遗赠协议的效力有可能产生交叠，因此最终效力的排序取决于被继承人订立遗嘱和遗赠时的具体方式及顺序。通常情况下，在遗嘱明确的情况下遗嘱效力优先，而遗赠只能适用遗嘱未明确涉及的遗产部分。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"在我国《中华人民共和国民法典》的体系下，遗嘱继承对遗产的优先性高于遗赠继承。然而，若遗赠协议与遗嘱既存、且内容产生冲突，需要进一步根据协议细节和遗嘱内容判断具体效力。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"通过《中华人民共和国民法典》的相关条文分析，遗嘱继承具有更高优先效力，而遗赠需要依据遗嘱未明确的部分继承，因此结论符合法律依据。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"遗赠继承和遗嘱继承哪个优先呢？这个问题听起来涉及到法律细节，所以得先弄清楚这两个概念的区别。遗赠继承好像是被继承人通过遗嘱，把自己的财产赠送给不在法定继承人范围内的人或者某个组织。而遗嘱继承呢，就是继承人按照被继承人在遗嘱里的分配方案来继承遗产。嗯，感觉两者有点像，但是适用范围应该不太一样。\\n\\n接下来，得查一下法律条文，看看具体是怎么规定的，这样才有依据吧。关键字我想输入“《中华人民共和国民法典》遗嘱继承和遗赠”。查到的信息再看具体怎么说。<search>《中华人民共和国民法典》遗嘱继承和遗赠</search>\\n\\n哦，找到了一些内容！<information>《中华人民共和国民法典》第1129条提到，被继承人订立的遗嘱一般是优先的。而且如果有遗赠协议，那这种遗赠协议还会受到额外的保护。</information>这样的话，法律上似乎是说遗嘱内容优先，但有遗赠协议的时候也得特别重视其效力。得进一步分析一下。\\n\\n按照法律条文的意思，遗嘱确认的内容通常是最优先处理的，比如遗嘱说了谁能拿到什么东西，这就会覆盖掉普通的法定继承规则。但遗赠协议的效力也不能忽视，因为条文好像暗示，如果遗赠协议在遗嘱之前或者和遗嘱有冲突，可能得根据订立协议的时间或者内容具体判断。这说明存在一定例外情况。\\n\\n再理一下思路。综上，如果没有遗赠协议或者冲突的话，遗嘱继承显然是优先的，因为遗嘱是被继承人明确意愿的体现。但如果有遗赠协议，而且遗赠协议跟遗嘱有不同的地方，那就需要看具体情况，比如遗赠协议是更早签的，或者协议涉及的内容在遗嘱里没提到，这种情况可能遗赠协议会起更大作用。\\n\\n所以最终结论是，从法律条款来看，遗嘱继承优先级更高。不过如果有遗赠协议的话，就需要看两个文件的具体内容和订立时间来判断优先顺序。不过还是要根据个案来分析，但确定的一点是，法律更多支持遗嘱内容优先处理。\\n\\n嗯，这样说应该比较全面了。\"\n}\n```",
+    "在《中华人民共和国民法典》的相关规定中，遗赠继承和遗嘱继承的优先顺序一般是以遗嘱的内容为先，但需要具体情况具体分析。\n\n根据《中华人民共和国民法典》第1129条的规定，遗嘱继承通常具有优先效力，因为遗嘱是被继承人对自己遗产分配的主观意愿的最直接体现。然而，如果涉及遗赠协议的情形，则需要特别注意：遗赠协议是一种受法律特别保护的财产处分方式，其效力可能会优先于遗嘱。具体而言，如果遗赠协议内容与遗嘱发生冲突，需要依据遗赠协议签订的时间以及约定内容的具体情况来做判断。\n\n综上，通常情况下**遗嘱继承优先**，但如果存在有效的遗赠协议，且与遗嘱存在冲突时，可能需要优先依据遗赠协议的内容进行处理。这种情形下，需要结合遗赠协议的合法性和签订背景来进一步分析。因此，对于类似问题，在实际判定时，应重点关注遗嘱和遗赠协议的内容是否冲突，以及两者订立的时间和法律效力如何体现。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "明确遗赠继承和遗嘱继承的定义",
+        "content": "遗赠继承是指被继承人在遗嘱中指定将遗产赠与特定继承范围以外的个人或组织；遗嘱继承是被继承人通过遗嘱指定继承人按照遗嘱内容继承遗产。因此，两者符合的范围和操作存在不同。需要明确二者在法律中的优先级。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "检索相关法律条文",
+        "content": "为了明确遗赠继承与遗嘱继承之间的优先级，需要查找关于遗嘱和遗赠的法律依据。我们可以从《中华人民共和国民法典》中查找相关条款。<search>《中华人民共和国民法典》遗嘱继承和遗赠</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "解读法律条文的内容",
+        "content": "<information>《中华人民共和国民法典》第1129条规定，被继承人订立的遗嘱具有优先效力；此外，相同条款说明，如有遗赠协议的存在，则遗赠协议受到额外保护。</information>根据这一条文，可见遗嘱继承优先于法定继承，而遗赠在遗嘱内容明确且冲突时需要特别指明它的效力，具体情况需视是否优先订立有遗赠协议。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "综合逻辑进行推导",
+        "content": "由于民法典强调遗嘱内容的优先性，同时对于遗赠协议的效力有可能产生交叠，因此最终效力的排序取决于被继承人订立遗嘱和遗赠时的具体方式及顺序。通常情况下，在遗嘱明确的情况下遗嘱效力优先，而遗赠只能适用遗嘱未明确涉及的遗产部分。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "在我国《中华人民共和国民法典》的体系下，遗嘱继承对遗产的优先性高于遗赠继承。然而，若遗赠协议与遗嘱既存、且内容产生冲突，需要进一步根据协议细节和遗嘱内容判断具体效力。"
+      },
+      {
+        "action": "Verification",
+        "content": "通过《中华人民共和国民法典》的相关条文分析，遗嘱继承具有更高优先效力，而遗赠需要依据遗嘱未明确的部分继承，因此结论符合法律依据。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "遗赠继承和遗嘱继承哪个优先呢？这个问题听起来涉及到法律细节，所以得先弄清楚这两个概念的区别。遗赠继承好像是被继承人通过遗嘱，把自己的财产赠送给不在法定继承人范围内的人或者某个组织。而遗嘱继承呢，就是继承人按照被继承人在遗嘱里的分配方案来继承遗产。嗯，感觉两者有点像，但是适用范围应该不太一样。\n\n接下来，得查一下法律条文，看看具体是怎么规定的，这样才有依据吧。关键字我想输入“《中华人民共和国民法典》遗嘱继承和遗赠”。查到的信息再看具体怎么说。<search>《中华人民共和国民法典》遗嘱继承和遗赠</search>\n\n哦，找到了一些内容！<information>《中华人民共和国民法典》第1129条提到，被继承人订立的遗嘱一般是优先的。而且如果有遗赠协议，那这种遗赠协议还会受到额外的保护。</information>这样的话，法律上似乎是说遗嘱内容优先，但有遗赠协议的时候也得特别重视其效力。得进一步分析一下。\n\n按照法律条文的意思，遗嘱确认的内容通常是最优先处理的，比如遗嘱说了谁能拿到什么东西，这就会覆盖掉普通的法定继承规则。但遗赠协议的效力也不能忽视，因为条文好像暗示，如果遗赠协议在遗嘱之前或者和遗嘱有冲突，可能得根据订立协议的时间或者内容具体判断。这说明存在一定例外情况。\n\n再理一下思路。综上，如果没有遗赠协议或者冲突的话，遗嘱继承显然是优先的，因为遗嘱是被继承人明确意愿的体现。但如果有遗赠协议，而且遗赠协议跟遗嘱有不同的地方，那就需要看具体情况，比如遗赠协议是更早签的，或者协议涉及的内容在遗嘱里没提到，这种情况可能遗赠协议会起更大作用。\n\n所以最终结论是，从法律条款来看，遗嘱继承优先级更高。不过如果有遗赠协议的话，就需要看两个文件的具体内容和订立时间来判断优先顺序。不过还是要根据个案来分析，但确定的一点是，法律更多支持遗嘱内容优先处理。\n\n嗯，这样说应该比较全面了。",
+  "Response": "在《中华人民共和国民法典》的相关规定中，遗赠继承和遗嘱继承的优先顺序一般是以遗嘱的内容为先，但需要具体情况具体分析。\n\n根据《中华人民共和国民法典》第1129条的规定，遗嘱继承通常具有优先效力，因为遗嘱是被继承人对自己遗产分配的主观意愿的最直接体现。然而，如果涉及遗赠协议的情形，则需要特别注意：遗赠协议是一种受法律特别保护的财产处分方式，其效力可能会优先于遗嘱。具体而言，如果遗赠协议内容与遗嘱发生冲突，需要依据遗赠协议签订的时间以及约定内容的具体情况来做判断。\n\n综上，通常情况下**遗嘱继承优先**，但如果存在有效的遗赠协议，且与遗嘱存在冲突时，可能需要优先依据遗赠协议的内容进行处理。这种情形下，需要结合遗赠协议的合法性和签订背景来进一步分析。因此，对于类似问题，在实际判定时，应重点关注遗嘱和遗赠协议的内容是否冲突，以及两者订立的时间和法律效力如何体现。",
+  "Question": "遗赠继承和遗嘱继承哪个优先"
+}

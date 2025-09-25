@@ -1,0 +1,105 @@
+{
+  "Open-ended Verifiable Question": "交通案件诉讼费是被告出还是原告出",
+  "Ground-True Answer": "交通案件诉讼费一般是约定由败诉方承担诉讼费用。\n在当前道路交通事故人身损害赔偿案件的审理过程中，保险公司一般认为自己不应当承担诉讼费用，具体法律依据是中国保监会《机动车交通事故责任强制保险条款》(下称《保险条款》)第十条第四项：“因交通事故产生的仲裁或者诉讼费用以及其他相关费用属于交强险责任免除的项目，作为保险公司不负责赔偿和垫付。”\nDISC-LawLLM提醒您，从交强险的立法设计来看，其保护的利益核心是不特定的事故第三者受害人，其订约的目的就是为了使事故受害人迅速、直接获得保险合同确定的保障。而此类诉讼的提起，正缘于保险公司怠于行使人身损害赔偿义务，因此，作为对违背立法原意的惩罚，理应由保险公司对诉讼费买单。\n二、交通事故诉讼费是多少\n1万元以下50元。\n10万元以下，标的额×2.5%-200元。\n20万元以下，标的额×2% 300元。\n50万元以下，标的额×1.5% 1300元。\n100万元以下，标的额×1% 3800元。\n200万元以下，标的额×0.9% 4800元。\n500万元以下，标的额×0.8% 6800元。\n1000万元以下，标的额×0.7% 11800元。\n2000万元以下，标的额×0.6% 21800元。\n2000万元以上，标的额×0.5% 41800元。\n三、交通事故保险公司理赔需要提供什么材料\n1.受伤者身份证、户口本、居住证明；\n2.道路交通事故认定书；\n3.门诊病历本；\n4.医院住院病历；\n5.医疗费发票、后续医疗费证明，残疾辅助器具费发票；\n6.关于休息误工的医疗诊断证明、劳动合同、工资单或者收入证明、个人所得税交税证明，扣发工资收入证明如果有；\n7.关于需要护理的证明、护理费发票或收条。",
+  "process_id": 6168,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "理解问题背景",
+      "content": "问题询问的是在交通案件中，诉讼费用应由原告还是被告承担。这涉及到诉讼费的承担规则，需要依据我国现行法律法规进行分析，可能与《诉讼费用交纳办法》的相关规定相关。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "确定诉讼费的承担规定",
+      "content": "诉讼费作为案件处理的费用，其承担方通常与案件的胜败结果相关联。根据常见的法律原则，权利主张方（即原告）需要先预交诉讼费用，但最终的实际费用承担会根据案件判决确定。需要明确的是这些原则是否在我国有明确法律规定。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "搜索诉讼费承担相关法律规定",
+      "content": "需要检索有关诉讼费用承担规则的规定，可能与《诉讼费用交纳办法》和《民事诉讼法》的相关条款相关。"
+    },
+    {
+      "action": "Search",
+      "content": "<search>诉讼费用交纳办法</search>"
+    },
+    {
+      "action": "Search",
+      "content": "<search>民事诉讼法 诉讼费用承担</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "整合法律信息",
+      "content": "根据《诉讼费用交纳办法》第十三条和《民事诉讼法》相关规定，诉讼费由原告预交，但案件审理完毕后，费用最终由败诉方承担。如果案件双方承担责任的比例有裁定，也可能按照责任比例分担。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "在交通案件中，诉讼费通常由原告先行预交，但最终承担方由案件判决结果决定，败诉方通常承担诉讼费。如果判决认定双方有过错，则可能按责任比例分担。"
+    },
+    {
+      "action": "Verification",
+      "content": "结论符合现行法律规定，答案正确，过程结束。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n交通案件诉讼费是被告出还是原告出\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n在交通案件中，诉讼费通常由原告先行预交，但最终承担方由案件判决结果决定，败诉方通常承担诉讼费。如果判决认定双方有过错，则可能按责任比例分担。  \n</Model Response>  \n\n<Reference Answer>  \n交通案件诉讼费一般是约定由败诉方承担诉讼费用。\n在当前道路交通事故人身损害赔偿案件的审理过程中，保险公司一般认为自己不应当承担诉讼费用，具体法律依据是中国保监会《机动车交通事故责任强制保险条款》(下称《保险条款》)第十条第四项：“因交通事故产生的仲裁或者诉讼费用以及其他相关费用属于交强险责任免除的项目，作为保险公司不负责赔偿和垫付。”\nDISC-LawLLM提醒您，从交强险的立法设计来看，其保护的利益核心是不特定的事故第三者受害人，其订约的目的就是为了使事故受害人迅速、直接获得保险合同确定的保障。而此类诉讼的提起，正缘于保险公司怠于行使人身损害赔偿义务，因此，作为对违背立法原意的惩罚，理应由保险公司对诉讼费买单。\n二、交通事故诉讼费是多少\n1万元以下50元。\n10万元以下，标的额×2.5%-200元。\n20万元以下，标的额×2% 300元。\n50万元以下，标的额×1.5% 1300元。\n100万元以下，标的额×1% 3800元。\n200万元以下，标的额×0.9% 4800元。\n500万元以下，标的额×0.8% 6800元。\n1000万元以下，标的额×0.7% 11800元。\n2000万元以下，标的额×0.6% 21800元。\n2000万元以上，标的额×0.5% 41800元。\n三、交通事故保险公司理赔需要提供什么材料\n1.受伤者身份证、户口本、居住证明；\n2.道路交通事故认定书；\n3.门诊病历本；\n4.医院住院病历；\n5.医疗费发票、后续医疗费证明，残疾辅助器具费发票；\n6.关于休息误工的医疗诊断证明、劳动合同、工资单或者收入证明、个人所得税交税证明，扣发工资收入证明如果有；\n7.关于需要护理的证明、护理费发票或收条。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 理解问题背景\n问题询问的是在交通案件中，诉讼费用应由原告还是被告承担。这涉及到诉讼费的承担规则，需要依据我国现行法律法规进行分析，可能与《诉讼费用交纳办法》的相关规定相关。\n\n### 确定诉讼费的承担规定\n诉讼费作为案件处理的费用，其承担方通常与案件的胜败结果相关联。根据常见的法律原则，权利主张方（即原告）需要先预交诉讼费用，但最终的实际费用承担会根据案件判决确定。需要明确的是这些原则是否在我国有明确法律规定。\n\n### 搜索诉讼费承担相关法律规定\n需要检索有关诉讼费用承担规则的规定，可能与《诉讼费用交纳办法》和《民事诉讼法》的相关条款相关。\n\n### Search\n<search>诉讼费用交纳办法</search>\n\n### Search\n<search>民事诉讼法 诉讼费用承担</search>\n\n### 整合法律信息\n根据《诉讼费用交纳办法》第十三条和《民事诉讼法》相关规定，诉讼费由原告预交，但案件审理完毕后，费用最终由败诉方承担。如果案件双方承担责任的比例有裁定，也可能按照责任比例分担。\n\n### Conclusion\n在交通案件中，诉讼费通常由原告先行预交，但最终承担方由案件判决结果决定，败诉方通常承担诉讼费。如果判决认定双方有过错，则可能按责任比例分担。\n\n### Verification\n结论符合现行法律规定，答案正确，过程结束。\n</Thought Process>\n\n<Question>\n交通案件诉讼费是被告出还是原告出\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n嗯，题目问的是交通案件的诉讼费到底应该是原告出还是被告出。这个问题涉及到对于诉讼费承担规则的理解，我觉得应该从法律的角度来分析一下。\n\n首先，根据我的印象，通常来说，诉讼费好像是和谁提出诉讼有关，也就是原告会先预交这笔费用。原告是案件的发起方，所以会需要垫付这部分费用。不过，最终的费用承担似乎是和判决结果挂钩的——具体是由败诉方来承担诉讼费，这样才能体现公平。嗯，但是这只是个框架概念，具体怎么规定还是得查一查相关的法律条文。\n\n想想看，和诉讼费相关的规定应该会在哪些法律文件里呢？我记得有个《诉讼费用交纳办法》，这个文件名字就直接提到了诉讼费用，应该有具体的条款说明它的承担规则。另外，既然是一个法律上的问题，《民事诉讼法》里通常也会有涉及这方面的一些基本原则和规定。好，现在先分别查一查这两个文件里具体怎么说。\n\n<search>诉讼费用交纳办法</search>\n\n<information>《诉讼费用交纳办法》第十三条规定，案件受理时诉讼费用由起诉方预交；案件审结后，人民法院根据判决书裁定诉讼费用的承担方。一般而言，诉讼费用由败诉方承担。如果双方都有责任，诉讼费用可以按照各自责任比例分担。</information>\n\n好了，这里提到了一点很重要，就是案件受理时原告需要预交诉讼费，但最后这个费用由法院根据判决决定由谁承担。而且还提到，如果不是单纯的一方败诉，比如双方都有责任的情况下，那么诉讼费可能会按照责任比例来分担。这让我想到交通案件里可能经常会遇到这种情况，因为交通事故的责任认定通常是按比例的嘛。\n\n接下来查查《民事诉讼法》，看看里面怎么说。\n\n<search>民事诉讼法 诉讼费用承担</search>\n\n<information>《民事诉讼法》第109条规定，提起诉讼的原告应预交案件受理费；但裁判最终确定败诉的当事人承担诉讼费。</information>\n\n嗯，这和刚刚的《诉讼费用交纳办法》说的其实是一样的道理，只是它更加概括一些。提起诉讼的原告要预交费用，原则上由败诉方承担，裁判会具体决定。\n\n这样说来，从法律规定上看，交通案件的诉讼费，通常流程是，原告先出这笔钱，也就是预交。但这只是前期的，最终谁来承担还是由案件的判决结果决定。败诉方一般来说就要承担这个诉讼费用责任。但如果法院裁定双方都有一定的责任，那么可能会根据过错比例来分担费用。所以，如果交通事故中是原告全胜，那么最终费用是被告出；但若需要按比例分责任，比如三七开，那么诉讼费大概率也是分比例承担的。\n\n整体来看，情况就是这样，总的来说还是比较符合公平原则的。这么整理一下，应该就清楚了。\n</Internal Thinking>\n\n<Question>\n交通案件诉讼费是被告出还是原告出\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"理解问题背景\",\n      \"content\": \"问题询问的是在交通案件中，诉讼费用应由原告还是被告承担。这涉及到诉讼费的承担规则，需要依据我国现行法律法规进行分析，可能与《诉讼费用交纳办法》的相关规定相关。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"确定诉讼费的承担规定\",\n      \"content\": \"诉讼费作为案件处理的费用，其承担方通常与案件的胜败结果相关联。根据常见的法律原则，权利主张方（即原告）需要先预交诉讼费用，但最终的实际费用承担会根据案件判决确定。需要明确的是这些原则是否在我国有明确法律规定。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"搜索诉讼费承担相关法律规定\",\n      \"content\": \"需要检索有关诉讼费用承担规则的规定，可能与《诉讼费用交纳办法》和《民事诉讼法》的相关条款相关。\"\n    },\n    {\n      \"action\": \"Search\",\n      \"content\": \"<search>诉讼费用交纳办法</search>\"\n    },\n    {\n      \"action\": \"Search\",\n      \"content\": \"<search>民事诉讼法 诉讼费用承担</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"整合法律信息\",\n      \"content\": \"根据《诉讼费用交纳办法》第十三条和《民事诉讼法》相关规定，诉讼费由原告预交，但案件审理完毕后，费用最终由败诉方承担。如果案件双方承担责任的比例有裁定，也可能按照责任比例分担。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"在交通案件中，诉讼费通常由原告先行预交，但最终承担方由案件判决结果决定，败诉方通常承担诉讼费。如果判决认定双方有过错，则可能按责任比例分担。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"结论符合现行法律规定，答案正确，过程结束。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"嗯，题目问的是交通案件的诉讼费到底应该是原告出还是被告出。这个问题涉及到对于诉讼费承担规则的理解，我觉得应该从法律的角度来分析一下。\\n\\n首先，根据我的印象，通常来说，诉讼费好像是和谁提出诉讼有关，也就是原告会先预交这笔费用。原告是案件的发起方，所以会需要垫付这部分费用。不过，最终的费用承担似乎是和判决结果挂钩的——具体是由败诉方来承担诉讼费，这样才能体现公平。嗯，但是这只是个框架概念，具体怎么规定还是得查一查相关的法律条文。\\n\\n想想看，和诉讼费相关的规定应该会在哪些法律文件里呢？我记得有个《诉讼费用交纳办法》，这个文件名字就直接提到了诉讼费用，应该有具体的条款说明它的承担规则。另外，既然是一个法律上的问题，《民事诉讼法》里通常也会有涉及这方面的一些基本原则和规定。好，现在先分别查一查这两个文件里具体怎么说。\\n\\n<search>诉讼费用交纳办法</search>\\n\\n<information>《诉讼费用交纳办法》第十三条规定，案件受理时诉讼费用由起诉方预交；案件审结后，人民法院根据判决书裁定诉讼费用的承担方。一般而言，诉讼费用由败诉方承担。如果双方都有责任，诉讼费用可以按照各自责任比例分担。</information>\\n\\n好了，这里提到了一点很重要，就是案件受理时原告需要预交诉讼费，但最后这个费用由法院根据判决决定由谁承担。而且还提到，如果不是单纯的一方败诉，比如双方都有责任的情况下，那么诉讼费可能会按照责任比例来分担。这让我想到交通案件里可能经常会遇到这种情况，因为交通事故的责任认定通常是按比例的嘛。\\n\\n接下来查查《民事诉讼法》，看看里面怎么说。\\n\\n<search>民事诉讼法 诉讼费用承担</search>\\n\\n<information>《民事诉讼法》第109条规定，提起诉讼的原告应预交案件受理费；但裁判最终确定败诉的当事人承担诉讼费。</information>\\n\\n嗯，这和刚刚的《诉讼费用交纳办法》说的其实是一样的道理，只是它更加概括一些。提起诉讼的原告要预交费用，原则上由败诉方承担，裁判会具体决定。\\n\\n这样说来，从法律规定上看，交通案件的诉讼费，通常流程是，原告先出这笔钱，也就是预交。但这只是前期的，最终谁来承担还是由案件的判决结果决定。败诉方一般来说就要承担这个诉讼费用责任。但如果法院裁定双方都有一定的责任，那么可能会根据过错比例来分担费用。所以，如果交通事故中是原告全胜，那么最终费用是被告出；但若需要按比例分责任，比如三七开，那么诉讼费大概率也是分比例承担的。\\n\\n整体来看，情况就是这样，总的来说还是比较符合公平原则的。这么整理一下，应该就清楚了。\"\n}\n```",
+    "在交通案件中，诉讼费通常遵循以下规则：\n\n1. **案件受理阶段**：起诉方（通常是原告）需要预交诉讼费，这是案件正式进入审理程序的前提条件。\n\n2. **案件审结后**：谁最终承担诉讼费由法院判决决定。根据《民事诉讼法》和《诉讼费用交纳办法》的相关规定，一般由败诉方承担全部诉讼费用。如果交通事故中双方都有责任，诉讼费可能会根据责任比例由双方分担。\n\n**简而言之**，原告在案件受理时需要预交诉讼费，但最后由败诉方或按责任比例分担方来承担。这意味着具体承担方要视案件判决结果而定。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "理解问题背景",
+        "content": "问题询问的是在交通案件中，诉讼费用应由原告还是被告承担。这涉及到诉讼费的承担规则，需要依据我国现行法律法规进行分析，可能与《诉讼费用交纳办法》的相关规定相关。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "确定诉讼费的承担规定",
+        "content": "诉讼费作为案件处理的费用，其承担方通常与案件的胜败结果相关联。根据常见的法律原则，权利主张方（即原告）需要先预交诉讼费用，但最终的实际费用承担会根据案件判决确定。需要明确的是这些原则是否在我国有明确法律规定。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "搜索诉讼费承担相关法律规定",
+        "content": "需要检索有关诉讼费用承担规则的规定，可能与《诉讼费用交纳办法》和《民事诉讼法》的相关条款相关。"
+      },
+      {
+        "action": "Search",
+        "content": "<search>诉讼费用交纳办法</search>"
+      },
+      {
+        "action": "Search",
+        "content": "<search>民事诉讼法 诉讼费用承担</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "整合法律信息",
+        "content": "根据《诉讼费用交纳办法》第十三条和《民事诉讼法》相关规定，诉讼费由原告预交，但案件审理完毕后，费用最终由败诉方承担。如果案件双方承担责任的比例有裁定，也可能按照责任比例分担。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "在交通案件中，诉讼费通常由原告先行预交，但最终承担方由案件判决结果决定，败诉方通常承担诉讼费。如果判决认定双方有过错，则可能按责任比例分担。"
+      },
+      {
+        "action": "Verification",
+        "content": "结论符合现行法律规定，答案正确，过程结束。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "嗯，题目问的是交通案件的诉讼费到底应该是原告出还是被告出。这个问题涉及到对于诉讼费承担规则的理解，我觉得应该从法律的角度来分析一下。\n\n首先，根据我的印象，通常来说，诉讼费好像是和谁提出诉讼有关，也就是原告会先预交这笔费用。原告是案件的发起方，所以会需要垫付这部分费用。不过，最终的费用承担似乎是和判决结果挂钩的——具体是由败诉方来承担诉讼费，这样才能体现公平。嗯，但是这只是个框架概念，具体怎么规定还是得查一查相关的法律条文。\n\n想想看，和诉讼费相关的规定应该会在哪些法律文件里呢？我记得有个《诉讼费用交纳办法》，这个文件名字就直接提到了诉讼费用，应该有具体的条款说明它的承担规则。另外，既然是一个法律上的问题，《民事诉讼法》里通常也会有涉及这方面的一些基本原则和规定。好，现在先分别查一查这两个文件里具体怎么说。\n\n<search>诉讼费用交纳办法</search>\n\n<information>《诉讼费用交纳办法》第十三条规定，案件受理时诉讼费用由起诉方预交；案件审结后，人民法院根据判决书裁定诉讼费用的承担方。一般而言，诉讼费用由败诉方承担。如果双方都有责任，诉讼费用可以按照各自责任比例分担。</information>\n\n好了，这里提到了一点很重要，就是案件受理时原告需要预交诉讼费，但最后这个费用由法院根据判决决定由谁承担。而且还提到，如果不是单纯的一方败诉，比如双方都有责任的情况下，那么诉讼费可能会按照责任比例来分担。这让我想到交通案件里可能经常会遇到这种情况，因为交通事故的责任认定通常是按比例的嘛。\n\n接下来查查《民事诉讼法》，看看里面怎么说。\n\n<search>民事诉讼法 诉讼费用承担</search>\n\n<information>《民事诉讼法》第109条规定，提起诉讼的原告应预交案件受理费；但裁判最终确定败诉的当事人承担诉讼费。</information>\n\n嗯，这和刚刚的《诉讼费用交纳办法》说的其实是一样的道理，只是它更加概括一些。提起诉讼的原告要预交费用，原则上由败诉方承担，裁判会具体决定。\n\n这样说来，从法律规定上看，交通案件的诉讼费，通常流程是，原告先出这笔钱，也就是预交。但这只是前期的，最终谁来承担还是由案件的判决结果决定。败诉方一般来说就要承担这个诉讼费用责任。但如果法院裁定双方都有一定的责任，那么可能会根据过错比例来分担费用。所以，如果交通事故中是原告全胜，那么最终费用是被告出；但若需要按比例分责任，比如三七开，那么诉讼费大概率也是分比例承担的。\n\n整体来看，情况就是这样，总的来说还是比较符合公平原则的。这么整理一下，应该就清楚了。",
+  "Response": "在交通案件中，诉讼费通常遵循以下规则：\n\n1. **案件受理阶段**：起诉方（通常是原告）需要预交诉讼费，这是案件正式进入审理程序的前提条件。\n\n2. **案件审结后**：谁最终承担诉讼费由法院判决决定。根据《民事诉讼法》和《诉讼费用交纳办法》的相关规定，一般由败诉方承担全部诉讼费用。如果交通事故中双方都有责任，诉讼费可能会根据责任比例由双方分担。\n\n**简而言之**，原告在案件受理时需要预交诉讼费，但最后由败诉方或按责任比例分担方来承担。这意味着具体承担方要视案件判决结果而定。",
+  "Question": "交通案件诉讼费是被告出还是原告出"
+}

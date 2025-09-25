@@ -1,0 +1,119 @@
+{
+  "Open-ended Verifiable Question": "公司无故调岗降薪是否合法？",
+  "Ground-True Answer": "公司无故调岗降薪不合法的，如果用人单位要变更劳动合同，必须与劳动者协商达成一致，其私自对劳动合同的变更不对劳动者产生法律效力。劳动者可以不遵守。\n《中华人民共和国劳动合同法》第三十三条\n用人单位变更名称、法定代表人、主要负责人或者投资人等事项，不影响劳动合同的履行。\n《中华人民共和国劳动合同法》第三十四条\n用人单位发生合并或者分立等情况，原劳动合同继续有效，劳动合同由承继其权利和义务的用人单位继续履行。\n《中华人民共和国劳动合同法》第三十五条\n用人单位与劳动者协商一致，可以变更劳动合同约定的内容。变更劳动合同，应当采用书面形式。\n变更后的劳动合同文本由用人单位和劳动者各执一份。",
+  "process_id": 3686,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "明确法律问题",
+      "content": "需要判断公司无故调岗降薪是否合法，涉及相关法律规定，包括劳动合同法中关于劳动关系和工资调整的条款。重点在于是否符合法律规定的调岗条件、程序，以及是否侵犯了员工的合法权益。需要查询相关法律条文以明确要求。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "查询调岗和降薪的法律依据",
+      "content": "调岗需要满足特定条件，如合同约定、用人单位的正当经营需要等；降薪则涉及劳动报酬的调整条款。需查询《劳动合同法》中相关内容，例如调岗、工资调整的合法性标准。进行检索。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "关键法规查找",
+      "content": "查找《中华人民共和国劳动合同法》中与调岗降薪相关的条款，以确认企业行为是否符合法律。需要搜索以下条款：'劳动合同约定岗位调整'和'劳动报酬调整'。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "检索相关劳动法条款",
+      "content": "<search>劳动合同法 调岗 降薪</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "分析检索结果",
+      "content": "<information>《中华人民共和国劳动合同法》相关条款包括：第35条（关于调岗需协商一致的规定）、第40条（单方调整合同的条件）、第17条（劳动合同约定的工资条款）。调岗需要正当理由且不能违背合同约定，调整工资亦需符合法定程序，否则可能构成违法。</information>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "结合法律分析企业行为",
+      "content": "根据法律，调岗和降薪一般需要满足以下条件：1. 与员工协商一致，或符合劳动合同中的明文规定；2. 企业具有合理理由，例如调整因工作需要产生；3. 不得违反最低工资标准，不得带有歧视或惩罚性质。如果企业未证明上述合理性，调岗降薪可能属于违法行为。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "判断其合法性",
+      "content": "如果公司调岗和降薪的行为未经员工同意，且未提供经营需要等正当理由，或违反了劳动合同的明确约定，则可以初步认为其行为不符合《劳动合同法》的规定。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "公司无故调岗降薪，一般情况下是违法的。根据《中华人民共和国劳动合同法》第35条和相关条款，未经劳动者同意或没有充分正当的经营需要，公司不得单方面调整岗位或降低工资。如果劳动者认为权益被侵犯，可以通过劳动仲裁或其他法律途径维护权益。"
+    },
+    {
+      "action": "Verification",
+      "content": "结论确认无误，依据法律条文提供的条件，未经协商一致或正当理由的调岗降薪确实涉嫌违法，劳动者有权追究企业责任。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n公司无故调岗降薪是否合法？\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n公司无故调岗降薪，一般情况下是违法的。根据《中华人民共和国劳动合同法》第35条和相关条款，未经劳动者同意或没有充分正当的经营需要，公司不得单方面调整岗位或降低工资。如果劳动者认为权益被侵犯，可以通过劳动仲裁或其他法律途径维护权益。  \n</Model Response>  \n\n<Reference Answer>  \n公司无故调岗降薪不合法的，如果用人单位要变更劳动合同，必须与劳动者协商达成一致，其私自对劳动合同的变更不对劳动者产生法律效力。劳动者可以不遵守。\n《中华人民共和国劳动合同法》第三十三条\n用人单位变更名称、法定代表人、主要负责人或者投资人等事项，不影响劳动合同的履行。\n《中华人民共和国劳动合同法》第三十四条\n用人单位发生合并或者分立等情况，原劳动合同继续有效，劳动合同由承继其权利和义务的用人单位继续履行。\n《中华人民共和国劳动合同法》第三十五条\n用人单位与劳动者协商一致，可以变更劳动合同约定的内容。变更劳动合同，应当采用书面形式。\n变更后的劳动合同文本由用人单位和劳动者各执一份。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 明确法律问题\n需要判断公司无故调岗降薪是否合法，涉及相关法律规定，包括劳动合同法中关于劳动关系和工资调整的条款。重点在于是否符合法律规定的调岗条件、程序，以及是否侵犯了员工的合法权益。需要查询相关法律条文以明确要求。\n\n### 查询调岗和降薪的法律依据\n调岗需要满足特定条件，如合同约定、用人单位的正当经营需要等；降薪则涉及劳动报酬的调整条款。需查询《劳动合同法》中相关内容，例如调岗、工资调整的合法性标准。进行检索。\n\n### 关键法规查找\n查找《中华人民共和国劳动合同法》中与调岗降薪相关的条款，以确认企业行为是否符合法律。需要搜索以下条款：'劳动合同约定岗位调整'和'劳动报酬调整'。\n\n### 检索相关劳动法条款\n<search>劳动合同法 调岗 降薪</search>\n\n### 分析检索结果\n<information>《中华人民共和国劳动合同法》相关条款包括：第35条（关于调岗需协商一致的规定）、第40条（单方调整合同的条件）、第17条（劳动合同约定的工资条款）。调岗需要正当理由且不能违背合同约定，调整工资亦需符合法定程序，否则可能构成违法。</information>\n\n### 结合法律分析企业行为\n根据法律，调岗和降薪一般需要满足以下条件：1. 与员工协商一致，或符合劳动合同中的明文规定；2. 企业具有合理理由，例如调整因工作需要产生；3. 不得违反最低工资标准，不得带有歧视或惩罚性质。如果企业未证明上述合理性，调岗降薪可能属于违法行为。\n\n### 判断其合法性\n如果公司调岗和降薪的行为未经员工同意，且未提供经营需要等正当理由，或违反了劳动合同的明确约定，则可以初步认为其行为不符合《劳动合同法》的规定。\n\n### Conclusion\n公司无故调岗降薪，一般情况下是违法的。根据《中华人民共和国劳动合同法》第35条和相关条款，未经劳动者同意或没有充分正当的经营需要，公司不得单方面调整岗位或降低工资。如果劳动者认为权益被侵犯，可以通过劳动仲裁或其他法律途径维护权益。\n\n### Verification\n结论确认无误，依据法律条文提供的条件，未经协商一致或正当理由的调岗降薪确实涉嫌违法，劳动者有权追究企业责任。\n</Thought Process>\n\n<Question>\n公司无故调岗降薪是否合法？\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n嗯，公司无故调岗降薪，这个是不是合法吗？仔细想想，应该先从法律上来判断。不管是调岗还是降薪，应该都有具体的法律依据，光靠感觉来判断肯定是不够的。所以，我得查查相关的法律，特别是劳动合同法，这里面应该会有针对性的规定。\n\n回想下，劳动合同法好像提到了有关职务调整和工资变动的内容。我感觉比较关键的地方可能是：调岗需不需要员工同意？还有，降薪会不会有最低标准的要求？要是公司单方面决定这些事情，会不会违反法律？所以接下来我需要明确查找这些方面的法律依据。\n\n对了，我记得调岗问题应该和劳动合同里约定的岗位有关。一般来说，劳动合同是写明工作范围和岗位的。如果公司想调整岗位，那应该有条件限制，可能需要给出正当理由或者协商一致。至于降薪，那肯定涉及工资待遇的调整问题。如果工资是合同里明确的条款，公司随意调整工资，可能不太合适。好了，我得查一下《劳动合同法》里面具体怎么规定的。\n\n先搜索下有关调岗和降薪的内容，关键词应该是‘劳动合同法 调岗 降薪’才对。<search>劳动合同法 调岗 降薪</search>\n\n哦，找到信息了！相关的条款内容包括：《中华人民共和国劳动合同法》第35条说的是用人单位调整员工岗位时需要与员工协商一致。还有第40条提到，公司只有在某些特殊情况下，才能单方面修改劳动合同，比如员工工作能力有限、试用期内不符合录用条件等。除此之外，第17条里明确工资是劳动合同的重要条款之一，这部分应该也不能随意更改。<information>《中华人民共和国劳动合同法》相关条款包括：第35条（关于调岗需协商一致的规定）、第40条（单方调整合同的条件）、第17条（劳动合同约定的工资条款）。调岗需要正当理由且不能违背合同约定，调整工资亦需符合法定程序，否则可能构成违法。</information>\n\n从这里的信息来看，调岗和降薪的合法边界其实很明确。公司没有正当理由或者缺乏合同支持就调整岗位，肯定是违规的。特别是调整工资，可能还涉及违反最低工资标准的问题。这里的关键是协商一致，另外即使调整也不能带有歧视、报复或者其它侵犯员工利益的性质。\n\n结合这些法律规定和标准，如果公司在没有和员工达成一致的情况下随意调岗，或者没有充足的经营理由仅仅是单方面调整工资，初步看起来应该是违法行为。这样用人单位就是在违反《劳动合同法》的规定了，而员工完全可以追究他们的责任。\n\n所以，最后的结论应该是：公司无故调岗降薪一般情况下不合法，没有协商一致或者正当理由的话，员工是有权通过劳动仲裁或者其他法律途径维护自己的权益的。嗯，推理下来逻辑没问题，法律依据也有，结论是站得住脚的。\n</Internal Thinking>\n\n<Question>\n公司无故调岗降薪是否合法？\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"明确法律问题\",\n      \"content\": \"需要判断公司无故调岗降薪是否合法，涉及相关法律规定，包括劳动合同法中关于劳动关系和工资调整的条款。重点在于是否符合法律规定的调岗条件、程序，以及是否侵犯了员工的合法权益。需要查询相关法律条文以明确要求。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"查询调岗和降薪的法律依据\",\n      \"content\": \"调岗需要满足特定条件，如合同约定、用人单位的正当经营需要等；降薪则涉及劳动报酬的调整条款。需查询《劳动合同法》中相关内容，例如调岗、工资调整的合法性标准。进行检索。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"关键法规查找\",\n      \"content\": \"查找《中华人民共和国劳动合同法》中与调岗降薪相关的条款，以确认企业行为是否符合法律。需要搜索以下条款：'劳动合同约定岗位调整'和'劳动报酬调整'。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"检索相关劳动法条款\",\n      \"content\": \"<search>劳动合同法 调岗 降薪</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析检索结果\",\n      \"content\": \"<information>《中华人民共和国劳动合同法》相关条款包括：第35条（关于调岗需协商一致的规定）、第40条（单方调整合同的条件）、第17条（劳动合同约定的工资条款）。调岗需要正当理由且不能违背合同约定，调整工资亦需符合法定程序，否则可能构成违法。</information>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"结合法律分析企业行为\",\n      \"content\": \"根据法律，调岗和降薪一般需要满足以下条件：1. 与员工协商一致，或符合劳动合同中的明文规定；2. 企业具有合理理由，例如调整因工作需要产生；3. 不得违反最低工资标准，不得带有歧视或惩罚性质。如果企业未证明上述合理性，调岗降薪可能属于违法行为。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"判断其合法性\",\n      \"content\": \"如果公司调岗和降薪的行为未经员工同意，且未提供经营需要等正当理由，或违反了劳动合同的明确约定，则可以初步认为其行为不符合《劳动合同法》的规定。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"公司无故调岗降薪，一般情况下是违法的。根据《中华人民共和国劳动合同法》第35条和相关条款，未经劳动者同意或没有充分正当的经营需要，公司不得单方面调整岗位或降低工资。如果劳动者认为权益被侵犯，可以通过劳动仲裁或其他法律途径维护权益。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"结论确认无误，依据法律条文提供的条件，未经协商一致或正当理由的调岗降薪确实涉嫌违法，劳动者有权追究企业责任。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"嗯，公司无故调岗降薪，这个是不是合法吗？仔细想想，应该先从法律上来判断。不管是调岗还是降薪，应该都有具体的法律依据，光靠感觉来判断肯定是不够的。所以，我得查查相关的法律，特别是劳动合同法，这里面应该会有针对性的规定。\\n\\n回想下，劳动合同法好像提到了有关职务调整和工资变动的内容。我感觉比较关键的地方可能是：调岗需不需要员工同意？还有，降薪会不会有最低标准的要求？要是公司单方面决定这些事情，会不会违反法律？所以接下来我需要明确查找这些方面的法律依据。\\n\\n对了，我记得调岗问题应该和劳动合同里约定的岗位有关。一般来说，劳动合同是写明工作范围和岗位的。如果公司想调整岗位，那应该有条件限制，可能需要给出正当理由或者协商一致。至于降薪，那肯定涉及工资待遇的调整问题。如果工资是合同里明确的条款，公司随意调整工资，可能不太合适。好了，我得查一下《劳动合同法》里面具体怎么规定的。\\n\\n先搜索下有关调岗和降薪的内容，关键词应该是‘劳动合同法 调岗 降薪’才对。<search>劳动合同法 调岗 降薪</search>\\n\\n哦，找到信息了！相关的条款内容包括：《中华人民共和国劳动合同法》第35条说的是用人单位调整员工岗位时需要与员工协商一致。还有第40条提到，公司只有在某些特殊情况下，才能单方面修改劳动合同，比如员工工作能力有限、试用期内不符合录用条件等。除此之外，第17条里明确工资是劳动合同的重要条款之一，这部分应该也不能随意更改。<information>《中华人民共和国劳动合同法》相关条款包括：第35条（关于调岗需协商一致的规定）、第40条（单方调整合同的条件）、第17条（劳动合同约定的工资条款）。调岗需要正当理由且不能违背合同约定，调整工资亦需符合法定程序，否则可能构成违法。</information>\\n\\n从这里的信息来看，调岗和降薪的合法边界其实很明确。公司没有正当理由或者缺乏合同支持就调整岗位，肯定是违规的。特别是调整工资，可能还涉及违反最低工资标准的问题。这里的关键是协商一致，另外即使调整也不能带有歧视、报复或者其它侵犯员工利益的性质。\\n\\n结合这些法律规定和标准，如果公司在没有和员工达成一致的情况下随意调岗，或者没有充足的经营理由仅仅是单方面调整工资，初步看起来应该是违法行为。这样用人单位就是在违反《劳动合同法》的规定了，而员工完全可以追究他们的责任。\\n\\n所以，最后的结论应该是：公司无故调岗降薪一般情况下不合法，没有协商一致或者正当理由的话，员工是有权通过劳动仲裁或者其他法律途径维护自己的权益的。嗯，推理下来逻辑没问题，法律依据也有，结论是站得住脚的。\"\n}\n```",
+    "公司无故调岗降薪一般情况下是不合法的，《中华人民共和国劳动合同法》对此有明确规定。\n\n根据《劳动合同法》第35条的规定，调岗需经用人单位与员工协商一致。如果公司单方面调整岗位，尤其是与劳动合同中约定的岗位职责有明显出入，且未经员工同意，则违反了法律规定。此外，根据第40条的规定，用人单位在某些特殊情形（如员工不能胜任工作、劳动合同订立时重大客观情况变更等）下，在与员工协商不成的情况下，有可能对劳动合同内容进行调整，但必须有充足的事实依据和合法程序。\n\n关于降薪问题，《劳动合同法》第17条明确工资作为劳动合同的重要条款之一，应由双方约定，并且任何更改需要基于协商一致。同时，公司降薪还需符合最低工资标准的规定，且不得以任何形式侵犯员工合法权益。如果公司无正当理由通过降薪行为变相剥夺员工权益，则可能涉嫌违法。\n\n综合来看，如果用人单位在未与员工协商、且无正当理由的情况下单方面调岗或降薪，这通常被视为违法。员工可以通过协商、向劳动监察部门举报或申请劳动仲裁等途径维护自身权益。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "明确法律问题",
+        "content": "需要判断公司无故调岗降薪是否合法，涉及相关法律规定，包括劳动合同法中关于劳动关系和工资调整的条款。重点在于是否符合法律规定的调岗条件、程序，以及是否侵犯了员工的合法权益。需要查询相关法律条文以明确要求。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "查询调岗和降薪的法律依据",
+        "content": "调岗需要满足特定条件，如合同约定、用人单位的正当经营需要等；降薪则涉及劳动报酬的调整条款。需查询《劳动合同法》中相关内容，例如调岗、工资调整的合法性标准。进行检索。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "关键法规查找",
+        "content": "查找《中华人民共和国劳动合同法》中与调岗降薪相关的条款，以确认企业行为是否符合法律。需要搜索以下条款：'劳动合同约定岗位调整'和'劳动报酬调整'。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "检索相关劳动法条款",
+        "content": "<search>劳动合同法 调岗 降薪</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "分析检索结果",
+        "content": "<information>《中华人民共和国劳动合同法》相关条款包括：第35条（关于调岗需协商一致的规定）、第40条（单方调整合同的条件）、第17条（劳动合同约定的工资条款）。调岗需要正当理由且不能违背合同约定，调整工资亦需符合法定程序，否则可能构成违法。</information>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "结合法律分析企业行为",
+        "content": "根据法律，调岗和降薪一般需要满足以下条件：1. 与员工协商一致，或符合劳动合同中的明文规定；2. 企业具有合理理由，例如调整因工作需要产生；3. 不得违反最低工资标准，不得带有歧视或惩罚性质。如果企业未证明上述合理性，调岗降薪可能属于违法行为。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "判断其合法性",
+        "content": "如果公司调岗和降薪的行为未经员工同意，且未提供经营需要等正当理由，或违反了劳动合同的明确约定，则可以初步认为其行为不符合《劳动合同法》的规定。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "公司无故调岗降薪，一般情况下是违法的。根据《中华人民共和国劳动合同法》第35条和相关条款，未经劳动者同意或没有充分正当的经营需要，公司不得单方面调整岗位或降低工资。如果劳动者认为权益被侵犯，可以通过劳动仲裁或其他法律途径维护权益。"
+      },
+      {
+        "action": "Verification",
+        "content": "结论确认无误，依据法律条文提供的条件，未经协商一致或正当理由的调岗降薪确实涉嫌违法，劳动者有权追究企业责任。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "嗯，公司无故调岗降薪，这个是不是合法吗？仔细想想，应该先从法律上来判断。不管是调岗还是降薪，应该都有具体的法律依据，光靠感觉来判断肯定是不够的。所以，我得查查相关的法律，特别是劳动合同法，这里面应该会有针对性的规定。\n\n回想下，劳动合同法好像提到了有关职务调整和工资变动的内容。我感觉比较关键的地方可能是：调岗需不需要员工同意？还有，降薪会不会有最低标准的要求？要是公司单方面决定这些事情，会不会违反法律？所以接下来我需要明确查找这些方面的法律依据。\n\n对了，我记得调岗问题应该和劳动合同里约定的岗位有关。一般来说，劳动合同是写明工作范围和岗位的。如果公司想调整岗位，那应该有条件限制，可能需要给出正当理由或者协商一致。至于降薪，那肯定涉及工资待遇的调整问题。如果工资是合同里明确的条款，公司随意调整工资，可能不太合适。好了，我得查一下《劳动合同法》里面具体怎么规定的。\n\n先搜索下有关调岗和降薪的内容，关键词应该是‘劳动合同法 调岗 降薪’才对。<search>劳动合同法 调岗 降薪</search>\n\n哦，找到信息了！相关的条款内容包括：《中华人民共和国劳动合同法》第35条说的是用人单位调整员工岗位时需要与员工协商一致。还有第40条提到，公司只有在某些特殊情况下，才能单方面修改劳动合同，比如员工工作能力有限、试用期内不符合录用条件等。除此之外，第17条里明确工资是劳动合同的重要条款之一，这部分应该也不能随意更改。<information>《中华人民共和国劳动合同法》相关条款包括：第35条（关于调岗需协商一致的规定）、第40条（单方调整合同的条件）、第17条（劳动合同约定的工资条款）。调岗需要正当理由且不能违背合同约定，调整工资亦需符合法定程序，否则可能构成违法。</information>\n\n从这里的信息来看，调岗和降薪的合法边界其实很明确。公司没有正当理由或者缺乏合同支持就调整岗位，肯定是违规的。特别是调整工资，可能还涉及违反最低工资标准的问题。这里的关键是协商一致，另外即使调整也不能带有歧视、报复或者其它侵犯员工利益的性质。\n\n结合这些法律规定和标准，如果公司在没有和员工达成一致的情况下随意调岗，或者没有充足的经营理由仅仅是单方面调整工资，初步看起来应该是违法行为。这样用人单位就是在违反《劳动合同法》的规定了，而员工完全可以追究他们的责任。\n\n所以，最后的结论应该是：公司无故调岗降薪一般情况下不合法，没有协商一致或者正当理由的话，员工是有权通过劳动仲裁或者其他法律途径维护自己的权益的。嗯，推理下来逻辑没问题，法律依据也有，结论是站得住脚的。",
+  "Response": "公司无故调岗降薪一般情况下是不合法的，《中华人民共和国劳动合同法》对此有明确规定。\n\n根据《劳动合同法》第35条的规定，调岗需经用人单位与员工协商一致。如果公司单方面调整岗位，尤其是与劳动合同中约定的岗位职责有明显出入，且未经员工同意，则违反了法律规定。此外，根据第40条的规定，用人单位在某些特殊情形（如员工不能胜任工作、劳动合同订立时重大客观情况变更等）下，在与员工协商不成的情况下，有可能对劳动合同内容进行调整，但必须有充足的事实依据和合法程序。\n\n关于降薪问题，《劳动合同法》第17条明确工资作为劳动合同的重要条款之一，应由双方约定，并且任何更改需要基于协商一致。同时，公司降薪还需符合最低工资标准的规定，且不得以任何形式侵犯员工合法权益。如果公司无正当理由通过降薪行为变相剥夺员工权益，则可能涉嫌违法。\n\n综合来看，如果用人单位在未与员工协商、且无正当理由的情况下单方面调岗或降薪，这通常被视为违法。员工可以通过协商、向劳动监察部门举报或申请劳动仲裁等途径维护自身权益。",
+  "Question": "公司无故调岗降薪是否合法？"
+}

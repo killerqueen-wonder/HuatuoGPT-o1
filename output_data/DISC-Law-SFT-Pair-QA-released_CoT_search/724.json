@@ -1,0 +1,99 @@
+{
+  "Open-ended Verifiable Question": "普通公民代理案件,是否可以收费?",
+  "Ground-True Answer": "不能收取费用\n符合法律规定的普通公民，也可以代理案件。法律明确规定，下列人员可以被委托为诉讼代理人：1、律师、基层法律服务工作者；\n2、当事人的近亲属或者工作人员；\n3、当事人所在社区、单位以及有关社会团体推荐的公民。因此，符合法律规定的普通公民，可以代理案件，帮助委托人进行民事诉讼。\n当事人的近亲属基于亲属关系作为诉讼代理人，自愿无偿提供法律帮助；当事人的工作人员基于工作任务，接受单位指派或者委派参加诉讼，亦不发生有偿诉讼代理问题；当事人所在社区、单位以及有关社会团体推荐的公民基于其推荐作为诉讼代理人，如果被推荐的公民提供有偿诉讼代理，将置相关基层组织、单位或者团体于营业性社会中介机构的地位，明显与其职能定位不符。\n因此，法律虽然允许特定的公民可以作为民事诉讼代理人，但应当是无偿的。",
+  "process_id": 724,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "理解问题",
+      "content": "问题询问普通公民代理案件是否可以收费。我们需要分析相关法律法规对普通公民有偿代理行为的规定，尤其是其合法性和限度。此类规定可能涉及律师法、民事诉讼法等内容。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "明确适用法律",
+      "content": "为了解普通公民是否可以依法收费从事代理，需要探讨《律师法》或相关规定中对于非律师代理和收费行为的限制性要求或禁令。首先需要查找有关普通公民是否可以从事有偿代理的具体规定。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "搜索律师法中相关规定",
+      "content": "确定非律师代理行为是否可以收费，应该根据《中华人民共和国律师法》及相关司法解释中有无禁止条款进行分析。查找关键词为<search>“律师法 非律师代理 收费”</search>。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "分析搜索结果",
+      "content": "<information>《中华人民共和国律师法》第三十九条规定：任何非律师人员不得从事有偿法律服务，只有依法取得律师执业证书的自然人可以从事盈利性法律事务。普通公民代理案件若涉及收费，可能构成违法行为。此外，根据《民事诉讼法》和相关司法解释，非律师可以在特定情况下代理诉讼，但不得收取代理报酬。</information>根据上述内容，普通公民不能从事有偿代理活动，即使代理案件，为当事人服务也应无偿。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "总结法律指引",
+      "content": "非律师人员，包括普通公民，可以在法律允许的范围内从事特定诉讼代理，但不得收取代理报酬。这指向了一种对公共利益有利的非盈利性代理方式。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "普通公民代理案件不能收费。根据《律师法》的规定，非律师不得从事有偿法律服务，进行收费代理行为将违反相关法律规定。"
+    },
+    {
+      "action": "Verification",
+      "content": "根据查询到的《律师法》和相关法律条文，普通公民虽然可以在特定情况下代理案件，但不得收取费用。因此，答案正确，普通公民代理案件不能收费。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n普通公民代理案件,是否可以收费?\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n普通公民代理案件不能收费。根据《律师法》的规定，非律师不得从事有偿法律服务，进行收费代理行为将违反相关法律规定。  \n</Model Response>  \n\n<Reference Answer>  \n不能收取费用\n符合法律规定的普通公民，也可以代理案件。法律明确规定，下列人员可以被委托为诉讼代理人：1、律师、基层法律服务工作者；\n2、当事人的近亲属或者工作人员；\n3、当事人所在社区、单位以及有关社会团体推荐的公民。因此，符合法律规定的普通公民，可以代理案件，帮助委托人进行民事诉讼。\n当事人的近亲属基于亲属关系作为诉讼代理人，自愿无偿提供法律帮助；当事人的工作人员基于工作任务，接受单位指派或者委派参加诉讼，亦不发生有偿诉讼代理问题；当事人所在社区、单位以及有关社会团体推荐的公民基于其推荐作为诉讼代理人，如果被推荐的公民提供有偿诉讼代理，将置相关基层组织、单位或者团体于营业性社会中介机构的地位，明显与其职能定位不符。\n因此，法律虽然允许特定的公民可以作为民事诉讼代理人，但应当是无偿的。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 理解问题\n问题询问普通公民代理案件是否可以收费。我们需要分析相关法律法规对普通公民有偿代理行为的规定，尤其是其合法性和限度。此类规定可能涉及律师法、民事诉讼法等内容。\n\n### 明确适用法律\n为了解普通公民是否可以依法收费从事代理，需要探讨《律师法》或相关规定中对于非律师代理和收费行为的限制性要求或禁令。首先需要查找有关普通公民是否可以从事有偿代理的具体规定。\n\n### 搜索律师法中相关规定\n确定非律师代理行为是否可以收费，应该根据《中华人民共和国律师法》及相关司法解释中有无禁止条款进行分析。查找关键词为<search>“律师法 非律师代理 收费”</search>。\n\n### 分析搜索结果\n<information>《中华人民共和国律师法》第三十九条规定：任何非律师人员不得从事有偿法律服务，只有依法取得律师执业证书的自然人可以从事盈利性法律事务。普通公民代理案件若涉及收费，可能构成违法行为。此外，根据《民事诉讼法》和相关司法解释，非律师可以在特定情况下代理诉讼，但不得收取代理报酬。</information>根据上述内容，普通公民不能从事有偿代理活动，即使代理案件，为当事人服务也应无偿。\n\n### 总结法律指引\n非律师人员，包括普通公民，可以在法律允许的范围内从事特定诉讼代理，但不得收取代理报酬。这指向了一种对公共利益有利的非盈利性代理方式。\n\n### Conclusion\n普通公民代理案件不能收费。根据《律师法》的规定，非律师不得从事有偿法律服务，进行收费代理行为将违反相关法律规定。\n\n### Verification\n根据查询到的《律师法》和相关法律条文，普通公民虽然可以在特定情况下代理案件，但不得收取费用。因此，答案正确，普通公民代理案件不能收费。\n</Thought Process>\n\n<Question>\n普通公民代理案件,是否可以收费?\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n首先，普通公民代理案件可以收费吗？这个问题感觉挺复杂的，得看法律上怎么规定。平常能收费的代理好像都是律师才可以，所以得先查一下跟律师相关的法律，比如说《律师法》。我记得它是专门规范律师行为的，可能能找到答案。\n\n好吧，先想想非律师，比如普通公民代理案件的限制是什么。嗯，收费这种行为听起来很像提供服务，是不是涉及法律服务啊？那有可能这里的关键是“有偿法律服务”的合法性了，感觉《律师法》应该有直接的规定。怎么查呢？关键词应该是“律师法 非律师代理 收费”。嗯，就用这个来搜索！ <search>“律师法 非律师代理 收费”</search>\n\n嗨，结果出来了！看看搜索内容。 <information>《中华人民共和国律师法》第三十九条明确写着：任何非律师人员不得从事有偿法律服务。哦，怪不得呢，法律都直接禁止非律师赚取报酬了。只有拿到律师执业证书的人才能提供收费的法律服务。这么说普通公民代理案件要收费，肯定是不合法的。而且还提到非律师虽然可以在特定情况下代理诉讼，这种代理必须是无偿的，不能收钱。</information>\n\n嗯，那就说得很清楚了。非律师的确可以在某些场合代理案件，比如民事诉讼里面可能允许，就像亲属、朋友出于帮助当事人的目的。但这类代理只能是无偿的吧？如果想收报酬，那就违反规定了，跟律师的有偿服务是两回事。\n\n所以总结一下吧。普通公民代理案件是可以的，但这个代理必须是无偿的，法律上不允许收费。如果收费，肯定涉及违法，毕竟《律师法》写得那么清楚。那么问题的答案就是：普通公民代理案件不能收费。这么分析下来应该没错。\n</Internal Thinking>\n\n<Question>\n普通公民代理案件,是否可以收费?\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"理解问题\",\n      \"content\": \"问题询问普通公民代理案件是否可以收费。我们需要分析相关法律法规对普通公民有偿代理行为的规定，尤其是其合法性和限度。此类规定可能涉及律师法、民事诉讼法等内容。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"明确适用法律\",\n      \"content\": \"为了解普通公民是否可以依法收费从事代理，需要探讨《律师法》或相关规定中对于非律师代理和收费行为的限制性要求或禁令。首先需要查找有关普通公民是否可以从事有偿代理的具体规定。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"搜索律师法中相关规定\",\n      \"content\": \"确定非律师代理行为是否可以收费，应该根据《中华人民共和国律师法》及相关司法解释中有无禁止条款进行分析。查找关键词为<search>“律师法 非律师代理 收费”</search>。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析搜索结果\",\n      \"content\": \"<information>《中华人民共和国律师法》第三十九条规定：任何非律师人员不得从事有偿法律服务，只有依法取得律师执业证书的自然人可以从事盈利性法律事务。普通公民代理案件若涉及收费，可能构成违法行为。此外，根据《民事诉讼法》和相关司法解释，非律师可以在特定情况下代理诉讼，但不得收取代理报酬。</information>根据上述内容，普通公民不能从事有偿代理活动，即使代理案件，为当事人服务也应无偿。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"总结法律指引\",\n      \"content\": \"非律师人员，包括普通公民，可以在法律允许的范围内从事特定诉讼代理，但不得收取代理报酬。这指向了一种对公共利益有利的非盈利性代理方式。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"普通公民代理案件不能收费。根据《律师法》的规定，非律师不得从事有偿法律服务，进行收费代理行为将违反相关法律规定。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"根据查询到的《律师法》和相关法律条文，普通公民虽然可以在特定情况下代理案件，但不得收取费用。因此，答案正确，普通公民代理案件不能收费。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"首先，普通公民代理案件可以收费吗？这个问题感觉挺复杂的，得看法律上怎么规定。平常能收费的代理好像都是律师才可以，所以得先查一下跟律师相关的法律，比如说《律师法》。我记得它是专门规范律师行为的，可能能找到答案。\\n\\n好吧，先想想非律师，比如普通公民代理案件的限制是什么。嗯，收费这种行为听起来很像提供服务，是不是涉及法律服务啊？那有可能这里的关键是“有偿法律服务”的合法性了，感觉《律师法》应该有直接的规定。怎么查呢？关键词应该是“律师法 非律师代理 收费”。嗯，就用这个来搜索！ <search>“律师法 非律师代理 收费”</search>\\n\\n嗨，结果出来了！看看搜索内容。 <information>《中华人民共和国律师法》第三十九条明确写着：任何非律师人员不得从事有偿法律服务。哦，怪不得呢，法律都直接禁止非律师赚取报酬了。只有拿到律师执业证书的人才能提供收费的法律服务。这么说普通公民代理案件要收费，肯定是不合法的。而且还提到非律师虽然可以在特定情况下代理诉讼，这种代理必须是无偿的，不能收钱。</information>\\n\\n嗯，那就说得很清楚了。非律师的确可以在某些场合代理案件，比如民事诉讼里面可能允许，就像亲属、朋友出于帮助当事人的目的。但这类代理只能是无偿的吧？如果想收报酬，那就违反规定了，跟律师的有偿服务是两回事。\\n\\n所以总结一下吧。普通公民代理案件是可以的，但这个代理必须是无偿的，法律上不允许收费。如果收费，肯定涉及违法，毕竟《律师法》写得那么清楚。那么问题的答案就是：普通公民代理案件不能收费。这么分析下来应该没错。\"\n}\n```",
+    "普通公民代理案件不能收费。根据《中华人民共和国律师法》第三十九条规定，非律师人员不得从事有偿法律服务。因此，普通公民虽然可以在特定情况下以亲属或朋友的身份代理案件，但这种代理必须是无偿的。如果收费，则属于违法行为。这项规定旨在保护法律服务的专业性，确保当事人的合法权益。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "理解问题",
+        "content": "问题询问普通公民代理案件是否可以收费。我们需要分析相关法律法规对普通公民有偿代理行为的规定，尤其是其合法性和限度。此类规定可能涉及律师法、民事诉讼法等内容。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "明确适用法律",
+        "content": "为了解普通公民是否可以依法收费从事代理，需要探讨《律师法》或相关规定中对于非律师代理和收费行为的限制性要求或禁令。首先需要查找有关普通公民是否可以从事有偿代理的具体规定。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "搜索律师法中相关规定",
+        "content": "确定非律师代理行为是否可以收费，应该根据《中华人民共和国律师法》及相关司法解释中有无禁止条款进行分析。查找关键词为<search>“律师法 非律师代理 收费”</search>。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "分析搜索结果",
+        "content": "<information>《中华人民共和国律师法》第三十九条规定：任何非律师人员不得从事有偿法律服务，只有依法取得律师执业证书的自然人可以从事盈利性法律事务。普通公民代理案件若涉及收费，可能构成违法行为。此外，根据《民事诉讼法》和相关司法解释，非律师可以在特定情况下代理诉讼，但不得收取代理报酬。</information>根据上述内容，普通公民不能从事有偿代理活动，即使代理案件，为当事人服务也应无偿。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "总结法律指引",
+        "content": "非律师人员，包括普通公民，可以在法律允许的范围内从事特定诉讼代理，但不得收取代理报酬。这指向了一种对公共利益有利的非盈利性代理方式。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "普通公民代理案件不能收费。根据《律师法》的规定，非律师不得从事有偿法律服务，进行收费代理行为将违反相关法律规定。"
+      },
+      {
+        "action": "Verification",
+        "content": "根据查询到的《律师法》和相关法律条文，普通公民虽然可以在特定情况下代理案件，但不得收取费用。因此，答案正确，普通公民代理案件不能收费。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "首先，普通公民代理案件可以收费吗？这个问题感觉挺复杂的，得看法律上怎么规定。平常能收费的代理好像都是律师才可以，所以得先查一下跟律师相关的法律，比如说《律师法》。我记得它是专门规范律师行为的，可能能找到答案。\n\n好吧，先想想非律师，比如普通公民代理案件的限制是什么。嗯，收费这种行为听起来很像提供服务，是不是涉及法律服务啊？那有可能这里的关键是“有偿法律服务”的合法性了，感觉《律师法》应该有直接的规定。怎么查呢？关键词应该是“律师法 非律师代理 收费”。嗯，就用这个来搜索！ <search>“律师法 非律师代理 收费”</search>\n\n嗨，结果出来了！看看搜索内容。 <information>《中华人民共和国律师法》第三十九条明确写着：任何非律师人员不得从事有偿法律服务。哦，怪不得呢，法律都直接禁止非律师赚取报酬了。只有拿到律师执业证书的人才能提供收费的法律服务。这么说普通公民代理案件要收费，肯定是不合法的。而且还提到非律师虽然可以在特定情况下代理诉讼，这种代理必须是无偿的，不能收钱。</information>\n\n嗯，那就说得很清楚了。非律师的确可以在某些场合代理案件，比如民事诉讼里面可能允许，就像亲属、朋友出于帮助当事人的目的。但这类代理只能是无偿的吧？如果想收报酬，那就违反规定了，跟律师的有偿服务是两回事。\n\n所以总结一下吧。普通公民代理案件是可以的，但这个代理必须是无偿的，法律上不允许收费。如果收费，肯定涉及违法，毕竟《律师法》写得那么清楚。那么问题的答案就是：普通公民代理案件不能收费。这么分析下来应该没错。",
+  "Response": "普通公民代理案件不能收费。根据《中华人民共和国律师法》第三十九条规定，非律师人员不得从事有偿法律服务。因此，普通公民虽然可以在特定情况下以亲属或朋友的身份代理案件，但这种代理必须是无偿的。如果收费，则属于违法行为。这项规定旨在保护法律服务的专业性，确保当事人的合法权益。",
+  "Question": "普通公民代理案件,是否可以收费?"
+}

@@ -1,0 +1,99 @@
+{
+  "Open-ended Verifiable Question": "异地离婚如何确定管辖法院",
+  "Ground-True Answer": "1.被告离开住所地超过一年的，由原告住所地人民法院管辖;双方离开住所地超过一年的，由被告经常居住地人民法院管辖，没有经常居住地的由原告起诉时居住地的人民法院管辖。\n2.被告下落不明或者宣告失踪的，由原告住所地人民法院管辖；原告住所地与经常居住地不一致的，由原告经常居住地人民法院管辖。\n3.被告被劳动教养或者被监禁的，由原告住所地人民法院管辖；原告住所地与经常居住地不一致的，由原告经常居住地人民法院管辖。\n4.非军人对非文职军人提起离婚诉讼由原告住所地人民法院管辖；双方当事人都是军人的，由被告住所地或者被告所在的团级以上单位驻地的人民法院管辖。\n5.被告不在中华人民共和国领域内居住的，由原告住所地人民法院管辖；原告住所地与经常居住地不一致的，由原告经常居住地人民法院管辖。",
+  "process_id": 8715,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "明确离婚案件管辖的一般原则",
+      "content": "根据我国《民事诉讼法》的规定，离婚案件的管辖通常由被告住所地的人民法院管辖。如果被告离开住所地超过一定时间且无法联系，则可以由原告住所地的人民法院管辖。下一步搜索相关法律条款以确认细节。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "查询《民事诉讼法》相关条款",
+      "content": "<search>民事诉讼法关于离婚案件管辖的条款</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "分析搜索结果",
+      "content": "<information>《民事诉讼法》第21条规定：一般案件由被告住所地管辖；第22条规定特殊情况下可由原告住所地管辖。</information>据此，离婚案件通常由被告住所地法院管辖，但如果被告住址不明或长期离开住所地，可由原告住所地法院管辖。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "考虑异地离婚的具体情况",
+      "content": "当夫妻双方异地居住时，如果原告希望在其所在地提起离婚诉讼，需要满足特定条件，如被告长期不在原住所地或被告住所无法确定。这应符合《民事诉讼法》第22条中的特殊情况描述。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "综合规则并得出结论",
+      "content": "根据法律规定，异地离婚可在以下两种情况下确定管辖法院：1. 由被告住所地的基层人民法院管辖；2. 若被告住址不明或无法联系，可由原告住所地基层人民法院管辖。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "异地离婚案件的管辖法院通常由被告住所地的人民法院管辖。如果被告住址不明或其常住地无法确认，则可由原告住所地的人民法院管辖。这符合《民事诉讼法》第21条和第22条的规定。"
+    },
+    {
+      "action": "Verification",
+      "content": "结论符合我国《民事诉讼法》的相关规定及离婚案件的实际处理原则，合理有效，无需进一步修正。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n异地离婚如何确定管辖法院\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n异地离婚案件的管辖法院通常由被告住所地的人民法院管辖。如果被告住址不明或其常住地无法确认，则可由原告住所地的人民法院管辖。这符合《民事诉讼法》第21条和第22条的规定。  \n</Model Response>  \n\n<Reference Answer>  \n1.被告离开住所地超过一年的，由原告住所地人民法院管辖;双方离开住所地超过一年的，由被告经常居住地人民法院管辖，没有经常居住地的由原告起诉时居住地的人民法院管辖。\n2.被告下落不明或者宣告失踪的，由原告住所地人民法院管辖；原告住所地与经常居住地不一致的，由原告经常居住地人民法院管辖。\n3.被告被劳动教养或者被监禁的，由原告住所地人民法院管辖；原告住所地与经常居住地不一致的，由原告经常居住地人民法院管辖。\n4.非军人对非文职军人提起离婚诉讼由原告住所地人民法院管辖；双方当事人都是军人的，由被告住所地或者被告所在的团级以上单位驻地的人民法院管辖。\n5.被告不在中华人民共和国领域内居住的，由原告住所地人民法院管辖；原告住所地与经常居住地不一致的，由原告经常居住地人民法院管辖。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 明确离婚案件管辖的一般原则\n根据我国《民事诉讼法》的规定，离婚案件的管辖通常由被告住所地的人民法院管辖。如果被告离开住所地超过一定时间且无法联系，则可以由原告住所地的人民法院管辖。下一步搜索相关法律条款以确认细节。\n\n### 查询《民事诉讼法》相关条款\n<search>民事诉讼法关于离婚案件管辖的条款</search>\n\n### 分析搜索结果\n<information>《民事诉讼法》第21条规定：一般案件由被告住所地管辖；第22条规定特殊情况下可由原告住所地管辖。</information>据此，离婚案件通常由被告住所地法院管辖，但如果被告住址不明或长期离开住所地，可由原告住所地法院管辖。\n\n### 考虑异地离婚的具体情况\n当夫妻双方异地居住时，如果原告希望在其所在地提起离婚诉讼，需要满足特定条件，如被告长期不在原住所地或被告住所无法确定。这应符合《民事诉讼法》第22条中的特殊情况描述。\n\n### 综合规则并得出结论\n根据法律规定，异地离婚可在以下两种情况下确定管辖法院：1. 由被告住所地的基层人民法院管辖；2. 若被告住址不明或无法联系，可由原告住所地基层人民法院管辖。\n\n### Conclusion\n异地离婚案件的管辖法院通常由被告住所地的人民法院管辖。如果被告住址不明或其常住地无法确认，则可由原告住所地的人民法院管辖。这符合《民事诉讼法》第21条和第22条的规定。\n\n### Verification\n结论符合我国《民事诉讼法》的相关规定及离婚案件的实际处理原则，合理有效，无需进一步修正。\n</Thought Process>\n\n<Question>\n异地离婚如何确定管辖法院\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n先想一下，离婚案件应该在哪儿提起呢？按照一般的法律规定，好像是由被告住的地方的法院管辖吧。嗯，这应该是《民事诉讼法》里面说过的，毕竟大多数案件都跟被告的住址有关，比较公平。但如果被告不在原来的住址或者联系不上，那是不是可以换到原告住的地方提呢？这好像也说得通，要是找不到被告，就只能从原告的角度出发了。还是搜一下相关的法律条款更保险吧。<search>民事诉讼法关于离婚案件管辖的条款</search>\n\n搜到了！<information>《民事诉讼法》第21条规定：一般案件由被告住所地管辖；第22条规定特殊情况下可由原告住所地管辖。</information>哦，果然离婚案件通常是由被告所在地法院管辖的，这跟之前记得的一样。但《民事诉讼法》第22条也提到了特殊情况，可以由原告的住所地管辖。这些特殊情况是不是指像被告长时间离开住所地、联系不上，或者根本不知道被告住在哪儿？嗯，这样就合理了。\n\n那如果夫妻双方是分居并且住在不同的城市呢？比如原告希望在自己住的地方提起离婚诉讼，是不是得符合这些特殊条件才行？确实是这样，如果被告还在原来的地址，按照第21条的规定，诉讼就得走被告住所地的法院。但如果被告长期不在或者地址无法确认，那就得看原告住的地方有没有资格管辖了。\n\n再来梳理一下吧，离婚案件的法院管辖目前看有两种方式：第一种是通常情况下，由被告住的地方法院管辖；第二种是特殊情况，比如被告住址不确定或联系不上时，可以由原告住的地方法院管辖。这两种情况的依据都是《民事诉讼法》第21条和第22条，法律条款挺明确的。\n\n嗯，这样总结出来基本没问题了，合理清晰，也符合实际情况。异地离婚的案件管辖规则就是按照法律这么走，具体法院就要看夫妻双方的住址和联系情况。\n</Internal Thinking>\n\n<Question>\n异地离婚如何确定管辖法院\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"明确离婚案件管辖的一般原则\",\n      \"content\": \"根据我国《民事诉讼法》的规定，离婚案件的管辖通常由被告住所地的人民法院管辖。如果被告离开住所地超过一定时间且无法联系，则可以由原告住所地的人民法院管辖。下一步搜索相关法律条款以确认细节。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"查询《民事诉讼法》相关条款\",\n      \"content\": \"<search>民事诉讼法关于离婚案件管辖的条款</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析搜索结果\",\n      \"content\": \"<information>《民事诉讼法》第21条规定：一般案件由被告住所地管辖；第22条规定特殊情况下可由原告住所地管辖。</information>据此，离婚案件通常由被告住所地法院管辖，但如果被告住址不明或长期离开住所地，可由原告住所地法院管辖。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"考虑异地离婚的具体情况\",\n      \"content\": \"当夫妻双方异地居住时，如果原告希望在其所在地提起离婚诉讼，需要满足特定条件，如被告长期不在原住所地或被告住所无法确定。这应符合《民事诉讼法》第22条中的特殊情况描述。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"综合规则并得出结论\",\n      \"content\": \"根据法律规定，异地离婚可在以下两种情况下确定管辖法院：1. 由被告住所地的基层人民法院管辖；2. 若被告住址不明或无法联系，可由原告住所地基层人民法院管辖。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"异地离婚案件的管辖法院通常由被告住所地的人民法院管辖。如果被告住址不明或其常住地无法确认，则可由原告住所地的人民法院管辖。这符合《民事诉讼法》第21条和第22条的规定。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"结论符合我国《民事诉讼法》的相关规定及离婚案件的实际处理原则，合理有效，无需进一步修正。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"先想一下，离婚案件应该在哪儿提起呢？按照一般的法律规定，好像是由被告住的地方的法院管辖吧。嗯，这应该是《民事诉讼法》里面说过的，毕竟大多数案件都跟被告的住址有关，比较公平。但如果被告不在原来的住址或者联系不上，那是不是可以换到原告住的地方提呢？这好像也说得通，要是找不到被告，就只能从原告的角度出发了。还是搜一下相关的法律条款更保险吧。<search>民事诉讼法关于离婚案件管辖的条款</search>\\n\\n搜到了！<information>《民事诉讼法》第21条规定：一般案件由被告住所地管辖；第22条规定特殊情况下可由原告住所地管辖。</information>哦，果然离婚案件通常是由被告所在地法院管辖的，这跟之前记得的一样。但《民事诉讼法》第22条也提到了特殊情况，可以由原告的住所地管辖。这些特殊情况是不是指像被告长时间离开住所地、联系不上，或者根本不知道被告住在哪儿？嗯，这样就合理了。\\n\\n那如果夫妻双方是分居并且住在不同的城市呢？比如原告希望在自己住的地方提起离婚诉讼，是不是得符合这些特殊条件才行？确实是这样，如果被告还在原来的地址，按照第21条的规定，诉讼就得走被告住所地的法院。但如果被告长期不在或者地址无法确认，那就得看原告住的地方有没有资格管辖了。\\n\\n再来梳理一下吧，离婚案件的法院管辖目前看有两种方式：第一种是通常情况下，由被告住的地方法院管辖；第二种是特殊情况，比如被告住址不确定或联系不上时，可以由原告住的地方法院管辖。这两种情况的依据都是《民事诉讼法》第21条和第22条，法律条款挺明确的。\\n\\n嗯，这样总结出来基本没问题了，合理清晰，也符合实际情况。异地离婚的案件管辖规则就是按照法律这么走，具体法院就要看夫妻双方的住址和联系情况。\"\n}\n```",
+    "异地离婚案件如何确定管辖法院，主要依据我国《民事诉讼法》的相关规定：\n\n1. **一般情况**：根据《民事诉讼法》第21条的规定，离婚案件的管辖法院通常是按照被告住所地来确定，即由被告住所地的基层人民法院负责管辖。这是民事诉讼案件通常遵循的原则，体现了“谁主张，谁举证”的公平性。\n\n2. **特殊情况**：如果出现以下特殊情形，可以由原告住所地的人民法院管辖：\n   - 被告离开住所地超过一定时间，难以确定确切的居住地址；\n   - 被告未能联系上或下落不明；\n   - 被告的住所地无法确认。\n\n   这种情况适用《民事诉讼法》第22条，即对特殊民事案件允许由原告住所地法院管辖的规定。\n\n3. **具体实践**：如果夫妻双方分居，且住在不同城市，原告希望在自己住所地提起离婚诉讼，一般需要证明被告已长期脱离其原住所地或无法联系，才能适用《民事诉讼法》第22条的特殊规定。如果被告仍居住在其住所地，并且联系正常，则案件应按照第21条的规定，由被告住所地法院管辖。\n\n总之，异地离婚案件的管辖法院关键在于确定夫妻双方的住所地和联系情况，通常由被告住所地的法院管辖，但确有必要时可以转由原告住所地的法院处理。建议申请人根据具体情况收集相关证明材料，以便法院确认管辖权。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "明确离婚案件管辖的一般原则",
+        "content": "根据我国《民事诉讼法》的规定，离婚案件的管辖通常由被告住所地的人民法院管辖。如果被告离开住所地超过一定时间且无法联系，则可以由原告住所地的人民法院管辖。下一步搜索相关法律条款以确认细节。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "查询《民事诉讼法》相关条款",
+        "content": "<search>民事诉讼法关于离婚案件管辖的条款</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "分析搜索结果",
+        "content": "<information>《民事诉讼法》第21条规定：一般案件由被告住所地管辖；第22条规定特殊情况下可由原告住所地管辖。</information>据此，离婚案件通常由被告住所地法院管辖，但如果被告住址不明或长期离开住所地，可由原告住所地法院管辖。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "考虑异地离婚的具体情况",
+        "content": "当夫妻双方异地居住时，如果原告希望在其所在地提起离婚诉讼，需要满足特定条件，如被告长期不在原住所地或被告住所无法确定。这应符合《民事诉讼法》第22条中的特殊情况描述。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "综合规则并得出结论",
+        "content": "根据法律规定，异地离婚可在以下两种情况下确定管辖法院：1. 由被告住所地的基层人民法院管辖；2. 若被告住址不明或无法联系，可由原告住所地基层人民法院管辖。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "异地离婚案件的管辖法院通常由被告住所地的人民法院管辖。如果被告住址不明或其常住地无法确认，则可由原告住所地的人民法院管辖。这符合《民事诉讼法》第21条和第22条的规定。"
+      },
+      {
+        "action": "Verification",
+        "content": "结论符合我国《民事诉讼法》的相关规定及离婚案件的实际处理原则，合理有效，无需进一步修正。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "先想一下，离婚案件应该在哪儿提起呢？按照一般的法律规定，好像是由被告住的地方的法院管辖吧。嗯，这应该是《民事诉讼法》里面说过的，毕竟大多数案件都跟被告的住址有关，比较公平。但如果被告不在原来的住址或者联系不上，那是不是可以换到原告住的地方提呢？这好像也说得通，要是找不到被告，就只能从原告的角度出发了。还是搜一下相关的法律条款更保险吧。<search>民事诉讼法关于离婚案件管辖的条款</search>\n\n搜到了！<information>《民事诉讼法》第21条规定：一般案件由被告住所地管辖；第22条规定特殊情况下可由原告住所地管辖。</information>哦，果然离婚案件通常是由被告所在地法院管辖的，这跟之前记得的一样。但《民事诉讼法》第22条也提到了特殊情况，可以由原告的住所地管辖。这些特殊情况是不是指像被告长时间离开住所地、联系不上，或者根本不知道被告住在哪儿？嗯，这样就合理了。\n\n那如果夫妻双方是分居并且住在不同的城市呢？比如原告希望在自己住的地方提起离婚诉讼，是不是得符合这些特殊条件才行？确实是这样，如果被告还在原来的地址，按照第21条的规定，诉讼就得走被告住所地的法院。但如果被告长期不在或者地址无法确认，那就得看原告住的地方有没有资格管辖了。\n\n再来梳理一下吧，离婚案件的法院管辖目前看有两种方式：第一种是通常情况下，由被告住的地方法院管辖；第二种是特殊情况，比如被告住址不确定或联系不上时，可以由原告住的地方法院管辖。这两种情况的依据都是《民事诉讼法》第21条和第22条，法律条款挺明确的。\n\n嗯，这样总结出来基本没问题了，合理清晰，也符合实际情况。异地离婚的案件管辖规则就是按照法律这么走，具体法院就要看夫妻双方的住址和联系情况。",
+  "Response": "异地离婚案件如何确定管辖法院，主要依据我国《民事诉讼法》的相关规定：\n\n1. **一般情况**：根据《民事诉讼法》第21条的规定，离婚案件的管辖法院通常是按照被告住所地来确定，即由被告住所地的基层人民法院负责管辖。这是民事诉讼案件通常遵循的原则，体现了“谁主张，谁举证”的公平性。\n\n2. **特殊情况**：如果出现以下特殊情形，可以由原告住所地的人民法院管辖：\n   - 被告离开住所地超过一定时间，难以确定确切的居住地址；\n   - 被告未能联系上或下落不明；\n   - 被告的住所地无法确认。\n\n   这种情况适用《民事诉讼法》第22条，即对特殊民事案件允许由原告住所地法院管辖的规定。\n\n3. **具体实践**：如果夫妻双方分居，且住在不同城市，原告希望在自己住所地提起离婚诉讼，一般需要证明被告已长期脱离其原住所地或无法联系，才能适用《民事诉讼法》第22条的特殊规定。如果被告仍居住在其住所地，并且联系正常，则案件应按照第21条的规定，由被告住所地法院管辖。\n\n总之，异地离婚案件的管辖法院关键在于确定夫妻双方的住所地和联系情况，通常由被告住所地的法院管辖，但确有必要时可以转由原告住所地的法院处理。建议申请人根据具体情况收集相关证明材料，以便法院确认管辖权。",
+  "Question": "异地离婚如何确定管辖法院"
+}

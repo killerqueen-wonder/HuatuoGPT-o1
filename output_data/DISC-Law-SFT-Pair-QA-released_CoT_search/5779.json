@@ -1,0 +1,149 @@
+{
+  "Open-ended Verifiable Question": "夫妻一方的存款属于共同财产吗?",
+  "Ground-True Answer": "夫妻一方的存款不一定属于夫妻共同财产。如果个人存款是在夫妻关系存续期间夫妻所共同拥有的财产，则属于共同财产，分割要依据共同财产的标准进行分配;如果是个人存款是在婚前个人所得的财产，则属于一方的个人财产，在离婚时归一方个人所有，不能进行分割。所谓夫妻关系存续期间，是指夫妻结婚后到一方死亡或者离婚之前这段时间。",
+  "process_id": 5779,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "分析问题背景",
+      "content": "夫妻一方的存款是否属于共同财产，取决于相关法律对于婚姻关系内财产归属的规定。根据中国《民法典》或《婚姻法》中的条款，需要进一步明确这个问题。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "确定适用法律",
+      "content": "需要查阅《民法典》中关于婚姻关系中夫妻财产归属的具体规定，尤其是有关共同财产和个人财产的条款。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "检索相关法律法规",
+      "content": "查找《民法典》第1062条及相关条款，明确夫妻共同财产的范围和定义。"
+    },
+    {
+      "action": "Search",
+      "title": "检索夫妻共同财产相关内容",
+      "content": "<search>民法典第1062条 夫妻共同财产</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "分析法律规定",
+      "content": "<information>《民法典》第1062条规定：夫妻在婚姻存续期间所得的以下财产属于共同财产：一、工资、奖金、劳务报酬；二、生产、经营、投资的收益；三、知识产权的收益；四、继承或受赠的财产，但法律规定为个人财产的除外；五、其他应当归共同所有的财产。由此可以得出，婚姻存续期间产生的存款通常属于夫妻共同财产。</information>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "提取信息与问题结合",
+      "content": "根据上述法律条款，夫妻一方在婚姻关系存续期间赚取的收入（如工资、劳务报酬等）会形成存款，而存款显然属于夫妻共同财产的范围。但仍需进一步排查是否有法律例外条款，例如是否明确为个人财产。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "分析例外情况",
+      "content": "检查《民法典》中是否存在其他条款对存款归属进行特别规定，例如是否存在明确界定存款归属为个人财产的情形。"
+    },
+    {
+      "action": "Search",
+      "title": "检索个人财产相关内容",
+      "content": "<search>民法典第1063条 夫妻个人财产</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "结合个人财产条款进行分析",
+      "content": "<information>《民法典》第1063条规定，下列财产为夫妻个人财产：一、一方婚前财产；二、一方因受到人身损害获得的赔偿或补助；三、遗嘱或赠与合同中确定只归一方的财产；四、一方专用的生活用品；五、其他应当归一方所有的财产。因此，如存款来源于婚前收入或明确约定为个人专属财产，则属于个人财产。</information>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "归纳存款归属的关键因素",
+      "content": "存款的归属取决于存款来源和存款期间：1）若存款来源于婚姻存续期间获取的工资、投资收益等，则属夫妻共同财产；2）若存款来源于婚前财产或法律明确规定为个人财产的情况，则属个人财产。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "夫妻一方的存款通常属于夫妻共同财产，特别是在婚姻关系存续期间形成的存款。然而，如果存款来源于婚前财产或法律明确规定为个人财产的特殊情形，则该存款归一方个人所有。"
+    },
+    {
+      "action": "Verification",
+      "content": "结论与《民法典》第1062条与1063条相关内容一致，内容正确无误。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n夫妻一方的存款属于共同财产吗?\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n夫妻一方的存款通常属于夫妻共同财产，特别是在婚姻关系存续期间形成的存款。然而，如果存款来源于婚前财产或法律明确规定为个人财产的特殊情形，则该存款归一方个人所有。  \n</Model Response>  \n\n<Reference Answer>  \n夫妻一方的存款不一定属于夫妻共同财产。如果个人存款是在夫妻关系存续期间夫妻所共同拥有的财产，则属于共同财产，分割要依据共同财产的标准进行分配;如果是个人存款是在婚前个人所得的财产，则属于一方的个人财产，在离婚时归一方个人所有，不能进行分割。所谓夫妻关系存续期间，是指夫妻结婚后到一方死亡或者离婚之前这段时间。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 分析问题背景\n夫妻一方的存款是否属于共同财产，取决于相关法律对于婚姻关系内财产归属的规定。根据中国《民法典》或《婚姻法》中的条款，需要进一步明确这个问题。\n\n### 确定适用法律\n需要查阅《民法典》中关于婚姻关系中夫妻财产归属的具体规定，尤其是有关共同财产和个人财产的条款。\n\n### 检索相关法律法规\n查找《民法典》第1062条及相关条款，明确夫妻共同财产的范围和定义。\n\n### 检索夫妻共同财产相关内容\n<search>民法典第1062条 夫妻共同财产</search>\n\n### 分析法律规定\n<information>《民法典》第1062条规定：夫妻在婚姻存续期间所得的以下财产属于共同财产：一、工资、奖金、劳务报酬；二、生产、经营、投资的收益；三、知识产权的收益；四、继承或受赠的财产，但法律规定为个人财产的除外；五、其他应当归共同所有的财产。由此可以得出，婚姻存续期间产生的存款通常属于夫妻共同财产。</information>\n\n### 提取信息与问题结合\n根据上述法律条款，夫妻一方在婚姻关系存续期间赚取的收入（如工资、劳务报酬等）会形成存款，而存款显然属于夫妻共同财产的范围。但仍需进一步排查是否有法律例外条款，例如是否明确为个人财产。\n\n### 分析例外情况\n检查《民法典》中是否存在其他条款对存款归属进行特别规定，例如是否存在明确界定存款归属为个人财产的情形。\n\n### 检索个人财产相关内容\n<search>民法典第1063条 夫妻个人财产</search>\n\n### 结合个人财产条款进行分析\n<information>《民法典》第1063条规定，下列财产为夫妻个人财产：一、一方婚前财产；二、一方因受到人身损害获得的赔偿或补助；三、遗嘱或赠与合同中确定只归一方的财产；四、一方专用的生活用品；五、其他应当归一方所有的财产。因此，如存款来源于婚前收入或明确约定为个人专属财产，则属于个人财产。</information>\n\n### 归纳存款归属的关键因素\n存款的归属取决于存款来源和存款期间：1）若存款来源于婚姻存续期间获取的工资、投资收益等，则属夫妻共同财产；2）若存款来源于婚前财产或法律明确规定为个人财产的情况，则属个人财产。\n\n### Conclusion\n夫妻一方的存款通常属于夫妻共同财产，特别是在婚姻关系存续期间形成的存款。然而，如果存款来源于婚前财产或法律明确规定为个人财产的特殊情形，则该存款归一方个人所有。\n\n### Verification\n结论与《民法典》第1062条与1063条相关内容一致，内容正确无误。\n</Thought Process>\n\n<Question>\n夫妻一方的存款属于共同财产吗?\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n嗯，应该先想想夫妻一方的存款是不是共同财产，这得看法律是怎么规定的。好像在中国的《民法典》里有相关规定，特别是夫妻共同财产和个人财产的部分，得好好查一下这些条款才能确定。让我先来搜一下《民法典》关于夫妻财产归属的具体内容吧。\n\n<search>民法典第1062条 夫妻共同财产</search>\n\n哦，好像找到相关规定了。根据《民法典》第1062条：夫妻在婚姻存续期间所得的以下财产属于共同财产，比如工资、奖金、劳务报酬，生产经营或投资的收益，知识产权收益，还有继承或者受赠的财产（除非法律规定是个人财产），以及其他应归共同所有的财产。嗯，这样看来，如果是婚姻存续期间赚来的钱，存款似乎是属于夫妻共同财产的。\n\n不过，等等……会不会有例外情况呢？比如说如果是一方的婚前存款或者有什么特殊约定呢？让我再查查有没有其他条文，比如有关夫妻个人财产的部分。\n\n<search>民法典第1063条 夫妻个人财产</search>\n\n这条也找到了。《民法典》第1063条说，夫妻个人财产包括：一是婚前的财产；二是因为人身损害赔偿或补助获得的财产；三是遗嘱或者赠与合同明确只归一方的财产；四是一方专用的生活用品；五是法律上认为应归一方的其他财产。嗯，所以，如果存款是婚前赚的，或者是某种赔偿金之类特殊的收入，那就会被算作个人财产。\n\n综合来看，存款是不是共同财产其实得看它的来源和时间。如果是结婚之后赚的，比如工资、奖金之类，那基本就归共同财产。如果是结婚前的钱，或者有特殊的约定，比如遗嘱明确说这个财产归一方个人，那就是个人财产了。\n\n嗯，这样说来夫妻一方的存款通常在婚姻存续期间属于共同财产，但还得具体看存款的来源和相关法律规定。这个逻辑看起来没问题，跟《民法典》的条文也一致。\n</Internal Thinking>\n\n<Question>\n夫妻一方的存款属于共同财产吗?\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"分析问题背景\", \"content\": \"夫妻一方的存款是否属于共同财产，取决于相关法律对于婚姻关系内财产归属的规定。根据中国《民法典》或《婚姻法》中的条款，需要进一步明确这个问题。\"},\n    {\"action\": \"Inner Thinking\", \"title\": \"确定适用法律\", \"content\": \"需要查阅《民法典》中关于婚姻关系中夫妻财产归属的具体规定，尤其是有关共同财产和个人财产的条款。\"},\n    {\"action\": \"Inner Thinking\", \"title\": \"检索相关法律法规\", \"content\": \"查找《民法典》第1062条及相关条款，明确夫妻共同财产的范围和定义。\"},\n    {\"action\": \"Search\", \"title\": \"检索夫妻共同财产相关内容\", \"content\": \"<search>民法典第1062条 夫妻共同财产</search>\"},\n    {\"action\": \"Inner Thinking\", \"title\": \"分析法律规定\", \"content\": \"<information>《民法典》第1062条规定：夫妻在婚姻存续期间所得的以下财产属于共同财产：一、工资、奖金、劳务报酬；二、生产、经营、投资的收益；三、知识产权的收益；四、继承或受赠的财产，但法律规定为个人财产的除外；五、其他应当归共同所有的财产。由此可以得出，婚姻存续期间产生的存款通常属于夫妻共同财产。</information>\"},\n    {\"action\": \"Inner Thinking\", \"title\": \"提取信息与问题结合\", \"content\": \"根据上述法律条款，夫妻一方在婚姻关系存续期间赚取的收入（如工资、劳务报酬等）会形成存款，而存款显然属于夫妻共同财产的范围。但仍需进一步排查是否有法律例外条款，例如是否明确为个人财产。\"},\n    {\"action\": \"Inner Thinking\", \"title\": \"分析例外情况\", \"content\": \"检查《民法典》中是否存在其他条款对存款归属进行特别规定，例如是否存在明确界定存款归属为个人财产的情形。\"},\n    {\"action\": \"Search\", \"title\": \"检索个人财产相关内容\", \"content\": \"<search>民法典第1063条 夫妻个人财产</search>\"},\n    {\"action\": \"Inner Thinking\", \"title\": \"结合个人财产条款进行分析\", \"content\": \"<information>《民法典》第1063条规定，下列财产为夫妻个人财产：一、一方婚前财产；二、一方因受到人身损害获得的赔偿或补助；三、遗嘱或赠与合同中确定只归一方的财产；四、一方专用的生活用品；五、其他应当归一方所有的财产。因此，如存款来源于婚前收入或明确约定为个人专属财产，则属于个人财产。</information>\"},\n    {\"action\": \"Inner Thinking\", \"title\": \"归纳存款归属的关键因素\", \"content\": \"存款的归属取决于存款来源和存款期间：1）若存款来源于婚姻存续期间获取的工资、投资收益等，则属夫妻共同财产；2）若存款来源于婚前财产或法律明确规定为个人财产的情况，则属个人财产。\"},\n    {\"action\": \"Final Conclusion\", \"content\": \"夫妻一方的存款通常属于夫妻共同财产，特别是在婚姻关系存续期间形成的存款。然而，如果存款来源于婚前财产或法律明确规定为个人财产的特殊情形，则该存款归一方个人所有。\"},\n    {\"action\": \"Verification\", \"content\": \"结论与《民法典》第1062条与1063条相关内容一致，内容正确无误。\"}\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"嗯，应该先想想夫妻一方的存款是不是共同财产，这得看法律是怎么规定的。好像在中国的《民法典》里有相关规定，特别是夫妻共同财产和个人财产的部分，得好好查一下这些条款才能确定。让我先来搜一下《民法典》关于夫妻财产归属的具体内容吧。\\n\\n<search>民法典第1062条 夫妻共同财产</search>\\n\\n哦，好像找到相关规定了。根据《民法典》第1062条：夫妻在婚姻存续期间所得的以下财产属于共同财产，比如工资、奖金、劳务报酬，生产经营或投资的收益，知识产权收益，还有继承或者受赠的财产（除非法律规定是个人财产），以及其他应归共同所有的财产。嗯，这样看来，如果是婚姻存续期间赚来的钱，存款似乎是属于夫妻共同财产的。\\n\\n不过，等等……会不会有例外情况呢？比如说如果是一方的婚前存款或者有什么特殊约定呢？让我再查查有没有其他条文，比如有关夫妻个人财产的部分。\\n\\n<search>民法典第1063条 夫妻个人财产</search>\\n\\n这条也找到了。《民法典》第1063条说，夫妻个人财产包括：一是婚前的财产；二是因为人身损害赔偿或补助获得的财产；三是遗嘱或者赠与合同明确只归一方的财产；四是一方专用的生活用品；五是法律上认为应归一方的其他财产。嗯，所以，如果存款是婚前赚的，或者是某种赔偿金之类特殊的收入，那就会被算作个人财产。\\n\\n综合来看，存款是不是共同财产其实得看它的来源和时间。如果是结婚之后赚的，比如工资、奖金之类，那基本就归共同财产。如果是结婚前的钱，或者有特殊的约定，比如遗嘱明确说这个财产归一方个人，那就是个人财产了。\\n\\n嗯，这样说来夫妻一方的存款通常在婚姻存续期间属于共同财产，但还得具体看存款的来源和相关法律规定。这个逻辑看起来没问题，跟《民法典》的条文也一致。\"\n}\n```",
+    "根据《中华人民共和国民法典》第1062条和第1063条的规定，夫妻一方的存款是否属于共同财产主要取决于存款的来源及获取时间。\n\n如果是婚姻存续期间的存款，通常属于夫妻共同财产，因为这符合《民法典》第1062条中关于工资、奖金、投资收益等婚姻存续期间所得财产归共同所有的规定。也就是说，这部分存款即使存放在夫妻一方名下，法律上仍被认定为共同财产。\n\n但如果存款是婚前个人财产，或者是在婚姻存续期间以特殊形式取得（如遗嘱、赠与合同明确只归一方的资金，或者因人身损害赔偿获得的款项），则根据《民法典》第1063条的规定，可以认定为个人财产，不属于夫妻共同财产。\n\n因此，夫妻一方的存款是否属于共同财产，需要具体分析存款的来源和时间：  \n1. **婚后获得**的存款，属于共同财产；  \n2. **婚前存款**或具有明确法律或合同依据为一方个人财产的存款，属于个人财产。\n\n在实践中，判断财产性质时也需要结合具体证据和法律标准来确认。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "分析问题背景",
+        "content": "夫妻一方的存款是否属于共同财产，取决于相关法律对于婚姻关系内财产归属的规定。根据中国《民法典》或《婚姻法》中的条款，需要进一步明确这个问题。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "确定适用法律",
+        "content": "需要查阅《民法典》中关于婚姻关系中夫妻财产归属的具体规定，尤其是有关共同财产和个人财产的条款。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "检索相关法律法规",
+        "content": "查找《民法典》第1062条及相关条款，明确夫妻共同财产的范围和定义。"
+      },
+      {
+        "action": "Search",
+        "title": "检索夫妻共同财产相关内容",
+        "content": "<search>民法典第1062条 夫妻共同财产</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "分析法律规定",
+        "content": "<information>《民法典》第1062条规定：夫妻在婚姻存续期间所得的以下财产属于共同财产：一、工资、奖金、劳务报酬；二、生产、经营、投资的收益；三、知识产权的收益；四、继承或受赠的财产，但法律规定为个人财产的除外；五、其他应当归共同所有的财产。由此可以得出，婚姻存续期间产生的存款通常属于夫妻共同财产。</information>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "提取信息与问题结合",
+        "content": "根据上述法律条款，夫妻一方在婚姻关系存续期间赚取的收入（如工资、劳务报酬等）会形成存款，而存款显然属于夫妻共同财产的范围。但仍需进一步排查是否有法律例外条款，例如是否明确为个人财产。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "分析例外情况",
+        "content": "检查《民法典》中是否存在其他条款对存款归属进行特别规定，例如是否存在明确界定存款归属为个人财产的情形。"
+      },
+      {
+        "action": "Search",
+        "title": "检索个人财产相关内容",
+        "content": "<search>民法典第1063条 夫妻个人财产</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "结合个人财产条款进行分析",
+        "content": "<information>《民法典》第1063条规定，下列财产为夫妻个人财产：一、一方婚前财产；二、一方因受到人身损害获得的赔偿或补助；三、遗嘱或赠与合同中确定只归一方的财产；四、一方专用的生活用品；五、其他应当归一方所有的财产。因此，如存款来源于婚前收入或明确约定为个人专属财产，则属于个人财产。</information>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "归纳存款归属的关键因素",
+        "content": "存款的归属取决于存款来源和存款期间：1）若存款来源于婚姻存续期间获取的工资、投资收益等，则属夫妻共同财产；2）若存款来源于婚前财产或法律明确规定为个人财产的情况，则属个人财产。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "夫妻一方的存款通常属于夫妻共同财产，特别是在婚姻关系存续期间形成的存款。然而，如果存款来源于婚前财产或法律明确规定为个人财产的特殊情形，则该存款归一方个人所有。"
+      },
+      {
+        "action": "Verification",
+        "content": "结论与《民法典》第1062条与1063条相关内容一致，内容正确无误。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "嗯，应该先想想夫妻一方的存款是不是共同财产，这得看法律是怎么规定的。好像在中国的《民法典》里有相关规定，特别是夫妻共同财产和个人财产的部分，得好好查一下这些条款才能确定。让我先来搜一下《民法典》关于夫妻财产归属的具体内容吧。\n\n<search>民法典第1062条 夫妻共同财产</search>\n\n哦，好像找到相关规定了。根据《民法典》第1062条：夫妻在婚姻存续期间所得的以下财产属于共同财产，比如工资、奖金、劳务报酬，生产经营或投资的收益，知识产权收益，还有继承或者受赠的财产（除非法律规定是个人财产），以及其他应归共同所有的财产。嗯，这样看来，如果是婚姻存续期间赚来的钱，存款似乎是属于夫妻共同财产的。\n\n不过，等等……会不会有例外情况呢？比如说如果是一方的婚前存款或者有什么特殊约定呢？让我再查查有没有其他条文，比如有关夫妻个人财产的部分。\n\n<search>民法典第1063条 夫妻个人财产</search>\n\n这条也找到了。《民法典》第1063条说，夫妻个人财产包括：一是婚前的财产；二是因为人身损害赔偿或补助获得的财产；三是遗嘱或者赠与合同明确只归一方的财产；四是一方专用的生活用品；五是法律上认为应归一方的其他财产。嗯，所以，如果存款是婚前赚的，或者是某种赔偿金之类特殊的收入，那就会被算作个人财产。\n\n综合来看，存款是不是共同财产其实得看它的来源和时间。如果是结婚之后赚的，比如工资、奖金之类，那基本就归共同财产。如果是结婚前的钱，或者有特殊的约定，比如遗嘱明确说这个财产归一方个人，那就是个人财产了。\n\n嗯，这样说来夫妻一方的存款通常在婚姻存续期间属于共同财产，但还得具体看存款的来源和相关法律规定。这个逻辑看起来没问题，跟《民法典》的条文也一致。",
+  "Response": "根据《中华人民共和国民法典》第1062条和第1063条的规定，夫妻一方的存款是否属于共同财产主要取决于存款的来源及获取时间。\n\n如果是婚姻存续期间的存款，通常属于夫妻共同财产，因为这符合《民法典》第1062条中关于工资、奖金、投资收益等婚姻存续期间所得财产归共同所有的规定。也就是说，这部分存款即使存放在夫妻一方名下，法律上仍被认定为共同财产。\n\n但如果存款是婚前个人财产，或者是在婚姻存续期间以特殊形式取得（如遗嘱、赠与合同明确只归一方的资金，或者因人身损害赔偿获得的款项），则根据《民法典》第1063条的规定，可以认定为个人财产，不属于夫妻共同财产。\n\n因此，夫妻一方的存款是否属于共同财产，需要具体分析存款的来源和时间：  \n1. **婚后获得**的存款，属于共同财产；  \n2. **婚前存款**或具有明确法律或合同依据为一方个人财产的存款，属于个人财产。\n\n在实践中，判断财产性质时也需要结合具体证据和法律标准来确认。",
+  "Question": "夫妻一方的存款属于共同财产吗?"
+}

@@ -1,0 +1,89 @@
+{
+  "Open-ended Verifiable Question": "可撤销合同的适用范围?",
+  "Ground-True Answer": "(一)因重大误解订立的合同。所谓重大误解是指行为人因对行为的性质、对方当事人、标的物的品种、质量、规格和数量等产生错误的认识，致使行为的后果与自己的真实意思相违背，并造成较大损失的，可以认定为重大误解。(二)是在订立合同时显失公平的。按照我国的司法解释，显失公平是指一方当事人利用优势或者利用对方没有经验，致使双方的权利与义务明显违反公平、等价有偿原则的民事行为。(三)是以欺诈、胁迫的手段或者乘人之危而订立的合同。一般显失公平的合同、趁人之危签订的合同、以欺诈胁迫手段订立的合同，其实都是可以申请仲裁机构或者人民法院裁定撤销。而在行使撤销权的时候，要在注意规定的时间，即要求在知道或者应当知道撤销事由的一年之内就就要提出申请，否则的话会产生撤销权消灭的不利后果。根据《民法典》第一百五十五条，无效的或者被撤销的民事法律行为自始没有法律约束力。《民法典》第一百五十七条，民事法律行为无效、被撤销或者确定不发生效力后，行为人因该行为取得的财产，应当予以返还;不能返还或者没有必要返还的，应当折价补偿。有过错的一方应当赔偿对方由此所受到的损失;各方都有过错的，应当各自承担相应的责任。法律另有规定的，依照其规定。",
+  "process_id": 8480,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "定义可撤销合同",
+      "content": "根据合同法，可撤销合同是指由于一方在订立时存在重大误解或者显失公平等情形，另外一方可选择通过法律程序要求撤销该合同。需要查找与可撤销合同相关的适用条件和范围规定以进一步分析。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "查找法律规定",
+      "content": "<search>合同法 可撤销合同 适用范围</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "整理搜索结果",
+      "content": "<information>《中华人民共和国民法典》第147条至151条规定了可撤销合同的适用范围，主要包括以下情形：1. 因重大误解订立的合同；2. 在订立合同时显失公平的；3. 因欺诈、胁迫或者乘人之危使对方在违背真实意愿的情况下订立的合同。</information>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "分析可撤销合同的范围",
+      "content": "结合搜索结果，可撤销合同主要适用于以下情形：1. 重大误解，例如合同双方在意思表示时的理解出现偏差；2. 显失公平，指合同双方利益分配严重失衡；3. 欺诈、胁迫或者乘人之危，影响合同一方的真实意思表示。这些情形主要是为了保护合同当事人合法权益，同时维护合同交易公平性。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "根据《中华人民共和国民法典》的规定，可撤销合同的适用范围包括以下情形：1. 因重大误解订立的合同；2. 在订立合同时显失公平的；3. 因欺诈、胁迫或者乘人之危使对方在违背真实意愿的情况下订立的合同。这些规定确保了合同双方的合法权益，同时维护了合同的公平性与合理性。"
+    },
+    {
+      "action": "Verification",
+      "content": "通过核对《中华人民共和国民法典》的相关条文和整理出的分析结论，适用范围的描述与法律规定完全一致。因此结论正确，无需进一步修正。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n可撤销合同的适用范围?\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n根据《中华人民共和国民法典》的规定，可撤销合同的适用范围包括以下情形：1. 因重大误解订立的合同；2. 在订立合同时显失公平的；3. 因欺诈、胁迫或者乘人之危使对方在违背真实意愿的情况下订立的合同。这些规定确保了合同双方的合法权益，同时维护了合同的公平性与合理性。  \n</Model Response>  \n\n<Reference Answer>  \n(一)因重大误解订立的合同。所谓重大误解是指行为人因对行为的性质、对方当事人、标的物的品种、质量、规格和数量等产生错误的认识，致使行为的后果与自己的真实意思相违背，并造成较大损失的，可以认定为重大误解。(二)是在订立合同时显失公平的。按照我国的司法解释，显失公平是指一方当事人利用优势或者利用对方没有经验，致使双方的权利与义务明显违反公平、等价有偿原则的民事行为。(三)是以欺诈、胁迫的手段或者乘人之危而订立的合同。一般显失公平的合同、趁人之危签订的合同、以欺诈胁迫手段订立的合同，其实都是可以申请仲裁机构或者人民法院裁定撤销。而在行使撤销权的时候，要在注意规定的时间，即要求在知道或者应当知道撤销事由的一年之内就就要提出申请，否则的话会产生撤销权消灭的不利后果。根据《民法典》第一百五十五条，无效的或者被撤销的民事法律行为自始没有法律约束力。《民法典》第一百五十七条，民事法律行为无效、被撤销或者确定不发生效力后，行为人因该行为取得的财产，应当予以返还;不能返还或者没有必要返还的，应当折价补偿。有过错的一方应当赔偿对方由此所受到的损失;各方都有过错的，应当各自承担相应的责任。法律另有规定的，依照其规定。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 定义可撤销合同\n根据合同法，可撤销合同是指由于一方在订立时存在重大误解或者显失公平等情形，另外一方可选择通过法律程序要求撤销该合同。需要查找与可撤销合同相关的适用条件和范围规定以进一步分析。\n\n### 查找法律规定\n<search>合同法 可撤销合同 适用范围</search>\n\n### 整理搜索结果\n<information>《中华人民共和国民法典》第147条至151条规定了可撤销合同的适用范围，主要包括以下情形：1. 因重大误解订立的合同；2. 在订立合同时显失公平的；3. 因欺诈、胁迫或者乘人之危使对方在违背真实意愿的情况下订立的合同。</information>\n\n### 分析可撤销合同的范围\n结合搜索结果，可撤销合同主要适用于以下情形：1. 重大误解，例如合同双方在意思表示时的理解出现偏差；2. 显失公平，指合同双方利益分配严重失衡；3. 欺诈、胁迫或者乘人之危，影响合同一方的真实意思表示。这些情形主要是为了保护合同当事人合法权益，同时维护合同交易公平性。\n\n### Conclusion\n根据《中华人民共和国民法典》的规定，可撤销合同的适用范围包括以下情形：1. 因重大误解订立的合同；2. 在订立合同时显失公平的；3. 因欺诈、胁迫或者乘人之危使对方在违背真实意愿的情况下订立的合同。这些规定确保了合同双方的合法权益，同时维护了合同的公平性与合理性。\n\n### Verification\n通过核对《中华人民共和国民法典》的相关条文和整理出的分析结论，适用范围的描述与法律规定完全一致。因此结论正确，无需进一步修正。\n</Thought Process>\n\n<Question>\n可撤销合同的适用范围?\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n可撤销合同是什么呢？让我先想一下这是不是和合同法有关的内容。根据记忆，好像是法律上允许撤销的一种合同，可能有些特殊的条件。为了更准确地理解，我觉得可以先查一下相关法律的具体定义和适用范围。\n\n<search>合同法 可撤销合同 适用范围</search>\n\n好了，查到了一些内容！\n\n<information>《中华人民共和国民法典》第147条至151条有关于可撤销合同的规定。根据这些条文，可撤销合同适用于以下情形：1. 合同因为重大误解而订立；2. 合同订立的时候显失公平；3. 因欺诈、胁迫或者乘人之危导致一方在违背真实意愿的情况下订立的合同。</information>\n\n原来如此！可撤销合同的范围其实还蛮清晰的，主要是关于几个核心情形。第一种是重大误解，这表示双方在签合同的时候可能存在理解上的错误，比如说对具体条款的意思产生了偏差。如果是因为这种误解，当然有理由要求撤销合同。第二种是显失公平，比如说合同严重偏离了公平原则，一方的利益受到较大损害，这种情况下合同显然是不合理的。最后一种是因为欺诈、胁迫或乘人之危，比如有人利用威胁或者欺诈手段让对方违背自身意愿签订合同，这种合同当然可以要求撤销，以保护受害人。\n\n我觉得这些规定的核心是为了保护合同的公平和正义，同时保障每一方的合法权益。这从《民法典》的条文来看也很清楚。法律这样设计其实很有道理，因为合同本来就应该是自愿、平等的，如果因为这些重大问题导致合同不公平，肯定应该有机会通过法律纠正。\n\n总结一下，可撤销合同适合的范围就是针对这三种主要情形：一是因重大误解签订的合同；二是显失公平的合同；三是因欺诈、胁迫或乘人之危订立的合同。这些规定表明法律在合同问题上还是注重公平性和对弱势方的保护。\n\n最后，我再验证一下分析是否准确。对比一下找到的《民法典》的相关条文和我总结的内容，基本上是一致的！因此，我认为这些结论是正确的，依照法律规定没有问题了。\n</Internal Thinking>\n\n<Question>\n可撤销合同的适用范围?\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"定义可撤销合同\",\n      \"content\": \"根据合同法，可撤销合同是指由于一方在订立时存在重大误解或者显失公平等情形，另外一方可选择通过法律程序要求撤销该合同。需要查找与可撤销合同相关的适用条件和范围规定以进一步分析。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"查找法律规定\",\n      \"content\": \"<search>合同法 可撤销合同 适用范围</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"整理搜索结果\",\n      \"content\": \"<information>《中华人民共和国民法典》第147条至151条规定了可撤销合同的适用范围，主要包括以下情形：1. 因重大误解订立的合同；2. 在订立合同时显失公平的；3. 因欺诈、胁迫或者乘人之危使对方在违背真实意愿的情况下订立的合同。</information>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析可撤销合同的范围\",\n      \"content\": \"结合搜索结果，可撤销合同主要适用于以下情形：1. 重大误解，例如合同双方在意思表示时的理解出现偏差；2. 显失公平，指合同双方利益分配严重失衡；3. 欺诈、胁迫或者乘人之危，影响合同一方的真实意思表示。这些情形主要是为了保护合同当事人合法权益，同时维护合同交易公平性。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"根据《中华人民共和国民法典》的规定，可撤销合同的适用范围包括以下情形：1. 因重大误解订立的合同；2. 在订立合同时显失公平的；3. 因欺诈、胁迫或者乘人之危使对方在违背真实意愿的情况下订立的合同。这些规定确保了合同双方的合法权益，同时维护了合同的公平性与合理性。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"通过核对《中华人民共和国民法典》的相关条文和整理出的分析结论，适用范围的描述与法律规定完全一致。因此结论正确，无需进一步修正。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"可撤销合同是什么呢？让我先想一下这是不是和合同法有关的内容。根据记忆，好像是法律上允许撤销的一种合同，可能有些特殊的条件。为了更准确地理解，我觉得可以先查一下相关法律的具体定义和适用范围。\\n\\n<search>合同法 可撤销合同 适用范围</search>\\n\\n好了，查到了一些内容！\\n\\n<information>《中华人民共和国民法典》第147条至151条有关于可撤销合同的规定。根据这些条文，可撤销合同适用于以下情形：1. 合同因为重大误解而订立；2. 合同订立的时候显失公平；3. 因欺诈、胁迫或者乘人之危导致一方在违背真实意愿的情况下订立的合同。</information>\\n\\n原来如此！可撤销合同的范围其实还蛮清晰的，主要是关于几个核心情形。第一种是重大误解，这表示双方在签合同的时候可能存在理解上的错误，比如说对具体条款的意思产生了偏差。如果是因为这种误解，当然有理由要求撤销合同。第二种是显失公平，比如说合同严重偏离了公平原则，一方的利益受到较大损害，这种情况下合同显然是不合理的。最后一种是因为欺诈、胁迫或乘人之危，比如有人利用威胁或者欺诈手段让对方违背自身意愿签订合同，这种合同当然可以要求撤销，以保护受害人。\\n\\n我觉得这些规定的核心是为了保护合同的公平和正义，同时保障每一方的合法权益。这从《民法典》的条文来看也很清楚。法律这样设计其实很有道理，因为合同本来就应该是自愿、平等的，如果因为这些重大问题导致合同不公平，肯定应该有机会通过法律纠正。\\n\\n总结一下，可撤销合同适合的范围就是针对这三种主要情形：一是因重大误解签订的合同；二是显失公平的合同；三是因欺诈、胁迫或乘人之危订立的合同。这些规定表明法律在合同问题上还是注重公平性和对弱势方的保护。\\n\\n最后，我再验证一下分析是否准确。对比一下找到的《民法典》的相关条文和我总结的内容，基本上是一致的！因此，我认为这些结论是正确的，依照法律规定没有问题了。\"\n}\n```",
+    "可撤销合同适用于以下三种主要情形，依据《中华人民共和国民法典》第147条至151条的规定：\n\n1. **重大误解**：如果合同因双方或一方对合同内容、条款等存在重大误解而订立，当事人可以要求撤销合同。这种情形通常是基于双方交流不充分或理解错误，导致合同未能反映真实意愿。\n\n2. **显失公平**：合同在订立时显著违背公平原则，导致一方权益受到严重损害的，受损方有权申请撤销。例如合同条款过于偏向一方利益，或签订时存在明显的不对等关系。\n\n3. **欺诈、胁迫或乘人之危**：如果合同是在一方遭受欺诈、胁迫或者在其处于困境时被另一方利用而订立，且明显违背该方真实意愿，当事人可以依法请求撤销。目的是保护弱势方的合法权益。\n\n综上，这些规定的目的是维护合同双方的公平原则，保障当事人在平等、自愿前提下订立合同。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "定义可撤销合同",
+        "content": "根据合同法，可撤销合同是指由于一方在订立时存在重大误解或者显失公平等情形，另外一方可选择通过法律程序要求撤销该合同。需要查找与可撤销合同相关的适用条件和范围规定以进一步分析。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "查找法律规定",
+        "content": "<search>合同法 可撤销合同 适用范围</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "整理搜索结果",
+        "content": "<information>《中华人民共和国民法典》第147条至151条规定了可撤销合同的适用范围，主要包括以下情形：1. 因重大误解订立的合同；2. 在订立合同时显失公平的；3. 因欺诈、胁迫或者乘人之危使对方在违背真实意愿的情况下订立的合同。</information>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "分析可撤销合同的范围",
+        "content": "结合搜索结果，可撤销合同主要适用于以下情形：1. 重大误解，例如合同双方在意思表示时的理解出现偏差；2. 显失公平，指合同双方利益分配严重失衡；3. 欺诈、胁迫或者乘人之危，影响合同一方的真实意思表示。这些情形主要是为了保护合同当事人合法权益，同时维护合同交易公平性。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "根据《中华人民共和国民法典》的规定，可撤销合同的适用范围包括以下情形：1. 因重大误解订立的合同；2. 在订立合同时显失公平的；3. 因欺诈、胁迫或者乘人之危使对方在违背真实意愿的情况下订立的合同。这些规定确保了合同双方的合法权益，同时维护了合同的公平性与合理性。"
+      },
+      {
+        "action": "Verification",
+        "content": "通过核对《中华人民共和国民法典》的相关条文和整理出的分析结论，适用范围的描述与法律规定完全一致。因此结论正确，无需进一步修正。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "可撤销合同是什么呢？让我先想一下这是不是和合同法有关的内容。根据记忆，好像是法律上允许撤销的一种合同，可能有些特殊的条件。为了更准确地理解，我觉得可以先查一下相关法律的具体定义和适用范围。\n\n<search>合同法 可撤销合同 适用范围</search>\n\n好了，查到了一些内容！\n\n<information>《中华人民共和国民法典》第147条至151条有关于可撤销合同的规定。根据这些条文，可撤销合同适用于以下情形：1. 合同因为重大误解而订立；2. 合同订立的时候显失公平；3. 因欺诈、胁迫或者乘人之危导致一方在违背真实意愿的情况下订立的合同。</information>\n\n原来如此！可撤销合同的范围其实还蛮清晰的，主要是关于几个核心情形。第一种是重大误解，这表示双方在签合同的时候可能存在理解上的错误，比如说对具体条款的意思产生了偏差。如果是因为这种误解，当然有理由要求撤销合同。第二种是显失公平，比如说合同严重偏离了公平原则，一方的利益受到较大损害，这种情况下合同显然是不合理的。最后一种是因为欺诈、胁迫或乘人之危，比如有人利用威胁或者欺诈手段让对方违背自身意愿签订合同，这种合同当然可以要求撤销，以保护受害人。\n\n我觉得这些规定的核心是为了保护合同的公平和正义，同时保障每一方的合法权益。这从《民法典》的条文来看也很清楚。法律这样设计其实很有道理，因为合同本来就应该是自愿、平等的，如果因为这些重大问题导致合同不公平，肯定应该有机会通过法律纠正。\n\n总结一下，可撤销合同适合的范围就是针对这三种主要情形：一是因重大误解签订的合同；二是显失公平的合同；三是因欺诈、胁迫或乘人之危订立的合同。这些规定表明法律在合同问题上还是注重公平性和对弱势方的保护。\n\n最后，我再验证一下分析是否准确。对比一下找到的《民法典》的相关条文和我总结的内容，基本上是一致的！因此，我认为这些结论是正确的，依照法律规定没有问题了。",
+  "Response": "可撤销合同适用于以下三种主要情形，依据《中华人民共和国民法典》第147条至151条的规定：\n\n1. **重大误解**：如果合同因双方或一方对合同内容、条款等存在重大误解而订立，当事人可以要求撤销合同。这种情形通常是基于双方交流不充分或理解错误，导致合同未能反映真实意愿。\n\n2. **显失公平**：合同在订立时显著违背公平原则，导致一方权益受到严重损害的，受损方有权申请撤销。例如合同条款过于偏向一方利益，或签订时存在明显的不对等关系。\n\n3. **欺诈、胁迫或乘人之危**：如果合同是在一方遭受欺诈、胁迫或者在其处于困境时被另一方利用而订立，且明显违背该方真实意愿，当事人可以依法请求撤销。目的是保护弱势方的合法权益。\n\n综上，这些规定的目的是维护合同双方的公平原则，保障当事人在平等、自愿前提下订立合同。",
+  "Question": "可撤销合同的适用范围?"
+}

@@ -1,0 +1,79 @@
+{
+  "Open-ended Verifiable Question": "婚内出轨，财产如何分割？",
+  "Ground-True Answer": "1、财产分割原则是以照顾无过错一方为原则主张离婚损害赔偿必须以离婚(诉讼离婚或协议离婚)为前提。如果当事人不起诉离婚，仅提起损害赔偿请求的，那么人民法院不予受理。如果当事人起诉离婚，法院判决不准离婚，那么对离婚损害赔偿请求权也会不予支持。2、可以主张损害赔偿的法定情形(1)重婚;　(2)有配偶者与他人同居(此处同居是指双方以夫妻名义持续稳定地共同生活);　(3)实施家庭暴力;　(4)虐待、遗弃家庭成员;　(5)擅自处分夫妻共同共有的房屋造成另一方损失。 3、离婚损害赔偿承担主体具有过错的配偶，第三者不承担赔偿责任。夫妻双方均具有过错行为，任何一方均丧失离婚损害赔偿请求权。4、起诉离婚主张时间(1)无过错方作为离婚诉讼的原告时，须在离婚诉讼中提出; (2)如果被告不同意离婚亦未提起损害赔偿请求的，可以在离婚后一年内就此单独提起诉讼;　(3)一审时被告未提出损害赔偿请求，二审期间提出的，法院应当进行调解，调解不成的，告知当事人在离婚后一年内另行起诉。",
+  "process_id": 6397,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "确定婚姻法适用范围",
+      "content": "婚内出轨如何影响财产分割需要参考中国《婚姻法》的有关规定。根据法律规范，明确财产分割的原则和与过错相关的条款内容是关键。首先需要确认与婚姻存续期间财产分割相关的具体法律依据是哪些。<search>中国婚姻法 财产分割 出轨</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "分析婚姻法对出轨的规定",
+      "content": "<information>根据《中华人民共和国民法典》（2021年实施，取代原《婚姻法》），出轨本身一般不会直接导致财产分割结果的改变，但如果出轨行为涉及重大过错，且严重损害夫妻共同财产（如重婚或与他人同居），受害一方可能可以主张更多的补偿。</information>因此需要进一步确认‘重大过错’的适用条件以及对共同财产分割的变化是否存在量化依据。<search>重大过错 婚内财产分割</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "界定‘重大过错’及财产分割",
+      "content": "<information>《中华人民共和国民法典》第1091条规定，重大过错包括重婚、与他人同居、实施家庭暴力、虐待或遗弃家庭成员等行为。如果婚内出轨被界定为重大过错，受害方可以向法院提出请求，要求离婚损害赔偿。财产分割原则上仍需按照共同财产和个人财产性质区分，大致采取平等分割为主。</information>由此，确定出轨属于重大过错的前置条件对于影响财产分割有着重要意义。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "在婚姻关系存续期间的出轨行为是否影响财产分割，需视具体情况而定。在中国法律中，根据《民法典》第1091条的规定，如果婚内出轨被认定为重大过错（如构成重婚或有稳定的同居关系），无过错方可以主张离婚损害赔偿，但这并不直接改变财产分割原则。财产分割一般遵循平等分割原则，但无过错方可能可通过法院裁定获得一些补偿，或者因特殊情形（如出轨方浪费共同财产）影响分割比例。"
+    },
+    {
+      "action": "Verification",
+      "content": "结论与现行法律条文相符，且充分考虑重大过错与财产分割在当前法律框架下的关系，因此结论成立。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n婚内出轨，财产如何分割？\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n在婚姻关系存续期间的出轨行为是否影响财产分割，需视具体情况而定。在中国法律中，根据《民法典》第1091条的规定，如果婚内出轨被认定为重大过错（如构成重婚或有稳定的同居关系），无过错方可以主张离婚损害赔偿，但这并不直接改变财产分割原则。财产分割一般遵循平等分割原则，但无过错方可能可通过法院裁定获得一些补偿，或者因特殊情形（如出轨方浪费共同财产）影响分割比例。  \n</Model Response>  \n\n<Reference Answer>  \n1、财产分割原则是以照顾无过错一方为原则主张离婚损害赔偿必须以离婚(诉讼离婚或协议离婚)为前提。如果当事人不起诉离婚，仅提起损害赔偿请求的，那么人民法院不予受理。如果当事人起诉离婚，法院判决不准离婚，那么对离婚损害赔偿请求权也会不予支持。2、可以主张损害赔偿的法定情形(1)重婚;　(2)有配偶者与他人同居(此处同居是指双方以夫妻名义持续稳定地共同生活);　(3)实施家庭暴力;　(4)虐待、遗弃家庭成员;　(5)擅自处分夫妻共同共有的房屋造成另一方损失。 3、离婚损害赔偿承担主体具有过错的配偶，第三者不承担赔偿责任。夫妻双方均具有过错行为，任何一方均丧失离婚损害赔偿请求权。4、起诉离婚主张时间(1)无过错方作为离婚诉讼的原告时，须在离婚诉讼中提出; (2)如果被告不同意离婚亦未提起损害赔偿请求的，可以在离婚后一年内就此单独提起诉讼;　(3)一审时被告未提出损害赔偿请求，二审期间提出的，法院应当进行调解，调解不成的，告知当事人在离婚后一年内另行起诉。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 确定婚姻法适用范围\n婚内出轨如何影响财产分割需要参考中国《婚姻法》的有关规定。根据法律规范，明确财产分割的原则和与过错相关的条款内容是关键。首先需要确认与婚姻存续期间财产分割相关的具体法律依据是哪些。<search>中国婚姻法 财产分割 出轨</search>\n\n### 分析婚姻法对出轨的规定\n<information>根据《中华人民共和国民法典》（2021年实施，取代原《婚姻法》），出轨本身一般不会直接导致财产分割结果的改变，但如果出轨行为涉及重大过错，且严重损害夫妻共同财产（如重婚或与他人同居），受害一方可能可以主张更多的补偿。</information>因此需要进一步确认‘重大过错’的适用条件以及对共同财产分割的变化是否存在量化依据。<search>重大过错 婚内财产分割</search>\n\n### 界定‘重大过错’及财产分割\n<information>《中华人民共和国民法典》第1091条规定，重大过错包括重婚、与他人同居、实施家庭暴力、虐待或遗弃家庭成员等行为。如果婚内出轨被界定为重大过错，受害方可以向法院提出请求，要求离婚损害赔偿。财产分割原则上仍需按照共同财产和个人财产性质区分，大致采取平等分割为主。</information>由此，确定出轨属于重大过错的前置条件对于影响财产分割有着重要意义。\n\n### Conclusion\n在婚姻关系存续期间的出轨行为是否影响财产分割，需视具体情况而定。在中国法律中，根据《民法典》第1091条的规定，如果婚内出轨被认定为重大过错（如构成重婚或有稳定的同居关系），无过错方可以主张离婚损害赔偿，但这并不直接改变财产分割原则。财产分割一般遵循平等分割原则，但无过错方可能可通过法院裁定获得一些补偿，或者因特殊情形（如出轨方浪费共同财产）影响分割比例。\n\n### Verification\n结论与现行法律条文相符，且充分考虑重大过错与财产分割在当前法律框架下的关系，因此结论成立。\n</Thought Process>\n\n<Question>\n婚内出轨，财产如何分割？\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n好，婚内出轨的话，财产分割到底是怎么处理的呢？这个涉及到中国的婚姻法或者说是现在的《民法典》。那么第一步，我需要确定到底哪些法律规范讲到了财产分割问题，特别是婚姻存续期间涉及出轨的情况。我记得《民法典》应该取代了之前的《婚姻法》，让我查一下相关条文，看看有没有明确规定。<search>中国婚姻法 财产分割 出轨</search>\n\n查到的信息是，根据《民法典》（2021年实施，替代了原来的《婚姻法》），出轨本身一般不会直接影响财产分割的结果。不过，如果出轨行为涉及所谓“重大过错”，比如重婚或者长期与他人同居，就可能会给财产分割带来一些变化，比如无过错的一方可以要求损害赔偿。嗯，这听起来稍微复杂一点，我要再明确一下“重大过错”的具体条件是什么，还有财产分割的基本原则有没有变化。<search>重大过错 婚内财产分割</search>\n\n哦，找到了！根据《民法典》第1091条，“重大过错”包括比如重婚、与他人同居、家庭暴力、虐待或者遗弃家庭成员等等。如果这些行为确实存在，无过错一方可以向法院请求离婚损害赔偿。但是对夫妻共同财产的分割，还是以平等分割为原则。也就是说，财产分割主要还是看共同财产和个人财产怎么归类，没有直接因为一方出轨而改变分割比例。不过，如果出轨方在婚姻存续期间有浪费或损害共同财产的行为，分割比例可能会受到影响。\n\n所以简单来说，婚内出轨如果被认定为重大过错，比如已经构成重婚或者长期同居，那么无过错方可以主张离婚损害赔偿，但是对财产分割来说，仍然是以平等分割为主。如果出轨方严重浪费或侵害了共同财产，那么受害一方的权益可能会在分割时更受到保护。\n\n这样看来，法律的逻辑还是蛮清楚的。损害赔偿主要是无过错方的权益补偿，但财产分割仍然以共同财产为基础。最终法院会根据具体情况来裁定，所以还是要看案件的具体细节。这个结论应该没有问题，符合《民法典》的要求。\n</Internal Thinking>\n\n<Question>\n婚内出轨，财产如何分割？\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"确定婚姻法适用范围\",\n      \"content\": \"婚内出轨如何影响财产分割需要参考中国《婚姻法》的有关规定。根据法律规范，明确财产分割的原则和与过错相关的条款内容是关键。首先需要确认与婚姻存续期间财产分割相关的具体法律依据是哪些。<search>中国婚姻法 财产分割 出轨</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析婚姻法对出轨的规定\",\n      \"content\": \"<information>根据《中华人民共和国民法典》（2021年实施，取代原《婚姻法》），出轨本身一般不会直接导致财产分割结果的改变，但如果出轨行为涉及重大过错，且严重损害夫妻共同财产（如重婚或与他人同居），受害一方可能可以主张更多的补偿。</information>因此需要进一步确认‘重大过错’的适用条件以及对共同财产分割的变化是否存在量化依据。<search>重大过错 婚内财产分割</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"界定‘重大过错’及财产分割\",\n      \"content\": \"<information>《中华人民共和国民法典》第1091条规定，重大过错包括重婚、与他人同居、实施家庭暴力、虐待或遗弃家庭成员等行为。如果婚内出轨被界定为重大过错，受害方可以向法院提出请求，要求离婚损害赔偿。财产分割原则上仍需按照共同财产和个人财产性质区分，大致采取平等分割为主。</information>由此，确定出轨属于重大过错的前置条件对于影响财产分割有着重要意义。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"在婚姻关系存续期间的出轨行为是否影响财产分割，需视具体情况而定。在中国法律中，根据《民法典》第1091条的规定，如果婚内出轨被认定为重大过错（如构成重婚或有稳定的同居关系），无过错方可以主张离婚损害赔偿，但这并不直接改变财产分割原则。财产分割一般遵循平等分割原则，但无过错方可能可通过法院裁定获得一些补偿，或者因特殊情形（如出轨方浪费共同财产）影响分割比例。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"结论与现行法律条文相符，且充分考虑重大过错与财产分割在当前法律框架下的关系，因此结论成立。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"好，婚内出轨的话，财产分割到底是怎么处理的呢？这个涉及到中国的婚姻法或者说是现在的《民法典》。那么第一步，我需要确定到底哪些法律规范讲到了财产分割问题，特别是婚姻存续期间涉及出轨的情况。我记得《民法典》应该取代了之前的《婚姻法》，让我查一下相关条文，看看有没有明确规定。<search>中国婚姻法 财产分割 出轨</search>\\n\\n查到的信息是，根据《民法典》（2021年实施，替代了原来的《婚姻法》），出轨本身一般不会直接影响财产分割的结果。不过，如果出轨行为涉及所谓“重大过错”，比如重婚或者长期与他人同居，就可能会给财产分割带来一些变化，比如无过错的一方可以要求损害赔偿。嗯，这听起来稍微复杂一点，我要再明确一下“重大过错”的具体条件是什么，还有财产分割的基本原则有没有变化。<search>重大过错 婚内财产分割</search>\\n\\n哦，找到了！根据《民法典》第1091条，“重大过错”包括比如重婚、与他人同居、家庭暴力、虐待或者遗弃家庭成员等等。如果这些行为确实存在，无过错一方可以向法院请求离婚损害赔偿。但是对夫妻共同财产的分割，还是以平等分割为原则。也就是说，财产分割主要还是看共同财产和个人财产怎么归类，没有直接因为一方出轨而改变分割比例。不过，如果出轨方在婚姻存续期间有浪费或损害共同财产的行为，分割比例可能会受到影响。\\n\\n所以简单来说，婚内出轨如果被认定为重大过错，比如已经构成重婚或者长期同居，那么无过错方可以主张离婚损害赔偿，但是对财产分割来说，仍然是以平等分割为主。如果出轨方严重浪费或侵害了共同财产，那么受害一方的权益可能会在分割时更受到保护。\\n\\n这样看来，法律的逻辑还是蛮清楚的。损害赔偿主要是无过错方的权益补偿，但财产分割仍然以共同财产为基础。最终法院会根据具体情况来裁定，所以还是要看案件的具体细节。这个结论应该没有问题，符合《民法典》的要求。\"\n}\n```",
+    "婚内出轨的情况下，根据中国《民法典》的规定，财产分割主要遵循以下原则：\n\n1. **共同财产的平等分割原则**  \n   《民法典》的基本原则是夫妻共同财产在离婚时应当平等分割。一般情况下，出轨行为本身并不会直接影响共同财产的分割比例。出轨方和无过错方对共同财产的权利是平等的，法院会综合考虑双方对家庭的贡献、实际经济状况及子女抚养需求来决定分割细节。\n\n2. **重大过错与损害赔偿规则**  \n   根据《民法典》第1091条，若一方存在重大过错，例如重婚、与他人同居、实施家庭暴力或虐待、遗弃家庭成员等情况，另一方可以主张离婚损害赔偿。需要注意的是，这种赔偿与财产分割是独立的，赔偿金额由法院结合具体情节酌情裁定。\n\n3. **浪费或者隐藏共同财产的影响**  \n   如果出轨方在婚姻存续期间存在恶意浪费、转移、隐藏或侵占夫妻共同财产的行为，例如为第三者高额消费，法院在财产分割时可能会对失信方作出不利裁决。根据《民法典》第1084条规定，一方有上述行为的，对方可以请求法院在分割共同财产时予以倾斜保护。\n\n**总结**： 婚内出轨对财产分割的影响需要具体分析。如果出轨行为未达到“重大过错”的法律认定标准，则财产仍以平等分割为主；如果构成重大过错，无过错方可额外提出损害赔偿；若出轨方侵犯共同财产权益，分割比例上可能会向无过错方倾斜。最终裁定需视具体情况而定，建议在有争议的情况下寻求专业律师的法律帮助。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "确定婚姻法适用范围",
+        "content": "婚内出轨如何影响财产分割需要参考中国《婚姻法》的有关规定。根据法律规范，明确财产分割的原则和与过错相关的条款内容是关键。首先需要确认与婚姻存续期间财产分割相关的具体法律依据是哪些。<search>中国婚姻法 财产分割 出轨</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "分析婚姻法对出轨的规定",
+        "content": "<information>根据《中华人民共和国民法典》（2021年实施，取代原《婚姻法》），出轨本身一般不会直接导致财产分割结果的改变，但如果出轨行为涉及重大过错，且严重损害夫妻共同财产（如重婚或与他人同居），受害一方可能可以主张更多的补偿。</information>因此需要进一步确认‘重大过错’的适用条件以及对共同财产分割的变化是否存在量化依据。<search>重大过错 婚内财产分割</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "界定‘重大过错’及财产分割",
+        "content": "<information>《中华人民共和国民法典》第1091条规定，重大过错包括重婚、与他人同居、实施家庭暴力、虐待或遗弃家庭成员等行为。如果婚内出轨被界定为重大过错，受害方可以向法院提出请求，要求离婚损害赔偿。财产分割原则上仍需按照共同财产和个人财产性质区分，大致采取平等分割为主。</information>由此，确定出轨属于重大过错的前置条件对于影响财产分割有着重要意义。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "在婚姻关系存续期间的出轨行为是否影响财产分割，需视具体情况而定。在中国法律中，根据《民法典》第1091条的规定，如果婚内出轨被认定为重大过错（如构成重婚或有稳定的同居关系），无过错方可以主张离婚损害赔偿，但这并不直接改变财产分割原则。财产分割一般遵循平等分割原则，但无过错方可能可通过法院裁定获得一些补偿，或者因特殊情形（如出轨方浪费共同财产）影响分割比例。"
+      },
+      {
+        "action": "Verification",
+        "content": "结论与现行法律条文相符，且充分考虑重大过错与财产分割在当前法律框架下的关系，因此结论成立。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "好，婚内出轨的话，财产分割到底是怎么处理的呢？这个涉及到中国的婚姻法或者说是现在的《民法典》。那么第一步，我需要确定到底哪些法律规范讲到了财产分割问题，特别是婚姻存续期间涉及出轨的情况。我记得《民法典》应该取代了之前的《婚姻法》，让我查一下相关条文，看看有没有明确规定。<search>中国婚姻法 财产分割 出轨</search>\n\n查到的信息是，根据《民法典》（2021年实施，替代了原来的《婚姻法》），出轨本身一般不会直接影响财产分割的结果。不过，如果出轨行为涉及所谓“重大过错”，比如重婚或者长期与他人同居，就可能会给财产分割带来一些变化，比如无过错的一方可以要求损害赔偿。嗯，这听起来稍微复杂一点，我要再明确一下“重大过错”的具体条件是什么，还有财产分割的基本原则有没有变化。<search>重大过错 婚内财产分割</search>\n\n哦，找到了！根据《民法典》第1091条，“重大过错”包括比如重婚、与他人同居、家庭暴力、虐待或者遗弃家庭成员等等。如果这些行为确实存在，无过错一方可以向法院请求离婚损害赔偿。但是对夫妻共同财产的分割，还是以平等分割为原则。也就是说，财产分割主要还是看共同财产和个人财产怎么归类，没有直接因为一方出轨而改变分割比例。不过，如果出轨方在婚姻存续期间有浪费或损害共同财产的行为，分割比例可能会受到影响。\n\n所以简单来说，婚内出轨如果被认定为重大过错，比如已经构成重婚或者长期同居，那么无过错方可以主张离婚损害赔偿，但是对财产分割来说，仍然是以平等分割为主。如果出轨方严重浪费或侵害了共同财产，那么受害一方的权益可能会在分割时更受到保护。\n\n这样看来，法律的逻辑还是蛮清楚的。损害赔偿主要是无过错方的权益补偿，但财产分割仍然以共同财产为基础。最终法院会根据具体情况来裁定，所以还是要看案件的具体细节。这个结论应该没有问题，符合《民法典》的要求。",
+  "Response": "婚内出轨的情况下，根据中国《民法典》的规定，财产分割主要遵循以下原则：\n\n1. **共同财产的平等分割原则**  \n   《民法典》的基本原则是夫妻共同财产在离婚时应当平等分割。一般情况下，出轨行为本身并不会直接影响共同财产的分割比例。出轨方和无过错方对共同财产的权利是平等的，法院会综合考虑双方对家庭的贡献、实际经济状况及子女抚养需求来决定分割细节。\n\n2. **重大过错与损害赔偿规则**  \n   根据《民法典》第1091条，若一方存在重大过错，例如重婚、与他人同居、实施家庭暴力或虐待、遗弃家庭成员等情况，另一方可以主张离婚损害赔偿。需要注意的是，这种赔偿与财产分割是独立的，赔偿金额由法院结合具体情节酌情裁定。\n\n3. **浪费或者隐藏共同财产的影响**  \n   如果出轨方在婚姻存续期间存在恶意浪费、转移、隐藏或侵占夫妻共同财产的行为，例如为第三者高额消费，法院在财产分割时可能会对失信方作出不利裁决。根据《民法典》第1084条规定，一方有上述行为的，对方可以请求法院在分割共同财产时予以倾斜保护。\n\n**总结**： 婚内出轨对财产分割的影响需要具体分析。如果出轨行为未达到“重大过错”的法律认定标准，则财产仍以平等分割为主；如果构成重大过错，无过错方可额外提出损害赔偿；若出轨方侵犯共同财产权益，分割比例上可能会向无过错方倾斜。最终裁定需视具体情况而定，建议在有争议的情况下寻求专业律师的法律帮助。",
+  "Question": "婚内出轨，财产如何分割？"
+}

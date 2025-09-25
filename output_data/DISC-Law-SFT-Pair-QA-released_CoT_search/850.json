@@ -1,0 +1,99 @@
+{
+  "Open-ended Verifiable Question": "离婚时彩礼需要返还吗?",
+  "Ground-True Answer": "如果属于以下情形之一的，应该返还彩礼：\n（一）双方办理结婚登记手续但确未共同生活的，离婚时彩礼需要返还;\n（二）婚前给付并导致给付人生活困难的，离婚时彩礼需要返还。另外，双方未办理结婚登记手续的也应该返还彩礼。\n彩礼是指按照风俗习惯，以缔结婚姻为前提条件而向对方的赠与，在这种情况下，一旦婚姻关系无法缔结，即使赠与的财产已经交付给对方，赠与的一方仍然可以要求返还。简而言之，彩礼属于附条件的赠与，以结婚为前提。原则上只要双方办理了结婚登记并且同居生活，那么彩礼应归属于女方了。根据法律的规定，彩礼的归属有以下几种情况：第一、双方未办理结婚登记手续的，条件不成就，彩礼需要归还给男方，当然，夫妻共同生活期间已经花费的可以扣除;第二、双方虽然办理了结婚登记手续但确未共同生活的，这属于有名无实的夫妻关系，彩礼需要退还给男方;第三、双方办理了结婚登记手续，并且共同生活，条件成就，彩礼应归属于女方，男方无权要求返还。",
+  "process_id": 850,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "明确彩礼在法律中的定义",
+      "content": "彩礼是婚俗中一种较为普遍的赠与行为，但其性质和法律规定在不同情况下会有所区别。为进一步明确法律在离婚时对彩礼归还的规定，我需要查找相关法律条例的具体内容。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "查找适用的法律条款",
+      "content": "关于彩礼归还的问题，中国《民法典》或司法解释中可能有相关条款或规定。尤其是婚姻家庭领域的解释可能有所涉及。需要检索具体条文。<search>婚姻法解释二第十条</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "获取法律信息",
+      "content": "<information>《最高人民法院关于适用〈中华人民共和国婚姻法〉若干问题的解释（二）》第十条规定：当事人请求返还根据习俗给付的彩礼的，如果查明属于以下情形，人民法院应予支持：(一)双方未办理结婚登记手续的；(二)双方办理结婚登记手续但确未共同生活的；(三)婚前给付并导致给付人生活困难的。适用前款第(二)、(三)项的，以双方离婚为条件。</information>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "分析条款内容",
+      "content": "从《婚姻法解释二》第十条可知，法律明文规定了可以要求返还彩礼的三种特定情形，即双方未办理结婚登记手续、虽结婚但未共同生活、以及彩礼导致给付方生活困难。其中，第(二)和第(三)项适用于离婚的场景，因此离婚时是否返还彩礼需要具体结合这两种情况进行判断。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "结合实际场景判断",
+      "content": "离婚时，如果符合法定条件，比如婚后未共同生活或者支付彩礼的行为导致支付方生活困难，则离婚一方有权请求返还彩礼。此外，还需根据具体案情和当地习俗判定法院是否支持返还请求。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "离婚时，根据《婚姻法解释二》第十条的规定，如果符合法定情形，如结婚后未共同生活，或支付彩礼导致给付方生活困难，则彩礼可依法要求返还。具体案件还需结合实际情况和地方习俗进行判断。"
+    },
+    {
+      "action": "Verification",
+      "content": "依据明确的法律规定和离婚场景下的适用分析，结论合理并符合中国当前相关的法律条文，过程与结论逻辑正确，验证通过。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n离婚时彩礼需要返还吗?\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n离婚时，根据《婚姻法解释二》第十条的规定，如果符合法定情形，如结婚后未共同生活，或支付彩礼导致给付方生活困难，则彩礼可依法要求返还。具体案件还需结合实际情况和地方习俗进行判断。  \n</Model Response>  \n\n<Reference Answer>  \n如果属于以下情形之一的，应该返还彩礼：\n（一）双方办理结婚登记手续但确未共同生活的，离婚时彩礼需要返还;\n（二）婚前给付并导致给付人生活困难的，离婚时彩礼需要返还。另外，双方未办理结婚登记手续的也应该返还彩礼。\n彩礼是指按照风俗习惯，以缔结婚姻为前提条件而向对方的赠与，在这种情况下，一旦婚姻关系无法缔结，即使赠与的财产已经交付给对方，赠与的一方仍然可以要求返还。简而言之，彩礼属于附条件的赠与，以结婚为前提。原则上只要双方办理了结婚登记并且同居生活，那么彩礼应归属于女方了。根据法律的规定，彩礼的归属有以下几种情况：第一、双方未办理结婚登记手续的，条件不成就，彩礼需要归还给男方，当然，夫妻共同生活期间已经花费的可以扣除;第二、双方虽然办理了结婚登记手续但确未共同生活的，这属于有名无实的夫妻关系，彩礼需要退还给男方;第三、双方办理了结婚登记手续，并且共同生活，条件成就，彩礼应归属于女方，男方无权要求返还。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 明确彩礼在法律中的定义\n彩礼是婚俗中一种较为普遍的赠与行为，但其性质和法律规定在不同情况下会有所区别。为进一步明确法律在离婚时对彩礼归还的规定，我需要查找相关法律条例的具体内容。\n\n### 查找适用的法律条款\n关于彩礼归还的问题，中国《民法典》或司法解释中可能有相关条款或规定。尤其是婚姻家庭领域的解释可能有所涉及。需要检索具体条文。<search>婚姻法解释二第十条</search>\n\n### 获取法律信息\n<information>《最高人民法院关于适用〈中华人民共和国婚姻法〉若干问题的解释（二）》第十条规定：当事人请求返还根据习俗给付的彩礼的，如果查明属于以下情形，人民法院应予支持：(一)双方未办理结婚登记手续的；(二)双方办理结婚登记手续但确未共同生活的；(三)婚前给付并导致给付人生活困难的。适用前款第(二)、(三)项的，以双方离婚为条件。</information>\n\n### 分析条款内容\n从《婚姻法解释二》第十条可知，法律明文规定了可以要求返还彩礼的三种特定情形，即双方未办理结婚登记手续、虽结婚但未共同生活、以及彩礼导致给付方生活困难。其中，第(二)和第(三)项适用于离婚的场景，因此离婚时是否返还彩礼需要具体结合这两种情况进行判断。\n\n### 结合实际场景判断\n离婚时，如果符合法定条件，比如婚后未共同生活或者支付彩礼的行为导致支付方生活困难，则离婚一方有权请求返还彩礼。此外，还需根据具体案情和当地习俗判定法院是否支持返还请求。\n\n### Conclusion\n离婚时，根据《婚姻法解释二》第十条的规定，如果符合法定情形，如结婚后未共同生活，或支付彩礼导致给付方生活困难，则彩礼可依法要求返还。具体案件还需结合实际情况和地方习俗进行判断。\n\n### Verification\n依据明确的法律规定和离婚场景下的适用分析，结论合理并符合中国当前相关的法律条文，过程与结论逻辑正确，验证通过。\n</Thought Process>\n\n<Question>\n离婚时彩礼需要返还吗?\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n离婚时彩礼到底需不需要返还呢？我得先弄清楚法律上是怎么规定的。彩礼算是一种结婚前的传统赠与，但法律上怎么界定它还需要认真看看相关规定。嗯，先从涉及婚姻问题的法律条文入手，比如《民法典》或者与婚姻相关的司法解释，应该会有明确的答案。\n\n嘿，《婚姻法解释二》第十条好像常被提到，这里边应该有确切的内容。我搜一下相关条款看看。<search>婚姻法解释二第十条</search>\n\n哦，找到了！<information>《最高人民法院关于适用〈中华人民共和国婚姻法〉若干问题的解释（二）》第十条规定：当事人请求返还根据习俗给付的彩礼的，如果查明属于以下情形，人民法院应予支持：(一)双方未办理结婚登记手续的；(二)双方办理结婚登记手续但确未共同生活的；(三)婚前给付并导致给付人生活困难的。适用前款第(二)、(三)项的，以双方离婚为条件。</information>\n\n哦，看来法律是有明确规定的嘛。从这条文内容看，法院支持返还彩礼的情况有三个。第一种是还没结婚，也就是双方没登记过；第二种是登记了，但没一起过日子；第三种是给彩礼的人因为付彩礼生活困难了。不过第(二)和第(三)种情况，只要发生在离婚时才适用。看来关键还是看具体情况。\n\n我再仔细琢磨下，原来这三个条件主要解决不同的现实问题。比如第一个是根本没结婚，那彩礼不存在婚姻基础，返还是合理的。第二个是虽然结婚了但没生活在一起，也许这个婚姻关系就没有实质内容，所以也可以返还。第三个有点特殊，是考虑到给付一方的经济条件，如果因为彩礼连基本生活都成问题，那返还也是一种人性化的处理方式。\n\n这样看的话，离婚时到底需不需要返还彩礼得看符不符合这些规定。一是有没有真正结婚（包括登记未登记）；二是婚姻生活实际情况，比如是不是共同生活过；三是支付彩礼的人有没有因此陷入生活困境。如果符合其中一条，那么根据这个司法解释，返还彩礼是有法律依据的。\n\n不过，实际案件可能还会涉及一些地方习俗和具体情况，比如不同地区对彩礼实践的理解和认可不同。法院可能会综合所有因素来决定。所以这事不能一概而论。\n\n总结一下，离婚时如果出现法律规定的情形，符合条件的情况下，彩礼还是有可能被要求返还的。这让我确信，这个结论是合理的，而且更重要的是，必须根据具体情况作进一步判断。\n</Internal Thinking>\n\n<Question>\n离婚时彩礼需要返还吗?\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"明确彩礼在法律中的定义\",\n      \"content\": \"彩礼是婚俗中一种较为普遍的赠与行为，但其性质和法律规定在不同情况下会有所区别。为进一步明确法律在离婚时对彩礼归还的规定，我需要查找相关法律条例的具体内容。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"查找适用的法律条款\",\n      \"content\": \"关于彩礼归还的问题，中国《民法典》或司法解释中可能有相关条款或规定。尤其是婚姻家庭领域的解释可能有所涉及。需要检索具体条文。<search>婚姻法解释二第十条</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"获取法律信息\",\n      \"content\": \"<information>《最高人民法院关于适用〈中华人民共和国婚姻法〉若干问题的解释（二）》第十条规定：当事人请求返还根据习俗给付的彩礼的，如果查明属于以下情形，人民法院应予支持：(一)双方未办理结婚登记手续的；(二)双方办理结婚登记手续但确未共同生活的；(三)婚前给付并导致给付人生活困难的。适用前款第(二)、(三)项的，以双方离婚为条件。</information>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析条款内容\",\n      \"content\": \"从《婚姻法解释二》第十条可知，法律明文规定了可以要求返还彩礼的三种特定情形，即双方未办理结婚登记手续、虽结婚但未共同生活、以及彩礼导致给付方生活困难。其中，第(二)和第(三)项适用于离婚的场景，因此离婚时是否返还彩礼需要具体结合这两种情况进行判断。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"结合实际场景判断\",\n      \"content\": \"离婚时，如果符合法定条件，比如婚后未共同生活或者支付彩礼的行为导致支付方生活困难，则离婚一方有权请求返还彩礼。此外，还需根据具体案情和当地习俗判定法院是否支持返还请求。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"离婚时，根据《婚姻法解释二》第十条的规定，如果符合法定情形，如结婚后未共同生活，或支付彩礼导致给付方生活困难，则彩礼可依法要求返还。具体案件还需结合实际情况和地方习俗进行判断。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"依据明确的法律规定和离婚场景下的适用分析，结论合理并符合中国当前相关的法律条文，过程与结论逻辑正确，验证通过。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"离婚时彩礼到底需不需要返还呢？我得先弄清楚法律上是怎么规定的。彩礼算是一种结婚前的传统赠与，但法律上怎么界定它还需要认真看看相关规定。嗯，先从涉及婚姻问题的法律条文入手，比如《民法典》或者与婚姻相关的司法解释，应该会有明确的答案。\\n\\n嘿，《婚姻法解释二》第十条好像常被提到，这里边应该有确切的内容。我搜一下相关条款看看。<search>婚姻法解释二第十条</search>\\n\\n哦，找到了！<information>《最高人民法院关于适用〈中华人民共和国婚姻法〉若干问题的解释（二）》第十条规定：当事人请求返还根据习俗给付的彩礼的，如果查明属于以下情形，人民法院应予支持：(一)双方未办理结婚登记手续的；(二)双方办理结婚登记手续但确未共同生活的；(三)婚前给付并导致给付人生活困难的。适用前款第(二)、(三)项的，以双方离婚为条件。</information>\\n\\n哦，看来法律是有明确规定的嘛。从这条文内容看，法院支持返还彩礼的情况有三个。第一种是还没结婚，也就是双方没登记过；第二种是登记了，但没一起过日子；第三种是给彩礼的人因为付彩礼生活困难了。不过第(二)和第(三)种情况，只要发生在离婚时才适用。看来关键还是看具体情况。\\n\\n我再仔细琢磨下，原来这三个条件主要解决不同的现实问题。比如第一个是根本没结婚，那彩礼不存在婚姻基础，返还是合理的。第二个是虽然结婚了但没生活在一起，也许这个婚姻关系就没有实质内容，所以也可以返还。第三个有点特殊，是考虑到给付一方的经济条件，如果因为彩礼连基本生活都成问题，那返还也是一种人性化的处理方式。\\n\\n这样看的话，离婚时到底需不需要返还彩礼得看符不符合这些规定。一是有没有真正结婚（包括登记未登记）；二是婚姻生活实际情况，比如是不是共同生活过；三是支付彩礼的人有没有因此陷入生活困境。如果符合其中一条，那么根据这个司法解释，返还彩礼是有法律依据的。\\n\\n不过，实际案件可能还会涉及一些地方习俗和具体情况，比如不同地区对彩礼实践的理解和认可不同。法院可能会综合所有因素来决定。所以这事不能一概而论。\\n\\n总结一下，离婚时如果出现法律规定的情形，符合条件的情况下，彩礼还是有可能被要求返还的。这让我确信，这个结论是合理的，而且更重要的是，必须根据具体情况作进一步判断。\"\n}\n```",
+    "离婚时彩礼是否需要返还，需根据具体情况判断。根据《最高人民法院关于适用〈中华人民共和国婚姻法〉若干问题的解释（二）》第十条的规定，以下情形下可以请求返还彩礼，人民法院会予以支持：\n\n1. **双方未办理结婚登记手续**：如果没有正式登记结婚，那么彩礼缺乏婚姻的法律基础，可以要求返还。\n\n2. **双方办理结婚登记手续但确未共同生活**：虽然登记结婚，但没有真正共同生活，这样婚姻关系可能没有实际内容，也可以要求返还。\n\n3. **婚前给付并导致给付人生活困难**：如果支付了彩礼后，给付方的基本生活受到了严重影响，返还彩礼是一种考虑经济状况的合理处理。但是，这种情况须在离婚时适用。\n\n需要注意的是，以上第二、第三种情况必须以双方离婚为条件才适用。同时，具体案件中，法院可能还会综合地方习俗和具体事实来作出判断。\n\n因此，在离婚时是否需要返还彩礼，必须结合是否满足法律规定的条件，以及具体情况进行分析。如果符合上述条款中的一项或多项，返还彩礼是有法律依据的。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "明确彩礼在法律中的定义",
+        "content": "彩礼是婚俗中一种较为普遍的赠与行为，但其性质和法律规定在不同情况下会有所区别。为进一步明确法律在离婚时对彩礼归还的规定，我需要查找相关法律条例的具体内容。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "查找适用的法律条款",
+        "content": "关于彩礼归还的问题，中国《民法典》或司法解释中可能有相关条款或规定。尤其是婚姻家庭领域的解释可能有所涉及。需要检索具体条文。<search>婚姻法解释二第十条</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "获取法律信息",
+        "content": "<information>《最高人民法院关于适用〈中华人民共和国婚姻法〉若干问题的解释（二）》第十条规定：当事人请求返还根据习俗给付的彩礼的，如果查明属于以下情形，人民法院应予支持：(一)双方未办理结婚登记手续的；(二)双方办理结婚登记手续但确未共同生活的；(三)婚前给付并导致给付人生活困难的。适用前款第(二)、(三)项的，以双方离婚为条件。</information>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "分析条款内容",
+        "content": "从《婚姻法解释二》第十条可知，法律明文规定了可以要求返还彩礼的三种特定情形，即双方未办理结婚登记手续、虽结婚但未共同生活、以及彩礼导致给付方生活困难。其中，第(二)和第(三)项适用于离婚的场景，因此离婚时是否返还彩礼需要具体结合这两种情况进行判断。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "结合实际场景判断",
+        "content": "离婚时，如果符合法定条件，比如婚后未共同生活或者支付彩礼的行为导致支付方生活困难，则离婚一方有权请求返还彩礼。此外，还需根据具体案情和当地习俗判定法院是否支持返还请求。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "离婚时，根据《婚姻法解释二》第十条的规定，如果符合法定情形，如结婚后未共同生活，或支付彩礼导致给付方生活困难，则彩礼可依法要求返还。具体案件还需结合实际情况和地方习俗进行判断。"
+      },
+      {
+        "action": "Verification",
+        "content": "依据明确的法律规定和离婚场景下的适用分析，结论合理并符合中国当前相关的法律条文，过程与结论逻辑正确，验证通过。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "离婚时彩礼到底需不需要返还呢？我得先弄清楚法律上是怎么规定的。彩礼算是一种结婚前的传统赠与，但法律上怎么界定它还需要认真看看相关规定。嗯，先从涉及婚姻问题的法律条文入手，比如《民法典》或者与婚姻相关的司法解释，应该会有明确的答案。\n\n嘿，《婚姻法解释二》第十条好像常被提到，这里边应该有确切的内容。我搜一下相关条款看看。<search>婚姻法解释二第十条</search>\n\n哦，找到了！<information>《最高人民法院关于适用〈中华人民共和国婚姻法〉若干问题的解释（二）》第十条规定：当事人请求返还根据习俗给付的彩礼的，如果查明属于以下情形，人民法院应予支持：(一)双方未办理结婚登记手续的；(二)双方办理结婚登记手续但确未共同生活的；(三)婚前给付并导致给付人生活困难的。适用前款第(二)、(三)项的，以双方离婚为条件。</information>\n\n哦，看来法律是有明确规定的嘛。从这条文内容看，法院支持返还彩礼的情况有三个。第一种是还没结婚，也就是双方没登记过；第二种是登记了，但没一起过日子；第三种是给彩礼的人因为付彩礼生活困难了。不过第(二)和第(三)种情况，只要发生在离婚时才适用。看来关键还是看具体情况。\n\n我再仔细琢磨下，原来这三个条件主要解决不同的现实问题。比如第一个是根本没结婚，那彩礼不存在婚姻基础，返还是合理的。第二个是虽然结婚了但没生活在一起，也许这个婚姻关系就没有实质内容，所以也可以返还。第三个有点特殊，是考虑到给付一方的经济条件，如果因为彩礼连基本生活都成问题，那返还也是一种人性化的处理方式。\n\n这样看的话，离婚时到底需不需要返还彩礼得看符不符合这些规定。一是有没有真正结婚（包括登记未登记）；二是婚姻生活实际情况，比如是不是共同生活过；三是支付彩礼的人有没有因此陷入生活困境。如果符合其中一条，那么根据这个司法解释，返还彩礼是有法律依据的。\n\n不过，实际案件可能还会涉及一些地方习俗和具体情况，比如不同地区对彩礼实践的理解和认可不同。法院可能会综合所有因素来决定。所以这事不能一概而论。\n\n总结一下，离婚时如果出现法律规定的情形，符合条件的情况下，彩礼还是有可能被要求返还的。这让我确信，这个结论是合理的，而且更重要的是，必须根据具体情况作进一步判断。",
+  "Response": "离婚时彩礼是否需要返还，需根据具体情况判断。根据《最高人民法院关于适用〈中华人民共和国婚姻法〉若干问题的解释（二）》第十条的规定，以下情形下可以请求返还彩礼，人民法院会予以支持：\n\n1. **双方未办理结婚登记手续**：如果没有正式登记结婚，那么彩礼缺乏婚姻的法律基础，可以要求返还。\n\n2. **双方办理结婚登记手续但确未共同生活**：虽然登记结婚，但没有真正共同生活，这样婚姻关系可能没有实际内容，也可以要求返还。\n\n3. **婚前给付并导致给付人生活困难**：如果支付了彩礼后，给付方的基本生活受到了严重影响，返还彩礼是一种考虑经济状况的合理处理。但是，这种情况须在离婚时适用。\n\n需要注意的是，以上第二、第三种情况必须以双方离婚为条件才适用。同时，具体案件中，法院可能还会综合地方习俗和具体事实来作出判断。\n\n因此，在离婚时是否需要返还彩礼，必须结合是否满足法律规定的条件，以及具体情况进行分析。如果符合上述条款中的一项或多项，返还彩礼是有法律依据的。",
+  "Question": "离婚时彩礼需要返还吗?"
+}

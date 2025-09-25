@@ -1,0 +1,109 @@
+{
+  "Open-ended Verifiable Question": "离婚婚内借款处理的法律依据？",
+  "Ground-True Answer": "最高人民法院民事审判第一庭关于《民法典婚姻家庭编司法解释（一）》第82条　夫妻之间订立借款协议，以夫妻共同财产出借给一方从事个人经营活动或者用于其他个人事务的，应视为双方约定处分夫妻共同财产的行为，离婚时可以按照借款协议的约定处理。调整一般借款关系的法律规范同样适用于夫妻之间以夫妻共同财产为标的订立的借款协议要更好地理解本条规定，首先要理解发生在夫妻之间的借款，在本质上与一般民事主体之间互相借款的行为并无不同。我国《民法典》合同编第十二章借款合同部分，除了在第680条中规定禁止高利放贷，借款的利率不得违反国家有关规定之外，未对借款合同规定其他限制。夫妻双方作为民事主体，在符合实施民事法律行为条件的前提下，双方合意由一方向另一方从夫妻共同财产中借款，除作为借款来源的夫妻共同财产属于双方共同共有而与普通自然人之间的借贷不同外，并无其他本质区别。人民法院在处理此类纠纷时，除了使用本条规定和《民法典》婚姻家庭编中的其他有关规定外，还应当适用自然人之间借款合同的民事法律规定。",
+  "process_id": 2028,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "问题分解：明确婚内借款性质",
+      "content": "离婚中处理婚内借款，需要判断借款的性质是个人借款还是夫妻共同债务。这涉及到相关法律对夫妻共同债务的定义以及处理方式。需查找中国相关民法典对夫妻共同债务的处理规定。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "检索法律依据",
+      "content": "<search>夫妻共同债务 民法典</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "分析搜索结果",
+      "content": "<information>《中华人民共和国民法典》第1079条、第1084条规定，涉及夫妻共同债务的认定。在婚姻关系存续期间以个人名义所负债务，若用于夫妻共同生活、共同经营或基于共同意思表达，则可认定为共同债务。</information>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "明确处理条件",
+      "content": "根据民法典，解决婚内借款问题需判断：1）债务是否用于夫妻共同生活；2）是否有共同的意思表示。如果不满足，则可能是个人债务；若满足，则为夫妻共同债务，在离婚时需共同清偿。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "考虑司法解释补充细节",
+      "content": "需要进一步明确司法实践中处理夫妻共同债务的具体要求和解释，检索相关的司法解释内容。<search>夫妻共同债务 最高法司法解释</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "结合司法解释补充信息",
+      "content": "<information>根据《最高人民法院关于适用<中华人民共和国民法典>婚姻家庭编的解释（一）》第66条规定，婚姻关系存续期间，一方以个人名义所负的债务，债权人主张为夫妻共同债务的，应当证明该债务用于夫妻共同生活、共同生产经营或者基于夫妻双方共同意思表示。</information>"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "离婚处理婚内借款的法律依据包括《中华人民共和国民法典》第1079条、第1084条以及《最高人民法院关于适用<中华人民共和国民法典>婚姻家庭编的解释（一）》第66条。具体处理原则是，若借款相关债务用于夫妻共同生活、共同生产经营或基于夫妻双方共同意思表示，则认定为夫妻共同债务，在离婚时由双方共同清偿。否则，则为个人债务，由个人承担。"
+    },
+    {
+      "action": "Verification",
+      "content": "通过验证相关法律条款和司法解释，结论准确。用以处理离婚婚内借款问题的法律依据已充分确定。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n离婚婚内借款处理的法律依据？\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n离婚处理婚内借款的法律依据包括《中华人民共和国民法典》第1079条、第1084条以及《最高人民法院关于适用<中华人民共和国民法典>婚姻家庭编的解释（一）》第66条。具体处理原则是，若借款相关债务用于夫妻共同生活、共同生产经营或基于夫妻双方共同意思表示，则认定为夫妻共同债务，在离婚时由双方共同清偿。否则，则为个人债务，由个人承担。  \n</Model Response>  \n\n<Reference Answer>  \n最高人民法院民事审判第一庭关于《民法典婚姻家庭编司法解释（一）》第82条　夫妻之间订立借款协议，以夫妻共同财产出借给一方从事个人经营活动或者用于其他个人事务的，应视为双方约定处分夫妻共同财产的行为，离婚时可以按照借款协议的约定处理。调整一般借款关系的法律规范同样适用于夫妻之间以夫妻共同财产为标的订立的借款协议要更好地理解本条规定，首先要理解发生在夫妻之间的借款，在本质上与一般民事主体之间互相借款的行为并无不同。我国《民法典》合同编第十二章借款合同部分，除了在第680条中规定禁止高利放贷，借款的利率不得违反国家有关规定之外，未对借款合同规定其他限制。夫妻双方作为民事主体，在符合实施民事法律行为条件的前提下，双方合意由一方向另一方从夫妻共同财产中借款，除作为借款来源的夫妻共同财产属于双方共同共有而与普通自然人之间的借贷不同外，并无其他本质区别。人民法院在处理此类纠纷时，除了使用本条规定和《民法典》婚姻家庭编中的其他有关规定外，还应当适用自然人之间借款合同的民事法律规定。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 问题分解：明确婚内借款性质\n离婚中处理婚内借款，需要判断借款的性质是个人借款还是夫妻共同债务。这涉及到相关法律对夫妻共同债务的定义以及处理方式。需查找中国相关民法典对夫妻共同债务的处理规定。\n\n### 检索法律依据\n<search>夫妻共同债务 民法典</search>\n\n### 分析搜索结果\n<information>《中华人民共和国民法典》第1079条、第1084条规定，涉及夫妻共同债务的认定。在婚姻关系存续期间以个人名义所负债务，若用于夫妻共同生活、共同经营或基于共同意思表达，则可认定为共同债务。</information>\n\n### 明确处理条件\n根据民法典，解决婚内借款问题需判断：1）债务是否用于夫妻共同生活；2）是否有共同的意思表示。如果不满足，则可能是个人债务；若满足，则为夫妻共同债务，在离婚时需共同清偿。\n\n### 考虑司法解释补充细节\n需要进一步明确司法实践中处理夫妻共同债务的具体要求和解释，检索相关的司法解释内容。<search>夫妻共同债务 最高法司法解释</search>\n\n### 结合司法解释补充信息\n<information>根据《最高人民法院关于适用<中华人民共和国民法典>婚姻家庭编的解释（一）》第66条规定，婚姻关系存续期间，一方以个人名义所负的债务，债权人主张为夫妻共同债务的，应当证明该债务用于夫妻共同生活、共同生产经营或者基于夫妻双方共同意思表示。</information>\n\n### Conclusion\n离婚处理婚内借款的法律依据包括《中华人民共和国民法典》第1079条、第1084条以及《最高人民法院关于适用<中华人民共和国民法典>婚姻家庭编的解释（一）》第66条。具体处理原则是，若借款相关债务用于夫妻共同生活、共同生产经营或基于夫妻双方共同意思表示，则认定为夫妻共同债务，在离婚时由双方共同清偿。否则，则为个人债务，由个人承担。\n\n### Verification\n通过验证相关法律条款和司法解释，结论准确。用以处理离婚婚内借款问题的法律依据已充分确定。\n</Thought Process>\n\n<Question>\n离婚婚内借款处理的法律依据？\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n离婚时候如果涉及婚内借款的问题，首先得搞清楚这个借款到底算谁的：是两个人一起还，还是一方自己负责？想清楚这一点就得看看法律怎么说。\n\n嗯，我记得在中国，类似这种问题应该主要是依据《民法典》。夫妻共同债务的相关条款似乎有提到一些关键点，比如要看这笔债务是在什么时候、因为什么用的。所以我得再确认一下具体的法律条文。<search>夫妻共同债务 民法典</search>\n\n哦，搜到了，根据《中华人民共和国民法典》第1079条和第1084条，还有一点提到夫妻共同债务的认定问题。信息显示，如果是在婚姻关系存续期间发生的债务，要看这笔钱是不是用在夫妻共同生活、共同经营，或者有没有夫妻双方的共同意思。如果是，就可以认定是夫妻共同债务。\n\n看起来主要判断的依据是两个条件：一个是这笔钱花在哪了，是不是用来支持双方的共同生活或事业；另一个就是夫妻两个人有没有共同的意思去借这笔钱。如果这两个条件都满足，那很可能会被认定为夫妻共同债务；如果只是一方自己借的、用的，那就可能是个人债务。\n\n不过我记得法律条文有时候光看法典还不够全面，实践中法官怎么裁定往往会参考后续的司法解释。我得再找找看有没有相关的司法解释能补充这一点。<search>夫妻共同债务 最高法司法解释</search>\n\n嗯，找到了。《最高人民法院关于适用<中华人民共和国民法典>婚姻家庭编的解释（一）》第66条特别强调了这一点：婚姻期间如果一方以个人名义借钱，债权人要主张两口子一起还清（也就是主张这是夫妻共同债务）的话，得拿出证据证明这笔钱确实花到了夫妻共同生活、共同生产经营上，或者是夫妻俩之间有共同的意思表达。没有证据，那就不能说借钱的是两个人共同的责任。\n\n这么看下来，基本可以确认离婚时处理婚内借款问题的关键，就是看这笔债务到底用在夫妻的共同事情上，还是一方的个人事务上。如果债务属于夫妻共同债务，那离婚时两个人都得按照比例分担；而如果只是一方的个人债务，那么就是借钱者自己还。\n\n嗯，核实了一下相关法律依据，有了《民法典》第1079条、第1084条加上最高法婚姻家庭编的司法解释，这些东西都能对问题处理提供清晰的法律基础。离婚中的借款该怎么分清，是完全有依据可循的。\n</Internal Thinking>\n\n<Question>\n离婚婚内借款处理的法律依据？\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"问题分解：明确婚内借款性质\",\n      \"content\": \"离婚中处理婚内借款，需要判断借款的性质是个人借款还是夫妻共同债务。这涉及到相关法律对夫妻共同债务的定义以及处理方式。需查找中国相关民法典对夫妻共同债务的处理规定。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"检索法律依据\",\n      \"content\": \"<search>夫妻共同债务 民法典</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析搜索结果\",\n      \"content\": \"<information>《中华人民共和国民法典》第1079条、第1084条规定，涉及夫妻共同债务的认定。在婚姻关系存续期间以个人名义所负债务，若用于夫妻共同生活、共同经营或基于共同意思表达，则可认定为共同债务。</information>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"明确处理条件\",\n      \"content\": \"根据民法典，解决婚内借款问题需判断：1）债务是否用于夫妻共同生活；2）是否有共同的意思表示。如果不满足，则可能是个人债务；若满足，则为夫妻共同债务，在离婚时需共同清偿。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"考虑司法解释补充细节\",\n      \"content\": \"需要进一步明确司法实践中处理夫妻共同债务的具体要求和解释，检索相关的司法解释内容。<search>夫妻共同债务 最高法司法解释</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"结合司法解释补充信息\",\n      \"content\": \"<information>根据《最高人民法院关于适用<中华人民共和国民法典>婚姻家庭编的解释（一）》第66条规定，婚姻关系存续期间，一方以个人名义所负的债务，债权人主张为夫妻共同债务的，应当证明该债务用于夫妻共同生活、共同生产经营或者基于夫妻双方共同意思表示。</information>\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"离婚处理婚内借款的法律依据包括《中华人民共和国民法典》第1079条、第1084条以及《最高人民法院关于适用<中华人民共和国民法典>婚姻家庭编的解释（一）》第66条。具体处理原则是，若借款相关债务用于夫妻共同生活、共同生产经营或基于夫妻双方共同意思表示，则认定为夫妻共同债务，在离婚时由双方共同清偿。否则，则为个人债务，由个人承担。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"通过验证相关法律条款和司法解释，结论准确。用以处理离婚婚内借款问题的法律依据已充分确定。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"离婚时候如果涉及婚内借款的问题，首先得搞清楚这个借款到底算谁的：是两个人一起还，还是一方自己负责？想清楚这一点就得看看法律怎么说。\\n\\n嗯，我记得在中国，类似这种问题应该主要是依据《民法典》。夫妻共同债务的相关条款似乎有提到一些关键点，比如要看这笔债务是在什么时候、因为什么用的。所以我得再确认一下具体的法律条文。<search>夫妻共同债务 民法典</search>\\n\\n哦，搜到了，根据《中华人民共和国民法典》第1079条和第1084条，还有一点提到夫妻共同债务的认定问题。信息显示，如果是在婚姻关系存续期间发生的债务，要看这笔钱是不是用在夫妻共同生活、共同经营，或者有没有夫妻双方的共同意思。如果是，就可以认定是夫妻共同债务。\\n\\n看起来主要判断的依据是两个条件：一个是这笔钱花在哪了，是不是用来支持双方的共同生活或事业；另一个就是夫妻两个人有没有共同的意思去借这笔钱。如果这两个条件都满足，那很可能会被认定为夫妻共同债务；如果只是一方自己借的、用的，那就可能是个人债务。\\n\\n不过我记得法律条文有时候光看法典还不够全面，实践中法官怎么裁定往往会参考后续的司法解释。我得再找找看有没有相关的司法解释能补充这一点。<search>夫妻共同债务 最高法司法解释</search>\\n\\n嗯，找到了。《最高人民法院关于适用<中华人民共和国民法典>婚姻家庭编的解释（一）》第66条特别强调了这一点：婚姻期间如果一方以个人名义借钱，债权人要主张两口子一起还清（也就是主张这是夫妻共同债务）的话，得拿出证据证明这笔钱确实花到了夫妻共同生活、共同生产经营上，或者是夫妻俩之间有共同的意思表达。没有证据，那就不能说借钱的是两个人共同的责任。\\n\\n这么看下来，基本可以确认离婚时处理婚内借款问题的关键，就是看这笔债务到底用在夫妻的共同事情上，还是一方的个人事务上。如果债务属于夫妻共同债务，那离婚时两个人都得按照比例分担；而如果只是一方的个人债务，那么就是借钱者自己还。\\n\\n嗯，核实了一下相关法律依据，有了《民法典》第1079条、第1084条加上最高法婚姻家庭编的司法解释，这些东西都能对问题处理提供清晰的法律基础。离婚中的借款该怎么分清，是完全有依据可循的。\"\n}\n```",
+    "离婚时涉及婚内借款的处理问题，主要依据《中华人民共和国民法典》的相关规定以及最高人民法院的司法解释。以下是具体法律依据和处理原则：\n\n### 1. 《民法典》的相关条款\n- **《民法典》第1079条**：该条规定了离婚时财产分割的基本原则，夫妻共同债务需要依法清偿。\n- **《民法典》第1084条**：明确夫妻共同债务的认定标准，这些债务指在婚姻关系存续期间，为家庭日常生活需要或者夫妻共同经营所负的债务。\n\n### 2. 司法解释的补充\n- **《最高人民法院关于适用<中华人民共和国民法典>婚姻家庭编的解释（一）》第66条**：该条详细规定了夫妻共同债务的认定标准和举证责任。具体内容包括：\n  1. 以夫妻一方名义所负债务，如债权人主张为夫妻共同债务，需要举证证明该债务**用于夫妻共同生活、共同生产经营**，或者证明该债务是夫妻双方向债权人共同表达的意思。\n  2. 如果上述举证不能满足，这类债务原则上认定为个人债务。\n\n### 3. 核心判断依据\n婚内借款是否属于夫妻共同债务，需结合以下两点进行判断：\n1. **用途**：这笔借款是否实际用于夫妻共同生活、共同经营或履行家庭责任。如果用于个人目的（如个人投资或消费），则倾向认定为个人债务。\n2. **共识**：夫妻双方是否共同认可这项借款，即是否存在共同借贷的意思表示。如果仅是一方单方面举债，且无证据证实用于共同事务，则可能不属于夫妻共同债务。\n\n### 4. 离婚后的债务分担\n- 如果法院认定为夫妻共同债务，则按照民法典的分割原则，夫妻根据法律规定或判决分担该债务清偿责任。\n- 如果认定为个人债务，则由借款方独自承担，离婚后与另一方无关。\n\n### 总结\n依据《民法典》和相关司法解释，处理婚内借款问题的关键在于确认债务的性质（夫妻共同债务或个人债务）。只有满足“夫妻共同生活”或“双方意思一致”等条件的债务，才会被认定为夫妻共同债务，并在离婚时根据法律规定进行分担。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "问题分解：明确婚内借款性质",
+        "content": "离婚中处理婚内借款，需要判断借款的性质是个人借款还是夫妻共同债务。这涉及到相关法律对夫妻共同债务的定义以及处理方式。需查找中国相关民法典对夫妻共同债务的处理规定。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "检索法律依据",
+        "content": "<search>夫妻共同债务 民法典</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "分析搜索结果",
+        "content": "<information>《中华人民共和国民法典》第1079条、第1084条规定，涉及夫妻共同债务的认定。在婚姻关系存续期间以个人名义所负债务，若用于夫妻共同生活、共同经营或基于共同意思表达，则可认定为共同债务。</information>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "明确处理条件",
+        "content": "根据民法典，解决婚内借款问题需判断：1）债务是否用于夫妻共同生活；2）是否有共同的意思表示。如果不满足，则可能是个人债务；若满足，则为夫妻共同债务，在离婚时需共同清偿。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "考虑司法解释补充细节",
+        "content": "需要进一步明确司法实践中处理夫妻共同债务的具体要求和解释，检索相关的司法解释内容。<search>夫妻共同债务 最高法司法解释</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "结合司法解释补充信息",
+        "content": "<information>根据《最高人民法院关于适用<中华人民共和国民法典>婚姻家庭编的解释（一）》第66条规定，婚姻关系存续期间，一方以个人名义所负的债务，债权人主张为夫妻共同债务的，应当证明该债务用于夫妻共同生活、共同生产经营或者基于夫妻双方共同意思表示。</information>"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "离婚处理婚内借款的法律依据包括《中华人民共和国民法典》第1079条、第1084条以及《最高人民法院关于适用<中华人民共和国民法典>婚姻家庭编的解释（一）》第66条。具体处理原则是，若借款相关债务用于夫妻共同生活、共同生产经营或基于夫妻双方共同意思表示，则认定为夫妻共同债务，在离婚时由双方共同清偿。否则，则为个人债务，由个人承担。"
+      },
+      {
+        "action": "Verification",
+        "content": "通过验证相关法律条款和司法解释，结论准确。用以处理离婚婚内借款问题的法律依据已充分确定。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "离婚时候如果涉及婚内借款的问题，首先得搞清楚这个借款到底算谁的：是两个人一起还，还是一方自己负责？想清楚这一点就得看看法律怎么说。\n\n嗯，我记得在中国，类似这种问题应该主要是依据《民法典》。夫妻共同债务的相关条款似乎有提到一些关键点，比如要看这笔债务是在什么时候、因为什么用的。所以我得再确认一下具体的法律条文。<search>夫妻共同债务 民法典</search>\n\n哦，搜到了，根据《中华人民共和国民法典》第1079条和第1084条，还有一点提到夫妻共同债务的认定问题。信息显示，如果是在婚姻关系存续期间发生的债务，要看这笔钱是不是用在夫妻共同生活、共同经营，或者有没有夫妻双方的共同意思。如果是，就可以认定是夫妻共同债务。\n\n看起来主要判断的依据是两个条件：一个是这笔钱花在哪了，是不是用来支持双方的共同生活或事业；另一个就是夫妻两个人有没有共同的意思去借这笔钱。如果这两个条件都满足，那很可能会被认定为夫妻共同债务；如果只是一方自己借的、用的，那就可能是个人债务。\n\n不过我记得法律条文有时候光看法典还不够全面，实践中法官怎么裁定往往会参考后续的司法解释。我得再找找看有没有相关的司法解释能补充这一点。<search>夫妻共同债务 最高法司法解释</search>\n\n嗯，找到了。《最高人民法院关于适用<中华人民共和国民法典>婚姻家庭编的解释（一）》第66条特别强调了这一点：婚姻期间如果一方以个人名义借钱，债权人要主张两口子一起还清（也就是主张这是夫妻共同债务）的话，得拿出证据证明这笔钱确实花到了夫妻共同生活、共同生产经营上，或者是夫妻俩之间有共同的意思表达。没有证据，那就不能说借钱的是两个人共同的责任。\n\n这么看下来，基本可以确认离婚时处理婚内借款问题的关键，就是看这笔债务到底用在夫妻的共同事情上，还是一方的个人事务上。如果债务属于夫妻共同债务，那离婚时两个人都得按照比例分担；而如果只是一方的个人债务，那么就是借钱者自己还。\n\n嗯，核实了一下相关法律依据，有了《民法典》第1079条、第1084条加上最高法婚姻家庭编的司法解释，这些东西都能对问题处理提供清晰的法律基础。离婚中的借款该怎么分清，是完全有依据可循的。",
+  "Response": "离婚时涉及婚内借款的处理问题，主要依据《中华人民共和国民法典》的相关规定以及最高人民法院的司法解释。以下是具体法律依据和处理原则：\n\n### 1. 《民法典》的相关条款\n- **《民法典》第1079条**：该条规定了离婚时财产分割的基本原则，夫妻共同债务需要依法清偿。\n- **《民法典》第1084条**：明确夫妻共同债务的认定标准，这些债务指在婚姻关系存续期间，为家庭日常生活需要或者夫妻共同经营所负的债务。\n\n### 2. 司法解释的补充\n- **《最高人民法院关于适用<中华人民共和国民法典>婚姻家庭编的解释（一）》第66条**：该条详细规定了夫妻共同债务的认定标准和举证责任。具体内容包括：\n  1. 以夫妻一方名义所负债务，如债权人主张为夫妻共同债务，需要举证证明该债务**用于夫妻共同生活、共同生产经营**，或者证明该债务是夫妻双方向债权人共同表达的意思。\n  2. 如果上述举证不能满足，这类债务原则上认定为个人债务。\n\n### 3. 核心判断依据\n婚内借款是否属于夫妻共同债务，需结合以下两点进行判断：\n1. **用途**：这笔借款是否实际用于夫妻共同生活、共同经营或履行家庭责任。如果用于个人目的（如个人投资或消费），则倾向认定为个人债务。\n2. **共识**：夫妻双方是否共同认可这项借款，即是否存在共同借贷的意思表示。如果仅是一方单方面举债，且无证据证实用于共同事务，则可能不属于夫妻共同债务。\n\n### 4. 离婚后的债务分担\n- 如果法院认定为夫妻共同债务，则按照民法典的分割原则，夫妻根据法律规定或判决分担该债务清偿责任。\n- 如果认定为个人债务，则由借款方独自承担，离婚后与另一方无关。\n\n### 总结\n依据《民法典》和相关司法解释，处理婚内借款问题的关键在于确认债务的性质（夫妻共同债务或个人债务）。只有满足“夫妻共同生活”或“双方意思一致”等条件的债务，才会被认定为夫妻共同债务，并在离婚时根据法律规定进行分担。",
+  "Question": "离婚婚内借款处理的法律依据？"
+}

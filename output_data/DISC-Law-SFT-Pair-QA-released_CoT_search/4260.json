@@ -1,0 +1,89 @@
+{
+  "Open-ended Verifiable Question": "工伤致死能赔偿大概多少?",
+  "Ground-True Answer": "1、因职工工伤致死而能赔偿的数额，并不是固定的，需根据统筹地区上年度职工的月平均工资、职工本人工资、上一年全国城镇居民人均可支配收入的一定倍数进行计算。\n法律依据《工伤保险条例（2010修订）》第三十九条职工因工死亡，其近亲属按照下列规定从工伤保险基金领取丧葬补助金、供养亲属抚恤金按照职工本人工资的一定比例发给其亲属;供养亲属抚恤金和一次性工亡补助金：（1）丧葬补助金为6个月的统筹地区上年度职工月平均工资;（2）供养亲属抚恤金按照职工本人工资的一定比例发给由因工死亡职工生前提供主要生活来源、无劳动能力的亲属。标准为：配偶每月40%,其他亲属每人每月30%,孤寡老人或者孤儿每人每月在上述标准的基础上增加10%。核定的各供养亲属的抚恤金之和不应高于因工死亡职工生前的工资。供养亲属的具体范围由国务院社会保险行政部门规定;（3）一次性工亡补助金标准为上一年度全国城镇居民人均可支配收入的20倍。二、工伤死亡赔偿应归谁所有1、劳动者如果参加了工伤保险，因工伤亡后保险公司会支付保险金，如果没有购买工伤保险，只要符合法律规定的条件，用人单位也必须支付赔偿金。两种赔偿金因为性质不同，其处理也差异较大。2、按照保险法的规定，如果用人单位在为职工购买工伤保险时，指定了受益人，比如其配偶或者父母、子女，职工因工死亡后的保险金，即由受益人获得。但是，保险法同时规定，用人单位指定保险受益人，必须获得被保险人即职工的同意，否则指定无效。3、被保险人死亡后，遇有下列情形之一的，保险金作为被保险人的遗产，由保险人向被保险人的继承人履行给付保险金的义务：（1）没有指定受益人的;（2）受益人先于被保险人死亡，没有其他受益人的;（3）受益人依法丧失受益权或者放弃受益权，没有其他受益人的。",
+  "process_id": 4260,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "明确工伤赔偿相关法律依据",
+      "content": "工伤赔偿的具体金额依据《中华人民共和国工伤保险条例》以及相关法律法规的规定。赔偿项目通常包括丧葬补助金、供养亲属抚恤金和一次性工亡补助金，需要查找这些项目的具体计算方式和金额规定。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "查找一次性工亡补助金的法律规定",
+      "content": "一次性工亡补助金通常按照上一年度全国城镇居民人均可支配收入的20倍计算，需要确认《工伤保险条例》第39条的具体规定。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "查找丧葬补助金的法律规定",
+      "content": "丧葬补助金一般按照所在统筹地区上年度职工月平均工资的6个月标准进行赔付，需要确认相关条例中的具体规定。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "查找供养亲属抚恤金的法律规定",
+      "content": "供养亲属抚恤金需要根据死者的工资及供养亲属人数进行计算，需确认关于此项的申领标准和具体比例规定。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "工伤致死的赔偿金额通常包括以下项目：一次性工亡补助金（上一年度全国城镇居民人均可支配收入的20倍）、丧葬补助金（所在统筹地区上年度职工月平均工资的6个月）、以及供养亲属抚恤金（根据死者工资以及供养亲属数量计算）。具体金额因实际情况和地区差异而有所不同，建议结合地方政策核算。"
+    },
+    {
+      "action": "Verification",
+      "content": "基于《中华人民共和国工伤保险条例》第39条的相关规定，这一结论是准确的，并且核算工伤赔偿金额时涉及到的变量（如城镇居民人均可支配收入、职工月平均工资等）需要实际查询。因此，推论无误。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n工伤致死能赔偿大概多少?\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n工伤致死的赔偿金额通常包括以下项目：一次性工亡补助金（上一年度全国城镇居民人均可支配收入的20倍）、丧葬补助金（所在统筹地区上年度职工月平均工资的6个月）、以及供养亲属抚恤金（根据死者工资以及供养亲属数量计算）。具体金额因实际情况和地区差异而有所不同，建议结合地方政策核算。  \n</Model Response>  \n\n<Reference Answer>  \n1、因职工工伤致死而能赔偿的数额，并不是固定的，需根据统筹地区上年度职工的月平均工资、职工本人工资、上一年全国城镇居民人均可支配收入的一定倍数进行计算。\n法律依据《工伤保险条例（2010修订）》第三十九条职工因工死亡，其近亲属按照下列规定从工伤保险基金领取丧葬补助金、供养亲属抚恤金按照职工本人工资的一定比例发给其亲属;供养亲属抚恤金和一次性工亡补助金：（1）丧葬补助金为6个月的统筹地区上年度职工月平均工资;（2）供养亲属抚恤金按照职工本人工资的一定比例发给由因工死亡职工生前提供主要生活来源、无劳动能力的亲属。标准为：配偶每月40%,其他亲属每人每月30%,孤寡老人或者孤儿每人每月在上述标准的基础上增加10%。核定的各供养亲属的抚恤金之和不应高于因工死亡职工生前的工资。供养亲属的具体范围由国务院社会保险行政部门规定;（3）一次性工亡补助金标准为上一年度全国城镇居民人均可支配收入的20倍。二、工伤死亡赔偿应归谁所有1、劳动者如果参加了工伤保险，因工伤亡后保险公司会支付保险金，如果没有购买工伤保险，只要符合法律规定的条件，用人单位也必须支付赔偿金。两种赔偿金因为性质不同，其处理也差异较大。2、按照保险法的规定，如果用人单位在为职工购买工伤保险时，指定了受益人，比如其配偶或者父母、子女，职工因工死亡后的保险金，即由受益人获得。但是，保险法同时规定，用人单位指定保险受益人，必须获得被保险人即职工的同意，否则指定无效。3、被保险人死亡后，遇有下列情形之一的，保险金作为被保险人的遗产，由保险人向被保险人的继承人履行给付保险金的义务：（1）没有指定受益人的;（2）受益人先于被保险人死亡，没有其他受益人的;（3）受益人依法丧失受益权或者放弃受益权，没有其他受益人的。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 明确工伤赔偿相关法律依据\n工伤赔偿的具体金额依据《中华人民共和国工伤保险条例》以及相关法律法规的规定。赔偿项目通常包括丧葬补助金、供养亲属抚恤金和一次性工亡补助金，需要查找这些项目的具体计算方式和金额规定。\n\n### 查找一次性工亡补助金的法律规定\n一次性工亡补助金通常按照上一年度全国城镇居民人均可支配收入的20倍计算，需要确认《工伤保险条例》第39条的具体规定。\n\n### 查找丧葬补助金的法律规定\n丧葬补助金一般按照所在统筹地区上年度职工月平均工资的6个月标准进行赔付，需要确认相关条例中的具体规定。\n\n### 查找供养亲属抚恤金的法律规定\n供养亲属抚恤金需要根据死者的工资及供养亲属人数进行计算，需确认关于此项的申领标准和具体比例规定。\n\n### Conclusion\n工伤致死的赔偿金额通常包括以下项目：一次性工亡补助金（上一年度全国城镇居民人均可支配收入的20倍）、丧葬补助金（所在统筹地区上年度职工月平均工资的6个月）、以及供养亲属抚恤金（根据死者工资以及供养亲属数量计算）。具体金额因实际情况和地区差异而有所不同，建议结合地方政策核算。\n\n### Verification\n基于《中华人民共和国工伤保险条例》第39条的相关规定，这一结论是准确的，并且核算工伤赔偿金额时涉及到的变量（如城镇居民人均可支配收入、职工月平均工资等）需要实际查询。因此，推论无误。\n</Thought Process>\n\n<Question>\n工伤致死能赔偿大概多少?\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n嗯……工伤致死的话，赔偿应该是有相关法律规定的吧。先想一下主要的依据，应该是《中华人民共和国工伤保险条例》。里面应该有明确提到赔偿的相关条目，尤其是那些像一次性工亡补助金、丧葬补助金和供养亲属抚恤金这些具体的项目，我得一个一个弄清楚。\n\n先说一次性工亡补助金，这个我记得是和上一年度全国城镇居民人均可支配收入挂钩的，应该是某个倍数。具体是多少倍呢？好像是20倍？这个得确认一下，我搜索一下《工伤保险条例》第39条，看看是不是有明确规定。<search>工伤保险条例 第39条</search>\n\n<information>根据《工伤保险条例》第39条，一次性工亡补助金的计算标准为上一年度全国城镇居民人均可支配收入的20倍。</information> 嗯，看起来没错，就是20倍。那么这一部分金额是确定的，需要知道最近一年的城镇居民人均可支配收入是多少。\n\n然后是丧葬补助金。这部分好像是根据所在地区职工的平均工资计算的，一般是按6个月的标准来算吧？我确认一下规定再说。<search>丧葬补助金 计算标准 工伤</search>\n\n<information>丧葬补助金的标准是按照工亡人员所在工伤保险统筹地区上年度职工月平均工资的6个月发放。</information> 啊哈，果然是这样。那么这一部分也很清楚了，需要去查询一下统筹地区的上年度职工月平均工资是多少。\n\n最后是供养亲属的抚恤金。这好像有点复杂，因为要看有多少供养亲属，而且金额是根据死者的工资来计算的。我记得是按比例发放的，得分情况，比如父母、配偶还是孩子。不过，我具体记不清楚比例是多少了，需要确认一下详细的标准。<search>供养亲属抚恤金 工伤条例</search>\n\n<information>根据《工伤保险条例》第39条，供养亲属抚恤金按照亡者本人工资一定比例计算，标准为每月40%至30%，根据供养亲属人数及对其主要生活来源依赖程度确定。若多个供养人同时满足条件，抚恤金可累加。</information> 哦，原来是这样。这部分看起来确实会根据具体数量和依赖程度有变化，需要仔细核对抚恤金的分配情况。\n\n综合一下，工伤遇难赔偿具体包括三部分——一次性工亡补助金、丧葬补助金和供养亲属抚恤金。其中，一次性工亡补助金是按上一年度全国城镇居民人均可支配收入的20倍计算，丧葬补助金是6个月的地区职工平均工资，供养亲属抚恤金则取决于亡者本人工资、供养人数和依赖程度。\n\n不过最终的金额还是跟地区、收入标准这些变量息息相关，所以需要具体查询实际数值。这些规定是根据工伤保险条例来的，应该是没有问题的。还需要核实一下最近这些关键指标的数据，比如上一年的全国城镇人均收入和地区工资标准，才能算出大概的赔偿总额。\n</Internal Thinking>\n\n<Question>\n工伤致死能赔偿大概多少?\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"明确工伤赔偿相关法律依据\",\n      \"content\": \"工伤赔偿的具体金额依据《中华人民共和国工伤保险条例》以及相关法律法规的规定。赔偿项目通常包括丧葬补助金、供养亲属抚恤金和一次性工亡补助金，需要查找这些项目的具体计算方式和金额规定。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"查找一次性工亡补助金的法律规定\",\n      \"content\": \"一次性工亡补助金通常按照上一年度全国城镇居民人均可支配收入的20倍计算，需要确认《工伤保险条例》第39条的具体规定。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"查找丧葬补助金的法律规定\",\n      \"content\": \"丧葬补助金一般按照所在统筹地区上年度职工月平均工资的6个月标准进行赔付，需要确认相关条例中的具体规定。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"查找供养亲属抚恤金的法律规定\",\n      \"content\": \"供养亲属抚恤金需要根据死者的工资及供养亲属人数进行计算，需确认关于此项的申领标准和具体比例规定。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"工伤致死的赔偿金额通常包括以下项目：一次性工亡补助金（上一年度全国城镇居民人均可支配收入的20倍）、丧葬补助金（所在统筹地区上年度职工月平均工资的6个月）、以及供养亲属抚恤金（根据死者工资以及供养亲属数量计算）。具体金额因实际情况和地区差异而有所不同，建议结合地方政策核算。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"基于《中华人民共和国工伤保险条例》第39条的相关规定，这一结论是准确的，并且核算工伤赔偿金额时涉及到的变量（如城镇居民人均可支配收入、职工月平均工资等）需要实际查询。因此，推论无误。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"嗯……工伤致死的话，赔偿应该是有相关法律规定的吧。先想一下主要的依据，应该是《中华人民共和国工伤保险条例》。里面应该有明确提到赔偿的相关条目，尤其是那些像一次性工亡补助金、丧葬补助金和供养亲属抚恤金这些具体的项目，我得一个一个弄清楚。\\n\\n先说一次性工亡补助金，这个我记得是和上一年度全国城镇居民人均可支配收入挂钩的，应该是某个倍数。具体是多少倍呢？好像是20倍？这个得确认一下，我搜索一下《工伤保险条例》第39条，看看是不是有明确规定。<search>工伤保险条例 第39条</search>\\n\\n<information>根据《工伤保险条例》第39条，一次性工亡补助金的计算标准为上一年度全国城镇居民人均可支配收入的20倍。</information> 嗯，看起来没错，就是20倍。那么这一部分金额是确定的，需要知道最近一年的城镇居民人均可支配收入是多少。\\n\\n然后是丧葬补助金。这部分好像是根据所在地区职工的平均工资计算的，一般是按6个月的标准来算吧？我确认一下规定再说。<search>丧葬补助金 计算标准 工伤</search>\\n\\n<information>丧葬补助金的标准是按照工亡人员所在工伤保险统筹地区上年度职工月平均工资的6个月发放。</information> 啊哈，果然是这样。那么这一部分也很清楚了，需要去查询一下统筹地区的上年度职工月平均工资是多少。\\n\\n最后是供养亲属的抚恤金。这好像有点复杂，因为要看有多少供养亲属，而且金额是根据死者的工资来计算的。我记得是按比例发放的，得分情况，比如父母、配偶还是孩子。不过，我具体记不清楚比例是多少了，需要确认一下详细的标准。<search>供养亲属抚恤金 工伤条例</search>\\n\\n<information>根据《工伤保险条例》第39条，供养亲属抚恤金按照亡者本人工资一定比例计算，标准为每月40%至30%，根据供养亲属人数及对其主要生活来源依赖程度确定。若多个供养人同时满足条件，抚恤金可累加。</information> 哦，原来是这样。这部分看起来确实会根据具体数量和依赖程度有变化，需要仔细核对抚恤金的分配情况。\\n\\n综合一下，工伤遇难赔偿具体包括三部分——一次性工亡补助金、丧葬补助金和供养亲属抚恤金。其中，一次性工亡补助金是按上一年度全国城镇居民人均可支配收入的20倍计算，丧葬补助金是6个月的地区职工平均工资，供养亲属抚恤金则取决于亡者本人工资、供养人数和依赖程度。\\n\\n不过最终的金额还是跟地区、收入标准这些变量息息相关，所以需要具体查询实际数值。这些规定是根据工伤保险条例来的，应该是没有问题的。还需要核实一下最近这些关键指标的数据，比如上一年的全国城镇人均收入和地区工资标准，才能算出大概的赔偿总额。\"\n}\n```",
+    "根据《中华人民共和国工伤保险条例》的相关规定，工伤致死的赔偿主要包括以下三部分：\n\n1. **一次性工亡补助金**  \n   标准为上一年度全国城镇居民人均可支配收入的20倍。例如，如果上一年度的全国城镇居民人均可支配收入是30,000元，那么一次性工亡补助金的金额就是600,000元（30,000 × 20）。\n\n2. **丧葬补助金**  \n   丧葬补助金按照工亡人员所在工伤保险统筹地区上年度职工月平均工资的6个月标准发放。例如，该地区上年度职工月平均工资为5,000元，那么丧葬补助金为30,000元（5,000 × 6）。\n\n3. **供养亲属抚恤金**  \n   这部分与死者工资、供养亲属人数以及依赖程度有关。供养亲属抚恤金按亡者本人工资的比例计算，通常是每月30%至40%。如果有多个供养亲属可以同时领取抚恤金，金额可以累加。例如，若死者工资为8,000元，其配偶与子女各享受40%和30%比例抚恤金，那么总计为5,600元/月（8,000 × 0.4 + 8,000 × 0.3）。\n\n最终赔偿金额需要结合地区职工平均工资、由统计部门发布的全国城镇居民人均收入，以及死者本人工资和供养亲属情况进行计算。如果需具体金额建议查询相关数据后再进一步确认。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "明确工伤赔偿相关法律依据",
+        "content": "工伤赔偿的具体金额依据《中华人民共和国工伤保险条例》以及相关法律法规的规定。赔偿项目通常包括丧葬补助金、供养亲属抚恤金和一次性工亡补助金，需要查找这些项目的具体计算方式和金额规定。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "查找一次性工亡补助金的法律规定",
+        "content": "一次性工亡补助金通常按照上一年度全国城镇居民人均可支配收入的20倍计算，需要确认《工伤保险条例》第39条的具体规定。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "查找丧葬补助金的法律规定",
+        "content": "丧葬补助金一般按照所在统筹地区上年度职工月平均工资的6个月标准进行赔付，需要确认相关条例中的具体规定。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "查找供养亲属抚恤金的法律规定",
+        "content": "供养亲属抚恤金需要根据死者的工资及供养亲属人数进行计算，需确认关于此项的申领标准和具体比例规定。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "工伤致死的赔偿金额通常包括以下项目：一次性工亡补助金（上一年度全国城镇居民人均可支配收入的20倍）、丧葬补助金（所在统筹地区上年度职工月平均工资的6个月）、以及供养亲属抚恤金（根据死者工资以及供养亲属数量计算）。具体金额因实际情况和地区差异而有所不同，建议结合地方政策核算。"
+      },
+      {
+        "action": "Verification",
+        "content": "基于《中华人民共和国工伤保险条例》第39条的相关规定，这一结论是准确的，并且核算工伤赔偿金额时涉及到的变量（如城镇居民人均可支配收入、职工月平均工资等）需要实际查询。因此，推论无误。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "嗯……工伤致死的话，赔偿应该是有相关法律规定的吧。先想一下主要的依据，应该是《中华人民共和国工伤保险条例》。里面应该有明确提到赔偿的相关条目，尤其是那些像一次性工亡补助金、丧葬补助金和供养亲属抚恤金这些具体的项目，我得一个一个弄清楚。\n\n先说一次性工亡补助金，这个我记得是和上一年度全国城镇居民人均可支配收入挂钩的，应该是某个倍数。具体是多少倍呢？好像是20倍？这个得确认一下，我搜索一下《工伤保险条例》第39条，看看是不是有明确规定。<search>工伤保险条例 第39条</search>\n\n<information>根据《工伤保险条例》第39条，一次性工亡补助金的计算标准为上一年度全国城镇居民人均可支配收入的20倍。</information> 嗯，看起来没错，就是20倍。那么这一部分金额是确定的，需要知道最近一年的城镇居民人均可支配收入是多少。\n\n然后是丧葬补助金。这部分好像是根据所在地区职工的平均工资计算的，一般是按6个月的标准来算吧？我确认一下规定再说。<search>丧葬补助金 计算标准 工伤</search>\n\n<information>丧葬补助金的标准是按照工亡人员所在工伤保险统筹地区上年度职工月平均工资的6个月发放。</information> 啊哈，果然是这样。那么这一部分也很清楚了，需要去查询一下统筹地区的上年度职工月平均工资是多少。\n\n最后是供养亲属的抚恤金。这好像有点复杂，因为要看有多少供养亲属，而且金额是根据死者的工资来计算的。我记得是按比例发放的，得分情况，比如父母、配偶还是孩子。不过，我具体记不清楚比例是多少了，需要确认一下详细的标准。<search>供养亲属抚恤金 工伤条例</search>\n\n<information>根据《工伤保险条例》第39条，供养亲属抚恤金按照亡者本人工资一定比例计算，标准为每月40%至30%，根据供养亲属人数及对其主要生活来源依赖程度确定。若多个供养人同时满足条件，抚恤金可累加。</information> 哦，原来是这样。这部分看起来确实会根据具体数量和依赖程度有变化，需要仔细核对抚恤金的分配情况。\n\n综合一下，工伤遇难赔偿具体包括三部分——一次性工亡补助金、丧葬补助金和供养亲属抚恤金。其中，一次性工亡补助金是按上一年度全国城镇居民人均可支配收入的20倍计算，丧葬补助金是6个月的地区职工平均工资，供养亲属抚恤金则取决于亡者本人工资、供养人数和依赖程度。\n\n不过最终的金额还是跟地区、收入标准这些变量息息相关，所以需要具体查询实际数值。这些规定是根据工伤保险条例来的，应该是没有问题的。还需要核实一下最近这些关键指标的数据，比如上一年的全国城镇人均收入和地区工资标准，才能算出大概的赔偿总额。",
+  "Response": "根据《中华人民共和国工伤保险条例》的相关规定，工伤致死的赔偿主要包括以下三部分：\n\n1. **一次性工亡补助金**  \n   标准为上一年度全国城镇居民人均可支配收入的20倍。例如，如果上一年度的全国城镇居民人均可支配收入是30,000元，那么一次性工亡补助金的金额就是600,000元（30,000 × 20）。\n\n2. **丧葬补助金**  \n   丧葬补助金按照工亡人员所在工伤保险统筹地区上年度职工月平均工资的6个月标准发放。例如，该地区上年度职工月平均工资为5,000元，那么丧葬补助金为30,000元（5,000 × 6）。\n\n3. **供养亲属抚恤金**  \n   这部分与死者工资、供养亲属人数以及依赖程度有关。供养亲属抚恤金按亡者本人工资的比例计算，通常是每月30%至40%。如果有多个供养亲属可以同时领取抚恤金，金额可以累加。例如，若死者工资为8,000元，其配偶与子女各享受40%和30%比例抚恤金，那么总计为5,600元/月（8,000 × 0.4 + 8,000 × 0.3）。\n\n最终赔偿金额需要结合地区职工平均工资、由统计部门发布的全国城镇居民人均收入，以及死者本人工资和供养亲属情况进行计算。如果需具体金额建议查询相关数据后再进一步确认。",
+  "Question": "工伤致死能赔偿大概多少?"
+}

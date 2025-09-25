@@ -1,0 +1,79 @@
+{
+  "Open-ended Verifiable Question": "结婚后一方因赌博欠下的债务对方也要偿还吗?",
+  "Ground-True Answer": "1、结婚后一方因赌博欠下的债务，对方不需要偿还。赌债属于非法债务，法律不予保护。并且该债务也不属于夫妻共同债务，另一方没有偿还的义务。夫妻双方只对夫妻共同债务有共同偿还的义务。\n法律依据：《中华人民共和国民法典》第一千零六十四条夫妻双方共同签名或者夫妻一方事后追认等共同意思表示所负的债务，以及夫妻一方在婚姻关系存续期间以个人名义为家庭日常生活需要所负的债务，属于夫妻共同债务。夫妻一方在婚姻关系存续期间以个人名义超出家庭日常生活需要所负的债务，不属于夫妻共同债务；但是，债权人能够证明该债务用于夫妻共同生活、共同生产经营或者基于夫妻双方共同意思表示的除外。第一千零八十九条离婚时，夫妻共同债务应当共同偿还。共同财产不足清偿或者财产归各自所有的，由双方协议清偿；协议不成的，由人民法院判决。二、一方赌博所借的债务是否属于夫妻共同债务1.一方赌博所借的债务，由于该债务未用于夫妻共同生活和家庭生活，属于一方个人不合理的开支，不属于夫妻共同债务的范围，因而应由举债人个人自行承担，配偶另一方不承担偿还责任。2.应当指出的是，根据我国法律规定，违法的债务不受法律保护。赌博，为我国法律所明令禁止，赌债属于非法债务，不受法律保护。如果出借人明知举债人所借债务用于个人赌博的，其债权也同样不受法律保护。最高人民法院《关于人民法院审理借贷案件的若干意见》第十一条规定：“出借人明知借款人是为了进行非法活动而借款的，其借贷关系不予以保护”。",
+  "process_id": 3239,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "确定婚姻存续期间债务的性质",
+      "content": "根据中国婚姻法，婚姻存续期间的债务可以分为夫妻共同债务和个人债务。法院会根据债务是否用于共同生活、共同经营等判断其性质。因此，需要明确赌博债务是否属于夫妻共同债务。若赌博产生的债务未用于家庭生活或公共利益，则倾向于认定为个人债务。接下来需要确认相关法律条文的具体规定。<search>婚姻法 夫妻债务</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "检索并分析相关法律条款",
+      "content": "<information>根据《中华人民共和国民法典》（2021年实施）第一千零六十四条规定：‘夫妻一方在婚姻关系存续期间以个人名义所负的债务，不属于夫妻共同债务，但该债务证明用于夫妻共同生活、共同经营或者基于夫妻双方共同意思表示的除外。’赌博债务一般不认为涉及夫妻共同生活或共同意思表示，因此通常属于一方个人债务。</information>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "结合事实判断具体情形",
+      "content": "从《民法典》的规定来看，如果一方配偶的赌博行为是个人行为，债务并未用于家庭共同生活开支，而是由其自身非法活动所产生，那么这些债务应归因于该配偶一人承担，与另一方配偶无关。而如果债权人能够证明另一方知晓并同意使用债务资金，可能会视为共同债务，但通常赌博性质决定了这一证明难以成立。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "根据《中华人民共和国民法典》相关规定，结婚后一方因赌博欠下的债务一般情况下属于个人债务，对方无须偿还，除非债权人能证明债务用于夫妻共同生活或另一方事先同意相关债务的形成。"
+    },
+    {
+      "action": "Verification",
+      "content": "上述结论符合《民法典》相关条款的规定，并明确区分了夫妻共同债务与个人债务的边界。因此，该结论是准确且合理的。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n结婚后一方因赌博欠下的债务对方也要偿还吗?\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n根据《中华人民共和国民法典》相关规定，结婚后一方因赌博欠下的债务一般情况下属于个人债务，对方无须偿还，除非债权人能证明债务用于夫妻共同生活或另一方事先同意相关债务的形成。  \n</Model Response>  \n\n<Reference Answer>  \n1、结婚后一方因赌博欠下的债务，对方不需要偿还。赌债属于非法债务，法律不予保护。并且该债务也不属于夫妻共同债务，另一方没有偿还的义务。夫妻双方只对夫妻共同债务有共同偿还的义务。\n法律依据：《中华人民共和国民法典》第一千零六十四条夫妻双方共同签名或者夫妻一方事后追认等共同意思表示所负的债务，以及夫妻一方在婚姻关系存续期间以个人名义为家庭日常生活需要所负的债务，属于夫妻共同债务。夫妻一方在婚姻关系存续期间以个人名义超出家庭日常生活需要所负的债务，不属于夫妻共同债务；但是，债权人能够证明该债务用于夫妻共同生活、共同生产经营或者基于夫妻双方共同意思表示的除外。第一千零八十九条离婚时，夫妻共同债务应当共同偿还。共同财产不足清偿或者财产归各自所有的，由双方协议清偿；协议不成的，由人民法院判决。二、一方赌博所借的债务是否属于夫妻共同债务1.一方赌博所借的债务，由于该债务未用于夫妻共同生活和家庭生活，属于一方个人不合理的开支，不属于夫妻共同债务的范围，因而应由举债人个人自行承担，配偶另一方不承担偿还责任。2.应当指出的是，根据我国法律规定，违法的债务不受法律保护。赌博，为我国法律所明令禁止，赌债属于非法债务，不受法律保护。如果出借人明知举债人所借债务用于个人赌博的，其债权也同样不受法律保护。最高人民法院《关于人民法院审理借贷案件的若干意见》第十一条规定：“出借人明知借款人是为了进行非法活动而借款的，其借贷关系不予以保护”。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 确定婚姻存续期间债务的性质\n根据中国婚姻法，婚姻存续期间的债务可以分为夫妻共同债务和个人债务。法院会根据债务是否用于共同生活、共同经营等判断其性质。因此，需要明确赌博债务是否属于夫妻共同债务。若赌博产生的债务未用于家庭生活或公共利益，则倾向于认定为个人债务。接下来需要确认相关法律条文的具体规定。<search>婚姻法 夫妻债务</search>\n\n### 检索并分析相关法律条款\n<information>根据《中华人民共和国民法典》（2021年实施）第一千零六十四条规定：‘夫妻一方在婚姻关系存续期间以个人名义所负的债务，不属于夫妻共同债务，但该债务证明用于夫妻共同生活、共同经营或者基于夫妻双方共同意思表示的除外。’赌博债务一般不认为涉及夫妻共同生活或共同意思表示，因此通常属于一方个人债务。</information>\n\n### 结合事实判断具体情形\n从《民法典》的规定来看，如果一方配偶的赌博行为是个人行为，债务并未用于家庭共同生活开支，而是由其自身非法活动所产生，那么这些债务应归因于该配偶一人承担，与另一方配偶无关。而如果债权人能够证明另一方知晓并同意使用债务资金，可能会视为共同债务，但通常赌博性质决定了这一证明难以成立。\n\n### Conclusion\n根据《中华人民共和国民法典》相关规定，结婚后一方因赌博欠下的债务一般情况下属于个人债务，对方无须偿还，除非债权人能证明债务用于夫妻共同生活或另一方事先同意相关债务的形成。\n\n### Verification\n上述结论符合《民法典》相关条款的规定，并明确区分了夫妻共同债务与个人债务的边界。因此，该结论是准确且合理的。\n</Thought Process>\n\n<Question>\n结婚后一方因赌博欠下的债务对方也要偿还吗?\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n结婚后如果一方因为赌博欠了债，那这个债务会不会需要另一方也承担呢？这个问题听起来有点复杂，我得好好想一想。\n\n首先，感觉婚姻存续期间的债务应该有不同的类型吧？夫妻共同债务和个人债务应该不一样，得看看中国法律是怎么规定的。我记得好像《婚姻法》或者《民法典》里有相关的条文，得查一下更准确的信息。所以，我可以先搜索一下相关内容。好，关键词就用“婚姻法 夫妻债务”。<search>婚姻法 夫妻债务</search>\n\n嗯，搜到了！根据《中华人民共和国民法典》（2021年开始实施）的第一千零六十四条的规定啊，夫妻一方在婚姻关系存续期间欠下的债务，如果是以个人名义欠的，那一般不算夫妻共同债务。不过，这有个前提，就是这个债务不能证明是用于夫妻共同生活、共同经营或者得到了夫妻双方的共同认可。如果满足这些条件，那债务才可能算共同债务。赌博债务呢？想想看，赌博的钱通常都是个人行为，而且很难说是为了家庭生活或者大家的共同利益。所以，从法律条文的角度看，赌博债务应该属于个人债务。\n\n不过我觉得还是需要结合具体情况来决定，法律条款也是为了判断具体情形嘛。比如，如果赌博产生的债务完全是个人行为，且没有用于家里日常生活或者夫妻共同事业，那这个债务基本上应该归欠债的一方承担。另一方配偶估计没有责任吧。但是不是有另一种情况呢？比如债权人拿出了证据，证明另一方确实知道这些钱是通过借贷来的，并且还同意了这种借贷行为？如果证据确凿，或许也可能被认为是夫妻共同债务。不过，这种情况估计不太常见哦，因为赌博通常不会事先跟配偶商量吧。\n\n嗯，按法律规定来看，正常情况下赌博产生的债务应该归赌博的一方处理，另一方配偶通常不需要承担。但如果真出现特殊情况，比如可以证明这些债务是共同生活使用的，那就另说了。不过一般来说，这种证明很难做到，因为赌博毕竟是一种非法活动。\n\n所以结论应该可以是，按照《民法典》的相关规定，婚姻存续期间一方因赌博欠下的债务通常算个人债务，对另一方配偶没有影响。除非债权人能拿出证据，证明这些债务用于夫妻共同生活，或者另一方事先知情且有明确的同意。我觉得这个结论挺符合逻辑的，也跟法律规定一致。\n</Internal Thinking>\n\n<Question>\n结婚后一方因赌博欠下的债务对方也要偿还吗?\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"确定婚姻存续期间债务的性质\",\n      \"content\": \"根据中国婚姻法，婚姻存续期间的债务可以分为夫妻共同债务和个人债务。法院会根据债务是否用于共同生活、共同经营等判断其性质。因此，需要明确赌博债务是否属于夫妻共同债务。若赌博产生的债务未用于家庭生活或公共利益，则倾向于认定为个人债务。接下来需要确认相关法律条文的具体规定。<search>婚姻法 夫妻债务</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"检索并分析相关法律条款\",\n      \"content\": \"<information>根据《中华人民共和国民法典》（2021年实施）第一千零六十四条规定：‘夫妻一方在婚姻关系存续期间以个人名义所负的债务，不属于夫妻共同债务，但该债务证明用于夫妻共同生活、共同经营或者基于夫妻双方共同意思表示的除外。’赌博债务一般不认为涉及夫妻共同生活或共同意思表示，因此通常属于一方个人债务。</information>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"结合事实判断具体情形\",\n      \"content\": \"从《民法典》的规定来看，如果一方配偶的赌博行为是个人行为，债务并未用于家庭共同生活开支，而是由其自身非法活动所产生，那么这些债务应归因于该配偶一人承担，与另一方配偶无关。而如果债权人能够证明另一方知晓并同意使用债务资金，可能会视为共同债务，但通常赌博性质决定了这一证明难以成立。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"根据《中华人民共和国民法典》相关规定，结婚后一方因赌博欠下的债务一般情况下属于个人债务，对方无须偿还，除非债权人能证明债务用于夫妻共同生活或另一方事先同意相关债务的形成。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"上述结论符合《民法典》相关条款的规定，并明确区分了夫妻共同债务与个人债务的边界。因此，该结论是准确且合理的。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"结婚后如果一方因为赌博欠了债，那这个债务会不会需要另一方也承担呢？这个问题听起来有点复杂，我得好好想一想。\\n\\n首先，感觉婚姻存续期间的债务应该有不同的类型吧？夫妻共同债务和个人债务应该不一样，得看看中国法律是怎么规定的。我记得好像《婚姻法》或者《民法典》里有相关的条文，得查一下更准确的信息。所以，我可以先搜索一下相关内容。好，关键词就用“婚姻法 夫妻债务”。<search>婚姻法 夫妻债务</search>\\n\\n嗯，搜到了！根据《中华人民共和国民法典》（2021年开始实施）的第一千零六十四条的规定啊，夫妻一方在婚姻关系存续期间欠下的债务，如果是以个人名义欠的，那一般不算夫妻共同债务。不过，这有个前提，就是这个债务不能证明是用于夫妻共同生活、共同经营或者得到了夫妻双方的共同认可。如果满足这些条件，那债务才可能算共同债务。赌博债务呢？想想看，赌博的钱通常都是个人行为，而且很难说是为了家庭生活或者大家的共同利益。所以，从法律条文的角度看，赌博债务应该属于个人债务。\\n\\n不过我觉得还是需要结合具体情况来决定，法律条款也是为了判断具体情形嘛。比如，如果赌博产生的债务完全是个人行为，且没有用于家里日常生活或者夫妻共同事业，那这个债务基本上应该归欠债的一方承担。另一方配偶估计没有责任吧。但是不是有另一种情况呢？比如债权人拿出了证据，证明另一方确实知道这些钱是通过借贷来的，并且还同意了这种借贷行为？如果证据确凿，或许也可能被认为是夫妻共同债务。不过，这种情况估计不太常见哦，因为赌博通常不会事先跟配偶商量吧。\\n\\n嗯，按法律规定来看，正常情况下赌博产生的债务应该归赌博的一方处理，另一方配偶通常不需要承担。但如果真出现特殊情况，比如可以证明这些债务是共同生活使用的，那就另说了。不过一般来说，这种证明很难做到，因为赌博毕竟是一种非法活动。\\n\\n所以结论应该可以是，按照《民法典》的相关规定，婚姻存续期间一方因赌博欠下的债务通常算个人债务，对另一方配偶没有影响。除非债权人能拿出证据，证明这些债务用于夫妻共同生活，或者另一方事先知情且有明确的同意。我觉得这个结论挺符合逻辑的，也跟法律规定一致。\"\n}\n```",
+    "根据《中华人民共和国民法典》的相关规定，婚后夫妻一方因赌博欠下的债务通常属于个人债务，另一方配偶原则上不需要承担。这是因为，根据民法典第一千零六十四条，夫妻共同债务需满足以下条件之一：债务是用于夫妻共同生活、共同生产经营，或者在借债时已得到另一方的共同认可。\n\n赌博债务本质上是一种非法性质的个人行为，通常不符合夫妻共同债务的认定条件。因此，只要另一方配偶没有明确同意或签字承担这些债务，且债务确实未用于夫妻共同生活，就不会被认定为夫妻共同债务。\n\n不过，如若债权人能够提供充分证据，证明这些赌债的资金确实用于夫妻共同的生活或者另一方配偶知情并明确同意，这些债务也可能被认定为夫妻共同债务。因此，在实际操作中，需要根据具体情况进行分析。\n\n总之，一般情况下，婚后因赌博产生的债务属于赌博一方的个人债务，另一方配偶无需偿还。但如果存在特殊情况，比如明确证据表明债务与夫妻共同利益相关，则可能要承担一定责任。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "确定婚姻存续期间债务的性质",
+        "content": "根据中国婚姻法，婚姻存续期间的债务可以分为夫妻共同债务和个人债务。法院会根据债务是否用于共同生活、共同经营等判断其性质。因此，需要明确赌博债务是否属于夫妻共同债务。若赌博产生的债务未用于家庭生活或公共利益，则倾向于认定为个人债务。接下来需要确认相关法律条文的具体规定。<search>婚姻法 夫妻债务</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "检索并分析相关法律条款",
+        "content": "<information>根据《中华人民共和国民法典》（2021年实施）第一千零六十四条规定：‘夫妻一方在婚姻关系存续期间以个人名义所负的债务，不属于夫妻共同债务，但该债务证明用于夫妻共同生活、共同经营或者基于夫妻双方共同意思表示的除外。’赌博债务一般不认为涉及夫妻共同生活或共同意思表示，因此通常属于一方个人债务。</information>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "结合事实判断具体情形",
+        "content": "从《民法典》的规定来看，如果一方配偶的赌博行为是个人行为，债务并未用于家庭共同生活开支，而是由其自身非法活动所产生，那么这些债务应归因于该配偶一人承担，与另一方配偶无关。而如果债权人能够证明另一方知晓并同意使用债务资金，可能会视为共同债务，但通常赌博性质决定了这一证明难以成立。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "根据《中华人民共和国民法典》相关规定，结婚后一方因赌博欠下的债务一般情况下属于个人债务，对方无须偿还，除非债权人能证明债务用于夫妻共同生活或另一方事先同意相关债务的形成。"
+      },
+      {
+        "action": "Verification",
+        "content": "上述结论符合《民法典》相关条款的规定，并明确区分了夫妻共同债务与个人债务的边界。因此，该结论是准确且合理的。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "结婚后如果一方因为赌博欠了债，那这个债务会不会需要另一方也承担呢？这个问题听起来有点复杂，我得好好想一想。\n\n首先，感觉婚姻存续期间的债务应该有不同的类型吧？夫妻共同债务和个人债务应该不一样，得看看中国法律是怎么规定的。我记得好像《婚姻法》或者《民法典》里有相关的条文，得查一下更准确的信息。所以，我可以先搜索一下相关内容。好，关键词就用“婚姻法 夫妻债务”。<search>婚姻法 夫妻债务</search>\n\n嗯，搜到了！根据《中华人民共和国民法典》（2021年开始实施）的第一千零六十四条的规定啊，夫妻一方在婚姻关系存续期间欠下的债务，如果是以个人名义欠的，那一般不算夫妻共同债务。不过，这有个前提，就是这个债务不能证明是用于夫妻共同生活、共同经营或者得到了夫妻双方的共同认可。如果满足这些条件，那债务才可能算共同债务。赌博债务呢？想想看，赌博的钱通常都是个人行为，而且很难说是为了家庭生活或者大家的共同利益。所以，从法律条文的角度看，赌博债务应该属于个人债务。\n\n不过我觉得还是需要结合具体情况来决定，法律条款也是为了判断具体情形嘛。比如，如果赌博产生的债务完全是个人行为，且没有用于家里日常生活或者夫妻共同事业，那这个债务基本上应该归欠债的一方承担。另一方配偶估计没有责任吧。但是不是有另一种情况呢？比如债权人拿出了证据，证明另一方确实知道这些钱是通过借贷来的，并且还同意了这种借贷行为？如果证据确凿，或许也可能被认为是夫妻共同债务。不过，这种情况估计不太常见哦，因为赌博通常不会事先跟配偶商量吧。\n\n嗯，按法律规定来看，正常情况下赌博产生的债务应该归赌博的一方处理，另一方配偶通常不需要承担。但如果真出现特殊情况，比如可以证明这些债务是共同生活使用的，那就另说了。不过一般来说，这种证明很难做到，因为赌博毕竟是一种非法活动。\n\n所以结论应该可以是，按照《民法典》的相关规定，婚姻存续期间一方因赌博欠下的债务通常算个人债务，对另一方配偶没有影响。除非债权人能拿出证据，证明这些债务用于夫妻共同生活，或者另一方事先知情且有明确的同意。我觉得这个结论挺符合逻辑的，也跟法律规定一致。",
+  "Response": "根据《中华人民共和国民法典》的相关规定，婚后夫妻一方因赌博欠下的债务通常属于个人债务，另一方配偶原则上不需要承担。这是因为，根据民法典第一千零六十四条，夫妻共同债务需满足以下条件之一：债务是用于夫妻共同生活、共同生产经营，或者在借债时已得到另一方的共同认可。\n\n赌博债务本质上是一种非法性质的个人行为，通常不符合夫妻共同债务的认定条件。因此，只要另一方配偶没有明确同意或签字承担这些债务，且债务确实未用于夫妻共同生活，就不会被认定为夫妻共同债务。\n\n不过，如若债权人能够提供充分证据，证明这些赌债的资金确实用于夫妻共同的生活或者另一方配偶知情并明确同意，这些债务也可能被认定为夫妻共同债务。因此，在实际操作中，需要根据具体情况进行分析。\n\n总之，一般情况下，婚后因赌博产生的债务属于赌博一方的个人债务，另一方配偶无需偿还。但如果存在特殊情况，比如明确证据表明债务与夫妻共同利益相关，则可能要承担一定责任。",
+  "Question": "结婚后一方因赌博欠下的债务对方也要偿还吗?"
+}

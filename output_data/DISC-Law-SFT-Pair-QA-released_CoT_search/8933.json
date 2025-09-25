@@ -1,0 +1,89 @@
+{
+  "Open-ended Verifiable Question": "冷静期过了，没有去登记，还需要重新申请吗？",
+  "Ground-True Answer": "1、自婚姻登记机关收到离婚登记申请之日起三十日内，任何一方不愿意离婚的，可以向婚姻登记机关撤回离婚登记申请。\n2、冷静期期限届满后三十日内，双方应当亲自到婚姻登记机关申请发给离婚证;未申请的，视为撤回离婚登记申请。\n3、夫妻双方自愿离婚的，应当签订书面离婚协议，并亲自到婚姻登记机关申请离婚登记。离婚协议应当载明双方自愿离婚的意思表示和对子女抚养、财产以及债务处理等事项协商一致的意见。《民法典》\n第一千零七十七条 自婚姻登记机关收到离婚登记申请之日起三十日内，任何一方不愿意离婚的，可以向婚姻登记机关撤回离婚登记申请。\n前款规定期限届满后三十日内，双方应当亲自到婚姻登记机关申请发给离婚证;未申请的，视为撤回离婚登记申请。",
+  "process_id": 8933,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "确认问题背景",
+      "content": "问题涉及未在冷静期后登记事项，可能跟婚姻登记相关或其他法律规定。需要具体查找有关冷静期的法律规定以及登记程序要求以提供准确回答。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "检索有关冷静期的法律背景",
+      "content": "<search>婚姻冷静期相关法律规定</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "核查冷静期的适用范围与影响",
+      "content": "<information>《中华人民共和国民法典》第1077条规定,夫妻申请离婚登记后有30天冷静期，冷静期内任何一方均可以撤回申请；冷静期过后，双方需要在30日内共同到婚姻登记机关申请发证，否则视为撤回离婚申请。</information>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "分析冷静期后的情况",
+      "content": "根据《民法典》第1077条，如果冷静期过后双方未共同前往婚姻登记机关进行最终登记，则该离婚申请视为已经撤回，程序结束。此时如再次离婚，需要重新提交离婚申请并重新经历冷静期流程。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "如果冷静期过后未去登记，根据法律规定，之前的离婚申请视为自动撤回，需要重新申请并再次经历冷静期流程。"
+    },
+    {
+      "action": "Verification",
+      "content": "结论符合《中华人民共和国民法典》第1077条的规定，逻辑正确，无误。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n冷静期过了，没有去登记，还需要重新申请吗？\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n如果冷静期过后未去登记，根据法律规定，之前的离婚申请视为自动撤回，需要重新申请并再次经历冷静期流程。  \n</Model Response>  \n\n<Reference Answer>  \n1、自婚姻登记机关收到离婚登记申请之日起三十日内，任何一方不愿意离婚的，可以向婚姻登记机关撤回离婚登记申请。\n2、冷静期期限届满后三十日内，双方应当亲自到婚姻登记机关申请发给离婚证;未申请的，视为撤回离婚登记申请。\n3、夫妻双方自愿离婚的，应当签订书面离婚协议，并亲自到婚姻登记机关申请离婚登记。离婚协议应当载明双方自愿离婚的意思表示和对子女抚养、财产以及债务处理等事项协商一致的意见。《民法典》\n第一千零七十七条 自婚姻登记机关收到离婚登记申请之日起三十日内，任何一方不愿意离婚的，可以向婚姻登记机关撤回离婚登记申请。\n前款规定期限届满后三十日内，双方应当亲自到婚姻登记机关申请发给离婚证;未申请的，视为撤回离婚登记申请。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 确认问题背景\n问题涉及未在冷静期后登记事项，可能跟婚姻登记相关或其他法律规定。需要具体查找有关冷静期的法律规定以及登记程序要求以提供准确回答。\n\n### 检索有关冷静期的法律背景\n<search>婚姻冷静期相关法律规定</search>\n\n### 核查冷静期的适用范围与影响\n<information>《中华人民共和国民法典》第1077条规定,夫妻申请离婚登记后有30天冷静期，冷静期内任何一方均可以撤回申请；冷静期过后，双方需要在30日内共同到婚姻登记机关申请发证，否则视为撤回离婚申请。</information>\n\n### 分析冷静期后的情况\n根据《民法典》第1077条，如果冷静期过后双方未共同前往婚姻登记机关进行最终登记，则该离婚申请视为已经撤回，程序结束。此时如再次离婚，需要重新提交离婚申请并重新经历冷静期流程。\n\n### Conclusion\n如果冷静期过后未去登记，根据法律规定，之前的离婚申请视为自动撤回，需要重新申请并再次经历冷静期流程。\n\n### Verification\n结论符合《中华人民共和国民法典》第1077条的规定，逻辑正确，无误。\n</Thought Process>\n\n<Question>\n冷静期过了，没有去登记，还需要重新申请吗？\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n冷静期过了没有去登记，还需要重新申请吗？嗯，这个问题听起来好像跟婚姻登记程序有关系。‘冷静期’好像是在最近的法律里比较常见的术语，我记得《民法典》里可能有这方面的规定，但具体如何规定得查一下才行。还是先查一查‘婚姻冷静期’相关的法律内容吧。\n\n<search>婚姻冷静期相关法律规定</search>\n\n好嘞，找到了！<information>《中华人民共和国民法典》第1077条规定，夫妻申请离婚登记后有一个30天的冷静期。在这个冷静期内，任何一方都可以撤回申请。但如果冷静期过后，双方还需要在接下来的30天内共同去婚姻登记机关办理最终的登记手续。如果超过这个期限没有去，那法律上就会视为双方自动撤回离婚申请。</information>嗯，这条规定挺清楚的。\n\n也就是说，如果冷静期的30天过了，双方又没有在接下来的30天内去登记，那不需要特别通知什么的，离婚申请就自动作废了。然后如果双方还是想离婚，就得重新提交申请，从头开始重新走流程，包括再经历冷静期。\n\n按照这个规定来看，问题的答案是：是的，如果冷静期过后没有去登记，之前的离婚申请就等于撤销了。如果还是想离婚，只能重新申请，而且还得经历新的冷静期。嗯，逻辑清楚了，这样的设计应该是为了让夫妻之间多一些慎重考虑的机会，避免冲动做决定吧。\n\n嗯，这次答案感觉没问题！符合《民法典》第1077条规定，思路也清晰，准确无误。\n</Internal Thinking>\n\n<Question>\n冷静期过了，没有去登记，还需要重新申请吗？\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"确认问题背景\",\n      \"content\": \"问题涉及未在冷静期后登记事项，可能跟婚姻登记相关或其他法律规定。需要具体查找有关冷静期的法律规定以及登记程序要求以提供准确回答。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"检索有关冷静期的法律背景\",\n      \"content\": \"<search>婚姻冷静期相关法律规定</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"核查冷静期的适用范围与影响\",\n      \"content\": \"<information>《中华人民共和国民法典》第1077条规定,夫妻申请离婚登记后有30天冷静期，冷静期内任何一方均可以撤回申请；冷静期过后，双方需要在30日内共同到婚姻登记机关申请发证，否则视为撤回离婚申请。</information>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析冷静期后的情况\",\n      \"content\": \"根据《民法典》第1077条，如果冷静期过后双方未共同前往婚姻登记机关进行最终登记，则该离婚申请视为已经撤回，程序结束。此时如再次离婚，需要重新提交离婚申请并重新经历冷静期流程。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"如果冷静期过后未去登记，根据法律规定，之前的离婚申请视为自动撤回，需要重新申请并再次经历冷静期流程。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"结论符合《中华人民共和国民法典》第1077条的规定，逻辑正确，无误。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"冷静期过了没有去登记，还需要重新申请吗？嗯，这个问题听起来好像跟婚姻登记程序有关系。‘冷静期’好像是在最近的法律里比较常见的术语，我记得《民法典》里可能有这方面的规定，但具体如何规定得查一下才行。还是先查一查‘婚姻冷静期’相关的法律内容吧。\\n\\n<search>婚姻冷静期相关法律规定</search>\\n\\n好嘞，找到了！<information>《中华人民共和国民法典》第1077条规定，夫妻申请离婚登记后有一个30天的冷静期。在这个冷静期内，任何一方都可以撤回申请。但如果冷静期过后，双方还需要在接下来的30天内共同去婚姻登记机关办理最终的登记手续。如果超过这个期限没有去，那法律上就会视为双方自动撤回离婚申请。</information>嗯，这条规定挺清楚的。\\n\\n也就是说，如果冷静期的30天过了，双方又没有在接下来的30天内去登记，那不需要特别通知什么的，离婚申请就自动作废了。然后如果双方还是想离婚，就得重新提交申请，从头开始重新走流程，包括再经历冷静期。\\n\\n按照这个规定来看，问题的答案是：是的，如果冷静期过后没有去登记，之前的离婚申请就等于撤销了。如果还是想离婚，只能重新申请，而且还得经历新的冷静期。嗯，逻辑清楚了，这样的设计应该是为了让夫妻之间多一些慎重考虑的机会，避免冲动做决定吧。\\n\\n嗯，这次答案感觉没问题！符合《民法典》第1077条规定，思路也清晰，准确无误。\"\n}\n```",
+    "冷静期过后，如果双方没有在接下来的30天内共同去婚姻登记机关办理最终的离婚登记手续，根据《中华人民共和国民法典》第1077条的规定，离婚申请会被视为自动撤回。因此，如果双方仍然决定离婚，就需要重新提交申请，并重新经历30天的冷静期以及后续的登记流程。\n\n这种设计是为了让夫妻有更多的时间慎重考虑离婚决定，避免因一时冲动作出的选择。希望这个答案对你有所帮助！"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "确认问题背景",
+        "content": "问题涉及未在冷静期后登记事项，可能跟婚姻登记相关或其他法律规定。需要具体查找有关冷静期的法律规定以及登记程序要求以提供准确回答。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "检索有关冷静期的法律背景",
+        "content": "<search>婚姻冷静期相关法律规定</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "核查冷静期的适用范围与影响",
+        "content": "<information>《中华人民共和国民法典》第1077条规定,夫妻申请离婚登记后有30天冷静期，冷静期内任何一方均可以撤回申请；冷静期过后，双方需要在30日内共同到婚姻登记机关申请发证，否则视为撤回离婚申请。</information>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "分析冷静期后的情况",
+        "content": "根据《民法典》第1077条，如果冷静期过后双方未共同前往婚姻登记机关进行最终登记，则该离婚申请视为已经撤回，程序结束。此时如再次离婚，需要重新提交离婚申请并重新经历冷静期流程。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "如果冷静期过后未去登记，根据法律规定，之前的离婚申请视为自动撤回，需要重新申请并再次经历冷静期流程。"
+      },
+      {
+        "action": "Verification",
+        "content": "结论符合《中华人民共和国民法典》第1077条的规定，逻辑正确，无误。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "冷静期过了没有去登记，还需要重新申请吗？嗯，这个问题听起来好像跟婚姻登记程序有关系。‘冷静期’好像是在最近的法律里比较常见的术语，我记得《民法典》里可能有这方面的规定，但具体如何规定得查一下才行。还是先查一查‘婚姻冷静期’相关的法律内容吧。\n\n<search>婚姻冷静期相关法律规定</search>\n\n好嘞，找到了！<information>《中华人民共和国民法典》第1077条规定，夫妻申请离婚登记后有一个30天的冷静期。在这个冷静期内，任何一方都可以撤回申请。但如果冷静期过后，双方还需要在接下来的30天内共同去婚姻登记机关办理最终的登记手续。如果超过这个期限没有去，那法律上就会视为双方自动撤回离婚申请。</information>嗯，这条规定挺清楚的。\n\n也就是说，如果冷静期的30天过了，双方又没有在接下来的30天内去登记，那不需要特别通知什么的，离婚申请就自动作废了。然后如果双方还是想离婚，就得重新提交申请，从头开始重新走流程，包括再经历冷静期。\n\n按照这个规定来看，问题的答案是：是的，如果冷静期过后没有去登记，之前的离婚申请就等于撤销了。如果还是想离婚，只能重新申请，而且还得经历新的冷静期。嗯，逻辑清楚了，这样的设计应该是为了让夫妻之间多一些慎重考虑的机会，避免冲动做决定吧。\n\n嗯，这次答案感觉没问题！符合《民法典》第1077条规定，思路也清晰，准确无误。",
+  "Response": "冷静期过后，如果双方没有在接下来的30天内共同去婚姻登记机关办理最终的离婚登记手续，根据《中华人民共和国民法典》第1077条的规定，离婚申请会被视为自动撤回。因此，如果双方仍然决定离婚，就需要重新提交申请，并重新经历30天的冷静期以及后续的登记流程。\n\n这种设计是为了让夫妻有更多的时间慎重考虑离婚决定，避免因一时冲动作出的选择。希望这个答案对你有所帮助！",
+  "Question": "冷静期过了，没有去登记，还需要重新申请吗？"
+}

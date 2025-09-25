@@ -1,0 +1,99 @@
+{
+  "Open-ended Verifiable Question": "农村房屋纠纷协议可以公证吗?",
+  "Ground-True Answer": "农村住房买卖可以做公证，农村房屋买卖公证，是指公证机构根据当事人的申请，依照法定程序证明农村房屋买卖合同真实、合法的活动。",
+  "process_id": 599,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "理解问题背景",
+      "content": "农村房屋纠纷协议可能涉及土地使用权、房屋所有权、财产权益等方面的问题。同时，协议本身的合法性和可执行性是决定是否能够公证的核心。需要进一步明确公证机构是否对这类协议的范围有要求，以及是否符合相关法律法规。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "查询公证法律条文",
+      "content": "确认与协议公证相关的法律法规，以判断条件。例如《中华人民共和国公证法》和《民法典》中可能有关内容。需要查询具体条文。<search>中华人民共和国公证法 农村房屋纠纷协议公证</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "分析查询信息",
+      "content": "<information>公证法规定，公证是公证机构根据自然人、法人或者其他组织的申请，依照法定程序对法律行为、有法律意义的事实和文书的真实性、合法性予以证明的活动；同时规定，对于法律行为或文书内容违反法律法规或公共利益的情况，公证机构可以拒绝公证。</information>基于搜索结果，如果农村房屋纠纷协议内容是合法有效的，公证机构是可以依法办理的；但如涉及违法内容或政策性限制，可能无法公证。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "确认农村房屋权属限制",
+      "content": "考虑到农村房屋的特殊性，其产权经常涉及集体土地或受限的流转交易规则。需要进一步判断此类房屋权属或协议是否有特殊限制。<search>农村房屋所有权协议限制</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "验证农村房屋协议的合法条件",
+      "content": "<information>在农村房屋转让或相关权属争议时，法律要求合同内容不得违反《土地管理法》《农村土地承包法》及相关政策，例如不得违背 '农村集体土地严禁城镇居民购置' 等规定。具体协议内容若涉及房屋买卖、继承或分配，必须符合法律要求，且一般需由相关部门备案。</information>基于上述信息，如果协议符合这些法律规定，其可以作为公证对象。否则，公证机构会因协议本身不合法而拒绝办理公证。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "农村房屋纠纷协议在内容合法有效的前提下是可以进行公证的，但必须符合《土地管理法》《农村土地承包法》《中华人民共和国公证法》和相关地方政策的规定。如果协议存在内容违法或政策性限制问题，则无法公证。建议协议签订前咨询当地公证机构或律师以确保合法性。"
+    },
+    {
+      "action": "Verification",
+      "content": "上述结论与现行法律要求一致，经过分析未发现偏差或错误，答案可信。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n农村房屋纠纷协议可以公证吗?\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n农村房屋纠纷协议在内容合法有效的前提下是可以进行公证的，但必须符合《土地管理法》《农村土地承包法》《中华人民共和国公证法》和相关地方政策的规定。如果协议存在内容违法或政策性限制问题，则无法公证。建议协议签订前咨询当地公证机构或律师以确保合法性。  \n</Model Response>  \n\n<Reference Answer>  \n农村住房买卖可以做公证，农村房屋买卖公证，是指公证机构根据当事人的申请，依照法定程序证明农村房屋买卖合同真实、合法的活动。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 理解问题背景\n农村房屋纠纷协议可能涉及土地使用权、房屋所有权、财产权益等方面的问题。同时，协议本身的合法性和可执行性是决定是否能够公证的核心。需要进一步明确公证机构是否对这类协议的范围有要求，以及是否符合相关法律法规。\n\n### 查询公证法律条文\n确认与协议公证相关的法律法规，以判断条件。例如《中华人民共和国公证法》和《民法典》中可能有关内容。需要查询具体条文。<search>中华人民共和国公证法 农村房屋纠纷协议公证</search>\n\n### 分析查询信息\n<information>公证法规定，公证是公证机构根据自然人、法人或者其他组织的申请，依照法定程序对法律行为、有法律意义的事实和文书的真实性、合法性予以证明的活动；同时规定，对于法律行为或文书内容违反法律法规或公共利益的情况，公证机构可以拒绝公证。</information>基于搜索结果，如果农村房屋纠纷协议内容是合法有效的，公证机构是可以依法办理的；但如涉及违法内容或政策性限制，可能无法公证。\n\n### 确认农村房屋权属限制\n考虑到农村房屋的特殊性，其产权经常涉及集体土地或受限的流转交易规则。需要进一步判断此类房屋权属或协议是否有特殊限制。<search>农村房屋所有权协议限制</search>\n\n### 验证农村房屋协议的合法条件\n<information>在农村房屋转让或相关权属争议时，法律要求合同内容不得违反《土地管理法》《农村土地承包法》及相关政策，例如不得违背 '农村集体土地严禁城镇居民购置' 等规定。具体协议内容若涉及房屋买卖、继承或分配，必须符合法律要求，且一般需由相关部门备案。</information>基于上述信息，如果协议符合这些法律规定，其可以作为公证对象。否则，公证机构会因协议本身不合法而拒绝办理公证。\n\n### Conclusion\n农村房屋纠纷协议在内容合法有效的前提下是可以进行公证的，但必须符合《土地管理法》《农村土地承包法》《中华人民共和国公证法》和相关地方政策的规定。如果协议存在内容违法或政策性限制问题，则无法公证。建议协议签订前咨询当地公证机构或律师以确保合法性。\n\n### Verification\n上述结论与现行法律要求一致，经过分析未发现偏差或错误，答案可信。\n</Thought Process>\n\n<Question>\n农村房屋纠纷协议可以公证吗?\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n嗯，这个问题是关于农村房屋纠纷协议是否可以公证的。先想一想，农村房屋的纠纷应该会涉及到土地使用权、房屋所有权、甚至财产分割之类的问题。关键是这个协议能不能被法律认可，因为公证本身是对协议真实性和合法性的确认。如果协议不合法，那公证肯定做不了。\n\n先查一下公证相关的法律是怎么规定的吧。印象里好像《中华人民共和国公证法》里面会有一些相关内容。也许它能够明确哪些文件可以申请公证。<search>中华人民共和国公证法 农村房屋纠纷协议公证</search>\n\n<information>找到了，《公证法》确实提到，公证是公证机构根据当事人的申请，对法律行为或者有法律意义的事实和文书真实性、合法性进行证明的活动。而且还明确，如果协议内容违法，或者涉及损害公共利益，公证机构有权拒绝办理。</information>\n\n所以，这一点很明确了，只要协议是合法的，公证机构一般是可以办理公证的。但如果内容违法，比如违反法律法规，或者破坏公共利益，那这就没法公证。接下来，问题的重点就变成，这种农村房屋纠纷协议有没有可能涉及违法内容？或者说，这类协议是否有一些法律上特殊的限制？\n\n嗯，说到农村房屋，就不得不考虑它的特殊性了。比如，它很可能跟集体土地有关，而中国对集体土地的管理是有特殊政策的。想要更清楚一些，需要查一下相关政策或者法律，比如《土地管理法》和《农村土地承包法》。搜索一下吧。<search>农村房屋所有权协议限制</search>\n\n<information>看了下相关的规定，农村房屋纠纷涉及的协议确实有一些特殊限制。比如，根据《土地管理法》和一些地方性规定，农村的土地和房产不能随便交易，尤其像城镇居民不能购置农村房屋这样的政策。还有土地权属问题，比如土地归集体所有，个人只是承包经营使用权。这些都会对协议的合法性产生影响。</information>\n\n这样看来，如果农村房屋纠纷协议内容涉及房屋买卖、继承或者财产分割等行为，那么这些行为的前提必须符合土地和产权相关的法律，比如不得违反禁止交易的政策或者集体土地管理规定。如果内容不符合这些法律条款或规定，那协议本身可能就无效，自然也无法公证。\n\n所以，回到最初的问题：农村房屋纠纷协议可以公证吗？答案是可以，但前提是协议的内容必须合法有效，不能与现行的法律法规或农村的政策性限制相冲突。为了确保协议完全合法，在签订协议之前最好咨询专业律师或者公证机构，确认所有细节都合规。毕竟，如果在内容上踩了红线，公证是一定会被拒绝的。\n\n嗯，综上分析，我觉得这个答案逻辑上是通的，符合相关法律和政策，也没有遗漏什么重要的地方。\n</Internal Thinking>\n\n<Question>\n农村房屋纠纷协议可以公证吗?\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"理解问题背景\",\n      \"content\": \"农村房屋纠纷协议可能涉及土地使用权、房屋所有权、财产权益等方面的问题。同时，协议本身的合法性和可执行性是决定是否能够公证的核心。需要进一步明确公证机构是否对这类协议的范围有要求，以及是否符合相关法律法规。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"查询公证法律条文\",\n      \"content\": \"确认与协议公证相关的法律法规，以判断条件。例如《中华人民共和国公证法》和《民法典》中可能有关内容。需要查询具体条文。<search>中华人民共和国公证法 农村房屋纠纷协议公证</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析查询信息\",\n      \"content\": \"<information>公证法规定，公证是公证机构根据自然人、法人或者其他组织的申请，依照法定程序对法律行为、有法律意义的事实和文书的真实性、合法性予以证明的活动；同时规定，对于法律行为或文书内容违反法律法规或公共利益的情况，公证机构可以拒绝公证。</information>基于搜索结果，如果农村房屋纠纷协议内容是合法有效的，公证机构是可以依法办理的；但如涉及违法内容或政策性限制，可能无法公证。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"确认农村房屋权属限制\",\n      \"content\": \"考虑到农村房屋的特殊性，其产权经常涉及集体土地或受限的流转交易规则。需要进一步判断此类房屋权属或协议是否有特殊限制。<search>农村房屋所有权协议限制</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"验证农村房屋协议的合法条件\",\n      \"content\": \"<information>在农村房屋转让或相关权属争议时，法律要求合同内容不得违反《土地管理法》《农村土地承包法》及相关政策，例如不得违背 '农村集体土地严禁城镇居民购置' 等规定。具体协议内容若涉及房屋买卖、继承或分配，必须符合法律要求，且一般需由相关部门备案。</information>基于上述信息，如果协议符合这些法律规定，其可以作为公证对象。否则，公证机构会因协议本身不合法而拒绝办理公证。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"农村房屋纠纷协议在内容合法有效的前提下是可以进行公证的，但必须符合《土地管理法》《农村土地承包法》《中华人民共和国公证法》和相关地方政策的规定。如果协议存在内容违法或政策性限制问题，则无法公证。建议协议签订前咨询当地公证机构或律师以确保合法性。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"上述结论与现行法律要求一致，经过分析未发现偏差或错误，答案可信。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"嗯，这个问题是关于农村房屋纠纷协议是否可以公证的。先想一想，农村房屋的纠纷应该会涉及到土地使用权、房屋所有权、甚至财产分割之类的问题。关键是这个协议能不能被法律认可，因为公证本身是对协议真实性和合法性的确认。如果协议不合法，那公证肯定做不了。\\n\\n先查一下公证相关的法律是怎么规定的吧。印象里好像《中华人民共和国公证法》里面会有一些相关内容。也许它能够明确哪些文件可以申请公证。<search>中华人民共和国公证法 农村房屋纠纷协议公证</search>\\n\\n<information>找到了，《公证法》确实提到，公证是公证机构根据当事人的申请，对法律行为或者有法律意义的事实和文书真实性、合法性进行证明的活动。而且还明确，如果协议内容违法，或者涉及损害公共利益，公证机构有权拒绝办理。</information>\\n\\n所以，这一点很明确了，只要协议是合法的，公证机构一般是可以办理公证的。但如果内容违法，比如违反法律法规，或者破坏公共利益，那这就没法公证。接下来，问题的重点就变成，这种农村房屋纠纷协议有没有可能涉及违法内容？或者说，这类协议是否有一些法律上特殊的限制？\\n\\n嗯，说到农村房屋，就不得不考虑它的特殊性了。比如，它很可能跟集体土地有关，而中国对集体土地的管理是有特殊政策的。想要更清楚一些，需要查一下相关政策或者法律，比如《土地管理法》和《农村土地承包法》。搜索一下吧。<search>农村房屋所有权协议限制</search>\\n\\n<information>看了下相关的规定，农村房屋纠纷涉及的协议确实有一些特殊限制。比如，根据《土地管理法》和一些地方性规定，农村的土地和房产不能随便交易，尤其像城镇居民不能购置农村房屋这样的政策。还有土地权属问题，比如土地归集体所有，个人只是承包经营使用权。这些都会对协议的合法性产生影响。</information>\\n\\n这样看来，如果农村房屋纠纷协议内容涉及房屋买卖、继承或者财产分割等行为，那么这些行为的前提必须符合土地和产权相关的法律，比如不得违反禁止交易的政策或者集体土地管理规定。如果内容不符合这些法律条款或规定，那协议本身可能就无效，自然也无法公证。\\n\\n所以，回到最初的问题：农村房屋纠纷协议可以公证吗？答案是可以，但前提是协议的内容必须合法有效，不能与现行的法律法规或农村的政策性限制相冲突。为了确保协议完全合法，在签订协议之前最好咨询专业律师或者公证机构，确认所有细节都合规。毕竟，如果在内容上踩了红线，公证是一定会被拒绝的。\\n\\n嗯，综上分析，我觉得这个答案逻辑上是通的，符合相关法律和政策，也没有遗漏什么重要的地方。\"\n}\n```",
+    "农村房屋纠纷协议可以申请公证，但前提是协议内容必须合法有效，符合现行法律法规及政策的规定。\n\n根据《中华人民共和国公证法》的规定，公证机构会审核协议的真实性和合法性。如果协议内容违法、涉及违反公共利益或者不符合相关法律政策，比如农村土地和房屋的产权归属问题、交易限制等，则公证机构有权拒绝办理公证。\n\n针对农村房屋纠纷，需要特别注意以下几点：\n1. **土地和房屋的性质**：农村土地通常属于集体所有，个人只有承包经营权。在涉及房屋所有权或使用权分割时，必须符合法律关于集体土地的管理规定。\n2. **交易限制**：按照相关规定，城镇居民不能购买农村房屋，同时农村土地不能随意买卖。这对于协议内容涉及买卖或转让的行为是重要约束。\n3. **继承或分割的合法性**：如果协议牵涉继承、家庭财产分割等问题，也必须符合法律规定，确保所有权主张或分割方式合法。\n\n因此，如果协议没有触犯上述法律要求或政策限制，并且双方当事人自愿签订、内容真实，协议是可以通过公证确认合法性的。建议在签署协议之前，充分咨询律师或公证机构，确保每一项内容都合规合法，以避免公证申请被拒绝或后续法律问题的产生。\n\n总之，农村房屋纠纷协议的公证是可行的，但关键在于其内容是否符合法律规定。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "理解问题背景",
+        "content": "农村房屋纠纷协议可能涉及土地使用权、房屋所有权、财产权益等方面的问题。同时，协议本身的合法性和可执行性是决定是否能够公证的核心。需要进一步明确公证机构是否对这类协议的范围有要求，以及是否符合相关法律法规。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "查询公证法律条文",
+        "content": "确认与协议公证相关的法律法规，以判断条件。例如《中华人民共和国公证法》和《民法典》中可能有关内容。需要查询具体条文。<search>中华人民共和国公证法 农村房屋纠纷协议公证</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "分析查询信息",
+        "content": "<information>公证法规定，公证是公证机构根据自然人、法人或者其他组织的申请，依照法定程序对法律行为、有法律意义的事实和文书的真实性、合法性予以证明的活动；同时规定，对于法律行为或文书内容违反法律法规或公共利益的情况，公证机构可以拒绝公证。</information>基于搜索结果，如果农村房屋纠纷协议内容是合法有效的，公证机构是可以依法办理的；但如涉及违法内容或政策性限制，可能无法公证。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "确认农村房屋权属限制",
+        "content": "考虑到农村房屋的特殊性，其产权经常涉及集体土地或受限的流转交易规则。需要进一步判断此类房屋权属或协议是否有特殊限制。<search>农村房屋所有权协议限制</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "验证农村房屋协议的合法条件",
+        "content": "<information>在农村房屋转让或相关权属争议时，法律要求合同内容不得违反《土地管理法》《农村土地承包法》及相关政策，例如不得违背 '农村集体土地严禁城镇居民购置' 等规定。具体协议内容若涉及房屋买卖、继承或分配，必须符合法律要求，且一般需由相关部门备案。</information>基于上述信息，如果协议符合这些法律规定，其可以作为公证对象。否则，公证机构会因协议本身不合法而拒绝办理公证。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "农村房屋纠纷协议在内容合法有效的前提下是可以进行公证的，但必须符合《土地管理法》《农村土地承包法》《中华人民共和国公证法》和相关地方政策的规定。如果协议存在内容违法或政策性限制问题，则无法公证。建议协议签订前咨询当地公证机构或律师以确保合法性。"
+      },
+      {
+        "action": "Verification",
+        "content": "上述结论与现行法律要求一致，经过分析未发现偏差或错误，答案可信。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "嗯，这个问题是关于农村房屋纠纷协议是否可以公证的。先想一想，农村房屋的纠纷应该会涉及到土地使用权、房屋所有权、甚至财产分割之类的问题。关键是这个协议能不能被法律认可，因为公证本身是对协议真实性和合法性的确认。如果协议不合法，那公证肯定做不了。\n\n先查一下公证相关的法律是怎么规定的吧。印象里好像《中华人民共和国公证法》里面会有一些相关内容。也许它能够明确哪些文件可以申请公证。<search>中华人民共和国公证法 农村房屋纠纷协议公证</search>\n\n<information>找到了，《公证法》确实提到，公证是公证机构根据当事人的申请，对法律行为或者有法律意义的事实和文书真实性、合法性进行证明的活动。而且还明确，如果协议内容违法，或者涉及损害公共利益，公证机构有权拒绝办理。</information>\n\n所以，这一点很明确了，只要协议是合法的，公证机构一般是可以办理公证的。但如果内容违法，比如违反法律法规，或者破坏公共利益，那这就没法公证。接下来，问题的重点就变成，这种农村房屋纠纷协议有没有可能涉及违法内容？或者说，这类协议是否有一些法律上特殊的限制？\n\n嗯，说到农村房屋，就不得不考虑它的特殊性了。比如，它很可能跟集体土地有关，而中国对集体土地的管理是有特殊政策的。想要更清楚一些，需要查一下相关政策或者法律，比如《土地管理法》和《农村土地承包法》。搜索一下吧。<search>农村房屋所有权协议限制</search>\n\n<information>看了下相关的规定，农村房屋纠纷涉及的协议确实有一些特殊限制。比如，根据《土地管理法》和一些地方性规定，农村的土地和房产不能随便交易，尤其像城镇居民不能购置农村房屋这样的政策。还有土地权属问题，比如土地归集体所有，个人只是承包经营使用权。这些都会对协议的合法性产生影响。</information>\n\n这样看来，如果农村房屋纠纷协议内容涉及房屋买卖、继承或者财产分割等行为，那么这些行为的前提必须符合土地和产权相关的法律，比如不得违反禁止交易的政策或者集体土地管理规定。如果内容不符合这些法律条款或规定，那协议本身可能就无效，自然也无法公证。\n\n所以，回到最初的问题：农村房屋纠纷协议可以公证吗？答案是可以，但前提是协议的内容必须合法有效，不能与现行的法律法规或农村的政策性限制相冲突。为了确保协议完全合法，在签订协议之前最好咨询专业律师或者公证机构，确认所有细节都合规。毕竟，如果在内容上踩了红线，公证是一定会被拒绝的。\n\n嗯，综上分析，我觉得这个答案逻辑上是通的，符合相关法律和政策，也没有遗漏什么重要的地方。",
+  "Response": "农村房屋纠纷协议可以申请公证，但前提是协议内容必须合法有效，符合现行法律法规及政策的规定。\n\n根据《中华人民共和国公证法》的规定，公证机构会审核协议的真实性和合法性。如果协议内容违法、涉及违反公共利益或者不符合相关法律政策，比如农村土地和房屋的产权归属问题、交易限制等，则公证机构有权拒绝办理公证。\n\n针对农村房屋纠纷，需要特别注意以下几点：\n1. **土地和房屋的性质**：农村土地通常属于集体所有，个人只有承包经营权。在涉及房屋所有权或使用权分割时，必须符合法律关于集体土地的管理规定。\n2. **交易限制**：按照相关规定，城镇居民不能购买农村房屋，同时农村土地不能随意买卖。这对于协议内容涉及买卖或转让的行为是重要约束。\n3. **继承或分割的合法性**：如果协议牵涉继承、家庭财产分割等问题，也必须符合法律规定，确保所有权主张或分割方式合法。\n\n因此，如果协议没有触犯上述法律要求或政策限制，并且双方当事人自愿签订、内容真实，协议是可以通过公证确认合法性的。建议在签署协议之前，充分咨询律师或公证机构，确保每一项内容都合规合法，以避免公证申请被拒绝或后续法律问题的产生。\n\n总之，农村房屋纠纷协议的公证是可行的，但关键在于其内容是否符合法律规定。",
+  "Question": "农村房屋纠纷协议可以公证吗?"
+}

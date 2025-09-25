@@ -1,0 +1,99 @@
+{
+  "Open-ended Verifiable Question": "对于被列入拆迁范围的房屋，可以用来申请贷款吗？",
+  "Ground-True Answer": "被列入拆迁范围的房屋不可以用作抵押。根据《城市房地产抵押管理办法》第八条的规定，已依法公告列入拆迁范围的房地产不得设定抵押。因为列入拆迁范围的房屋，会使得抵押合同无法得到正常的履行，从而可能会损害抵押权人的利益，我国立法上出于此考虑，明确规定已依法列入拆迁范围的房地产不得设定抵押。依照上述法律规定，您想用家里已经被列入拆迁范围的宅基地作为抵押向银行申请贷款，是不符合法律规定的，您可以通过其他途径或者抵押其他不动产，申请银行贷款。  法律依据：《城市房地产抵押管理办法》第八条　下列房地产不得设定抵押：（一）权属有争议的房地产；（二）用于教育、医疗、市政等公共福利事业的房地产；（三）列入文物保护的建筑物和有重要纪念意义的其他建筑物；（四）已依法公告列入拆迁范围的房地产；（五）被依法查封、扣押、监管或者以其他形式限制的房地产；（六）依法不得抵押的其他房地产。",
+  "process_id": 9781,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "明确问题背景和核心",
+      "content": "被列入拆迁范围的房屋是指因政府规划或建设项目而即将被拆除的房产。这类房产的特性包括可能存在限制性规定，例如不能进行交易、抵押等行为。因此需判断这些限制是否适用于贷款申请。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "调查是否有相关法律法规",
+      "content": "需要查明关于被列入拆迁范围的房屋是否可以申请贷款的相关法律法规和政策规定。重点关注涉及拆迁房屋抵押、贷款等方面的限制性规定或要求。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "查找与抵押贷款相关的法律条文",
+      "content": "为了进一步确认，需查询针对拆迁范围内房屋是否存在禁止抵押的条文。将搜索以下关键词：<search>'拆迁范围房屋 抵押贷款 禁止性规定'</search>。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "分析搜索结果以得出初步结论",
+      "content": "<information>根据搜索信息显示，被列入拆迁范围的房屋通常已纳入拆迁公告，这类房屋存在一定特殊性。根据《担保法》第37条及相关地方性政策，已列入政府征收拆迁计划的房产一般不得抵押或转让，因为拆迁补偿权可能限制房屋所有权处分，故较难作为担保品。</information>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "分析贷款机构可能的操作限制",
+      "content": "贷款机构在审核房产抵押贷款时，通常会通过房产性质、土地使用权证等核实房屋是否存在权属风险。列入拆迁范围的房屋通常伴随购房或交易限制，因此贷款机构有较高概率拒绝该类房产作为贷款抵押物。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "被列入拆迁范围的房屋通常无法用于申请贷款。这是因为该类房产可能存在法律和实际操作中的限制性要求，例如其限制转让或抵押的特性，使其难以满足贷款机构的担保条件。"
+    },
+    {
+      "action": "Verification",
+      "content": "结论与相关法律法规一致，并且与贷款机构的实际操作逻辑相符。因此，该结论有效。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n对于被列入拆迁范围的房屋，可以用来申请贷款吗？\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n被列入拆迁范围的房屋通常无法用于申请贷款。这是因为该类房产可能存在法律和实际操作中的限制性要求，例如其限制转让或抵押的特性，使其难以满足贷款机构的担保条件。  \n</Model Response>  \n\n<Reference Answer>  \n被列入拆迁范围的房屋不可以用作抵押。根据《城市房地产抵押管理办法》第八条的规定，已依法公告列入拆迁范围的房地产不得设定抵押。因为列入拆迁范围的房屋，会使得抵押合同无法得到正常的履行，从而可能会损害抵押权人的利益，我国立法上出于此考虑，明确规定已依法列入拆迁范围的房地产不得设定抵押。依照上述法律规定，您想用家里已经被列入拆迁范围的宅基地作为抵押向银行申请贷款，是不符合法律规定的，您可以通过其他途径或者抵押其他不动产，申请银行贷款。  法律依据：《城市房地产抵押管理办法》第八条　下列房地产不得设定抵押：（一）权属有争议的房地产；（二）用于教育、医疗、市政等公共福利事业的房地产；（三）列入文物保护的建筑物和有重要纪念意义的其他建筑物；（四）已依法公告列入拆迁范围的房地产；（五）被依法查封、扣押、监管或者以其他形式限制的房地产；（六）依法不得抵押的其他房地产。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 明确问题背景和核心\n被列入拆迁范围的房屋是指因政府规划或建设项目而即将被拆除的房产。这类房产的特性包括可能存在限制性规定，例如不能进行交易、抵押等行为。因此需判断这些限制是否适用于贷款申请。\n\n### 调查是否有相关法律法规\n需要查明关于被列入拆迁范围的房屋是否可以申请贷款的相关法律法规和政策规定。重点关注涉及拆迁房屋抵押、贷款等方面的限制性规定或要求。\n\n### 查找与抵押贷款相关的法律条文\n为了进一步确认，需查询针对拆迁范围内房屋是否存在禁止抵押的条文。将搜索以下关键词：<search>'拆迁范围房屋 抵押贷款 禁止性规定'</search>。\n\n### 分析搜索结果以得出初步结论\n<information>根据搜索信息显示，被列入拆迁范围的房屋通常已纳入拆迁公告，这类房屋存在一定特殊性。根据《担保法》第37条及相关地方性政策，已列入政府征收拆迁计划的房产一般不得抵押或转让，因为拆迁补偿权可能限制房屋所有权处分，故较难作为担保品。</information>\n\n### 分析贷款机构可能的操作限制\n贷款机构在审核房产抵押贷款时，通常会通过房产性质、土地使用权证等核实房屋是否存在权属风险。列入拆迁范围的房屋通常伴随购房或交易限制，因此贷款机构有较高概率拒绝该类房产作为贷款抵押物。\n\n### Conclusion\n被列入拆迁范围的房屋通常无法用于申请贷款。这是因为该类房产可能存在法律和实际操作中的限制性要求，例如其限制转让或抵押的特性，使其难以满足贷款机构的担保条件。\n\n### Verification\n结论与相关法律法规一致，并且与贷款机构的实际操作逻辑相符。因此，该结论有效。\n</Thought Process>\n\n<Question>\n对于被列入拆迁范围的房屋，可以用来申请贷款吗？\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n我在想，如果房子被列入拆迁范围，那还能不能拿它来贷款呢？嗯，拆迁范围里的房子好像有特殊情况，因为涉及到政府规划或者项目建设。一般来说，这类房子可能有一些限制，比如不能买卖，不能拿去做抵押。那这些限制到底会不会影响贷款呢？得好好查一查。 \n\n首先，我觉得要看看有没有相关的法律规定，专门提到拆迁范围房屋可不可以抵押或者贷款。嗯，得找跟这方面相关的内容。我可以用这些关键词来搜索：\"拆迁范围房屋 抵押贷款 禁止性规定\"。 ——这看起来是个关键切入点，搜一下肯定能找到有用的信息。 \n\n啊，找到了一些东西。在搜出来的信息里提到，根据《担保法》第37条，看起来列入政府拆迁公告的房屋一般不能用于抵押。还提到了一点，拆迁补偿权好像会妨碍房屋的处分权，这样的话，如果房子不能自由处分，那作为抵押物好像也确实成问题。嗯，这部分和我的猜测挺一致的。再多想一想，如果房子最终要被拆掉，那银行把它当抵押物也有风险，因为最终这个抵押物可能无法满足债权清偿。 \n\n另外，贷款机构应该也会对这种情况特别敏感吧。通常房屋抵押贷款时，银行会仔细审核房子是不是可以合法抵押，比如产权有没有问题，或者有没有政策方面的限制。那如果房子已经列入拆迁范围，限制的可能性应该是很高的，银行大概率不会接受这样的房产作抵押。是啊，要是我是审核员，我也会担心房屋拆迁之后的价值问题，还不如直接拒绝这种贷款申请。 \n\n综合来看，被列入拆迁范围的房屋应该是没办法用来申请贷款的。这主要是因为法律上的限制，还有银行操作的实际风险都不支持。这么看下来，这个结论应该挺可靠的——既符合法律条文，又合乎贷款机构的逻辑。\n</Internal Thinking>\n\n<Question>\n对于被列入拆迁范围的房屋，可以用来申请贷款吗？\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"明确问题背景和核心\",\n      \"content\": \"被列入拆迁范围的房屋是指因政府规划或建设项目而即将被拆除的房产。这类房产的特性包括可能存在限制性规定，例如不能进行交易、抵押等行为。因此需判断这些限制是否适用于贷款申请。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"调查是否有相关法律法规\",\n      \"content\": \"需要查明关于被列入拆迁范围的房屋是否可以申请贷款的相关法律法规和政策规定。重点关注涉及拆迁房屋抵押、贷款等方面的限制性规定或要求。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"查找与抵押贷款相关的法律条文\",\n      \"content\": \"为了进一步确认，需查询针对拆迁范围内房屋是否存在禁止抵押的条文。将搜索以下关键词：<search>'拆迁范围房屋 抵押贷款 禁止性规定'</search>。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析搜索结果以得出初步结论\",\n      \"content\": \"<information>根据搜索信息显示，被列入拆迁范围的房屋通常已纳入拆迁公告，这类房屋存在一定特殊性。根据《担保法》第37条及相关地方性政策，已列入政府征收拆迁计划的房产一般不得抵押或转让，因为拆迁补偿权可能限制房屋所有权处分，故较难作为担保品。</information>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析贷款机构可能的操作限制\",\n      \"content\": \"贷款机构在审核房产抵押贷款时，通常会通过房产性质、土地使用权证等核实房屋是否存在权属风险。列入拆迁范围的房屋通常伴随购房或交易限制，因此贷款机构有较高概率拒绝该类房产作为贷款抵押物。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"被列入拆迁范围的房屋通常无法用于申请贷款。这是因为该类房产可能存在法律和实际操作中的限制性要求，例如其限制转让或抵押的特性，使其难以满足贷款机构的担保条件。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"结论与相关法律法规一致，并且与贷款机构的实际操作逻辑相符。因此，该结论有效。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"我在想，如果房子被列入拆迁范围，那还能不能拿它来贷款呢？嗯，拆迁范围里的房子好像有特殊情况，因为涉及到政府规划或者项目建设。一般来说，这类房子可能有一些限制，比如不能买卖，不能拿去做抵押。那这些限制到底会不会影响贷款呢？得好好查一查。 \\n\\n首先，我觉得要看看有没有相关的法律规定，专门提到拆迁范围房屋可不可以抵押或者贷款。嗯，得找跟这方面相关的内容。我可以用这些关键词来搜索：\\\"拆迁范围房屋 抵押贷款 禁止性规定\\\"。 ——这看起来是个关键切入点，搜一下肯定能找到有用的信息。 \\n\\n啊，找到了一些东西。在搜出来的信息里提到，根据《担保法》第37条，看起来列入政府拆迁公告的房屋一般不能用于抵押。还提到了一点，拆迁补偿权好像会妨碍房屋的处分权，这样的话，如果房子不能自由处分，那作为抵押物好像也确实成问题。嗯，这部分和我的猜测挺一致的。再多想一想，如果房子最终要被拆掉，那银行把它当抵押物也有风险，因为最终这个抵押物可能无法满足债权清偿。 \\n\\n另外，贷款机构应该也会对这种情况特别敏感吧。通常房屋抵押贷款时，银行会仔细审核房子是不是可以合法抵押，比如产权有没有问题，或者有没有政策方面的限制。那如果房子已经列入拆迁范围，限制的可能性应该是很高的，银行大概率不会接受这样的房产作抵押。是啊，要是我是审核员，我也会担心房屋拆迁之后的价值问题，还不如直接拒绝这种贷款申请。 \\n\\n综合来看，被列入拆迁范围的房屋应该是没办法用来申请贷款的。这主要是因为法律上的限制，还有银行操作的实际风险都不支持。这么看下来，这个结论应该挺可靠的——既符合法律条文，又合乎贷款机构的逻辑。\"\n}\n```",
+    "通常情况下，被列入拆迁范围的房屋是无法用来申请贷款的。这主要有以下几个原因：\n\n1. **法律限制**：根据《中华人民共和国担保法》第37条的规定，用于抵押的财产必须具有合法的处分权。而当房屋被依法列入拆迁范围后，由于涉及拆迁补偿和未来产权的不确定性，房主对房屋的处分权受到限制。因此，这类房屋一般不被允许用作抵押。\n\n2. **实际风险**：银行等金融机构在审核抵押贷款时，非常注重抵押物的合法性与稳定性。对于已列入拆迁范围的房屋，即便暂时还未拆除，其未来的价值和处置方式都存在较大不确定性，这对银行回收债务的安全性会构成风险。因此，绝大多数银行会拒绝接受这类房产作为抵押物。\n\n3. **产权问题**：列入拆迁范围的房屋通常涉及政府的规划与政策，例如拆迁补偿等事项。在这种情况下，这类房屋可能无法进行正常交易或用于抵押，因为其产权可能已经变得复杂，无法提供明确的抵押担保。\n\n综上所述，被列入拆迁范围的房屋通常因法律和实际操作的双重限制，无法用于申请贷款。如果你正面临相关问题，建议向专业的法律人士或贷款机构进一步咨询，以明确具体的限制和可能性。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "明确问题背景和核心",
+        "content": "被列入拆迁范围的房屋是指因政府规划或建设项目而即将被拆除的房产。这类房产的特性包括可能存在限制性规定，例如不能进行交易、抵押等行为。因此需判断这些限制是否适用于贷款申请。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "调查是否有相关法律法规",
+        "content": "需要查明关于被列入拆迁范围的房屋是否可以申请贷款的相关法律法规和政策规定。重点关注涉及拆迁房屋抵押、贷款等方面的限制性规定或要求。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "查找与抵押贷款相关的法律条文",
+        "content": "为了进一步确认，需查询针对拆迁范围内房屋是否存在禁止抵押的条文。将搜索以下关键词：<search>'拆迁范围房屋 抵押贷款 禁止性规定'</search>。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "分析搜索结果以得出初步结论",
+        "content": "<information>根据搜索信息显示，被列入拆迁范围的房屋通常已纳入拆迁公告，这类房屋存在一定特殊性。根据《担保法》第37条及相关地方性政策，已列入政府征收拆迁计划的房产一般不得抵押或转让，因为拆迁补偿权可能限制房屋所有权处分，故较难作为担保品。</information>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "分析贷款机构可能的操作限制",
+        "content": "贷款机构在审核房产抵押贷款时，通常会通过房产性质、土地使用权证等核实房屋是否存在权属风险。列入拆迁范围的房屋通常伴随购房或交易限制，因此贷款机构有较高概率拒绝该类房产作为贷款抵押物。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "被列入拆迁范围的房屋通常无法用于申请贷款。这是因为该类房产可能存在法律和实际操作中的限制性要求，例如其限制转让或抵押的特性，使其难以满足贷款机构的担保条件。"
+      },
+      {
+        "action": "Verification",
+        "content": "结论与相关法律法规一致，并且与贷款机构的实际操作逻辑相符。因此，该结论有效。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "我在想，如果房子被列入拆迁范围，那还能不能拿它来贷款呢？嗯，拆迁范围里的房子好像有特殊情况，因为涉及到政府规划或者项目建设。一般来说，这类房子可能有一些限制，比如不能买卖，不能拿去做抵押。那这些限制到底会不会影响贷款呢？得好好查一查。 \n\n首先，我觉得要看看有没有相关的法律规定，专门提到拆迁范围房屋可不可以抵押或者贷款。嗯，得找跟这方面相关的内容。我可以用这些关键词来搜索：\"拆迁范围房屋 抵押贷款 禁止性规定\"。 ——这看起来是个关键切入点，搜一下肯定能找到有用的信息。 \n\n啊，找到了一些东西。在搜出来的信息里提到，根据《担保法》第37条，看起来列入政府拆迁公告的房屋一般不能用于抵押。还提到了一点，拆迁补偿权好像会妨碍房屋的处分权，这样的话，如果房子不能自由处分，那作为抵押物好像也确实成问题。嗯，这部分和我的猜测挺一致的。再多想一想，如果房子最终要被拆掉，那银行把它当抵押物也有风险，因为最终这个抵押物可能无法满足债权清偿。 \n\n另外，贷款机构应该也会对这种情况特别敏感吧。通常房屋抵押贷款时，银行会仔细审核房子是不是可以合法抵押，比如产权有没有问题，或者有没有政策方面的限制。那如果房子已经列入拆迁范围，限制的可能性应该是很高的，银行大概率不会接受这样的房产作抵押。是啊，要是我是审核员，我也会担心房屋拆迁之后的价值问题，还不如直接拒绝这种贷款申请。 \n\n综合来看，被列入拆迁范围的房屋应该是没办法用来申请贷款的。这主要是因为法律上的限制，还有银行操作的实际风险都不支持。这么看下来，这个结论应该挺可靠的——既符合法律条文，又合乎贷款机构的逻辑。",
+  "Response": "通常情况下，被列入拆迁范围的房屋是无法用来申请贷款的。这主要有以下几个原因：\n\n1. **法律限制**：根据《中华人民共和国担保法》第37条的规定，用于抵押的财产必须具有合法的处分权。而当房屋被依法列入拆迁范围后，由于涉及拆迁补偿和未来产权的不确定性，房主对房屋的处分权受到限制。因此，这类房屋一般不被允许用作抵押。\n\n2. **实际风险**：银行等金融机构在审核抵押贷款时，非常注重抵押物的合法性与稳定性。对于已列入拆迁范围的房屋，即便暂时还未拆除，其未来的价值和处置方式都存在较大不确定性，这对银行回收债务的安全性会构成风险。因此，绝大多数银行会拒绝接受这类房产作为抵押物。\n\n3. **产权问题**：列入拆迁范围的房屋通常涉及政府的规划与政策，例如拆迁补偿等事项。在这种情况下，这类房屋可能无法进行正常交易或用于抵押，因为其产权可能已经变得复杂，无法提供明确的抵押担保。\n\n综上所述，被列入拆迁范围的房屋通常因法律和实际操作的双重限制，无法用于申请贷款。如果你正面临相关问题，建议向专业的法律人士或贷款机构进一步咨询，以明确具体的限制和可能性。",
+  "Question": "对于被列入拆迁范围的房屋，可以用来申请贷款吗？"
+}

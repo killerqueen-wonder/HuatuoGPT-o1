@@ -1,0 +1,89 @@
+{
+  "Open-ended Verifiable Question": "离婚时夫妻共同财产怎么样分",
+  "Ground-True Answer": "1，离婚时夫妻共同财产由双方协商分割，如果双方对协商结果达成一致，就按照协商的结果处理。但如果协商不一致的，则可以请求法院进行分割，法院会按照照顾子女，女方和无过错方权益的原则分割。2，法律依据：《中华人民共和国民法典》第一千零八十七条 离婚时，夫妻的共同财产由双方协议处理；协议不成的，由人民法院根据财产的具体情况，按照照顾子女，女方和无过错方权益的原则判决。对夫或者妻在家庭土地承包经营中享有的权益等，应当依法予以保护。二、家庭共同财产与夫妻共同财产家庭财产主要包括下述三种：1、夫妻双方婚前各自所有的财产2、夫妻在婚姻关系存续期间所得的财产其中包括双方或一方劳动所得财产，双方或一方所得遗产或受赠的财产。3、未成年子女的财产(其所有权属于子女，但父母有平等的管理权)。4、还包括父母，祖父母以至兄弟姐妹的财产。夫妻共同财产的范围包括双方在婚姻关系存续期间所得的一切收入，包括：（1）夫妻双方或一方的劳动收入，如工资，奖金，稿酬，其他形式的劳动报酬等。（2）夫妻双方或一方在婚姻关系存续期间继承，受赠或受遗赠所得财产。（3）夫妻双方或一方的其他合法收入。",
+  "process_id": 6455,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "明确夫妻共同财产的定义和范围",
+      "content": "根据现行《中华人民共和国民法典》，夫妻共同财产是指婚姻关系存续期间，夫妻双方或一方所得的实际收入及财产等。为了确认具体内容，需要了解《民法典》中对此进行详细描述的条款。<search>中华人民共和国民法典 1062条</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "检索民法典条款中的内容",
+      "content": "<information>根据《中华人民共和国民法典》第1062条，夫妻共同财产包括：（1）工资、奖金；（2）生产、经营、投资的收益；（3）知识产权的收益；（4）继承或赠予所得，但明确为单方的除外；（5）其他应当归共同所有的财产。</information>了解夫妻财产的范围后，需要进一步确认离婚财产分割的基本法律原则。<search>民法典 离婚 财产分割原则</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "检索离婚时分割财产的法律原则",
+      "content": "<information>《民法典》第1087条规定：离婚时，夫妻的共同财产由双方协商处理；协商不成的，由人民法院根据财产的具体情况，按照照顾子女、女方和无过错方权益的原则判决。</information>根据此条款，需要特别注意“协商优先”和“法庭裁决”的两种处理方式。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "总结实际分割的影响因素",
+      "content": "根据上述法律规定，财产分割主要受到以下因素影响：（1）夫妻协商是否达成一致；（2）法院对财产性质的认定；（3）是否存在无过错方以及其他道德、法律因素。最终需要给出具体总结和判断。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "离婚时夫妻的共同财产首先由双方协商分割，协商一致的，以协议为准；如协商不成，则由法院根据《民法典》第1087条的规定，基于财产具体情况和照顾无过错方、子女、女方合法权益等原则进行判决。财产范围包括婚姻存续期间的工资、奖金、投资收益、共同继承财产等，但明确约定为个人所有的财产除外。"
+    },
+    {
+      "action": "Verification",
+      "content": "综合《民法典》第1062条和1087条，结论符合法律规定，逻辑完整，内容准确，验证无误。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n离婚时夫妻共同财产怎么样分\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n离婚时夫妻的共同财产首先由双方协商分割，协商一致的，以协议为准；如协商不成，则由法院根据《民法典》第1087条的规定，基于财产具体情况和照顾无过错方、子女、女方合法权益等原则进行判决。财产范围包括婚姻存续期间的工资、奖金、投资收益、共同继承财产等，但明确约定为个人所有的财产除外。  \n</Model Response>  \n\n<Reference Answer>  \n1，离婚时夫妻共同财产由双方协商分割，如果双方对协商结果达成一致，就按照协商的结果处理。但如果协商不一致的，则可以请求法院进行分割，法院会按照照顾子女，女方和无过错方权益的原则分割。2，法律依据：《中华人民共和国民法典》第一千零八十七条 离婚时，夫妻的共同财产由双方协议处理；协议不成的，由人民法院根据财产的具体情况，按照照顾子女，女方和无过错方权益的原则判决。对夫或者妻在家庭土地承包经营中享有的权益等，应当依法予以保护。二、家庭共同财产与夫妻共同财产家庭财产主要包括下述三种：1、夫妻双方婚前各自所有的财产2、夫妻在婚姻关系存续期间所得的财产其中包括双方或一方劳动所得财产，双方或一方所得遗产或受赠的财产。3、未成年子女的财产(其所有权属于子女，但父母有平等的管理权)。4、还包括父母，祖父母以至兄弟姐妹的财产。夫妻共同财产的范围包括双方在婚姻关系存续期间所得的一切收入，包括：（1）夫妻双方或一方的劳动收入，如工资，奖金，稿酬，其他形式的劳动报酬等。（2）夫妻双方或一方在婚姻关系存续期间继承，受赠或受遗赠所得财产。（3）夫妻双方或一方的其他合法收入。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 明确夫妻共同财产的定义和范围\n根据现行《中华人民共和国民法典》，夫妻共同财产是指婚姻关系存续期间，夫妻双方或一方所得的实际收入及财产等。为了确认具体内容，需要了解《民法典》中对此进行详细描述的条款。<search>中华人民共和国民法典 1062条</search>\n\n### 检索民法典条款中的内容\n<information>根据《中华人民共和国民法典》第1062条，夫妻共同财产包括：（1）工资、奖金；（2）生产、经营、投资的收益；（3）知识产权的收益；（4）继承或赠予所得，但明确为单方的除外；（5）其他应当归共同所有的财产。</information>了解夫妻财产的范围后，需要进一步确认离婚财产分割的基本法律原则。<search>民法典 离婚 财产分割原则</search>\n\n### 检索离婚时分割财产的法律原则\n<information>《民法典》第1087条规定：离婚时，夫妻的共同财产由双方协商处理；协商不成的，由人民法院根据财产的具体情况，按照照顾子女、女方和无过错方权益的原则判决。</information>根据此条款，需要特别注意“协商优先”和“法庭裁决”的两种处理方式。\n\n### 总结实际分割的影响因素\n根据上述法律规定，财产分割主要受到以下因素影响：（1）夫妻协商是否达成一致；（2）法院对财产性质的认定；（3）是否存在无过错方以及其他道德、法律因素。最终需要给出具体总结和判断。\n\n### Conclusion\n离婚时夫妻的共同财产首先由双方协商分割，协商一致的，以协议为准；如协商不成，则由法院根据《民法典》第1087条的规定，基于财产具体情况和照顾无过错方、子女、女方合法权益等原则进行判决。财产范围包括婚姻存续期间的工资、奖金、投资收益、共同继承财产等，但明确约定为个人所有的财产除外。\n\n### Verification\n综合《民法典》第1062条和1087条，结论符合法律规定，逻辑完整，内容准确，验证无误。\n</Thought Process>\n\n<Question>\n离婚时夫妻共同财产怎么样分\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n嗯，我知道离婚的时候需要处理夫妻共同财产的分割问题，但夫妻共同财产到底包含哪些东西呢？让我先来确认一下法律上是怎么定义夫妻共同财产的。<search>中华人民共和国民法典 1062条</search>\n\n哦，找到了！<information>根据《中华人民共和国民法典》第1062条，夫妻共同财产包括：(1)工资、奖金；(2)生产、经营、投资的收益；(3)知识产权的收益；(4)继承或赠予所得，但明确为单方的除外；(5)其他应当归共同所有的财产。</information>所以共同财产的范围还真是挺广的呀，包括各类收入和收益。继承或赠予的财产要是明确给一方的话就不算共同财产，这点也要注意。\n\n不过，我还有个问题：这些共同财产在离婚的时候怎么分呢？听说要先协商，但具体法律依据是什么？好奇的话还是看看民法典怎么说吧。<search>民法典 离婚 财产分割原则</search>\n\n找到了相关条款，哈哈。<information>《民法典》第1087条规定：离婚时，夫妻的共同财产由双方协商处理；协商不成的，由人民法院根据财产的具体情况，按照照顾子女、女方和无过错方权益的原则判决。</information>这样看来，离婚时分财产首先要看双方能不能达成一致，如果协商失败或者其中一方不配合，就需要法院根据具体情况判决怎么分。\n\n再琢磨一下这个“协商优先”，感觉挺合理的，毕竟既然是夫妻，离婚也可以平和处理不伤感情最好。当然，如果对簿公堂了，那法院就会考虑一些特别的因素，比如说有没有无过错方？另外好像还要考虑子女利益，女方权益之类的。这些因素都影响法院的最终决定。\n\n理清楚了！离婚的时候，夫妻共同财产的分割首先要协商，大家能协商好的话最好。如果协商不好，法院就根据特定原则，比如照顾子女和无过错方的权益来判断怎么分。共同财产包括工资、奖金、投资收益、继承财产等等，只是明确属于个人的财产是除外的。\n\n综合来看，上面的分析和法律条款还是很吻合的，挺全面的，逻辑也没问题。这么处理婚姻财产其实还是比较周详的！\n</Internal Thinking>\n\n<Question>\n离婚时夫妻共同财产怎么样分\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"明确夫妻共同财产的定义和范围\",\n      \"content\": \"根据现行《中华人民共和国民法典》，夫妻共同财产是指婚姻关系存续期间，夫妻双方或一方所得的实际收入及财产等。为了确认具体内容，需要了解《民法典》中对此进行详细描述的条款。<search>中华人民共和国民法典 1062条</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"检索民法典条款中的内容\",\n      \"content\": \"<information>根据《中华人民共和国民法典》第1062条，夫妻共同财产包括：（1）工资、奖金；（2）生产、经营、投资的收益；（3）知识产权的收益；（4）继承或赠予所得，但明确为单方的除外；（5）其他应当归共同所有的财产。</information>了解夫妻财产的范围后，需要进一步确认离婚财产分割的基本法律原则。<search>民法典 离婚 财产分割原则</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"检索离婚时分割财产的法律原则\",\n      \"content\": \"<information>《民法典》第1087条规定：离婚时，夫妻的共同财产由双方协商处理；协商不成的，由人民法院根据财产的具体情况，按照照顾子女、女方和无过错方权益的原则判决。</information>根据此条款，需要特别注意“协商优先”和“法庭裁决”的两种处理方式。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"总结实际分割的影响因素\",\n      \"content\": \"根据上述法律规定，财产分割主要受到以下因素影响：（1）夫妻协商是否达成一致；（2）法院对财产性质的认定；（3）是否存在无过错方以及其他道德、法律因素。最终需要给出具体总结和判断。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"离婚时夫妻的共同财产首先由双方协商分割，协商一致的，以协议为准；如协商不成，则由法院根据《民法典》第1087条的规定，基于财产具体情况和照顾无过错方、子女、女方合法权益等原则进行判决。财产范围包括婚姻存续期间的工资、奖金、投资收益、共同继承财产等，但明确约定为个人所有的财产除外。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"综合《民法典》第1062条和1087条，结论符合法律规定，逻辑完整，内容准确，验证无误。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"嗯，我知道离婚的时候需要处理夫妻共同财产的分割问题，但夫妻共同财产到底包含哪些东西呢？让我先来确认一下法律上是怎么定义夫妻共同财产的。<search>中华人民共和国民法典 1062条</search>\\n\\n哦，找到了！<information>根据《中华人民共和国民法典》第1062条，夫妻共同财产包括：(1)工资、奖金；(2)生产、经营、投资的收益；(3)知识产权的收益；(4)继承或赠予所得，但明确为单方的除外；(5)其他应当归共同所有的财产。</information>所以共同财产的范围还真是挺广的呀，包括各类收入和收益。继承或赠予的财产要是明确给一方的话就不算共同财产，这点也要注意。\\n\\n不过，我还有个问题：这些共同财产在离婚的时候怎么分呢？听说要先协商，但具体法律依据是什么？好奇的话还是看看民法典怎么说吧。<search>民法典 离婚 财产分割原则</search>\\n\\n找到了相关条款，哈哈。<information>《民法典》第1087条规定：离婚时，夫妻的共同财产由双方协商处理；协商不成的，由人民法院根据财产的具体情况，按照照顾子女、女方和无过错方权益的原则判决。</information>这样看来，离婚时分财产首先要看双方能不能达成一致，如果协商失败或者其中一方不配合，就需要法院根据具体情况判决怎么分。\\n\\n再琢磨一下这个“协商优先”，感觉挺合理的，毕竟既然是夫妻，离婚也可以平和处理不伤感情最好。当然，如果对簿公堂了，那法院就会考虑一些特别的因素，比如说有没有无过错方？另外好像还要考虑子女利益，女方权益之类的。这些因素都影响法院的最终决定。\\n\\n理清楚了！离婚的时候，夫妻共同财产的分割首先要协商，大家能协商好的话最好。如果协商不好，法院就根据特定原则，比如照顾子女和无过错方的权益来判断怎么分。共同财产包括工资、奖金、投资收益、继承财产等等，只是明确属于个人的财产是除外的。\\n\\n综合来看，上面的分析和法律条款还是很吻合的，挺全面的，逻辑也没问题。这么处理婚姻财产其实还是比较周详的！\"\n}\n```",
+    "离婚时，夫妻共同财产的分割原则可以概括为以下几点：\n\n1. **协商优先**：根据《中华人民共和国民法典》第1087条，离婚时夫妻共同财产的分割，首先应由双方协商解决。如果双方能够达成一致意见，依法签署协议即可进行分割。\n\n2. **协商不成，由法院判决**：如果双方协商不成，或者一方不配合，人民法院会根据具体情况进行判决，分割时会遵循以下几个原则：\n   - **照顾子女权益**：如果有未成年子女，法院在分割财产时会更关注子女的利益，比如抚养费的保障等。\n   - **保护女方权益**：法院会适当照顾在家庭生活、育儿等方面付出较多的女方，尤其是在家庭经济地位较弱的情况下。\n   - **尊重无过错方**：如果一方在婚姻中有重大过错（例如重婚、家庭暴力等），法院可能会在财产分割上更倾向于保护无过错方的权益。\n\n3. **分配共同债务**：如果夫妻有共同债务，原则上应一并分割，一方承担的债务超过其应分财产部分的，可以要求另一方进行补偿，确保分割公平。\n\n4. **不属于共同财产的部分归个人所有**：需要注意，以下财产一般不属于夫妻共同财产，不参与分割：\n   - 明确为夫妻一方个人的继承或赠予所得；\n   - 夫妻一方因身体伤害获得的医疗费、残疾人生活补助费等。\n\n在实际操作中，协商的过程是平和解决问题的重要途径，但若协商失败，提请法院裁决应依法做好准备，并适当引入专业法律人士协助。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "明确夫妻共同财产的定义和范围",
+        "content": "根据现行《中华人民共和国民法典》，夫妻共同财产是指婚姻关系存续期间，夫妻双方或一方所得的实际收入及财产等。为了确认具体内容，需要了解《民法典》中对此进行详细描述的条款。<search>中华人民共和国民法典 1062条</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "检索民法典条款中的内容",
+        "content": "<information>根据《中华人民共和国民法典》第1062条，夫妻共同财产包括：（1）工资、奖金；（2）生产、经营、投资的收益；（3）知识产权的收益；（4）继承或赠予所得，但明确为单方的除外；（5）其他应当归共同所有的财产。</information>了解夫妻财产的范围后，需要进一步确认离婚财产分割的基本法律原则。<search>民法典 离婚 财产分割原则</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "检索离婚时分割财产的法律原则",
+        "content": "<information>《民法典》第1087条规定：离婚时，夫妻的共同财产由双方协商处理；协商不成的，由人民法院根据财产的具体情况，按照照顾子女、女方和无过错方权益的原则判决。</information>根据此条款，需要特别注意“协商优先”和“法庭裁决”的两种处理方式。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "总结实际分割的影响因素",
+        "content": "根据上述法律规定，财产分割主要受到以下因素影响：（1）夫妻协商是否达成一致；（2）法院对财产性质的认定；（3）是否存在无过错方以及其他道德、法律因素。最终需要给出具体总结和判断。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "离婚时夫妻的共同财产首先由双方协商分割，协商一致的，以协议为准；如协商不成，则由法院根据《民法典》第1087条的规定，基于财产具体情况和照顾无过错方、子女、女方合法权益等原则进行判决。财产范围包括婚姻存续期间的工资、奖金、投资收益、共同继承财产等，但明确约定为个人所有的财产除外。"
+      },
+      {
+        "action": "Verification",
+        "content": "综合《民法典》第1062条和1087条，结论符合法律规定，逻辑完整，内容准确，验证无误。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "嗯，我知道离婚的时候需要处理夫妻共同财产的分割问题，但夫妻共同财产到底包含哪些东西呢？让我先来确认一下法律上是怎么定义夫妻共同财产的。<search>中华人民共和国民法典 1062条</search>\n\n哦，找到了！<information>根据《中华人民共和国民法典》第1062条，夫妻共同财产包括：(1)工资、奖金；(2)生产、经营、投资的收益；(3)知识产权的收益；(4)继承或赠予所得，但明确为单方的除外；(5)其他应当归共同所有的财产。</information>所以共同财产的范围还真是挺广的呀，包括各类收入和收益。继承或赠予的财产要是明确给一方的话就不算共同财产，这点也要注意。\n\n不过，我还有个问题：这些共同财产在离婚的时候怎么分呢？听说要先协商，但具体法律依据是什么？好奇的话还是看看民法典怎么说吧。<search>民法典 离婚 财产分割原则</search>\n\n找到了相关条款，哈哈。<information>《民法典》第1087条规定：离婚时，夫妻的共同财产由双方协商处理；协商不成的，由人民法院根据财产的具体情况，按照照顾子女、女方和无过错方权益的原则判决。</information>这样看来，离婚时分财产首先要看双方能不能达成一致，如果协商失败或者其中一方不配合，就需要法院根据具体情况判决怎么分。\n\n再琢磨一下这个“协商优先”，感觉挺合理的，毕竟既然是夫妻，离婚也可以平和处理不伤感情最好。当然，如果对簿公堂了，那法院就会考虑一些特别的因素，比如说有没有无过错方？另外好像还要考虑子女利益，女方权益之类的。这些因素都影响法院的最终决定。\n\n理清楚了！离婚的时候，夫妻共同财产的分割首先要协商，大家能协商好的话最好。如果协商不好，法院就根据特定原则，比如照顾子女和无过错方的权益来判断怎么分。共同财产包括工资、奖金、投资收益、继承财产等等，只是明确属于个人的财产是除外的。\n\n综合来看，上面的分析和法律条款还是很吻合的，挺全面的，逻辑也没问题。这么处理婚姻财产其实还是比较周详的！",
+  "Response": "离婚时，夫妻共同财产的分割原则可以概括为以下几点：\n\n1. **协商优先**：根据《中华人民共和国民法典》第1087条，离婚时夫妻共同财产的分割，首先应由双方协商解决。如果双方能够达成一致意见，依法签署协议即可进行分割。\n\n2. **协商不成，由法院判决**：如果双方协商不成，或者一方不配合，人民法院会根据具体情况进行判决，分割时会遵循以下几个原则：\n   - **照顾子女权益**：如果有未成年子女，法院在分割财产时会更关注子女的利益，比如抚养费的保障等。\n   - **保护女方权益**：法院会适当照顾在家庭生活、育儿等方面付出较多的女方，尤其是在家庭经济地位较弱的情况下。\n   - **尊重无过错方**：如果一方在婚姻中有重大过错（例如重婚、家庭暴力等），法院可能会在财产分割上更倾向于保护无过错方的权益。\n\n3. **分配共同债务**：如果夫妻有共同债务，原则上应一并分割，一方承担的债务超过其应分财产部分的，可以要求另一方进行补偿，确保分割公平。\n\n4. **不属于共同财产的部分归个人所有**：需要注意，以下财产一般不属于夫妻共同财产，不参与分割：\n   - 明确为夫妻一方个人的继承或赠予所得；\n   - 夫妻一方因身体伤害获得的医疗费、残疾人生活补助费等。\n\n在实际操作中，协商的过程是平和解决问题的重要途径，但若协商失败，提请法院裁决应依法做好准备，并适当引入专业法律人士协助。",
+  "Question": "离婚时夫妻共同财产怎么样分"
+}

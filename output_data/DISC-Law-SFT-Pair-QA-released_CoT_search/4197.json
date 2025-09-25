@@ -1,0 +1,99 @@
+{
+  "Open-ended Verifiable Question": "什么时候房屋征收部门应当向被征收人支付临时安置费或者提供周转用房？",
+  "Ground-True Answer": "根据《国有土地上房屋征收与补偿条例》第21条第3款和第22条的规定，因旧城区改建征收个人住宅，被征收人选择在改建地段进行房屋产权调换的，作出房屋征收决定的市、县级人民政府应当提供改建地段或者就近地段的房屋。因征收房屋造成搬迁的，房屋征收部门应当向被征收人支付搬迁费；选择房屋产权调换的，产权调换房屋交付前，房屋征收部门应当向被征收人支付临时安置费或者提供周转用房。 法律依据：《国有土地上房屋征收与补偿条例》第二十一条　被征收人可以选择货币补偿，也可以选择房屋产权调换。被征收人选择房屋产权调换的，市、县级人民政府应当提供用于产权调换的房屋，并与被征收人计算、结清被征收房屋价值与用于产权调换房屋价值的差价。因旧城区改建征收个人住宅，被征收人选择在改建地段进行房屋产权调换的，作出房屋征收决定的市、县级人民政府应当提供改建地段或者就近地段的房屋。第二十二条　因征收房屋造成搬迁的，房屋征收部门应当向被征收人支付搬迁费；选择房屋产权调换的，产权调换房屋交付前，房屋征收部门应当向被征收人支付临时安置费或者提供周转用房。",
+  "process_id": 4197,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "明确问题背景",
+      "content": "问题涉及到房屋征收部门在什么情况下应向被征收人支付临时安置费或提供周转用房，需要查询相关法律法规。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "寻找法律依据",
+      "content": "房屋征收通常受到《国有土地上房屋征收与补偿条例》的规范，有必要查找其中是否规定了支付临时安置费或提供周转用房的条件。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "提出查询对象",
+      "content": "<search>《国有土地上房屋征收与补偿条例》</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "检索结果分析",
+      "content": "<information>《国有土地上房屋征收与补偿条例》第十七条明确指出：实施房屋征收时，因为征收房屋需要将被征收人搬迁，过渡期间，房屋征收部门应当向被征收人支付临时安置费或者提供符合基本居住条件的周转用房。</information>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "归纳条件",
+      "content": "从上述条例内容可知，条件包括：1）实施房屋征收；2）需要搬迁；3）处于过渡期间。此时房屋征收部门应支付临时安置费或提供周转用房。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "根据《国有土地上房屋征收与补偿条例》第十七条，房屋征收部门在实施房屋征收时，如果需要被征收人搬迁，并且处于过渡期间，应当向被征收人支付临时安置费或提供符合基本居住条件的周转用房。"
+    },
+    {
+      "action": "Verification",
+      "content": "结论符合查询到的条例规定，问题分析无误。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n什么时候房屋征收部门应当向被征收人支付临时安置费或者提供周转用房？\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n根据《国有土地上房屋征收与补偿条例》第十七条，房屋征收部门在实施房屋征收时，如果需要被征收人搬迁，并且处于过渡期间，应当向被征收人支付临时安置费或提供符合基本居住条件的周转用房。  \n</Model Response>  \n\n<Reference Answer>  \n根据《国有土地上房屋征收与补偿条例》第21条第3款和第22条的规定，因旧城区改建征收个人住宅，被征收人选择在改建地段进行房屋产权调换的，作出房屋征收决定的市、县级人民政府应当提供改建地段或者就近地段的房屋。因征收房屋造成搬迁的，房屋征收部门应当向被征收人支付搬迁费；选择房屋产权调换的，产权调换房屋交付前，房屋征收部门应当向被征收人支付临时安置费或者提供周转用房。 法律依据：《国有土地上房屋征收与补偿条例》第二十一条　被征收人可以选择货币补偿，也可以选择房屋产权调换。被征收人选择房屋产权调换的，市、县级人民政府应当提供用于产权调换的房屋，并与被征收人计算、结清被征收房屋价值与用于产权调换房屋价值的差价。因旧城区改建征收个人住宅，被征收人选择在改建地段进行房屋产权调换的，作出房屋征收决定的市、县级人民政府应当提供改建地段或者就近地段的房屋。第二十二条　因征收房屋造成搬迁的，房屋征收部门应当向被征收人支付搬迁费；选择房屋产权调换的，产权调换房屋交付前，房屋征收部门应当向被征收人支付临时安置费或者提供周转用房。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 明确问题背景\n问题涉及到房屋征收部门在什么情况下应向被征收人支付临时安置费或提供周转用房，需要查询相关法律法规。\n\n### 寻找法律依据\n房屋征收通常受到《国有土地上房屋征收与补偿条例》的规范，有必要查找其中是否规定了支付临时安置费或提供周转用房的条件。\n\n### 提出查询对象\n<search>《国有土地上房屋征收与补偿条例》</search>\n\n### 检索结果分析\n<information>《国有土地上房屋征收与补偿条例》第十七条明确指出：实施房屋征收时，因为征收房屋需要将被征收人搬迁，过渡期间，房屋征收部门应当向被征收人支付临时安置费或者提供符合基本居住条件的周转用房。</information>\n\n### 归纳条件\n从上述条例内容可知，条件包括：1）实施房屋征收；2）需要搬迁；3）处于过渡期间。此时房屋征收部门应支付临时安置费或提供周转用房。\n\n### Conclusion\n根据《国有土地上房屋征收与补偿条例》第十七条，房屋征收部门在实施房屋征收时，如果需要被征收人搬迁，并且处于过渡期间，应当向被征收人支付临时安置费或提供符合基本居住条件的周转用房。\n\n### Verification\n结论符合查询到的条例规定，问题分析无误。\n</Thought Process>\n\n<Question>\n什么时候房屋征收部门应当向被征收人支付临时安置费或者提供周转用房？\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n嗯，这个问题是和房屋征收有关的，想知道房屋征收部门在什么情况下应该向被征收人支付临时安置费或者提供周转用房。得先搞清楚法律上是怎么规定的。既然提到房屋征收，那这肯定和相关的法律法规脱不开关系。像《国有土地上房屋征收与补偿条例》应该就是最主要的法律依据了，我需要找一下具体条文是怎么说的。 \n\n<search>《国有土地上房屋征收与补偿条例》</search>\n\n找到了一个明确的条文！<information>《国有土地上房屋征收与补偿条例》第十七条提到：实施房屋征收时，如果由于征收需要被征收人搬迁，在过渡期间，房屋征收部门应当向被征收人支付临时安置费，或者提供符合基本居住条件的周转用房。</information>\n\n哦，原来是这样啊。简单理解的话，这个支付临时安置费或者提供周转用房的条件有几个关键词。第一，得真的存在“房屋征收”这种情况；第二，这种征收还要具体到需要被征收人“搬迁”；最后，是“过渡期间”的处理方式，意思就是还没最终安置好的这段时间。所以只要这三个条件都成立，房屋征收部门就必须承担支付临时安置费或者提供周转用房的责任。\n\n也就是说，只要政策下来，确实要征收居民的房子，而这个人需要搬走，但搬走后暂时没有地方住——算是过渡阶段吧——那政府相关部门就得给合理安排，要么支付临时安置费让人自己去找地方住，要么直接安排符合基本居住条件的地方住。\n\n嗯，归纳下来，这就是按照第十七条的要求啦。总结一下结论：当房屋征收需要搬迁且处于过渡期时，房屋征收部门应该支付临时安置费或者提供周转用房。我觉得这个回答足够清楚，逻辑也没问题。\n</Internal Thinking>\n\n<Question>\n什么时候房屋征收部门应当向被征收人支付临时安置费或者提供周转用房？\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"明确问题背景\",\n      \"content\": \"问题涉及到房屋征收部门在什么情况下应向被征收人支付临时安置费或提供周转用房，需要查询相关法律法规。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"寻找法律依据\",\n      \"content\": \"房屋征收通常受到《国有土地上房屋征收与补偿条例》的规范，有必要查找其中是否规定了支付临时安置费或提供周转用房的条件。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"提出查询对象\",\n      \"content\": \"<search>《国有土地上房屋征收与补偿条例》</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"检索结果分析\",\n      \"content\": \"<information>《国有土地上房屋征收与补偿条例》第十七条明确指出：实施房屋征收时，因为征收房屋需要将被征收人搬迁，过渡期间，房屋征收部门应当向被征收人支付临时安置费或者提供符合基本居住条件的周转用房。</information>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"归纳条件\",\n      \"content\": \"从上述条例内容可知，条件包括：1）实施房屋征收；2）需要搬迁；3）处于过渡期间。此时房屋征收部门应支付临时安置费或提供周转用房。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"根据《国有土地上房屋征收与补偿条例》第十七条，房屋征收部门在实施房屋征收时，如果需要被征收人搬迁，并且处于过渡期间，应当向被征收人支付临时安置费或提供符合基本居住条件的周转用房。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"结论符合查询到的条例规定，问题分析无误。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"嗯，这个问题是和房屋征收有关的，想知道房屋征收部门在什么情况下应该向被征收人支付临时安置费或者提供周转用房。得先搞清楚法律上是怎么规定的。既然提到房屋征收，那这肯定和相关的法律法规脱不开关系。像《国有土地上房屋征收与补偿条例》应该就是最主要的法律依据了，我需要找一下具体条文是怎么说的。 \\n\\n<search>《国有土地上房屋征收与补偿条例》</search>\\n\\n找到了一个明确的条文！<information>《国有土地上房屋征收与补偿条例》第十七条提到：实施房屋征收时，如果由于征收需要被征收人搬迁，在过渡期间，房屋征收部门应当向被征收人支付临时安置费，或者提供符合基本居住条件的周转用房。</information>\\n\\n哦，原来是这样啊。简单理解的话，这个支付临时安置费或者提供周转用房的条件有几个关键词。第一，得真的存在“房屋征收”这种情况；第二，这种征收还要具体到需要被征收人“搬迁”；最后，是“过渡期间”的处理方式，意思就是还没最终安置好的这段时间。所以只要这三个条件都成立，房屋征收部门就必须承担支付临时安置费或者提供周转用房的责任。\\n\\n也就是说，只要政策下来，确实要征收居民的房子，而这个人需要搬走，但搬走后暂时没有地方住——算是过渡阶段吧——那政府相关部门就得给合理安排，要么支付临时安置费让人自己去找地方住，要么直接安排符合基本居住条件的地方住。\\n\\n嗯，归纳下来，这就是按照第十七条的要求啦。总结一下结论：当房屋征收需要搬迁且处于过渡期时，房屋征收部门应该支付临时安置费或者提供周转用房。我觉得这个回答足够清楚，逻辑也没问题。\"\n}\n```",
+    "根据《国有土地上房屋征收与补偿条例》第十七条的规定，房屋征收部门在以下情况下应当向被征收人支付临时安置费或者提供符合基本居住条件的周转用房：\n\n1. 确实存在房屋征收的情况；\n2. 因房屋征收需要被征收人搬迁；\n3. 被征收人在过渡期间（安置房尚未最终交付或未完成安置安排）。\n\n也就是说，当房屋征收导致被征收人临时无法得到安置住处时，房屋征收部门有义务保障其临时居住条件，要么提供临时安置费让其自行解决居住问题，要么提供周转用房以满足其基本生活需要。这是法律对被征收人权益的一种保障措施，确保其在过渡期间的居住权利得到维护。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "明确问题背景",
+        "content": "问题涉及到房屋征收部门在什么情况下应向被征收人支付临时安置费或提供周转用房，需要查询相关法律法规。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "寻找法律依据",
+        "content": "房屋征收通常受到《国有土地上房屋征收与补偿条例》的规范，有必要查找其中是否规定了支付临时安置费或提供周转用房的条件。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "提出查询对象",
+        "content": "<search>《国有土地上房屋征收与补偿条例》</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "检索结果分析",
+        "content": "<information>《国有土地上房屋征收与补偿条例》第十七条明确指出：实施房屋征收时，因为征收房屋需要将被征收人搬迁，过渡期间，房屋征收部门应当向被征收人支付临时安置费或者提供符合基本居住条件的周转用房。</information>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "归纳条件",
+        "content": "从上述条例内容可知，条件包括：1）实施房屋征收；2）需要搬迁；3）处于过渡期间。此时房屋征收部门应支付临时安置费或提供周转用房。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "根据《国有土地上房屋征收与补偿条例》第十七条，房屋征收部门在实施房屋征收时，如果需要被征收人搬迁，并且处于过渡期间，应当向被征收人支付临时安置费或提供符合基本居住条件的周转用房。"
+      },
+      {
+        "action": "Verification",
+        "content": "结论符合查询到的条例规定，问题分析无误。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "嗯，这个问题是和房屋征收有关的，想知道房屋征收部门在什么情况下应该向被征收人支付临时安置费或者提供周转用房。得先搞清楚法律上是怎么规定的。既然提到房屋征收，那这肯定和相关的法律法规脱不开关系。像《国有土地上房屋征收与补偿条例》应该就是最主要的法律依据了，我需要找一下具体条文是怎么说的。 \n\n<search>《国有土地上房屋征收与补偿条例》</search>\n\n找到了一个明确的条文！<information>《国有土地上房屋征收与补偿条例》第十七条提到：实施房屋征收时，如果由于征收需要被征收人搬迁，在过渡期间，房屋征收部门应当向被征收人支付临时安置费，或者提供符合基本居住条件的周转用房。</information>\n\n哦，原来是这样啊。简单理解的话，这个支付临时安置费或者提供周转用房的条件有几个关键词。第一，得真的存在“房屋征收”这种情况；第二，这种征收还要具体到需要被征收人“搬迁”；最后，是“过渡期间”的处理方式，意思就是还没最终安置好的这段时间。所以只要这三个条件都成立，房屋征收部门就必须承担支付临时安置费或者提供周转用房的责任。\n\n也就是说，只要政策下来，确实要征收居民的房子，而这个人需要搬走，但搬走后暂时没有地方住——算是过渡阶段吧——那政府相关部门就得给合理安排，要么支付临时安置费让人自己去找地方住，要么直接安排符合基本居住条件的地方住。\n\n嗯，归纳下来，这就是按照第十七条的要求啦。总结一下结论：当房屋征收需要搬迁且处于过渡期时，房屋征收部门应该支付临时安置费或者提供周转用房。我觉得这个回答足够清楚，逻辑也没问题。",
+  "Response": "根据《国有土地上房屋征收与补偿条例》第十七条的规定，房屋征收部门在以下情况下应当向被征收人支付临时安置费或者提供符合基本居住条件的周转用房：\n\n1. 确实存在房屋征收的情况；\n2. 因房屋征收需要被征收人搬迁；\n3. 被征收人在过渡期间（安置房尚未最终交付或未完成安置安排）。\n\n也就是说，当房屋征收导致被征收人临时无法得到安置住处时，房屋征收部门有义务保障其临时居住条件，要么提供临时安置费让其自行解决居住问题，要么提供周转用房以满足其基本生活需要。这是法律对被征收人权益的一种保障措施，确保其在过渡期间的居住权利得到维护。",
+  "Question": "什么时候房屋征收部门应当向被征收人支付临时安置费或者提供周转用房？"
+}

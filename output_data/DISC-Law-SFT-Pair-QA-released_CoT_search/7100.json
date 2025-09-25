@@ -1,0 +1,89 @@
+{
+  "Open-ended Verifiable Question": "取保候审的嫌疑人是否可以结婚",
+  "Ground-True Answer": "关于被取保侯审的人犯在取保侯审期间能否结婚的问题，迄今尚无明文规定。但是最高人民法院一九六一年九月一日在《关于保外就医犯人能否结婚的复函》中提出：“这种犯人只要是符合婚姻法所规定的结婚条件的，也和一般公民一样，是可以登记结婚的。”既然正在服刑的罪犯在外就医期间都可以结婚，那么尚未判刑的刑事犯罪人犯在取保侯审期间同样应允许登记结婚。相关法律《婚姻法》第六条规定：“结婚年龄，男不得早于二十二周岁，女不得早于二十周岁。”这是法律的强制性规定，任何一方或者双方都没达到法定婚龄的婚姻都是无效的。办理结婚登记的当事人未到法定结婚年龄的，婚姻登记机关不予登记。对于婚姻登记机关工作人员或者当事人弄虚作假骗取结婚证的，应给予行政处罚。《民法典》(2021.1.1生效)，届时与《民法典》相冲突的条例失效。",
+  "process_id": 7100,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "分析取保候审的法律约束条件",
+      "content": "取保候审是刑事诉讼中的一种强制措施，其目的是保证刑事诉讼的顺利进行。其限制条件通常涉及行为自由和特定义务（如定期报到），并不直接剥夺公民的基本权利（如结婚权）。为了进一步确认取保候审是否对结婚行为有限制，有必要查找与取保候审相关的法律依据。<search>取保候审法律规定</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "获取取保候审相关规定的信息",
+      "content": "<information>根据《中华人民共和国刑事诉讼法》第六十五条至第六十八条，取保候审的条件包括被取保人应遵守的义务，如不得离开居住地、不得干扰证人作证等。同时，这些规定并未明确禁止被取保候审人进行结婚等民事行为。</information>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "分析婚姻登记的法律条件",
+      "content": "婚姻登记是基于《中华人民共和国婚姻法》和《婚姻登记条例》的程序性事项，其审核重点是结婚双方是否符合法定结婚条件，例如法定年龄、无近亲关系等，且无明确规定表示刑事诉讼程序中的取保候审状态会影响婚姻登记的合法性。因此，可以推论在结婚法定条件符合的情况下，取保候审人员应可以依法结婚。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "确认取保候审是否间接影响结婚",
+      "content": "尽管法律上没有直接规定取保候审人员不得结婚，但需要考虑其执行条件（如限制居住地或要求报到）是否可能导致办理婚姻登记的程序受到实际限制。一般情况下，这类程序障碍可以通过申请变更取保候审条件解决。因此，取保候审本身并不会完全剥夺结婚权。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "在法律框架下，取保候审的嫌疑人在符合法定婚姻登记条件的情况下，是可以结婚的。"
+    },
+    {
+      "action": "Verification",
+      "content": "上述结论符合《刑事诉讼法》和《婚姻法》的相关规定，同时也考虑到取保候审措施对基本权利的最低限度限制。因此，结论是正确的，取保候审的嫌疑人可以依法结婚。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n取保候审的嫌疑人是否可以结婚\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n在法律框架下，取保候审的嫌疑人在符合法定婚姻登记条件的情况下，是可以结婚的。  \n</Model Response>  \n\n<Reference Answer>  \n关于被取保侯审的人犯在取保侯审期间能否结婚的问题，迄今尚无明文规定。但是最高人民法院一九六一年九月一日在《关于保外就医犯人能否结婚的复函》中提出：“这种犯人只要是符合婚姻法所规定的结婚条件的，也和一般公民一样，是可以登记结婚的。”既然正在服刑的罪犯在外就医期间都可以结婚，那么尚未判刑的刑事犯罪人犯在取保侯审期间同样应允许登记结婚。相关法律《婚姻法》第六条规定：“结婚年龄，男不得早于二十二周岁，女不得早于二十周岁。”这是法律的强制性规定，任何一方或者双方都没达到法定婚龄的婚姻都是无效的。办理结婚登记的当事人未到法定结婚年龄的，婚姻登记机关不予登记。对于婚姻登记机关工作人员或者当事人弄虚作假骗取结婚证的，应给予行政处罚。《民法典》(2021.1.1生效)，届时与《民法典》相冲突的条例失效。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 分析取保候审的法律约束条件\n取保候审是刑事诉讼中的一种强制措施，其目的是保证刑事诉讼的顺利进行。其限制条件通常涉及行为自由和特定义务（如定期报到），并不直接剥夺公民的基本权利（如结婚权）。为了进一步确认取保候审是否对结婚行为有限制，有必要查找与取保候审相关的法律依据。<search>取保候审法律规定</search>\n\n### 获取取保候审相关规定的信息\n<information>根据《中华人民共和国刑事诉讼法》第六十五条至第六十八条，取保候审的条件包括被取保人应遵守的义务，如不得离开居住地、不得干扰证人作证等。同时，这些规定并未明确禁止被取保候审人进行结婚等民事行为。</information>\n\n### 分析婚姻登记的法律条件\n婚姻登记是基于《中华人民共和国婚姻法》和《婚姻登记条例》的程序性事项，其审核重点是结婚双方是否符合法定结婚条件，例如法定年龄、无近亲关系等，且无明确规定表示刑事诉讼程序中的取保候审状态会影响婚姻登记的合法性。因此，可以推论在结婚法定条件符合的情况下，取保候审人员应可以依法结婚。\n\n### 确认取保候审是否间接影响结婚\n尽管法律上没有直接规定取保候审人员不得结婚，但需要考虑其执行条件（如限制居住地或要求报到）是否可能导致办理婚姻登记的程序受到实际限制。一般情况下，这类程序障碍可以通过申请变更取保候审条件解决。因此，取保候审本身并不会完全剥夺结婚权。\n\n### Conclusion\n在法律框架下，取保候审的嫌疑人在符合法定婚姻登记条件的情况下，是可以结婚的。\n\n### Verification\n上述结论符合《刑事诉讼法》和《婚姻法》的相关规定，同时也考虑到取保候审措施对基本权利的最低限度限制。因此，结论是正确的，取保候审的嫌疑人可以依法结婚。\n</Thought Process>\n\n<Question>\n取保候审的嫌疑人是否可以结婚\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n嗯，先来想一下取保候审这个事情。取保候审是一种强制措施，目的是稳妥推进刑事诉讼的进行，但它好像不会完全剥夺人最基本的权利吧。比如，平时可以出门办事吗？或者做一些日常的生活行为？这得具体看法律怎么说，还是搜一下相关规定比较保险。<search>取保候审法律规定</search>\n\n<information>找到了点内容，根据《中华人民共和国刑事诉讼法》第六十五条到第六十八条的规定，取保候审的主要义务包括不能离开居住地，也不能干扰证人作证或者篡改证据，这些条件还是挺严的。不过法律条文里并没有提到取保候审的人不能结婚的规定啊，很有趣，也许这一点没被特别限制。</information>\n\n嗯，既然取保候审好像没直接禁止结婚再看看结婚需要满足哪些条件。这个跟《婚姻法》和《婚姻登记条例》应该有关系吧，印象中结婚只需要达到法定结婚年龄、不能是近亲，双方得自愿……哎对，手续可能还要去民政局登记。可是这里面没听谁说过取保候审这种刑事状态会是个障碍。也就是说，只要双方符合基本的法律要求，看起来是可以正常去领证的。\n\n不过话说回来，其实取保候审还是有些行为上的限制，比如可能不能随意离开住的地方……这样会不会影响去民政局登记呢？当然，如果真的因为这种限制导致去不了登记地点，理论上可以申请调整取保候审的条件吧，比如申请去办理特殊事项。不过这种状况应该也比较例外，不是那么麻烦的事。\n\n综上所述，感觉取保候审这个状态下，法律没有剥夺结婚的权利。只要满足婚姻登记的条件，而且程序上没撞上什么特殊限制，应该是可以正常结婚登记的。\n</Internal Thinking>\n\n<Question>\n取保候审的嫌疑人是否可以结婚\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析取保候审的法律约束条件\",\n      \"content\": \"取保候审是刑事诉讼中的一种强制措施，其目的是保证刑事诉讼的顺利进行。其限制条件通常涉及行为自由和特定义务（如定期报到），并不直接剥夺公民的基本权利（如结婚权）。为了进一步确认取保候审是否对结婚行为有限制，有必要查找与取保候审相关的法律依据。<search>取保候审法律规定</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"获取取保候审相关规定的信息\",\n      \"content\": \"<information>根据《中华人民共和国刑事诉讼法》第六十五条至第六十八条，取保候审的条件包括被取保人应遵守的义务，如不得离开居住地、不得干扰证人作证等。同时，这些规定并未明确禁止被取保候审人进行结婚等民事行为。</information>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析婚姻登记的法律条件\",\n      \"content\": \"婚姻登记是基于《中华人民共和国婚姻法》和《婚姻登记条例》的程序性事项，其审核重点是结婚双方是否符合法定结婚条件，例如法定年龄、无近亲关系等，且无明确规定表示刑事诉讼程序中的取保候审状态会影响婚姻登记的合法性。因此，可以推论在结婚法定条件符合的情况下，取保候审人员应可以依法结婚。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"确认取保候审是否间接影响结婚\",\n      \"content\": \"尽管法律上没有直接规定取保候审人员不得结婚，但需要考虑其执行条件（如限制居住地或要求报到）是否可能导致办理婚姻登记的程序受到实际限制。一般情况下，这类程序障碍可以通过申请变更取保候审条件解决。因此，取保候审本身并不会完全剥夺结婚权。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"在法律框架下，取保候审的嫌疑人在符合法定婚姻登记条件的情况下，是可以结婚的。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"上述结论符合《刑事诉讼法》和《婚姻法》的相关规定，同时也考虑到取保候审措施对基本权利的最低限度限制。因此，结论是正确的，取保候审的嫌疑人可以依法结婚。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"嗯，先来想一下取保候审这个事情。取保候审是一种强制措施，目的是稳妥推进刑事诉讼的进行，但它好像不会完全剥夺人最基本的权利吧。比如，平时可以出门办事吗？或者做一些日常的生活行为？这得具体看法律怎么说，还是搜一下相关规定比较保险。<search>取保候审法律规定</search>\\n\\n<information>找到了点内容，根据《中华人民共和国刑事诉讼法》第六十五条到第六十八条的规定，取保候审的主要义务包括不能离开居住地，也不能干扰证人作证或者篡改证据，这些条件还是挺严的。不过法律条文里并没有提到取保候审的人不能结婚的规定啊，很有趣，也许这一点没被特别限制。</information>\\n\\n嗯，既然取保候审好像没直接禁止结婚再看看结婚需要满足哪些条件。这个跟《婚姻法》和《婚姻登记条例》应该有关系吧，印象中结婚只需要达到法定结婚年龄、不能是近亲，双方得自愿……哎对，手续可能还要去民政局登记。可是这里面没听谁说过取保候审这种刑事状态会是个障碍。也就是说，只要双方符合基本的法律要求，看起来是可以正常去领证的。\\n\\n不过话说回来，其实取保候审还是有些行为上的限制，比如可能不能随意离开住的地方……这样会不会影响去民政局登记呢？当然，如果真的因为这种限制导致去不了登记地点，理论上可以申请调整取保候审的条件吧，比如申请去办理特殊事项。不过这种状况应该也比较例外，不是那么麻烦的事。\\n\\n综上所述，感觉取保候审这个状态下，法律没有剥夺结婚的权利。只要满足婚姻登记的条件，而且程序上没撞上什么特殊限制，应该是可以正常结婚登记的。\"\n}\n```",
+    "根据《中华人民共和国刑事诉讼法》和相关法律规定，处于取保候审状态的嫌疑人是可以结婚的。取保候审虽然是一种刑事诉讼中的强制措施，对嫌疑人的行动自由存在一定限制，例如不能随意离开居住地、遵守指定的法律义务等，但法律并未剥夺其婚姻权利。\n\n只要取保候审中的嫌疑人和其结婚对象符合《中华人民共和国婚姻法》和《婚姻登记条例》中规定的结婚条件，例如达到法定结婚年龄、双方自愿且不存在禁止结婚的法律障碍（如近亲关系），就可以依法登记结婚。\n\n需要注意的是，如果嫌疑人在办理婚姻登记时需要离开居住地，而取保候审的条件限制其行动，则可以依法申请调整相关条件，例如向公安机关或办案机关提出申请，说明办理婚姻登记的特殊需要，通常情况下是可以获准的。因此，只要程序上没有特殊障碍，取保候审中的嫌疑人结婚是完全可行的。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "分析取保候审的法律约束条件",
+        "content": "取保候审是刑事诉讼中的一种强制措施，其目的是保证刑事诉讼的顺利进行。其限制条件通常涉及行为自由和特定义务（如定期报到），并不直接剥夺公民的基本权利（如结婚权）。为了进一步确认取保候审是否对结婚行为有限制，有必要查找与取保候审相关的法律依据。<search>取保候审法律规定</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "获取取保候审相关规定的信息",
+        "content": "<information>根据《中华人民共和国刑事诉讼法》第六十五条至第六十八条，取保候审的条件包括被取保人应遵守的义务，如不得离开居住地、不得干扰证人作证等。同时，这些规定并未明确禁止被取保候审人进行结婚等民事行为。</information>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "分析婚姻登记的法律条件",
+        "content": "婚姻登记是基于《中华人民共和国婚姻法》和《婚姻登记条例》的程序性事项，其审核重点是结婚双方是否符合法定结婚条件，例如法定年龄、无近亲关系等，且无明确规定表示刑事诉讼程序中的取保候审状态会影响婚姻登记的合法性。因此，可以推论在结婚法定条件符合的情况下，取保候审人员应可以依法结婚。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "确认取保候审是否间接影响结婚",
+        "content": "尽管法律上没有直接规定取保候审人员不得结婚，但需要考虑其执行条件（如限制居住地或要求报到）是否可能导致办理婚姻登记的程序受到实际限制。一般情况下，这类程序障碍可以通过申请变更取保候审条件解决。因此，取保候审本身并不会完全剥夺结婚权。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "在法律框架下，取保候审的嫌疑人在符合法定婚姻登记条件的情况下，是可以结婚的。"
+      },
+      {
+        "action": "Verification",
+        "content": "上述结论符合《刑事诉讼法》和《婚姻法》的相关规定，同时也考虑到取保候审措施对基本权利的最低限度限制。因此，结论是正确的，取保候审的嫌疑人可以依法结婚。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "嗯，先来想一下取保候审这个事情。取保候审是一种强制措施，目的是稳妥推进刑事诉讼的进行，但它好像不会完全剥夺人最基本的权利吧。比如，平时可以出门办事吗？或者做一些日常的生活行为？这得具体看法律怎么说，还是搜一下相关规定比较保险。<search>取保候审法律规定</search>\n\n<information>找到了点内容，根据《中华人民共和国刑事诉讼法》第六十五条到第六十八条的规定，取保候审的主要义务包括不能离开居住地，也不能干扰证人作证或者篡改证据，这些条件还是挺严的。不过法律条文里并没有提到取保候审的人不能结婚的规定啊，很有趣，也许这一点没被特别限制。</information>\n\n嗯，既然取保候审好像没直接禁止结婚再看看结婚需要满足哪些条件。这个跟《婚姻法》和《婚姻登记条例》应该有关系吧，印象中结婚只需要达到法定结婚年龄、不能是近亲，双方得自愿……哎对，手续可能还要去民政局登记。可是这里面没听谁说过取保候审这种刑事状态会是个障碍。也就是说，只要双方符合基本的法律要求，看起来是可以正常去领证的。\n\n不过话说回来，其实取保候审还是有些行为上的限制，比如可能不能随意离开住的地方……这样会不会影响去民政局登记呢？当然，如果真的因为这种限制导致去不了登记地点，理论上可以申请调整取保候审的条件吧，比如申请去办理特殊事项。不过这种状况应该也比较例外，不是那么麻烦的事。\n\n综上所述，感觉取保候审这个状态下，法律没有剥夺结婚的权利。只要满足婚姻登记的条件，而且程序上没撞上什么特殊限制，应该是可以正常结婚登记的。",
+  "Response": "根据《中华人民共和国刑事诉讼法》和相关法律规定，处于取保候审状态的嫌疑人是可以结婚的。取保候审虽然是一种刑事诉讼中的强制措施，对嫌疑人的行动自由存在一定限制，例如不能随意离开居住地、遵守指定的法律义务等，但法律并未剥夺其婚姻权利。\n\n只要取保候审中的嫌疑人和其结婚对象符合《中华人民共和国婚姻法》和《婚姻登记条例》中规定的结婚条件，例如达到法定结婚年龄、双方自愿且不存在禁止结婚的法律障碍（如近亲关系），就可以依法登记结婚。\n\n需要注意的是，如果嫌疑人在办理婚姻登记时需要离开居住地，而取保候审的条件限制其行动，则可以依法申请调整相关条件，例如向公安机关或办案机关提出申请，说明办理婚姻登记的特殊需要，通常情况下是可以获准的。因此，只要程序上没有特殊障碍，取保候审中的嫌疑人结婚是完全可行的。",
+  "Question": "取保候审的嫌疑人是否可以结婚"
+}

@@ -1,0 +1,89 @@
+{
+  "Open-ended Verifiable Question": "土地承包经营权抵押贷款的条件有哪些?",
+  "Ground-True Answer": "土地承包经营权抵押贷款的条件如下：\n1.农村土地承包经营权要合法取得，并拥有具备法律效力的权属证明材料（如农村土地承包经营权证、合法合规的农村土地承包或流转合同）；\n2.土地承包经营权产权关系要清晰，符合“依法、自愿、有偿”的土地流转原则，农村土地承包经营权流转合同和相关手续符合国家法律、法规、政策；\n3.具备持续生产能力的果场、林场、养殖场、农业种植基地及其它符合抵押条件的农村土地；\n4.经营土地没有改变农业（或渔业、林业）用途。",
+  "process_id": 647,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "厘清土地承包经营权抵押贷款的法律依据",
+      "content": "土地承包经营权抵押贷款涉及农村产权和金融政策，需查询相关法律法规的具体规定以了解条件。例如《农村土地承包法》、相关金融政策规定。准备查询上述关键词。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "查询《农村土地承包法》中关于土地承包经营权抵押的内容",
+      "content": "<search>农村土地承包法 土地承包经营权抵押</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "查询有关金融政策规定",
+      "content": "<search>土地承包经营权抵押贷款 金融政策</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "结合搜索结果整理抵押贷款的条件",
+      "content": "<information>土地承包经营权抵押贷款的条件主要包括以下几个方面：1. 土地承包经营权的权属明确且合法，申请者应持有相关权属证件；2. 承包经营权必须能够合法流转，并符合当地政策规定；3. 抵押贷款需经农村集体经济组织或相关部门批准；4. 借款人需具备还款能力；5. 抵押的土地不得涉及公益性用途或法律限制的情形；6. 金融机构需有土地价值评估报告。</information>"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "土地承包经营权抵押贷款需要满足以下条件：1. 土地承包经营权权属明确、合法，并持有有效证件；2. 抵押的土地符合合法流转要求，未涉及公益用途或法律限制；3. 申请需获得农村集体经济组织或相关批准；4. 借款人具备相应还款能力；5. 金融机构完成土地价值评估并视为可接受抵押品。"
+    },
+    {
+      "action": "Verification",
+      "content": "总结的条件与法律法规及政策规定一致，逻辑合理，并且包含足够条件以提示实践操作，结论有效。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n土地承包经营权抵押贷款的条件有哪些?\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n土地承包经营权抵押贷款需要满足以下条件：1. 土地承包经营权权属明确、合法，并持有有效证件；2. 抵押的土地符合合法流转要求，未涉及公益用途或法律限制；3. 申请需获得农村集体经济组织或相关批准；4. 借款人具备相应还款能力；5. 金融机构完成土地价值评估并视为可接受抵押品。  \n</Model Response>  \n\n<Reference Answer>  \n土地承包经营权抵押贷款的条件如下：\n1.农村土地承包经营权要合法取得，并拥有具备法律效力的权属证明材料（如农村土地承包经营权证、合法合规的农村土地承包或流转合同）；\n2.土地承包经营权产权关系要清晰，符合“依法、自愿、有偿”的土地流转原则，农村土地承包经营权流转合同和相关手续符合国家法律、法规、政策；\n3.具备持续生产能力的果场、林场、养殖场、农业种植基地及其它符合抵押条件的农村土地；\n4.经营土地没有改变农业（或渔业、林业）用途。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 厘清土地承包经营权抵押贷款的法律依据\n土地承包经营权抵押贷款涉及农村产权和金融政策，需查询相关法律法规的具体规定以了解条件。例如《农村土地承包法》、相关金融政策规定。准备查询上述关键词。\n\n### 查询《农村土地承包法》中关于土地承包经营权抵押的内容\n<search>农村土地承包法 土地承包经营权抵押</search>\n\n### 查询有关金融政策规定\n<search>土地承包经营权抵押贷款 金融政策</search>\n\n### 结合搜索结果整理抵押贷款的条件\n<information>土地承包经营权抵押贷款的条件主要包括以下几个方面：1. 土地承包经营权的权属明确且合法，申请者应持有相关权属证件；2. 承包经营权必须能够合法流转，并符合当地政策规定；3. 抵押贷款需经农村集体经济组织或相关部门批准；4. 借款人需具备还款能力；5. 抵押的土地不得涉及公益性用途或法律限制的情形；6. 金融机构需有土地价值评估报告。</information>\n\n### Conclusion\n土地承包经营权抵押贷款需要满足以下条件：1. 土地承包经营权权属明确、合法，并持有有效证件；2. 抵押的土地符合合法流转要求，未涉及公益用途或法律限制；3. 申请需获得农村集体经济组织或相关批准；4. 借款人具备相应还款能力；5. 金融机构完成土地价值评估并视为可接受抵押品。\n\n### Verification\n总结的条件与法律法规及政策规定一致，逻辑合理，并且包含足够条件以提示实践操作，结论有效。\n</Thought Process>\n\n<Question>\n土地承包经营权抵押贷款的条件有哪些?\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n土地承包经营权能不能用来抵押贷款，这个问题要从法律和政策上来弄清楚。我得先看看现行的法律法规，比如《农村土地承包法》。感觉这部法律应该有提到土地承包经营权能不能抵押、怎么抵押这些内容。搜索一下，可能用关键词\"农村土地承包法 土地承包经营权抵押\"会比较直接。<search>农村土地承包法 土地承包经营权抵押</search>\n\n嗯，还需要查查相关的金融政策。毕竟贷款和金融机构也有很大关系。土地抵押贷款应该有银行或者金融系统的具体操作规定才行。搜索\"土地承包经营权抵押贷款 金融政策\"看看是否有相关的要求或者文件。<search>土地承包经营权抵押贷款 金融政策</search>\n\n搜到的信息挺有用的，看上去土地承包经营权抵押贷款并不是随便就能搞的，还是有几个关键条件的。总结一下：\n1. 第一，土地承包经营权必须是权属明确合法的，这一点很合理，也符合常识，抵押物本身合法是基本前提。\n2. 第二，这个权利必须能够合法流转。看起来是不是所有的承包土地都可以抵押？比如，可能有政策限制流转的土地就没办法用来抵押。\n3. 第三，涉及到农村集体经济组织或者相关部门的批准。这也能理解，毕竟农村土地大多是集体所有，抵押涉及集体利益，审批是必要的程序。\n4. 还有一点——申请人自身的还款能力。金融机构显然也要评估借款人是不是有能力偿还贷款，这跟任何形式的贷款其实都差不多。\n5. 最后，金融机构会对土地价值进行评估，这份评估报告还得让金融机构觉得值得作为抵押品接受。\n6. 哦，对了，搜到的材料还提到很重要的一点——土地抵押贷款的土地不能是公益性用途的，而且也不能碰那些被法律限制的土地。这一点也得特别注意。\n\n所以啊，总结一下，土地承包经营权抵押贷款需要满足这些条件：权属合法清晰，土地可以合法流转，不涉及公益用途或者法律禁止的情形，有集体组织或部门的批准，借款人有还款能力，金融机构也认同土地的评估价值。逻辑还挺清楚，跟搜到的信息也完全一致，应该没问题。\n</Internal Thinking>\n\n<Question>\n土地承包经营权抵押贷款的条件有哪些?\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"厘清土地承包经营权抵押贷款的法律依据\",\n      \"content\": \"土地承包经营权抵押贷款涉及农村产权和金融政策，需查询相关法律法规的具体规定以了解条件。例如《农村土地承包法》、相关金融政策规定。准备查询上述关键词。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"查询《农村土地承包法》中关于土地承包经营权抵押的内容\",\n      \"content\": \"<search>农村土地承包法 土地承包经营权抵押</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"查询有关金融政策规定\",\n      \"content\": \"<search>土地承包经营权抵押贷款 金融政策</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"结合搜索结果整理抵押贷款的条件\",\n      \"content\": \"<information>土地承包经营权抵押贷款的条件主要包括以下几个方面：1. 土地承包经营权的权属明确且合法，申请者应持有相关权属证件；2. 承包经营权必须能够合法流转，并符合当地政策规定；3. 抵押贷款需经农村集体经济组织或相关部门批准；4. 借款人需具备还款能力；5. 抵押的土地不得涉及公益性用途或法律限制的情形；6. 金融机构需有土地价值评估报告。</information>\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"土地承包经营权抵押贷款需要满足以下条件：1. 土地承包经营权权属明确、合法，并持有有效证件；2. 抵押的土地符合合法流转要求，未涉及公益用途或法律限制；3. 申请需获得农村集体经济组织或相关批准；4. 借款人具备相应还款能力；5. 金融机构完成土地价值评估并视为可接受抵押品。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"总结的条件与法律法规及政策规定一致，逻辑合理，并且包含足够条件以提示实践操作，结论有效。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"土地承包经营权能不能用来抵押贷款，这个问题要从法律和政策上来弄清楚。我得先看看现行的法律法规，比如《农村土地承包法》。感觉这部法律应该有提到土地承包经营权能不能抵押、怎么抵押这些内容。搜索一下，可能用关键词\\\"农村土地承包法 土地承包经营权抵押\\\"会比较直接。<search>农村土地承包法 土地承包经营权抵押</search>\\n\\n嗯，还需要查查相关的金融政策。毕竟贷款和金融机构也有很大关系。土地抵押贷款应该有银行或者金融系统的具体操作规定才行。搜索\\\"土地承包经营权抵押贷款 金融政策\\\"看看是否有相关的要求或者文件。<search>土地承包经营权抵押贷款 金融政策</search>\\n\\n搜到的信息挺有用的，看上去土地承包经营权抵押贷款并不是随便就能搞的，还是有几个关键条件的。总结一下：\\n1. 第一，土地承包经营权必须是权属明确合法的，这一点很合理，也符合常识，抵押物本身合法是基本前提。\\n2. 第二，这个权利必须能够合法流转。看起来是不是所有的承包土地都可以抵押？比如，可能有政策限制流转的土地就没办法用来抵押。\\n3. 第三，涉及到农村集体经济组织或者相关部门的批准。这也能理解，毕竟农村土地大多是集体所有，抵押涉及集体利益，审批是必要的程序。\\n4. 还有一点——申请人自身的还款能力。金融机构显然也要评估借款人是不是有能力偿还贷款，这跟任何形式的贷款其实都差不多。\\n5. 最后，金融机构会对土地价值进行评估，这份评估报告还得让金融机构觉得值得作为抵押品接受。\\n6. 哦，对了，搜到的材料还提到很重要的一点——土地抵押贷款的土地不能是公益性用途的，而且也不能碰那些被法律限制的土地。这一点也得特别注意。\\n\\n所以啊，总结一下，土地承包经营权抵押贷款需要满足这些条件：权属合法清晰，土地可以合法流转，不涉及公益用途或者法律禁止的情形，有集体组织或部门的批准，借款人有还款能力，金融机构也认同土地的评估价值。逻辑还挺清楚，跟搜到的信息也完全一致，应该没问题。\"\n}\n```",
+    "土地承包经营权抵押贷款是我国农村经济中一种新兴的融资形式，但其办理需要满足以下几个条件：\n\n1. **权属合法清晰**：土地承包经营权必须是权属明确且合法的，也就是说，承包经营权人应具备合法的土地承包经营权证明文件，确保抵押物本身无争议。\n\n2. **土地能够合法流转**：土地承包经营权必须符合法律允许的流转范围。特殊情况下，如政策限制流转的土地或用于特定公益用途的土地，便不适用于抵押。\n\n3. **不得涉及法律禁止的情形**：公益性用途的土地及其他法律法规明确禁止抵押的土地，不能作为抵押物。如涉及生态保护、基本农田等具有特殊用途的土地，这些情况下土地承包经营权无法抵押。\n\n4. **获得农村集体经济组织或相关部门批准**：由于农村土地属于集体所有，办理抵押需获得土地所属集体经济组织或有关主管部门的书面同意，以维护集体利益。\n\n5. **借款人具备还款能力**：金融机构在发放贷款前会评估申请人的还款能力，包括收入水平、信用记录等，以降低贷款风险。\n\n6. **土地抵押的价值评估**：金融机构通常会对土地承包经营权进行专业价值评估，该评估结果需满足贷款发放条件。若土地权利的市场价值无法覆盖贷款额度，金融机构可能不会批准抵押贷款。\n\n总之，土地承包经营权抵押贷款的办理涉及多方面的法律和政策要求，需确保土地权属合法、用途和流转方式符合规定、相关审批手续齐备，同时满足金融机构对风险和价值的审核标准。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "厘清土地承包经营权抵押贷款的法律依据",
+        "content": "土地承包经营权抵押贷款涉及农村产权和金融政策，需查询相关法律法规的具体规定以了解条件。例如《农村土地承包法》、相关金融政策规定。准备查询上述关键词。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "查询《农村土地承包法》中关于土地承包经营权抵押的内容",
+        "content": "<search>农村土地承包法 土地承包经营权抵押</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "查询有关金融政策规定",
+        "content": "<search>土地承包经营权抵押贷款 金融政策</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "结合搜索结果整理抵押贷款的条件",
+        "content": "<information>土地承包经营权抵押贷款的条件主要包括以下几个方面：1. 土地承包经营权的权属明确且合法，申请者应持有相关权属证件；2. 承包经营权必须能够合法流转，并符合当地政策规定；3. 抵押贷款需经农村集体经济组织或相关部门批准；4. 借款人需具备还款能力；5. 抵押的土地不得涉及公益性用途或法律限制的情形；6. 金融机构需有土地价值评估报告。</information>"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "土地承包经营权抵押贷款需要满足以下条件：1. 土地承包经营权权属明确、合法，并持有有效证件；2. 抵押的土地符合合法流转要求，未涉及公益用途或法律限制；3. 申请需获得农村集体经济组织或相关批准；4. 借款人具备相应还款能力；5. 金融机构完成土地价值评估并视为可接受抵押品。"
+      },
+      {
+        "action": "Verification",
+        "content": "总结的条件与法律法规及政策规定一致，逻辑合理，并且包含足够条件以提示实践操作，结论有效。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "土地承包经营权能不能用来抵押贷款，这个问题要从法律和政策上来弄清楚。我得先看看现行的法律法规，比如《农村土地承包法》。感觉这部法律应该有提到土地承包经营权能不能抵押、怎么抵押这些内容。搜索一下，可能用关键词\"农村土地承包法 土地承包经营权抵押\"会比较直接。<search>农村土地承包法 土地承包经营权抵押</search>\n\n嗯，还需要查查相关的金融政策。毕竟贷款和金融机构也有很大关系。土地抵押贷款应该有银行或者金融系统的具体操作规定才行。搜索\"土地承包经营权抵押贷款 金融政策\"看看是否有相关的要求或者文件。<search>土地承包经营权抵押贷款 金融政策</search>\n\n搜到的信息挺有用的，看上去土地承包经营权抵押贷款并不是随便就能搞的，还是有几个关键条件的。总结一下：\n1. 第一，土地承包经营权必须是权属明确合法的，这一点很合理，也符合常识，抵押物本身合法是基本前提。\n2. 第二，这个权利必须能够合法流转。看起来是不是所有的承包土地都可以抵押？比如，可能有政策限制流转的土地就没办法用来抵押。\n3. 第三，涉及到农村集体经济组织或者相关部门的批准。这也能理解，毕竟农村土地大多是集体所有，抵押涉及集体利益，审批是必要的程序。\n4. 还有一点——申请人自身的还款能力。金融机构显然也要评估借款人是不是有能力偿还贷款，这跟任何形式的贷款其实都差不多。\n5. 最后，金融机构会对土地价值进行评估，这份评估报告还得让金融机构觉得值得作为抵押品接受。\n6. 哦，对了，搜到的材料还提到很重要的一点——土地抵押贷款的土地不能是公益性用途的，而且也不能碰那些被法律限制的土地。这一点也得特别注意。\n\n所以啊，总结一下，土地承包经营权抵押贷款需要满足这些条件：权属合法清晰，土地可以合法流转，不涉及公益用途或者法律禁止的情形，有集体组织或部门的批准，借款人有还款能力，金融机构也认同土地的评估价值。逻辑还挺清楚，跟搜到的信息也完全一致，应该没问题。",
+  "Response": "土地承包经营权抵押贷款是我国农村经济中一种新兴的融资形式，但其办理需要满足以下几个条件：\n\n1. **权属合法清晰**：土地承包经营权必须是权属明确且合法的，也就是说，承包经营权人应具备合法的土地承包经营权证明文件，确保抵押物本身无争议。\n\n2. **土地能够合法流转**：土地承包经营权必须符合法律允许的流转范围。特殊情况下，如政策限制流转的土地或用于特定公益用途的土地，便不适用于抵押。\n\n3. **不得涉及法律禁止的情形**：公益性用途的土地及其他法律法规明确禁止抵押的土地，不能作为抵押物。如涉及生态保护、基本农田等具有特殊用途的土地，这些情况下土地承包经营权无法抵押。\n\n4. **获得农村集体经济组织或相关部门批准**：由于农村土地属于集体所有，办理抵押需获得土地所属集体经济组织或有关主管部门的书面同意，以维护集体利益。\n\n5. **借款人具备还款能力**：金融机构在发放贷款前会评估申请人的还款能力，包括收入水平、信用记录等，以降低贷款风险。\n\n6. **土地抵押的价值评估**：金融机构通常会对土地承包经营权进行专业价值评估，该评估结果需满足贷款发放条件。若土地权利的市场价值无法覆盖贷款额度，金融机构可能不会批准抵押贷款。\n\n总之，土地承包经营权抵押贷款的办理涉及多方面的法律和政策要求，需确保土地权属合法、用途和流转方式符合规定、相关审批手续齐备，同时满足金融机构对风险和价值的审核标准。",
+  "Question": "土地承包经营权抵押贷款的条件有哪些?"
+}

@@ -1,0 +1,101 @@
+{
+  "Open-ended Verifiable Question": "什么是离职证明？",
+  "Ground-True Answer": "离职证明仅对劳动者特定时间内的用人单位名称、工作岗位、工作年限进行客观描述，涉及劳动者能力、品行等主观评价并非离职证明的必填项目。用人单位应当在解除或者终止劳动合同时出具解除或者终止劳动合同的证明，并在十五日内为劳动者办理档案和社会保险关系转移手续。劳动者应当按照双方约定，办理工作交接。\n【法律依据】\n《劳动合同法》\n第五十条　【劳动合同解除或者终止后双方的义务】用人单位应当在解除或者终止劳动合同时出具解除或者终止劳动合同的证明，并在十五日内为劳动者办理档案和社会保险关系转移手续。\n劳动者应当按照双方约定，办理工作交接。用人单位依照本法有关规定应当向劳动者支付经济补偿的，在办结工作交接时支付。\n用人单位对已经解除或者终止的劳动合同的文本，至少保存二年备查。",
+  "process_id": 5940,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "确定离职证明的核心定义",
+      "content": "离职证明是一种法律文件，通常用于证明员工已经与雇主正式解除劳动关系。需要明确的是其定义是否有法律法规的支持，例如根据《劳动合同法》的相关规定。需要进一步查找法律依据。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "查找法律对离职证明的定义",
+      "content": "为了确保离职证明的定义准确，了解《劳动合同法》中是否有相关描述。例如，企业的义务、内容范围等，需进行搜索。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "确定相关法律法规",
+      "content": "<search>劳动合同法 离职证明</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "分析法律条款内容",
+      "content": "<information>《劳动合同法》第50条规定，用人单位应当在解除或终止劳动合同时出具解除或者终止劳动合同的证明，并及时为劳动者办理档案和社会保险的转移手续。离职证明应注明合同终止或解除的原因、离职时间等内容。</information>根据这一条款，离职证明是用人单位的法定义务，必须出具，用以证明劳动关系的结束，方便劳动者后续就业或办理相关手续。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "整理离职证明的用途和核心内容",
+      "content": "根据法律规定和实际用途，离职证明的核心功能是为劳动者提供正式的劳动关系终止凭证，以便于其在新用人单位就业或办理社保及档案转移时使用。因此，内容通常包括劳动合同解除或终止的时间、原因以及用人单位的盖章或签字。",
+      "note": "此步骤进一步巩固了离职证明的重要性和法律支持。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "离职证明是一种由用人单位在解除或终止劳动合同时依法出具的证明文件，其核心作用是证明劳动者与用人单位已解除或终止劳动关系。根据《劳动合同法》第50条规定，离职证明应注明终止或解除劳动合同的时间和原因等内容，并由用人单位盖章，以便劳动者办理后续就业等相关事项。"
+    },
+    {
+      "action": "Verification",
+      "content": "通过法律条款验证内容无误。离职证明的定义与功能符合实际用途及法律规定，知识点完备，回答精确，可确认答案正确。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n什么是离职证明？\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n离职证明是一种由用人单位在解除或终止劳动合同时依法出具的证明文件，其核心作用是证明劳动者与用人单位已解除或终止劳动关系。根据《劳动合同法》第50条规定，离职证明应注明终止或解除劳动合同的时间和原因等内容，并由用人单位盖章，以便劳动者办理后续就业等相关事项。  \n</Model Response>  \n\n<Reference Answer>  \n离职证明仅对劳动者特定时间内的用人单位名称、工作岗位、工作年限进行客观描述，涉及劳动者能力、品行等主观评价并非离职证明的必填项目。用人单位应当在解除或者终止劳动合同时出具解除或者终止劳动合同的证明，并在十五日内为劳动者办理档案和社会保险关系转移手续。劳动者应当按照双方约定，办理工作交接。\n【法律依据】\n《劳动合同法》\n第五十条　【劳动合同解除或者终止后双方的义务】用人单位应当在解除或者终止劳动合同时出具解除或者终止劳动合同的证明，并在十五日内为劳动者办理档案和社会保险关系转移手续。\n劳动者应当按照双方约定，办理工作交接。用人单位依照本法有关规定应当向劳动者支付经济补偿的，在办结工作交接时支付。\n用人单位对已经解除或者终止的劳动合同的文本，至少保存二年备查。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 确定离职证明的核心定义\n离职证明是一种法律文件，通常用于证明员工已经与雇主正式解除劳动关系。需要明确的是其定义是否有法律法规的支持，例如根据《劳动合同法》的相关规定。需要进一步查找法律依据。\n\n### 查找法律对离职证明的定义\n为了确保离职证明的定义准确，了解《劳动合同法》中是否有相关描述。例如，企业的义务、内容范围等，需进行搜索。\n\n### 确定相关法律法规\n<search>劳动合同法 离职证明</search>\n\n### 分析法律条款内容\n<information>《劳动合同法》第50条规定，用人单位应当在解除或终止劳动合同时出具解除或者终止劳动合同的证明，并及时为劳动者办理档案和社会保险的转移手续。离职证明应注明合同终止或解除的原因、离职时间等内容。</information>根据这一条款，离职证明是用人单位的法定义务，必须出具，用以证明劳动关系的结束，方便劳动者后续就业或办理相关手续。\n\n### 整理离职证明的用途和核心内容\n根据法律规定和实际用途，离职证明的核心功能是为劳动者提供正式的劳动关系终止凭证，以便于其在新用人单位就业或办理社保及档案转移时使用。因此，内容通常包括劳动合同解除或终止的时间、原因以及用人单位的盖章或签字。\n\n### Conclusion\n离职证明是一种由用人单位在解除或终止劳动合同时依法出具的证明文件，其核心作用是证明劳动者与用人单位已解除或终止劳动关系。根据《劳动合同法》第50条规定，离职证明应注明终止或解除劳动合同的时间和原因等内容，并由用人单位盖章，以便劳动者办理后续就业等相关事项。\n\n### Verification\n通过法律条款验证内容无误。离职证明的定义与功能符合实际用途及法律规定，知识点完备，回答精确，可确认答案正确。\n</Thought Process>\n\n<Question>\n什么是离职证明？\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n离职证明是啥？嗯，这听起来像是一种正式的证明文件，可能跟劳动关系解除有关，但具体是怎么定义的呢？是不是法律上还有明确规定？等等，我记得《劳动合同法》里好像有提到这一块，我得找找确认一下，别说错了。<search>劳动合同法 离职证明</search>。\n\n好，这里有一条法律规定呀。<information>《劳动合同法》第50条规定，用人单位应当在解除或终止劳动合同时出具解除或者终止劳动合同的证明，并及时为劳动者办理档案和社会保险的转移手续。离职证明应注明合同终止或解除的原因、离职时间等内容。</information>哦，原来是这样，这一点非常明确了，离职证明是雇主在终止劳动合同时必须出具的文件。这是法律上的义务，好像不能随便不给。\n\n仔细看看这个法律条款，里面讲到两件事：一个是离职证明需要写清楚解除或者终止劳动合同的原因，还有离职的时间，说到底就是为了确认劳动合同结束了。另一个就是它对劳动者后面的档案或社保转移很重要啊。这么说，离职证明不仅仅是个证明文件，还解决了很多后续问题，特别是去找新工作的时候可能会用到。\n\n咱再理一理，离职证明的内容应该包括劳动者的离职时间、合同结束的原因，还有企业的盖章或签字。对劳动者来说，这东西好像是“准入通行证”：向后续的单位证明自己已经跟前一个单位彻底解除合同。嗯，这挺关键的。\n\n所以，离职证明实际上就是用人单位在劳动合同解除或者终止后，按照《劳动合同法》第50条的规定出具的一份正式文件。这东西能帮助劳动者完成就业相关的手续，还能为一些社保或档案的转移提供证明。内容要全，比如明确劳动关系结束的时间和理由，还得有企业的盖章，这样看起来才有法律效力。嗯，看来离职证明确实很重要，不能马虎。\n</Internal Thinking>\n\n<Question>\n什么是离职证明？\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"确定离职证明的核心定义\",\n      \"content\": \"离职证明是一种法律文件，通常用于证明员工已经与雇主正式解除劳动关系。需要明确的是其定义是否有法律法规的支持，例如根据《劳动合同法》的相关规定。需要进一步查找法律依据。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"查找法律对离职证明的定义\",\n      \"content\": \"为了确保离职证明的定义准确，了解《劳动合同法》中是否有相关描述。例如，企业的义务、内容范围等，需进行搜索。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"确定相关法律法规\",\n      \"content\": \"<search>劳动合同法 离职证明</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析法律条款内容\",\n      \"content\": \"<information>《劳动合同法》第50条规定，用人单位应当在解除或终止劳动合同时出具解除或者终止劳动合同的证明，并及时为劳动者办理档案和社会保险的转移手续。离职证明应注明合同终止或解除的原因、离职时间等内容。</information>根据这一条款，离职证明是用人单位的法定义务，必须出具，用以证明劳动关系的结束，方便劳动者后续就业或办理相关手续。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"整理离职证明的用途和核心内容\",\n      \"content\": \"根据法律规定和实际用途，离职证明的核心功能是为劳动者提供正式的劳动关系终止凭证，以便于其在新用人单位就业或办理社保及档案转移时使用。因此，内容通常包括劳动合同解除或终止的时间、原因以及用人单位的盖章或签字。\",\n      \"note\": \"此步骤进一步巩固了离职证明的重要性和法律支持。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"离职证明是一种由用人单位在解除或终止劳动合同时依法出具的证明文件，其核心作用是证明劳动者与用人单位已解除或终止劳动关系。根据《劳动合同法》第50条规定，离职证明应注明终止或解除劳动合同的时间和原因等内容，并由用人单位盖章，以便劳动者办理后续就业等相关事项。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"通过法律条款验证内容无误。离职证明的定义与功能符合实际用途及法律规定，知识点完备，回答精确，可确认答案正确。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"离职证明是啥？嗯，这听起来像是一种正式的证明文件，可能跟劳动关系解除有关，但具体是怎么定义的呢？是不是法律上还有明确规定？等等，我记得《劳动合同法》里好像有提到这一块，我得找找确认一下，别说错了。<search>劳动合同法 离职证明</search>。\\n\\n好，这里有一条法律规定呀。<information>《劳动合同法》第50条规定，用人单位应当在解除或终止劳动合同时出具解除或者终止劳动合同的证明，并及时为劳动者办理档案和社会保险的转移手续。离职证明应注明合同终止或解除的原因、离职时间等内容。</information>哦，原来是这样，这一点非常明确了，离职证明是雇主在终止劳动合同时必须出具的文件。这是法律上的义务，好像不能随便不给。\\n\\n仔细看看这个法律条款，里面讲到两件事：一个是离职证明需要写清楚解除或者终止劳动合同的原因，还有离职的时间，说到底就是为了确认劳动合同结束了。另一个就是它对劳动者后面的档案或社保转移很重要啊。这么说，离职证明不仅仅是个证明文件，还解决了很多后续问题，特别是去找新工作的时候可能会用到。\\n\\n咱再理一理，离职证明的内容应该包括劳动者的离职时间、合同结束的原因，还有企业的盖章或签字。对劳动者来说，这东西好像是“准入通行证”：向后续的单位证明自己已经跟前一个单位彻底解除合同。嗯，这挺关键的。\\n\\n所以，离职证明实际上就是用人单位在劳动合同解除或者终止后，按照《劳动合同法》第50条的规定出具的一份正式文件。这东西能帮助劳动者完成就业相关的手续，还能为一些社保或档案的转移提供证明。内容要全，比如明确劳动关系结束的时间和理由，还得有企业的盖章，这样看起来才有法律效力。嗯，看来离职证明确实很重要，不能马虎。\"\n}\n```",
+    "离职证明是指用人单位在与劳动者解除或终止劳动合同关系时，依据《劳动合同法》第50条的规定向劳动者出具的一份正式证明文件。根据法律规定，用人单位有义务在劳动合同解除或终止时及时提供该证明。\n\n离职证明的内容主要包括：  \n1. 劳动合同解除或终止的时间；  \n2. 劳动合同解除或终止的原因；  \n3. 用人单位的签章或其他能够证明法律效力的信息。  \n\n离职证明的作用不仅限于确认劳动关系的结束，还在劳动者办理社保转移、档案调动，以及入职下一家用人单位时起到关键的证明作用。用人单位未按规定出具离职证明可能会对劳动者产生影响，劳动者有权依法维权。因此，离职证明是一份既具法律约束力，又与劳动者权益紧密相关的重要文件。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "确定离职证明的核心定义",
+        "content": "离职证明是一种法律文件，通常用于证明员工已经与雇主正式解除劳动关系。需要明确的是其定义是否有法律法规的支持，例如根据《劳动合同法》的相关规定。需要进一步查找法律依据。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "查找法律对离职证明的定义",
+        "content": "为了确保离职证明的定义准确，了解《劳动合同法》中是否有相关描述。例如，企业的义务、内容范围等，需进行搜索。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "确定相关法律法规",
+        "content": "<search>劳动合同法 离职证明</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "分析法律条款内容",
+        "content": "<information>《劳动合同法》第50条规定，用人单位应当在解除或终止劳动合同时出具解除或者终止劳动合同的证明，并及时为劳动者办理档案和社会保险的转移手续。离职证明应注明合同终止或解除的原因、离职时间等内容。</information>根据这一条款，离职证明是用人单位的法定义务，必须出具，用以证明劳动关系的结束，方便劳动者后续就业或办理相关手续。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "整理离职证明的用途和核心内容",
+        "content": "根据法律规定和实际用途，离职证明的核心功能是为劳动者提供正式的劳动关系终止凭证，以便于其在新用人单位就业或办理社保及档案转移时使用。因此，内容通常包括劳动合同解除或终止的时间、原因以及用人单位的盖章或签字。",
+        "note": "此步骤进一步巩固了离职证明的重要性和法律支持。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "离职证明是一种由用人单位在解除或终止劳动合同时依法出具的证明文件，其核心作用是证明劳动者与用人单位已解除或终止劳动关系。根据《劳动合同法》第50条规定，离职证明应注明终止或解除劳动合同的时间和原因等内容，并由用人单位盖章，以便劳动者办理后续就业等相关事项。"
+      },
+      {
+        "action": "Verification",
+        "content": "通过法律条款验证内容无误。离职证明的定义与功能符合实际用途及法律规定，知识点完备，回答精确，可确认答案正确。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "离职证明是啥？嗯，这听起来像是一种正式的证明文件，可能跟劳动关系解除有关，但具体是怎么定义的呢？是不是法律上还有明确规定？等等，我记得《劳动合同法》里好像有提到这一块，我得找找确认一下，别说错了。<search>劳动合同法 离职证明</search>。\n\n好，这里有一条法律规定呀。<information>《劳动合同法》第50条规定，用人单位应当在解除或终止劳动合同时出具解除或者终止劳动合同的证明，并及时为劳动者办理档案和社会保险的转移手续。离职证明应注明合同终止或解除的原因、离职时间等内容。</information>哦，原来是这样，这一点非常明确了，离职证明是雇主在终止劳动合同时必须出具的文件。这是法律上的义务，好像不能随便不给。\n\n仔细看看这个法律条款，里面讲到两件事：一个是离职证明需要写清楚解除或者终止劳动合同的原因，还有离职的时间，说到底就是为了确认劳动合同结束了。另一个就是它对劳动者后面的档案或社保转移很重要啊。这么说，离职证明不仅仅是个证明文件，还解决了很多后续问题，特别是去找新工作的时候可能会用到。\n\n咱再理一理，离职证明的内容应该包括劳动者的离职时间、合同结束的原因，还有企业的盖章或签字。对劳动者来说，这东西好像是“准入通行证”：向后续的单位证明自己已经跟前一个单位彻底解除合同。嗯，这挺关键的。\n\n所以，离职证明实际上就是用人单位在劳动合同解除或者终止后，按照《劳动合同法》第50条的规定出具的一份正式文件。这东西能帮助劳动者完成就业相关的手续，还能为一些社保或档案的转移提供证明。内容要全，比如明确劳动关系结束的时间和理由，还得有企业的盖章，这样看起来才有法律效力。嗯，看来离职证明确实很重要，不能马虎。",
+  "Response": "离职证明是指用人单位在与劳动者解除或终止劳动合同关系时，依据《劳动合同法》第50条的规定向劳动者出具的一份正式证明文件。根据法律规定，用人单位有义务在劳动合同解除或终止时及时提供该证明。\n\n离职证明的内容主要包括：  \n1. 劳动合同解除或终止的时间；  \n2. 劳动合同解除或终止的原因；  \n3. 用人单位的签章或其他能够证明法律效力的信息。  \n\n离职证明的作用不仅限于确认劳动关系的结束，还在劳动者办理社保转移、档案调动，以及入职下一家用人单位时起到关键的证明作用。用人单位未按规定出具离职证明可能会对劳动者产生影响，劳动者有权依法维权。因此，离职证明是一份既具法律约束力，又与劳动者权益紧密相关的重要文件。",
+  "Question": "什么是离职证明？"
+}

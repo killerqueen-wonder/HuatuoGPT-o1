@@ -1,0 +1,89 @@
+{
+  "Open-ended Verifiable Question": "怎么看合同是否有效?",
+  "Ground-True Answer": "1、合同当事人必须具有签约能力。2、合同必须有对价或约因。3、合同的内容必须合法。4、合同必须符合法律规定的形式。5、合同当事人的意思表示必须真实。未成年签订合同是否有效，有一部分是需要经过法定监护人核定;还有一部分是该未成年人如果年满十六周岁，并且已经有收入自己养活自己的情况下，该未成年人对外签订的合同是有效的，不需要法定监护人的追认。",
+  "process_id": 5575,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "确认合同是否符合法律规定的形式要求",
+      "content": "根据我国相关法律，合同的有效性首先要求其形式符合法律规定，例如书面形式、签署以及必要的盖章，需要明确其形式是否符合《合同法》和相关法规的要求。<search>合同法合同形式要求</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "检查合同当事人的主体资格",
+      "content": "必须确认合同签订的双方是否具备法律上的主体资格，包括年龄、民事行为能力等。如果当事人没有主体资格，则合同可能无效。<search>合同主体资格要求</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "判断合同内容是否违反法律或公序良俗",
+      "content": "合同内容是否合理，是否具有法律效力，还需要判断其是否违反法律规定或与社会公共利益相悖。违反法律或公序良俗的合同将无效。<search>违反法律或公序良俗的合同无效</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "确认双方是否有真实的意思表示",
+      "content": "合同的有效性要求双方意思表示真实，避免因欺诈、胁迫或重大误解导致合同无效。<search>合同意思表示真实要求</search>"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "合同是否有效可以通过以下步骤判断：1. 检查合同形式是否符合法律规定；2. 核实签署主体是否具备资格；3. 判断合同内容是否合法且不违反公序良俗；4. 确认双方是否有真实的意思表示。这些条件缺一不可，任何环节不符合要求都可能导致合同无效。"
+    },
+    {
+      "action": "Verification",
+      "content": "通过以上步骤，完整考虑了法律规定和实际情况，结论是合理的。合同效力的判断逻辑清晰，核心要点全面，确认无误。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n怎么看合同是否有效?\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n合同是否有效可以通过以下步骤判断：1. 检查合同形式是否符合法律规定；2. 核实签署主体是否具备资格；3. 判断合同内容是否合法且不违反公序良俗；4. 确认双方是否有真实的意思表示。这些条件缺一不可，任何环节不符合要求都可能导致合同无效。  \n</Model Response>  \n\n<Reference Answer>  \n1、合同当事人必须具有签约能力。2、合同必须有对价或约因。3、合同的内容必须合法。4、合同必须符合法律规定的形式。5、合同当事人的意思表示必须真实。未成年签订合同是否有效，有一部分是需要经过法定监护人核定;还有一部分是该未成年人如果年满十六周岁，并且已经有收入自己养活自己的情况下，该未成年人对外签订的合同是有效的，不需要法定监护人的追认。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 确认合同是否符合法律规定的形式要求\n根据我国相关法律，合同的有效性首先要求其形式符合法律规定，例如书面形式、签署以及必要的盖章，需要明确其形式是否符合《合同法》和相关法规的要求。<search>合同法合同形式要求</search>\n\n### 检查合同当事人的主体资格\n必须确认合同签订的双方是否具备法律上的主体资格，包括年龄、民事行为能力等。如果当事人没有主体资格，则合同可能无效。<search>合同主体资格要求</search>\n\n### 判断合同内容是否违反法律或公序良俗\n合同内容是否合理，是否具有法律效力，还需要判断其是否违反法律规定或与社会公共利益相悖。违反法律或公序良俗的合同将无效。<search>违反法律或公序良俗的合同无效</search>\n\n### 确认双方是否有真实的意思表示\n合同的有效性要求双方意思表示真实，避免因欺诈、胁迫或重大误解导致合同无效。<search>合同意思表示真实要求</search>\n\n### Conclusion\n合同是否有效可以通过以下步骤判断：1. 检查合同形式是否符合法律规定；2. 核实签署主体是否具备资格；3. 判断合同内容是否合法且不违反公序良俗；4. 确认双方是否有真实的意思表示。这些条件缺一不可，任何环节不符合要求都可能导致合同无效。\n\n### Verification\n通过以上步骤，完整考虑了法律规定和实际情况，结论是合理的。合同效力的判断逻辑清晰，核心要点全面，确认无误。\n</Thought Process>\n\n<Question>\n怎么看合同是否有效?\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n嗯，首先我得看看这个合同符不符合法律对形式的要求。合同应该有一定的形式，比如书面形式啊，或者需要签字、盖章这些，而且这得符合《合同法》和相关法律的规定才行。<search>合同法合同形式要求</search> 好的，先确认这一点是基础，毕竟形式不对的话合同可能直接就作废了。\n\n然后，还得搞清楚签合同的这两方是不是都有资格。也就是说，签合同的人得是有法律效力的主体，比如年龄得符合，有行为能力这些都得看清楚。毕竟要是有一方是无民事行为能力或者限制民事行为能力，那合同可能本身就无效了啊。<search>合同主体资格要求</search> 嗯，这一步也不能漏。\n\n接下来，还得看看合同内容本身，不能有那些违法的东西，也不能跟社会公共秩序或者道德相违背。如果内容违法或者不符合社会公序良俗，那肯定是无效的。这点比较关键。<search>违反法律或公序良俗的合同无效</search> 嗯，合同条款是否合法必须仔细检查。\n\n再然后，还要确认哦，合同双方签的时候是不是真的意思表示。如果说是因为欺诈啦，或者被胁迫了，甚至对条款有重大的误解，那这个合同的效力可能也存疑了。要确保意思是完全真实的才行。<search>合同意思表示真实要求</search> 这个也是合同生效的一个前提呢。\n\n所以总结一下，想知道合同是不是有效，我觉得基本就要查这几块：第一个，看合同的形式是不是符合法律要求；第二个，签合同的人有没有资格；第三个，里面的内容是不是合法、有没有违反公序良俗；最后，还得确认双方签订的时候是不是完全出于自由意愿。嗯，这几个环节少了哪个都可能导致合同无效。所以这些还是环环相扣，不能忽略。看上去逻辑清楚，也比较全面，应该没有疏漏吧。\n</Internal Thinking>\n\n<Question>\n怎么看合同是否有效?\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"确认合同是否符合法律规定的形式要求\",\n      \"content\": \"根据我国相关法律，合同的有效性首先要求其形式符合法律规定，例如书面形式、签署以及必要的盖章，需要明确其形式是否符合《合同法》和相关法规的要求。<search>合同法合同形式要求</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"检查合同当事人的主体资格\",\n      \"content\": \"必须确认合同签订的双方是否具备法律上的主体资格，包括年龄、民事行为能力等。如果当事人没有主体资格，则合同可能无效。<search>合同主体资格要求</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"判断合同内容是否违反法律或公序良俗\",\n      \"content\": \"合同内容是否合理，是否具有法律效力，还需要判断其是否违反法律规定或与社会公共利益相悖。违反法律或公序良俗的合同将无效。<search>违反法律或公序良俗的合同无效</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"确认双方是否有真实的意思表示\",\n      \"content\": \"合同的有效性要求双方意思表示真实，避免因欺诈、胁迫或重大误解导致合同无效。<search>合同意思表示真实要求</search>\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"合同是否有效可以通过以下步骤判断：1. 检查合同形式是否符合法律规定；2. 核实签署主体是否具备资格；3. 判断合同内容是否合法且不违反公序良俗；4. 确认双方是否有真实的意思表示。这些条件缺一不可，任何环节不符合要求都可能导致合同无效。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"通过以上步骤，完整考虑了法律规定和实际情况，结论是合理的。合同效力的判断逻辑清晰，核心要点全面，确认无误。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"嗯，首先我得看看这个合同符不符合法律对形式的要求。合同应该有一定的形式，比如书面形式啊，或者需要签字、盖章这些，而且这得符合《合同法》和相关法律的规定才行。<search>合同法合同形式要求</search> 好的，先确认这一点是基础，毕竟形式不对的话合同可能直接就作废了。\\n\\n然后，还得搞清楚签合同的这两方是不是都有资格。也就是说，签合同的人得是有法律效力的主体，比如年龄得符合，有行为能力这些都得看清楚。毕竟要是有一方是无民事行为能力或者限制民事行为能力，那合同可能本身就无效了啊。<search>合同主体资格要求</search> 嗯，这一步也不能漏。\\n\\n接下来，还得看看合同内容本身，不能有那些违法的东西，也不能跟社会公共秩序或者道德相违背。如果内容违法或者不符合社会公序良俗，那肯定是无效的。这点比较关键。<search>违反法律或公序良俗的合同无效</search> 嗯，合同条款是否合法必须仔细检查。\\n\\n再然后，还要确认哦，合同双方签的时候是不是真的意思表示。如果说是因为欺诈啦，或者被胁迫了，甚至对条款有重大的误解，那这个合同的效力可能也存疑了。要确保意思是完全真实的才行。<search>合同意思表示真实要求</search> 这个也是合同生效的一个前提呢。\\n\\n所以总结一下，想知道合同是不是有效，我觉得基本就要查这几块：第一个，看合同的形式是不是符合法律要求；第二个，签合同的人有没有资格；第三个，里面的内容是不是合法、有没有违反公序良俗；最后，还得确认双方签订的时候是不是完全出于自由意愿。嗯，这几个环节少了哪个都可能导致合同无效。所以这些还是环环相扣，不能忽略。看上去逻辑清楚，也比较全面，应该没有疏漏吧。\"\n}\n```",
+    "要判断一份合同是否有效，需要从以下几个方面进行审查：\n\n### 1. **合同形式是否符合法律要求**\n   根据《中华人民共和国民法典》（取代了《合同法》）的规定，大部分合同不要求特定形式，只要意思表示真实即可成立。但对于某些特殊类型的合同，法律有明确规定必须采用书面形式或其他特定形式，例如房地产买卖合同、融资租赁合同等需要书面形式。而且某些情况下，合同还可能需要公证或登记。如果未遵守形式要求，可能导致合同无效或无法生效。\n\n### 2. **合同双方是否具备主体资格**\n   合同主体需要具有相应的民事行为能力。如果合同一方是无民事行为能力人（例如未满8周岁的未成年人）或限制民事行为能力人（例如8至18周岁的未成年人，或者因某种原因能力受到限制的人），则该合同可能无效或效力待定。此外，法人签订合同时，应注意是否超越法律、法规或公司章程规定的经营范围；签订人也必须是有代表资格的人员。\n\n### 3. **合同内容是否合法合规**\n   合同的内容必须合法，不能违反法律、行政法规的强制性规定。例如，合同中涉及走私、贪污、毒品交易等违法行为，其条款即无效。此外，合同内容不能违背社会公序良俗，即不能有悖于现行伦理道德或社会公共利益。\n\n### 4. **合同当事人是否真实表达了意思**\n   签订合同时，双方必须出于真实意愿。如果合同是在欺诈、胁迫、显失公平、重大误解或乘人之危的情况下签订的，受损方可以请求撤销该合同，撤销后合同自始无效。例如，如果一方在签订合同时因被威胁而非自愿作出意思表示，则其效力可能受到影响。\n\n### 5. **合同是否明确权益和义务**\n   合同应清晰地载明双方的权利和义务，内容明确具体。如果合同条款模糊不清，可能导致争议。在某些情况下，模糊的条款可能被认定为无效或需进一步解释。\n\n### 总结\n要判断合同是否有效，可以从以上几个方面系统检查：\n- **形式要求**：是否符合书面或登记等的特定要求；\n- **主体资格**：双方是否具备签订合同的行为能力和法律地位；\n- **内容合法性**：条款是否符合法律规定和社会公共政策；\n- **意思表示**：是否自愿真实且不存在欺诈、胁迫等情形；\n- **条款是否确定清晰**：是否明确约定了关键条款如标的物、价款等。\n\n通过以上检查，基本可以明确合同是否有效或存在瑕疵。如果存在疑问，可以咨询专业律师以进一步确认。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "确认合同是否符合法律规定的形式要求",
+        "content": "根据我国相关法律，合同的有效性首先要求其形式符合法律规定，例如书面形式、签署以及必要的盖章，需要明确其形式是否符合《合同法》和相关法规的要求。<search>合同法合同形式要求</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "检查合同当事人的主体资格",
+        "content": "必须确认合同签订的双方是否具备法律上的主体资格，包括年龄、民事行为能力等。如果当事人没有主体资格，则合同可能无效。<search>合同主体资格要求</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "判断合同内容是否违反法律或公序良俗",
+        "content": "合同内容是否合理，是否具有法律效力，还需要判断其是否违反法律规定或与社会公共利益相悖。违反法律或公序良俗的合同将无效。<search>违反法律或公序良俗的合同无效</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "确认双方是否有真实的意思表示",
+        "content": "合同的有效性要求双方意思表示真实，避免因欺诈、胁迫或重大误解导致合同无效。<search>合同意思表示真实要求</search>"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "合同是否有效可以通过以下步骤判断：1. 检查合同形式是否符合法律规定；2. 核实签署主体是否具备资格；3. 判断合同内容是否合法且不违反公序良俗；4. 确认双方是否有真实的意思表示。这些条件缺一不可，任何环节不符合要求都可能导致合同无效。"
+      },
+      {
+        "action": "Verification",
+        "content": "通过以上步骤，完整考虑了法律规定和实际情况，结论是合理的。合同效力的判断逻辑清晰，核心要点全面，确认无误。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "嗯，首先我得看看这个合同符不符合法律对形式的要求。合同应该有一定的形式，比如书面形式啊，或者需要签字、盖章这些，而且这得符合《合同法》和相关法律的规定才行。<search>合同法合同形式要求</search> 好的，先确认这一点是基础，毕竟形式不对的话合同可能直接就作废了。\n\n然后，还得搞清楚签合同的这两方是不是都有资格。也就是说，签合同的人得是有法律效力的主体，比如年龄得符合，有行为能力这些都得看清楚。毕竟要是有一方是无民事行为能力或者限制民事行为能力，那合同可能本身就无效了啊。<search>合同主体资格要求</search> 嗯，这一步也不能漏。\n\n接下来，还得看看合同内容本身，不能有那些违法的东西，也不能跟社会公共秩序或者道德相违背。如果内容违法或者不符合社会公序良俗，那肯定是无效的。这点比较关键。<search>违反法律或公序良俗的合同无效</search> 嗯，合同条款是否合法必须仔细检查。\n\n再然后，还要确认哦，合同双方签的时候是不是真的意思表示。如果说是因为欺诈啦，或者被胁迫了，甚至对条款有重大的误解，那这个合同的效力可能也存疑了。要确保意思是完全真实的才行。<search>合同意思表示真实要求</search> 这个也是合同生效的一个前提呢。\n\n所以总结一下，想知道合同是不是有效，我觉得基本就要查这几块：第一个，看合同的形式是不是符合法律要求；第二个，签合同的人有没有资格；第三个，里面的内容是不是合法、有没有违反公序良俗；最后，还得确认双方签订的时候是不是完全出于自由意愿。嗯，这几个环节少了哪个都可能导致合同无效。所以这些还是环环相扣，不能忽略。看上去逻辑清楚，也比较全面，应该没有疏漏吧。",
+  "Response": "要判断一份合同是否有效，需要从以下几个方面进行审查：\n\n### 1. **合同形式是否符合法律要求**\n   根据《中华人民共和国民法典》（取代了《合同法》）的规定，大部分合同不要求特定形式，只要意思表示真实即可成立。但对于某些特殊类型的合同，法律有明确规定必须采用书面形式或其他特定形式，例如房地产买卖合同、融资租赁合同等需要书面形式。而且某些情况下，合同还可能需要公证或登记。如果未遵守形式要求，可能导致合同无效或无法生效。\n\n### 2. **合同双方是否具备主体资格**\n   合同主体需要具有相应的民事行为能力。如果合同一方是无民事行为能力人（例如未满8周岁的未成年人）或限制民事行为能力人（例如8至18周岁的未成年人，或者因某种原因能力受到限制的人），则该合同可能无效或效力待定。此外，法人签订合同时，应注意是否超越法律、法规或公司章程规定的经营范围；签订人也必须是有代表资格的人员。\n\n### 3. **合同内容是否合法合规**\n   合同的内容必须合法，不能违反法律、行政法规的强制性规定。例如，合同中涉及走私、贪污、毒品交易等违法行为，其条款即无效。此外，合同内容不能违背社会公序良俗，即不能有悖于现行伦理道德或社会公共利益。\n\n### 4. **合同当事人是否真实表达了意思**\n   签订合同时，双方必须出于真实意愿。如果合同是在欺诈、胁迫、显失公平、重大误解或乘人之危的情况下签订的，受损方可以请求撤销该合同，撤销后合同自始无效。例如，如果一方在签订合同时因被威胁而非自愿作出意思表示，则其效力可能受到影响。\n\n### 5. **合同是否明确权益和义务**\n   合同应清晰地载明双方的权利和义务，内容明确具体。如果合同条款模糊不清，可能导致争议。在某些情况下，模糊的条款可能被认定为无效或需进一步解释。\n\n### 总结\n要判断合同是否有效，可以从以上几个方面系统检查：\n- **形式要求**：是否符合书面或登记等的特定要求；\n- **主体资格**：双方是否具备签订合同的行为能力和法律地位；\n- **内容合法性**：条款是否符合法律规定和社会公共政策；\n- **意思表示**：是否自愿真实且不存在欺诈、胁迫等情形；\n- **条款是否确定清晰**：是否明确约定了关键条款如标的物、价款等。\n\n通过以上检查，基本可以明确合同是否有效或存在瑕疵。如果存在疑问，可以咨询专业律师以进一步确认。",
+  "Question": "怎么看合同是否有效?"
+}

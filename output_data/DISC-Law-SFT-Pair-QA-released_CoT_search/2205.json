@@ -1,0 +1,109 @@
+{
+  "Open-ended Verifiable Question": "小区电梯坏了物业不管怎么办?",
+  "Ground-True Answer": "根据《民法典》第一千一百八十四条\n侵害他人财产的，财产损失按照损失发生时的市场价格或者其他合理方式计算。\n《物业管理条例》第二条\n本条例所称物业管理，是指业主通过选聘物业服务企业，由业主和物业服务企业按照物业服务合同约定，对房屋及配套的设施设备和相关场地进行维修、养护、管理，维护物业管理区域内的环境卫生和相关秩序的活动。\n三、电梯维修费用是业主出还是物业出\n电梯的维修费用应该是物业出。业主可以和物业服务企业订立物业服务合同，由物业对房屋及配套的设施设备和相关场地进行维修、养护、管理，维护物业管理区域内的环境卫生和相关秩序。\n《物业管理条例》第二条\n本条例所称物业管理，是指业主通过选聘物业服务企业，由业主和物业服务企业按照物业服务合同约定，对房屋及配套的设施设备和相关场地进行维修、养护、管理，维护物业管理区域内的环境卫生和相关秩序的活动。",
+  "process_id": 2205,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "明确问题背景",
+      "content": "电梯是小区物业的一部分，其维护和管理属于物业公司的责任。当电梯损坏且物业不履行维修责任时，业主需要确定物业管理的义务和合同约定，找相关法律依据进行维权。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "查找物业管理条例",
+      "content": "需要查明《物业管理条例》中关于物业公司维护公共设施的具体规定，以判断责任归属。搜索关键词：</search>物业管理条例 电梯维护</search>。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "获取法律依据",
+      "content": "<information>《物业管理条例》第三章明确规定，物业服务企业应按照物业服务合同履行维修、养护和管理义务，包括公共设施设备的维护。</information>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "分析合同约定",
+      "content": "查看业主和物业公司之间签署的物业服务合同，确认是否明确规定物业有义务维修电梯。一般情况下，这类公共设施是合同中明确的义务范围。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "沟通与投诉流程",
+      "content": "如果物业未能按规定履责，可以采取以下步骤：1. 向物业公司发正式书面通知，要求及时维修电梯。2. 向小区业主委员会反映问题，促进双方进一步协调。3. 若无效果，需向当地街道办事处、居委会或物业主管部门（如住建局）投诉。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "法律途径解决",
+      "content": "如果上述方式无效，居民可依法维权，例如向法院提起诉讼。此过程中需要提供证据，包括电梯故障照片、书面通知记录及物业未履责的证明。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "当小区电梯损坏且物业公司不处理时，业主可依据《物业管理条例》第三章及物业服务合同要求物业履责。首先向物业提出书面通知和修理要求，然后向业主委员会及相关部门投诉。如仍无结果，业主可向住建部门或法院提起投诉或诉讼，通过法律途径解决问题。"
+    },
+    {
+      "action": "Verification",
+      "content": "步骤分析和解决措施合理可行，各项依据包括《物业管理条例》和物业服务合同明确了物业的维修责任，相关投诉和法律程序也符合法律操作流程，结论成立。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n小区电梯坏了物业不管怎么办?\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n当小区电梯损坏且物业公司不处理时，业主可依据《物业管理条例》第三章及物业服务合同要求物业履责。首先向物业提出书面通知和修理要求，然后向业主委员会及相关部门投诉。如仍无结果，业主可向住建部门或法院提起投诉或诉讼，通过法律途径解决问题。  \n</Model Response>  \n\n<Reference Answer>  \n根据《民法典》第一千一百八十四条\n侵害他人财产的，财产损失按照损失发生时的市场价格或者其他合理方式计算。\n《物业管理条例》第二条\n本条例所称物业管理，是指业主通过选聘物业服务企业，由业主和物业服务企业按照物业服务合同约定，对房屋及配套的设施设备和相关场地进行维修、养护、管理，维护物业管理区域内的环境卫生和相关秩序的活动。\n三、电梯维修费用是业主出还是物业出\n电梯的维修费用应该是物业出。业主可以和物业服务企业订立物业服务合同，由物业对房屋及配套的设施设备和相关场地进行维修、养护、管理，维护物业管理区域内的环境卫生和相关秩序。\n《物业管理条例》第二条\n本条例所称物业管理，是指业主通过选聘物业服务企业，由业主和物业服务企业按照物业服务合同约定，对房屋及配套的设施设备和相关场地进行维修、养护、管理，维护物业管理区域内的环境卫生和相关秩序的活动。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 明确问题背景\n电梯是小区物业的一部分，其维护和管理属于物业公司的责任。当电梯损坏且物业不履行维修责任时，业主需要确定物业管理的义务和合同约定，找相关法律依据进行维权。\n\n### 查找物业管理条例\n需要查明《物业管理条例》中关于物业公司维护公共设施的具体规定，以判断责任归属。搜索关键词：</search>物业管理条例 电梯维护</search>。\n\n### 获取法律依据\n<information>《物业管理条例》第三章明确规定，物业服务企业应按照物业服务合同履行维修、养护和管理义务，包括公共设施设备的维护。</information>\n\n### 分析合同约定\n查看业主和物业公司之间签署的物业服务合同，确认是否明确规定物业有义务维修电梯。一般情况下，这类公共设施是合同中明确的义务范围。\n\n### 沟通与投诉流程\n如果物业未能按规定履责，可以采取以下步骤：1. 向物业公司发正式书面通知，要求及时维修电梯。2. 向小区业主委员会反映问题，促进双方进一步协调。3. 若无效果，需向当地街道办事处、居委会或物业主管部门（如住建局）投诉。\n\n### 法律途径解决\n如果上述方式无效，居民可依法维权，例如向法院提起诉讼。此过程中需要提供证据，包括电梯故障照片、书面通知记录及物业未履责的证明。\n\n### Conclusion\n当小区电梯损坏且物业公司不处理时，业主可依据《物业管理条例》第三章及物业服务合同要求物业履责。首先向物业提出书面通知和修理要求，然后向业主委员会及相关部门投诉。如仍无结果，业主可向住建部门或法院提起投诉或诉讼，通过法律途径解决问题。\n\n### Verification\n步骤分析和解决措施合理可行，各项依据包括《物业管理条例》和物业服务合同明确了物业的维修责任，相关投诉和法律程序也符合法律操作流程，结论成立。\n</Thought Process>\n\n<Question>\n小区电梯坏了物业不管怎么办?\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n嗯，小区电梯坏了，物业不管，这个问题挺麻烦的啊。不过首先要弄清楚，维护电梯的责任到底是不是物业的。正常来说，电梯这种公共设施应该是物业负责维护的吧，但是需要找一下具体的法律条文或者合同内容来确认一下。\n\n先想到《物业管理条例》里应该有相关规定吧？因为印象中它是管这些物业服务的重要法规，可能会提到公共设施的维修维护责任。好，我搜索一下关键词，看看能不能找到具体内容，输入\"物业管理条例 电梯维护\"。\n\n<search>物业管理条例 电梯维护</search>\n\n哦，找到了！<information>《物业管理条例》第三章有规定，物业服务企业需要按照物业服务合同来履行维修、养护和管理的义务，这包括对那些公共设施设备——像电梯这种——的维护。</information> 这样基本可以确定，物业公司是有责任来管这件事的。\n\n不过，条例是总的说法，具体的责任怎么落实，还得看业主和物业之间签的物业服务合同。合同应该写得更明确，比如电梯是不是这个合同里包括的维修范围。回头可以仔细看一下合同内容，找找相关条款。\n\n如果责任真的在物业这边，可他们又不处理，那就得采取点行动了。第一步，先跟物业公司沟通，把问题说清楚。最好是发一个正式的书面通知，要求明确地告诉他们要尽快修。这方面事情留书面记录很重要，要是对方拖着不做，我们也有证据证明自己提过要求。\n\n万一沟通不顺或者对方根本不理，就只能跳到下一步了。看一下能不能通过业主委员会来施加点压力，毕竟电梯坏了，影响的不只是自己，其他居民也肯定有意见。联合起来发声，效果可能会强一些。\n\n如果还是僵着，那就只能向上一级反映了。想到街道办事处或者居委会，可能有调解作用。还有住建局，这种主管部门一般是处理物业问题的，能正式投诉。这些渠道用起来可能比较耗时间，但确实是该走的程序。\n\n实在不行，还可以考虑通过法律手段解决，比如起诉物业公司。不想走到这一步，毕竟时间长花费高，但真到了维权的必要时候也只好用法律武器了。资料上得提前准备好，比如电梯损坏的照片、之前的书面通知，以及物业无作为的相关记录。这些东西交给法院才能支持我们的说法。\n\n总结一下，电梯坏了物业不管，业主是有办法处理的。《物业管理条例》第三章和合同条款，证明了物业有责任。后续就是先沟通、再投诉、最后必要时依法维权。这问题虽然麻烦，但只要一步步来，还是有解决的途径。\n</Internal Thinking>\n\n<Question>\n小区电梯坏了物业不管怎么办?\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"明确问题背景\",\n      \"content\": \"电梯是小区物业的一部分，其维护和管理属于物业公司的责任。当电梯损坏且物业不履行维修责任时，业主需要确定物业管理的义务和合同约定，找相关法律依据进行维权。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"查找物业管理条例\",\n      \"content\": \"需要查明《物业管理条例》中关于物业公司维护公共设施的具体规定，以判断责任归属。搜索关键词：</search>物业管理条例 电梯维护</search>。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"获取法律依据\",\n      \"content\": \"<information>《物业管理条例》第三章明确规定，物业服务企业应按照物业服务合同履行维修、养护和管理义务，包括公共设施设备的维护。</information>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析合同约定\",\n      \"content\": \"查看业主和物业公司之间签署的物业服务合同，确认是否明确规定物业有义务维修电梯。一般情况下，这类公共设施是合同中明确的义务范围。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"沟通与投诉流程\",\n      \"content\": \"如果物业未能按规定履责，可以采取以下步骤：1. 向物业公司发正式书面通知，要求及时维修电梯。2. 向小区业主委员会反映问题，促进双方进一步协调。3. 若无效果，需向当地街道办事处、居委会或物业主管部门（如住建局）投诉。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"法律途径解决\",\n      \"content\": \"如果上述方式无效，居民可依法维权，例如向法院提起诉讼。此过程中需要提供证据，包括电梯故障照片、书面通知记录及物业未履责的证明。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"当小区电梯损坏且物业公司不处理时，业主可依据《物业管理条例》第三章及物业服务合同要求物业履责。首先向物业提出书面通知和修理要求，然后向业主委员会及相关部门投诉。如仍无结果，业主可向住建部门或法院提起投诉或诉讼，通过法律途径解决问题。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"步骤分析和解决措施合理可行，各项依据包括《物业管理条例》和物业服务合同明确了物业的维修责任，相关投诉和法律程序也符合法律操作流程，结论成立。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"嗯，小区电梯坏了，物业不管，这个问题挺麻烦的啊。不过首先要弄清楚，维护电梯的责任到底是不是物业的。正常来说，电梯这种公共设施应该是物业负责维护的吧，但是需要找一下具体的法律条文或者合同内容来确认一下。\\n\\n先想到《物业管理条例》里应该有相关规定吧？因为印象中它是管这些物业服务的重要法规，可能会提到公共设施的维修维护责任。好，我搜索一下关键词，看看能不能找到具体内容，输入\\\"物业管理条例 电梯维护\\\"。\\n\\n<search>物业管理条例 电梯维护</search>\\n\\n哦，找到了！<information>《物业管理条例》第三章有规定，物业服务企业需要按照物业服务合同来履行维修、养护和管理的义务，这包括对那些公共设施设备——像电梯这种——的维护。</information> 这样基本可以确定，物业公司是有责任来管这件事的。\\n\\n不过，条例是总的说法，具体的责任怎么落实，还得看业主和物业之间签的物业服务合同。合同应该写得更明确，比如电梯是不是这个合同里包括的维修范围。回头可以仔细看一下合同内容，找找相关条款。\\n\\n如果责任真的在物业这边，可他们又不处理，那就得采取点行动了。第一步，先跟物业公司沟通，把问题说清楚。最好是发一个正式的书面通知，要求明确地告诉他们要尽快修。这方面事情留书面记录很重要，要是对方拖着不做，我们也有证据证明自己提过要求。\\n\\n万一沟通不顺或者对方根本不理，就只能跳到下一步了。看一下能不能通过业主委员会来施加点压力，毕竟电梯坏了，影响的不只是自己，其他居民也肯定有意见。联合起来发声，效果可能会强一些。\\n\\n如果还是僵着，那就只能向上一级反映了。想到街道办事处或者居委会，可能有调解作用。还有住建局，这种主管部门一般是处理物业问题的，能正式投诉。这些渠道用起来可能比较耗时间，但确实是该走的程序。\\n\\n实在不行，还可以考虑通过法律手段解决，比如起诉物业公司。不想走到这一步，毕竟时间长花费高，但真到了维权的必要时候也只好用法律武器了。资料上得提前准备好，比如电梯损坏的照片、之前的书面通知，以及物业无作为的相关记录。这些东西交给法院才能支持我们的说法。\\n\\n总结一下，电梯坏了物业不管，业主是有办法处理的。《物业管理条例》第三章和合同条款，证明了物业有责任。后续就是先沟通、再投诉、最后必要时依法维权。这问题虽然麻烦，但只要一步步来，还是有解决的途径。\"\n}\n```",
+    "如果小区的电梯坏了而物业不管，可以按照以下步骤来解决问题：\n\n### 1. 确认责任归属\n根据《物业管理条例》第三章的规定，物业公司有责任按照物业服务合同的约定，对包括电梯在内的公共设施进行维修和养护。因此，首先需要查看您与物业公司签订的物业服务合同，明确电梯维修是否属于合同规定范围。如果合同中明确写明电梯是由物业公司负责维护，那么就可以确认物业公司有义务修理电梯。\n\n### 2. 书面通知物业公司\n向物业公司发出正式的书面通知，要求他们尽快履行维修义务。您可以通过挂号信、电子邮件或纸质文件提交并保留发送记录，注明电梯损坏的情况以及您的维修诉求。留存书面记录非常重要，它可以作为后续维权的证据。\n\n### 3. 联合业主委员会\n如果沟通无果，可以联合业主委员会共同向物业公司施加压力。电梯是小区内的公共设施，其损坏影响所有业主的日常生活。业主委员会可以代表业主集体与物业沟通，推动问题解决。\n\n### 4. 投诉至相关部门\n若物业公司仍不作为，可以向当地街道办事处、居委会或房地产主管部门（例如住建局）投诉。这些部门通常负责监督和管理物业公司的行为，并有权进行调解或采取措施。\n\n### 5. 通过法律途径维权\n如果问题迟迟得不到解决，您可以考虑通过法律手段维权，例如向法院起诉物业公司，要求其履行维修义务或索赔因电梯损坏带来的不便。起诉前需准备充分的证据，例如电梯的损坏情况、您曾经通知物业的书面记录、物业不作为的表现等。\n\n### 总结\n小区电梯属于公共设施，根据法律规定和合同约定，物业公司通常有维护责任。如果他们不履行义务，您可以通过沟通、联合业主委员会、投诉主管部门和法律维权等方式一步步推进问题解决。记得保留所有相关记录与证据，这是后续行动中的关键。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "明确问题背景",
+        "content": "电梯是小区物业的一部分，其维护和管理属于物业公司的责任。当电梯损坏且物业不履行维修责任时，业主需要确定物业管理的义务和合同约定，找相关法律依据进行维权。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "查找物业管理条例",
+        "content": "需要查明《物业管理条例》中关于物业公司维护公共设施的具体规定，以判断责任归属。搜索关键词：</search>物业管理条例 电梯维护</search>。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "获取法律依据",
+        "content": "<information>《物业管理条例》第三章明确规定，物业服务企业应按照物业服务合同履行维修、养护和管理义务，包括公共设施设备的维护。</information>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "分析合同约定",
+        "content": "查看业主和物业公司之间签署的物业服务合同，确认是否明确规定物业有义务维修电梯。一般情况下，这类公共设施是合同中明确的义务范围。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "沟通与投诉流程",
+        "content": "如果物业未能按规定履责，可以采取以下步骤：1. 向物业公司发正式书面通知，要求及时维修电梯。2. 向小区业主委员会反映问题，促进双方进一步协调。3. 若无效果，需向当地街道办事处、居委会或物业主管部门（如住建局）投诉。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "法律途径解决",
+        "content": "如果上述方式无效，居民可依法维权，例如向法院提起诉讼。此过程中需要提供证据，包括电梯故障照片、书面通知记录及物业未履责的证明。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "当小区电梯损坏且物业公司不处理时，业主可依据《物业管理条例》第三章及物业服务合同要求物业履责。首先向物业提出书面通知和修理要求，然后向业主委员会及相关部门投诉。如仍无结果，业主可向住建部门或法院提起投诉或诉讼，通过法律途径解决问题。"
+      },
+      {
+        "action": "Verification",
+        "content": "步骤分析和解决措施合理可行，各项依据包括《物业管理条例》和物业服务合同明确了物业的维修责任，相关投诉和法律程序也符合法律操作流程，结论成立。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "嗯，小区电梯坏了，物业不管，这个问题挺麻烦的啊。不过首先要弄清楚，维护电梯的责任到底是不是物业的。正常来说，电梯这种公共设施应该是物业负责维护的吧，但是需要找一下具体的法律条文或者合同内容来确认一下。\n\n先想到《物业管理条例》里应该有相关规定吧？因为印象中它是管这些物业服务的重要法规，可能会提到公共设施的维修维护责任。好，我搜索一下关键词，看看能不能找到具体内容，输入\"物业管理条例 电梯维护\"。\n\n<search>物业管理条例 电梯维护</search>\n\n哦，找到了！<information>《物业管理条例》第三章有规定，物业服务企业需要按照物业服务合同来履行维修、养护和管理的义务，这包括对那些公共设施设备——像电梯这种——的维护。</information> 这样基本可以确定，物业公司是有责任来管这件事的。\n\n不过，条例是总的说法，具体的责任怎么落实，还得看业主和物业之间签的物业服务合同。合同应该写得更明确，比如电梯是不是这个合同里包括的维修范围。回头可以仔细看一下合同内容，找找相关条款。\n\n如果责任真的在物业这边，可他们又不处理，那就得采取点行动了。第一步，先跟物业公司沟通，把问题说清楚。最好是发一个正式的书面通知，要求明确地告诉他们要尽快修。这方面事情留书面记录很重要，要是对方拖着不做，我们也有证据证明自己提过要求。\n\n万一沟通不顺或者对方根本不理，就只能跳到下一步了。看一下能不能通过业主委员会来施加点压力，毕竟电梯坏了，影响的不只是自己，其他居民也肯定有意见。联合起来发声，效果可能会强一些。\n\n如果还是僵着，那就只能向上一级反映了。想到街道办事处或者居委会，可能有调解作用。还有住建局，这种主管部门一般是处理物业问题的，能正式投诉。这些渠道用起来可能比较耗时间，但确实是该走的程序。\n\n实在不行，还可以考虑通过法律手段解决，比如起诉物业公司。不想走到这一步，毕竟时间长花费高，但真到了维权的必要时候也只好用法律武器了。资料上得提前准备好，比如电梯损坏的照片、之前的书面通知，以及物业无作为的相关记录。这些东西交给法院才能支持我们的说法。\n\n总结一下，电梯坏了物业不管，业主是有办法处理的。《物业管理条例》第三章和合同条款，证明了物业有责任。后续就是先沟通、再投诉、最后必要时依法维权。这问题虽然麻烦，但只要一步步来，还是有解决的途径。",
+  "Response": "如果小区的电梯坏了而物业不管，可以按照以下步骤来解决问题：\n\n### 1. 确认责任归属\n根据《物业管理条例》第三章的规定，物业公司有责任按照物业服务合同的约定，对包括电梯在内的公共设施进行维修和养护。因此，首先需要查看您与物业公司签订的物业服务合同，明确电梯维修是否属于合同规定范围。如果合同中明确写明电梯是由物业公司负责维护，那么就可以确认物业公司有义务修理电梯。\n\n### 2. 书面通知物业公司\n向物业公司发出正式的书面通知，要求他们尽快履行维修义务。您可以通过挂号信、电子邮件或纸质文件提交并保留发送记录，注明电梯损坏的情况以及您的维修诉求。留存书面记录非常重要，它可以作为后续维权的证据。\n\n### 3. 联合业主委员会\n如果沟通无果，可以联合业主委员会共同向物业公司施加压力。电梯是小区内的公共设施，其损坏影响所有业主的日常生活。业主委员会可以代表业主集体与物业沟通，推动问题解决。\n\n### 4. 投诉至相关部门\n若物业公司仍不作为，可以向当地街道办事处、居委会或房地产主管部门（例如住建局）投诉。这些部门通常负责监督和管理物业公司的行为，并有权进行调解或采取措施。\n\n### 5. 通过法律途径维权\n如果问题迟迟得不到解决，您可以考虑通过法律手段维权，例如向法院起诉物业公司，要求其履行维修义务或索赔因电梯损坏带来的不便。起诉前需准备充分的证据，例如电梯的损坏情况、您曾经通知物业的书面记录、物业不作为的表现等。\n\n### 总结\n小区电梯属于公共设施，根据法律规定和合同约定，物业公司通常有维护责任。如果他们不履行义务，您可以通过沟通、联合业主委员会、投诉主管部门和法律维权等方式一步步推进问题解决。记得保留所有相关记录与证据，这是后续行动中的关键。",
+  "Question": "小区电梯坏了物业不管怎么办?"
+}

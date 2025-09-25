@@ -1,0 +1,99 @@
+{
+  "Open-ended Verifiable Question": "农村土地承包期内农转非，是否收回承包地？",
+  "Ground-True Answer": "《农村土地承包法》第二十七条规定：“承包期内，发包方不得收回承包地。国家保护进城农户的土地承包经营权。不得以退出土地承包经营权作为农户进城落户的条件。承包期内，承包农户进城落户的，引导支持其按照自愿有偿原则依法在本集体经济组织内转让土地承包经营权或者将承包地交回发包方，也可以鼓励其流转土地经营权。承包期内，承包方交回承包地或者发包方依法收回承包地时，承包方对其在承包地上投入而提高土地生产能力的，有权获得相应的补偿。”可见，即使承包农户全家迁入城镇落户，纳入城镇住房和社会保障体系，丧失农村集体经济组织成员身份，发包方也不得据此收回承包地。因此，农户家庭成员中有考入国家公务员或“农转非”的，发包方不能收回承包地。此外，家庭承包经营的主体是农户，家庭成员个人不与土地承包经营权挂钩。只要农户还在，农户内部的人员流动不应影响土地承包经营权的内容和范围。",
+  "process_id": 6560,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "明确农村土地承包政策",
+      "content": "根据中国农村土地制度，一般实行土地承包30年不变的政策。这是依据最早的《土地承包法》和后续法律文本。例如，《中华人民共和国农村土地承包法》第26条明确规定，在承包期内承包农户的权利受法律保护，不得随意剥夺。需要验证是否存在针对承包人户籍转变（农转非）情况的特殊规定。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "查找是否有农转非影响土地承包权的法律基础",
+      "content": "为了确认农转非是否影响承包地的使用权，需要查阅与农村土地承包、户籍相关的法律和政策文件，特别是查找是否有提到农转非的特殊情形规定。"
+    },
+    {
+      "action": "Search",
+      "title": "搜索与农转非和土地承包有关的法律法规",
+      "content": "<search>农转非 土地承包权 法律</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "确认相关法律提到的原则",
+      "content": "<information>根据现行的《中华人民共和国土地承包法》第27条以及中央一号文件的精神，即使承包农户户籍从农村转为城镇（所谓农转非），只要承包期未届满，承包经营权仍受到法律保护，集体经济组织不得强行收回承包地。如果农转非人员自愿放弃土地承包权，可以由承包方和集体经济组织协商变更或解除承包合同。</information> 从上述内容可以明确，现行法规明确保护农转非后土地承包期内的权利，除非承包人主动放弃。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "分析有无例外情形",
+      "content": "现行法律已经明确了不得因农转非强收承包地的总原则，因此需要判断是否有需要补充其他例外情形的法规或司法解释。同时，承包人放弃承包权需要进行法律登记流程，这也确保不会违反上述原则。可以确认问题答案。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "在农村土地承包期内，即使承包人因户籍转为非农业（农转非），土地承包权仍然受到法律保护，原则上不予收回。但如果承包人自愿放弃土地承包权，则可以通过协商和相关法律程序解除承包合同。"
+    },
+    {
+      "action": "Verification",
+      "content": "上述结论符合现有法律法规的规定，并得到了政策文件和农村土地承包法的支持，结论准确无误。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n农村土地承包期内农转非，是否收回承包地？\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n在农村土地承包期内，即使承包人因户籍转为非农业（农转非），土地承包权仍然受到法律保护，原则上不予收回。但如果承包人自愿放弃土地承包权，则可以通过协商和相关法律程序解除承包合同。  \n</Model Response>  \n\n<Reference Answer>  \n《农村土地承包法》第二十七条规定：“承包期内，发包方不得收回承包地。国家保护进城农户的土地承包经营权。不得以退出土地承包经营权作为农户进城落户的条件。承包期内，承包农户进城落户的，引导支持其按照自愿有偿原则依法在本集体经济组织内转让土地承包经营权或者将承包地交回发包方，也可以鼓励其流转土地经营权。承包期内，承包方交回承包地或者发包方依法收回承包地时，承包方对其在承包地上投入而提高土地生产能力的，有权获得相应的补偿。”可见，即使承包农户全家迁入城镇落户，纳入城镇住房和社会保障体系，丧失农村集体经济组织成员身份，发包方也不得据此收回承包地。因此，农户家庭成员中有考入国家公务员或“农转非”的，发包方不能收回承包地。此外，家庭承包经营的主体是农户，家庭成员个人不与土地承包经营权挂钩。只要农户还在，农户内部的人员流动不应影响土地承包经营权的内容和范围。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 明确农村土地承包政策\n根据中国农村土地制度，一般实行土地承包30年不变的政策。这是依据最早的《土地承包法》和后续法律文本。例如，《中华人民共和国农村土地承包法》第26条明确规定，在承包期内承包农户的权利受法律保护，不得随意剥夺。需要验证是否存在针对承包人户籍转变（农转非）情况的特殊规定。\n\n### 查找是否有农转非影响土地承包权的法律基础\n为了确认农转非是否影响承包地的使用权，需要查阅与农村土地承包、户籍相关的法律和政策文件，特别是查找是否有提到农转非的特殊情形规定。\n\n### 搜索与农转非和土地承包有关的法律法规\n<search>农转非 土地承包权 法律</search>\n\n### 确认相关法律提到的原则\n<information>根据现行的《中华人民共和国土地承包法》第27条以及中央一号文件的精神，即使承包农户户籍从农村转为城镇（所谓农转非），只要承包期未届满，承包经营权仍受到法律保护，集体经济组织不得强行收回承包地。如果农转非人员自愿放弃土地承包权，可以由承包方和集体经济组织协商变更或解除承包合同。</information> 从上述内容可以明确，现行法规明确保护农转非后土地承包期内的权利，除非承包人主动放弃。\n\n### 分析有无例外情形\n现行法律已经明确了不得因农转非强收承包地的总原则，因此需要判断是否有需要补充其他例外情形的法规或司法解释。同时，承包人放弃承包权需要进行法律登记流程，这也确保不会违反上述原则。可以确认问题答案。\n\n### Conclusion\n在农村土地承包期内，即使承包人因户籍转为非农业（农转非），土地承包权仍然受到法律保护，原则上不予收回。但如果承包人自愿放弃土地承包权，则可以通过协商和相关法律程序解除承包合同。\n\n### Verification\n上述结论符合现有法律法规的规定，并得到了政策文件和农村土地承包法的支持，结论准确无误。\n</Thought Process>\n\n<Question>\n农村土地承包期内农转非，是否收回承包地？\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n嗯，先理清楚国内关于农村土地承包的基本政策吧。根据现有的土地政策，农村土地承包的期限一般是30年不变，这应该是根据最初的《土地承包法》和后续的一些法律文件来的。像《中华人民共和国农村土地承包法》第26条就明确说了，只要是在承包期内，承包农户的权利是受法律保护的，任何人不得随便剥夺。那么，这里就有个问题了，如果承包人变成了城镇户口，也就是所谓的“农转非”，这个承包权会不会受到影响呢？嗯，需要看看法律有没有针对这种特殊情况的规定才行。\n\n那就先查一下相关的法律法规吧，关键词应该可以用“农转非 土地承包权 法律”来搜搜看，看看有没有具体的说明。<search>农转非 土地承包权 法律</search>\n\n搜到了！<information>从现行的《中华人民共和国土地承包法》第27条来看，还有一些中央一号文件中提到的原则，其实已经很明确了：即便承包户的户籍从农村转成了城镇，也就是说变成了“农转非”，只要承包期还没结束，他的土地承包经营权还是受到法律保护的。村里的集体经济组织是不能因为户籍变化就把地收回去的。不过，如果这个农转非的人自己愿意放弃土地承包权，那是可以通过跟集体经济组织协商变更或解除合同的。</information>\n\n哦，既然现行法律里面明确了农转非期间不能强行收回承包地，这个原则已经很清楚了，那会不会还有什么例外情况呢？比如，特殊的地方法规，或者有相关的司法解释？如果有这种情况，还得具体分析一下。不过按照刚才搜到的信息，只要不是承包人主动放弃土地，而是村里单方面收回，那肯定是不合法的。而且，如果承包人真要放弃，那也不能随随便便放弃，还得走法律登记的流程，确保双方都按照合同约定操作。\n\n所以呢，总结一下就是，农村土地承包期内，即使承包人因为户籍变成了非农，法律上也不能强行收回他的承包地，除非他自己自愿放弃。这种放弃也是需要按照正规的法律程序进行登记和协商的，而不是说村里的集体能随意说了算。\n\n嗯，回头再仔细对照了一下这些法律条文和政策精神，应该没有问题，以上的结论还是符合现有的法规和政策的。\n</Internal Thinking>\n\n<Question>\n农村土地承包期内农转非，是否收回承包地？\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"明确农村土地承包政策\",\n      \"content\": \"根据中国农村土地制度，一般实行土地承包30年不变的政策。这是依据最早的《土地承包法》和后续法律文本。例如，《中华人民共和国农村土地承包法》第26条明确规定，在承包期内承包农户的权利受法律保护，不得随意剥夺。需要验证是否存在针对承包人户籍转变（农转非）情况的特殊规定。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"查找是否有农转非影响土地承包权的法律基础\",\n      \"content\": \"为了确认农转非是否影响承包地的使用权，需要查阅与农村土地承包、户籍相关的法律和政策文件，特别是查找是否有提到农转非的特殊情形规定。\"\n    },\n    {\n      \"action\": \"Search\",\n      \"title\": \"搜索与农转非和土地承包有关的法律法规\",\n      \"content\": \"<search>农转非 土地承包权 法律</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"确认相关法律提到的原则\",\n      \"content\": \"<information>根据现行的《中华人民共和国土地承包法》第27条以及中央一号文件的精神，即使承包农户户籍从农村转为城镇（所谓农转非），只要承包期未届满，承包经营权仍受到法律保护，集体经济组织不得强行收回承包地。如果农转非人员自愿放弃土地承包权，可以由承包方和集体经济组织协商变更或解除承包合同。</information> 从上述内容可以明确，现行法规明确保护农转非后土地承包期内的权利，除非承包人主动放弃。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析有无例外情形\",\n      \"content\": \"现行法律已经明确了不得因农转非强收承包地的总原则，因此需要判断是否有需要补充其他例外情形的法规或司法解释。同时，承包人放弃承包权需要进行法律登记流程，这也确保不会违反上述原则。可以确认问题答案。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"在农村土地承包期内，即使承包人因户籍转为非农业（农转非），土地承包权仍然受到法律保护，原则上不予收回。但如果承包人自愿放弃土地承包权，则可以通过协商和相关法律程序解除承包合同。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"上述结论符合现有法律法规的规定，并得到了政策文件和农村土地承包法的支持，结论准确无误。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"嗯，先理清楚国内关于农村土地承包的基本政策吧。根据现有的土地政策，农村土地承包的期限一般是30年不变，这应该是根据最初的《土地承包法》和后续的一些法律文件来的。像《中华人民共和国农村土地承包法》第26条就明确说了，只要是在承包期内，承包农户的权利是受法律保护的，任何人不得随便剥夺。那么，这里就有个问题了，如果承包人变成了城镇户口，也就是所谓的“农转非”，这个承包权会不会受到影响呢？嗯，需要看看法律有没有针对这种特殊情况的规定才行。\\n\\n那就先查一下相关的法律法规吧，关键词应该可以用“农转非 土地承包权 法律”来搜搜看，看看有没有具体的说明。<search>农转非 土地承包权 法律</search>\\n\\n搜到了！<information>从现行的《中华人民共和国土地承包法》第27条来看，还有一些中央一号文件中提到的原则，其实已经很明确了：即便承包户的户籍从农村转成了城镇，也就是说变成了“农转非”，只要承包期还没结束，他的土地承包经营权还是受到法律保护的。村里的集体经济组织是不能因为户籍变化就把地收回去的。不过，如果这个农转非的人自己愿意放弃土地承包权，那是可以通过跟集体经济组织协商变更或解除合同的。</information>\\n\\n哦，既然现行法律里面明确了农转非期间不能强行收回承包地，这个原则已经很清楚了，那会不会还有什么例外情况呢？比如，特殊的地方法规，或者有相关的司法解释？如果有这种情况，还得具体分析一下。不过按照刚才搜到的信息，只要不是承包人主动放弃土地，而是村里单方面收回，那肯定是不合法的。而且，如果承包人真要放弃，那也不能随随便便放弃，还得走法律登记的流程，确保双方都按照合同约定操作。\\n\\n所以呢，总结一下就是，农村土地承包期内，即使承包人因为户籍变成了非农，法律上也不能强行收回他的承包地，除非他自己自愿放弃。这种放弃也是需要按照正规的法律程序进行登记和协商的，而不是说村里的集体能随意说了算。\\n\\n嗯，回头再仔细对照了一下这些法律条文和政策精神，应该没有问题，以上的结论还是符合现有的法规和政策的。\"\n}\n```",
+    "根据现行法律法规的规定，农村土地承包期内，即使承包人户籍由农村转为城镇（即“农转非”），其土地承包经营权仍然受到法律保护，承包地不得因户籍变更而被村集体强行收回。\n\n具体来说，《中华人民共和国农村土地承包法》第27条明确指出，家庭承包的土地，只要仍在承包期内，承包户享有的承包经营权不因家庭成员户籍改变而受到影响。换句话说，即使承包人变成了城镇居民，只要他没有主动放弃承包土地，其承包权仍然有效，村集体无权单方面收回土地。\n\n不过，承包人若自愿放弃土地承包权，可以与村集体经济组织协商，经双方同意后依法变更或解除承包合同。这种放弃土地承包权的行为需要履行合法的程序，以确保承包方和村集体的权利义务关系按照合同约定解除。\n\n因此，总结来说：**在农村土地承包期内，农转非后承包地不得强行收回，除非承包人自愿放弃且按照法律程序办理相关手续。**"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "明确农村土地承包政策",
+        "content": "根据中国农村土地制度，一般实行土地承包30年不变的政策。这是依据最早的《土地承包法》和后续法律文本。例如，《中华人民共和国农村土地承包法》第26条明确规定，在承包期内承包农户的权利受法律保护，不得随意剥夺。需要验证是否存在针对承包人户籍转变（农转非）情况的特殊规定。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "查找是否有农转非影响土地承包权的法律基础",
+        "content": "为了确认农转非是否影响承包地的使用权，需要查阅与农村土地承包、户籍相关的法律和政策文件，特别是查找是否有提到农转非的特殊情形规定。"
+      },
+      {
+        "action": "Search",
+        "title": "搜索与农转非和土地承包有关的法律法规",
+        "content": "<search>农转非 土地承包权 法律</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "确认相关法律提到的原则",
+        "content": "<information>根据现行的《中华人民共和国土地承包法》第27条以及中央一号文件的精神，即使承包农户户籍从农村转为城镇（所谓农转非），只要承包期未届满，承包经营权仍受到法律保护，集体经济组织不得强行收回承包地。如果农转非人员自愿放弃土地承包权，可以由承包方和集体经济组织协商变更或解除承包合同。</information> 从上述内容可以明确，现行法规明确保护农转非后土地承包期内的权利，除非承包人主动放弃。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "分析有无例外情形",
+        "content": "现行法律已经明确了不得因农转非强收承包地的总原则，因此需要判断是否有需要补充其他例外情形的法规或司法解释。同时，承包人放弃承包权需要进行法律登记流程，这也确保不会违反上述原则。可以确认问题答案。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "在农村土地承包期内，即使承包人因户籍转为非农业（农转非），土地承包权仍然受到法律保护，原则上不予收回。但如果承包人自愿放弃土地承包权，则可以通过协商和相关法律程序解除承包合同。"
+      },
+      {
+        "action": "Verification",
+        "content": "上述结论符合现有法律法规的规定，并得到了政策文件和农村土地承包法的支持，结论准确无误。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "嗯，先理清楚国内关于农村土地承包的基本政策吧。根据现有的土地政策，农村土地承包的期限一般是30年不变，这应该是根据最初的《土地承包法》和后续的一些法律文件来的。像《中华人民共和国农村土地承包法》第26条就明确说了，只要是在承包期内，承包农户的权利是受法律保护的，任何人不得随便剥夺。那么，这里就有个问题了，如果承包人变成了城镇户口，也就是所谓的“农转非”，这个承包权会不会受到影响呢？嗯，需要看看法律有没有针对这种特殊情况的规定才行。\n\n那就先查一下相关的法律法规吧，关键词应该可以用“农转非 土地承包权 法律”来搜搜看，看看有没有具体的说明。<search>农转非 土地承包权 法律</search>\n\n搜到了！<information>从现行的《中华人民共和国土地承包法》第27条来看，还有一些中央一号文件中提到的原则，其实已经很明确了：即便承包户的户籍从农村转成了城镇，也就是说变成了“农转非”，只要承包期还没结束，他的土地承包经营权还是受到法律保护的。村里的集体经济组织是不能因为户籍变化就把地收回去的。不过，如果这个农转非的人自己愿意放弃土地承包权，那是可以通过跟集体经济组织协商变更或解除合同的。</information>\n\n哦，既然现行法律里面明确了农转非期间不能强行收回承包地，这个原则已经很清楚了，那会不会还有什么例外情况呢？比如，特殊的地方法规，或者有相关的司法解释？如果有这种情况，还得具体分析一下。不过按照刚才搜到的信息，只要不是承包人主动放弃土地，而是村里单方面收回，那肯定是不合法的。而且，如果承包人真要放弃，那也不能随随便便放弃，还得走法律登记的流程，确保双方都按照合同约定操作。\n\n所以呢，总结一下就是，农村土地承包期内，即使承包人因为户籍变成了非农，法律上也不能强行收回他的承包地，除非他自己自愿放弃。这种放弃也是需要按照正规的法律程序进行登记和协商的，而不是说村里的集体能随意说了算。\n\n嗯，回头再仔细对照了一下这些法律条文和政策精神，应该没有问题，以上的结论还是符合现有的法规和政策的。",
+  "Response": "根据现行法律法规的规定，农村土地承包期内，即使承包人户籍由农村转为城镇（即“农转非”），其土地承包经营权仍然受到法律保护，承包地不得因户籍变更而被村集体强行收回。\n\n具体来说，《中华人民共和国农村土地承包法》第27条明确指出，家庭承包的土地，只要仍在承包期内，承包户享有的承包经营权不因家庭成员户籍改变而受到影响。换句话说，即使承包人变成了城镇居民，只要他没有主动放弃承包土地，其承包权仍然有效，村集体无权单方面收回土地。\n\n不过，承包人若自愿放弃土地承包权，可以与村集体经济组织协商，经双方同意后依法变更或解除承包合同。这种放弃土地承包权的行为需要履行合法的程序，以确保承包方和村集体的权利义务关系按照合同约定解除。\n\n因此，总结来说：**在农村土地承包期内，农转非后承包地不得强行收回，除非承包人自愿放弃且按照法律程序办理相关手续。**",
+  "Question": "农村土地承包期内农转非，是否收回承包地？"
+}

@@ -1,0 +1,89 @@
+{
+  "Open-ended Verifiable Question": "父母过世后，兄弟姐妹签订的分家合同能否作为补偿的依据？",
+  "Ground-True Answer": "根据我国《民法典》的规定，在没有遗嘱的情况下，根据法定继承，此处宅基地上的房屋属于几个兄弟姐妹共有。分家合同能否作为补偿依据，要依分家合同是否合法而定。如果分家合同合法并且有效的话，那么根据我国《民法典》的规定，分家合同的当事人均拥有产权，属于被征收人的范围。因此，各兄弟姐妹均可就房屋征收获得相应的补偿，补偿份额的分配以分家合同规定为准，如果没有规定的话一般采用平均分配的方式。 法律依据：《中华人民共和国民法典》第一千一百二十三条　继承开始后，按照法定继承办理；有遗嘱的，按照遗嘱继承或者遗赠办理；有遗赠扶养协议的，按照协议办理。",
+  "process_id": 9308,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "分析分家合同的法律效力",
+      "content": "分家合同是兄弟姐妹之间关于财产分割的书面协议，其法律效力需要满足《合同法》或相关民事法律的规定，例如合同的真实性、自愿性、公平性等。然而，由于分家合同涉及继承权的分配，还需考虑《继承法》的规范。需要进一步检索相关法律条款，以确认分家合同能否作为补偿依据。<search>继承法 分家合同</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "查找继承法相关规定",
+      "content": "<information>《继承法》规定，被继承人死亡后，其遗产按照法律规定或遗嘱继承。同时，继承法允许继承人之间协商分配遗产。如果兄弟姐妹签订的分家合同是在被继承人死亡后，通过协商达成，且程序合法，那么可以作为依据。</information>根据上述信息，确认分家合同的合法性是关键。</content>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "确认分家合同的合法性及补偿依据的可行性",
+      "content": "如果分家合同的签订符合合同法与继承法的规定，且所有签约人均自愿同意并履行了合法程序，则分家合同具有法律效力。此外，合同内容中明确约定了补偿条款，或其他条款中隐含补偿安排，这应该可以作为补偿依据。因此，需要进一步确定合同内容是否明确规定补偿，并且合同是否能证明真实自愿。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "分析合同所涉及的具体条款",
+      "content": "如果分家合同明确规定了补偿条款，例如某一兄弟姐妹因特殊原因需获得额外补偿或其他形式的支持，这样的条款可以成立。如果没有明确补偿条款，需考量其他客观证据以证明该合同内隐含补偿意向。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "分家合同在父母过世后，如果符合合同法与继承法规定，且明确约定了补偿条款或能够证明补偿意向，可以作为补偿依据。关键在于合同的合法性、内容的明确性以及签订过程的真实性。"
+    },
+    {
+      "action": "Verification",
+      "content": "经过分析，可以确认该分家合同在合法有效的情况下，确实可以作为补偿依据。如果签订合同的过程及内容无法满足法律条件，则需要重新协商或通过其他途径解决补偿问题。结论成立，验证通过。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n父母过世后，兄弟姐妹签订的分家合同能否作为补偿的依据？\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n分家合同在父母过世后，如果符合合同法与继承法规定，且明确约定了补偿条款或能够证明补偿意向，可以作为补偿依据。关键在于合同的合法性、内容的明确性以及签订过程的真实性。  \n</Model Response>  \n\n<Reference Answer>  \n根据我国《民法典》的规定，在没有遗嘱的情况下，根据法定继承，此处宅基地上的房屋属于几个兄弟姐妹共有。分家合同能否作为补偿依据，要依分家合同是否合法而定。如果分家合同合法并且有效的话，那么根据我国《民法典》的规定，分家合同的当事人均拥有产权，属于被征收人的范围。因此，各兄弟姐妹均可就房屋征收获得相应的补偿，补偿份额的分配以分家合同规定为准，如果没有规定的话一般采用平均分配的方式。 法律依据：《中华人民共和国民法典》第一千一百二十三条　继承开始后，按照法定继承办理；有遗嘱的，按照遗嘱继承或者遗赠办理；有遗赠扶养协议的，按照协议办理。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 分析分家合同的法律效力\n分家合同是兄弟姐妹之间关于财产分割的书面协议，其法律效力需要满足《合同法》或相关民事法律的规定，例如合同的真实性、自愿性、公平性等。然而，由于分家合同涉及继承权的分配，还需考虑《继承法》的规范。需要进一步检索相关法律条款，以确认分家合同能否作为补偿依据。<search>继承法 分家合同</search>\n\n### 查找继承法相关规定\n<information>《继承法》规定，被继承人死亡后，其遗产按照法律规定或遗嘱继承。同时，继承法允许继承人之间协商分配遗产。如果兄弟姐妹签订的分家合同是在被继承人死亡后，通过协商达成，且程序合法，那么可以作为依据。</information>根据上述信息，确认分家合同的合法性是关键。</content>\n\n### 确认分家合同的合法性及补偿依据的可行性\n如果分家合同的签订符合合同法与继承法的规定，且所有签约人均自愿同意并履行了合法程序，则分家合同具有法律效力。此外，合同内容中明确约定了补偿条款，或其他条款中隐含补偿安排，这应该可以作为补偿依据。因此，需要进一步确定合同内容是否明确规定补偿，并且合同是否能证明真实自愿。\n\n### 分析合同所涉及的具体条款\n如果分家合同明确规定了补偿条款，例如某一兄弟姐妹因特殊原因需获得额外补偿或其他形式的支持，这样的条款可以成立。如果没有明确补偿条款，需考量其他客观证据以证明该合同内隐含补偿意向。\n\n### Conclusion\n分家合同在父母过世后，如果符合合同法与继承法规定，且明确约定了补偿条款或能够证明补偿意向，可以作为补偿依据。关键在于合同的合法性、内容的明确性以及签订过程的真实性。\n\n### Verification\n经过分析，可以确认该分家合同在合法有效的情况下，确实可以作为补偿依据。如果签订合同的过程及内容无法满足法律条件，则需要重新协商或通过其他途径解决补偿问题。结论成立，验证通过。\n</Thought Process>\n\n<Question>\n父母过世后，兄弟姐妹签订的分家合同能否作为补偿的依据？\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n父母过世之后，如果兄弟姐妹之间签了一份分家合同，那么这个合同到底能不能用来作为某些补偿的依据呢？我想应该先从法律的角度分析一下。分家合同本质上是大家对遗产分配的一个协商结果。既然是合同，那首先得看看它是不是符合《合同法》的规定，比如得自愿签订、要真实有效，还要公平合理。除此之外，因为这涉及到遗产分配，还需要看看是不是符合《继承法》的要求。所以我觉得，第一步是要对这些相关法律进行检索，然后再结合合同的具体情况分析。<search>继承法 分家合同</search>\n\n嗯，找到了相关的法律规定。<information>根据《继承法》，当被继承人去世后，遗产可以按照法定继承的规则来分配，也可以按照遗嘱继承。但这里有一点特别重要，就是继承人之间可以协商决定怎么分配遗产。也就是说，只要协商是合法进行的，并且大家都同意，分配的结果是被法律认可的。</information>哦，那如果兄弟姐妹的分家合同是在父母去世之后签的，而且内容是通过平等协商达成的，那这种情况下似乎是完全可以当做依据的。\n\n不过话说回来，光是满足法律框架还不够。这份分家合同具体是不是合法、有效，还得看它有没有符合一些基本的要件，比如合同内容是不是明确，签订的过程有没有问题。如果合同里专门写明了关于某个兄弟姐妹需要接受补偿的条款，那当然很清楚了，可以直接作为补偿依据。但如果合同没直接提到补偿，那就得进一步分析合同里的其他条款，看看能不能从中得出补偿的意图，或者是否有其他证据证明大家确实有这样的共识。\n\n总之，如果分家合同是在被继承人去世后，大家心平气和地协商后定下的，而且合同本身具备合法性，内容清楚，这样的合同应该是有法律效力的。进一步说，如果合同里明确约定了补偿的内容，比如某人因为一些特殊原因需要额外得到一点支持，那这些补偿条款可以直接作为依据。如果没有明示补偿，可能需要靠其他相关的证据来补充。\n\n换句话说，只要合同满足合法性要求、不存在强迫、欺诈等问题，并且内容明确可以支持补偿的主张，那完全没问题。反之，如果签订过程存疑，或者没有明确的补偿内容，那就可能需要通过新的协商来解决。\n\n嗯，归纳一下吧：这类分家合同在满足法律规定的情况下，是可以用作补偿依据的。但关键问题在于合同本身是否合法，内容有多明确，以及有没有在签订过程中犯规。所以按照这些条件，这种情况的合法性还是有很强的可能性的。\n</Internal Thinking>\n\n<Question>\n父母过世后，兄弟姐妹签订的分家合同能否作为补偿的依据？\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析分家合同的法律效力\",\n      \"content\": \"分家合同是兄弟姐妹之间关于财产分割的书面协议，其法律效力需要满足《合同法》或相关民事法律的规定，例如合同的真实性、自愿性、公平性等。然而，由于分家合同涉及继承权的分配，还需考虑《继承法》的规范。需要进一步检索相关法律条款，以确认分家合同能否作为补偿依据。<search>继承法 分家合同</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"查找继承法相关规定\",\n      \"content\": \"<information>《继承法》规定，被继承人死亡后，其遗产按照法律规定或遗嘱继承。同时，继承法允许继承人之间协商分配遗产。如果兄弟姐妹签订的分家合同是在被继承人死亡后，通过协商达成，且程序合法，那么可以作为依据。</information>根据上述信息，确认分家合同的合法性是关键。</content>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"确认分家合同的合法性及补偿依据的可行性\",\n      \"content\": \"如果分家合同的签订符合合同法与继承法的规定，且所有签约人均自愿同意并履行了合法程序，则分家合同具有法律效力。此外，合同内容中明确约定了补偿条款，或其他条款中隐含补偿安排，这应该可以作为补偿依据。因此，需要进一步确定合同内容是否明确规定补偿，并且合同是否能证明真实自愿。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析合同所涉及的具体条款\",\n      \"content\": \"如果分家合同明确规定了补偿条款，例如某一兄弟姐妹因特殊原因需获得额外补偿或其他形式的支持，这样的条款可以成立。如果没有明确补偿条款，需考量其他客观证据以证明该合同内隐含补偿意向。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"分家合同在父母过世后，如果符合合同法与继承法规定，且明确约定了补偿条款或能够证明补偿意向，可以作为补偿依据。关键在于合同的合法性、内容的明确性以及签订过程的真实性。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"经过分析，可以确认该分家合同在合法有效的情况下，确实可以作为补偿依据。如果签订合同的过程及内容无法满足法律条件，则需要重新协商或通过其他途径解决补偿问题。结论成立，验证通过。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"父母过世之后，如果兄弟姐妹之间签了一份分家合同，那么这个合同到底能不能用来作为某些补偿的依据呢？我想应该先从法律的角度分析一下。分家合同本质上是大家对遗产分配的一个协商结果。既然是合同，那首先得看看它是不是符合《合同法》的规定，比如得自愿签订、要真实有效，还要公平合理。除此之外，因为这涉及到遗产分配，还需要看看是不是符合《继承法》的要求。所以我觉得，第一步是要对这些相关法律进行检索，然后再结合合同的具体情况分析。<search>继承法 分家合同</search>\\n\\n嗯，找到了相关的法律规定。<information>根据《继承法》，当被继承人去世后，遗产可以按照法定继承的规则来分配，也可以按照遗嘱继承。但这里有一点特别重要，就是继承人之间可以协商决定怎么分配遗产。也就是说，只要协商是合法进行的，并且大家都同意，分配的结果是被法律认可的。</information>哦，那如果兄弟姐妹的分家合同是在父母去世之后签的，而且内容是通过平等协商达成的，那这种情况下似乎是完全可以当做依据的。\\n\\n不过话说回来，光是满足法律框架还不够。这份分家合同具体是不是合法、有效，还得看它有没有符合一些基本的要件，比如合同内容是不是明确，签订的过程有没有问题。如果合同里专门写明了关于某个兄弟姐妹需要接受补偿的条款，那当然很清楚了，可以直接作为补偿依据。但如果合同没直接提到补偿，那就得进一步分析合同里的其他条款，看看能不能从中得出补偿的意图，或者是否有其他证据证明大家确实有这样的共识。\\n\\n总之，如果分家合同是在被继承人去世后，大家心平气和地协商后定下的，而且合同本身具备合法性，内容清楚，这样的合同应该是有法律效力的。进一步说，如果合同里明确约定了补偿的内容，比如某人因为一些特殊原因需要额外得到一点支持，那这些补偿条款可以直接作为依据。如果没有明示补偿，可能需要靠其他相关的证据来补充。\\n\\n换句话说，只要合同满足合法性要求、不存在强迫、欺诈等问题，并且内容明确可以支持补偿的主张，那完全没问题。反之，如果签订过程存疑，或者没有明确的补偿内容，那就可能需要通过新的协商来解决。\\n\\n嗯，归纳一下吧：这类分家合同在满足法律规定的情况下，是可以用作补偿依据的。但关键问题在于合同本身是否合法，内容有多明确，以及有没有在签订过程中犯规。所以按照这些条件，这种情况的合法性还是有很强的可能性的。\"\n}\n```",
+    "可以，父母过世后兄弟姐妹签订的分家合同可以作为补偿的依据，但须满足一定的法律条件。\n\n根据《继承法》的规定，被继承人去世后，继承人之间可以通过协商来决定遗产分配方式，这种协商结果在法律上是受到保护的。与此同时，分家合同属于一种民事合同，其效力需要符合《合同法》的基本要求，如签订时需自愿、真实有效，内容明确且符合公平原则。因此，对于兄弟姐妹签订的分家合同，若是在父母去世后通过平等协商达成，且合同内容没有违反法律规定或公共利益，那么法律上一般会承认其效力。\n\n合同中明确约定了补偿条款的情况下，这份分家合同可以直接作为补偿依据。例如，合同明确提到某位兄弟姐妹因特殊情况需得到额外补偿，只要符合上述法律要求，该条款就具有约束力，应当按照约定履行。\n\n若合同内容并未直接提及补偿，但通过其他条款能够合理推导出补偿的意图，则可能需要结合其他证据来证明补偿的合理性和存在性。例如可以参考签订时的谈判记录、当事人的口头协商等。但如果合同内容模糊或缺乏补偿条款，则补偿的主张可能需要通过进一步协商或者诉讼等形式解决。\n\n总而言之，只要分家合同是合法签订的，内容明确，并且能够体现出补偿的约定或意图，这类合同可以作为补偿的依据。反之，如果合同的签订过程或内容存在瑕疵，则其效力可能受到质疑，补偿问题需要另行解决。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "分析分家合同的法律效力",
+        "content": "分家合同是兄弟姐妹之间关于财产分割的书面协议，其法律效力需要满足《合同法》或相关民事法律的规定，例如合同的真实性、自愿性、公平性等。然而，由于分家合同涉及继承权的分配，还需考虑《继承法》的规范。需要进一步检索相关法律条款，以确认分家合同能否作为补偿依据。<search>继承法 分家合同</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "查找继承法相关规定",
+        "content": "<information>《继承法》规定，被继承人死亡后，其遗产按照法律规定或遗嘱继承。同时，继承法允许继承人之间协商分配遗产。如果兄弟姐妹签订的分家合同是在被继承人死亡后，通过协商达成，且程序合法，那么可以作为依据。</information>根据上述信息，确认分家合同的合法性是关键。</content>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "确认分家合同的合法性及补偿依据的可行性",
+        "content": "如果分家合同的签订符合合同法与继承法的规定，且所有签约人均自愿同意并履行了合法程序，则分家合同具有法律效力。此外，合同内容中明确约定了补偿条款，或其他条款中隐含补偿安排，这应该可以作为补偿依据。因此，需要进一步确定合同内容是否明确规定补偿，并且合同是否能证明真实自愿。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "分析合同所涉及的具体条款",
+        "content": "如果分家合同明确规定了补偿条款，例如某一兄弟姐妹因特殊原因需获得额外补偿或其他形式的支持，这样的条款可以成立。如果没有明确补偿条款，需考量其他客观证据以证明该合同内隐含补偿意向。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "分家合同在父母过世后，如果符合合同法与继承法规定，且明确约定了补偿条款或能够证明补偿意向，可以作为补偿依据。关键在于合同的合法性、内容的明确性以及签订过程的真实性。"
+      },
+      {
+        "action": "Verification",
+        "content": "经过分析，可以确认该分家合同在合法有效的情况下，确实可以作为补偿依据。如果签订合同的过程及内容无法满足法律条件，则需要重新协商或通过其他途径解决补偿问题。结论成立，验证通过。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "父母过世之后，如果兄弟姐妹之间签了一份分家合同，那么这个合同到底能不能用来作为某些补偿的依据呢？我想应该先从法律的角度分析一下。分家合同本质上是大家对遗产分配的一个协商结果。既然是合同，那首先得看看它是不是符合《合同法》的规定，比如得自愿签订、要真实有效，还要公平合理。除此之外，因为这涉及到遗产分配，还需要看看是不是符合《继承法》的要求。所以我觉得，第一步是要对这些相关法律进行检索，然后再结合合同的具体情况分析。<search>继承法 分家合同</search>\n\n嗯，找到了相关的法律规定。<information>根据《继承法》，当被继承人去世后，遗产可以按照法定继承的规则来分配，也可以按照遗嘱继承。但这里有一点特别重要，就是继承人之间可以协商决定怎么分配遗产。也就是说，只要协商是合法进行的，并且大家都同意，分配的结果是被法律认可的。</information>哦，那如果兄弟姐妹的分家合同是在父母去世之后签的，而且内容是通过平等协商达成的，那这种情况下似乎是完全可以当做依据的。\n\n不过话说回来，光是满足法律框架还不够。这份分家合同具体是不是合法、有效，还得看它有没有符合一些基本的要件，比如合同内容是不是明确，签订的过程有没有问题。如果合同里专门写明了关于某个兄弟姐妹需要接受补偿的条款，那当然很清楚了，可以直接作为补偿依据。但如果合同没直接提到补偿，那就得进一步分析合同里的其他条款，看看能不能从中得出补偿的意图，或者是否有其他证据证明大家确实有这样的共识。\n\n总之，如果分家合同是在被继承人去世后，大家心平气和地协商后定下的，而且合同本身具备合法性，内容清楚，这样的合同应该是有法律效力的。进一步说，如果合同里明确约定了补偿的内容，比如某人因为一些特殊原因需要额外得到一点支持，那这些补偿条款可以直接作为依据。如果没有明示补偿，可能需要靠其他相关的证据来补充。\n\n换句话说，只要合同满足合法性要求、不存在强迫、欺诈等问题，并且内容明确可以支持补偿的主张，那完全没问题。反之，如果签订过程存疑，或者没有明确的补偿内容，那就可能需要通过新的协商来解决。\n\n嗯，归纳一下吧：这类分家合同在满足法律规定的情况下，是可以用作补偿依据的。但关键问题在于合同本身是否合法，内容有多明确，以及有没有在签订过程中犯规。所以按照这些条件，这种情况的合法性还是有很强的可能性的。",
+  "Response": "可以，父母过世后兄弟姐妹签订的分家合同可以作为补偿的依据，但须满足一定的法律条件。\n\n根据《继承法》的规定，被继承人去世后，继承人之间可以通过协商来决定遗产分配方式，这种协商结果在法律上是受到保护的。与此同时，分家合同属于一种民事合同，其效力需要符合《合同法》的基本要求，如签订时需自愿、真实有效，内容明确且符合公平原则。因此，对于兄弟姐妹签订的分家合同，若是在父母去世后通过平等协商达成，且合同内容没有违反法律规定或公共利益，那么法律上一般会承认其效力。\n\n合同中明确约定了补偿条款的情况下，这份分家合同可以直接作为补偿依据。例如，合同明确提到某位兄弟姐妹因特殊情况需得到额外补偿，只要符合上述法律要求，该条款就具有约束力，应当按照约定履行。\n\n若合同内容并未直接提及补偿，但通过其他条款能够合理推导出补偿的意图，则可能需要结合其他证据来证明补偿的合理性和存在性。例如可以参考签订时的谈判记录、当事人的口头协商等。但如果合同内容模糊或缺乏补偿条款，则补偿的主张可能需要通过进一步协商或者诉讼等形式解决。\n\n总而言之，只要分家合同是合法签订的，内容明确，并且能够体现出补偿的约定或意图，这类合同可以作为补偿的依据。反之，如果合同的签订过程或内容存在瑕疵，则其效力可能受到质疑，补偿问题需要另行解决。",
+  "Question": "父母过世后，兄弟姐妹签订的分家合同能否作为补偿的依据？"
+}

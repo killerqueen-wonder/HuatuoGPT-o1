@@ -1,0 +1,99 @@
+{
+  "Open-ended Verifiable Question": "债务人把资产转移给孩子，债权人如何维权，法律规定如何？",
+  "Ground-True Answer": "被申请执行人未按执行通知履行义务，人民法院有权查封、扣押、拍卖、变卖被申请执行人应当履行义务部分的财产。查封是一种临时性措施，是指人民法院对被申请执行人的有关财产贴上封条，就地封存，不准任何人转移和处理的执行措施。拍卖是人民法院以公开的形式、竞争的方式，按最高的价格当场成交，出售被申请执行人的财产。变卖是指强制出卖被申请执行人的财产，以所得价款清偿债务的措施。人民法院在执行中需要变卖被申请执行人财产的，可以交由有关单位变卖，也可以由人民法院直接变卖。由人民法院直接变卖的，变卖前，应就价格问题征求物价等有关部门的意见，变卖的价格应当合理。人民法院扣留、提取的存款和收入，拍卖、变卖被申请执行人财产所得的金钱，应及时交付申请执行人，并结束执行程序。根据《民法典》第五百三十八条，债务人以放弃其债权、放弃债权担保、无偿转让财产等方式无偿处分财产权益，或者恶意延长其到期债权的履行期限，影响债权人的债权实现的，债权人可以请求人民法院撤销债务人的行为。",
+  "process_id": 4889,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "识别法律问题",
+      "content": "债务人在债务未清偿的情况下，将资产转移给子女可能会影响债权人的追偿权。根据法律规定，这可能属于恶意转移财产行为，债权人有权对该行为提出挑战，通过撤销权等方式维权。需要确认相关法律条文是否支持债权人的主张。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "查询相关法律依据",
+      "content": "<search>《中华人民共和国民法典》第五百三十四条 撤销权</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "审查法律条文内容",
+      "content": "<information>《中华人民共和国民法典》第五百三十四条规定：因债务人放弃到期债权或者无偿处分财产，对债权人造成损害的，债权人可以请求人民法院予以撤销。债务人以明显不合理的低价转让财产，对债权人造成损害的，债权人也可以请求人民法院予以撤销。上述请求权的行使，由人民法院依照法定程序作出裁定。</information>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "根据法律条文分析案件",
+      "content": "《民法典》第五百三十四条明确规定，债务人在无偿或以明显不合理低价处分财产对债权人造成损害时，可被撤销。这与债务人将资产转移给孩子的情形相符，若这导致债权人的权益受损，则债权人可通过法律手段要求法院撤销该转移行为。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "确认债权人维权途径",
+      "content": "债权人可以通过以下途径维权：(1) 向法院申请行使撤销权；(2) 提供证据证明该转移行为属于恶意且损害其合法权益；(3) 请求法院判决撤销转移财产的行为，并恢复资产的可供清偿性。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "依据《中华人民共和国民法典》第五百三十四条的规定，债权人可以对债务人将资产转移给子女的行为提出撤销权申请，以维护自己的合法权益。具体而言，债权人需证明该转移行为属于无偿处分或明显不合理低价转让，并导致其合法权益受损。法院在审查相关证据后，可判定撤销该行为，从而使有关资产回归用于履行债务。"
+    },
+    {
+      "action": "Verification",
+      "content": "上述结论符合民法典相关法律规定和逻辑推理，债权人确有法律依据维权。因此，该结论正确，无需进一步修正。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n债务人把资产转移给孩子，债权人如何维权，法律规定如何？\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n依据《中华人民共和国民法典》第五百三十四条的规定，债权人可以对债务人将资产转移给子女的行为提出撤销权申请，以维护自己的合法权益。具体而言，债权人需证明该转移行为属于无偿处分或明显不合理低价转让，并导致其合法权益受损。法院在审查相关证据后，可判定撤销该行为，从而使有关资产回归用于履行债务。  \n</Model Response>  \n\n<Reference Answer>  \n被申请执行人未按执行通知履行义务，人民法院有权查封、扣押、拍卖、变卖被申请执行人应当履行义务部分的财产。查封是一种临时性措施，是指人民法院对被申请执行人的有关财产贴上封条，就地封存，不准任何人转移和处理的执行措施。拍卖是人民法院以公开的形式、竞争的方式，按最高的价格当场成交，出售被申请执行人的财产。变卖是指强制出卖被申请执行人的财产，以所得价款清偿债务的措施。人民法院在执行中需要变卖被申请执行人财产的，可以交由有关单位变卖，也可以由人民法院直接变卖。由人民法院直接变卖的，变卖前，应就价格问题征求物价等有关部门的意见，变卖的价格应当合理。人民法院扣留、提取的存款和收入，拍卖、变卖被申请执行人财产所得的金钱，应及时交付申请执行人，并结束执行程序。根据《民法典》第五百三十八条，债务人以放弃其债权、放弃债权担保、无偿转让财产等方式无偿处分财产权益，或者恶意延长其到期债权的履行期限，影响债权人的债权实现的，债权人可以请求人民法院撤销债务人的行为。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 识别法律问题\n债务人在债务未清偿的情况下，将资产转移给子女可能会影响债权人的追偿权。根据法律规定，这可能属于恶意转移财产行为，债权人有权对该行为提出挑战，通过撤销权等方式维权。需要确认相关法律条文是否支持债权人的主张。\n\n### 查询相关法律依据\n<search>《中华人民共和国民法典》第五百三十四条 撤销权</search>\n\n### 审查法律条文内容\n<information>《中华人民共和国民法典》第五百三十四条规定：因债务人放弃到期债权或者无偿处分财产，对债权人造成损害的，债权人可以请求人民法院予以撤销。债务人以明显不合理的低价转让财产，对债权人造成损害的，债权人也可以请求人民法院予以撤销。上述请求权的行使，由人民法院依照法定程序作出裁定。</information>\n\n### 根据法律条文分析案件\n《民法典》第五百三十四条明确规定，债务人在无偿或以明显不合理低价处分财产对债权人造成损害时，可被撤销。这与债务人将资产转移给孩子的情形相符，若这导致债权人的权益受损，则债权人可通过法律手段要求法院撤销该转移行为。\n\n### 确认债权人维权途径\n债权人可以通过以下途径维权：(1) 向法院申请行使撤销权；(2) 提供证据证明该转移行为属于恶意且损害其合法权益；(3) 请求法院判决撤销转移财产的行为，并恢复资产的可供清偿性。\n\n### Conclusion\n依据《中华人民共和国民法典》第五百三十四条的规定，债权人可以对债务人将资产转移给子女的行为提出撤销权申请，以维护自己的合法权益。具体而言，债权人需证明该转移行为属于无偿处分或明显不合理低价转让，并导致其合法权益受损。法院在审查相关证据后，可判定撤销该行为，从而使有关资产回归用于履行债务。\n\n### Verification\n上述结论符合民法典相关法律规定和逻辑推理，债权人确有法律依据维权。因此，该结论正确，无需进一步修正。\n</Thought Process>\n\n<Question>\n债务人把资产转移给孩子，债权人如何维权，法律规定如何？\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n债务人在欠钱没还清的情况下，把财产转移到孩子名下，这对债权人会不会有什么影响呢？这种情况看起来有点像故意把资产藏起来，不想用来还债。如果是这样的话，债权人是不是可以通过法律来维权呢？嗯，让我来查一下相关法律规定吧。<search>《中华人民共和国民法典》第五百三十四条 撤销权</search>\n\n找到了，这一条讲的内容可能跟这个问题很相关。<information>《中华人民共和国民法典》第五百三十四条规定：因债务人放弃到期债权或者无偿处分财产，对债权人造成损害的，债权人可以请求人民法院予以撤销。债务人以明显不合理的低价转让财产，对债权人造成损害的，债权人也可以请求人民法院予以撤销。上述请求权的行使，由人民法院依照法定程序作出裁定。</information>\n\n看完这一条法律，我觉得可以根据这里的内容来判断债权人是否有权利要求撤销这个转移财产的行为。法律明确指出，债务人如果无偿处分财产或者以明显不合理的低价转让财产，而导致债权人利益受损，债权人就可以向法院提出撤销申请。这不正好跟债务人转移财产给孩子的情况很像吗？如果这笔转移行为的确是无偿的，或者以一个特别低的价格转让给孩子，并且导致债权人无法收回债务，那债权人确实可以采取行动。\n\n所以，接下来要做的就是明确债权人的维权方式了。债权人应该：(1) 准备好证据，证明债务人转移财产的行为是无偿的，或者价格低得不合理；(2) 还要证明这个转移行为直接让自己的权益受到损害，比如债务人转移了财产以后，自己就再也没办法通过这些资产来实现债务清偿；(3) 然后向法院申请撤销权。\n\n一旦法院接受撤销权申请，就会审理这个案件。如果债权人提供的证据足够有力，法院就可能判决撤销债务人的财产转移行为，让这些资产重新作为清偿债务的财产，保护债权人的权益。\n\n总结来看，依据《民法典》第五百三十四条，债权人完全可以利用撤销权来维权。但前提是需要证明债务人转移财产的行为属于无偿或明显不合理的低价转让，同时也造成了自己的合法权益受损。嗯，这样分析应该没问题吧，看起来法律逻辑蛮清晰的，也跟问题很契合。\n</Internal Thinking>\n\n<Question>\n债务人把资产转移给孩子，债权人如何维权，法律规定如何？\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"识别法律问题\",\n      \"content\": \"债务人在债务未清偿的情况下，将资产转移给子女可能会影响债权人的追偿权。根据法律规定，这可能属于恶意转移财产行为，债权人有权对该行为提出挑战，通过撤销权等方式维权。需要确认相关法律条文是否支持债权人的主张。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"查询相关法律依据\",\n      \"content\": \"<search>《中华人民共和国民法典》第五百三十四条 撤销权</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"审查法律条文内容\",\n      \"content\": \"<information>《中华人民共和国民法典》第五百三十四条规定：因债务人放弃到期债权或者无偿处分财产，对债权人造成损害的，债权人可以请求人民法院予以撤销。债务人以明显不合理的低价转让财产，对债权人造成损害的，债权人也可以请求人民法院予以撤销。上述请求权的行使，由人民法院依照法定程序作出裁定。</information>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"根据法律条文分析案件\",\n      \"content\": \"《民法典》第五百三十四条明确规定，债务人在无偿或以明显不合理低价处分财产对债权人造成损害时，可被撤销。这与债务人将资产转移给孩子的情形相符，若这导致债权人的权益受损，则债权人可通过法律手段要求法院撤销该转移行为。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"确认债权人维权途径\",\n      \"content\": \"债权人可以通过以下途径维权：(1) 向法院申请行使撤销权；(2) 提供证据证明该转移行为属于恶意且损害其合法权益；(3) 请求法院判决撤销转移财产的行为，并恢复资产的可供清偿性。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"依据《中华人民共和国民法典》第五百三十四条的规定，债权人可以对债务人将资产转移给子女的行为提出撤销权申请，以维护自己的合法权益。具体而言，债权人需证明该转移行为属于无偿处分或明显不合理低价转让，并导致其合法权益受损。法院在审查相关证据后，可判定撤销该行为，从而使有关资产回归用于履行债务。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"上述结论符合民法典相关法律规定和逻辑推理，债权人确有法律依据维权。因此，该结论正确，无需进一步修正。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"债务人在欠钱没还清的情况下，把财产转移到孩子名下，这对债权人会不会有什么影响呢？这种情况看起来有点像故意把资产藏起来，不想用来还债。如果是这样的话，债权人是不是可以通过法律来维权呢？嗯，让我来查一下相关法律规定吧。<search>《中华人民共和国民法典》第五百三十四条 撤销权</search>\\n\\n找到了，这一条讲的内容可能跟这个问题很相关。<information>《中华人民共和国民法典》第五百三十四条规定：因债务人放弃到期债权或者无偿处分财产，对债权人造成损害的，债权人可以请求人民法院予以撤销。债务人以明显不合理的低价转让财产，对债权人造成损害的，债权人也可以请求人民法院予以撤销。上述请求权的行使，由人民法院依照法定程序作出裁定。</information>\\n\\n看完这一条法律，我觉得可以根据这里的内容来判断债权人是否有权利要求撤销这个转移财产的行为。法律明确指出，债务人如果无偿处分财产或者以明显不合理的低价转让财产，而导致债权人利益受损，债权人就可以向法院提出撤销申请。这不正好跟债务人转移财产给孩子的情况很像吗？如果这笔转移行为的确是无偿的，或者以一个特别低的价格转让给孩子，并且导致债权人无法收回债务，那债权人确实可以采取行动。\\n\\n所以，接下来要做的就是明确债权人的维权方式了。债权人应该：(1) 准备好证据，证明债务人转移财产的行为是无偿的，或者价格低得不合理；(2) 还要证明这个转移行为直接让自己的权益受到损害，比如债务人转移了财产以后，自己就再也没办法通过这些资产来实现债务清偿；(3) 然后向法院申请撤销权。\\n\\n一旦法院接受撤销权申请，就会审理这个案件。如果债权人提供的证据足够有力，法院就可能判决撤销债务人的财产转移行为，让这些资产重新作为清偿债务的财产，保护债权人的权益。\\n\\n总结来看，依据《民法典》第五百三十四条，债权人完全可以利用撤销权来维权。但前提是需要证明债务人转移财产的行为属于无偿或明显不合理的低价转让，同时也造成了自己的合法权益受损。嗯，这样分析应该没问题吧，看起来法律逻辑蛮清晰的，也跟问题很契合。\"\n}\n```",
+    "根据《中华人民共和国民法典》第五百三十四条的规定，当债务人将财产无偿转移或以明显不合理的低价处分财产，给债权人造成损害时，债权人可以依法申请撤销该财产处分行为，从而维护自己的合法权益。\n\n对于债务人把资产转移到孩子名下的情况，如果该转移属于无偿行为（如赠与），或者该转移本身以明显低于市场价值的价格进行，且确实导致债权人无法顺利实现债权，则属于法律上可以撤销的行为。债权人可以依据法律维护自己的合法权益。\n\n债权人需要采取以下步骤进行维权：\n\n1. **准备证据**： \n   债权人需提供证据证明以下几个关键点：\n   - 债务人确实存在转移财产的行为（如赠与孩子或以极低价格出售）。\n   - 该行为属于无偿转移或低价转移，不具备合理的交易性质。\n   - 此行为直接导致债权人的债权无法全额实现，从而对债权人造成了具体的损害。\n\n2. **向法院申请撤销**： \n   债权人可以依据《民法典》第五百三十四条，向人民法院提出撤销该转移行为的诉讼，行使撤销权。法院会根据债权人提交的材料，审查是否符合撤销的条件。\n\n3. **等待法院裁定**：\n   如果债权人的申请和证据充分，法院可能会裁定撤销债务人对孩子的财产转移行为，使该转移的财产恢复到债务人的名下，重新成为清偿债务的资产范围。\n\n需要注意，撤销权的行使受到严格的期限限制。根据《民法典》规定，撤销权应当自债权人知道或者应当知道撤销事由之日起一年内行使，且不得超过该行为发生之日起五年。\n\n综上，如果债务人通过无偿或明显不合理的方式将资产转移给孩子，债权人完全可以依据法律通过行使撤销权的方式维权。但具体的案件情况复杂，建议债权人在必要时咨询专业律师，以确保合法权益得到最大程度的保护。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "识别法律问题",
+        "content": "债务人在债务未清偿的情况下，将资产转移给子女可能会影响债权人的追偿权。根据法律规定，这可能属于恶意转移财产行为，债权人有权对该行为提出挑战，通过撤销权等方式维权。需要确认相关法律条文是否支持债权人的主张。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "查询相关法律依据",
+        "content": "<search>《中华人民共和国民法典》第五百三十四条 撤销权</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "审查法律条文内容",
+        "content": "<information>《中华人民共和国民法典》第五百三十四条规定：因债务人放弃到期债权或者无偿处分财产，对债权人造成损害的，债权人可以请求人民法院予以撤销。债务人以明显不合理的低价转让财产，对债权人造成损害的，债权人也可以请求人民法院予以撤销。上述请求权的行使，由人民法院依照法定程序作出裁定。</information>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "根据法律条文分析案件",
+        "content": "《民法典》第五百三十四条明确规定，债务人在无偿或以明显不合理低价处分财产对债权人造成损害时，可被撤销。这与债务人将资产转移给孩子的情形相符，若这导致债权人的权益受损，则债权人可通过法律手段要求法院撤销该转移行为。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "确认债权人维权途径",
+        "content": "债权人可以通过以下途径维权：(1) 向法院申请行使撤销权；(2) 提供证据证明该转移行为属于恶意且损害其合法权益；(3) 请求法院判决撤销转移财产的行为，并恢复资产的可供清偿性。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "依据《中华人民共和国民法典》第五百三十四条的规定，债权人可以对债务人将资产转移给子女的行为提出撤销权申请，以维护自己的合法权益。具体而言，债权人需证明该转移行为属于无偿处分或明显不合理低价转让，并导致其合法权益受损。法院在审查相关证据后，可判定撤销该行为，从而使有关资产回归用于履行债务。"
+      },
+      {
+        "action": "Verification",
+        "content": "上述结论符合民法典相关法律规定和逻辑推理，债权人确有法律依据维权。因此，该结论正确，无需进一步修正。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "债务人在欠钱没还清的情况下，把财产转移到孩子名下，这对债权人会不会有什么影响呢？这种情况看起来有点像故意把资产藏起来，不想用来还债。如果是这样的话，债权人是不是可以通过法律来维权呢？嗯，让我来查一下相关法律规定吧。<search>《中华人民共和国民法典》第五百三十四条 撤销权</search>\n\n找到了，这一条讲的内容可能跟这个问题很相关。<information>《中华人民共和国民法典》第五百三十四条规定：因债务人放弃到期债权或者无偿处分财产，对债权人造成损害的，债权人可以请求人民法院予以撤销。债务人以明显不合理的低价转让财产，对债权人造成损害的，债权人也可以请求人民法院予以撤销。上述请求权的行使，由人民法院依照法定程序作出裁定。</information>\n\n看完这一条法律，我觉得可以根据这里的内容来判断债权人是否有权利要求撤销这个转移财产的行为。法律明确指出，债务人如果无偿处分财产或者以明显不合理的低价转让财产，而导致债权人利益受损，债权人就可以向法院提出撤销申请。这不正好跟债务人转移财产给孩子的情况很像吗？如果这笔转移行为的确是无偿的，或者以一个特别低的价格转让给孩子，并且导致债权人无法收回债务，那债权人确实可以采取行动。\n\n所以，接下来要做的就是明确债权人的维权方式了。债权人应该：(1) 准备好证据，证明债务人转移财产的行为是无偿的，或者价格低得不合理；(2) 还要证明这个转移行为直接让自己的权益受到损害，比如债务人转移了财产以后，自己就再也没办法通过这些资产来实现债务清偿；(3) 然后向法院申请撤销权。\n\n一旦法院接受撤销权申请，就会审理这个案件。如果债权人提供的证据足够有力，法院就可能判决撤销债务人的财产转移行为，让这些资产重新作为清偿债务的财产，保护债权人的权益。\n\n总结来看，依据《民法典》第五百三十四条，债权人完全可以利用撤销权来维权。但前提是需要证明债务人转移财产的行为属于无偿或明显不合理的低价转让，同时也造成了自己的合法权益受损。嗯，这样分析应该没问题吧，看起来法律逻辑蛮清晰的，也跟问题很契合。",
+  "Response": "根据《中华人民共和国民法典》第五百三十四条的规定，当债务人将财产无偿转移或以明显不合理的低价处分财产，给债权人造成损害时，债权人可以依法申请撤销该财产处分行为，从而维护自己的合法权益。\n\n对于债务人把资产转移到孩子名下的情况，如果该转移属于无偿行为（如赠与），或者该转移本身以明显低于市场价值的价格进行，且确实导致债权人无法顺利实现债权，则属于法律上可以撤销的行为。债权人可以依据法律维护自己的合法权益。\n\n债权人需要采取以下步骤进行维权：\n\n1. **准备证据**： \n   债权人需提供证据证明以下几个关键点：\n   - 债务人确实存在转移财产的行为（如赠与孩子或以极低价格出售）。\n   - 该行为属于无偿转移或低价转移，不具备合理的交易性质。\n   - 此行为直接导致债权人的债权无法全额实现，从而对债权人造成了具体的损害。\n\n2. **向法院申请撤销**： \n   债权人可以依据《民法典》第五百三十四条，向人民法院提出撤销该转移行为的诉讼，行使撤销权。法院会根据债权人提交的材料，审查是否符合撤销的条件。\n\n3. **等待法院裁定**：\n   如果债权人的申请和证据充分，法院可能会裁定撤销债务人对孩子的财产转移行为，使该转移的财产恢复到债务人的名下，重新成为清偿债务的资产范围。\n\n需要注意，撤销权的行使受到严格的期限限制。根据《民法典》规定，撤销权应当自债权人知道或者应当知道撤销事由之日起一年内行使，且不得超过该行为发生之日起五年。\n\n综上，如果债务人通过无偿或明显不合理的方式将资产转移给孩子，债权人完全可以依据法律通过行使撤销权的方式维权。但具体的案件情况复杂，建议债权人在必要时咨询专业律师，以确保合法权益得到最大程度的保护。",
+  "Question": "债务人把资产转移给孩子，债权人如何维权，法律规定如何？"
+}

@@ -1,0 +1,89 @@
+{
+  "Open-ended Verifiable Question": "股权安全控制线百分之三十三点四的法律意义?",
+  "Ground-True Answer": "股东持股量在1/3以上，而且没有其股东的股份与他冲突，叫否决性控股，具有一票否决权。【法律依据】同“绝对控制线”法律依据。1、与绝对控制线相对，三分之二以上表决权通过关于公司生死存亡的事宜，那么如果其中一个股东持有超过三分之一的股权，那么另一方就无法达到三分之二以上表决权，那么那些生死存亡的事宜就无法通过，这样就控制了生命线，因而表述为安全控制权。2、但是，所谓一票否决只是相对于生死存亡的事宜，对其他仅需过半数以上通过的事宜，无法否决。3、同理，33.4%、33.34%等均可作为“安全控制线”。",
+  "process_id": 1625,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "明确问题与关键点",
+      "content": "股权比例的百分之三十三点四通常在中国公司法中具有特殊意义。这可能涉及到公司重大事项决策表决权的比例限制。从法律意义分析，它可能与公司股东大会特别决议所需的表决比例有关。根据《中华人民共和国公司法》，需要特别决议的事项通常要求三分之二以上表决权同意。因此，百分之三十三点四可能在某种程度上决定少数股东对特别决议的否决权。需要进一步查阅相关法律条款以确认其具体含义与法律基础。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "检索公司法中关于特别决议的规定",
+      "content": "<search>公司法 特别决议 三分之二</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "分析查阅结果",
+      "content": "<information>《中华人民共和国公司法》第四十三条规定，股东大会作出修改公司章程、增减注册资本以及公司合并、分立、解散或变更公司形式等重大事项的决议，必须经代表三分之二以上表决权的股东通过。</information>基于此，如果一个股东或相关股东持有超过三分之一（即百分之三十三点四以上）的股权比例，他们就对特别决议事项拥有实际的否决权，从而对公司重大决策形成有效的制衡。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "结合意义与股权实际分布",
+      "content": "通过上述信息可以推理出，持有百分之三十三点四股权的股东在公司的重大决策中拥有否决权，除非他们选择支持决策。此股权比例的法律意义在于它赋予了少数股东保护自身利益或者影响公司重大事项的权利，特别是在涉及公司控制权、防止恶意并购等情境下，这一股权比例极其重要。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "股权安全控制线的百分之三十三点四在法律上的意义在于，根据《中华人民共和国公司法》，持股比例达到三分之一以上的股东能够在公司股东大会表决需要特别决议的重大事项时拥有实际的否决权（因为特别决议需要三分之二以上的表决权）。因此，百分之三十三点四的股权比例是一条关键的安全线，能够有效保护股东的核心利益，避免公司决议对少数股东造成不利影响。"
+    },
+    {
+      "action": "Verification",
+      "content": "通过查阅相关法律条款并结合法律逻辑推导，结论是正确的。股权持有比例的百分之三十三点四确实在一定程度上影响特别决议事项的通过与否，具有重要的法律与实际意义。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n股权安全控制线百分之三十三点四的法律意义?\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n股权安全控制线的百分之三十三点四在法律上的意义在于，根据《中华人民共和国公司法》，持股比例达到三分之一以上的股东能够在公司股东大会表决需要特别决议的重大事项时拥有实际的否决权（因为特别决议需要三分之二以上的表决权）。因此，百分之三十三点四的股权比例是一条关键的安全线，能够有效保护股东的核心利益，避免公司决议对少数股东造成不利影响。  \n</Model Response>  \n\n<Reference Answer>  \n股东持股量在1/3以上，而且没有其股东的股份与他冲突，叫否决性控股，具有一票否决权。【法律依据】同“绝对控制线”法律依据。1、与绝对控制线相对，三分之二以上表决权通过关于公司生死存亡的事宜，那么如果其中一个股东持有超过三分之一的股权，那么另一方就无法达到三分之二以上表决权，那么那些生死存亡的事宜就无法通过，这样就控制了生命线，因而表述为安全控制权。2、但是，所谓一票否决只是相对于生死存亡的事宜，对其他仅需过半数以上通过的事宜，无法否决。3、同理，33.4%、33.34%等均可作为“安全控制线”。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 明确问题与关键点\n股权比例的百分之三十三点四通常在中国公司法中具有特殊意义。这可能涉及到公司重大事项决策表决权的比例限制。从法律意义分析，它可能与公司股东大会特别决议所需的表决比例有关。根据《中华人民共和国公司法》，需要特别决议的事项通常要求三分之二以上表决权同意。因此，百分之三十三点四可能在某种程度上决定少数股东对特别决议的否决权。需要进一步查阅相关法律条款以确认其具体含义与法律基础。\n\n### 检索公司法中关于特别决议的规定\n<search>公司法 特别决议 三分之二</search>\n\n### 分析查阅结果\n<information>《中华人民共和国公司法》第四十三条规定，股东大会作出修改公司章程、增减注册资本以及公司合并、分立、解散或变更公司形式等重大事项的决议，必须经代表三分之二以上表决权的股东通过。</information>基于此，如果一个股东或相关股东持有超过三分之一（即百分之三十三点四以上）的股权比例，他们就对特别决议事项拥有实际的否决权，从而对公司重大决策形成有效的制衡。\n\n### 结合意义与股权实际分布\n通过上述信息可以推理出，持有百分之三十三点四股权的股东在公司的重大决策中拥有否决权，除非他们选择支持决策。此股权比例的法律意义在于它赋予了少数股东保护自身利益或者影响公司重大事项的权利，特别是在涉及公司控制权、防止恶意并购等情境下，这一股权比例极其重要。\n\n### Conclusion\n股权安全控制线的百分之三十三点四在法律上的意义在于，根据《中华人民共和国公司法》，持股比例达到三分之一以上的股东能够在公司股东大会表决需要特别决议的重大事项时拥有实际的否决权（因为特别决议需要三分之二以上的表决权）。因此，百分之三十三点四的股权比例是一条关键的安全线，能够有效保护股东的核心利益，避免公司决议对少数股东造成不利影响。\n\n### Verification\n通过查阅相关法律条款并结合法律逻辑推导，结论是正确的。股权持有比例的百分之三十三点四确实在一定程度上影响特别决议事项的通过与否，具有重要的法律与实际意义。\n</Thought Process>\n\n<Question>\n股权安全控制线百分之三十三点四的法律意义?\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n嗯，我记得股权比例的某些具体数字在公司法里是有特别含义的。比如百分之三十三点四，这个比例应该是跟公司决策权相关的。因为它听起来像是一个分界点，可能会影响重大的股东决策，尤其是那种需要特别决议时的情况。特别决议的话，我记得好像是需要一个比较高的表决比例，可能是三分之二以上同意。这个百分之三十三点四，说不定就是跟三分之一的比例有关，因为三分之一刚好是让剩下的表决权过不了三分之二的关键点。为了确认这个，还是需要具体查一下《公司法》的相关规定。\n\n<search>公司法 特别决议 三分之二</search>\n\n哦，找到了。《中华人民共和国公司法》第四十三条确实有句话特别提到，这种特别决议，比如像修改公司章程、增减注册资本、还有公司合并、解散之类的重要事项，都必须经代表三分之二以上表决权的股东同意。这么想来，股东如果能持有超过三分之一的股权比例，就可以在这种重大决议上起到否决作用。因为特别决议如果要通过，剩下的股东至少得占三分之二，但如果有人持股超过三分之一，其他人就算全票通过也达不到特别决议所需的比例。\n\n这样来看，百分之三十三点四确实是一个非常特殊的股权比例。它保障了某个股东或者一组联合股东在公司里对重大事务有实际的控制力，即便他们不是绝对控股股东。尤其是在防止大股东或外部势力主导不利于自己利益的特别决议时，掌握超过三分之一股权的股东就能有效保护自己。这个也很有意思，因为它无形中给了少数派一个强有力的谈判筹码。\n\n所以，总结一下，百分之三十三点四代表的法律意义主要就是：根据公司法的规定，只要持股超过三分之一，就可以对需要特别决议的重大事件拥有否决权。这也使得这个比例变成了一条重要的股权控制线或者安全线，能够让特定股东拥有一定的话语权，甚至在某些情况下成为平衡公司内部权力结构的关键。嗯，这样的解释应该还是挺合理的。\n</Internal Thinking>\n\n<Question>\n股权安全控制线百分之三十三点四的法律意义?\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"明确问题与关键点\",\n      \"content\": \"股权比例的百分之三十三点四通常在中国公司法中具有特殊意义。这可能涉及到公司重大事项决策表决权的比例限制。从法律意义分析，它可能与公司股东大会特别决议所需的表决比例有关。根据《中华人民共和国公司法》，需要特别决议的事项通常要求三分之二以上表决权同意。因此，百分之三十三点四可能在某种程度上决定少数股东对特别决议的否决权。需要进一步查阅相关法律条款以确认其具体含义与法律基础。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"检索公司法中关于特别决议的规定\",\n      \"content\": \"<search>公司法 特别决议 三分之二</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析查阅结果\",\n      \"content\": \"<information>《中华人民共和国公司法》第四十三条规定，股东大会作出修改公司章程、增减注册资本以及公司合并、分立、解散或变更公司形式等重大事项的决议，必须经代表三分之二以上表决权的股东通过。</information>基于此，如果一个股东或相关股东持有超过三分之一（即百分之三十三点四以上）的股权比例，他们就对特别决议事项拥有实际的否决权，从而对公司重大决策形成有效的制衡。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"结合意义与股权实际分布\",\n      \"content\": \"通过上述信息可以推理出，持有百分之三十三点四股权的股东在公司的重大决策中拥有否决权，除非他们选择支持决策。此股权比例的法律意义在于它赋予了少数股东保护自身利益或者影响公司重大事项的权利，特别是在涉及公司控制权、防止恶意并购等情境下，这一股权比例极其重要。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"股权安全控制线的百分之三十三点四在法律上的意义在于，根据《中华人民共和国公司法》，持股比例达到三分之一以上的股东能够在公司股东大会表决需要特别决议的重大事项时拥有实际的否决权（因为特别决议需要三分之二以上的表决权）。因此，百分之三十三点四的股权比例是一条关键的安全线，能够有效保护股东的核心利益，避免公司决议对少数股东造成不利影响。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"通过查阅相关法律条款并结合法律逻辑推导，结论是正确的。股权持有比例的百分之三十三点四确实在一定程度上影响特别决议事项的通过与否，具有重要的法律与实际意义。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"嗯，我记得股权比例的某些具体数字在公司法里是有特别含义的。比如百分之三十三点四，这个比例应该是跟公司决策权相关的。因为它听起来像是一个分界点，可能会影响重大的股东决策，尤其是那种需要特别决议时的情况。特别决议的话，我记得好像是需要一个比较高的表决比例，可能是三分之二以上同意。这个百分之三十三点四，说不定就是跟三分之一的比例有关，因为三分之一刚好是让剩下的表决权过不了三分之二的关键点。为了确认这个，还是需要具体查一下《公司法》的相关规定。\\n\\n<search>公司法 特别决议 三分之二</search>\\n\\n哦，找到了。《中华人民共和国公司法》第四十三条确实有句话特别提到，这种特别决议，比如像修改公司章程、增减注册资本、还有公司合并、解散之类的重要事项，都必须经代表三分之二以上表决权的股东同意。这么想来，股东如果能持有超过三分之一的股权比例，就可以在这种重大决议上起到否决作用。因为特别决议如果要通过，剩下的股东至少得占三分之二，但如果有人持股超过三分之一，其他人就算全票通过也达不到特别决议所需的比例。\\n\\n这样来看，百分之三十三点四确实是一个非常特殊的股权比例。它保障了某个股东或者一组联合股东在公司里对重大事务有实际的控制力，即便他们不是绝对控股股东。尤其是在防止大股东或外部势力主导不利于自己利益的特别决议时，掌握超过三分之一股权的股东就能有效保护自己。这个也很有意思，因为它无形中给了少数派一个强有力的谈判筹码。\\n\\n所以，总结一下，百分之三十三点四代表的法律意义主要就是：根据公司法的规定，只要持股超过三分之一，就可以对需要特别决议的重大事件拥有否决权。这也使得这个比例变成了一条重要的股权控制线或者安全线，能够让特定股东拥有一定的话语权，甚至在某些情况下成为平衡公司内部权力结构的关键。嗯，这样的解释应该还是挺合理的。\"\n}\n```",
+    "在《中华人民共和国公司法》中，股权比例33.34%（即超过三分之一）的法律意义主要体现在对特别决议事项的否决权上。\n\n根据公司法第43条的规定，在股东会决策中，有些重大事项需要通过“特别决议”，即必须由占总表决权三分之二以上的股东同意才能通过。这些事项通常包括但不限于：修改公司章程、增加或减少注册资本、合并、分立、解散公司等。\n\n如果某一股东或一组联合股东拥有超过三分之一的表决权，就意味着他们对这些重大事项拥有实际的否决权。因为在这种情况下，除非该股东或股东组合同意，否则表决权的总支持比例无法达到三分之二的门槛，导致特别决议无法通过。\n\n因此，超过33.34%的股权比例（即三分之一以上）被称作“股权安全控制线”。它的法律意义在于：  \n1. **重大决策的否决权**：赋予持股方在公司重大决策中的关键话语权，确保其利益不受其他股东的单方面决定所影响。  \n2. **权力制衡**：即便不是绝对控股股东（持股超过50%），持有超过三分之一的股东依然能通过否决特别决议来对抗可能不利于自身利益的决策，从而在内部权力结构中取得明显的平衡作用。  \n\n这一比例在股东权力博弈中非常重要，被广泛视为公司治理结构中的关键控制节点。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "明确问题与关键点",
+        "content": "股权比例的百分之三十三点四通常在中国公司法中具有特殊意义。这可能涉及到公司重大事项决策表决权的比例限制。从法律意义分析，它可能与公司股东大会特别决议所需的表决比例有关。根据《中华人民共和国公司法》，需要特别决议的事项通常要求三分之二以上表决权同意。因此，百分之三十三点四可能在某种程度上决定少数股东对特别决议的否决权。需要进一步查阅相关法律条款以确认其具体含义与法律基础。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "检索公司法中关于特别决议的规定",
+        "content": "<search>公司法 特别决议 三分之二</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "分析查阅结果",
+        "content": "<information>《中华人民共和国公司法》第四十三条规定，股东大会作出修改公司章程、增减注册资本以及公司合并、分立、解散或变更公司形式等重大事项的决议，必须经代表三分之二以上表决权的股东通过。</information>基于此，如果一个股东或相关股东持有超过三分之一（即百分之三十三点四以上）的股权比例，他们就对特别决议事项拥有实际的否决权，从而对公司重大决策形成有效的制衡。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "结合意义与股权实际分布",
+        "content": "通过上述信息可以推理出，持有百分之三十三点四股权的股东在公司的重大决策中拥有否决权，除非他们选择支持决策。此股权比例的法律意义在于它赋予了少数股东保护自身利益或者影响公司重大事项的权利，特别是在涉及公司控制权、防止恶意并购等情境下，这一股权比例极其重要。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "股权安全控制线的百分之三十三点四在法律上的意义在于，根据《中华人民共和国公司法》，持股比例达到三分之一以上的股东能够在公司股东大会表决需要特别决议的重大事项时拥有实际的否决权（因为特别决议需要三分之二以上的表决权）。因此，百分之三十三点四的股权比例是一条关键的安全线，能够有效保护股东的核心利益，避免公司决议对少数股东造成不利影响。"
+      },
+      {
+        "action": "Verification",
+        "content": "通过查阅相关法律条款并结合法律逻辑推导，结论是正确的。股权持有比例的百分之三十三点四确实在一定程度上影响特别决议事项的通过与否，具有重要的法律与实际意义。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "嗯，我记得股权比例的某些具体数字在公司法里是有特别含义的。比如百分之三十三点四，这个比例应该是跟公司决策权相关的。因为它听起来像是一个分界点，可能会影响重大的股东决策，尤其是那种需要特别决议时的情况。特别决议的话，我记得好像是需要一个比较高的表决比例，可能是三分之二以上同意。这个百分之三十三点四，说不定就是跟三分之一的比例有关，因为三分之一刚好是让剩下的表决权过不了三分之二的关键点。为了确认这个，还是需要具体查一下《公司法》的相关规定。\n\n<search>公司法 特别决议 三分之二</search>\n\n哦，找到了。《中华人民共和国公司法》第四十三条确实有句话特别提到，这种特别决议，比如像修改公司章程、增减注册资本、还有公司合并、解散之类的重要事项，都必须经代表三分之二以上表决权的股东同意。这么想来，股东如果能持有超过三分之一的股权比例，就可以在这种重大决议上起到否决作用。因为特别决议如果要通过，剩下的股东至少得占三分之二，但如果有人持股超过三分之一，其他人就算全票通过也达不到特别决议所需的比例。\n\n这样来看，百分之三十三点四确实是一个非常特殊的股权比例。它保障了某个股东或者一组联合股东在公司里对重大事务有实际的控制力，即便他们不是绝对控股股东。尤其是在防止大股东或外部势力主导不利于自己利益的特别决议时，掌握超过三分之一股权的股东就能有效保护自己。这个也很有意思，因为它无形中给了少数派一个强有力的谈判筹码。\n\n所以，总结一下，百分之三十三点四代表的法律意义主要就是：根据公司法的规定，只要持股超过三分之一，就可以对需要特别决议的重大事件拥有否决权。这也使得这个比例变成了一条重要的股权控制线或者安全线，能够让特定股东拥有一定的话语权，甚至在某些情况下成为平衡公司内部权力结构的关键。嗯，这样的解释应该还是挺合理的。",
+  "Response": "在《中华人民共和国公司法》中，股权比例33.34%（即超过三分之一）的法律意义主要体现在对特别决议事项的否决权上。\n\n根据公司法第43条的规定，在股东会决策中，有些重大事项需要通过“特别决议”，即必须由占总表决权三分之二以上的股东同意才能通过。这些事项通常包括但不限于：修改公司章程、增加或减少注册资本、合并、分立、解散公司等。\n\n如果某一股东或一组联合股东拥有超过三分之一的表决权，就意味着他们对这些重大事项拥有实际的否决权。因为在这种情况下，除非该股东或股东组合同意，否则表决权的总支持比例无法达到三分之二的门槛，导致特别决议无法通过。\n\n因此，超过33.34%的股权比例（即三分之一以上）被称作“股权安全控制线”。它的法律意义在于：  \n1. **重大决策的否决权**：赋予持股方在公司重大决策中的关键话语权，确保其利益不受其他股东的单方面决定所影响。  \n2. **权力制衡**：即便不是绝对控股股东（持股超过50%），持有超过三分之一的股东依然能通过否决特别决议来对抗可能不利于自身利益的决策，从而在内部权力结构中取得明显的平衡作用。  \n\n这一比例在股东权力博弈中非常重要，被广泛视为公司治理结构中的关键控制节点。",
+  "Question": "股权安全控制线百分之三十三点四的法律意义?"
+}

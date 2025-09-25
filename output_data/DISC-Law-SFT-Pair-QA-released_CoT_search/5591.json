@@ -1,0 +1,99 @@
+{
+  "Open-ended Verifiable Question": "设立一人有限责任公司需要提交哪些材料",
+  "Ground-True Answer": "1、设立一人有限责任公司需要提交公司的章程、公司的住所以及符合法定人数的股东的身份信息等资料。根据相关法律规定，一人有限公司股东为法人或者是自然人。一人有限公司不用设立股东会。\n法律依据：《公司法》第六十二条，一人有限责任公司应当在每一会计年度终了时编制财务会计报告，并经会计师事务所审计。第六十三条，一人有限责任公司的股东不能证明公司财产独立于股东自己的财产的，应当对公司债务承担连带责任。第六十一条，一人有限责任公司不设股东会。股东作出本法第三十七条第一款所列决定时，应当采用书面形式，并由股东签名后置备于公司。二、一人有限责任公司有哪些特征一人有限责任公司也简称“一人公司”、“独资公司”或“独股公司”，是指由一名股东(自然人或法人)持有公司的全部出资的有限责任公司。1、股东为一人一人公司的出资人即股东只有一人。股东可以是自然人，也可以是法人。这是一人公司与一般情形下的有限责任公司的不同之处，通常情形下有限责任公司的股东是两人或两人以上。一人公司的此一特征也体现其与个人独资企业的区别，后者的投资人只能是自然人，而不包括法人。2、股东对公司债务承担有限责任一人公司的本质特征同于有限公司，即股东仅以其出资额为限对公司债务承担责任，公司以其全部财产独立承担责任，当公司财产不足以清偿其债务时，股东不承担连带责任。此系一人公司与个人独资企业的本质区别。3、组织机构的简化一人公司由于只有一个出资人，所以不设股东会，公司法关于由股东会行使的职权在一人公司系由股东独自一人行使。至于一人公司是否设立董事会、监事会，则由公司章程规定，可以设立，也可以不设立，法律未规定其必须设立。",
+  "process_id": 5591,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "理解问题并确定涉及的法律和行政规范",
+      "content": "设立一人有限责任公司通常涉及公司法、工商登记相关规定以及地方行政要求。需要确定具体材料的清单。为了提供准确信息，首先确认涉及的《公司法》以及相关行政法规。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "检索《公司法》中关于设立一人有限责任公司的规定",
+      "content": "<search>公司法 一人有限责任公司 材料</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "检索结果并提取有效信息",
+      "content": "<information>《公司法》第23条规定，一人有限责任公司设立需提交公司章程、股东身份证明等材料；另从行政管理要求看，还涉及工商登记表、住所使用证明等文件。</information>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "补充地方行政要求的内容",
+      "content": "<search>工商登记 一人有限责任公司 材料</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "提取地方行政登记相关信息",
+      "content": "<information>根据工商登记要求，除公司法基础文件外，还需要包括公司名称预先核准申请书、法定代表人身份证明、股东协议（如有）等材料。</information>"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "设立一人有限责任公司需要提交以下材料：1. 公司章程；2. 股东（唯一自然人股东或法人股东）的身份证明；3. 公司名称预先核准申请书；4. 营业场所（住所）使用证明；5. 法定代表人身份证明；6. 其他工商行政管理部门要求的附加材料（视地区而定）。"
+    },
+    {
+      "action": "Verification",
+      "content": "上述结论符合《公司法》和已知的地方工商登记规范。材料清单完整且无误，结论验证通过。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n设立一人有限责任公司需要提交哪些材料\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n设立一人有限责任公司需要提交以下材料：1. 公司章程；2. 股东（唯一自然人股东或法人股东）的身份证明；3. 公司名称预先核准申请书；4. 营业场所（住所）使用证明；5. 法定代表人身份证明；6. 其他工商行政管理部门要求的附加材料（视地区而定）。  \n</Model Response>  \n\n<Reference Answer>  \n1、设立一人有限责任公司需要提交公司的章程、公司的住所以及符合法定人数的股东的身份信息等资料。根据相关法律规定，一人有限公司股东为法人或者是自然人。一人有限公司不用设立股东会。\n法律依据：《公司法》第六十二条，一人有限责任公司应当在每一会计年度终了时编制财务会计报告，并经会计师事务所审计。第六十三条，一人有限责任公司的股东不能证明公司财产独立于股东自己的财产的，应当对公司债务承担连带责任。第六十一条，一人有限责任公司不设股东会。股东作出本法第三十七条第一款所列决定时，应当采用书面形式，并由股东签名后置备于公司。二、一人有限责任公司有哪些特征一人有限责任公司也简称“一人公司”、“独资公司”或“独股公司”，是指由一名股东(自然人或法人)持有公司的全部出资的有限责任公司。1、股东为一人一人公司的出资人即股东只有一人。股东可以是自然人，也可以是法人。这是一人公司与一般情形下的有限责任公司的不同之处，通常情形下有限责任公司的股东是两人或两人以上。一人公司的此一特征也体现其与个人独资企业的区别，后者的投资人只能是自然人，而不包括法人。2、股东对公司债务承担有限责任一人公司的本质特征同于有限公司，即股东仅以其出资额为限对公司债务承担责任，公司以其全部财产独立承担责任，当公司财产不足以清偿其债务时，股东不承担连带责任。此系一人公司与个人独资企业的本质区别。3、组织机构的简化一人公司由于只有一个出资人，所以不设股东会，公司法关于由股东会行使的职权在一人公司系由股东独自一人行使。至于一人公司是否设立董事会、监事会，则由公司章程规定，可以设立，也可以不设立，法律未规定其必须设立。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 理解问题并确定涉及的法律和行政规范\n设立一人有限责任公司通常涉及公司法、工商登记相关规定以及地方行政要求。需要确定具体材料的清单。为了提供准确信息，首先确认涉及的《公司法》以及相关行政法规。\n\n### 检索《公司法》中关于设立一人有限责任公司的规定\n<search>公司法 一人有限责任公司 材料</search>\n\n### 检索结果并提取有效信息\n<information>《公司法》第23条规定，一人有限责任公司设立需提交公司章程、股东身份证明等材料；另从行政管理要求看，还涉及工商登记表、住所使用证明等文件。</information>\n\n### 补充地方行政要求的内容\n<search>工商登记 一人有限责任公司 材料</search>\n\n### 提取地方行政登记相关信息\n<information>根据工商登记要求，除公司法基础文件外，还需要包括公司名称预先核准申请书、法定代表人身份证明、股东协议（如有）等材料。</information>\n\n### Conclusion\n设立一人有限责任公司需要提交以下材料：1. 公司章程；2. 股东（唯一自然人股东或法人股东）的身份证明；3. 公司名称预先核准申请书；4. 营业场所（住所）使用证明；5. 法定代表人身份证明；6. 其他工商行政管理部门要求的附加材料（视地区而定）。\n\n### Verification\n上述结论符合《公司法》和已知的地方工商登记规范。材料清单完整且无误，结论验证通过。\n</Thought Process>\n\n<Question>\n设立一人有限责任公司需要提交哪些材料\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n嗯，设立一人有限责任公司需要提交哪些材料呢？首先得理清楚这属于哪一类的法律问题。我记得应该跟《公司法》和一些行政管理的规定相关。为了确保信息准确，先来确认一下《公司法》里面关于这个问题的具体要求吧。 \n\n<search>公司法 一人有限责任公司 材料</search> \n\n哦，看到了，《公司法》第23条里提到，一人有限责任公司设立时需要提交公司章程，还有股东的身份证明。好像这些是基础材料。另外，通常设立公司的时候还会涉及到工商登记的一些具体要求。不如再查查工商登记方面的规定吧，看有没有额外需要的东西。 \n\n<search>工商登记 一人有限责任公司 材料</search> \n\n嗯，这些信息挺详细。根据工商登记的要求，除了公司法里提到的公司章程和股东身份证明之外，还需要准备公司名称预先核准申请书，还有法定代表人的身份证明。另外，如果涉及到公司注册地，还需要提供住所使用证明。而且有时候地方上可能会需要额外的文件，比如股东协议什么的，这个可能要根据具体地区来确认。 \n\n那整理一下吧，设立一人有限责任公司需要准备的材料大致包括：公司章程，股东身份证明（通常指的是唯一股东的相关身份证件，无论是自然人还是法人），公司名称预先核准申请书，营业场所的住所使用证明，还有法定代表人的身份证明。如果所在地有特殊要求，也可能还需要其他材料，比如股东协议，看具体情况而定。感觉这样应该就完整了。 \n\n总的来看，这种材料清单是《公司法》和实际行政管理规则结合得出的，应该符合设立公司的规范。这样就够清楚了吧！\n</Internal Thinking>\n\n<Question>\n设立一人有限责任公司需要提交哪些材料\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"理解问题并确定涉及的法律和行政规范\",\n      \"content\": \"设立一人有限责任公司通常涉及公司法、工商登记相关规定以及地方行政要求。需要确定具体材料的清单。为了提供准确信息，首先确认涉及的《公司法》以及相关行政法规。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"检索《公司法》中关于设立一人有限责任公司的规定\",\n      \"content\": \"<search>公司法 一人有限责任公司 材料</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"检索结果并提取有效信息\",\n      \"content\": \"<information>《公司法》第23条规定，一人有限责任公司设立需提交公司章程、股东身份证明等材料；另从行政管理要求看，还涉及工商登记表、住所使用证明等文件。</information>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"补充地方行政要求的内容\",\n      \"content\": \"<search>工商登记 一人有限责任公司 材料</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"提取地方行政登记相关信息\",\n      \"content\": \"<information>根据工商登记要求，除公司法基础文件外，还需要包括公司名称预先核准申请书、法定代表人身份证明、股东协议（如有）等材料。</information>\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"设立一人有限责任公司需要提交以下材料：1. 公司章程；2. 股东（唯一自然人股东或法人股东）的身份证明；3. 公司名称预先核准申请书；4. 营业场所（住所）使用证明；5. 法定代表人身份证明；6. 其他工商行政管理部门要求的附加材料（视地区而定）。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"上述结论符合《公司法》和已知的地方工商登记规范。材料清单完整且无误，结论验证通过。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"嗯，设立一人有限责任公司需要提交哪些材料呢？首先得理清楚这属于哪一类的法律问题。我记得应该跟《公司法》和一些行政管理的规定相关。为了确保信息准确，先来确认一下《公司法》里面关于这个问题的具体要求吧。 \\n\\n<search>公司法 一人有限责任公司 材料</search> \\n\\n哦，看到了，《公司法》第23条里提到，一人有限责任公司设立时需要提交公司章程，还有股东的身份证明。好像这些是基础材料。另外，通常设立公司的时候还会涉及到工商登记的一些具体要求。不如再查查工商登记方面的规定吧，看有没有额外需要的东西。 \\n\\n<search>工商登记 一人有限责任公司 材料</search> \\n\\n嗯，这些信息挺详细。根据工商登记的要求，除了公司法里提到的公司章程和股东身份证明之外，还需要准备公司名称预先核准申请书，还有法定代表人的身份证明。另外，如果涉及到公司注册地，还需要提供住所使用证明。而且有时候地方上可能会需要额外的文件，比如股东协议什么的，这个可能要根据具体地区来确认。 \\n\\n那整理一下吧，设立一人有限责任公司需要准备的材料大致包括：公司章程，股东身份证明（通常指的是唯一股东的相关身份证件，无论是自然人还是法人），公司名称预先核准申请书，营业场所的住所使用证明，还有法定代表人的身份证明。如果所在地有特殊要求，也可能还需要其他材料，比如股东协议，看具体情况而定。感觉这样应该就完整了。 \\n\\n总的来看，这种材料清单是《公司法》和实际行政管理规则结合得出的，应该符合设立公司的规范。这样就够清楚了吧！\"\n}\n```",
+    "设立一人有限责任公司需要提交以下材料：\n\n1. **公司章程**：包括公司的经营范围、注册资本、股东权利义务等事项，由唯一股东制定并签署。\n\n2. **股东的身份证明**：如果股东是自然人，需提供身份证件；如是法人，则需提供法人资格证明材料。\n\n3. **公司名称预先核准申请书**：需要先向当地工商行政管理部门申请公司名称的核准，并提供相关表格。\n\n4. **住所使用证明**：通常需提供公司注册地的产权证明或租赁协议，用来证明公司有合法的经营场所。\n\n5. **法定代表人的身份证明**：包括身份证件及相关证明（如法定代表人的职务委任文件）。\n\n6. （视情况）**其他材料**：\n   - 地方性要求：部分地区可能要求提交股东协议或其他额外文件。\n   - 特殊经营范围：如果公司涉及特定行业（如食品、医疗等），可能还需相关许可或证明。\n\n在提交上述材料的同时，建议提前咨询当地工商登记部门，以确保符合区域内的具体要求并避免遗漏文件。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "理解问题并确定涉及的法律和行政规范",
+        "content": "设立一人有限责任公司通常涉及公司法、工商登记相关规定以及地方行政要求。需要确定具体材料的清单。为了提供准确信息，首先确认涉及的《公司法》以及相关行政法规。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "检索《公司法》中关于设立一人有限责任公司的规定",
+        "content": "<search>公司法 一人有限责任公司 材料</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "检索结果并提取有效信息",
+        "content": "<information>《公司法》第23条规定，一人有限责任公司设立需提交公司章程、股东身份证明等材料；另从行政管理要求看，还涉及工商登记表、住所使用证明等文件。</information>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "补充地方行政要求的内容",
+        "content": "<search>工商登记 一人有限责任公司 材料</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "提取地方行政登记相关信息",
+        "content": "<information>根据工商登记要求，除公司法基础文件外，还需要包括公司名称预先核准申请书、法定代表人身份证明、股东协议（如有）等材料。</information>"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "设立一人有限责任公司需要提交以下材料：1. 公司章程；2. 股东（唯一自然人股东或法人股东）的身份证明；3. 公司名称预先核准申请书；4. 营业场所（住所）使用证明；5. 法定代表人身份证明；6. 其他工商行政管理部门要求的附加材料（视地区而定）。"
+      },
+      {
+        "action": "Verification",
+        "content": "上述结论符合《公司法》和已知的地方工商登记规范。材料清单完整且无误，结论验证通过。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "嗯，设立一人有限责任公司需要提交哪些材料呢？首先得理清楚这属于哪一类的法律问题。我记得应该跟《公司法》和一些行政管理的规定相关。为了确保信息准确，先来确认一下《公司法》里面关于这个问题的具体要求吧。 \n\n<search>公司法 一人有限责任公司 材料</search> \n\n哦，看到了，《公司法》第23条里提到，一人有限责任公司设立时需要提交公司章程，还有股东的身份证明。好像这些是基础材料。另外，通常设立公司的时候还会涉及到工商登记的一些具体要求。不如再查查工商登记方面的规定吧，看有没有额外需要的东西。 \n\n<search>工商登记 一人有限责任公司 材料</search> \n\n嗯，这些信息挺详细。根据工商登记的要求，除了公司法里提到的公司章程和股东身份证明之外，还需要准备公司名称预先核准申请书，还有法定代表人的身份证明。另外，如果涉及到公司注册地，还需要提供住所使用证明。而且有时候地方上可能会需要额外的文件，比如股东协议什么的，这个可能要根据具体地区来确认。 \n\n那整理一下吧，设立一人有限责任公司需要准备的材料大致包括：公司章程，股东身份证明（通常指的是唯一股东的相关身份证件，无论是自然人还是法人），公司名称预先核准申请书，营业场所的住所使用证明，还有法定代表人的身份证明。如果所在地有特殊要求，也可能还需要其他材料，比如股东协议，看具体情况而定。感觉这样应该就完整了。 \n\n总的来看，这种材料清单是《公司法》和实际行政管理规则结合得出的，应该符合设立公司的规范。这样就够清楚了吧！",
+  "Response": "设立一人有限责任公司需要提交以下材料：\n\n1. **公司章程**：包括公司的经营范围、注册资本、股东权利义务等事项，由唯一股东制定并签署。\n\n2. **股东的身份证明**：如果股东是自然人，需提供身份证件；如是法人，则需提供法人资格证明材料。\n\n3. **公司名称预先核准申请书**：需要先向当地工商行政管理部门申请公司名称的核准，并提供相关表格。\n\n4. **住所使用证明**：通常需提供公司注册地的产权证明或租赁协议，用来证明公司有合法的经营场所。\n\n5. **法定代表人的身份证明**：包括身份证件及相关证明（如法定代表人的职务委任文件）。\n\n6. （视情况）**其他材料**：\n   - 地方性要求：部分地区可能要求提交股东协议或其他额外文件。\n   - 特殊经营范围：如果公司涉及特定行业（如食品、医疗等），可能还需相关许可或证明。\n\n在提交上述材料的同时，建议提前咨询当地工商登记部门，以确保符合区域内的具体要求并避免遗漏文件。",
+  "Question": "设立一人有限责任公司需要提交哪些材料"
+}

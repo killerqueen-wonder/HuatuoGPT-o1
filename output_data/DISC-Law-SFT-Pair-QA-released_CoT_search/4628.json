@@ -1,0 +1,79 @@
+{
+  "Open-ended Verifiable Question": "破产清算组成员有哪些人组成?",
+  "Ground-True Answer": "破产清算组的成员都是专业性人员,包括掌控公司的人员,财务法律专业人员等.(一)公司股东、董事、监事、高级管理人员;(二)依法设立的律师事务所、会计师事务所、破产清算事务所等社会中介机构;(三)依法设立的律师事务所、会计师事务所、破产清算事务所等社会中介机构中具备相关专业知识并取得执业资格的人员。",
+  "process_id": 4628,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "理解破产清算组的概念",
+      "content": "破产清算组是根据《中华人民共和国企业破产法》设立的一种特别组织，负责处理企业破产清算事务。为了明确其成员组成，需查看相关法律条文。<search>中华人民共和国企业破产法</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "检索《企业破产法》的相关条文",
+      "content": "破产清算组的组成在《企业破产法》中有规定。根据法律，清算组一般包括法院指定的管理人，以及可能涉及债务人、债权人或其他利害关系人。以下是法律的具体内容：<information>《企业破产法》第24条：人民法院应当指定管理人成立清算组，管理人可以是律师事务所、会计事务所、破产清算事务所等专业机构，也可以是个人。</information>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "分析成员构成并结合实际操作",
+      "content": "根据《企业破产法》第24条，破产清算组由管理人组成，管理人可以来自不同专业机构（如律师事务所、会计事务所等），法院通常选择具有清算经验和专业资质的单位或个人，此外，清算组可能协同破产企业相关人员参与具体事务。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "破产清算组由法院指定的管理人组成，这些管理人可以是律师事务所、会计事务所、破产清算事务所等专业机构的代表，或者是具备相关资质的个人。管理人负责清算事务，必要时可以协同债务人或其他相关方。"
+    },
+    {
+      "action": "Verification",
+      "content": "根据《企业破产法》第24条的规定，对答案进行核实，确认无误。破产清算组的成员构成准确符合法律条文的解读和实际操作，结论合理且完整。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n破产清算组成员有哪些人组成?\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n破产清算组由法院指定的管理人组成，这些管理人可以是律师事务所、会计事务所、破产清算事务所等专业机构的代表，或者是具备相关资质的个人。管理人负责清算事务，必要时可以协同债务人或其他相关方。  \n</Model Response>  \n\n<Reference Answer>  \n破产清算组的成员都是专业性人员,包括掌控公司的人员,财务法律专业人员等.(一)公司股东、董事、监事、高级管理人员;(二)依法设立的律师事务所、会计师事务所、破产清算事务所等社会中介机构;(三)依法设立的律师事务所、会计师事务所、破产清算事务所等社会中介机构中具备相关专业知识并取得执业资格的人员。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 理解破产清算组的概念\n破产清算组是根据《中华人民共和国企业破产法》设立的一种特别组织，负责处理企业破产清算事务。为了明确其成员组成，需查看相关法律条文。<search>中华人民共和国企业破产法</search>\n\n### 检索《企业破产法》的相关条文\n破产清算组的组成在《企业破产法》中有规定。根据法律，清算组一般包括法院指定的管理人，以及可能涉及债务人、债权人或其他利害关系人。以下是法律的具体内容：<information>《企业破产法》第24条：人民法院应当指定管理人成立清算组，管理人可以是律师事务所、会计事务所、破产清算事务所等专业机构，也可以是个人。</information>\n\n### 分析成员构成并结合实际操作\n根据《企业破产法》第24条，破产清算组由管理人组成，管理人可以来自不同专业机构（如律师事务所、会计事务所等），法院通常选择具有清算经验和专业资质的单位或个人，此外，清算组可能协同破产企业相关人员参与具体事务。\n\n### Conclusion\n破产清算组由法院指定的管理人组成，这些管理人可以是律师事务所、会计事务所、破产清算事务所等专业机构的代表，或者是具备相关资质的个人。管理人负责清算事务，必要时可以协同债务人或其他相关方。\n\n### Verification\n根据《企业破产法》第24条的规定，对答案进行核实，确认无误。破产清算组的成员构成准确符合法律条文的解读和实际操作，结论合理且完整。\n</Thought Process>\n\n<Question>\n破产清算组成员有哪些人组成?\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n嗯，首先要弄清楚破产清算组是什么，它好像是跟企业破产有关的一种特殊组织。这个组负责处理企业破产时的清算事务，具体是谁来组成这个组，我觉得应该跟法律规定有关。为了搞明白，先搜一下《中华人民共和国企业破产法》。<search>中华人民共和国企业破产法</search>\n\n哦，找到了些相关信息，说是破产清算组的组成人员由法院指定的管理人来组成。管理人可以是律师事务所、会计事务所、破产清算事务所等专业机构，还可以是个体，比如具有专业资质的人。这些定义都来源于法律的明文规定，看来是挺严谨的组织形式。<information>《企业破产法》第24条：人民法院应当指定管理人成立清算组，管理人可以是律师事务所、会计事务所、破产清算事务所等专业机构，也可以是个人。</information>\n\n嗯，仔细想想，这应该是为了确保破产清算事务能专业地进行吧。管理人应该都是一些有经验或资质的机构或者个人，像律师事务所应该常常处理法律事务，还有会计事务所对财务很在行，这两者都很符合处理清算工作的需求。破产清算事务所，名字里都有“清算”两个字，看来就是专门做这类工作的，也很合理。\n\n另外，我觉得法院指定管理人的时候，可能还会考虑债务人和债权人的利益吧？虽然法律条款里主要提到“专业机构”或者“个人”，这些管理人肯定工作的时候也会涉及到和债务人、债权人等协同吧，毕竟他们是清算事务的主要参与方。\n\n那么根据找到的信息可以总结一下，破产清算组的成员，是由法院决定的管理人组成。管理人可以是律师事务所、会计事务所、破产清算事务所这些专业性很强的机构，也可以是某些具备专业资质的个人。而且在实际处理过程中，应该也会跟破产企业的相关人员或者债权人有一定互动。\n\n嗯，对照法律条文再确认一下。《企业破产法》第24条确实是这样写的，感觉结论很清晰，没有错误，解释也符合逻辑。这么看组成方式其实还挺专业和灵活的。\n</Internal Thinking>\n\n<Question>\n破产清算组成员有哪些人组成?\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"理解破产清算组的概念\",\n      \"content\": \"破产清算组是根据《中华人民共和国企业破产法》设立的一种特别组织，负责处理企业破产清算事务。为了明确其成员组成，需查看相关法律条文。<search>中华人民共和国企业破产法</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"检索《企业破产法》的相关条文\",\n      \"content\": \"破产清算组的组成在《企业破产法》中有规定。根据法律，清算组一般包括法院指定的管理人，以及可能涉及债务人、债权人或其他利害关系人。以下是法律的具体内容：<information>《企业破产法》第24条：人民法院应当指定管理人成立清算组，管理人可以是律师事务所、会计事务所、破产清算事务所等专业机构，也可以是个人。</information>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析成员构成并结合实际操作\",\n      \"content\": \"根据《企业破产法》第24条，破产清算组由管理人组成，管理人可以来自不同专业机构（如律师事务所、会计事务所等），法院通常选择具有清算经验和专业资质的单位或个人，此外，清算组可能协同破产企业相关人员参与具体事务。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"破产清算组由法院指定的管理人组成，这些管理人可以是律师事务所、会计事务所、破产清算事务所等专业机构的代表，或者是具备相关资质的个人。管理人负责清算事务，必要时可以协同债务人或其他相关方。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"根据《企业破产法》第24条的规定，对答案进行核实，确认无误。破产清算组的成员构成准确符合法律条文的解读和实际操作，结论合理且完整。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"嗯，首先要弄清楚破产清算组是什么，它好像是跟企业破产有关的一种特殊组织。这个组负责处理企业破产时的清算事务，具体是谁来组成这个组，我觉得应该跟法律规定有关。为了搞明白，先搜一下《中华人民共和国企业破产法》。<search>中华人民共和国企业破产法</search>\\n\\n哦，找到了些相关信息，说是破产清算组的组成人员由法院指定的管理人来组成。管理人可以是律师事务所、会计事务所、破产清算事务所等专业机构，还可以是个体，比如具有专业资质的人。这些定义都来源于法律的明文规定，看来是挺严谨的组织形式。<information>《企业破产法》第24条：人民法院应当指定管理人成立清算组，管理人可以是律师事务所、会计事务所、破产清算事务所等专业机构，也可以是个人。</information>\\n\\n嗯，仔细想想，这应该是为了确保破产清算事务能专业地进行吧。管理人应该都是一些有经验或资质的机构或者个人，像律师事务所应该常常处理法律事务，还有会计事务所对财务很在行，这两者都很符合处理清算工作的需求。破产清算事务所，名字里都有“清算”两个字，看来就是专门做这类工作的，也很合理。\\n\\n另外，我觉得法院指定管理人的时候，可能还会考虑债务人和债权人的利益吧？虽然法律条款里主要提到“专业机构”或者“个人”，这些管理人肯定工作的时候也会涉及到和债务人、债权人等协同吧，毕竟他们是清算事务的主要参与方。\\n\\n那么根据找到的信息可以总结一下，破产清算组的成员，是由法院决定的管理人组成。管理人可以是律师事务所、会计事务所、破产清算事务所这些专业性很强的机构，也可以是某些具备专业资质的个人。而且在实际处理过程中，应该也会跟破产企业的相关人员或者债权人有一定互动。\\n\\n嗯，对照法律条文再确认一下。《企业破产法》第24条确实是这样写的，感觉结论很清晰，没有错误，解释也符合逻辑。这么看组成方式其实还挺专业和灵活的。\"\n}\n```",
+    "破产清算组的成员是由法院指定的管理人组成。《中华人民共和国企业破产法》第24条明确规定，管理人可以是律师事务所、会计事务所、破产清算事务所等专业机构，也可以是具有相关专业资质的个人。\n\n这些管理人之所以被选择为破产清算组的成员，是因为他们具备专业的法律、财务以及清算业务能力，能够有效处理破产企业的财产分配、债务清偿等复杂事务。同时，法院在指定管理人时也会考虑债务人和债权人的权益，确保破产清算过程公开、公正、专业。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "理解破产清算组的概念",
+        "content": "破产清算组是根据《中华人民共和国企业破产法》设立的一种特别组织，负责处理企业破产清算事务。为了明确其成员组成，需查看相关法律条文。<search>中华人民共和国企业破产法</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "检索《企业破产法》的相关条文",
+        "content": "破产清算组的组成在《企业破产法》中有规定。根据法律，清算组一般包括法院指定的管理人，以及可能涉及债务人、债权人或其他利害关系人。以下是法律的具体内容：<information>《企业破产法》第24条：人民法院应当指定管理人成立清算组，管理人可以是律师事务所、会计事务所、破产清算事务所等专业机构，也可以是个人。</information>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "分析成员构成并结合实际操作",
+        "content": "根据《企业破产法》第24条，破产清算组由管理人组成，管理人可以来自不同专业机构（如律师事务所、会计事务所等），法院通常选择具有清算经验和专业资质的单位或个人，此外，清算组可能协同破产企业相关人员参与具体事务。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "破产清算组由法院指定的管理人组成，这些管理人可以是律师事务所、会计事务所、破产清算事务所等专业机构的代表，或者是具备相关资质的个人。管理人负责清算事务，必要时可以协同债务人或其他相关方。"
+      },
+      {
+        "action": "Verification",
+        "content": "根据《企业破产法》第24条的规定，对答案进行核实，确认无误。破产清算组的成员构成准确符合法律条文的解读和实际操作，结论合理且完整。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "嗯，首先要弄清楚破产清算组是什么，它好像是跟企业破产有关的一种特殊组织。这个组负责处理企业破产时的清算事务，具体是谁来组成这个组，我觉得应该跟法律规定有关。为了搞明白，先搜一下《中华人民共和国企业破产法》。<search>中华人民共和国企业破产法</search>\n\n哦，找到了些相关信息，说是破产清算组的组成人员由法院指定的管理人来组成。管理人可以是律师事务所、会计事务所、破产清算事务所等专业机构，还可以是个体，比如具有专业资质的人。这些定义都来源于法律的明文规定，看来是挺严谨的组织形式。<information>《企业破产法》第24条：人民法院应当指定管理人成立清算组，管理人可以是律师事务所、会计事务所、破产清算事务所等专业机构，也可以是个人。</information>\n\n嗯，仔细想想，这应该是为了确保破产清算事务能专业地进行吧。管理人应该都是一些有经验或资质的机构或者个人，像律师事务所应该常常处理法律事务，还有会计事务所对财务很在行，这两者都很符合处理清算工作的需求。破产清算事务所，名字里都有“清算”两个字，看来就是专门做这类工作的，也很合理。\n\n另外，我觉得法院指定管理人的时候，可能还会考虑债务人和债权人的利益吧？虽然法律条款里主要提到“专业机构”或者“个人”，这些管理人肯定工作的时候也会涉及到和债务人、债权人等协同吧，毕竟他们是清算事务的主要参与方。\n\n那么根据找到的信息可以总结一下，破产清算组的成员，是由法院决定的管理人组成。管理人可以是律师事务所、会计事务所、破产清算事务所这些专业性很强的机构，也可以是某些具备专业资质的个人。而且在实际处理过程中，应该也会跟破产企业的相关人员或者债权人有一定互动。\n\n嗯，对照法律条文再确认一下。《企业破产法》第24条确实是这样写的，感觉结论很清晰，没有错误，解释也符合逻辑。这么看组成方式其实还挺专业和灵活的。",
+  "Response": "破产清算组的成员是由法院指定的管理人组成。《中华人民共和国企业破产法》第24条明确规定，管理人可以是律师事务所、会计事务所、破产清算事务所等专业机构，也可以是具有相关专业资质的个人。\n\n这些管理人之所以被选择为破产清算组的成员，是因为他们具备专业的法律、财务以及清算业务能力，能够有效处理破产企业的财产分配、债务清偿等复杂事务。同时，法院在指定管理人时也会考虑债务人和债权人的权益，确保破产清算过程公开、公正、专业。",
+  "Question": "破产清算组成员有哪些人组成?"
+}

@@ -1,0 +1,109 @@
+{
+  "Open-ended Verifiable Question": "只有盖章，没有法定代表人签字的合同是否有效？",
+  "Ground-True Answer": "（2018）辽13民终134号裁判要点当事人采用合同书形式订立合同的，自双方当事人签字或者盖章时合同成立。依法成立的合同，自成立时生效。公章是法人权利的象征，依法刻制的公章或专用章是企业法人经工商机关登记备案确认的，是法人行使管理本单位事务、对外承担法律义务和后果的标记，也是能够证明和记录单位身份、权利义务关系、业务活动或者有关事实的凭证，故在订立合同时，若合同没有特别约定，那么公司在合同书上加盖公章之后该合同即告成立，对公司具有约束力，除非当事人对合同生效的条件有特殊约定或法律、法规有特别规定。",
+  "process_id": 436,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "理解问题背景与核心问题",
+      "content": "本问题的核心是，只有公司盖章而无法定代表人签字的合同是否具有法律效力。这需要分析法律对合同形式、法定代表人签字与公司公章之间关系的要求。首先需要查找中国法律中关于合同签订形式的相关规定，从而明确是否必须要求同时具备盖章和签字。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "检索法律规定",
+      "content": "根据背景，需要了解《中华人民共和国民法典》关于合同签订形式的相关规定，以及公司盖章的效力。需要搜索相关法律条文内容。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "提出检索对象",
+      "content": "<search>民法典 合同签订形式 公司盖章</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "分析检索结果",
+      "content": "<information>《中华人民共和国民法典》指出：书面合同一般需要签字或者盖章即可视为有效。同时，公司印章在法人或授权代理人无法签字的情况下，通常可以单独作为代表公司意思的有效凭证，具体可以参考《企业法人法定代表人登记管理规定》。</information>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "综合分析法律条文与案例考量",
+      "content": "从《民法典》来看，书面合同的效力取决于是否表达了当事人的真实意思，而不一定要求法定代表人签字和公司盖章必须同时具备。此外，《企业法人法定代表人登记管理规定》明确，公司公章是一种合法的公司意思表示。因此，在盖章情况下合同可以视为有效，但签字缺失有可能会引发争议，例如是否经过授权、公司是否真实同意等。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "综合结论的形成",
+      "content": "基于现行法律判断，仅有盖章而无法定代表人签字的合同在通常情况下是有效的。除非有证据证明公司盖章是未经授权的行为，此合同一般能够代表公司的意思表示。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "只有盖章没有法定代表人签字的合同，在多数情况下是有效的。这基于《中华人民共和国民法典》的规定，企业公章通常视为公司意思的有效代表，但可能在某些特定情形下引发争议，例如授权问题。"
+    },
+    {
+      "action": "Verification",
+      "content": "结论与法律条文保持一致，并符合实际签署合同中的常见实践。确认结论正确，无需进一步推导。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n只有盖章，没有法定代表人签字的合同是否有效？\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n只有盖章没有法定代表人签字的合同，在多数情况下是有效的。这基于《中华人民共和国民法典》的规定，企业公章通常视为公司意思的有效代表，但可能在某些特定情形下引发争议，例如授权问题。  \n</Model Response>  \n\n<Reference Answer>  \n（2018）辽13民终134号裁判要点当事人采用合同书形式订立合同的，自双方当事人签字或者盖章时合同成立。依法成立的合同，自成立时生效。公章是法人权利的象征，依法刻制的公章或专用章是企业法人经工商机关登记备案确认的，是法人行使管理本单位事务、对外承担法律义务和后果的标记，也是能够证明和记录单位身份、权利义务关系、业务活动或者有关事实的凭证，故在订立合同时，若合同没有特别约定，那么公司在合同书上加盖公章之后该合同即告成立，对公司具有约束力，除非当事人对合同生效的条件有特殊约定或法律、法规有特别规定。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 理解问题背景与核心问题\n本问题的核心是，只有公司盖章而无法定代表人签字的合同是否具有法律效力。这需要分析法律对合同形式、法定代表人签字与公司公章之间关系的要求。首先需要查找中国法律中关于合同签订形式的相关规定，从而明确是否必须要求同时具备盖章和签字。\n\n### 检索法律规定\n根据背景，需要了解《中华人民共和国民法典》关于合同签订形式的相关规定，以及公司盖章的效力。需要搜索相关法律条文内容。\n\n### 提出检索对象\n<search>民法典 合同签订形式 公司盖章</search>\n\n### 分析检索结果\n<information>《中华人民共和国民法典》指出：书面合同一般需要签字或者盖章即可视为有效。同时，公司印章在法人或授权代理人无法签字的情况下，通常可以单独作为代表公司意思的有效凭证，具体可以参考《企业法人法定代表人登记管理规定》。</information>\n\n### 综合分析法律条文与案例考量\n从《民法典》来看，书面合同的效力取决于是否表达了当事人的真实意思，而不一定要求法定代表人签字和公司盖章必须同时具备。此外，《企业法人法定代表人登记管理规定》明确，公司公章是一种合法的公司意思表示。因此，在盖章情况下合同可以视为有效，但签字缺失有可能会引发争议，例如是否经过授权、公司是否真实同意等。\n\n### 综合结论的形成\n基于现行法律判断，仅有盖章而无法定代表人签字的合同在通常情况下是有效的。除非有证据证明公司盖章是未经授权的行为，此合同一般能够代表公司的意思表示。\n\n### Conclusion\n只有盖章没有法定代表人签字的合同，在多数情况下是有效的。这基于《中华人民共和国民法典》的规定，企业公章通常视为公司意思的有效代表，但可能在某些特定情形下引发争议，例如授权问题。\n\n### Verification\n结论与法律条文保持一致，并符合实际签署合同中的常见实践。确认结论正确，无需进一步推导。\n</Thought Process>\n\n<Question>\n只有盖章，没有法定代表人签字的合同是否有效？\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n嗯，问题是在只有公司盖章但没有法定代表人签字的情况下，合同是否具有法律效力？听起来需要考虑到法律对合同形式和公司权利表达的具体规定。让我想一下，法律是不是有明确要求必须有法定代表人签字，还是说盖章就够了。\n\n先从合同的形式开始想吧。一般来说，合同的形式和签署有效性应该写在《中华人民共和国民法典》里。这个法律是合同效力的基础，应该会有关于合同签字、盖章的规定。我查一下。\n\n<search>民法典 合同签订形式 公司盖章</search>\n\n哦，找到了。《中华人民共和国民法典》提到，书面合同只要能表达当事人的真实意思，其实只要签字或者盖章就可以了，从原则上来说不一定需要两者同时存在。这就说明，盖了章是可以直接代表合同的法律效力的。但我还有些疑惑，既然不用都必须具备，那只有盖章的合同，会不会有一些争议点存在？比如，盖章有没有特别的要求或者规范？\n\n继续查下去，看看法律对公司盖章有没有单独的规定。\n\n<search>企业法人法定代表人登记管理规定 公司公章</search>\n\n找到相关信息了。据相关规定，公司公章其实是一种合法的意思表示手段，只要盖章本身是真实的，那它就能代表公司的意志。所以，从法律上看，光有盖章的合同应该是有效的，除非存在一些特例，比如盖章本身是伪造的，或者是未经授权的行为，这可能会引发争议。\n\n不过还需要回到实际来确认一下。通常在商业活动中，如果合同没有签字可能会让人觉得缺乏正式性，或者让对方质疑授权的问题，但从法律的基础上，这并不会直接否定合同的效力。\n\n综合来看，我的结论是：在大多数情况下，只有盖章，没有法定代表人签字的合同应该是有效的。毕竟盖章本身就是表示公司同意的合法方式。当然，特殊情况还是有可能存在问题，比如是否真的授权，那么可能引起争议，但盖章合同的效力整体上是能够被法律认可的。\n\n确认没问题，逻辑清晰，和现行法律一致，也和实际中常见的做法一致，结论应该是可信的。\n</Internal Thinking>\n\n<Question>\n只有盖章，没有法定代表人签字的合同是否有效？\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"理解问题背景与核心问题\",\n      \"content\": \"本问题的核心是，只有公司盖章而无法定代表人签字的合同是否具有法律效力。这需要分析法律对合同形式、法定代表人签字与公司公章之间关系的要求。首先需要查找中国法律中关于合同签订形式的相关规定，从而明确是否必须要求同时具备盖章和签字。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"检索法律规定\",\n      \"content\": \"根据背景，需要了解《中华人民共和国民法典》关于合同签订形式的相关规定，以及公司盖章的效力。需要搜索相关法律条文内容。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"提出检索对象\",\n      \"content\": \"<search>民法典 合同签订形式 公司盖章</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析检索结果\",\n      \"content\": \"<information>《中华人民共和国民法典》指出：书面合同一般需要签字或者盖章即可视为有效。同时，公司印章在法人或授权代理人无法签字的情况下，通常可以单独作为代表公司意思的有效凭证，具体可以参考《企业法人法定代表人登记管理规定》。</information>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"综合分析法律条文与案例考量\",\n      \"content\": \"从《民法典》来看，书面合同的效力取决于是否表达了当事人的真实意思，而不一定要求法定代表人签字和公司盖章必须同时具备。此外，《企业法人法定代表人登记管理规定》明确，公司公章是一种合法的公司意思表示。因此，在盖章情况下合同可以视为有效，但签字缺失有可能会引发争议，例如是否经过授权、公司是否真实同意等。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"综合结论的形成\",\n      \"content\": \"基于现行法律判断，仅有盖章而无法定代表人签字的合同在通常情况下是有效的。除非有证据证明公司盖章是未经授权的行为，此合同一般能够代表公司的意思表示。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"只有盖章没有法定代表人签字的合同，在多数情况下是有效的。这基于《中华人民共和国民法典》的规定，企业公章通常视为公司意思的有效代表，但可能在某些特定情形下引发争议，例如授权问题。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"结论与法律条文保持一致，并符合实际签署合同中的常见实践。确认结论正确，无需进一步推导。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"嗯，问题是在只有公司盖章但没有法定代表人签字的情况下，合同是否具有法律效力？听起来需要考虑到法律对合同形式和公司权利表达的具体规定。让我想一下，法律是不是有明确要求必须有法定代表人签字，还是说盖章就够了。\\n\\n先从合同的形式开始想吧。一般来说，合同的形式和签署有效性应该写在《中华人民共和国民法典》里。这个法律是合同效力的基础，应该会有关于合同签字、盖章的规定。我查一下。\\n\\n<search>民法典 合同签订形式 公司盖章</search>\\n\\n哦，找到了。《中华人民共和国民法典》提到，书面合同只要能表达当事人的真实意思，其实只要签字或者盖章就可以了，从原则上来说不一定需要两者同时存在。这就说明，盖了章是可以直接代表合同的法律效力的。但我还有些疑惑，既然不用都必须具备，那只有盖章的合同，会不会有一些争议点存在？比如，盖章有没有特别的要求或者规范？\\n\\n继续查下去，看看法律对公司盖章有没有单独的规定。\\n\\n<search>企业法人法定代表人登记管理规定 公司公章</search>\\n\\n找到相关信息了。据相关规定，公司公章其实是一种合法的意思表示手段，只要盖章本身是真实的，那它就能代表公司的意志。所以，从法律上看，光有盖章的合同应该是有效的，除非存在一些特例，比如盖章本身是伪造的，或者是未经授权的行为，这可能会引发争议。\\n\\n不过还需要回到实际来确认一下。通常在商业活动中，如果合同没有签字可能会让人觉得缺乏正式性，或者让对方质疑授权的问题，但从法律的基础上，这并不会直接否定合同的效力。\\n\\n综合来看，我的结论是：在大多数情况下，只有盖章，没有法定代表人签字的合同应该是有效的。毕竟盖章本身就是表示公司同意的合法方式。当然，特殊情况还是有可能存在问题，比如是否真的授权，那么可能引起争议，但盖章合同的效力整体上是能够被法律认可的。\\n\\n确认没问题，逻辑清晰，和现行法律一致，也和实际中常见的做法一致，结论应该是可信的。\"\n}\n```",
+    "只有公司盖章而没有法定代表人签字的合同，通常是有效的。这种情况具体可以从以下法律依据和实务角度进行分析：\n\n1. **《中华人民共和国民法典》的相关规定**  \n《民法典》第四百六十九条明确指出，合同的成立以当事人之间意思表示一致为基础，并未强制要求必须同时具有签字和盖章。只要公司盖章是真实且具有法律效力的，则表示对合同内容的认可，合同依法成立并有效。\n\n2. **公司公章的法律效力**  \n根据相关法律及规定（例如《企业法人法定代表人登记管理规定》），公司公章是该法人的重要权利表达工具之一，具有对外约束力。在公司授权的范围内，使用公章签订的合同一般能够代表公司的真实意思，因此具有法律约束力。签字和盖章是两种不同的意思表示方式，通常只要满足其中一种即可证明合同的成立。\n\n3. **潜在的争议点**  \n尽管法律承认只有盖章的合同是有效的，但实际操作中可能出现以下问题：  \n- **盖章是否真实**：如果合同上的公章被伪造，或未经授权使用，可能导致合同效力被质疑。  \n- **代表权争议**：若签订合同的人或盖章行为超出了公司章程或法定代表人的授权范围，合同效力可能受到挑战。  \n- **商业习惯问题**：在实际商务活动中，一些交易对方可能以无签字合同缺乏正式性为由，拒绝履行义务，尽管这样并不影响合同的法律效力。\n\n因此，在实践中，尽管法律上盖章即可保证合同有效，为减少争议、确保交易安全，公司尽量在签署合同时同时提供法定代表人（或授权代理人）的签字会更为稳妥。\n\n**结论**：只有公司盖章、没有法定代表人签字的合同，在法律上通常有效，但建议在实际操作中尽量做到盖章与签字同时具备，以避免不必要的争议和误解。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "理解问题背景与核心问题",
+        "content": "本问题的核心是，只有公司盖章而无法定代表人签字的合同是否具有法律效力。这需要分析法律对合同形式、法定代表人签字与公司公章之间关系的要求。首先需要查找中国法律中关于合同签订形式的相关规定，从而明确是否必须要求同时具备盖章和签字。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "检索法律规定",
+        "content": "根据背景，需要了解《中华人民共和国民法典》关于合同签订形式的相关规定，以及公司盖章的效力。需要搜索相关法律条文内容。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "提出检索对象",
+        "content": "<search>民法典 合同签订形式 公司盖章</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "分析检索结果",
+        "content": "<information>《中华人民共和国民法典》指出：书面合同一般需要签字或者盖章即可视为有效。同时，公司印章在法人或授权代理人无法签字的情况下，通常可以单独作为代表公司意思的有效凭证，具体可以参考《企业法人法定代表人登记管理规定》。</information>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "综合分析法律条文与案例考量",
+        "content": "从《民法典》来看，书面合同的效力取决于是否表达了当事人的真实意思，而不一定要求法定代表人签字和公司盖章必须同时具备。此外，《企业法人法定代表人登记管理规定》明确，公司公章是一种合法的公司意思表示。因此，在盖章情况下合同可以视为有效，但签字缺失有可能会引发争议，例如是否经过授权、公司是否真实同意等。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "综合结论的形成",
+        "content": "基于现行法律判断，仅有盖章而无法定代表人签字的合同在通常情况下是有效的。除非有证据证明公司盖章是未经授权的行为，此合同一般能够代表公司的意思表示。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "只有盖章没有法定代表人签字的合同，在多数情况下是有效的。这基于《中华人民共和国民法典》的规定，企业公章通常视为公司意思的有效代表，但可能在某些特定情形下引发争议，例如授权问题。"
+      },
+      {
+        "action": "Verification",
+        "content": "结论与法律条文保持一致，并符合实际签署合同中的常见实践。确认结论正确，无需进一步推导。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "嗯，问题是在只有公司盖章但没有法定代表人签字的情况下，合同是否具有法律效力？听起来需要考虑到法律对合同形式和公司权利表达的具体规定。让我想一下，法律是不是有明确要求必须有法定代表人签字，还是说盖章就够了。\n\n先从合同的形式开始想吧。一般来说，合同的形式和签署有效性应该写在《中华人民共和国民法典》里。这个法律是合同效力的基础，应该会有关于合同签字、盖章的规定。我查一下。\n\n<search>民法典 合同签订形式 公司盖章</search>\n\n哦，找到了。《中华人民共和国民法典》提到，书面合同只要能表达当事人的真实意思，其实只要签字或者盖章就可以了，从原则上来说不一定需要两者同时存在。这就说明，盖了章是可以直接代表合同的法律效力的。但我还有些疑惑，既然不用都必须具备，那只有盖章的合同，会不会有一些争议点存在？比如，盖章有没有特别的要求或者规范？\n\n继续查下去，看看法律对公司盖章有没有单独的规定。\n\n<search>企业法人法定代表人登记管理规定 公司公章</search>\n\n找到相关信息了。据相关规定，公司公章其实是一种合法的意思表示手段，只要盖章本身是真实的，那它就能代表公司的意志。所以，从法律上看，光有盖章的合同应该是有效的，除非存在一些特例，比如盖章本身是伪造的，或者是未经授权的行为，这可能会引发争议。\n\n不过还需要回到实际来确认一下。通常在商业活动中，如果合同没有签字可能会让人觉得缺乏正式性，或者让对方质疑授权的问题，但从法律的基础上，这并不会直接否定合同的效力。\n\n综合来看，我的结论是：在大多数情况下，只有盖章，没有法定代表人签字的合同应该是有效的。毕竟盖章本身就是表示公司同意的合法方式。当然，特殊情况还是有可能存在问题，比如是否真的授权，那么可能引起争议，但盖章合同的效力整体上是能够被法律认可的。\n\n确认没问题，逻辑清晰，和现行法律一致，也和实际中常见的做法一致，结论应该是可信的。",
+  "Response": "只有公司盖章而没有法定代表人签字的合同，通常是有效的。这种情况具体可以从以下法律依据和实务角度进行分析：\n\n1. **《中华人民共和国民法典》的相关规定**  \n《民法典》第四百六十九条明确指出，合同的成立以当事人之间意思表示一致为基础，并未强制要求必须同时具有签字和盖章。只要公司盖章是真实且具有法律效力的，则表示对合同内容的认可，合同依法成立并有效。\n\n2. **公司公章的法律效力**  \n根据相关法律及规定（例如《企业法人法定代表人登记管理规定》），公司公章是该法人的重要权利表达工具之一，具有对外约束力。在公司授权的范围内，使用公章签订的合同一般能够代表公司的真实意思，因此具有法律约束力。签字和盖章是两种不同的意思表示方式，通常只要满足其中一种即可证明合同的成立。\n\n3. **潜在的争议点**  \n尽管法律承认只有盖章的合同是有效的，但实际操作中可能出现以下问题：  \n- **盖章是否真实**：如果合同上的公章被伪造，或未经授权使用，可能导致合同效力被质疑。  \n- **代表权争议**：若签订合同的人或盖章行为超出了公司章程或法定代表人的授权范围，合同效力可能受到挑战。  \n- **商业习惯问题**：在实际商务活动中，一些交易对方可能以无签字合同缺乏正式性为由，拒绝履行义务，尽管这样并不影响合同的法律效力。\n\n因此，在实践中，尽管法律上盖章即可保证合同有效，为减少争议、确保交易安全，公司尽量在签署合同时同时提供法定代表人（或授权代理人）的签字会更为稳妥。\n\n**结论**：只有公司盖章、没有法定代表人签字的合同，在法律上通常有效，但建议在实际操作中尽量做到盖章与签字同时具备，以避免不必要的争议和误解。",
+  "Question": "只有盖章，没有法定代表人签字的合同是否有效？"
+}

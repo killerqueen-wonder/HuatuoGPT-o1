@@ -1,0 +1,79 @@
+{
+  "Open-ended Verifiable Question": "婚姻纠纷案件常见的证据有哪些?",
+  "Ground-True Answer": "1)结婚证或婚姻登记机关的证明；(2)没有登记结婚的，关于同居时间或举行婚礼时间的证明；(3)再婚的，原离婚调解书、判决书或有关部门的证明；(4)被告下落不明的，关于下落不明时间、情况的证明；(5)一方或双方为现役军人的，提供所在部队团以上政治机关出具的证明；(6)一方理智有缺陷、患有性病、精神病的病情诊断等证据；(7)一方因犯罪被判刑劳改的，关于原判法院、刑期和劳改地点的证明；(8)婚后感情的事实依据；(9)一方有过错的相关证据；(10)子女姓名、性别、年龄、生活状况的证明；(11)养子女、继子女的有关证明；(12)请求抚养子女的有利条件或其他条件的证明；(13)请求给付抚养费数额的依据(双方工资或劳动收入等)；(14)财产名称、数量、价值的证明；(15)财产性质(婚前、婚后或夫妻约定财产)的证明；(16)储蓄、国库券、股票等财产的证明或相关线索；(17)债权债务情况及性质(婚前、婚后、男女一方单独债权债务)的证明；(18)住房情况(私房建造时间、面积、造价；公房户名、面积、间数、常住人口、分配来源)的证明；(19)其他证据。",
+  "process_id": 5280,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "明确婚姻纠纷案件的范围",
+      "content": "婚姻纠纷案件通常涵盖离婚、抚养权、赡养费、财产分割等内容。证据的类型会因具体纠纷内容而有所不同。在回答问题之前，需要列举常见的证据种类。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "分析证据分类的依据",
+      "content": "根据民事诉讼法，证据通常包括书证、物证、证人证言、视听资料、电子数据、鉴定意见等类别。婚姻纠纷案件的证据可以根据这些类别进行细分和举例。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "列举婚姻纠纷中各类证据的实例",
+      "content": "针对具体内容：1. 离婚相关，可用婚姻登记证、聊天记录（电子数据）、婚外情相关的视听资料等证明婚姻存续状况；2. 财产纠纷，可用银行流水、房产证（书证）等证明财产归属；3. 抚养权争议，可用学校记录、医疗记录、证人证言等反映父母抚养能力。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "婚姻纠纷案件中的常见证据包括以下几类：1. 书证：如婚姻登记证、房产证、银行流水、债务合同。2. 物证：与争议标的物有关的实物证据。3. 证人证言：亲友或相关知情人的证词，用于支持一方主张。4. 视听资料：如录音、录像、照片，用于证明婚姻关系等事实。5. 电子数据：如聊天记录、电子邮件、社交媒体内容等，用于证明当事人行为。6. 鉴定意见：针对争议事实进行的专业鉴定结果，如财产评估报告、精神状态鉴定等。"
+    },
+    {
+      "action": "Verification",
+      "content": "上述内容符合民事诉讼法关于证据分类的要求，并涵盖了婚姻纠纷案件中常见情形的基本证据类型，回答完整且准确。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n婚姻纠纷案件常见的证据有哪些?\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n婚姻纠纷案件中的常见证据包括以下几类：1. 书证：如婚姻登记证、房产证、银行流水、债务合同。2. 物证：与争议标的物有关的实物证据。3. 证人证言：亲友或相关知情人的证词，用于支持一方主张。4. 视听资料：如录音、录像、照片，用于证明婚姻关系等事实。5. 电子数据：如聊天记录、电子邮件、社交媒体内容等，用于证明当事人行为。6. 鉴定意见：针对争议事实进行的专业鉴定结果，如财产评估报告、精神状态鉴定等。  \n</Model Response>  \n\n<Reference Answer>  \n1)结婚证或婚姻登记机关的证明；(2)没有登记结婚的，关于同居时间或举行婚礼时间的证明；(3)再婚的，原离婚调解书、判决书或有关部门的证明；(4)被告下落不明的，关于下落不明时间、情况的证明；(5)一方或双方为现役军人的，提供所在部队团以上政治机关出具的证明；(6)一方理智有缺陷、患有性病、精神病的病情诊断等证据；(7)一方因犯罪被判刑劳改的，关于原判法院、刑期和劳改地点的证明；(8)婚后感情的事实依据；(9)一方有过错的相关证据；(10)子女姓名、性别、年龄、生活状况的证明；(11)养子女、继子女的有关证明；(12)请求抚养子女的有利条件或其他条件的证明；(13)请求给付抚养费数额的依据(双方工资或劳动收入等)；(14)财产名称、数量、价值的证明；(15)财产性质(婚前、婚后或夫妻约定财产)的证明；(16)储蓄、国库券、股票等财产的证明或相关线索；(17)债权债务情况及性质(婚前、婚后、男女一方单独债权债务)的证明；(18)住房情况(私房建造时间、面积、造价；公房户名、面积、间数、常住人口、分配来源)的证明；(19)其他证据。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 明确婚姻纠纷案件的范围\n婚姻纠纷案件通常涵盖离婚、抚养权、赡养费、财产分割等内容。证据的类型会因具体纠纷内容而有所不同。在回答问题之前，需要列举常见的证据种类。\n\n### 分析证据分类的依据\n根据民事诉讼法，证据通常包括书证、物证、证人证言、视听资料、电子数据、鉴定意见等类别。婚姻纠纷案件的证据可以根据这些类别进行细分和举例。\n\n### 列举婚姻纠纷中各类证据的实例\n针对具体内容：1. 离婚相关，可用婚姻登记证、聊天记录（电子数据）、婚外情相关的视听资料等证明婚姻存续状况；2. 财产纠纷，可用银行流水、房产证（书证）等证明财产归属；3. 抚养权争议，可用学校记录、医疗记录、证人证言等反映父母抚养能力。\n\n### Conclusion\n婚姻纠纷案件中的常见证据包括以下几类：1. 书证：如婚姻登记证、房产证、银行流水、债务合同。2. 物证：与争议标的物有关的实物证据。3. 证人证言：亲友或相关知情人的证词，用于支持一方主张。4. 视听资料：如录音、录像、照片，用于证明婚姻关系等事实。5. 电子数据：如聊天记录、电子邮件、社交媒体内容等，用于证明当事人行为。6. 鉴定意见：针对争议事实进行的专业鉴定结果，如财产评估报告、精神状态鉴定等。\n\n### Verification\n上述内容符合民事诉讼法关于证据分类的要求，并涵盖了婚姻纠纷案件中常见情形的基本证据类型，回答完整且准确。\n</Thought Process>\n\n<Question>\n婚姻纠纷案件常见的证据有哪些?\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n嗯，想回答婚姻纠纷案件常见的证据，先得弄清楚婚姻纠纷一般包括哪些情况吧。常见的纠纷应该有离婚相关的问题，比如分手了财产怎么分、孩子归谁抚养这些，还有赡养费的问题也可能涉及。看来涵盖范围挺广的，每种纠纷要用到的证据可能都不太一样。先捋捋证据的分类吧。\n\n根据民事诉讼法，我记得证据一般分为几类。<search>民事诉讼证据分类</search>，搜一下确认一下分类。\n\n<information>民事诉讼证据包括书证、物证、证人证言、视听资料、电子数据、鉴定意见等。</information>哦对，书证、物证、证人证言这些最常见，另外还有视听资料和电子数据，像手机里的聊天记录或录音录像就属于这种。还有一种是专业的鉴定意见，比如财产评估或精神状态的鉴定，蛮重要的。\n\n现在把范围再缩小些，具体到婚姻纠纷里看看每类证据会有哪些。先说离婚吧，离婚纠纷证据最重要的是要证明婚姻关系的存续或破裂，比如婚姻登记证肯定得有。还有些情况，比如一方有婚外情或者家暴行为，这种可能需要用聊天记录、录音录像或者照片来证明，典型的电子数据和视听资料。\n\n再说财产的纠纷，涉及这块是不是需要证明财产归属啊，那就肯定有书证，比如房产证、银行流水，甚至有可能是债务相关的合同。如果财产纠纷很复杂，可能还得找专门机构做鉴定，比如财产的价值评估报告。\n\n关于抚养权的争议，嗯，这个主要是为了证明谁对孩子更有利吧？比如可以找学校的记录，看谁经常去接孩子或者参加家长会，或者查看医疗记录，看谁更负责地带孩子去看病。这种可能还需要证人证言，比如亲友的陈述，来说明抚养能力或孩子和谁关系更好。\n\n哦，还有赡养费的问题，如果涉及到老人，可能得证明老人的经济需求和健康状况，这个就可能用到一些医疗记录或者开销记录了。\n\n所以最后整体来说，这几类证据在婚姻纠纷中最常见：1. 书证，比如婚姻登记证、房产证、银行流水这些；2. 物证，直接跟争议标的相关的实物；3. 证人证言，比如亲友的证词支持；4. 视听资料，比如重要的录音录像或照片；5. 电子数据，像聊天记录、社交平台上的互动等；6. 鉴定意见，可能是财产评估或心理状态的专业鉴定。\n\n嗯，看起来逻辑上没问题，也列的挺全的，可以这么回答。\n</Internal Thinking>\n\n<Question>\n婚姻纠纷案件常见的证据有哪些?\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"明确婚姻纠纷案件的范围\",\n      \"content\": \"婚姻纠纷案件通常涵盖离婚、抚养权、赡养费、财产分割等内容。证据的类型会因具体纠纷内容而有所不同。在回答问题之前，需要列举常见的证据种类。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析证据分类的依据\",\n      \"content\": \"根据民事诉讼法，证据通常包括书证、物证、证人证言、视听资料、电子数据、鉴定意见等类别。婚姻纠纷案件的证据可以根据这些类别进行细分和举例。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"列举婚姻纠纷中各类证据的实例\",\n      \"content\": \"针对具体内容：1. 离婚相关，可用婚姻登记证、聊天记录（电子数据）、婚外情相关的视听资料等证明婚姻存续状况；2. 财产纠纷，可用银行流水、房产证（书证）等证明财产归属；3. 抚养权争议，可用学校记录、医疗记录、证人证言等反映父母抚养能力。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"婚姻纠纷案件中的常见证据包括以下几类：1. 书证：如婚姻登记证、房产证、银行流水、债务合同。2. 物证：与争议标的物有关的实物证据。3. 证人证言：亲友或相关知情人的证词，用于支持一方主张。4. 视听资料：如录音、录像、照片，用于证明婚姻关系等事实。5. 电子数据：如聊天记录、电子邮件、社交媒体内容等，用于证明当事人行为。6. 鉴定意见：针对争议事实进行的专业鉴定结果，如财产评估报告、精神状态鉴定等。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"上述内容符合民事诉讼法关于证据分类的要求，并涵盖了婚姻纠纷案件中常见情形的基本证据类型，回答完整且准确。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"嗯，想回答婚姻纠纷案件常见的证据，先得弄清楚婚姻纠纷一般包括哪些情况吧。常见的纠纷应该有离婚相关的问题，比如分手了财产怎么分、孩子归谁抚养这些，还有赡养费的问题也可能涉及。看来涵盖范围挺广的，每种纠纷要用到的证据可能都不太一样。先捋捋证据的分类吧。\\n\\n根据民事诉讼法，我记得证据一般分为几类。<search>民事诉讼证据分类</search>，搜一下确认一下分类。\\n\\n<information>民事诉讼证据包括书证、物证、证人证言、视听资料、电子数据、鉴定意见等。</information>哦对，书证、物证、证人证言这些最常见，另外还有视听资料和电子数据，像手机里的聊天记录或录音录像就属于这种。还有一种是专业的鉴定意见，比如财产评估或精神状态的鉴定，蛮重要的。\\n\\n现在把范围再缩小些，具体到婚姻纠纷里看看每类证据会有哪些。先说离婚吧，离婚纠纷证据最重要的是要证明婚姻关系的存续或破裂，比如婚姻登记证肯定得有。还有些情况，比如一方有婚外情或者家暴行为，这种可能需要用聊天记录、录音录像或者照片来证明，典型的电子数据和视听资料。\\n\\n再说财产的纠纷，涉及这块是不是需要证明财产归属啊，那就肯定有书证，比如房产证、银行流水，甚至有可能是债务相关的合同。如果财产纠纷很复杂，可能还得找专门机构做鉴定，比如财产的价值评估报告。\\n\\n关于抚养权的争议，嗯，这个主要是为了证明谁对孩子更有利吧？比如可以找学校的记录，看谁经常去接孩子或者参加家长会，或者查看医疗记录，看谁更负责地带孩子去看病。这种可能还需要证人证言，比如亲友的陈述，来说明抚养能力或孩子和谁关系更好。\\n\\n哦，还有赡养费的问题，如果涉及到老人，可能得证明老人的经济需求和健康状况，这个就可能用到一些医疗记录或者开销记录了。\\n\\n所以最后整体来说，这几类证据在婚姻纠纷中最常见：1. 书证，比如婚姻登记证、房产证、银行流水这些；2. 物证，直接跟争议标的相关的实物；3. 证人证言，比如亲友的证词支持；4. 视听资料，比如重要的录音录像或照片；5. 电子数据，像聊天记录、社交平台上的互动等；6. 鉴定意见，可能是财产评估或心理状态的专业鉴定。\\n\\n嗯，看起来逻辑上没问题，也列的挺全的，可以这么回答。\"\n}\n```",
+    "婚姻纠纷案件中，常见的证据可以根据具体纠纷类型来划分，一般包括以下几类：\n\n1. **书证**  \n   如婚姻登记证、离婚协议书、房产证、银行流水记录、债务合同等书面文件，用于证明婚姻关系存续或破裂、财产归属、债务情况等。\n\n2. **物证**  \n   与纠纷标的直接相关的实物，例如涉及争议的物品或财产实物，可以直观地证明争议内容。\n\n3. **证人证言**  \n   亲友、邻居、教育和医疗机构的工作人员等提供的陈述，通常用于证明婚姻状况、抚养能力或具体事件的真实性。\n\n4. **视听资料**  \n   包括录音、录像、照片等，如家暴或婚外情的证据，通过直接的影像或语音记录证明事实。\n\n5. **电子数据**  \n   如短信、微信聊天记录、电子邮件、社交平台互动信息等，与婚姻、财产、监护关系相关的重要沟通记录。\n\n6. **鉴定意见**  \n   涉及财产分割的评估报告，或证明身体伤害、精神状况的鉴定意见，有助于解决财产价值和健康问题的争议。\n\n以上证据在离婚诉讼、财产争议、抚养权纠纷以及赡养费问题中均可能发挥重要作用。根据案件情况，提交完整、相关的证据是维护自身权益的关键。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "明确婚姻纠纷案件的范围",
+        "content": "婚姻纠纷案件通常涵盖离婚、抚养权、赡养费、财产分割等内容。证据的类型会因具体纠纷内容而有所不同。在回答问题之前，需要列举常见的证据种类。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "分析证据分类的依据",
+        "content": "根据民事诉讼法，证据通常包括书证、物证、证人证言、视听资料、电子数据、鉴定意见等类别。婚姻纠纷案件的证据可以根据这些类别进行细分和举例。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "列举婚姻纠纷中各类证据的实例",
+        "content": "针对具体内容：1. 离婚相关，可用婚姻登记证、聊天记录（电子数据）、婚外情相关的视听资料等证明婚姻存续状况；2. 财产纠纷，可用银行流水、房产证（书证）等证明财产归属；3. 抚养权争议，可用学校记录、医疗记录、证人证言等反映父母抚养能力。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "婚姻纠纷案件中的常见证据包括以下几类：1. 书证：如婚姻登记证、房产证、银行流水、债务合同。2. 物证：与争议标的物有关的实物证据。3. 证人证言：亲友或相关知情人的证词，用于支持一方主张。4. 视听资料：如录音、录像、照片，用于证明婚姻关系等事实。5. 电子数据：如聊天记录、电子邮件、社交媒体内容等，用于证明当事人行为。6. 鉴定意见：针对争议事实进行的专业鉴定结果，如财产评估报告、精神状态鉴定等。"
+      },
+      {
+        "action": "Verification",
+        "content": "上述内容符合民事诉讼法关于证据分类的要求，并涵盖了婚姻纠纷案件中常见情形的基本证据类型，回答完整且准确。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "嗯，想回答婚姻纠纷案件常见的证据，先得弄清楚婚姻纠纷一般包括哪些情况吧。常见的纠纷应该有离婚相关的问题，比如分手了财产怎么分、孩子归谁抚养这些，还有赡养费的问题也可能涉及。看来涵盖范围挺广的，每种纠纷要用到的证据可能都不太一样。先捋捋证据的分类吧。\n\n根据民事诉讼法，我记得证据一般分为几类。<search>民事诉讼证据分类</search>，搜一下确认一下分类。\n\n<information>民事诉讼证据包括书证、物证、证人证言、视听资料、电子数据、鉴定意见等。</information>哦对，书证、物证、证人证言这些最常见，另外还有视听资料和电子数据，像手机里的聊天记录或录音录像就属于这种。还有一种是专业的鉴定意见，比如财产评估或精神状态的鉴定，蛮重要的。\n\n现在把范围再缩小些，具体到婚姻纠纷里看看每类证据会有哪些。先说离婚吧，离婚纠纷证据最重要的是要证明婚姻关系的存续或破裂，比如婚姻登记证肯定得有。还有些情况，比如一方有婚外情或者家暴行为，这种可能需要用聊天记录、录音录像或者照片来证明，典型的电子数据和视听资料。\n\n再说财产的纠纷，涉及这块是不是需要证明财产归属啊，那就肯定有书证，比如房产证、银行流水，甚至有可能是债务相关的合同。如果财产纠纷很复杂，可能还得找专门机构做鉴定，比如财产的价值评估报告。\n\n关于抚养权的争议，嗯，这个主要是为了证明谁对孩子更有利吧？比如可以找学校的记录，看谁经常去接孩子或者参加家长会，或者查看医疗记录，看谁更负责地带孩子去看病。这种可能还需要证人证言，比如亲友的陈述，来说明抚养能力或孩子和谁关系更好。\n\n哦，还有赡养费的问题，如果涉及到老人，可能得证明老人的经济需求和健康状况，这个就可能用到一些医疗记录或者开销记录了。\n\n所以最后整体来说，这几类证据在婚姻纠纷中最常见：1. 书证，比如婚姻登记证、房产证、银行流水这些；2. 物证，直接跟争议标的相关的实物；3. 证人证言，比如亲友的证词支持；4. 视听资料，比如重要的录音录像或照片；5. 电子数据，像聊天记录、社交平台上的互动等；6. 鉴定意见，可能是财产评估或心理状态的专业鉴定。\n\n嗯，看起来逻辑上没问题，也列的挺全的，可以这么回答。",
+  "Response": "婚姻纠纷案件中，常见的证据可以根据具体纠纷类型来划分，一般包括以下几类：\n\n1. **书证**  \n   如婚姻登记证、离婚协议书、房产证、银行流水记录、债务合同等书面文件，用于证明婚姻关系存续或破裂、财产归属、债务情况等。\n\n2. **物证**  \n   与纠纷标的直接相关的实物，例如涉及争议的物品或财产实物，可以直观地证明争议内容。\n\n3. **证人证言**  \n   亲友、邻居、教育和医疗机构的工作人员等提供的陈述，通常用于证明婚姻状况、抚养能力或具体事件的真实性。\n\n4. **视听资料**  \n   包括录音、录像、照片等，如家暴或婚外情的证据，通过直接的影像或语音记录证明事实。\n\n5. **电子数据**  \n   如短信、微信聊天记录、电子邮件、社交平台互动信息等，与婚姻、财产、监护关系相关的重要沟通记录。\n\n6. **鉴定意见**  \n   涉及财产分割的评估报告，或证明身体伤害、精神状况的鉴定意见，有助于解决财产价值和健康问题的争议。\n\n以上证据在离婚诉讼、财产争议、抚养权纠纷以及赡养费问题中均可能发挥重要作用。根据案件情况，提交完整、相关的证据是维护自身权益的关键。",
+  "Question": "婚姻纠纷案件常见的证据有哪些?"
+}

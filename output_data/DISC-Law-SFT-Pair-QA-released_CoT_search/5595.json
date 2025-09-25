@@ -1,0 +1,109 @@
+{
+  "Open-ended Verifiable Question": "小区车位可以加装充电桩吗？",
+  "Ground-True Answer": "地下停车场属于人防工程，建设和使用标准较为严格，不能私自改建。如果与物业沟通后允许安装充电桩，并且向相关部门提交了资料后，是允许安装充电桩的。另外，地下车库在安装充电桩的时候需要先观察周边环境 ，首先需要对充电区域进行长度测量，然后测量下充电桩与车位距离，再确配电箱位置，确认电源线的走线距离，同时也需要看下光线是否充足，地下车库的信号是否稳定等。",
+  "process_id": 5595,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "明确问题背景",
+      "content": "小区车位加装充电桩涉及居民个人需求、物业管理规定以及相关法律、法规的约束。首先需要明确法律对充电桩在住宅小区的安装政策是否支持。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "查找相关政策和法律依据",
+      "content": "需要了解国家或地方政府是否针对住宅小区车位加装充电桩出台过相关的法律法规，比如《物业管理条例》、《新能源汽车推广政策》等。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "确定需要搜索的法律条文",
+      "content": "搜索与‘小区车位充电桩安装相关法律’的政策文件、法规条文，尤其是针对住宅性质停车位安装充电设施的规定。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "搜索具体关键字",
+      "content": "<search>小区车位充电桩安装政策</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "分析搜索结果",
+      "content": "<information>根据中国相关政策，如《2020年新能源汽车充电基础设施建设通知》，明确要求新建住宅小区规划车位应100%预留充电桩建设条件；已建成的小区居民如需改造安装充电桩，物业不得无理拒绝，需提供改造便利。而《物业管理条例》也要求物业支持业主合理需求。</information>结合此信息，小区车位加装充电桩在政策上是被支持的，但需满足小区业主协调和电力部门审批程序。</content>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "具体条件分析",
+      "content": "虽然政策支持，但实际实施还包括：1. 车位性质必须明确，如产权车位、出租车位等批准方式不同；2. 需有电力实施审批和施工单位；3. 需提前与物业和其他业主协调，确保施工不会影响小区公共利益。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "小区车位可以加装充电桩，但需要满足以下条件：1. 安装者须为车位的合法使用人；2. 征得相关业主和物业管理部门的同意；3. 得到电力建设部门的审查许可；4. 施工过程中确保安全、合规、不影响公共利益。政策明确规定物业不得无理拒绝，但需遵循程序办理。"
+    },
+    {
+      "action": "Verification",
+      "content": "依据政策文件，如《新能源汽车充电基础设施建设通知》和《物业管理条例》，以上结论符合实际情况。因此，小区车位确实可以加装充电桩，结论正确。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n小区车位可以加装充电桩吗？\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n小区车位可以加装充电桩，但需要满足以下条件：1. 安装者须为车位的合法使用人；2. 征得相关业主和物业管理部门的同意；3. 得到电力建设部门的审查许可；4. 施工过程中确保安全、合规、不影响公共利益。政策明确规定物业不得无理拒绝，但需遵循程序办理。  \n</Model Response>  \n\n<Reference Answer>  \n地下停车场属于人防工程，建设和使用标准较为严格，不能私自改建。如果与物业沟通后允许安装充电桩，并且向相关部门提交了资料后，是允许安装充电桩的。另外，地下车库在安装充电桩的时候需要先观察周边环境 ，首先需要对充电区域进行长度测量，然后测量下充电桩与车位距离，再确配电箱位置，确认电源线的走线距离，同时也需要看下光线是否充足，地下车库的信号是否稳定等。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 明确问题背景\n小区车位加装充电桩涉及居民个人需求、物业管理规定以及相关法律、法规的约束。首先需要明确法律对充电桩在住宅小区的安装政策是否支持。\n\n### 查找相关政策和法律依据\n需要了解国家或地方政府是否针对住宅小区车位加装充电桩出台过相关的法律法规，比如《物业管理条例》、《新能源汽车推广政策》等。\n\n### 确定需要搜索的法律条文\n搜索与‘小区车位充电桩安装相关法律’的政策文件、法规条文，尤其是针对住宅性质停车位安装充电设施的规定。\n\n### 搜索具体关键字\n<search>小区车位充电桩安装政策</search>\n\n### 分析搜索结果\n<information>根据中国相关政策，如《2020年新能源汽车充电基础设施建设通知》，明确要求新建住宅小区规划车位应100%预留充电桩建设条件；已建成的小区居民如需改造安装充电桩，物业不得无理拒绝，需提供改造便利。而《物业管理条例》也要求物业支持业主合理需求。</information>结合此信息，小区车位加装充电桩在政策上是被支持的，但需满足小区业主协调和电力部门审批程序。</content>\n\n### 具体条件分析\n虽然政策支持，但实际实施还包括：1. 车位性质必须明确，如产权车位、出租车位等批准方式不同；2. 需有电力实施审批和施工单位；3. 需提前与物业和其他业主协调，确保施工不会影响小区公共利益。\n\n### Conclusion\n小区车位可以加装充电桩，但需要满足以下条件：1. 安装者须为车位的合法使用人；2. 征得相关业主和物业管理部门的同意；3. 得到电力建设部门的审查许可；4. 施工过程中确保安全、合规、不影响公共利益。政策明确规定物业不得无理拒绝，但需遵循程序办理。\n\n### Verification\n依据政策文件，如《新能源汽车充电基础设施建设通知》和《物业管理条例》，以上结论符合实际情况。因此，小区车位确实可以加装充电桩，结论正确。\n</Thought Process>\n\n<Question>\n小区车位可以加装充电桩吗？\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n先想想，这个问题还挺常见的，现在很多人买了新能源汽车，发现充电桩没那么方便。小区里加装充电桩到底行不行呢？嗯，感觉应该跟政策、物业管理还有施工条件有关，得弄清楚能不能操作，也要看看有没有法律支持。先从大的方向入手，充电桩的安装应该有全国性的政策吧，毕竟涉及到新能源汽车这么大的推广项目。\n\n我记得好像有一个政策提到小区车位需要考虑充电桩，但具体要求是什么还不太确定。先去搜一下相关的政策文件吧，比如可以搜“小区车位充电桩安装政策”，看看有没有明确的规定。<search>小区车位充电桩安装政策</search>\n\n搜到了，显示的是国家有一些政策支持，比如《2020年新能源汽车充电基础设施建设通知》里提到，新建住宅小区的规划车位必须百分百预留充电桩建设条件。而对于已经建成的小区，那些居民如果想装充电桩，物业不能随便拒绝，还得配合安装提供便利。这看起来挺合情合理的，毕竟大家都有用车的需求嘛。另外，《物业管理条例》里也提到，物业应该支持业主的合理需求。<information>根据中国相关政策，如《2020年新能源汽车充电基础设施建设通知》，明确要求新建住宅小区规划车位应100%预留充电桩建设条件；已建成的小区居民如需改造安装充电桩，物业不得无理拒绝，需提供改造便利。而《物业管理条例》也要求物业支持业主合理需求。</information>\n\n所以从政策上来看，加装充电桩是可以的。不过这只是政策层面，实际操作应该不会这么简单吧。毕竟还有一些具体限制，比如车位的性质，如果是自己买的产权车位可能会简单些；要是租的或者共有车位，就得考虑和其他车位使用人的关系。还有，施工时是不是还得找电力部门审批啊，毕竟涉及安装电力设备，总不能随便接电吧？还有施工协调，比如人家施工会不会吵到邻居，安全问题够不够保障，这些也得提前解决。\n\n嗯，回到问题，小区车位能不能装充电桩，其实是可以的，但得满足不少条件。第一，安装的人得是车位的合法使用者，不能硬装别人的车位。第二，物业和相关业主的同意也必须要提前协商好，不能不管不顾直接施工。第三，还得有电力部门的批准，确保安装安全无误。第四，施工方案不能影响到小区的其他居民或者公共利益。最后一点，政策也明确说了，物业不能无理拒绝，只要以上程序符合规则，他们就得配合。\n\n看来只要符合这些条件，还真是可以装充电桩的。而且综合来看，这应该是合理和合法的结论，也符合政策的规定。不过具体实施的时候，细节问题还是要提前安排好，比如沟通、审批这些，不能一股脑就直接安装。\n</Internal Thinking>\n\n<Question>\n小区车位可以加装充电桩吗？\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"明确问题背景\",\n      \"content\": \"小区车位加装充电桩涉及居民个人需求、物业管理规定以及相关法律、法规的约束。首先需要明确法律对充电桩在住宅小区的安装政策是否支持。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"查找相关政策和法律依据\",\n      \"content\": \"需要了解国家或地方政府是否针对住宅小区车位加装充电桩出台过相关的法律法规，比如《物业管理条例》、《新能源汽车推广政策》等。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"确定需要搜索的法律条文\",\n      \"content\": \"搜索与‘小区车位充电桩安装相关法律’的政策文件、法规条文，尤其是针对住宅性质停车位安装充电设施的规定。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"搜索具体关键字\",\n      \"content\": \"<search>小区车位充电桩安装政策</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析搜索结果\",\n      \"content\": \"<information>根据中国相关政策，如《2020年新能源汽车充电基础设施建设通知》，明确要求新建住宅小区规划车位应100%预留充电桩建设条件；已建成的小区居民如需改造安装充电桩，物业不得无理拒绝，需提供改造便利。而《物业管理条例》也要求物业支持业主合理需求。</information>结合此信息，小区车位加装充电桩在政策上是被支持的，但需满足小区业主协调和电力部门审批程序。</content>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"具体条件分析\",\n      \"content\": \"虽然政策支持，但实际实施还包括：1. 车位性质必须明确，如产权车位、出租车位等批准方式不同；2. 需有电力实施审批和施工单位；3. 需提前与物业和其他业主协调，确保施工不会影响小区公共利益。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"小区车位可以加装充电桩，但需要满足以下条件：1. 安装者须为车位的合法使用人；2. 征得相关业主和物业管理部门的同意；3. 得到电力建设部门的审查许可；4. 施工过程中确保安全、合规、不影响公共利益。政策明确规定物业不得无理拒绝，但需遵循程序办理。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"依据政策文件，如《新能源汽车充电基础设施建设通知》和《物业管理条例》，以上结论符合实际情况。因此，小区车位确实可以加装充电桩，结论正确。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"先想想，这个问题还挺常见的，现在很多人买了新能源汽车，发现充电桩没那么方便。小区里加装充电桩到底行不行呢？嗯，感觉应该跟政策、物业管理还有施工条件有关，得弄清楚能不能操作，也要看看有没有法律支持。先从大的方向入手，充电桩的安装应该有全国性的政策吧，毕竟涉及到新能源汽车这么大的推广项目。\\n\\n我记得好像有一个政策提到小区车位需要考虑充电桩，但具体要求是什么还不太确定。先去搜一下相关的政策文件吧，比如可以搜“小区车位充电桩安装政策”，看看有没有明确的规定。<search>小区车位充电桩安装政策</search>\\n\\n搜到了，显示的是国家有一些政策支持，比如《2020年新能源汽车充电基础设施建设通知》里提到，新建住宅小区的规划车位必须百分百预留充电桩建设条件。而对于已经建成的小区，那些居民如果想装充电桩，物业不能随便拒绝，还得配合安装提供便利。这看起来挺合情合理的，毕竟大家都有用车的需求嘛。另外，《物业管理条例》里也提到，物业应该支持业主的合理需求。<information>根据中国相关政策，如《2020年新能源汽车充电基础设施建设通知》，明确要求新建住宅小区规划车位应100%预留充电桩建设条件；已建成的小区居民如需改造安装充电桩，物业不得无理拒绝，需提供改造便利。而《物业管理条例》也要求物业支持业主合理需求。</information>\\n\\n所以从政策上来看，加装充电桩是可以的。不过这只是政策层面，实际操作应该不会这么简单吧。毕竟还有一些具体限制，比如车位的性质，如果是自己买的产权车位可能会简单些；要是租的或者共有车位，就得考虑和其他车位使用人的关系。还有，施工时是不是还得找电力部门审批啊，毕竟涉及安装电力设备，总不能随便接电吧？还有施工协调，比如人家施工会不会吵到邻居，安全问题够不够保障，这些也得提前解决。\\n\\n嗯，回到问题，小区车位能不能装充电桩，其实是可以的，但得满足不少条件。第一，安装的人得是车位的合法使用者，不能硬装别人的车位。第二，物业和相关业主的同意也必须要提前协商好，不能不管不顾直接施工。第三，还得有电力部门的批准，确保安装安全无误。第四，施工方案不能影响到小区的其他居民或者公共利益。最后一点，政策也明确说了，物业不能无理拒绝，只要以上程序符合规则，他们就得配合。\\n\\n看来只要符合这些条件，还真是可以装充电桩的。而且综合来看，这应该是合理和合法的结论，也符合政策的规定。不过具体实施的时候，细节问题还是要提前安排好，比如沟通、审批这些，不能一股脑就直接安装。\"\n}\n```",
+    "可以在小区车位加装充电桩，但需要满足一定条件并遵循相关政策规定。根据中国相关政策，如《2020年新能源汽车充电基础设施建设通知》和《物业管理条例》，小区业主有权在符合条件的前提下申请安装充电桩，物业应提供配合，不能无理拒绝。具体条件如下：\n\n1. **车位性质**：加装充电桩的车位需为业主合法使用的车位，包括产权车位或符合租用协议的车位。共有车位需取得其他业主的同意。\n\n2. **物业协商**：安装充电桩需提前与物业沟通，尽量达成一致，以确保施工方案合理且不影响公共利益。\n\n3. **电力审批**：充电桩的安装涉及电力设备改造，需向当地电力部门申请并获得批准，确保安全合规。\n\n4. **施工安全与邻里权益**：施工过程应避免对邻居造成不必要的干扰，并确保安装后的充电桩不影响小区公共设施和其他居民的正常生活。\n\n从政策上看，特别是针对已建成的小区，只要符合以上程序，不违反安全、合法与合理性原则，安装充电桩是可以的。如果遇到物业阻碍，业主可依据政策提出合理诉求，通过沟通、协调甚至法律手段维护自己的合法权益。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "明确问题背景",
+        "content": "小区车位加装充电桩涉及居民个人需求、物业管理规定以及相关法律、法规的约束。首先需要明确法律对充电桩在住宅小区的安装政策是否支持。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "查找相关政策和法律依据",
+        "content": "需要了解国家或地方政府是否针对住宅小区车位加装充电桩出台过相关的法律法规，比如《物业管理条例》、《新能源汽车推广政策》等。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "确定需要搜索的法律条文",
+        "content": "搜索与‘小区车位充电桩安装相关法律’的政策文件、法规条文，尤其是针对住宅性质停车位安装充电设施的规定。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "搜索具体关键字",
+        "content": "<search>小区车位充电桩安装政策</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "分析搜索结果",
+        "content": "<information>根据中国相关政策，如《2020年新能源汽车充电基础设施建设通知》，明确要求新建住宅小区规划车位应100%预留充电桩建设条件；已建成的小区居民如需改造安装充电桩，物业不得无理拒绝，需提供改造便利。而《物业管理条例》也要求物业支持业主合理需求。</information>结合此信息，小区车位加装充电桩在政策上是被支持的，但需满足小区业主协调和电力部门审批程序。</content>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "具体条件分析",
+        "content": "虽然政策支持，但实际实施还包括：1. 车位性质必须明确，如产权车位、出租车位等批准方式不同；2. 需有电力实施审批和施工单位；3. 需提前与物业和其他业主协调，确保施工不会影响小区公共利益。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "小区车位可以加装充电桩，但需要满足以下条件：1. 安装者须为车位的合法使用人；2. 征得相关业主和物业管理部门的同意；3. 得到电力建设部门的审查许可；4. 施工过程中确保安全、合规、不影响公共利益。政策明确规定物业不得无理拒绝，但需遵循程序办理。"
+      },
+      {
+        "action": "Verification",
+        "content": "依据政策文件，如《新能源汽车充电基础设施建设通知》和《物业管理条例》，以上结论符合实际情况。因此，小区车位确实可以加装充电桩，结论正确。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "先想想，这个问题还挺常见的，现在很多人买了新能源汽车，发现充电桩没那么方便。小区里加装充电桩到底行不行呢？嗯，感觉应该跟政策、物业管理还有施工条件有关，得弄清楚能不能操作，也要看看有没有法律支持。先从大的方向入手，充电桩的安装应该有全国性的政策吧，毕竟涉及到新能源汽车这么大的推广项目。\n\n我记得好像有一个政策提到小区车位需要考虑充电桩，但具体要求是什么还不太确定。先去搜一下相关的政策文件吧，比如可以搜“小区车位充电桩安装政策”，看看有没有明确的规定。<search>小区车位充电桩安装政策</search>\n\n搜到了，显示的是国家有一些政策支持，比如《2020年新能源汽车充电基础设施建设通知》里提到，新建住宅小区的规划车位必须百分百预留充电桩建设条件。而对于已经建成的小区，那些居民如果想装充电桩，物业不能随便拒绝，还得配合安装提供便利。这看起来挺合情合理的，毕竟大家都有用车的需求嘛。另外，《物业管理条例》里也提到，物业应该支持业主的合理需求。<information>根据中国相关政策，如《2020年新能源汽车充电基础设施建设通知》，明确要求新建住宅小区规划车位应100%预留充电桩建设条件；已建成的小区居民如需改造安装充电桩，物业不得无理拒绝，需提供改造便利。而《物业管理条例》也要求物业支持业主合理需求。</information>\n\n所以从政策上来看，加装充电桩是可以的。不过这只是政策层面，实际操作应该不会这么简单吧。毕竟还有一些具体限制，比如车位的性质，如果是自己买的产权车位可能会简单些；要是租的或者共有车位，就得考虑和其他车位使用人的关系。还有，施工时是不是还得找电力部门审批啊，毕竟涉及安装电力设备，总不能随便接电吧？还有施工协调，比如人家施工会不会吵到邻居，安全问题够不够保障，这些也得提前解决。\n\n嗯，回到问题，小区车位能不能装充电桩，其实是可以的，但得满足不少条件。第一，安装的人得是车位的合法使用者，不能硬装别人的车位。第二，物业和相关业主的同意也必须要提前协商好，不能不管不顾直接施工。第三，还得有电力部门的批准，确保安装安全无误。第四，施工方案不能影响到小区的其他居民或者公共利益。最后一点，政策也明确说了，物业不能无理拒绝，只要以上程序符合规则，他们就得配合。\n\n看来只要符合这些条件，还真是可以装充电桩的。而且综合来看，这应该是合理和合法的结论，也符合政策的规定。不过具体实施的时候，细节问题还是要提前安排好，比如沟通、审批这些，不能一股脑就直接安装。",
+  "Response": "可以在小区车位加装充电桩，但需要满足一定条件并遵循相关政策规定。根据中国相关政策，如《2020年新能源汽车充电基础设施建设通知》和《物业管理条例》，小区业主有权在符合条件的前提下申请安装充电桩，物业应提供配合，不能无理拒绝。具体条件如下：\n\n1. **车位性质**：加装充电桩的车位需为业主合法使用的车位，包括产权车位或符合租用协议的车位。共有车位需取得其他业主的同意。\n\n2. **物业协商**：安装充电桩需提前与物业沟通，尽量达成一致，以确保施工方案合理且不影响公共利益。\n\n3. **电力审批**：充电桩的安装涉及电力设备改造，需向当地电力部门申请并获得批准，确保安全合规。\n\n4. **施工安全与邻里权益**：施工过程应避免对邻居造成不必要的干扰，并确保安装后的充电桩不影响小区公共设施和其他居民的正常生活。\n\n从政策上看，特别是针对已建成的小区，只要符合以上程序，不违反安全、合法与合理性原则，安装充电桩是可以的。如果遇到物业阻碍，业主可依据政策提出合理诉求，通过沟通、协调甚至法律手段维护自己的合法权益。",
+  "Question": "小区车位可以加装充电桩吗？"
+}

@@ -1,0 +1,89 @@
+{
+  "Open-ended Verifiable Question": "动迁安置，动迁后家庭内部分配不服什么时候可以起诉？",
+  "Ground-True Answer": "此前，如果该户动迁选择的是货币安置，则被安置人如果对于内部分配不服，可以随时起诉要求重新分配；如果该户选择的是安置房，那么就要分情况了，如果你起诉要求分钱，可以等动迁协议签署后就起诉；如果起诉分房，则要等安置房大产证出来以后。但是近期，上海二中院下辖法院对于动迁共有物分割有了新的处理意见：对于货币安置的，依然可以随时起诉要求分割；对于拿安置房的，无论你是起诉要求分钱还是分房，都要等到安置房大产证出来以后。除非选房后剩余货币有转移风险，必须及时诉讼保全。",
+  "process_id": 3847,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "明确问题背景",
+      "content": "动迁安置后涉及家庭内部财产分配纠纷，通常涉及个人权利主张和法律保护的问题。此类纠纷可能涉及民法、合同法，以及动迁安置条例等具体法律规定。需要进一步明确起诉条件和时间限制。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "查阅相关法律法规",
+      "content": "需要明确哪些法律或法规规定了动迁纠纷中家庭成员对安置利益分配的起诉时间限制。寻找关键文献或条例以得出答案。<search>动迁安置纠纷起诉时效</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "提取法律时效相关信息",
+      "content": "<information>《民法典》中规定，一般民事纠纷的诉讼时效为三年；具体动迁纠纷起诉时效可能由地方性法规或条例规定，可参考《国有土地上房屋征收与补偿条例》或地方性动迁政策。</information>根据信息，需确认是否对家庭分配类纠纷有更具体的时效限制。</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "结合法律时效与动迁类型分析",
+      "content": "动迁安置纠纷涉及财产分配问题，根据《民法典》的三年诉讼时效，如果家庭成员认为自身权益受到侵害，应尽快通过协商、调解或向法院起诉维权。地方性动迁政策可能对重大纠纷另有细则规定。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "动迁后家庭内部对安置利益分配不服的情况下，起诉时限通常为三年（依据《民法典》）。如动迁政策有所特别规定，应以相关地方性政策为准。建议及时提起诉讼以确保权益获得保护。"
+    },
+    {
+      "action": "Verification",
+      "content": "结论符合《民法典》规定的诉讼时效，也合理考虑了地方性动迁政策的可能影响。结论正确，无需修改。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n动迁安置，动迁后家庭内部分配不服什么时候可以起诉？\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n动迁后家庭内部对安置利益分配不服的情况下，起诉时限通常为三年（依据《民法典》）。如动迁政策有所特别规定，应以相关地方性政策为准。建议及时提起诉讼以确保权益获得保护。  \n</Model Response>  \n\n<Reference Answer>  \n此前，如果该户动迁选择的是货币安置，则被安置人如果对于内部分配不服，可以随时起诉要求重新分配；如果该户选择的是安置房，那么就要分情况了，如果你起诉要求分钱，可以等动迁协议签署后就起诉；如果起诉分房，则要等安置房大产证出来以后。但是近期，上海二中院下辖法院对于动迁共有物分割有了新的处理意见：对于货币安置的，依然可以随时起诉要求分割；对于拿安置房的，无论你是起诉要求分钱还是分房，都要等到安置房大产证出来以后。除非选房后剩余货币有转移风险，必须及时诉讼保全。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 明确问题背景\n动迁安置后涉及家庭内部财产分配纠纷，通常涉及个人权利主张和法律保护的问题。此类纠纷可能涉及民法、合同法，以及动迁安置条例等具体法律规定。需要进一步明确起诉条件和时间限制。\n\n### 查阅相关法律法规\n需要明确哪些法律或法规规定了动迁纠纷中家庭成员对安置利益分配的起诉时间限制。寻找关键文献或条例以得出答案。<search>动迁安置纠纷起诉时效</search>\n\n### 提取法律时效相关信息\n<information>《民法典》中规定，一般民事纠纷的诉讼时效为三年；具体动迁纠纷起诉时效可能由地方性法规或条例规定，可参考《国有土地上房屋征收与补偿条例》或地方性动迁政策。</information>根据信息，需确认是否对家庭分配类纠纷有更具体的时效限制。</search>\n\n### 结合法律时效与动迁类型分析\n动迁安置纠纷涉及财产分配问题，根据《民法典》的三年诉讼时效，如果家庭成员认为自身权益受到侵害，应尽快通过协商、调解或向法院起诉维权。地方性动迁政策可能对重大纠纷另有细则规定。\n\n### Conclusion\n动迁后家庭内部对安置利益分配不服的情况下，起诉时限通常为三年（依据《民法典》）。如动迁政策有所特别规定，应以相关地方性政策为准。建议及时提起诉讼以确保权益获得保护。\n\n### Verification\n结论符合《民法典》规定的诉讼时效，也合理考虑了地方性动迁政策的可能影响。结论正确，无需修改。\n</Thought Process>\n\n<Question>\n动迁安置，动迁后家庭内部分配不服什么时候可以起诉？\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n好，这个问题是关于动迁后，家庭成员对安置利益分配有意见，什么时候可以起诉。首先，想想看，这应该是一个涉及财产分配的纠纷吧，那应该和个人权利以及法律保护有关系。为了搞懂情况，还是先看看法律规定得比较好。嗯，动迁听起来有点复杂，可能涉及到民法、公平分配啥的，还有一些跟房屋征收相关的具体法律，比如动迁安置条例。还是查一下相关的起诉时效比较靠谱。<search>动迁安置纠纷起诉时效</search>\n\n找到了些东西。<information>《民法典》规定大部分民事纠纷的诉讼时效是三年，这个很关键。另外，有些动迁纠纷可能受特定条例或者地方政策约束，比如《国有土地上房屋征收与补偿条例》可能有相关实施细则。</information>不过，动迁涉及家庭分配的问题，有可能会用到民法典的规定，也有可能地方有更细的要求。得仔细想一下，这些规定是怎么应用到家庭纠纷里的。\n\n那就从一般情况入手吧，根据《民法典》的规定，咱们可以认为这类纠纷的诉讼时效是三年，也就是说，如果在动迁安置后家庭成员觉得自己的权益被侵害了，就要在三年内采取行动，比如直接协商，或者通过法院提起诉讼维权。此外，还是得确认一下地方性政策，因为不同地区可能有特定的条例，尤其涉及具体的动迁安置的利益分配，有可能会规定更短或者更长的时效。\n\n从逻辑上来看，三年这一点是比较明确的，毕竟这是全国民事纠纷的通用时限。家庭内部的纠纷通常也属于民事范畴，所以大致可以遵循这个。但我还是会建议，如果动迁结束后已经出现矛盾了，那最好尽快解决，一方面是为了避免超过时效期限，另一方面也是争取权益时更有实效性。不过，如果地方性政策有特殊规定，觉得还是得看看具体地方的实施细则，确保方案最贴合。\n\n综上，动迁后家庭内部如果对安置利益分配有意见，应该尽量在三年内提起诉讼。这既符合《民法典》的规定，也留下足够时间给家庭成员协商或者选择法律途径。同时，如果地方政策有更明确的时效，还是得以地方规定为依据。所以，建议大家还是别拖着，权益要早争取！\n</Internal Thinking>\n\n<Question>\n动迁安置，动迁后家庭内部分配不服什么时候可以起诉？\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"明确问题背景\",\n      \"content\": \"动迁安置后涉及家庭内部财产分配纠纷，通常涉及个人权利主张和法律保护的问题。此类纠纷可能涉及民法、合同法，以及动迁安置条例等具体法律规定。需要进一步明确起诉条件和时间限制。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"查阅相关法律法规\",\n      \"content\": \"需要明确哪些法律或法规规定了动迁纠纷中家庭成员对安置利益分配的起诉时间限制。寻找关键文献或条例以得出答案。<search>动迁安置纠纷起诉时效</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"提取法律时效相关信息\",\n      \"content\": \"<information>《民法典》中规定，一般民事纠纷的诉讼时效为三年；具体动迁纠纷起诉时效可能由地方性法规或条例规定，可参考《国有土地上房屋征收与补偿条例》或地方性动迁政策。</information>根据信息，需确认是否对家庭分配类纠纷有更具体的时效限制。</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"结合法律时效与动迁类型分析\",\n      \"content\": \"动迁安置纠纷涉及财产分配问题，根据《民法典》的三年诉讼时效，如果家庭成员认为自身权益受到侵害，应尽快通过协商、调解或向法院起诉维权。地方性动迁政策可能对重大纠纷另有细则规定。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"动迁后家庭内部对安置利益分配不服的情况下，起诉时限通常为三年（依据《民法典》）。如动迁政策有所特别规定，应以相关地方性政策为准。建议及时提起诉讼以确保权益获得保护。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"结论符合《民法典》规定的诉讼时效，也合理考虑了地方性动迁政策的可能影响。结论正确，无需修改。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"好，这个问题是关于动迁后，家庭成员对安置利益分配有意见，什么时候可以起诉。首先，想想看，这应该是一个涉及财产分配的纠纷吧，那应该和个人权利以及法律保护有关系。为了搞懂情况，还是先看看法律规定得比较好。嗯，动迁听起来有点复杂，可能涉及到民法、公平分配啥的，还有一些跟房屋征收相关的具体法律，比如动迁安置条例。还是查一下相关的起诉时效比较靠谱。<search>动迁安置纠纷起诉时效</search>\\n\\n找到了些东西。<information>《民法典》规定大部分民事纠纷的诉讼时效是三年，这个很关键。另外，有些动迁纠纷可能受特定条例或者地方政策约束，比如《国有土地上房屋征收与补偿条例》可能有相关实施细则。</information>不过，动迁涉及家庭分配的问题，有可能会用到民法典的规定，也有可能地方有更细的要求。得仔细想一下，这些规定是怎么应用到家庭纠纷里的。\\n\\n那就从一般情况入手吧，根据《民法典》的规定，咱们可以认为这类纠纷的诉讼时效是三年，也就是说，如果在动迁安置后家庭成员觉得自己的权益被侵害了，就要在三年内采取行动，比如直接协商，或者通过法院提起诉讼维权。此外，还是得确认一下地方性政策，因为不同地区可能有特定的条例，尤其涉及具体的动迁安置的利益分配，有可能会规定更短或者更长的时效。\\n\\n从逻辑上来看，三年这一点是比较明确的，毕竟这是全国民事纠纷的通用时限。家庭内部的纠纷通常也属于民事范畴，所以大致可以遵循这个。但我还是会建议，如果动迁结束后已经出现矛盾了，那最好尽快解决，一方面是为了避免超过时效期限，另一方面也是争取权益时更有实效性。不过，如果地方性政策有特殊规定，觉得还是得看看具体地方的实施细则，确保方案最贴合。\\n\\n综上，动迁后家庭内部如果对安置利益分配有意见，应该尽量在三年内提起诉讼。这既符合《民法典》的规定，也留下足够时间给家庭成员协商或者选择法律途径。同时，如果地方政策有更明确的时效，还是得以地方规定为依据。所以，建议大家还是别拖着，权益要早争取！\"\n}\n```",
+    "如果动迁安置后，家庭成员对于安置利益的分配有意见，根据《中华人民共和国民法典》的规定，大部分民事纠纷的诉讼时效为三年。因此，家庭成员可以在权益受到侵害之日起三年内向法院提起诉讼维权。这里所指的“权益受到侵害之日”通常是指当事人确认自己的权益已经受到侵犯，或者合理认为有必要保护自己的权利之时。\n\n需要注意的是，不同地区可能针对动迁安置出台了一些地方性政策或实施细则，可能会对诉讼时效有特别规定。如果地方性政策对诉讼时效有更短或更长的要求，则应按照地方性政策的规定执行。\n\n为了避免出现权利过期的问题，建议您在发现分配利益问题时尽快采取行动，可以优先尝试协商解决；若协商无果，应及时通过法律途径维护权益。此外，如果动迁安置的协议或文件中有关于家庭内部利益分配的具体约定，也应参考协议中的相关条款。\n\n总之，一般情况下，建议您在三年内尽早起诉。如果不确定具体时限，建议咨询当地专业律师或相关政府部门，以确保不会因超出诉讼时效而丧失维权机会。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "明确问题背景",
+        "content": "动迁安置后涉及家庭内部财产分配纠纷，通常涉及个人权利主张和法律保护的问题。此类纠纷可能涉及民法、合同法，以及动迁安置条例等具体法律规定。需要进一步明确起诉条件和时间限制。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "查阅相关法律法规",
+        "content": "需要明确哪些法律或法规规定了动迁纠纷中家庭成员对安置利益分配的起诉时间限制。寻找关键文献或条例以得出答案。<search>动迁安置纠纷起诉时效</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "提取法律时效相关信息",
+        "content": "<information>《民法典》中规定，一般民事纠纷的诉讼时效为三年；具体动迁纠纷起诉时效可能由地方性法规或条例规定，可参考《国有土地上房屋征收与补偿条例》或地方性动迁政策。</information>根据信息，需确认是否对家庭分配类纠纷有更具体的时效限制。</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "结合法律时效与动迁类型分析",
+        "content": "动迁安置纠纷涉及财产分配问题，根据《民法典》的三年诉讼时效，如果家庭成员认为自身权益受到侵害，应尽快通过协商、调解或向法院起诉维权。地方性动迁政策可能对重大纠纷另有细则规定。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "动迁后家庭内部对安置利益分配不服的情况下，起诉时限通常为三年（依据《民法典》）。如动迁政策有所特别规定，应以相关地方性政策为准。建议及时提起诉讼以确保权益获得保护。"
+      },
+      {
+        "action": "Verification",
+        "content": "结论符合《民法典》规定的诉讼时效，也合理考虑了地方性动迁政策的可能影响。结论正确，无需修改。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "好，这个问题是关于动迁后，家庭成员对安置利益分配有意见，什么时候可以起诉。首先，想想看，这应该是一个涉及财产分配的纠纷吧，那应该和个人权利以及法律保护有关系。为了搞懂情况，还是先看看法律规定得比较好。嗯，动迁听起来有点复杂，可能涉及到民法、公平分配啥的，还有一些跟房屋征收相关的具体法律，比如动迁安置条例。还是查一下相关的起诉时效比较靠谱。<search>动迁安置纠纷起诉时效</search>\n\n找到了些东西。<information>《民法典》规定大部分民事纠纷的诉讼时效是三年，这个很关键。另外，有些动迁纠纷可能受特定条例或者地方政策约束，比如《国有土地上房屋征收与补偿条例》可能有相关实施细则。</information>不过，动迁涉及家庭分配的问题，有可能会用到民法典的规定，也有可能地方有更细的要求。得仔细想一下，这些规定是怎么应用到家庭纠纷里的。\n\n那就从一般情况入手吧，根据《民法典》的规定，咱们可以认为这类纠纷的诉讼时效是三年，也就是说，如果在动迁安置后家庭成员觉得自己的权益被侵害了，就要在三年内采取行动，比如直接协商，或者通过法院提起诉讼维权。此外，还是得确认一下地方性政策，因为不同地区可能有特定的条例，尤其涉及具体的动迁安置的利益分配，有可能会规定更短或者更长的时效。\n\n从逻辑上来看，三年这一点是比较明确的，毕竟这是全国民事纠纷的通用时限。家庭内部的纠纷通常也属于民事范畴，所以大致可以遵循这个。但我还是会建议，如果动迁结束后已经出现矛盾了，那最好尽快解决，一方面是为了避免超过时效期限，另一方面也是争取权益时更有实效性。不过，如果地方性政策有特殊规定，觉得还是得看看具体地方的实施细则，确保方案最贴合。\n\n综上，动迁后家庭内部如果对安置利益分配有意见，应该尽量在三年内提起诉讼。这既符合《民法典》的规定，也留下足够时间给家庭成员协商或者选择法律途径。同时，如果地方政策有更明确的时效，还是得以地方规定为依据。所以，建议大家还是别拖着，权益要早争取！",
+  "Response": "如果动迁安置后，家庭成员对于安置利益的分配有意见，根据《中华人民共和国民法典》的规定，大部分民事纠纷的诉讼时效为三年。因此，家庭成员可以在权益受到侵害之日起三年内向法院提起诉讼维权。这里所指的“权益受到侵害之日”通常是指当事人确认自己的权益已经受到侵犯，或者合理认为有必要保护自己的权利之时。\n\n需要注意的是，不同地区可能针对动迁安置出台了一些地方性政策或实施细则，可能会对诉讼时效有特别规定。如果地方性政策对诉讼时效有更短或更长的要求，则应按照地方性政策的规定执行。\n\n为了避免出现权利过期的问题，建议您在发现分配利益问题时尽快采取行动，可以优先尝试协商解决；若协商无果，应及时通过法律途径维护权益。此外，如果动迁安置的协议或文件中有关于家庭内部利益分配的具体约定，也应参考协议中的相关条款。\n\n总之，一般情况下，建议您在三年内尽早起诉。如果不确定具体时限，建议咨询当地专业律师或相关政府部门，以确保不会因超出诉讼时效而丧失维权机会。",
+  "Question": "动迁安置，动迁后家庭内部分配不服什么时候可以起诉？"
+}

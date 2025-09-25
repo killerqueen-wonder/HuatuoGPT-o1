@@ -1,0 +1,79 @@
+{
+  "Open-ended Verifiable Question": "定金支付标准的法律规定?",
+  "Ground-True Answer": "根据我国《民法典》的规定，定金的数额由当事人约定；但是，不得超过主合同标的额的百分之二十，超过部分不产生定金的效力。实际交付的定金数额多于或者少于约定数额的，视为变更约定的定金数额。也就是说，定金不超过商品价值的百分之二十都是可以的，如果是超过的部分，您可以与店家协商不予支付。定金合同的种类有：1.立约定金。这是指为保证正式订立合同而交付的定金。2.成约定金。此种定金是以其交付为合同的成立要件，即定金交付，合同才成立;若不交付定金则合同不能成立。3.证约定金。此种定金为证明合同成立的证据，即因定金的交付以证明合同的成立。4.违约定金。所谓违约定金，是指交付定金后，交付定金的一方如不履行合同，则收受定金的一方得没收其定金而不予返还;而收受定金的一方不履行合同时应当双倍返还定金。一般说来，违约定金类似于违约金。5.解约定金。这种定金为当事人一方保留解除合同权利的代价。根据《民法典》第五百八十六条当事人可以约定一方向对方给付定金作为债权的担保。定金合同自实际交付定金时成立。定金的数额由当事人约定；但是，不得超过主合同标的额的百分之二十，超过部分不产生定金的效力。实际交付的定金数额多于或者少于约定数额的，视为变更约定的定金数额。",
+  "process_id": 370,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "明确问题范围",
+      "content": "定金支付标准涉及合同法中的相关规定，为了准确回答问题，需要审查我国《合同法》中关于定金的条款以及相关司法解释。验证范围应包括定金比例限制和支付条件相关法律规则。<search>合同法定金条款</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "搜索《合同法》中定金条款",
+      "content": "查找我国《合同法》中关于定金支付标准的具体条款，尤其关于定金比例的限制和法律效力问题。<information>《合同法》第115条规定：“当事人可以约定一方向对方支付定金作为债权的担保。给付定金的一方不履行债务时，无权要求返还定金；收受定金的一方不履行债务时，应当双倍返还定金。”关于定金比例，《合同法》并未明确限定，但《司法解释（二）》规定，定金数额一般不得超过主合同标的额的20%。</information>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "分析司法解释对比例限制的影响",
+      "content": "根据《合同法司法解释（二）》，定金的数额不得超过主合同标的额的20%。这一限制划定了上限，超出比例的约定可能会被认定为无效。这明确了支付定金时的法律界限。按照规定，超限部分无法受法律保护。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "根据《合同法》第115条及其相关司法解释（二），定金支付标准的法律规定如下：定金是作为债权担保的约定方式，一旦约定双方均须履行；给付定金方违约，无权要求返还定金；收受定金方违约，需双倍返还。同时，定金金额不得超过主合同标的额的20%，超出部分约定可能被认定为无效。"
+    },
+    {
+      "action": "Verification",
+      "content": "结论与《合同法》第115条及司法解释（二）的规定完全吻合，回答正确，无需进一步验证。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n定金支付标准的法律规定?\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n根据《合同法》第115条及其相关司法解释（二），定金支付标准的法律规定如下：定金是作为债权担保的约定方式，一旦约定双方均须履行；给付定金方违约，无权要求返还定金；收受定金方违约，需双倍返还。同时，定金金额不得超过主合同标的额的20%，超出部分约定可能被认定为无效。  \n</Model Response>  \n\n<Reference Answer>  \n根据我国《民法典》的规定，定金的数额由当事人约定；但是，不得超过主合同标的额的百分之二十，超过部分不产生定金的效力。实际交付的定金数额多于或者少于约定数额的，视为变更约定的定金数额。也就是说，定金不超过商品价值的百分之二十都是可以的，如果是超过的部分，您可以与店家协商不予支付。定金合同的种类有：1.立约定金。这是指为保证正式订立合同而交付的定金。2.成约定金。此种定金是以其交付为合同的成立要件，即定金交付，合同才成立;若不交付定金则合同不能成立。3.证约定金。此种定金为证明合同成立的证据，即因定金的交付以证明合同的成立。4.违约定金。所谓违约定金，是指交付定金后，交付定金的一方如不履行合同，则收受定金的一方得没收其定金而不予返还;而收受定金的一方不履行合同时应当双倍返还定金。一般说来，违约定金类似于违约金。5.解约定金。这种定金为当事人一方保留解除合同权利的代价。根据《民法典》第五百八十六条当事人可以约定一方向对方给付定金作为债权的担保。定金合同自实际交付定金时成立。定金的数额由当事人约定；但是，不得超过主合同标的额的百分之二十，超过部分不产生定金的效力。实际交付的定金数额多于或者少于约定数额的，视为变更约定的定金数额。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 明确问题范围\n定金支付标准涉及合同法中的相关规定，为了准确回答问题，需要审查我国《合同法》中关于定金的条款以及相关司法解释。验证范围应包括定金比例限制和支付条件相关法律规则。<search>合同法定金条款</search>\n\n### 搜索《合同法》中定金条款\n查找我国《合同法》中关于定金支付标准的具体条款，尤其关于定金比例的限制和法律效力问题。<information>《合同法》第115条规定：“当事人可以约定一方向对方支付定金作为债权的担保。给付定金的一方不履行债务时，无权要求返还定金；收受定金的一方不履行债务时，应当双倍返还定金。”关于定金比例，《合同法》并未明确限定，但《司法解释（二）》规定，定金数额一般不得超过主合同标的额的20%。</information>\n\n### 分析司法解释对比例限制的影响\n根据《合同法司法解释（二）》，定金的数额不得超过主合同标的额的20%。这一限制划定了上限，超出比例的约定可能会被认定为无效。这明确了支付定金时的法律界限。按照规定，超限部分无法受法律保护。\n\n### Conclusion\n根据《合同法》第115条及其相关司法解释（二），定金支付标准的法律规定如下：定金是作为债权担保的约定方式，一旦约定双方均须履行；给付定金方违约，无权要求返还定金；收受定金方违约，需双倍返还。同时，定金金额不得超过主合同标的额的20%，超出部分约定可能被认定为无效。\n\n### Verification\n结论与《合同法》第115条及司法解释（二）的规定完全吻合，回答正确，无需进一步验证。\n</Thought Process>\n\n<Question>\n定金支付标准的法律规定?\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n好，我来看看定金支付标准的法律规定应该是什么。首先，定金听上去是合同法中的内容，所以我得查一下《合同法》，看看具体是怎么说的。<search>合同法定金条款</search>\n\n嗯，找到了！原来在《合同法》第115条有规定，具体是这样说的：<information>“当事人可以约定一方向对方支付定金作为债权的担保。给付定金的一方不履行债务时，无权要求返还定金；收受定金的一方不履行债务时，应当双倍返还定金。”</information>这个条款主要说了定金的法律效力，也就是如果违约的话，给定金的一方会失去定金，而收定金的一方要双倍返还定金。这样看下来好像很清楚，定金就是一种约定担保方式，两边都有责任。\n\n不过这里没提到定金的金额有没有什么限制。让我再查查有没有相关的司法解释，或许能补充这部分信息。<search>合同法定金比例限制</search>\n\n哦，找到了，原来在《合同法司法解释（二）》里面有提到！<information>“定金的数额一般不得超过主合同标的额的20%。”</information>这样看来定金的金额是有上限要求的，不能超过主合同金额的20%，否则超出部分估计就没有法律效力。这倒是挺重要的一个点，和普通人理解的可能不太一样，定金也不能随便约定太高。\n\n再总结一下吧。根据《合同法》第115条和《司法解释（二）》，定金的支付标准主要有几个要点。第一，定金是债权担保的方式，双方约定了，就需要承担相应的责任。如果支付定金的一方违约，定金就没了；如果收定金的一方违约，就得双倍返还定金。第二，定金的金额有限制，一般不能超过主合同标的额的20%。这个限制是法律定下来的，约定太高的话超出的部分就不受法律保护了。\n\n嗯，这样总结应该没问题吧。如果按照这两个法律依据来解释的话，回答准确，也不需要再多验证了。\n</Internal Thinking>\n\n<Question>\n定金支付标准的法律规定?\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"明确问题范围\",\n      \"content\": \"定金支付标准涉及合同法中的相关规定，为了准确回答问题，需要审查我国《合同法》中关于定金的条款以及相关司法解释。验证范围应包括定金比例限制和支付条件相关法律规则。<search>合同法定金条款</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"搜索《合同法》中定金条款\",\n      \"content\": \"查找我国《合同法》中关于定金支付标准的具体条款，尤其关于定金比例的限制和法律效力问题。<information>《合同法》第115条规定：“当事人可以约定一方向对方支付定金作为债权的担保。给付定金的一方不履行债务时，无权要求返还定金；收受定金的一方不履行债务时，应当双倍返还定金。”关于定金比例，《合同法》并未明确限定，但《司法解释（二）》规定，定金数额一般不得超过主合同标的额的20%。</information>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析司法解释对比例限制的影响\",\n      \"content\": \"根据《合同法司法解释（二）》，定金的数额不得超过主合同标的额的20%。这一限制划定了上限，超出比例的约定可能会被认定为无效。这明确了支付定金时的法律界限。按照规定，超限部分无法受法律保护。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"根据《合同法》第115条及其相关司法解释（二），定金支付标准的法律规定如下：定金是作为债权担保的约定方式，一旦约定双方均须履行；给付定金方违约，无权要求返还定金；收受定金方违约，需双倍返还。同时，定金金额不得超过主合同标的额的20%，超出部分约定可能被认定为无效。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"结论与《合同法》第115条及司法解释（二）的规定完全吻合，回答正确，无需进一步验证。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"好，我来看看定金支付标准的法律规定应该是什么。首先，定金听上去是合同法中的内容，所以我得查一下《合同法》，看看具体是怎么说的。<search>合同法定金条款</search>\\n\\n嗯，找到了！原来在《合同法》第115条有规定，具体是这样说的：<information>“当事人可以约定一方向对方支付定金作为债权的担保。给付定金的一方不履行债务时，无权要求返还定金；收受定金的一方不履行债务时，应当双倍返还定金。”</information>这个条款主要说了定金的法律效力，也就是如果违约的话，给定金的一方会失去定金，而收定金的一方要双倍返还定金。这样看下来好像很清楚，定金就是一种约定担保方式，两边都有责任。\\n\\n不过这里没提到定金的金额有没有什么限制。让我再查查有没有相关的司法解释，或许能补充这部分信息。<search>合同法定金比例限制</search>\\n\\n哦，找到了，原来在《合同法司法解释（二）》里面有提到！<information>“定金的数额一般不得超过主合同标的额的20%。”</information>这样看来定金的金额是有上限要求的，不能超过主合同金额的20%，否则超出部分估计就没有法律效力。这倒是挺重要的一个点，和普通人理解的可能不太一样，定金也不能随便约定太高。\\n\\n再总结一下吧。根据《合同法》第115条和《司法解释（二）》，定金的支付标准主要有几个要点。第一，定金是债权担保的方式，双方约定了，就需要承担相应的责任。如果支付定金的一方违约，定金就没了；如果收定金的一方违约，就得双倍返还定金。第二，定金的金额有限制，一般不能超过主合同标的额的20%。这个限制是法律定下来的，约定太高的话超出的部分就不受法律保护了。\\n\\n嗯，这样总结应该没问题吧。如果按照这两个法律依据来解释的话，回答准确，也不需要再多验证了。\"\n}\n```",
+    "根据我国《合同法》第115条的规定，定金是一种债权担保方式，其法律效力体现在双方的责任承担上：  \n1. 如果支付定金的一方不履行约定，其支付的定金将不会被返还；  \n2. 如果收受定金的一方不履行约定，则需双倍返还定金。  \n\n此外，《合同法司法解释（二）》对此进一步明确，定金的金额不得超过主合同标的额的20%，超过部分将不受法律保护。  \n\n因此，定金支付的法律规定主要包括以下两点：  \n1. 定金作为担保方式，违约情况下会涉及没收或双倍返还；  \n2. 定金金额有限制，一般应控制在主合同金额的20%以内。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "明确问题范围",
+        "content": "定金支付标准涉及合同法中的相关规定，为了准确回答问题，需要审查我国《合同法》中关于定金的条款以及相关司法解释。验证范围应包括定金比例限制和支付条件相关法律规则。<search>合同法定金条款</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "搜索《合同法》中定金条款",
+        "content": "查找我国《合同法》中关于定金支付标准的具体条款，尤其关于定金比例的限制和法律效力问题。<information>《合同法》第115条规定：“当事人可以约定一方向对方支付定金作为债权的担保。给付定金的一方不履行债务时，无权要求返还定金；收受定金的一方不履行债务时，应当双倍返还定金。”关于定金比例，《合同法》并未明确限定，但《司法解释（二）》规定，定金数额一般不得超过主合同标的额的20%。</information>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "分析司法解释对比例限制的影响",
+        "content": "根据《合同法司法解释（二）》，定金的数额不得超过主合同标的额的20%。这一限制划定了上限，超出比例的约定可能会被认定为无效。这明确了支付定金时的法律界限。按照规定，超限部分无法受法律保护。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "根据《合同法》第115条及其相关司法解释（二），定金支付标准的法律规定如下：定金是作为债权担保的约定方式，一旦约定双方均须履行；给付定金方违约，无权要求返还定金；收受定金方违约，需双倍返还。同时，定金金额不得超过主合同标的额的20%，超出部分约定可能被认定为无效。"
+      },
+      {
+        "action": "Verification",
+        "content": "结论与《合同法》第115条及司法解释（二）的规定完全吻合，回答正确，无需进一步验证。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "好，我来看看定金支付标准的法律规定应该是什么。首先，定金听上去是合同法中的内容，所以我得查一下《合同法》，看看具体是怎么说的。<search>合同法定金条款</search>\n\n嗯，找到了！原来在《合同法》第115条有规定，具体是这样说的：<information>“当事人可以约定一方向对方支付定金作为债权的担保。给付定金的一方不履行债务时，无权要求返还定金；收受定金的一方不履行债务时，应当双倍返还定金。”</information>这个条款主要说了定金的法律效力，也就是如果违约的话，给定金的一方会失去定金，而收定金的一方要双倍返还定金。这样看下来好像很清楚，定金就是一种约定担保方式，两边都有责任。\n\n不过这里没提到定金的金额有没有什么限制。让我再查查有没有相关的司法解释，或许能补充这部分信息。<search>合同法定金比例限制</search>\n\n哦，找到了，原来在《合同法司法解释（二）》里面有提到！<information>“定金的数额一般不得超过主合同标的额的20%。”</information>这样看来定金的金额是有上限要求的，不能超过主合同金额的20%，否则超出部分估计就没有法律效力。这倒是挺重要的一个点，和普通人理解的可能不太一样，定金也不能随便约定太高。\n\n再总结一下吧。根据《合同法》第115条和《司法解释（二）》，定金的支付标准主要有几个要点。第一，定金是债权担保的方式，双方约定了，就需要承担相应的责任。如果支付定金的一方违约，定金就没了；如果收定金的一方违约，就得双倍返还定金。第二，定金的金额有限制，一般不能超过主合同标的额的20%。这个限制是法律定下来的，约定太高的话超出的部分就不受法律保护了。\n\n嗯，这样总结应该没问题吧。如果按照这两个法律依据来解释的话，回答准确，也不需要再多验证了。",
+  "Response": "根据我国《合同法》第115条的规定，定金是一种债权担保方式，其法律效力体现在双方的责任承担上：  \n1. 如果支付定金的一方不履行约定，其支付的定金将不会被返还；  \n2. 如果收受定金的一方不履行约定，则需双倍返还定金。  \n\n此外，《合同法司法解释（二）》对此进一步明确，定金的金额不得超过主合同标的额的20%，超过部分将不受法律保护。  \n\n因此，定金支付的法律规定主要包括以下两点：  \n1. 定金作为担保方式，违约情况下会涉及没收或双倍返还；  \n2. 定金金额有限制，一般应控制在主合同金额的20%以内。",
+  "Question": "定金支付标准的法律规定?"
+}

@@ -1,0 +1,99 @@
+{
+  "Open-ended Verifiable Question": "疲劳驾驶是否属于危险驾驶?",
+  "Ground-True Answer": "疲劳驾驶其并不属于刑法规定的危险驾驶罪中的情形，不构成危险驾驶罪。我国法律规定，在道路上驾驶机动车，有下列情形之一的，处拘役，并处罚金：第一、追逐竞驶，情节恶劣的；第二、醉酒驾驶机动车的；第三、从事校车业务或者旅客运输，严重超过额定乘客载客，或者严重超过规定时速行驶的；第四、违反危险化学品安全管理规定运输危险化学品，危及公共安全的。因此，法条所列情形并不包括疲劳驾驶。",
+  "process_id": 7572,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "理解问题",
+      "content": "题目问的是疲劳驾驶是否属于危险驾驶，需要从法律层面进行分析并明确危险驾驶的具体定义。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "检索危险驾驶的法律定义",
+      "content": "查询危险驾驶的相关法条或法规，以明确其具体定义和适用范围。<search>危险驾驶罪 法律定义</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "分析危险驾驶罪的定义",
+      "content": "<information>根据《中华人民共和国刑法》第一百三十三条之一，危险驾驶罪主要包括以下几种情形：1. 醉酒驾驶机动车；2. 在道路上追逐竞驶，情节恶劣；3. 从事校车业务或旅客运输，严重超过额定乘客载量；4. 超速驾驶等明确列出的几种情形。</information>疲劳驾驶并未在上述具体情形中直接提及。因此，需要进一步查看是否有其他相关法律或规范对此进行补充说明。<search>疲劳驾驶 法律责任</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "检索疲劳驾驶相关规定",
+      "content": "<information>根据《道路交通安全法》第22条规定，驾驶人连续驾驶机动车时间不得超过4小时；驾驶人因超过规定驾车时间导致疲劳驾驶，将被视为违反交通安全规定，但通常被归为一般违法行为，而非刑法意义上的‘危险驾驶罪’。</information>这一信息表明，疲劳驾驶更多涉及交通违法，可能不足以直接归为危险驾驶罪，但仍需明确其是否在某些情形下可能构成危险驾驶。<search>疲劳驾驶是否构成危险驾驶罪</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "综合分析疲劳驾驶的法律性质",
+      "content": "<information>若疲劳驾驶导致严重后果，如发生重大交通事故，可能会涉及《刑法》的其他罪名（如交通肇事罪），但疲劳驾驶本身并未直接列入危险驾驶罪的范围。</information>结合目前搜集的信息，疲劳驾驶在法律上属于交通违法行为而非危险驾驶罪范畴。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "根据现行法律规定，疲劳驾驶行为本身通常被视为违反交通安全法规的一般违法行为，而非《刑法》中明确规定的‘危险驾驶罪’范围。但若疲劳驾驶引发重大事故，可能涉及其他刑法罪名。"
+    },
+    {
+      "action": "Verification",
+      "content": "危险驾驶罪在刑法中有严格定义，包括醉驾、追逐竞驶等具体情形。疲劳驾驶未在其中明示，并在《道路交通安全法》中被单独规范。因此，上述结论准确无误。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n疲劳驾驶是否属于危险驾驶?\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n根据现行法律规定，疲劳驾驶行为本身通常被视为违反交通安全法规的一般违法行为，而非《刑法》中明确规定的‘危险驾驶罪’范围。但若疲劳驾驶引发重大事故，可能涉及其他刑法罪名。  \n</Model Response>  \n\n<Reference Answer>  \n疲劳驾驶其并不属于刑法规定的危险驾驶罪中的情形，不构成危险驾驶罪。我国法律规定，在道路上驾驶机动车，有下列情形之一的，处拘役，并处罚金：第一、追逐竞驶，情节恶劣的；第二、醉酒驾驶机动车的；第三、从事校车业务或者旅客运输，严重超过额定乘客载客，或者严重超过规定时速行驶的；第四、违反危险化学品安全管理规定运输危险化学品，危及公共安全的。因此，法条所列情形并不包括疲劳驾驶。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 理解问题\n题目问的是疲劳驾驶是否属于危险驾驶，需要从法律层面进行分析并明确危险驾驶的具体定义。\n\n### 检索危险驾驶的法律定义\n查询危险驾驶的相关法条或法规，以明确其具体定义和适用范围。<search>危险驾驶罪 法律定义</search>\n\n### 分析危险驾驶罪的定义\n<information>根据《中华人民共和国刑法》第一百三十三条之一，危险驾驶罪主要包括以下几种情形：1. 醉酒驾驶机动车；2. 在道路上追逐竞驶，情节恶劣；3. 从事校车业务或旅客运输，严重超过额定乘客载量；4. 超速驾驶等明确列出的几种情形。</information>疲劳驾驶并未在上述具体情形中直接提及。因此，需要进一步查看是否有其他相关法律或规范对此进行补充说明。<search>疲劳驾驶 法律责任</search>\n\n### 检索疲劳驾驶相关规定\n<information>根据《道路交通安全法》第22条规定，驾驶人连续驾驶机动车时间不得超过4小时；驾驶人因超过规定驾车时间导致疲劳驾驶，将被视为违反交通安全规定，但通常被归为一般违法行为，而非刑法意义上的‘危险驾驶罪’。</information>这一信息表明，疲劳驾驶更多涉及交通违法，可能不足以直接归为危险驾驶罪，但仍需明确其是否在某些情形下可能构成危险驾驶。<search>疲劳驾驶是否构成危险驾驶罪</search>\n\n### 综合分析疲劳驾驶的法律性质\n<information>若疲劳驾驶导致严重后果，如发生重大交通事故，可能会涉及《刑法》的其他罪名（如交通肇事罪），但疲劳驾驶本身并未直接列入危险驾驶罪的范围。</information>结合目前搜集的信息，疲劳驾驶在法律上属于交通违法行为而非危险驾驶罪范畴。\n\n### Conclusion\n根据现行法律规定，疲劳驾驶行为本身通常被视为违反交通安全法规的一般违法行为，而非《刑法》中明确规定的‘危险驾驶罪’范围。但若疲劳驾驶引发重大事故，可能涉及其他刑法罪名。\n\n### Verification\n危险驾驶罪在刑法中有严格定义，包括醉驾、追逐竞驶等具体情形。疲劳驾驶未在其中明示，并在《道路交通安全法》中被单独规范。因此，上述结论准确无误。\n</Thought Process>\n\n<Question>\n疲劳驾驶是否属于危险驾驶?\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n疲劳驾驶算不算危险驾驶呢？首先得搞清楚什么是危险驾驶，说不定法律上对这种行为有明确的定义。<search>危险驾驶罪 法律定义</search>\n\n哦，根据查到的信息，《中华人民共和国刑法》第一百三十三条之一中，危险驾驶罪有几种明确的情况：比如醉酒驾驶机动车、在道路上追逐竞驶而且情节恶劣、严重超载的校车和客运车超载驾驶，还有超速驾驶等。这些危险驾驶的类型挺明确的，但是这里没提到疲劳驾驶啊。我是不是还需要再看看有没有其他法律对疲劳驾驶有相关规定？<search>疲劳驾驶 法律责任</search>\n\n嗯，找到了一些关于疲劳驾驶的规定。根据《道路交通安全法》第22条讲，驾驶人开车时间不能连续超过4小时，不然就会被判定为疲劳驾驶。这种情况下，疲劳驾驶算违反了交通安全法规，但好像还是和《刑法》里的‘危险驾驶罪’分类有点不一样。看起来它只算是一般的违法行为，不是刑事犯罪。但我觉得，是不是有可能在某些严重后果的情况下疲劳驾驶会被归类到危险驾驶罪？得再查查相关的法律细节。<search>疲劳驾驶是否构成危险驾驶罪</search>\n\n找到了一些补充信息。如果疲劳驾驶结果导致了严重后果，比如发生了交通事故，虽然它不一定直接归为危险驾驶罪，但可能会涉及《刑法》的其他罪名，比如交通肇事罪。所以实际上，疲劳驾驶本身可能不会成为危险驾驶罪，但它的后果会决定有没有触犯其他更严重的法律。\n\n所以综合来看，根据目前查到的法律，疲劳驾驶并不等同于刑法意义上的‘危险驾驶罪’，更多是一种交通违法行为。不过，如果因为疲劳驾驶引起了特别恶劣的后果，那就不是单纯的违法了，反而可能涉及到其他罪名比如交通肇事罪之类。\n\n嗯，回顾一下，危险驾驶罪是法律中定义特别严格几种情节的，而疲劳驾驶虽然危险，但它的法律性质更偏向于一般的道路交通违法。只有在某些情况下它的严重后果才可能会升级到其他形式的罪责。\n</Internal Thinking>\n\n<Question>\n疲劳驾驶是否属于危险驾驶?\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"理解问题\",\n      \"content\": \"题目问的是疲劳驾驶是否属于危险驾驶，需要从法律层面进行分析并明确危险驾驶的具体定义。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"检索危险驾驶的法律定义\",\n      \"content\": \"查询危险驾驶的相关法条或法规，以明确其具体定义和适用范围。<search>危险驾驶罪 法律定义</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析危险驾驶罪的定义\",\n      \"content\": \"<information>根据《中华人民共和国刑法》第一百三十三条之一，危险驾驶罪主要包括以下几种情形：1. 醉酒驾驶机动车；2. 在道路上追逐竞驶，情节恶劣；3. 从事校车业务或旅客运输，严重超过额定乘客载量；4. 超速驾驶等明确列出的几种情形。</information>疲劳驾驶并未在上述具体情形中直接提及。因此，需要进一步查看是否有其他相关法律或规范对此进行补充说明。<search>疲劳驾驶 法律责任</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"检索疲劳驾驶相关规定\",\n      \"content\": \"<information>根据《道路交通安全法》第22条规定，驾驶人连续驾驶机动车时间不得超过4小时；驾驶人因超过规定驾车时间导致疲劳驾驶，将被视为违反交通安全规定，但通常被归为一般违法行为，而非刑法意义上的‘危险驾驶罪’。</information>这一信息表明，疲劳驾驶更多涉及交通违法，可能不足以直接归为危险驾驶罪，但仍需明确其是否在某些情形下可能构成危险驾驶。<search>疲劳驾驶是否构成危险驾驶罪</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"综合分析疲劳驾驶的法律性质\",\n      \"content\": \"<information>若疲劳驾驶导致严重后果，如发生重大交通事故，可能会涉及《刑法》的其他罪名（如交通肇事罪），但疲劳驾驶本身并未直接列入危险驾驶罪的范围。</information>结合目前搜集的信息，疲劳驾驶在法律上属于交通违法行为而非危险驾驶罪范畴。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"根据现行法律规定，疲劳驾驶行为本身通常被视为违反交通安全法规的一般违法行为，而非《刑法》中明确规定的‘危险驾驶罪’范围。但若疲劳驾驶引发重大事故，可能涉及其他刑法罪名。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"危险驾驶罪在刑法中有严格定义，包括醉驾、追逐竞驶等具体情形。疲劳驾驶未在其中明示，并在《道路交通安全法》中被单独规范。因此，上述结论准确无误。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"疲劳驾驶算不算危险驾驶呢？首先得搞清楚什么是危险驾驶，说不定法律上对这种行为有明确的定义。<search>危险驾驶罪 法律定义</search>\\n\\n哦，根据查到的信息，《中华人民共和国刑法》第一百三十三条之一中，危险驾驶罪有几种明确的情况：比如醉酒驾驶机动车、在道路上追逐竞驶而且情节恶劣、严重超载的校车和客运车超载驾驶，还有超速驾驶等。这些危险驾驶的类型挺明确的，但是这里没提到疲劳驾驶啊。我是不是还需要再看看有没有其他法律对疲劳驾驶有相关规定？<search>疲劳驾驶 法律责任</search>\\n\\n嗯，找到了一些关于疲劳驾驶的规定。根据《道路交通安全法》第22条讲，驾驶人开车时间不能连续超过4小时，不然就会被判定为疲劳驾驶。这种情况下，疲劳驾驶算违反了交通安全法规，但好像还是和《刑法》里的‘危险驾驶罪’分类有点不一样。看起来它只算是一般的违法行为，不是刑事犯罪。但我觉得，是不是有可能在某些严重后果的情况下疲劳驾驶会被归类到危险驾驶罪？得再查查相关的法律细节。<search>疲劳驾驶是否构成危险驾驶罪</search>\\n\\n找到了一些补充信息。如果疲劳驾驶结果导致了严重后果，比如发生了交通事故，虽然它不一定直接归为危险驾驶罪，但可能会涉及《刑法》的其他罪名，比如交通肇事罪。所以实际上，疲劳驾驶本身可能不会成为危险驾驶罪，但它的后果会决定有没有触犯其他更严重的法律。\\n\\n所以综合来看，根据目前查到的法律，疲劳驾驶并不等同于刑法意义上的‘危险驾驶罪’，更多是一种交通违法行为。不过，如果因为疲劳驾驶引起了特别恶劣的后果，那就不是单纯的违法了，反而可能涉及到其他罪名比如交通肇事罪之类。\\n\\n嗯，回顾一下，危险驾驶罪是法律中定义特别严格几种情节的，而疲劳驾驶虽然危险，但它的法律性质更偏向于一般的道路交通违法。只有在某些情况下它的严重后果才可能会升级到其他形式的罪责。\"\n}\n```",
+    "根据现行法律规定，疲劳驾驶并不属于《刑法》中明确规定的“危险驾驶罪”范畴。《中华人民共和国刑法》第一百三十三条之一主要针对醉酒驾驶、严重超载、追逐竞驶等行为作出明确的“危险驾驶罪”定义，而疲劳驾驶并未包含其中。因此，从法律性质上看，疲劳驾驶本身更多是一种违反《道路交通安全法》的交通违法行为。\n\n不过，根据《道路交通安全法》第22条规定，驾驶人连续驾驶时间不得超过4小时，若违反此规定即构成疲劳驾驶。虽然疲劳驾驶本身不被认定为“危险驾驶罪”，但若因疲劳驾驶导致严重交通事故或其他后果，有可能触犯《刑法》中其他罪名，如“交通肇事罪”等。换句话说，疲劳驾驶的后果可能影响其法律责任的认定。\n\n综上，疲劳驾驶本身不是“危险驾驶罪”，但仍是一种危险行为，同时可能因其后果导致承担更严重的法律责任。因此，在意识到疲劳时停止驾驶，遵守交通规则，是确保道路安全的关键。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "理解问题",
+        "content": "题目问的是疲劳驾驶是否属于危险驾驶，需要从法律层面进行分析并明确危险驾驶的具体定义。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "检索危险驾驶的法律定义",
+        "content": "查询危险驾驶的相关法条或法规，以明确其具体定义和适用范围。<search>危险驾驶罪 法律定义</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "分析危险驾驶罪的定义",
+        "content": "<information>根据《中华人民共和国刑法》第一百三十三条之一，危险驾驶罪主要包括以下几种情形：1. 醉酒驾驶机动车；2. 在道路上追逐竞驶，情节恶劣；3. 从事校车业务或旅客运输，严重超过额定乘客载量；4. 超速驾驶等明确列出的几种情形。</information>疲劳驾驶并未在上述具体情形中直接提及。因此，需要进一步查看是否有其他相关法律或规范对此进行补充说明。<search>疲劳驾驶 法律责任</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "检索疲劳驾驶相关规定",
+        "content": "<information>根据《道路交通安全法》第22条规定，驾驶人连续驾驶机动车时间不得超过4小时；驾驶人因超过规定驾车时间导致疲劳驾驶，将被视为违反交通安全规定，但通常被归为一般违法行为，而非刑法意义上的‘危险驾驶罪’。</information>这一信息表明，疲劳驾驶更多涉及交通违法，可能不足以直接归为危险驾驶罪，但仍需明确其是否在某些情形下可能构成危险驾驶。<search>疲劳驾驶是否构成危险驾驶罪</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "综合分析疲劳驾驶的法律性质",
+        "content": "<information>若疲劳驾驶导致严重后果，如发生重大交通事故，可能会涉及《刑法》的其他罪名（如交通肇事罪），但疲劳驾驶本身并未直接列入危险驾驶罪的范围。</information>结合目前搜集的信息，疲劳驾驶在法律上属于交通违法行为而非危险驾驶罪范畴。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "根据现行法律规定，疲劳驾驶行为本身通常被视为违反交通安全法规的一般违法行为，而非《刑法》中明确规定的‘危险驾驶罪’范围。但若疲劳驾驶引发重大事故，可能涉及其他刑法罪名。"
+      },
+      {
+        "action": "Verification",
+        "content": "危险驾驶罪在刑法中有严格定义，包括醉驾、追逐竞驶等具体情形。疲劳驾驶未在其中明示，并在《道路交通安全法》中被单独规范。因此，上述结论准确无误。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "疲劳驾驶算不算危险驾驶呢？首先得搞清楚什么是危险驾驶，说不定法律上对这种行为有明确的定义。<search>危险驾驶罪 法律定义</search>\n\n哦，根据查到的信息，《中华人民共和国刑法》第一百三十三条之一中，危险驾驶罪有几种明确的情况：比如醉酒驾驶机动车、在道路上追逐竞驶而且情节恶劣、严重超载的校车和客运车超载驾驶，还有超速驾驶等。这些危险驾驶的类型挺明确的，但是这里没提到疲劳驾驶啊。我是不是还需要再看看有没有其他法律对疲劳驾驶有相关规定？<search>疲劳驾驶 法律责任</search>\n\n嗯，找到了一些关于疲劳驾驶的规定。根据《道路交通安全法》第22条讲，驾驶人开车时间不能连续超过4小时，不然就会被判定为疲劳驾驶。这种情况下，疲劳驾驶算违反了交通安全法规，但好像还是和《刑法》里的‘危险驾驶罪’分类有点不一样。看起来它只算是一般的违法行为，不是刑事犯罪。但我觉得，是不是有可能在某些严重后果的情况下疲劳驾驶会被归类到危险驾驶罪？得再查查相关的法律细节。<search>疲劳驾驶是否构成危险驾驶罪</search>\n\n找到了一些补充信息。如果疲劳驾驶结果导致了严重后果，比如发生了交通事故，虽然它不一定直接归为危险驾驶罪，但可能会涉及《刑法》的其他罪名，比如交通肇事罪。所以实际上，疲劳驾驶本身可能不会成为危险驾驶罪，但它的后果会决定有没有触犯其他更严重的法律。\n\n所以综合来看，根据目前查到的法律，疲劳驾驶并不等同于刑法意义上的‘危险驾驶罪’，更多是一种交通违法行为。不过，如果因为疲劳驾驶引起了特别恶劣的后果，那就不是单纯的违法了，反而可能涉及到其他罪名比如交通肇事罪之类。\n\n嗯，回顾一下，危险驾驶罪是法律中定义特别严格几种情节的，而疲劳驾驶虽然危险，但它的法律性质更偏向于一般的道路交通违法。只有在某些情况下它的严重后果才可能会升级到其他形式的罪责。",
+  "Response": "根据现行法律规定，疲劳驾驶并不属于《刑法》中明确规定的“危险驾驶罪”范畴。《中华人民共和国刑法》第一百三十三条之一主要针对醉酒驾驶、严重超载、追逐竞驶等行为作出明确的“危险驾驶罪”定义，而疲劳驾驶并未包含其中。因此，从法律性质上看，疲劳驾驶本身更多是一种违反《道路交通安全法》的交通违法行为。\n\n不过，根据《道路交通安全法》第22条规定，驾驶人连续驾驶时间不得超过4小时，若违反此规定即构成疲劳驾驶。虽然疲劳驾驶本身不被认定为“危险驾驶罪”，但若因疲劳驾驶导致严重交通事故或其他后果，有可能触犯《刑法》中其他罪名，如“交通肇事罪”等。换句话说，疲劳驾驶的后果可能影响其法律责任的认定。\n\n综上，疲劳驾驶本身不是“危险驾驶罪”，但仍是一种危险行为，同时可能因其后果导致承担更严重的法律责任。因此，在意识到疲劳时停止驾驶，遵守交通规则，是确保道路安全的关键。",
+  "Question": "疲劳驾驶是否属于危险驾驶?"
+}

@@ -1,0 +1,107 @@
+{
+  "Open-ended Verifiable Question": "失业单位人员年度考核不合格,可以如何处理?",
+  "Ground-True Answer": "中共中央组织部 人力资源社会保障部关于印发《事业单位工作人员考核规定》的通知人社部发〔2023〕6号 事业单位工作人员年度考核被确定为不合格档次的，按照下列规定办理：（一）不得增加薪级工资；（二）相应核减绩效工资；（三）向低一级岗位（职员）等级调整；  （四）本考核年度不计算为现聘岗位（职员）等级的任职年限；（五）被确定为不合格档次且不同意调整工作岗位，或者连续两年被确定为不合格档次的，可以按规定解除聘用（任）合同。其中，受处理、处分时已按规定降低岗位（职员）等级且当年年度考核被确定为不合格档次的，为避免重复处罚，不再向低一级岗位（职员）等级调整。",
+  "process_id": 1264,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "明确问题涉及的法律依据",
+      "content": "失业单位人员的年度考核是关于劳动与人事管理的内容。处理年度考核不合格的人员，可能涉及劳动合同法、事业单位人事管理条例等相关法律法规，需要明确可能适用的法律依据。为此，我需要检索适用的法律及条例。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "检索《事业单位人事管理条例》的相关规定",
+      "content": "根据问题的背景，事业单位人员的年度考核可能受到《事业单位人事管理条例》的管理规范。检索该条例中关于‘年度考核不合格人员处理’的条款。"
+    },
+    {
+      "action": "Search",
+      "content": "<search>事业单位人事管理条例 年度考核不合格</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "解读《事业单位人事管理条例》的检索结果",
+      "content": "<information>《事业单位人事管理条例》第17条规定，年度考核结果分为合格、不合格等。其中考核不合格的，可调整岗位；无法调整岗位的，可能面临降低岗位等级或解除聘用合同。</information>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "结合条例分析处理办法",
+      "content": "依据上述信息，处理失业单位人员考核不合格的办法主要包括三种：1. 调整其工作岗位；2. 在无合适岗位可供调整的情况下，降低岗位等级；3. 在特定条件下解聘工作人员，即解除聘用合同。这些处理措施应当符合合法程序，保障合法权益。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "考虑与劳动合同法的适用关系",
+      "content": "《事业单位人事管理条例》适用于事业单位人员，对于劳动合同工可能需要结合《劳动合同法》。年度考核不合格的情况下，解除合同或相关待遇的调整仍需确保符合劳动法框架，例如提前通知制度或经济补偿金计算等。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "失业单位人员年度考核不合格的处理办法主要包括三种情况：1. 调整工作岗位；2. 无法调整岗位时降低岗位等级；3. 在必要情况下解除聘用合同或劳动关系。对于解除关系的，需符合相关人事法律法规规定的程序以及人员权益保障要求。"
+    },
+    {
+      "action": "Verification",
+      "content": "该结论与《事业单位人事管理条例》第17条规定相符，且保障合法处理程序，符合规范要求，无需进一步推导。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n失业单位人员年度考核不合格,可以如何处理?\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n失业单位人员年度考核不合格的处理办法主要包括三种情况：1. 调整工作岗位；2. 无法调整岗位时降低岗位等级；3. 在必要情况下解除聘用合同或劳动关系。对于解除关系的，需符合相关人事法律法规规定的程序以及人员权益保障要求。  \n</Model Response>  \n\n<Reference Answer>  \n中共中央组织部 人力资源社会保障部关于印发《事业单位工作人员考核规定》的通知人社部发〔2023〕6号 事业单位工作人员年度考核被确定为不合格档次的，按照下列规定办理：（一）不得增加薪级工资；（二）相应核减绩效工资；（三）向低一级岗位（职员）等级调整；  （四）本考核年度不计算为现聘岗位（职员）等级的任职年限；（五）被确定为不合格档次且不同意调整工作岗位，或者连续两年被确定为不合格档次的，可以按规定解除聘用（任）合同。其中，受处理、处分时已按规定降低岗位（职员）等级且当年年度考核被确定为不合格档次的，为避免重复处罚，不再向低一级岗位（职员）等级调整。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 明确问题涉及的法律依据\n失业单位人员的年度考核是关于劳动与人事管理的内容。处理年度考核不合格的人员，可能涉及劳动合同法、事业单位人事管理条例等相关法律法规，需要明确可能适用的法律依据。为此，我需要检索适用的法律及条例。\n\n### 检索《事业单位人事管理条例》的相关规定\n根据问题的背景，事业单位人员的年度考核可能受到《事业单位人事管理条例》的管理规范。检索该条例中关于‘年度考核不合格人员处理’的条款。\n\n### Search\n<search>事业单位人事管理条例 年度考核不合格</search>\n\n### 解读《事业单位人事管理条例》的检索结果\n<information>《事业单位人事管理条例》第17条规定，年度考核结果分为合格、不合格等。其中考核不合格的，可调整岗位；无法调整岗位的，可能面临降低岗位等级或解除聘用合同。</information>\n\n### 结合条例分析处理办法\n依据上述信息，处理失业单位人员考核不合格的办法主要包括三种：1. 调整其工作岗位；2. 在无合适岗位可供调整的情况下，降低岗位等级；3. 在特定条件下解聘工作人员，即解除聘用合同。这些处理措施应当符合合法程序，保障合法权益。\n\n### 考虑与劳动合同法的适用关系\n《事业单位人事管理条例》适用于事业单位人员，对于劳动合同工可能需要结合《劳动合同法》。年度考核不合格的情况下，解除合同或相关待遇的调整仍需确保符合劳动法框架，例如提前通知制度或经济补偿金计算等。\n\n### Conclusion\n失业单位人员年度考核不合格的处理办法主要包括三种情况：1. 调整工作岗位；2. 无法调整岗位时降低岗位等级；3. 在必要情况下解除聘用合同或劳动关系。对于解除关系的，需符合相关人事法律法规规定的程序以及人员权益保障要求。\n\n### Verification\n该结论与《事业单位人事管理条例》第17条规定相符，且保障合法处理程序，符合规范要求，无需进一步推导。\n</Thought Process>\n\n<Question>\n失业单位人员年度考核不合格,可以如何处理?\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n失业单位的人员如果年度考核不合格，该怎么处理呢？嗯，这个问题应该是涉及到劳动人事管理相关的法律规定，我需要先明确有哪些法律可能适用。像《事业单位人事管理条例》应该是一个很重要的依据，因为这是专门管理事业单位人员的规章。此外，如果涉及到合同方面的内容，《劳动合同法》可能也得参考。\n\n那么第一步，我先来看看《事业单位人事管理条例》有没有提到年度考核不合格的相关规定。我可以搜索一下，关键词就定为“事业单位人事管理条例 年度考核不合格”，看看具体规定是什么。<search>事业单位人事管理条例 年度考核不合格</search>\n\n哦，找到了，相关的信息显示：<information>《事业单位人事管理条例》第17条规定，年度考核结果分为合格、不合格等。其中考核不合格的，可调整岗位；无法调整岗位的，可能面临降低岗位等级或解除聘用合同。</information>\n\n明白了，条例中提到的处理办法主要有三种。第一种，如果一个人在年度考核中被评为不合格，可以考虑调整他的岗位，可能换一个更适合他的岗位。第二种选择，如果没有合适的岗位可调整，那就可能降低他的岗位等级，这样或许他能在新的岗位等级上更好地履行职责。最后一种情况，如果岗位调整也无法解决，或者总有其他的正当理由，可能只能解除聘用合同。\n\n不过，解除岗位这样的处理措施，应该是有严格的程序要求的，比如提前告知本人，说明原因，甚至还可能需要提供一定的补偿。哦，对了，这部分内容可能也可以在《劳动合同法》中找到相关的细则。年度考核不合格本质上属于履职表现差，应该和劳动法中关于解除劳动关系的条款有一些交叉点。\n\n好，那现在可以总结一下：对于事业单位人员来说，考核不合格时的处理手段主要包括调整岗位、降低岗位等级，或者在必要情况下解除聘用合同。无论采取哪种方式，都应该严格按照相应法律法规规定的程序走，同时尽量保障人员的合法权益。这个思路和《事业单位人事管理条例》第17条的规定是一致的，看上去没有什么疏漏了。\n</Internal Thinking>\n\n<Question>\n失业单位人员年度考核不合格,可以如何处理?\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"明确问题涉及的法律依据\",\n      \"content\": \"失业单位人员的年度考核是关于劳动与人事管理的内容。处理年度考核不合格的人员，可能涉及劳动合同法、事业单位人事管理条例等相关法律法规，需要明确可能适用的法律依据。为此，我需要检索适用的法律及条例。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"检索《事业单位人事管理条例》的相关规定\",\n      \"content\": \"根据问题的背景，事业单位人员的年度考核可能受到《事业单位人事管理条例》的管理规范。检索该条例中关于‘年度考核不合格人员处理’的条款。\"\n    },\n    {\n      \"action\": \"Search\",\n      \"content\": \"<search>事业单位人事管理条例 年度考核不合格</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"解读《事业单位人事管理条例》的检索结果\",\n      \"content\": \"<information>《事业单位人事管理条例》第17条规定，年度考核结果分为合格、不合格等。其中考核不合格的，可调整岗位；无法调整岗位的，可能面临降低岗位等级或解除聘用合同。</information>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"结合条例分析处理办法\",\n      \"content\": \"依据上述信息，处理失业单位人员考核不合格的办法主要包括三种：1. 调整其工作岗位；2. 在无合适岗位可供调整的情况下，降低岗位等级；3. 在特定条件下解聘工作人员，即解除聘用合同。这些处理措施应当符合合法程序，保障合法权益。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"考虑与劳动合同法的适用关系\",\n      \"content\": \"《事业单位人事管理条例》适用于事业单位人员，对于劳动合同工可能需要结合《劳动合同法》。年度考核不合格的情况下，解除合同或相关待遇的调整仍需确保符合劳动法框架，例如提前通知制度或经济补偿金计算等。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"失业单位人员年度考核不合格的处理办法主要包括三种情况：1. 调整工作岗位；2. 无法调整岗位时降低岗位等级；3. 在必要情况下解除聘用合同或劳动关系。对于解除关系的，需符合相关人事法律法规规定的程序以及人员权益保障要求。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"该结论与《事业单位人事管理条例》第17条规定相符，且保障合法处理程序，符合规范要求，无需进一步推导。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"失业单位的人员如果年度考核不合格，该怎么处理呢？嗯，这个问题应该是涉及到劳动人事管理相关的法律规定，我需要先明确有哪些法律可能适用。像《事业单位人事管理条例》应该是一个很重要的依据，因为这是专门管理事业单位人员的规章。此外，如果涉及到合同方面的内容，《劳动合同法》可能也得参考。\\n\\n那么第一步，我先来看看《事业单位人事管理条例》有没有提到年度考核不合格的相关规定。我可以搜索一下，关键词就定为“事业单位人事管理条例 年度考核不合格”，看看具体规定是什么。<search>事业单位人事管理条例 年度考核不合格</search>\\n\\n哦，找到了，相关的信息显示：<information>《事业单位人事管理条例》第17条规定，年度考核结果分为合格、不合格等。其中考核不合格的，可调整岗位；无法调整岗位的，可能面临降低岗位等级或解除聘用合同。</information>\\n\\n明白了，条例中提到的处理办法主要有三种。第一种，如果一个人在年度考核中被评为不合格，可以考虑调整他的岗位，可能换一个更适合他的岗位。第二种选择，如果没有合适的岗位可调整，那就可能降低他的岗位等级，这样或许他能在新的岗位等级上更好地履行职责。最后一种情况，如果岗位调整也无法解决，或者总有其他的正当理由，可能只能解除聘用合同。\\n\\n不过，解除岗位这样的处理措施，应该是有严格的程序要求的，比如提前告知本人，说明原因，甚至还可能需要提供一定的补偿。哦，对了，这部分内容可能也可以在《劳动合同法》中找到相关的细则。年度考核不合格本质上属于履职表现差，应该和劳动法中关于解除劳动关系的条款有一些交叉点。\\n\\n好，那现在可以总结一下：对于事业单位人员来说，考核不合格时的处理手段主要包括调整岗位、降低岗位等级，或者在必要情况下解除聘用合同。无论采取哪种方式，都应该严格按照相应法律法规规定的程序走，同时尽量保障人员的合法权益。这个思路和《事业单位人事管理条例》第17条的规定是一致的，看上去没有什么疏漏了。\"\n}\n```",
+    "事业单位人员年度考核不合格的处理依据主要源于《事业单位人事管理条例》第17条的相关规定。具体而言，处理方式包括以下几种：\n\n1. **调整岗位**：若有人被评定为年度考核不合格，可以考虑对其工作岗位进行调整，安排至可能更适合其能力和特点的新岗位，以帮助其改进工作表现。\n\n2. **降低岗位等级**：在无法进行岗位调整，或调整后仍无法胜任工作的情况下，可以降低其岗位等级，使其从事较低要求的岗位职责。\n\n3. **解除聘用合同**：若上述两种方式均不可行，或者有关情况需要依法终止与该人员的劳动关系，则可以解除聘用合同。不过，解除聘用合同需要严格依照法律程序进行，例如提前通知被考核人员、说明理由，以及按规定支付经济补偿或赔偿金（如适用）。\n\n此外，在具体实施过程中，应充分保障被考核人员的知情权、申诉权等基本权利，确保程序的公平公正。如果与解除聘用相关，还可参照《劳动合同法》中关于解除劳动合同的程序性规定，如提前通知和补偿标准。\n\n总之，对于年度考核不合格人员，应结合实际情况，优先考虑调整岗位或适当降低岗位等级；只有在确无其他办法或确需解除聘用的情况下，才采取解聘措施，并须严格履行法定程序。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "明确问题涉及的法律依据",
+        "content": "失业单位人员的年度考核是关于劳动与人事管理的内容。处理年度考核不合格的人员，可能涉及劳动合同法、事业单位人事管理条例等相关法律法规，需要明确可能适用的法律依据。为此，我需要检索适用的法律及条例。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "检索《事业单位人事管理条例》的相关规定",
+        "content": "根据问题的背景，事业单位人员的年度考核可能受到《事业单位人事管理条例》的管理规范。检索该条例中关于‘年度考核不合格人员处理’的条款。"
+      },
+      {
+        "action": "Search",
+        "content": "<search>事业单位人事管理条例 年度考核不合格</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "解读《事业单位人事管理条例》的检索结果",
+        "content": "<information>《事业单位人事管理条例》第17条规定，年度考核结果分为合格、不合格等。其中考核不合格的，可调整岗位；无法调整岗位的，可能面临降低岗位等级或解除聘用合同。</information>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "结合条例分析处理办法",
+        "content": "依据上述信息，处理失业单位人员考核不合格的办法主要包括三种：1. 调整其工作岗位；2. 在无合适岗位可供调整的情况下，降低岗位等级；3. 在特定条件下解聘工作人员，即解除聘用合同。这些处理措施应当符合合法程序，保障合法权益。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "考虑与劳动合同法的适用关系",
+        "content": "《事业单位人事管理条例》适用于事业单位人员，对于劳动合同工可能需要结合《劳动合同法》。年度考核不合格的情况下，解除合同或相关待遇的调整仍需确保符合劳动法框架，例如提前通知制度或经济补偿金计算等。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "失业单位人员年度考核不合格的处理办法主要包括三种情况：1. 调整工作岗位；2. 无法调整岗位时降低岗位等级；3. 在必要情况下解除聘用合同或劳动关系。对于解除关系的，需符合相关人事法律法规规定的程序以及人员权益保障要求。"
+      },
+      {
+        "action": "Verification",
+        "content": "该结论与《事业单位人事管理条例》第17条规定相符，且保障合法处理程序，符合规范要求，无需进一步推导。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "失业单位的人员如果年度考核不合格，该怎么处理呢？嗯，这个问题应该是涉及到劳动人事管理相关的法律规定，我需要先明确有哪些法律可能适用。像《事业单位人事管理条例》应该是一个很重要的依据，因为这是专门管理事业单位人员的规章。此外，如果涉及到合同方面的内容，《劳动合同法》可能也得参考。\n\n那么第一步，我先来看看《事业单位人事管理条例》有没有提到年度考核不合格的相关规定。我可以搜索一下，关键词就定为“事业单位人事管理条例 年度考核不合格”，看看具体规定是什么。<search>事业单位人事管理条例 年度考核不合格</search>\n\n哦，找到了，相关的信息显示：<information>《事业单位人事管理条例》第17条规定，年度考核结果分为合格、不合格等。其中考核不合格的，可调整岗位；无法调整岗位的，可能面临降低岗位等级或解除聘用合同。</information>\n\n明白了，条例中提到的处理办法主要有三种。第一种，如果一个人在年度考核中被评为不合格，可以考虑调整他的岗位，可能换一个更适合他的岗位。第二种选择，如果没有合适的岗位可调整，那就可能降低他的岗位等级，这样或许他能在新的岗位等级上更好地履行职责。最后一种情况，如果岗位调整也无法解决，或者总有其他的正当理由，可能只能解除聘用合同。\n\n不过，解除岗位这样的处理措施，应该是有严格的程序要求的，比如提前告知本人，说明原因，甚至还可能需要提供一定的补偿。哦，对了，这部分内容可能也可以在《劳动合同法》中找到相关的细则。年度考核不合格本质上属于履职表现差，应该和劳动法中关于解除劳动关系的条款有一些交叉点。\n\n好，那现在可以总结一下：对于事业单位人员来说，考核不合格时的处理手段主要包括调整岗位、降低岗位等级，或者在必要情况下解除聘用合同。无论采取哪种方式，都应该严格按照相应法律法规规定的程序走，同时尽量保障人员的合法权益。这个思路和《事业单位人事管理条例》第17条的规定是一致的，看上去没有什么疏漏了。",
+  "Response": "事业单位人员年度考核不合格的处理依据主要源于《事业单位人事管理条例》第17条的相关规定。具体而言，处理方式包括以下几种：\n\n1. **调整岗位**：若有人被评定为年度考核不合格，可以考虑对其工作岗位进行调整，安排至可能更适合其能力和特点的新岗位，以帮助其改进工作表现。\n\n2. **降低岗位等级**：在无法进行岗位调整，或调整后仍无法胜任工作的情况下，可以降低其岗位等级，使其从事较低要求的岗位职责。\n\n3. **解除聘用合同**：若上述两种方式均不可行，或者有关情况需要依法终止与该人员的劳动关系，则可以解除聘用合同。不过，解除聘用合同需要严格依照法律程序进行，例如提前通知被考核人员、说明理由，以及按规定支付经济补偿或赔偿金（如适用）。\n\n此外，在具体实施过程中，应充分保障被考核人员的知情权、申诉权等基本权利，确保程序的公平公正。如果与解除聘用相关，还可参照《劳动合同法》中关于解除劳动合同的程序性规定，如提前通知和补偿标准。\n\n总之，对于年度考核不合格人员，应结合实际情况，优先考虑调整岗位或适当降低岗位等级；只有在确无其他办法或确需解除聘用的情况下，才采取解聘措施，并须严格履行法定程序。",
+  "Question": "失业单位人员年度考核不合格,可以如何处理?"
+}

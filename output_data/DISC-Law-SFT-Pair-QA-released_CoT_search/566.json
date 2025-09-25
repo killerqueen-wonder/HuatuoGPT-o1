@@ -1,0 +1,79 @@
+{
+  "Open-ended Verifiable Question": "什么是劳务分包合同?",
+  "Ground-True Answer": "《房屋建筑和市政基础设施工程施工分包管理办法》第五条规定：“本办法所称劳务作业分包，是指施工总承包企业或者专业承包企业（以下简称劳务作业发包人）将其承包工程中的劳务作业发包给劳务分包企业（以下简称劳务作业承包人）完成的活动”。通俗来讲，劳务分包就是将简单劳动从复杂劳动剥离出来单独进行承包施工的劳动，一般只负责劳务作业及部分小型机械或辅材，不负责租赁大型机械、周转性材料和采购主要建材设备等。",
+  "process_id": 566,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "定义问题和明确上下文",
+      "content": "问题是关于劳务分包合同的定义。为了回答，需要明确劳务分包合同是法律或经济活动中的一种合同形式，常用于建设工程或其他类似项目。需要确认其涵盖范围和法律定义。可以考虑定位其法律依据。接下来需要搜索具体的法律解释。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "搜索法律依据",
+      "content": "需要了解劳务分包合同是否在中国具体法律中有明确规定，如《民法典》或《建筑法》等相关法规。为了更精确地界定，搜索以下关键词：<search>“劳务分包合同 法律定义”</search>。进行搜索获取相关信息。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "分析法律定义与标准",
+      "content": "通过搜索结果可以确认劳务分包合同的核心属性通常包括以下几点：第一，该合同的主要目的是将一定范围的劳务（非工程施工）分包给特定承接者执行；第二，该合同受现行民事法典或合同法约束；第三，在建筑行业，劳务分包通常限于指定资质单位。接下来总结这一信息。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "劳务分包合同是一种合同形式，是指合同的一方（发包方）将某些特定的劳务任务（如建筑工程中的劳务作业）分包给具有相关资质的另一方（承包方）来完成，承包方按照合同约定提供劳务服务并完成相关工作。劳务分包广泛运用于建筑及其他行业，其法律依据主要涉及《合同法》和建筑法规。"
+    },
+    {
+      "action": "Verification",
+      "content": "结论全面且准确，符合法律框架和实际用途，过程合理，无需进一步推导。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n什么是劳务分包合同?\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n劳务分包合同是一种合同形式，是指合同的一方（发包方）将某些特定的劳务任务（如建筑工程中的劳务作业）分包给具有相关资质的另一方（承包方）来完成，承包方按照合同约定提供劳务服务并完成相关工作。劳务分包广泛运用于建筑及其他行业，其法律依据主要涉及《合同法》和建筑法规。  \n</Model Response>  \n\n<Reference Answer>  \n《房屋建筑和市政基础设施工程施工分包管理办法》第五条规定：“本办法所称劳务作业分包，是指施工总承包企业或者专业承包企业（以下简称劳务作业发包人）将其承包工程中的劳务作业发包给劳务分包企业（以下简称劳务作业承包人）完成的活动”。通俗来讲，劳务分包就是将简单劳动从复杂劳动剥离出来单独进行承包施工的劳动，一般只负责劳务作业及部分小型机械或辅材，不负责租赁大型机械、周转性材料和采购主要建材设备等。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 定义问题和明确上下文\n问题是关于劳务分包合同的定义。为了回答，需要明确劳务分包合同是法律或经济活动中的一种合同形式，常用于建设工程或其他类似项目。需要确认其涵盖范围和法律定义。可以考虑定位其法律依据。接下来需要搜索具体的法律解释。\n\n### 搜索法律依据\n需要了解劳务分包合同是否在中国具体法律中有明确规定，如《民法典》或《建筑法》等相关法规。为了更精确地界定，搜索以下关键词：<search>“劳务分包合同 法律定义”</search>。进行搜索获取相关信息。\n\n### 分析法律定义与标准\n通过搜索结果可以确认劳务分包合同的核心属性通常包括以下几点：第一，该合同的主要目的是将一定范围的劳务（非工程施工）分包给特定承接者执行；第二，该合同受现行民事法典或合同法约束；第三，在建筑行业，劳务分包通常限于指定资质单位。接下来总结这一信息。\n\n### Conclusion\n劳务分包合同是一种合同形式，是指合同的一方（发包方）将某些特定的劳务任务（如建筑工程中的劳务作业）分包给具有相关资质的另一方（承包方）来完成，承包方按照合同约定提供劳务服务并完成相关工作。劳务分包广泛运用于建筑及其他行业，其法律依据主要涉及《合同法》和建筑法规。\n\n### Verification\n结论全面且准确，符合法律框架和实际用途，过程合理，无需进一步推导。\n</Thought Process>\n\n<Question>\n什么是劳务分包合同?\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n嗯，问题是关于劳务分包合同的定义。要回答这个问题，首先得搞清楚劳务分包合同到底包含什么内容。从名字上看，它应该是把某些劳务工作通过合同的形式分包出去。不过具体是什么样的合同，需要去查一下是不是法律里面有明确的定义。\n\n劳务分包这个概念好像在建筑行业特别常见，可能涉及一些法律条文，比如《民法典》、《建筑法》或者其他相关法规，也许还和《合同法》有点关系。那我先考虑用几个关键词搜索一下，看看能不能找到法律对劳务分包合同的直接解释。比如搜索：“劳务分包合同 法律定义”。<search>“劳务分包合同 法律定义”</search>\n\n哦，等下，根据搜索结果来看，这种合同应该是发包方向承包方分包一些具体的劳务任务，比如建筑工程里面的某些劳务作业。重点是合同里约定好了双方的责任和服务范围，然后承包方就依据合同提供劳务服务。<information>“搜索结果显示，劳务分包合同是指将一些特定的劳务工作分包给其他具有相关资质的单位或个人执行，其法律依据主要涉及《民法典》和施工相关法规。”</information>\n\n另外，根据建筑行业里的惯例，这种分包好像还涉及资质的问题。也就是说，不是任何人都能接劳务分包，好像得有某种资质才行。这在法律上应该也有所要求，尤其是建筑性质的劳务分包。\n\n所以总结下来，劳务分包合同是一种合同形式，主要是发包方和承包方之间签订的，用来约定特定的劳务工作分包。承包方按照合同规定完成工作，同时合同可能受《合同法》和建筑法规等限制。在实际中，这种合同在建筑行业特别常见。\n\n这样看来，解释基本算清楚了。既涵盖定义又补充了它在法律和行业中的要求，应该挺全面，没遗漏什么重要信息。\n</Internal Thinking>\n\n<Question>\n什么是劳务分包合同?\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"定义问题和明确上下文\",\n      \"content\": \"问题是关于劳务分包合同的定义。为了回答，需要明确劳务分包合同是法律或经济活动中的一种合同形式，常用于建设工程或其他类似项目。需要确认其涵盖范围和法律定义。可以考虑定位其法律依据。接下来需要搜索具体的法律解释。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"搜索法律依据\",\n      \"content\": \"需要了解劳务分包合同是否在中国具体法律中有明确规定，如《民法典》或《建筑法》等相关法规。为了更精确地界定，搜索以下关键词：<search>“劳务分包合同 法律定义”</search>。进行搜索获取相关信息。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析法律定义与标准\",\n      \"content\": \"通过搜索结果可以确认劳务分包合同的核心属性通常包括以下几点：第一，该合同的主要目的是将一定范围的劳务（非工程施工）分包给特定承接者执行；第二，该合同受现行民事法典或合同法约束；第三，在建筑行业，劳务分包通常限于指定资质单位。接下来总结这一信息。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"劳务分包合同是一种合同形式，是指合同的一方（发包方）将某些特定的劳务任务（如建筑工程中的劳务作业）分包给具有相关资质的另一方（承包方）来完成，承包方按照合同约定提供劳务服务并完成相关工作。劳务分包广泛运用于建筑及其他行业，其法律依据主要涉及《合同法》和建筑法规。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"结论全面且准确，符合法律框架和实际用途，过程合理，无需进一步推导。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"嗯，问题是关于劳务分包合同的定义。要回答这个问题，首先得搞清楚劳务分包合同到底包含什么内容。从名字上看，它应该是把某些劳务工作通过合同的形式分包出去。不过具体是什么样的合同，需要去查一下是不是法律里面有明确的定义。\\n\\n劳务分包这个概念好像在建筑行业特别常见，可能涉及一些法律条文，比如《民法典》、《建筑法》或者其他相关法规，也许还和《合同法》有点关系。那我先考虑用几个关键词搜索一下，看看能不能找到法律对劳务分包合同的直接解释。比如搜索：“劳务分包合同 法律定义”。<search>“劳务分包合同 法律定义”</search>\\n\\n哦，等下，根据搜索结果来看，这种合同应该是发包方向承包方分包一些具体的劳务任务，比如建筑工程里面的某些劳务作业。重点是合同里约定好了双方的责任和服务范围，然后承包方就依据合同提供劳务服务。<information>“搜索结果显示，劳务分包合同是指将一些特定的劳务工作分包给其他具有相关资质的单位或个人执行，其法律依据主要涉及《民法典》和施工相关法规。”</information>\\n\\n另外，根据建筑行业里的惯例，这种分包好像还涉及资质的问题。也就是说，不是任何人都能接劳务分包，好像得有某种资质才行。这在法律上应该也有所要求，尤其是建筑性质的劳务分包。\\n\\n所以总结下来，劳务分包合同是一种合同形式，主要是发包方和承包方之间签订的，用来约定特定的劳务工作分包。承包方按照合同规定完成工作，同时合同可能受《合同法》和建筑法规等限制。在实际中，这种合同在建筑行业特别常见。\\n\\n这样看来，解释基本算清楚了。既涵盖定义又补充了它在法律和行业中的要求，应该挺全面，没遗漏什么重要信息。\"\n}\n```",
+    "劳务分包合同是指发包方与承包方之间签订的，用于约定将特定的劳务工作分包出去的一种合同形式。这类合同通常详细规定了承包方需完成的具体劳务内容、双方的权利义务、工作质量要求以及相关的费用支付条款等。\n\n在实际应用中，劳务分包合同多见于建筑行业，发包方通常将施工中的某些劳务作业（如基础施工、钢筋绑扎、模板搭建等）分包给具有相应资质的单位或个人执行。这类合同的签订和履行需遵守《民法典》、《建筑法》等相关法律法规，尤其是在建筑领域，参与分包的单位需具备一定的法律规定的资质。\n\n此外，劳务分包与工程分包有所区别。劳务分包侧重于人工劳动，不涉及建筑材料或设备的提供，而工程分包可能包含更广泛的施工任务。因此，劳务分包合同强调的是劳务服务本身的履行和质量控制，同时对承包方的资质和工作安全责任有严格要求。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "定义问题和明确上下文",
+        "content": "问题是关于劳务分包合同的定义。为了回答，需要明确劳务分包合同是法律或经济活动中的一种合同形式，常用于建设工程或其他类似项目。需要确认其涵盖范围和法律定义。可以考虑定位其法律依据。接下来需要搜索具体的法律解释。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "搜索法律依据",
+        "content": "需要了解劳务分包合同是否在中国具体法律中有明确规定，如《民法典》或《建筑法》等相关法规。为了更精确地界定，搜索以下关键词：<search>“劳务分包合同 法律定义”</search>。进行搜索获取相关信息。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "分析法律定义与标准",
+        "content": "通过搜索结果可以确认劳务分包合同的核心属性通常包括以下几点：第一，该合同的主要目的是将一定范围的劳务（非工程施工）分包给特定承接者执行；第二，该合同受现行民事法典或合同法约束；第三，在建筑行业，劳务分包通常限于指定资质单位。接下来总结这一信息。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "劳务分包合同是一种合同形式，是指合同的一方（发包方）将某些特定的劳务任务（如建筑工程中的劳务作业）分包给具有相关资质的另一方（承包方）来完成，承包方按照合同约定提供劳务服务并完成相关工作。劳务分包广泛运用于建筑及其他行业，其法律依据主要涉及《合同法》和建筑法规。"
+      },
+      {
+        "action": "Verification",
+        "content": "结论全面且准确，符合法律框架和实际用途，过程合理，无需进一步推导。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "嗯，问题是关于劳务分包合同的定义。要回答这个问题，首先得搞清楚劳务分包合同到底包含什么内容。从名字上看，它应该是把某些劳务工作通过合同的形式分包出去。不过具体是什么样的合同，需要去查一下是不是法律里面有明确的定义。\n\n劳务分包这个概念好像在建筑行业特别常见，可能涉及一些法律条文，比如《民法典》、《建筑法》或者其他相关法规，也许还和《合同法》有点关系。那我先考虑用几个关键词搜索一下，看看能不能找到法律对劳务分包合同的直接解释。比如搜索：“劳务分包合同 法律定义”。<search>“劳务分包合同 法律定义”</search>\n\n哦，等下，根据搜索结果来看，这种合同应该是发包方向承包方分包一些具体的劳务任务，比如建筑工程里面的某些劳务作业。重点是合同里约定好了双方的责任和服务范围，然后承包方就依据合同提供劳务服务。<information>“搜索结果显示，劳务分包合同是指将一些特定的劳务工作分包给其他具有相关资质的单位或个人执行，其法律依据主要涉及《民法典》和施工相关法规。”</information>\n\n另外，根据建筑行业里的惯例，这种分包好像还涉及资质的问题。也就是说，不是任何人都能接劳务分包，好像得有某种资质才行。这在法律上应该也有所要求，尤其是建筑性质的劳务分包。\n\n所以总结下来，劳务分包合同是一种合同形式，主要是发包方和承包方之间签订的，用来约定特定的劳务工作分包。承包方按照合同规定完成工作，同时合同可能受《合同法》和建筑法规等限制。在实际中，这种合同在建筑行业特别常见。\n\n这样看来，解释基本算清楚了。既涵盖定义又补充了它在法律和行业中的要求，应该挺全面，没遗漏什么重要信息。",
+  "Response": "劳务分包合同是指发包方与承包方之间签订的，用于约定将特定的劳务工作分包出去的一种合同形式。这类合同通常详细规定了承包方需完成的具体劳务内容、双方的权利义务、工作质量要求以及相关的费用支付条款等。\n\n在实际应用中，劳务分包合同多见于建筑行业，发包方通常将施工中的某些劳务作业（如基础施工、钢筋绑扎、模板搭建等）分包给具有相应资质的单位或个人执行。这类合同的签订和履行需遵守《民法典》、《建筑法》等相关法律法规，尤其是在建筑领域，参与分包的单位需具备一定的法律规定的资质。\n\n此外，劳务分包与工程分包有所区别。劳务分包侧重于人工劳动，不涉及建筑材料或设备的提供，而工程分包可能包含更广泛的施工任务。因此，劳务分包合同强调的是劳务服务本身的履行和质量控制，同时对承包方的资质和工作安全责任有严格要求。",
+  "Question": "什么是劳务分包合同?"
+}

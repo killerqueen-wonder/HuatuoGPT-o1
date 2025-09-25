@@ -1,0 +1,109 @@
+{
+  "Open-ended Verifiable Question": "离婚有两个孩子，法院会怎么判?",
+  "Ground-True Answer": "在离婚案件中，涉及到未成年子女的抚养问题，法院通常会根据以下几个方面进行判决：\n(1)未成年子女的意愿和利益：法院会考虑未成年子女的意愿和利益，尽可能满足他们的合理需求和利益。如果孩子比较年长，可以听取他们的意见，并根据他们的意愿做出判决。\n(2)双方的抚养能力：法院会考虑双方的抚养能力，包括经济条件、生活环境、教育背景等因素。如果一方有更好的抚养条件，可以优先考虑将孩子的抚养权判给这一方。\n(3)双方的责任和义务：法院会考虑双方对孩子的责任和义务，包括照顾、教育、保障孩子的健康等方面。如果一方对孩子的照顾和教育更为负责任，可以优先考虑将孩子的抚养权判给这一方。\n(4)孩子的年龄和性别：法院会考虑孩子的年龄和性别，尽可能满足他们的生活、学习和成长需要。例如，如果孩子比较小，需要更多的照顾和关注，可以优先考虑判给母亲。\n(5)需要注意的是，离婚案件中孩子的抚养问题是一个相对复杂的问题，需要根据具体情况进行综合评估和判断。",
+  "process_id": 8800,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "确定问题的核心",
+      "content": "本问题与离婚后两个孩子的抚养权归属有关。需要分析中国相关法律规定，例如《中华人民共和国婚姻法》以及司法实践中法院的判决原则。核心在于法院如何评估孩子的抚养权，根据因素如子女利益最大化原则、父母基本情况、以及孩子的年龄等。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "分析法律依据",
+      "content": "需要查找中国法律中与抚养权相关的规定，以及法院在判决子女抚养权归属时的考虑因素。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "查找相关法律条文",
+      "content": "<search>婚姻法 子女抚养权</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "查看搜索结果",
+      "content": "<information>根据《中华人民共和国婚姻法》第三十六条规定，父母与子女间的关系不因父母离婚而消除；离婚后，子女无论由父或母直接抚养，仍是父母双方的子女。此外，婚姻法强调子女权益最大化原则，同时提到了考虑子女年龄、父母经济及教育能力等因素。</information>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "结合抚养权划分的具体因素",
+      "content": "从搜索结果可知，抚养权的决定通常基于以下因素：1）未成年子女的年龄，例如2岁以下的孩子通常判给母亲，除非母亲不适合抚养；2）父母双方的经济条件和稳定性；3）子女意愿，尤其是年满10岁的儿童；4）有利于子女成长的综合因素。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "综合两名子女的情况",
+      "content": "问题提到有两个孩子，法院可能会根据两个孩子的具体年龄、意愿及其他相关条件分别考虑其抚养权的归属。如果两名孩子分别归属双方抚养，可能是为了降低对父母间的经济压力并平衡双方的法定责任。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "离婚后有两个子女的情况下，法院通常会基于子女利益最大化原则，对子女抚养权进行判决。如果两个孩子年龄较小且需共同成长，可能判给同一方；若年龄较大且各自需求不同，法院可能会分别判决由父母双方各抚养一个子女。最终的判决会综合考虑孩子的年龄、意愿、父母经济与教育能力等因素。"
+    },
+    {
+      "action": "Verification",
+      "content": "结论符合《婚姻法》第三十六条的规定，并且符合实际司法操作中的子女利益最大化原则。回答完整，并已验证具体法律条文的适用性，无需进一步推导。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n离婚有两个孩子，法院会怎么判?\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n离婚后有两个子女的情况下，法院通常会基于子女利益最大化原则，对子女抚养权进行判决。如果两个孩子年龄较小且需共同成长，可能判给同一方；若年龄较大且各自需求不同，法院可能会分别判决由父母双方各抚养一个子女。最终的判决会综合考虑孩子的年龄、意愿、父母经济与教育能力等因素。  \n</Model Response>  \n\n<Reference Answer>  \n在离婚案件中，涉及到未成年子女的抚养问题，法院通常会根据以下几个方面进行判决：\n(1)未成年子女的意愿和利益：法院会考虑未成年子女的意愿和利益，尽可能满足他们的合理需求和利益。如果孩子比较年长，可以听取他们的意见，并根据他们的意愿做出判决。\n(2)双方的抚养能力：法院会考虑双方的抚养能力，包括经济条件、生活环境、教育背景等因素。如果一方有更好的抚养条件，可以优先考虑将孩子的抚养权判给这一方。\n(3)双方的责任和义务：法院会考虑双方对孩子的责任和义务，包括照顾、教育、保障孩子的健康等方面。如果一方对孩子的照顾和教育更为负责任，可以优先考虑将孩子的抚养权判给这一方。\n(4)孩子的年龄和性别：法院会考虑孩子的年龄和性别，尽可能满足他们的生活、学习和成长需要。例如，如果孩子比较小，需要更多的照顾和关注，可以优先考虑判给母亲。\n(5)需要注意的是，离婚案件中孩子的抚养问题是一个相对复杂的问题，需要根据具体情况进行综合评估和判断。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 确定问题的核心\n本问题与离婚后两个孩子的抚养权归属有关。需要分析中国相关法律规定，例如《中华人民共和国婚姻法》以及司法实践中法院的判决原则。核心在于法院如何评估孩子的抚养权，根据因素如子女利益最大化原则、父母基本情况、以及孩子的年龄等。\n\n### 分析法律依据\n需要查找中国法律中与抚养权相关的规定，以及法院在判决子女抚养权归属时的考虑因素。\n\n### 查找相关法律条文\n<search>婚姻法 子女抚养权</search>\n\n### 查看搜索结果\n<information>根据《中华人民共和国婚姻法》第三十六条规定，父母与子女间的关系不因父母离婚而消除；离婚后，子女无论由父或母直接抚养，仍是父母双方的子女。此外，婚姻法强调子女权益最大化原则，同时提到了考虑子女年龄、父母经济及教育能力等因素。</information>\n\n### 结合抚养权划分的具体因素\n从搜索结果可知，抚养权的决定通常基于以下因素：1）未成年子女的年龄，例如2岁以下的孩子通常判给母亲，除非母亲不适合抚养；2）父母双方的经济条件和稳定性；3）子女意愿，尤其是年满10岁的儿童；4）有利于子女成长的综合因素。\n\n### 综合两名子女的情况\n问题提到有两个孩子，法院可能会根据两个孩子的具体年龄、意愿及其他相关条件分别考虑其抚养权的归属。如果两名孩子分别归属双方抚养，可能是为了降低对父母间的经济压力并平衡双方的法定责任。\n\n### Conclusion\n离婚后有两个子女的情况下，法院通常会基于子女利益最大化原则，对子女抚养权进行判决。如果两个孩子年龄较小且需共同成长，可能判给同一方；若年龄较大且各自需求不同，法院可能会分别判决由父母双方各抚养一个子女。最终的判决会综合考虑孩子的年龄、意愿、父母经济与教育能力等因素。\n\n### Verification\n结论符合《婚姻法》第三十六条的规定，并且符合实际司法操作中的子女利益最大化原则。回答完整，并已验证具体法律条文的适用性，无需进一步推导。\n</Thought Process>\n\n<Question>\n离婚有两个孩子，法院会怎么判?\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n嗯，离婚有两个孩子的话，法院会怎么判呢？这个问题不简单，得从几个方面来思考，我先理一下。首先，抚养权问题归根到底还是要围绕什么对孩子最好这个核心原则来判，法律上也叫“子女利益最大化原则”。好，那我先看看具体法律怎么说吧。<search>婚姻法 子女抚养权</search>\n\n<information>根据《中华人民共和国婚姻法》第三十六条规定，父母与子女间的关系不因父母离婚而消除；离婚后，子女无论由父或母直接抚养，仍是父母双方的子女。此外，婚姻法还强调了子女权益最大化原则，还提到考虑到孩子的年龄、父母的经济条件以及教育能力等因素。</information>\n\n哦，查到了。《婚姻法》很明确，离婚不影响亲子关系，但决定抚养权的时候，讲究维护孩子最大利益，同时要根据一些具体条件来判。这里重点是几个关键因素：孩子多大了？父母有没有能力从经济上、情感上抚养孩子？还有孩子自己的想法。法条写得清楚，也符合道理。\n\n我再想细一点。如果孩子特别小，比如两岁以下，司法实践中一般会倾向于判给母亲，因为婴幼儿更需要母亲的照顾。当然，如果母亲有重大问题，比如没能力抚养，那另说。那大一点的孩子呢？如果年满10岁，法律上说要尊重孩子意愿，所以孩子想跟谁也会被考虑进去。中间年龄段的，法院可能会结合父母的经济状况、家庭环境、监护能力等等综合判断。\n\n然后，这个问题提到有两个孩子，其实可能涉及到两种情况。一种是两个孩子年龄差不多甚至双胞胎，这种情况法院大概率会倾向让他们在一起成长。因为毕竟兄弟姐妹分开对感情影响很大。另一种是两个孩子年龄差比较大，需求不同，可能会考虑由父母各抚养一个孩子，既可以分担负担，也可能对各自的成长更有利。\n\n总结一下，离婚时两个孩子的抚养权怎么判，最终得看孩子的年龄、父母的经济条件、监护能力，还有什么安排更有利于孩子的成长。法律的核心一直是围绕着孩子利益来决定的。哦对，还想到一点，法院的判决也要结合具体案情，比如父母关系紧张时会尽量避免孩子夹在中间，减少争夺对孩子造成的伤害。所以每个判决应该都是很个性化的。\n</Internal Thinking>\n\n<Question>\n离婚有两个孩子，法院会怎么判?\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"确定问题的核心\",\n      \"content\": \"本问题与离婚后两个孩子的抚养权归属有关。需要分析中国相关法律规定，例如《中华人民共和国婚姻法》以及司法实践中法院的判决原则。核心在于法院如何评估孩子的抚养权，根据因素如子女利益最大化原则、父母基本情况、以及孩子的年龄等。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析法律依据\",\n      \"content\": \"需要查找中国法律中与抚养权相关的规定，以及法院在判决子女抚养权归属时的考虑因素。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"查找相关法律条文\",\n      \"content\": \"<search>婚姻法 子女抚养权</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"查看搜索结果\",\n      \"content\": \"<information>根据《中华人民共和国婚姻法》第三十六条规定，父母与子女间的关系不因父母离婚而消除；离婚后，子女无论由父或母直接抚养，仍是父母双方的子女。此外，婚姻法强调子女权益最大化原则，同时提到了考虑子女年龄、父母经济及教育能力等因素。</information>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"结合抚养权划分的具体因素\",\n      \"content\": \"从搜索结果可知，抚养权的决定通常基于以下因素：1）未成年子女的年龄，例如2岁以下的孩子通常判给母亲，除非母亲不适合抚养；2）父母双方的经济条件和稳定性；3）子女意愿，尤其是年满10岁的儿童；4）有利于子女成长的综合因素。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"综合两名子女的情况\",\n      \"content\": \"问题提到有两个孩子，法院可能会根据两个孩子的具体年龄、意愿及其他相关条件分别考虑其抚养权的归属。如果两名孩子分别归属双方抚养，可能是为了降低对父母间的经济压力并平衡双方的法定责任。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"离婚后有两个子女的情况下，法院通常会基于子女利益最大化原则，对子女抚养权进行判决。如果两个孩子年龄较小且需共同成长，可能判给同一方；若年龄较大且各自需求不同，法院可能会分别判决由父母双方各抚养一个子女。最终的判决会综合考虑孩子的年龄、意愿、父母经济与教育能力等因素。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"结论符合《婚姻法》第三十六条的规定，并且符合实际司法操作中的子女利益最大化原则。回答完整，并已验证具体法律条文的适用性，无需进一步推导。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"嗯，离婚有两个孩子的话，法院会怎么判呢？这个问题不简单，得从几个方面来思考，我先理一下。首先，抚养权问题归根到底还是要围绕什么对孩子最好这个核心原则来判，法律上也叫“子女利益最大化原则”。好，那我先看看具体法律怎么说吧。<search>婚姻法 子女抚养权</search>\\n\\n<information>根据《中华人民共和国婚姻法》第三十六条规定，父母与子女间的关系不因父母离婚而消除；离婚后，子女无论由父或母直接抚养，仍是父母双方的子女。此外，婚姻法还强调了子女权益最大化原则，还提到考虑到孩子的年龄、父母的经济条件以及教育能力等因素。</information>\\n\\n哦，查到了。《婚姻法》很明确，离婚不影响亲子关系，但决定抚养权的时候，讲究维护孩子最大利益，同时要根据一些具体条件来判。这里重点是几个关键因素：孩子多大了？父母有没有能力从经济上、情感上抚养孩子？还有孩子自己的想法。法条写得清楚，也符合道理。\\n\\n我再想细一点。如果孩子特别小，比如两岁以下，司法实践中一般会倾向于判给母亲，因为婴幼儿更需要母亲的照顾。当然，如果母亲有重大问题，比如没能力抚养，那另说。那大一点的孩子呢？如果年满10岁，法律上说要尊重孩子意愿，所以孩子想跟谁也会被考虑进去。中间年龄段的，法院可能会结合父母的经济状况、家庭环境、监护能力等等综合判断。\\n\\n然后，这个问题提到有两个孩子，其实可能涉及到两种情况。一种是两个孩子年龄差不多甚至双胞胎，这种情况法院大概率会倾向让他们在一起成长。因为毕竟兄弟姐妹分开对感情影响很大。另一种是两个孩子年龄差比较大，需求不同，可能会考虑由父母各抚养一个孩子，既可以分担负担，也可能对各自的成长更有利。\\n\\n总结一下，离婚时两个孩子的抚养权怎么判，最终得看孩子的年龄、父母的经济条件、监护能力，还有什么安排更有利于孩子的成长。法律的核心一直是围绕着孩子利益来决定的。哦对，还想到一点，法院的判决也要结合具体案情，比如父母关系紧张时会尽量避免孩子夹在中间，减少争夺对孩子造成的伤害。所以每个判决应该都是很个性化的。\"\n}\n```",
+    "离婚涉及到两个孩子的抚养权问题时，法院的判决会根据具体情况采取“子女利益最大化原则”，综合考虑以下因素作出决定：\n\n1. **孩子的年龄**：  \n   - 如果孩子较小（例如两岁以下），法院通常会倾向于判给母亲抚养，因为婴幼儿更需要母亲在情感上和生活上的照顾。  \n   - 孩子年龄稍大后（例如学龄阶段），法院则会根据父母双方的经济条件、教育能力、家庭环境等综合因素判断，寻求对孩子最有利的安排。  \n   - 对于已满10岁的孩子，法律规定应尊重他们的意愿，法院会参考孩子选择跟哪一方生活。\n\n2. **父母的监护能力**：  \n   父母的经济状况、居住条件、教育背景、陪伴时间等因素会影响抚养权的裁定。法院更倾向于选择能够提供稳定、适宜成长环境的一方作为直接抚养人。\n\n3. **两个孩子的安排**：  \n   - 如果两个孩子年龄相近（如双胞胎或兄弟姐妹间差距较小），法院通常会尽量不分开他们，判给一方共同抚养，以维持彼此的感情和成长中的支持作用。  \n   - 如果两个孩子年龄差较大，且父母双方都有能力独立抚养，法院可能会考虑分别将孩子判给不同的一方抚养，以分担父母的压力，也考虑孩子在不同阶段的需求。但这种情况需要具体分析且较为少见。\n\n4. **特殊情况**：  \n   如果其中一方存在严重不适合抚养孩子的情况（例如虐待、经济能力极差、生活环境不稳定等），抚养权可能会完全判给另一方。此外，法院也会考虑避免抚养权争夺对孩子心理产生负面影响。\n\n总的来说，每个案件的判决都会根据实际情况作出。法院的核心着眼点是为孩子提供最佳的成长环境，同时在案件中尽量保护孩子的利益和家庭关系的稳定。但是具体判决结果仍然需要结合具体案情、提供的证据以及双方的协商意见来决定。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "确定问题的核心",
+        "content": "本问题与离婚后两个孩子的抚养权归属有关。需要分析中国相关法律规定，例如《中华人民共和国婚姻法》以及司法实践中法院的判决原则。核心在于法院如何评估孩子的抚养权，根据因素如子女利益最大化原则、父母基本情况、以及孩子的年龄等。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "分析法律依据",
+        "content": "需要查找中国法律中与抚养权相关的规定，以及法院在判决子女抚养权归属时的考虑因素。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "查找相关法律条文",
+        "content": "<search>婚姻法 子女抚养权</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "查看搜索结果",
+        "content": "<information>根据《中华人民共和国婚姻法》第三十六条规定，父母与子女间的关系不因父母离婚而消除；离婚后，子女无论由父或母直接抚养，仍是父母双方的子女。此外，婚姻法强调子女权益最大化原则，同时提到了考虑子女年龄、父母经济及教育能力等因素。</information>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "结合抚养权划分的具体因素",
+        "content": "从搜索结果可知，抚养权的决定通常基于以下因素：1）未成年子女的年龄，例如2岁以下的孩子通常判给母亲，除非母亲不适合抚养；2）父母双方的经济条件和稳定性；3）子女意愿，尤其是年满10岁的儿童；4）有利于子女成长的综合因素。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "综合两名子女的情况",
+        "content": "问题提到有两个孩子，法院可能会根据两个孩子的具体年龄、意愿及其他相关条件分别考虑其抚养权的归属。如果两名孩子分别归属双方抚养，可能是为了降低对父母间的经济压力并平衡双方的法定责任。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "离婚后有两个子女的情况下，法院通常会基于子女利益最大化原则，对子女抚养权进行判决。如果两个孩子年龄较小且需共同成长，可能判给同一方；若年龄较大且各自需求不同，法院可能会分别判决由父母双方各抚养一个子女。最终的判决会综合考虑孩子的年龄、意愿、父母经济与教育能力等因素。"
+      },
+      {
+        "action": "Verification",
+        "content": "结论符合《婚姻法》第三十六条的规定，并且符合实际司法操作中的子女利益最大化原则。回答完整，并已验证具体法律条文的适用性，无需进一步推导。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "嗯，离婚有两个孩子的话，法院会怎么判呢？这个问题不简单，得从几个方面来思考，我先理一下。首先，抚养权问题归根到底还是要围绕什么对孩子最好这个核心原则来判，法律上也叫“子女利益最大化原则”。好，那我先看看具体法律怎么说吧。<search>婚姻法 子女抚养权</search>\n\n<information>根据《中华人民共和国婚姻法》第三十六条规定，父母与子女间的关系不因父母离婚而消除；离婚后，子女无论由父或母直接抚养，仍是父母双方的子女。此外，婚姻法还强调了子女权益最大化原则，还提到考虑到孩子的年龄、父母的经济条件以及教育能力等因素。</information>\n\n哦，查到了。《婚姻法》很明确，离婚不影响亲子关系，但决定抚养权的时候，讲究维护孩子最大利益，同时要根据一些具体条件来判。这里重点是几个关键因素：孩子多大了？父母有没有能力从经济上、情感上抚养孩子？还有孩子自己的想法。法条写得清楚，也符合道理。\n\n我再想细一点。如果孩子特别小，比如两岁以下，司法实践中一般会倾向于判给母亲，因为婴幼儿更需要母亲的照顾。当然，如果母亲有重大问题，比如没能力抚养，那另说。那大一点的孩子呢？如果年满10岁，法律上说要尊重孩子意愿，所以孩子想跟谁也会被考虑进去。中间年龄段的，法院可能会结合父母的经济状况、家庭环境、监护能力等等综合判断。\n\n然后，这个问题提到有两个孩子，其实可能涉及到两种情况。一种是两个孩子年龄差不多甚至双胞胎，这种情况法院大概率会倾向让他们在一起成长。因为毕竟兄弟姐妹分开对感情影响很大。另一种是两个孩子年龄差比较大，需求不同，可能会考虑由父母各抚养一个孩子，既可以分担负担，也可能对各自的成长更有利。\n\n总结一下，离婚时两个孩子的抚养权怎么判，最终得看孩子的年龄、父母的经济条件、监护能力，还有什么安排更有利于孩子的成长。法律的核心一直是围绕着孩子利益来决定的。哦对，还想到一点，法院的判决也要结合具体案情，比如父母关系紧张时会尽量避免孩子夹在中间，减少争夺对孩子造成的伤害。所以每个判决应该都是很个性化的。",
+  "Response": "离婚涉及到两个孩子的抚养权问题时，法院的判决会根据具体情况采取“子女利益最大化原则”，综合考虑以下因素作出决定：\n\n1. **孩子的年龄**：  \n   - 如果孩子较小（例如两岁以下），法院通常会倾向于判给母亲抚养，因为婴幼儿更需要母亲在情感上和生活上的照顾。  \n   - 孩子年龄稍大后（例如学龄阶段），法院则会根据父母双方的经济条件、教育能力、家庭环境等综合因素判断，寻求对孩子最有利的安排。  \n   - 对于已满10岁的孩子，法律规定应尊重他们的意愿，法院会参考孩子选择跟哪一方生活。\n\n2. **父母的监护能力**：  \n   父母的经济状况、居住条件、教育背景、陪伴时间等因素会影响抚养权的裁定。法院更倾向于选择能够提供稳定、适宜成长环境的一方作为直接抚养人。\n\n3. **两个孩子的安排**：  \n   - 如果两个孩子年龄相近（如双胞胎或兄弟姐妹间差距较小），法院通常会尽量不分开他们，判给一方共同抚养，以维持彼此的感情和成长中的支持作用。  \n   - 如果两个孩子年龄差较大，且父母双方都有能力独立抚养，法院可能会考虑分别将孩子判给不同的一方抚养，以分担父母的压力，也考虑孩子在不同阶段的需求。但这种情况需要具体分析且较为少见。\n\n4. **特殊情况**：  \n   如果其中一方存在严重不适合抚养孩子的情况（例如虐待、经济能力极差、生活环境不稳定等），抚养权可能会完全判给另一方。此外，法院也会考虑避免抚养权争夺对孩子心理产生负面影响。\n\n总的来说，每个案件的判决都会根据实际情况作出。法院的核心着眼点是为孩子提供最佳的成长环境，同时在案件中尽量保护孩子的利益和家庭关系的稳定。但是具体判决结果仍然需要结合具体案情、提供的证据以及双方的协商意见来决定。",
+  "Question": "离婚有两个孩子，法院会怎么判?"
+}

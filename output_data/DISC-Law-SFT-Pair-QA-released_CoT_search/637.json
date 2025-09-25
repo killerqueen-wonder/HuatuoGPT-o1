@@ -1,0 +1,89 @@
+{
+  "Open-ended Verifiable Question": "嫁妆属于夫妻共同财产吗?",
+  "Ground-True Answer": "一般来讲，结婚登记前的陪送嫁妆应认定为是女方家人对女方的婚前个人赠与;若在登记结婚后的陪送嫁妆，女方家人未明确表示是对某方的个人赠与，则应认为是对夫妻双方的共同赠与，该嫁妆应认定为是夫妻的共同财产。夫妻双方对该嫁妆有特别的约定，则应依约定来认定财产的权利归属。但在司法实践中，嫁妆一般视为女方的婚前财产。女方为结婚购置的嫁妆，虽然是在结婚登记以后，举行结婚仪式之前购买，但夫妻双方没有实际生活在一起，没有共同的劳动和收入，购买嫁妆的资金大多来源女方的父母，或其他的近亲属，或女方婚前个人的收入。在审判实践中，离婚案件的当事人对该类财产的归属一般不持异议，认为女方陪嫁的财产就是其个人财产，男方购置财产就是男方的财产。这样处理起来也比较符合风俗习惯，当事人容易接受，也可以避免矛盾激化，符合公序良俗的要求。实际生活中，已给付的彩礼可能已经用于购置嫁妆，或用于双方共同生活，事实上此彩礼嫁妆已经转化为双方的共同财产，或者被双方消费掉。此种情况离婚，应当返还的彩礼嫁妆，要根据已给付的彩礼所购置嫁妆的使用情况，婚姻关系或同居关系存续期间的长短等具体事实，灵活考虑。",
+  "process_id": 637,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "确定嫁妆的性质",
+      "content": "首先，需要明确嫁妆的法律性质。嫁妆通常是女方家庭在婚姻成立时赠与女方的财产，可能包括金钱、房产或其他财物。嫁妆是一种赠与行为，那么关键是要判断这是个人财产还是夫妻共同财产。根据法律，个人财产主要指婚前取得的财产或婚姻关系中明确归一方所有的赠与财物。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "寻找相关法律法规",
+      "content": "为了进一步分析需查找有关婚姻法中关于个人财产及夫妻共同财产的规定。行使查询操作，以获取最新的相关规定：<search>婚姻法 夫妻个人财产定义</search>。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "分析法律规定",
+      "content": "<information>根据《中华人民共和国民法典》第1062条的规定，夫妻共同财产包括婚姻关系存续期间双方或者一方所得的财产，但以下类型的财产属于个人财产：一方婚前的财产、婚姻关系中明确约定归一方的赠与、以及特定情况下的其他个人财产。</information> 根据这一规定，如果嫁妆在赠与时明确表示仅为女方个人财产，则属于个人财产。如果未明确约定，且该嫁妆用于夫妻共同生活，则可能被认定为共同财产。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "法律适用分析",
+      "content": "结合民法典的规定，嫁妆的性质取决于赠与双方（即女方父母）的意图及相关的赠与约定。如果有明确说明嫁妆是赠与女方个人的财产，且未用于婚后共同生活，则嫁妆属于女方的个人财产。如果没有明确约定，且嫁妆已经用于婚后共同用途，例如购买家庭房产或支付共同生活费用，则可能被视为夫妻共同财产。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "嫁妆是否属于夫妻共同财产需视具体情况而定。如果嫁妆在赠与时明确约定为女方个人财产，则其属于个人财产。如果没有明确约定，且嫁妆用于夫妻共同生活，则可能被视为夫妻共同财产。"
+    },
+    {
+      "action": "Verification",
+      "content": "通过检索和分析相关法律条文，可以确认结论正确，即嫁妆是否属于夫妻共同财产，取决于赠与的具体约定及用途。因此，答案不需要进一步修正。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n嫁妆属于夫妻共同财产吗?\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n嫁妆是否属于夫妻共同财产需视具体情况而定。如果嫁妆在赠与时明确约定为女方个人财产，则其属于个人财产。如果没有明确约定，且嫁妆用于夫妻共同生活，则可能被视为夫妻共同财产。  \n</Model Response>  \n\n<Reference Answer>  \n一般来讲，结婚登记前的陪送嫁妆应认定为是女方家人对女方的婚前个人赠与;若在登记结婚后的陪送嫁妆，女方家人未明确表示是对某方的个人赠与，则应认为是对夫妻双方的共同赠与，该嫁妆应认定为是夫妻的共同财产。夫妻双方对该嫁妆有特别的约定，则应依约定来认定财产的权利归属。但在司法实践中，嫁妆一般视为女方的婚前财产。女方为结婚购置的嫁妆，虽然是在结婚登记以后，举行结婚仪式之前购买，但夫妻双方没有实际生活在一起，没有共同的劳动和收入，购买嫁妆的资金大多来源女方的父母，或其他的近亲属，或女方婚前个人的收入。在审判实践中，离婚案件的当事人对该类财产的归属一般不持异议，认为女方陪嫁的财产就是其个人财产，男方购置财产就是男方的财产。这样处理起来也比较符合风俗习惯，当事人容易接受，也可以避免矛盾激化，符合公序良俗的要求。实际生活中，已给付的彩礼可能已经用于购置嫁妆，或用于双方共同生活，事实上此彩礼嫁妆已经转化为双方的共同财产，或者被双方消费掉。此种情况离婚，应当返还的彩礼嫁妆，要根据已给付的彩礼所购置嫁妆的使用情况，婚姻关系或同居关系存续期间的长短等具体事实，灵活考虑。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 确定嫁妆的性质\n首先，需要明确嫁妆的法律性质。嫁妆通常是女方家庭在婚姻成立时赠与女方的财产，可能包括金钱、房产或其他财物。嫁妆是一种赠与行为，那么关键是要判断这是个人财产还是夫妻共同财产。根据法律，个人财产主要指婚前取得的财产或婚姻关系中明确归一方所有的赠与财物。\n\n### 寻找相关法律法规\n为了进一步分析需查找有关婚姻法中关于个人财产及夫妻共同财产的规定。行使查询操作，以获取最新的相关规定：<search>婚姻法 夫妻个人财产定义</search>。\n\n### 分析法律规定\n<information>根据《中华人民共和国民法典》第1062条的规定，夫妻共同财产包括婚姻关系存续期间双方或者一方所得的财产，但以下类型的财产属于个人财产：一方婚前的财产、婚姻关系中明确约定归一方的赠与、以及特定情况下的其他个人财产。</information> 根据这一规定，如果嫁妆在赠与时明确表示仅为女方个人财产，则属于个人财产。如果未明确约定，且该嫁妆用于夫妻共同生活，则可能被认定为共同财产。\n\n### 法律适用分析\n结合民法典的规定，嫁妆的性质取决于赠与双方（即女方父母）的意图及相关的赠与约定。如果有明确说明嫁妆是赠与女方个人的财产，且未用于婚后共同生活，则嫁妆属于女方的个人财产。如果没有明确约定，且嫁妆已经用于婚后共同用途，例如购买家庭房产或支付共同生活费用，则可能被视为夫妻共同财产。\n\n### Conclusion\n嫁妆是否属于夫妻共同财产需视具体情况而定。如果嫁妆在赠与时明确约定为女方个人财产，则其属于个人财产。如果没有明确约定，且嫁妆用于夫妻共同生活，则可能被视为夫妻共同财产。\n\n### Verification\n通过检索和分析相关法律条文，可以确认结论正确，即嫁妆是否属于夫妻共同财产，取决于赠与的具体约定及用途。因此，答案不需要进一步修正。\n</Thought Process>\n\n<Question>\n嫁妆属于夫妻共同财产吗?\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n嗯，首先得弄清楚嫁妆的性质。嫁妆通常是女方家庭在结婚时给女方的一笔财产。这笔钱也好，房产也好，总归是个“送”。那么关键是，这个嫁妆到底算女方一个人的财产还是婚后两个人的共同财产呢？这个性质很重要，得先搞明白。\n\n要弄清楚这个问题，最直接的办法就是看看法律是怎么说的。嗯…我记得《民法典》里面有专门讲夫妻财产的部分。具体夫妻共同财产和个人财产怎么界定，看一下最新的法律条款好了。搜索一下：<search>婚姻法 夫妻个人财产定义</search>。\n\n找到了！<information>根据《中华人民共和国民法典》第1062条规定，夫妻共同财产主要是婚姻存续期间双方或者一方所得的财产，同时还列出来说明了哪些是个人财产，比如：婚前的财产、明确约定给一方的赠与、以及其他情境下的个人财产。</information>\n\n哦，原来如此。简单点说，这条法律是这样定的，如果财产是在婚前就已经有了，或者婚内明确说明是归某一方的，那这一方就算是“个人财产”，其他的则默认是“夫妻共同财产”。那么嫁妆呢？\n\n这样的话，得分析一下嫁妆赠与的时候有没有特别约定。如果赠与时明确说了，这个嫁妆是送给女方个人的，那不用说，属于女方的个人财产。可要是没有说清楚，而且女方一结婚，这嫁妆就被用在了夫妻共同生活上，比如买房、还贷、或者支付其他家庭开销，那这种情况，很可能会被当作夫妻共同财产了。\n\n嗯，听上去这个问题的关键点就是——赠与时是否明确约定了嫁妆的归属。比如，女方父母明确表示“这是给我们女儿一个人的”，这种情况，不管嫁妆之后怎么用，它都应该是女方的个人财产。反之，如果没提过这些，最后还被用到了婚后的共同生活上，可能就比较模糊，甚至算到夫妻共有里了。\n\n所以啊，归纳一下，判断嫁妆是否是夫妻共同财产，要看两点：第一，赠与时有没有明确说明是给女方个人的这类表述；第二，嫁妆之后有没有被用于婚后的共同生活。只有这两点结合来看，才能确定最终性质。\n\n仔细一下，我觉得这个逻辑是通的。通过刚刚检索的法律条文，确认了嫁妆的性质问题总是要因情况而定：明确赠与给女方个人的是个人财产；没有明确赠与且用作共同支出的可能被认作夫妻共同财产。那么结论应该是没有问题了，不需要改。\n</Internal Thinking>\n\n<Question>\n嫁妆属于夫妻共同财产吗?\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"确定嫁妆的性质\",\n      \"content\": \"首先，需要明确嫁妆的法律性质。嫁妆通常是女方家庭在婚姻成立时赠与女方的财产，可能包括金钱、房产或其他财物。嫁妆是一种赠与行为，那么关键是要判断这是个人财产还是夫妻共同财产。根据法律，个人财产主要指婚前取得的财产或婚姻关系中明确归一方所有的赠与财物。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"寻找相关法律法规\",\n      \"content\": \"为了进一步分析需查找有关婚姻法中关于个人财产及夫妻共同财产的规定。行使查询操作，以获取最新的相关规定：<search>婚姻法 夫妻个人财产定义</search>。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析法律规定\",\n      \"content\": \"<information>根据《中华人民共和国民法典》第1062条的规定，夫妻共同财产包括婚姻关系存续期间双方或者一方所得的财产，但以下类型的财产属于个人财产：一方婚前的财产、婚姻关系中明确约定归一方的赠与、以及特定情况下的其他个人财产。</information> 根据这一规定，如果嫁妆在赠与时明确表示仅为女方个人财产，则属于个人财产。如果未明确约定，且该嫁妆用于夫妻共同生活，则可能被认定为共同财产。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"法律适用分析\",\n      \"content\": \"结合民法典的规定，嫁妆的性质取决于赠与双方（即女方父母）的意图及相关的赠与约定。如果有明确说明嫁妆是赠与女方个人的财产，且未用于婚后共同生活，则嫁妆属于女方的个人财产。如果没有明确约定，且嫁妆已经用于婚后共同用途，例如购买家庭房产或支付共同生活费用，则可能被视为夫妻共同财产。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"嫁妆是否属于夫妻共同财产需视具体情况而定。如果嫁妆在赠与时明确约定为女方个人财产，则其属于个人财产。如果没有明确约定，且嫁妆用于夫妻共同生活，则可能被视为夫妻共同财产。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"通过检索和分析相关法律条文，可以确认结论正确，即嫁妆是否属于夫妻共同财产，取决于赠与的具体约定及用途。因此，答案不需要进一步修正。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"嗯，首先得弄清楚嫁妆的性质。嫁妆通常是女方家庭在结婚时给女方的一笔财产。这笔钱也好，房产也好，总归是个“送”。那么关键是，这个嫁妆到底算女方一个人的财产还是婚后两个人的共同财产呢？这个性质很重要，得先搞明白。\\n\\n要弄清楚这个问题，最直接的办法就是看看法律是怎么说的。嗯…我记得《民法典》里面有专门讲夫妻财产的部分。具体夫妻共同财产和个人财产怎么界定，看一下最新的法律条款好了。搜索一下：<search>婚姻法 夫妻个人财产定义</search>。\\n\\n找到了！<information>根据《中华人民共和国民法典》第1062条规定，夫妻共同财产主要是婚姻存续期间双方或者一方所得的财产，同时还列出来说明了哪些是个人财产，比如：婚前的财产、明确约定给一方的赠与、以及其他情境下的个人财产。</information>\\n\\n哦，原来如此。简单点说，这条法律是这样定的，如果财产是在婚前就已经有了，或者婚内明确说明是归某一方的，那这一方就算是“个人财产”，其他的则默认是“夫妻共同财产”。那么嫁妆呢？\\n\\n这样的话，得分析一下嫁妆赠与的时候有没有特别约定。如果赠与时明确说了，这个嫁妆是送给女方个人的，那不用说，属于女方的个人财产。可要是没有说清楚，而且女方一结婚，这嫁妆就被用在了夫妻共同生活上，比如买房、还贷、或者支付其他家庭开销，那这种情况，很可能会被当作夫妻共同财产了。\\n\\n嗯，听上去这个问题的关键点就是——赠与时是否明确约定了嫁妆的归属。比如，女方父母明确表示“这是给我们女儿一个人的”，这种情况，不管嫁妆之后怎么用，它都应该是女方的个人财产。反之，如果没提过这些，最后还被用到了婚后的共同生活上，可能就比较模糊，甚至算到夫妻共有里了。\\n\\n所以啊，归纳一下，判断嫁妆是否是夫妻共同财产，要看两点：第一，赠与时有没有明确说明是给女方个人的这类表述；第二，嫁妆之后有没有被用于婚后的共同生活。只有这两点结合来看，才能确定最终性质。\\n\\n仔细一下，我觉得这个逻辑是通的。通过刚刚检索的法律条文，确认了嫁妆的性质问题总是要因情况而定：明确赠与给女方个人的是个人财产；没有明确赠与且用作共同支出的可能被认作夫妻共同财产。那么结论应该是没有问题了，不需要改。\"\n}\n```",
+    "嫁妆是否属于夫妻共同财产需要根据具体情况判断，关键取决于以下两点：\n\n1. **赠与时是否明确约定**：根据《中华人民共和国民法典》第1062条的规定，如果嫁妆在赠与时明确表明是赠与给女方个人的，比如女方父母明确表示“这是专门给我们女儿的”，那么这笔嫁妆应属于女方的个人财产，婚后无论如何使用，其性质都不会改变。\n\n2. **嫁妆的使用情况**：如果嫁妆赠与时没有明确约定是归女方个人所有，而在婚后用于夫妻共同生活，比如买房、还贷、或支付其他家庭开销，则可能会被认定为夫妻共同财产。\n\n因此，对于嫁妆的归属，法律并没有一刀切，而是需要结合赠与时的表述及嫁妆的实际使用情况进行具体分析。如果希望确保嫁妆作为女方的个人财产，建议在赠与时通过书面的方式明确说明归属。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "确定嫁妆的性质",
+        "content": "首先，需要明确嫁妆的法律性质。嫁妆通常是女方家庭在婚姻成立时赠与女方的财产，可能包括金钱、房产或其他财物。嫁妆是一种赠与行为，那么关键是要判断这是个人财产还是夫妻共同财产。根据法律，个人财产主要指婚前取得的财产或婚姻关系中明确归一方所有的赠与财物。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "寻找相关法律法规",
+        "content": "为了进一步分析需查找有关婚姻法中关于个人财产及夫妻共同财产的规定。行使查询操作，以获取最新的相关规定：<search>婚姻法 夫妻个人财产定义</search>。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "分析法律规定",
+        "content": "<information>根据《中华人民共和国民法典》第1062条的规定，夫妻共同财产包括婚姻关系存续期间双方或者一方所得的财产，但以下类型的财产属于个人财产：一方婚前的财产、婚姻关系中明确约定归一方的赠与、以及特定情况下的其他个人财产。</information> 根据这一规定，如果嫁妆在赠与时明确表示仅为女方个人财产，则属于个人财产。如果未明确约定，且该嫁妆用于夫妻共同生活，则可能被认定为共同财产。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "法律适用分析",
+        "content": "结合民法典的规定，嫁妆的性质取决于赠与双方（即女方父母）的意图及相关的赠与约定。如果有明确说明嫁妆是赠与女方个人的财产，且未用于婚后共同生活，则嫁妆属于女方的个人财产。如果没有明确约定，且嫁妆已经用于婚后共同用途，例如购买家庭房产或支付共同生活费用，则可能被视为夫妻共同财产。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "嫁妆是否属于夫妻共同财产需视具体情况而定。如果嫁妆在赠与时明确约定为女方个人财产，则其属于个人财产。如果没有明确约定，且嫁妆用于夫妻共同生活，则可能被视为夫妻共同财产。"
+      },
+      {
+        "action": "Verification",
+        "content": "通过检索和分析相关法律条文，可以确认结论正确，即嫁妆是否属于夫妻共同财产，取决于赠与的具体约定及用途。因此，答案不需要进一步修正。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "嗯，首先得弄清楚嫁妆的性质。嫁妆通常是女方家庭在结婚时给女方的一笔财产。这笔钱也好，房产也好，总归是个“送”。那么关键是，这个嫁妆到底算女方一个人的财产还是婚后两个人的共同财产呢？这个性质很重要，得先搞明白。\n\n要弄清楚这个问题，最直接的办法就是看看法律是怎么说的。嗯…我记得《民法典》里面有专门讲夫妻财产的部分。具体夫妻共同财产和个人财产怎么界定，看一下最新的法律条款好了。搜索一下：<search>婚姻法 夫妻个人财产定义</search>。\n\n找到了！<information>根据《中华人民共和国民法典》第1062条规定，夫妻共同财产主要是婚姻存续期间双方或者一方所得的财产，同时还列出来说明了哪些是个人财产，比如：婚前的财产、明确约定给一方的赠与、以及其他情境下的个人财产。</information>\n\n哦，原来如此。简单点说，这条法律是这样定的，如果财产是在婚前就已经有了，或者婚内明确说明是归某一方的，那这一方就算是“个人财产”，其他的则默认是“夫妻共同财产”。那么嫁妆呢？\n\n这样的话，得分析一下嫁妆赠与的时候有没有特别约定。如果赠与时明确说了，这个嫁妆是送给女方个人的，那不用说，属于女方的个人财产。可要是没有说清楚，而且女方一结婚，这嫁妆就被用在了夫妻共同生活上，比如买房、还贷、或者支付其他家庭开销，那这种情况，很可能会被当作夫妻共同财产了。\n\n嗯，听上去这个问题的关键点就是——赠与时是否明确约定了嫁妆的归属。比如，女方父母明确表示“这是给我们女儿一个人的”，这种情况，不管嫁妆之后怎么用，它都应该是女方的个人财产。反之，如果没提过这些，最后还被用到了婚后的共同生活上，可能就比较模糊，甚至算到夫妻共有里了。\n\n所以啊，归纳一下，判断嫁妆是否是夫妻共同财产，要看两点：第一，赠与时有没有明确说明是给女方个人的这类表述；第二，嫁妆之后有没有被用于婚后的共同生活。只有这两点结合来看，才能确定最终性质。\n\n仔细一下，我觉得这个逻辑是通的。通过刚刚检索的法律条文，确认了嫁妆的性质问题总是要因情况而定：明确赠与给女方个人的是个人财产；没有明确赠与且用作共同支出的可能被认作夫妻共同财产。那么结论应该是没有问题了，不需要改。",
+  "Response": "嫁妆是否属于夫妻共同财产需要根据具体情况判断，关键取决于以下两点：\n\n1. **赠与时是否明确约定**：根据《中华人民共和国民法典》第1062条的规定，如果嫁妆在赠与时明确表明是赠与给女方个人的，比如女方父母明确表示“这是专门给我们女儿的”，那么这笔嫁妆应属于女方的个人财产，婚后无论如何使用，其性质都不会改变。\n\n2. **嫁妆的使用情况**：如果嫁妆赠与时没有明确约定是归女方个人所有，而在婚后用于夫妻共同生活，比如买房、还贷、或支付其他家庭开销，则可能会被认定为夫妻共同财产。\n\n因此，对于嫁妆的归属，法律并没有一刀切，而是需要结合赠与时的表述及嫁妆的实际使用情况进行具体分析。如果希望确保嫁妆作为女方的个人财产，建议在赠与时通过书面的方式明确说明归属。",
+  "Question": "嫁妆属于夫妻共同财产吗?"
+}

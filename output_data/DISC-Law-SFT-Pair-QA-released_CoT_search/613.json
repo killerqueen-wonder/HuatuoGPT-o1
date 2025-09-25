@@ -1,0 +1,97 @@
+{
+  "Open-ended Verifiable Question": "家属放弃抢救，员工48小时内去世，算不算工伤？",
+  "Ground-True Answer": "在排除故意杀人、故意伤害等违法及违背伦理道德的情形下，关于家属放弃治疗亦可构成经抢救无效死亡并应予以认定工伤的观点，既符合《工伤保险条例》维护劳动者合法权益的立法目的，亦可减少因劳动者死亡无法认定工伤，继而无法获取工伤保险导致的一系列社会矛盾。如果继续治疗只存在延缓死亡时间而无法使病情稳定，家属放弃治疗也只是无奈之举，法不外乎情理，可认定为工伤。图片2018年12月5日16时30分，万先生在工作中晕倒，公司将其送院。治疗过程中多次被告知情况危重，随时有死亡可能。2018年12月7日13时46分，家属商量后签字，决定放弃治疗。当日下午14时8分，万先生被宣布死亡。2019年4月17日，万先生的妻子王女士向人保局申请工伤认定，人保局作出了《认定工伤决定书》。公司认为万先生的死亡并非因抢救无效的正常死亡，而是因为家属放弃治疗导致，因此不能认定为工伤。于是诉至法院要求撤销认定工伤的决定。图片对于家属在48小时抢救时间内放弃治疗能否认定工伤，需要满足以下两个要求：1、家属放弃治疗对死亡结果的影响力。如果病人经医生诊断已经没有存活可能性，家属放弃治疗对病人死亡的结果不存在直接因果关系，可视为工伤。2、放弃治疗的时间是否合理。如果家属是在治疗后期，病情逐渐恶化的情况下选择放弃治疗，可以推定其放弃治疗具有消极性，出于无奈，并非主动为之，可视为工伤。",
+  "process_id": 613,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "理解背景与提出的问题",
+      "content": "问题涉及员工因疾病或意外在公司工作期间产生医疗状况后，家属选择放弃抢救，该员工在48小时内死亡是否可以认定为工伤。需要明确的是中国劳动法或相关工伤认定标准中对此类情况是否有明确规定。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "查找工伤认定标准",
+      "content": "员工去世48小时内该事件是否符合工伤认定的法律法规需要参考具体法规内容。进行搜索中国法律文件中相关的工伤认定标准。"
+    },
+    {
+      "action": "Search",
+      "keyword": "工伤认定标准",
+      "content": "<search>工伤认定标准</search>"
+    },
+    {
+      "action": "Information",
+      "content": "<information>根据《工伤保险条例》（国务院令第586号）第十四条规定：1）工作时间及工作场所内因工作原因受到事故伤害死亡，视为工伤；2）患职业病死亡也属于工伤；3）工作期间突发疾病经抢救无效死亡或突发疾病在48小时以内死亡，认定为工伤。</information>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "结合数据分析具体情况",
+      "content": "根据《工伤保险条例》第十四条的规定，如果员工在工作期间突发疾病，并在48小时内因抢救无效死亡，或直接死亡，该情况属于工伤。家属是否放弃抢救并不会影响死亡时间的法律认定，只需证明员工的死亡原因与工作期间突发疾病相关即可。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "结合《工伤保险条例》第十四条规定，员工如果在工作期间因突发疾病并在48小时内死亡，无论家属是否选择抢救，该员工的死亡均可符合工伤认定条件。"
+    },
+    {
+      "action": "Verification",
+      "content": "信息正确无误。根据法律规定（《工伤保险条例》），48小时内的死亡情况确实属于工伤认定，无需增加其他外部条件。因此结论成立，最终认定可以准确回答问题。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n家属放弃抢救，员工48小时内去世，算不算工伤？\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n结合《工伤保险条例》第十四条规定，员工如果在工作期间因突发疾病并在48小时内死亡，无论家属是否选择抢救，该员工的死亡均可符合工伤认定条件。  \n</Model Response>  \n\n<Reference Answer>  \n在排除故意杀人、故意伤害等违法及违背伦理道德的情形下，关于家属放弃治疗亦可构成经抢救无效死亡并应予以认定工伤的观点，既符合《工伤保险条例》维护劳动者合法权益的立法目的，亦可减少因劳动者死亡无法认定工伤，继而无法获取工伤保险导致的一系列社会矛盾。如果继续治疗只存在延缓死亡时间而无法使病情稳定，家属放弃治疗也只是无奈之举，法不外乎情理，可认定为工伤。图片2018年12月5日16时30分，万先生在工作中晕倒，公司将其送院。治疗过程中多次被告知情况危重，随时有死亡可能。2018年12月7日13时46分，家属商量后签字，决定放弃治疗。当日下午14时8分，万先生被宣布死亡。2019年4月17日，万先生的妻子王女士向人保局申请工伤认定，人保局作出了《认定工伤决定书》。公司认为万先生的死亡并非因抢救无效的正常死亡，而是因为家属放弃治疗导致，因此不能认定为工伤。于是诉至法院要求撤销认定工伤的决定。图片对于家属在48小时抢救时间内放弃治疗能否认定工伤，需要满足以下两个要求：1、家属放弃治疗对死亡结果的影响力。如果病人经医生诊断已经没有存活可能性，家属放弃治疗对病人死亡的结果不存在直接因果关系，可视为工伤。2、放弃治疗的时间是否合理。如果家属是在治疗后期，病情逐渐恶化的情况下选择放弃治疗，可以推定其放弃治疗具有消极性，出于无奈，并非主动为之，可视为工伤。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 理解背景与提出的问题\n问题涉及员工因疾病或意外在公司工作期间产生医疗状况后，家属选择放弃抢救，该员工在48小时内死亡是否可以认定为工伤。需要明确的是中国劳动法或相关工伤认定标准中对此类情况是否有明确规定。\n\n### 查找工伤认定标准\n员工去世48小时内该事件是否符合工伤认定的法律法规需要参考具体法规内容。进行搜索中国法律文件中相关的工伤认定标准。\n\n### Search\n<search>工伤认定标准</search>\n\n### Information\n<information>根据《工伤保险条例》（国务院令第586号）第十四条规定：1）工作时间及工作场所内因工作原因受到事故伤害死亡，视为工伤；2）患职业病死亡也属于工伤；3）工作期间突发疾病经抢救无效死亡或突发疾病在48小时以内死亡，认定为工伤。</information>\n\n### 结合数据分析具体情况\n根据《工伤保险条例》第十四条的规定，如果员工在工作期间突发疾病，并在48小时内因抢救无效死亡，或直接死亡，该情况属于工伤。家属是否放弃抢救并不会影响死亡时间的法律认定，只需证明员工的死亡原因与工作期间突发疾病相关即可。\n\n### Conclusion\n结合《工伤保险条例》第十四条规定，员工如果在工作期间因突发疾病并在48小时内死亡，无论家属是否选择抢救，该员工的死亡均可符合工伤认定条件。\n\n### Verification\n信息正确无误。根据法律规定（《工伤保险条例》），48小时内的死亡情况确实属于工伤认定，无需增加其他外部条件。因此结论成立，最终认定可以准确回答问题。\n</Thought Process>\n\n<Question>\n家属放弃抢救，员工48小时内去世，算不算工伤？\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n哦，有个员工在工作期间突发疾病，48小时内去世了。但是家属却选择了放弃抢救，这种情况下是不是能算作工伤呢？我来想想看。工伤认定是有法律依据的，应该去找一下那个叫《工伤保险条例》的文件，看看里面是怎么规定的。\n\n嗯，我在网上搜一下关键词吧，搜“工伤认定标准”。<search>工伤认定标准</search>\n\n找到了！这里有根据《工伤保险条例》（国务院令第586号）的具体规定。<information>根据《工伤保险条例》（国务院令第586号）第十四条规定：1）工作时间及工作场所内因工作原因受到事故伤害死亡，视为工伤；2）患职业病死亡也属于工伤；3）工作期间突发疾病经抢救无效死亡或突发疾病在48小时以内死亡，认定为工伤。</information>\n\n让我再细想一下这个规定的意思。如果按照条例第十四条的说法，只要员工是在工作时间期间突发了疾病，接着呢，又是在48小时内死亡的情况下，这似乎就能被认定为工伤了。重点似乎就在两个要素：第一，是“工作期间突发疾病”，第二，是“48小时内死亡”。\n\n这里家属选择不抢救的情况会不会有什么影响呢？刚刚的条例好像没有提到这点。这里关键还是看死亡时间是不是发生在48小时之内。其实只要医学上能够证明死亡原因和工作期间的疾病突发是相关联的，那家属放不放弃抢救，应该不会改变法律上对死亡时间的认定。\n\n所以这就很清楚了。家属放弃抢救只是一个个人家庭的选择，并不是法律认定工伤的主要依据。员工48小时内死亡的事实，结合工作期间突发疾病这个前提，已经满足了《工伤保险条例》第十四条规定。这种情况，应该还是能认定为工伤。\n\n嗯，总的来说放心吧，不管抢救与否，重点还是死亡时间和突发疾病的事实，这才是法律上的认定依据。\n</Internal Thinking>\n\n<Question>\n家属放弃抢救，员工48小时内去世，算不算工伤？\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"理解背景与提出的问题\",\n      \"content\": \"问题涉及员工因疾病或意外在公司工作期间产生医疗状况后，家属选择放弃抢救，该员工在48小时内死亡是否可以认定为工伤。需要明确的是中国劳动法或相关工伤认定标准中对此类情况是否有明确规定。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"查找工伤认定标准\",\n      \"content\": \"员工去世48小时内该事件是否符合工伤认定的法律法规需要参考具体法规内容。进行搜索中国法律文件中相关的工伤认定标准。\"\n    },\n    {\n      \"action\": \"Search\",\n      \"keyword\": \"工伤认定标准\",\n      \"content\": \"<search>工伤认定标准</search>\"\n    },\n    {\n      \"action\": \"Information\",\n      \"content\": \"<information>根据《工伤保险条例》（国务院令第586号）第十四条规定：1）工作时间及工作场所内因工作原因受到事故伤害死亡，视为工伤；2）患职业病死亡也属于工伤；3）工作期间突发疾病经抢救无效死亡或突发疾病在48小时以内死亡，认定为工伤。</information>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"结合数据分析具体情况\",\n      \"content\": \"根据《工伤保险条例》第十四条的规定，如果员工在工作期间突发疾病，并在48小时内因抢救无效死亡，或直接死亡，该情况属于工伤。家属是否放弃抢救并不会影响死亡时间的法律认定，只需证明员工的死亡原因与工作期间突发疾病相关即可。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"结合《工伤保险条例》第十四条规定，员工如果在工作期间因突发疾病并在48小时内死亡，无论家属是否选择抢救，该员工的死亡均可符合工伤认定条件。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"信息正确无误。根据法律规定（《工伤保险条例》），48小时内的死亡情况确实属于工伤认定，无需增加其他外部条件。因此结论成立，最终认定可以准确回答问题。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"哦，有个员工在工作期间突发疾病，48小时内去世了。但是家属却选择了放弃抢救，这种情况下是不是能算作工伤呢？我来想想看。工伤认定是有法律依据的，应该去找一下那个叫《工伤保险条例》的文件，看看里面是怎么规定的。\\n\\n嗯，我在网上搜一下关键词吧，搜“工伤认定标准”。<search>工伤认定标准</search>\\n\\n找到了！这里有根据《工伤保险条例》（国务院令第586号）的具体规定。<information>根据《工伤保险条例》（国务院令第586号）第十四条规定：1）工作时间及工作场所内因工作原因受到事故伤害死亡，视为工伤；2）患职业病死亡也属于工伤；3）工作期间突发疾病经抢救无效死亡或突发疾病在48小时以内死亡，认定为工伤。</information>\\n\\n让我再细想一下这个规定的意思。如果按照条例第十四条的说法，只要员工是在工作时间期间突发了疾病，接着呢，又是在48小时内死亡的情况下，这似乎就能被认定为工伤了。重点似乎就在两个要素：第一，是“工作期间突发疾病”，第二，是“48小时内死亡”。\\n\\n这里家属选择不抢救的情况会不会有什么影响呢？刚刚的条例好像没有提到这点。这里关键还是看死亡时间是不是发生在48小时之内。其实只要医学上能够证明死亡原因和工作期间的疾病突发是相关联的，那家属放不放弃抢救，应该不会改变法律上对死亡时间的认定。\\n\\n所以这就很清楚了。家属放弃抢救只是一个个人家庭的选择，并不是法律认定工伤的主要依据。员工48小时内死亡的事实，结合工作期间突发疾病这个前提，已经满足了《工伤保险条例》第十四条规定。这种情况，应该还是能认定为工伤。\\n\\n嗯，总的来说放心吧，不管抢救与否，重点还是死亡时间和突发疾病的事实，这才是法律上的认定依据。\"\n}\n```",
+    "根据《工伤保险条例》（国务院令第586号）第十四条的规定，员工在工作期间突发疾病并在48小时内死亡的情况，符合工伤认定的条件。因此，即便家属选择放弃抢救，这一决定并不会影响工伤的认定结果。关键在于两个要素：员工是在工作期间突发疾病，以及死亡时间是在48小时内。只要这两个条件满足，该情况仍然可以被认定为工伤。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "理解背景与提出的问题",
+        "content": "问题涉及员工因疾病或意外在公司工作期间产生医疗状况后，家属选择放弃抢救，该员工在48小时内死亡是否可以认定为工伤。需要明确的是中国劳动法或相关工伤认定标准中对此类情况是否有明确规定。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "查找工伤认定标准",
+        "content": "员工去世48小时内该事件是否符合工伤认定的法律法规需要参考具体法规内容。进行搜索中国法律文件中相关的工伤认定标准。"
+      },
+      {
+        "action": "Search",
+        "keyword": "工伤认定标准",
+        "content": "<search>工伤认定标准</search>"
+      },
+      {
+        "action": "Information",
+        "content": "<information>根据《工伤保险条例》（国务院令第586号）第十四条规定：1）工作时间及工作场所内因工作原因受到事故伤害死亡，视为工伤；2）患职业病死亡也属于工伤；3）工作期间突发疾病经抢救无效死亡或突发疾病在48小时以内死亡，认定为工伤。</information>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "结合数据分析具体情况",
+        "content": "根据《工伤保险条例》第十四条的规定，如果员工在工作期间突发疾病，并在48小时内因抢救无效死亡，或直接死亡，该情况属于工伤。家属是否放弃抢救并不会影响死亡时间的法律认定，只需证明员工的死亡原因与工作期间突发疾病相关即可。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "结合《工伤保险条例》第十四条规定，员工如果在工作期间因突发疾病并在48小时内死亡，无论家属是否选择抢救，该员工的死亡均可符合工伤认定条件。"
+      },
+      {
+        "action": "Verification",
+        "content": "信息正确无误。根据法律规定（《工伤保险条例》），48小时内的死亡情况确实属于工伤认定，无需增加其他外部条件。因此结论成立，最终认定可以准确回答问题。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "哦，有个员工在工作期间突发疾病，48小时内去世了。但是家属却选择了放弃抢救，这种情况下是不是能算作工伤呢？我来想想看。工伤认定是有法律依据的，应该去找一下那个叫《工伤保险条例》的文件，看看里面是怎么规定的。\n\n嗯，我在网上搜一下关键词吧，搜“工伤认定标准”。<search>工伤认定标准</search>\n\n找到了！这里有根据《工伤保险条例》（国务院令第586号）的具体规定。<information>根据《工伤保险条例》（国务院令第586号）第十四条规定：1）工作时间及工作场所内因工作原因受到事故伤害死亡，视为工伤；2）患职业病死亡也属于工伤；3）工作期间突发疾病经抢救无效死亡或突发疾病在48小时以内死亡，认定为工伤。</information>\n\n让我再细想一下这个规定的意思。如果按照条例第十四条的说法，只要员工是在工作时间期间突发了疾病，接着呢，又是在48小时内死亡的情况下，这似乎就能被认定为工伤了。重点似乎就在两个要素：第一，是“工作期间突发疾病”，第二，是“48小时内死亡”。\n\n这里家属选择不抢救的情况会不会有什么影响呢？刚刚的条例好像没有提到这点。这里关键还是看死亡时间是不是发生在48小时之内。其实只要医学上能够证明死亡原因和工作期间的疾病突发是相关联的，那家属放不放弃抢救，应该不会改变法律上对死亡时间的认定。\n\n所以这就很清楚了。家属放弃抢救只是一个个人家庭的选择，并不是法律认定工伤的主要依据。员工48小时内死亡的事实，结合工作期间突发疾病这个前提，已经满足了《工伤保险条例》第十四条规定。这种情况，应该还是能认定为工伤。\n\n嗯，总的来说放心吧，不管抢救与否，重点还是死亡时间和突发疾病的事实，这才是法律上的认定依据。",
+  "Response": "根据《工伤保险条例》（国务院令第586号）第十四条的规定，员工在工作期间突发疾病并在48小时内死亡的情况，符合工伤认定的条件。因此，即便家属选择放弃抢救，这一决定并不会影响工伤的认定结果。关键在于两个要素：员工是在工作期间突发疾病，以及死亡时间是在48小时内。只要这两个条件满足，该情况仍然可以被认定为工伤。",
+  "Question": "家属放弃抢救，员工48小时内去世，算不算工伤？"
+}

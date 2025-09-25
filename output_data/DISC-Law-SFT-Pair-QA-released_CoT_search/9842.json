@@ -1,0 +1,89 @@
+{
+  "Open-ended Verifiable Question": "刑事拘留要经过什么程序？",
+  "Ground-True Answer": "1、公安机关拘留人时，须出示拘留证。\n2、拘留后，应当立即将被拘留人送看守所羁押，至迟不得超过24小时。\n3、除无法通知或者涉嫌危害国家安全犯罪、恐怖活动犯罪，通知可能有碍侦查的情形以外，应当拘留后24小时以内，通知被拘留人的家属。有碍侦查的情形消失以后，应当立即通知被拘留人的家属。\n4、公安机关、检察院对被拘留的人，应当在拘留后的24小时以内进行讯问。\n公安机关对被拘留的人，认为需要逮捕的，应当在拘留后的三日以内，提请人民检察院审查批准。在特殊情况下，提请审查批准的时间可以延长一日至四日。人民检察院应当自接到公安机关提请批准逮捕书后的七日以内，作出批准逮捕或者不批准逮捕的决定。对于流窜作案、多次作案、结伙作案的重大嫌疑分子，提请审查批准的时间可以延长至三十日。检察院自接到公安机关提请批准逮捕书后的七日以内作出批准或者不批准逮捕的决定。人民检察院拘留犯罪嫌疑人的羁押期限为十四日，特殊情况下可以延长一日至三日。",
+  "process_id": 9842,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "分析刑事拘留涉及的法律程序",
+      "content": "刑事拘留是一种强制措施，通常由公安机关或检察机关依据《刑事诉讼法》的相关规定实施。了解具体程序需要参考相关法律条文。为了明确其程序步骤，应首先检索《刑事诉讼法》中关于刑事拘留的规定。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "检索《刑事诉讼法》关于刑事拘留的规定",
+      "content": "刑事拘留的程序可能涉及以下关键环节：实施主体、法定条件、执行方式和通知家属等。因此需要搜索：<search>刑事诉讼法 刑事拘留 条件 程序</search>。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "分析检索的内容",
+      "content": "<information>刑事诉讼法规定，刑事拘留的主要程序包括以下几点：1. 公安机关在需要拘留嫌疑人时，应首先判断是否符合紧急情况，例如嫌疑人被指控严重犯罪、可能逃跑或销毁证据；2. 由公安机关负责人签署拘留决定；3. 执行拘留后，应在24小时内通知被拘留人家属；4. 将拘留情况备案，并依法履行后续侦查或者起诉流程。</information>在上述法规的基础上，还需注意具体程序的操作细节，例如拘留证的出具以及通知程序的合法性。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "总结刑事拘留全过程",
+      "content": "刑事拘留的实施主体通常是公安机关或检察机关，主要步骤包括：1. 根据案件情况确定是否满足拘留条件；2. 由负责人批准并出具拘留证；3. 向嫌疑人宣布并执行拘留，同时通知家属；4. 后续侦查与法律程序备案。这些步骤确保执法活动在法律框架内进行。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "刑事拘留的程序包括以下步骤：公安机关或检察机关根据事件情况判断是否符合拘留条件；由负责人批准拘留并签署拘留证；对嫌疑人执行拘留，并在24小时内通知家属；将拘留情况备案并依法开展后续调查或起诉流程。这些程序必须在法律规定范围内实施，确保嫌疑人的合法权益受到保护。"
+    },
+    {
+      "action": "Verification",
+      "content": "通过法律条文核对，刑事拘留的程序确实包括法定条件、负责人批准、执行拘留、通知家属以及备案后续程序，这与《刑事诉讼法》的规定一致。因此，结论正确无误。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n刑事拘留要经过什么程序？\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n刑事拘留的程序包括以下步骤：公安机关或检察机关根据事件情况判断是否符合拘留条件；由负责人批准拘留并签署拘留证；对嫌疑人执行拘留，并在24小时内通知家属；将拘留情况备案并依法开展后续调查或起诉流程。这些程序必须在法律规定范围内实施，确保嫌疑人的合法权益受到保护。  \n</Model Response>  \n\n<Reference Answer>  \n1、公安机关拘留人时，须出示拘留证。\n2、拘留后，应当立即将被拘留人送看守所羁押，至迟不得超过24小时。\n3、除无法通知或者涉嫌危害国家安全犯罪、恐怖活动犯罪，通知可能有碍侦查的情形以外，应当拘留后24小时以内，通知被拘留人的家属。有碍侦查的情形消失以后，应当立即通知被拘留人的家属。\n4、公安机关、检察院对被拘留的人，应当在拘留后的24小时以内进行讯问。\n公安机关对被拘留的人，认为需要逮捕的，应当在拘留后的三日以内，提请人民检察院审查批准。在特殊情况下，提请审查批准的时间可以延长一日至四日。人民检察院应当自接到公安机关提请批准逮捕书后的七日以内，作出批准逮捕或者不批准逮捕的决定。对于流窜作案、多次作案、结伙作案的重大嫌疑分子，提请审查批准的时间可以延长至三十日。检察院自接到公安机关提请批准逮捕书后的七日以内作出批准或者不批准逮捕的决定。人民检察院拘留犯罪嫌疑人的羁押期限为十四日，特殊情况下可以延长一日至三日。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 分析刑事拘留涉及的法律程序\n刑事拘留是一种强制措施，通常由公安机关或检察机关依据《刑事诉讼法》的相关规定实施。了解具体程序需要参考相关法律条文。为了明确其程序步骤，应首先检索《刑事诉讼法》中关于刑事拘留的规定。\n\n### 检索《刑事诉讼法》关于刑事拘留的规定\n刑事拘留的程序可能涉及以下关键环节：实施主体、法定条件、执行方式和通知家属等。因此需要搜索：<search>刑事诉讼法 刑事拘留 条件 程序</search>。\n\n### 分析检索的内容\n<information>刑事诉讼法规定，刑事拘留的主要程序包括以下几点：1. 公安机关在需要拘留嫌疑人时，应首先判断是否符合紧急情况，例如嫌疑人被指控严重犯罪、可能逃跑或销毁证据；2. 由公安机关负责人签署拘留决定；3. 执行拘留后，应在24小时内通知被拘留人家属；4. 将拘留情况备案，并依法履行后续侦查或者起诉流程。</information>在上述法规的基础上，还需注意具体程序的操作细节，例如拘留证的出具以及通知程序的合法性。\n\n### 总结刑事拘留全过程\n刑事拘留的实施主体通常是公安机关或检察机关，主要步骤包括：1. 根据案件情况确定是否满足拘留条件；2. 由负责人批准并出具拘留证；3. 向嫌疑人宣布并执行拘留，同时通知家属；4. 后续侦查与法律程序备案。这些步骤确保执法活动在法律框架内进行。\n\n### Conclusion\n刑事拘留的程序包括以下步骤：公安机关或检察机关根据事件情况判断是否符合拘留条件；由负责人批准拘留并签署拘留证；对嫌疑人执行拘留，并在24小时内通知家属；将拘留情况备案并依法开展后续调查或起诉流程。这些程序必须在法律规定范围内实施，确保嫌疑人的合法权益受到保护。\n\n### Verification\n通过法律条文核对，刑事拘留的程序确实包括法定条件、负责人批准、执行拘留、通知家属以及备案后续程序，这与《刑事诉讼法》的规定一致。因此，结论正确无误。\n</Thought Process>\n\n<Question>\n刑事拘留要经过什么程序？\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n刑事拘留是一个很常见的法律程序，不过它具体要经过哪些步骤呢？我觉得得先看看跟这个相关的法律，应该是《刑事诉讼法》。\n\n先来想想，刑事拘留的要点可能有哪些。应该会涉及谁来操作、什么情况下可以拘留、执行的时候有哪些要求，还有关键的一点，拘留了后要不要通知家属之类的。所以我觉得可以搜搜看法律里怎么说。<search>刑事诉讼法 刑事拘留 条件 程序</search>\n\n找到了一些信息，看来《刑事诉讼法》还真的把这个程序讲得比较细。<information>首先，刑事拘留是公安机关或者检察机关在遇到一些紧急情况时用的手段，比如说犯罪嫌疑人涉及重大犯罪、可能有逃跑风险或者会销毁证据。然后，这个拘留决定得由公安机关的负责人批准并签署拘留证。接下来拘留开始后，公安机关需要在24小时之内通知被拘留人的家属（当然有一些特殊情况下可以不通知，但是得备案说明理由）。最后，拘留之后还要正式备案，并继续开展侦查或者移交起诉。</information>\n\n嗯，这个解释挺全面的，那我再理清楚一下整个流程吧。第一步，公安机关或者检察机关要先判断拘留条件是否符合《刑事诉讼法》说的“紧急情况”，比如人会跑、会毁灭证据之类的。如果符合，就可以往下走下一步。第二步，他们得让负责人批准，而且要出具拘留证。这一步很关键，不然就是程序不合法。第三步，执行拘留的时候，要通知到家属，这个通知的时限就是24小时，程序上必须合规。当然，如果有一些特殊情况确实不能通知，比如会影响案件侦办，那也得有个备案说明一下理由。最后一个步骤就是拘留完以后，把这个拘留的情况按法律规定做好备案，然后继续开展后面的侦查或者移送起诉了。\n\n理到这里我觉得这个逻辑也蛮清楚的了。简单总结一下，刑事拘留从前到后主要包括判断条件、批准拘留、通知家属、完成备案这几个环节，所有这些程序都得按法律规定来，既要保障侦查的顺利进行，也得保护嫌疑人的合法权益。\n\n再核对下是不是跟法律规定一致。嗯，我找到的这些信息基本上都跟《刑事诉讼法》一致，特别是在条件、程序、通知时限这些关键点上都符合。所以可以确认，这个分析没有问题。\n</Internal Thinking>\n\n<Question>\n刑事拘留要经过什么程序？\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析刑事拘留涉及的法律程序\",\n      \"content\": \"刑事拘留是一种强制措施，通常由公安机关或检察机关依据《刑事诉讼法》的相关规定实施。了解具体程序需要参考相关法律条文。为了明确其程序步骤，应首先检索《刑事诉讼法》中关于刑事拘留的规定。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"检索《刑事诉讼法》关于刑事拘留的规定\",\n      \"content\": \"刑事拘留的程序可能涉及以下关键环节：实施主体、法定条件、执行方式和通知家属等。因此需要搜索：<search>刑事诉讼法 刑事拘留 条件 程序</search>。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析检索的内容\",\n      \"content\": \"<information>刑事诉讼法规定，刑事拘留的主要程序包括以下几点：1. 公安机关在需要拘留嫌疑人时，应首先判断是否符合紧急情况，例如嫌疑人被指控严重犯罪、可能逃跑或销毁证据；2. 由公安机关负责人签署拘留决定；3. 执行拘留后，应在24小时内通知被拘留人家属；4. 将拘留情况备案，并依法履行后续侦查或者起诉流程。</information>在上述法规的基础上，还需注意具体程序的操作细节，例如拘留证的出具以及通知程序的合法性。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"总结刑事拘留全过程\",\n      \"content\": \"刑事拘留的实施主体通常是公安机关或检察机关，主要步骤包括：1. 根据案件情况确定是否满足拘留条件；2. 由负责人批准并出具拘留证；3. 向嫌疑人宣布并执行拘留，同时通知家属；4. 后续侦查与法律程序备案。这些步骤确保执法活动在法律框架内进行。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"刑事拘留的程序包括以下步骤：公安机关或检察机关根据事件情况判断是否符合拘留条件；由负责人批准拘留并签署拘留证；对嫌疑人执行拘留，并在24小时内通知家属；将拘留情况备案并依法开展后续调查或起诉流程。这些程序必须在法律规定范围内实施，确保嫌疑人的合法权益受到保护。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"通过法律条文核对，刑事拘留的程序确实包括法定条件、负责人批准、执行拘留、通知家属以及备案后续程序，这与《刑事诉讼法》的规定一致。因此，结论正确无误。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"刑事拘留是一个很常见的法律程序，不过它具体要经过哪些步骤呢？我觉得得先看看跟这个相关的法律，应该是《刑事诉讼法》。\\n\\n先来想想，刑事拘留的要点可能有哪些。应该会涉及谁来操作、什么情况下可以拘留、执行的时候有哪些要求，还有关键的一点，拘留了后要不要通知家属之类的。所以我觉得可以搜搜看法律里怎么说。<search>刑事诉讼法 刑事拘留 条件 程序</search>\\n\\n找到了一些信息，看来《刑事诉讼法》还真的把这个程序讲得比较细。<information>首先，刑事拘留是公安机关或者检察机关在遇到一些紧急情况时用的手段，比如说犯罪嫌疑人涉及重大犯罪、可能有逃跑风险或者会销毁证据。然后，这个拘留决定得由公安机关的负责人批准并签署拘留证。接下来拘留开始后，公安机关需要在24小时之内通知被拘留人的家属（当然有一些特殊情况下可以不通知，但是得备案说明理由）。最后，拘留之后还要正式备案，并继续开展侦查或者移交起诉。</information>\\n\\n嗯，这个解释挺全面的，那我再理清楚一下整个流程吧。第一步，公安机关或者检察机关要先判断拘留条件是否符合《刑事诉讼法》说的“紧急情况”，比如人会跑、会毁灭证据之类的。如果符合，就可以往下走下一步。第二步，他们得让负责人批准，而且要出具拘留证。这一步很关键，不然就是程序不合法。第三步，执行拘留的时候，要通知到家属，这个通知的时限就是24小时，程序上必须合规。当然，如果有一些特殊情况确实不能通知，比如会影响案件侦办，那也得有个备案说明一下理由。最后一个步骤就是拘留完以后，把这个拘留的情况按法律规定做好备案，然后继续开展后面的侦查或者移送起诉了。\\n\\n理到这里我觉得这个逻辑也蛮清楚的了。简单总结一下，刑事拘留从前到后主要包括判断条件、批准拘留、通知家属、完成备案这几个环节，所有这些程序都得按法律规定来，既要保障侦查的顺利进行，也得保护嫌疑人的合法权益。\\n\\n再核对下是不是跟法律规定一致。嗯，我找到的这些信息基本上都跟《刑事诉讼法》一致，特别是在条件、程序、通知时限这些关键点上都符合。所以可以确认，这个分析没有问题。\"\n}\n```",
+    "刑事拘留是我国刑事诉讼中的一种强制措施，其程序依照《中华人民共和国刑事诉讼法》有明确规定，大致可以分为以下几个步骤：\n\n1. **判断拘留条件**  \n   公安机关或者人民检察院需要根据案件情况判断是否符合刑事拘留的条件。这通常是针对一些紧急情况，例如犯罪嫌疑人涉嫌重大犯罪、有逃跑、毁灭或伪造证据、可能威胁他人人身安全等情形。\n\n2. **批准拘留并出具拘留证**  \n   拘留的决定必须经过公安机关负责人批准，并签发正式的拘留证。这一环节确保拘留程序的合法性和严肃性。\n\n3. **执行拘留**  \n   公安机关在依法执行拘留时，需保障程序合规，避免出现不当行为。\n\n4. **通知家属**  \n   在拘留后，公安机关应当在24小时内将拘留情况通知被拘留人的家属。不过，如果案件涉及国家安全、恐怖活动，或者通知家属可能妨碍侦查的，可暂时不通知，但需将未通知的理由备案。\n\n5. **备案及后续侦查**  \n   拘留完成后，公安机关需将拘留情况按规定备案，同时继续案件侦查，依法完成移送起诉等后续程序。\n\n整个刑事拘留的过程既要符合法律要求，也需要在办案中兼顾嫌疑人的基本权利。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "分析刑事拘留涉及的法律程序",
+        "content": "刑事拘留是一种强制措施，通常由公安机关或检察机关依据《刑事诉讼法》的相关规定实施。了解具体程序需要参考相关法律条文。为了明确其程序步骤，应首先检索《刑事诉讼法》中关于刑事拘留的规定。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "检索《刑事诉讼法》关于刑事拘留的规定",
+        "content": "刑事拘留的程序可能涉及以下关键环节：实施主体、法定条件、执行方式和通知家属等。因此需要搜索：<search>刑事诉讼法 刑事拘留 条件 程序</search>。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "分析检索的内容",
+        "content": "<information>刑事诉讼法规定，刑事拘留的主要程序包括以下几点：1. 公安机关在需要拘留嫌疑人时，应首先判断是否符合紧急情况，例如嫌疑人被指控严重犯罪、可能逃跑或销毁证据；2. 由公安机关负责人签署拘留决定；3. 执行拘留后，应在24小时内通知被拘留人家属；4. 将拘留情况备案，并依法履行后续侦查或者起诉流程。</information>在上述法规的基础上，还需注意具体程序的操作细节，例如拘留证的出具以及通知程序的合法性。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "总结刑事拘留全过程",
+        "content": "刑事拘留的实施主体通常是公安机关或检察机关，主要步骤包括：1. 根据案件情况确定是否满足拘留条件；2. 由负责人批准并出具拘留证；3. 向嫌疑人宣布并执行拘留，同时通知家属；4. 后续侦查与法律程序备案。这些步骤确保执法活动在法律框架内进行。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "刑事拘留的程序包括以下步骤：公安机关或检察机关根据事件情况判断是否符合拘留条件；由负责人批准拘留并签署拘留证；对嫌疑人执行拘留，并在24小时内通知家属；将拘留情况备案并依法开展后续调查或起诉流程。这些程序必须在法律规定范围内实施，确保嫌疑人的合法权益受到保护。"
+      },
+      {
+        "action": "Verification",
+        "content": "通过法律条文核对，刑事拘留的程序确实包括法定条件、负责人批准、执行拘留、通知家属以及备案后续程序，这与《刑事诉讼法》的规定一致。因此，结论正确无误。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "刑事拘留是一个很常见的法律程序，不过它具体要经过哪些步骤呢？我觉得得先看看跟这个相关的法律，应该是《刑事诉讼法》。\n\n先来想想，刑事拘留的要点可能有哪些。应该会涉及谁来操作、什么情况下可以拘留、执行的时候有哪些要求，还有关键的一点，拘留了后要不要通知家属之类的。所以我觉得可以搜搜看法律里怎么说。<search>刑事诉讼法 刑事拘留 条件 程序</search>\n\n找到了一些信息，看来《刑事诉讼法》还真的把这个程序讲得比较细。<information>首先，刑事拘留是公安机关或者检察机关在遇到一些紧急情况时用的手段，比如说犯罪嫌疑人涉及重大犯罪、可能有逃跑风险或者会销毁证据。然后，这个拘留决定得由公安机关的负责人批准并签署拘留证。接下来拘留开始后，公安机关需要在24小时之内通知被拘留人的家属（当然有一些特殊情况下可以不通知，但是得备案说明理由）。最后，拘留之后还要正式备案，并继续开展侦查或者移交起诉。</information>\n\n嗯，这个解释挺全面的，那我再理清楚一下整个流程吧。第一步，公安机关或者检察机关要先判断拘留条件是否符合《刑事诉讼法》说的“紧急情况”，比如人会跑、会毁灭证据之类的。如果符合，就可以往下走下一步。第二步，他们得让负责人批准，而且要出具拘留证。这一步很关键，不然就是程序不合法。第三步，执行拘留的时候，要通知到家属，这个通知的时限就是24小时，程序上必须合规。当然，如果有一些特殊情况确实不能通知，比如会影响案件侦办，那也得有个备案说明一下理由。最后一个步骤就是拘留完以后，把这个拘留的情况按法律规定做好备案，然后继续开展后面的侦查或者移送起诉了。\n\n理到这里我觉得这个逻辑也蛮清楚的了。简单总结一下，刑事拘留从前到后主要包括判断条件、批准拘留、通知家属、完成备案这几个环节，所有这些程序都得按法律规定来，既要保障侦查的顺利进行，也得保护嫌疑人的合法权益。\n\n再核对下是不是跟法律规定一致。嗯，我找到的这些信息基本上都跟《刑事诉讼法》一致，特别是在条件、程序、通知时限这些关键点上都符合。所以可以确认，这个分析没有问题。",
+  "Response": "刑事拘留是我国刑事诉讼中的一种强制措施，其程序依照《中华人民共和国刑事诉讼法》有明确规定，大致可以分为以下几个步骤：\n\n1. **判断拘留条件**  \n   公安机关或者人民检察院需要根据案件情况判断是否符合刑事拘留的条件。这通常是针对一些紧急情况，例如犯罪嫌疑人涉嫌重大犯罪、有逃跑、毁灭或伪造证据、可能威胁他人人身安全等情形。\n\n2. **批准拘留并出具拘留证**  \n   拘留的决定必须经过公安机关负责人批准，并签发正式的拘留证。这一环节确保拘留程序的合法性和严肃性。\n\n3. **执行拘留**  \n   公安机关在依法执行拘留时，需保障程序合规，避免出现不当行为。\n\n4. **通知家属**  \n   在拘留后，公安机关应当在24小时内将拘留情况通知被拘留人的家属。不过，如果案件涉及国家安全、恐怖活动，或者通知家属可能妨碍侦查的，可暂时不通知，但需将未通知的理由备案。\n\n5. **备案及后续侦查**  \n   拘留完成后，公安机关需将拘留情况按规定备案，同时继续案件侦查，依法完成移送起诉等后续程序。\n\n整个刑事拘留的过程既要符合法律要求，也需要在办案中兼顾嫌疑人的基本权利。",
+  "Question": "刑事拘留要经过什么程序？"
+}

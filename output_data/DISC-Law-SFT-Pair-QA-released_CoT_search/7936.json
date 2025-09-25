@@ -1,0 +1,99 @@
+{
+  "Open-ended Verifiable Question": "遗嘱优先还是法定继承顺序优先",
+  "Ground-True Answer": "从效力上说，遗嘱继承优于法定继承。\n遗嘱继承是指按照立遗嘱人生前所留下的符合法律规定的合法遗嘱的内容要求，确定被继承人的继承人及各继承人应继承遗产的份额。\n二、遗产继承的方式\n1、遗嘱继承，即被继承人在生前订立遗嘱，指定继承人继承自己的遗产。\n2、遗赠即被继承人生前订立遗嘱，将遗产赠与国家、集体，或者法定继承人以外的人。\n3、遗赠抚养协议即被继承人与扶养人订立协议，由扶养人负担被继承人生养死葬的义务，被继承人的全部或部分财产在其死后转归扶养人所有。\n4、法定继承，即在上面三种情况都不存在的情况下，法律根据亲属关系的远近确定的顺序。\n三、法定继承的适用情形\n有下列情形之一的，遗产中的有关部分按照法定继承办理\n1、被继承人生前未与他人订立遗赠扶养协议，或虽订立遗赠扶养协议，但只处分了部分遗产，或协议已失去法律效力的。\n2、被继承人生前未立遗嘱、遗赠，或虽立遗嘱、遗赠，但只处分了部分遗产，或所立遗嘱、遗赠无效或部分无效的。\n3、遗嘱继承人或受遗赠人先于被继承人死亡的。\n4、遗嘱继承人放弃遗嘱继承或受遗赠人放弃受领遗赠的。\n5、遗嘱继承人丧失继承权或受遗赠人丧失遗赠受领权的。",
+  "process_id": 7936,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "明确问题背景",
+      "content": "题目询问‘遗嘱’和‘法定继承顺序’在继承法律关系中的优先性，这涉及继承法的基本原则。通常情况下，遗嘱继承和法定继承是两个主要方式，但其适用顺序需要依据法律界定。需进一步确认此问题所涉及的法律依据。首先查询《继承法》的相关规定及其在遗嘱继承和法定继承上的优先性。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "查询继承法有关遗嘱与法定继承的规定",
+      "content": "需要检索《中华人民共和国继承法》或现行有效的相关法律文件中关于‘遗嘱继承’和‘法定继承’的优先适用规定。基于该查询，可以明确答案的法律依据。"
+    },
+    {
+      "action": "Search",
+      "title": "检索继承法的相关法律条款",
+      "content": "<search>中华人民共和国继承法 遗嘱继承 法定继承 优先</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "分析搜索结果",
+      "content": "<information>根据《中华人民共和国继承法》第五条和第十六条的规定，继承包括法定继承、遗嘱继承和遗赠三种方式，其中遗嘱继承具有优先于法定继承的效力。当被继承人立有合法有效的遗嘱时，应依照遗嘱内容来分配遗产。而在没有遗嘱的情况下，继承人则依据法定继承的顺序进行分配。</information>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "解读法律条款",
+      "content": "通过上述法律条文可知，在通常情况下，遗嘱继承优先于法定继承。只有在无遗嘱，或遗嘱部分无效，或遗嘱未实际分割遗产的情况下，才适用法定继承顺序。因此，对于有遗嘱的情况，应首先依据遗嘱内容进行分配。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "根据《中华人民共和国继承法》，遗嘱继承优先于法定继承。在被继承人有合法有效的遗嘱时，遗产分配应依照遗嘱执行；仅在无遗嘱或遗嘱无效的情况下，才适用法定继承顺序。"
+    },
+    {
+      "action": "Verification",
+      "content": "经过核对法律规定分析，结论符合立法精神和实际适用，遗嘱继承确实优先于法定继承，无需更改或补充。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n遗嘱优先还是法定继承顺序优先\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n根据《中华人民共和国继承法》，遗嘱继承优先于法定继承。在被继承人有合法有效的遗嘱时，遗产分配应依照遗嘱执行；仅在无遗嘱或遗嘱无效的情况下，才适用法定继承顺序。  \n</Model Response>  \n\n<Reference Answer>  \n从效力上说，遗嘱继承优于法定继承。\n遗嘱继承是指按照立遗嘱人生前所留下的符合法律规定的合法遗嘱的内容要求，确定被继承人的继承人及各继承人应继承遗产的份额。\n二、遗产继承的方式\n1、遗嘱继承，即被继承人在生前订立遗嘱，指定继承人继承自己的遗产。\n2、遗赠即被继承人生前订立遗嘱，将遗产赠与国家、集体，或者法定继承人以外的人。\n3、遗赠抚养协议即被继承人与扶养人订立协议，由扶养人负担被继承人生养死葬的义务，被继承人的全部或部分财产在其死后转归扶养人所有。\n4、法定继承，即在上面三种情况都不存在的情况下，法律根据亲属关系的远近确定的顺序。\n三、法定继承的适用情形\n有下列情形之一的，遗产中的有关部分按照法定继承办理\n1、被继承人生前未与他人订立遗赠扶养协议，或虽订立遗赠扶养协议，但只处分了部分遗产，或协议已失去法律效力的。\n2、被继承人生前未立遗嘱、遗赠，或虽立遗嘱、遗赠，但只处分了部分遗产，或所立遗嘱、遗赠无效或部分无效的。\n3、遗嘱继承人或受遗赠人先于被继承人死亡的。\n4、遗嘱继承人放弃遗嘱继承或受遗赠人放弃受领遗赠的。\n5、遗嘱继承人丧失继承权或受遗赠人丧失遗赠受领权的。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 明确问题背景\n题目询问‘遗嘱’和‘法定继承顺序’在继承法律关系中的优先性，这涉及继承法的基本原则。通常情况下，遗嘱继承和法定继承是两个主要方式，但其适用顺序需要依据法律界定。需进一步确认此问题所涉及的法律依据。首先查询《继承法》的相关规定及其在遗嘱继承和法定继承上的优先性。\n\n### 查询继承法有关遗嘱与法定继承的规定\n需要检索《中华人民共和国继承法》或现行有效的相关法律文件中关于‘遗嘱继承’和‘法定继承’的优先适用规定。基于该查询，可以明确答案的法律依据。\n\n### 检索继承法的相关法律条款\n<search>中华人民共和国继承法 遗嘱继承 法定继承 优先</search>\n\n### 分析搜索结果\n<information>根据《中华人民共和国继承法》第五条和第十六条的规定，继承包括法定继承、遗嘱继承和遗赠三种方式，其中遗嘱继承具有优先于法定继承的效力。当被继承人立有合法有效的遗嘱时，应依照遗嘱内容来分配遗产。而在没有遗嘱的情况下，继承人则依据法定继承的顺序进行分配。</information>\n\n### 解读法律条款\n通过上述法律条文可知，在通常情况下，遗嘱继承优先于法定继承。只有在无遗嘱，或遗嘱部分无效，或遗嘱未实际分割遗产的情况下，才适用法定继承顺序。因此，对于有遗嘱的情况，应首先依据遗嘱内容进行分配。\n\n### Conclusion\n根据《中华人民共和国继承法》，遗嘱继承优先于法定继承。在被继承人有合法有效的遗嘱时，遗产分配应依照遗嘱执行；仅在无遗嘱或遗嘱无效的情况下，才适用法定继承顺序。\n\n### Verification\n经过核对法律规定分析，结论符合立法精神和实际适用，遗嘱继承确实优先于法定继承，无需更改或补充。\n</Thought Process>\n\n<Question>\n遗嘱优先还是法定继承顺序优先\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n好，来看看这个问题。遗嘱和法定继承顺序哪个优先？嗯，如果是继承的问题，一般就涉及《继承法》。那么，我先想一下，继承的主要途径是什么。好像一般来说，主要有两种方式：一种叫法定继承，一种叫遗嘱继承吧。遗嘱继承听起来是按照被继承人自己生前写好的意愿来分财产，而法定继承就应该是按照固定的法律顺序来分。那么这两种方式哪一种优先呢？这应该是有明确法律规定的吧。\n\n好，先看看《继承法》里有没有直接提到这个问题。我得去查一下具体的条款：\n\n<search>中华人民共和国继承法 遗嘱继承 法定继承 优先</search>\n\n找到了相关信息！根据搜索结果，应该是《中华人民共和国继承法》第五条和第十六条提到过这个问题。让我仔细看看。\n\n<information>根据《中华人民共和国继承法》第五条和第十六条的规定，继承包括法定继承、遗嘱继承和遗赠三种方式，其中遗嘱继承具有优先于法定继承的效力。当被继承人立有合法有效的遗嘱时，应依照遗嘱内容来分配遗产。而在没有遗嘱的情况下，继承人则依据法定继承的顺序进行分配。</information>\n\n哦，原来是这样。按照法律上的说法，遗嘱继承是优先的。也就是说，如果被继承人生前立了一份合法有效的遗嘱，那么遗产就要按照遗嘱里提到的来分配。只有在以下几种情况下才会过渡到法定继承：第一，没有遗嘱；第二，遗嘱部分无效；第三，遗嘱没有把所有遗产分配清楚。这样一想，感觉也挺合理的，毕竟遗嘱算是被继承人明确表达自己的意愿，而法定继承则是默认的规则。\n\n所以可以得出结论了。遗嘱继承优先于法定继承。这种优先性是基于法律条文和立法理念。如果有遗嘱，首先还是要按照遗嘱来分配遗产；只有在遗嘱不存在或者无效的时候，才会依照法定继承的顺序来处理。这种逻辑清晰而且也很符合实际。\n\n再回头检查一下自己的推理，答案应该是没问题的。总之，遗嘱优先于法定继承。这和我的理解，以及法律规定都是一致的。\n</Internal Thinking>\n\n<Question>\n遗嘱优先还是法定继承顺序优先\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"明确问题背景\",\n      \"content\": \"题目询问‘遗嘱’和‘法定继承顺序’在继承法律关系中的优先性，这涉及继承法的基本原则。通常情况下，遗嘱继承和法定继承是两个主要方式，但其适用顺序需要依据法律界定。需进一步确认此问题所涉及的法律依据。首先查询《继承法》的相关规定及其在遗嘱继承和法定继承上的优先性。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"查询继承法有关遗嘱与法定继承的规定\",\n      \"content\": \"需要检索《中华人民共和国继承法》或现行有效的相关法律文件中关于‘遗嘱继承’和‘法定继承’的优先适用规定。基于该查询，可以明确答案的法律依据。\"\n    },\n    {\n      \"action\": \"Search\",\n      \"title\": \"检索继承法的相关法律条款\",\n      \"content\": \"<search>中华人民共和国继承法 遗嘱继承 法定继承 优先</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析搜索结果\",\n      \"content\": \"<information>根据《中华人民共和国继承法》第五条和第十六条的规定，继承包括法定继承、遗嘱继承和遗赠三种方式，其中遗嘱继承具有优先于法定继承的效力。当被继承人立有合法有效的遗嘱时，应依照遗嘱内容来分配遗产。而在没有遗嘱的情况下，继承人则依据法定继承的顺序进行分配。</information>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"解读法律条款\",\n      \"content\": \"通过上述法律条文可知，在通常情况下，遗嘱继承优先于法定继承。只有在无遗嘱，或遗嘱部分无效，或遗嘱未实际分割遗产的情况下，才适用法定继承顺序。因此，对于有遗嘱的情况，应首先依据遗嘱内容进行分配。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"根据《中华人民共和国继承法》，遗嘱继承优先于法定继承。在被继承人有合法有效的遗嘱时，遗产分配应依照遗嘱执行；仅在无遗嘱或遗嘱无效的情况下，才适用法定继承顺序。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"经过核对法律规定分析，结论符合立法精神和实际适用，遗嘱继承确实优先于法定继承，无需更改或补充。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"好，来看看这个问题。遗嘱和法定继承顺序哪个优先？嗯，如果是继承的问题，一般就涉及《继承法》。那么，我先想一下，继承的主要途径是什么。好像一般来说，主要有两种方式：一种叫法定继承，一种叫遗嘱继承吧。遗嘱继承听起来是按照被继承人自己生前写好的意愿来分财产，而法定继承就应该是按照固定的法律顺序来分。那么这两种方式哪一种优先呢？这应该是有明确法律规定的吧。\\n\\n好，先看看《继承法》里有没有直接提到这个问题。我得去查一下具体的条款：\\n\\n<search>中华人民共和国继承法 遗嘱继承 法定继承 优先</search>\\n\\n找到了相关信息！根据搜索结果，应该是《中华人民共和国继承法》第五条和第十六条提到过这个问题。让我仔细看看。\\n\\n<information>根据《中华人民共和国继承法》第五条和第十六条的规定，继承包括法定继承、遗嘱继承和遗赠三种方式，其中遗嘱继承具有优先于法定继承的效力。当被继承人立有合法有效的遗嘱时，应依照遗嘱内容来分配遗产。而在没有遗嘱的情况下，继承人则依据法定继承的顺序进行分配。</information>\\n\\n哦，原来是这样。按照法律上的说法，遗嘱继承是优先的。也就是说，如果被继承人生前立了一份合法有效的遗嘱，那么遗产就要按照遗嘱里提到的来分配。只有在以下几种情况下才会过渡到法定继承：第一，没有遗嘱；第二，遗嘱部分无效；第三，遗嘱没有把所有遗产分配清楚。这样一想，感觉也挺合理的，毕竟遗嘱算是被继承人明确表达自己的意愿，而法定继承则是默认的规则。\\n\\n所以可以得出结论了。遗嘱继承优先于法定继承。这种优先性是基于法律条文和立法理念。如果有遗嘱，首先还是要按照遗嘱来分配遗产；只有在遗嘱不存在或者无效的时候，才会依照法定继承的顺序来处理。这种逻辑清晰而且也很符合实际。\\n\\n再回头检查一下自己的推理，答案应该是没问题的。总之，遗嘱优先于法定继承。这和我的理解，以及法律规定都是一致的。\"\n}\n```",
+    "遗嘱继承优先于法定继承。\n\n根据《中华人民共和国继承法》的规定，继承的主要方式包括法定继承、遗嘱继承和遗赠。其中，第五条明确指出，如果被继承人订立了合法有效的遗嘱，应按照遗嘱的内容来分配遗产。这意味着遗嘱继承具有优先效力，体现了对被继承人个人意愿的尊重。\n\n法定继承属于继承的默认规则，即在以下几种情况下才适用：  \n1. 被继承人没有订立遗嘱；  \n2. 遗嘱被认定为无效或部分无效；  \n3. 遗嘱未全部覆盖遗产分配的内容，在未覆盖的部分适用法定继承。\n\n因此，当存在合法有效的遗嘱时，分配遗产将优先考虑遗嘱内容；只有在没有遗嘱或遗嘱无效的情况下，才适用法定继承的顺序。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "明确问题背景",
+        "content": "题目询问‘遗嘱’和‘法定继承顺序’在继承法律关系中的优先性，这涉及继承法的基本原则。通常情况下，遗嘱继承和法定继承是两个主要方式，但其适用顺序需要依据法律界定。需进一步确认此问题所涉及的法律依据。首先查询《继承法》的相关规定及其在遗嘱继承和法定继承上的优先性。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "查询继承法有关遗嘱与法定继承的规定",
+        "content": "需要检索《中华人民共和国继承法》或现行有效的相关法律文件中关于‘遗嘱继承’和‘法定继承’的优先适用规定。基于该查询，可以明确答案的法律依据。"
+      },
+      {
+        "action": "Search",
+        "title": "检索继承法的相关法律条款",
+        "content": "<search>中华人民共和国继承法 遗嘱继承 法定继承 优先</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "分析搜索结果",
+        "content": "<information>根据《中华人民共和国继承法》第五条和第十六条的规定，继承包括法定继承、遗嘱继承和遗赠三种方式，其中遗嘱继承具有优先于法定继承的效力。当被继承人立有合法有效的遗嘱时，应依照遗嘱内容来分配遗产。而在没有遗嘱的情况下，继承人则依据法定继承的顺序进行分配。</information>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "解读法律条款",
+        "content": "通过上述法律条文可知，在通常情况下，遗嘱继承优先于法定继承。只有在无遗嘱，或遗嘱部分无效，或遗嘱未实际分割遗产的情况下，才适用法定继承顺序。因此，对于有遗嘱的情况，应首先依据遗嘱内容进行分配。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "根据《中华人民共和国继承法》，遗嘱继承优先于法定继承。在被继承人有合法有效的遗嘱时，遗产分配应依照遗嘱执行；仅在无遗嘱或遗嘱无效的情况下，才适用法定继承顺序。"
+      },
+      {
+        "action": "Verification",
+        "content": "经过核对法律规定分析，结论符合立法精神和实际适用，遗嘱继承确实优先于法定继承，无需更改或补充。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "好，来看看这个问题。遗嘱和法定继承顺序哪个优先？嗯，如果是继承的问题，一般就涉及《继承法》。那么，我先想一下，继承的主要途径是什么。好像一般来说，主要有两种方式：一种叫法定继承，一种叫遗嘱继承吧。遗嘱继承听起来是按照被继承人自己生前写好的意愿来分财产，而法定继承就应该是按照固定的法律顺序来分。那么这两种方式哪一种优先呢？这应该是有明确法律规定的吧。\n\n好，先看看《继承法》里有没有直接提到这个问题。我得去查一下具体的条款：\n\n<search>中华人民共和国继承法 遗嘱继承 法定继承 优先</search>\n\n找到了相关信息！根据搜索结果，应该是《中华人民共和国继承法》第五条和第十六条提到过这个问题。让我仔细看看。\n\n<information>根据《中华人民共和国继承法》第五条和第十六条的规定，继承包括法定继承、遗嘱继承和遗赠三种方式，其中遗嘱继承具有优先于法定继承的效力。当被继承人立有合法有效的遗嘱时，应依照遗嘱内容来分配遗产。而在没有遗嘱的情况下，继承人则依据法定继承的顺序进行分配。</information>\n\n哦，原来是这样。按照法律上的说法，遗嘱继承是优先的。也就是说，如果被继承人生前立了一份合法有效的遗嘱，那么遗产就要按照遗嘱里提到的来分配。只有在以下几种情况下才会过渡到法定继承：第一，没有遗嘱；第二，遗嘱部分无效；第三，遗嘱没有把所有遗产分配清楚。这样一想，感觉也挺合理的，毕竟遗嘱算是被继承人明确表达自己的意愿，而法定继承则是默认的规则。\n\n所以可以得出结论了。遗嘱继承优先于法定继承。这种优先性是基于法律条文和立法理念。如果有遗嘱，首先还是要按照遗嘱来分配遗产；只有在遗嘱不存在或者无效的时候，才会依照法定继承的顺序来处理。这种逻辑清晰而且也很符合实际。\n\n再回头检查一下自己的推理，答案应该是没问题的。总之，遗嘱优先于法定继承。这和我的理解，以及法律规定都是一致的。",
+  "Response": "遗嘱继承优先于法定继承。\n\n根据《中华人民共和国继承法》的规定，继承的主要方式包括法定继承、遗嘱继承和遗赠。其中，第五条明确指出，如果被继承人订立了合法有效的遗嘱，应按照遗嘱的内容来分配遗产。这意味着遗嘱继承具有优先效力，体现了对被继承人个人意愿的尊重。\n\n法定继承属于继承的默认规则，即在以下几种情况下才适用：  \n1. 被继承人没有订立遗嘱；  \n2. 遗嘱被认定为无效或部分无效；  \n3. 遗嘱未全部覆盖遗产分配的内容，在未覆盖的部分适用法定继承。\n\n因此，当存在合法有效的遗嘱时，分配遗产将优先考虑遗嘱内容；只有在没有遗嘱或遗嘱无效的情况下，才适用法定继承的顺序。",
+  "Question": "遗嘱优先还是法定继承顺序优先"
+}

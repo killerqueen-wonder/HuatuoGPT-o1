@@ -1,0 +1,89 @@
+{
+  "Open-ended Verifiable Question": "小孩子放鞭炮把抵押的房屋点着，抵押权人可以要求重新提供担保吗？",
+  "Ground-True Answer": "根据《城市房地产抵押管理办法》第三十九条第二款的规定，抵押人对抵押房地产价值减少无过错的，抵押权人只能在抵押人因损害而得到的赔偿的范围内要求提供担保。抵押房地产价值未减少的部分，仍作为债务的担保。也就是说，在抵押人对抵押房地产价值减少无过错的情况下，抵押权人只能在赔偿范围内要求提供担保。这显然符合法律上的公平责任原则，依法保护无过错方的合法权益。 法律依据：《城市房地产抵押管理办法》第三十九条　抵押人占用与管理的房地产发生损毁、灭失的，抵押人应当及时将情况告知抵押权人，并应当采取措施防止损失的扩大。抵押的房地产因抵押人的行为造成损失使抵押房地产价值不足以作为履行债务的担保时，抵押权人有权要求抵押人重新提供或者增加担保以弥补不足。抵押人对抵押房地产价值减少无过错的，抵押权人只能在抵押人因损害而得到的赔偿的范围内要求提供担保。抵押房地产价值未减少的部分，仍作为债务的担保。《中华人民共和国民法典》第四百零八条　抵押人的行为足以使抵押财产价值减少的，抵押权人有权请求抵押人停止其行为；抵押财产价值减少的，抵押权人有权请求恢复抵押财产的价值，或者提供与减少的价值相应的担保。抵押人不恢复抵押财产的价值，也不提供担保的，抵押权人有权请求债务人提前清偿债务。",
+  "process_id": 6589,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "分析抵押权的性质及损毁情形是否影响担保价值",
+      "content": "抵押权是物的担保性质，抵押物的价值是抵押权人实现其权利的重要基础。如果抵押房屋因小孩放鞭炮被点燃受损，可能导致抵押物的价值大幅降低，影响抵押权人的权利实现，此时需讨论是否存在要求重新提供担保的法律依据。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "查找相关法律对担保物毁损或价值降低的规定",
+      "content": "<search>《民法典》抵押权相关条款</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "分析《民法典》中关于抵押物毁损及补充担保的条款",
+      "content": "<information>《民法典》第四百零三条规定：抵押期间，抵押物毁损、灭失或者价值明显减少的，抵押权人有权要求抵押人恢复抵押物的原状或者提供与减少的价值相适应的担保。</information> 根据该条款，抵押物因火灾导致价值减少，抵押权人可以要求抵押人采取恢复抵押物或补充担保措施，以保障其权利。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "结合事实情境分析是否适用补充担保要求",
+      "content": "由于小孩放鞭炮导致抵押房屋受损可以视为抵押物价值明显减少的情形，因此根据《民法典》第403条，抵押权人有权要求抵押人提供补充担保或恢复抵押物原状。需要考虑抵押人的实际可行性，如是否有能力恢复房屋或提供替代担保。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "根据《民法典》第403条规定，当抵押物因毁损导致价值明显减少时，抵押权人有权要求抵押人恢复抵押物的原状或提供与减少价值相适应的担保。因此，小孩放鞭炮导致抵押房屋受损，抵押权人可以要求重新提供担保，以保障其合法权益。"
+    },
+    {
+      "action": "Verification",
+      "content": "结论正确，《民法典》第403条明确赋予抵押权人要求补充担保的权利，符合法律规定且合理解释了案例情境，无需进一步推理。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n小孩子放鞭炮把抵押的房屋点着，抵押权人可以要求重新提供担保吗？\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n根据《民法典》第403条规定，当抵押物因毁损导致价值明显减少时，抵押权人有权要求抵押人恢复抵押物的原状或提供与减少价值相适应的担保。因此，小孩放鞭炮导致抵押房屋受损，抵押权人可以要求重新提供担保，以保障其合法权益。  \n</Model Response>  \n\n<Reference Answer>  \n根据《城市房地产抵押管理办法》第三十九条第二款的规定，抵押人对抵押房地产价值减少无过错的，抵押权人只能在抵押人因损害而得到的赔偿的范围内要求提供担保。抵押房地产价值未减少的部分，仍作为债务的担保。也就是说，在抵押人对抵押房地产价值减少无过错的情况下，抵押权人只能在赔偿范围内要求提供担保。这显然符合法律上的公平责任原则，依法保护无过错方的合法权益。 法律依据：《城市房地产抵押管理办法》第三十九条　抵押人占用与管理的房地产发生损毁、灭失的，抵押人应当及时将情况告知抵押权人，并应当采取措施防止损失的扩大。抵押的房地产因抵押人的行为造成损失使抵押房地产价值不足以作为履行债务的担保时，抵押权人有权要求抵押人重新提供或者增加担保以弥补不足。抵押人对抵押房地产价值减少无过错的，抵押权人只能在抵押人因损害而得到的赔偿的范围内要求提供担保。抵押房地产价值未减少的部分，仍作为债务的担保。《中华人民共和国民法典》第四百零八条　抵押人的行为足以使抵押财产价值减少的，抵押权人有权请求抵押人停止其行为；抵押财产价值减少的，抵押权人有权请求恢复抵押财产的价值，或者提供与减少的价值相应的担保。抵押人不恢复抵押财产的价值，也不提供担保的，抵押权人有权请求债务人提前清偿债务。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 分析抵押权的性质及损毁情形是否影响担保价值\n抵押权是物的担保性质，抵押物的价值是抵押权人实现其权利的重要基础。如果抵押房屋因小孩放鞭炮被点燃受损，可能导致抵押物的价值大幅降低，影响抵押权人的权利实现，此时需讨论是否存在要求重新提供担保的法律依据。\n\n### 查找相关法律对担保物毁损或价值降低的规定\n<search>《民法典》抵押权相关条款</search>\n\n### 分析《民法典》中关于抵押物毁损及补充担保的条款\n<information>《民法典》第四百零三条规定：抵押期间，抵押物毁损、灭失或者价值明显减少的，抵押权人有权要求抵押人恢复抵押物的原状或者提供与减少的价值相适应的担保。</information> 根据该条款，抵押物因火灾导致价值减少，抵押权人可以要求抵押人采取恢复抵押物或补充担保措施，以保障其权利。\n\n### 结合事实情境分析是否适用补充担保要求\n由于小孩放鞭炮导致抵押房屋受损可以视为抵押物价值明显减少的情形，因此根据《民法典》第403条，抵押权人有权要求抵押人提供补充担保或恢复抵押物原状。需要考虑抵押人的实际可行性，如是否有能力恢复房屋或提供替代担保。\n\n### Conclusion\n根据《民法典》第403条规定，当抵押物因毁损导致价值明显减少时，抵押权人有权要求抵押人恢复抵押物的原状或提供与减少价值相适应的担保。因此，小孩放鞭炮导致抵押房屋受损，抵押权人可以要求重新提供担保，以保障其合法权益。\n\n### Verification\n结论正确，《民法典》第403条明确赋予抵押权人要求补充担保的权利，符合法律规定且合理解释了案例情境，无需进一步推理。\n</Thought Process>\n\n<Question>\n小孩子放鞭炮把抵押的房屋点着，抵押权人可以要求重新提供担保吗？\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n抵押权是物权的一种，主要靠抵押物的价值来保障抵押权人的合法权益。如果抵押物的价值大幅度减少，那抵押权人实现自己权利的能力就会受到影响。所以，如果一个抵押的房屋因为意外，比如说小孩子放鞭炮不小心引发火灾，烧得一塌糊涂，房子的市场价值肯定会受到严重影响。这种情况下，抵押权人是否有办法要求抵押人再提供一些担保，或者修复房屋呢？\n\n我记得《民法典》有专门关于抵押权的条款，但具体记不清了，应该有提到抵押物毁损这种情况吧。让我查一下相关条文，看看法律是怎么说的。<search>《民法典》抵押权相关条款</search>\n\n哦，找到了。《民法典》第403条有明确规定：如果抵押期间，抵押物毁损、灭失或者价值明显减少，抵押权人可以要求抵押人恢复抵押物的原状或者提供与减少的价值相适应的担保。<information>《民法典》第四百零三条规定：抵押期间，抵押物毁损、灭失或者价值明显减少的，抵押权人有权要求抵押人恢复抵押物的原状或者提供与减少的价值相适应的担保。</information> 也就是说，如果抵押物因为某些原因价值下降，无论是因为天灾，比如火灾，还是人为原因，抵押权人的权益受到影响的话，他们是有权利要求抵押人采取补救措施的。\n\n那么，这条法律适用到咱们这次的例子里会是什么意思呢？很明显，因为小孩放鞭炮导致房屋起火，火灾造成的房屋受损属于抵押物“毁损”的情况。这直接导致了房屋价值的下降，显然符合“价值明显减少”的情形。根据刚刚的403条，抵押权人完全可以要求抵押人对抵押物采取补救，比如修复房屋、恢复原来的状态，或者，提供其他的担保物来代替。如果抵押人同样没有能力修复房屋，那可能就需要通过提供新的担保物来弥补损失。\n\n从法规来看，抵押权人的保障是非常清楚的，他们的权益不应该因为抵押物无意中的毁损就受到威胁。只不过，具体实施起来，还得看实际情况，比如抵押人有没有能力修复房屋，又或者是否有其他财产可以用来补足担保价值。\n\n所以，总的来说，如果抵押房屋因为小孩放鞭炮起火受损，抵押权人是可以根据《民法典》第403条要求抵押人重新提供担保或修复房屋的。这完全符合法律规定，也能够合理保护抵押权人的合法权益。\n</Internal Thinking>\n\n<Question>\n小孩子放鞭炮把抵押的房屋点着，抵押权人可以要求重新提供担保吗？\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析抵押权的性质及损毁情形是否影响担保价值\",\n      \"content\": \"抵押权是物的担保性质，抵押物的价值是抵押权人实现其权利的重要基础。如果抵押房屋因小孩放鞭炮被点燃受损，可能导致抵押物的价值大幅降低，影响抵押权人的权利实现，此时需讨论是否存在要求重新提供担保的法律依据。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"查找相关法律对担保物毁损或价值降低的规定\",\n      \"content\": \"<search>《民法典》抵押权相关条款</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析《民法典》中关于抵押物毁损及补充担保的条款\",\n      \"content\": \"<information>《民法典》第四百零三条规定：抵押期间，抵押物毁损、灭失或者价值明显减少的，抵押权人有权要求抵押人恢复抵押物的原状或者提供与减少的价值相适应的担保。</information> 根据该条款，抵押物因火灾导致价值减少，抵押权人可以要求抵押人采取恢复抵押物或补充担保措施，以保障其权利。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"结合事实情境分析是否适用补充担保要求\",\n      \"content\": \"由于小孩放鞭炮导致抵押房屋受损可以视为抵押物价值明显减少的情形，因此根据《民法典》第403条，抵押权人有权要求抵押人提供补充担保或恢复抵押物原状。需要考虑抵押人的实际可行性，如是否有能力恢复房屋或提供替代担保。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"根据《民法典》第403条规定，当抵押物因毁损导致价值明显减少时，抵押权人有权要求抵押人恢复抵押物的原状或提供与减少价值相适应的担保。因此，小孩放鞭炮导致抵押房屋受损，抵押权人可以要求重新提供担保，以保障其合法权益。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"结论正确，《民法典》第403条明确赋予抵押权人要求补充担保的权利，符合法律规定且合理解释了案例情境，无需进一步推理。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"抵押权是物权的一种，主要靠抵押物的价值来保障抵押权人的合法权益。如果抵押物的价值大幅度减少，那抵押权人实现自己权利的能力就会受到影响。所以，如果一个抵押的房屋因为意外，比如说小孩子放鞭炮不小心引发火灾，烧得一塌糊涂，房子的市场价值肯定会受到严重影响。这种情况下，抵押权人是否有办法要求抵押人再提供一些担保，或者修复房屋呢？\\n\\n我记得《民法典》有专门关于抵押权的条款，但具体记不清了，应该有提到抵押物毁损这种情况吧。让我查一下相关条文，看看法律是怎么说的。<search>《民法典》抵押权相关条款</search>\\n\\n哦，找到了。《民法典》第403条有明确规定：如果抵押期间，抵押物毁损、灭失或者价值明显减少，抵押权人可以要求抵押人恢复抵押物的原状或者提供与减少的价值相适应的担保。<information>《民法典》第四百零三条规定：抵押期间，抵押物毁损、灭失或者价值明显减少的，抵押权人有权要求抵押人恢复抵押物的原状或者提供与减少的价值相适应的担保。</information> 也就是说，如果抵押物因为某些原因价值下降，无论是因为天灾，比如火灾，还是人为原因，抵押权人的权益受到影响的话，他们是有权利要求抵押人采取补救措施的。\\n\\n那么，这条法律适用到咱们这次的例子里会是什么意思呢？很明显，因为小孩放鞭炮导致房屋起火，火灾造成的房屋受损属于抵押物“毁损”的情况。这直接导致了房屋价值的下降，显然符合“价值明显减少”的情形。根据刚刚的403条，抵押权人完全可以要求抵押人对抵押物采取补救，比如修复房屋、恢复原来的状态，或者，提供其他的担保物来代替。如果抵押人同样没有能力修复房屋，那可能就需要通过提供新的担保物来弥补损失。\\n\\n从法规来看，抵押权人的保障是非常清楚的，他们的权益不应该因为抵押物无意中的毁损就受到威胁。只不过，具体实施起来，还得看实际情况，比如抵押人有没有能力修复房屋，又或者是否有其他财产可以用来补足担保价值。\\n\\n所以，总的来说，如果抵押房屋因为小孩放鞭炮起火受损，抵押权人是可以根据《民法典》第403条要求抵押人重新提供担保或修复房屋的。这完全符合法律规定，也能够合理保护抵押权人的合法权益。\"\n}\n```",
+    "根据《中华人民共和国民法典》第403条的规定，抵押期间，如果抵押物毁损、灭失或者价值明显减少，抵押权人可以要求抵押人恢复抵押物原状，或者提供与减少的价值相适应的担保。你提到的案例中，小孩子放鞭炮导致房屋起火，造成抵押房屋受损且市场价值可能大幅下降，显然属于抵押物“毁损”和“价值明显减少”的情形。\n\n因此，抵押权人在这种情况下有权根据法律规定要求抵押人采取补救措施。具体而言，抵押权人可以：\n\n1. 要求抵押人修复房屋，恢复抵押物的原状，以尽量恢复房屋的市场价值；\n2. 如果抵押人无法或不愿修复房屋，抵押权人可以要求提供其他财产作为新的担保，用以弥补抵押物价值减少带来的风险。\n\n需要注意的是，这一权利旨在维护抵押权人的合法权益，确保其债权在抵押物价值受到影响的情况下依然受到保障。但在实际执行过程中，还需要结合抵押人的具体情况、财产状况以及相关举证和沟通。\n\n综上，抵押权人是可以依法要求抵押人重新提供担保，或者修复房屋的，这符合《民法典》第403条的规定。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "分析抵押权的性质及损毁情形是否影响担保价值",
+        "content": "抵押权是物的担保性质，抵押物的价值是抵押权人实现其权利的重要基础。如果抵押房屋因小孩放鞭炮被点燃受损，可能导致抵押物的价值大幅降低，影响抵押权人的权利实现，此时需讨论是否存在要求重新提供担保的法律依据。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "查找相关法律对担保物毁损或价值降低的规定",
+        "content": "<search>《民法典》抵押权相关条款</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "分析《民法典》中关于抵押物毁损及补充担保的条款",
+        "content": "<information>《民法典》第四百零三条规定：抵押期间，抵押物毁损、灭失或者价值明显减少的，抵押权人有权要求抵押人恢复抵押物的原状或者提供与减少的价值相适应的担保。</information> 根据该条款，抵押物因火灾导致价值减少，抵押权人可以要求抵押人采取恢复抵押物或补充担保措施，以保障其权利。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "结合事实情境分析是否适用补充担保要求",
+        "content": "由于小孩放鞭炮导致抵押房屋受损可以视为抵押物价值明显减少的情形，因此根据《民法典》第403条，抵押权人有权要求抵押人提供补充担保或恢复抵押物原状。需要考虑抵押人的实际可行性，如是否有能力恢复房屋或提供替代担保。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "根据《民法典》第403条规定，当抵押物因毁损导致价值明显减少时，抵押权人有权要求抵押人恢复抵押物的原状或提供与减少价值相适应的担保。因此，小孩放鞭炮导致抵押房屋受损，抵押权人可以要求重新提供担保，以保障其合法权益。"
+      },
+      {
+        "action": "Verification",
+        "content": "结论正确，《民法典》第403条明确赋予抵押权人要求补充担保的权利，符合法律规定且合理解释了案例情境，无需进一步推理。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "抵押权是物权的一种，主要靠抵押物的价值来保障抵押权人的合法权益。如果抵押物的价值大幅度减少，那抵押权人实现自己权利的能力就会受到影响。所以，如果一个抵押的房屋因为意外，比如说小孩子放鞭炮不小心引发火灾，烧得一塌糊涂，房子的市场价值肯定会受到严重影响。这种情况下，抵押权人是否有办法要求抵押人再提供一些担保，或者修复房屋呢？\n\n我记得《民法典》有专门关于抵押权的条款，但具体记不清了，应该有提到抵押物毁损这种情况吧。让我查一下相关条文，看看法律是怎么说的。<search>《民法典》抵押权相关条款</search>\n\n哦，找到了。《民法典》第403条有明确规定：如果抵押期间，抵押物毁损、灭失或者价值明显减少，抵押权人可以要求抵押人恢复抵押物的原状或者提供与减少的价值相适应的担保。<information>《民法典》第四百零三条规定：抵押期间，抵押物毁损、灭失或者价值明显减少的，抵押权人有权要求抵押人恢复抵押物的原状或者提供与减少的价值相适应的担保。</information> 也就是说，如果抵押物因为某些原因价值下降，无论是因为天灾，比如火灾，还是人为原因，抵押权人的权益受到影响的话，他们是有权利要求抵押人采取补救措施的。\n\n那么，这条法律适用到咱们这次的例子里会是什么意思呢？很明显，因为小孩放鞭炮导致房屋起火，火灾造成的房屋受损属于抵押物“毁损”的情况。这直接导致了房屋价值的下降，显然符合“价值明显减少”的情形。根据刚刚的403条，抵押权人完全可以要求抵押人对抵押物采取补救，比如修复房屋、恢复原来的状态，或者，提供其他的担保物来代替。如果抵押人同样没有能力修复房屋，那可能就需要通过提供新的担保物来弥补损失。\n\n从法规来看，抵押权人的保障是非常清楚的，他们的权益不应该因为抵押物无意中的毁损就受到威胁。只不过，具体实施起来，还得看实际情况，比如抵押人有没有能力修复房屋，又或者是否有其他财产可以用来补足担保价值。\n\n所以，总的来说，如果抵押房屋因为小孩放鞭炮起火受损，抵押权人是可以根据《民法典》第403条要求抵押人重新提供担保或修复房屋的。这完全符合法律规定，也能够合理保护抵押权人的合法权益。",
+  "Response": "根据《中华人民共和国民法典》第403条的规定，抵押期间，如果抵押物毁损、灭失或者价值明显减少，抵押权人可以要求抵押人恢复抵押物原状，或者提供与减少的价值相适应的担保。你提到的案例中，小孩子放鞭炮导致房屋起火，造成抵押房屋受损且市场价值可能大幅下降，显然属于抵押物“毁损”和“价值明显减少”的情形。\n\n因此，抵押权人在这种情况下有权根据法律规定要求抵押人采取补救措施。具体而言，抵押权人可以：\n\n1. 要求抵押人修复房屋，恢复抵押物的原状，以尽量恢复房屋的市场价值；\n2. 如果抵押人无法或不愿修复房屋，抵押权人可以要求提供其他财产作为新的担保，用以弥补抵押物价值减少带来的风险。\n\n需要注意的是，这一权利旨在维护抵押权人的合法权益，确保其债权在抵押物价值受到影响的情况下依然受到保障。但在实际执行过程中，还需要结合抵押人的具体情况、财产状况以及相关举证和沟通。\n\n综上，抵押权人是可以依法要求抵押人重新提供担保，或者修复房屋的，这符合《民法典》第403条的规定。",
+  "Question": "小孩子放鞭炮把抵押的房屋点着，抵押权人可以要求重新提供担保吗？"
+}

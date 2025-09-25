@@ -1,0 +1,89 @@
+{
+  "Open-ended Verifiable Question": "依据投资合作关系清算达成的债权债务协议提起的诉讼，可否认定为民间借贷纠纷？",
+  "Ground-True Answer": "法律关系的性质应依据当事人之间签订的投资合作协议及清算达成的债权债务协议等一系列协议约定及实际履行情况来判定。若证明双方之间存在借贷的法律关系，并非仅仅是投资合作的关系，则双方之间的法律关系应认定为民间借贷法律关系。【规则解析】：当事人因投资合作所引发的欠款纠纷，欠款的性质是否属于借款，不仅关系到案件法律关系的认定，更关系到直接影响当事人利益的利息的计算。《规定》第十五条规定，原告依据有关债权凭证提起民间借贷诉讼，被告依据基础法律关系提出抗辩或者反诉，并提供证据证明债权纠纷非民间借贷行为引起的，人民法院应当依据查明的案件事实，按照基础法律关系审理。但同时，当事人通过调解、和解或者清算达成的债权债务协议，不适用上述规定。当事人之间就债务数额及利息有争议，人民法院根据查明的案件情况，对当事人之间的债务清算协议按照民间借贷纠纷进行审理。【案例文号】：（2015）高民（商）终字第4号",
+  "process_id": 3757,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "分析问题背景和核心概念",
+      "content": "投资合作关系清算所涉及的债权债务协议通常与民间借贷的框架不同，因为民间借贷纠纷一般涉及借贷双方直接通过借款合同或其他形式达成的资金借贷关系。而投资合作关系则更复杂，通常包括合作、分红、风险承担等元素。需要确认其是否符合民间借贷的法律定义，例如资金的直接支付和利息约定。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "查找民间借贷的法律定义",
+      "content": "<search>民间借贷法律定义</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "分析投资合作清算与民间借贷的差异",
+      "content": "<information>根据民间借贷法律定义，其核心是借贷双方以利息为条件的借款关系，而非合作投资关系中的清算。如果投资清算的债权债务协议无法满足民间借贷的核心特征，则不应归入民间借贷纠纷。</information>因此，关键在于协议是否反映出借贷性质，例如资金出借是否有利息和偿还期限的明确约定。</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "分析具体协议在法律框架中的定位",
+      "content": "投资合作关系的清算偏向于合同履行纠纷或其他类型的财务争议，而非简单的民间借贷。这需要结合协议内容和双方的具体行为特征来判断，例如清算是否仅作为借贷行为的延续，或者是否牵涉到更复杂的投资回报问题。如果协议内容明确约定了借贷条款，可以考虑适用民间借贷相关规定。否则，应依据合同关系或其他财务关系进行诉讼分类。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "依据投资合作关系清算达成的债权债务协议提起的诉讼，是否可以认定为民间借贷纠纷，取决于协议内容和法律关系特征。如果协议明确体现借贷法律关系（如资金借出、利息约定和还款时间等），则可以认定为民间借贷纠纷；否则，应当根据具体情况认定为其他类型的纠纷，如合同纠纷或财务清算纠纷。"
+    },
+    {
+      "action": "Verification",
+      "content": "结论正确。投资清算协议若与民间借贷核心特征不符，应另行认定为其他类型纠纷。从法律定义和纠纷实际定位来看，这种区分符合规范性法律框架。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n依据投资合作关系清算达成的债权债务协议提起的诉讼，可否认定为民间借贷纠纷？\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n依据投资合作关系清算达成的债权债务协议提起的诉讼，是否可以认定为民间借贷纠纷，取决于协议内容和法律关系特征。如果协议明确体现借贷法律关系（如资金借出、利息约定和还款时间等），则可以认定为民间借贷纠纷；否则，应当根据具体情况认定为其他类型的纠纷，如合同纠纷或财务清算纠纷。  \n</Model Response>  \n\n<Reference Answer>  \n法律关系的性质应依据当事人之间签订的投资合作协议及清算达成的债权债务协议等一系列协议约定及实际履行情况来判定。若证明双方之间存在借贷的法律关系，并非仅仅是投资合作的关系，则双方之间的法律关系应认定为民间借贷法律关系。【规则解析】：当事人因投资合作所引发的欠款纠纷，欠款的性质是否属于借款，不仅关系到案件法律关系的认定，更关系到直接影响当事人利益的利息的计算。《规定》第十五条规定，原告依据有关债权凭证提起民间借贷诉讼，被告依据基础法律关系提出抗辩或者反诉，并提供证据证明债权纠纷非民间借贷行为引起的，人民法院应当依据查明的案件事实，按照基础法律关系审理。但同时，当事人通过调解、和解或者清算达成的债权债务协议，不适用上述规定。当事人之间就债务数额及利息有争议，人民法院根据查明的案件情况，对当事人之间的债务清算协议按照民间借贷纠纷进行审理。【案例文号】：（2015）高民（商）终字第4号\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 分析问题背景和核心概念\n投资合作关系清算所涉及的债权债务协议通常与民间借贷的框架不同，因为民间借贷纠纷一般涉及借贷双方直接通过借款合同或其他形式达成的资金借贷关系。而投资合作关系则更复杂，通常包括合作、分红、风险承担等元素。需要确认其是否符合民间借贷的法律定义，例如资金的直接支付和利息约定。\n\n### 查找民间借贷的法律定义\n<search>民间借贷法律定义</search>\n\n### 分析投资合作清算与民间借贷的差异\n<information>根据民间借贷法律定义，其核心是借贷双方以利息为条件的借款关系，而非合作投资关系中的清算。如果投资清算的债权债务协议无法满足民间借贷的核心特征，则不应归入民间借贷纠纷。</information>因此，关键在于协议是否反映出借贷性质，例如资金出借是否有利息和偿还期限的明确约定。</search>\n\n### 分析具体协议在法律框架中的定位\n投资合作关系的清算偏向于合同履行纠纷或其他类型的财务争议，而非简单的民间借贷。这需要结合协议内容和双方的具体行为特征来判断，例如清算是否仅作为借贷行为的延续，或者是否牵涉到更复杂的投资回报问题。如果协议内容明确约定了借贷条款，可以考虑适用民间借贷相关规定。否则，应依据合同关系或其他财务关系进行诉讼分类。\n\n### Conclusion\n依据投资合作关系清算达成的债权债务协议提起的诉讼，是否可以认定为民间借贷纠纷，取决于协议内容和法律关系特征。如果协议明确体现借贷法律关系（如资金借出、利息约定和还款时间等），则可以认定为民间借贷纠纷；否则，应当根据具体情况认定为其他类型的纠纷，如合同纠纷或财务清算纠纷。\n\n### Verification\n结论正确。投资清算协议若与民间借贷核心特征不符，应另行认定为其他类型纠纷。从法律定义和纠纷实际定位来看，这种区分符合规范性法律框架。\n</Thought Process>\n\n<Question>\n依据投资合作关系清算达成的债权债务协议提起的诉讼，可否认定为民间借贷纠纷？\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n嗯，这个问题有点意思哦。投资合作关系的清算，和普通的民间借贷到底算不算一回事呢？从直觉上看，它们好像不太一样，但是得仔细分析一下才行。民间借贷通常就是两方之间借钱嘛，然后有明确的还款时间啊、利息约定啊什么的。但投资合作清算好像复杂不少，不只是借钱，还牵涉到分红、风险分担等等。所以两者到底有没有可比性，还要具体看细节。\n\n那得先看看，法律上怎么界定民间借贷呢？搜索一下，民间借贷的法律定义是什么。<search>民间借贷法律定义</search>\n\n哦，找到了。<information>法律上认为，民间借贷的核心是资金的借出和约定的利息回报关系。简单讲，就是双方因为借款合同或协议发生的直接借贷关系。得有明确的资金支付，还得有利息约定、偿还期限这些内容。</information>嗯，这个定义还是蛮清楚的。那么问题来了，投资合作关系的清算，会不会也符合这些条件呢？如果满足，那可能确实能算民间借贷；如果不符合，那就不是同一回事啦。\n\n接着再想一下，投资合作清算一般是怎么回事。投资合作应该会更加复杂，它本质上是合作关系，清算的时候更多像是在分一下盈亏或者处理剩余财务关系，不见得就能直接套进民间借贷的框架对吧？不过也不能太武断，要看看具体协议里到底写了啥。如果这个清算协议明确提到，比如某一方是出资方，有固定的利息，或者资金使用期限这种东西，那有可能还是带有借贷性质的。不过如果协议没有类似内容，而是更像是怎么分红、怎么分担亏损，或者按股份比例来处理财务问题，那这就离民间借贷差得蛮远了。\n\n所以投资合作关系的清算，不应该简单地归为民间借贷纠纷。关键点在于，协议是不是体现了很明显的借贷法律关系。仔细琢磨一下，大概可以通过几个信号来判断，比如协议里是不是明确规定了利息和还款时间，或者是不是仅仅处理了合作关系中的投资结算这些问题。如果它和民间借贷一点都沾不上边，比如根本没有利息约定，或者主要是处理权益分配、亏损问题，那肯定不能算民间借贷纠纷了，应该归为合同纠纷或者财务清算纠纷之类。\n\n总结一下——依据投资合作关系清算达成的债权债务协议，究竟算什么纠纷，完全取决于协议本身。如果协议内容能让人看出来，双方确实是在‘借’和‘还’资金，那可以牵强算是民间借贷纠纷；否则，多半就归为别的类型纠纷，具体看情况嘛。这么分析下来，感觉还是有道理的，符合法律框架。\n</Internal Thinking>\n\n<Question>\n依据投资合作关系清算达成的债权债务协议提起的诉讼，可否认定为民间借贷纠纷？\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析问题背景和核心概念\",\n      \"content\": \"投资合作关系清算所涉及的债权债务协议通常与民间借贷的框架不同，因为民间借贷纠纷一般涉及借贷双方直接通过借款合同或其他形式达成的资金借贷关系。而投资合作关系则更复杂，通常包括合作、分红、风险承担等元素。需要确认其是否符合民间借贷的法律定义，例如资金的直接支付和利息约定。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"查找民间借贷的法律定义\",\n      \"content\": \"<search>民间借贷法律定义</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析投资合作清算与民间借贷的差异\",\n      \"content\": \"<information>根据民间借贷法律定义，其核心是借贷双方以利息为条件的借款关系，而非合作投资关系中的清算。如果投资清算的债权债务协议无法满足民间借贷的核心特征，则不应归入民间借贷纠纷。</information>因此，关键在于协议是否反映出借贷性质，例如资金出借是否有利息和偿还期限的明确约定。</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析具体协议在法律框架中的定位\",\n      \"content\": \"投资合作关系的清算偏向于合同履行纠纷或其他类型的财务争议，而非简单的民间借贷。这需要结合协议内容和双方的具体行为特征来判断，例如清算是否仅作为借贷行为的延续，或者是否牵涉到更复杂的投资回报问题。如果协议内容明确约定了借贷条款，可以考虑适用民间借贷相关规定。否则，应依据合同关系或其他财务关系进行诉讼分类。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"依据投资合作关系清算达成的债权债务协议提起的诉讼，是否可以认定为民间借贷纠纷，取决于协议内容和法律关系特征。如果协议明确体现借贷法律关系（如资金借出、利息约定和还款时间等），则可以认定为民间借贷纠纷；否则，应当根据具体情况认定为其他类型的纠纷，如合同纠纷或财务清算纠纷。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"结论正确。投资清算协议若与民间借贷核心特征不符，应另行认定为其他类型纠纷。从法律定义和纠纷实际定位来看，这种区分符合规范性法律框架。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"嗯，这个问题有点意思哦。投资合作关系的清算，和普通的民间借贷到底算不算一回事呢？从直觉上看，它们好像不太一样，但是得仔细分析一下才行。民间借贷通常就是两方之间借钱嘛，然后有明确的还款时间啊、利息约定啊什么的。但投资合作清算好像复杂不少，不只是借钱，还牵涉到分红、风险分担等等。所以两者到底有没有可比性，还要具体看细节。\\n\\n那得先看看，法律上怎么界定民间借贷呢？搜索一下，民间借贷的法律定义是什么。<search>民间借贷法律定义</search>\\n\\n哦，找到了。<information>法律上认为，民间借贷的核心是资金的借出和约定的利息回报关系。简单讲，就是双方因为借款合同或协议发生的直接借贷关系。得有明确的资金支付，还得有利息约定、偿还期限这些内容。</information>嗯，这个定义还是蛮清楚的。那么问题来了，投资合作关系的清算，会不会也符合这些条件呢？如果满足，那可能确实能算民间借贷；如果不符合，那就不是同一回事啦。\\n\\n接着再想一下，投资合作清算一般是怎么回事。投资合作应该会更加复杂，它本质上是合作关系，清算的时候更多像是在分一下盈亏或者处理剩余财务关系，不见得就能直接套进民间借贷的框架对吧？不过也不能太武断，要看看具体协议里到底写了啥。如果这个清算协议明确提到，比如某一方是出资方，有固定的利息，或者资金使用期限这种东西，那有可能还是带有借贷性质的。不过如果协议没有类似内容，而是更像是怎么分红、怎么分担亏损，或者按股份比例来处理财务问题，那这就离民间借贷差得蛮远了。\\n\\n所以投资合作关系的清算，不应该简单地归为民间借贷纠纷。关键点在于，协议是不是体现了很明显的借贷法律关系。仔细琢磨一下，大概可以通过几个信号来判断，比如协议里是不是明确规定了利息和还款时间，或者是不是仅仅处理了合作关系中的投资结算这些问题。如果它和民间借贷一点都沾不上边，比如根本没有利息约定，或者主要是处理权益分配、亏损问题，那肯定不能算民间借贷纠纷了，应该归为合同纠纷或者财务清算纠纷之类。\\n\\n总结一下——依据投资合作关系清算达成的债权债务协议，究竟算什么纠纷，完全取决于协议本身。如果协议内容能让人看出来，双方确实是在‘借’和‘还’资金，那可以牵强算是民间借贷纠纷；否则，多半就归为别的类型纠纷，具体看情况嘛。这么分析下来，感觉还是有道理的，符合法律框架。\"\n}\n```",
+    "依据投资合作关系清算达成的债权债务协议提起的诉讼，能否认定为民间借贷纠纷，关键在于协议中是否体现了民间借贷的法律特征。\n\n根据法律定义，民间借贷以资金的借出和约定利息回报为核心特征，其主要要素包括：借款合同或协议的存在、明确的资金支付、利息约定以及偿还期限等。因此，如果投资合作关系清算形成的债权债务协议符合上述特征，例如协议中明确约定某一方在合作过程中实际出借资金，约定固定利息回报和偿还期限，则可以认定为民间借贷纠纷。\n\n然而，投资合作关系通常具有复杂性，其清算不仅涉及资金支付，还可能涉及利润分配、亏损承担、股份比例调整等内容。如果债权债务协议更多是针对合作期间的财务清算、权益分配或亏损处理，而未体现典型的借贷关系（如没有利息约定或还款期限等），则一般无法认定为民间借贷纠纷，可能更适合归类为合同纠纷或财务清算纠纷。\n\n因此，是否认定为民间借贷纠纷完全取决于协议的具体内容。如果协议明确显示存在资金借贷关系，可以认定为民间借贷纠纷；否则，应根据实际情况具体分析，可能属于其他纠纷类型。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "分析问题背景和核心概念",
+        "content": "投资合作关系清算所涉及的债权债务协议通常与民间借贷的框架不同，因为民间借贷纠纷一般涉及借贷双方直接通过借款合同或其他形式达成的资金借贷关系。而投资合作关系则更复杂，通常包括合作、分红、风险承担等元素。需要确认其是否符合民间借贷的法律定义，例如资金的直接支付和利息约定。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "查找民间借贷的法律定义",
+        "content": "<search>民间借贷法律定义</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "分析投资合作清算与民间借贷的差异",
+        "content": "<information>根据民间借贷法律定义，其核心是借贷双方以利息为条件的借款关系，而非合作投资关系中的清算。如果投资清算的债权债务协议无法满足民间借贷的核心特征，则不应归入民间借贷纠纷。</information>因此，关键在于协议是否反映出借贷性质，例如资金出借是否有利息和偿还期限的明确约定。</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "分析具体协议在法律框架中的定位",
+        "content": "投资合作关系的清算偏向于合同履行纠纷或其他类型的财务争议，而非简单的民间借贷。这需要结合协议内容和双方的具体行为特征来判断，例如清算是否仅作为借贷行为的延续，或者是否牵涉到更复杂的投资回报问题。如果协议内容明确约定了借贷条款，可以考虑适用民间借贷相关规定。否则，应依据合同关系或其他财务关系进行诉讼分类。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "依据投资合作关系清算达成的债权债务协议提起的诉讼，是否可以认定为民间借贷纠纷，取决于协议内容和法律关系特征。如果协议明确体现借贷法律关系（如资金借出、利息约定和还款时间等），则可以认定为民间借贷纠纷；否则，应当根据具体情况认定为其他类型的纠纷，如合同纠纷或财务清算纠纷。"
+      },
+      {
+        "action": "Verification",
+        "content": "结论正确。投资清算协议若与民间借贷核心特征不符，应另行认定为其他类型纠纷。从法律定义和纠纷实际定位来看，这种区分符合规范性法律框架。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "嗯，这个问题有点意思哦。投资合作关系的清算，和普通的民间借贷到底算不算一回事呢？从直觉上看，它们好像不太一样，但是得仔细分析一下才行。民间借贷通常就是两方之间借钱嘛，然后有明确的还款时间啊、利息约定啊什么的。但投资合作清算好像复杂不少，不只是借钱，还牵涉到分红、风险分担等等。所以两者到底有没有可比性，还要具体看细节。\n\n那得先看看，法律上怎么界定民间借贷呢？搜索一下，民间借贷的法律定义是什么。<search>民间借贷法律定义</search>\n\n哦，找到了。<information>法律上认为，民间借贷的核心是资金的借出和约定的利息回报关系。简单讲，就是双方因为借款合同或协议发生的直接借贷关系。得有明确的资金支付，还得有利息约定、偿还期限这些内容。</information>嗯，这个定义还是蛮清楚的。那么问题来了，投资合作关系的清算，会不会也符合这些条件呢？如果满足，那可能确实能算民间借贷；如果不符合，那就不是同一回事啦。\n\n接着再想一下，投资合作清算一般是怎么回事。投资合作应该会更加复杂，它本质上是合作关系，清算的时候更多像是在分一下盈亏或者处理剩余财务关系，不见得就能直接套进民间借贷的框架对吧？不过也不能太武断，要看看具体协议里到底写了啥。如果这个清算协议明确提到，比如某一方是出资方，有固定的利息，或者资金使用期限这种东西，那有可能还是带有借贷性质的。不过如果协议没有类似内容，而是更像是怎么分红、怎么分担亏损，或者按股份比例来处理财务问题，那这就离民间借贷差得蛮远了。\n\n所以投资合作关系的清算，不应该简单地归为民间借贷纠纷。关键点在于，协议是不是体现了很明显的借贷法律关系。仔细琢磨一下，大概可以通过几个信号来判断，比如协议里是不是明确规定了利息和还款时间，或者是不是仅仅处理了合作关系中的投资结算这些问题。如果它和民间借贷一点都沾不上边，比如根本没有利息约定，或者主要是处理权益分配、亏损问题，那肯定不能算民间借贷纠纷了，应该归为合同纠纷或者财务清算纠纷之类。\n\n总结一下——依据投资合作关系清算达成的债权债务协议，究竟算什么纠纷，完全取决于协议本身。如果协议内容能让人看出来，双方确实是在‘借’和‘还’资金，那可以牵强算是民间借贷纠纷；否则，多半就归为别的类型纠纷，具体看情况嘛。这么分析下来，感觉还是有道理的，符合法律框架。",
+  "Response": "依据投资合作关系清算达成的债权债务协议提起的诉讼，能否认定为民间借贷纠纷，关键在于协议中是否体现了民间借贷的法律特征。\n\n根据法律定义，民间借贷以资金的借出和约定利息回报为核心特征，其主要要素包括：借款合同或协议的存在、明确的资金支付、利息约定以及偿还期限等。因此，如果投资合作关系清算形成的债权债务协议符合上述特征，例如协议中明确约定某一方在合作过程中实际出借资金，约定固定利息回报和偿还期限，则可以认定为民间借贷纠纷。\n\n然而，投资合作关系通常具有复杂性，其清算不仅涉及资金支付，还可能涉及利润分配、亏损承担、股份比例调整等内容。如果债权债务协议更多是针对合作期间的财务清算、权益分配或亏损处理，而未体现典型的借贷关系（如没有利息约定或还款期限等），则一般无法认定为民间借贷纠纷，可能更适合归类为合同纠纷或财务清算纠纷。\n\n因此，是否认定为民间借贷纠纷完全取决于协议的具体内容。如果协议明确显示存在资金借贷关系，可以认定为民间借贷纠纷；否则，应根据实际情况具体分析，可能属于其他纠纷类型。",
+  "Question": "依据投资合作关系清算达成的债权债务协议提起的诉讼，可否认定为民间借贷纠纷？"
+}

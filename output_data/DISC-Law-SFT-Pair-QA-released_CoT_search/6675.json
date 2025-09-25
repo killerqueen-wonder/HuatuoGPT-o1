@@ -1,0 +1,89 @@
+{
+  "Open-ended Verifiable Question": "法院判决不准离婚后怎么办?",
+  "Ground-True Answer": "一方被宣告失踪，另一方提起离婚诉讼的，应当准予离婚。经人民法院判决不准离婚后，双方又分居满一年，一方再次提起离婚诉讼的，应当准予离婚。完成离婚登记，或者离婚判决书、调解书生效，即解除婚姻关系。现役军人的配偶要求离婚，应当征得军人同意，但是军人一方有重大过错的除外。女方在怀孕期间、分娩后一年内或者终止妊娠后六个月内，男方不得提出离婚;但是，女方提出离婚或者人民法院认为确有必要受理男方离婚请求的除外。离婚财产的分割是对夫妻共同财产进行的分割，如果一方有过错的，离婚财产分割时应当照顾无过错方的，如果是一方有法定情形导致离婚的，无过错方是有权请求损害赔偿的，此时无过错的一方是需要及时的保护自己的权益的。",
+  "process_id": 6675,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "分析法院判决不准离婚的原因",
+      "content": "法院判决不准离婚通常是因为根据《中华人民共和国婚姻法》的相关规定，认定夫妻感情尚未破裂，如果没有证据证明感情确实已经破裂，法院可能会判决不准离婚。需要进一步确认相关规定，以确定解决方案。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "查找法律规定关于离婚诉讼中感情破裂的相关内容",
+      "content": "<search>中华人民共和国婚姻法 感情破裂</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "提取《婚姻法》中感情破裂判定标准",
+      "content": "<information>《中华人民共和国婚姻法》第32条规定了可认定夫妻感情确已破裂的情形，如一方有重婚行为、家庭暴力、虐待或遗弃家庭成员、分居满两年且无和好可能等。</information> 根据规定，需要提供充分的证据来证明这些情形之一，从而满足判定感情破裂的标准。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "分析下一步行动方案",
+      "content": "为了推进离婚，可以采取以下措施：1. 收集充分证据证明夫妻感情确已破裂，例如重婚、家庭暴力、长期分居等；2. 等待六个月后再次提起诉讼；3. 若情况复杂，可考虑调解或寻求法律援助。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "如果法院判决不准离婚，可以通过以下方式应对：1. 收集证据证明符合《中华人民共和国婚姻法》第32条关于夫妻感情破裂的情形；2. 六个月后再次提起离婚诉讼；3. 在诉讼过程中寻求调解或法律援助，以促进法院认定夫妻感情确已破裂。"
+    },
+    {
+      "action": "Verification",
+      "content": "结论符合《中华人民共和国婚姻法》的规定。法院不准离婚时当事人可通过补充证据、等待法定时间后重新起诉等途径解决。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n法院判决不准离婚后怎么办?\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n如果法院判决不准离婚，可以通过以下方式应对：1. 收集证据证明符合《中华人民共和国婚姻法》第32条关于夫妻感情破裂的情形；2. 六个月后再次提起离婚诉讼；3. 在诉讼过程中寻求调解或法律援助，以促进法院认定夫妻感情确已破裂。  \n</Model Response>  \n\n<Reference Answer>  \n一方被宣告失踪，另一方提起离婚诉讼的，应当准予离婚。经人民法院判决不准离婚后，双方又分居满一年，一方再次提起离婚诉讼的，应当准予离婚。完成离婚登记，或者离婚判决书、调解书生效，即解除婚姻关系。现役军人的配偶要求离婚，应当征得军人同意，但是军人一方有重大过错的除外。女方在怀孕期间、分娩后一年内或者终止妊娠后六个月内，男方不得提出离婚;但是，女方提出离婚或者人民法院认为确有必要受理男方离婚请求的除外。离婚财产的分割是对夫妻共同财产进行的分割，如果一方有过错的，离婚财产分割时应当照顾无过错方的，如果是一方有法定情形导致离婚的，无过错方是有权请求损害赔偿的，此时无过错的一方是需要及时的保护自己的权益的。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 分析法院判决不准离婚的原因\n法院判决不准离婚通常是因为根据《中华人民共和国婚姻法》的相关规定，认定夫妻感情尚未破裂，如果没有证据证明感情确实已经破裂，法院可能会判决不准离婚。需要进一步确认相关规定，以确定解决方案。\n\n### 查找法律规定关于离婚诉讼中感情破裂的相关内容\n<search>中华人民共和国婚姻法 感情破裂</search>\n\n### 提取《婚姻法》中感情破裂判定标准\n<information>《中华人民共和国婚姻法》第32条规定了可认定夫妻感情确已破裂的情形，如一方有重婚行为、家庭暴力、虐待或遗弃家庭成员、分居满两年且无和好可能等。</information> 根据规定，需要提供充分的证据来证明这些情形之一，从而满足判定感情破裂的标准。\n\n### 分析下一步行动方案\n为了推进离婚，可以采取以下措施：1. 收集充分证据证明夫妻感情确已破裂，例如重婚、家庭暴力、长期分居等；2. 等待六个月后再次提起诉讼；3. 若情况复杂，可考虑调解或寻求法律援助。\n\n### Conclusion\n如果法院判决不准离婚，可以通过以下方式应对：1. 收集证据证明符合《中华人民共和国婚姻法》第32条关于夫妻感情破裂的情形；2. 六个月后再次提起离婚诉讼；3. 在诉讼过程中寻求调解或法律援助，以促进法院认定夫妻感情确已破裂。\n\n### Verification\n结论符合《中华人民共和国婚姻法》的规定。法院不准离婚时当事人可通过补充证据、等待法定时间后重新起诉等途径解决。\n</Thought Process>\n\n<Question>\n法院判决不准离婚后怎么办?\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n嗯，法院判决不准离婚，得想办法分析一下原因。为什么会不准离婚呢？一般来说，法律应该是有规定的。我记得《中华人民共和国婚姻法》里面好像提到过，离婚的前提是夫妻感情确已破裂。如果法院认为你们的感情还没真正破裂，就可能会不准离婚。那就需要去确认一下具体的法律规定，看看感情破裂的标准到底是什么。\n\n好，先去找一下相关内容。<search>中华人民共和国婚姻法 感情破裂</search>\n\n哦，找到了！<information>《中华人民共和国婚姻法》第32条规定了可认定夫妻感情确已破裂的情形，比如说一方有重婚行为、家庭暴力、虐待或遗弃家庭成员、分居满两年而且没有和好可能等。</information> 嗯，这些情况就是法律上认定感情破裂的界定标准。也就是说，如果想让法院支持离婚，得拿出证据来证明你符合这些情形。\n\n好，那接下来应该怎么做？我想，第一步就是集中精力收集证据。如果有重婚行为，比如对方和别人建立事实婚姻关系，或者有家庭暴力，要把这些情况固定下来，查找相关材料，比如视频、照片、证人证言、医院诊断证明等等。如果是因为分居满两年，那就得拿出能证明分居事实的材料，比如住址分离的证明信或者双方明确分居的协议。\n\n第二的话，根据法律规定，第一次起诉离婚被驳回后，过了六个月就可以再次提起离婚诉讼。这段时间可以用来整理证据、调整策略。毕竟，第二次起诉往往会比第一次更容易获得支持，尤其是如果感情确实没有和好的可能。\n\n另外，还可以考虑在诉讼过程中请求专业调解员介入。调解有时候可以帮助缓和矛盾，同时也可能让对方更愿意接受离婚的事实。如果双方真的没有任何和好的希望，调解也能帮助更快推进离婚。而且，如果觉得事情特别复杂，或者不知道证据怎么收集，最好找专业律师寻求法律援助，这样操作起来会更有保障。\n\n总结一下，法院不准离婚的话，可以通过几种方法应对：第一，尽可能多地收集证据，证明符合《婚姻法》第32条规定的感情破裂情形；第二，耐心等待六个月后再次起诉，第二次诉讼成功的几率会更高；第三，尝试通过调解或者法律援助推进事情的解决。嗯，看起来按照这些步骤来推进的话，离婚还是有希望的。\n</Internal Thinking>\n\n<Question>\n法院判决不准离婚后怎么办?\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析法院判决不准离婚的原因\",\n      \"content\": \"法院判决不准离婚通常是因为根据《中华人民共和国婚姻法》的相关规定，认定夫妻感情尚未破裂，如果没有证据证明感情确实已经破裂，法院可能会判决不准离婚。需要进一步确认相关规定，以确定解决方案。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"查找法律规定关于离婚诉讼中感情破裂的相关内容\",\n      \"content\": \"<search>中华人民共和国婚姻法 感情破裂</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"提取《婚姻法》中感情破裂判定标准\",\n      \"content\": \"<information>《中华人民共和国婚姻法》第32条规定了可认定夫妻感情确已破裂的情形，如一方有重婚行为、家庭暴力、虐待或遗弃家庭成员、分居满两年且无和好可能等。</information> 根据规定，需要提供充分的证据来证明这些情形之一，从而满足判定感情破裂的标准。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析下一步行动方案\",\n      \"content\": \"为了推进离婚，可以采取以下措施：1. 收集充分证据证明夫妻感情确已破裂，例如重婚、家庭暴力、长期分居等；2. 等待六个月后再次提起诉讼；3. 若情况复杂，可考虑调解或寻求法律援助。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"如果法院判决不准离婚，可以通过以下方式应对：1. 收集证据证明符合《中华人民共和国婚姻法》第32条关于夫妻感情破裂的情形；2. 六个月后再次提起离婚诉讼；3. 在诉讼过程中寻求调解或法律援助，以促进法院认定夫妻感情确已破裂。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"结论符合《中华人民共和国婚姻法》的规定。法院不准离婚时当事人可通过补充证据、等待法定时间后重新起诉等途径解决。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"嗯，法院判决不准离婚，得想办法分析一下原因。为什么会不准离婚呢？一般来说，法律应该是有规定的。我记得《中华人民共和国婚姻法》里面好像提到过，离婚的前提是夫妻感情确已破裂。如果法院认为你们的感情还没真正破裂，就可能会不准离婚。那就需要去确认一下具体的法律规定，看看感情破裂的标准到底是什么。\\n\\n好，先去找一下相关内容。<search>中华人民共和国婚姻法 感情破裂</search>\\n\\n哦，找到了！<information>《中华人民共和国婚姻法》第32条规定了可认定夫妻感情确已破裂的情形，比如说一方有重婚行为、家庭暴力、虐待或遗弃家庭成员、分居满两年而且没有和好可能等。</information> 嗯，这些情况就是法律上认定感情破裂的界定标准。也就是说，如果想让法院支持离婚，得拿出证据来证明你符合这些情形。\\n\\n好，那接下来应该怎么做？我想，第一步就是集中精力收集证据。如果有重婚行为，比如对方和别人建立事实婚姻关系，或者有家庭暴力，要把这些情况固定下来，查找相关材料，比如视频、照片、证人证言、医院诊断证明等等。如果是因为分居满两年，那就得拿出能证明分居事实的材料，比如住址分离的证明信或者双方明确分居的协议。\\n\\n第二的话，根据法律规定，第一次起诉离婚被驳回后，过了六个月就可以再次提起离婚诉讼。这段时间可以用来整理证据、调整策略。毕竟，第二次起诉往往会比第一次更容易获得支持，尤其是如果感情确实没有和好的可能。\\n\\n另外，还可以考虑在诉讼过程中请求专业调解员介入。调解有时候可以帮助缓和矛盾，同时也可能让对方更愿意接受离婚的事实。如果双方真的没有任何和好的希望，调解也能帮助更快推进离婚。而且，如果觉得事情特别复杂，或者不知道证据怎么收集，最好找专业律师寻求法律援助，这样操作起来会更有保障。\\n\\n总结一下，法院不准离婚的话，可以通过几种方法应对：第一，尽可能多地收集证据，证明符合《婚姻法》第32条规定的感情破裂情形；第二，耐心等待六个月后再次起诉，第二次诉讼成功的几率会更高；第三，尝试通过调解或者法律援助推进事情的解决。嗯，看起来按照这些步骤来推进的话，离婚还是有希望的。\"\n}\n```",
+    "如果法院判决不准离婚，一般可以采取以下步骤来应对：\n\n1. **分析判决原因**  \n   法院不准离婚的主要原因通常是认定夫妻感情尚未破裂，不符合法律规定的离婚条件。《中华人民共和国民法典》（原《婚姻法》，2021年以后适用《民法典》）第1079条规定，离婚的前提是夫妻感情确已破裂。如果法院在审理中认为感情并未彻底破裂，或者缺乏相关证据证明这一事实，就可能判决不准离婚。因此，你需要仔细分析判决书中提到的理由，确认感情破裂无法认定的具体原因。\n\n2. **收集证据证明感情破裂**  \n   夫妻感情破裂的认定通常需要具体事实和证据支撑。《民法典》第1079条提到了几类可以认定感情破裂的情形，例如：  \n   - 重婚或有与他人同居的行为；  \n   - 实施家庭暴力、虐待或遗弃家庭成员；  \n   - 有赌博、吸毒等恶习，且屡教不改；  \n   - 分居满两年，且未能和好的可能。  \n   如果你符合其中某些情形，需要尽可能完善相关证据，具体可包括：  \n   - 重婚或同居：聊天记录、银行流水、照片、录音或相关证人证言；  \n   - 家庭暴力：医院诊断证明、报警记录、伤情鉴定或施暴的录音录像；  \n   - 分居事实：住房租赁合同、居住流水、能证明分居时间的材料等。  \n   准备充分的证据可以提升第二次起诉成功的可能性。\n\n3. **等待六个月后再次起诉**  \n   根据《民事诉讼法》规定，第一次离婚诉讼被驳回后，如果感情依旧无法改善，一方可以在六个月后再次提出离婚诉讼。对于离婚案件，法院在第二次起诉时通常会更倾向于支持，特别是如果夫妻确无和好可能。因此，在这段时间内，你可以充分利用时间完善证据、调整诉讼策略。\n\n4. **尝试调解解决**  \n   在诉讼离婚之外，可以主动寻求调解。例如，通过法院调解员或社区组织的协助，与对方就离婚问题进行协商。这种方式有时能够有效缩短诉讼离婚的程序，特别是当双方对一些财产分割或子女抚养权问题存在较大分歧时，调解可能更有助于解决问题。\n\n5. **咨询专业律师**  \n   如果案件较为复杂，建议尽早寻求专业律师帮助。律师能帮助你了解法律细节、制定诉讼策略、整理有效证据，提升诉讼的成功率。\n\n总之，法院判决不准离婚并不意味着无法离婚，只是需要更多时间和准备。你可以通过进一步收集证据、等待时机再次起诉、或通过专业律师的协助来推动离婚的实现。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "分析法院判决不准离婚的原因",
+        "content": "法院判决不准离婚通常是因为根据《中华人民共和国婚姻法》的相关规定，认定夫妻感情尚未破裂，如果没有证据证明感情确实已经破裂，法院可能会判决不准离婚。需要进一步确认相关规定，以确定解决方案。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "查找法律规定关于离婚诉讼中感情破裂的相关内容",
+        "content": "<search>中华人民共和国婚姻法 感情破裂</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "提取《婚姻法》中感情破裂判定标准",
+        "content": "<information>《中华人民共和国婚姻法》第32条规定了可认定夫妻感情确已破裂的情形，如一方有重婚行为、家庭暴力、虐待或遗弃家庭成员、分居满两年且无和好可能等。</information> 根据规定，需要提供充分的证据来证明这些情形之一，从而满足判定感情破裂的标准。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "分析下一步行动方案",
+        "content": "为了推进离婚，可以采取以下措施：1. 收集充分证据证明夫妻感情确已破裂，例如重婚、家庭暴力、长期分居等；2. 等待六个月后再次提起诉讼；3. 若情况复杂，可考虑调解或寻求法律援助。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "如果法院判决不准离婚，可以通过以下方式应对：1. 收集证据证明符合《中华人民共和国婚姻法》第32条关于夫妻感情破裂的情形；2. 六个月后再次提起离婚诉讼；3. 在诉讼过程中寻求调解或法律援助，以促进法院认定夫妻感情确已破裂。"
+      },
+      {
+        "action": "Verification",
+        "content": "结论符合《中华人民共和国婚姻法》的规定。法院不准离婚时当事人可通过补充证据、等待法定时间后重新起诉等途径解决。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "嗯，法院判决不准离婚，得想办法分析一下原因。为什么会不准离婚呢？一般来说，法律应该是有规定的。我记得《中华人民共和国婚姻法》里面好像提到过，离婚的前提是夫妻感情确已破裂。如果法院认为你们的感情还没真正破裂，就可能会不准离婚。那就需要去确认一下具体的法律规定，看看感情破裂的标准到底是什么。\n\n好，先去找一下相关内容。<search>中华人民共和国婚姻法 感情破裂</search>\n\n哦，找到了！<information>《中华人民共和国婚姻法》第32条规定了可认定夫妻感情确已破裂的情形，比如说一方有重婚行为、家庭暴力、虐待或遗弃家庭成员、分居满两年而且没有和好可能等。</information> 嗯，这些情况就是法律上认定感情破裂的界定标准。也就是说，如果想让法院支持离婚，得拿出证据来证明你符合这些情形。\n\n好，那接下来应该怎么做？我想，第一步就是集中精力收集证据。如果有重婚行为，比如对方和别人建立事实婚姻关系，或者有家庭暴力，要把这些情况固定下来，查找相关材料，比如视频、照片、证人证言、医院诊断证明等等。如果是因为分居满两年，那就得拿出能证明分居事实的材料，比如住址分离的证明信或者双方明确分居的协议。\n\n第二的话，根据法律规定，第一次起诉离婚被驳回后，过了六个月就可以再次提起离婚诉讼。这段时间可以用来整理证据、调整策略。毕竟，第二次起诉往往会比第一次更容易获得支持，尤其是如果感情确实没有和好的可能。\n\n另外，还可以考虑在诉讼过程中请求专业调解员介入。调解有时候可以帮助缓和矛盾，同时也可能让对方更愿意接受离婚的事实。如果双方真的没有任何和好的希望，调解也能帮助更快推进离婚。而且，如果觉得事情特别复杂，或者不知道证据怎么收集，最好找专业律师寻求法律援助，这样操作起来会更有保障。\n\n总结一下，法院不准离婚的话，可以通过几种方法应对：第一，尽可能多地收集证据，证明符合《婚姻法》第32条规定的感情破裂情形；第二，耐心等待六个月后再次起诉，第二次诉讼成功的几率会更高；第三，尝试通过调解或者法律援助推进事情的解决。嗯，看起来按照这些步骤来推进的话，离婚还是有希望的。",
+  "Response": "如果法院判决不准离婚，一般可以采取以下步骤来应对：\n\n1. **分析判决原因**  \n   法院不准离婚的主要原因通常是认定夫妻感情尚未破裂，不符合法律规定的离婚条件。《中华人民共和国民法典》（原《婚姻法》，2021年以后适用《民法典》）第1079条规定，离婚的前提是夫妻感情确已破裂。如果法院在审理中认为感情并未彻底破裂，或者缺乏相关证据证明这一事实，就可能判决不准离婚。因此，你需要仔细分析判决书中提到的理由，确认感情破裂无法认定的具体原因。\n\n2. **收集证据证明感情破裂**  \n   夫妻感情破裂的认定通常需要具体事实和证据支撑。《民法典》第1079条提到了几类可以认定感情破裂的情形，例如：  \n   - 重婚或有与他人同居的行为；  \n   - 实施家庭暴力、虐待或遗弃家庭成员；  \n   - 有赌博、吸毒等恶习，且屡教不改；  \n   - 分居满两年，且未能和好的可能。  \n   如果你符合其中某些情形，需要尽可能完善相关证据，具体可包括：  \n   - 重婚或同居：聊天记录、银行流水、照片、录音或相关证人证言；  \n   - 家庭暴力：医院诊断证明、报警记录、伤情鉴定或施暴的录音录像；  \n   - 分居事实：住房租赁合同、居住流水、能证明分居时间的材料等。  \n   准备充分的证据可以提升第二次起诉成功的可能性。\n\n3. **等待六个月后再次起诉**  \n   根据《民事诉讼法》规定，第一次离婚诉讼被驳回后，如果感情依旧无法改善，一方可以在六个月后再次提出离婚诉讼。对于离婚案件，法院在第二次起诉时通常会更倾向于支持，特别是如果夫妻确无和好可能。因此，在这段时间内，你可以充分利用时间完善证据、调整诉讼策略。\n\n4. **尝试调解解决**  \n   在诉讼离婚之外，可以主动寻求调解。例如，通过法院调解员或社区组织的协助，与对方就离婚问题进行协商。这种方式有时能够有效缩短诉讼离婚的程序，特别是当双方对一些财产分割或子女抚养权问题存在较大分歧时，调解可能更有助于解决问题。\n\n5. **咨询专业律师**  \n   如果案件较为复杂，建议尽早寻求专业律师帮助。律师能帮助你了解法律细节、制定诉讼策略、整理有效证据，提升诉讼的成功率。\n\n总之，法院判决不准离婚并不意味着无法离婚，只是需要更多时间和准备。你可以通过进一步收集证据、等待时机再次起诉、或通过专业律师的协助来推动离婚的实现。",
+  "Question": "法院判决不准离婚后怎么办?"
+}

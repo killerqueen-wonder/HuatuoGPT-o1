@@ -1,0 +1,91 @@
+{
+  "Open-ended Verifiable Question": "质押合同的法律特征有哪些?",
+  "Ground-True Answer": "(一)单务无偿性。债权人与出质人之间并不相互享有权利和负有义务。\n(二)补充性。出质人对主债务的履行必须有一个前提条件，即主债务不履行。若主债务履行期尚未届至或者主债务人已经开始履行时，质权人无权变卖、转让出质人的股份实现自己的债权。\n(三)从属性。股份质押合同以主合同的合法存在为前提，以担保主合同的履行为目的，随主债权因清偿、抵销、免除而消灭。\n(四)优先受偿性。债权人在其债权上设定质押权的目的，在于保障其债权的实现和财产利益的安全。\n(五)记名性。订立股份质押合同必须将出质情况记载于股东花名册，自记载之日起生效。这是股份质押合同区别于其他权利质押合同的最明显的法律特征。",
+  "process_id": 6559,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "明确问题的概念和范围",
+      "content": "质押合同是担保合同的一种，属于民法中的具体合同类型。要确定其法律特征，需结合相关法律条文、法律理论和司法实践，明确其性质、特性及适用规则。相关内容一般在民法典担保制度部分中有所体现。需要查找我国现行《民法典》中关于质押合同的相关规定。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "检索质押合同相关法律条文",
+      "content": "依据上述分析，需要检索《中华人民共和国民法典》中有关质押合同的法律条文以为后续推理提供依据。",
+      "query": "<search>民法典 质押合同</search>"
+    },
+    {
+      "action": "Retrieval",
+      "content": "<information>根据《中华人民共和国民法典》第四百二十七条至第四百三十六条（质押的有关规定）：质押是指债务人或者第三人将其动产或权利交由债权人占有或者登记，以担保债务履行的一种担保方式。一旦债务人不履行债务，债权人有权依法以被质押财产拍卖或者变卖的价款优先受偿。</information>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "归纳质押合同的法律特征",
+      "content": "质押合同的法律特征可以从以下几个方面归纳：（1）从性质来看，质押合同是从合同、担保合同；（2）从标的物来看，质押的标的可以是动产或权利；（3）从生效要件来看，质押合同属于实践合同，需移交质物或完成登记；（4）质押具有担保债务实现的功能；（5）质押权具有追及性，即质押物转移给第三人时，质权不受影响。",
+      "query": "<search>质押合同 法律特征</search>"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "质押合同的法律特征包括：第一，质押合同是一种从合同、担保合同，以保障债权实现为目的；第二，质押的标的包括动产或权利；第三，质押合同通常为实践合同，成立需交付质押物或者完成登记；第四，质权具有追及性，质物被转让时，质权仍然存在；第五，质押合同具有法定优先受偿权，债务不履行时，质权人对质押财产的变价款享有优先受偿权。"
+    },
+    {
+      "action": "Verification",
+      "content": "通过核对《民法典》中质押相关规定及法律理论，发现上述归纳的法律特征与实际一致，结论正确，可以终止推导。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n质押合同的法律特征有哪些?\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n质押合同的法律特征包括：第一，质押合同是一种从合同、担保合同，以保障债权实现为目的；第二，质押的标的包括动产或权利；第三，质押合同通常为实践合同，成立需交付质押物或者完成登记；第四，质权具有追及性，质物被转让时，质权仍然存在；第五，质押合同具有法定优先受偿权，债务不履行时，质权人对质押财产的变价款享有优先受偿权。  \n</Model Response>  \n\n<Reference Answer>  \n(一)单务无偿性。债权人与出质人之间并不相互享有权利和负有义务。\n(二)补充性。出质人对主债务的履行必须有一个前提条件，即主债务不履行。若主债务履行期尚未届至或者主债务人已经开始履行时，质权人无权变卖、转让出质人的股份实现自己的债权。\n(三)从属性。股份质押合同以主合同的合法存在为前提，以担保主合同的履行为目的，随主债权因清偿、抵销、免除而消灭。\n(四)优先受偿性。债权人在其债权上设定质押权的目的，在于保障其债权的实现和财产利益的安全。\n(五)记名性。订立股份质押合同必须将出质情况记载于股东花名册，自记载之日起生效。这是股份质押合同区别于其他权利质押合同的最明显的法律特征。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 明确问题的概念和范围\n质押合同是担保合同的一种，属于民法中的具体合同类型。要确定其法律特征，需结合相关法律条文、法律理论和司法实践，明确其性质、特性及适用规则。相关内容一般在民法典担保制度部分中有所体现。需要查找我国现行《民法典》中关于质押合同的相关规定。\n\n### 检索质押合同相关法律条文\n依据上述分析，需要检索《中华人民共和国民法典》中有关质押合同的法律条文以为后续推理提供依据。\n\n### Retrieval\n<information>根据《中华人民共和国民法典》第四百二十七条至第四百三十六条（质押的有关规定）：质押是指债务人或者第三人将其动产或权利交由债权人占有或者登记，以担保债务履行的一种担保方式。一旦债务人不履行债务，债权人有权依法以被质押财产拍卖或者变卖的价款优先受偿。</information>\n\n### 归纳质押合同的法律特征\n质押合同的法律特征可以从以下几个方面归纳：（1）从性质来看，质押合同是从合同、担保合同；（2）从标的物来看，质押的标的可以是动产或权利；（3）从生效要件来看，质押合同属于实践合同，需移交质物或完成登记；（4）质押具有担保债务实现的功能；（5）质押权具有追及性，即质押物转移给第三人时，质权不受影响。\n\n### Conclusion\n质押合同的法律特征包括：第一，质押合同是一种从合同、担保合同，以保障债权实现为目的；第二，质押的标的包括动产或权利；第三，质押合同通常为实践合同，成立需交付质押物或者完成登记；第四，质权具有追及性，质物被转让时，质权仍然存在；第五，质押合同具有法定优先受偿权，债务不履行时，质权人对质押财产的变价款享有优先受偿权。\n\n### Verification\n通过核对《民法典》中质押相关规定及法律理论，发现上述归纳的法律特征与实际一致，结论正确，可以终止推导。\n</Thought Process>\n\n<Question>\n质押合同的法律特征有哪些?\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n嗯，质押合同是一个民法中的概念，听起来和担保有关。为了搞清楚它的法律特征，首先我需要明确它的范围。质押合同属于担保合同的一种，是一种特殊的合同类型。既然提到担保，那它应该涉及债务保障或者债权实现相关的问题。嗯，最好还是看看《民法典》里是怎么规定的，这样会更准确。\n\n为了找到相关信息，我需要查一查《中华人民共和国民法典》里关于质押合同的内容。<search>《民法典》质押合同相关条文</search>。好的，看看有哪些具体条款。\n\n<information>根据《中华人民共和国民法典》第四百二十七条至第四百三十六条（质押的有关规定）：质押是指债务人或者第三人将其动产或权利交由债权人占有或者登记，以担保债务履行的一种担保方式。一旦债务人不履行债务，债权人有权依法以被质押财产拍卖或者变卖的价款优先受偿。</information>\n\n根据这段法律条文，质押意味着债务人或者第三方要交付动产或者权利，作为对债务偿还的一种担保。这还是蛮清楚的。那么，现在可以结合这些内容总结一下质押合同的法律特征。\n\n首先，从性质上看，质押合同应该是一个从合同，它的存在是以主合同的存在为前提的，毕竟如果没有需要担保的债务，那质押合同就没有意义。另外，它的用途很明确，就是为了担保债务可以按期履行，这属于担保合同的范畴。\n\n然后说到标的物，法律里明确提到可以是动产或者权利。这说明质押的范围还是比较广的，只要是可以移交或者登记的财产，就可能成为质押的对象。\n\n接下来，它的生效方式似乎也比较特别。根据刚刚那段文字，质押合同是一个实践合同，也就是说，协议本身并不足够，还需要实际交付质物或者完成登记才算生效。这一点和很多普通的合同不一样，普通合同大多只要双方签字就成立了。\n\n哦，还有，我想到一个很重要的点。质押标的交付之后，如果借款人不还钱，质押物的作用会体现出来——债权人可以拍卖或者变卖这个质押物，并且优先用变现的钱偿还自己的债权。这是质押合同的重要功能，属于法定的优先受偿权。\n\n还有一个细节也不能忽略，就是质押权具有追及性。万一质押物又被卖给了某个第三人，质押权还是存在的，这也增加了债权人的保护力度。\n\n整体来看，质押合同的法律特征大致可以归纳为以下几点：第一，它是一种从合同，也是一种担保合同；第二，质押的标的可以是动产或权利；第三，质押合同是实践合同，交付质物或者完成登记是成立的重要条件；第四，质权具有追及性，即使质押物转给别人，质权也不会消失；最后，质押合同可以保障债务的优先受偿权，体现了担保合同的重要功能。\n\n感觉这些归纳还是挺清楚的，也符合《民法典》的相关规定。如果没有问题的话，我觉得可以到此为止了。\n</Internal Thinking>\n\n<Question>\n质押合同的法律特征有哪些?\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"明确问题的概念和范围\",\n      \"content\": \"质押合同是担保合同的一种，属于民法中的具体合同类型。要确定其法律特征，需结合相关法律条文、法律理论和司法实践，明确其性质、特性及适用规则。相关内容一般在民法典担保制度部分中有所体现。需要查找我国现行《民法典》中关于质押合同的相关规定。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"检索质押合同相关法律条文\",\n      \"content\": \"依据上述分析，需要检索《中华人民共和国民法典》中有关质押合同的法律条文以为后续推理提供依据。\",\n      \"query\": \"<search>民法典 质押合同</search>\"\n    },\n    {\n      \"action\": \"Retrieval\",\n      \"content\": \"<information>根据《中华人民共和国民法典》第四百二十七条至第四百三十六条（质押的有关规定）：质押是指债务人或者第三人将其动产或权利交由债权人占有或者登记，以担保债务履行的一种担保方式。一旦债务人不履行债务，债权人有权依法以被质押财产拍卖或者变卖的价款优先受偿。</information>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"归纳质押合同的法律特征\",\n      \"content\": \"质押合同的法律特征可以从以下几个方面归纳：（1）从性质来看，质押合同是从合同、担保合同；（2）从标的物来看，质押的标的可以是动产或权利；（3）从生效要件来看，质押合同属于实践合同，需移交质物或完成登记；（4）质押具有担保债务实现的功能；（5）质押权具有追及性，即质押物转移给第三人时，质权不受影响。\",\n      \"query\": \"<search>质押合同 法律特征</search>\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"质押合同的法律特征包括：第一，质押合同是一种从合同、担保合同，以保障债权实现为目的；第二，质押的标的包括动产或权利；第三，质押合同通常为实践合同，成立需交付质押物或者完成登记；第四，质权具有追及性，质物被转让时，质权仍然存在；第五，质押合同具有法定优先受偿权，债务不履行时，质权人对质押财产的变价款享有优先受偿权。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"通过核对《民法典》中质押相关规定及法律理论，发现上述归纳的法律特征与实际一致，结论正确，可以终止推导。\"\n    }\n  ]\n}\n``` ",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"嗯，质押合同是一个民法中的概念，听起来和担保有关。为了搞清楚它的法律特征，首先我需要明确它的范围。质押合同属于担保合同的一种，是一种特殊的合同类型。既然提到担保，那它应该涉及债务保障或者债权实现相关的问题。嗯，最好还是看看《民法典》里是怎么规定的，这样会更准确。\\n\\n为了找到相关信息，我需要查一查《中华人民共和国民法典》里关于质押合同的内容。<search>《民法典》质押合同相关条文</search>。好的，看看有哪些具体条款。\\n\\n<information>根据《中华人民共和国民法典》第四百二十七条至第四百三十六条（质押的有关规定）：质押是指债务人或者第三人将其动产或权利交由债权人占有或者登记，以担保债务履行的一种担保方式。一旦债务人不履行债务，债权人有权依法以被质押财产拍卖或者变卖的价款优先受偿。</information>\\n\\n根据这段法律条文，质押意味着债务人或者第三方要交付动产或者权利，作为对债务偿还的一种担保。这还是蛮清楚的。那么，现在可以结合这些内容总结一下质押合同的法律特征。\\n\\n首先，从性质上看，质押合同应该是一个从合同，它的存在是以主合同的存在为前提的，毕竟如果没有需要担保的债务，那质押合同就没有意义。另外，它的用途很明确，就是为了担保债务可以按期履行，这属于担保合同的范畴。\\n\\n然后说到标的物，法律里明确提到可以是动产或者权利。这说明质押的范围还是比较广的，只要是可以移交或者登记的财产，就可能成为质押的对象。\\n\\n接下来，它的生效方式似乎也比较特别。根据刚刚那段文字，质押合同是一个实践合同，也就是说，协议本身并不足够，还需要实际交付质物或者完成登记才算生效。这一点和很多普通的合同不一样，普通合同大多只要双方签字就成立了。\\n\\n哦，还有，我想到一个很重要的点。质押标的交付之后，如果借款人不还钱，质押物的作用会体现出来——债权人可以拍卖或者变卖这个质押物，并且优先用变现的钱偿还自己的债权。这是质押合同的重要功能，属于法定的优先受偿权。\\n\\n还有一个细节也不能忽略，就是质押权具有追及性。万一质押物又被卖给了某个第三人，质押权还是存在的，这也增加了债权人的保护力度。\\n\\n整体来看，质押合同的法律特征大致可以归纳为以下几点：第一，它是一种从合同，也是一种担保合同；第二，质押的标的可以是动产或权利；第三，质押合同是实践合同，交付质物或者完成登记是成立的重要条件；第四，质权具有追及性，即使质押物转给别人，质权也不会消失；最后，质押合同可以保障债务的优先受偿权，体现了担保合同的重要功能。\\n\\n感觉这些归纳还是挺清楚的，也符合《民法典》的相关规定。如果没有问题的话，我觉得可以到此为止了。\"\n}\n```",
+    "质押合同是《中华人民共和国民法典》规定的一种特殊的担保合同，其法律特征主要体现在以下几个方面：\n\n1. **从属性**：  \n质押合同是以主要债权债务关系的存在为前提的，从属于主合同。如果主合同无效或不存在，质押合同也同时无效。\n\n2. **担保功能**：  \n质押合同的目的在于为主合同中的债务履行提供担保。一旦债务人未能按期履行债务，债权人可以通过质押物优先受偿。\n\n3. **标的物范围**：  \n质押标的物可以是动产或者权利。根据《民法典》第四百二十七条规定，质押的具体标的物包括可以移交占有的财产（例如机器设备、车辆等）以及可以登记的权利（例如股权、债券等）。\n\n4. **实践性**：  \n质押合同属于实践合同，其成立和生效以交付质物（动产质押）或完成登记（权利质押）为必要条件。单纯的合同签署并不足以使质押合同生效。\n\n5. **追及效力**：  \n质权具有追及性。如果质押物被转让给第三方，质权仍然存在。质权人可以向占有质押物的第三方主张其权利。\n\n6. **优先受偿权**：  \n债权人在债务人不能履行债务时，享有以拍卖或变卖质物所得价款优先受偿的权利。这是质押合同作为担保合同的重要特征。\n\n综上，质押合同具有从属性、担保功能、标的物的特定性、实践性、追及效力以及优先受偿权等法律特征，体现了其在担保法律体系中的特殊地位。这些特征也确保了债权人在交易中的权利受到充分保障。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "明确问题的概念和范围",
+        "content": "质押合同是担保合同的一种，属于民法中的具体合同类型。要确定其法律特征，需结合相关法律条文、法律理论和司法实践，明确其性质、特性及适用规则。相关内容一般在民法典担保制度部分中有所体现。需要查找我国现行《民法典》中关于质押合同的相关规定。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "检索质押合同相关法律条文",
+        "content": "依据上述分析，需要检索《中华人民共和国民法典》中有关质押合同的法律条文以为后续推理提供依据。",
+        "query": "<search>民法典 质押合同</search>"
+      },
+      {
+        "action": "Retrieval",
+        "content": "<information>根据《中华人民共和国民法典》第四百二十七条至第四百三十六条（质押的有关规定）：质押是指债务人或者第三人将其动产或权利交由债权人占有或者登记，以担保债务履行的一种担保方式。一旦债务人不履行债务，债权人有权依法以被质押财产拍卖或者变卖的价款优先受偿。</information>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "归纳质押合同的法律特征",
+        "content": "质押合同的法律特征可以从以下几个方面归纳：（1）从性质来看，质押合同是从合同、担保合同；（2）从标的物来看，质押的标的可以是动产或权利；（3）从生效要件来看，质押合同属于实践合同，需移交质物或完成登记；（4）质押具有担保债务实现的功能；（5）质押权具有追及性，即质押物转移给第三人时，质权不受影响。",
+        "query": "<search>质押合同 法律特征</search>"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "质押合同的法律特征包括：第一，质押合同是一种从合同、担保合同，以保障债权实现为目的；第二，质押的标的包括动产或权利；第三，质押合同通常为实践合同，成立需交付质押物或者完成登记；第四，质权具有追及性，质物被转让时，质权仍然存在；第五，质押合同具有法定优先受偿权，债务不履行时，质权人对质押财产的变价款享有优先受偿权。"
+      },
+      {
+        "action": "Verification",
+        "content": "通过核对《民法典》中质押相关规定及法律理论，发现上述归纳的法律特征与实际一致，结论正确，可以终止推导。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "嗯，质押合同是一个民法中的概念，听起来和担保有关。为了搞清楚它的法律特征，首先我需要明确它的范围。质押合同属于担保合同的一种，是一种特殊的合同类型。既然提到担保，那它应该涉及债务保障或者债权实现相关的问题。嗯，最好还是看看《民法典》里是怎么规定的，这样会更准确。\n\n为了找到相关信息，我需要查一查《中华人民共和国民法典》里关于质押合同的内容。<search>《民法典》质押合同相关条文</search>。好的，看看有哪些具体条款。\n\n<information>根据《中华人民共和国民法典》第四百二十七条至第四百三十六条（质押的有关规定）：质押是指债务人或者第三人将其动产或权利交由债权人占有或者登记，以担保债务履行的一种担保方式。一旦债务人不履行债务，债权人有权依法以被质押财产拍卖或者变卖的价款优先受偿。</information>\n\n根据这段法律条文，质押意味着债务人或者第三方要交付动产或者权利，作为对债务偿还的一种担保。这还是蛮清楚的。那么，现在可以结合这些内容总结一下质押合同的法律特征。\n\n首先，从性质上看，质押合同应该是一个从合同，它的存在是以主合同的存在为前提的，毕竟如果没有需要担保的债务，那质押合同就没有意义。另外，它的用途很明确，就是为了担保债务可以按期履行，这属于担保合同的范畴。\n\n然后说到标的物，法律里明确提到可以是动产或者权利。这说明质押的范围还是比较广的，只要是可以移交或者登记的财产，就可能成为质押的对象。\n\n接下来，它的生效方式似乎也比较特别。根据刚刚那段文字，质押合同是一个实践合同，也就是说，协议本身并不足够，还需要实际交付质物或者完成登记才算生效。这一点和很多普通的合同不一样，普通合同大多只要双方签字就成立了。\n\n哦，还有，我想到一个很重要的点。质押标的交付之后，如果借款人不还钱，质押物的作用会体现出来——债权人可以拍卖或者变卖这个质押物，并且优先用变现的钱偿还自己的债权。这是质押合同的重要功能，属于法定的优先受偿权。\n\n还有一个细节也不能忽略，就是质押权具有追及性。万一质押物又被卖给了某个第三人，质押权还是存在的，这也增加了债权人的保护力度。\n\n整体来看，质押合同的法律特征大致可以归纳为以下几点：第一，它是一种从合同，也是一种担保合同；第二，质押的标的可以是动产或权利；第三，质押合同是实践合同，交付质物或者完成登记是成立的重要条件；第四，质权具有追及性，即使质押物转给别人，质权也不会消失；最后，质押合同可以保障债务的优先受偿权，体现了担保合同的重要功能。\n\n感觉这些归纳还是挺清楚的，也符合《民法典》的相关规定。如果没有问题的话，我觉得可以到此为止了。",
+  "Response": "质押合同是《中华人民共和国民法典》规定的一种特殊的担保合同，其法律特征主要体现在以下几个方面：\n\n1. **从属性**：  \n质押合同是以主要债权债务关系的存在为前提的，从属于主合同。如果主合同无效或不存在，质押合同也同时无效。\n\n2. **担保功能**：  \n质押合同的目的在于为主合同中的债务履行提供担保。一旦债务人未能按期履行债务，债权人可以通过质押物优先受偿。\n\n3. **标的物范围**：  \n质押标的物可以是动产或者权利。根据《民法典》第四百二十七条规定，质押的具体标的物包括可以移交占有的财产（例如机器设备、车辆等）以及可以登记的权利（例如股权、债券等）。\n\n4. **实践性**：  \n质押合同属于实践合同，其成立和生效以交付质物（动产质押）或完成登记（权利质押）为必要条件。单纯的合同签署并不足以使质押合同生效。\n\n5. **追及效力**：  \n质权具有追及性。如果质押物被转让给第三方，质权仍然存在。质权人可以向占有质押物的第三方主张其权利。\n\n6. **优先受偿权**：  \n债权人在债务人不能履行债务时，享有以拍卖或变卖质物所得价款优先受偿的权利。这是质押合同作为担保合同的重要特征。\n\n综上，质押合同具有从属性、担保功能、标的物的特定性、实践性、追及效力以及优先受偿权等法律特征，体现了其在担保法律体系中的特殊地位。这些特征也确保了债权人在交易中的权利受到充分保障。",
+  "Question": "质押合同的法律特征有哪些?"
+}

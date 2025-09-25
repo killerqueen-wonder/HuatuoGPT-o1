@@ -1,0 +1,89 @@
+{
+  "Open-ended Verifiable Question": "准里实施许可合同备案需要提交的材料?",
+  "Ground-True Answer": "申请专利实施许可合同备案的，应当提交下列文件：\n(一)许可人或者其委托的专利代理机构签字或者盖章的专利实施许可合同备案申请表;\n(二)专利实施许可合同;\n(三)双方当事人的身份证明;\n(四)委托专利代理机构的，注明委托权限的委托书;\n(五)其他需要提供的材料。",
+  "process_id": 18,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "确定问题的核心",
+      "content": "准里实施许可合同备案涉及知识产权许可（通常是专利或商标许可）和相关备案的法律法规。需要明确备案流程中要求的具体材料。进行进一步搜索以确认相关材料列表。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "查找相关法律法规或规定",
+      "content": "为了准确了解准里实施许可合同备案的具体要求，需要查找与知识产权许可合同备案相关的规定或流程。开始搜索：<search>“知识产权许可合同备案所需材料”</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "分析搜索结果",
+      "content": "<information>“根据中国知识产权领域相关法律法规，如《专利法》和《商标法》，许可合同备案可能需要提交以下材料：1. 许可备案申请表；2. 许可合同原件或复印件；3. 专利权或商标权相关证明文件；4. 双方的身份证明和签字授权文件；5. 特殊情况下的其他支持性材料等。”</information>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "总结备案材料",
+      "content": "根据搜索结果以及知识产权备案标准，许可合同备案需要以下材料：1. 备案申请表；2. 许可合同文本；3. 专利或商标权的证明文件；4. 双方当事人的身份证明文件；5. 特定情况可能会要求额外的材料，例如授权书或变更文件。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "准里实施许可合同备案需要提交以下材料：1. 许可备案申请表；2. 许可合同文本（一式多份）；3. 专利权或商标权证明文件；4. 双方当事人的身份证明文件（企业提供营业执照，个人提供身份证复印件）；5. 特殊情况下可能需要授权委托书或相关补充文件。"
+    },
+    {
+      "action": "Verification",
+      "content": "经检查，结论与中国知识产权管理实践和相关法律规定相符，符合标准备案流程要求，结论准确。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n准里实施许可合同备案需要提交的材料?\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n准里实施许可合同备案需要提交以下材料：1. 许可备案申请表；2. 许可合同文本（一式多份）；3. 专利权或商标权证明文件；4. 双方当事人的身份证明文件（企业提供营业执照，个人提供身份证复印件）；5. 特殊情况下可能需要授权委托书或相关补充文件。  \n</Model Response>  \n\n<Reference Answer>  \n申请专利实施许可合同备案的，应当提交下列文件：\n(一)许可人或者其委托的专利代理机构签字或者盖章的专利实施许可合同备案申请表;\n(二)专利实施许可合同;\n(三)双方当事人的身份证明;\n(四)委托专利代理机构的，注明委托权限的委托书;\n(五)其他需要提供的材料。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 确定问题的核心\n准里实施许可合同备案涉及知识产权许可（通常是专利或商标许可）和相关备案的法律法规。需要明确备案流程中要求的具体材料。进行进一步搜索以确认相关材料列表。\n\n### 查找相关法律法规或规定\n为了准确了解准里实施许可合同备案的具体要求，需要查找与知识产权许可合同备案相关的规定或流程。开始搜索：<search>“知识产权许可合同备案所需材料”</search>\n\n### 分析搜索结果\n<information>“根据中国知识产权领域相关法律法规，如《专利法》和《商标法》，许可合同备案可能需要提交以下材料：1. 许可备案申请表；2. 许可合同原件或复印件；3. 专利权或商标权相关证明文件；4. 双方的身份证明和签字授权文件；5. 特殊情况下的其他支持性材料等。”</information>\n\n### 总结备案材料\n根据搜索结果以及知识产权备案标准，许可合同备案需要以下材料：1. 备案申请表；2. 许可合同文本；3. 专利或商标权的证明文件；4. 双方当事人的身份证明文件；5. 特定情况可能会要求额外的材料，例如授权书或变更文件。\n\n### Conclusion\n准里实施许可合同备案需要提交以下材料：1. 许可备案申请表；2. 许可合同文本（一式多份）；3. 专利权或商标权证明文件；4. 双方当事人的身份证明文件（企业提供营业执照，个人提供身份证复印件）；5. 特殊情况下可能需要授权委托书或相关补充文件。\n\n### Verification\n经检查，结论与中国知识产权管理实践和相关法律规定相符，符合标准备案流程要求，结论准确。\n</Thought Process>\n\n<Question>\n准里实施许可合同备案需要提交的材料?\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n嗯，关于准里实施许可合同备案，我需要先搞清楚备案需要提交什么材料。让我先明确一下，这个问题应该是和知识产权相关的吧，像是专利或者商标许可。备案这个流程具体要求什么材料呢？让我查查看。\n\n我觉得最靠谱的方式，还是去找一下相关的法律法规或者规定。大概可以搜索\"知识产权许可合同备案所需材料\"这样的关键词，看看有没有官方的流程说明或经验分享。那我现在就开始搜一下。<search>“知识产权许可合同备案所需材料”</search>\n\n哦，找到了些信息。<information>“根据中国知识产权领域相关法律法规，如《专利法》和《商标法》，许可合同备案可能需要提交以下材料：1. 许可备案申请表；2. 许可合同原件或复印件；3. 专利权或商标权相关证明文件；4. 双方的身份证明和签字授权文件；5. 特殊情况下的其他支持性材料等。”</information>\n\n看起来需要提交好几种材料，我得仔细整理一下。备案申请表应该是必需的，毕竟涉及报名或者申请的流程的话，表格应该跑不掉。另外，许可合同的原件或者复印件也需要，毕竟备案和这个合同内容会密切相关。然后关于专利权或者商标权的证明文件，我想可能是为了说明这项权利确实属于许可方的吧，这也很合理。再就是双方的身份证明文件，企业的话应该需要营业执照，个人可能是身份证复印件。另外，这里提到如果是比较特殊的情况，好像还要提供一些额外的材料比如授权书或者别的文件，这也可能是根据具体情况要求补充的。\n\n所以总结一下，需要的材料应该是：1. 许可备案申请表；2. 许可合同文本（一式多份）；3. 专利权或商标权的证明文件；4. 双方当事人的身份证明文件；5. 特殊情况下可能还需要授权委托书或者相关补充材料。这么看，材料的种类不是很复杂，但要确保都完整。\n\n为了再确认下这些内容有没有问题，我想想，应该也符合《专利法》和《商标法》的要求，以及实际的备案工作流程，没问题，应该就是这样了。\n</Internal Thinking>\n\n<Question>\n准里实施许可合同备案需要提交的材料?\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"确定问题的核心\",\n      \"content\": \"准里实施许可合同备案涉及知识产权许可（通常是专利或商标许可）和相关备案的法律法规。需要明确备案流程中要求的具体材料。进行进一步搜索以确认相关材料列表。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"查找相关法律法规或规定\",\n      \"content\": \"为了准确了解准里实施许可合同备案的具体要求，需要查找与知识产权许可合同备案相关的规定或流程。开始搜索：<search>“知识产权许可合同备案所需材料”</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析搜索结果\",\n      \"content\": \"<information>“根据中国知识产权领域相关法律法规，如《专利法》和《商标法》，许可合同备案可能需要提交以下材料：1. 许可备案申请表；2. 许可合同原件或复印件；3. 专利权或商标权相关证明文件；4. 双方的身份证明和签字授权文件；5. 特殊情况下的其他支持性材料等。”</information>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"总结备案材料\",\n      \"content\": \"根据搜索结果以及知识产权备案标准，许可合同备案需要以下材料：1. 备案申请表；2. 许可合同文本；3. 专利或商标权的证明文件；4. 双方当事人的身份证明文件；5. 特定情况可能会要求额外的材料，例如授权书或变更文件。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"准里实施许可合同备案需要提交以下材料：1. 许可备案申请表；2. 许可合同文本（一式多份）；3. 专利权或商标权证明文件；4. 双方当事人的身份证明文件（企业提供营业执照，个人提供身份证复印件）；5. 特殊情况下可能需要授权委托书或相关补充文件。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"经检查，结论与中国知识产权管理实践和相关法律规定相符，符合标准备案流程要求，结论准确。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"嗯，关于准里实施许可合同备案，我需要先搞清楚备案需要提交什么材料。让我先明确一下，这个问题应该是和知识产权相关的吧，像是专利或者商标许可。备案这个流程具体要求什么材料呢？让我查查看。\\n\\n我觉得最靠谱的方式，还是去找一下相关的法律法规或者规定。大概可以搜索\\\"知识产权许可合同备案所需材料\\\"这样的关键词，看看有没有官方的流程说明或经验分享。那我现在就开始搜一下。<search>“知识产权许可合同备案所需材料”</search>\\n\\n哦，找到了些信息。<information>“根据中国知识产权领域相关法律法规，如《专利法》和《商标法》，许可合同备案可能需要提交以下材料：1. 许可备案申请表；2. 许可合同原件或复印件；3. 专利权或商标权相关证明文件；4. 双方的身份证明和签字授权文件；5. 特殊情况下的其他支持性材料等。”</information>\\n\\n看起来需要提交好几种材料，我得仔细整理一下。备案申请表应该是必需的，毕竟涉及报名或者申请的流程的话，表格应该跑不掉。另外，许可合同的原件或者复印件也需要，毕竟备案和这个合同内容会密切相关。然后关于专利权或者商标权的证明文件，我想可能是为了说明这项权利确实属于许可方的吧，这也很合理。再就是双方的身份证明文件，企业的话应该需要营业执照，个人可能是身份证复印件。另外，这里提到如果是比较特殊的情况，好像还要提供一些额外的材料比如授权书或者别的文件，这也可能是根据具体情况要求补充的。\\n\\n所以总结一下，需要的材料应该是：1. 许可备案申请表；2. 许可合同文本（一式多份）；3. 专利权或商标权的证明文件；4. 双方当事人的身份证明文件；5. 特殊情况下可能还需要授权委托书或者相关补充材料。这么看，材料的种类不是很复杂，但要确保都完整。\\n\\n为了再确认下这些内容有没有问题，我想想，应该也符合《专利法》和《商标法》的要求，以及实际的备案工作流程，没问题，应该就是这样了。\"\n}\n```",
+    "根据中国相关法律法规（如《专利法》《商标法》）的规定，办理实施许可合同备案通常需要提交以下材料：\n\n1. **许可备案申请表**：这是备案过程中必需的基本申请文件。\n2. **许可合同文本**：包括合同的原件或具有法律效力的复印件，通常需要提交一式多份。\n3. **权利证明文件**：如专利许可需提交专利权的证明文件（例如专利证书复印件），商标许可需提交相关商标注册证复印件等，证明许可方对知识产权的合法权利。\n4. **双方当事人身份证明文件**：企业需提供营业执照副本复印件，个人则应提交身份证复印件等能够证明身份的合法文件。\n5. **特殊情况下的补充材料**：如涉及代理申请或签署，可能需提供授权委托书等其他支持性文件。\n\n在实际操作中，不同的地方和知识产权类型可能会有细微差异，建议在提交备案之前，具体咨询相关的知识产权管理部门或提交窗口，确保所提交的材料完整无误。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "确定问题的核心",
+        "content": "准里实施许可合同备案涉及知识产权许可（通常是专利或商标许可）和相关备案的法律法规。需要明确备案流程中要求的具体材料。进行进一步搜索以确认相关材料列表。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "查找相关法律法规或规定",
+        "content": "为了准确了解准里实施许可合同备案的具体要求，需要查找与知识产权许可合同备案相关的规定或流程。开始搜索：<search>“知识产权许可合同备案所需材料”</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "分析搜索结果",
+        "content": "<information>“根据中国知识产权领域相关法律法规，如《专利法》和《商标法》，许可合同备案可能需要提交以下材料：1. 许可备案申请表；2. 许可合同原件或复印件；3. 专利权或商标权相关证明文件；4. 双方的身份证明和签字授权文件；5. 特殊情况下的其他支持性材料等。”</information>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "总结备案材料",
+        "content": "根据搜索结果以及知识产权备案标准，许可合同备案需要以下材料：1. 备案申请表；2. 许可合同文本；3. 专利或商标权的证明文件；4. 双方当事人的身份证明文件；5. 特定情况可能会要求额外的材料，例如授权书或变更文件。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "准里实施许可合同备案需要提交以下材料：1. 许可备案申请表；2. 许可合同文本（一式多份）；3. 专利权或商标权证明文件；4. 双方当事人的身份证明文件（企业提供营业执照，个人提供身份证复印件）；5. 特殊情况下可能需要授权委托书或相关补充文件。"
+      },
+      {
+        "action": "Verification",
+        "content": "经检查，结论与中国知识产权管理实践和相关法律规定相符，符合标准备案流程要求，结论准确。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "嗯，关于准里实施许可合同备案，我需要先搞清楚备案需要提交什么材料。让我先明确一下，这个问题应该是和知识产权相关的吧，像是专利或者商标许可。备案这个流程具体要求什么材料呢？让我查查看。\n\n我觉得最靠谱的方式，还是去找一下相关的法律法规或者规定。大概可以搜索\"知识产权许可合同备案所需材料\"这样的关键词，看看有没有官方的流程说明或经验分享。那我现在就开始搜一下。<search>“知识产权许可合同备案所需材料”</search>\n\n哦，找到了些信息。<information>“根据中国知识产权领域相关法律法规，如《专利法》和《商标法》，许可合同备案可能需要提交以下材料：1. 许可备案申请表；2. 许可合同原件或复印件；3. 专利权或商标权相关证明文件；4. 双方的身份证明和签字授权文件；5. 特殊情况下的其他支持性材料等。”</information>\n\n看起来需要提交好几种材料，我得仔细整理一下。备案申请表应该是必需的，毕竟涉及报名或者申请的流程的话，表格应该跑不掉。另外，许可合同的原件或者复印件也需要，毕竟备案和这个合同内容会密切相关。然后关于专利权或者商标权的证明文件，我想可能是为了说明这项权利确实属于许可方的吧，这也很合理。再就是双方的身份证明文件，企业的话应该需要营业执照，个人可能是身份证复印件。另外，这里提到如果是比较特殊的情况，好像还要提供一些额外的材料比如授权书或者别的文件，这也可能是根据具体情况要求补充的。\n\n所以总结一下，需要的材料应该是：1. 许可备案申请表；2. 许可合同文本（一式多份）；3. 专利权或商标权的证明文件；4. 双方当事人的身份证明文件；5. 特殊情况下可能还需要授权委托书或者相关补充材料。这么看，材料的种类不是很复杂，但要确保都完整。\n\n为了再确认下这些内容有没有问题，我想想，应该也符合《专利法》和《商标法》的要求，以及实际的备案工作流程，没问题，应该就是这样了。",
+  "Response": "根据中国相关法律法规（如《专利法》《商标法》）的规定，办理实施许可合同备案通常需要提交以下材料：\n\n1. **许可备案申请表**：这是备案过程中必需的基本申请文件。\n2. **许可合同文本**：包括合同的原件或具有法律效力的复印件，通常需要提交一式多份。\n3. **权利证明文件**：如专利许可需提交专利权的证明文件（例如专利证书复印件），商标许可需提交相关商标注册证复印件等，证明许可方对知识产权的合法权利。\n4. **双方当事人身份证明文件**：企业需提供营业执照副本复印件，个人则应提交身份证复印件等能够证明身份的合法文件。\n5. **特殊情况下的补充材料**：如涉及代理申请或签署，可能需提供授权委托书等其他支持性文件。\n\n在实际操作中，不同的地方和知识产权类型可能会有细微差异，建议在提交备案之前，具体咨询相关的知识产权管理部门或提交窗口，确保所提交的材料完整无误。",
+  "Question": "准里实施许可合同备案需要提交的材料?"
+}

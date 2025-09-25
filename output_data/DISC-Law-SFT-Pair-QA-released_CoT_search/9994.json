@@ -1,0 +1,99 @@
+{
+  "Open-ended Verifiable Question": "公司的法定代表人变更后原法定代表人能否解除限高？",
+  "Ground-True Answer": "法定代表人被限制高消费后，原则上只要履行了内部决议程序，就可以申请法定代表人的变更登记。但如果公司的法定代表人被限制高消费的同时，公司被纳入失信被执行人名单，此时，需要结合各地市场监督管理局的具体规定来判断能否变更法人。\n法定代表人变更后并非一概解除对原法定代表人的限高措施。单位被执行人被限制消费后，其法定代表人、主要负责人确因经营管理需要发生变更，原法定代表人、主要负责人申请解除对其本人的限制消费措施的，应举证证明其并非单位的实际控制人、影响债务履行的直接责任人员。人民法院经审查属实的，应予准许，并对变更后的法定代表人、主要负责人依法采取限制消费措施。",
+  "process_id": 9994,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "明确问题背景",
+      "content": "公司的法定代表人的变更情况可能涉及到债务、合同或法律相关责任，而限高令（限制高消费令）通常是基于法院的执行程序要求，对个人或法人实施限制。因此，需要明确原法定代表人因何被实施限高令，以及变更后的法定代表人是否承担相关责任。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "限高令实施的法律依据",
+      "content": "限高令的实施依据是《中华人民共和国民事诉讼法》和相关司法解释，需要确认是否有法律条文规定变更法定代表人后解除限高令的条件。因此，我需要搜索关键词：<search>法定代表人变更 限高令解除</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "提取相关法律信息",
+      "content": "<information>根据《最高人民法院关于限制被执行人高消费及相关消费的若干规定》，限高令是对被执行人（包括自然人或单位的法定代表人）未履行法院判决或其他生效法律文书的惩戒措施。即使法定代表人变更，原法定代表人若涉及未履行的个人责任，仍可能继续被实行限高令。变更后的法定代表人是否承担责任，视具体案件而定。</information>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "分析变更法定代表人与限高令解除关系",
+      "content": "从上述法规中可以得出，如果限高令针对的是原法定代表人的个人责任，则即使公司变更了法定代表人，原法定代表人依然难以解除限高令。如果限高令基于公司责任，而新法定代表人已履行公司责任，则可能影响原法定代表人的责任解除。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "确认结论条件",
+      "content": "整体来看，公司法定代表人变更并非限高令自动解除的法定条件，需要根据限高令涉及的具体责任类型以及是否已履行法律责任来判断。基于此，可以得出最终结论。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "公司的法定代表人变更后，原法定代表人能否解除限高令取决于限高令的责任类型。如果限高令针对原法定代表人的个人责任，则变更法定代表人不会自动解除限高令；如果是公司责任，新法定代表人履行相关法律责任可能影响限高令解除，但需要具体情况由法院判定。"
+    },
+    {
+      "action": "Verification",
+      "content": "结论符合《最高人民法院关于限制被执行人高消费及相关消费的若干规定》的相关要求，因此结论成立。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n公司的法定代表人变更后原法定代表人能否解除限高？\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n公司的法定代表人变更后，原法定代表人能否解除限高令取决于限高令的责任类型。如果限高令针对原法定代表人的个人责任，则变更法定代表人不会自动解除限高令；如果是公司责任，新法定代表人履行相关法律责任可能影响限高令解除，但需要具体情况由法院判定。  \n</Model Response>  \n\n<Reference Answer>  \n法定代表人被限制高消费后，原则上只要履行了内部决议程序，就可以申请法定代表人的变更登记。但如果公司的法定代表人被限制高消费的同时，公司被纳入失信被执行人名单，此时，需要结合各地市场监督管理局的具体规定来判断能否变更法人。\n法定代表人变更后并非一概解除对原法定代表人的限高措施。单位被执行人被限制消费后，其法定代表人、主要负责人确因经营管理需要发生变更，原法定代表人、主要负责人申请解除对其本人的限制消费措施的，应举证证明其并非单位的实际控制人、影响债务履行的直接责任人员。人民法院经审查属实的，应予准许，并对变更后的法定代表人、主要负责人依法采取限制消费措施。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 明确问题背景\n公司的法定代表人的变更情况可能涉及到债务、合同或法律相关责任，而限高令（限制高消费令）通常是基于法院的执行程序要求，对个人或法人实施限制。因此，需要明确原法定代表人因何被实施限高令，以及变更后的法定代表人是否承担相关责任。\n\n### 限高令实施的法律依据\n限高令的实施依据是《中华人民共和国民事诉讼法》和相关司法解释，需要确认是否有法律条文规定变更法定代表人后解除限高令的条件。因此，我需要搜索关键词：<search>法定代表人变更 限高令解除</search>\n\n### 提取相关法律信息\n<information>根据《最高人民法院关于限制被执行人高消费及相关消费的若干规定》，限高令是对被执行人（包括自然人或单位的法定代表人）未履行法院判决或其他生效法律文书的惩戒措施。即使法定代表人变更，原法定代表人若涉及未履行的个人责任，仍可能继续被实行限高令。变更后的法定代表人是否承担责任，视具体案件而定。</information>\n\n### 分析变更法定代表人与限高令解除关系\n从上述法规中可以得出，如果限高令针对的是原法定代表人的个人责任，则即使公司变更了法定代表人，原法定代表人依然难以解除限高令。如果限高令基于公司责任，而新法定代表人已履行公司责任，则可能影响原法定代表人的责任解除。\n\n### 确认结论条件\n整体来看，公司法定代表人变更并非限高令自动解除的法定条件，需要根据限高令涉及的具体责任类型以及是否已履行法律责任来判断。基于此，可以得出最终结论。\n\n### Conclusion\n公司的法定代表人变更后，原法定代表人能否解除限高令取决于限高令的责任类型。如果限高令针对原法定代表人的个人责任，则变更法定代表人不会自动解除限高令；如果是公司责任，新法定代表人履行相关法律责任可能影响限高令解除，但需要具体情况由法院判定。\n\n### Verification\n结论符合《最高人民法院关于限制被执行人高消费及相关消费的若干规定》的相关要求，因此结论成立。\n</Thought Process>\n\n<Question>\n公司的法定代表人变更后原法定代表人能否解除限高？\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n公司的法定代表人变更后，原法定代表人能否解除限高令呢？这个问题有点复杂，我得好好理理。首先，限高令是法院针对未履行判决或生效法律文书的人采取的措施。嗯……它通常会限制个人或单位的消费行为，尤其是高消费行为。但这里的关键是，原来的法定代表人是不是因为公司的责任或者个人的责任被限制了高消费呢？我应该先弄清楚这个，再考虑变更法定代表人是否会影响限高令的解除。\n\n想想看，这个问题应该和法律规定有关。我记得限高令是依据《民事诉讼法》以及相关司法解释执行的，应该去确认一下有没有法律条文明确提到变更法定代表人后会自动解除限高令这种情况。好吧，我搜一下相关信息吧。<search>法定代表人变更 限高令解除</search>\n\n哦，找到一些信息了。<information>根据《最高人民法院关于限制被执行人高消费及相关消费的若干规定》，限高令主要针对被执行人，也可以包括单位的法定代表人。如果限高令是因为原法定代表人个人的责任，那就算公司的法定代表人换了，原法定代表人还是需要继续履行责任，限高令也不会自动解除。但如果限高令是因为公司层面的责任，而公司变更后的新法定代表人已经履行或解决了相关的法律责任，那么这可能会影响限高令的解除。不过这个具体情况要由法院来判定。</information>\n\n嗯，这样看来是有两种可能性。如果限高令是因为公司的责任，那变更法定代表人可能会间接影响限高令的解除；但如果限高令是因为原法定代表人的个人问题，那就和公司的法定代表人是谁没什么关系了，责任还是得他自己承担。换句话说，变更公司法定代表人并不是解除限高令的一个自动条件，还是得看具体的法律责任类型和履行情况。\n\n所以总结一下，从法律角度来看，公司法定代表人变更后，原法定代表人是不是能解除限高令，还是得看限高令的原因。如果和个人责任有关，那很遗憾，变更没啥帮助；但如果和公司有关，履行了责任后是有可能影响解除的。不过最终的决定权在法院手里。\n\n嗯，这结论感觉挺合理的，也符合相关的法律规定。我觉得可以接受了。\n</Internal Thinking>\n\n<Question>\n公司的法定代表人变更后原法定代表人能否解除限高？\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"明确问题背景\",\n      \"content\": \"公司的法定代表人的变更情况可能涉及到债务、合同或法律相关责任，而限高令（限制高消费令）通常是基于法院的执行程序要求，对个人或法人实施限制。因此，需要明确原法定代表人因何被实施限高令，以及变更后的法定代表人是否承担相关责任。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"限高令实施的法律依据\",\n      \"content\": \"限高令的实施依据是《中华人民共和国民事诉讼法》和相关司法解释，需要确认是否有法律条文规定变更法定代表人后解除限高令的条件。因此，我需要搜索关键词：<search>法定代表人变更 限高令解除</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"提取相关法律信息\",\n      \"content\": \"<information>根据《最高人民法院关于限制被执行人高消费及相关消费的若干规定》，限高令是对被执行人（包括自然人或单位的法定代表人）未履行法院判决或其他生效法律文书的惩戒措施。即使法定代表人变更，原法定代表人若涉及未履行的个人责任，仍可能继续被实行限高令。变更后的法定代表人是否承担责任，视具体案件而定。</information>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析变更法定代表人与限高令解除关系\",\n      \"content\": \"从上述法规中可以得出，如果限高令针对的是原法定代表人的个人责任，则即使公司变更了法定代表人，原法定代表人依然难以解除限高令。如果限高令基于公司责任，而新法定代表人已履行公司责任，则可能影响原法定代表人的责任解除。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"确认结论条件\",\n      \"content\": \"整体来看，公司法定代表人变更并非限高令自动解除的法定条件，需要根据限高令涉及的具体责任类型以及是否已履行法律责任来判断。基于此，可以得出最终结论。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"公司的法定代表人变更后，原法定代表人能否解除限高令取决于限高令的责任类型。如果限高令针对原法定代表人的个人责任，则变更法定代表人不会自动解除限高令；如果是公司责任，新法定代表人履行相关法律责任可能影响限高令解除，但需要具体情况由法院判定。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"结论符合《最高人民法院关于限制被执行人高消费及相关消费的若干规定》的相关要求，因此结论成立。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"公司的法定代表人变更后，原法定代表人能否解除限高令呢？这个问题有点复杂，我得好好理理。首先，限高令是法院针对未履行判决或生效法律文书的人采取的措施。嗯……它通常会限制个人或单位的消费行为，尤其是高消费行为。但这里的关键是，原来的法定代表人是不是因为公司的责任或者个人的责任被限制了高消费呢？我应该先弄清楚这个，再考虑变更法定代表人是否会影响限高令的解除。\\n\\n想想看，这个问题应该和法律规定有关。我记得限高令是依据《民事诉讼法》以及相关司法解释执行的，应该去确认一下有没有法律条文明确提到变更法定代表人后会自动解除限高令这种情况。好吧，我搜一下相关信息吧。<search>法定代表人变更 限高令解除</search>\\n\\n哦，找到一些信息了。<information>根据《最高人民法院关于限制被执行人高消费及相关消费的若干规定》，限高令主要针对被执行人，也可以包括单位的法定代表人。如果限高令是因为原法定代表人个人的责任，那就算公司的法定代表人换了，原法定代表人还是需要继续履行责任，限高令也不会自动解除。但如果限高令是因为公司层面的责任，而公司变更后的新法定代表人已经履行或解决了相关的法律责任，那么这可能会影响限高令的解除。不过这个具体情况要由法院来判定。</information>\\n\\n嗯，这样看来是有两种可能性。如果限高令是因为公司的责任，那变更法定代表人可能会间接影响限高令的解除；但如果限高令是因为原法定代表人的个人问题，那就和公司的法定代表人是谁没什么关系了，责任还是得他自己承担。换句话说，变更公司法定代表人并不是解除限高令的一个自动条件，还是得看具体的法律责任类型和履行情况。\\n\\n所以总结一下，从法律角度来看，公司法定代表人变更后，原法定代表人是不是能解除限高令，还是得看限高令的原因。如果和个人责任有关，那很遗憾，变更没啥帮助；但如果和公司有关，履行了责任后是有可能影响解除的。不过最终的决定权在法院手里。\\n\\n嗯，这结论感觉挺合理的，也符合相关的法律规定。我觉得可以接受了。\"\n}\n```",
+    "公司法定代表人变更后，原法定代表人能否解除限高令，需要视具体情况而定，关键在于限高令的发出原因。\n\n1. **如果限高令是因公司债务或法律责任引起**：  \n   法定代表人的变更通常不会自动导致原法定代表人解除限高令，但如果新任法定代表人接任后，企业履行了相应的债务或法律责任，法院可能因此解除对公司的限制，同时也可能解除对原法定代表人的限高措施。不过，此情形需具体情况具体分析，并由法院根据实际执行情况作出决定。\n\n2. **如果限高令是基于原法定代表人的个人责任**：  \n   如果限高令是因为原法定代表人个人负有未履行的法律责任（例如个人担保引发的债务），那么法定代表人的变更与限高令的解除没有直接关系。即使其已不再担任公司法定代表人，限高令仍然会继续有效，直到其履行相关义务或法院决定解除为止。\n\n总结来看，仅仅变更公司法定代表人不足以自动解除原法定代表人的限高令。是否能解除主要取决于限高令的原因和相关责任人的履行情况，最终需要法院依具体案例作出裁定。建议及时向执行法院咨询，并配合履行相关法律义务，以争取尽快解除限制。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "明确问题背景",
+        "content": "公司的法定代表人的变更情况可能涉及到债务、合同或法律相关责任，而限高令（限制高消费令）通常是基于法院的执行程序要求，对个人或法人实施限制。因此，需要明确原法定代表人因何被实施限高令，以及变更后的法定代表人是否承担相关责任。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "限高令实施的法律依据",
+        "content": "限高令的实施依据是《中华人民共和国民事诉讼法》和相关司法解释，需要确认是否有法律条文规定变更法定代表人后解除限高令的条件。因此，我需要搜索关键词：<search>法定代表人变更 限高令解除</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "提取相关法律信息",
+        "content": "<information>根据《最高人民法院关于限制被执行人高消费及相关消费的若干规定》，限高令是对被执行人（包括自然人或单位的法定代表人）未履行法院判决或其他生效法律文书的惩戒措施。即使法定代表人变更，原法定代表人若涉及未履行的个人责任，仍可能继续被实行限高令。变更后的法定代表人是否承担责任，视具体案件而定。</information>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "分析变更法定代表人与限高令解除关系",
+        "content": "从上述法规中可以得出，如果限高令针对的是原法定代表人的个人责任，则即使公司变更了法定代表人，原法定代表人依然难以解除限高令。如果限高令基于公司责任，而新法定代表人已履行公司责任，则可能影响原法定代表人的责任解除。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "确认结论条件",
+        "content": "整体来看，公司法定代表人变更并非限高令自动解除的法定条件，需要根据限高令涉及的具体责任类型以及是否已履行法律责任来判断。基于此，可以得出最终结论。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "公司的法定代表人变更后，原法定代表人能否解除限高令取决于限高令的责任类型。如果限高令针对原法定代表人的个人责任，则变更法定代表人不会自动解除限高令；如果是公司责任，新法定代表人履行相关法律责任可能影响限高令解除，但需要具体情况由法院判定。"
+      },
+      {
+        "action": "Verification",
+        "content": "结论符合《最高人民法院关于限制被执行人高消费及相关消费的若干规定》的相关要求，因此结论成立。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "公司的法定代表人变更后，原法定代表人能否解除限高令呢？这个问题有点复杂，我得好好理理。首先，限高令是法院针对未履行判决或生效法律文书的人采取的措施。嗯……它通常会限制个人或单位的消费行为，尤其是高消费行为。但这里的关键是，原来的法定代表人是不是因为公司的责任或者个人的责任被限制了高消费呢？我应该先弄清楚这个，再考虑变更法定代表人是否会影响限高令的解除。\n\n想想看，这个问题应该和法律规定有关。我记得限高令是依据《民事诉讼法》以及相关司法解释执行的，应该去确认一下有没有法律条文明确提到变更法定代表人后会自动解除限高令这种情况。好吧，我搜一下相关信息吧。<search>法定代表人变更 限高令解除</search>\n\n哦，找到一些信息了。<information>根据《最高人民法院关于限制被执行人高消费及相关消费的若干规定》，限高令主要针对被执行人，也可以包括单位的法定代表人。如果限高令是因为原法定代表人个人的责任，那就算公司的法定代表人换了，原法定代表人还是需要继续履行责任，限高令也不会自动解除。但如果限高令是因为公司层面的责任，而公司变更后的新法定代表人已经履行或解决了相关的法律责任，那么这可能会影响限高令的解除。不过这个具体情况要由法院来判定。</information>\n\n嗯，这样看来是有两种可能性。如果限高令是因为公司的责任，那变更法定代表人可能会间接影响限高令的解除；但如果限高令是因为原法定代表人的个人问题，那就和公司的法定代表人是谁没什么关系了，责任还是得他自己承担。换句话说，变更公司法定代表人并不是解除限高令的一个自动条件，还是得看具体的法律责任类型和履行情况。\n\n所以总结一下，从法律角度来看，公司法定代表人变更后，原法定代表人是不是能解除限高令，还是得看限高令的原因。如果和个人责任有关，那很遗憾，变更没啥帮助；但如果和公司有关，履行了责任后是有可能影响解除的。不过最终的决定权在法院手里。\n\n嗯，这结论感觉挺合理的，也符合相关的法律规定。我觉得可以接受了。",
+  "Response": "公司法定代表人变更后，原法定代表人能否解除限高令，需要视具体情况而定，关键在于限高令的发出原因。\n\n1. **如果限高令是因公司债务或法律责任引起**：  \n   法定代表人的变更通常不会自动导致原法定代表人解除限高令，但如果新任法定代表人接任后，企业履行了相应的债务或法律责任，法院可能因此解除对公司的限制，同时也可能解除对原法定代表人的限高措施。不过，此情形需具体情况具体分析，并由法院根据实际执行情况作出决定。\n\n2. **如果限高令是基于原法定代表人的个人责任**：  \n   如果限高令是因为原法定代表人个人负有未履行的法律责任（例如个人担保引发的债务），那么法定代表人的变更与限高令的解除没有直接关系。即使其已不再担任公司法定代表人，限高令仍然会继续有效，直到其履行相关义务或法院决定解除为止。\n\n总结来看，仅仅变更公司法定代表人不足以自动解除原法定代表人的限高令。是否能解除主要取决于限高令的原因和相关责任人的履行情况，最终需要法院依具体案例作出裁定。建议及时向执行法院咨询，并配合履行相关法律义务，以争取尽快解除限制。",
+  "Question": "公司的法定代表人变更后原法定代表人能否解除限高？"
+}

@@ -1,0 +1,109 @@
+{
+  "Open-ended Verifiable Question": "劳动者拒绝违法超时加班安排，用人单位能否解除劳动合同",
+  "Ground-True Answer": "为确保劳动者休息权的实现，我国法律对延长工作时间的上限予以明确规定。用人单位制定违反法律规定的加班制度，在劳动合同中与劳动者约定违反法律规定的加班条款，均应认定为无效。员工拒绝违法超时加班安排，系维护自己合法权益，公司违法解除劳动合同应支付赔偿金。",
+  "process_id": 3121,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "确定劳动者的合法权利",
+      "content": "从劳动法的角度来看，劳动者有权拒绝用人单位提出的违法加班要求。首先需明确相关法律法规是否规定超过法律规定工作时间的加班安排是违法的。需要进一步检索法律依据。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "查找相关劳动法条款",
+      "content": "中国《劳动法》和《劳动合同法》对此有明确规定，需要核实其中是否明确赋予劳动者拒绝违法超时加班安排的权利，以及这种拒绝是否会为用人单位解除劳动合同提供法定依据。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "检索《劳动法》关于加班的法律规定",
+      "content": "具体检索中国《劳动法》的相关条款，例如加班安排的时间限制和补偿规定是否明确规定超时加班属于违法行为。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "检索用人单位可解除劳动合同的法定条件",
+      "content": "查找《劳动合同法》关于用人单位解除劳动合同的规定，确认是否包含因劳动者拒绝违法加班而解除劳动合同。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "法律条款查找结果",
+      "content": "根据法律条款，《劳动法》第36条规定了标准工时制度（每日工作8小时、每周工作不超过44小时），第41条指出，在特殊情况下可延长工作时间，但需符合法律规定，合理控制时长且需支付加班费。《劳动合同法》第39条则列举了用人单位解除劳动合同的几种明确情况，不包括劳动者拒绝履行违法加班安排的情形。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "综合分析法律保护与逻辑",
+      "content": "综合分析可知，法律明确规定了标准工作时间，并强调劳动者有拒绝违法加班的权利。从《劳动合同法》第39条可以判断，拒绝违法加班并不属于法定解除劳动合同的条件。因此，用人单位不能合法解除劳动合同。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "根据《劳动法》和《劳动合同法》的规定，劳动者有权拒绝违法超时加班安排，而用人单位无权因此解除劳动合同，否则系违法解除行为，劳动者可以依法要求赔偿或恢复劳动关系。"
+    },
+    {
+      "action": "Verification",
+      "content": "通过核查相关法律条文，《劳动法》和《劳动合同法》均支持劳动者拒绝违法超时加班的权利，并未赋予用人单位以此理由解除劳动合同的权利，结论正确。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n劳动者拒绝违法超时加班安排，用人单位能否解除劳动合同\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n根据《劳动法》和《劳动合同法》的规定，劳动者有权拒绝违法超时加班安排，而用人单位无权因此解除劳动合同，否则系违法解除行为，劳动者可以依法要求赔偿或恢复劳动关系。  \n</Model Response>  \n\n<Reference Answer>  \n为确保劳动者休息权的实现，我国法律对延长工作时间的上限予以明确规定。用人单位制定违反法律规定的加班制度，在劳动合同中与劳动者约定违反法律规定的加班条款，均应认定为无效。员工拒绝违法超时加班安排，系维护自己合法权益，公司违法解除劳动合同应支付赔偿金。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 确定劳动者的合法权利\n从劳动法的角度来看，劳动者有权拒绝用人单位提出的违法加班要求。首先需明确相关法律法规是否规定超过法律规定工作时间的加班安排是违法的。需要进一步检索法律依据。\n\n### 查找相关劳动法条款\n中国《劳动法》和《劳动合同法》对此有明确规定，需要核实其中是否明确赋予劳动者拒绝违法超时加班安排的权利，以及这种拒绝是否会为用人单位解除劳动合同提供法定依据。\n\n### 检索《劳动法》关于加班的法律规定\n具体检索中国《劳动法》的相关条款，例如加班安排的时间限制和补偿规定是否明确规定超时加班属于违法行为。\n\n### 检索用人单位可解除劳动合同的法定条件\n查找《劳动合同法》关于用人单位解除劳动合同的规定，确认是否包含因劳动者拒绝违法加班而解除劳动合同。\n\n### 法律条款查找结果\n根据法律条款，《劳动法》第36条规定了标准工时制度（每日工作8小时、每周工作不超过44小时），第41条指出，在特殊情况下可延长工作时间，但需符合法律规定，合理控制时长且需支付加班费。《劳动合同法》第39条则列举了用人单位解除劳动合同的几种明确情况，不包括劳动者拒绝履行违法加班安排的情形。\n\n### 综合分析法律保护与逻辑\n综合分析可知，法律明确规定了标准工作时间，并强调劳动者有拒绝违法加班的权利。从《劳动合同法》第39条可以判断，拒绝违法加班并不属于法定解除劳动合同的条件。因此，用人单位不能合法解除劳动合同。\n\n### Conclusion\n根据《劳动法》和《劳动合同法》的规定，劳动者有权拒绝违法超时加班安排，而用人单位无权因此解除劳动合同，否则系违法解除行为，劳动者可以依法要求赔偿或恢复劳动关系。\n\n### Verification\n通过核查相关法律条文，《劳动法》和《劳动合同法》均支持劳动者拒绝违法超时加班的权利，并未赋予用人单位以此理由解除劳动合同的权利，结论正确。\n</Thought Process>\n\n<Question>\n劳动者拒绝违法超时加班安排，用人单位能否解除劳动合同\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n嗯，这个问题挺重要的，得好好看看法律怎么说。劳动者拒绝超时加班，用人单位到底能不能解雇呢？我觉得不妨从《劳动法》和《劳动合同法》的一些条文入手看看。毕竟这些法律是基础，肯定对这些事情有规定。\n\n首先，哦，对了，先看看劳动法对加班的规定是怎么写的。我记得里面有提到工作时间和加班时间的限制，比如每天不能超过8小时，一周不要超过44小时。还说特殊情况下可以延长工作时间，但是好像得有合理的理由，还得控制时长，而且好像还规定了要支付加班费。<search>劳动法工作时间 加班限制</search>\n\n<information>《劳动法》第36条确实有规定：标准工作时间是每日8小时，每周44小时。第41条也说了，特殊情况下可以延长工作时间，但必须符合法律规定，并且需要支付加班费。</information>\n\n嗯，看来劳动法是有明确规定的，加班的确不能随意安排，特别是超过法律规定的时间。这种安排要么得合理，要么得补偿，否则用人单位的要求可能算违法。\n\n不过话说回来，如果劳动者觉得这个加班违法，拒绝了，用人单位真要借这个理由解除合同的话，那还得看看劳动合同法有没有支持它这么解除。<search>劳动合同法解除合同条件</search>\n\n<information>《劳动合同法》第39条列举了几种用人单位解除劳动合同的合法理由，比如劳动者严重违反规章制度、严重失职导致损害等等，但并没有写拒绝非法加班可以作为解除合同的理由。</information>\n\n哦，这就有点显而易见了。劳动者拒绝违法超时加班应该是受法律保护的，用人单位不能因为这个理由来解除劳动合同。要是它真这么做了，那可能就是违法的非法解除。\n\n另外，看看能不能再确认下这个逻辑。既然第一，法律明确规定了加班时间和补偿的限制；第二，法律没有说明拒绝违法加班是解雇的合法理由，那劳动者拒绝这种行为本身就是合法的。嗯，我觉得从《劳动法》和《劳动合同法》的条文来看，这个问题应该是没问题的。\n\n所以，综上来看，如果劳动者拒绝了违法超时加班安排，用人单位还因此解雇的话，应该算违法，劳动者可以通过法律途径维护自己的权益。\n</Internal Thinking>\n\n<Question>\n劳动者拒绝违法超时加班安排，用人单位能否解除劳动合同\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"确定劳动者的合法权利\",\n      \"content\": \"从劳动法的角度来看，劳动者有权拒绝用人单位提出的违法加班要求。首先需明确相关法律法规是否规定超过法律规定工作时间的加班安排是违法的。需要进一步检索法律依据。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"查找相关劳动法条款\",\n      \"content\": \"中国《劳动法》和《劳动合同法》对此有明确规定，需要核实其中是否明确赋予劳动者拒绝违法超时加班安排的权利，以及这种拒绝是否会为用人单位解除劳动合同提供法定依据。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"检索《劳动法》关于加班的法律规定\",\n      \"content\": \"具体检索中国《劳动法》的相关条款，例如加班安排的时间限制和补偿规定是否明确规定超时加班属于违法行为。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"检索用人单位可解除劳动合同的法定条件\",\n      \"content\": \"查找《劳动合同法》关于用人单位解除劳动合同的规定，确认是否包含因劳动者拒绝违法加班而解除劳动合同。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"法律条款查找结果\",\n      \"content\": \"根据法律条款，《劳动法》第36条规定了标准工时制度（每日工作8小时、每周工作不超过44小时），第41条指出，在特殊情况下可延长工作时间，但需符合法律规定，合理控制时长且需支付加班费。《劳动合同法》第39条则列举了用人单位解除劳动合同的几种明确情况，不包括劳动者拒绝履行违法加班安排的情形。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"综合分析法律保护与逻辑\",\n      \"content\": \"综合分析可知，法律明确规定了标准工作时间，并强调劳动者有拒绝违法加班的权利。从《劳动合同法》第39条可以判断，拒绝违法加班并不属于法定解除劳动合同的条件。因此，用人单位不能合法解除劳动合同。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"根据《劳动法》和《劳动合同法》的规定，劳动者有权拒绝违法超时加班安排，而用人单位无权因此解除劳动合同，否则系违法解除行为，劳动者可以依法要求赔偿或恢复劳动关系。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"通过核查相关法律条文，《劳动法》和《劳动合同法》均支持劳动者拒绝违法超时加班的权利，并未赋予用人单位以此理由解除劳动合同的权利，结论正确。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"嗯，这个问题挺重要的，得好好看看法律怎么说。劳动者拒绝超时加班，用人单位到底能不能解雇呢？我觉得不妨从《劳动法》和《劳动合同法》的一些条文入手看看。毕竟这些法律是基础，肯定对这些事情有规定。\\n\\n首先，哦，对了，先看看劳动法对加班的规定是怎么写的。我记得里面有提到工作时间和加班时间的限制，比如每天不能超过8小时，一周不要超过44小时。还说特殊情况下可以延长工作时间，但是好像得有合理的理由，还得控制时长，而且好像还规定了要支付加班费。<search>劳动法工作时间 加班限制</search>\\n\\n<information>《劳动法》第36条确实有规定：标准工作时间是每日8小时，每周44小时。第41条也说了，特殊情况下可以延长工作时间，但必须符合法律规定，并且需要支付加班费。</information>\\n\\n嗯，看来劳动法是有明确规定的，加班的确不能随意安排，特别是超过法律规定的时间。这种安排要么得合理，要么得补偿，否则用人单位的要求可能算违法。\\n\\n不过话说回来，如果劳动者觉得这个加班违法，拒绝了，用人单位真要借这个理由解除合同的话，那还得看看劳动合同法有没有支持它这么解除。<search>劳动合同法解除合同条件</search>\\n\\n<information>《劳动合同法》第39条列举了几种用人单位解除劳动合同的合法理由，比如劳动者严重违反规章制度、严重失职导致损害等等，但并没有写拒绝非法加班可以作为解除合同的理由。</information>\\n\\n哦，这就有点显而易见了。劳动者拒绝违法超时加班应该是受法律保护的，用人单位不能因为这个理由来解除劳动合同。要是它真这么做了，那可能就是违法的非法解除。\\n\\n另外，看看能不能再确认下这个逻辑。既然第一，法律明确规定了加班时间和补偿的限制；第二，法律没有说明拒绝违法加班是解雇的合法理由，那劳动者拒绝这种行为本身就是合法的。嗯，我觉得从《劳动法》和《劳动合同法》的条文来看，这个问题应该是没问题的。\\n\\n所以，综上来看，如果劳动者拒绝了违法超时加班安排，用人单位还因此解雇的话，应该算违法，劳动者可以通过法律途径维护自己的权益。\"\n}\n```",
+    "根据我国《劳动法》和《劳动合同法》的相关规定，用人单位不能因为劳动者拒绝违法超时加班而解除劳动合同，若以此为由解除劳动合同，则属于违反法律规定，劳动者可以依法维护自身权益。\n\n首先，根据《劳动法》第36条和第41条规定，我国实行标准工时制，工作时间为每天不超过8小时、每周不超过44小时。在特殊情况下虽允许用人单位安排延长工作时间，但必须符合法律规定，例如时间上每月不超过36小时，并且需要支付相应的加班工资。\n\n其次，根据《劳动合同法》第39条的内容，用人单位解除劳动合同需有法定理由，例如劳动者严重违反单位规章制度、严重失职或导致重大损害等。然而，如果劳动者拒绝的加班安排本身不符合法律规定（如超时安排、不支付加班费等），这并不能构成《劳动合同法》第39条中“解除劳动合同”的正当理由。\n\n最后，法律实际上保护劳动者拒绝违法指令的权利。《劳动合同法》第31条明确规定，用人单位不得强迫劳动者加班。劳动者如果拒绝违法超时加班，是维护自己合法权益的表现，而非违反单位规章制度。用人单位若因此解雇劳动者，不仅解雇理由不成立，还可能构成非法解除劳动合同。\n\n如果劳动者因此遭遇非法解除，依据《劳动合同法》第48条，可以要求用人单位继续履行劳动合同或者支付赔偿金。此外，还可以向劳动仲裁委员会申请仲裁，通过法律途径维护自己的合法权益。\n\n综上，劳动者拒绝违法超时加班是受法律保护的，用人单位无权以此为由解除劳动合同。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "确定劳动者的合法权利",
+        "content": "从劳动法的角度来看，劳动者有权拒绝用人单位提出的违法加班要求。首先需明确相关法律法规是否规定超过法律规定工作时间的加班安排是违法的。需要进一步检索法律依据。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "查找相关劳动法条款",
+        "content": "中国《劳动法》和《劳动合同法》对此有明确规定，需要核实其中是否明确赋予劳动者拒绝违法超时加班安排的权利，以及这种拒绝是否会为用人单位解除劳动合同提供法定依据。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "检索《劳动法》关于加班的法律规定",
+        "content": "具体检索中国《劳动法》的相关条款，例如加班安排的时间限制和补偿规定是否明确规定超时加班属于违法行为。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "检索用人单位可解除劳动合同的法定条件",
+        "content": "查找《劳动合同法》关于用人单位解除劳动合同的规定，确认是否包含因劳动者拒绝违法加班而解除劳动合同。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "法律条款查找结果",
+        "content": "根据法律条款，《劳动法》第36条规定了标准工时制度（每日工作8小时、每周工作不超过44小时），第41条指出，在特殊情况下可延长工作时间，但需符合法律规定，合理控制时长且需支付加班费。《劳动合同法》第39条则列举了用人单位解除劳动合同的几种明确情况，不包括劳动者拒绝履行违法加班安排的情形。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "综合分析法律保护与逻辑",
+        "content": "综合分析可知，法律明确规定了标准工作时间，并强调劳动者有拒绝违法加班的权利。从《劳动合同法》第39条可以判断，拒绝违法加班并不属于法定解除劳动合同的条件。因此，用人单位不能合法解除劳动合同。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "根据《劳动法》和《劳动合同法》的规定，劳动者有权拒绝违法超时加班安排，而用人单位无权因此解除劳动合同，否则系违法解除行为，劳动者可以依法要求赔偿或恢复劳动关系。"
+      },
+      {
+        "action": "Verification",
+        "content": "通过核查相关法律条文，《劳动法》和《劳动合同法》均支持劳动者拒绝违法超时加班的权利，并未赋予用人单位以此理由解除劳动合同的权利，结论正确。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "嗯，这个问题挺重要的，得好好看看法律怎么说。劳动者拒绝超时加班，用人单位到底能不能解雇呢？我觉得不妨从《劳动法》和《劳动合同法》的一些条文入手看看。毕竟这些法律是基础，肯定对这些事情有规定。\n\n首先，哦，对了，先看看劳动法对加班的规定是怎么写的。我记得里面有提到工作时间和加班时间的限制，比如每天不能超过8小时，一周不要超过44小时。还说特殊情况下可以延长工作时间，但是好像得有合理的理由，还得控制时长，而且好像还规定了要支付加班费。<search>劳动法工作时间 加班限制</search>\n\n<information>《劳动法》第36条确实有规定：标准工作时间是每日8小时，每周44小时。第41条也说了，特殊情况下可以延长工作时间，但必须符合法律规定，并且需要支付加班费。</information>\n\n嗯，看来劳动法是有明确规定的，加班的确不能随意安排，特别是超过法律规定的时间。这种安排要么得合理，要么得补偿，否则用人单位的要求可能算违法。\n\n不过话说回来，如果劳动者觉得这个加班违法，拒绝了，用人单位真要借这个理由解除合同的话，那还得看看劳动合同法有没有支持它这么解除。<search>劳动合同法解除合同条件</search>\n\n<information>《劳动合同法》第39条列举了几种用人单位解除劳动合同的合法理由，比如劳动者严重违反规章制度、严重失职导致损害等等，但并没有写拒绝非法加班可以作为解除合同的理由。</information>\n\n哦，这就有点显而易见了。劳动者拒绝违法超时加班应该是受法律保护的，用人单位不能因为这个理由来解除劳动合同。要是它真这么做了，那可能就是违法的非法解除。\n\n另外，看看能不能再确认下这个逻辑。既然第一，法律明确规定了加班时间和补偿的限制；第二，法律没有说明拒绝违法加班是解雇的合法理由，那劳动者拒绝这种行为本身就是合法的。嗯，我觉得从《劳动法》和《劳动合同法》的条文来看，这个问题应该是没问题的。\n\n所以，综上来看，如果劳动者拒绝了违法超时加班安排，用人单位还因此解雇的话，应该算违法，劳动者可以通过法律途径维护自己的权益。",
+  "Response": "根据我国《劳动法》和《劳动合同法》的相关规定，用人单位不能因为劳动者拒绝违法超时加班而解除劳动合同，若以此为由解除劳动合同，则属于违反法律规定，劳动者可以依法维护自身权益。\n\n首先，根据《劳动法》第36条和第41条规定，我国实行标准工时制，工作时间为每天不超过8小时、每周不超过44小时。在特殊情况下虽允许用人单位安排延长工作时间，但必须符合法律规定，例如时间上每月不超过36小时，并且需要支付相应的加班工资。\n\n其次，根据《劳动合同法》第39条的内容，用人单位解除劳动合同需有法定理由，例如劳动者严重违反单位规章制度、严重失职或导致重大损害等。然而，如果劳动者拒绝的加班安排本身不符合法律规定（如超时安排、不支付加班费等），这并不能构成《劳动合同法》第39条中“解除劳动合同”的正当理由。\n\n最后，法律实际上保护劳动者拒绝违法指令的权利。《劳动合同法》第31条明确规定，用人单位不得强迫劳动者加班。劳动者如果拒绝违法超时加班，是维护自己合法权益的表现，而非违反单位规章制度。用人单位若因此解雇劳动者，不仅解雇理由不成立，还可能构成非法解除劳动合同。\n\n如果劳动者因此遭遇非法解除，依据《劳动合同法》第48条，可以要求用人单位继续履行劳动合同或者支付赔偿金。此外，还可以向劳动仲裁委员会申请仲裁，通过法律途径维护自己的合法权益。\n\n综上，劳动者拒绝违法超时加班是受法律保护的，用人单位无权以此为由解除劳动合同。",
+  "Question": "劳动者拒绝违法超时加班安排，用人单位能否解除劳动合同"
+}

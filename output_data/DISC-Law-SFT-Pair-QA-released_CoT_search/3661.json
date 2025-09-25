@@ -1,0 +1,89 @@
+{
+  "Open-ended Verifiable Question": "单位要求我去外地工作，可以拒绝吗?",
+  "Ground-True Answer": "可以拒绝，《中华人民共和国劳动法》 第十七条 订立和变更劳动合同，应当遵循平等自愿、协商一致的原则，不得违反法律、行政法规的规定。劳动合同依法订立即具有法律约束力，当事人必须履行劳动合同规定的义务。",
+  "process_id": 3661,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "明确单位是否有权要求员工外派",
+      "content": "需要确定单位要求外地工作的合法性。这可能涉及劳动合同、劳动法对工作地点的约定，以及单位是否获得员工的同意。需查看相关法规以及合同条款对外派工作的规定。<search>劳动合同约定工作地点</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "分析劳动合同约定的工作地点对外派的影响",
+      "content": "<information>劳动合同法规定：工作地点是劳动合同中的必备条款之一，如果工作地点已明确约定，则单位无权单方面更改工作地点或强制员工外派，除非双方协商一致或合同中已有约定的条款允许外派。</information>根据上述信息，如果合同未约定外派条款或需协商一致，员工可以拒绝外派。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "排除特殊情况的影响",
+      "content": "需要确认是否存在特殊情况导致单位有权要求员工外派。例如，合同中是否有明确约定如因工作需要可调配工作地点或者特殊行业如公务员或国企员工可能有义务服从调动。<search>合同约定调岗条款</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "分析调岗条款对外派的约束",
+      "content": "<information>如果劳动合同中存在调岗或地点变更条款，并且调动理由合法合理，例如因企业经营需要或员工岗位调整，则员工可能需服从，但此条款需具有具体约束范围且不能损害员工权益。</information>如果无相关条款，员工有权拒绝外派。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "单位要求员工外派工作的合法性取决于劳动合同是否明确规定该条款或双方协商一致。如果劳动合同约定工作地点并未包含外地工作，且无调岗条款约束，员工可以合法拒绝外派工作。如果合同中有明确调岗或外派条款，员工可能需服从，但单位仍需保证调动理由的合法性与合理性。"
+    },
+    {
+      "action": "Verification",
+      "content": "结论正确，可直接依据劳动合同的约定以及用人单位调岗合理性的法律要求判断员工能否拒绝外派。分析无误，流程结束。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n单位要求我去外地工作，可以拒绝吗?\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n单位要求员工外派工作的合法性取决于劳动合同是否明确规定该条款或双方协商一致。如果劳动合同约定工作地点并未包含外地工作，且无调岗条款约束，员工可以合法拒绝外派工作。如果合同中有明确调岗或外派条款，员工可能需服从，但单位仍需保证调动理由的合法性与合理性。  \n</Model Response>  \n\n<Reference Answer>  \n可以拒绝，《中华人民共和国劳动法》 第十七条 订立和变更劳动合同，应当遵循平等自愿、协商一致的原则，不得违反法律、行政法规的规定。劳动合同依法订立即具有法律约束力，当事人必须履行劳动合同规定的义务。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 明确单位是否有权要求员工外派\n需要确定单位要求外地工作的合法性。这可能涉及劳动合同、劳动法对工作地点的约定，以及单位是否获得员工的同意。需查看相关法规以及合同条款对外派工作的规定。<search>劳动合同约定工作地点</search>\n\n### 分析劳动合同约定的工作地点对外派的影响\n<information>劳动合同法规定：工作地点是劳动合同中的必备条款之一，如果工作地点已明确约定，则单位无权单方面更改工作地点或强制员工外派，除非双方协商一致或合同中已有约定的条款允许外派。</information>根据上述信息，如果合同未约定外派条款或需协商一致，员工可以拒绝外派。\n\n### 排除特殊情况的影响\n需要确认是否存在特殊情况导致单位有权要求员工外派。例如，合同中是否有明确约定如因工作需要可调配工作地点或者特殊行业如公务员或国企员工可能有义务服从调动。<search>合同约定调岗条款</search>\n\n### 分析调岗条款对外派的约束\n<information>如果劳动合同中存在调岗或地点变更条款，并且调动理由合法合理，例如因企业经营需要或员工岗位调整，则员工可能需服从，但此条款需具有具体约束范围且不能损害员工权益。</information>如果无相关条款，员工有权拒绝外派。\n\n### Conclusion\n单位要求员工外派工作的合法性取决于劳动合同是否明确规定该条款或双方协商一致。如果劳动合同约定工作地点并未包含外地工作，且无调岗条款约束，员工可以合法拒绝外派工作。如果合同中有明确调岗或外派条款，员工可能需服从，但单位仍需保证调动理由的合法性与合理性。\n\n### Verification\n结论正确，可直接依据劳动合同的约定以及用人单位调岗合理性的法律要求判断员工能否拒绝外派。分析无误，流程结束。\n</Thought Process>\n\n<Question>\n单位要求我去外地工作，可以拒绝吗?\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n单位让我去外地工作，这让我有点困惑，我到底能不能拒绝呢？嗯，先让我想一下，应该还是跟劳动合同的内容和相关法律有关系吧。要是合同里写得很清楚工作地点是什么地方，那单位应该不能随便让我去别的地方工作才对。那我要看看劳动合同法或者相关规定，来确认这一点。<search>劳动合同约定工作地点</search>\n\n哦，查到了一些信息。<information>劳动合同法规定：工作地点是劳动合同中的必要条款之一，如果劳动合同里明确约定了工作地点，那单位不能单方面改工作地点或者强制让我去外派，除非我同意，或者合同里已经写明可以外派的内容。</information>嗯，这么说的话，如果合同里没有写外派条款，单位就没权利强制我去外地，但如果有相关条款，那我可能得去看条款具体怎么写。\n\n然后，我也不能忽略一些可能的特殊情况。比如说，我的劳动合同里会不会有提到类似‘公司可以根据需要调整岗位或工作地点’之类的内容？或者是不是因为有些行业特殊，比如国企或者公务员岗位，好像确实会有某种‘服从调动’的义务呢？我得再搜一下关于调整岗位或者调动地点的条款规定。<search>合同约定调岗条款</search>\n\n嗯，找到了点相关资料。<information>如果劳动合同中有写到调岗或地点变更的条款，并且是因为企业经营需要或岗位调整等合理合法的原因，那员工可能得服从。但合同里的这些条款不能太宽泛，需要有具体的约束范围，不能损害员工的基本权益。</information>唔，所以说，如果我合同里有类似的调岗或者外派条款，我可能需要根据条款内容和实际情况确认合法性。如果没有这样的内容，我应该可以拒绝外派。\n\n嗯，总结一下，如果我的劳动合同里明确了工作地点而没有提到外派条款，那单位强制我去外地这就不合法，我有权利拒绝。不过，如果劳动合同里有关于调岗或外派的约定，我确实需要看单位的外派理由是否合法合理。比如，是不是因为公司经营需要，还是只是随意安排的。另外，即使有这样的条款，单位还是得保障我的权益，比如薪资待遇有没有变化，外派后是否存在不合理的工作条件等等。\n\n总的来说，关键就在于劳动合同的内容。如果合同没写外派，我当然可以拒绝；如果有写，我再根据条款的具体内容去判断下一步该怎么处理。\n</Internal Thinking>\n\n<Question>\n单位要求我去外地工作，可以拒绝吗?\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"明确单位是否有权要求员工外派\",\n      \"content\": \"需要确定单位要求外地工作的合法性。这可能涉及劳动合同、劳动法对工作地点的约定，以及单位是否获得员工的同意。需查看相关法规以及合同条款对外派工作的规定。<search>劳动合同约定工作地点</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析劳动合同约定的工作地点对外派的影响\",\n      \"content\": \"<information>劳动合同法规定：工作地点是劳动合同中的必备条款之一，如果工作地点已明确约定，则单位无权单方面更改工作地点或强制员工外派，除非双方协商一致或合同中已有约定的条款允许外派。</information>根据上述信息，如果合同未约定外派条款或需协商一致，员工可以拒绝外派。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"排除特殊情况的影响\",\n      \"content\": \"需要确认是否存在特殊情况导致单位有权要求员工外派。例如，合同中是否有明确约定如因工作需要可调配工作地点或者特殊行业如公务员或国企员工可能有义务服从调动。<search>合同约定调岗条款</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析调岗条款对外派的约束\",\n      \"content\": \"<information>如果劳动合同中存在调岗或地点变更条款，并且调动理由合法合理，例如因企业经营需要或员工岗位调整，则员工可能需服从，但此条款需具有具体约束范围且不能损害员工权益。</information>如果无相关条款，员工有权拒绝外派。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"单位要求员工外派工作的合法性取决于劳动合同是否明确规定该条款或双方协商一致。如果劳动合同约定工作地点并未包含外地工作，且无调岗条款约束，员工可以合法拒绝外派工作。如果合同中有明确调岗或外派条款，员工可能需服从，但单位仍需保证调动理由的合法性与合理性。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"结论正确，可直接依据劳动合同的约定以及用人单位调岗合理性的法律要求判断员工能否拒绝外派。分析无误，流程结束。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"单位让我去外地工作，这让我有点困惑，我到底能不能拒绝呢？嗯，先让我想一下，应该还是跟劳动合同的内容和相关法律有关系吧。要是合同里写得很清楚工作地点是什么地方，那单位应该不能随便让我去别的地方工作才对。那我要看看劳动合同法或者相关规定，来确认这一点。<search>劳动合同约定工作地点</search>\\n\\n哦，查到了一些信息。<information>劳动合同法规定：工作地点是劳动合同中的必要条款之一，如果劳动合同里明确约定了工作地点，那单位不能单方面改工作地点或者强制让我去外派，除非我同意，或者合同里已经写明可以外派的内容。</information>嗯，这么说的话，如果合同里没有写外派条款，单位就没权利强制我去外地，但如果有相关条款，那我可能得去看条款具体怎么写。\\n\\n然后，我也不能忽略一些可能的特殊情况。比如说，我的劳动合同里会不会有提到类似‘公司可以根据需要调整岗位或工作地点’之类的内容？或者是不是因为有些行业特殊，比如国企或者公务员岗位，好像确实会有某种‘服从调动’的义务呢？我得再搜一下关于调整岗位或者调动地点的条款规定。<search>合同约定调岗条款</search>\\n\\n嗯，找到了点相关资料。<information>如果劳动合同中有写到调岗或地点变更的条款，并且是因为企业经营需要或岗位调整等合理合法的原因，那员工可能得服从。但合同里的这些条款不能太宽泛，需要有具体的约束范围，不能损害员工的基本权益。</information>唔，所以说，如果我合同里有类似的调岗或者外派条款，我可能需要根据条款内容和实际情况确认合法性。如果没有这样的内容，我应该可以拒绝外派。\\n\\n嗯，总结一下，如果我的劳动合同里明确了工作地点而没有提到外派条款，那单位强制我去外地这就不合法，我有权利拒绝。不过，如果劳动合同里有关于调岗或外派的约定，我确实需要看单位的外派理由是否合法合理。比如，是不是因为公司经营需要，还是只是随意安排的。另外，即使有这样的条款，单位还是得保障我的权益，比如薪资待遇有没有变化，外派后是否存在不合理的工作条件等等。\\n\\n总的来说，关键就在于劳动合同的内容。如果合同没写外派，我当然可以拒绝；如果有写，我再根据条款的具体内容去判断下一步该怎么处理。\"\n}\n```",
+    "单位要求你去外地工作是否可以拒绝，主要取决于你的劳动合同中有没有关于工作地点或外派的具体条款，以及单位外派的理由是否合理合法。\n\n1. **如果劳动合同明确约定了工作地点且没有外派相关条款**  \n   根据《劳动合同法》的规定，工作地点是劳动合同中的必要条款。如果合同中清楚地写明了工作地点，但没有提到可以调整工作地点或外派的条款，单位单方面要求你外派是违法的。在这种情况下，你有权拒绝外派。\n\n2. **如果合同中约定了调岗或外派条款**  \n   如果劳动合同里有关于调岗或外派的条款，比如“公司可根据工作需要调动岗位或工作地点”，那么单位根据这些条款要求你外派可能具有一定的法律依据。但这些条款必须合理具体，不能过于宽泛。如果单位以此为理由安排你外派，还需要保证具体安排符合合法合规的要求，比如外派是否是公司经营需要，是否保障了你的合法权益（如薪资、补贴等），以及外派条件是否合理。\n\n3. **其他特殊情况**  \n   某些行业（如国企或者特殊岗位）可能会有“服从调动”的要求，但即便如此，单位的调动也需要符合合同约定和劳动法规的相关规定。\n\n### 总结\n你能否拒绝外派，关键在于劳动合同的具体内容。如果合同里没有外派相关的条款，你可以拒绝外派。如果合同中有类似条款，你需要结合实际情况和单位的外派理由，判断外派安排是否合法合理。如果对单位要求存在异议，可以与单位沟通协商，必要时寻求劳动仲裁的法律支持。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "明确单位是否有权要求员工外派",
+        "content": "需要确定单位要求外地工作的合法性。这可能涉及劳动合同、劳动法对工作地点的约定，以及单位是否获得员工的同意。需查看相关法规以及合同条款对外派工作的规定。<search>劳动合同约定工作地点</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "分析劳动合同约定的工作地点对外派的影响",
+        "content": "<information>劳动合同法规定：工作地点是劳动合同中的必备条款之一，如果工作地点已明确约定，则单位无权单方面更改工作地点或强制员工外派，除非双方协商一致或合同中已有约定的条款允许外派。</information>根据上述信息，如果合同未约定外派条款或需协商一致，员工可以拒绝外派。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "排除特殊情况的影响",
+        "content": "需要确认是否存在特殊情况导致单位有权要求员工外派。例如，合同中是否有明确约定如因工作需要可调配工作地点或者特殊行业如公务员或国企员工可能有义务服从调动。<search>合同约定调岗条款</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "分析调岗条款对外派的约束",
+        "content": "<information>如果劳动合同中存在调岗或地点变更条款，并且调动理由合法合理，例如因企业经营需要或员工岗位调整，则员工可能需服从，但此条款需具有具体约束范围且不能损害员工权益。</information>如果无相关条款，员工有权拒绝外派。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "单位要求员工外派工作的合法性取决于劳动合同是否明确规定该条款或双方协商一致。如果劳动合同约定工作地点并未包含外地工作，且无调岗条款约束，员工可以合法拒绝外派工作。如果合同中有明确调岗或外派条款，员工可能需服从，但单位仍需保证调动理由的合法性与合理性。"
+      },
+      {
+        "action": "Verification",
+        "content": "结论正确，可直接依据劳动合同的约定以及用人单位调岗合理性的法律要求判断员工能否拒绝外派。分析无误，流程结束。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "单位让我去外地工作，这让我有点困惑，我到底能不能拒绝呢？嗯，先让我想一下，应该还是跟劳动合同的内容和相关法律有关系吧。要是合同里写得很清楚工作地点是什么地方，那单位应该不能随便让我去别的地方工作才对。那我要看看劳动合同法或者相关规定，来确认这一点。<search>劳动合同约定工作地点</search>\n\n哦，查到了一些信息。<information>劳动合同法规定：工作地点是劳动合同中的必要条款之一，如果劳动合同里明确约定了工作地点，那单位不能单方面改工作地点或者强制让我去外派，除非我同意，或者合同里已经写明可以外派的内容。</information>嗯，这么说的话，如果合同里没有写外派条款，单位就没权利强制我去外地，但如果有相关条款，那我可能得去看条款具体怎么写。\n\n然后，我也不能忽略一些可能的特殊情况。比如说，我的劳动合同里会不会有提到类似‘公司可以根据需要调整岗位或工作地点’之类的内容？或者是不是因为有些行业特殊，比如国企或者公务员岗位，好像确实会有某种‘服从调动’的义务呢？我得再搜一下关于调整岗位或者调动地点的条款规定。<search>合同约定调岗条款</search>\n\n嗯，找到了点相关资料。<information>如果劳动合同中有写到调岗或地点变更的条款，并且是因为企业经营需要或岗位调整等合理合法的原因，那员工可能得服从。但合同里的这些条款不能太宽泛，需要有具体的约束范围，不能损害员工的基本权益。</information>唔，所以说，如果我合同里有类似的调岗或者外派条款，我可能需要根据条款内容和实际情况确认合法性。如果没有这样的内容，我应该可以拒绝外派。\n\n嗯，总结一下，如果我的劳动合同里明确了工作地点而没有提到外派条款，那单位强制我去外地这就不合法，我有权利拒绝。不过，如果劳动合同里有关于调岗或外派的约定，我确实需要看单位的外派理由是否合法合理。比如，是不是因为公司经营需要，还是只是随意安排的。另外，即使有这样的条款，单位还是得保障我的权益，比如薪资待遇有没有变化，外派后是否存在不合理的工作条件等等。\n\n总的来说，关键就在于劳动合同的内容。如果合同没写外派，我当然可以拒绝；如果有写，我再根据条款的具体内容去判断下一步该怎么处理。",
+  "Response": "单位要求你去外地工作是否可以拒绝，主要取决于你的劳动合同中有没有关于工作地点或外派的具体条款，以及单位外派的理由是否合理合法。\n\n1. **如果劳动合同明确约定了工作地点且没有外派相关条款**  \n   根据《劳动合同法》的规定，工作地点是劳动合同中的必要条款。如果合同中清楚地写明了工作地点，但没有提到可以调整工作地点或外派的条款，单位单方面要求你外派是违法的。在这种情况下，你有权拒绝外派。\n\n2. **如果合同中约定了调岗或外派条款**  \n   如果劳动合同里有关于调岗或外派的条款，比如“公司可根据工作需要调动岗位或工作地点”，那么单位根据这些条款要求你外派可能具有一定的法律依据。但这些条款必须合理具体，不能过于宽泛。如果单位以此为理由安排你外派，还需要保证具体安排符合合法合规的要求，比如外派是否是公司经营需要，是否保障了你的合法权益（如薪资、补贴等），以及外派条件是否合理。\n\n3. **其他特殊情况**  \n   某些行业（如国企或者特殊岗位）可能会有“服从调动”的要求，但即便如此，单位的调动也需要符合合同约定和劳动法规的相关规定。\n\n### 总结\n你能否拒绝外派，关键在于劳动合同的具体内容。如果合同里没有外派相关的条款，你可以拒绝外派。如果合同中有类似条款，你需要结合实际情况和单位的外派理由，判断外派安排是否合法合理。如果对单位要求存在异议，可以与单位沟通协商，必要时寻求劳动仲裁的法律支持。",
+  "Question": "单位要求我去外地工作，可以拒绝吗?"
+}

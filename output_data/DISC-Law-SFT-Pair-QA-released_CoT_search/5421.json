@@ -1,0 +1,99 @@
+{
+  "Open-ended Verifiable Question": "房屋买卖延迟交付的风险防范有哪些？",
+  "Ground-True Answer": "一、签订买卖合同时，对购房款的支付方式和期限、延迟过户的原因、产权过户时限、双方过户的配合义务等提前作出明确约定。\n二、在房屋买卖合同中明确约定因卖方原因导致买方无法取得房屋产权的违约情形和违约责任。\n三、买方在购买二手房时，要尽可能全面地审查房屋真实权属情况，应当选择正规中介机构进行审查。比如拆迁安置房存在夫妻或家庭成员共同共有的情形下，可要求夫妻双方或家庭共有成员共同在房屋买卖协议中签字确认。\n四、如果实际履行过程中出现了可能导致延迟过户的情形，应及时与对方进行沟通协商，保留双方就该新情形协商达成一致意见的相关证据，最好就协商结果签订补充协议。",
+  "process_id": 5421,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "识别风险来源",
+      "content": "房屋买卖延迟交付的风险通常源于开发商违约、建筑施工拖延或法律纠纷导致的交付推迟。买方需要评估合同条款是否对交付时间作了明确规定，以及对延迟交付的赔偿有无详尽约定。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "分析合同条款",
+      "content": "合同是买卖双方权利义务的依据。如果合同中未对交付时间及违约责任有详细规定，则买方可能在维权时遇到困难。需要检查合同是否明确规定交付日期以及开发商迟交房的违约金条款。<search>房屋买卖合同交付条款</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "核查法律法规",
+      "content": "进一步明确相关的法律法规支持，例如有关房屋买卖中的交付时间规定是否受到《商品房买卖合同司法解释》的约束。检查是否有相关法条规定延期交付应赔偿的情况。<search>商品房买卖合同司法解释</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "制定防范措施",
+      "content": "根据查找到的信息，防范措施应包括：1) 签订合同时明确交付时限及违约责任条款；2) 定期跟踪施工进度；3) 如延迟交付发生，依法追究开发商责任；4) 可选择购买相关保险保障延迟交付风险。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "验证法律支持",
+      "content": "<information>《商品房买卖合同司法解释》中规定，开发商逾期交房须承担违约责任，通常包括支付违约金或赔偿损失。同时，合同中应明确交付时间及赔偿机制。</information>基于此信息，合同条款的完善可有效防范延迟交付风险，法律条款也提供了维权依据。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "房屋买卖延迟交付的风险防范措施包括：1) 签订合同时明确交付时限及违约责任条款，如开发商延迟交房需支付违约金；2) 定期与开发商沟通了解施工进度；3) 若开发商违约，及时依据合同及法律规定追究其责任；4) 购买延迟交付保险作为补充保障措施。此外，应全面了解有关《商品房买卖合同司法解释》等法律法规，以增强法律维权能力。"
+    },
+    {
+      "action": "Verification",
+      "content": "通过分析风险来源和法律依据，以及确认合同条款的具体规定，得出的防范措施完整且合理，能够有效应对房屋买卖延迟交付的情况。因此结论成立，方案无需进一步修改。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n房屋买卖延迟交付的风险防范有哪些？\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n房屋买卖延迟交付的风险防范措施包括：1) 签订合同时明确交付时限及违约责任条款，如开发商延迟交房需支付违约金；2) 定期与开发商沟通了解施工进度；3) 若开发商违约，及时依据合同及法律规定追究其责任；4) 购买延迟交付保险作为补充保障措施。此外，应全面了解有关《商品房买卖合同司法解释》等法律法规，以增强法律维权能力。  \n</Model Response>  \n\n<Reference Answer>  \n一、签订买卖合同时，对购房款的支付方式和期限、延迟过户的原因、产权过户时限、双方过户的配合义务等提前作出明确约定。\n二、在房屋买卖合同中明确约定因卖方原因导致买方无法取得房屋产权的违约情形和违约责任。\n三、买方在购买二手房时，要尽可能全面地审查房屋真实权属情况，应当选择正规中介机构进行审查。比如拆迁安置房存在夫妻或家庭成员共同共有的情形下，可要求夫妻双方或家庭共有成员共同在房屋买卖协议中签字确认。\n四、如果实际履行过程中出现了可能导致延迟过户的情形，应及时与对方进行沟通协商，保留双方就该新情形协商达成一致意见的相关证据，最好就协商结果签订补充协议。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 识别风险来源\n房屋买卖延迟交付的风险通常源于开发商违约、建筑施工拖延或法律纠纷导致的交付推迟。买方需要评估合同条款是否对交付时间作了明确规定，以及对延迟交付的赔偿有无详尽约定。\n\n### 分析合同条款\n合同是买卖双方权利义务的依据。如果合同中未对交付时间及违约责任有详细规定，则买方可能在维权时遇到困难。需要检查合同是否明确规定交付日期以及开发商迟交房的违约金条款。<search>房屋买卖合同交付条款</search>\n\n### 核查法律法规\n进一步明确相关的法律法规支持，例如有关房屋买卖中的交付时间规定是否受到《商品房买卖合同司法解释》的约束。检查是否有相关法条规定延期交付应赔偿的情况。<search>商品房买卖合同司法解释</search>\n\n### 制定防范措施\n根据查找到的信息，防范措施应包括：1) 签订合同时明确交付时限及违约责任条款；2) 定期跟踪施工进度；3) 如延迟交付发生，依法追究开发商责任；4) 可选择购买相关保险保障延迟交付风险。\n\n### 验证法律支持\n<information>《商品房买卖合同司法解释》中规定，开发商逾期交房须承担违约责任，通常包括支付违约金或赔偿损失。同时，合同中应明确交付时间及赔偿机制。</information>基于此信息，合同条款的完善可有效防范延迟交付风险，法律条款也提供了维权依据。\n\n### Conclusion\n房屋买卖延迟交付的风险防范措施包括：1) 签订合同时明确交付时限及违约责任条款，如开发商延迟交房需支付违约金；2) 定期与开发商沟通了解施工进度；3) 若开发商违约，及时依据合同及法律规定追究其责任；4) 购买延迟交付保险作为补充保障措施。此外，应全面了解有关《商品房买卖合同司法解释》等法律法规，以增强法律维权能力。\n\n### Verification\n通过分析风险来源和法律依据，以及确认合同条款的具体规定，得出的防范措施完整且合理，能够有效应对房屋买卖延迟交付的情况。因此结论成立，方案无需进一步修改。\n</Thought Process>\n\n<Question>\n房屋买卖延迟交付的风险防范有哪些？\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n嗯，房屋买卖的延迟交付好像是一个挺常见的问题，得好好分析一下风险来源。延迟可能是开发商违约，比如资金出了问题，或者建筑进展太慢导致拖延；也可能是因为什么法律纠纷，比如土地使用权问题或者规划变更。这些都得考虑进去。那么接下来，得看合同有没有把这些重要的信息涵盖进去。尤其是交付时间和违约责任的部分，如果里面模糊不清，那买方维权时就惨了。嗯，我还是查一下合同交付条款看看最好怎么写比较稳妥吧。<search>房屋买卖合同交付条款</search>\n\n哦，合同内容查清楚了后还不能停，买房子这种事法律肯定是基础啊。我记得好像有一个《商品房买卖合同司法解释》，里面应该有相关规定。如果开发商延期，是不是得赔偿违约金或者额外损失？我得确认一下，看看法律对这种情况是怎么说的。<search>商品房买卖合同司法解释</search>\n\n好了，继续思考下，要怎么防范这个问题呢？签合同的时候不能马虎，一定要明确规定交付日期和违约责任，比如开发商逾期交房时该赔多少钱、赔多久。还得注意施工是否按计划推进，多和开发商沟通，这样有问题也能早发现早解决。如果真发生了延迟交付，那责任追究一定得靠合同和法律维权。还有一个选项，我想如果特别担心风险，保险有没有什么相关产品，比如延迟交付保险，这样安全系数应该高些。我觉得这个方法可以加进去。\n\n哦，对了，刚刚搜索的《商品房买卖合同司法解释》结果很有用。<information>这是明确规定的，开发商如果逾期交房，是需要承担违约责任的，通常包括支付违约金或者赔偿买方的其他损失。同时还能看到合同中明确要求写交付终止时间和赔偿机制，这是法律支持的。</information>既然法律明确支持，那只要合同写得详细合理，比如加入法律条款要求开发商负全责，风险就大大减少了。\n\n这么一圈下来，我觉得总结下吧。防范房屋买卖延迟交付的风险其实挺清楚了：第一，签合同时必须明确交付日期，违约责任也要写清楚，比如延迟交房开发商要赔付违约金这样的条款；第二，闲时得多注意施工进度，这样能预测有无延迟的可能；第三，如果真的发生延期，就得赶紧拿合同和法律上规规定追究开发商的责任，这是底线；第四可以考虑买相关保险作为补充保障。另外，也要搞清楚法律支持点，比如《商品房买卖合同司法解释》里提到的内容，可以增强自己维权的把握。其实只要认真检查每一步，出问题的可能性就能降得很低。\n</Internal Thinking>\n\n<Question>\n房屋买卖延迟交付的风险防范有哪些？\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"识别风险来源\",\n      \"content\": \"房屋买卖延迟交付的风险通常源于开发商违约、建筑施工拖延或法律纠纷导致的交付推迟。买方需要评估合同条款是否对交付时间作了明确规定，以及对延迟交付的赔偿有无详尽约定。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析合同条款\",\n      \"content\": \"合同是买卖双方权利义务的依据。如果合同中未对交付时间及违约责任有详细规定，则买方可能在维权时遇到困难。需要检查合同是否明确规定交付日期以及开发商迟交房的违约金条款。<search>房屋买卖合同交付条款</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"核查法律法规\",\n      \"content\": \"进一步明确相关的法律法规支持，例如有关房屋买卖中的交付时间规定是否受到《商品房买卖合同司法解释》的约束。检查是否有相关法条规定延期交付应赔偿的情况。<search>商品房买卖合同司法解释</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"制定防范措施\",\n      \"content\": \"根据查找到的信息，防范措施应包括：1) 签订合同时明确交付时限及违约责任条款；2) 定期跟踪施工进度；3) 如延迟交付发生，依法追究开发商责任；4) 可选择购买相关保险保障延迟交付风险。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"验证法律支持\",\n      \"content\": \"<information>《商品房买卖合同司法解释》中规定，开发商逾期交房须承担违约责任，通常包括支付违约金或赔偿损失。同时，合同中应明确交付时间及赔偿机制。</information>基于此信息，合同条款的完善可有效防范延迟交付风险，法律条款也提供了维权依据。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"房屋买卖延迟交付的风险防范措施包括：1) 签订合同时明确交付时限及违约责任条款，如开发商延迟交房需支付违约金；2) 定期与开发商沟通了解施工进度；3) 若开发商违约，及时依据合同及法律规定追究其责任；4) 购买延迟交付保险作为补充保障措施。此外，应全面了解有关《商品房买卖合同司法解释》等法律法规，以增强法律维权能力。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"通过分析风险来源和法律依据，以及确认合同条款的具体规定，得出的防范措施完整且合理，能够有效应对房屋买卖延迟交付的情况。因此结论成立，方案无需进一步修改。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"嗯，房屋买卖的延迟交付好像是一个挺常见的问题，得好好分析一下风险来源。延迟可能是开发商违约，比如资金出了问题，或者建筑进展太慢导致拖延；也可能是因为什么法律纠纷，比如土地使用权问题或者规划变更。这些都得考虑进去。那么接下来，得看合同有没有把这些重要的信息涵盖进去。尤其是交付时间和违约责任的部分，如果里面模糊不清，那买方维权时就惨了。嗯，我还是查一下合同交付条款看看最好怎么写比较稳妥吧。<search>房屋买卖合同交付条款</search>\\n\\n哦，合同内容查清楚了后还不能停，买房子这种事法律肯定是基础啊。我记得好像有一个《商品房买卖合同司法解释》，里面应该有相关规定。如果开发商延期，是不是得赔偿违约金或者额外损失？我得确认一下，看看法律对这种情况是怎么说的。<search>商品房买卖合同司法解释</search>\\n\\n好了，继续思考下，要怎么防范这个问题呢？签合同的时候不能马虎，一定要明确规定交付日期和违约责任，比如开发商逾期交房时该赔多少钱、赔多久。还得注意施工是否按计划推进，多和开发商沟通，这样有问题也能早发现早解决。如果真发生了延迟交付，那责任追究一定得靠合同和法律维权。还有一个选项，我想如果特别担心风险，保险有没有什么相关产品，比如延迟交付保险，这样安全系数应该高些。我觉得这个方法可以加进去。\\n\\n哦，对了，刚刚搜索的《商品房买卖合同司法解释》结果很有用。<information>这是明确规定的，开发商如果逾期交房，是需要承担违约责任的，通常包括支付违约金或者赔偿买方的其他损失。同时还能看到合同中明确要求写交付终止时间和赔偿机制，这是法律支持的。</information>既然法律明确支持，那只要合同写得详细合理，比如加入法律条款要求开发商负全责，风险就大大减少了。\\n\\n这么一圈下来，我觉得总结下吧。防范房屋买卖延迟交付的风险其实挺清楚了：第一，签合同时必须明确交付日期，违约责任也要写清楚，比如延迟交房开发商要赔付违约金这样的条款；第二，闲时得多注意施工进度，这样能预测有无延迟的可能；第三，如果真的发生延期，就得赶紧拿合同和法律上规规定追究开发商的责任，这是底线；第四可以考虑买相关保险作为补充保障。另外，也要搞清楚法律支持点，比如《商品房买卖合同司法解释》里提到的内容，可以增强自己维权的把握。其实只要认真检查每一步，出问题的可能性就能降得很低。\"\n}\n```",
+    "房屋买卖延迟交付的风险防范可以从以下几个方面入手：\n\n1. **明确合同条款**  \n   签订合同时务必仔细审阅并明确交付时间、违约责任及赔偿机制。这些条款必须具体且符合法律规定。例如，合同中可约定开发商逾期交房需支付违约金，同时写明赔偿金额的计算方式及最终交付的截止日期。参考《商品房买卖合同司法解释》中的规定，可以要求开发商承担因延迟交付造成的损失。\n\n2. **关注开发商信誉与资质**  \n   在购房前应调查开发商的背景和履约能力，尤其是过往楼盘是否存在延期交付、工程停滞等情况。同时，也可以通过了解开发商资金状况和项目的合法性，进一步降低风险。\n\n3. **实时跟踪项目进度**  \n   房屋建设期间应密切关注施工进度并与开发商保持沟通。有必要时，可要求开发商提供施工进度报告或现场核查，以便及时发现潜在问题。\n\n4. **利用法律维护权益**  \n   若发生延迟交付，应根据合同条款和法律规定向开发商追究责任。依据《商品房买卖合同司法解释》，可主张违约金赔偿或其他实际损失，同时保留相关证据以保护自身权益。\n\n5. **购买相关保险**  \n   为降低意外损失的可能性，可以考虑购买延迟交付保险。这类保险能在开发商违约时提供额外的经济保障，是一种有效的补充手段。\n\n综上所述，防范房屋买卖延迟交付的关键是确保合同条款清晰、选择信誉良好的开发商、积极监督施工进展，并在必要时通过法律维权。在条件允许的情况下，保险也可作为风险管理的补充手段。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "识别风险来源",
+        "content": "房屋买卖延迟交付的风险通常源于开发商违约、建筑施工拖延或法律纠纷导致的交付推迟。买方需要评估合同条款是否对交付时间作了明确规定，以及对延迟交付的赔偿有无详尽约定。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "分析合同条款",
+        "content": "合同是买卖双方权利义务的依据。如果合同中未对交付时间及违约责任有详细规定，则买方可能在维权时遇到困难。需要检查合同是否明确规定交付日期以及开发商迟交房的违约金条款。<search>房屋买卖合同交付条款</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "核查法律法规",
+        "content": "进一步明确相关的法律法规支持，例如有关房屋买卖中的交付时间规定是否受到《商品房买卖合同司法解释》的约束。检查是否有相关法条规定延期交付应赔偿的情况。<search>商品房买卖合同司法解释</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "制定防范措施",
+        "content": "根据查找到的信息，防范措施应包括：1) 签订合同时明确交付时限及违约责任条款；2) 定期跟踪施工进度；3) 如延迟交付发生，依法追究开发商责任；4) 可选择购买相关保险保障延迟交付风险。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "验证法律支持",
+        "content": "<information>《商品房买卖合同司法解释》中规定，开发商逾期交房须承担违约责任，通常包括支付违约金或赔偿损失。同时，合同中应明确交付时间及赔偿机制。</information>基于此信息，合同条款的完善可有效防范延迟交付风险，法律条款也提供了维权依据。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "房屋买卖延迟交付的风险防范措施包括：1) 签订合同时明确交付时限及违约责任条款，如开发商延迟交房需支付违约金；2) 定期与开发商沟通了解施工进度；3) 若开发商违约，及时依据合同及法律规定追究其责任；4) 购买延迟交付保险作为补充保障措施。此外，应全面了解有关《商品房买卖合同司法解释》等法律法规，以增强法律维权能力。"
+      },
+      {
+        "action": "Verification",
+        "content": "通过分析风险来源和法律依据，以及确认合同条款的具体规定，得出的防范措施完整且合理，能够有效应对房屋买卖延迟交付的情况。因此结论成立，方案无需进一步修改。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "嗯，房屋买卖的延迟交付好像是一个挺常见的问题，得好好分析一下风险来源。延迟可能是开发商违约，比如资金出了问题，或者建筑进展太慢导致拖延；也可能是因为什么法律纠纷，比如土地使用权问题或者规划变更。这些都得考虑进去。那么接下来，得看合同有没有把这些重要的信息涵盖进去。尤其是交付时间和违约责任的部分，如果里面模糊不清，那买方维权时就惨了。嗯，我还是查一下合同交付条款看看最好怎么写比较稳妥吧。<search>房屋买卖合同交付条款</search>\n\n哦，合同内容查清楚了后还不能停，买房子这种事法律肯定是基础啊。我记得好像有一个《商品房买卖合同司法解释》，里面应该有相关规定。如果开发商延期，是不是得赔偿违约金或者额外损失？我得确认一下，看看法律对这种情况是怎么说的。<search>商品房买卖合同司法解释</search>\n\n好了，继续思考下，要怎么防范这个问题呢？签合同的时候不能马虎，一定要明确规定交付日期和违约责任，比如开发商逾期交房时该赔多少钱、赔多久。还得注意施工是否按计划推进，多和开发商沟通，这样有问题也能早发现早解决。如果真发生了延迟交付，那责任追究一定得靠合同和法律维权。还有一个选项，我想如果特别担心风险，保险有没有什么相关产品，比如延迟交付保险，这样安全系数应该高些。我觉得这个方法可以加进去。\n\n哦，对了，刚刚搜索的《商品房买卖合同司法解释》结果很有用。<information>这是明确规定的，开发商如果逾期交房，是需要承担违约责任的，通常包括支付违约金或者赔偿买方的其他损失。同时还能看到合同中明确要求写交付终止时间和赔偿机制，这是法律支持的。</information>既然法律明确支持，那只要合同写得详细合理，比如加入法律条款要求开发商负全责，风险就大大减少了。\n\n这么一圈下来，我觉得总结下吧。防范房屋买卖延迟交付的风险其实挺清楚了：第一，签合同时必须明确交付日期，违约责任也要写清楚，比如延迟交房开发商要赔付违约金这样的条款；第二，闲时得多注意施工进度，这样能预测有无延迟的可能；第三，如果真的发生延期，就得赶紧拿合同和法律上规规定追究开发商的责任，这是底线；第四可以考虑买相关保险作为补充保障。另外，也要搞清楚法律支持点，比如《商品房买卖合同司法解释》里提到的内容，可以增强自己维权的把握。其实只要认真检查每一步，出问题的可能性就能降得很低。",
+  "Response": "房屋买卖延迟交付的风险防范可以从以下几个方面入手：\n\n1. **明确合同条款**  \n   签订合同时务必仔细审阅并明确交付时间、违约责任及赔偿机制。这些条款必须具体且符合法律规定。例如，合同中可约定开发商逾期交房需支付违约金，同时写明赔偿金额的计算方式及最终交付的截止日期。参考《商品房买卖合同司法解释》中的规定，可以要求开发商承担因延迟交付造成的损失。\n\n2. **关注开发商信誉与资质**  \n   在购房前应调查开发商的背景和履约能力，尤其是过往楼盘是否存在延期交付、工程停滞等情况。同时，也可以通过了解开发商资金状况和项目的合法性，进一步降低风险。\n\n3. **实时跟踪项目进度**  \n   房屋建设期间应密切关注施工进度并与开发商保持沟通。有必要时，可要求开发商提供施工进度报告或现场核查，以便及时发现潜在问题。\n\n4. **利用法律维护权益**  \n   若发生延迟交付，应根据合同条款和法律规定向开发商追究责任。依据《商品房买卖合同司法解释》，可主张违约金赔偿或其他实际损失，同时保留相关证据以保护自身权益。\n\n5. **购买相关保险**  \n   为降低意外损失的可能性，可以考虑购买延迟交付保险。这类保险能在开发商违约时提供额外的经济保障，是一种有效的补充手段。\n\n综上所述，防范房屋买卖延迟交付的关键是确保合同条款清晰、选择信誉良好的开发商、积极监督施工进展，并在必要时通过法律维权。在条件允许的情况下，保险也可作为风险管理的补充手段。",
+  "Question": "房屋买卖延迟交付的风险防范有哪些？"
+}

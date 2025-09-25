@@ -1,0 +1,99 @@
+{
+  "Open-ended Verifiable Question": "如何处理房屋租赁合同的违约问题？",
+  "Ground-True Answer": "房屋租赁合同的违约问题是在租赁市场中常见的挑战之一。当租客或房东无法遵守租赁合同的条款时，可能会导致纠纷和法律争议。",
+  "process_id": 5139,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "明确违约的具体内容",
+      "content": "首先需要明确房屋租赁合同中的违约行为，比如未支付租金、提前解除合同或者未按合同约定使用房屋等。这些行为是否符合合同中定义的违约条款？"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "分析合同的违约条款及法律法规",
+      "content": "分析租赁合同中的具体违约条款，查看合同是否有明确规定违约责任及赔偿标准。必须理解这些条款在法律上的效力。可能需要查阅相关法律法规，例如《中华人民共和国合同法》中对租赁合同的规定。<search>租赁合同 违约责任 合同法</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "查找相关法律和规定",
+      "content": "<information>根据《中华人民共和国合同法》第114条，违约责任可以采取赔偿损失的形式，如果合同中约定了违约金或具体赔偿标准，必须按照合同约定执行。</information>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "确定处理方式",
+      "content": "根据违约类型，可以采取以下行动：1. 弥补损失（如要求支付拖欠租金）；2. 要求赔偿（如提前解除合同导致的损失）；3. 提起法律诉讼（如果协商无效）。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "是否寻求仲裁或起诉",
+      "content": "如果双方无法以协商方式解决问题，需判断是否可以通过仲裁或起诉解决纠纷。根据中国法律，租赁合同纠纷可以寻求民事诉讼解决。需要准备相关证据支持诉讼，例如合同原件、违约行为记录等。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "处理房屋租赁合同的违约问题可以分以下步骤：首先明确违约行为及合同约定的违约责任；其次依据相关法律法规分析处理方法；再进行协商处理或要求弥补损失；最后若协商未果，可通过仲裁或法律诉讼寻求解决。"
+    },
+    {
+      "action": "Verification",
+      "content": "结论合理，步骤涵盖了明确违约行为、分析合同条款、寻求解决方案以及法律途径等关键环节，符合处理租赁合同违约问题的逻辑流程。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n如何处理房屋租赁合同的违约问题？\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n处理房屋租赁合同的违约问题可以分以下步骤：首先明确违约行为及合同约定的违约责任；其次依据相关法律法规分析处理方法；再进行协商处理或要求弥补损失；最后若协商未果，可通过仲裁或法律诉讼寻求解决。  \n</Model Response>  \n\n<Reference Answer>  \n房屋租赁合同的违约问题是在租赁市场中常见的挑战之一。当租客或房东无法遵守租赁合同的条款时，可能会导致纠纷和法律争议。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 明确违约的具体内容\n首先需要明确房屋租赁合同中的违约行为，比如未支付租金、提前解除合同或者未按合同约定使用房屋等。这些行为是否符合合同中定义的违约条款？\n\n### 分析合同的违约条款及法律法规\n分析租赁合同中的具体违约条款，查看合同是否有明确规定违约责任及赔偿标准。必须理解这些条款在法律上的效力。可能需要查阅相关法律法规，例如《中华人民共和国合同法》中对租赁合同的规定。<search>租赁合同 违约责任 合同法</search>\n\n### 查找相关法律和规定\n<information>根据《中华人民共和国合同法》第114条，违约责任可以采取赔偿损失的形式，如果合同中约定了违约金或具体赔偿标准，必须按照合同约定执行。</information>\n\n### 确定处理方式\n根据违约类型，可以采取以下行动：1. 弥补损失（如要求支付拖欠租金）；2. 要求赔偿（如提前解除合同导致的损失）；3. 提起法律诉讼（如果协商无效）。\n\n### 是否寻求仲裁或起诉\n如果双方无法以协商方式解决问题，需判断是否可以通过仲裁或起诉解决纠纷。根据中国法律，租赁合同纠纷可以寻求民事诉讼解决。需要准备相关证据支持诉讼，例如合同原件、违约行为记录等。\n\n### Conclusion\n处理房屋租赁合同的违约问题可以分以下步骤：首先明确违约行为及合同约定的违约责任；其次依据相关法律法规分析处理方法；再进行协商处理或要求弥补损失；最后若协商未果，可通过仲裁或法律诉讼寻求解决。\n\n### Verification\n结论合理，步骤涵盖了明确违约行为、分析合同条款、寻求解决方案以及法律途径等关键环节，符合处理租赁合同违约问题的逻辑流程。\n</Thought Process>\n\n<Question>\n如何处理房屋租赁合同的违约问题？\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n嗯，首先得搞清楚房屋租赁合同到底是哪方面违约。比如是拖欠租金呢？还是提前解除了合同？又或者是没有按照合同约定合理使用房屋？这些具体行为都得对照合同上的条款来确认才行。我得先看看合同里对违约行为是怎么定义的。<search>租赁合同 违约责任 合同法</search>\n\n找到了点信息，《中华人民共和国合同法》第114条提到违约责任可以通过赔偿损失来解决。如果合同里有约定违约金或者赔偿标准，那就得按照合同上的约定来执行。嗯，这说明合同里的条款挺重要，得好好看看这些条款有没有明确的责任和赔偿相关的规定。\n\n然后，就是分析一下这些条款实际上在法律上有没有效力。合同法好像是一个比较基础的依据，但是具体的租赁合同纠纷处理应该也要符合当地的法律规定吧。而且根据这条法律，赔偿的形式或者金额也是可以商量的，或者协商之后进行调整。但前提还是得先确定对方是否真的违约。\n\n考虑到违约行为，这时候可以试试用协商的方式解决问题。如果是拖欠租金，那是不是可以要求继续支付欠款？如果是提前解除了合同，那需要看这种情况下会导致什么具体损失，比如有没有空置时间或者其他额外费用。我觉得这种问题如果双方可以坐下来好好谈，或许能轻松解决，一般谁都不愿意闹到法院去嘛。\n\n不过啊，万一双方谈不拢，就得考虑走法律程序了。像这种租赁合同纠纷，可以提起民事诉讼。仲裁也是一种方式，但具体要选哪个得看合同里有没有约定仲裁条款。对了，还得注意准备好相关证据。像合同原件、付款记录、违约的证据截图或者照片，这些都是要提交给法院或者仲裁委员会的，可以提前整理好。\n\n所以看起来，处理这个问题其实就是几步：第一步明确违约行为是什么，根据合同来确认它是不是符合违约定义；第二步研究合同里的违约条款和责任，看看法律上对这些条款怎么解释；然后尝试先协商解决，要求弥补损失；要是协商无果，就得准备证据，选择仲裁或者提起诉讼。嗯，整个流程逻辑还挺清晰的，这样应该能弄清楚怎么处理了。\n</Internal Thinking>\n\n<Question>\n如何处理房屋租赁合同的违约问题？\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"明确违约的具体内容\",\n      \"content\": \"首先需要明确房屋租赁合同中的违约行为，比如未支付租金、提前解除合同或者未按合同约定使用房屋等。这些行为是否符合合同中定义的违约条款？\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析合同的违约条款及法律法规\",\n      \"content\": \"分析租赁合同中的具体违约条款，查看合同是否有明确规定违约责任及赔偿标准。必须理解这些条款在法律上的效力。可能需要查阅相关法律法规，例如《中华人民共和国合同法》中对租赁合同的规定。<search>租赁合同 违约责任 合同法</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"查找相关法律和规定\",\n      \"content\": \"<information>根据《中华人民共和国合同法》第114条，违约责任可以采取赔偿损失的形式，如果合同中约定了违约金或具体赔偿标准，必须按照合同约定执行。</information>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"确定处理方式\",\n      \"content\": \"根据违约类型，可以采取以下行动：1. 弥补损失（如要求支付拖欠租金）；2. 要求赔偿（如提前解除合同导致的损失）；3. 提起法律诉讼（如果协商无效）。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"是否寻求仲裁或起诉\",\n      \"content\": \"如果双方无法以协商方式解决问题，需判断是否可以通过仲裁或起诉解决纠纷。根据中国法律，租赁合同纠纷可以寻求民事诉讼解决。需要准备相关证据支持诉讼，例如合同原件、违约行为记录等。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"处理房屋租赁合同的违约问题可以分以下步骤：首先明确违约行为及合同约定的违约责任；其次依据相关法律法规分析处理方法；再进行协商处理或要求弥补损失；最后若协商未果，可通过仲裁或法律诉讼寻求解决。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"结论合理，步骤涵盖了明确违约行为、分析合同条款、寻求解决方案以及法律途径等关键环节，符合处理租赁合同违约问题的逻辑流程。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"嗯，首先得搞清楚房屋租赁合同到底是哪方面违约。比如是拖欠租金呢？还是提前解除了合同？又或者是没有按照合同约定合理使用房屋？这些具体行为都得对照合同上的条款来确认才行。我得先看看合同里对违约行为是怎么定义的。<search>租赁合同 违约责任 合同法</search>\\n\\n找到了点信息，《中华人民共和国合同法》第114条提到违约责任可以通过赔偿损失来解决。如果合同里有约定违约金或者赔偿标准，那就得按照合同上的约定来执行。嗯，这说明合同里的条款挺重要，得好好看看这些条款有没有明确的责任和赔偿相关的规定。\\n\\n然后，就是分析一下这些条款实际上在法律上有没有效力。合同法好像是一个比较基础的依据，但是具体的租赁合同纠纷处理应该也要符合当地的法律规定吧。而且根据这条法律，赔偿的形式或者金额也是可以商量的，或者协商之后进行调整。但前提还是得先确定对方是否真的违约。\\n\\n考虑到违约行为，这时候可以试试用协商的方式解决问题。如果是拖欠租金，那是不是可以要求继续支付欠款？如果是提前解除了合同，那需要看这种情况下会导致什么具体损失，比如有没有空置时间或者其他额外费用。我觉得这种问题如果双方可以坐下来好好谈，或许能轻松解决，一般谁都不愿意闹到法院去嘛。\\n\\n不过啊，万一双方谈不拢，就得考虑走法律程序了。像这种租赁合同纠纷，可以提起民事诉讼。仲裁也是一种方式，但具体要选哪个得看合同里有没有约定仲裁条款。对了，还得注意准备好相关证据。像合同原件、付款记录、违约的证据截图或者照片，这些都是要提交给法院或者仲裁委员会的，可以提前整理好。\\n\\n所以看起来，处理这个问题其实就是几步：第一步明确违约行为是什么，根据合同来确认它是不是符合违约定义；第二步研究合同里的违约条款和责任，看看法律上对这些条款怎么解释；然后尝试先协商解决，要求弥补损失；要是协商无果，就得准备证据，选择仲裁或者提起诉讼。嗯，整个流程逻辑还挺清晰的，这样应该能弄清楚怎么处理了。\"\n}\n```",
+    "处理房屋租赁合同违约问题的关键在于明确违约行为并按照合同及法律规定采取相应的措施。以下是具体的处理步骤：\n\n### 1. **明确违约行为**  \n首先需要确认对方的具体违约行为，常见的违约情形包括：  \n- 拖欠租金或未按时支付租金；  \n- 提前解除合同或擅自退租；  \n- 未按照合同约定合理使用房屋（如违法转租、对房屋造成损坏等）。  \n\n您需要对照合同中的相关条款，判断对方的行为是否已构成违约。\n\n### 2. **核查合同条款**  \n查看合同中对于违约责任的具体约定，包括：  \n- 是否有规定违约金的金额或计算方式；  \n- 对于违约行为是否明确了补救或赔偿标准；  \n- 是否约定了争议解决方式（如仲裁或诉讼）。\n\n如果合同中有清晰约定，优先按照合同执行；如果条款过于模糊，则需依据相关法律（如《中华人民共和国民法典》等）确定责任。\n\n### 3. **尝试协商解决**  \n在处理合同纠纷时，协商往往是第一步。建议您与对方沟通，明确说明其违约行为以及违约可能导致的法律后果，要求对方履行其责任，例如补缴租金、支付违约金或赔偿损失等。如果双方沟通顺畅，问题可能会得到快速解决，避免进一步升级纠纷。\n\n### 4. **准备相关证据**  \n如果协商无果，需要进入正式的法律程序，则需准备充分的证据支持您的主张。包括但不限于：  \n- 房屋租赁合同原件；  \n- 租金支付记录（如转账凭证、收据等）；  \n- 对方违约的相关证据（如拖欠租金的记录、提前退租通知、房屋损坏照片等）。  \n\n证据是维权的基础，应尽量确保真实、完整和明确。\n\n### 5. **采取法律手段**  \n如果无法通过协商解决问题，可选择如下法律途径：  \n- **仲裁**：如果合同中约定了仲裁条款，可以向指定的仲裁机构申请仲裁，仲裁裁决具有法律效力。  \n- **提起民事诉讼**：向房屋所在地基层人民法院提起诉讼，要求对方履行合同义务或赔偿损失。\n\n法院或仲裁机构会根据合同内容、证据材料及法律规定作出裁决。\n\n### 相关法律依据  \n根据《中华人民共和国民法典》：  \n- 第577条规定，依法成立的合同对双方具有法律约束力，合同中约定的条款优先遵循；  \n- 第578条规定，当一方违约时，守约方可以要求对方承担继续履行、赔偿损失等责任；  \n- 如果合同中没有明确约定违约金或赔偿标准，则可以依据实际损失主张赔偿。\n\n### 总结  \n- 确认违约行为并对照合同条款；  \n- 根据约定方式与实际损失要求对方承担责任，先协商沟通；  \n- 如协商无果，则整理证据，通过仲裁或诉讼解决争议。  \n\n在实际处理过程中，建议咨询律师或专业法律人士，以保障自身权益最大化。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "明确违约的具体内容",
+        "content": "首先需要明确房屋租赁合同中的违约行为，比如未支付租金、提前解除合同或者未按合同约定使用房屋等。这些行为是否符合合同中定义的违约条款？"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "分析合同的违约条款及法律法规",
+        "content": "分析租赁合同中的具体违约条款，查看合同是否有明确规定违约责任及赔偿标准。必须理解这些条款在法律上的效力。可能需要查阅相关法律法规，例如《中华人民共和国合同法》中对租赁合同的规定。<search>租赁合同 违约责任 合同法</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "查找相关法律和规定",
+        "content": "<information>根据《中华人民共和国合同法》第114条，违约责任可以采取赔偿损失的形式，如果合同中约定了违约金或具体赔偿标准，必须按照合同约定执行。</information>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "确定处理方式",
+        "content": "根据违约类型，可以采取以下行动：1. 弥补损失（如要求支付拖欠租金）；2. 要求赔偿（如提前解除合同导致的损失）；3. 提起法律诉讼（如果协商无效）。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "是否寻求仲裁或起诉",
+        "content": "如果双方无法以协商方式解决问题，需判断是否可以通过仲裁或起诉解决纠纷。根据中国法律，租赁合同纠纷可以寻求民事诉讼解决。需要准备相关证据支持诉讼，例如合同原件、违约行为记录等。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "处理房屋租赁合同的违约问题可以分以下步骤：首先明确违约行为及合同约定的违约责任；其次依据相关法律法规分析处理方法；再进行协商处理或要求弥补损失；最后若协商未果，可通过仲裁或法律诉讼寻求解决。"
+      },
+      {
+        "action": "Verification",
+        "content": "结论合理，步骤涵盖了明确违约行为、分析合同条款、寻求解决方案以及法律途径等关键环节，符合处理租赁合同违约问题的逻辑流程。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "嗯，首先得搞清楚房屋租赁合同到底是哪方面违约。比如是拖欠租金呢？还是提前解除了合同？又或者是没有按照合同约定合理使用房屋？这些具体行为都得对照合同上的条款来确认才行。我得先看看合同里对违约行为是怎么定义的。<search>租赁合同 违约责任 合同法</search>\n\n找到了点信息，《中华人民共和国合同法》第114条提到违约责任可以通过赔偿损失来解决。如果合同里有约定违约金或者赔偿标准，那就得按照合同上的约定来执行。嗯，这说明合同里的条款挺重要，得好好看看这些条款有没有明确的责任和赔偿相关的规定。\n\n然后，就是分析一下这些条款实际上在法律上有没有效力。合同法好像是一个比较基础的依据，但是具体的租赁合同纠纷处理应该也要符合当地的法律规定吧。而且根据这条法律，赔偿的形式或者金额也是可以商量的，或者协商之后进行调整。但前提还是得先确定对方是否真的违约。\n\n考虑到违约行为，这时候可以试试用协商的方式解决问题。如果是拖欠租金，那是不是可以要求继续支付欠款？如果是提前解除了合同，那需要看这种情况下会导致什么具体损失，比如有没有空置时间或者其他额外费用。我觉得这种问题如果双方可以坐下来好好谈，或许能轻松解决，一般谁都不愿意闹到法院去嘛。\n\n不过啊，万一双方谈不拢，就得考虑走法律程序了。像这种租赁合同纠纷，可以提起民事诉讼。仲裁也是一种方式，但具体要选哪个得看合同里有没有约定仲裁条款。对了，还得注意准备好相关证据。像合同原件、付款记录、违约的证据截图或者照片，这些都是要提交给法院或者仲裁委员会的，可以提前整理好。\n\n所以看起来，处理这个问题其实就是几步：第一步明确违约行为是什么，根据合同来确认它是不是符合违约定义；第二步研究合同里的违约条款和责任，看看法律上对这些条款怎么解释；然后尝试先协商解决，要求弥补损失；要是协商无果，就得准备证据，选择仲裁或者提起诉讼。嗯，整个流程逻辑还挺清晰的，这样应该能弄清楚怎么处理了。",
+  "Response": "处理房屋租赁合同违约问题的关键在于明确违约行为并按照合同及法律规定采取相应的措施。以下是具体的处理步骤：\n\n### 1. **明确违约行为**  \n首先需要确认对方的具体违约行为，常见的违约情形包括：  \n- 拖欠租金或未按时支付租金；  \n- 提前解除合同或擅自退租；  \n- 未按照合同约定合理使用房屋（如违法转租、对房屋造成损坏等）。  \n\n您需要对照合同中的相关条款，判断对方的行为是否已构成违约。\n\n### 2. **核查合同条款**  \n查看合同中对于违约责任的具体约定，包括：  \n- 是否有规定违约金的金额或计算方式；  \n- 对于违约行为是否明确了补救或赔偿标准；  \n- 是否约定了争议解决方式（如仲裁或诉讼）。\n\n如果合同中有清晰约定，优先按照合同执行；如果条款过于模糊，则需依据相关法律（如《中华人民共和国民法典》等）确定责任。\n\n### 3. **尝试协商解决**  \n在处理合同纠纷时，协商往往是第一步。建议您与对方沟通，明确说明其违约行为以及违约可能导致的法律后果，要求对方履行其责任，例如补缴租金、支付违约金或赔偿损失等。如果双方沟通顺畅，问题可能会得到快速解决，避免进一步升级纠纷。\n\n### 4. **准备相关证据**  \n如果协商无果，需要进入正式的法律程序，则需准备充分的证据支持您的主张。包括但不限于：  \n- 房屋租赁合同原件；  \n- 租金支付记录（如转账凭证、收据等）；  \n- 对方违约的相关证据（如拖欠租金的记录、提前退租通知、房屋损坏照片等）。  \n\n证据是维权的基础，应尽量确保真实、完整和明确。\n\n### 5. **采取法律手段**  \n如果无法通过协商解决问题，可选择如下法律途径：  \n- **仲裁**：如果合同中约定了仲裁条款，可以向指定的仲裁机构申请仲裁，仲裁裁决具有法律效力。  \n- **提起民事诉讼**：向房屋所在地基层人民法院提起诉讼，要求对方履行合同义务或赔偿损失。\n\n法院或仲裁机构会根据合同内容、证据材料及法律规定作出裁决。\n\n### 相关法律依据  \n根据《中华人民共和国民法典》：  \n- 第577条规定，依法成立的合同对双方具有法律约束力，合同中约定的条款优先遵循；  \n- 第578条规定，当一方违约时，守约方可以要求对方承担继续履行、赔偿损失等责任；  \n- 如果合同中没有明确约定违约金或赔偿标准，则可以依据实际损失主张赔偿。\n\n### 总结  \n- 确认违约行为并对照合同条款；  \n- 根据约定方式与实际损失要求对方承担责任，先协商沟通；  \n- 如协商无果，则整理证据，通过仲裁或诉讼解决争议。  \n\n在实际处理过程中，建议咨询律师或专业法律人士，以保障自身权益最大化。",
+  "Question": "如何处理房屋租赁合同的违约问题？"
+}

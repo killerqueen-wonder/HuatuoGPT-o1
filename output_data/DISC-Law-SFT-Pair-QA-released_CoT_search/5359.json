@@ -1,0 +1,315 @@
+{
+  "Open-ended Verifiable Question": "离婚案件，被告经合法传唤，无正当理由拒不到庭，是否当庭作出离婚判决？",
+  "Ground-True Answer": "因离婚案件必须调解，一方不到庭，法院一般要慎重对待，一般不会作出缺席判决。但对公告送达的案件除外。",
+  "process_id": 5359,
+  "verify": [
+    false,
+    false,
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "明确问题所依据的法律条款",
+      "content": "当被告经合法传唤无正当理由拒不到庭时，法院是否能够当庭作出离婚判决需要分析相关法律规定，特别是《民事诉讼法》和《婚姻法》的具体条款内容。我们需要确认在这些法律中，是否有明确规定法院可以在这种情况下直接作出判决。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "查找相关法律依据",
+      "content": "搜索《民事诉讼法》和《婚姻法》中与案件缺席审判及离婚判决相关的条款内容。首先需要了解民事诉讼法对于缺席判决的规定。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "搜索《民事诉讼法》关于缺席判决的规定",
+      "content": "<search>民事诉讼法 缺席判决</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "分析搜索到的结果",
+      "content": "<information>根据《中华人民共和国民事诉讼法》第144条，如果被告经合法传唤，无正当理由拒不到庭，法院可以缺席判决。</information>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "确认适用于离婚案件的具体规定",
+      "content": "结合上述内容，法院可以缺席判决，但离婚案件涉及是否能够准许离婚、调解是否必要等问题，需进一步确认适用《婚姻法》的条款。查询《婚姻法》中关于调解和离婚判决的具体内容。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "搜索《婚姻法》中关于调解及离婚判决的内容",
+      "content": "<search>婚姻法 离婚 调解 判决</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "分析搜索到的《婚姻法》规定",
+      "content": "<information>《中华人民共和国婚姻法》第32条规定，人民法院审理离婚案件，应进行调解，如感情确已破裂，调解无效，应准予离婚。</information>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "判断是否需结合调解要求",
+      "content": "根据《婚姻法》第32条，人民法院审理离婚案件时，调解是必要程序。但如果被告拒不到庭，调解无法进行，法院需根据原告的证据判断夫妻感情是否确已破裂，是否满足判决离婚的条件。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "整合两部法律内容",
+      "content": "基于《民事诉讼法》第144条，法院可以缺席判决；结合《婚姻法》第32条，如果调解无效或无法调解并证据证明感情确已破裂，法院可以判决离婚。因此，在被告拒不到庭的情况下，只要有足够证据表明夫妻感情确已破裂，法院可以依法作出离婚判决。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "如果离婚案件中被告经合法传唤无正当理由拒不到庭，法院可以缺席判决。在审判时，法院需结合原告提供的证据判断夫妻感情是否确已破裂，如果证据充分，法院可以当庭作出离婚判决。"
+    },
+    {
+      "action": "Verification",
+      "content": "经过审查，原先的最终结论有一定瑕疵，虽然法院有缺席判决权，但是否能当庭作出离婚判决需要更细致的论证。离婚案件具有特殊性，必须严格审查夫妻感情是否确已破裂，这并非仅依据原告一方证据即可决定，需要结合离婚案件审理中特有的调解程序要件。因此我将重新审视问题。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "明确调解程序与缺席判决的关系",
+      "content": "人民法院审理离婚案件，按照《婚姻法》第32条，应先进行调解。如果被告拒绝到庭无法进行调解，法院是否能依据现有证据作出离婚判决需要进一步分析相关法律条款，特别是调解程序是否可以免除。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "寻找调解程序相关的免除或例外情况",
+      "content": "<search>离婚案件 调解 程序</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "分析搜索结果",
+      "content": "<information>《最高人民法院关于人民法院审理离婚案件如何认定夫妻感情确已破裂的若干具体意见》第13条规定，对于被告经合法传唤无正当理由不出庭的案件，法院可以依据原告提供的证据及案件审理情况依法判决是否离婚。</information>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "结合缺席判决与感情破裂的认定",
+      "content": "根据《最高院意见》第13条，如果经合法传唤后被告无故不到庭，调解程序因被告缺席无法进行，法院可以直接依据证据情况判断夫妻感情是否确已破裂。而《民事诉讼法》第144条亦允许法院在被告缺席的情况下作出判决。因此，只要证据充分，法院确可当庭作出离婚判决。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "审查是否存在限制当庭判决的其他规定",
+      "content": "法院当庭判决的前提是在证据审查完毕且事实清楚的基础上。因此，对于离婚案件，如果证据显示感情确已破裂且无需进一步调查，法院可以当庭作出判决，无其他法律禁止性规定。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "在离婚案件中，如果被告经合法传唤无正当理由拒不到庭，依据《最高人民法院关于人民法院审理离婚案件如何认定夫妻感情确已破裂的若干具体意见》第13条和《民事诉讼法》第144条，法院可结合原告提供的证据及审理情况，依法判断夫妻感情是否确已破裂。如果证据充分且事实清楚，法院能够当庭作出离婚判决。"
+    },
+    {
+      "action": "Verification",
+      "content": "目前“最终结论”判断为法院在证据充分、事实清楚的情况下可以当庭作出离婚判决，但未考虑离婚案件中特殊程序要求的问题，如调解是否完全可以豁免。因此，该结论需要进一步细化以确保完全符合法律规定。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "分析法院是否必须严格履行调解程序",
+      "content": "离婚案件中《婚姻法》第32条往往强调调解制度的必要性，需要进一步确认是否存在明确豁免调解程序的规定，尤其是在被告拒不到庭的情况下，调解是否一定无法进行，从而允许法院直接作出判决。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "查询调解程序在拒不到庭案件中的相关规定",
+      "content": "<search>法院审理离婚案件 调解程序 拒绝到庭</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "结合检索结果分析豁免调解的情形",
+      "content": "<information>《最高人民法院关于人民法院审理离婚案件如何认定夫妻感情确已破裂的若干具体意见》第13条指出，当被告经合法传唤无正当理由不出庭时，法院可依据原告提供的材料及案件审理情况判定夫妻感情是否破裂，并作出判决。另据长期司法实践，被告缺席确实让调解程序难以进行，但法院依然需确保证据指向明确，避免因剥夺调解损害合法权利。</information>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "确认案件中缺席审判的标准程序与证明要求",
+      "content": "综合调解程序要求和缺席审判规则，法院进行缺席审判时需特别注重证据的完整性，确保感情破裂真实可信。接下来需分析法院是否必须等待或设置其他司法程序要求才可作出离婚判决。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "审查是否有要求当庭判决的限制性规定",
+      "content": "<search>缺席审判 离婚案件直接判决 证据要求</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "结合结果评估当前结论是否可直接支持当庭与否",
+      "content": "<information>依据《民事诉讼法》第144条和离婚案件特定司法解释，当调解不能进行时法院可视情况进行判决，但是否当庭并无明确强制要求，需依案情复杂程度决定。若需进一步核查离婚理由、财产分割等案件重要事实，也可择期判决。</information>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "综合分析审理离婚案件时当庭判决的具体要求",
+      "content": "法院进行当庭判决需满足证据明确、事实清楚的前提，但对于感情确已破裂的审查，仍需考量客观的证据支持。如果无法在庭审中充分完成证明，法律或司法实践未强制法院必须立刻当庭作出裁判，而是可以择日判决以更全面考察案情。被告虽缺席，法院仍须严格审查其权利是否因程序疏漏而受损。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "对于离婚案件中被告经合法传唤无正当理由拒不到庭的情形，法院可以进行缺席审判，但是否当庭作出离婚判决取决于案件复杂程度和证据是否完全充分。依据《婚姻法》第32条和《民事诉讼法》第144条，以及相关司法解释，若证据已证明夫妻感情确已破裂且无需进一步审查，法院可以依法作出离婚判决，包括当庭判决的可能性。但若需进一步核查案情，则可择期判决。因此，法院未必一定当庭作出离婚判决。"
+    },
+    {
+      "action": "Verification",
+      "content": "该结论考虑了离婚诉讼特有的调解要求和当庭判决的限制条件，明确指出是否当庭判决需视案件复杂程度和证据充分性而定，符合法律和实际操作逻辑，结论修正后可认为正确无误。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n离婚案件，被告经合法传唤，无正当理由拒不到庭，是否当庭作出离婚判决？\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n如果离婚案件中被告经合法传唤无正当理由拒不到庭，法院可以缺席判决。在审判时，法院需结合原告提供的证据判断夫妻感情是否确已破裂，如果证据充分，法院可以当庭作出离婚判决。  \n</Model Response>  \n\n<Reference Answer>  \n因离婚案件必须调解，一方不到庭，法院一般要慎重对待，一般不会作出缺席判决。但对公告送达的案件除外。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<question>\n离婚案件，被告经合法传唤，无正当理由拒不到庭，是否当庭作出离婚判决？\n</question>\n\n<previous reasoning>\n[\n  {\n    \"action\": \"Inner Thinking\",\n    \"title\": \"明确问题所依据的法律条款\",\n    \"content\": \"当被告经合法传唤无正当理由拒不到庭时，法院是否能够当庭作出离婚判决需要分析相关法律规定，特别是《民事诉讼法》和《婚姻法》的具体条款内容。我们需要确认在这些法律中，是否有明确规定法院可以在这种情况下直接作出判决。\"\n  },\n  {\n    \"action\": \"Inner Thinking\",\n    \"title\": \"查找相关法律依据\",\n    \"content\": \"搜索《民事诉讼法》和《婚姻法》中与案件缺席审判及离婚判决相关的条款内容。首先需要了解民事诉讼法对于缺席判决的规定。\"\n  },\n  {\n    \"action\": \"Inner Thinking\",\n    \"title\": \"搜索《民事诉讼法》关于缺席判决的规定\",\n    \"content\": \"<search>民事诉讼法 缺席判决</search>\"\n  },\n  {\n    \"action\": \"Inner Thinking\",\n    \"title\": \"分析搜索到的结果\",\n    \"content\": \"<information>根据《中华人民共和国民事诉讼法》第144条，如果被告经合法传唤，无正当理由拒不到庭，法院可以缺席判决。</information>\"\n  },\n  {\n    \"action\": \"Inner Thinking\",\n    \"title\": \"确认适用于离婚案件的具体规定\",\n    \"content\": \"结合上述内容，法院可以缺席判决，但离婚案件涉及是否能够准许离婚、调解是否必要等问题，需进一步确认适用《婚姻法》的条款。查询《婚姻法》中关于调解和离婚判决的具体内容。\"\n  },\n  {\n    \"action\": \"Inner Thinking\",\n    \"title\": \"搜索《婚姻法》中关于调解及离婚判决的内容\",\n    \"content\": \"<search>婚姻法 离婚 调解 判决</search>\"\n  },\n  {\n    \"action\": \"Inner Thinking\",\n    \"title\": \"分析搜索到的《婚姻法》规定\",\n    \"content\": \"<information>《中华人民共和国婚姻法》第32条规定，人民法院审理离婚案件，应进行调解，如感情确已破裂，调解无效，应准予离婚。</information>\"\n  },\n  {\n    \"action\": \"Inner Thinking\",\n    \"title\": \"判断是否需结合调解要求\",\n    \"content\": \"根据《婚姻法》第32条，人民法院审理离婚案件时，调解是必要程序。但如果被告拒不到庭，调解无法进行，法院需根据原告的证据判断夫妻感情是否确已破裂，是否满足判决离婚的条件。\"\n  },\n  {\n    \"action\": \"Inner Thinking\",\n    \"title\": \"整合两部法律内容\",\n    \"content\": \"基于《民事诉讼法》第144条，法院可以缺席判决；结合《婚姻法》第32条，如果调解无效或无法调解并证据证明感情确已破裂，法院可以判决离婚。因此，在被告拒不到庭的情况下，只要有足够证据表明夫妻感情确已破裂，法院可以依法作出离婚判决。\"\n  },\n  {\n    \"action\": \"Final Conclusion\",\n    \"content\": \"如果离婚案件中被告经合法传唤无正当理由拒不到庭，法院可以缺席判决。在审判时，法院需结合原告提供的证据判断夫妻感情是否确已破裂，如果证据充分，法院可以当庭作出离婚判决。\"\n  }\n]\n<previous reasoning>\n\n<response requirements>\nYour response must include the following steps, each composed of three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n1. **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n2. **Final Conclusion**: Summarize the correct reasoning from all previous 'Inner Thinking' steps and provide the final answer. No title is needed for this section.\n3. **Verification**: Verify the accuracy of the \"Final Conclusion\". If it holds, conclude the process. Otherwise, return to \"Inner Thinking\" for further refinement.\n\n</response requirements>\n\n<question> represents the question to be answered, and <previous reasoning> contains your prior reasoning. Your task is to continue from the current 'Verification' step. I have manually reviewed the reasoning and determined that the **Final Conclusion** is false. Your 'Verification' results must align with mine. Proceed to refine the reasoning by exploring new approaches to solving this problem and construct a new Final Conclusion.\n\n### Output Format\nStrictly follow the JSON structure below. All content within the JSON fields must be written in **Chinese**. You do not need to repeat your previous reasoning. Begin directly from the next 'Verification' stage.\n\n```json\n{\n\"CoT\": [\n    {\"action\": \"Verification\", \"content\": \"...\"},\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n]\n}\n```",
+    "<Model Response>  \n在离婚案件中，如果被告经合法传唤无正当理由拒不到庭，依据《最高人民法院关于人民法院审理离婚案件如何认定夫妻感情确已破裂的若干具体意见》第13条和《民事诉讼法》第144条，法院可结合原告提供的证据及审理情况，依法判断夫妻感情是否确已破裂。如果证据充分且事实清楚，法院能够当庭作出离婚判决。  \n</Model Response>  \n\n<Reference Answer>  \n因离婚案件必须调解，一方不到庭，法院一般要慎重对待，一般不会作出缺席判决。但对公告送达的案件除外。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<question>\n离婚案件，被告经合法传唤，无正当理由拒不到庭，是否当庭作出离婚判决？\n</question>\n\n<previous reasoning>\n[\n  {\n    \"action\": \"Inner Thinking\",\n    \"title\": \"明确问题所依据的法律条款\",\n    \"content\": \"当被告经合法传唤无正当理由拒不到庭时，法院是否能够当庭作出离婚判决需要分析相关法律规定，特别是《民事诉讼法》和《婚姻法》的具体条款内容。我们需要确认在这些法律中，是否有明确规定法院可以在这种情况下直接作出判决。\"\n  },\n  {\n    \"action\": \"Inner Thinking\",\n    \"title\": \"查找相关法律依据\",\n    \"content\": \"搜索《民事诉讼法》和《婚姻法》中与案件缺席审判及离婚判决相关的条款内容。首先需要了解民事诉讼法对于缺席判决的规定。\"\n  },\n  {\n    \"action\": \"Inner Thinking\",\n    \"title\": \"搜索《民事诉讼法》关于缺席判决的规定\",\n    \"content\": \"<search>民事诉讼法 缺席判决</search>\"\n  },\n  {\n    \"action\": \"Inner Thinking\",\n    \"title\": \"分析搜索到的结果\",\n    \"content\": \"<information>根据《中华人民共和国民事诉讼法》第144条，如果被告经合法传唤，无正当理由拒不到庭，法院可以缺席判决。</information>\"\n  },\n  {\n    \"action\": \"Inner Thinking\",\n    \"title\": \"确认适用于离婚案件的具体规定\",\n    \"content\": \"结合上述内容，法院可以缺席判决，但离婚案件涉及是否能够准许离婚、调解是否必要等问题，需进一步确认适用《婚姻法》的条款。查询《婚姻法》中关于调解和离婚判决的具体内容。\"\n  },\n  {\n    \"action\": \"Inner Thinking\",\n    \"title\": \"搜索《婚姻法》中关于调解及离婚判决的内容\",\n    \"content\": \"<search>婚姻法 离婚 调解 判决</search>\"\n  },\n  {\n    \"action\": \"Inner Thinking\",\n    \"title\": \"分析搜索到的《婚姻法》规定\",\n    \"content\": \"<information>《中华人民共和国婚姻法》第32条规定，人民法院审理离婚案件，应进行调解，如感情确已破裂，调解无效，应准予离婚。</information>\"\n  },\n  {\n    \"action\": \"Inner Thinking\",\n    \"title\": \"判断是否需结合调解要求\",\n    \"content\": \"根据《婚姻法》第32条，人民法院审理离婚案件时，调解是必要程序。但如果被告拒不到庭，调解无法进行，法院需根据原告的证据判断夫妻感情是否确已破裂，是否满足判决离婚的条件。\"\n  },\n  {\n    \"action\": \"Inner Thinking\",\n    \"title\": \"整合两部法律内容\",\n    \"content\": \"基于《民事诉讼法》第144条，法院可以缺席判决；结合《婚姻法》第32条，如果调解无效或无法调解并证据证明感情确已破裂，法院可以判决离婚。因此，在被告拒不到庭的情况下，只要有足够证据表明夫妻感情确已破裂，法院可以依法作出离婚判决。\"\n  },\n  {\n    \"action\": \"Final Conclusion\",\n    \"content\": \"如果离婚案件中被告经合法传唤无正当理由拒不到庭，法院可以缺席判决。在审判时，法院需结合原告提供的证据判断夫妻感情是否确已破裂，如果证据充分，法院可以当庭作出离婚判决。\"\n  },\n  {\n    \"action\": \"Verification\",\n    \"content\": \"经过审查，原先的最终结论有一定瑕疵，虽然法院有缺席判决权，但是否能当庭作出离婚判决需要更细致的论证。离婚案件具有特殊性，必须严格审查夫妻感情是否确已破裂，这并非仅依据原告一方证据即可决定，需要结合离婚案件审理中特有的调解程序要件。因此我将重新审视问题。\"\n  },\n  {\n    \"action\": \"Inner Thinking\",\n    \"title\": \"明确调解程序与缺席判决的关系\",\n    \"content\": \"人民法院审理离婚案件，按照《婚姻法》第32条，应先进行调解。如果被告拒绝到庭无法进行调解，法院是否能依据现有证据作出离婚判决需要进一步分析相关法律条款，特别是调解程序是否可以免除。\"\n  },\n  {\n    \"action\": \"Inner Thinking\",\n    \"title\": \"寻找调解程序相关的免除或例外情况\",\n    \"content\": \"<search>离婚案件 调解 程序</search>\"\n  },\n  {\n    \"action\": \"Inner Thinking\",\n    \"title\": \"分析搜索结果\",\n    \"content\": \"<information>《最高人民法院关于人民法院审理离婚案件如何认定夫妻感情确已破裂的若干具体意见》第13条规定，对于被告经合法传唤无正当理由不出庭的案件，法院可以依据原告提供的证据及案件审理情况依法判决是否离婚。</information>\"\n  },\n  {\n    \"action\": \"Inner Thinking\",\n    \"title\": \"结合缺席判决与感情破裂的认定\",\n    \"content\": \"根据《最高院意见》第13条，如果经合法传唤后被告无故不到庭，调解程序因被告缺席无法进行，法院可以直接依据证据情况判断夫妻感情是否确已破裂。而《民事诉讼法》第144条亦允许法院在被告缺席的情况下作出判决。因此，只要证据充分，法院确可当庭作出离婚判决。\"\n  },\n  {\n    \"action\": \"Inner Thinking\",\n    \"title\": \"审查是否存在限制当庭判决的其他规定\",\n    \"content\": \"法院当庭判决的前提是在证据审查完毕且事实清楚的基础上。因此，对于离婚案件，如果证据显示感情确已破裂且无需进一步调查，法院可以当庭作出判决，无其他法律禁止性规定。\"\n  },\n  {\n    \"action\": \"Final Conclusion\",\n    \"content\": \"在离婚案件中，如果被告经合法传唤无正当理由拒不到庭，依据《最高人民法院关于人民法院审理离婚案件如何认定夫妻感情确已破裂的若干具体意见》第13条和《民事诉讼法》第144条，法院可结合原告提供的证据及审理情况，依法判断夫妻感情是否确已破裂。如果证据充分且事实清楚，法院能够当庭作出离婚判决。\"\n  }\n]\n<previous reasoning>\n\n<response requirements>\nYour response must include the following steps, each composed of three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n1. **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n2. **Final Conclusion**: Summarize the correct reasoning from all previous 'Inner Thinking' steps and provide the final answer. No title is needed for this section.\n3. **Verification**: Verify the accuracy of the \"Final Conclusion\". If it holds, conclude the process. Otherwise, return to \"Inner Thinking\" for further refinement.\n\n</response requirements>\n\n<question> represents the question to be answered, and <previous reasoning> contains your prior reasoning. Your task is to continue from the current 'Verification' step. I have manually reviewed the reasoning and determined that the **Final Conclusion** is false. Your 'Verification' results must align with mine. Proceed to refine the reasoning by exploring new approaches to solving this problem and construct a new Final Conclusion.\n\n### Output Format\nStrictly follow the JSON structure below. All content within the JSON fields must be written in **Chinese**. You do not need to repeat your previous reasoning. Begin directly from the next 'Verification' stage.\n\n```json\n{\n\"CoT\": [\n    {\"action\": \"Verification\", \"content\": \"...\"},\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n]\n}\n```",
+    "<Model Response>  \n对于离婚案件中被告经合法传唤无正当理由拒不到庭的情形，法院可以进行缺席审判，但是否当庭作出离婚判决取决于案件复杂程度和证据是否完全充分。依据《婚姻法》第32条和《民事诉讼法》第144条，以及相关司法解释，若证据已证明夫妻感情确已破裂且无需进一步审查，法院可以依法作出离婚判决，包括当庭判决的可能性。但若需进一步核查案情，则可择期判决。因此，法院未必一定当庭作出离婚判决。  \n</Model Response>  \n\n<Reference Answer>  \n因离婚案件必须调解，一方不到庭，法院一般要慎重对待，一般不会作出缺席判决。但对公告送达的案件除外。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 明确问题所依据的法律条款\n当被告经合法传唤无正当理由拒不到庭时，法院是否能够当庭作出离婚判决需要分析相关法律规定，特别是《民事诉讼法》和《婚姻法》的具体条款内容。我们需要确认在这些法律中，是否有明确规定法院可以在这种情况下直接作出判决。\n\n### 查找相关法律依据\n搜索《民事诉讼法》和《婚姻法》中与案件缺席审判及离婚判决相关的条款内容。首先需要了解民事诉讼法对于缺席判决的规定。\n\n### 搜索《民事诉讼法》关于缺席判决的规定\n<search>民事诉讼法 缺席判决</search>\n\n### 分析搜索到的结果\n<information>根据《中华人民共和国民事诉讼法》第144条，如果被告经合法传唤，无正当理由拒不到庭，法院可以缺席判决。</information>\n\n### 确认适用于离婚案件的具体规定\n结合上述内容，法院可以缺席判决，但离婚案件涉及是否能够准许离婚、调解是否必要等问题，需进一步确认适用《婚姻法》的条款。查询《婚姻法》中关于调解和离婚判决的具体内容。\n\n### 搜索《婚姻法》中关于调解及离婚判决的内容\n<search>婚姻法 离婚 调解 判决</search>\n\n### 分析搜索到的《婚姻法》规定\n<information>《中华人民共和国婚姻法》第32条规定，人民法院审理离婚案件，应进行调解，如感情确已破裂，调解无效，应准予离婚。</information>\n\n### 判断是否需结合调解要求\n根据《婚姻法》第32条，人民法院审理离婚案件时，调解是必要程序。但如果被告拒不到庭，调解无法进行，法院需根据原告的证据判断夫妻感情是否确已破裂，是否满足判决离婚的条件。\n\n### 整合两部法律内容\n基于《民事诉讼法》第144条，法院可以缺席判决；结合《婚姻法》第32条，如果调解无效或无法调解并证据证明感情确已破裂，法院可以判决离婚。因此，在被告拒不到庭的情况下，只要有足够证据表明夫妻感情确已破裂，法院可以依法作出离婚判决。\n\n### Conclusion\n如果离婚案件中被告经合法传唤无正当理由拒不到庭，法院可以缺席判决。在审判时，法院需结合原告提供的证据判断夫妻感情是否确已破裂，如果证据充分，法院可以当庭作出离婚判决。\n\n### Verification\n经过审查，原先的最终结论有一定瑕疵，虽然法院有缺席判决权，但是否能当庭作出离婚判决需要更细致的论证。离婚案件具有特殊性，必须严格审查夫妻感情是否确已破裂，这并非仅依据原告一方证据即可决定，需要结合离婚案件审理中特有的调解程序要件。因此我将重新审视问题。\n\n### 明确调解程序与缺席判决的关系\n人民法院审理离婚案件，按照《婚姻法》第32条，应先进行调解。如果被告拒绝到庭无法进行调解，法院是否能依据现有证据作出离婚判决需要进一步分析相关法律条款，特别是调解程序是否可以免除。\n\n### 寻找调解程序相关的免除或例外情况\n<search>离婚案件 调解 程序</search>\n\n### 分析搜索结果\n<information>《最高人民法院关于人民法院审理离婚案件如何认定夫妻感情确已破裂的若干具体意见》第13条规定，对于被告经合法传唤无正当理由不出庭的案件，法院可以依据原告提供的证据及案件审理情况依法判决是否离婚。</information>\n\n### 结合缺席判决与感情破裂的认定\n根据《最高院意见》第13条，如果经合法传唤后被告无故不到庭，调解程序因被告缺席无法进行，法院可以直接依据证据情况判断夫妻感情是否确已破裂。而《民事诉讼法》第144条亦允许法院在被告缺席的情况下作出判决。因此，只要证据充分，法院确可当庭作出离婚判决。\n\n### 审查是否存在限制当庭判决的其他规定\n法院当庭判决的前提是在证据审查完毕且事实清楚的基础上。因此，对于离婚案件，如果证据显示感情确已破裂且无需进一步调查，法院可以当庭作出判决，无其他法律禁止性规定。\n\n### Conclusion\n在离婚案件中，如果被告经合法传唤无正当理由拒不到庭，依据《最高人民法院关于人民法院审理离婚案件如何认定夫妻感情确已破裂的若干具体意见》第13条和《民事诉讼法》第144条，法院可结合原告提供的证据及审理情况，依法判断夫妻感情是否确已破裂。如果证据充分且事实清楚，法院能够当庭作出离婚判决。\n\n### Verification\n目前“最终结论”判断为法院在证据充分、事实清楚的情况下可以当庭作出离婚判决，但未考虑离婚案件中特殊程序要求的问题，如调解是否完全可以豁免。因此，该结论需要进一步细化以确保完全符合法律规定。\n\n### 分析法院是否必须严格履行调解程序\n离婚案件中《婚姻法》第32条往往强调调解制度的必要性，需要进一步确认是否存在明确豁免调解程序的规定，尤其是在被告拒不到庭的情况下，调解是否一定无法进行，从而允许法院直接作出判决。\n\n### 查询调解程序在拒不到庭案件中的相关规定\n<search>法院审理离婚案件 调解程序 拒绝到庭</search>\n\n### 结合检索结果分析豁免调解的情形\n<information>《最高人民法院关于人民法院审理离婚案件如何认定夫妻感情确已破裂的若干具体意见》第13条指出，当被告经合法传唤无正当理由不出庭时，法院可依据原告提供的材料及案件审理情况判定夫妻感情是否破裂，并作出判决。另据长期司法实践，被告缺席确实让调解程序难以进行，但法院依然需确保证据指向明确，避免因剥夺调解损害合法权利。</information>\n\n### 确认案件中缺席审判的标准程序与证明要求\n综合调解程序要求和缺席审判规则，法院进行缺席审判时需特别注重证据的完整性，确保感情破裂真实可信。接下来需分析法院是否必须等待或设置其他司法程序要求才可作出离婚判决。\n\n### 审查是否有要求当庭判决的限制性规定\n<search>缺席审判 离婚案件直接判决 证据要求</search>\n\n### 结合结果评估当前结论是否可直接支持当庭与否\n<information>依据《民事诉讼法》第144条和离婚案件特定司法解释，当调解不能进行时法院可视情况进行判决，但是否当庭并无明确强制要求，需依案情复杂程度决定。若需进一步核查离婚理由、财产分割等案件重要事实，也可择期判决。</information>\n\n### 综合分析审理离婚案件时当庭判决的具体要求\n法院进行当庭判决需满足证据明确、事实清楚的前提，但对于感情确已破裂的审查，仍需考量客观的证据支持。如果无法在庭审中充分完成证明，法律或司法实践未强制法院必须立刻当庭作出裁判，而是可以择日判决以更全面考察案情。被告虽缺席，法院仍须严格审查其权利是否因程序疏漏而受损。\n\n### Conclusion\n对于离婚案件中被告经合法传唤无正当理由拒不到庭的情形，法院可以进行缺席审判，但是否当庭作出离婚判决取决于案件复杂程度和证据是否完全充分。依据《婚姻法》第32条和《民事诉讼法》第144条，以及相关司法解释，若证据已证明夫妻感情确已破裂且无需进一步审查，法院可以依法作出离婚判决，包括当庭判决的可能性。但若需进一步核查案情，则可择期判决。因此，法院未必一定当庭作出离婚判决。\n\n### Verification\n该结论考虑了离婚诉讼特有的调解要求和当庭判决的限制条件，明确指出是否当庭判决需视案件复杂程度和证据充分性而定，符合法律和实际操作逻辑，结论修正后可认为正确无误。\n</Thought Process>\n\n<Question>\n离婚案件，被告经合法传唤，无正当理由拒不到庭，是否当庭作出离婚判决？\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n嗯，被告如果被合法传唤后却没正当理由拒不到庭，这种情况下法院可以直接作出离婚判决吗？这个问题有点复杂，因为离婚案件不仅涉及民事诉讼的缺席审判规则，还要考虑离婚案件特有的调解程序。我要查一下相关法律规定来弄清楚情况。首先，我想到民事诉讼法，那里应该有关于缺席判决的相关条款。\n\n<search>民事诉讼法 缺席判决</search>\n\n哦，找到了。《中华人民共和国民事诉讼法》第144条明确规定了，如果被告被合法传唤后，没有正当理由拒不到庭，法院确实可以缺席判决。这是不是意味着可以直接判离婚呢？可能还需要看看离婚案件更多的特殊要求，比如调解程序是怎么规定的。我想婚姻法会有相关内容，先看看婚姻法关于离婚的条款。\n\n<search>婚姻法 离婚 调解 判决</search>\n\n嗯，《中华人民共和国婚姻法》第32条提到，法院在审理离婚案件时需要先进行调解。如果调解没效果，并且夫妻感情确已破裂，那就可以准予离婚。这就有点麻烦了，如果调解是必须走的程序，但被告不到庭，调解就没法进行了，那法院还能直接判吗？\n\n从这里看来，解决问题的关键是确认到底在被告拒不到庭的情况下，调解程序是否可以省略，或者怎么处理。我记得最高法院对离婚案件有一些司法解释，可能能找到点线索。再查一下相关司法解释吧。\n\n<search>离婚案件 调解 程序</search>\n\n哦，有个重要信息。《最高人民法院关于人民法院审理离婚案件如何认定夫妻感情确已破裂的若干具体意见》第13条说了，像这种被告合法传唤后无正当理由拒不到庭的情况，法院可以根据原告提供的证据和案件审理的具体情况判断夫妻感情是否破裂并作出判决。这看来确实可以在无法进行调解的情况下，跳过调解直接判决，但还是要证据充分哦，不能随随便便就判。\n\n现在思路更清楚了。根据民事诉讼法第144条，法院有权进行缺席判决；婚姻法第32条要求调解，但对被告缺席的特殊情况，最高院的司法解释允许依据证据直接判决。这说明只要证据到位，法院确实可以做出离婚判决。那么能不能当庭判就是下一个问题。\n\n法院一般当庭判决的条件是证据清楚且事实已经审查完毕。离婚案件是不是特别有什么限制不允许当庭判呢？还有财产分割、子女抚养这些问题是不是也会影响当庭判决呢？不太确定，我还是再查一下关于离婚案件直接判决和当庭判的相关规定。\n\n<search>缺席审判 离婚案件直接判决 证据要求</search>\n\n哦，从搜到的信息看，当庭判决并没有强制性要求，法院可以视案件复杂程度决定是当庭还是择期判决。《民事诉讼法》第144条只是赋予缺席判决的权限，具体怎么操作还是要看案情。如果夫妻感情确已破裂的证据特别充分，事实很明确，那当庭判基本没问题；但如果还有涉及财产分割、子女抚养这些复杂问题，可能法院会选择择期判决以进一步核查情况。\n\n现在可以总结了。如果被告合法传唤后无故缺席，根据民事诉讼法和婚姻法规定，法院可以进行缺席审判，而调解程序因被告缺席无法进行时，可以依据证据直接判决离婚。但是否当庭判决则需要看案件复杂程度以及证据是否完全充分。如果证据明确且事实清楚，法院可以当庭作出离婚判决；但如果还有重要事实需要进一步核实，择期判决更稳妥。因此法院未必一定当庭判决，具体还是视情况而定。\n</Internal Thinking>\n\n<Question>\n离婚案件，被告经合法传唤，无正当理由拒不到庭，是否当庭作出离婚判决？\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"明确问题所依据的法律条款\",\n      \"content\": \"当被告经合法传唤无正当理由拒不到庭时，法院是否能够当庭作出离婚判决需要分析相关法律规定，特别是《民事诉讼法》和《婚姻法》的具体条款内容。我们需要确认在这些法律中，是否有明确规定法院可以在这种情况下直接作出判决。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"查找相关法律依据\",\n      \"content\": \"搜索《民事诉讼法》和《婚姻法》中与案件缺席审判及离婚判决相关的条款内容。首先需要了解民事诉讼法对于缺席判决的规定。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"搜索《民事诉讼法》关于缺席判决的规定\",\n      \"content\": \"<search>民事诉讼法 缺席判决</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析搜索到的结果\",\n      \"content\": \"<information>根据《中华人民共和国民事诉讼法》第144条，如果被告经合法传唤，无正当理由拒不到庭，法院可以缺席判决。</information>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"确认适用于离婚案件的具体规定\",\n      \"content\": \"结合上述内容，法院可以缺席判决，但离婚案件涉及是否能够准许离婚、调解是否必要等问题，需进一步确认适用《婚姻法》的条款。查询《婚姻法》中关于调解和离婚判决的具体内容。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"搜索《婚姻法》中关于调解及离婚判决的内容\",\n      \"content\": \"<search>婚姻法 离婚 调解 判决</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析搜索到的《婚姻法》规定\",\n      \"content\": \"<information>《中华人民共和国婚姻法》第32条规定，人民法院审理离婚案件，应进行调解，如感情确已破裂，调解无效，应准予离婚。</information>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"判断是否需结合调解要求\",\n      \"content\": \"根据《婚姻法》第32条，人民法院审理离婚案件时，调解是必要程序。但如果被告拒不到庭，调解无法进行，法院需根据原告的证据判断夫妻感情是否确已破裂，是否满足判决离婚的条件。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"整合两部法律内容\",\n      \"content\": \"基于《民事诉讼法》第144条，法院可以缺席判决；结合《婚姻法》第32条，如果调解无效或无法调解并证据证明感情确已破裂，法院可以判决离婚。因此，在被告拒不到庭的情况下，只要有足够证据表明夫妻感情确已破裂，法院可以依法作出离婚判决。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"如果离婚案件中被告经合法传唤无正当理由拒不到庭，法院可以缺席判决。在审判时，法院需结合原告提供的证据判断夫妻感情是否确已破裂，如果证据充分，法院可以当庭作出离婚判决。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"通过对《民事诉讼法》第144条和《婚姻法》第32条的分析，结论符合中国法律规定，法院在特定情况下可以缺席判决离婚，结论正确。\"\n    }\n  ]\n}\n```",
+    "False",
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Verification\",\n      \"content\": \"经过审查，原先的最终结论有一定瑕疵，虽然法院有缺席判决权，但是否能当庭作出离婚判决需要更细致的论证。离婚案件具有特殊性，必须严格审查夫妻感情是否确已破裂，这并非仅依据原告一方证据即可决定，需要结合离婚案件审理中特有的调解程序要件。因此我将重新审视问题。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"明确调解程序与缺席判决的关系\",\n      \"content\": \"人民法院审理离婚案件，按照《婚姻法》第32条，应先进行调解。如果被告拒绝到庭无法进行调解，法院是否能依据现有证据作出离婚判决需要进一步分析相关法律条款，特别是调解程序是否可以免除。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"寻找调解程序相关的免除或例外情况\",\n      \"content\": \"<search>离婚案件 调解 程序</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析搜索结果\",\n      \"content\": \"<information>《最高人民法院关于人民法院审理离婚案件如何认定夫妻感情确已破裂的若干具体意见》第13条规定，对于被告经合法传唤无正当理由不出庭的案件，法院可以依据原告提供的证据及案件审理情况依法判决是否离婚。</information>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"结合缺席判决与感情破裂的认定\",\n      \"content\": \"根据《最高院意见》第13条，如果经合法传唤后被告无故不到庭，调解程序因被告缺席无法进行，法院可以直接依据证据情况判断夫妻感情是否确已破裂。而《民事诉讼法》第144条亦允许法院在被告缺席的情况下作出判决。因此，只要证据充分，法院确可当庭作出离婚判决。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"审查是否存在限制当庭判决的其他规定\",\n      \"content\": \"法院当庭判决的前提是在证据审查完毕且事实清楚的基础上。因此，对于离婚案件，如果证据显示感情确已破裂且无需进一步调查，法院可以当庭作出判决，无其他法律禁止性规定。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"在离婚案件中，如果被告经合法传唤无正当理由拒不到庭，依据《最高人民法院关于人民法院审理离婚案件如何认定夫妻感情确已破裂的若干具体意见》第13条和《民事诉讼法》第144条，法院可结合原告提供的证据及审理情况，依法判断夫妻感情是否确已破裂。如果证据充分且事实清楚，法院能够当庭作出离婚判决。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"新的最终结论与相关法律规定和司法解释完全一致。法院可在证据充分的情况下直接依法作出离婚判决，无需再增加调解程序，此最终结论正确。\"\n    }\n  ]\n}\n```",
+    "False",
+    "```json\n{\n\"CoT\": [\n    {\n        \"action\": \"Verification\",\n        \"content\": \"目前“最终结论”判断为法院在证据充分、事实清楚的情况下可以当庭作出离婚判决，但未考虑离婚案件中特殊程序要求的问题，如调解是否完全可以豁免。因此，该结论需要进一步细化以确保完全符合法律规定。\"\n    },\n    {\n        \"action\": \"Inner Thinking\",\n        \"title\": \"分析法院是否必须严格履行调解程序\",\n        \"content\": \"离婚案件中《婚姻法》第32条往往强调调解制度的必要性，需要进一步确认是否存在明确豁免调解程序的规定，尤其是在被告拒不到庭的情况下，调解是否一定无法进行，从而允许法院直接作出判决。\"\n    },\n    {\n        \"action\": \"Inner Thinking\",\n        \"title\": \"查询调解程序在拒不到庭案件中的相关规定\",\n        \"content\": \"<search>法院审理离婚案件 调解程序 拒绝到庭</search>\"\n    },\n    {\n        \"action\": \"Inner Thinking\",\n        \"title\": \"结合检索结果分析豁免调解的情形\",\n        \"content\": \"<information>《最高人民法院关于人民法院审理离婚案件如何认定夫妻感情确已破裂的若干具体意见》第13条指出，当被告经合法传唤无正当理由不出庭时，法院可依据原告提供的材料及案件审理情况判定夫妻感情是否破裂，并作出判决。另据长期司法实践，被告缺席确实让调解程序难以进行，但法院依然需确保证据指向明确，避免因剥夺调解损害合法权利。</information>\"\n    },\n    {\n        \"action\": \"Inner Thinking\",\n        \"title\": \"确认案件中缺席审判的标准程序与证明要求\",\n        \"content\": \"综合调解程序要求和缺席审判规则，法院进行缺席审判时需特别注重证据的完整性，确保感情破裂真实可信。接下来需分析法院是否必须等待或设置其他司法程序要求才可作出离婚判决。\"\n    },\n    {\n        \"action\": \"Inner Thinking\",\n        \"title\": \"审查是否有要求当庭判决的限制性规定\",\n        \"content\": \"<search>缺席审判 离婚案件直接判决 证据要求</search>\"\n    },\n    {\n        \"action\": \"Inner Thinking\",\n        \"title\": \"结合结果评估当前结论是否可直接支持当庭与否\",\n        \"content\": \"<information>依据《民事诉讼法》第144条和离婚案件特定司法解释，当调解不能进行时法院可视情况进行判决，但是否当庭并无明确强制要求，需依案情复杂程度决定。若需进一步核查离婚理由、财产分割等案件重要事实，也可择期判决。</information>\"\n    },\n    {\n        \"action\": \"Inner Thinking\",\n        \"title\": \"综合分析审理离婚案件时当庭判决的具体要求\",\n        \"content\": \"法院进行当庭判决需满足证据明确、事实清楚的前提，但对于感情确已破裂的审查，仍需考量客观的证据支持。如果无法在庭审中充分完成证明，法律或司法实践未强制法院必须立刻当庭作出裁判，而是可以择日判决以更全面考察案情。被告虽缺席，法院仍须严格审查其权利是否因程序疏漏而受损。\"\n    },\n    {\n        \"action\": \"Final Conclusion\",\n        \"content\": \"对于离婚案件中被告经合法传唤无正当理由拒不到庭的情形，法院可以进行缺席审判，但是否当庭作出离婚判决取决于案件复杂程度和证据是否完全充分。依据《婚姻法》第32条和《民事诉讼法》第144条，以及相关司法解释，若证据已证明夫妻感情确已破裂且无需进一步审查，法院可以依法作出离婚判决，包括当庭判决的可能性。但若需进一步核查案情，则可择期判决。因此，法院未必一定当庭作出离婚判决。\"\n    },\n    {\n        \"action\": \"Verification\",\n        \"content\": \"该结论考虑了离婚诉讼特有的调解要求和当庭判决的限制条件，明确指出是否当庭判决需视案件复杂程度和证据充分性而定，符合法律和实际操作逻辑，结论修正后可认为正确无误。\"\n    }\n]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"嗯，被告如果被合法传唤后却没正当理由拒不到庭，这种情况下法院可以直接作出离婚判决吗？这个问题有点复杂，因为离婚案件不仅涉及民事诉讼的缺席审判规则，还要考虑离婚案件特有的调解程序。我要查一下相关法律规定来弄清楚情况。首先，我想到民事诉讼法，那里应该有关于缺席判决的相关条款。\\n\\n<search>民事诉讼法 缺席判决</search>\\n\\n哦，找到了。《中华人民共和国民事诉讼法》第144条明确规定了，如果被告被合法传唤后，没有正当理由拒不到庭，法院确实可以缺席判决。这是不是意味着可以直接判离婚呢？可能还需要看看离婚案件更多的特殊要求，比如调解程序是怎么规定的。我想婚姻法会有相关内容，先看看婚姻法关于离婚的条款。\\n\\n<search>婚姻法 离婚 调解 判决</search>\\n\\n嗯，《中华人民共和国婚姻法》第32条提到，法院在审理离婚案件时需要先进行调解。如果调解没效果，并且夫妻感情确已破裂，那就可以准予离婚。这就有点麻烦了，如果调解是必须走的程序，但被告不到庭，调解就没法进行了，那法院还能直接判吗？\\n\\n从这里看来，解决问题的关键是确认到底在被告拒不到庭的情况下，调解程序是否可以省略，或者怎么处理。我记得最高法院对离婚案件有一些司法解释，可能能找到点线索。再查一下相关司法解释吧。\\n\\n<search>离婚案件 调解 程序</search>\\n\\n哦，有个重要信息。《最高人民法院关于人民法院审理离婚案件如何认定夫妻感情确已破裂的若干具体意见》第13条说了，像这种被告合法传唤后无正当理由拒不到庭的情况，法院可以根据原告提供的证据和案件审理的具体情况判断夫妻感情是否破裂并作出判决。这看来确实可以在无法进行调解的情况下，跳过调解直接判决，但还是要证据充分哦，不能随随便便就判。\\n\\n现在思路更清楚了。根据民事诉讼法第144条，法院有权进行缺席判决；婚姻法第32条要求调解，但对被告缺席的特殊情况，最高院的司法解释允许依据证据直接判决。这说明只要证据到位，法院确实可以做出离婚判决。那么能不能当庭判就是下一个问题。\\n\\n法院一般当庭判决的条件是证据清楚且事实已经审查完毕。离婚案件是不是特别有什么限制不允许当庭判呢？还有财产分割、子女抚养这些问题是不是也会影响当庭判决呢？不太确定，我还是再查一下关于离婚案件直接判决和当庭判的相关规定。\\n\\n<search>缺席审判 离婚案件直接判决 证据要求</search>\\n\\n哦，从搜到的信息看，当庭判决并没有强制性要求，法院可以视案件复杂程度决定是当庭还是择期判决。《民事诉讼法》第144条只是赋予缺席判决的权限，具体怎么操作还是要看案情。如果夫妻感情确已破裂的证据特别充分，事实很明确，那当庭判基本没问题；但如果还有涉及财产分割、子女抚养这些复杂问题，可能法院会选择择期判决以进一步核查情况。\\n\\n现在可以总结了。如果被告合法传唤后无故缺席，根据民事诉讼法和婚姻法规定，法院可以进行缺席审判，而调解程序因被告缺席无法进行时，可以依据证据直接判决离婚。但是否当庭判决则需要看案件复杂程度以及证据是否完全充分。如果证据明确且事实清楚，法院可以当庭作出离婚判决；但如果还有重要事实需要进一步核实，择期判决更稳妥。因此法院未必一定当庭判决，具体还是视情况而定。\"\n}\n```",
+    "在离婚案件中，如果被告经合法传唤，无正当理由拒不到庭，法院可以根据相关法律规定进行缺席审判。\n\n依据《中华人民共和国民事诉讼法》第144条，法院有权对被告缺席的情况下作出判决。同时，《中华人民共和国婚姻法》第32条和《最高人民法院关于人民法院审理离婚案件如何认定夫妻感情确已破裂的若干具体意见》第13条也明确指出，在被告缺席的情况下，法院可根据原告提供的证据及具体情况判定夫妻感情是否确已破裂并作出离婚判决。调解程序在被告缺席时无法进行，但这不影响法院依据充分证据直接作出判决。\n\n至于是否能够当庭作出判决，需要视案件的复杂程度而定。如果夫妻感情确已破裂的证据充分，事实清晰，且没有复杂的财产分割、子女抚养等争议，法院可以当庭判决。否则，法院可能选择择期判决，以进一步核实相关情况。\n\n总体而言，被告合法传唤后未到庭的情况下，法院可以缺席审判并判决离婚，但是否当庭判决具体需根据案件的证据和复杂程度而定。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "明确问题所依据的法律条款",
+        "content": "当被告经合法传唤无正当理由拒不到庭时，法院是否能够当庭作出离婚判决需要分析相关法律规定，特别是《民事诉讼法》和《婚姻法》的具体条款内容。我们需要确认在这些法律中，是否有明确规定法院可以在这种情况下直接作出判决。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "查找相关法律依据",
+        "content": "搜索《民事诉讼法》和《婚姻法》中与案件缺席审判及离婚判决相关的条款内容。首先需要了解民事诉讼法对于缺席判决的规定。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "搜索《民事诉讼法》关于缺席判决的规定",
+        "content": "<search>民事诉讼法 缺席判决</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "分析搜索到的结果",
+        "content": "<information>根据《中华人民共和国民事诉讼法》第144条，如果被告经合法传唤，无正当理由拒不到庭，法院可以缺席判决。</information>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "确认适用于离婚案件的具体规定",
+        "content": "结合上述内容，法院可以缺席判决，但离婚案件涉及是否能够准许离婚、调解是否必要等问题，需进一步确认适用《婚姻法》的条款。查询《婚姻法》中关于调解和离婚判决的具体内容。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "搜索《婚姻法》中关于调解及离婚判决的内容",
+        "content": "<search>婚姻法 离婚 调解 判决</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "分析搜索到的《婚姻法》规定",
+        "content": "<information>《中华人民共和国婚姻法》第32条规定，人民法院审理离婚案件，应进行调解，如感情确已破裂，调解无效，应准予离婚。</information>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "判断是否需结合调解要求",
+        "content": "根据《婚姻法》第32条，人民法院审理离婚案件时，调解是必要程序。但如果被告拒不到庭，调解无法进行，法院需根据原告的证据判断夫妻感情是否确已破裂，是否满足判决离婚的条件。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "整合两部法律内容",
+        "content": "基于《民事诉讼法》第144条，法院可以缺席判决；结合《婚姻法》第32条，如果调解无效或无法调解并证据证明感情确已破裂，法院可以判决离婚。因此，在被告拒不到庭的情况下，只要有足够证据表明夫妻感情确已破裂，法院可以依法作出离婚判决。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "如果离婚案件中被告经合法传唤无正当理由拒不到庭，法院可以缺席判决。在审判时，法院需结合原告提供的证据判断夫妻感情是否确已破裂，如果证据充分，法院可以当庭作出离婚判决。"
+      },
+      {
+        "action": "Verification",
+        "content": "通过对《民事诉讼法》第144条和《婚姻法》第32条的分析，结论符合中国法律规定，法院在特定情况下可以缺席判决离婚，结论正确。"
+      }
+    ],
+    [
+      {
+        "action": "Verification",
+        "content": "经过审查，原先的最终结论有一定瑕疵，虽然法院有缺席判决权，但是否能当庭作出离婚判决需要更细致的论证。离婚案件具有特殊性，必须严格审查夫妻感情是否确已破裂，这并非仅依据原告一方证据即可决定，需要结合离婚案件审理中特有的调解程序要件。因此我将重新审视问题。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "明确调解程序与缺席判决的关系",
+        "content": "人民法院审理离婚案件，按照《婚姻法》第32条，应先进行调解。如果被告拒绝到庭无法进行调解，法院是否能依据现有证据作出离婚判决需要进一步分析相关法律条款，特别是调解程序是否可以免除。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "寻找调解程序相关的免除或例外情况",
+        "content": "<search>离婚案件 调解 程序</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "分析搜索结果",
+        "content": "<information>《最高人民法院关于人民法院审理离婚案件如何认定夫妻感情确已破裂的若干具体意见》第13条规定，对于被告经合法传唤无正当理由不出庭的案件，法院可以依据原告提供的证据及案件审理情况依法判决是否离婚。</information>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "结合缺席判决与感情破裂的认定",
+        "content": "根据《最高院意见》第13条，如果经合法传唤后被告无故不到庭，调解程序因被告缺席无法进行，法院可以直接依据证据情况判断夫妻感情是否确已破裂。而《民事诉讼法》第144条亦允许法院在被告缺席的情况下作出判决。因此，只要证据充分，法院确可当庭作出离婚判决。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "审查是否存在限制当庭判决的其他规定",
+        "content": "法院当庭判决的前提是在证据审查完毕且事实清楚的基础上。因此，对于离婚案件，如果证据显示感情确已破裂且无需进一步调查，法院可以当庭作出判决，无其他法律禁止性规定。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "在离婚案件中，如果被告经合法传唤无正当理由拒不到庭，依据《最高人民法院关于人民法院审理离婚案件如何认定夫妻感情确已破裂的若干具体意见》第13条和《民事诉讼法》第144条，法院可结合原告提供的证据及审理情况，依法判断夫妻感情是否确已破裂。如果证据充分且事实清楚，法院能够当庭作出离婚判决。"
+      },
+      {
+        "action": "Verification",
+        "content": "新的最终结论与相关法律规定和司法解释完全一致。法院可在证据充分的情况下直接依法作出离婚判决，无需再增加调解程序，此最终结论正确。"
+      }
+    ],
+    [
+      {
+        "action": "Verification",
+        "content": "目前“最终结论”判断为法院在证据充分、事实清楚的情况下可以当庭作出离婚判决，但未考虑离婚案件中特殊程序要求的问题，如调解是否完全可以豁免。因此，该结论需要进一步细化以确保完全符合法律规定。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "分析法院是否必须严格履行调解程序",
+        "content": "离婚案件中《婚姻法》第32条往往强调调解制度的必要性，需要进一步确认是否存在明确豁免调解程序的规定，尤其是在被告拒不到庭的情况下，调解是否一定无法进行，从而允许法院直接作出判决。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "查询调解程序在拒不到庭案件中的相关规定",
+        "content": "<search>法院审理离婚案件 调解程序 拒绝到庭</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "结合检索结果分析豁免调解的情形",
+        "content": "<information>《最高人民法院关于人民法院审理离婚案件如何认定夫妻感情确已破裂的若干具体意见》第13条指出，当被告经合法传唤无正当理由不出庭时，法院可依据原告提供的材料及案件审理情况判定夫妻感情是否破裂，并作出判决。另据长期司法实践，被告缺席确实让调解程序难以进行，但法院依然需确保证据指向明确，避免因剥夺调解损害合法权利。</information>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "确认案件中缺席审判的标准程序与证明要求",
+        "content": "综合调解程序要求和缺席审判规则，法院进行缺席审判时需特别注重证据的完整性，确保感情破裂真实可信。接下来需分析法院是否必须等待或设置其他司法程序要求才可作出离婚判决。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "审查是否有要求当庭判决的限制性规定",
+        "content": "<search>缺席审判 离婚案件直接判决 证据要求</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "结合结果评估当前结论是否可直接支持当庭与否",
+        "content": "<information>依据《民事诉讼法》第144条和离婚案件特定司法解释，当调解不能进行时法院可视情况进行判决，但是否当庭并无明确强制要求，需依案情复杂程度决定。若需进一步核查离婚理由、财产分割等案件重要事实，也可择期判决。</information>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "综合分析审理离婚案件时当庭判决的具体要求",
+        "content": "法院进行当庭判决需满足证据明确、事实清楚的前提，但对于感情确已破裂的审查，仍需考量客观的证据支持。如果无法在庭审中充分完成证明，法律或司法实践未强制法院必须立刻当庭作出裁判，而是可以择日判决以更全面考察案情。被告虽缺席，法院仍须严格审查其权利是否因程序疏漏而受损。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "对于离婚案件中被告经合法传唤无正当理由拒不到庭的情形，法院可以进行缺席审判，但是否当庭作出离婚判决取决于案件复杂程度和证据是否完全充分。依据《婚姻法》第32条和《民事诉讼法》第144条，以及相关司法解释，若证据已证明夫妻感情确已破裂且无需进一步审查，法院可以依法作出离婚判决，包括当庭判决的可能性。但若需进一步核查案情，则可择期判决。因此，法院未必一定当庭作出离婚判决。"
+      },
+      {
+        "action": "Verification",
+        "content": "该结论考虑了离婚诉讼特有的调解要求和当庭判决的限制条件，明确指出是否当庭判决需视案件复杂程度和证据充分性而定，符合法律和实际操作逻辑，结论修正后可认为正确无误。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT",
+    "Re_CoT_Exploring New Paths",
+    "Re_CoT_Exploring New Paths"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "嗯，被告如果被合法传唤后却没正当理由拒不到庭，这种情况下法院可以直接作出离婚判决吗？这个问题有点复杂，因为离婚案件不仅涉及民事诉讼的缺席审判规则，还要考虑离婚案件特有的调解程序。我要查一下相关法律规定来弄清楚情况。首先，我想到民事诉讼法，那里应该有关于缺席判决的相关条款。\n\n<search>民事诉讼法 缺席判决</search>\n\n哦，找到了。《中华人民共和国民事诉讼法》第144条明确规定了，如果被告被合法传唤后，没有正当理由拒不到庭，法院确实可以缺席判决。这是不是意味着可以直接判离婚呢？可能还需要看看离婚案件更多的特殊要求，比如调解程序是怎么规定的。我想婚姻法会有相关内容，先看看婚姻法关于离婚的条款。\n\n<search>婚姻法 离婚 调解 判决</search>\n\n嗯，《中华人民共和国婚姻法》第32条提到，法院在审理离婚案件时需要先进行调解。如果调解没效果，并且夫妻感情确已破裂，那就可以准予离婚。这就有点麻烦了，如果调解是必须走的程序，但被告不到庭，调解就没法进行了，那法院还能直接判吗？\n\n从这里看来，解决问题的关键是确认到底在被告拒不到庭的情况下，调解程序是否可以省略，或者怎么处理。我记得最高法院对离婚案件有一些司法解释，可能能找到点线索。再查一下相关司法解释吧。\n\n<search>离婚案件 调解 程序</search>\n\n哦，有个重要信息。《最高人民法院关于人民法院审理离婚案件如何认定夫妻感情确已破裂的若干具体意见》第13条说了，像这种被告合法传唤后无正当理由拒不到庭的情况，法院可以根据原告提供的证据和案件审理的具体情况判断夫妻感情是否破裂并作出判决。这看来确实可以在无法进行调解的情况下，跳过调解直接判决，但还是要证据充分哦，不能随随便便就判。\n\n现在思路更清楚了。根据民事诉讼法第144条，法院有权进行缺席判决；婚姻法第32条要求调解，但对被告缺席的特殊情况，最高院的司法解释允许依据证据直接判决。这说明只要证据到位，法院确实可以做出离婚判决。那么能不能当庭判就是下一个问题。\n\n法院一般当庭判决的条件是证据清楚且事实已经审查完毕。离婚案件是不是特别有什么限制不允许当庭判呢？还有财产分割、子女抚养这些问题是不是也会影响当庭判决呢？不太确定，我还是再查一下关于离婚案件直接判决和当庭判的相关规定。\n\n<search>缺席审判 离婚案件直接判决 证据要求</search>\n\n哦，从搜到的信息看，当庭判决并没有强制性要求，法院可以视案件复杂程度决定是当庭还是择期判决。《民事诉讼法》第144条只是赋予缺席判决的权限，具体怎么操作还是要看案情。如果夫妻感情确已破裂的证据特别充分，事实很明确，那当庭判基本没问题；但如果还有涉及财产分割、子女抚养这些复杂问题，可能法院会选择择期判决以进一步核查情况。\n\n现在可以总结了。如果被告合法传唤后无故缺席，根据民事诉讼法和婚姻法规定，法院可以进行缺席审判，而调解程序因被告缺席无法进行时，可以依据证据直接判决离婚。但是否当庭判决则需要看案件复杂程度以及证据是否完全充分。如果证据明确且事实清楚，法院可以当庭作出离婚判决；但如果还有重要事实需要进一步核实，择期判决更稳妥。因此法院未必一定当庭判决，具体还是视情况而定。",
+  "Response": "在离婚案件中，如果被告经合法传唤，无正当理由拒不到庭，法院可以根据相关法律规定进行缺席审判。\n\n依据《中华人民共和国民事诉讼法》第144条，法院有权对被告缺席的情况下作出判决。同时，《中华人民共和国婚姻法》第32条和《最高人民法院关于人民法院审理离婚案件如何认定夫妻感情确已破裂的若干具体意见》第13条也明确指出，在被告缺席的情况下，法院可根据原告提供的证据及具体情况判定夫妻感情是否确已破裂并作出离婚判决。调解程序在被告缺席时无法进行，但这不影响法院依据充分证据直接作出判决。\n\n至于是否能够当庭作出判决，需要视案件的复杂程度而定。如果夫妻感情确已破裂的证据充分，事实清晰，且没有复杂的财产分割、子女抚养等争议，法院可以当庭判决。否则，法院可能选择择期判决，以进一步核实相关情况。\n\n总体而言，被告合法传唤后未到庭的情况下，法院可以缺席审判并判决离婚，但是否当庭判决具体需根据案件的证据和复杂程度而定。",
+  "Question": "离婚案件，被告经合法传唤，无正当理由拒不到庭，是否当庭作出离婚判决？"
+}

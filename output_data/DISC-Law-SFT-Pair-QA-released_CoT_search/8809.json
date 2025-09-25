@@ -1,0 +1,89 @@
+{
+  "Open-ended Verifiable Question": "无效合同的情形主要有哪些?",
+  "Ground-True Answer": "1、无效合同的情形主要有：一方以欺诈、胁迫的手段订立合同，损害国家利益；恶意串通，损害国家、集体或者第三人利益；以合法形式掩盖非法目的；损害社会公共利益；违反法律、行政法规的强制性规定。\n法律依据《中华人民共和国民法典》第一百四十四条 无民事行为能力人实施的民事法律行为无效。第一百四十六条 行为人与相对人以虚假的意思表示实施的民事法律行为无效。 \n以虚假的意思表示隐藏的民事法律行为的效力，依照有关法律规定处理。第一百四十七条 基于重大误解实施的民事法律行为，行为人有权请求人民法院或者仲裁机构予以撤销。第一百四十八条 \n一方以欺诈手段，使对方在违背真实意思的情况下实施的民事法律行为，受欺诈方有权请求人民法院或者仲裁机构予以撤销。二、无效合同造成损失赔偿无效的合同，自始没有法律约束力。合同部分无效，不影响其他部分效力的，其他部分仍然有效。合同无效或者被撤销后，因该合同取得的财产，应当予以返还；不能返还或者没有必要返还的，应当折价补偿。造成损失的，有过错的一方应当赔偿对方因此所受到的损失，双方都有过错的，应当各自承担相应的责任。因此签订合同时，要注意审查合同主体的经营范围、授权委托等。",
+  "process_id": 8809,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "分析无效合同的概念",
+      "content": "无效合同是指因不符合法律规定的合同生效要件而在法律上不具备法律效力的合同。从这一点出发，需要进一步分析哪些情况下可能导致合同构成无效。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "查找无效情形法律规定",
+      "content": "为了明确无效合同的具体情形，需要查找相关法律和法规对无效合同的定义与适用情形。例如《中华人民共和国合同法》及其他相关规定。<search>合同无效的情形 法律规定</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "根据法律规定总结无效合同的情形",
+      "content": "<information>《中华人民共和国民法典》第五百零三条至第五百零七条对合同无效的情形进行了详细规定，主要包括：1. 一方以欺诈、胁迫等手段订立，损害国家利益；2. 恶意串通，损害国家、集体或者第三人利益；3. 以合法形式掩盖非法目的；4. 损害社会公共利益；5. 违反法律、行政法规的强制性规定。</information>基于上述信息，可以总结无效合同的主要情形。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "分类整理无效合同情形",
+      "content": "根据已查找到的信息，无效合同的主要情形可以分为以下五类：1. 因违法而无效；2. 因欺诈或胁迫导致无效；3. 因恶意串通无效；4. 因损害社会公共利益无效；5. 因违反强制性规定无效。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "无效合同的情形主要包括以下几种：1. 合同违反法律、行政法规的强制性规定；2. 一方以欺诈、胁迫等方式，损害国家利益或社会公共利益订立；3. 合同双方恶意串通，损害国家、集体或第三人利益；4. 以合法的形式掩盖非法目的的合同；5. 合同内容损害社会公共利益。"
+    },
+    {
+      "action": "Verification",
+      "content": "综上依据法律规定核实以上结论，无效合同的情形已全面覆盖了相关法律规定，结论正确。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n无效合同的情形主要有哪些?\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n无效合同的情形主要包括以下几种：1. 合同违反法律、行政法规的强制性规定；2. 一方以欺诈、胁迫等方式，损害国家利益或社会公共利益订立；3. 合同双方恶意串通，损害国家、集体或第三人利益；4. 以合法的形式掩盖非法目的的合同；5. 合同内容损害社会公共利益。  \n</Model Response>  \n\n<Reference Answer>  \n1、无效合同的情形主要有：一方以欺诈、胁迫的手段订立合同，损害国家利益；恶意串通，损害国家、集体或者第三人利益；以合法形式掩盖非法目的；损害社会公共利益；违反法律、行政法规的强制性规定。\n法律依据《中华人民共和国民法典》第一百四十四条 无民事行为能力人实施的民事法律行为无效。第一百四十六条 行为人与相对人以虚假的意思表示实施的民事法律行为无效。 \n以虚假的意思表示隐藏的民事法律行为的效力，依照有关法律规定处理。第一百四十七条 基于重大误解实施的民事法律行为，行为人有权请求人民法院或者仲裁机构予以撤销。第一百四十八条 \n一方以欺诈手段，使对方在违背真实意思的情况下实施的民事法律行为，受欺诈方有权请求人民法院或者仲裁机构予以撤销。二、无效合同造成损失赔偿无效的合同，自始没有法律约束力。合同部分无效，不影响其他部分效力的，其他部分仍然有效。合同无效或者被撤销后，因该合同取得的财产，应当予以返还；不能返还或者没有必要返还的，应当折价补偿。造成损失的，有过错的一方应当赔偿对方因此所受到的损失，双方都有过错的，应当各自承担相应的责任。因此签订合同时，要注意审查合同主体的经营范围、授权委托等。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 分析无效合同的概念\n无效合同是指因不符合法律规定的合同生效要件而在法律上不具备法律效力的合同。从这一点出发，需要进一步分析哪些情况下可能导致合同构成无效。\n\n### 查找无效情形法律规定\n为了明确无效合同的具体情形，需要查找相关法律和法规对无效合同的定义与适用情形。例如《中华人民共和国合同法》及其他相关规定。<search>合同无效的情形 法律规定</search>\n\n### 根据法律规定总结无效合同的情形\n<information>《中华人民共和国民法典》第五百零三条至第五百零七条对合同无效的情形进行了详细规定，主要包括：1. 一方以欺诈、胁迫等手段订立，损害国家利益；2. 恶意串通，损害国家、集体或者第三人利益；3. 以合法形式掩盖非法目的；4. 损害社会公共利益；5. 违反法律、行政法规的强制性规定。</information>基于上述信息，可以总结无效合同的主要情形。\n\n### 分类整理无效合同情形\n根据已查找到的信息，无效合同的主要情形可以分为以下五类：1. 因违法而无效；2. 因欺诈或胁迫导致无效；3. 因恶意串通无效；4. 因损害社会公共利益无效；5. 因违反强制性规定无效。\n\n### Conclusion\n无效合同的情形主要包括以下几种：1. 合同违反法律、行政法规的强制性规定；2. 一方以欺诈、胁迫等方式，损害国家利益或社会公共利益订立；3. 合同双方恶意串通，损害国家、集体或第三人利益；4. 以合法的形式掩盖非法目的的合同；5. 合同内容损害社会公共利益。\n\n### Verification\n综上依据法律规定核实以上结论，无效合同的情形已全面覆盖了相关法律规定，结论正确。\n</Thought Process>\n\n<Question>\n无效合同的情形主要有哪些?\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n嗯，无效合同这个概念挺重要的，如果合同在法律上没有效力，那就是无效的，但具体什么情况下会导致合同无效呢？得研究一下才行。\n\n首先想到的是，法律肯定会有明确规定哪些情况下合同是无效的。比如《中华人民共和国合同法》或者相关的规定。而且现在不是有《民法典》吗，说不定里面有提到这个问题。需要查一下具体的法律条文。<search>合同无效的情形 法律规定</search>\n\n哦，找到了。根据《民法典》的条文，第五百零三条到第五百零七条，列出了合同无效的几种情况。挺详细的，应该可以总结出常见的几类情况。先看一下内容。\n\n它提到，合同无效的情形主要包括以下五种：第一种是合同的一方使用了欺诈或者胁迫等方法订立合同，而且还损害了国家利益。这种情况法律肯定不能容忍；第二种是合同双方恶意串通，居然损害了国家、集体或者第三人的利益，这种行为还真是恶劣；第三种让我觉得很有意思，它说合同形式合法，可是实际上是用来掩盖非法目的；第四种是合同内容损害社会公共利益，这可能会涉及那些不道德的或者对社会有害的合同；最后一种是合同本身违反了法律或者行政法规的强制性规定，嗯，看来法律对这一类行为是有明确禁止的。\n\n所以我可以把无效合同分成几类，根据这些情形来整理一下。比如，因违法而无效，比如合同违反强制性规定；还有因欺诈或者胁迫订立合同无效，比如损害国家利益；然后就是恶意串通的情况，这也是显而易见的无效；合法掩盖非法目的的情形也属于无效，这还挺隐蔽；最后一个就是损害社会公共利益，这种情况看起来法律也非常重视。\n\n总结一下吧，无效合同主要包括以下几种情况：合同违反了法律或者行政法规的强制性规定；当事人通过欺诈、胁迫订立合同，损害国家利益或者社会公共利益；合同双方恶意串通，损害了国家、集体或者第三人的利益；合同表面合法但实际是为了非法目的；合同内容对社会公共利益有害。应该差不多覆盖了所有法律规定的情形了。\n\n也就是说，按照《民法典》的规定，无效合同其实挺容易判断的，类似欺诈、违法、侵害社会利益这些情形就很明显，写起来其实蛮有逻辑的。\n</Internal Thinking>\n\n<Question>\n无效合同的情形主要有哪些?\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析无效合同的概念\",\n      \"content\": \"无效合同是指因不符合法律规定的合同生效要件而在法律上不具备法律效力的合同。从这一点出发，需要进一步分析哪些情况下可能导致合同构成无效。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"查找无效情形法律规定\",\n      \"content\": \"为了明确无效合同的具体情形，需要查找相关法律和法规对无效合同的定义与适用情形。例如《中华人民共和国合同法》及其他相关规定。<search>合同无效的情形 法律规定</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"根据法律规定总结无效合同的情形\",\n      \"content\": \"<information>《中华人民共和国民法典》第五百零三条至第五百零七条对合同无效的情形进行了详细规定，主要包括：1. 一方以欺诈、胁迫等手段订立，损害国家利益；2. 恶意串通，损害国家、集体或者第三人利益；3. 以合法形式掩盖非法目的；4. 损害社会公共利益；5. 违反法律、行政法规的强制性规定。</information>基于上述信息，可以总结无效合同的主要情形。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分类整理无效合同情形\",\n      \"content\": \"根据已查找到的信息，无效合同的主要情形可以分为以下五类：1. 因违法而无效；2. 因欺诈或胁迫导致无效；3. 因恶意串通无效；4. 因损害社会公共利益无效；5. 因违反强制性规定无效。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"无效合同的情形主要包括以下几种：1. 合同违反法律、行政法规的强制性规定；2. 一方以欺诈、胁迫等方式，损害国家利益或社会公共利益订立；3. 合同双方恶意串通，损害国家、集体或第三人利益；4. 以合法的形式掩盖非法目的的合同；5. 合同内容损害社会公共利益。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"综上依据法律规定核实以上结论，无效合同的情形已全面覆盖了相关法律规定，结论正确。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"嗯，无效合同这个概念挺重要的，如果合同在法律上没有效力，那就是无效的，但具体什么情况下会导致合同无效呢？得研究一下才行。\\n\\n首先想到的是，法律肯定会有明确规定哪些情况下合同是无效的。比如《中华人民共和国合同法》或者相关的规定。而且现在不是有《民法典》吗，说不定里面有提到这个问题。需要查一下具体的法律条文。<search>合同无效的情形 法律规定</search>\\n\\n哦，找到了。根据《民法典》的条文，第五百零三条到第五百零七条，列出了合同无效的几种情况。挺详细的，应该可以总结出常见的几类情况。先看一下内容。\\n\\n它提到，合同无效的情形主要包括以下五种：第一种是合同的一方使用了欺诈或者胁迫等方法订立合同，而且还损害了国家利益。这种情况法律肯定不能容忍；第二种是合同双方恶意串通，居然损害了国家、集体或者第三人的利益，这种行为还真是恶劣；第三种让我觉得很有意思，它说合同形式合法，可是实际上是用来掩盖非法目的；第四种是合同内容损害社会公共利益，这可能会涉及那些不道德的或者对社会有害的合同；最后一种是合同本身违反了法律或者行政法规的强制性规定，嗯，看来法律对这一类行为是有明确禁止的。\\n\\n所以我可以把无效合同分成几类，根据这些情形来整理一下。比如，因违法而无效，比如合同违反强制性规定；还有因欺诈或者胁迫订立合同无效，比如损害国家利益；然后就是恶意串通的情况，这也是显而易见的无效；合法掩盖非法目的的情形也属于无效，这还挺隐蔽；最后一个就是损害社会公共利益，这种情况看起来法律也非常重视。\\n\\n总结一下吧，无效合同主要包括以下几种情况：合同违反了法律或者行政法规的强制性规定；当事人通过欺诈、胁迫订立合同，损害国家利益或者社会公共利益；合同双方恶意串通，损害了国家、集体或者第三人的利益；合同表面合法但实际是为了非法目的；合同内容对社会公共利益有害。应该差不多覆盖了所有法律规定的情形了。\\n\\n也就是说，按照《民法典》的规定，无效合同其实挺容易判断的，类似欺诈、违法、侵害社会利益这些情形就很明显，写起来其实蛮有逻辑的。\"\n}\n```",
+    "根据《中华人民共和国民法典》的有关规定，无效合同的情形主要包括以下五种：\n\n1. **违反法律、行政法规的强制性规定的合同**  \n   合同的内容或目的如果违反了法律或者行政法规中的强制性规定，则该合同无效，除非该强制性规定并不导致合同无效。\n\n2. **以欺诈、胁迫手段订立合同，损害国家利益的合同**  \n   如果一方当事人通过欺诈、胁迫等不正当手段订立合同，且这种行为损害了国家利益，该合同无效。\n\n3. **恶意串通损害国家、集体或者第三人利益的合同**  \n   双方当事人之间有恶意串通的行为，并因此损害了国家、集体或第三人的合法权益，该合同无效。\n\n4. **以合法形式掩盖非法目的的合同**  \n   如果合同表面上符合法律规定的形式，但实质目的是进行非法活动，该合同属于无效合同。\n\n5. **违背社会公共利益的合同**  \n   如果合同的内容或履行对社会公共利益造成损害，即使形式上合法，该合同也属无效。\n\n以上是无效合同的主要情形，这些规定旨在维护法律制度的严肃性和社会秩序的稳定。当事人订立合同时，应当确保其内容合法且符合社会公共利益，以免合同处于无效状态带来法律风险。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "分析无效合同的概念",
+        "content": "无效合同是指因不符合法律规定的合同生效要件而在法律上不具备法律效力的合同。从这一点出发，需要进一步分析哪些情况下可能导致合同构成无效。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "查找无效情形法律规定",
+        "content": "为了明确无效合同的具体情形，需要查找相关法律和法规对无效合同的定义与适用情形。例如《中华人民共和国合同法》及其他相关规定。<search>合同无效的情形 法律规定</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "根据法律规定总结无效合同的情形",
+        "content": "<information>《中华人民共和国民法典》第五百零三条至第五百零七条对合同无效的情形进行了详细规定，主要包括：1. 一方以欺诈、胁迫等手段订立，损害国家利益；2. 恶意串通，损害国家、集体或者第三人利益；3. 以合法形式掩盖非法目的；4. 损害社会公共利益；5. 违反法律、行政法规的强制性规定。</information>基于上述信息，可以总结无效合同的主要情形。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "分类整理无效合同情形",
+        "content": "根据已查找到的信息，无效合同的主要情形可以分为以下五类：1. 因违法而无效；2. 因欺诈或胁迫导致无效；3. 因恶意串通无效；4. 因损害社会公共利益无效；5. 因违反强制性规定无效。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "无效合同的情形主要包括以下几种：1. 合同违反法律、行政法规的强制性规定；2. 一方以欺诈、胁迫等方式，损害国家利益或社会公共利益订立；3. 合同双方恶意串通，损害国家、集体或第三人利益；4. 以合法的形式掩盖非法目的的合同；5. 合同内容损害社会公共利益。"
+      },
+      {
+        "action": "Verification",
+        "content": "综上依据法律规定核实以上结论，无效合同的情形已全面覆盖了相关法律规定，结论正确。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "嗯，无效合同这个概念挺重要的，如果合同在法律上没有效力，那就是无效的，但具体什么情况下会导致合同无效呢？得研究一下才行。\n\n首先想到的是，法律肯定会有明确规定哪些情况下合同是无效的。比如《中华人民共和国合同法》或者相关的规定。而且现在不是有《民法典》吗，说不定里面有提到这个问题。需要查一下具体的法律条文。<search>合同无效的情形 法律规定</search>\n\n哦，找到了。根据《民法典》的条文，第五百零三条到第五百零七条，列出了合同无效的几种情况。挺详细的，应该可以总结出常见的几类情况。先看一下内容。\n\n它提到，合同无效的情形主要包括以下五种：第一种是合同的一方使用了欺诈或者胁迫等方法订立合同，而且还损害了国家利益。这种情况法律肯定不能容忍；第二种是合同双方恶意串通，居然损害了国家、集体或者第三人的利益，这种行为还真是恶劣；第三种让我觉得很有意思，它说合同形式合法，可是实际上是用来掩盖非法目的；第四种是合同内容损害社会公共利益，这可能会涉及那些不道德的或者对社会有害的合同；最后一种是合同本身违反了法律或者行政法规的强制性规定，嗯，看来法律对这一类行为是有明确禁止的。\n\n所以我可以把无效合同分成几类，根据这些情形来整理一下。比如，因违法而无效，比如合同违反强制性规定；还有因欺诈或者胁迫订立合同无效，比如损害国家利益；然后就是恶意串通的情况，这也是显而易见的无效；合法掩盖非法目的的情形也属于无效，这还挺隐蔽；最后一个就是损害社会公共利益，这种情况看起来法律也非常重视。\n\n总结一下吧，无效合同主要包括以下几种情况：合同违反了法律或者行政法规的强制性规定；当事人通过欺诈、胁迫订立合同，损害国家利益或者社会公共利益；合同双方恶意串通，损害了国家、集体或者第三人的利益；合同表面合法但实际是为了非法目的；合同内容对社会公共利益有害。应该差不多覆盖了所有法律规定的情形了。\n\n也就是说，按照《民法典》的规定，无效合同其实挺容易判断的，类似欺诈、违法、侵害社会利益这些情形就很明显，写起来其实蛮有逻辑的。",
+  "Response": "根据《中华人民共和国民法典》的有关规定，无效合同的情形主要包括以下五种：\n\n1. **违反法律、行政法规的强制性规定的合同**  \n   合同的内容或目的如果违反了法律或者行政法规中的强制性规定，则该合同无效，除非该强制性规定并不导致合同无效。\n\n2. **以欺诈、胁迫手段订立合同，损害国家利益的合同**  \n   如果一方当事人通过欺诈、胁迫等不正当手段订立合同，且这种行为损害了国家利益，该合同无效。\n\n3. **恶意串通损害国家、集体或者第三人利益的合同**  \n   双方当事人之间有恶意串通的行为，并因此损害了国家、集体或第三人的合法权益，该合同无效。\n\n4. **以合法形式掩盖非法目的的合同**  \n   如果合同表面上符合法律规定的形式，但实质目的是进行非法活动，该合同属于无效合同。\n\n5. **违背社会公共利益的合同**  \n   如果合同的内容或履行对社会公共利益造成损害，即使形式上合法，该合同也属无效。\n\n以上是无效合同的主要情形，这些规定旨在维护法律制度的严肃性和社会秩序的稳定。当事人订立合同时，应当确保其内容合法且符合社会公共利益，以免合同处于无效状态带来法律风险。",
+  "Question": "无效合同的情形主要有哪些?"
+}

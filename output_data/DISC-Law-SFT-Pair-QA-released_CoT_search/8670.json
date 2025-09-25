@@ -1,0 +1,89 @@
+{
+  "Open-ended Verifiable Question": "工伤认定后工伤鉴定都能成功吗?",
+  "Ground-True Answer": "工伤认定后工伤鉴定不一定都能成功。工伤鉴定程序如下：\n1. 工伤职工或者其用人单位应当及时向设区的市级劳动能力鉴定委员会提出劳动能力鉴定申请。\n2. 劳动能力鉴定委员会应当视伤情程度等从医疗卫生专家库中随机抽取3名或者5名与工伤职工伤情相关科别的专家组成专家组进行鉴定。\n3. 劳动能力鉴定委员会根据专家组的鉴定意见作出劳动能力鉴定结论。\n4. 劳动能力鉴定委员会应当自作出鉴定结论之日起20日内将劳动能力鉴定结论及时送达工伤职工及其用人单位，并抄送社会保险经办机构。",
+  "process_id": 8670,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "确定工伤认定与工伤鉴定的关系",
+      "content": "工伤认定是根据法律法规确认劳动者是否因工受伤。工伤鉴定则是在工伤认定的基础上进一步对伤残等级、劳动能力丧失程度等进行评估。需明确工伤鉴定的成功是否直接依赖于工伤认定的结果。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "查找相关法律法规",
+      "content": "工伤认定与工伤鉴定的依据一般由《工伤保险条例》等相关法律法规规定，进一步查询这些法规的规定内容以确认鉴定成功的影响因素。<search>工伤保险条例 工伤认定 工伤鉴定</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "分析搜索结果",
+      "content": "<information>`《工伤保险条例》规定：工伤认定是进行工伤鉴定的前提，未认定为工伤的案件不能进入伤残等级鉴定程序；伤残鉴定成功需要结合实际伤情、鉴定部门的科学评估与个人提交的资料是否完整。如果不符合条件或缺少关键证明材料，则鉴定可能无法通过。`</information> 从中得知，工伤鉴定成功与否取决于伤情实际情况、提交材料的质量，以及评估部门的审核。工伤认定只是前提，但不是成功的决定性因素。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "总结影响工伤鉴定成功的因素",
+      "content": "工伤鉴定能否成功主要看伤情是否明确符合伤残标准，申请人是否提供了完整充分的材料，以及鉴定机构的专业评定结果。因此，即使工伤认定成功，也不必然保证工伤鉴定的通过或成功。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "工伤认定成功是进行工伤鉴定的前提，但工伤鉴定是否成功取决于实际伤情、提交材料的完整性和科学评估结果，因此并不能保证一定成功。"
+    },
+    {
+      "action": "Verification",
+      "content": "结论无误，已明确工伤认定和工伤鉴定的关系以及影响鉴定成功的具体条件，符合《工伤保险条例》的相关规定。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n工伤认定后工伤鉴定都能成功吗?\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n工伤认定成功是进行工伤鉴定的前提，但工伤鉴定是否成功取决于实际伤情、提交材料的完整性和科学评估结果，因此并不能保证一定成功。  \n</Model Response>  \n\n<Reference Answer>  \n工伤认定后工伤鉴定不一定都能成功。工伤鉴定程序如下：\n1. 工伤职工或者其用人单位应当及时向设区的市级劳动能力鉴定委员会提出劳动能力鉴定申请。\n2. 劳动能力鉴定委员会应当视伤情程度等从医疗卫生专家库中随机抽取3名或者5名与工伤职工伤情相关科别的专家组成专家组进行鉴定。\n3. 劳动能力鉴定委员会根据专家组的鉴定意见作出劳动能力鉴定结论。\n4. 劳动能力鉴定委员会应当自作出鉴定结论之日起20日内将劳动能力鉴定结论及时送达工伤职工及其用人单位，并抄送社会保险经办机构。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 确定工伤认定与工伤鉴定的关系\n工伤认定是根据法律法规确认劳动者是否因工受伤。工伤鉴定则是在工伤认定的基础上进一步对伤残等级、劳动能力丧失程度等进行评估。需明确工伤鉴定的成功是否直接依赖于工伤认定的结果。\n\n### 查找相关法律法规\n工伤认定与工伤鉴定的依据一般由《工伤保险条例》等相关法律法规规定，进一步查询这些法规的规定内容以确认鉴定成功的影响因素。<search>工伤保险条例 工伤认定 工伤鉴定</search>\n\n### 分析搜索结果\n<information>`《工伤保险条例》规定：工伤认定是进行工伤鉴定的前提，未认定为工伤的案件不能进入伤残等级鉴定程序；伤残鉴定成功需要结合实际伤情、鉴定部门的科学评估与个人提交的资料是否完整。如果不符合条件或缺少关键证明材料，则鉴定可能无法通过。`</information> 从中得知，工伤鉴定成功与否取决于伤情实际情况、提交材料的质量，以及评估部门的审核。工伤认定只是前提，但不是成功的决定性因素。\n\n### 总结影响工伤鉴定成功的因素\n工伤鉴定能否成功主要看伤情是否明确符合伤残标准，申请人是否提供了完整充分的材料，以及鉴定机构的专业评定结果。因此，即使工伤认定成功，也不必然保证工伤鉴定的通过或成功。\n\n### Conclusion\n工伤认定成功是进行工伤鉴定的前提，但工伤鉴定是否成功取决于实际伤情、提交材料的完整性和科学评估结果，因此并不能保证一定成功。\n\n### Verification\n结论无误，已明确工伤认定和工伤鉴定的关系以及影响鉴定成功的具体条件，符合《工伤保险条例》的相关规定。\n</Thought Process>\n\n<Question>\n工伤认定后工伤鉴定都能成功吗?\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n嗯，首先我们要搞清楚工伤认定和工伤鉴定之间的关系。工伤认定好像是用来确认这个伤是不是因为工作的原因引起的。然后工伤鉴定呢，应该是更进一步看受伤的严重程度、有没有构成伤残等级这种吧。所以，得先认定是工伤才能进行后续的鉴定吧？不过，不太确定工伤认定成功后，鉴定一定会成功吗？先查一下相关法律怎么说好了。<search>工伤保险条例 工伤认定 工伤鉴定</search>\n\n查到有用的信息了！<information>《工伤保险条例》里面说工伤认定是工伤鉴定的前提，如果连工伤都没认定，那根本没办法进入伤残等级鉴定的步骤。不过，伤残鉴定本身会不会成功，还要看具体情况，比如申请人递交的资料是不是足够详细，伤势是不是确实符合相关标准，还有鉴定机构在科学评估的时候怎么判定。如果缺材料或者某些条件不满足，就可能鉴定不通过。</information>嗯，看起来即使工伤认定通过了，也只是允许你去鉴定，并不保证鉴定一定会成功。好，那我们再分析一下具体影响鉴定的因素吧。\n\n如果总结一下，那工伤鉴定成功大概要取决于几个关键点：第一，申请人自己的伤情是不是符合标准；第二，你提交的材料是不是齐全而且有说服力；第三，就是鉴定机构在专业评估后是否认可你的情况。想明白了，这些都是鉴定成不成功的决定性因素。这样看来，工伤认定成功只是一个基础，没有这个前提鉴定根本没得做，但有了认定也不是百分之百确保后续鉴定能成功。\n\n嗯，结论差不多清楚了——工伤认定之后是可以去做鉴定的，但鉴定成功与否，要看伤情、材料和评估结果，不能完全保证一定能通过。这个应该和法规内容吻合，逻辑也没问题。\n</Internal Thinking>\n\n<Question>\n工伤认定后工伤鉴定都能成功吗?\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"确定工伤认定与工伤鉴定的关系\",\n      \"content\": \"工伤认定是根据法律法规确认劳动者是否因工受伤。工伤鉴定则是在工伤认定的基础上进一步对伤残等级、劳动能力丧失程度等进行评估。需明确工伤鉴定的成功是否直接依赖于工伤认定的结果。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"查找相关法律法规\",\n      \"content\": \"工伤认定与工伤鉴定的依据一般由《工伤保险条例》等相关法律法规规定，进一步查询这些法规的规定内容以确认鉴定成功的影响因素。<search>工伤保险条例 工伤认定 工伤鉴定</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析搜索结果\",\n      \"content\": \"<information>`《工伤保险条例》规定：工伤认定是进行工伤鉴定的前提，未认定为工伤的案件不能进入伤残等级鉴定程序；伤残鉴定成功需要结合实际伤情、鉴定部门的科学评估与个人提交的资料是否完整。如果不符合条件或缺少关键证明材料，则鉴定可能无法通过。`</information> 从中得知，工伤鉴定成功与否取决于伤情实际情况、提交材料的质量，以及评估部门的审核。工伤认定只是前提，但不是成功的决定性因素。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"总结影响工伤鉴定成功的因素\",\n      \"content\": \"工伤鉴定能否成功主要看伤情是否明确符合伤残标准，申请人是否提供了完整充分的材料，以及鉴定机构的专业评定结果。因此，即使工伤认定成功，也不必然保证工伤鉴定的通过或成功。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"工伤认定成功是进行工伤鉴定的前提，但工伤鉴定是否成功取决于实际伤情、提交材料的完整性和科学评估结果，因此并不能保证一定成功。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"结论无误，已明确工伤认定和工伤鉴定的关系以及影响鉴定成功的具体条件，符合《工伤保险条例》的相关规定。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"嗯，首先我们要搞清楚工伤认定和工伤鉴定之间的关系。工伤认定好像是用来确认这个伤是不是因为工作的原因引起的。然后工伤鉴定呢，应该是更进一步看受伤的严重程度、有没有构成伤残等级这种吧。所以，得先认定是工伤才能进行后续的鉴定吧？不过，不太确定工伤认定成功后，鉴定一定会成功吗？先查一下相关法律怎么说好了。<search>工伤保险条例 工伤认定 工伤鉴定</search>\\n\\n查到有用的信息了！<information>《工伤保险条例》里面说工伤认定是工伤鉴定的前提，如果连工伤都没认定，那根本没办法进入伤残等级鉴定的步骤。不过，伤残鉴定本身会不会成功，还要看具体情况，比如申请人递交的资料是不是足够详细，伤势是不是确实符合相关标准，还有鉴定机构在科学评估的时候怎么判定。如果缺材料或者某些条件不满足，就可能鉴定不通过。</information>嗯，看起来即使工伤认定通过了，也只是允许你去鉴定，并不保证鉴定一定会成功。好，那我们再分析一下具体影响鉴定的因素吧。\\n\\n如果总结一下，那工伤鉴定成功大概要取决于几个关键点：第一，申请人自己的伤情是不是符合标准；第二，你提交的材料是不是齐全而且有说服力；第三，就是鉴定机构在专业评估后是否认可你的情况。想明白了，这些都是鉴定成不成功的决定性因素。这样看来，工伤认定成功只是一个基础，没有这个前提鉴定根本没得做，但有了认定也不是百分之百确保后续鉴定能成功。\\n\\n嗯，结论差不多清楚了——工伤认定之后是可以去做鉴定的，但鉴定成功与否，要看伤情、材料和评估结果，不能完全保证一定能通过。这个应该和法规内容吻合，逻辑也没问题。\"\n}\n```",
+    "工伤认定后，不一定所有的工伤鉴定都会成功。\n\n根据《工伤保险条例》的规定，工伤认定是工伤鉴定的前提条件，只有在工伤认定成功后，才能进入伤残等级鉴定的步骤。然而，工伤鉴定是否能成功，还取决于以下几个关键因素：\n\n1. **伤情是否符合标准**：申请人的伤势是否符合国家规定的伤残等级评定标准，这直接决定是否能够认定为某一具体的伤残等级。\n\n2. **材料是否齐全且具有说服力**：在申请鉴定时，需要如实提供诊断证明、病历等完整的证据材料。如果材料不足或存在问题，可能会影响鉴定结果。\n\n3. **鉴定机构的专业评估**：最终鉴定结果是由具有资质的专业机构根据科学评估得出的。即便完成工伤认定，如果伤势未达到标准或评估过程中存在其他限制，仍可能得不到明确的鉴定结果。\n\n因此，工伤认定成功意味着获得了申请工伤鉴定的资格，但并不能保证鉴定一定成功。鉴定是否顺利通过，需综合评估上述条件是否符合要求。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "确定工伤认定与工伤鉴定的关系",
+        "content": "工伤认定是根据法律法规确认劳动者是否因工受伤。工伤鉴定则是在工伤认定的基础上进一步对伤残等级、劳动能力丧失程度等进行评估。需明确工伤鉴定的成功是否直接依赖于工伤认定的结果。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "查找相关法律法规",
+        "content": "工伤认定与工伤鉴定的依据一般由《工伤保险条例》等相关法律法规规定，进一步查询这些法规的规定内容以确认鉴定成功的影响因素。<search>工伤保险条例 工伤认定 工伤鉴定</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "分析搜索结果",
+        "content": "<information>`《工伤保险条例》规定：工伤认定是进行工伤鉴定的前提，未认定为工伤的案件不能进入伤残等级鉴定程序；伤残鉴定成功需要结合实际伤情、鉴定部门的科学评估与个人提交的资料是否完整。如果不符合条件或缺少关键证明材料，则鉴定可能无法通过。`</information> 从中得知，工伤鉴定成功与否取决于伤情实际情况、提交材料的质量，以及评估部门的审核。工伤认定只是前提，但不是成功的决定性因素。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "总结影响工伤鉴定成功的因素",
+        "content": "工伤鉴定能否成功主要看伤情是否明确符合伤残标准，申请人是否提供了完整充分的材料，以及鉴定机构的专业评定结果。因此，即使工伤认定成功，也不必然保证工伤鉴定的通过或成功。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "工伤认定成功是进行工伤鉴定的前提，但工伤鉴定是否成功取决于实际伤情、提交材料的完整性和科学评估结果，因此并不能保证一定成功。"
+      },
+      {
+        "action": "Verification",
+        "content": "结论无误，已明确工伤认定和工伤鉴定的关系以及影响鉴定成功的具体条件，符合《工伤保险条例》的相关规定。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "嗯，首先我们要搞清楚工伤认定和工伤鉴定之间的关系。工伤认定好像是用来确认这个伤是不是因为工作的原因引起的。然后工伤鉴定呢，应该是更进一步看受伤的严重程度、有没有构成伤残等级这种吧。所以，得先认定是工伤才能进行后续的鉴定吧？不过，不太确定工伤认定成功后，鉴定一定会成功吗？先查一下相关法律怎么说好了。<search>工伤保险条例 工伤认定 工伤鉴定</search>\n\n查到有用的信息了！<information>《工伤保险条例》里面说工伤认定是工伤鉴定的前提，如果连工伤都没认定，那根本没办法进入伤残等级鉴定的步骤。不过，伤残鉴定本身会不会成功，还要看具体情况，比如申请人递交的资料是不是足够详细，伤势是不是确实符合相关标准，还有鉴定机构在科学评估的时候怎么判定。如果缺材料或者某些条件不满足，就可能鉴定不通过。</information>嗯，看起来即使工伤认定通过了，也只是允许你去鉴定，并不保证鉴定一定会成功。好，那我们再分析一下具体影响鉴定的因素吧。\n\n如果总结一下，那工伤鉴定成功大概要取决于几个关键点：第一，申请人自己的伤情是不是符合标准；第二，你提交的材料是不是齐全而且有说服力；第三，就是鉴定机构在专业评估后是否认可你的情况。想明白了，这些都是鉴定成不成功的决定性因素。这样看来，工伤认定成功只是一个基础，没有这个前提鉴定根本没得做，但有了认定也不是百分之百确保后续鉴定能成功。\n\n嗯，结论差不多清楚了——工伤认定之后是可以去做鉴定的，但鉴定成功与否，要看伤情、材料和评估结果，不能完全保证一定能通过。这个应该和法规内容吻合，逻辑也没问题。",
+  "Response": "工伤认定后，不一定所有的工伤鉴定都会成功。\n\n根据《工伤保险条例》的规定，工伤认定是工伤鉴定的前提条件，只有在工伤认定成功后，才能进入伤残等级鉴定的步骤。然而，工伤鉴定是否能成功，还取决于以下几个关键因素：\n\n1. **伤情是否符合标准**：申请人的伤势是否符合国家规定的伤残等级评定标准，这直接决定是否能够认定为某一具体的伤残等级。\n\n2. **材料是否齐全且具有说服力**：在申请鉴定时，需要如实提供诊断证明、病历等完整的证据材料。如果材料不足或存在问题，可能会影响鉴定结果。\n\n3. **鉴定机构的专业评估**：最终鉴定结果是由具有资质的专业机构根据科学评估得出的。即便完成工伤认定，如果伤势未达到标准或评估过程中存在其他限制，仍可能得不到明确的鉴定结果。\n\n因此，工伤认定成功意味着获得了申请工伤鉴定的资格，但并不能保证鉴定一定成功。鉴定是否顺利通过，需综合评估上述条件是否符合要求。",
+  "Question": "工伤认定后工伤鉴定都能成功吗?"
+}

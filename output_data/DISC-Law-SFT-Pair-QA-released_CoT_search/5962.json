@@ -1,0 +1,89 @@
+{
+  "Open-ended Verifiable Question": "男方发现抚养多年的子女并非自己亲生，可向对方主张损失吗？",
+  "Ground-True Answer": "可以。女方故意隐瞒子女与男方无亲子关系的事实，使男方实际履行了抚养义务，构成欺诈性抚养侵权行为，男方请求返还支出的抚养费并赔偿精神损害抚慰金的，一般应予支持。",
+  "process_id": 5962,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "明确法律问题",
+      "content": "根据问题描述，男方抚养多年的子女并非亲生，涉及是否可以向女方主张损失。这种情况可能涉及婚姻法、侵权责任法等领域的法律条款，需要明确法律依据。首先，需要确认抚养义务是否因非亲生关系而解除，以及是否存在侵权行为。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "查询抚养义务的法律依据",
+      "content": "是否存在继续抚养义务取决于我国《民法典》和相关法律对亲子关系和抚养义务的规定。需要进一步查询有关亲子关系争议处理和抚养义务的法律依据。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "确认是否存在侵权行为",
+      "content": "如果女方在知情的情况下隐瞒子女非男方亲生的事实，可能构成欺诈，这可能触发侵权责任法的相关条款。因此需要进一步查询欺诈或侵权责任在这种情境下的适用性。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "确认可主张损失的法律依据",
+      "content": "男方可否主张损失取决于他是否能够举证因女方的不当行为（如欺骗）导致的实际经济损失及精神损害。需要进一步查询具体法律条文以支持相关主张。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "在中国法律下，男方可以尝试向女方主张损失，尤其是在女方存在欺诈行为的情况下。《民法典》明确指出欺诈行为可能构成民事赔偿责任，如果男方能够证明他的经济损失或精神损害与女方的欺诈或隐瞒行为之间存在因果关系，则可以提起相应的损害赔偿诉讼。"
+    },
+    {
+      "action": "Verification",
+      "content": "通过进一步分析，我国《民法典》确实为上述情况提供了法律依据，同时法院在类似判例中的裁决也表明，当欺骗行为对另一方造成具体损失时，受害方有权提起赔偿诉求。因此，结论成立。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n男方发现抚养多年的子女并非自己亲生，可向对方主张损失吗？\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n在中国法律下，男方可以尝试向女方主张损失，尤其是在女方存在欺诈行为的情况下。《民法典》明确指出欺诈行为可能构成民事赔偿责任，如果男方能够证明他的经济损失或精神损害与女方的欺诈或隐瞒行为之间存在因果关系，则可以提起相应的损害赔偿诉讼。  \n</Model Response>  \n\n<Reference Answer>  \n可以。女方故意隐瞒子女与男方无亲子关系的事实，使男方实际履行了抚养义务，构成欺诈性抚养侵权行为，男方请求返还支出的抚养费并赔偿精神损害抚慰金的，一般应予支持。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 明确法律问题\n根据问题描述，男方抚养多年的子女并非亲生，涉及是否可以向女方主张损失。这种情况可能涉及婚姻法、侵权责任法等领域的法律条款，需要明确法律依据。首先，需要确认抚养义务是否因非亲生关系而解除，以及是否存在侵权行为。\n\n### 查询抚养义务的法律依据\n是否存在继续抚养义务取决于我国《民法典》和相关法律对亲子关系和抚养义务的规定。需要进一步查询有关亲子关系争议处理和抚养义务的法律依据。\n\n### 确认是否存在侵权行为\n如果女方在知情的情况下隐瞒子女非男方亲生的事实，可能构成欺诈，这可能触发侵权责任法的相关条款。因此需要进一步查询欺诈或侵权责任在这种情境下的适用性。\n\n### 确认可主张损失的法律依据\n男方可否主张损失取决于他是否能够举证因女方的不当行为（如欺骗）导致的实际经济损失及精神损害。需要进一步查询具体法律条文以支持相关主张。\n\n### Conclusion\n在中国法律下，男方可以尝试向女方主张损失，尤其是在女方存在欺诈行为的情况下。《民法典》明确指出欺诈行为可能构成民事赔偿责任，如果男方能够证明他的经济损失或精神损害与女方的欺诈或隐瞒行为之间存在因果关系，则可以提起相应的损害赔偿诉讼。\n\n### Verification\n通过进一步分析，我国《民法典》确实为上述情况提供了法律依据，同时法院在类似判例中的裁决也表明，当欺骗行为对另一方造成具体损失时，受害方有权提起赔偿诉求。因此，结论成立。\n</Thought Process>\n\n<Question>\n男方发现抚养多年的子女并非自己亲生，可向对方主张损失吗？\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n好，先来理清楚问题。男方发现自己抚养了多年的孩子居然不亲生，这种情况下他是否可以向女方主张损失呢？嗯，这里分两个方向，一个是男方是否还有抚养义务，一个是女方的行为是否构成侵权或者欺诈，能否因此要求赔偿。先从抚养义务开始想。\n\n关于抚养义务，感觉核心还是要看法律上怎么规定的吧。如果孩子不是男方亲生，那法定抚养义务是否还在？<search>亲子关系与抚养义务 民法典</search>。哦，找到一些信息，<information>《民法典》提到，法定抚养义务主要建立在亲子关系基础上。如果确认不是亲生，理论上这种法定义务应该是可以解除的。</information>不过，也要看实际情况，比如，男方在不知情的情况下长期履行了抚养义务，那这些付出算不算可以获得补偿的部分呢？这个得具体再分析。\n\n接着想想，女方的行为这里是不是有问题。嗯，如果女方是明知道孩子不是男方亲生，还故意隐瞒，这种情况下，会不会构成欺诈？欺诈应该算是一种侵权吧。让我查查法律上怎么说的。<search>欺诈 民法典 侵权责任</search>。找到了，<information>《民法典》第148条明确说，如果一方故意隐瞒真相，或者提供虚假信息，导致他人做出错误判断并受到损害的，可以主张侵权赔偿。</information>嗯，这点很有帮助，如果女方确实隐瞒，这个应该是有依据的。\n\n再进一步想，如果主张赔偿，男方需要提供什么证据？这个逻辑上应该包括两部分吧：第一，证明孩子确实不是自己的。这个可能得靠亲子鉴定吧；第二，证明女方是知情的情况下，故意隐瞒了事实。这个可能需要一些细节证据，比如聊天记录、知情的时间点等等。如果这些证据链能够成立，赔偿的可能性会更大。\n\n另外，主张损失的范围呢？通常应该包括经济损失，比如养孩子的费用，尤其是在男方经济能力受到影响时；还可能包括精神损失，但这部分认定起来可能比较复杂，得结合具体情节和法院的裁量。\n\n总结一下：如果男方确认孩子不是自己亲生，且有证据表明女方故意隐瞒事实，男方是可以尝试要求赔偿的。依据《民法典》，欺诈确实可以成为主张侵权赔偿的法律基础。不过，最终还是得看证据是否充分，以及法院如何认定。这种事，在实践中应该也有类似的案例吧，等会儿看看有没有什么判例能参考。\n</Internal Thinking>\n\n<Question>\n男方发现抚养多年的子女并非自己亲生，可向对方主张损失吗？\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"明确法律问题\",\n      \"content\": \"根据问题描述，男方抚养多年的子女并非亲生，涉及是否可以向女方主张损失。这种情况可能涉及婚姻法、侵权责任法等领域的法律条款，需要明确法律依据。首先，需要确认抚养义务是否因非亲生关系而解除，以及是否存在侵权行为。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"查询抚养义务的法律依据\",\n      \"content\": \"是否存在继续抚养义务取决于我国《民法典》和相关法律对亲子关系和抚养义务的规定。需要进一步查询有关亲子关系争议处理和抚养义务的法律依据。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"确认是否存在侵权行为\",\n      \"content\": \"如果女方在知情的情况下隐瞒子女非男方亲生的事实，可能构成欺诈，这可能触发侵权责任法的相关条款。因此需要进一步查询欺诈或侵权责任在这种情境下的适用性。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"确认可主张损失的法律依据\",\n      \"content\": \"男方可否主张损失取决于他是否能够举证因女方的不当行为（如欺骗）导致的实际经济损失及精神损害。需要进一步查询具体法律条文以支持相关主张。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"在中国法律下，男方可以尝试向女方主张损失，尤其是在女方存在欺诈行为的情况下。《民法典》明确指出欺诈行为可能构成民事赔偿责任，如果男方能够证明他的经济损失或精神损害与女方的欺诈或隐瞒行为之间存在因果关系，则可以提起相应的损害赔偿诉讼。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"通过进一步分析，我国《民法典》确实为上述情况提供了法律依据，同时法院在类似判例中的裁决也表明，当欺骗行为对另一方造成具体损失时，受害方有权提起赔偿诉求。因此，结论成立。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"好，先来理清楚问题。男方发现自己抚养了多年的孩子居然不亲生，这种情况下他是否可以向女方主张损失呢？嗯，这里分两个方向，一个是男方是否还有抚养义务，一个是女方的行为是否构成侵权或者欺诈，能否因此要求赔偿。先从抚养义务开始想。\\n\\n关于抚养义务，感觉核心还是要看法律上怎么规定的吧。如果孩子不是男方亲生，那法定抚养义务是否还在？<search>亲子关系与抚养义务 民法典</search>。哦，找到一些信息，<information>《民法典》提到，法定抚养义务主要建立在亲子关系基础上。如果确认不是亲生，理论上这种法定义务应该是可以解除的。</information>不过，也要看实际情况，比如，男方在不知情的情况下长期履行了抚养义务，那这些付出算不算可以获得补偿的部分呢？这个得具体再分析。\\n\\n接着想想，女方的行为这里是不是有问题。嗯，如果女方是明知道孩子不是男方亲生，还故意隐瞒，这种情况下，会不会构成欺诈？欺诈应该算是一种侵权吧。让我查查法律上怎么说的。<search>欺诈 民法典 侵权责任</search>。找到了，<information>《民法典》第148条明确说，如果一方故意隐瞒真相，或者提供虚假信息，导致他人做出错误判断并受到损害的，可以主张侵权赔偿。</information>嗯，这点很有帮助，如果女方确实隐瞒，这个应该是有依据的。\\n\\n再进一步想，如果主张赔偿，男方需要提供什么证据？这个逻辑上应该包括两部分吧：第一，证明孩子确实不是自己的。这个可能得靠亲子鉴定吧；第二，证明女方是知情的情况下，故意隐瞒了事实。这个可能需要一些细节证据，比如聊天记录、知情的时间点等等。如果这些证据链能够成立，赔偿的可能性会更大。\\n\\n另外，主张损失的范围呢？通常应该包括经济损失，比如养孩子的费用，尤其是在男方经济能力受到影响时；还可能包括精神损失，但这部分认定起来可能比较复杂，得结合具体情节和法院的裁量。\\n\\n总结一下：如果男方确认孩子不是自己亲生，且有证据表明女方故意隐瞒事实，男方是可以尝试要求赔偿的。依据《民法典》，欺诈确实可以成为主张侵权赔偿的法律基础。不过，最终还是得看证据是否充分，以及法院如何认定。这种事，在实践中应该也有类似的案例吧，等会儿看看有没有什么判例能参考。\"\n}\n```",
+    "在《民法典》的框架下，如果男方发现自己抚养多年的孩子并非亲生，可以根据具体情形向女方主张损失，具体来说需要从以下两个方面分析：\n\n### 一、关于抚养义务的问题\n根据《民法典》，法定抚养义务通常建立在亲子关系的基础上。如果经亲子鉴定或其他合法程序确认男方与孩子没有亲子关系，男方可以申请与该子女的抚养关系解除，解除后理论上男方不再承担法定的抚养义务。但由于男方在不知情的情况下已经履行了部分抚养义务，法律对此可能会结合女方的行为和公序良俗原则综合考量，尤其是女方故意隐瞒或欺瞒的情形下。\n\n### 二、关于女方行为是否构成侵权或欺诈\n如果女方明知孩子并非男方亲生，仍故意隐瞒真相，使男方在错误认知的基础上长期履行抚养等义务，这种行为可能会构成《民法典》第148条规定的欺诈行为。男方可以主张女方的行为导致了其经济损失（如多年抚养费用）和精神损害（如情感欺骗造成的心理创伤）。具体条件如下：\n\n1. **欺诈行为的认定**：男方需要证明女方知情且故意隐瞒真相。这可能涉及证据，例如女方承认的聊天记录、女方知晓事实的时间点等。\n2. **损失的认定**：经济损失包括从孩子出生到真相揭揭露期间男方为抚养孩子所付出的直接费用；精神损害需要结合实际情节（如欺瞒的时间长度、后果严重性等）以及法院的酌情裁定。\n\n### 三、举证责任和赔偿范围\n1. **举证责任**：\n   - 孩子非亲生的亲子鉴定结果；\n   - 女方隐瞒行为及其主观恶意的证据（如知情的时间线、涉及欺骗的文字证据等）。\n\n2. **赔偿范围**：\n   - 经济损失：已支付的生活抚养费用，例如教育费、医疗费、日常生活保障费等。\n   - 精神损失赔偿：需结合女方欺瞒行为的性质和后果，由法院根据个案情况裁定。\n\n### 四、相关案例与实践\n类似的案件中，法院通常重点审查女方的主观过错以及男方的真实损失。在能够证明女方存在严重欺骗行为的情况下，法院有可能支持经济赔偿请求，精神损害赔偿则视具体情节而定。\n\n### 结论\n男方在确认孩子非亲生且有证据证明女方故意隐瞒真相的情况下，可以依据《民法典》向女方主张经济损失和精神损害赔偿。具体赔偿数额及范围需由法院结合证据和个案情况综合裁定。在提起诉讼前，建议聘请专业律师代理，以更好地维护自身权益。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "明确法律问题",
+        "content": "根据问题描述，男方抚养多年的子女并非亲生，涉及是否可以向女方主张损失。这种情况可能涉及婚姻法、侵权责任法等领域的法律条款，需要明确法律依据。首先，需要确认抚养义务是否因非亲生关系而解除，以及是否存在侵权行为。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "查询抚养义务的法律依据",
+        "content": "是否存在继续抚养义务取决于我国《民法典》和相关法律对亲子关系和抚养义务的规定。需要进一步查询有关亲子关系争议处理和抚养义务的法律依据。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "确认是否存在侵权行为",
+        "content": "如果女方在知情的情况下隐瞒子女非男方亲生的事实，可能构成欺诈，这可能触发侵权责任法的相关条款。因此需要进一步查询欺诈或侵权责任在这种情境下的适用性。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "确认可主张损失的法律依据",
+        "content": "男方可否主张损失取决于他是否能够举证因女方的不当行为（如欺骗）导致的实际经济损失及精神损害。需要进一步查询具体法律条文以支持相关主张。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "在中国法律下，男方可以尝试向女方主张损失，尤其是在女方存在欺诈行为的情况下。《民法典》明确指出欺诈行为可能构成民事赔偿责任，如果男方能够证明他的经济损失或精神损害与女方的欺诈或隐瞒行为之间存在因果关系，则可以提起相应的损害赔偿诉讼。"
+      },
+      {
+        "action": "Verification",
+        "content": "通过进一步分析，我国《民法典》确实为上述情况提供了法律依据，同时法院在类似判例中的裁决也表明，当欺骗行为对另一方造成具体损失时，受害方有权提起赔偿诉求。因此，结论成立。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "好，先来理清楚问题。男方发现自己抚养了多年的孩子居然不亲生，这种情况下他是否可以向女方主张损失呢？嗯，这里分两个方向，一个是男方是否还有抚养义务，一个是女方的行为是否构成侵权或者欺诈，能否因此要求赔偿。先从抚养义务开始想。\n\n关于抚养义务，感觉核心还是要看法律上怎么规定的吧。如果孩子不是男方亲生，那法定抚养义务是否还在？<search>亲子关系与抚养义务 民法典</search>。哦，找到一些信息，<information>《民法典》提到，法定抚养义务主要建立在亲子关系基础上。如果确认不是亲生，理论上这种法定义务应该是可以解除的。</information>不过，也要看实际情况，比如，男方在不知情的情况下长期履行了抚养义务，那这些付出算不算可以获得补偿的部分呢？这个得具体再分析。\n\n接着想想，女方的行为这里是不是有问题。嗯，如果女方是明知道孩子不是男方亲生，还故意隐瞒，这种情况下，会不会构成欺诈？欺诈应该算是一种侵权吧。让我查查法律上怎么说的。<search>欺诈 民法典 侵权责任</search>。找到了，<information>《民法典》第148条明确说，如果一方故意隐瞒真相，或者提供虚假信息，导致他人做出错误判断并受到损害的，可以主张侵权赔偿。</information>嗯，这点很有帮助，如果女方确实隐瞒，这个应该是有依据的。\n\n再进一步想，如果主张赔偿，男方需要提供什么证据？这个逻辑上应该包括两部分吧：第一，证明孩子确实不是自己的。这个可能得靠亲子鉴定吧；第二，证明女方是知情的情况下，故意隐瞒了事实。这个可能需要一些细节证据，比如聊天记录、知情的时间点等等。如果这些证据链能够成立，赔偿的可能性会更大。\n\n另外，主张损失的范围呢？通常应该包括经济损失，比如养孩子的费用，尤其是在男方经济能力受到影响时；还可能包括精神损失，但这部分认定起来可能比较复杂，得结合具体情节和法院的裁量。\n\n总结一下：如果男方确认孩子不是自己亲生，且有证据表明女方故意隐瞒事实，男方是可以尝试要求赔偿的。依据《民法典》，欺诈确实可以成为主张侵权赔偿的法律基础。不过，最终还是得看证据是否充分，以及法院如何认定。这种事，在实践中应该也有类似的案例吧，等会儿看看有没有什么判例能参考。",
+  "Response": "在《民法典》的框架下，如果男方发现自己抚养多年的孩子并非亲生，可以根据具体情形向女方主张损失，具体来说需要从以下两个方面分析：\n\n### 一、关于抚养义务的问题\n根据《民法典》，法定抚养义务通常建立在亲子关系的基础上。如果经亲子鉴定或其他合法程序确认男方与孩子没有亲子关系，男方可以申请与该子女的抚养关系解除，解除后理论上男方不再承担法定的抚养义务。但由于男方在不知情的情况下已经履行了部分抚养义务，法律对此可能会结合女方的行为和公序良俗原则综合考量，尤其是女方故意隐瞒或欺瞒的情形下。\n\n### 二、关于女方行为是否构成侵权或欺诈\n如果女方明知孩子并非男方亲生，仍故意隐瞒真相，使男方在错误认知的基础上长期履行抚养等义务，这种行为可能会构成《民法典》第148条规定的欺诈行为。男方可以主张女方的行为导致了其经济损失（如多年抚养费用）和精神损害（如情感欺骗造成的心理创伤）。具体条件如下：\n\n1. **欺诈行为的认定**：男方需要证明女方知情且故意隐瞒真相。这可能涉及证据，例如女方承认的聊天记录、女方知晓事实的时间点等。\n2. **损失的认定**：经济损失包括从孩子出生到真相揭揭露期间男方为抚养孩子所付出的直接费用；精神损害需要结合实际情节（如欺瞒的时间长度、后果严重性等）以及法院的酌情裁定。\n\n### 三、举证责任和赔偿范围\n1. **举证责任**：\n   - 孩子非亲生的亲子鉴定结果；\n   - 女方隐瞒行为及其主观恶意的证据（如知情的时间线、涉及欺骗的文字证据等）。\n\n2. **赔偿范围**：\n   - 经济损失：已支付的生活抚养费用，例如教育费、医疗费、日常生活保障费等。\n   - 精神损失赔偿：需结合女方欺瞒行为的性质和后果，由法院根据个案情况裁定。\n\n### 四、相关案例与实践\n类似的案件中，法院通常重点审查女方的主观过错以及男方的真实损失。在能够证明女方存在严重欺骗行为的情况下，法院有可能支持经济赔偿请求，精神损害赔偿则视具体情节而定。\n\n### 结论\n男方在确认孩子非亲生且有证据证明女方故意隐瞒真相的情况下，可以依据《民法典》向女方主张经济损失和精神损害赔偿。具体赔偿数额及范围需由法院结合证据和个案情况综合裁定。在提起诉讼前，建议聘请专业律师代理，以更好地维护自身权益。",
+  "Question": "男方发现抚养多年的子女并非自己亲生，可向对方主张损失吗？"
+}

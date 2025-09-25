@@ -1,0 +1,99 @@
+{
+  "Open-ended Verifiable Question": "缓刑什么情况被收监，也就是撤销缓刑？",
+  "Ground-True Answer": "缓刑，全称暂缓量刑，是指对触犯刑律，经法定程序确认已构成犯罪、应受刑罚处罚的行为人，先行宣告定罪，暂不执行所判处的刑罚。罪犯在缓刑考验期限内，有下列情形之一的，原作出缓刑判决、裁定的人民法院应当在收到执行机关的撤销缓刑建议书后一个月内，作出撤销缓刑的裁定：(一)违反禁止令，情节严重的；(二)无正当理由不按规定时间报到或者接受社区矫正期间脱离监管，超过一个月的；(三)因违反监督管理规定受到治安管理处罚，仍不改正的；(四)受到执行机关三次警告仍不改正的；(五)违反有关法律、行政法规和监督管理规定，情节严重的其他情形。",
+  "process_id": 7902,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "理解缓刑被撤销的法律依据",
+      "content": "缓刑被撤销的情况必须符合法律规定，通常发生在缓刑执行期间被判定存在一定违法行为或未履行法律义务。针对该问题，我们需要查找相关法律依据，例如《中华人民共和国刑法》有关缓刑实施和撤销的条款规定。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "搜索相关法律条款",
+      "content": "需要查找《中华人民共和国刑法》中关于缓刑撤销的规定，以确定具体情况。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "提取《刑法》中关于缓刑撤销的条款",
+      "content": "<search>刑法 缓刑 撤销 条件</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "分析搜索到的信息",
+      "content": "<information>根据《中华人民共和国刑法》第77条的规定，有以下情况会导致缓刑撤销：1. 缓刑考验期内再犯新罪；2. 缓刑考验期内发现漏罪，即在缓刑判决前未发现但后来查明其曾犯其他罪行；3. 缓刑考验期内严重违反相关监督管理规定，如拒绝接受社区矫正、再犯违法行为等。</information>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "分析各条款的实际情况",
+      "content": "结合刑法相关内容，可以归纳出现的几种情境，例如被发现同时犯有其他罪行或在缓刑期间犯新的罪，这种情况属于法定重大违纪或违法行为，需要收监执行原判刑罚。此外，如果审判期间的缓刑期间实施未遵守监督管理规则，例如不按期报到或外出未批准，也可能导致撤销缓刑。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "缓刑在以下情况下会被撤销：1. 缓刑考验期内重新犯罪；2. 缓刑考验期内被发现宣判前有其他未被判决的罪行；3. 缓刑考验期内严重违反监督管理规定，包括拒绝社区矫正、违反法律、法规及监督规定的行为。这些情况符合《中华人民共和国刑法》第77条的明确规定。"
+    },
+    {
+      "action": "Verification",
+      "content": "通过查阅相关条款和分析，结论与法律规定一致，结论正确。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n缓刑什么情况被收监，也就是撤销缓刑？\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n缓刑在以下情况下会被撤销：1. 缓刑考验期内重新犯罪；2. 缓刑考验期内被发现宣判前有其他未被判决的罪行；3. 缓刑考验期内严重违反监督管理规定，包括拒绝社区矫正、违反法律、法规及监督规定的行为。这些情况符合《中华人民共和国刑法》第77条的明确规定。  \n</Model Response>  \n\n<Reference Answer>  \n缓刑，全称暂缓量刑，是指对触犯刑律，经法定程序确认已构成犯罪、应受刑罚处罚的行为人，先行宣告定罪，暂不执行所判处的刑罚。罪犯在缓刑考验期限内，有下列情形之一的，原作出缓刑判决、裁定的人民法院应当在收到执行机关的撤销缓刑建议书后一个月内，作出撤销缓刑的裁定：(一)违反禁止令，情节严重的；(二)无正当理由不按规定时间报到或者接受社区矫正期间脱离监管，超过一个月的；(三)因违反监督管理规定受到治安管理处罚，仍不改正的；(四)受到执行机关三次警告仍不改正的；(五)违反有关法律、行政法规和监督管理规定，情节严重的其他情形。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 理解缓刑被撤销的法律依据\n缓刑被撤销的情况必须符合法律规定，通常发生在缓刑执行期间被判定存在一定违法行为或未履行法律义务。针对该问题，我们需要查找相关法律依据，例如《中华人民共和国刑法》有关缓刑实施和撤销的条款规定。\n\n### 搜索相关法律条款\n需要查找《中华人民共和国刑法》中关于缓刑撤销的规定，以确定具体情况。\n\n### 提取《刑法》中关于缓刑撤销的条款\n<search>刑法 缓刑 撤销 条件</search>\n\n### 分析搜索到的信息\n<information>根据《中华人民共和国刑法》第77条的规定，有以下情况会导致缓刑撤销：1. 缓刑考验期内再犯新罪；2. 缓刑考验期内发现漏罪，即在缓刑判决前未发现但后来查明其曾犯其他罪行；3. 缓刑考验期内严重违反相关监督管理规定，如拒绝接受社区矫正、再犯违法行为等。</information>\n\n### 分析各条款的实际情况\n结合刑法相关内容，可以归纳出现的几种情境，例如被发现同时犯有其他罪行或在缓刑期间犯新的罪，这种情况属于法定重大违纪或违法行为，需要收监执行原判刑罚。此外，如果审判期间的缓刑期间实施未遵守监督管理规则，例如不按期报到或外出未批准，也可能导致撤销缓刑。\n\n### Conclusion\n缓刑在以下情况下会被撤销：1. 缓刑考验期内重新犯罪；2. 缓刑考验期内被发现宣判前有其他未被判决的罪行；3. 缓刑考验期内严重违反监督管理规定，包括拒绝社区矫正、违反法律、法规及监督规定的行为。这些情况符合《中华人民共和国刑法》第77条的明确规定。\n\n### Verification\n通过查阅相关条款和分析，结论与法律规定一致，结论正确。\n</Thought Process>\n\n<Question>\n缓刑什么情况被收监，也就是撤销缓刑？\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n缓刑是什么情况会被撤销呢？嗯，类似收监执行原判刑罚的问题，应该有明确的法律规定。我记得《刑法》里是有提到过相关内容的，得先看看具体条款怎么说。\n\n好的，那我搜索一下相关的法律依据吧。<search>刑法 缓刑 撤销 条件</search>\n\n嗯，根据搜索结果我看到相关的内容了，提到的是《中华人民共和国刑法》第77条。<information>根据《中华人民共和国刑法》第77条的规定，有以下情况会导致缓刑撤销：1. 缓刑考验期内再犯新罪；2. 缓刑考验期内发现漏罪，即在缓刑判决前未发现但后来查明其曾犯其他罪行；3. 缓刑考验期内严重违反相关监督管理规定，如拒绝接受社区矫正、再犯违法行为等。</information>\n\n哦，这样看起来缓刑被撤销主要有几种情况。第一种是缓刑考验期内再犯新罪，这很容易理解，毕竟缓刑是对罪犯的一种宽待，如果又犯了新的罪行，那自然得按实际情况去执行原判刑罚。第二种情况是考验期内发现漏罪。这种意思是说判缓刑之前还有其他未查明的犯罪行为，后来发现了，那当然不能放宽，也得重新审视缓刑的合理性。\n\n还有第三种，就是在缓刑考验期间严重违反监督管理规定，比如说拒绝社区矫正或者其他明显的违法行为。这点其实是为了保证缓刑期间犯罪分子能积极接受改造。如果不遵守规则，就更没有理由继续享受缓刑待遇了。\n\n综合来看，这几种情况——重新犯罪、漏罪被发现、严重违反监督管理条件——都属于缓刑期内违反法律或规定的行为，会导致缓刑撤销。嗯，这和《刑法》第77条的规定完全吻合，逻辑上也没问题。\n\n所以可以总结一下，缓刑被撤销的原因主要是考验期内犯新罪、考验期内发现漏罪、或考验期内严重违反监督规定。这些都符合法律规定，也符合缓刑制度的设计目的。\n</Internal Thinking>\n\n<Question>\n缓刑什么情况被收监，也就是撤销缓刑？\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"理解缓刑被撤销的法律依据\",\n      \"content\": \"缓刑被撤销的情况必须符合法律规定，通常发生在缓刑执行期间被判定存在一定违法行为或未履行法律义务。针对该问题，我们需要查找相关法律依据，例如《中华人民共和国刑法》有关缓刑实施和撤销的条款规定。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"搜索相关法律条款\",\n      \"content\": \"需要查找《中华人民共和国刑法》中关于缓刑撤销的规定，以确定具体情况。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"提取《刑法》中关于缓刑撤销的条款\",\n      \"content\": \"<search>刑法 缓刑 撤销 条件</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析搜索到的信息\",\n      \"content\": \"<information>根据《中华人民共和国刑法》第77条的规定，有以下情况会导致缓刑撤销：1. 缓刑考验期内再犯新罪；2. 缓刑考验期内发现漏罪，即在缓刑判决前未发现但后来查明其曾犯其他罪行；3. 缓刑考验期内严重违反相关监督管理规定，如拒绝接受社区矫正、再犯违法行为等。</information>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析各条款的实际情况\",\n      \"content\": \"结合刑法相关内容，可以归纳出现的几种情境，例如被发现同时犯有其他罪行或在缓刑期间犯新的罪，这种情况属于法定重大违纪或违法行为，需要收监执行原判刑罚。此外，如果审判期间的缓刑期间实施未遵守监督管理规则，例如不按期报到或外出未批准，也可能导致撤销缓刑。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"缓刑在以下情况下会被撤销：1. 缓刑考验期内重新犯罪；2. 缓刑考验期内被发现宣判前有其他未被判决的罪行；3. 缓刑考验期内严重违反监督管理规定，包括拒绝社区矫正、违反法律、法规及监督规定的行为。这些情况符合《中华人民共和国刑法》第77条的明确规定。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"通过查阅相关条款和分析，结论与法律规定一致，结论正确。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"缓刑是什么情况会被撤销呢？嗯，类似收监执行原判刑罚的问题，应该有明确的法律规定。我记得《刑法》里是有提到过相关内容的，得先看看具体条款怎么说。\\n\\n好的，那我搜索一下相关的法律依据吧。<search>刑法 缓刑 撤销 条件</search>\\n\\n嗯，根据搜索结果我看到相关的内容了，提到的是《中华人民共和国刑法》第77条。<information>根据《中华人民共和国刑法》第77条的规定，有以下情况会导致缓刑撤销：1. 缓刑考验期内再犯新罪；2. 缓刑考验期内发现漏罪，即在缓刑判决前未发现但后来查明其曾犯其他罪行；3. 缓刑考验期内严重违反相关监督管理规定，如拒绝接受社区矫正、再犯违法行为等。</information>\\n\\n哦，这样看起来缓刑被撤销主要有几种情况。第一种是缓刑考验期内再犯新罪，这很容易理解，毕竟缓刑是对罪犯的一种宽待，如果又犯了新的罪行，那自然得按实际情况去执行原判刑罚。第二种情况是考验期内发现漏罪。这种意思是说判缓刑之前还有其他未查明的犯罪行为，后来发现了，那当然不能放宽，也得重新审视缓刑的合理性。\\n\\n还有第三种，就是在缓刑考验期间严重违反监督管理规定，比如说拒绝社区矫正或者其他明显的违法行为。这点其实是为了保证缓刑期间犯罪分子能积极接受改造。如果不遵守规则，就更没有理由继续享受缓刑待遇了。\\n\\n综合来看，这几种情况——重新犯罪、漏罪被发现、严重违反监督管理条件——都属于缓刑期内违反法律或规定的行为，会导致缓刑撤销。嗯，这和《刑法》第77条的规定完全吻合，逻辑上也没问题。\\n\\n所以可以总结一下，缓刑被撤销的原因主要是考验期内犯新罪、考验期内发现漏罪、或考验期内严重违反监督规定。这些都符合法律规定，也符合缓刑制度的设计目的。\"\n}\n```",
+    "根据《中华人民共和国刑法》第77条的规定，缓刑被撤销并收监执行的情况主要有以下几种：\n\n1. **缓刑考验期内再犯新罪**  \n   如果被判缓刑的犯罪分子在考验期内又实施了新的犯罪行为，这种情况明确表明其未能遵守法律，法院将依法撤销缓刑，并对新罪和旧罪一并作出判罚。\n\n2. **缓刑考验期内发现漏罪**  \n   指在判决缓刑前未被侦查机关发现的其他犯罪行为在缓刑考验期内被发现，此时法院会撤销缓刑，对漏罪和原判罪行重新作出合并判罚。\n\n3. **缓刑考验期内严重违反监督管理规定**  \n   被判缓刑者需要在考验期内接受社区矫正并遵守相关监督管理规定。如果在此期间出现严重违反规定的行为，比如拒绝社区矫正、逃避监管或者从事违法活动，法院可以撤销缓刑，决定对原判刑罚进行收监执行。\n\n这三种情况是法律明确规定的撤销缓刑的主要原因，体现了缓刑制度在给予宽待的同时，对违法及违规行为的严格约束。在缓刑考验期内，被判缓刑者必须严守法律并积极配合改造，否则将面临缓刑被撤销并收监的后果。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "理解缓刑被撤销的法律依据",
+        "content": "缓刑被撤销的情况必须符合法律规定，通常发生在缓刑执行期间被判定存在一定违法行为或未履行法律义务。针对该问题，我们需要查找相关法律依据，例如《中华人民共和国刑法》有关缓刑实施和撤销的条款规定。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "搜索相关法律条款",
+        "content": "需要查找《中华人民共和国刑法》中关于缓刑撤销的规定，以确定具体情况。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "提取《刑法》中关于缓刑撤销的条款",
+        "content": "<search>刑法 缓刑 撤销 条件</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "分析搜索到的信息",
+        "content": "<information>根据《中华人民共和国刑法》第77条的规定，有以下情况会导致缓刑撤销：1. 缓刑考验期内再犯新罪；2. 缓刑考验期内发现漏罪，即在缓刑判决前未发现但后来查明其曾犯其他罪行；3. 缓刑考验期内严重违反相关监督管理规定，如拒绝接受社区矫正、再犯违法行为等。</information>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "分析各条款的实际情况",
+        "content": "结合刑法相关内容，可以归纳出现的几种情境，例如被发现同时犯有其他罪行或在缓刑期间犯新的罪，这种情况属于法定重大违纪或违法行为，需要收监执行原判刑罚。此外，如果审判期间的缓刑期间实施未遵守监督管理规则，例如不按期报到或外出未批准，也可能导致撤销缓刑。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "缓刑在以下情况下会被撤销：1. 缓刑考验期内重新犯罪；2. 缓刑考验期内被发现宣判前有其他未被判决的罪行；3. 缓刑考验期内严重违反监督管理规定，包括拒绝社区矫正、违反法律、法规及监督规定的行为。这些情况符合《中华人民共和国刑法》第77条的明确规定。"
+      },
+      {
+        "action": "Verification",
+        "content": "通过查阅相关条款和分析，结论与法律规定一致，结论正确。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "缓刑是什么情况会被撤销呢？嗯，类似收监执行原判刑罚的问题，应该有明确的法律规定。我记得《刑法》里是有提到过相关内容的，得先看看具体条款怎么说。\n\n好的，那我搜索一下相关的法律依据吧。<search>刑法 缓刑 撤销 条件</search>\n\n嗯，根据搜索结果我看到相关的内容了，提到的是《中华人民共和国刑法》第77条。<information>根据《中华人民共和国刑法》第77条的规定，有以下情况会导致缓刑撤销：1. 缓刑考验期内再犯新罪；2. 缓刑考验期内发现漏罪，即在缓刑判决前未发现但后来查明其曾犯其他罪行；3. 缓刑考验期内严重违反相关监督管理规定，如拒绝接受社区矫正、再犯违法行为等。</information>\n\n哦，这样看起来缓刑被撤销主要有几种情况。第一种是缓刑考验期内再犯新罪，这很容易理解，毕竟缓刑是对罪犯的一种宽待，如果又犯了新的罪行，那自然得按实际情况去执行原判刑罚。第二种情况是考验期内发现漏罪。这种意思是说判缓刑之前还有其他未查明的犯罪行为，后来发现了，那当然不能放宽，也得重新审视缓刑的合理性。\n\n还有第三种，就是在缓刑考验期间严重违反监督管理规定，比如说拒绝社区矫正或者其他明显的违法行为。这点其实是为了保证缓刑期间犯罪分子能积极接受改造。如果不遵守规则，就更没有理由继续享受缓刑待遇了。\n\n综合来看，这几种情况——重新犯罪、漏罪被发现、严重违反监督管理条件——都属于缓刑期内违反法律或规定的行为，会导致缓刑撤销。嗯，这和《刑法》第77条的规定完全吻合，逻辑上也没问题。\n\n所以可以总结一下，缓刑被撤销的原因主要是考验期内犯新罪、考验期内发现漏罪、或考验期内严重违反监督规定。这些都符合法律规定，也符合缓刑制度的设计目的。",
+  "Response": "根据《中华人民共和国刑法》第77条的规定，缓刑被撤销并收监执行的情况主要有以下几种：\n\n1. **缓刑考验期内再犯新罪**  \n   如果被判缓刑的犯罪分子在考验期内又实施了新的犯罪行为，这种情况明确表明其未能遵守法律，法院将依法撤销缓刑，并对新罪和旧罪一并作出判罚。\n\n2. **缓刑考验期内发现漏罪**  \n   指在判决缓刑前未被侦查机关发现的其他犯罪行为在缓刑考验期内被发现，此时法院会撤销缓刑，对漏罪和原判罪行重新作出合并判罚。\n\n3. **缓刑考验期内严重违反监督管理规定**  \n   被判缓刑者需要在考验期内接受社区矫正并遵守相关监督管理规定。如果在此期间出现严重违反规定的行为，比如拒绝社区矫正、逃避监管或者从事违法活动，法院可以撤销缓刑，决定对原判刑罚进行收监执行。\n\n这三种情况是法律明确规定的撤销缓刑的主要原因，体现了缓刑制度在给予宽待的同时，对违法及违规行为的严格约束。在缓刑考验期内，被判缓刑者必须严守法律并积极配合改造，否则将面临缓刑被撤销并收监的后果。",
+  "Question": "缓刑什么情况被收监，也就是撤销缓刑？"
+}

@@ -1,0 +1,89 @@
+{
+  "Open-ended Verifiable Question": "离婚诉讼可以全权委托律师处理吗?",
+  "Ground-True Answer": "离婚诉讼不可以全权委托律师处理。\n一般的民事诉讼案件，在有法定代理人或者委托代理人出庭的情况下，当事人本人不出庭是可以的。但是，离婚案件却有特别的规定。\n离婚诉讼案件直接涉及当事人的人身关系，夫妻双方感情是否确已破裂是法院判决离婚与否的一项重要因素。而夫妻感情变化微妙，即便是有特别授权的诉讼代理人，也无法体会和准确地表达当事人在特定环境下的意志变化。为维护离婚诉讼双方当事人的合法权益，法律对离婚诉讼当事人是否出庭作出了较为明确的规定。",
+  "process_id": 7451,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "分析离婚诉讼是否可以委托律师全权处理",
+      "content": "在离婚诉讼中，涉及的事项包括提交诉状、参加庭审、提供证据、申请调解等。如果委托律师，需要了解法律是否允许律师作为代理人完全替代当事人参与诉讼程序。首先，我需要确认相关法律法规中是否有关于此类代理权限的规定，例如《民事诉讼法》或《律师法》。搜索关键词可以是“离婚诉讼律师代理权限”。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "确定律师代理权限相关法律",
+      "content": "<search>离婚诉讼律师代理权限</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "分析搜索结果",
+      "content": "<information>根据《民事诉讼法》第58条，公民可以委托律师代为参加诉讼，但律师代理的权限范围需明确，如一般授权还是特别授权；此外，根据《律师法》第31条，律师在民事诉讼中可以从事代理工作，但代理权限由委托人决定。通常，离婚诉讼中的某些事项（如涉及个人陈述或者调解环节）可能需要当事人亲自出庭。</information>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "总结分析且结合实际情况",
+      "content": "根据法律规定，离婚诉讼中当事人可以委托律师处理诉讼相关事务，具体授权方式可以是一般授权或特别授权。然而，有些情况下，例如涉及调解阶段或法院要求当事人出庭确认关键事实，离婚诉讼仍可能需要当事人本人出席。因此，律师不能完全替代本人处理所有程序，需视具体案件情况而定。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "离婚诉讼可以委托律师处理大部分程序，但因涉及个人陈述和法院要求等原因，当事人可能需要亲自出庭，律师不能全权代理所有环节。"
+    },
+    {
+      "action": "Verification",
+      "content": "根据法律对律师代理权限的规定以及离婚诉讼的特殊性质，结论正确。离婚诉讼确实无法完全由律师处理当事人所有程序，需当事人根据具体情况配合律师行动。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n离婚诉讼可以全权委托律师处理吗?\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n离婚诉讼可以委托律师处理大部分程序，但因涉及个人陈述和法院要求等原因，当事人可能需要亲自出庭，律师不能全权代理所有环节。  \n</Model Response>  \n\n<Reference Answer>  \n离婚诉讼不可以全权委托律师处理。\n一般的民事诉讼案件，在有法定代理人或者委托代理人出庭的情况下，当事人本人不出庭是可以的。但是，离婚案件却有特别的规定。\n离婚诉讼案件直接涉及当事人的人身关系，夫妻双方感情是否确已破裂是法院判决离婚与否的一项重要因素。而夫妻感情变化微妙，即便是有特别授权的诉讼代理人，也无法体会和准确地表达当事人在特定环境下的意志变化。为维护离婚诉讼双方当事人的合法权益，法律对离婚诉讼当事人是否出庭作出了较为明确的规定。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 分析离婚诉讼是否可以委托律师全权处理\n在离婚诉讼中，涉及的事项包括提交诉状、参加庭审、提供证据、申请调解等。如果委托律师，需要了解法律是否允许律师作为代理人完全替代当事人参与诉讼程序。首先，我需要确认相关法律法规中是否有关于此类代理权限的规定，例如《民事诉讼法》或《律师法》。搜索关键词可以是“离婚诉讼律师代理权限”。\n\n### 确定律师代理权限相关法律\n<search>离婚诉讼律师代理权限</search>\n\n### 分析搜索结果\n<information>根据《民事诉讼法》第58条，公民可以委托律师代为参加诉讼，但律师代理的权限范围需明确，如一般授权还是特别授权；此外，根据《律师法》第31条，律师在民事诉讼中可以从事代理工作，但代理权限由委托人决定。通常，离婚诉讼中的某些事项（如涉及个人陈述或者调解环节）可能需要当事人亲自出庭。</information>\n\n### 总结分析且结合实际情况\n根据法律规定，离婚诉讼中当事人可以委托律师处理诉讼相关事务，具体授权方式可以是一般授权或特别授权。然而，有些情况下，例如涉及调解阶段或法院要求当事人出庭确认关键事实，离婚诉讼仍可能需要当事人本人出席。因此，律师不能完全替代本人处理所有程序，需视具体案件情况而定。\n\n### Conclusion\n离婚诉讼可以委托律师处理大部分程序，但因涉及个人陈述和法院要求等原因，当事人可能需要亲自出庭，律师不能全权代理所有环节。\n\n### Verification\n根据法律对律师代理权限的规定以及离婚诉讼的特殊性质，结论正确。离婚诉讼确实无法完全由律师处理当事人所有程序，需当事人根据具体情况配合律师行动。\n</Thought Process>\n\n<Question>\n离婚诉讼可以全权委托律师处理吗?\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n嗯，离婚诉讼中确实有人会选择委托律师帮忙处理所有事情。但是，我不确定是不是所有环节都可以交给律师来办，还是有些地方必须当事人本人出面。所以我得先弄清楚法律上是怎么规定的。\n\n我记得应该有法律提到过相关内容，大概是在《民事诉讼法》或者《律师法》里面，可能是关于律师参与民事诉讼的代理权限之类的。我可以先查一下类似的内容，看看有没有明确答案。关键词的话，搜“离婚诉讼 律师代理权限”应该能找到有用的信息吧。\n\n<search>离婚诉讼律师代理权限</search>\n\n哦，搜出来了一些内容。我看了下，根据《民事诉讼法》第58条，公民确实可以委托律师来参与诉讼流程。不过，律师的代理权限需要明确，可能分为一般授权和特别授权两种。另外，《律师法》第31条也讲到，律师在民事案件中的代理工作是遵从委托人的授权来进行的。但这里有个关键点，离婚诉讼好像有些特殊，比如像调解或者涉及个人陈述的部分，可能法院会要求当事人本人到场。这意味着律师虽然能代理很多程序，但有些事情还是绕不开当事人自己。\n\n整理一下我的思路：法律是允许律师代理离婚诉讼的，也就是说大部分流程，比如写诉状、提供证据什么的，律师都能替当事人去处理。但离婚诉讼本身性质比较特殊，这毕竟牵扯到婚姻关系，像调解、承认事实这种可能需要当事人亲自出面。所以律师不能说完全替代当事人，还是得看具体的环节和法院的要求。\n\n看来答案很清楚了，离婚诉讼可以委托律师处理绝大部分事务，但归根结底，当事人还是得参与一些重要的环节，不能完全撒手不管。\n</Internal Thinking>\n\n<Question>\n离婚诉讼可以全权委托律师处理吗?\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析离婚诉讼是否可以委托律师全权处理\",\n      \"content\": \"在离婚诉讼中，涉及的事项包括提交诉状、参加庭审、提供证据、申请调解等。如果委托律师，需要了解法律是否允许律师作为代理人完全替代当事人参与诉讼程序。首先，我需要确认相关法律法规中是否有关于此类代理权限的规定，例如《民事诉讼法》或《律师法》。搜索关键词可以是“离婚诉讼律师代理权限”。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"确定律师代理权限相关法律\",\n      \"content\": \"<search>离婚诉讼律师代理权限</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析搜索结果\",\n      \"content\": \"<information>根据《民事诉讼法》第58条，公民可以委托律师代为参加诉讼，但律师代理的权限范围需明确，如一般授权还是特别授权；此外，根据《律师法》第31条，律师在民事诉讼中可以从事代理工作，但代理权限由委托人决定。通常，离婚诉讼中的某些事项（如涉及个人陈述或者调解环节）可能需要当事人亲自出庭。</information>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"总结分析且结合实际情况\",\n      \"content\": \"根据法律规定，离婚诉讼中当事人可以委托律师处理诉讼相关事务，具体授权方式可以是一般授权或特别授权。然而，有些情况下，例如涉及调解阶段或法院要求当事人出庭确认关键事实，离婚诉讼仍可能需要当事人本人出席。因此，律师不能完全替代本人处理所有程序，需视具体案件情况而定。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"离婚诉讼可以委托律师处理大部分程序，但因涉及个人陈述和法院要求等原因，当事人可能需要亲自出庭，律师不能全权代理所有环节。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"根据法律对律师代理权限的规定以及离婚诉讼的特殊性质，结论正确。离婚诉讼确实无法完全由律师处理当事人所有程序，需当事人根据具体情况配合律师行动。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"嗯，离婚诉讼中确实有人会选择委托律师帮忙处理所有事情。但是，我不确定是不是所有环节都可以交给律师来办，还是有些地方必须当事人本人出面。所以我得先弄清楚法律上是怎么规定的。\\n\\n我记得应该有法律提到过相关内容，大概是在《民事诉讼法》或者《律师法》里面，可能是关于律师参与民事诉讼的代理权限之类的。我可以先查一下类似的内容，看看有没有明确答案。关键词的话，搜“离婚诉讼 律师代理权限”应该能找到有用的信息吧。\\n\\n<search>离婚诉讼律师代理权限</search>\\n\\n哦，搜出来了一些内容。我看了下，根据《民事诉讼法》第58条，公民确实可以委托律师来参与诉讼流程。不过，律师的代理权限需要明确，可能分为一般授权和特别授权两种。另外，《律师法》第31条也讲到，律师在民事案件中的代理工作是遵从委托人的授权来进行的。但这里有个关键点，离婚诉讼好像有些特殊，比如像调解或者涉及个人陈述的部分，可能法院会要求当事人本人到场。这意味着律师虽然能代理很多程序，但有些事情还是绕不开当事人自己。\\n\\n整理一下我的思路：法律是允许律师代理离婚诉讼的，也就是说大部分流程，比如写诉状、提供证据什么的，律师都能替当事人去处理。但离婚诉讼本身性质比较特殊，这毕竟牵扯到婚姻关系，像调解、承认事实这种可能需要当事人亲自出面。所以律师不能说完全替代当事人，还是得看具体的环节和法院的要求。\\n\\n看来答案很清楚了，离婚诉讼可以委托律师处理绝大部分事务，但归根结底，当事人还是得参与一些重要的环节，不能完全撒手不管。\"\n}\n```",
+    "在离婚诉讼中，当事人确实可以委托律师来处理大部分事务，但法律上并不允许完全由律师全权代理，某些关键环节仍需当事人本人出面。\n\n根据《中华人民共和国民事诉讼法》第58条以及相关法律规定，律师在民事案件中可以依法接受委托，代为进行诉讼活动。律师在离婚案件中的代理权限一般包括撰写起诉状、收集和整理证据、出庭参与庭审、与对方当事人交涉等。然而，离婚诉讼作为一种涉及婚姻关系的重要纠纷，具有特殊性，部分环节要求当事人必须亲自出庭。例如：\n\n1. **调解环节**：法律规定，法院调解时通常要求当事人本人到场，以确保调解的真实性、自愿性和有效性。\n   \n2. **个人陈述**：在一些涉及婚姻事实认定的环节，当事人可能需要亲自向法官陈述婚姻细节及相关事实。\n\n3. **表明态度**：对于是否坚持离婚、子女抚养安排等重要事项，法院可能会直接询问当事人本人的意见，不能由律师代替回答。\n\n因此，虽然律师可以帮助处理离婚诉讼的绝大部分法律事务，显著降低当事人的负担，但双方当事人对婚姻的态度和立场是诉讼的核心内容，部分关键环节仍然需要当事人本人参与。有意委托律师的当事人，建议在授权时明确委托事项，并提前与律师沟通好哪些环节需要本人出面。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "分析离婚诉讼是否可以委托律师全权处理",
+        "content": "在离婚诉讼中，涉及的事项包括提交诉状、参加庭审、提供证据、申请调解等。如果委托律师，需要了解法律是否允许律师作为代理人完全替代当事人参与诉讼程序。首先，我需要确认相关法律法规中是否有关于此类代理权限的规定，例如《民事诉讼法》或《律师法》。搜索关键词可以是“离婚诉讼律师代理权限”。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "确定律师代理权限相关法律",
+        "content": "<search>离婚诉讼律师代理权限</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "分析搜索结果",
+        "content": "<information>根据《民事诉讼法》第58条，公民可以委托律师代为参加诉讼，但律师代理的权限范围需明确，如一般授权还是特别授权；此外，根据《律师法》第31条，律师在民事诉讼中可以从事代理工作，但代理权限由委托人决定。通常，离婚诉讼中的某些事项（如涉及个人陈述或者调解环节）可能需要当事人亲自出庭。</information>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "总结分析且结合实际情况",
+        "content": "根据法律规定，离婚诉讼中当事人可以委托律师处理诉讼相关事务，具体授权方式可以是一般授权或特别授权。然而，有些情况下，例如涉及调解阶段或法院要求当事人出庭确认关键事实，离婚诉讼仍可能需要当事人本人出席。因此，律师不能完全替代本人处理所有程序，需视具体案件情况而定。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "离婚诉讼可以委托律师处理大部分程序，但因涉及个人陈述和法院要求等原因，当事人可能需要亲自出庭，律师不能全权代理所有环节。"
+      },
+      {
+        "action": "Verification",
+        "content": "根据法律对律师代理权限的规定以及离婚诉讼的特殊性质，结论正确。离婚诉讼确实无法完全由律师处理当事人所有程序，需当事人根据具体情况配合律师行动。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "嗯，离婚诉讼中确实有人会选择委托律师帮忙处理所有事情。但是，我不确定是不是所有环节都可以交给律师来办，还是有些地方必须当事人本人出面。所以我得先弄清楚法律上是怎么规定的。\n\n我记得应该有法律提到过相关内容，大概是在《民事诉讼法》或者《律师法》里面，可能是关于律师参与民事诉讼的代理权限之类的。我可以先查一下类似的内容，看看有没有明确答案。关键词的话，搜“离婚诉讼 律师代理权限”应该能找到有用的信息吧。\n\n<search>离婚诉讼律师代理权限</search>\n\n哦，搜出来了一些内容。我看了下，根据《民事诉讼法》第58条，公民确实可以委托律师来参与诉讼流程。不过，律师的代理权限需要明确，可能分为一般授权和特别授权两种。另外，《律师法》第31条也讲到，律师在民事案件中的代理工作是遵从委托人的授权来进行的。但这里有个关键点，离婚诉讼好像有些特殊，比如像调解或者涉及个人陈述的部分，可能法院会要求当事人本人到场。这意味着律师虽然能代理很多程序，但有些事情还是绕不开当事人自己。\n\n整理一下我的思路：法律是允许律师代理离婚诉讼的，也就是说大部分流程，比如写诉状、提供证据什么的，律师都能替当事人去处理。但离婚诉讼本身性质比较特殊，这毕竟牵扯到婚姻关系，像调解、承认事实这种可能需要当事人亲自出面。所以律师不能说完全替代当事人，还是得看具体的环节和法院的要求。\n\n看来答案很清楚了，离婚诉讼可以委托律师处理绝大部分事务，但归根结底，当事人还是得参与一些重要的环节，不能完全撒手不管。",
+  "Response": "在离婚诉讼中，当事人确实可以委托律师来处理大部分事务，但法律上并不允许完全由律师全权代理，某些关键环节仍需当事人本人出面。\n\n根据《中华人民共和国民事诉讼法》第58条以及相关法律规定，律师在民事案件中可以依法接受委托，代为进行诉讼活动。律师在离婚案件中的代理权限一般包括撰写起诉状、收集和整理证据、出庭参与庭审、与对方当事人交涉等。然而，离婚诉讼作为一种涉及婚姻关系的重要纠纷，具有特殊性，部分环节要求当事人必须亲自出庭。例如：\n\n1. **调解环节**：法律规定，法院调解时通常要求当事人本人到场，以确保调解的真实性、自愿性和有效性。\n   \n2. **个人陈述**：在一些涉及婚姻事实认定的环节，当事人可能需要亲自向法官陈述婚姻细节及相关事实。\n\n3. **表明态度**：对于是否坚持离婚、子女抚养安排等重要事项，法院可能会直接询问当事人本人的意见，不能由律师代替回答。\n\n因此，虽然律师可以帮助处理离婚诉讼的绝大部分法律事务，显著降低当事人的负担，但双方当事人对婚姻的态度和立场是诉讼的核心内容，部分关键环节仍然需要当事人本人参与。有意委托律师的当事人，建议在授权时明确委托事项，并提前与律师沟通好哪些环节需要本人出面。",
+  "Question": "离婚诉讼可以全权委托律师处理吗?"
+}

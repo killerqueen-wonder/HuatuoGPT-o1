@@ -1,0 +1,89 @@
+{
+  "Open-ended Verifiable Question": "认定夫妻共同债务的举证责任如何分配？",
+  "Ground-True Answer": "（1）在离婚诉讼中，夫妻一方主张债务为共同债务的，他就负有举证责任。他需要证明，这个债务曾用于夫妻共同生活，而且需要提供银行转账、借款合同、欠条等。（2）债主起诉夫妻双方，如果是大额债务，他就有义务证明，这个债是用于夫妻共同生活，或者已经得到夫妻双方的确认。例如，当时借钱，借条/合同上就是夫妻两个人签的字。或者，另一方事后在电话里表示知道/认可这笔债务。",
+  "process_id": 5312,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "明确夫妻共同债务的定义",
+      "content": "为了认清夫妻共同债务的举证责任分配，首先需要明确相关定义和标准。根据我国《民法典》第1064条，夫妻共同债务通常是为满足家庭日常生活需要而产生的债务，或夫妻双方以共同名义所负的债务。此外，还需要了解司法解释对这一问题的具体规定。相关内容可以通过检索当前有效的司法解释进行明确。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "检索夫妻共同债务的法律依据",
+      "content": "为了更准确地分析举证责任的问题，需要查找并明确《民法典》第1064条内容，以及相关的司法解释，尤其是最高人民法院关于夫妻共同债务认定的核心原则。检索关键词如下：<search>夫妻共同债务认定 司法解释</search>。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "分析检索结果的意义",
+      "content": "<information>夫妻共同债务由《民法典》第1064条规定：第一，夫妻双方共同签字或事后追认的债务，应认定为夫妻共同债务；第二，为家庭日常生活需要所负的债务，属于夫妻共同债务；第三，非家庭日常生活需要债务由举债一方证明相对人知道该债务用于夫妻共同生活、共同生产经营或基于双方共同意思表示。最高法民间借贷司法解释规定，债权人需举证明确债务符合上述共同债务的构成要件。</information>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "分析哪些主体承担举证责任",
+      "content": "在涉及夫妻共同债务的诉讼中，通常分三种情形：第一种，债权人能证明债务是夫妻共同名义签订，则无需再行举证；第二种，家庭日常生活债务推定为共同债务，非举债方需举证证明债务不用于家庭共同生活；第三种，非家庭用债务需举债人证明相对人知情或认可。法律规定形成了一种责任分配的逻辑链条。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "在夫妻共同债务的认定中，根据《民法典》第1064条和相关司法解释，举证责任分为以下几种情形：债权人首先需证明该债务符合共同债务条件（如共同签字或用于家庭日常生活）；若举债一方声称债务非用于家庭日常生活，则需要举证相对人知晓债务用途或认可。同时，非举债方若主张债务不属于共同债务，则需证明债务不符合家庭共同债务的条件。责任分配较为明确，具体需视案情而定。"
+    },
+    {
+      "action": "Verification",
+      "content": "该结论符合《民法典》第1064条和最高人民法院的司法解释，根据这些法律依据，符合实际的举证责任分配原则，可以确认结论正确。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n认定夫妻共同债务的举证责任如何分配？\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n在夫妻共同债务的认定中，根据《民法典》第1064条和相关司法解释，举证责任分为以下几种情形：债权人首先需证明该债务符合共同债务条件（如共同签字或用于家庭日常生活）；若举债一方声称债务非用于家庭日常生活，则需要举证相对人知晓债务用途或认可。同时，非举债方若主张债务不属于共同债务，则需证明债务不符合家庭共同债务的条件。责任分配较为明确，具体需视案情而定。  \n</Model Response>  \n\n<Reference Answer>  \n（1）在离婚诉讼中，夫妻一方主张债务为共同债务的，他就负有举证责任。他需要证明，这个债务曾用于夫妻共同生活，而且需要提供银行转账、借款合同、欠条等。（2）债主起诉夫妻双方，如果是大额债务，他就有义务证明，这个债是用于夫妻共同生活，或者已经得到夫妻双方的确认。例如，当时借钱，借条/合同上就是夫妻两个人签的字。或者，另一方事后在电话里表示知道/认可这笔债务。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 明确夫妻共同债务的定义\n为了认清夫妻共同债务的举证责任分配，首先需要明确相关定义和标准。根据我国《民法典》第1064条，夫妻共同债务通常是为满足家庭日常生活需要而产生的债务，或夫妻双方以共同名义所负的债务。此外，还需要了解司法解释对这一问题的具体规定。相关内容可以通过检索当前有效的司法解释进行明确。\n\n### 检索夫妻共同债务的法律依据\n为了更准确地分析举证责任的问题，需要查找并明确《民法典》第1064条内容，以及相关的司法解释，尤其是最高人民法院关于夫妻共同债务认定的核心原则。检索关键词如下：<search>夫妻共同债务认定 司法解释</search>。\n\n### 分析检索结果的意义\n<information>夫妻共同债务由《民法典》第1064条规定：第一，夫妻双方共同签字或事后追认的债务，应认定为夫妻共同债务；第二，为家庭日常生活需要所负的债务，属于夫妻共同债务；第三，非家庭日常生活需要债务由举债一方证明相对人知道该债务用于夫妻共同生活、共同生产经营或基于双方共同意思表示。最高法民间借贷司法解释规定，债权人需举证明确债务符合上述共同债务的构成要件。</information>\n\n### 分析哪些主体承担举证责任\n在涉及夫妻共同债务的诉讼中，通常分三种情形：第一种，债权人能证明债务是夫妻共同名义签订，则无需再行举证；第二种，家庭日常生活债务推定为共同债务，非举债方需举证证明债务不用于家庭共同生活；第三种，非家庭用债务需举债人证明相对人知情或认可。法律规定形成了一种责任分配的逻辑链条。\n\n### Conclusion\n在夫妻共同债务的认定中，根据《民法典》第1064条和相关司法解释，举证责任分为以下几种情形：债权人首先需证明该债务符合共同债务条件（如共同签字或用于家庭日常生活）；若举债一方声称债务非用于家庭日常生活，则需要举证相对人知晓债务用途或认可。同时，非举债方若主张债务不属于共同债务，则需证明债务不符合家庭共同债务的条件。责任分配较为明确，具体需视案情而定。\n\n### Verification\n该结论符合《民法典》第1064条和最高人民法院的司法解释，根据这些法律依据，符合实际的举证责任分配原则，可以确认结论正确。\n</Thought Process>\n\n<Question>\n认定夫妻共同债务的举证责任如何分配？\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n夫妻共同债务的举证责任该怎么分配呢？这个问题听起来很复杂，还是得一步步来。从法律的定义开始入手会更清楚一些。\n\n先想想《民法典》里是怎么说的吧。哦，对了，好像有一个关于夫妻共同债务的规定，《民法典》第1064条应该讲过这些内容。夫妻共同债务主要包括哪些呢？大致记得有两点：一是为了家庭日常生活需要而产生的债务，二是夫妻俩共同签名或者后来共同认可的债务。如果是不属于家庭日常需要的债务呢？嗯，听说举债的一方得证明这个债务是夫妻双方同意的。为了更准确，我还是搜一搜具体规定吧。<search>夫妻共同债务认定 司法解释</search>\n\n找到些结果了。<information>夫妻共同债务的具体认定有几个重点。《民法典》第1064条提到的情况是：只要是夫妻共同签字或者事后追认的，基本就确定是共同债务；如果是家庭日常生活需要的，也会被认定为夫妻共同债务。可如果是超出日常家庭需要的特殊债务，举债的一方就得负责证明债务对应的相对人知道债务用途，并且这个用途要与夫妻共同生活、生产经营或共同意思表达相关联。哦，最高院的民间借贷司法解释也讲过类似的事儿，比如说债权人得证明这些债务是符合夫妻共同债务的认定标准的。</information>\n\n这样看来，举证责任其实是分情况的。先整理一下，应该会更清晰。比如说，第一种，如果债权人可以直接证明这个债务是夫妻双方共同名义签署的，那举证责任其实就到这里为止了，基本不用解释更多东西。第二种，家庭日常生活产生的债务会默认是共同债务，这种情况下一般是非举债的一方需要去挑战这个默认的认定，证明债务和家庭生活无关。第三种，非家庭日常生活需要的债务，那就比较复杂了，得看举债的一方能不能证明债权人知道这个债务的具体用途，也就是说相对人得知情并认可。\n\n这让我更清楚责任是怎么分配的了。总结下来，最初是债权人需简单证明这个债务大体合理；如果要证明不是共同债务，非举债方有责任反驳；而举债方在一些特殊情况下负有额外的举证责任，比如涉及到非家庭用途的时候。不管是债权人还是夫妻任何一方，法律都设计了相应的责任分配环节，看起来是想保证公正吧。\n\n这样分析下来，嗯，结论应该是对的，毕竟是基于明确的法律条文和司法解释推出来的。\n</Internal Thinking>\n\n<Question>\n认定夫妻共同债务的举证责任如何分配？\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"明确夫妻共同债务的定义\",\n      \"content\": \"为了认清夫妻共同债务的举证责任分配，首先需要明确相关定义和标准。根据我国《民法典》第1064条，夫妻共同债务通常是为满足家庭日常生活需要而产生的债务，或夫妻双方以共同名义所负的债务。此外，还需要了解司法解释对这一问题的具体规定。相关内容可以通过检索当前有效的司法解释进行明确。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"检索夫妻共同债务的法律依据\",\n      \"content\": \"为了更准确地分析举证责任的问题，需要查找并明确《民法典》第1064条内容，以及相关的司法解释，尤其是最高人民法院关于夫妻共同债务认定的核心原则。检索关键词如下：<search>夫妻共同债务认定 司法解释</search>。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析检索结果的意义\",\n      \"content\": \"<information>夫妻共同债务由《民法典》第1064条规定：第一，夫妻双方共同签字或事后追认的债务，应认定为夫妻共同债务；第二，为家庭日常生活需要所负的债务，属于夫妻共同债务；第三，非家庭日常生活需要债务由举债一方证明相对人知道该债务用于夫妻共同生活、共同生产经营或基于双方共同意思表示。最高法民间借贷司法解释规定，债权人需举证明确债务符合上述共同债务的构成要件。</information>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析哪些主体承担举证责任\",\n      \"content\": \"在涉及夫妻共同债务的诉讼中，通常分三种情形：第一种，债权人能证明债务是夫妻共同名义签订，则无需再行举证；第二种，家庭日常生活债务推定为共同债务，非举债方需举证证明债务不用于家庭共同生活；第三种，非家庭用债务需举债人证明相对人知情或认可。法律规定形成了一种责任分配的逻辑链条。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"在夫妻共同债务的认定中，根据《民法典》第1064条和相关司法解释，举证责任分为以下几种情形：债权人首先需证明该债务符合共同债务条件（如共同签字或用于家庭日常生活）；若举债一方声称债务非用于家庭日常生活，则需要举证相对人知晓债务用途或认可。同时，非举债方若主张债务不属于共同债务，则需证明债务不符合家庭共同债务的条件。责任分配较为明确，具体需视案情而定。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"该结论符合《民法典》第1064条和最高人民法院的司法解释，根据这些法律依据，符合实际的举证责任分配原则，可以确认结论正确。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"夫妻共同债务的举证责任该怎么分配呢？这个问题听起来很复杂，还是得一步步来。从法律的定义开始入手会更清楚一些。\\n\\n先想想《民法典》里是怎么说的吧。哦，对了，好像有一个关于夫妻共同债务的规定，《民法典》第1064条应该讲过这些内容。夫妻共同债务主要包括哪些呢？大致记得有两点：一是为了家庭日常生活需要而产生的债务，二是夫妻俩共同签名或者后来共同认可的债务。如果是不属于家庭日常需要的债务呢？嗯，听说举债的一方得证明这个债务是夫妻双方同意的。为了更准确，我还是搜一搜具体规定吧。<search>夫妻共同债务认定 司法解释</search>\\n\\n找到些结果了。<information>夫妻共同债务的具体认定有几个重点。《民法典》第1064条提到的情况是：只要是夫妻共同签字或者事后追认的，基本就确定是共同债务；如果是家庭日常生活需要的，也会被认定为夫妻共同债务。可如果是超出日常家庭需要的特殊债务，举债的一方就得负责证明债务对应的相对人知道债务用途，并且这个用途要与夫妻共同生活、生产经营或共同意思表达相关联。哦，最高院的民间借贷司法解释也讲过类似的事儿，比如说债权人得证明这些债务是符合夫妻共同债务的认定标准的。</information>\\n\\n这样看来，举证责任其实是分情况的。先整理一下，应该会更清晰。比如说，第一种，如果债权人可以直接证明这个债务是夫妻双方共同名义签署的，那举证责任其实就到这里为止了，基本不用解释更多东西。第二种，家庭日常生活产生的债务会默认是共同债务，这种情况下一般是非举债的一方需要去挑战这个默认的认定，证明债务和家庭生活无关。第三种，非家庭日常生活需要的债务，那就比较复杂了，得看举债的一方能不能证明债权人知道这个债务的具体用途，也就是说相对人得知情并认可。\\n\\n这让我更清楚责任是怎么分配的了。总结下来，最初是债权人需简单证明这个债务大体合理；如果要证明不是共同债务，非举债方有责任反驳；而举债方在一些特殊情况下负有额外的举证责任，比如涉及到非家庭用途的时候。不管是债权人还是夫妻任何一方，法律都设计了相应的责任分配环节，看起来是想保证公正吧。\\n\\n这样分析下来，嗯，结论应该是对的，毕竟是基于明确的法律条文和司法解释推出来的。\"\n}\n```",
+    "认定夫妻共同债务的举证责任分配可以根据《民法典》第1064条及相关司法解释来明确：\n\n1. **夫妻共同签字或事后追认的债务**：如果债务是由夫妻双方共同签署或者之后共同认可，则直接认定为夫妻共同债务。在这种情况下，债权人只需提供能够证明该债务是经夫妻双方同意或认可的证据，举证责任相对简单。\n\n2. **家庭日常生活所需的债务**：如果债务符合家庭日常生活所需的范畴（如满足基本生活消费、教育、医疗等常规需要），一般情况下会被 presumptively 认定为夫妻共同债务。这种情况下，非举债的一方若认为债务与家庭日常生活无关，需要承担举证责任来反驳该认定。\n\n3. **超出家庭日常生活需要的债务**：对于额外的、高额或超出家庭日常生活范围的债务，举债方需要承担额外的举证责任，以证明债务的用途是用于夫妻共同生活、生产经营，或基于夫妻双方的共同意思表达。除此之外，债权人还需证明其作为相对人对债务用途知情，并且该用途与夫妻共同利益相关。\n\n在司法实践中，此举证责任分配旨在权衡债权人、举债方以及非举债方之间的公平，保障家庭和社会关系的稳定，同时防止债务扩张对一方当事人造成过度损害。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "明确夫妻共同债务的定义",
+        "content": "为了认清夫妻共同债务的举证责任分配，首先需要明确相关定义和标准。根据我国《民法典》第1064条，夫妻共同债务通常是为满足家庭日常生活需要而产生的债务，或夫妻双方以共同名义所负的债务。此外，还需要了解司法解释对这一问题的具体规定。相关内容可以通过检索当前有效的司法解释进行明确。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "检索夫妻共同债务的法律依据",
+        "content": "为了更准确地分析举证责任的问题，需要查找并明确《民法典》第1064条内容，以及相关的司法解释，尤其是最高人民法院关于夫妻共同债务认定的核心原则。检索关键词如下：<search>夫妻共同债务认定 司法解释</search>。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "分析检索结果的意义",
+        "content": "<information>夫妻共同债务由《民法典》第1064条规定：第一，夫妻双方共同签字或事后追认的债务，应认定为夫妻共同债务；第二，为家庭日常生活需要所负的债务，属于夫妻共同债务；第三，非家庭日常生活需要债务由举债一方证明相对人知道该债务用于夫妻共同生活、共同生产经营或基于双方共同意思表示。最高法民间借贷司法解释规定，债权人需举证明确债务符合上述共同债务的构成要件。</information>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "分析哪些主体承担举证责任",
+        "content": "在涉及夫妻共同债务的诉讼中，通常分三种情形：第一种，债权人能证明债务是夫妻共同名义签订，则无需再行举证；第二种，家庭日常生活债务推定为共同债务，非举债方需举证证明债务不用于家庭共同生活；第三种，非家庭用债务需举债人证明相对人知情或认可。法律规定形成了一种责任分配的逻辑链条。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "在夫妻共同债务的认定中，根据《民法典》第1064条和相关司法解释，举证责任分为以下几种情形：债权人首先需证明该债务符合共同债务条件（如共同签字或用于家庭日常生活）；若举债一方声称债务非用于家庭日常生活，则需要举证相对人知晓债务用途或认可。同时，非举债方若主张债务不属于共同债务，则需证明债务不符合家庭共同债务的条件。责任分配较为明确，具体需视案情而定。"
+      },
+      {
+        "action": "Verification",
+        "content": "该结论符合《民法典》第1064条和最高人民法院的司法解释，根据这些法律依据，符合实际的举证责任分配原则，可以确认结论正确。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "夫妻共同债务的举证责任该怎么分配呢？这个问题听起来很复杂，还是得一步步来。从法律的定义开始入手会更清楚一些。\n\n先想想《民法典》里是怎么说的吧。哦，对了，好像有一个关于夫妻共同债务的规定，《民法典》第1064条应该讲过这些内容。夫妻共同债务主要包括哪些呢？大致记得有两点：一是为了家庭日常生活需要而产生的债务，二是夫妻俩共同签名或者后来共同认可的债务。如果是不属于家庭日常需要的债务呢？嗯，听说举债的一方得证明这个债务是夫妻双方同意的。为了更准确，我还是搜一搜具体规定吧。<search>夫妻共同债务认定 司法解释</search>\n\n找到些结果了。<information>夫妻共同债务的具体认定有几个重点。《民法典》第1064条提到的情况是：只要是夫妻共同签字或者事后追认的，基本就确定是共同债务；如果是家庭日常生活需要的，也会被认定为夫妻共同债务。可如果是超出日常家庭需要的特殊债务，举债的一方就得负责证明债务对应的相对人知道债务用途，并且这个用途要与夫妻共同生活、生产经营或共同意思表达相关联。哦，最高院的民间借贷司法解释也讲过类似的事儿，比如说债权人得证明这些债务是符合夫妻共同债务的认定标准的。</information>\n\n这样看来，举证责任其实是分情况的。先整理一下，应该会更清晰。比如说，第一种，如果债权人可以直接证明这个债务是夫妻双方共同名义签署的，那举证责任其实就到这里为止了，基本不用解释更多东西。第二种，家庭日常生活产生的债务会默认是共同债务，这种情况下一般是非举债的一方需要去挑战这个默认的认定，证明债务和家庭生活无关。第三种，非家庭日常生活需要的债务，那就比较复杂了，得看举债的一方能不能证明债权人知道这个债务的具体用途，也就是说相对人得知情并认可。\n\n这让我更清楚责任是怎么分配的了。总结下来，最初是债权人需简单证明这个债务大体合理；如果要证明不是共同债务，非举债方有责任反驳；而举债方在一些特殊情况下负有额外的举证责任，比如涉及到非家庭用途的时候。不管是债权人还是夫妻任何一方，法律都设计了相应的责任分配环节，看起来是想保证公正吧。\n\n这样分析下来，嗯，结论应该是对的，毕竟是基于明确的法律条文和司法解释推出来的。",
+  "Response": "认定夫妻共同债务的举证责任分配可以根据《民法典》第1064条及相关司法解释来明确：\n\n1. **夫妻共同签字或事后追认的债务**：如果债务是由夫妻双方共同签署或者之后共同认可，则直接认定为夫妻共同债务。在这种情况下，债权人只需提供能够证明该债务是经夫妻双方同意或认可的证据，举证责任相对简单。\n\n2. **家庭日常生活所需的债务**：如果债务符合家庭日常生活所需的范畴（如满足基本生活消费、教育、医疗等常规需要），一般情况下会被 presumptively 认定为夫妻共同债务。这种情况下，非举债的一方若认为债务与家庭日常生活无关，需要承担举证责任来反驳该认定。\n\n3. **超出家庭日常生活需要的债务**：对于额外的、高额或超出家庭日常生活范围的债务，举债方需要承担额外的举证责任，以证明债务的用途是用于夫妻共同生活、生产经营，或基于夫妻双方的共同意思表达。除此之外，债权人还需证明其作为相对人对债务用途知情，并且该用途与夫妻共同利益相关。\n\n在司法实践中，此举证责任分配旨在权衡债权人、举债方以及非举债方之间的公平，保障家庭和社会关系的稳定，同时防止债务扩张对一方当事人造成过度损害。",
+  "Question": "认定夫妻共同债务的举证责任如何分配？"
+}

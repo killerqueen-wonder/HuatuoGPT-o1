@@ -1,0 +1,89 @@
+{
+  "Open-ended Verifiable Question": "对已成年子女，父母是否应当给付抚养费?",
+  "Ground-True Answer": "根据法律规定，对于已成年子女，父母一般不需要继续支付抚养费，但是已成年子女尚未独立生活存在下列情形之一，且父母有给付能力的，仍应负担必要的抚养费： 1、丧失劳动能力或虽未完全丧失劳动能力，但其收入不足以维持生活的; \n2、尚在校就读的; \n3、确无独立生活能力和条件的。",
+  "process_id": 1850,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "明确问题涉及的法律领域",
+      "content": "此问题涉及父母对成年子女是否需要继续给付抚养费的法律义务。需要首先确认现有法律对此的规定，特别是与抚养义务相关的法律条文。可能需要查阅《中华人民共和国民法典》相关内容。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "查找法律规定",
+      "content": "根据法律原则和实际情况，未成年人通常享有父母的抚养义务，而成年人的责任则需要进一步确认是否有特殊条件限制。我需要具体确认《中华人民共和国民法典》对父母抚养成年子女义务的具体条款内容。<search>《民法典》抚养成年子女</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "分析查询结果",
+      "content": "<information>《中华人民共和国民法典》第26条规定，父母对未成年子女有抚养教育义务。《民法典》并未明确父母对成年子女的义务，但指出如果成年子女无法独立生活，父母仍负有一定的抚养义务，前提条件可能包括子女丧失独立生活能力或患有严重疾病等特定情形。</information>根据上述法律条文，成年子女的抚养费问题应视情况具体分析。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "总结分析条件",
+      "content": "已成年子女在通常情况下，父母不再负抚养义务，但若子女因特定原因（如丧失劳动能力或者无法自理）无法独立生活，则父母仍可能依法需要承担抚养义务。因此，是否需要支付抚养费取决于成年子女是否符合这些特殊情况。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "父母在一般情况下对已成年子女无须继续给付抚养费，然而若成年子女因丧失劳动能力、患有严重疾病或其他原因造成其无法独立生活的，父母仍需承担一定的抚养义务。因此，是否给付抚养费应视成年子女的具体情况而定。"
+    },
+    {
+      "action": "Verification",
+      "content": "经过分析并结合法律依据，《中华人民共和国民法典》确实对父母抚养成年子女的义务作出限定，只有在成年子女需要特别支持时有所要求。最终结论符合实际情形，确认无误。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n对已成年子女，父母是否应当给付抚养费?\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n父母在一般情况下对已成年子女无须继续给付抚养费，然而若成年子女因丧失劳动能力、患有严重疾病或其他原因造成其无法独立生活的，父母仍需承担一定的抚养义务。因此，是否给付抚养费应视成年子女的具体情况而定。  \n</Model Response>  \n\n<Reference Answer>  \n根据法律规定，对于已成年子女，父母一般不需要继续支付抚养费，但是已成年子女尚未独立生活存在下列情形之一，且父母有给付能力的，仍应负担必要的抚养费： 1、丧失劳动能力或虽未完全丧失劳动能力，但其收入不足以维持生活的; \n2、尚在校就读的; \n3、确无独立生活能力和条件的。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 明确问题涉及的法律领域\n此问题涉及父母对成年子女是否需要继续给付抚养费的法律义务。需要首先确认现有法律对此的规定，特别是与抚养义务相关的法律条文。可能需要查阅《中华人民共和国民法典》相关内容。\n\n### 查找法律规定\n根据法律原则和实际情况，未成年人通常享有父母的抚养义务，而成年人的责任则需要进一步确认是否有特殊条件限制。我需要具体确认《中华人民共和国民法典》对父母抚养成年子女义务的具体条款内容。<search>《民法典》抚养成年子女</search>\n\n### 分析查询结果\n<information>《中华人民共和国民法典》第26条规定，父母对未成年子女有抚养教育义务。《民法典》并未明确父母对成年子女的义务，但指出如果成年子女无法独立生活，父母仍负有一定的抚养义务，前提条件可能包括子女丧失独立生活能力或患有严重疾病等特定情形。</information>根据上述法律条文，成年子女的抚养费问题应视情况具体分析。\n\n### 总结分析条件\n已成年子女在通常情况下，父母不再负抚养义务，但若子女因特定原因（如丧失劳动能力或者无法自理）无法独立生活，则父母仍可能依法需要承担抚养义务。因此，是否需要支付抚养费取决于成年子女是否符合这些特殊情况。\n\n### Conclusion\n父母在一般情况下对已成年子女无须继续给付抚养费，然而若成年子女因丧失劳动能力、患有严重疾病或其他原因造成其无法独立生活的，父母仍需承担一定的抚养义务。因此，是否给付抚养费应视成年子女的具体情况而定。\n\n### Verification\n经过分析并结合法律依据，《中华人民共和国民法典》确实对父母抚养成年子女的义务作出限定，只有在成年子女需要特别支持时有所要求。最终结论符合实际情形，确认无误。\n</Thought Process>\n\n<Question>\n对已成年子女，父母是否应当给付抚养费?\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n首先，我需要搞明白问题的法律领域。这看起来是在讨论父母对成年子女的抚养义务，这应该和家庭责任或者抚养费相关吧。嗯，先确认一下相关法律，可能是《中华人民共和国民法典》里规定了这方面的内容。父母一般来说对未成年子女是有明确抚养义务的，那成年子女呢？是否会因为某些特殊情况继续存在法律义务？让我查一下具体的法律条款吧。<search>《民法典》抚养成年子女</search>\n\n好了，搜索结果出来了。<information>《中华人民共和国民法典》第26条里提到父母对未成年子女有抚养和教育的义务。不过对于成年子女，这个义务并没有像未成年情况那样明确。不过它还提到如果成年子女无法独立生活，比如因为失去劳动能力、患重病，父母仍需负有一定的抚养义务。</information>哦，这就清楚些了。成年子女一般情况下父母无需继续给抚养费，但如果成年子女因为特殊原因无法正常自理生活，法律上还是要求父母继续提供支持。\n\n等一下，那这个“无法独立生活”应该怎么理解呢？比如，如果子女已经成年但因身体问题丧失自理能力，父母是肯定要承担义务的吧？或者如果子女长期没有收入来源，这算一种“无法独立生活”吗？从刚才的条文来看，重点是满足特定条件，比如劳动能力损失或者有严重疾病，所以经济上的一时困窘可能未必能让父母继续负担。\n\n然后我再想想有没有其他影响因素。父母的收入水平呢？或者成年子女自己有没有尝试尽力获取独立生活的能力？法律似乎是针对子女自身“无法独立生活”的状态，而不是父母主观上愿不愿意支持。所以经济问题或者家庭关系如何复杂，这些不是法律关注的核心。法律更专注于实际“是否真正丧失独立生活能力”。\n\n这样来看，父母在通常情况下对成年子女是没有继续支付抚养费的义务的——这是直接从法律里得出的。不过如果子女确实有特殊、无法自力解决的情况，父母还是会有一定的责任，这是一种限制条件。这么分析的话，是否需要支付抚养费完全取决于成年子女的具体情况，而不是一个绝对“没义务”的答案。\n\n好，整理一下目前的想法。根据《民法典》的规定，父母对成年子女没有普遍性的抚养义务，但是在子女因特殊原因完全无法独立生活时才会例外适用。成年子女如果有重大健康问题或其他让自己无法谋生的情况，法律会让父母继续履行抚养义务。所以最后的结论就是：是否支付抚养费需要看情况，从法律条文来看更偏向特殊情况，而不是普遍规则。嗯，这样分析应该挺清楚了。\n</Internal Thinking>\n\n<Question>\n对已成年子女，父母是否应当给付抚养费?\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"明确问题涉及的法律领域\",\n      \"content\": \"此问题涉及父母对成年子女是否需要继续给付抚养费的法律义务。需要首先确认现有法律对此的规定，特别是与抚养义务相关的法律条文。可能需要查阅《中华人民共和国民法典》相关内容。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"查找法律规定\",\n      \"content\": \"根据法律原则和实际情况，未成年人通常享有父母的抚养义务，而成年人的责任则需要进一步确认是否有特殊条件限制。我需要具体确认《中华人民共和国民法典》对父母抚养成年子女义务的具体条款内容。<search>《民法典》抚养成年子女</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析查询结果\",\n      \"content\": \"<information>《中华人民共和国民法典》第26条规定，父母对未成年子女有抚养教育义务。《民法典》并未明确父母对成年子女的义务，但指出如果成年子女无法独立生活，父母仍负有一定的抚养义务，前提条件可能包括子女丧失独立生活能力或患有严重疾病等特定情形。</information>根据上述法律条文，成年子女的抚养费问题应视情况具体分析。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"总结分析条件\",\n      \"content\": \"已成年子女在通常情况下，父母不再负抚养义务，但若子女因特定原因（如丧失劳动能力或者无法自理）无法独立生活，则父母仍可能依法需要承担抚养义务。因此，是否需要支付抚养费取决于成年子女是否符合这些特殊情况。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"父母在一般情况下对已成年子女无须继续给付抚养费，然而若成年子女因丧失劳动能力、患有严重疾病或其他原因造成其无法独立生活的，父母仍需承担一定的抚养义务。因此，是否给付抚养费应视成年子女的具体情况而定。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"经过分析并结合法律依据，《中华人民共和国民法典》确实对父母抚养成年子女的义务作出限定，只有在成年子女需要特别支持时有所要求。最终结论符合实际情形，确认无误。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"首先，我需要搞明白问题的法律领域。这看起来是在讨论父母对成年子女的抚养义务，这应该和家庭责任或者抚养费相关吧。嗯，先确认一下相关法律，可能是《中华人民共和国民法典》里规定了这方面的内容。父母一般来说对未成年子女是有明确抚养义务的，那成年子女呢？是否会因为某些特殊情况继续存在法律义务？让我查一下具体的法律条款吧。<search>《民法典》抚养成年子女</search>\\n\\n好了，搜索结果出来了。<information>《中华人民共和国民法典》第26条里提到父母对未成年子女有抚养和教育的义务。不过对于成年子女，这个义务并没有像未成年情况那样明确。不过它还提到如果成年子女无法独立生活，比如因为失去劳动能力、患重病，父母仍需负有一定的抚养义务。</information>哦，这就清楚些了。成年子女一般情况下父母无需继续给抚养费，但如果成年子女因为特殊原因无法正常自理生活，法律上还是要求父母继续提供支持。\\n\\n等一下，那这个“无法独立生活”应该怎么理解呢？比如，如果子女已经成年但因身体问题丧失自理能力，父母是肯定要承担义务的吧？或者如果子女长期没有收入来源，这算一种“无法独立生活”吗？从刚才的条文来看，重点是满足特定条件，比如劳动能力损失或者有严重疾病，所以经济上的一时困窘可能未必能让父母继续负担。\\n\\n然后我再想想有没有其他影响因素。父母的收入水平呢？或者成年子女自己有没有尝试尽力获取独立生活的能力？法律似乎是针对子女自身“无法独立生活”的状态，而不是父母主观上愿不愿意支持。所以经济问题或者家庭关系如何复杂，这些不是法律关注的核心。法律更专注于实际“是否真正丧失独立生活能力”。\\n\\n这样来看，父母在通常情况下对成年子女是没有继续支付抚养费的义务的——这是直接从法律里得出的。不过如果子女确实有特殊、无法自力解决的情况，父母还是会有一定的责任，这是一种限制条件。这么分析的话，是否需要支付抚养费完全取决于成年子女的具体情况，而不是一个绝对“没义务”的答案。\\n\\n好，整理一下目前的想法。根据《民法典》的规定，父母对成年子女没有普遍性的抚养义务，但是在子女因特殊原因完全无法独立生活时才会例外适用。成年子女如果有重大健康问题或其他让自己无法谋生的情况，法律会让父母继续履行抚养义务。所以最后的结论就是：是否支付抚养费需要看情况，从法律条文来看更偏向特殊情况，而不是普遍规则。嗯，这样分析应该挺清楚了。\"\n}\n```",
+    "根据《中华人民共和国民法典》第26条的规定，父母对未成年子女负有法定的抚养和教育义务。然而，对于已成年子女，父母通常情况下不再具有支付抚养费的法定义务。但如果成年子女因特定原因无法独立生活，例如丧失劳动能力、患严重疾病或存在其他确实无法维持生活的特殊情况，父母仍需承担一定的抚养义务。\n\n因此，父母是否应当给付抚养费取决于成年子女的具体情况。如果成年子女具备独立生活和谋生的能力，父母无须支付抚养费；如果成年子女因特殊原因而无法独立生活，法律可能要求父母继续提供必要的支持。这一义务是法律的例外规定，目的是在特殊情况下保障成年子女的基本生活。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "明确问题涉及的法律领域",
+        "content": "此问题涉及父母对成年子女是否需要继续给付抚养费的法律义务。需要首先确认现有法律对此的规定，特别是与抚养义务相关的法律条文。可能需要查阅《中华人民共和国民法典》相关内容。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "查找法律规定",
+        "content": "根据法律原则和实际情况，未成年人通常享有父母的抚养义务，而成年人的责任则需要进一步确认是否有特殊条件限制。我需要具体确认《中华人民共和国民法典》对父母抚养成年子女义务的具体条款内容。<search>《民法典》抚养成年子女</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "分析查询结果",
+        "content": "<information>《中华人民共和国民法典》第26条规定，父母对未成年子女有抚养教育义务。《民法典》并未明确父母对成年子女的义务，但指出如果成年子女无法独立生活，父母仍负有一定的抚养义务，前提条件可能包括子女丧失独立生活能力或患有严重疾病等特定情形。</information>根据上述法律条文，成年子女的抚养费问题应视情况具体分析。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "总结分析条件",
+        "content": "已成年子女在通常情况下，父母不再负抚养义务，但若子女因特定原因（如丧失劳动能力或者无法自理）无法独立生活，则父母仍可能依法需要承担抚养义务。因此，是否需要支付抚养费取决于成年子女是否符合这些特殊情况。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "父母在一般情况下对已成年子女无须继续给付抚养费，然而若成年子女因丧失劳动能力、患有严重疾病或其他原因造成其无法独立生活的，父母仍需承担一定的抚养义务。因此，是否给付抚养费应视成年子女的具体情况而定。"
+      },
+      {
+        "action": "Verification",
+        "content": "经过分析并结合法律依据，《中华人民共和国民法典》确实对父母抚养成年子女的义务作出限定，只有在成年子女需要特别支持时有所要求。最终结论符合实际情形，确认无误。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "首先，我需要搞明白问题的法律领域。这看起来是在讨论父母对成年子女的抚养义务，这应该和家庭责任或者抚养费相关吧。嗯，先确认一下相关法律，可能是《中华人民共和国民法典》里规定了这方面的内容。父母一般来说对未成年子女是有明确抚养义务的，那成年子女呢？是否会因为某些特殊情况继续存在法律义务？让我查一下具体的法律条款吧。<search>《民法典》抚养成年子女</search>\n\n好了，搜索结果出来了。<information>《中华人民共和国民法典》第26条里提到父母对未成年子女有抚养和教育的义务。不过对于成年子女，这个义务并没有像未成年情况那样明确。不过它还提到如果成年子女无法独立生活，比如因为失去劳动能力、患重病，父母仍需负有一定的抚养义务。</information>哦，这就清楚些了。成年子女一般情况下父母无需继续给抚养费，但如果成年子女因为特殊原因无法正常自理生活，法律上还是要求父母继续提供支持。\n\n等一下，那这个“无法独立生活”应该怎么理解呢？比如，如果子女已经成年但因身体问题丧失自理能力，父母是肯定要承担义务的吧？或者如果子女长期没有收入来源，这算一种“无法独立生活”吗？从刚才的条文来看，重点是满足特定条件，比如劳动能力损失或者有严重疾病，所以经济上的一时困窘可能未必能让父母继续负担。\n\n然后我再想想有没有其他影响因素。父母的收入水平呢？或者成年子女自己有没有尝试尽力获取独立生活的能力？法律似乎是针对子女自身“无法独立生活”的状态，而不是父母主观上愿不愿意支持。所以经济问题或者家庭关系如何复杂，这些不是法律关注的核心。法律更专注于实际“是否真正丧失独立生活能力”。\n\n这样来看，父母在通常情况下对成年子女是没有继续支付抚养费的义务的——这是直接从法律里得出的。不过如果子女确实有特殊、无法自力解决的情况，父母还是会有一定的责任，这是一种限制条件。这么分析的话，是否需要支付抚养费完全取决于成年子女的具体情况，而不是一个绝对“没义务”的答案。\n\n好，整理一下目前的想法。根据《民法典》的规定，父母对成年子女没有普遍性的抚养义务，但是在子女因特殊原因完全无法独立生活时才会例外适用。成年子女如果有重大健康问题或其他让自己无法谋生的情况，法律会让父母继续履行抚养义务。所以最后的结论就是：是否支付抚养费需要看情况，从法律条文来看更偏向特殊情况，而不是普遍规则。嗯，这样分析应该挺清楚了。",
+  "Response": "根据《中华人民共和国民法典》第26条的规定，父母对未成年子女负有法定的抚养和教育义务。然而，对于已成年子女，父母通常情况下不再具有支付抚养费的法定义务。但如果成年子女因特定原因无法独立生活，例如丧失劳动能力、患严重疾病或存在其他确实无法维持生活的特殊情况，父母仍需承担一定的抚养义务。\n\n因此，父母是否应当给付抚养费取决于成年子女的具体情况。如果成年子女具备独立生活和谋生的能力，父母无须支付抚养费；如果成年子女因特殊原因而无法独立生活，法律可能要求父母继续提供必要的支持。这一义务是法律的例外规定，目的是在特殊情况下保障成年子女的基本生活。",
+  "Question": "对已成年子女，父母是否应当给付抚养费?"
+}

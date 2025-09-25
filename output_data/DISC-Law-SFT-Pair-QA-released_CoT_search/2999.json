@@ -1,0 +1,79 @@
+{
+  "Open-ended Verifiable Question": "未经股东会决议能否变更法定代表人？",
+  "Ground-True Answer": "法定代表人是对外代表公司意志的机关之一，登记的法定代表人依法具有公示效力，但就公司内部而言，公司和法定代表人之间为委托法律关系，法定代表人行使代表人职权的基础为公司权力机关的授权，公司权力机关终止授权则法定代表人对外代表公司从事民事活动的职权终止，公司依法应当及时办理工商变更登记。\n以股东会决议（内容为指定他人担任公司执行董事、总经理、法定代表人）的履行问题系公司内部经营管理问题，属于公司自治范畴，不属于人民法院的主管范围。\n公司法定代表人依照公司章程的规定，由董事长、执行董事或者经理担任，并依法登记。公司法定代表人变更，应当办理变更登记。",
+  "process_id": 2999,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "分析法定代表人变更的法律基础",
+      "content": "法定代表人的变更通常受公司法和公司章程的约束。在中国，根据《公司法》的规定，法定代表人的产生和变更一般需要通过股东会（或类似的权力机关，如董事会）的决议进行。为了进一步确认相关法律依据，需要查询相关规定的具体内容。<search>公司法 法定代表人变更</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "搜索法律关于法定代表人变更的规定",
+      "content": "<information>《公司法》第13条规定，法定代表人由公司章程明确规定，通常由董事会或股东会选举和罢免。《公司法》第38条规定有限公司股东会具有选举和罢免公司执行董事、监事的权利，并可以决定法定代表人的变更。《公司法》第54条和第123条针对股份有限公司也有类似规定，公司章程中明确法定代表人的职权和变更程序。</information>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "结合法定代表人变更的法律解读",
+      "content": "根据上述查阅的法律内容，法定代表人变更需符合公司章程的规定，而公司章程通常要求股东会或董事会先决议进行变更。因此，未经股东会或相关决策机关的决议，随意变更法定代表人通常不符合法律规定。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "未经股东会决议通常不能变更法定代表人，因为《公司法》明确规定法定代表人的变更需依照公司章程的规定，而公司章程通常要求股东会或董事会作决定。"
+    },
+    {
+      "action": "Verification",
+      "content": "上述结论符合《公司法》第13条、38条等相关条款的规定，并与实际法律实践一致。因此，结论成立，无需进一步推导。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n未经股东会决议能否变更法定代表人？\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n未经股东会决议通常不能变更法定代表人，因为《公司法》明确规定法定代表人的变更需依照公司章程的规定，而公司章程通常要求股东会或董事会作决定。  \n</Model Response>  \n\n<Reference Answer>  \n法定代表人是对外代表公司意志的机关之一，登记的法定代表人依法具有公示效力，但就公司内部而言，公司和法定代表人之间为委托法律关系，法定代表人行使代表人职权的基础为公司权力机关的授权，公司权力机关终止授权则法定代表人对外代表公司从事民事活动的职权终止，公司依法应当及时办理工商变更登记。\n以股东会决议（内容为指定他人担任公司执行董事、总经理、法定代表人）的履行问题系公司内部经营管理问题，属于公司自治范畴，不属于人民法院的主管范围。\n公司法定代表人依照公司章程的规定，由董事长、执行董事或者经理担任，并依法登记。公司法定代表人变更，应当办理变更登记。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 分析法定代表人变更的法律基础\n法定代表人的变更通常受公司法和公司章程的约束。在中国，根据《公司法》的规定，法定代表人的产生和变更一般需要通过股东会（或类似的权力机关，如董事会）的决议进行。为了进一步确认相关法律依据，需要查询相关规定的具体内容。<search>公司法 法定代表人变更</search>\n\n### 搜索法律关于法定代表人变更的规定\n<information>《公司法》第13条规定，法定代表人由公司章程明确规定，通常由董事会或股东会选举和罢免。《公司法》第38条规定有限公司股东会具有选举和罢免公司执行董事、监事的权利，并可以决定法定代表人的变更。《公司法》第54条和第123条针对股份有限公司也有类似规定，公司章程中明确法定代表人的职权和变更程序。</information>\n\n### 结合法定代表人变更的法律解读\n根据上述查阅的法律内容，法定代表人变更需符合公司章程的规定，而公司章程通常要求股东会或董事会先决议进行变更。因此，未经股东会或相关决策机关的决议，随意变更法定代表人通常不符合法律规定。\n\n### Conclusion\n未经股东会决议通常不能变更法定代表人，因为《公司法》明确规定法定代表人的变更需依照公司章程的规定，而公司章程通常要求股东会或董事会作决定。\n\n### Verification\n上述结论符合《公司法》第13条、38条等相关条款的规定，并与实际法律实践一致。因此，结论成立，无需进一步推导。\n</Thought Process>\n\n<Question>\n未经股东会决议能否变更法定代表人？\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n嗯，法定代表人变更这件事究竟能否在未经股东会决议的情况下进行呢？从常识上来说，法定代表人的地位在公司结构中很重要，通常涉及公司章程的规定和法律程序，所以直接变更似乎不太可能。但具体法律依据是什么呢？我还是需要查下相关法律的具体规定比较稳妥。<search>公司法 法定代表人变更</search>\n\n好的，我查到了一些信息。<information>《公司法》第13条有明确规定，法定代表人的地位和职权需要公司章程明确。而法定代表人的产生和变更，通常是基于股东会或董事会的决议。《公司法》第38条进一步规定有限公司的股东会有权决定一些重大事项，包括选举和罢免公司的执行董事和监事，而这会关系到法定代表人的变更。同样的，关于股份有限公司，《公司法》第54条和第123条也提到了类似的规定，还是强调章程和程序的重要性。</information>嗯，看起来法律还挺严谨。\n\n结合这段信息，如果法定代表人要变更，似乎离不开章程的规定，而章程应该对决议的程序有比较明确的要求，比如是由董事会还是股东会来决定。因此，如果没有股东会的决议，直接变更法定代表人显然是不符合法律要求的。这跟平时理解一致，看起来公司治理还是非常程序化和规范化的。\n\n所以我的结论是这样的：未经股东会决议，一般不能变更法定代表人。这不仅仅是因为《公司法》第13条明确规定法定代表人产生和变更需要遵守公司章程，还有第38条等条款强调重大事项需要股东会的决议。这种规定也很符合逻辑，毕竟法定代表人是公司对外的最高代表，不经过决策机关同意就更换显然不妥。\n\n嗯，总结完之后心里就更踏实了，也基本确定结论没有问题，看起来和法律的文字内容是一致的。如果有人提出反对意见，我觉得除非有特别例外的条款，否则这个结论还是站得住脚的。\n</Internal Thinking>\n\n<Question>\n未经股东会决议能否变更法定代表人？\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析法定代表人变更的法律基础\",\n      \"content\": \"法定代表人的变更通常受公司法和公司章程的约束。在中国，根据《公司法》的规定，法定代表人的产生和变更一般需要通过股东会（或类似的权力机关，如董事会）的决议进行。为了进一步确认相关法律依据，需要查询相关规定的具体内容。<search>公司法 法定代表人变更</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"搜索法律关于法定代表人变更的规定\",\n      \"content\": \"<information>《公司法》第13条规定，法定代表人由公司章程明确规定，通常由董事会或股东会选举和罢免。《公司法》第38条规定有限公司股东会具有选举和罢免公司执行董事、监事的权利，并可以决定法定代表人的变更。《公司法》第54条和第123条针对股份有限公司也有类似规定，公司章程中明确法定代表人的职权和变更程序。</information>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"结合法定代表人变更的法律解读\",\n      \"content\": \"根据上述查阅的法律内容，法定代表人变更需符合公司章程的规定，而公司章程通常要求股东会或董事会先决议进行变更。因此，未经股东会或相关决策机关的决议，随意变更法定代表人通常不符合法律规定。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"未经股东会决议通常不能变更法定代表人，因为《公司法》明确规定法定代表人的变更需依照公司章程的规定，而公司章程通常要求股东会或董事会作决定。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"上述结论符合《公司法》第13条、38条等相关条款的规定，并与实际法律实践一致。因此，结论成立，无需进一步推导。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"嗯，法定代表人变更这件事究竟能否在未经股东会决议的情况下进行呢？从常识上来说，法定代表人的地位在公司结构中很重要，通常涉及公司章程的规定和法律程序，所以直接变更似乎不太可能。但具体法律依据是什么呢？我还是需要查下相关法律的具体规定比较稳妥。<search>公司法 法定代表人变更</search>\\n\\n好的，我查到了一些信息。<information>《公司法》第13条有明确规定，法定代表人的地位和职权需要公司章程明确。而法定代表人的产生和变更，通常是基于股东会或董事会的决议。《公司法》第38条进一步规定有限公司的股东会有权决定一些重大事项，包括选举和罢免公司的执行董事和监事，而这会关系到法定代表人的变更。同样的，关于股份有限公司，《公司法》第54条和第123条也提到了类似的规定，还是强调章程和程序的重要性。</information>嗯，看起来法律还挺严谨。\\n\\n结合这段信息，如果法定代表人要变更，似乎离不开章程的规定，而章程应该对决议的程序有比较明确的要求，比如是由董事会还是股东会来决定。因此，如果没有股东会的决议，直接变更法定代表人显然是不符合法律要求的。这跟平时理解一致，看起来公司治理还是非常程序化和规范化的。\\n\\n所以我的结论是这样的：未经股东会决议，一般不能变更法定代表人。这不仅仅是因为《公司法》第13条明确规定法定代表人产生和变更需要遵守公司章程，还有第38条等条款强调重大事项需要股东会的决议。这种规定也很符合逻辑，毕竟法定代表人是公司对外的最高代表，不经过决策机关同意就更换显然不妥。\\n\\n嗯，总结完之后心里就更踏实了，也基本确定结论没有问题，看起来和法律的文字内容是一致的。如果有人提出反对意见，我觉得除非有特别例外的条款，否则这个结论还是站得住脚的。\"\n}\n```",
+    "未经股东会决议，一般情况下不能变更法定代表人。\n\n根据《中华人民共和国公司法》的规定，法定代表人的产生和变更需要依据公司章程进行。《公司法》第13条明确指出，公司章程应当规定公司法定代表人的产生方式和职权范围。而对于有限公司，《公司法》第38条规定，股东会作为公司最高权力机关，有权决定公司的重要事项，其中包括选举和罢免董事。而法定代表人通常由董事长、执行董事或经理担任，其任免与法定代表人的变更密切相关，因此需要经过股东会的决议。\n\n股份有限公司的情形类似，根据《公司法》第54条和第123条的相关规定，公司重要事项的决策需要遵循章程，并由董事会或股东大会作出决定。因此，无论是有限公司还是股份有限公司，法定代表人的变更都受到公司内部治理程序的严格约束。\n\n未经股东会决议直接变更法定代表人是违反《公司法》的规范性要求的，也可能导致法律后果，如变更登记无效或引发股东对相关负责人追责。因此，法定代表人的变更需要严格履行公司章程规定的程序，通常至少要经过股东会或董事会的合法决议。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "分析法定代表人变更的法律基础",
+        "content": "法定代表人的变更通常受公司法和公司章程的约束。在中国，根据《公司法》的规定，法定代表人的产生和变更一般需要通过股东会（或类似的权力机关，如董事会）的决议进行。为了进一步确认相关法律依据，需要查询相关规定的具体内容。<search>公司法 法定代表人变更</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "搜索法律关于法定代表人变更的规定",
+        "content": "<information>《公司法》第13条规定，法定代表人由公司章程明确规定，通常由董事会或股东会选举和罢免。《公司法》第38条规定有限公司股东会具有选举和罢免公司执行董事、监事的权利，并可以决定法定代表人的变更。《公司法》第54条和第123条针对股份有限公司也有类似规定，公司章程中明确法定代表人的职权和变更程序。</information>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "结合法定代表人变更的法律解读",
+        "content": "根据上述查阅的法律内容，法定代表人变更需符合公司章程的规定，而公司章程通常要求股东会或董事会先决议进行变更。因此，未经股东会或相关决策机关的决议，随意变更法定代表人通常不符合法律规定。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "未经股东会决议通常不能变更法定代表人，因为《公司法》明确规定法定代表人的变更需依照公司章程的规定，而公司章程通常要求股东会或董事会作决定。"
+      },
+      {
+        "action": "Verification",
+        "content": "上述结论符合《公司法》第13条、38条等相关条款的规定，并与实际法律实践一致。因此，结论成立，无需进一步推导。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "嗯，法定代表人变更这件事究竟能否在未经股东会决议的情况下进行呢？从常识上来说，法定代表人的地位在公司结构中很重要，通常涉及公司章程的规定和法律程序，所以直接变更似乎不太可能。但具体法律依据是什么呢？我还是需要查下相关法律的具体规定比较稳妥。<search>公司法 法定代表人变更</search>\n\n好的，我查到了一些信息。<information>《公司法》第13条有明确规定，法定代表人的地位和职权需要公司章程明确。而法定代表人的产生和变更，通常是基于股东会或董事会的决议。《公司法》第38条进一步规定有限公司的股东会有权决定一些重大事项，包括选举和罢免公司的执行董事和监事，而这会关系到法定代表人的变更。同样的，关于股份有限公司，《公司法》第54条和第123条也提到了类似的规定，还是强调章程和程序的重要性。</information>嗯，看起来法律还挺严谨。\n\n结合这段信息，如果法定代表人要变更，似乎离不开章程的规定，而章程应该对决议的程序有比较明确的要求，比如是由董事会还是股东会来决定。因此，如果没有股东会的决议，直接变更法定代表人显然是不符合法律要求的。这跟平时理解一致，看起来公司治理还是非常程序化和规范化的。\n\n所以我的结论是这样的：未经股东会决议，一般不能变更法定代表人。这不仅仅是因为《公司法》第13条明确规定法定代表人产生和变更需要遵守公司章程，还有第38条等条款强调重大事项需要股东会的决议。这种规定也很符合逻辑，毕竟法定代表人是公司对外的最高代表，不经过决策机关同意就更换显然不妥。\n\n嗯，总结完之后心里就更踏实了，也基本确定结论没有问题，看起来和法律的文字内容是一致的。如果有人提出反对意见，我觉得除非有特别例外的条款，否则这个结论还是站得住脚的。",
+  "Response": "未经股东会决议，一般情况下不能变更法定代表人。\n\n根据《中华人民共和国公司法》的规定，法定代表人的产生和变更需要依据公司章程进行。《公司法》第13条明确指出，公司章程应当规定公司法定代表人的产生方式和职权范围。而对于有限公司，《公司法》第38条规定，股东会作为公司最高权力机关，有权决定公司的重要事项，其中包括选举和罢免董事。而法定代表人通常由董事长、执行董事或经理担任，其任免与法定代表人的变更密切相关，因此需要经过股东会的决议。\n\n股份有限公司的情形类似，根据《公司法》第54条和第123条的相关规定，公司重要事项的决策需要遵循章程，并由董事会或股东大会作出决定。因此，无论是有限公司还是股份有限公司，法定代表人的变更都受到公司内部治理程序的严格约束。\n\n未经股东会决议直接变更法定代表人是违反《公司法》的规范性要求的，也可能导致法律后果，如变更登记无效或引发股东对相关负责人追责。因此，法定代表人的变更需要严格履行公司章程规定的程序，通常至少要经过股东会或董事会的合法决议。",
+  "Question": "未经股东会决议能否变更法定代表人？"
+}

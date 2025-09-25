@@ -1,0 +1,89 @@
+{
+  "Open-ended Verifiable Question": "什么是小产权房",
+  "Ground-True Answer": "小产权房并不是法律上的概念，它只是人们在社会实践中形成的一种约定俗称的称谓。是指在农民集体土地上建设的房屋，未缴纳土地出让金等费用，其产权证不是由国家房管部门颁发的，所以叫做“乡产权”，又叫“小产权”。\n乡镇政府发的所谓小产权房产，实际上没有真正的产权。这种房没有国家发的土地使用证和预售许可证，购房合同国土房管局也不会给予备案，所谓产权证也不是真正合法有效的产权证",
+  "process_id": 7620,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "定义小产权房",
+      "content": "从基本概念入手，小产权房通常指未通过国家正规审批建设的房屋，其产权证由乡镇或村级组织颁发，而不是由国家房管部门核发。由于其存在一定的法律风险，应初步确认相关概念是否涉及主要法律或政策条款。需要进一步搜索相关政府对小产权房的具体定义或解释。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "搜索相关法律条款",
+      "content": "<search>小产权房合法性</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "分析搜索结果",
+      "content": "<information>小产权房是指建设在集体土地上，未通过正规审批的房屋。由于土地性质为集体所有，依据《土地管理法》，该类房屋无法获得国家颁发的产权证书。这类房屋通常在合作开发或个人建设过程中形成，未缴纳土地出让金，也无法取得商品房的合法流通资质。</information>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "确定法律风险",
+      "content": "通过先前的信息可以确认，小产权房受限于《土地管理法》的规定，因其未缴纳土地出让金且土地性质为集体所有，通常存在合法交易的限制。需要继续核实其流通性以及购买可能引发的法律问题。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "小产权房是指建设在集体土地上且未经国家土地使用权审批的房屋，其产权证书由乡镇或村级组织颁发，而非国家房管部门。这类房屋由于未缴纳土地出让金，无法获得正式产权证，因此不具备合法交易资质，且存在较大的法律风险。购买小产权房可能涉及产权归属问题，无法通过正规途径转让和抵押。"
+    },
+    {
+      "action": "Verification",
+      "content": "通过核查《土地管理法》和相关政策可确认上述结论准确无误，小产权房确实存在法律风险，并缺乏合法商品房的地位。结束。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n什么是小产权房\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n小产权房是指建设在集体土地上且未经国家土地使用权审批的房屋，其产权证书由乡镇或村级组织颁发，而非国家房管部门。这类房屋由于未缴纳土地出让金，无法获得正式产权证，因此不具备合法交易资质，且存在较大的法律风险。购买小产权房可能涉及产权归属问题，无法通过正规途径转让和抵押。  \n</Model Response>  \n\n<Reference Answer>  \n小产权房并不是法律上的概念，它只是人们在社会实践中形成的一种约定俗称的称谓。是指在农民集体土地上建设的房屋，未缴纳土地出让金等费用，其产权证不是由国家房管部门颁发的，所以叫做“乡产权”，又叫“小产权”。\n乡镇政府发的所谓小产权房产，实际上没有真正的产权。这种房没有国家发的土地使用证和预售许可证，购房合同国土房管局也不会给予备案，所谓产权证也不是真正合法有效的产权证\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 定义小产权房\n从基本概念入手，小产权房通常指未通过国家正规审批建设的房屋，其产权证由乡镇或村级组织颁发，而不是由国家房管部门核发。由于其存在一定的法律风险，应初步确认相关概念是否涉及主要法律或政策条款。需要进一步搜索相关政府对小产权房的具体定义或解释。\n\n### 搜索相关法律条款\n<search>小产权房合法性</search>\n\n### 分析搜索结果\n<information>小产权房是指建设在集体土地上，未通过正规审批的房屋。由于土地性质为集体所有，依据《土地管理法》，该类房屋无法获得国家颁发的产权证书。这类房屋通常在合作开发或个人建设过程中形成，未缴纳土地出让金，也无法取得商品房的合法流通资质。</information>\n\n### 确定法律风险\n通过先前的信息可以确认，小产权房受限于《土地管理法》的规定，因其未缴纳土地出让金且土地性质为集体所有，通常存在合法交易的限制。需要继续核实其流通性以及购买可能引发的法律问题。\n\n### Conclusion\n小产权房是指建设在集体土地上且未经国家土地使用权审批的房屋，其产权证书由乡镇或村级组织颁发，而非国家房管部门。这类房屋由于未缴纳土地出让金，无法获得正式产权证，因此不具备合法交易资质，且存在较大的法律风险。购买小产权房可能涉及产权归属问题，无法通过正规途径转让和抵押。\n\n### Verification\n通过核查《土地管理法》和相关政策可确认上述结论准确无误，小产权房确实存在法律风险，并缺乏合法商品房的地位。结束。\n</Thought Process>\n\n<Question>\n什么是小产权房\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n嗯，小产权房这个概念听说过，但是具体是什么呢？要搞清楚它到底是怎么定义的。按照我的印象，小产权房好像是和产权证书或者土地性质有关，但还是不确定细节。我知道它和国家正式审批的房子不太一样，可能是乡镇或者村级组织发的产权证。这样的话，它合法性可能会有点问题。让我先查查具体的法律定义吧。\n\n<search>小产权房合法性</search>\n\n哦，找到了信息。<information>小产权房是指建设在集体土地上的房屋，未通过国家正规审批。根据《土地管理法》的规定，这些房子因为土地性质是集体所有，没有缴纳土地出让金，所以没办法获得国家颁发的正规产权证。这类房屋一般是通过合作开发或者个人建设形成的，不能像商品房那样合法流通。</information>\n\n嗯，这就比较明确了。小产权房的问题主要就在土地性质上，它是集体土地，而不是国家出让的土地。看起来这种房子没有缴土地出让金，所以拿不到国家级的产权证。也就是说，它本身合法性就有点问题，更别说买了之后流通转让了。让我想想，这是不是和《土地管理法》有关？嗯，确实是，这法律直接限制了集体土地上的房屋性质，估计买这种房还可能引发产权归属的问题。\n\n所以总结一下，小产权房就是那种建在集体土地上的，没经过土地使用权正规审批的房子。它的产权证是乡镇或村级组织发的，不是国家房管部门发的，听上去就缺乏正规的法律保障。而且因为没缴土地出让金，它不能算作合法商品房，也不能像普通房子那样抵押或转让。购买的话，法律风险还挺大的，得小心才是。\n\n嗯，这些结论看起来和查到的信息挺一致。《土地管理法》的限制确实是核心问题，国家政策也应该对这类房产有所规避。看来小产权房确实不太安全，还是得多了解法律风险才能做决定。好了，弄明白了！\n</Internal Thinking>\n\n<Question>\n什么是小产权房\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"定义小产权房\",\n      \"content\": \"从基本概念入手，小产权房通常指未通过国家正规审批建设的房屋，其产权证由乡镇或村级组织颁发，而不是由国家房管部门核发。由于其存在一定的法律风险，应初步确认相关概念是否涉及主要法律或政策条款。需要进一步搜索相关政府对小产权房的具体定义或解释。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"搜索相关法律条款\",\n      \"content\": \"<search>小产权房合法性</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析搜索结果\",\n      \"content\": \"<information>小产权房是指建设在集体土地上，未通过正规审批的房屋。由于土地性质为集体所有，依据《土地管理法》，该类房屋无法获得国家颁发的产权证书。这类房屋通常在合作开发或个人建设过程中形成，未缴纳土地出让金，也无法取得商品房的合法流通资质。</information>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"确定法律风险\",\n      \"content\": \"通过先前的信息可以确认，小产权房受限于《土地管理法》的规定，因其未缴纳土地出让金且土地性质为集体所有，通常存在合法交易的限制。需要继续核实其流通性以及购买可能引发的法律问题。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"小产权房是指建设在集体土地上且未经国家土地使用权审批的房屋，其产权证书由乡镇或村级组织颁发，而非国家房管部门。这类房屋由于未缴纳土地出让金，无法获得正式产权证，因此不具备合法交易资质，且存在较大的法律风险。购买小产权房可能涉及产权归属问题，无法通过正规途径转让和抵押。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"通过核查《土地管理法》和相关政策可确认上述结论准确无误，小产权房确实存在法律风险，并缺乏合法商品房的地位。结束。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"嗯，小产权房这个概念听说过，但是具体是什么呢？要搞清楚它到底是怎么定义的。按照我的印象，小产权房好像是和产权证书或者土地性质有关，但还是不确定细节。我知道它和国家正式审批的房子不太一样，可能是乡镇或者村级组织发的产权证。这样的话，它合法性可能会有点问题。让我先查查具体的法律定义吧。\\n\\n<search>小产权房合法性</search>\\n\\n哦，找到了信息。<information>小产权房是指建设在集体土地上的房屋，未通过国家正规审批。根据《土地管理法》的规定，这些房子因为土地性质是集体所有，没有缴纳土地出让金，所以没办法获得国家颁发的正规产权证。这类房屋一般是通过合作开发或者个人建设形成的，不能像商品房那样合法流通。</information>\\n\\n嗯，这就比较明确了。小产权房的问题主要就在土地性质上，它是集体土地，而不是国家出让的土地。看起来这种房子没有缴土地出让金，所以拿不到国家级的产权证。也就是说，它本身合法性就有点问题，更别说买了之后流通转让了。让我想想，这是不是和《土地管理法》有关？嗯，确实是，这法律直接限制了集体土地上的房屋性质，估计买这种房还可能引发产权归属的问题。\\n\\n所以总结一下，小产权房就是那种建在集体土地上的，没经过土地使用权正规审批的房子。它的产权证是乡镇或村级组织发的，不是国家房管部门发的，听上去就缺乏正规的法律保障。而且因为没缴土地出让金，它不能算作合法商品房，也不能像普通房子那样抵押或转让。购买的话，法律风险还挺大的，得小心才是。\\n\\n嗯，这些结论看起来和查到的信息挺一致。《土地管理法》的限制确实是核心问题，国家政策也应该对这类房产有所规避。看来小产权房确实不太安全，还是得多了解法律风险才能做决定。好了，弄明白了！\"\n}\n```",
+    "小产权房是指建设在集体土地上的房屋，这类房产未通过国家正规审批，因此无法获得国家颁发的《不动产权证书》（即房屋产权证明）。一般情况下，小产权房的产权证是由乡镇政府或村集体组织自行发放的，而非国家房管部门正式核发。这使得小产权房在法律层面缺乏完整的产权保障。\n\n小产权房的问题主要集中在以下几个方面：\n\n1. **土地性质**：小产权房的土地属于集体所有，而非国家出让土地。这意味着其使用和开发未缴纳土地出让金，没有获得批准的土地使用权变更手续。\n\n2. **法律地位**：根据《中华人民共和国土地管理法》，集体土地只能用于农业、村民住宅等用途，商品化开发通常不被允许。因此，小产权房并不属于合法商品房，不能在市场上合法买卖、抵押或流通。\n\n3. **产权风险**：由于小产权房没有国家颁发的产权证，购买后可能面临无法办理产权过户、合同无法律保障等问题。此外，遇上拆迁或土地收回时，购买方利益难以得到法律保护。\n\n总的来说，小产权房因其价格相对低廉而吸引部分购房者，但其合法性和产权保障存在较大风险。因此，购房前需慎重考虑，并全面了解相关政策法规，以避免后续纠纷。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "定义小产权房",
+        "content": "从基本概念入手，小产权房通常指未通过国家正规审批建设的房屋，其产权证由乡镇或村级组织颁发，而不是由国家房管部门核发。由于其存在一定的法律风险，应初步确认相关概念是否涉及主要法律或政策条款。需要进一步搜索相关政府对小产权房的具体定义或解释。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "搜索相关法律条款",
+        "content": "<search>小产权房合法性</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "分析搜索结果",
+        "content": "<information>小产权房是指建设在集体土地上，未通过正规审批的房屋。由于土地性质为集体所有，依据《土地管理法》，该类房屋无法获得国家颁发的产权证书。这类房屋通常在合作开发或个人建设过程中形成，未缴纳土地出让金，也无法取得商品房的合法流通资质。</information>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "确定法律风险",
+        "content": "通过先前的信息可以确认，小产权房受限于《土地管理法》的规定，因其未缴纳土地出让金且土地性质为集体所有，通常存在合法交易的限制。需要继续核实其流通性以及购买可能引发的法律问题。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "小产权房是指建设在集体土地上且未经国家土地使用权审批的房屋，其产权证书由乡镇或村级组织颁发，而非国家房管部门。这类房屋由于未缴纳土地出让金，无法获得正式产权证，因此不具备合法交易资质，且存在较大的法律风险。购买小产权房可能涉及产权归属问题，无法通过正规途径转让和抵押。"
+      },
+      {
+        "action": "Verification",
+        "content": "通过核查《土地管理法》和相关政策可确认上述结论准确无误，小产权房确实存在法律风险，并缺乏合法商品房的地位。结束。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "嗯，小产权房这个概念听说过，但是具体是什么呢？要搞清楚它到底是怎么定义的。按照我的印象，小产权房好像是和产权证书或者土地性质有关，但还是不确定细节。我知道它和国家正式审批的房子不太一样，可能是乡镇或者村级组织发的产权证。这样的话，它合法性可能会有点问题。让我先查查具体的法律定义吧。\n\n<search>小产权房合法性</search>\n\n哦，找到了信息。<information>小产权房是指建设在集体土地上的房屋，未通过国家正规审批。根据《土地管理法》的规定，这些房子因为土地性质是集体所有，没有缴纳土地出让金，所以没办法获得国家颁发的正规产权证。这类房屋一般是通过合作开发或者个人建设形成的，不能像商品房那样合法流通。</information>\n\n嗯，这就比较明确了。小产权房的问题主要就在土地性质上，它是集体土地，而不是国家出让的土地。看起来这种房子没有缴土地出让金，所以拿不到国家级的产权证。也就是说，它本身合法性就有点问题，更别说买了之后流通转让了。让我想想，这是不是和《土地管理法》有关？嗯，确实是，这法律直接限制了集体土地上的房屋性质，估计买这种房还可能引发产权归属的问题。\n\n所以总结一下，小产权房就是那种建在集体土地上的，没经过土地使用权正规审批的房子。它的产权证是乡镇或村级组织发的，不是国家房管部门发的，听上去就缺乏正规的法律保障。而且因为没缴土地出让金，它不能算作合法商品房，也不能像普通房子那样抵押或转让。购买的话，法律风险还挺大的，得小心才是。\n\n嗯，这些结论看起来和查到的信息挺一致。《土地管理法》的限制确实是核心问题，国家政策也应该对这类房产有所规避。看来小产权房确实不太安全，还是得多了解法律风险才能做决定。好了，弄明白了！",
+  "Response": "小产权房是指建设在集体土地上的房屋，这类房产未通过国家正规审批，因此无法获得国家颁发的《不动产权证书》（即房屋产权证明）。一般情况下，小产权房的产权证是由乡镇政府或村集体组织自行发放的，而非国家房管部门正式核发。这使得小产权房在法律层面缺乏完整的产权保障。\n\n小产权房的问题主要集中在以下几个方面：\n\n1. **土地性质**：小产权房的土地属于集体所有，而非国家出让土地。这意味着其使用和开发未缴纳土地出让金，没有获得批准的土地使用权变更手续。\n\n2. **法律地位**：根据《中华人民共和国土地管理法》，集体土地只能用于农业、村民住宅等用途，商品化开发通常不被允许。因此，小产权房并不属于合法商品房，不能在市场上合法买卖、抵押或流通。\n\n3. **产权风险**：由于小产权房没有国家颁发的产权证，购买后可能面临无法办理产权过户、合同无法律保障等问题。此外，遇上拆迁或土地收回时，购买方利益难以得到法律保护。\n\n总的来说，小产权房因其价格相对低廉而吸引部分购房者，但其合法性和产权保障存在较大风险。因此，购房前需慎重考虑，并全面了解相关政策法规，以避免后续纠纷。",
+  "Question": "什么是小产权房"
+}

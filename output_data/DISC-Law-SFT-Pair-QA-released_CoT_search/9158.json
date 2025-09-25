@@ -1,0 +1,99 @@
+{
+  "Open-ended Verifiable Question": "保险公司赔款程序是怎样的，需要多久",
+  "Ground-True Answer": "保险公司理赔程序：\n1.立案查勘\n保险人在接到出险通知后，应当立即派人进行现场查勘，了解损失情况及原\n保险理赔稽核\n保险理赔稽核\n因，查对保险单，登记立案。\n2.审核证明和资料\n保险人对投保人、被保险人或者受益人提供的有关证明和资料进行审核，以确定保险合同是否有效，保险期限是否届满，受损失的是否是保险财产，索赔人是否有权主张赔付，事故发生的地点是否在承保范围内等。\n3.核定保险责任\n保险人收到被保险人或者受益人的赔偿或者给付保险金的请求，经过对事实的查验和对各项单证的审核后，应当及时作出自己应否承担保险责任及承担多大责任的核定，并将核定结果通知被保险人或者受益人。\n4.履行赔付义务\n保险人在核定责任的基础上，对属于保险责任的，在与被保险人或者受益人达成有关赔偿或者给付保险金额的协议后十日内，履行赔偿或者给付保险金义务。保险合同对保险金额及赔偿或者给付期限有约定的，保险人应当依照保险合同的约定，履行赔偿或者给付保险金义务。",
+  "process_id": 9158,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "分析保险公司理赔基本流程",
+      "content": "保险公司的理赔流程通常包括以下几个步骤：1) 报案，即受保人向保险公司通知事故；2) 资料提交，受保人提供相关证明材料；3) 调查核实，保险公司对事故及材料进行调查；4) 理赔核定，保险公司计算理赔金额；5) 理赔支付，将款项支付至受保人账户。需要明确每一步的时间限制，可能涉及相关法律要求或合同条款。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "查找相关法律或规定对理赔期限的要求",
+      "content": "为了准确回答需要多久完成赔付，需要检索与‘保险理赔时限’相关的法律或规定内容。重点在于查找保险法或行业惯例中的时限规定。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "需要查找的关键词",
+      "content": "需要检索的关键词为：<search>保险理赔时限规定</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "整合检索结果",
+      "content": "<information>根据《中华人民共和国保险法》第23条，一般要求保险公司在收到被保险人或受益人的理赔申请和完整材料后，在30天内完成审查并告知结果。如果责任明确，保险公司应当在与被保险人或受益人达成赔付协议后10日内进行赔付。</information>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "结合法律规定细化时间框架",
+      "content": "基于搜索结果和实际流程可知，保险公司需要视以下情况完成赔付：1) 从材料提交之日起，最多30天内核查材料及认定责任；2) 责任清晰并决定赔付后10天内支付赔款；3) 若有争议或需要补充调查，则时间可能延长，具体取决于复杂程度和沟通进展。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "保险公司理赔程序主要包括报案、资料提交、调查核实、理赔核定和赔款支付五个步骤。根据《中华人民共和国保险法》第23条要求，保险公司在收到完整理赔材料后，应在30天内完成审查并告知结果，责任明确后应在10日内支付赔款。若实际案件复杂，可能需要额外时间，但通常会按照法律及合同约定处理。"
+    },
+    {
+      "action": "Verification",
+      "content": "结合实际流程和法律要求以及行业惯例，结论准确可靠。保险流程和时间框架清晰，符合《中华人民共和国保险法》第23条规定，确认无误。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n保险公司赔款程序是怎样的，需要多久\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n保险公司理赔程序主要包括报案、资料提交、调查核实、理赔核定和赔款支付五个步骤。根据《中华人民共和国保险法》第23条要求，保险公司在收到完整理赔材料后，应在30天内完成审查并告知结果，责任明确后应在10日内支付赔款。若实际案件复杂，可能需要额外时间，但通常会按照法律及合同约定处理。  \n</Model Response>  \n\n<Reference Answer>  \n保险公司理赔程序：\n1.立案查勘\n保险人在接到出险通知后，应当立即派人进行现场查勘，了解损失情况及原\n保险理赔稽核\n保险理赔稽核\n因，查对保险单，登记立案。\n2.审核证明和资料\n保险人对投保人、被保险人或者受益人提供的有关证明和资料进行审核，以确定保险合同是否有效，保险期限是否届满，受损失的是否是保险财产，索赔人是否有权主张赔付，事故发生的地点是否在承保范围内等。\n3.核定保险责任\n保险人收到被保险人或者受益人的赔偿或者给付保险金的请求，经过对事实的查验和对各项单证的审核后，应当及时作出自己应否承担保险责任及承担多大责任的核定，并将核定结果通知被保险人或者受益人。\n4.履行赔付义务\n保险人在核定责任的基础上，对属于保险责任的，在与被保险人或者受益人达成有关赔偿或者给付保险金额的协议后十日内，履行赔偿或者给付保险金义务。保险合同对保险金额及赔偿或者给付期限有约定的，保险人应当依照保险合同的约定，履行赔偿或者给付保险金义务。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 分析保险公司理赔基本流程\n保险公司的理赔流程通常包括以下几个步骤：1) 报案，即受保人向保险公司通知事故；2) 资料提交，受保人提供相关证明材料；3) 调查核实，保险公司对事故及材料进行调查；4) 理赔核定，保险公司计算理赔金额；5) 理赔支付，将款项支付至受保人账户。需要明确每一步的时间限制，可能涉及相关法律要求或合同条款。\n\n### 查找相关法律或规定对理赔期限的要求\n为了准确回答需要多久完成赔付，需要检索与‘保险理赔时限’相关的法律或规定内容。重点在于查找保险法或行业惯例中的时限规定。\n\n### 需要查找的关键词\n需要检索的关键词为：<search>保险理赔时限规定</search>\n\n### 整合检索结果\n<information>根据《中华人民共和国保险法》第23条，一般要求保险公司在收到被保险人或受益人的理赔申请和完整材料后，在30天内完成审查并告知结果。如果责任明确，保险公司应当在与被保险人或受益人达成赔付协议后10日内进行赔付。</information>\n\n### 结合法律规定细化时间框架\n基于搜索结果和实际流程可知，保险公司需要视以下情况完成赔付：1) 从材料提交之日起，最多30天内核查材料及认定责任；2) 责任清晰并决定赔付后10天内支付赔款；3) 若有争议或需要补充调查，则时间可能延长，具体取决于复杂程度和沟通进展。\n\n### Conclusion\n保险公司理赔程序主要包括报案、资料提交、调查核实、理赔核定和赔款支付五个步骤。根据《中华人民共和国保险法》第23条要求，保险公司在收到完整理赔材料后，应在30天内完成审查并告知结果，责任明确后应在10日内支付赔款。若实际案件复杂，可能需要额外时间，但通常会按照法律及合同约定处理。\n\n### Verification\n结合实际流程和法律要求以及行业惯例，结论准确可靠。保险流程和时间框架清晰，符合《中华人民共和国保险法》第23条规定，确认无误。\n</Thought Process>\n\n<Question>\n保险公司赔款程序是怎样的，需要多久\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n保险公司的赔款程序到底是怎么回事呢？先想想，应该会包括几个基本步骤吧。首先肯定是受保人出事故后要向保险公司报案，这一步是启动整个流程的关键。然后就是要提交相关资料，比如证明事故情况或者损失情况的文件。嗯，接下来保险公司肯定得调查下，把情况核实清楚。调查完了估计还得核算到底赔多少，算好之后才会把钱打到受保人的账户里。这样看下来，流程主要是报案、递交资料、调查核实、核定金额，最后支付赔款。\n\n但是有个问题，保险公司在这些步骤上到底要花多久呢？要不去看看法律上有没有相关规定好啦。我记得中国应该有《保险法》，也许里面会有时间要求。嗯，想要快速找到答案，搜索的关键词可能是“保险理赔时限规定”。\n\n<search>保险理赔时限规定</search>\n\n啊，看到了，搜索结果里提到《中华人民共和国保险法》第23条有明确规定。<information>根据《中华人民共和国保险法》第23条，保险公司从收到被保险人或者受益人提交的理赔申请及完整材料起，一般在30天内完成审查并告知结果。如果责任明确，保险公司需要在与被保险人或者受益人达成赔付协议后的10日内支付赔款。如果情况比较复杂，比如责任不清或者材料不全，则可能会需要补充调查，不过应该按照法律和合同的约定处理。</information>\n\n所以，整理一下的话，保险公司的时间要求大概是这样：第一，从收到完整材料开始算，30天内要完成审查并给出结果；第二，如果审查完责任明确，那在达成赔付协议后10天内保险公司就得打钱。如果有争议或需要更多资料，那就得看具体情况，但一般来说不会超过法律规定的时间。\n\n总结来说，保险公司的赔款程序就是五个步骤：报案、资料提交、调查核实、理赔核定和支付赔款。而时间上主要看《保险法》第23条的规定，法律给了两个核心期限，一个是30天，一个是10天。整个流程听起来还是有章可循的。而且即使遇到复杂情况，比如说材料不全，补充调查也会受到一定的时限约束。嗯，这样看来还是比较合理的。\n</Internal Thinking>\n\n<Question>\n保险公司赔款程序是怎样的，需要多久\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析保险公司理赔基本流程\",\n      \"content\": \"保险公司的理赔流程通常包括以下几个步骤：1) 报案，即受保人向保险公司通知事故；2) 资料提交，受保人提供相关证明材料；3) 调查核实，保险公司对事故及材料进行调查；4) 理赔核定，保险公司计算理赔金额；5) 理赔支付，将款项支付至受保人账户。需要明确每一步的时间限制，可能涉及相关法律要求或合同条款。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"查找相关法律或规定对理赔期限的要求\",\n      \"content\": \"为了准确回答需要多久完成赔付，需要检索与‘保险理赔时限’相关的法律或规定内容。重点在于查找保险法或行业惯例中的时限规定。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"需要查找的关键词\",\n      \"content\": \"需要检索的关键词为：<search>保险理赔时限规定</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"整合检索结果\",\n      \"content\": \"<information>根据《中华人民共和国保险法》第23条，一般要求保险公司在收到被保险人或受益人的理赔申请和完整材料后，在30天内完成审查并告知结果。如果责任明确，保险公司应当在与被保险人或受益人达成赔付协议后10日内进行赔付。</information>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"结合法律规定细化时间框架\",\n      \"content\": \"基于搜索结果和实际流程可知，保险公司需要视以下情况完成赔付：1) 从材料提交之日起，最多30天内核查材料及认定责任；2) 责任清晰并决定赔付后10天内支付赔款；3) 若有争议或需要补充调查，则时间可能延长，具体取决于复杂程度和沟通进展。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"保险公司理赔程序主要包括报案、资料提交、调查核实、理赔核定和赔款支付五个步骤。根据《中华人民共和国保险法》第23条要求，保险公司在收到完整理赔材料后，应在30天内完成审查并告知结果，责任明确后应在10日内支付赔款。若实际案件复杂，可能需要额外时间，但通常会按照法律及合同约定处理。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"结合实际流程和法律要求以及行业惯例，结论准确可靠。保险流程和时间框架清晰，符合《中华人民共和国保险法》第23条规定，确认无误。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"保险公司的赔款程序到底是怎么回事呢？先想想，应该会包括几个基本步骤吧。首先肯定是受保人出事故后要向保险公司报案，这一步是启动整个流程的关键。然后就是要提交相关资料，比如证明事故情况或者损失情况的文件。嗯，接下来保险公司肯定得调查下，把情况核实清楚。调查完了估计还得核算到底赔多少，算好之后才会把钱打到受保人的账户里。这样看下来，流程主要是报案、递交资料、调查核实、核定金额，最后支付赔款。\\n\\n但是有个问题，保险公司在这些步骤上到底要花多久呢？要不去看看法律上有没有相关规定好啦。我记得中国应该有《保险法》，也许里面会有时间要求。嗯，想要快速找到答案，搜索的关键词可能是“保险理赔时限规定”。\\n\\n<search>保险理赔时限规定</search>\\n\\n啊，看到了，搜索结果里提到《中华人民共和国保险法》第23条有明确规定。<information>根据《中华人民共和国保险法》第23条，保险公司从收到被保险人或者受益人提交的理赔申请及完整材料起，一般在30天内完成审查并告知结果。如果责任明确，保险公司需要在与被保险人或者受益人达成赔付协议后的10日内支付赔款。如果情况比较复杂，比如责任不清或者材料不全，则可能会需要补充调查，不过应该按照法律和合同的约定处理。</information>\\n\\n所以，整理一下的话，保险公司的时间要求大概是这样：第一，从收到完整材料开始算，30天内要完成审查并给出结果；第二，如果审查完责任明确，那在达成赔付协议后10天内保险公司就得打钱。如果有争议或需要更多资料，那就得看具体情况，但一般来说不会超过法律规定的时间。\\n\\n总结来说，保险公司的赔款程序就是五个步骤：报案、资料提交、调查核实、理赔核定和支付赔款。而时间上主要看《保险法》第23条的规定，法律给了两个核心期限，一个是30天，一个是10天。整个流程听起来还是有章可循的。而且即使遇到复杂情况，比如说材料不全，补充调查也会受到一定的时限约束。嗯，这样看来还是比较合理的。\"\n}\n```",
+    "保险公司的赔款程序一般包括以下五个主要步骤：\n\n1. **事故报案**：受保人在发生保险事故后，应第一时间向保险公司报案。通常可以通过电话、线上平台或亲临营业网点报案，并提供事故的基本信息。\n   \n2. **提交资料**：受保人需根据保险公司的要求，提供与理赔相关的证明材料，例如事故证明、损失清单、医疗单据、车辆维修清单等。材料的完整性会直接影响后续流程。\n\n3. **调查核实**：保险公司在收到资料后，会展开调查以核实事故的真实性及责任划分。这一阶段可能涉及现场查勘、联系相关方获取补充信息等。\n\n4. **理赔核定**：保险公司根据调查结果，结合保险合同内容，计算受保人的具体赔偿金额。\n\n5. **支付赔款**：双方达成赔付协议后，保险公司会按照法律和合同约定，在规定时限内将赔款支付给受保人或相关利益人。\n\n关于赔款程序的时间，依据《中华人民共和国保险法》第23条，有以下具体规定：\n\n- **30天审查期限**：保险公司在收到受保人提交的理赔申请及完整材料起，应在30日内完成审查并告知理赔结果。\n- **10天支付期限**：若责任明确且双方达成赔付协议，保险公司需在10日内支付赔款。\n- **复杂情况处理**：若案件责任不清或材料不全，保险公司可以进行补充调查，但仍需在合理期限内完成，并符合法律及合同约定的时限。\n\n因此，保险理赔流程整体时间视复杂情况可能会有所延长，但法律对关键阶段设有明确时间要求，最大程度保障受保人的权益。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "分析保险公司理赔基本流程",
+        "content": "保险公司的理赔流程通常包括以下几个步骤：1) 报案，即受保人向保险公司通知事故；2) 资料提交，受保人提供相关证明材料；3) 调查核实，保险公司对事故及材料进行调查；4) 理赔核定，保险公司计算理赔金额；5) 理赔支付，将款项支付至受保人账户。需要明确每一步的时间限制，可能涉及相关法律要求或合同条款。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "查找相关法律或规定对理赔期限的要求",
+        "content": "为了准确回答需要多久完成赔付，需要检索与‘保险理赔时限’相关的法律或规定内容。重点在于查找保险法或行业惯例中的时限规定。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "需要查找的关键词",
+        "content": "需要检索的关键词为：<search>保险理赔时限规定</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "整合检索结果",
+        "content": "<information>根据《中华人民共和国保险法》第23条，一般要求保险公司在收到被保险人或受益人的理赔申请和完整材料后，在30天内完成审查并告知结果。如果责任明确，保险公司应当在与被保险人或受益人达成赔付协议后10日内进行赔付。</information>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "结合法律规定细化时间框架",
+        "content": "基于搜索结果和实际流程可知，保险公司需要视以下情况完成赔付：1) 从材料提交之日起，最多30天内核查材料及认定责任；2) 责任清晰并决定赔付后10天内支付赔款；3) 若有争议或需要补充调查，则时间可能延长，具体取决于复杂程度和沟通进展。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "保险公司理赔程序主要包括报案、资料提交、调查核实、理赔核定和赔款支付五个步骤。根据《中华人民共和国保险法》第23条要求，保险公司在收到完整理赔材料后，应在30天内完成审查并告知结果，责任明确后应在10日内支付赔款。若实际案件复杂，可能需要额外时间，但通常会按照法律及合同约定处理。"
+      },
+      {
+        "action": "Verification",
+        "content": "结合实际流程和法律要求以及行业惯例，结论准确可靠。保险流程和时间框架清晰，符合《中华人民共和国保险法》第23条规定，确认无误。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "保险公司的赔款程序到底是怎么回事呢？先想想，应该会包括几个基本步骤吧。首先肯定是受保人出事故后要向保险公司报案，这一步是启动整个流程的关键。然后就是要提交相关资料，比如证明事故情况或者损失情况的文件。嗯，接下来保险公司肯定得调查下，把情况核实清楚。调查完了估计还得核算到底赔多少，算好之后才会把钱打到受保人的账户里。这样看下来，流程主要是报案、递交资料、调查核实、核定金额，最后支付赔款。\n\n但是有个问题，保险公司在这些步骤上到底要花多久呢？要不去看看法律上有没有相关规定好啦。我记得中国应该有《保险法》，也许里面会有时间要求。嗯，想要快速找到答案，搜索的关键词可能是“保险理赔时限规定”。\n\n<search>保险理赔时限规定</search>\n\n啊，看到了，搜索结果里提到《中华人民共和国保险法》第23条有明确规定。<information>根据《中华人民共和国保险法》第23条，保险公司从收到被保险人或者受益人提交的理赔申请及完整材料起，一般在30天内完成审查并告知结果。如果责任明确，保险公司需要在与被保险人或者受益人达成赔付协议后的10日内支付赔款。如果情况比较复杂，比如责任不清或者材料不全，则可能会需要补充调查，不过应该按照法律和合同的约定处理。</information>\n\n所以，整理一下的话，保险公司的时间要求大概是这样：第一，从收到完整材料开始算，30天内要完成审查并给出结果；第二，如果审查完责任明确，那在达成赔付协议后10天内保险公司就得打钱。如果有争议或需要更多资料，那就得看具体情况，但一般来说不会超过法律规定的时间。\n\n总结来说，保险公司的赔款程序就是五个步骤：报案、资料提交、调查核实、理赔核定和支付赔款。而时间上主要看《保险法》第23条的规定，法律给了两个核心期限，一个是30天，一个是10天。整个流程听起来还是有章可循的。而且即使遇到复杂情况，比如说材料不全，补充调查也会受到一定的时限约束。嗯，这样看来还是比较合理的。",
+  "Response": "保险公司的赔款程序一般包括以下五个主要步骤：\n\n1. **事故报案**：受保人在发生保险事故后，应第一时间向保险公司报案。通常可以通过电话、线上平台或亲临营业网点报案，并提供事故的基本信息。\n   \n2. **提交资料**：受保人需根据保险公司的要求，提供与理赔相关的证明材料，例如事故证明、损失清单、医疗单据、车辆维修清单等。材料的完整性会直接影响后续流程。\n\n3. **调查核实**：保险公司在收到资料后，会展开调查以核实事故的真实性及责任划分。这一阶段可能涉及现场查勘、联系相关方获取补充信息等。\n\n4. **理赔核定**：保险公司根据调查结果，结合保险合同内容，计算受保人的具体赔偿金额。\n\n5. **支付赔款**：双方达成赔付协议后，保险公司会按照法律和合同约定，在规定时限内将赔款支付给受保人或相关利益人。\n\n关于赔款程序的时间，依据《中华人民共和国保险法》第23条，有以下具体规定：\n\n- **30天审查期限**：保险公司在收到受保人提交的理赔申请及完整材料起，应在30日内完成审查并告知理赔结果。\n- **10天支付期限**：若责任明确且双方达成赔付协议，保险公司需在10日内支付赔款。\n- **复杂情况处理**：若案件责任不清或材料不全，保险公司可以进行补充调查，但仍需在合理期限内完成，并符合法律及合同约定的时限。\n\n因此，保险理赔流程整体时间视复杂情况可能会有所延长，但法律对关键阶段设有明确时间要求，最大程度保障受保人的权益。",
+  "Question": "保险公司赔款程序是怎样的，需要多久"
+}

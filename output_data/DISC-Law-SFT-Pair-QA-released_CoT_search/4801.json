@@ -1,0 +1,93 @@
+{
+  "Open-ended Verifiable Question": "加班费应如何支付",
+  "Ground-True Answer": "根据《劳动法》及有关规定：1、用人单位安排劳动者在法定标准工作时间以外延长工作时间的，按照不低于劳动合同约定的劳动者本人小时工资标准的150%支付工资。2、用人单位安排劳动者在休息日工作，而不能安排补休的，按照不低于劳动合同约定的劳动者本人日或小时工资标准的200%支付工资。3、用人单位安排劳动者在法定休假日工作的，按照不低于劳动合同约定的劳动者本人日或小时工资标准的300%支付工资。4、实行计件工资的劳动者，在完成计件定额任务后，由用人单位安排延长工作时间的，应根据上述规定的原则，分别按照不低于其本人法定工作时间计件单价的150%、200%、300%支付工资。5、经批准实行综合计算工时制的，其综合计算工作时间超过法定标准工作时间的部分，应视同延长工作时间，支付给劳动者延长工作时间的工资。6、实行不定时工时制度的劳动者，不执行上述规定。",
+  "process_id": 4801,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "确定加班费支付的法律依据",
+      "content": "为了回答加班费支付的具体方式，需要参考与劳动法相关的法律法规。查询中国的相关法律法规，例如《劳动法》或《劳动合同法》中关于加班费支付的规定。需要查找标准的法律来源。",
+      "toSearch": "<search>劳动法 加班费</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "根据搜索结果分析加班费支付标准",
+      "content": "<information>《劳动法》第四十四条规定，用人单位安排劳动者延长工作时间的，应支付不低于工资的150%的工资报酬；休息日安排工作又无法安排补休的，支付不低于工资的200%的工资报酬；法定节假日安排劳动者工作的，支付不低于工资的300%的工资报酬。</information> 因此，加班费根据工作日、休息日以及法定假日的性质，具有不同的支付标准。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "明确加班费计算基数",
+      "content": "《劳动法》一般会规定加班费是按劳动者正常工作时间的工资基数来计算。因此，有必要进一步确认什么是'正常工作时间的工资基数'。需要查找相关解释。",
+      "toSearch": "<search>加班费 基数</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "获得加班费基数的确认",
+      "content": "<information>法律和相关实践一般确定，加班费的基数应为劳动者与用人单位协商确定并写入劳动合同的工资标准。如果合同中未明确，则需要根据用人单位的实际发放工资（如基本工资、岗位工资等部分）和地方相关规定来确定。</information> 因此，加班工资基数通常需参考劳动合同或地方性法规进行调整。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "加班费的支付方式应依据中国《劳动法》第四十四条的规定：1. 工作日延长工作时间的，应支付不低于工资的150%的工资报酬；2. 休息日安排工作而无法安排补休的，支付不低于工资的200%的工资报酬；3. 法定节假日安排工作的，支付不低于工资的300%的工资报酬。加班费的计算基数通常为劳动合同明确约定的工资标准或地方相关规定确定的工资基数。"
+    },
+    {
+      "action": "Verification",
+      "content": "查看中国《劳动法》第四十四条及相关地方性法规，确认以上加班费支付标准及基数解释正确无误，因此结论正确。过程结束。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n加班费应如何支付\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n加班费的支付方式应依据中国《劳动法》第四十四条的规定：1. 工作日延长工作时间的，应支付不低于工资的150%的工资报酬；2. 休息日安排工作而无法安排补休的，支付不低于工资的200%的工资报酬；3. 法定节假日安排工作的，支付不低于工资的300%的工资报酬。加班费的计算基数通常为劳动合同明确约定的工资标准或地方相关规定确定的工资基数。  \n</Model Response>  \n\n<Reference Answer>  \n根据《劳动法》及有关规定：1、用人单位安排劳动者在法定标准工作时间以外延长工作时间的，按照不低于劳动合同约定的劳动者本人小时工资标准的150%支付工资。2、用人单位安排劳动者在休息日工作，而不能安排补休的，按照不低于劳动合同约定的劳动者本人日或小时工资标准的200%支付工资。3、用人单位安排劳动者在法定休假日工作的，按照不低于劳动合同约定的劳动者本人日或小时工资标准的300%支付工资。4、实行计件工资的劳动者，在完成计件定额任务后，由用人单位安排延长工作时间的，应根据上述规定的原则，分别按照不低于其本人法定工作时间计件单价的150%、200%、300%支付工资。5、经批准实行综合计算工时制的，其综合计算工作时间超过法定标准工作时间的部分，应视同延长工作时间，支付给劳动者延长工作时间的工资。6、实行不定时工时制度的劳动者，不执行上述规定。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 确定加班费支付的法律依据\n为了回答加班费支付的具体方式，需要参考与劳动法相关的法律法规。查询中国的相关法律法规，例如《劳动法》或《劳动合同法》中关于加班费支付的规定。需要查找标准的法律来源。\n\n### 根据搜索结果分析加班费支付标准\n<information>《劳动法》第四十四条规定，用人单位安排劳动者延长工作时间的，应支付不低于工资的150%的工资报酬；休息日安排工作又无法安排补休的，支付不低于工资的200%的工资报酬；法定节假日安排劳动者工作的，支付不低于工资的300%的工资报酬。</information> 因此，加班费根据工作日、休息日以及法定假日的性质，具有不同的支付标准。\n\n### 明确加班费计算基数\n《劳动法》一般会规定加班费是按劳动者正常工作时间的工资基数来计算。因此，有必要进一步确认什么是'正常工作时间的工资基数'。需要查找相关解释。\n\n### 获得加班费基数的确认\n<information>法律和相关实践一般确定，加班费的基数应为劳动者与用人单位协商确定并写入劳动合同的工资标准。如果合同中未明确，则需要根据用人单位的实际发放工资（如基本工资、岗位工资等部分）和地方相关规定来确定。</information> 因此，加班工资基数通常需参考劳动合同或地方性法规进行调整。\n\n### Conclusion\n加班费的支付方式应依据中国《劳动法》第四十四条的规定：1. 工作日延长工作时间的，应支付不低于工资的150%的工资报酬；2. 休息日安排工作而无法安排补休的，支付不低于工资的200%的工资报酬；3. 法定节假日安排工作的，支付不低于工资的300%的工资报酬。加班费的计算基数通常为劳动合同明确约定的工资标准或地方相关规定确定的工资基数。\n\n### Verification\n查看中国《劳动法》第四十四条及相关地方性法规，确认以上加班费支付标准及基数解释正确无误，因此结论正确。过程结束。\n</Thought Process>\n\n<Question>\n加班费应如何支付\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n嗯，加班费怎么支付呢？直觉告诉我应该跟法律有关系，毕竟这是劳动者权益的一个重要部分。这涉及《劳动法》或者《劳动合同法》的规定，那我要先从相关法律中找找看有没有明确说法。<search>中国《劳动法》加班费支付标准</search>\n\n哦，找到了！根据《劳动法》第四十四条，里面写得很清楚：安排劳动者延长工作时间的，用人单位需要支付不低于工资的150%的加班费。如果是在休息日工作而无法安排补休的话，是200%的工资。而法定节假日安排工作的，加班费得达到300%的工资。<information>《劳动法》第四十四条规定，用人单位安排劳动者延长工作时间的，应支付不低于工资的150%的工资报酬；休息日安排工作又无法安排补休的，支付不低于工资的200%的工资报酬；法定节假日安排劳动者工作的，支付不低于工资的300%的工资报酬。</information>原来加班费的支付比例是基于工作的时间性质不同而不同的，挺合理的。\n\n不过，我又想到一个小问题：加班费的这个“工资”到底是怎么算的呢？比如是基本工资还是包括奖金之类的？需要再查一下相关的法律解释。<search>加班费工资基数定义</search>\n\n哦，我明白了。一般来说，加班费是按劳动者正常工作时间的工资基数来算的。而这个基数优先看劳动合同里怎么写。如果劳动合同里没有明确提到，那就要依照公司实际发放的工资——通常包括基本工资或岗位工资来确定。当然，不同地方可能还有略微的差异，要根据地方性法规来调整。<information>法律和相关实践一般确定，加班费的基数应为劳动者与用人单位协商确定并写入劳动合同的工资标准。如果合同中未明确，则需要根据用人单位的实际发放工资（如基本工资、岗位工资等部分）和地方相关规定来确定。</information>\n\n这样就清楚了。总结一下，加班费的支付方式是根据《劳动法》第四十四条的规定来执行的：如果是工作日的加班，支付工资的150%；休息日加班且无法补休的，支付工资的200%；法定节假日的加班，直接是工资的300%。而且计算加班费的基准，要么是劳动合同里规定的工资标准，要么是单位实际发放的工资，当然如果地方有更细的规定，也要遵循。\n\n最后，再确认一下自己的结论是不是靠谱。回顾那些法律条文和解释内容，好像没什么问题。嗯，结论可以采纳！\n</Internal Thinking>\n\n<Question>\n加班费应如何支付\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"确定加班费支付的法律依据\",\n      \"content\": \"为了回答加班费支付的具体方式，需要参考与劳动法相关的法律法规。查询中国的相关法律法规，例如《劳动法》或《劳动合同法》中关于加班费支付的规定。需要查找标准的法律来源。\",\n      \"toSearch\": \"<search>劳动法 加班费</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"根据搜索结果分析加班费支付标准\",\n      \"content\": \"<information>《劳动法》第四十四条规定，用人单位安排劳动者延长工作时间的，应支付不低于工资的150%的工资报酬；休息日安排工作又无法安排补休的，支付不低于工资的200%的工资报酬；法定节假日安排劳动者工作的，支付不低于工资的300%的工资报酬。</information> 因此，加班费根据工作日、休息日以及法定假日的性质，具有不同的支付标准。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"明确加班费计算基数\",\n      \"content\": \"《劳动法》一般会规定加班费是按劳动者正常工作时间的工资基数来计算。因此，有必要进一步确认什么是'正常工作时间的工资基数'。需要查找相关解释。\",\n      \"toSearch\": \"<search>加班费 基数</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"获得加班费基数的确认\",\n      \"content\": \"<information>法律和相关实践一般确定，加班费的基数应为劳动者与用人单位协商确定并写入劳动合同的工资标准。如果合同中未明确，则需要根据用人单位的实际发放工资（如基本工资、岗位工资等部分）和地方相关规定来确定。</information> 因此，加班工资基数通常需参考劳动合同或地方性法规进行调整。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"加班费的支付方式应依据中国《劳动法》第四十四条的规定：1. 工作日延长工作时间的，应支付不低于工资的150%的工资报酬；2. 休息日安排工作而无法安排补休的，支付不低于工资的200%的工资报酬；3. 法定节假日安排工作的，支付不低于工资的300%的工资报酬。加班费的计算基数通常为劳动合同明确约定的工资标准或地方相关规定确定的工资基数。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"查看中国《劳动法》第四十四条及相关地方性法规，确认以上加班费支付标准及基数解释正确无误，因此结论正确。过程结束。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"嗯，加班费怎么支付呢？直觉告诉我应该跟法律有关系，毕竟这是劳动者权益的一个重要部分。这涉及《劳动法》或者《劳动合同法》的规定，那我要先从相关法律中找找看有没有明确说法。<search>中国《劳动法》加班费支付标准</search>\\n\\n哦，找到了！根据《劳动法》第四十四条，里面写得很清楚：安排劳动者延长工作时间的，用人单位需要支付不低于工资的150%的加班费。如果是在休息日工作而无法安排补休的话，是200%的工资。而法定节假日安排工作的，加班费得达到300%的工资。<information>《劳动法》第四十四条规定，用人单位安排劳动者延长工作时间的，应支付不低于工资的150%的工资报酬；休息日安排工作又无法安排补休的，支付不低于工资的200%的工资报酬；法定节假日安排劳动者工作的，支付不低于工资的300%的工资报酬。</information>原来加班费的支付比例是基于工作的时间性质不同而不同的，挺合理的。\\n\\n不过，我又想到一个小问题：加班费的这个“工资”到底是怎么算的呢？比如是基本工资还是包括奖金之类的？需要再查一下相关的法律解释。<search>加班费工资基数定义</search>\\n\\n哦，我明白了。一般来说，加班费是按劳动者正常工作时间的工资基数来算的。而这个基数优先看劳动合同里怎么写。如果劳动合同里没有明确提到，那就要依照公司实际发放的工资——通常包括基本工资或岗位工资来确定。当然，不同地方可能还有略微的差异，要根据地方性法规来调整。<information>法律和相关实践一般确定，加班费的基数应为劳动者与用人单位协商确定并写入劳动合同的工资标准。如果合同中未明确，则需要根据用人单位的实际发放工资（如基本工资、岗位工资等部分）和地方相关规定来确定。</information>\\n\\n这样就清楚了。总结一下，加班费的支付方式是根据《劳动法》第四十四条的规定来执行的：如果是工作日的加班，支付工资的150%；休息日加班且无法补休的，支付工资的200%；法定节假日的加班，直接是工资的300%。而且计算加班费的基准，要么是劳动合同里规定的工资标准，要么是单位实际发放的工资，当然如果地方有更细的规定，也要遵循。\\n\\n最后，再确认一下自己的结论是不是靠谱。回顾那些法律条文和解释内容，好像没什么问题。嗯，结论可以采纳！\"\n}\n```",
+    "加班费的支付应根据《劳动法》第四十四条的规定进行：\n\n1. **工作日加班**：如果用人单位安排劳动者延长工作时间，需支付不低于工资基数的150%的加班费。\n2. **休息日加班**：在休息日安排劳动者工作的且无法安排补休的，需支付不低于工资基数的200%的加班费。\n3. **法定节假日加班**：在法定节假日安排劳动者工作的，需支付不低于工资基数的300%的加班费。\n\n关于加班费计算时所使用的“工资基数”，一般以劳动合同中约定的工资为准；如果劳动合同未明确约定，则以单位实际发放的工资（通常为基本工资或岗位工资）为参考。同时，各地可能对此有具体规定，应以地方性法规为准。\n\n综上，加班费的支付比例和基数均有明确法律依据，用人单位应严格遵守相关规定，切实保障劳动者权益。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "确定加班费支付的法律依据",
+        "content": "为了回答加班费支付的具体方式，需要参考与劳动法相关的法律法规。查询中国的相关法律法规，例如《劳动法》或《劳动合同法》中关于加班费支付的规定。需要查找标准的法律来源。",
+        "toSearch": "<search>劳动法 加班费</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "根据搜索结果分析加班费支付标准",
+        "content": "<information>《劳动法》第四十四条规定，用人单位安排劳动者延长工作时间的，应支付不低于工资的150%的工资报酬；休息日安排工作又无法安排补休的，支付不低于工资的200%的工资报酬；法定节假日安排劳动者工作的，支付不低于工资的300%的工资报酬。</information> 因此，加班费根据工作日、休息日以及法定假日的性质，具有不同的支付标准。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "明确加班费计算基数",
+        "content": "《劳动法》一般会规定加班费是按劳动者正常工作时间的工资基数来计算。因此，有必要进一步确认什么是'正常工作时间的工资基数'。需要查找相关解释。",
+        "toSearch": "<search>加班费 基数</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "获得加班费基数的确认",
+        "content": "<information>法律和相关实践一般确定，加班费的基数应为劳动者与用人单位协商确定并写入劳动合同的工资标准。如果合同中未明确，则需要根据用人单位的实际发放工资（如基本工资、岗位工资等部分）和地方相关规定来确定。</information> 因此，加班工资基数通常需参考劳动合同或地方性法规进行调整。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "加班费的支付方式应依据中国《劳动法》第四十四条的规定：1. 工作日延长工作时间的，应支付不低于工资的150%的工资报酬；2. 休息日安排工作而无法安排补休的，支付不低于工资的200%的工资报酬；3. 法定节假日安排工作的，支付不低于工资的300%的工资报酬。加班费的计算基数通常为劳动合同明确约定的工资标准或地方相关规定确定的工资基数。"
+      },
+      {
+        "action": "Verification",
+        "content": "查看中国《劳动法》第四十四条及相关地方性法规，确认以上加班费支付标准及基数解释正确无误，因此结论正确。过程结束。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "嗯，加班费怎么支付呢？直觉告诉我应该跟法律有关系，毕竟这是劳动者权益的一个重要部分。这涉及《劳动法》或者《劳动合同法》的规定，那我要先从相关法律中找找看有没有明确说法。<search>中国《劳动法》加班费支付标准</search>\n\n哦，找到了！根据《劳动法》第四十四条，里面写得很清楚：安排劳动者延长工作时间的，用人单位需要支付不低于工资的150%的加班费。如果是在休息日工作而无法安排补休的话，是200%的工资。而法定节假日安排工作的，加班费得达到300%的工资。<information>《劳动法》第四十四条规定，用人单位安排劳动者延长工作时间的，应支付不低于工资的150%的工资报酬；休息日安排工作又无法安排补休的，支付不低于工资的200%的工资报酬；法定节假日安排劳动者工作的，支付不低于工资的300%的工资报酬。</information>原来加班费的支付比例是基于工作的时间性质不同而不同的，挺合理的。\n\n不过，我又想到一个小问题：加班费的这个“工资”到底是怎么算的呢？比如是基本工资还是包括奖金之类的？需要再查一下相关的法律解释。<search>加班费工资基数定义</search>\n\n哦，我明白了。一般来说，加班费是按劳动者正常工作时间的工资基数来算的。而这个基数优先看劳动合同里怎么写。如果劳动合同里没有明确提到，那就要依照公司实际发放的工资——通常包括基本工资或岗位工资来确定。当然，不同地方可能还有略微的差异，要根据地方性法规来调整。<information>法律和相关实践一般确定，加班费的基数应为劳动者与用人单位协商确定并写入劳动合同的工资标准。如果合同中未明确，则需要根据用人单位的实际发放工资（如基本工资、岗位工资等部分）和地方相关规定来确定。</information>\n\n这样就清楚了。总结一下，加班费的支付方式是根据《劳动法》第四十四条的规定来执行的：如果是工作日的加班，支付工资的150%；休息日加班且无法补休的，支付工资的200%；法定节假日的加班，直接是工资的300%。而且计算加班费的基准，要么是劳动合同里规定的工资标准，要么是单位实际发放的工资，当然如果地方有更细的规定，也要遵循。\n\n最后，再确认一下自己的结论是不是靠谱。回顾那些法律条文和解释内容，好像没什么问题。嗯，结论可以采纳！",
+  "Response": "加班费的支付应根据《劳动法》第四十四条的规定进行：\n\n1. **工作日加班**：如果用人单位安排劳动者延长工作时间，需支付不低于工资基数的150%的加班费。\n2. **休息日加班**：在休息日安排劳动者工作的且无法安排补休的，需支付不低于工资基数的200%的加班费。\n3. **法定节假日加班**：在法定节假日安排劳动者工作的，需支付不低于工资基数的300%的加班费。\n\n关于加班费计算时所使用的“工资基数”，一般以劳动合同中约定的工资为准；如果劳动合同未明确约定，则以单位实际发放的工资（通常为基本工资或岗位工资）为参考。同时，各地可能对此有具体规定，应以地方性法规为准。\n\n综上，加班费的支付比例和基数均有明确法律依据，用人单位应严格遵守相关规定，切实保障劳动者权益。",
+  "Question": "加班费应如何支付"
+}

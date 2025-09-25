@@ -1,0 +1,89 @@
+{
+  "Open-ended Verifiable Question": "诉讼费收费标准是什么?",
+  "Ground-True Answer": "针对不同类型的案件，诉讼费收费标准不同。\n（一）、财产案件：\n1、不超过1万元的，每件交纳50元;\n2、超过1万元至10万元的部分，按照2.5%交纳;\n3、超过10万元至20万元的部分，按照2%交纳;\n4、超过20万元至50万元的部分，按照1.5%交纳;\n5、超过50万元至100万元的部分，按照1%交纳;\n6、超过100万元至200万元的部分，按照0.9%交纳;\n7、超过200万元至500万元的部分，按照0.8%交纳;\n8、超过500万元至1000万元的部分，按照0.7%交纳;\n9、超过1000万元至2000万元的部分，按照0.6%交纳;\n10、超过2000万元的部分，按照0.5%交纳。\n（二）、非财产案件：\n1、离婚案件交纳50元至300元。涉及财产分割，总额不超过20万元，不另行交纳;超过20万元的部分，按0.5%交纳。\n2、侵害姓名权、肖像权以及其他人格权的案件，每件交纳100元至500元。涉及损害赔偿，赔偿金额不超过5万元的，不另行交纳;超过5万元至10万元的部分，按照1%交纳;超过10万元的部分，按照0.5%交纳。\n（三）、知识产权民事案件，没有争议金额或者价额的，每件交纳500元至1000元;有争议金额或者价额的，按照财产案件的标准交纳。\n（四）、劳动争议案件每件交纳10元。",
+  "process_id": 816,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "确定问题的范围",
+      "content": "诉讼费是指在法院提起诉讼时需要支付的费用。不同类型的案件和标的金额可能适用不同的收费标准。因此需要找到当前关于诉讼费的法律依据和具体标准。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "检索相关法律法规",
+      "content": "诉讼费的收费标准通常由法律法规或司法解释确定，我需要查找直接与此相关的内容，例如《诉讼费用交纳办法》或其他相关法律文件。执行搜索：<search>诉讼费用交纳办法</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "分析搜索结果",
+      "content": "<information>《诉讼费用交纳办法》规定了案件的诉讼费用收费标准，其中包括不同案件类型（如财产案件、非财产案件、行政诉讼案件）的收费基准和比例。对于财产案件，诉讼费用通常按照案件标的额分段累计收取，例如：10万元以内按2.5%收取，超过部分按不同比例阶梯递减。非财产案件一般收取固定费用，比如200-500元不等。</information>根据这一信息，接下来将分具体案件类型进一步说明。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "分类说明收费标准",
+      "content": "根据上述信息，针对不同类型案件的诉讼费收费标准可以归纳如下：财产案件的费用依照标的金额的分段递减比例计算；非财产案件和行政案件则多为固定金额收取。此外，还可能存在减免或缓交的特殊政策，这部分通常依据法院的具体规定执行。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "诉讼费的收费标准依据《诉讼费用交纳办法》执行：1. 财产案件根据标的金额按比例分段累进计算，例如10万元以内按2.5%收取，50万元至100万元部分按1%收取等；2. 非财产案件一般按固定金额收取，比如200元至500元不等；3. 行政案件以固定金额为主；4. 符合法律规定的情形可申请缓交、减交或免交诉讼费。具体金额和比例请根据案件类型与标的查询地方细化规定。"
+    },
+    {
+      "action": "Verification",
+      "content": "该结论来源于《诉讼费用交纳办法》的主要内容，正确反映了诉讼费收费标准的相关规定。如果有特殊情况，可以进一步咨询当地法院以确认具体适用条款。因此，该结论正确无误。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n诉讼费收费标准是什么?\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n诉讼费的收费标准依据《诉讼费用交纳办法》执行：1. 财产案件根据标的金额按比例分段累进计算，例如10万元以内按2.5%收取，50万元至100万元部分按1%收取等；2. 非财产案件一般按固定金额收取，比如200元至500元不等；3. 行政案件以固定金额为主；4. 符合法律规定的情形可申请缓交、减交或免交诉讼费。具体金额和比例请根据案件类型与标的查询地方细化规定。  \n</Model Response>  \n\n<Reference Answer>  \n针对不同类型的案件，诉讼费收费标准不同。\n（一）、财产案件：\n1、不超过1万元的，每件交纳50元;\n2、超过1万元至10万元的部分，按照2.5%交纳;\n3、超过10万元至20万元的部分，按照2%交纳;\n4、超过20万元至50万元的部分，按照1.5%交纳;\n5、超过50万元至100万元的部分，按照1%交纳;\n6、超过100万元至200万元的部分，按照0.9%交纳;\n7、超过200万元至500万元的部分，按照0.8%交纳;\n8、超过500万元至1000万元的部分，按照0.7%交纳;\n9、超过1000万元至2000万元的部分，按照0.6%交纳;\n10、超过2000万元的部分，按照0.5%交纳。\n（二）、非财产案件：\n1、离婚案件交纳50元至300元。涉及财产分割，总额不超过20万元，不另行交纳;超过20万元的部分，按0.5%交纳。\n2、侵害姓名权、肖像权以及其他人格权的案件，每件交纳100元至500元。涉及损害赔偿，赔偿金额不超过5万元的，不另行交纳;超过5万元至10万元的部分，按照1%交纳;超过10万元的部分，按照0.5%交纳。\n（三）、知识产权民事案件，没有争议金额或者价额的，每件交纳500元至1000元;有争议金额或者价额的，按照财产案件的标准交纳。\n（四）、劳动争议案件每件交纳10元。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 确定问题的范围\n诉讼费是指在法院提起诉讼时需要支付的费用。不同类型的案件和标的金额可能适用不同的收费标准。因此需要找到当前关于诉讼费的法律依据和具体标准。\n\n### 检索相关法律法规\n诉讼费的收费标准通常由法律法规或司法解释确定，我需要查找直接与此相关的内容，例如《诉讼费用交纳办法》或其他相关法律文件。执行搜索：<search>诉讼费用交纳办法</search>\n\n### 分析搜索结果\n<information>《诉讼费用交纳办法》规定了案件的诉讼费用收费标准，其中包括不同案件类型（如财产案件、非财产案件、行政诉讼案件）的收费基准和比例。对于财产案件，诉讼费用通常按照案件标的额分段累计收取，例如：10万元以内按2.5%收取，超过部分按不同比例阶梯递减。非财产案件一般收取固定费用，比如200-500元不等。</information>根据这一信息，接下来将分具体案件类型进一步说明。\n\n### 分类说明收费标准\n根据上述信息，针对不同类型案件的诉讼费收费标准可以归纳如下：财产案件的费用依照标的金额的分段递减比例计算；非财产案件和行政案件则多为固定金额收取。此外，还可能存在减免或缓交的特殊政策，这部分通常依据法院的具体规定执行。\n\n### Conclusion\n诉讼费的收费标准依据《诉讼费用交纳办法》执行：1. 财产案件根据标的金额按比例分段累进计算，例如10万元以内按2.5%收取，50万元至100万元部分按1%收取等；2. 非财产案件一般按固定金额收取，比如200元至500元不等；3. 行政案件以固定金额为主；4. 符合法律规定的情形可申请缓交、减交或免交诉讼费。具体金额和比例请根据案件类型与标的查询地方细化规定。\n\n### Verification\n该结论来源于《诉讼费用交纳办法》的主要内容，正确反映了诉讼费收费标准的相关规定。如果有特殊情况，可以进一步咨询当地法院以确认具体适用条款。因此，该结论正确无误。\n</Thought Process>\n\n<Question>\n诉讼费收费标准是什么?\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n好，先来想想，诉讼费到底是怎么回事呢？嗯，诉讼费就是在法院打官司时需要交的钱，应该是按照案件类型和金额来收的。不过具体怎么算还得找找相关的法律依据才行。哦，印象中好像有个叫《诉讼费用交纳办法》的文件专门讲这些。我先搜一下看看：<search>诉讼费用交纳办法</search>。\n\n嗯，我搜到了，文件里确实提到了诉讼费的收费标准。看来分两大类，一类是财产案件，一类是非财产案件；另外好像还有关于行政案件的规定。先说财产案件吧，嗯，文件提到财产案件的诉讼费是按照标的金额分段累进计算的。比如标的额在10万元以内的部分，诉讼费按2.5%的比例收取；如果超过10万元且不超过50万元，超出的部分按2%的比例收；然后是超过50万元到100万元的部分，按1%的比例。哦，这种分段累进的方式能避免金额太高的时候费用太离谱，也挺合理。\n\n非财产案件就简单些了，不需要按比例算，是固定金额收取。文件里说非财产案件一般收200元到500元，这应该是根据案件的具体类型决定的。那么行政案件呢？啊，对了，也有看到行政诉讼的收费标准，也是固定金额，具体数额文件里没细说，可能要看各地的具体规定。\n\n另外等等！记得好像还有些特殊情况，比如有些人经济困难或者情况特殊，应该可以申请缓交、减交或者免交诉讼费吧？文件里确实有提到，这部分的话一般由法院根据具体情况决定，像低收入者或者需要法律援助的人，可能会有这些便利条件。\n\n总结一下吧，诉讼费的收费标准是按照《诉讼费用交纳办法》执行的。财产案件要根据标的金额分段累进计算，比如10万元以内按2.5%收取；非财产案件基本是固定费用，通常在200到500元之间；行政诉讼案件也是固定收费，不同地方可能细节有差异。而对于符合法律规定条件的人，还有申请缓交、减交或免交的可能。这基本涵盖了诉讼费的主要情况，如果还有不确定的部分，最好还是咨询当地法院具体确认。嗯，这样应该完整了。\n</Internal Thinking>\n\n<Question>\n诉讼费收费标准是什么?\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"确定问题的范围\",\n      \"content\": \"诉讼费是指在法院提起诉讼时需要支付的费用。不同类型的案件和标的金额可能适用不同的收费标准。因此需要找到当前关于诉讼费的法律依据和具体标准。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"检索相关法律法规\",\n      \"content\": \"诉讼费的收费标准通常由法律法规或司法解释确定，我需要查找直接与此相关的内容，例如《诉讼费用交纳办法》或其他相关法律文件。执行搜索：<search>诉讼费用交纳办法</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析搜索结果\",\n      \"content\": \"<information>《诉讼费用交纳办法》规定了案件的诉讼费用收费标准，其中包括不同案件类型（如财产案件、非财产案件、行政诉讼案件）的收费基准和比例。对于财产案件，诉讼费用通常按照案件标的额分段累计收取，例如：10万元以内按2.5%收取，超过部分按不同比例阶梯递减。非财产案件一般收取固定费用，比如200-500元不等。</information>根据这一信息，接下来将分具体案件类型进一步说明。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分类说明收费标准\",\n      \"content\": \"根据上述信息，针对不同类型案件的诉讼费收费标准可以归纳如下：财产案件的费用依照标的金额的分段递减比例计算；非财产案件和行政案件则多为固定金额收取。此外，还可能存在减免或缓交的特殊政策，这部分通常依据法院的具体规定执行。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"诉讼费的收费标准依据《诉讼费用交纳办法》执行：1. 财产案件根据标的金额按比例分段累进计算，例如10万元以内按2.5%收取，50万元至100万元部分按1%收取等；2. 非财产案件一般按固定金额收取，比如200元至500元不等；3. 行政案件以固定金额为主；4. 符合法律规定的情形可申请缓交、减交或免交诉讼费。具体金额和比例请根据案件类型与标的查询地方细化规定。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"该结论来源于《诉讼费用交纳办法》的主要内容，正确反映了诉讼费收费标准的相关规定。如果有特殊情况，可以进一步咨询当地法院以确认具体适用条款。因此，该结论正确无误。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"好，先来想想，诉讼费到底是怎么回事呢？嗯，诉讼费就是在法院打官司时需要交的钱，应该是按照案件类型和金额来收的。不过具体怎么算还得找找相关的法律依据才行。哦，印象中好像有个叫《诉讼费用交纳办法》的文件专门讲这些。我先搜一下看看：<search>诉讼费用交纳办法</search>。\\n\\n嗯，我搜到了，文件里确实提到了诉讼费的收费标准。看来分两大类，一类是财产案件，一类是非财产案件；另外好像还有关于行政案件的规定。先说财产案件吧，嗯，文件提到财产案件的诉讼费是按照标的金额分段累进计算的。比如标的额在10万元以内的部分，诉讼费按2.5%的比例收取；如果超过10万元且不超过50万元，超出的部分按2%的比例收；然后是超过50万元到100万元的部分，按1%的比例。哦，这种分段累进的方式能避免金额太高的时候费用太离谱，也挺合理。\\n\\n非财产案件就简单些了，不需要按比例算，是固定金额收取。文件里说非财产案件一般收200元到500元，这应该是根据案件的具体类型决定的。那么行政案件呢？啊，对了，也有看到行政诉讼的收费标准，也是固定金额，具体数额文件里没细说，可能要看各地的具体规定。\\n\\n另外等等！记得好像还有些特殊情况，比如有些人经济困难或者情况特殊，应该可以申请缓交、减交或者免交诉讼费吧？文件里确实有提到，这部分的话一般由法院根据具体情况决定，像低收入者或者需要法律援助的人，可能会有这些便利条件。\\n\\n总结一下吧，诉讼费的收费标准是按照《诉讼费用交纳办法》执行的。财产案件要根据标的金额分段累进计算，比如10万元以内按2.5%收取；非财产案件基本是固定费用，通常在200到500元之间；行政诉讼案件也是固定收费，不同地方可能细节有差异。而对于符合法律规定条件的人，还有申请缓交、减交或免交的可能。这基本涵盖了诉讼费的主要情况，如果还有不确定的部分，最好还是咨询当地法院具体确认。嗯，这样应该完整了。\"\n}\n```",
+    "诉讼费的收费标准依据《诉讼费用交纳办法》的规定，主要分为以下几类：\n\n1. **财产案件**：  \n   财产案件的诉讼费按照标的金额采取分段累进计算方式：  \n   - 标的额在10万元以内的部分，诉讼费按比例**2.5%**收取；  \n   - 超过10万元至50万元的部分，按**2%**收取；  \n   - 超过50万元至100万元的部分，按**1%**收取；  \n   - 标的额进一步增加时，适用其他分段计算比例。  \n\n2. **非财产案件**：  \n   非财产案件的诉讼费一般是**固定金额**收取，标准在**200元至500元**之间，具体金额依据案件类型决定。\n\n3. **行政案件**：  \n   行政诉讼案件的收费标准一般也是**固定金额**，具体数额可能根据各地规定有所调整。\n\n4. **特殊情况**：  \n   根据规定，如果当事人因经济困难或特殊情况，可以向法院申请**缓交、减交或免交诉讼费**。法院将根据实际情况进行审核并作出决定。\n\n具体收费细节和申请流程可以向当地法院咨询，以确保了解适用于本案的具体标准和政策。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "确定问题的范围",
+        "content": "诉讼费是指在法院提起诉讼时需要支付的费用。不同类型的案件和标的金额可能适用不同的收费标准。因此需要找到当前关于诉讼费的法律依据和具体标准。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "检索相关法律法规",
+        "content": "诉讼费的收费标准通常由法律法规或司法解释确定，我需要查找直接与此相关的内容，例如《诉讼费用交纳办法》或其他相关法律文件。执行搜索：<search>诉讼费用交纳办法</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "分析搜索结果",
+        "content": "<information>《诉讼费用交纳办法》规定了案件的诉讼费用收费标准，其中包括不同案件类型（如财产案件、非财产案件、行政诉讼案件）的收费基准和比例。对于财产案件，诉讼费用通常按照案件标的额分段累计收取，例如：10万元以内按2.5%收取，超过部分按不同比例阶梯递减。非财产案件一般收取固定费用，比如200-500元不等。</information>根据这一信息，接下来将分具体案件类型进一步说明。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "分类说明收费标准",
+        "content": "根据上述信息，针对不同类型案件的诉讼费收费标准可以归纳如下：财产案件的费用依照标的金额的分段递减比例计算；非财产案件和行政案件则多为固定金额收取。此外，还可能存在减免或缓交的特殊政策，这部分通常依据法院的具体规定执行。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "诉讼费的收费标准依据《诉讼费用交纳办法》执行：1. 财产案件根据标的金额按比例分段累进计算，例如10万元以内按2.5%收取，50万元至100万元部分按1%收取等；2. 非财产案件一般按固定金额收取，比如200元至500元不等；3. 行政案件以固定金额为主；4. 符合法律规定的情形可申请缓交、减交或免交诉讼费。具体金额和比例请根据案件类型与标的查询地方细化规定。"
+      },
+      {
+        "action": "Verification",
+        "content": "该结论来源于《诉讼费用交纳办法》的主要内容，正确反映了诉讼费收费标准的相关规定。如果有特殊情况，可以进一步咨询当地法院以确认具体适用条款。因此，该结论正确无误。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "好，先来想想，诉讼费到底是怎么回事呢？嗯，诉讼费就是在法院打官司时需要交的钱，应该是按照案件类型和金额来收的。不过具体怎么算还得找找相关的法律依据才行。哦，印象中好像有个叫《诉讼费用交纳办法》的文件专门讲这些。我先搜一下看看：<search>诉讼费用交纳办法</search>。\n\n嗯，我搜到了，文件里确实提到了诉讼费的收费标准。看来分两大类，一类是财产案件，一类是非财产案件；另外好像还有关于行政案件的规定。先说财产案件吧，嗯，文件提到财产案件的诉讼费是按照标的金额分段累进计算的。比如标的额在10万元以内的部分，诉讼费按2.5%的比例收取；如果超过10万元且不超过50万元，超出的部分按2%的比例收；然后是超过50万元到100万元的部分，按1%的比例。哦，这种分段累进的方式能避免金额太高的时候费用太离谱，也挺合理。\n\n非财产案件就简单些了，不需要按比例算，是固定金额收取。文件里说非财产案件一般收200元到500元，这应该是根据案件的具体类型决定的。那么行政案件呢？啊，对了，也有看到行政诉讼的收费标准，也是固定金额，具体数额文件里没细说，可能要看各地的具体规定。\n\n另外等等！记得好像还有些特殊情况，比如有些人经济困难或者情况特殊，应该可以申请缓交、减交或者免交诉讼费吧？文件里确实有提到，这部分的话一般由法院根据具体情况决定，像低收入者或者需要法律援助的人，可能会有这些便利条件。\n\n总结一下吧，诉讼费的收费标准是按照《诉讼费用交纳办法》执行的。财产案件要根据标的金额分段累进计算，比如10万元以内按2.5%收取；非财产案件基本是固定费用，通常在200到500元之间；行政诉讼案件也是固定收费，不同地方可能细节有差异。而对于符合法律规定条件的人，还有申请缓交、减交或免交的可能。这基本涵盖了诉讼费的主要情况，如果还有不确定的部分，最好还是咨询当地法院具体确认。嗯，这样应该完整了。",
+  "Response": "诉讼费的收费标准依据《诉讼费用交纳办法》的规定，主要分为以下几类：\n\n1. **财产案件**：  \n   财产案件的诉讼费按照标的金额采取分段累进计算方式：  \n   - 标的额在10万元以内的部分，诉讼费按比例**2.5%**收取；  \n   - 超过10万元至50万元的部分，按**2%**收取；  \n   - 超过50万元至100万元的部分，按**1%**收取；  \n   - 标的额进一步增加时，适用其他分段计算比例。  \n\n2. **非财产案件**：  \n   非财产案件的诉讼费一般是**固定金额**收取，标准在**200元至500元**之间，具体金额依据案件类型决定。\n\n3. **行政案件**：  \n   行政诉讼案件的收费标准一般也是**固定金额**，具体数额可能根据各地规定有所调整。\n\n4. **特殊情况**：  \n   根据规定，如果当事人因经济困难或特殊情况，可以向法院申请**缓交、减交或免交诉讼费**。法院将根据实际情况进行审核并作出决定。\n\n具体收费细节和申请流程可以向当地法院咨询，以确保了解适用于本案的具体标准和政策。",
+  "Question": "诉讼费收费标准是什么?"
+}

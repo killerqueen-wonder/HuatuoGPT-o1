@@ -1,0 +1,89 @@
+{
+  "Open-ended Verifiable Question": "结婚后对方偷偷借了很多钱，我有义务还钱吗？",
+  "Ground-True Answer": "主要看借的钱用在什么地方，如果是用于夫妻共同生活，或者夫妻共同生产经营的，那么会被认定属于夫妻共同债务，需双方共同偿还。但如果款项是用于其个人消费、赌博等，则一般会认定属于对方的个人债务。《民法典》第一千零六十四条　【夫妻共同债务】夫妻双方共同签名或者夫妻一方事后追认等共同意思表示所负的债务,以及夫妻一方在婚姻关系存续期间以个人名义为家庭日常生活需要所负的债务,属于夫妻共同债务。夫妻一方在婚姻关系存续期间以个人名义超出家庭日常生活需要所负的债务,不属于夫妻共同债务;但是,债权人能够证明该债务用于夫妻共同生活、共同生产经营或者基于夫妻双方共同意思表示的除外。最高人民法院关于适用《中华人民共和国民法典》婚姻家庭编的解释（一）第三十四条第二款夫妻一方在从事赌博、吸毒等违法犯罪活动中所负债务，第三人主张该债务为夫妻共同债务的，人民法院不予支持。",
+  "process_id": 5547,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "分析婚姻关系中的债务责任",
+      "content": "根据中国《民法典》的规定，夫妻之间的债务责任通常需要考虑是否属于夫妻共同债务。因此，首先需要确认对方所借的钱是否为家庭共同开支、共同利益所用。若属于夫妻共同债务，另一方可能需要承担责任；否则则无需承担。为进一步确认适用规则，我需要查询相关法律条款以确定夫妻共同债务的定义和适用范围。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "搜索《民法典》夫妻共同债务相关条款",
+      "content": "<search>夫妻共同债务 民法典</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "整理搜索结果确定法律定义",
+      "content": "<information>根据《中华人民共和国民法典》第三百零六条的规定，夫妻共同债务是指夫妻双方共同签字或者夫妻一方为家庭日常生活需要所负的债务。如果债务是因个人目的借款，且未用于家庭开支或共同利益，则不属于夫妻共同债务。</information>基于此，关键点在于债务的用途及是否有另一方参与签署或明确同意。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "结合案情和相关法律条款",
+      "content": "若对方借的钱未用于家庭共同生活开支，也未经过另一方同意或签字，则该债务属个人债务，另一方无需承担责任。若对方借款是用于家庭日常开销，另一方可能需要共同承担。进一步确认案情细节非常重要。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "如果对方在结婚后偷偷借的这些钱未用于家庭日常开销、共同利益，也未经您的签字或同意，这些债务属于对方的个人债务，您没有义务偿还。但若上述借款确实被证明为家庭共同债务，法律上您可能需要承担偿还责任。建议进一步咨询律师以确认债务用途和法律责任。"
+    },
+    {
+      "action": "Verification",
+      "content": "结论符合当前法律规定，即夫妻共同债务的认定标准。无需进一步推导，结论正确。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n结婚后对方偷偷借了很多钱，我有义务还钱吗？\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n如果对方在结婚后偷偷借的这些钱未用于家庭日常开销、共同利益，也未经您的签字或同意，这些债务属于对方的个人债务，您没有义务偿还。但若上述借款确实被证明为家庭共同债务，法律上您可能需要承担偿还责任。建议进一步咨询律师以确认债务用途和法律责任。  \n</Model Response>  \n\n<Reference Answer>  \n主要看借的钱用在什么地方，如果是用于夫妻共同生活，或者夫妻共同生产经营的，那么会被认定属于夫妻共同债务，需双方共同偿还。但如果款项是用于其个人消费、赌博等，则一般会认定属于对方的个人债务。《民法典》第一千零六十四条　【夫妻共同债务】夫妻双方共同签名或者夫妻一方事后追认等共同意思表示所负的债务,以及夫妻一方在婚姻关系存续期间以个人名义为家庭日常生活需要所负的债务,属于夫妻共同债务。夫妻一方在婚姻关系存续期间以个人名义超出家庭日常生活需要所负的债务,不属于夫妻共同债务;但是,债权人能够证明该债务用于夫妻共同生活、共同生产经营或者基于夫妻双方共同意思表示的除外。最高人民法院关于适用《中华人民共和国民法典》婚姻家庭编的解释（一）第三十四条第二款夫妻一方在从事赌博、吸毒等违法犯罪活动中所负债务，第三人主张该债务为夫妻共同债务的，人民法院不予支持。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 分析婚姻关系中的债务责任\n根据中国《民法典》的规定，夫妻之间的债务责任通常需要考虑是否属于夫妻共同债务。因此，首先需要确认对方所借的钱是否为家庭共同开支、共同利益所用。若属于夫妻共同债务，另一方可能需要承担责任；否则则无需承担。为进一步确认适用规则，我需要查询相关法律条款以确定夫妻共同债务的定义和适用范围。\n\n### 搜索《民法典》夫妻共同债务相关条款\n<search>夫妻共同债务 民法典</search>\n\n### 整理搜索结果确定法律定义\n<information>根据《中华人民共和国民法典》第三百零六条的规定，夫妻共同债务是指夫妻双方共同签字或者夫妻一方为家庭日常生活需要所负的债务。如果债务是因个人目的借款，且未用于家庭开支或共同利益，则不属于夫妻共同债务。</information>基于此，关键点在于债务的用途及是否有另一方参与签署或明确同意。\n\n### 结合案情和相关法律条款\n若对方借的钱未用于家庭共同生活开支，也未经过另一方同意或签字，则该债务属个人债务，另一方无需承担责任。若对方借款是用于家庭日常开销，另一方可能需要共同承担。进一步确认案情细节非常重要。\n\n### Conclusion\n如果对方在结婚后偷偷借的这些钱未用于家庭日常开销、共同利益，也未经您的签字或同意，这些债务属于对方的个人债务，您没有义务偿还。但若上述借款确实被证明为家庭共同债务，法律上您可能需要承担偿还责任。建议进一步咨询律师以确认债务用途和法律责任。\n\n### Verification\n结论符合当前法律规定，即夫妻共同债务的认定标准。无需进一步推导，结论正确。\n</Thought Process>\n\n<Question>\n结婚后对方偷偷借了很多钱，我有义务还钱吗？\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n结婚后对方偷偷借了很多钱，那我有没有义务还呢？这个问题好像和夫妻之间的债务责任有关，我得好好想想。\n\n首先，夫妻之间的债务应该分为共同债务和个人债务吧。如果是共同债务，理论上我也得负责，但如果是对方的个人债务，那就和我没关系。这样的话，我需要搞清楚对方借的钱到底算不算共同债务。也就是说，这笔钱是不是用在了家庭共同开支或者双方共同的利益上。嗯，好像还涉及到一个问题，就是这件事我是不是知情、有没有明确同意。\n\n为了更有依据，我觉得我得查一下法律怎么说，看看《民法典》有没有相关规定，这应该是最权威的依据了。<search>夫妻共同债务 民法典</search>\n\n好了，查到了！<information>根据《中华人民共和国民法典》第三百零六条的规定，夫妻共同债务是指夫妻双方共同签字或者夫妻一方为家庭日常生活需要所负的债务。如果债务是因个人目的借款，且未用于家庭开支或共同利益，则不属于夫妻共同债务。</information>哦，原来法律里是这样规定的。也就是说，债务分两种情况：第一，它是用在家庭日常生活需求上的，这就算共同债务；第二，它是个人用途，并且没为家庭利益服务，那就是个人债务。我学到了！\n\n现在我得回到问题本身。假如对方借的钱是偷偷借的，我不知道，或者我没签字同意，这个可能性很大。这种情况下，要看看钱到底干什么用了。如果钱被用来支付了家庭开销，比如买日用品、支付房租、孩子的教育费用，那有可能会被认定为共同债务，这样我可能需要承担部分责任。但如果钱是拿去干了一些完全个人的事，比如对方赌博、投资失败、或者做其他与家庭无关的事，那就应该是对方的个人债务，不管我同意不同意，我都不需要还。\n\n所以说，这取决于两点：一是钱的用途，二是有没有我的同意。如果这两条都偏向于个人，那我应该是没有义务还的。但话说回来，要确认这些细节可能有点麻烦，特别是证明钱到底用到哪儿去了，这时候可能还是咨询律师比较好，毕竟律师能给出更专业的建议。\n\n总结一下，如果这笔钱不是用来满足家庭日常开支或者共同利益，也没有我的签字和认可，那这笔债务应该是对方的个人债务，我是不用还的。不过，如果对方证明钱确实被用在了家庭相关的地方，那根据法律，我可能需要承担这部分偿还责任。所以，还是需要了解更多细节来判断。\n\n嗯，我觉得这个结论还是比较符合《民法典》的规定。通过查法律再结合实际情况这样来分析，还是很清楚的。要是还有什么不确定的，找律师更保险。\n</Internal Thinking>\n\n<Question>\n结婚后对方偷偷借了很多钱，我有义务还钱吗？\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析婚姻关系中的债务责任\",\n      \"content\": \"根据中国《民法典》的规定，夫妻之间的债务责任通常需要考虑是否属于夫妻共同债务。因此，首先需要确认对方所借的钱是否为家庭共同开支、共同利益所用。若属于夫妻共同债务，另一方可能需要承担责任；否则则无需承担。为进一步确认适用规则，我需要查询相关法律条款以确定夫妻共同债务的定义和适用范围。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"搜索《民法典》夫妻共同债务相关条款\",\n      \"content\": \"<search>夫妻共同债务 民法典</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"整理搜索结果确定法律定义\",\n      \"content\": \"<information>根据《中华人民共和国民法典》第三百零六条的规定，夫妻共同债务是指夫妻双方共同签字或者夫妻一方为家庭日常生活需要所负的债务。如果债务是因个人目的借款，且未用于家庭开支或共同利益，则不属于夫妻共同债务。</information>基于此，关键点在于债务的用途及是否有另一方参与签署或明确同意。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"结合案情和相关法律条款\",\n      \"content\": \"若对方借的钱未用于家庭共同生活开支，也未经过另一方同意或签字，则该债务属个人债务，另一方无需承担责任。若对方借款是用于家庭日常开销，另一方可能需要共同承担。进一步确认案情细节非常重要。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"如果对方在结婚后偷偷借的这些钱未用于家庭日常开销、共同利益，也未经您的签字或同意，这些债务属于对方的个人债务，您没有义务偿还。但若上述借款确实被证明为家庭共同债务，法律上您可能需要承担偿还责任。建议进一步咨询律师以确认债务用途和法律责任。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"结论符合当前法律规定，即夫妻共同债务的认定标准。无需进一步推导，结论正确。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"结婚后对方偷偷借了很多钱，那我有没有义务还呢？这个问题好像和夫妻之间的债务责任有关，我得好好想想。\\n\\n首先，夫妻之间的债务应该分为共同债务和个人债务吧。如果是共同债务，理论上我也得负责，但如果是对方的个人债务，那就和我没关系。这样的话，我需要搞清楚对方借的钱到底算不算共同债务。也就是说，这笔钱是不是用在了家庭共同开支或者双方共同的利益上。嗯，好像还涉及到一个问题，就是这件事我是不是知情、有没有明确同意。\\n\\n为了更有依据，我觉得我得查一下法律怎么说，看看《民法典》有没有相关规定，这应该是最权威的依据了。<search>夫妻共同债务 民法典</search>\\n\\n好了，查到了！<information>根据《中华人民共和国民法典》第三百零六条的规定，夫妻共同债务是指夫妻双方共同签字或者夫妻一方为家庭日常生活需要所负的债务。如果债务是因个人目的借款，且未用于家庭开支或共同利益，则不属于夫妻共同债务。</information>哦，原来法律里是这样规定的。也就是说，债务分两种情况：第一，它是用在家庭日常生活需求上的，这就算共同债务；第二，它是个人用途，并且没为家庭利益服务，那就是个人债务。我学到了！\\n\\n现在我得回到问题本身。假如对方借的钱是偷偷借的，我不知道，或者我没签字同意，这个可能性很大。这种情况下，要看看钱到底干什么用了。如果钱被用来支付了家庭开销，比如买日用品、支付房租、孩子的教育费用，那有可能会被认定为共同债务，这样我可能需要承担部分责任。但如果钱是拿去干了一些完全个人的事，比如对方赌博、投资失败、或者做其他与家庭无关的事，那就应该是对方的个人债务，不管我同意不同意，我都不需要还。\\n\\n所以说，这取决于两点：一是钱的用途，二是有没有我的同意。如果这两条都偏向于个人，那我应该是没有义务还的。但话说回来，要确认这些细节可能有点麻烦，特别是证明钱到底用到哪儿去了，这时候可能还是咨询律师比较好，毕竟律师能给出更专业的建议。\\n\\n总结一下，如果这笔钱不是用来满足家庭日常开支或者共同利益，也没有我的签字和认可，那这笔债务应该是对方的个人债务，我是不用还的。不过，如果对方证明钱确实被用在了家庭相关的地方，那根据法律，我可能需要承担这部分偿还责任。所以，还是需要了解更多细节来判断。\\n\\n嗯，我觉得这个结论还是比较符合《民法典》的规定。通过查法律再结合实际情况这样来分析，还是很清楚的。要是还有什么不确定的，找律师更保险。\"\n}\n```",
+    "根据你的描述和相关法律规定，如果结婚后对方偷偷借了很多钱，是否需要你承担还款责任，取决于以下几个关键因素：\n\n### 1. **借款的用途**\n根据《中华人民共和国民法典》第1064条的规定，如果债务用于家庭日常生活需要，如支付生活开支、孩子教育费用、医疗支出等，或者用于夫妻双方共同的利益，这种债务可能会被认定为夫妻共同债务，你需要承担部分还款责任。\n\n但是如果借款是用于对方的个人目的，比如赌博、购买奢侈品、个人投资等，且没有用于家庭共同生活或利益，那这笔债务属于对方的个人债务，你无需承担还款责任。\n\n### 2. **你是否知情或同意**\n如果这笔借款需要夫妻双方共同承担，法律通常要求夫妻双方需共同签字或者明确说明另一方知情并同意。换句话说，如果这笔钱在你完全不知情的情况下借来的，尤其是没有用于家庭生活，那么你可以主张这笔债务是对方的个人债务。\n\n### 3. **举证责任**\n在实践中，双方如果对债务性质有争议，责任方需要提供证据。对方如果主张这是夫妻共同债务，需要证明借款是用于家庭日常支出或夫妻共同利益。如果无法证明，这笔债务很可能被认定为对方的个人债务。\n\n### 建议：\n1. **了解具体情况**  \n   你需要首先弄清楚对方借钱的用途，并保留相关证据，证明这笔钱与你无关或没有用于家庭。\n\n2. **协商与沟通**  \n   有时，对方可能隐瞒了借款的真实原因，建议与对方沟通明确，最好能通过协商解决。\n\n3. **咨询律师**  \n   如果涉及金额较大，建议尽早咨询专业律师，他们可以帮助你梳理债务性质，并在法律上更好地保护你的权益。\n\n### 总结\n如果对方偷偷借的钱没有用在家庭日常生活开支或共同利益上，而且你对此不知情或未明确同意，这笔债务属于对方的个人债务，你没有义务偿还。但具体情况复杂，如果金额较大或涉及法律纠纷，建议咨询律师以确保自身权益。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "分析婚姻关系中的债务责任",
+        "content": "根据中国《民法典》的规定，夫妻之间的债务责任通常需要考虑是否属于夫妻共同债务。因此，首先需要确认对方所借的钱是否为家庭共同开支、共同利益所用。若属于夫妻共同债务，另一方可能需要承担责任；否则则无需承担。为进一步确认适用规则，我需要查询相关法律条款以确定夫妻共同债务的定义和适用范围。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "搜索《民法典》夫妻共同债务相关条款",
+        "content": "<search>夫妻共同债务 民法典</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "整理搜索结果确定法律定义",
+        "content": "<information>根据《中华人民共和国民法典》第三百零六条的规定，夫妻共同债务是指夫妻双方共同签字或者夫妻一方为家庭日常生活需要所负的债务。如果债务是因个人目的借款，且未用于家庭开支或共同利益，则不属于夫妻共同债务。</information>基于此，关键点在于债务的用途及是否有另一方参与签署或明确同意。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "结合案情和相关法律条款",
+        "content": "若对方借的钱未用于家庭共同生活开支，也未经过另一方同意或签字，则该债务属个人债务，另一方无需承担责任。若对方借款是用于家庭日常开销，另一方可能需要共同承担。进一步确认案情细节非常重要。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "如果对方在结婚后偷偷借的这些钱未用于家庭日常开销、共同利益，也未经您的签字或同意，这些债务属于对方的个人债务，您没有义务偿还。但若上述借款确实被证明为家庭共同债务，法律上您可能需要承担偿还责任。建议进一步咨询律师以确认债务用途和法律责任。"
+      },
+      {
+        "action": "Verification",
+        "content": "结论符合当前法律规定，即夫妻共同债务的认定标准。无需进一步推导，结论正确。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "结婚后对方偷偷借了很多钱，那我有没有义务还呢？这个问题好像和夫妻之间的债务责任有关，我得好好想想。\n\n首先，夫妻之间的债务应该分为共同债务和个人债务吧。如果是共同债务，理论上我也得负责，但如果是对方的个人债务，那就和我没关系。这样的话，我需要搞清楚对方借的钱到底算不算共同债务。也就是说，这笔钱是不是用在了家庭共同开支或者双方共同的利益上。嗯，好像还涉及到一个问题，就是这件事我是不是知情、有没有明确同意。\n\n为了更有依据，我觉得我得查一下法律怎么说，看看《民法典》有没有相关规定，这应该是最权威的依据了。<search>夫妻共同债务 民法典</search>\n\n好了，查到了！<information>根据《中华人民共和国民法典》第三百零六条的规定，夫妻共同债务是指夫妻双方共同签字或者夫妻一方为家庭日常生活需要所负的债务。如果债务是因个人目的借款，且未用于家庭开支或共同利益，则不属于夫妻共同债务。</information>哦，原来法律里是这样规定的。也就是说，债务分两种情况：第一，它是用在家庭日常生活需求上的，这就算共同债务；第二，它是个人用途，并且没为家庭利益服务，那就是个人债务。我学到了！\n\n现在我得回到问题本身。假如对方借的钱是偷偷借的，我不知道，或者我没签字同意，这个可能性很大。这种情况下，要看看钱到底干什么用了。如果钱被用来支付了家庭开销，比如买日用品、支付房租、孩子的教育费用，那有可能会被认定为共同债务，这样我可能需要承担部分责任。但如果钱是拿去干了一些完全个人的事，比如对方赌博、投资失败、或者做其他与家庭无关的事，那就应该是对方的个人债务，不管我同意不同意，我都不需要还。\n\n所以说，这取决于两点：一是钱的用途，二是有没有我的同意。如果这两条都偏向于个人，那我应该是没有义务还的。但话说回来，要确认这些细节可能有点麻烦，特别是证明钱到底用到哪儿去了，这时候可能还是咨询律师比较好，毕竟律师能给出更专业的建议。\n\n总结一下，如果这笔钱不是用来满足家庭日常开支或者共同利益，也没有我的签字和认可，那这笔债务应该是对方的个人债务，我是不用还的。不过，如果对方证明钱确实被用在了家庭相关的地方，那根据法律，我可能需要承担这部分偿还责任。所以，还是需要了解更多细节来判断。\n\n嗯，我觉得这个结论还是比较符合《民法典》的规定。通过查法律再结合实际情况这样来分析，还是很清楚的。要是还有什么不确定的，找律师更保险。",
+  "Response": "根据你的描述和相关法律规定，如果结婚后对方偷偷借了很多钱，是否需要你承担还款责任，取决于以下几个关键因素：\n\n### 1. **借款的用途**\n根据《中华人民共和国民法典》第1064条的规定，如果债务用于家庭日常生活需要，如支付生活开支、孩子教育费用、医疗支出等，或者用于夫妻双方共同的利益，这种债务可能会被认定为夫妻共同债务，你需要承担部分还款责任。\n\n但是如果借款是用于对方的个人目的，比如赌博、购买奢侈品、个人投资等，且没有用于家庭共同生活或利益，那这笔债务属于对方的个人债务，你无需承担还款责任。\n\n### 2. **你是否知情或同意**\n如果这笔借款需要夫妻双方共同承担，法律通常要求夫妻双方需共同签字或者明确说明另一方知情并同意。换句话说，如果这笔钱在你完全不知情的情况下借来的，尤其是没有用于家庭生活，那么你可以主张这笔债务是对方的个人债务。\n\n### 3. **举证责任**\n在实践中，双方如果对债务性质有争议，责任方需要提供证据。对方如果主张这是夫妻共同债务，需要证明借款是用于家庭日常支出或夫妻共同利益。如果无法证明，这笔债务很可能被认定为对方的个人债务。\n\n### 建议：\n1. **了解具体情况**  \n   你需要首先弄清楚对方借钱的用途，并保留相关证据，证明这笔钱与你无关或没有用于家庭。\n\n2. **协商与沟通**  \n   有时，对方可能隐瞒了借款的真实原因，建议与对方沟通明确，最好能通过协商解决。\n\n3. **咨询律师**  \n   如果涉及金额较大，建议尽早咨询专业律师，他们可以帮助你梳理债务性质，并在法律上更好地保护你的权益。\n\n### 总结\n如果对方偷偷借的钱没有用在家庭日常生活开支或共同利益上，而且你对此不知情或未明确同意，这笔债务属于对方的个人债务，你没有义务偿还。但具体情况复杂，如果金额较大或涉及法律纠纷，建议咨询律师以确保自身权益。",
+  "Question": "结婚后对方偷偷借了很多钱，我有义务还钱吗？"
+}

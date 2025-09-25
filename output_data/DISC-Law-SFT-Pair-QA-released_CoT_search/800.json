@@ -1,0 +1,89 @@
+{
+  "Open-ended Verifiable Question": "哪些情况不可以离婚？什么情况下法院不判决离婚？",
+  "Ground-True Answer": "夫妻双方，一旦感情破裂了，或者出现了婚外情第三者，根据我国法律规定只要双方是自愿离婚，就可以到当地民政机关婚姻登记部门办理离婚手续，或者是到当地人民法院来进行起诉离婚，但是出现以下几种情况是不可以离婚的。\n1、凡是已婚女性在生产后一年，或者终止怀孕后的六个月内，是不可以离婚的，因为这个时间段的女性，往往没有经济能力，或者是怀孕后主动辞职的，并且这个时间段的女性，是不能承受重大的精神打击的，这样对以后孩子的成长都会有不利的影响，但是除了女方要求离婚或者男方提出离婚时法院认为有必要受理的情况外。\n2、当双方进行到法院调解，已经调解好。或者是法院不允许离婚的情况下，并且没有新的诉状和新的原因来要求离婚的情况，这种情况下是不可以离婚的。\n3、我国现役军人的配偶也是不允许离婚的，军婚离婚的话，必须需要现役军人同意的情况下，可以准许离婚，其余除了现役军人本身有重婚，虐待，遗弃家庭成员的几种特殊情况外，均不允许离婚。但是如果现役军人有重大过错，或者是现役军人同意的情况下，是允许离婚的。\n4、患有精神疾病，或者是植物人的情况下，是不允许离婚的，但是如果是在婚前隐瞒病史的，在做好工作后，应该准许离婚。\n5、在威胁和胁迫的情况下，被逼离婚的，这种情况下，法院也是不允许离婚的。",
+  "process_id": 800,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "确定问题范围",
+      "content": "问题关注的是在中国法律体系下，哪些情况下法院会认为不具备离婚条件，从而不判决离婚。涉及的主要法律依据可能包括《中华人民共和国民法典》中关于离婚的相关规定，需要进一步查找相关法条。首先搜寻《中华人民共和国民法典》中关于离婚不判决的相关规定。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "查找相关法律依据",
+      "content": "<search>民法典 离婚 判决条件</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "分析检索到的法条",
+      "content": "<information>《中华人民共和国民法典》（2021年1月1日施行）第一千零七十九条明确规定：法院判决离婚需以夫妻感情破裂为核心判断依据，若认为夫妻感情尚未破裂，则不会判决离婚。此外，如果男方在女方怀孕期间、分娩后一年或终止妊娠后六个月内提出离婚，法院一般不予支持（但女方提出或者法院认为确有必要受理的除外）。</information>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "总结适用情况",
+      "content": "结合法条可以得出，在以下情形下法院可能不判离婚：（1）未达到‘夫妻感情确已破裂’的标准；（2）法律规定的特殊保护期内，例如女方怀孕期间、分娩后一年或终止妊娠后六个月，男方提出离婚但不具有例外情况。此外，若提供的证据不足以证明感情破裂，也可能无法判决离婚。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "根据我国《民法典》的规定，以下情况一般不予判决离婚：（1）夫妻感情尚未达到确已破裂的标准；（2）女方在怀孕期间、分娩后一年或终止妊娠后六个月内，男方提出离婚，但不存在女方同意或法院认定确有必要的情况。此外，若证据不足以证明感情破裂，法院也可能不判离婚。"
+    },
+    {
+      "action": "Verification",
+      "content": "总结的内容与《民法典》相关条文一致，结论正确，无需修改。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n哪些情况不可以离婚？什么情况下法院不判决离婚？\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n根据我国《民法典》的规定，以下情况一般不予判决离婚：（1）夫妻感情尚未达到确已破裂的标准；（2）女方在怀孕期间、分娩后一年或终止妊娠后六个月内，男方提出离婚，但不存在女方同意或法院认定确有必要的情况。此外，若证据不足以证明感情破裂，法院也可能不判离婚。  \n</Model Response>  \n\n<Reference Answer>  \n夫妻双方，一旦感情破裂了，或者出现了婚外情第三者，根据我国法律规定只要双方是自愿离婚，就可以到当地民政机关婚姻登记部门办理离婚手续，或者是到当地人民法院来进行起诉离婚，但是出现以下几种情况是不可以离婚的。\n1、凡是已婚女性在生产后一年，或者终止怀孕后的六个月内，是不可以离婚的，因为这个时间段的女性，往往没有经济能力，或者是怀孕后主动辞职的，并且这个时间段的女性，是不能承受重大的精神打击的，这样对以后孩子的成长都会有不利的影响，但是除了女方要求离婚或者男方提出离婚时法院认为有必要受理的情况外。\n2、当双方进行到法院调解，已经调解好。或者是法院不允许离婚的情况下，并且没有新的诉状和新的原因来要求离婚的情况，这种情况下是不可以离婚的。\n3、我国现役军人的配偶也是不允许离婚的，军婚离婚的话，必须需要现役军人同意的情况下，可以准许离婚，其余除了现役军人本身有重婚，虐待，遗弃家庭成员的几种特殊情况外，均不允许离婚。但是如果现役军人有重大过错，或者是现役军人同意的情况下，是允许离婚的。\n4、患有精神疾病，或者是植物人的情况下，是不允许离婚的，但是如果是在婚前隐瞒病史的，在做好工作后，应该准许离婚。\n5、在威胁和胁迫的情况下，被逼离婚的，这种情况下，法院也是不允许离婚的。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 确定问题范围\n问题关注的是在中国法律体系下，哪些情况下法院会认为不具备离婚条件，从而不判决离婚。涉及的主要法律依据可能包括《中华人民共和国民法典》中关于离婚的相关规定，需要进一步查找相关法条。首先搜寻《中华人民共和国民法典》中关于离婚不判决的相关规定。\n\n### 查找相关法律依据\n<search>民法典 离婚 判决条件</search>\n\n### 分析检索到的法条\n<information>《中华人民共和国民法典》（2021年1月1日施行）第一千零七十九条明确规定：法院判决离婚需以夫妻感情破裂为核心判断依据，若认为夫妻感情尚未破裂，则不会判决离婚。此外，如果男方在女方怀孕期间、分娩后一年或终止妊娠后六个月内提出离婚，法院一般不予支持（但女方提出或者法院认为确有必要受理的除外）。</information>\n\n### 总结适用情况\n结合法条可以得出，在以下情形下法院可能不判离婚：（1）未达到‘夫妻感情确已破裂’的标准；（2）法律规定的特殊保护期内，例如女方怀孕期间、分娩后一年或终止妊娠后六个月，男方提出离婚但不具有例外情况。此外，若提供的证据不足以证明感情破裂，也可能无法判决离婚。\n\n### Conclusion\n根据我国《民法典》的规定，以下情况一般不予判决离婚：（1）夫妻感情尚未达到确已破裂的标准；（2）女方在怀孕期间、分娩后一年或终止妊娠后六个月内，男方提出离婚，但不存在女方同意或法院认定确有必要的情况。此外，若证据不足以证明感情破裂，法院也可能不判离婚。\n\n### Verification\n总结的内容与《民法典》相关条文一致，结论正确，无需修改。\n</Thought Process>\n\n<Question>\n哪些情况不可以离婚？什么情况下法院不判决离婚？\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n嗯……要回答关于哪些情况下不能离婚，以及法院不判决离婚的情形，我得先搞清楚中国法律是怎么规定的，最主要的依据应该是《民法典》。首先，我记得《民法典》里有一条专门讲离婚条件的条文，核心应该是看夫妻感情是否破裂。不过具体如何判断感情是否破裂，还是得再确认一下。先搜一搜吧。\n\n<search>民法典 离婚 判决条件</search>\n\n哦，搜到了相关条文信息。这是《中华人民共和国民法典》（2021年1月1日起实施）的规定，第一千零七十九条提到判决离婚的关键是看夫妻感情是否真的破裂。如果法院认定感情没有破裂，就不会判离。这个感情破裂听起来是个关键点，好像需要具体证据来支持。如果男方在某些特殊时期，比如女方怀孕期间、分娩后一年内或者终止妊娠后六个月内提离婚，法院一般也不会支持，除非是女方自己提或者法院觉得特别有必要。\n\n所以，总结一下，如果一对夫妻来打离婚官司，法院会先看夫妻感情裂痕有多大，是否确实没办法修复了。如果感情还没到破裂的地步，比如一些矛盾其实可以调解，法院可能就不会判准离婚。另外，男方在女方怀孕或者刚生完孩子的这段时间提离婚，法律也明确规定不太支持，这应该是出于保护女性和孩子的考虑吧。不过如果是女方同意离婚，或者有特别例外的情况，法院还是会受理的。\n\n停一下，回头再理理，具体情形是什么来着？第一个是感情没破裂，第二个是怀孕、分娩这些保护期内男方提离婚，这两种情况下最容易导致法院不判离。另外想了想，万一证据不足，比如说一方没办法拿出有力的证明材料来表明感情真的破裂了，法院估计也会很难下这样的判决。\n\n嗯，那最后概括一下吧。如果夫妻一方来法院请求离婚，但法院觉得感情还可以维系、矛盾还没到无可挽回的境地，就不会判离；如果男方在保护期内提离婚，除非有例外也不会支持。而如果证据不足以支持感情确已破裂，也可能失败。这些判断基本都是和《民法典》里的内容一致。可以肯定答案是对的。\n</Internal Thinking>\n\n<Question>\n哪些情况不可以离婚？什么情况下法院不判决离婚？\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"确定问题范围\",\n      \"content\": \"问题关注的是在中国法律体系下，哪些情况下法院会认为不具备离婚条件，从而不判决离婚。涉及的主要法律依据可能包括《中华人民共和国民法典》中关于离婚的相关规定，需要进一步查找相关法条。首先搜寻《中华人民共和国民法典》中关于离婚不判决的相关规定。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"查找相关法律依据\",\n      \"content\": \"<search>民法典 离婚 判决条件</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析检索到的法条\",\n      \"content\": \"<information>《中华人民共和国民法典》（2021年1月1日施行）第一千零七十九条明确规定：法院判决离婚需以夫妻感情破裂为核心判断依据，若认为夫妻感情尚未破裂，则不会判决离婚。此外，如果男方在女方怀孕期间、分娩后一年或终止妊娠后六个月内提出离婚，法院一般不予支持（但女方提出或者法院认为确有必要受理的除外）。</information>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"总结适用情况\",\n      \"content\": \"结合法条可以得出，在以下情形下法院可能不判离婚：（1）未达到‘夫妻感情确已破裂’的标准；（2）法律规定的特殊保护期内，例如女方怀孕期间、分娩后一年或终止妊娠后六个月，男方提出离婚但不具有例外情况。此外，若提供的证据不足以证明感情破裂，也可能无法判决离婚。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"根据我国《民法典》的规定，以下情况一般不予判决离婚：（1）夫妻感情尚未达到确已破裂的标准；（2）女方在怀孕期间、分娩后一年或终止妊娠后六个月内，男方提出离婚，但不存在女方同意或法院认定确有必要的情况。此外，若证据不足以证明感情破裂，法院也可能不判离婚。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"总结的内容与《民法典》相关条文一致，结论正确，无需修改。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"嗯……要回答关于哪些情况下不能离婚，以及法院不判决离婚的情形，我得先搞清楚中国法律是怎么规定的，最主要的依据应该是《民法典》。首先，我记得《民法典》里有一条专门讲离婚条件的条文，核心应该是看夫妻感情是否破裂。不过具体如何判断感情是否破裂，还是得再确认一下。先搜一搜吧。\\n\\n<search>民法典 离婚 判决条件</search>\\n\\n哦，搜到了相关条文信息。这是《中华人民共和国民法典》（2021年1月1日起实施）的规定，第一千零七十九条提到判决离婚的关键是看夫妻感情是否真的破裂。如果法院认定感情没有破裂，就不会判离。这个感情破裂听起来是个关键点，好像需要具体证据来支持。如果男方在某些特殊时期，比如女方怀孕期间、分娩后一年内或者终止妊娠后六个月内提离婚，法院一般也不会支持，除非是女方自己提或者法院觉得特别有必要。\\n\\n所以，总结一下，如果一对夫妻来打离婚官司，法院会先看夫妻感情裂痕有多大，是否确实没办法修复了。如果感情还没到破裂的地步，比如一些矛盾其实可以调解，法院可能就不会判准离婚。另外，男方在女方怀孕或者刚生完孩子的这段时间提离婚，法律也明确规定不太支持，这应该是出于保护女性和孩子的考虑吧。不过如果是女方同意离婚，或者有特别例外的情况，法院还是会受理的。\\n\\n停一下，回头再理理，具体情形是什么来着？第一个是感情没破裂，第二个是怀孕、分娩这些保护期内男方提离婚，这两种情况下最容易导致法院不判离。另外想了想，万一证据不足，比如说一方没办法拿出有力的证明材料来表明感情真的破裂了，法院估计也会很难下这样的判决。\\n\\n嗯，那最后概括一下吧。如果夫妻一方来法院请求离婚，但法院觉得感情还可以维系、矛盾还没到无可挽回的境地，就不会判离；如果男方在保护期内提离婚，除非有例外也不会支持。而如果证据不足以支持感情确已破裂，也可能失败。这些判断基本都是和《民法典》里的内容一致。可以肯定答案是对的。\"\n}\n```",
+    "根据《中华人民共和国民法典》的规定，以下情形下可能无法离婚，或者法院不会判决离婚：\n\n1. **夫妻感情未破裂**：  \n   根据《民法典》第一千零七十九条，法院判断是否准予离婚的核心条件是夫妻感情是否确已破裂。如果夫妻只是存在一些一般性矛盾或尚有修复可能，法院通常不会支持离婚请求。而具体是否构成“感情破裂”，需要综合考虑是否存在家庭暴力、婚外情、分居状态等各种因素，结合证据进行评估。\n\n2. **女方处于特定保护期内**：  \n   根据《民法典》第一千零八十二条规定，在女方怀孕期间、分娩后一年内或者终止妊娠后六个月内，男方不得提出离婚。这一条款主要是出于保护女性和婴儿的权益。不过，若女方提出离婚请求，或者确实有特殊情况需要判离，法院可以另作处理。\n\n3. **证据不足以证实感情破裂**：  \n   如果提出离婚的一方无法提供充分证据来证明夫妻感情已破裂，比如未能证明长期分居、存在严重矛盾或其他不可调和因素，法院可能会判定婚姻关系仍可维系，从而不准离婚。\n\n综合来看，法院主要根据夫妻感情状况及证据来决定是否判决离婚，同时在女方处于法律保护期内，对离婚请求采取更加审慎的态度。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "确定问题范围",
+        "content": "问题关注的是在中国法律体系下，哪些情况下法院会认为不具备离婚条件，从而不判决离婚。涉及的主要法律依据可能包括《中华人民共和国民法典》中关于离婚的相关规定，需要进一步查找相关法条。首先搜寻《中华人民共和国民法典》中关于离婚不判决的相关规定。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "查找相关法律依据",
+        "content": "<search>民法典 离婚 判决条件</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "分析检索到的法条",
+        "content": "<information>《中华人民共和国民法典》（2021年1月1日施行）第一千零七十九条明确规定：法院判决离婚需以夫妻感情破裂为核心判断依据，若认为夫妻感情尚未破裂，则不会判决离婚。此外，如果男方在女方怀孕期间、分娩后一年或终止妊娠后六个月内提出离婚，法院一般不予支持（但女方提出或者法院认为确有必要受理的除外）。</information>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "总结适用情况",
+        "content": "结合法条可以得出，在以下情形下法院可能不判离婚：（1）未达到‘夫妻感情确已破裂’的标准；（2）法律规定的特殊保护期内，例如女方怀孕期间、分娩后一年或终止妊娠后六个月，男方提出离婚但不具有例外情况。此外，若提供的证据不足以证明感情破裂，也可能无法判决离婚。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "根据我国《民法典》的规定，以下情况一般不予判决离婚：（1）夫妻感情尚未达到确已破裂的标准；（2）女方在怀孕期间、分娩后一年或终止妊娠后六个月内，男方提出离婚，但不存在女方同意或法院认定确有必要的情况。此外，若证据不足以证明感情破裂，法院也可能不判离婚。"
+      },
+      {
+        "action": "Verification",
+        "content": "总结的内容与《民法典》相关条文一致，结论正确，无需修改。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "嗯……要回答关于哪些情况下不能离婚，以及法院不判决离婚的情形，我得先搞清楚中国法律是怎么规定的，最主要的依据应该是《民法典》。首先，我记得《民法典》里有一条专门讲离婚条件的条文，核心应该是看夫妻感情是否破裂。不过具体如何判断感情是否破裂，还是得再确认一下。先搜一搜吧。\n\n<search>民法典 离婚 判决条件</search>\n\n哦，搜到了相关条文信息。这是《中华人民共和国民法典》（2021年1月1日起实施）的规定，第一千零七十九条提到判决离婚的关键是看夫妻感情是否真的破裂。如果法院认定感情没有破裂，就不会判离。这个感情破裂听起来是个关键点，好像需要具体证据来支持。如果男方在某些特殊时期，比如女方怀孕期间、分娩后一年内或者终止妊娠后六个月内提离婚，法院一般也不会支持，除非是女方自己提或者法院觉得特别有必要。\n\n所以，总结一下，如果一对夫妻来打离婚官司，法院会先看夫妻感情裂痕有多大，是否确实没办法修复了。如果感情还没到破裂的地步，比如一些矛盾其实可以调解，法院可能就不会判准离婚。另外，男方在女方怀孕或者刚生完孩子的这段时间提离婚，法律也明确规定不太支持，这应该是出于保护女性和孩子的考虑吧。不过如果是女方同意离婚，或者有特别例外的情况，法院还是会受理的。\n\n停一下，回头再理理，具体情形是什么来着？第一个是感情没破裂，第二个是怀孕、分娩这些保护期内男方提离婚，这两种情况下最容易导致法院不判离。另外想了想，万一证据不足，比如说一方没办法拿出有力的证明材料来表明感情真的破裂了，法院估计也会很难下这样的判决。\n\n嗯，那最后概括一下吧。如果夫妻一方来法院请求离婚，但法院觉得感情还可以维系、矛盾还没到无可挽回的境地，就不会判离；如果男方在保护期内提离婚，除非有例外也不会支持。而如果证据不足以支持感情确已破裂，也可能失败。这些判断基本都是和《民法典》里的内容一致。可以肯定答案是对的。",
+  "Response": "根据《中华人民共和国民法典》的规定，以下情形下可能无法离婚，或者法院不会判决离婚：\n\n1. **夫妻感情未破裂**：  \n   根据《民法典》第一千零七十九条，法院判断是否准予离婚的核心条件是夫妻感情是否确已破裂。如果夫妻只是存在一些一般性矛盾或尚有修复可能，法院通常不会支持离婚请求。而具体是否构成“感情破裂”，需要综合考虑是否存在家庭暴力、婚外情、分居状态等各种因素，结合证据进行评估。\n\n2. **女方处于特定保护期内**：  \n   根据《民法典》第一千零八十二条规定，在女方怀孕期间、分娩后一年内或者终止妊娠后六个月内，男方不得提出离婚。这一条款主要是出于保护女性和婴儿的权益。不过，若女方提出离婚请求，或者确实有特殊情况需要判离，法院可以另作处理。\n\n3. **证据不足以证实感情破裂**：  \n   如果提出离婚的一方无法提供充分证据来证明夫妻感情已破裂，比如未能证明长期分居、存在严重矛盾或其他不可调和因素，法院可能会判定婚姻关系仍可维系，从而不准离婚。\n\n综合来看，法院主要根据夫妻感情状况及证据来决定是否判决离婚，同时在女方处于法律保护期内，对离婚请求采取更加审慎的态度。",
+  "Question": "哪些情况不可以离婚？什么情况下法院不判决离婚？"
+}

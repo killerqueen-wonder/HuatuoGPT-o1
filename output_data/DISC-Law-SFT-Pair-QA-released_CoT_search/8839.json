@@ -1,0 +1,109 @@
+{
+  "Open-ended Verifiable Question": "父母一般是否可以撤销子女婚姻?",
+  "Ground-True Answer": "父母一般是不可以代替子女撤销婚姻的。因为婚姻的可撤销性是基于当事人一方存在意思表示缺陷而造成的，而父母不能代理具有完全民事行为能力的子女，决定有关于身份关系的行为。《最高人民法院关于适用〈中华人民共和国民法典〉婚姻家庭编的解释（一）》第十八条行为人以给另一方当事人或者其近亲属的生命、身体、健康、名誉、财产等方面造成损害为要挟，迫使另一方当事人违背真实意愿结婚的，可以认定为民法典第一千零五十二条所称的“胁迫”。因受胁迫而请求撤销婚姻的，只能是受胁迫一方的婚姻关系当事人本人。第二十一条人民法院根据当事人的请求，依法确认婚姻无效或者撤销婚姻的，应当收缴双方的结婚证书并将生效的判决书寄送当地婚姻登记管理机关。",
+  "process_id": 8839,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "定义问题范围",
+      "content": "需要明确父母是否可以以法律手段干预子女的婚姻。从法律角度分析，婚姻关系是否可以被父母撤销，以及父母在子女婚姻中的合法权利和限制。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "检索相关法律规定",
+      "content": "我国婚姻法及相关立法如何规定婚姻关系的撤销和有效性，这将决定父母是否有权介入子女婚姻关系。需要检索相关条款。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "查找法律条款",
+      "content": "<search>中国婚姻法 婚姻撤销</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "获取婚姻法相关信息",
+      "content": "<information>《中华人民共和国民法典》第1051条规定，婚姻可以因胁迫、欺诈等特定条件申请撤销。但只有受胁迫或欺诈的一方当事人可以要求撤销，第三方（如父母）不具备直接申请的权利。此外，夫妻双方在婚姻中享有平等权利，婚姻自由是法律保护的核心原则。</information>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "分析法律语言",
+      "content": "从上述法律分析可以得出，父母无权直接撤销子女的婚姻关系。仅在特定情况下，例如婚姻存在胁迫或欺诈，子女本人可依法申请撤销，父母可能作为间接证明人或辅助角色提供协助。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "明确结论",
+      "content": "结合民法典的规定，父母无权单方面撤销子女婚姻。婚姻关系受个人自由保护，仅当婚姻存在法律规定的可撤销情形时且由当事人之一提出申请才可能撤销。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "根据《中华人民共和国民法典》的相关规定，父母无权单方面撤销子女的婚姻。婚姻自由是法律保护的重要原则，仅在婚姻存在胁迫、欺诈等情况下，婚姻当事人自己可以依法申请撤销，而不是由父母行使撤销权。"
+    },
+    {
+      "action": "Verification",
+      "content": "结论符合《中华人民共和国民法典》的相关条款，法律明确规定第三方（如父母）无法直接干涉或撤销他人的婚姻关系。因此，结论正确，无需进一步分析。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n父母一般是否可以撤销子女婚姻?\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n根据《中华人民共和国民法典》的相关规定，父母无权单方面撤销子女的婚姻。婚姻自由是法律保护的重要原则，仅在婚姻存在胁迫、欺诈等情况下，婚姻当事人自己可以依法申请撤销，而不是由父母行使撤销权。  \n</Model Response>  \n\n<Reference Answer>  \n父母一般是不可以代替子女撤销婚姻的。因为婚姻的可撤销性是基于当事人一方存在意思表示缺陷而造成的，而父母不能代理具有完全民事行为能力的子女，决定有关于身份关系的行为。《最高人民法院关于适用〈中华人民共和国民法典〉婚姻家庭编的解释（一）》第十八条行为人以给另一方当事人或者其近亲属的生命、身体、健康、名誉、财产等方面造成损害为要挟，迫使另一方当事人违背真实意愿结婚的，可以认定为民法典第一千零五十二条所称的“胁迫”。因受胁迫而请求撤销婚姻的，只能是受胁迫一方的婚姻关系当事人本人。第二十一条人民法院根据当事人的请求，依法确认婚姻无效或者撤销婚姻的，应当收缴双方的结婚证书并将生效的判决书寄送当地婚姻登记管理机关。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 定义问题范围\n需要明确父母是否可以以法律手段干预子女的婚姻。从法律角度分析，婚姻关系是否可以被父母撤销，以及父母在子女婚姻中的合法权利和限制。\n\n### 检索相关法律规定\n我国婚姻法及相关立法如何规定婚姻关系的撤销和有效性，这将决定父母是否有权介入子女婚姻关系。需要检索相关条款。\n\n### 查找法律条款\n<search>中国婚姻法 婚姻撤销</search>\n\n### 获取婚姻法相关信息\n<information>《中华人民共和国民法典》第1051条规定，婚姻可以因胁迫、欺诈等特定条件申请撤销。但只有受胁迫或欺诈的一方当事人可以要求撤销，第三方（如父母）不具备直接申请的权利。此外，夫妻双方在婚姻中享有平等权利，婚姻自由是法律保护的核心原则。</information>\n\n### 分析法律语言\n从上述法律分析可以得出，父母无权直接撤销子女的婚姻关系。仅在特定情况下，例如婚姻存在胁迫或欺诈，子女本人可依法申请撤销，父母可能作为间接证明人或辅助角色提供协助。\n\n### 明确结论\n结合民法典的规定，父母无权单方面撤销子女婚姻。婚姻关系受个人自由保护，仅当婚姻存在法律规定的可撤销情形时且由当事人之一提出申请才可能撤销。\n\n### Conclusion\n根据《中华人民共和国民法典》的相关规定，父母无权单方面撤销子女的婚姻。婚姻自由是法律保护的重要原则，仅在婚姻存在胁迫、欺诈等情况下，婚姻当事人自己可以依法申请撤销，而不是由父母行使撤销权。\n\n### Verification\n结论符合《中华人民共和国民法典》的相关条款，法律明确规定第三方（如父母）无法直接干涉或撤销他人的婚姻关系。因此，结论正确，无需进一步分析。\n</Thought Process>\n\n<Question>\n父母一般是否可以撤销子女婚姻?\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n嗯，父母可以撤销子女的婚姻吗？这个问题有点复杂，貌似要看具体情况。先想想婚姻关系的法律原则吧，直觉觉得婚姻应该是个人自由的一部分，父母应该不能随便干涉。但还是需要确认一下法律怎么规定，特别是中国的婚姻法。要不先搜一下相关的法律条款？<search>中国婚姻法 婚姻撤销</search>\n\n哦，结果出来了。<information>《中华人民共和国民法典》第1051条规定，婚姻可以因胁迫、欺诈等特定条件申请撤销。但只有受胁迫或欺诈的一方当事人可以要求撤销，第三方（如父母）不具备直接申请的权利。此外，夫妻双方在婚姻中享有平等权利，婚姻自由是法律保护的核心原则。</information>法律写得挺清楚啊，原来撤销婚姻只有婚姻当事人自己可以提出，比如胁迫或者欺诈这种情况。父母作为第三方好像没法直接介入或者要求撤销。\n\n再想想，婚姻自由确实是一个很重要的原则，也就是说婚姻更多是夫妻双方自己的事情，法律应该保护这种个人选择，而不是让别人干涉。父母最多只能提供一些证明，比如如果婚姻真的是存在胁迫，父母能作证，但把婚姻撤销这件事还是得婚姻当事人自己去提出才行。\n\n这样看来，父母不能随意撤销子女婚姻是有法律支撑的。总结一下，在法律上，父母一般不能撤销子女的婚姻，除非婚姻确实有胁迫或欺诈等问题，但是即便是这样，最终只能由子女自己提出撤销申请，而不是父母代办。嗯，回答这个问题的结论很明确了。\n</Internal Thinking>\n\n<Question>\n父母一般是否可以撤销子女婚姻?\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"定义问题范围\",\n      \"content\": \"需要明确父母是否可以以法律手段干预子女的婚姻。从法律角度分析，婚姻关系是否可以被父母撤销，以及父母在子女婚姻中的合法权利和限制。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"检索相关法律规定\",\n      \"content\": \"我国婚姻法及相关立法如何规定婚姻关系的撤销和有效性，这将决定父母是否有权介入子女婚姻关系。需要检索相关条款。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"查找法律条款\",\n      \"content\": \"<search>中国婚姻法 婚姻撤销</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"获取婚姻法相关信息\",\n      \"content\": \"<information>《中华人民共和国民法典》第1051条规定，婚姻可以因胁迫、欺诈等特定条件申请撤销。但只有受胁迫或欺诈的一方当事人可以要求撤销，第三方（如父母）不具备直接申请的权利。此外，夫妻双方在婚姻中享有平等权利，婚姻自由是法律保护的核心原则。</information>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析法律语言\",\n      \"content\": \"从上述法律分析可以得出，父母无权直接撤销子女的婚姻关系。仅在特定情况下，例如婚姻存在胁迫或欺诈，子女本人可依法申请撤销，父母可能作为间接证明人或辅助角色提供协助。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"明确结论\",\n      \"content\": \"结合民法典的规定，父母无权单方面撤销子女婚姻。婚姻关系受个人自由保护，仅当婚姻存在法律规定的可撤销情形时且由当事人之一提出申请才可能撤销。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"根据《中华人民共和国民法典》的相关规定，父母无权单方面撤销子女的婚姻。婚姻自由是法律保护的重要原则，仅在婚姻存在胁迫、欺诈等情况下，婚姻当事人自己可以依法申请撤销，而不是由父母行使撤销权。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"结论符合《中华人民共和国民法典》的相关条款，法律明确规定第三方（如父母）无法直接干涉或撤销他人的婚姻关系。因此，结论正确，无需进一步分析。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"嗯，父母可以撤销子女的婚姻吗？这个问题有点复杂，貌似要看具体情况。先想想婚姻关系的法律原则吧，直觉觉得婚姻应该是个人自由的一部分，父母应该不能随便干涉。但还是需要确认一下法律怎么规定，特别是中国的婚姻法。要不先搜一下相关的法律条款？<search>中国婚姻法 婚姻撤销</search>\\n\\n哦，结果出来了。<information>《中华人民共和国民法典》第1051条规定，婚姻可以因胁迫、欺诈等特定条件申请撤销。但只有受胁迫或欺诈的一方当事人可以要求撤销，第三方（如父母）不具备直接申请的权利。此外，夫妻双方在婚姻中享有平等权利，婚姻自由是法律保护的核心原则。</information>法律写得挺清楚啊，原来撤销婚姻只有婚姻当事人自己可以提出，比如胁迫或者欺诈这种情况。父母作为第三方好像没法直接介入或者要求撤销。\\n\\n再想想，婚姻自由确实是一个很重要的原则，也就是说婚姻更多是夫妻双方自己的事情，法律应该保护这种个人选择，而不是让别人干涉。父母最多只能提供一些证明，比如如果婚姻真的是存在胁迫，父母能作证，但把婚姻撤销这件事还是得婚姻当事人自己去提出才行。\\n\\n这样看来，父母不能随意撤销子女婚姻是有法律支撑的。总结一下，在法律上，父母一般不能撤销子女的婚姻，除非婚姻确实有胁迫或欺诈等问题，但是即便是这样，最终只能由子女自己提出撤销申请，而不是父母代办。嗯，回答这个问题的结论很明确了。\"\n}\n```",
+    "在中国法律中，父母一般是不能撤销子女婚姻的。根据《中华人民共和国民法典》第1051条，婚姻的撤销仅限于因胁迫或欺诈等特定情况才可申请，但必须由婚姻当事人（即夫妻中的一方）本人申请，第三方（包括父母）无权直接提出撤销申请。\n\n婚姻自由是中国法律保护的核心原则，婚姻的缔结和解除属于当事人的个人权利。即使父母认为子女的婚姻存在问题，他们也只能在合法范围内提供支持或建议，而不能干涉甚至要求撤销婚姻。\n\n总结来说，除非婚姻确实存在胁迫或欺诈等法定情形，而且由子女本人提出撤销请求，父母无法通过法律途径直接撤销子女的婚姻。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "定义问题范围",
+        "content": "需要明确父母是否可以以法律手段干预子女的婚姻。从法律角度分析，婚姻关系是否可以被父母撤销，以及父母在子女婚姻中的合法权利和限制。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "检索相关法律规定",
+        "content": "我国婚姻法及相关立法如何规定婚姻关系的撤销和有效性，这将决定父母是否有权介入子女婚姻关系。需要检索相关条款。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "查找法律条款",
+        "content": "<search>中国婚姻法 婚姻撤销</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "获取婚姻法相关信息",
+        "content": "<information>《中华人民共和国民法典》第1051条规定，婚姻可以因胁迫、欺诈等特定条件申请撤销。但只有受胁迫或欺诈的一方当事人可以要求撤销，第三方（如父母）不具备直接申请的权利。此外，夫妻双方在婚姻中享有平等权利，婚姻自由是法律保护的核心原则。</information>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "分析法律语言",
+        "content": "从上述法律分析可以得出，父母无权直接撤销子女的婚姻关系。仅在特定情况下，例如婚姻存在胁迫或欺诈，子女本人可依法申请撤销，父母可能作为间接证明人或辅助角色提供协助。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "明确结论",
+        "content": "结合民法典的规定，父母无权单方面撤销子女婚姻。婚姻关系受个人自由保护，仅当婚姻存在法律规定的可撤销情形时且由当事人之一提出申请才可能撤销。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "根据《中华人民共和国民法典》的相关规定，父母无权单方面撤销子女的婚姻。婚姻自由是法律保护的重要原则，仅在婚姻存在胁迫、欺诈等情况下，婚姻当事人自己可以依法申请撤销，而不是由父母行使撤销权。"
+      },
+      {
+        "action": "Verification",
+        "content": "结论符合《中华人民共和国民法典》的相关条款，法律明确规定第三方（如父母）无法直接干涉或撤销他人的婚姻关系。因此，结论正确，无需进一步分析。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "嗯，父母可以撤销子女的婚姻吗？这个问题有点复杂，貌似要看具体情况。先想想婚姻关系的法律原则吧，直觉觉得婚姻应该是个人自由的一部分，父母应该不能随便干涉。但还是需要确认一下法律怎么规定，特别是中国的婚姻法。要不先搜一下相关的法律条款？<search>中国婚姻法 婚姻撤销</search>\n\n哦，结果出来了。<information>《中华人民共和国民法典》第1051条规定，婚姻可以因胁迫、欺诈等特定条件申请撤销。但只有受胁迫或欺诈的一方当事人可以要求撤销，第三方（如父母）不具备直接申请的权利。此外，夫妻双方在婚姻中享有平等权利，婚姻自由是法律保护的核心原则。</information>法律写得挺清楚啊，原来撤销婚姻只有婚姻当事人自己可以提出，比如胁迫或者欺诈这种情况。父母作为第三方好像没法直接介入或者要求撤销。\n\n再想想，婚姻自由确实是一个很重要的原则，也就是说婚姻更多是夫妻双方自己的事情，法律应该保护这种个人选择，而不是让别人干涉。父母最多只能提供一些证明，比如如果婚姻真的是存在胁迫，父母能作证，但把婚姻撤销这件事还是得婚姻当事人自己去提出才行。\n\n这样看来，父母不能随意撤销子女婚姻是有法律支撑的。总结一下，在法律上，父母一般不能撤销子女的婚姻，除非婚姻确实有胁迫或欺诈等问题，但是即便是这样，最终只能由子女自己提出撤销申请，而不是父母代办。嗯，回答这个问题的结论很明确了。",
+  "Response": "在中国法律中，父母一般是不能撤销子女婚姻的。根据《中华人民共和国民法典》第1051条，婚姻的撤销仅限于因胁迫或欺诈等特定情况才可申请，但必须由婚姻当事人（即夫妻中的一方）本人申请，第三方（包括父母）无权直接提出撤销申请。\n\n婚姻自由是中国法律保护的核心原则，婚姻的缔结和解除属于当事人的个人权利。即使父母认为子女的婚姻存在问题，他们也只能在合法范围内提供支持或建议，而不能干涉甚至要求撤销婚姻。\n\n总结来说，除非婚姻确实存在胁迫或欺诈等法定情形，而且由子女本人提出撤销请求，父母无法通过法律途径直接撤销子女的婚姻。",
+  "Question": "父母一般是否可以撤销子女婚姻?"
+}

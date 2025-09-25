@@ -1,0 +1,85 @@
+{
+  "Open-ended Verifiable Question": "养子有没有财产继承权？",
+  "Ground-True Answer": "1、养子有财产继承权。收养程序如果符合法律规定的话，收养的子女与收养人之间实际已形成法律上的父母和子女关系，在被继承人死亡后，养子也是合法继承人之一，也是有继承权的。\n法律依据：《中华人民共和国民法典》第一千一百二十七条 遗产按照下列顺序继承：(1)第一顺序：配偶、子女、父母;(2)第二顺序：兄弟姐妹、祖父母、外祖父母。继承开始后，由第一顺序继承人继承，第二顺序继承人不继承;没有第一顺序继承人继承的，由第二顺序继承人继承。本编所称子女，包括婚生子女、非婚生子女、养子女和有扶养关系的继子女。本编所称父母，包括生父母、养父母和有扶养关系的继父母。本编所称兄弟姐妹，包括同父母的兄弟姐妹、同父异母或者同母异父的兄弟姐妹、养兄弟姐妹、有扶养关系的继兄弟姐妹。",
+  "process_id": 5883,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "明确问题背景",
+      "content": "养子是否具有财产继承权在法律上通常涉及继承法相关的规定。根据中国法律背景，需明确养子与养父母之间是否存在法律上的收养关系，这是决定是否有继承权的基础。若养子与养父母的收养关系依法成立，则养子与养父母之间具有法律上的亲属关系，原则上享有继承权。需要查找关于继承法及收养法相关规定的具体内容。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "寻找相关法律规定",
+      "content": "根据上一步骤，需要确认中国继承法和收养法中关于养子财产继承权的规定。为了进一步核实，需要检索相关法律文本内容。执行搜索。",
+      "object_to_search": "<search>继承法 收养法</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "分析法律内容",
+      "content": "<information>根据继承法(中华人民共和国继承法)的规定，法定继承人包括子女、配偶、父母等；而收养法(中华人民共和国收养法)明确指出，依法办理收养手续后，养子女与养父母之间形成了法律上的亲子关系。养子女享有与亲生子女同等的权利和义务，因此在养父母死亡后，养子女作为法定继承人依法享有继承权。</information>基于上述内容，可推断如果养子与养父母之间形成合法的收养关系，则养子有继承权。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "归纳结论",
+      "content": "根据法律规定，养子如与养父母建立了依法认可的收养关系，则法律上养子拥有继承权，享有与亲生子女同等的继承权利。若没有合法的收养关系，则养子无法以继承人的身份享有继承权。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "养子是否有财产继承权，取决于其与养父母之间是否存在合法的收养关系。根据中国继承法和收养法的规定，如果养子与养父母依法建立收养关系，则养子拥有法定继承权，与亲生子女享有同等的继承权利。否则，养子无法以继承人的身份获得继承权。"
+    },
+    {
+      "action": "Verification",
+      "content": "根据相关法律规定和分析，结论完全正确且逻辑推导充分。最终结论无需调整，问题解答完成。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n养子有没有财产继承权？\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n养子是否有财产继承权，取决于其与养父母之间是否存在合法的收养关系。根据中国继承法和收养法的规定，如果养子与养父母依法建立收养关系，则养子拥有法定继承权，与亲生子女享有同等的继承权利。否则，养子无法以继承人的身份获得继承权。  \n</Model Response>  \n\n<Reference Answer>  \n1、养子有财产继承权。收养程序如果符合法律规定的话，收养的子女与收养人之间实际已形成法律上的父母和子女关系，在被继承人死亡后，养子也是合法继承人之一，也是有继承权的。\n法律依据：《中华人民共和国民法典》第一千一百二十七条 遗产按照下列顺序继承：(1)第一顺序：配偶、子女、父母;(2)第二顺序：兄弟姐妹、祖父母、外祖父母。继承开始后，由第一顺序继承人继承，第二顺序继承人不继承;没有第一顺序继承人继承的，由第二顺序继承人继承。本编所称子女，包括婚生子女、非婚生子女、养子女和有扶养关系的继子女。本编所称父母，包括生父母、养父母和有扶养关系的继父母。本编所称兄弟姐妹，包括同父母的兄弟姐妹、同父异母或者同母异父的兄弟姐妹、养兄弟姐妹、有扶养关系的继兄弟姐妹。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 明确问题背景\n养子是否具有财产继承权在法律上通常涉及继承法相关的规定。根据中国法律背景，需明确养子与养父母之间是否存在法律上的收养关系，这是决定是否有继承权的基础。若养子与养父母的收养关系依法成立，则养子与养父母之间具有法律上的亲属关系，原则上享有继承权。需要查找关于继承法及收养法相关规定的具体内容。\n\n### 寻找相关法律规定\n根据上一步骤，需要确认中国继承法和收养法中关于养子财产继承权的规定。为了进一步核实，需要检索相关法律文本内容。执行搜索。\n\n### 分析法律内容\n<information>根据继承法(中华人民共和国继承法)的规定，法定继承人包括子女、配偶、父母等；而收养法(中华人民共和国收养法)明确指出，依法办理收养手续后，养子女与养父母之间形成了法律上的亲子关系。养子女享有与亲生子女同等的权利和义务，因此在养父母死亡后，养子女作为法定继承人依法享有继承权。</information>基于上述内容，可推断如果养子与养父母之间形成合法的收养关系，则养子有继承权。\n\n### 归纳结论\n根据法律规定，养子如与养父母建立了依法认可的收养关系，则法律上养子拥有继承权，享有与亲生子女同等的继承权利。若没有合法的收养关系，则养子无法以继承人的身份享有继承权。\n\n### Conclusion\n养子是否有财产继承权，取决于其与养父母之间是否存在合法的收养关系。根据中国继承法和收养法的规定，如果养子与养父母依法建立收养关系，则养子拥有法定继承权，与亲生子女享有同等的继承权利。否则，养子无法以继承人的身份获得继承权。\n\n### Verification\n根据相关法律规定和分析，结论完全正确且逻辑推导充分。最终结论无需调整，问题解答完成。\n</Thought Process>\n\n<Question>\n养子有没有财产继承权？\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```"
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"明确问题背景\",\n      \"content\": \"养子是否具有财产继承权在法律上通常涉及继承法相关的规定。根据中国法律背景，需明确养子与养父母之间是否存在法律上的收养关系，这是决定是否有继承权的基础。若养子与养父母的收养关系依法成立，则养子与养父母之间具有法律上的亲属关系，原则上享有继承权。需要查找关于继承法及收养法相关规定的具体内容。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"寻找相关法律规定\",\n      \"content\": \"根据上一步骤，需要确认中国继承法和收养法中关于养子财产继承权的规定。为了进一步核实，需要检索相关法律文本内容。执行搜索。\",\n      \"object_to_search\": \"<search>继承法 收养法</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析法律内容\",\n      \"content\": \"<information>根据继承法(中华人民共和国继承法)的规定，法定继承人包括子女、配偶、父母等；而收养法(中华人民共和国收养法)明确指出，依法办理收养手续后，养子女与养父母之间形成了法律上的亲子关系。养子女享有与亲生子女同等的权利和义务，因此在养父母死亡后，养子女作为法定继承人依法享有继承权。</information>基于上述内容，可推断如果养子与养父母之间形成合法的收养关系，则养子有继承权。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"归纳结论\",\n      \"content\": \"根据法律规定，养子如与养父母建立了依法认可的收养关系，则法律上养子拥有继承权，享有与亲生子女同等的继承权利。若没有合法的收养关系，则养子无法以继承人的身份享有继承权。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"养子是否有财产继承权，取决于其与养父母之间是否存在合法的收养关系。根据中国继承法和收养法的规定，如果养子与养父母依法建立收养关系，则养子拥有法定继承权，与亲生子女享有同等的继承权利。否则，养子无法以继承人的身份获得继承权。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"根据相关法律规定和分析，结论完全正确且逻辑推导充分。最终结论无需调整，问题解答完成。\"\n    }\n  ]\n}\n```",
+    "True"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "明确问题背景",
+        "content": "养子是否具有财产继承权在法律上通常涉及继承法相关的规定。根据中国法律背景，需明确养子与养父母之间是否存在法律上的收养关系，这是决定是否有继承权的基础。若养子与养父母的收养关系依法成立，则养子与养父母之间具有法律上的亲属关系，原则上享有继承权。需要查找关于继承法及收养法相关规定的具体内容。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "寻找相关法律规定",
+        "content": "根据上一步骤，需要确认中国继承法和收养法中关于养子财产继承权的规定。为了进一步核实，需要检索相关法律文本内容。执行搜索。",
+        "object_to_search": "<search>继承法 收养法</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "分析法律内容",
+        "content": "<information>根据继承法(中华人民共和国继承法)的规定，法定继承人包括子女、配偶、父母等；而收养法(中华人民共和国收养法)明确指出，依法办理收养手续后，养子女与养父母之间形成了法律上的亲子关系。养子女享有与亲生子女同等的权利和义务，因此在养父母死亡后，养子女作为法定继承人依法享有继承权。</information>基于上述内容，可推断如果养子与养父母之间形成合法的收养关系，则养子有继承权。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "归纳结论",
+        "content": "根据法律规定，养子如与养父母建立了依法认可的收养关系，则法律上养子拥有继承权，享有与亲生子女同等的继承权利。若没有合法的收养关系，则养子无法以继承人的身份享有继承权。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "养子是否有财产继承权，取决于其与养父母之间是否存在合法的收养关系。根据中国继承法和收养法的规定，如果养子与养父母依法建立收养关系，则养子拥有法定继承权，与亲生子女享有同等的继承权利。否则，养子无法以继承人的身份获得继承权。"
+      },
+      {
+        "action": "Verification",
+        "content": "根据相关法律规定和分析，结论完全正确且逻辑推导充分。最终结论无需调整，问题解答完成。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": []
+}

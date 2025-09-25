@@ -1,0 +1,119 @@
+{
+  "Open-ended Verifiable Question": "邻居新盖的二层小楼挡住了阳光，怎么办?",
+  "Ground-True Answer": "建造建筑物应当考虑到相邻建筑的采光、通风和日照等实际情况，如对相邻建筑物有上述妨碍，施工单位或者个人应当停止施工行为或者给予相应赔偿。对此，《民法典》规定：“建造建筑物，不得违反国家有关工程建设标准，妨碍相邻建筑物的通风、采光和日照。”也就是说，在建造房屋时，建房者不能违反国家有关工程建设的标准，也不能妨碍相邻建筑物的通风和采风、日照。根据您所说的情况，邻居建设的二层小楼已经妨碍到您房屋的正常采光，严重影响到您和家人的正常生活居住环境，并且在一定程度上也降低了您家房屋的价值。由于房屋已经建好，若要求其恢复原状不太现实，因此，若您向法院提出诉讼，仅要求邻居进行损害赔偿，法院会给予支持。 法律依据：《中华人民共和国民法典》第二百九十三条　建造建筑物，不得违反国家有关工程建设标准，不得妨碍相邻建筑物的通风、采光和日照。",
+  "process_id": 251,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "确定问题性质",
+      "content": "邻居新盖的二层建筑导致阳光被挡住，可能涉及到建筑高度、合法性或采光权等相关法律问题。需要进一步了解采光权的法律规定。进行检索以确认相关法律依据。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "寻找采光权相关法律依据",
+      "content": "<search>采光权 法律规定</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "理解采光权法律规定",
+      "content": "<information>《中华人民共和国民法典》中对采光权有所规定，尤其是第七编“侵权责任”中的相关条款提到，如果建筑的设计、施工导致对邻居的合法权益（包括采光）的妨碍，可能构成侵权。此外地方性条例可能会对建筑高度、间距等有具体要求。</information>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "评估邻居建筑的合法性",
+      "content": "需要确定邻居建筑是否符合地方规划和建筑许可要求，包括建筑高度是否符合规定，是否妨碍了我的采光权。进行检索以确认地方性建筑规划条例。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "寻找地方性建筑规划条例",
+      "content": "<search>地方建筑规划条例 采光限制</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "验证建筑规划条例",
+      "content": "<information>地方建筑规划条例规定：建筑的建设必须符合相关间距要求，以确保邻居之间的采光以及通风不受妨碍。如出现侵权情况，受影响方可申请行政部门介入或提起民事诉讼。</information>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "确认是否可以解决问题",
+      "content": "根据《民法典》和地方建筑规划条例，如果邻居建筑确实违反建筑规范或妨害采光权，可以选择以下路径解决问题：1. 与邻居沟通，协商解决；2. 向当地规划部门投诉，要求进行调查；3. 提起民事诉讼，寻求法律赔偿或建筑调整。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "邻居建筑可能违反采光权或地方性建筑规划条例。建议首先与邻居积极沟通，说明问题并寻求友好解决。如果沟通无果，可以向当地规划部门投诉，要求调查建筑合法性。同时，如果发现明确侵权行为，可以依据《民法典》第七编，通过法律途径保护自己的权益，提起民事诉讼寻求赔偿或调整建筑方案。"
+    },
+    {
+      "action": "Verification",
+      "content": "结论合理且符合法律规范。通过协商、投诉或法律渠道可以解决邻居建筑挡住阳光的问题。过程结束。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n邻居新盖的二层小楼挡住了阳光，怎么办?\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n邻居建筑可能违反采光权或地方性建筑规划条例。建议首先与邻居积极沟通，说明问题并寻求友好解决。如果沟通无果，可以向当地规划部门投诉，要求调查建筑合法性。同时，如果发现明确侵权行为，可以依据《民法典》第七编，通过法律途径保护自己的权益，提起民事诉讼寻求赔偿或调整建筑方案。  \n</Model Response>  \n\n<Reference Answer>  \n建造建筑物应当考虑到相邻建筑的采光、通风和日照等实际情况，如对相邻建筑物有上述妨碍，施工单位或者个人应当停止施工行为或者给予相应赔偿。对此，《民法典》规定：“建造建筑物，不得违反国家有关工程建设标准，妨碍相邻建筑物的通风、采光和日照。”也就是说，在建造房屋时，建房者不能违反国家有关工程建设的标准，也不能妨碍相邻建筑物的通风和采风、日照。根据您所说的情况，邻居建设的二层小楼已经妨碍到您房屋的正常采光，严重影响到您和家人的正常生活居住环境，并且在一定程度上也降低了您家房屋的价值。由于房屋已经建好，若要求其恢复原状不太现实，因此，若您向法院提出诉讼，仅要求邻居进行损害赔偿，法院会给予支持。 法律依据：《中华人民共和国民法典》第二百九十三条　建造建筑物，不得违反国家有关工程建设标准，不得妨碍相邻建筑物的通风、采光和日照。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 确定问题性质\n邻居新盖的二层建筑导致阳光被挡住，可能涉及到建筑高度、合法性或采光权等相关法律问题。需要进一步了解采光权的法律规定。进行检索以确认相关法律依据。\n\n### 寻找采光权相关法律依据\n<search>采光权 法律规定</search>\n\n### 理解采光权法律规定\n<information>《中华人民共和国民法典》中对采光权有所规定，尤其是第七编“侵权责任”中的相关条款提到，如果建筑的设计、施工导致对邻居的合法权益（包括采光）的妨碍，可能构成侵权。此外地方性条例可能会对建筑高度、间距等有具体要求。</information>\n\n### 评估邻居建筑的合法性\n需要确定邻居建筑是否符合地方规划和建筑许可要求，包括建筑高度是否符合规定，是否妨碍了我的采光权。进行检索以确认地方性建筑规划条例。\n\n### 寻找地方性建筑规划条例\n<search>地方建筑规划条例 采光限制</search>\n\n### 验证建筑规划条例\n<information>地方建筑规划条例规定：建筑的建设必须符合相关间距要求，以确保邻居之间的采光以及通风不受妨碍。如出现侵权情况，受影响方可申请行政部门介入或提起民事诉讼。</information>\n\n### 确认是否可以解决问题\n根据《民法典》和地方建筑规划条例，如果邻居建筑确实违反建筑规范或妨害采光权，可以选择以下路径解决问题：1. 与邻居沟通，协商解决；2. 向当地规划部门投诉，要求进行调查；3. 提起民事诉讼，寻求法律赔偿或建筑调整。\n\n### Conclusion\n邻居建筑可能违反采光权或地方性建筑规划条例。建议首先与邻居积极沟通，说明问题并寻求友好解决。如果沟通无果，可以向当地规划部门投诉，要求调查建筑合法性。同时，如果发现明确侵权行为，可以依据《民法典》第七编，通过法律途径保护自己的权益，提起民事诉讼寻求赔偿或调整建筑方案。\n\n### Verification\n结论合理且符合法律规范。通过协商、投诉或法律渠道可以解决邻居建筑挡住阳光的问题。过程结束。\n</Thought Process>\n\n<Question>\n邻居新盖的二层小楼挡住了阳光，怎么办?\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n邻居新盖了一栋二层楼，感觉挡住了我家这边的阳光，这让我很烦恼。但解决问题之前，我得先搞清楚这种情况是不是违反了什么法律，或者有没有办法通过法律来维护我的权益。\n\n首先，我想到的就是采光权。听说过采光权这个概念，好像是跟阳光有关的。嗯，我得查一下具体的法律规定，看看采光权到底是什么样子的，法律是不是对这种情况有明确说法。<search>采光权 法律规定</search>\n\n搜到一些信息了！看起来在《中华人民共和国民法典》里面确实有提到采光权，尤其是在“侵权责任”的部分。如果一个建筑设计或者施工妨碍到了邻居的合法权益，像采光这样的情况，可以算是侵权吧。另外，好像还有地方上具体的条例会规定建筑的间距、高度这些内容。我得确认一下邻居这栋楼是不是符合这些要求。\n\n嗯，接下来我要查一下我们当地有没有那种地方建筑规划的条例，说不定对间距或者高度还有更具体的规定。<search>地方建筑规划条例 采光限制</search>\n\n看到了！根据地方建筑规划的规定，邻里之间建筑要注意保持一定的间距，以保证采光和通风条件。如果有出现像这种侵权情况，可以投诉到规划部门，或者干脆走法律程序。那我得仔细想想，我现在能做些什么。\n\n所以，现在有几条路可以考虑。第一步可能还是先和邻居好好沟通一下，跟他说一说问题，看能不能商量个办法。如果沟通不成，那就只能更正式一点了，比如去找当地规划部门投诉，请他们来调查一下这个建筑是不是违规划。如果最后连这样都没办法，那我可能就得考虑法律途径了，直接提起民事诉讼，要求赔偿或者让邻居调整建筑。\n\n不过在这之前，我还得再去确认一下邻居这栋二楼小楼的相关许可，比如它是否获得合法建设审批，建筑高度和间距是不是都达标。这些都可以作为判断依据。\n\n总的来说呢，解决这个问题的步骤大概就是从沟通开始，逐步向投诉或者诉讼推进。我先试试沟通，希望问题可以简单解决。如果不行，那只能严格按照法律程序来争取我的权益了。\n</Internal Thinking>\n\n<Question>\n邻居新盖的二层小楼挡住了阳光，怎么办?\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"确定问题性质\",\n      \"content\": \"邻居新盖的二层建筑导致阳光被挡住，可能涉及到建筑高度、合法性或采光权等相关法律问题。需要进一步了解采光权的法律规定。进行检索以确认相关法律依据。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"寻找采光权相关法律依据\",\n      \"content\": \"<search>采光权 法律规定</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"理解采光权法律规定\",\n      \"content\": \"<information>《中华人民共和国民法典》中对采光权有所规定，尤其是第七编“侵权责任”中的相关条款提到，如果建筑的设计、施工导致对邻居的合法权益（包括采光）的妨碍，可能构成侵权。此外地方性条例可能会对建筑高度、间距等有具体要求。</information>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"评估邻居建筑的合法性\",\n      \"content\": \"需要确定邻居建筑是否符合地方规划和建筑许可要求，包括建筑高度是否符合规定，是否妨碍了我的采光权。进行检索以确认地方性建筑规划条例。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"寻找地方性建筑规划条例\",\n      \"content\": \"<search>地方建筑规划条例 采光限制</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"验证建筑规划条例\",\n      \"content\": \"<information>地方建筑规划条例规定：建筑的建设必须符合相关间距要求，以确保邻居之间的采光以及通风不受妨碍。如出现侵权情况，受影响方可申请行政部门介入或提起民事诉讼。</information>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"确认是否可以解决问题\",\n      \"content\": \"根据《民法典》和地方建筑规划条例，如果邻居建筑确实违反建筑规范或妨害采光权，可以选择以下路径解决问题：1. 与邻居沟通，协商解决；2. 向当地规划部门投诉，要求进行调查；3. 提起民事诉讼，寻求法律赔偿或建筑调整。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"邻居建筑可能违反采光权或地方性建筑规划条例。建议首先与邻居积极沟通，说明问题并寻求友好解决。如果沟通无果，可以向当地规划部门投诉，要求调查建筑合法性。同时，如果发现明确侵权行为，可以依据《民法典》第七编，通过法律途径保护自己的权益，提起民事诉讼寻求赔偿或调整建筑方案。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"结论合理且符合法律规范。通过协商、投诉或法律渠道可以解决邻居建筑挡住阳光的问题。过程结束。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"邻居新盖了一栋二层楼，感觉挡住了我家这边的阳光，这让我很烦恼。但解决问题之前，我得先搞清楚这种情况是不是违反了什么法律，或者有没有办法通过法律来维护我的权益。\\n\\n首先，我想到的就是采光权。听说过采光权这个概念，好像是跟阳光有关的。嗯，我得查一下具体的法律规定，看看采光权到底是什么样子的，法律是不是对这种情况有明确说法。<search>采光权 法律规定</search>\\n\\n搜到一些信息了！看起来在《中华人民共和国民法典》里面确实有提到采光权，尤其是在“侵权责任”的部分。如果一个建筑设计或者施工妨碍到了邻居的合法权益，像采光这样的情况，可以算是侵权吧。另外，好像还有地方上具体的条例会规定建筑的间距、高度这些内容。我得确认一下邻居这栋楼是不是符合这些要求。\\n\\n嗯，接下来我要查一下我们当地有没有那种地方建筑规划的条例，说不定对间距或者高度还有更具体的规定。<search>地方建筑规划条例 采光限制</search>\\n\\n看到了！根据地方建筑规划的规定，邻里之间建筑要注意保持一定的间距，以保证采光和通风条件。如果有出现像这种侵权情况，可以投诉到规划部门，或者干脆走法律程序。那我得仔细想想，我现在能做些什么。\\n\\n所以，现在有几条路可以考虑。第一步可能还是先和邻居好好沟通一下，跟他说一说问题，看能不能商量个办法。如果沟通不成，那就只能更正式一点了，比如去找当地规划部门投诉，请他们来调查一下这个建筑是不是违规划。如果最后连这样都没办法，那我可能就得考虑法律途径了，直接提起民事诉讼，要求赔偿或者让邻居调整建筑。\\n\\n不过在这之前，我还得再去确认一下邻居这栋二楼小楼的相关许可，比如它是否获得合法建设审批，建筑高度和间距是不是都达标。这些都可以作为判断依据。\\n\\n总的来说呢，解决这个问题的步骤大概就是从沟通开始，逐步向投诉或者诉讼推进。我先试试沟通，希望问题可以简单解决。如果不行，那只能严格按照法律程序来争取我的权益了。\"\n}\n```",
+    "如果邻居新建的二层楼挡住了您家的阳光，可能涉及到采光权的问题。处理这种情况可以分以下几个步骤：\n\n1. **与邻居沟通**  \n   首先，建议您与邻居友好协商，说明新建筑对您采光造成的影响。也许可以通过沟通找到双方都能够接受的解决方案，比如调整建筑结构或增加补偿方式。\n\n2. **确认建筑是否符合法规**  \n   您可以查询地方建筑规划的相关规定，了解建筑间距、楼高限制等标准。通常这些规定会有明确的要求，以保障邻里之间的采光和通风条件。同时，检查邻居的新建房屋是否获得了合法的建设审批。如果发现建筑存在违规划的情况，您可以向当地规划管理部门进行投诉，要求他们对该建筑进行调查。\n\n3. **寻求规划部门协调**  \n   如果与邻居沟通未果，且确认建筑可能存在违规，您可以向当地的住建局或规划部门投诉，说明情况并要求对建筑是否符合规定进行核查。规划部门或许会作出后续处理决定，比如责令整改或调整建筑。\n\n4. **法律途径维权**  \n   如果沟通和投诉均无法解决问题，您可以通过法律途径维护自己的权益。《中华人民共和国民法典》中提到，如果建筑设计或施工导致邻居的合法权益受到侵害（包括采光权），受害人可以向法院提起民事诉讼，要求赔偿或停止侵害行为。请注意，在提起诉讼之前，建议您收集相关证据，包括建筑对采光的具体影响、建筑是否符合规划要求、投诉记录等，以便法律程序更加顺利。\n\n在处理过程中，尽量保持冷静和理性。优先考虑协商解决，避免矛盾激化。如果问题无法通过沟通解决，依靠法律和政策维护您的权益是合适的选择。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "确定问题性质",
+        "content": "邻居新盖的二层建筑导致阳光被挡住，可能涉及到建筑高度、合法性或采光权等相关法律问题。需要进一步了解采光权的法律规定。进行检索以确认相关法律依据。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "寻找采光权相关法律依据",
+        "content": "<search>采光权 法律规定</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "理解采光权法律规定",
+        "content": "<information>《中华人民共和国民法典》中对采光权有所规定，尤其是第七编“侵权责任”中的相关条款提到，如果建筑的设计、施工导致对邻居的合法权益（包括采光）的妨碍，可能构成侵权。此外地方性条例可能会对建筑高度、间距等有具体要求。</information>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "评估邻居建筑的合法性",
+        "content": "需要确定邻居建筑是否符合地方规划和建筑许可要求，包括建筑高度是否符合规定，是否妨碍了我的采光权。进行检索以确认地方性建筑规划条例。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "寻找地方性建筑规划条例",
+        "content": "<search>地方建筑规划条例 采光限制</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "验证建筑规划条例",
+        "content": "<information>地方建筑规划条例规定：建筑的建设必须符合相关间距要求，以确保邻居之间的采光以及通风不受妨碍。如出现侵权情况，受影响方可申请行政部门介入或提起民事诉讼。</information>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "确认是否可以解决问题",
+        "content": "根据《民法典》和地方建筑规划条例，如果邻居建筑确实违反建筑规范或妨害采光权，可以选择以下路径解决问题：1. 与邻居沟通，协商解决；2. 向当地规划部门投诉，要求进行调查；3. 提起民事诉讼，寻求法律赔偿或建筑调整。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "邻居建筑可能违反采光权或地方性建筑规划条例。建议首先与邻居积极沟通，说明问题并寻求友好解决。如果沟通无果，可以向当地规划部门投诉，要求调查建筑合法性。同时，如果发现明确侵权行为，可以依据《民法典》第七编，通过法律途径保护自己的权益，提起民事诉讼寻求赔偿或调整建筑方案。"
+      },
+      {
+        "action": "Verification",
+        "content": "结论合理且符合法律规范。通过协商、投诉或法律渠道可以解决邻居建筑挡住阳光的问题。过程结束。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "邻居新盖了一栋二层楼，感觉挡住了我家这边的阳光，这让我很烦恼。但解决问题之前，我得先搞清楚这种情况是不是违反了什么法律，或者有没有办法通过法律来维护我的权益。\n\n首先，我想到的就是采光权。听说过采光权这个概念，好像是跟阳光有关的。嗯，我得查一下具体的法律规定，看看采光权到底是什么样子的，法律是不是对这种情况有明确说法。<search>采光权 法律规定</search>\n\n搜到一些信息了！看起来在《中华人民共和国民法典》里面确实有提到采光权，尤其是在“侵权责任”的部分。如果一个建筑设计或者施工妨碍到了邻居的合法权益，像采光这样的情况，可以算是侵权吧。另外，好像还有地方上具体的条例会规定建筑的间距、高度这些内容。我得确认一下邻居这栋楼是不是符合这些要求。\n\n嗯，接下来我要查一下我们当地有没有那种地方建筑规划的条例，说不定对间距或者高度还有更具体的规定。<search>地方建筑规划条例 采光限制</search>\n\n看到了！根据地方建筑规划的规定，邻里之间建筑要注意保持一定的间距，以保证采光和通风条件。如果有出现像这种侵权情况，可以投诉到规划部门，或者干脆走法律程序。那我得仔细想想，我现在能做些什么。\n\n所以，现在有几条路可以考虑。第一步可能还是先和邻居好好沟通一下，跟他说一说问题，看能不能商量个办法。如果沟通不成，那就只能更正式一点了，比如去找当地规划部门投诉，请他们来调查一下这个建筑是不是违规划。如果最后连这样都没办法，那我可能就得考虑法律途径了，直接提起民事诉讼，要求赔偿或者让邻居调整建筑。\n\n不过在这之前，我还得再去确认一下邻居这栋二楼小楼的相关许可，比如它是否获得合法建设审批，建筑高度和间距是不是都达标。这些都可以作为判断依据。\n\n总的来说呢，解决这个问题的步骤大概就是从沟通开始，逐步向投诉或者诉讼推进。我先试试沟通，希望问题可以简单解决。如果不行，那只能严格按照法律程序来争取我的权益了。",
+  "Response": "如果邻居新建的二层楼挡住了您家的阳光，可能涉及到采光权的问题。处理这种情况可以分以下几个步骤：\n\n1. **与邻居沟通**  \n   首先，建议您与邻居友好协商，说明新建筑对您采光造成的影响。也许可以通过沟通找到双方都能够接受的解决方案，比如调整建筑结构或增加补偿方式。\n\n2. **确认建筑是否符合法规**  \n   您可以查询地方建筑规划的相关规定，了解建筑间距、楼高限制等标准。通常这些规定会有明确的要求，以保障邻里之间的采光和通风条件。同时，检查邻居的新建房屋是否获得了合法的建设审批。如果发现建筑存在违规划的情况，您可以向当地规划管理部门进行投诉，要求他们对该建筑进行调查。\n\n3. **寻求规划部门协调**  \n   如果与邻居沟通未果，且确认建筑可能存在违规，您可以向当地的住建局或规划部门投诉，说明情况并要求对建筑是否符合规定进行核查。规划部门或许会作出后续处理决定，比如责令整改或调整建筑。\n\n4. **法律途径维权**  \n   如果沟通和投诉均无法解决问题，您可以通过法律途径维护自己的权益。《中华人民共和国民法典》中提到，如果建筑设计或施工导致邻居的合法权益受到侵害（包括采光权），受害人可以向法院提起民事诉讼，要求赔偿或停止侵害行为。请注意，在提起诉讼之前，建议您收集相关证据，包括建筑对采光的具体影响、建筑是否符合规划要求、投诉记录等，以便法律程序更加顺利。\n\n在处理过程中，尽量保持冷静和理性。优先考虑协商解决，避免矛盾激化。如果问题无法通过沟通解决，依靠法律和政策维护您的权益是合适的选择。",
+  "Question": "邻居新盖的二层小楼挡住了阳光，怎么办?"
+}

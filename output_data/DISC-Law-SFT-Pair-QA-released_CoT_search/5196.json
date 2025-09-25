@@ -1,0 +1,101 @@
+{
+  "Open-ended Verifiable Question": "合同宝盖头的定可以退定金吗?",
+  "Ground-True Answer": "合同如果属于收受定金的一方根本违约或者合同无效、被撤销的可以退定金。合同无效、被撤销的，当事人收受的定金应当予以返还。收受定金的一方根本违约的，应当双倍返还定金。《中华人民共和国民法典》第五百八十六条当事人可以约定一方向对方给付定金作为债权的担保。定金合同自实际交付定金时成立。定金的数额由当事人约定；但是，不得超过主合同标的额的百分之二十，超过部分不产生定金的效力。实际交付的定金数额多于或者少于约定数额的，视为变更约定的定金数额。第五百八十七条债务人履行债务的，定金应当抵作价款或者收回。给付定金的一方不履行债务或者履行债务不符合约定，致使不能实现合同目的的，无权请求返还定金；收受定金的一方不履行债务或者履行债务不符合约定，致使不能实现合同目的的，应当双倍返还定金。",
+  "process_id": 5196,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "确定问题涉及的法律概念",
+      "content": "问题涉及合同中定金是否可以退还，我们需要明确合同法中对定金的相关规定。首先，根据提问中的信息，判断是否需要明确《合同法》或其他相关法规中定金退还的条款。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "寻找与定金相关的法律规定",
+      "content": "为了回答此问题，有必要查看中国《合同法》或《民法典》中关于定金性质及退还条件的具体条款。例如，需搜索‘定金罚则’或相关法律条款以了解当事人是否有权要求退还定金。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "搜索定金罚则及相关规定",
+      "content": "搜索《民法典》第586条及相关内容，以明确定金在合同违约或履行场景中的退还处理规则。",
+      "search": "<search>定金罚则 民法典</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "解析搜索结果",
+      "content": "<information>《中华人民共和国民法典》第586条（原《合同法》第115条）明确规定：定金罚则是担保合同履行的一种手段。在给付定金一方不履行合同义务时，无权要求返还定金；而收取定金一方不履行义务时，应当双倍返还定金。另外，根据《民法典》，定金的约定需要做到书面化且实际支付，否则不能发生法律效力。</information>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "应用法律条款分析具体问题",
+      "content": "依据搜索结果，如果支付定金的一方（如买方）未履行合同义务，一般无权要求退还定金；相对地，如果接收定金的一方（如卖方）未履行义务，则需双倍返还定金。实际案例需视具体合同条款和履行状态来判断。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "根据《民法典（原《合同法》）第586条》，合同中的定金是否可以退还取决于合同的履行情况：如果支付定金一方违约，则无权要求退还定金；如果接受定金一方违约，则需双倍返还定金。实际处理中需要结合具体合同条款和双方的履行情况决定。"
+    },
+    {
+      "action": "Verification",
+      "content": "结论明确且与法律条款一致，解释合理无误。最终结论经验证成立。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n合同宝盖头的定可以退定金吗?\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n根据《民法典（原《合同法》）第586条》，合同中的定金是否可以退还取决于合同的履行情况：如果支付定金一方违约，则无权要求退还定金；如果接受定金一方违约，则需双倍返还定金。实际处理中需要结合具体合同条款和双方的履行情况决定。  \n</Model Response>  \n\n<Reference Answer>  \n合同如果属于收受定金的一方根本违约或者合同无效、被撤销的可以退定金。合同无效、被撤销的，当事人收受的定金应当予以返还。收受定金的一方根本违约的，应当双倍返还定金。《中华人民共和国民法典》第五百八十六条当事人可以约定一方向对方给付定金作为债权的担保。定金合同自实际交付定金时成立。定金的数额由当事人约定；但是，不得超过主合同标的额的百分之二十，超过部分不产生定金的效力。实际交付的定金数额多于或者少于约定数额的，视为变更约定的定金数额。第五百八十七条债务人履行债务的，定金应当抵作价款或者收回。给付定金的一方不履行债务或者履行债务不符合约定，致使不能实现合同目的的，无权请求返还定金；收受定金的一方不履行债务或者履行债务不符合约定，致使不能实现合同目的的，应当双倍返还定金。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 确定问题涉及的法律概念\n问题涉及合同中定金是否可以退还，我们需要明确合同法中对定金的相关规定。首先，根据提问中的信息，判断是否需要明确《合同法》或其他相关法规中定金退还的条款。\n\n### 寻找与定金相关的法律规定\n为了回答此问题，有必要查看中国《合同法》或《民法典》中关于定金性质及退还条件的具体条款。例如，需搜索‘定金罚则’或相关法律条款以了解当事人是否有权要求退还定金。\n\n### 搜索定金罚则及相关规定\n搜索《民法典》第586条及相关内容，以明确定金在合同违约或履行场景中的退还处理规则。\n\n### 解析搜索结果\n<information>《中华人民共和国民法典》第586条（原《合同法》第115条）明确规定：定金罚则是担保合同履行的一种手段。在给付定金一方不履行合同义务时，无权要求返还定金；而收取定金一方不履行义务时，应当双倍返还定金。另外，根据《民法典》，定金的约定需要做到书面化且实际支付，否则不能发生法律效力。</information>\n\n### 应用法律条款分析具体问题\n依据搜索结果，如果支付定金的一方（如买方）未履行合同义务，一般无权要求退还定金；相对地，如果接收定金的一方（如卖方）未履行义务，则需双倍返还定金。实际案例需视具体合同条款和履行状态来判断。\n\n### Conclusion\n根据《民法典（原《合同法》）第586条》，合同中的定金是否可以退还取决于合同的履行情况：如果支付定金一方违约，则无权要求退还定金；如果接受定金一方违约，则需双倍返还定金。实际处理中需要结合具体合同条款和双方的履行情况决定。\n\n### Verification\n结论明确且与法律条款一致，解释合理无误。最终结论经验证成立。\n</Thought Process>\n\n<Question>\n合同宝盖头的定可以退定金吗?\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n嗯，先来想想这个问题的核心，其实就是合同里的定金到底能不能退。嗯，‘定金’是合同法中的一个概念，平时好像听说过跟违约有关，那得先确认法律上怎么说。要不，先看看我国《民法典》是不是有关于定金的明确规定。中国的《民法典》应该有讲清楚这个的定义、规则，还有它在违约情况下的处理。\n\n好，记得以前有一个说法叫‘定金罚则’，好像是讲这个定金要怎么处理吧？嗯，还是实际查一下比较准。好像《民法典》里面有条586条专门管这个。我要查的就是，合同两边谁违约了，定金到底能不能退，以及什么情况下不能退或者要退双倍的。\n\n<search>‘民法典 定金 586条’</search>\n\n哦，找到了！<information>根据《中华人民共和国民法典》第586条，定金罚则是为了保障合同的履行。如果交定金的一方（比如买方）不履行合同义务，那么这个定金不能退。而如果是收定金的一方（比如卖方）不履行合同，则需要退还双倍定金。当然，有一个前提是这个定金必须在合同中有约定，并且实际支付过了。也就是说，不是嘴上说说收了定金就算数，还得有书面约定或者实际交付的证据才能生效。</information>\n\n这么说来，定金看起来是个双向约束的东西，如果一方违约就会用到。如果买方没履行合同（比如拒付尾款，不继续买了），卖方可以扣定金，但如果是卖方违约（比如不卖或者涨价违约），那买方就可以要求退双倍定金。嗯，这个逻辑挺清楚的。\n\n不过这里还有件事要注意，就是‘定金’必须是实际支付了的，比如有支付记录或者合同明确写明了定金。而且，它和‘订金’是不一样的，虽然发音是一样的但意思不同，‘订金’一般没有罚则，可以退。而‘定金’是有担保功能的，不履约了才会涉及不退或者双倍返还的规则。\n\n所以总结一下，定金能不能退得看是谁违约。如果交定金的那方违约，不好意思，定金是不能退的；而如果是收定金那方违约，那对不起，得退双倍的定金。但实际操作中，还得结合合同的具体条款和支付记录来判断。这个结论看来是根据法律条文来的，没啥问题。\n</Internal Thinking>\n\n<Question>\n合同宝盖头的定可以退定金吗?\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"确定问题涉及的法律概念\",\n      \"content\": \"问题涉及合同中定金是否可以退还，我们需要明确合同法中对定金的相关规定。首先，根据提问中的信息，判断是否需要明确《合同法》或其他相关法规中定金退还的条款。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"寻找与定金相关的法律规定\",\n      \"content\": \"为了回答此问题，有必要查看中国《合同法》或《民法典》中关于定金性质及退还条件的具体条款。例如，需搜索‘定金罚则’或相关法律条款以了解当事人是否有权要求退还定金。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"搜索定金罚则及相关规定\",\n      \"content\": \"搜索《民法典》第586条及相关内容，以明确定金在合同违约或履行场景中的退还处理规则。\",\n      \"search\": \"<search>定金罚则 民法典</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"解析搜索结果\",\n      \"content\": \"<information>《中华人民共和国民法典》第586条（原《合同法》第115条）明确规定：定金罚则是担保合同履行的一种手段。在给付定金一方不履行合同义务时，无权要求返还定金；而收取定金一方不履行义务时，应当双倍返还定金。另外，根据《民法典》，定金的约定需要做到书面化且实际支付，否则不能发生法律效力。</information>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"应用法律条款分析具体问题\",\n      \"content\": \"依据搜索结果，如果支付定金的一方（如买方）未履行合同义务，一般无权要求退还定金；相对地，如果接收定金的一方（如卖方）未履行义务，则需双倍返还定金。实际案例需视具体合同条款和履行状态来判断。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"根据《民法典（原《合同法》）第586条》，合同中的定金是否可以退还取决于合同的履行情况：如果支付定金一方违约，则无权要求退还定金；如果接受定金一方违约，则需双倍返还定金。实际处理中需要结合具体合同条款和双方的履行情况决定。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"结论明确且与法律条款一致，解释合理无误。最终结论经验证成立。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"嗯，先来想想这个问题的核心，其实就是合同里的定金到底能不能退。嗯，‘定金’是合同法中的一个概念，平时好像听说过跟违约有关，那得先确认法律上怎么说。要不，先看看我国《民法典》是不是有关于定金的明确规定。中国的《民法典》应该有讲清楚这个的定义、规则，还有它在违约情况下的处理。\\n\\n好，记得以前有一个说法叫‘定金罚则’，好像是讲这个定金要怎么处理吧？嗯，还是实际查一下比较准。好像《民法典》里面有条586条专门管这个。我要查的就是，合同两边谁违约了，定金到底能不能退，以及什么情况下不能退或者要退双倍的。\\n\\n<search>‘民法典 定金 586条’</search>\\n\\n哦，找到了！<information>根据《中华人民共和国民法典》第586条，定金罚则是为了保障合同的履行。如果交定金的一方（比如买方）不履行合同义务，那么这个定金不能退。而如果是收定金的一方（比如卖方）不履行合同，则需要退还双倍定金。当然，有一个前提是这个定金必须在合同中有约定，并且实际支付过了。也就是说，不是嘴上说说收了定金就算数，还得有书面约定或者实际交付的证据才能生效。</information>\\n\\n这么说来，定金看起来是个双向约束的东西，如果一方违约就会用到。如果买方没履行合同（比如拒付尾款，不继续买了），卖方可以扣定金，但如果是卖方违约（比如不卖或者涨价违约），那买方就可以要求退双倍定金。嗯，这个逻辑挺清楚的。\\n\\n不过这里还有件事要注意，就是‘定金’必须是实际支付了的，比如有支付记录或者合同明确写明了定金。而且，它和‘订金’是不一样的，虽然发音是一样的但意思不同，‘订金’一般没有罚则，可以退。而‘定金’是有担保功能的，不履约了才会涉及不退或者双倍返还的规则。\\n\\n所以总结一下，定金能不能退得看是谁违约。如果交定金的那方违约，不好意思，定金是不能退的；而如果是收定金那方违约，那对不起，得退双倍的定金。但实际操作中，还得结合合同的具体条款和支付记录来判断。这个结论看来是根据法律条文来的，没啥问题。\"\n}\n```",
+    "根据《中华人民共和国民法典》第586条的规定，是否可以退还定金取决于合同双方是否履行了合同义务以及违约方的责任：\n\n1. **如果交定金的一方（如买方）违约**：定金不能退还，也就是卖方可以没收定金。\n2. **如果收定金的一方（如卖方）违约**：卖方需要双倍返还定金，以此作为对买方的赔偿。\n\n需要注意的是，定金的约定和支付必须符合以下几点：\n- **合同中明确写明是“定金”**，而不是“订金”。“定金”具有法律上的担保效力，而“订金”一般不适用违约罚则，通常可以退回。\n- **定金必须实际支付**，否则“定金罚则”不成立。\n\n因此，退不退定金，关键要看是谁违约了。如果是交定金的一方违约，一般不能退；如果是收定金的一方违约，则需双倍退还。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "确定问题涉及的法律概念",
+        "content": "问题涉及合同中定金是否可以退还，我们需要明确合同法中对定金的相关规定。首先，根据提问中的信息，判断是否需要明确《合同法》或其他相关法规中定金退还的条款。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "寻找与定金相关的法律规定",
+        "content": "为了回答此问题，有必要查看中国《合同法》或《民法典》中关于定金性质及退还条件的具体条款。例如，需搜索‘定金罚则’或相关法律条款以了解当事人是否有权要求退还定金。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "搜索定金罚则及相关规定",
+        "content": "搜索《民法典》第586条及相关内容，以明确定金在合同违约或履行场景中的退还处理规则。",
+        "search": "<search>定金罚则 民法典</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "解析搜索结果",
+        "content": "<information>《中华人民共和国民法典》第586条（原《合同法》第115条）明确规定：定金罚则是担保合同履行的一种手段。在给付定金一方不履行合同义务时，无权要求返还定金；而收取定金一方不履行义务时，应当双倍返还定金。另外，根据《民法典》，定金的约定需要做到书面化且实际支付，否则不能发生法律效力。</information>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "应用法律条款分析具体问题",
+        "content": "依据搜索结果，如果支付定金的一方（如买方）未履行合同义务，一般无权要求退还定金；相对地，如果接收定金的一方（如卖方）未履行义务，则需双倍返还定金。实际案例需视具体合同条款和履行状态来判断。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "根据《民法典（原《合同法》）第586条》，合同中的定金是否可以退还取决于合同的履行情况：如果支付定金一方违约，则无权要求退还定金；如果接受定金一方违约，则需双倍返还定金。实际处理中需要结合具体合同条款和双方的履行情况决定。"
+      },
+      {
+        "action": "Verification",
+        "content": "结论明确且与法律条款一致，解释合理无误。最终结论经验证成立。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "嗯，先来想想这个问题的核心，其实就是合同里的定金到底能不能退。嗯，‘定金’是合同法中的一个概念，平时好像听说过跟违约有关，那得先确认法律上怎么说。要不，先看看我国《民法典》是不是有关于定金的明确规定。中国的《民法典》应该有讲清楚这个的定义、规则，还有它在违约情况下的处理。\n\n好，记得以前有一个说法叫‘定金罚则’，好像是讲这个定金要怎么处理吧？嗯，还是实际查一下比较准。好像《民法典》里面有条586条专门管这个。我要查的就是，合同两边谁违约了，定金到底能不能退，以及什么情况下不能退或者要退双倍的。\n\n<search>‘民法典 定金 586条’</search>\n\n哦，找到了！<information>根据《中华人民共和国民法典》第586条，定金罚则是为了保障合同的履行。如果交定金的一方（比如买方）不履行合同义务，那么这个定金不能退。而如果是收定金的一方（比如卖方）不履行合同，则需要退还双倍定金。当然，有一个前提是这个定金必须在合同中有约定，并且实际支付过了。也就是说，不是嘴上说说收了定金就算数，还得有书面约定或者实际交付的证据才能生效。</information>\n\n这么说来，定金看起来是个双向约束的东西，如果一方违约就会用到。如果买方没履行合同（比如拒付尾款，不继续买了），卖方可以扣定金，但如果是卖方违约（比如不卖或者涨价违约），那买方就可以要求退双倍定金。嗯，这个逻辑挺清楚的。\n\n不过这里还有件事要注意，就是‘定金’必须是实际支付了的，比如有支付记录或者合同明确写明了定金。而且，它和‘订金’是不一样的，虽然发音是一样的但意思不同，‘订金’一般没有罚则，可以退。而‘定金’是有担保功能的，不履约了才会涉及不退或者双倍返还的规则。\n\n所以总结一下，定金能不能退得看是谁违约。如果交定金的那方违约，不好意思，定金是不能退的；而如果是收定金那方违约，那对不起，得退双倍的定金。但实际操作中，还得结合合同的具体条款和支付记录来判断。这个结论看来是根据法律条文来的，没啥问题。",
+  "Response": "根据《中华人民共和国民法典》第586条的规定，是否可以退还定金取决于合同双方是否履行了合同义务以及违约方的责任：\n\n1. **如果交定金的一方（如买方）违约**：定金不能退还，也就是卖方可以没收定金。\n2. **如果收定金的一方（如卖方）违约**：卖方需要双倍返还定金，以此作为对买方的赔偿。\n\n需要注意的是，定金的约定和支付必须符合以下几点：\n- **合同中明确写明是“定金”**，而不是“订金”。“定金”具有法律上的担保效力，而“订金”一般不适用违约罚则，通常可以退回。\n- **定金必须实际支付**，否则“定金罚则”不成立。\n\n因此，退不退定金，关键要看是谁违约了。如果是交定金的一方违约，一般不能退；如果是收定金的一方违约，则需双倍退还。",
+  "Question": "合同宝盖头的定可以退定金吗?"
+}

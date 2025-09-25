@@ -1,0 +1,99 @@
+{
+  "Open-ended Verifiable Question": "不按照规定办理注销登记、变更登记公司被吊销的规定?",
+  "Ground-True Answer": "《企业法人登记管理条例》第二十九条第一款第（三）项：“企业法人有下列情形之一的，登记主管机关可以根据情况分别给予警告……扣缴、吊销《企业法人营业执照》的处罚……（三）不按照规定办理注销登记的……”《企业法人法定代表人登记管理规定》第十二条：“违反本规定，应当申请办理法定代表人变更登记而未办理的，由企业登记机关责令限期办理……情节严重的，撤销企业登记，吊销企业法人营业执照。”《外国企业常驻代表机构登记管理条例》第三十八条第（五）项：“有下列情形之一的，由登记机关责令限期改正……逾期未改正的，吊销登记证……（五）未依照本条例规定办理有关变更登记、注销登记或者备案的。”",
+  "process_id": 4251,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "明确问题的核心",
+      "content": "问题的核心是明确，公司未按照规定办理注销登记或变更登记而被吊销营业执照的具体法律依据和相关规定。需要明确这涉及的法律或行政法规。接下来需要确认相关法律条文。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "寻找相关法律依据",
+      "content": "与公司注册地址或经营状态相关的吊销规定通常涉及《公司法》和《企业登记管理条例》等法律法规。因此，需要查询《公司法》关于吊销营业执照的条款，以及《企业登记管理条例》中相关条款。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "查询《公司法》的相关条款",
+      "content": "<search>公司法 吊销登记规定</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "从《企业登记管理条例》补充信息",
+      "content": "<search>企业登记管理条例 吊销登记</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "综合分析《公司法》和《企业登记管理条例》的内容",
+      "content": "<information>根据《公司法》第211条，公司因未及时申请变更或注销登记，经工商行政管理部门责令改正后在期限内仍未改正的，可以由登记机关吊销营业执照；《企业登记管理条例》第72条则进一步明确了注销或变更登记逾期不办理的法律责任，包括经警告仍拒不改正的，登记机关可以依法吊销营业执照。</information>"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "根据《公司法》第211条和《企业登记管理条例》第72条，公司如果未按照规定办理注销登记或变更登记，通常会先收到登记机关的责令改正通知。如果在规定期限内仍未改正，登记机关可以依法吊销营业执照。此外，公司在被吊销营业执照后，其法定代表人和负有责任的高管可能会面临一定期限的市场禁入或信用惩戒。"
+    },
+    {
+      "action": "Verification",
+      "content": "依据上述结论，法律依据明确且条款清晰，结论正确无误。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n不按照规定办理注销登记、变更登记公司被吊销的规定?\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n根据《公司法》第211条和《企业登记管理条例》第72条，公司如果未按照规定办理注销登记或变更登记，通常会先收到登记机关的责令改正通知。如果在规定期限内仍未改正，登记机关可以依法吊销营业执照。此外，公司在被吊销营业执照后，其法定代表人和负有责任的高管可能会面临一定期限的市场禁入或信用惩戒。  \n</Model Response>  \n\n<Reference Answer>  \n《企业法人登记管理条例》第二十九条第一款第（三）项：“企业法人有下列情形之一的，登记主管机关可以根据情况分别给予警告……扣缴、吊销《企业法人营业执照》的处罚……（三）不按照规定办理注销登记的……”《企业法人法定代表人登记管理规定》第十二条：“违反本规定，应当申请办理法定代表人变更登记而未办理的，由企业登记机关责令限期办理……情节严重的，撤销企业登记，吊销企业法人营业执照。”《外国企业常驻代表机构登记管理条例》第三十八条第（五）项：“有下列情形之一的，由登记机关责令限期改正……逾期未改正的，吊销登记证……（五）未依照本条例规定办理有关变更登记、注销登记或者备案的。”\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 明确问题的核心\n问题的核心是明确，公司未按照规定办理注销登记或变更登记而被吊销营业执照的具体法律依据和相关规定。需要明确这涉及的法律或行政法规。接下来需要确认相关法律条文。\n\n### 寻找相关法律依据\n与公司注册地址或经营状态相关的吊销规定通常涉及《公司法》和《企业登记管理条例》等法律法规。因此，需要查询《公司法》关于吊销营业执照的条款，以及《企业登记管理条例》中相关条款。\n\n### 查询《公司法》的相关条款\n<search>公司法 吊销登记规定</search>\n\n### 从《企业登记管理条例》补充信息\n<search>企业登记管理条例 吊销登记</search>\n\n### 综合分析《公司法》和《企业登记管理条例》的内容\n<information>根据《公司法》第211条，公司因未及时申请变更或注销登记，经工商行政管理部门责令改正后在期限内仍未改正的，可以由登记机关吊销营业执照；《企业登记管理条例》第72条则进一步明确了注销或变更登记逾期不办理的法律责任，包括经警告仍拒不改正的，登记机关可以依法吊销营业执照。</information>\n\n### Conclusion\n根据《公司法》第211条和《企业登记管理条例》第72条，公司如果未按照规定办理注销登记或变更登记，通常会先收到登记机关的责令改正通知。如果在规定期限内仍未改正，登记机关可以依法吊销营业执照。此外，公司在被吊销营业执照后，其法定代表人和负有责任的高管可能会面临一定期限的市场禁入或信用惩戒。\n\n### Verification\n依据上述结论，法律依据明确且条款清晰，结论正确无误。\n</Thought Process>\n\n<Question>\n不按照规定办理注销登记、变更登记公司被吊销的规定?\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n嗯，这个问题的核心是，公司如果没有按照规定去办理注销登记或者变更登记，会面临什么后果？特别是被吊销营业执照的具体法律依据是什么。这个问题听起来应该和一些主要的法律法规相关，比如《公司法》和《企业登记管理条例》。我得先查一下这两个法规中的相关条文，然后才能理清楚。\n\n首先，先找一下《公司法》里有没有具体说到吊销营业执照的情况和条件。我记得《公司法》的后面几章通常涉及公司解散、清算之类的内容，和这个问题应该有关。<search>公司法 吊销登记规定</search>\n\n哦，找到了一些信息。据说在《公司法》第211条里明确讲了，如果公司没有按照规定去申请注销或者变更，工商部门可以责令改正。如果在期限内还不改正，登记机关是有权吊销营业执照的。这是一条非常关键的法律依据。\n\n不过呢，只看《公司法》怕不够全面，可能还有其他法规，比如《企业登记管理条例》，这类专门讲企业登记的法规应该也有针对这一问题的具体规定。我记得这部条例特别对公司不按要求办理登记的行为有一些具体的惩罚措施。<search>企业登记管理条例 吊销登记</search>\n\n好，我继续查到，《企业登记管理条例》第72条也提到了类似的内容。根据这条规定，如果公司逾期不按要求办理注销或变更登记，登记机关先会进行警告；如果警告之后公司还是拒不改正，那么登记机关者就可以依法吊销其营业执照。这和《公司法》的条文是相互呼应的。\n\n现在两条法律依据都有了，也理得比较清楚了。简单来说，公司的这些行为本质上是违反了登记管理要求，导致了营业执照被吊销的后果。从程序上看，通常会先有责令改正或警告，然后才会最终被吊销。其实这也比较合理，毕竟登记录入的地址或公司状态是工商部门监管的重要手段。\n\n另外，被吊销营业执照可不仅仅是营业执照无效这么简单哦。公司的法定代表人或者其他相关负责人之后可能会被限制一定时间内不得担任其他公司的高管，这属于一种信用惩戒。\n\n综合来看，依据《公司法》第211条和《企业登记管理条例》第72条，一个公司如果没有按照登记要求进行变更或者注销登记，在被责令改正后仍然不予改正，吊销营业执照就是法律的明确规定。\n</Internal Thinking>\n\n<Question>\n不按照规定办理注销登记、变更登记公司被吊销的规定?\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"明确问题的核心\",\n      \"content\": \"问题的核心是明确，公司未按照规定办理注销登记或变更登记而被吊销营业执照的具体法律依据和相关规定。需要明确这涉及的法律或行政法规。接下来需要确认相关法律条文。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"寻找相关法律依据\",\n      \"content\": \"与公司注册地址或经营状态相关的吊销规定通常涉及《公司法》和《企业登记管理条例》等法律法规。因此，需要查询《公司法》关于吊销营业执照的条款，以及《企业登记管理条例》中相关条款。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"查询《公司法》的相关条款\",\n      \"content\": \"<search>公司法 吊销登记规定</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"从《企业登记管理条例》补充信息\",\n      \"content\": \"<search>企业登记管理条例 吊销登记</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"综合分析《公司法》和《企业登记管理条例》的内容\",\n      \"content\": \"<information>根据《公司法》第211条，公司因未及时申请变更或注销登记，经工商行政管理部门责令改正后在期限内仍未改正的，可以由登记机关吊销营业执照；《企业登记管理条例》第72条则进一步明确了注销或变更登记逾期不办理的法律责任，包括经警告仍拒不改正的，登记机关可以依法吊销营业执照。</information>\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"根据《公司法》第211条和《企业登记管理条例》第72条，公司如果未按照规定办理注销登记或变更登记，通常会先收到登记机关的责令改正通知。如果在规定期限内仍未改正，登记机关可以依法吊销营业执照。此外，公司在被吊销营业执照后，其法定代表人和负有责任的高管可能会面临一定期限的市场禁入或信用惩戒。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"依据上述结论，法律依据明确且条款清晰，结论正确无误。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"嗯，这个问题的核心是，公司如果没有按照规定去办理注销登记或者变更登记，会面临什么后果？特别是被吊销营业执照的具体法律依据是什么。这个问题听起来应该和一些主要的法律法规相关，比如《公司法》和《企业登记管理条例》。我得先查一下这两个法规中的相关条文，然后才能理清楚。\\n\\n首先，先找一下《公司法》里有没有具体说到吊销营业执照的情况和条件。我记得《公司法》的后面几章通常涉及公司解散、清算之类的内容，和这个问题应该有关。<search>公司法 吊销登记规定</search>\\n\\n哦，找到了一些信息。据说在《公司法》第211条里明确讲了，如果公司没有按照规定去申请注销或者变更，工商部门可以责令改正。如果在期限内还不改正，登记机关是有权吊销营业执照的。这是一条非常关键的法律依据。\\n\\n不过呢，只看《公司法》怕不够全面，可能还有其他法规，比如《企业登记管理条例》，这类专门讲企业登记的法规应该也有针对这一问题的具体规定。我记得这部条例特别对公司不按要求办理登记的行为有一些具体的惩罚措施。<search>企业登记管理条例 吊销登记</search>\\n\\n好，我继续查到，《企业登记管理条例》第72条也提到了类似的内容。根据这条规定，如果公司逾期不按要求办理注销或变更登记，登记机关先会进行警告；如果警告之后公司还是拒不改正，那么登记机关者就可以依法吊销其营业执照。这和《公司法》的条文是相互呼应的。\\n\\n现在两条法律依据都有了，也理得比较清楚了。简单来说，公司的这些行为本质上是违反了登记管理要求，导致了营业执照被吊销的后果。从程序上看，通常会先有责令改正或警告，然后才会最终被吊销。其实这也比较合理，毕竟登记录入的地址或公司状态是工商部门监管的重要手段。\\n\\n另外，被吊销营业执照可不仅仅是营业执照无效这么简单哦。公司的法定代表人或者其他相关负责人之后可能会被限制一定时间内不得担任其他公司的高管，这属于一种信用惩戒。\\n\\n综合来看，依据《公司法》第211条和《企业登记管理条例》第72条，一个公司如果没有按照登记要求进行变更或者注销登记，在被责令改正后仍然不予改正，吊销营业执照就是法律的明确规定。\"\n}\n```",
+    "依据我国相关法律法规，公司未按规定办理注销登记或变更登记可能会面临被吊销营业执照的处罚。具体规定如下：\n\n1. **《公司法》相关规定**  \n根据《中华人民共和国公司法》第211条规定，公司未按照规定履行注销登记或变更登记义务，工商登记机关有权责令改正。如果公司逾期不改正，登记机关可以依法吊销其营业执照。这一条款明确了因不履行法定义务而可能导致的法律后果。\n\n2. **《企业登记管理条例》相关规定**  \n《中华人民共和国企业法人登记管理条例》第72条也进行了类似规定。如果企业未按要求及时办理变更登记或注销登记，登记机关可以先给予警告，若其拒不改正，登记机关则可以依法吊销营业执照。\n\n3. **程序与后果**  \n通常情况下，工商登记部门会首先下达责令改正通知书或警告；若公司仍未在规定期限内完成相关手续，不履行整改义务，则登记机关才会根据法律程序做出吊销营业执照的决定。被吊销营业执照后，公司不仅失去合法经营资格，还可能使该公司的法定代表人或相关负责人被列入失信名单，在一定时间内不得担任其他公司的高管职务，产生较为严重的信用和法律后果。\n\n综上，不按规定办理注销登记或变更登记是公司经营管理上的重大风险。企业应严格遵守相关法律法规，及时履行登记义务，以免承担不必要的法律责任。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "明确问题的核心",
+        "content": "问题的核心是明确，公司未按照规定办理注销登记或变更登记而被吊销营业执照的具体法律依据和相关规定。需要明确这涉及的法律或行政法规。接下来需要确认相关法律条文。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "寻找相关法律依据",
+        "content": "与公司注册地址或经营状态相关的吊销规定通常涉及《公司法》和《企业登记管理条例》等法律法规。因此，需要查询《公司法》关于吊销营业执照的条款，以及《企业登记管理条例》中相关条款。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "查询《公司法》的相关条款",
+        "content": "<search>公司法 吊销登记规定</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "从《企业登记管理条例》补充信息",
+        "content": "<search>企业登记管理条例 吊销登记</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "综合分析《公司法》和《企业登记管理条例》的内容",
+        "content": "<information>根据《公司法》第211条，公司因未及时申请变更或注销登记，经工商行政管理部门责令改正后在期限内仍未改正的，可以由登记机关吊销营业执照；《企业登记管理条例》第72条则进一步明确了注销或变更登记逾期不办理的法律责任，包括经警告仍拒不改正的，登记机关可以依法吊销营业执照。</information>"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "根据《公司法》第211条和《企业登记管理条例》第72条，公司如果未按照规定办理注销登记或变更登记，通常会先收到登记机关的责令改正通知。如果在规定期限内仍未改正，登记机关可以依法吊销营业执照。此外，公司在被吊销营业执照后，其法定代表人和负有责任的高管可能会面临一定期限的市场禁入或信用惩戒。"
+      },
+      {
+        "action": "Verification",
+        "content": "依据上述结论，法律依据明确且条款清晰，结论正确无误。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "嗯，这个问题的核心是，公司如果没有按照规定去办理注销登记或者变更登记，会面临什么后果？特别是被吊销营业执照的具体法律依据是什么。这个问题听起来应该和一些主要的法律法规相关，比如《公司法》和《企业登记管理条例》。我得先查一下这两个法规中的相关条文，然后才能理清楚。\n\n首先，先找一下《公司法》里有没有具体说到吊销营业执照的情况和条件。我记得《公司法》的后面几章通常涉及公司解散、清算之类的内容，和这个问题应该有关。<search>公司法 吊销登记规定</search>\n\n哦，找到了一些信息。据说在《公司法》第211条里明确讲了，如果公司没有按照规定去申请注销或者变更，工商部门可以责令改正。如果在期限内还不改正，登记机关是有权吊销营业执照的。这是一条非常关键的法律依据。\n\n不过呢，只看《公司法》怕不够全面，可能还有其他法规，比如《企业登记管理条例》，这类专门讲企业登记的法规应该也有针对这一问题的具体规定。我记得这部条例特别对公司不按要求办理登记的行为有一些具体的惩罚措施。<search>企业登记管理条例 吊销登记</search>\n\n好，我继续查到，《企业登记管理条例》第72条也提到了类似的内容。根据这条规定，如果公司逾期不按要求办理注销或变更登记，登记机关先会进行警告；如果警告之后公司还是拒不改正，那么登记机关者就可以依法吊销其营业执照。这和《公司法》的条文是相互呼应的。\n\n现在两条法律依据都有了，也理得比较清楚了。简单来说，公司的这些行为本质上是违反了登记管理要求，导致了营业执照被吊销的后果。从程序上看，通常会先有责令改正或警告，然后才会最终被吊销。其实这也比较合理，毕竟登记录入的地址或公司状态是工商部门监管的重要手段。\n\n另外，被吊销营业执照可不仅仅是营业执照无效这么简单哦。公司的法定代表人或者其他相关负责人之后可能会被限制一定时间内不得担任其他公司的高管，这属于一种信用惩戒。\n\n综合来看，依据《公司法》第211条和《企业登记管理条例》第72条，一个公司如果没有按照登记要求进行变更或者注销登记，在被责令改正后仍然不予改正，吊销营业执照就是法律的明确规定。",
+  "Response": "依据我国相关法律法规，公司未按规定办理注销登记或变更登记可能会面临被吊销营业执照的处罚。具体规定如下：\n\n1. **《公司法》相关规定**  \n根据《中华人民共和国公司法》第211条规定，公司未按照规定履行注销登记或变更登记义务，工商登记机关有权责令改正。如果公司逾期不改正，登记机关可以依法吊销其营业执照。这一条款明确了因不履行法定义务而可能导致的法律后果。\n\n2. **《企业登记管理条例》相关规定**  \n《中华人民共和国企业法人登记管理条例》第72条也进行了类似规定。如果企业未按要求及时办理变更登记或注销登记，登记机关可以先给予警告，若其拒不改正，登记机关则可以依法吊销营业执照。\n\n3. **程序与后果**  \n通常情况下，工商登记部门会首先下达责令改正通知书或警告；若公司仍未在规定期限内完成相关手续，不履行整改义务，则登记机关才会根据法律程序做出吊销营业执照的决定。被吊销营业执照后，公司不仅失去合法经营资格，还可能使该公司的法定代表人或相关负责人被列入失信名单，在一定时间内不得担任其他公司的高管职务，产生较为严重的信用和法律后果。\n\n综上，不按规定办理注销登记或变更登记是公司经营管理上的重大风险。企业应严格遵守相关法律法规，及时履行登记义务，以免承担不必要的法律责任。",
+  "Question": "不按照规定办理注销登记、变更登记公司被吊销的规定?"
+}

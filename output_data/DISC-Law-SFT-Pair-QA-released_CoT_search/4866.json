@@ -1,0 +1,139 @@
+{
+  "Open-ended Verifiable Question": "工亡的时候涉及的赔偿项目?",
+  "Ground-True Answer": "一次性工亡补助金,标准是每年都在变化,是全国城镇居民可支配收入的20倍.丧葬补助金是统筹地区上年度职工平均工资(非私营单位在岗职工的平均工资)的六个月,所谓的统筹地区是省份为标准,供养亲属的抚恤金,应该是按照每个月支付一次,供养亲属抚恤金享受的范围是法定的,按照工亡职工生前的平均工资作为标准.",
+  "process_id": 4866,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "确定工亡赔偿涉及的法律依据",
+      "content": "关于工亡赔偿可能涉及多项法律法规，如《工伤保险条例》、人力资源和社会保障部的相关规定等。这些规定详细阐述了赔偿项目及标准。需要从这些文件中提取具体的内容。开始搜索相关规定。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "检索《工伤保险条例》对工亡赔偿的规定",
+      "content": "<search>工伤保险条例 工亡赔偿</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "检索结果分析",
+      "content": "<information>搜索结果显示《工伤保险条例》第39条规定，因工死亡的，其遗属可以领取以下赔偿项目：丧葬补助金、供养亲属抚恤金以及一次性工亡补助金。</information>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "确定丧葬补助金的具体内容及计算标准",
+      "content": "<search>丧葬补助金 工亡赔偿</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "获取丧葬补助金标准",
+      "content": "<information>丧葬补助金一般按照职工所在统筹地区上年度职工月平均工资的6个月进行支付。</information>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "确定供养亲属抚恤金的内容",
+      "content": "<search>供养亲属抚恤金 工亡赔偿</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "供养亲属抚恤金的规定",
+      "content": "<information>根据规定，供养亲属抚恤金的金额应按照死者生前工资的一定比例计算，具体比例和人数依据亲属关系确定，并由当地统筹地区规定。</information>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "确定一次性工亡补助金的具体标准",
+      "content": "<search>一次性工亡补助金 工亡赔偿</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "获取一次性工亡补助金标准",
+      "content": "<information>一次性工亡补助金的标准为上一年度全国城镇居民人均可支配收入的20倍。</information>"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "根据相关法律规定，工亡赔偿包括以下项目：1. 丧葬补助金，按照统筹地区上年度职工月平均工资的6个月使用；2. 供养亲属抚恤金，按照死者工资的一定比例计算，具体由统筹地区法规决定；3. 一次性工亡补助金，为上一年度全国城镇居民人均可支配收入的20倍。但是，各地可能有具体规定，仍需根据当地政策核实。"
+    },
+    {
+      "action": "Verification",
+      "content": "结论与《工伤保险条例》的规定一致，且所有涉及标准均通过检索确认无误。结论正确，无需进一步推导。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n工亡的时候涉及的赔偿项目?\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n根据相关法律规定，工亡赔偿包括以下项目：1. 丧葬补助金，按照统筹地区上年度职工月平均工资的6个月使用；2. 供养亲属抚恤金，按照死者工资的一定比例计算，具体由统筹地区法规决定；3. 一次性工亡补助金，为上一年度全国城镇居民人均可支配收入的20倍。但是，各地可能有具体规定，仍需根据当地政策核实。  \n</Model Response>  \n\n<Reference Answer>  \n一次性工亡补助金,标准是每年都在变化,是全国城镇居民可支配收入的20倍.丧葬补助金是统筹地区上年度职工平均工资(非私营单位在岗职工的平均工资)的六个月,所谓的统筹地区是省份为标准,供养亲属的抚恤金,应该是按照每个月支付一次,供养亲属抚恤金享受的范围是法定的,按照工亡职工生前的平均工资作为标准.\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 确定工亡赔偿涉及的法律依据\n关于工亡赔偿可能涉及多项法律法规，如《工伤保险条例》、人力资源和社会保障部的相关规定等。这些规定详细阐述了赔偿项目及标准。需要从这些文件中提取具体的内容。开始搜索相关规定。\n\n### 检索《工伤保险条例》对工亡赔偿的规定\n<search>工伤保险条例 工亡赔偿</search>\n\n### 检索结果分析\n<information>搜索结果显示《工伤保险条例》第39条规定，因工死亡的，其遗属可以领取以下赔偿项目：丧葬补助金、供养亲属抚恤金以及一次性工亡补助金。</information>\n\n### 确定丧葬补助金的具体内容及计算标准\n<search>丧葬补助金 工亡赔偿</search>\n\n### 获取丧葬补助金标准\n<information>丧葬补助金一般按照职工所在统筹地区上年度职工月平均工资的6个月进行支付。</information>\n\n### 确定供养亲属抚恤金的内容\n<search>供养亲属抚恤金 工亡赔偿</search>\n\n### 供养亲属抚恤金的规定\n<information>根据规定，供养亲属抚恤金的金额应按照死者生前工资的一定比例计算，具体比例和人数依据亲属关系确定，并由当地统筹地区规定。</information>\n\n### 确定一次性工亡补助金的具体标准\n<search>一次性工亡补助金 工亡赔偿</search>\n\n### 获取一次性工亡补助金标准\n<information>一次性工亡补助金的标准为上一年度全国城镇居民人均可支配收入的20倍。</information>\n\n### Conclusion\n根据相关法律规定，工亡赔偿包括以下项目：1. 丧葬补助金，按照统筹地区上年度职工月平均工资的6个月使用；2. 供养亲属抚恤金，按照死者工资的一定比例计算，具体由统筹地区法规决定；3. 一次性工亡补助金，为上一年度全国城镇居民人均可支配收入的20倍。但是，各地可能有具体规定，仍需根据当地政策核实。\n\n### Verification\n结论与《工伤保险条例》的规定一致，且所有涉及标准均通过检索确认无误。结论正确，无需进一步推导。\n</Thought Process>\n\n<Question>\n工亡的时候涉及的赔偿项目?\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n嗯，关于工亡赔偿的话，这应该涉及一些具体的法律规定吧，比如《工伤保险条例》。我得先确认一下这个条例里是怎么规定工亡赔偿的，尤其是都有哪些具体的赔偿项目和标准。让我查一下相关内容。<search>工伤保险条例 工亡赔偿</search>\n\n哦，搜索结果出来了。《工伤保险条例》第39条里提到，工亡的赔偿项目包括丧葬补助金、供养亲属抚恤金和一次性工亡补助金。好，现在先来弄清楚丧葬补助金是怎么计算的。<search>丧葬补助金 工亡赔偿</search>\n\n看到了，丧葬补助金的标准是按照职工所在统筹地区上年度职工月平均工资的6个月来支付。这个计算方式挺清楚的，那接下来我要了解一下供养亲属抚恤金的具体内容。<search>供养亲属抚恤金 工亡赔偿</search>\n\n结果也出来了，供养亲属抚恤金是按死者生前工资的某个比例来计算，具体比例和金额的话会根据亲属关系和供养亲属的数量决定，而且还跟当地的政策有关。好像每个地区的规定会不太一样。再看看一次性工亡补助金是怎么规定的吧。<search>一次性工亡补助金 工亡赔偿</search>\n\n查到了，一次性工亡补助金的标准是上一年度全国城镇居民人均可支配收入的20倍。这是一个比较明确的数字，但还得结合最新的年度收入数据才好确定具体金额。\n\n所以从法律层面来说，工亡赔偿主要包含这么三个项目：丧葬补助金、供养亲属抚恤金以及一次性工亡补助金。丧葬补助金按统筹地区月平均工资的6个月来算，供养亲属抚恤金是按工资比例计算，具体情况要看当地政策，还有一次性工亡补助金是全国人均可支配收入的20倍。\n\n综上看，这些规定基本是依据《工伤保险条例》来的，而且从查到的信息看也挺吻合，不过得注意一下不同地区可能有具体实施细则，得根据具体政策再确认。\n</Internal Thinking>\n\n<Question>\n工亡的时候涉及的赔偿项目?\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"确定工亡赔偿涉及的法律依据\",\n      \"content\": \"关于工亡赔偿可能涉及多项法律法规，如《工伤保险条例》、人力资源和社会保障部的相关规定等。这些规定详细阐述了赔偿项目及标准。需要从这些文件中提取具体的内容。开始搜索相关规定。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"检索《工伤保险条例》对工亡赔偿的规定\",\n      \"content\": \"<search>工伤保险条例 工亡赔偿</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"检索结果分析\",\n      \"content\": \"<information>搜索结果显示《工伤保险条例》第39条规定，因工死亡的，其遗属可以领取以下赔偿项目：丧葬补助金、供养亲属抚恤金以及一次性工亡补助金。</information>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"确定丧葬补助金的具体内容及计算标准\",\n      \"content\": \"<search>丧葬补助金 工亡赔偿</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"获取丧葬补助金标准\",\n      \"content\": \"<information>丧葬补助金一般按照职工所在统筹地区上年度职工月平均工资的6个月进行支付。</information>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"确定供养亲属抚恤金的内容\",\n      \"content\": \"<search>供养亲属抚恤金 工亡赔偿</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"供养亲属抚恤金的规定\",\n      \"content\": \"<information>根据规定，供养亲属抚恤金的金额应按照死者生前工资的一定比例计算，具体比例和人数依据亲属关系确定，并由当地统筹地区规定。</information>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"确定一次性工亡补助金的具体标准\",\n      \"content\": \"<search>一次性工亡补助金 工亡赔偿</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"获取一次性工亡补助金标准\",\n      \"content\": \"<information>一次性工亡补助金的标准为上一年度全国城镇居民人均可支配收入的20倍。</information>\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"根据相关法律规定，工亡赔偿包括以下项目：1. 丧葬补助金，按照统筹地区上年度职工月平均工资的6个月使用；2. 供养亲属抚恤金，按照死者工资的一定比例计算，具体由统筹地区法规决定；3. 一次性工亡补助金，为上一年度全国城镇居民人均可支配收入的20倍。但是，各地可能有具体规定，仍需根据当地政策核实。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"结论与《工伤保险条例》的规定一致，且所有涉及标准均通过检索确认无误。结论正确，无需进一步推导。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"嗯，关于工亡赔偿的话，这应该涉及一些具体的法律规定吧，比如《工伤保险条例》。我得先确认一下这个条例里是怎么规定工亡赔偿的，尤其是都有哪些具体的赔偿项目和标准。让我查一下相关内容。<search>工伤保险条例 工亡赔偿</search>\\n\\n哦，搜索结果出来了。《工伤保险条例》第39条里提到，工亡的赔偿项目包括丧葬补助金、供养亲属抚恤金和一次性工亡补助金。好，现在先来弄清楚丧葬补助金是怎么计算的。<search>丧葬补助金 工亡赔偿</search>\\n\\n看到了，丧葬补助金的标准是按照职工所在统筹地区上年度职工月平均工资的6个月来支付。这个计算方式挺清楚的，那接下来我要了解一下供养亲属抚恤金的具体内容。<search>供养亲属抚恤金 工亡赔偿</search>\\n\\n结果也出来了，供养亲属抚恤金是按死者生前工资的某个比例来计算，具体比例和金额的话会根据亲属关系和供养亲属的数量决定，而且还跟当地的政策有关。好像每个地区的规定会不太一样。再看看一次性工亡补助金是怎么规定的吧。<search>一次性工亡补助金 工亡赔偿</search>\\n\\n查到了，一次性工亡补助金的标准是上一年度全国城镇居民人均可支配收入的20倍。这是一个比较明确的数字，但还得结合最新的年度收入数据才好确定具体金额。\\n\\n所以从法律层面来说，工亡赔偿主要包含这么三个项目：丧葬补助金、供养亲属抚恤金以及一次性工亡补助金。丧葬补助金按统筹地区月平均工资的6个月来算，供养亲属抚恤金是按工资比例计算，具体情况要看当地政策，还有一次性工亡补助金是全国人均可支配收入的20倍。\\n\\n综上看，这些规定基本是依据《工伤保险条例》来的，而且从查到的信息看也挺吻合，不过得注意一下不同地区可能有具体实施细则，得根据具体政策再确认。\"\n}\n```",
+    "关于工亡赔偿，根据《工伤保险条例》第39条的规定，主要包括以下三个项目：\n\n1. **丧葬补助金**：按所在统筹地区上年度职工月平均工资的6个月计发。该补助金用于支付工亡职工的丧葬费用。\n\n2. **供养亲属抚恤金**：根据死者生前工资的一定比例计发，具体金额取决于供养亲属的关系（如配偶、子女、父母等）以及供养人数，具体实施标准可能因地区而异。\n\n3. **一次性工亡补助金**：按上一年度全国城镇居民人均可支配收入的20倍支付，这是补偿工亡职工家庭的主要经济支持。\n\n需要注意的是，各地可能会根据实际情况制定具体的实施细则，因此赔偿金额和标准可能会略有不同。建议结合所在地区的实际政策进一步确认。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "确定工亡赔偿涉及的法律依据",
+        "content": "关于工亡赔偿可能涉及多项法律法规，如《工伤保险条例》、人力资源和社会保障部的相关规定等。这些规定详细阐述了赔偿项目及标准。需要从这些文件中提取具体的内容。开始搜索相关规定。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "检索《工伤保险条例》对工亡赔偿的规定",
+        "content": "<search>工伤保险条例 工亡赔偿</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "检索结果分析",
+        "content": "<information>搜索结果显示《工伤保险条例》第39条规定，因工死亡的，其遗属可以领取以下赔偿项目：丧葬补助金、供养亲属抚恤金以及一次性工亡补助金。</information>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "确定丧葬补助金的具体内容及计算标准",
+        "content": "<search>丧葬补助金 工亡赔偿</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "获取丧葬补助金标准",
+        "content": "<information>丧葬补助金一般按照职工所在统筹地区上年度职工月平均工资的6个月进行支付。</information>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "确定供养亲属抚恤金的内容",
+        "content": "<search>供养亲属抚恤金 工亡赔偿</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "供养亲属抚恤金的规定",
+        "content": "<information>根据规定，供养亲属抚恤金的金额应按照死者生前工资的一定比例计算，具体比例和人数依据亲属关系确定，并由当地统筹地区规定。</information>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "确定一次性工亡补助金的具体标准",
+        "content": "<search>一次性工亡补助金 工亡赔偿</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "获取一次性工亡补助金标准",
+        "content": "<information>一次性工亡补助金的标准为上一年度全国城镇居民人均可支配收入的20倍。</information>"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "根据相关法律规定，工亡赔偿包括以下项目：1. 丧葬补助金，按照统筹地区上年度职工月平均工资的6个月使用；2. 供养亲属抚恤金，按照死者工资的一定比例计算，具体由统筹地区法规决定；3. 一次性工亡补助金，为上一年度全国城镇居民人均可支配收入的20倍。但是，各地可能有具体规定，仍需根据当地政策核实。"
+      },
+      {
+        "action": "Verification",
+        "content": "结论与《工伤保险条例》的规定一致，且所有涉及标准均通过检索确认无误。结论正确，无需进一步推导。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "嗯，关于工亡赔偿的话，这应该涉及一些具体的法律规定吧，比如《工伤保险条例》。我得先确认一下这个条例里是怎么规定工亡赔偿的，尤其是都有哪些具体的赔偿项目和标准。让我查一下相关内容。<search>工伤保险条例 工亡赔偿</search>\n\n哦，搜索结果出来了。《工伤保险条例》第39条里提到，工亡的赔偿项目包括丧葬补助金、供养亲属抚恤金和一次性工亡补助金。好，现在先来弄清楚丧葬补助金是怎么计算的。<search>丧葬补助金 工亡赔偿</search>\n\n看到了，丧葬补助金的标准是按照职工所在统筹地区上年度职工月平均工资的6个月来支付。这个计算方式挺清楚的，那接下来我要了解一下供养亲属抚恤金的具体内容。<search>供养亲属抚恤金 工亡赔偿</search>\n\n结果也出来了，供养亲属抚恤金是按死者生前工资的某个比例来计算，具体比例和金额的话会根据亲属关系和供养亲属的数量决定，而且还跟当地的政策有关。好像每个地区的规定会不太一样。再看看一次性工亡补助金是怎么规定的吧。<search>一次性工亡补助金 工亡赔偿</search>\n\n查到了，一次性工亡补助金的标准是上一年度全国城镇居民人均可支配收入的20倍。这是一个比较明确的数字，但还得结合最新的年度收入数据才好确定具体金额。\n\n所以从法律层面来说，工亡赔偿主要包含这么三个项目：丧葬补助金、供养亲属抚恤金以及一次性工亡补助金。丧葬补助金按统筹地区月平均工资的6个月来算，供养亲属抚恤金是按工资比例计算，具体情况要看当地政策，还有一次性工亡补助金是全国人均可支配收入的20倍。\n\n综上看，这些规定基本是依据《工伤保险条例》来的，而且从查到的信息看也挺吻合，不过得注意一下不同地区可能有具体实施细则，得根据具体政策再确认。",
+  "Response": "关于工亡赔偿，根据《工伤保险条例》第39条的规定，主要包括以下三个项目：\n\n1. **丧葬补助金**：按所在统筹地区上年度职工月平均工资的6个月计发。该补助金用于支付工亡职工的丧葬费用。\n\n2. **供养亲属抚恤金**：根据死者生前工资的一定比例计发，具体金额取决于供养亲属的关系（如配偶、子女、父母等）以及供养人数，具体实施标准可能因地区而异。\n\n3. **一次性工亡补助金**：按上一年度全国城镇居民人均可支配收入的20倍支付，这是补偿工亡职工家庭的主要经济支持。\n\n需要注意的是，各地可能会根据实际情况制定具体的实施细则，因此赔偿金额和标准可能会略有不同。建议结合所在地区的实际政策进一步确认。",
+  "Question": "工亡的时候涉及的赔偿项目?"
+}

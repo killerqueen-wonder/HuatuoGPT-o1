@@ -1,0 +1,89 @@
+{
+  "Open-ended Verifiable Question": "用人单位到底能否雇佣未满十六周岁的人？",
+  "Ground-True Answer": "《未成年人保护法》规定，任何组织或者个人不得招用不满十六周岁未成年人，国家另有规定的按规定执行。年满十六周岁的未成年人是可以工作的，但营业性娱乐场所、酒吧、互联网上网服务场所不能招用他们。还有，招用已满十六周岁未成年人的单位和个人在工种、劳动时间、劳动强度和保护措施方面严格执行国家的规定，不能让他们做过重、有毒、有害的劳动或者危险作业。如果违反规定，由文化和旅游、人力资源和社会保障、市场监督管理等部门按照职责分工责令限期改正，警告，没收违法所得，还可以处十万元以下罚款；拒不改正或者情节严重的，责令停产停业或者吊销营业执照、吊销相关许可证，并且处十万元到一百万元的罚款。",
+  "process_id": 2598,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "明确法律框架",
+      "content": "要确定用人单位是否可以雇佣未满十六周岁的人，首先需要明确相关法律规定。根据中国法律，未成年人保护及劳动法律的相关规定会对此问题有所涉及。我需要搜索具体的法律，例如《中华人民共和国劳动法》和《未成年人保护法》。<search>劳动法 未成年人 雇佣</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "解读法律条款",
+      "content": "<information>《中华人民共和国劳动法》第15条：禁止用人单位招用未满16周岁的未成年人。文艺、体育和特种工艺单位因特殊需要，招用未满16周岁的未成年人，必须依照国家有关规定履行批准手续。《中华人民共和国未成年人保护法》第9条：任何组织或个人不得招用未满16周岁的未成年人，国家另有规定的除外。</information>根据上述信息，未满十六周岁的未成年人一般情况下不能被用人单位招用，除非是文艺、体育或特种工艺单位且履行了国家规定的批准手续。</content>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "明确例外情况",
+      "content": "文艺、体育和特种工艺单位的特殊需求是一个例外情况，这些单位可以雇佣未满16周岁的未成年人，但必须履行批准手续。需要进一步确认相关“批准手续”内容是否限定了具体条件。<search>文艺单位 未成年人 雇佣批准手续</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "核实批准条件",
+      "content": "<information>相关规定对于文艺、体育或特种工艺单位雇佣未满十六周岁未成年人规定了严格的审核程序，包括获得主管部门的审批，确保对未成年人的健康和安全无不利影响。</information>可以确定这一例外情况受到严格监管。</content>"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "根据《中华人民共和国劳动法》和《未成年人保护法》，用人单位一律不得雇佣未满十六周岁的未成年人，除非是文艺、体育或特种工艺单位且履行了国家规定的批准手续，且这种情况受到严格监管。"
+    },
+    {
+      "action": "Verification",
+      "content": "法律条款清晰地规定了用人单位不得雇佣未满16周岁的未成年人，并明确了例外情况和批准条件。结论准确无误。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n用人单位到底能否雇佣未满十六周岁的人？\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n根据《中华人民共和国劳动法》和《未成年人保护法》，用人单位一律不得雇佣未满十六周岁的未成年人，除非是文艺、体育或特种工艺单位且履行了国家规定的批准手续，且这种情况受到严格监管。  \n</Model Response>  \n\n<Reference Answer>  \n《未成年人保护法》规定，任何组织或者个人不得招用不满十六周岁未成年人，国家另有规定的按规定执行。年满十六周岁的未成年人是可以工作的，但营业性娱乐场所、酒吧、互联网上网服务场所不能招用他们。还有，招用已满十六周岁未成年人的单位和个人在工种、劳动时间、劳动强度和保护措施方面严格执行国家的规定，不能让他们做过重、有毒、有害的劳动或者危险作业。如果违反规定，由文化和旅游、人力资源和社会保障、市场监督管理等部门按照职责分工责令限期改正，警告，没收违法所得，还可以处十万元以下罚款；拒不改正或者情节严重的，责令停产停业或者吊销营业执照、吊销相关许可证，并且处十万元到一百万元的罚款。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 明确法律框架\n要确定用人单位是否可以雇佣未满十六周岁的人，首先需要明确相关法律规定。根据中国法律，未成年人保护及劳动法律的相关规定会对此问题有所涉及。我需要搜索具体的法律，例如《中华人民共和国劳动法》和《未成年人保护法》。<search>劳动法 未成年人 雇佣</search>\n\n### 解读法律条款\n<information>《中华人民共和国劳动法》第15条：禁止用人单位招用未满16周岁的未成年人。文艺、体育和特种工艺单位因特殊需要，招用未满16周岁的未成年人，必须依照国家有关规定履行批准手续。《中华人民共和国未成年人保护法》第9条：任何组织或个人不得招用未满16周岁的未成年人，国家另有规定的除外。</information>根据上述信息，未满十六周岁的未成年人一般情况下不能被用人单位招用，除非是文艺、体育或特种工艺单位且履行了国家规定的批准手续。</content>\n\n### 明确例外情况\n文艺、体育和特种工艺单位的特殊需求是一个例外情况，这些单位可以雇佣未满16周岁的未成年人，但必须履行批准手续。需要进一步确认相关“批准手续”内容是否限定了具体条件。<search>文艺单位 未成年人 雇佣批准手续</search>\n\n### 核实批准条件\n<information>相关规定对于文艺、体育或特种工艺单位雇佣未满十六周岁未成年人规定了严格的审核程序，包括获得主管部门的审批，确保对未成年人的健康和安全无不利影响。</information>可以确定这一例外情况受到严格监管。</content>\n\n### Conclusion\n根据《中华人民共和国劳动法》和《未成年人保护法》，用人单位一律不得雇佣未满十六周岁的未成年人，除非是文艺、体育或特种工艺单位且履行了国家规定的批准手续，且这种情况受到严格监管。\n\n### Verification\n法律条款清晰地规定了用人单位不得雇佣未满16周岁的未成年人，并明确了例外情况和批准条件。结论准确无误。\n</Thought Process>\n\n<Question>\n用人单位到底能否雇佣未满十六周岁的人？\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n嗯，这个问题要搞清楚，首先得查一下法律是怎么规定的。根据我的印象，未成年人保护和劳动法律应该都会有相关的内容，也许那里能找到答案。我得先看看《中华人民共和国劳动法》和《未成年人保护法》里有没有明确说未满16周岁能不能被雇佣的条款。<search>劳动法 未成年人 雇佣</search>\n\n哦，我找到了相关法律内容。《中华人民共和国劳动法》第15条说，用人单位不能招用未满16周岁的未成年人，这是禁止的。不过有个例外，说如果是文艺、体育或者特种工艺单位，因为一些特殊需求的话，就可以招用未满16周岁的未成年人，但前提是要依照国家有关规定办理审批手续。另外，《中华人民共和国未成年人保护法》第9条也强调，任何组织或个人不可以招用未满16周岁的未成年人，除非国家有特别的规定。<information>《中华人民共和国劳动法》第15条：禁止用人单位招用未满16周岁的未成年人。文艺、体育和特种工艺单位因特殊需要，招用未满16周岁的未成年人，必须依照国家有关规定履行批准手续。《中华人民共和国未成年人保护法》第9条：任何组织或个人不得招用未满16周岁的未成年人，国家另有规定的除外。</information>\n\n看起来，答案是一般情况下肯定不能雇佣未满16周岁的未成年人。但是，这里提到了一些例外情况，像文艺、体育、特种工艺单位可以在某些特别需要的时候招用未满16周岁的孩子，不过前提是需要办理什么批准手续。我觉得需要深入看看这个‘批准手续’具体是怎么规定的，以及有没有特别严格的条件。这样才能更确定这个特例到底适用哪些场合。<search>文艺单位 未成年人 雇佣批准手续</search>\n\n好，我又找到了一些信息。这里提到，如果文艺、体育或者特种工艺单位真要雇佣未满16周岁的未成年人，必须提前进行审核程序。这些程序包括向主管部门申请审批，还有一项特别强调的是需要确保不会对未成年人的健康或安全带来负面影响。看起来，这些例外情况其实被管控得很严格，并不是随随便便就能做的。<information>相关规定对于文艺、体育或特种工艺单位雇佣未满十六周岁未成年人规定了严格的审核程序，包括获得主管部门的审批，确保对未成年人的健康和安全无不利影响。</information>\n\n综上来看，用人单位基本上是不能雇佣未满十六周岁的未成年人的，这是法律的明确禁止。但文艺、体育或特种工艺单位是个特殊情况，如果他们有真实的特殊需求，并且办理了相关批准手续，同时还保证了对未成年人的健康和安全没有影响，那在这种情况下是可以的。当然，这样的批准手续需要经过严格的审查。\n\n总结说来，一般用人单位肯定不可以雇佣未满16周岁的小孩，而就算是有这种特殊需求的单位，也会受到严格监管，且只是个很有限的例外。我觉得我的推理是准确的，因为法律条款说得很清楚，条例之间也没有矛盾。\n</Internal Thinking>\n\n<Question>\n用人单位到底能否雇佣未满十六周岁的人？\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"明确法律框架\",\n      \"content\": \"要确定用人单位是否可以雇佣未满十六周岁的人，首先需要明确相关法律规定。根据中国法律，未成年人保护及劳动法律的相关规定会对此问题有所涉及。我需要搜索具体的法律，例如《中华人民共和国劳动法》和《未成年人保护法》。<search>劳动法 未成年人 雇佣</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"解读法律条款\",\n      \"content\": \"<information>《中华人民共和国劳动法》第15条：禁止用人单位招用未满16周岁的未成年人。文艺、体育和特种工艺单位因特殊需要，招用未满16周岁的未成年人，必须依照国家有关规定履行批准手续。《中华人民共和国未成年人保护法》第9条：任何组织或个人不得招用未满16周岁的未成年人，国家另有规定的除外。</information>根据上述信息，未满十六周岁的未成年人一般情况下不能被用人单位招用，除非是文艺、体育或特种工艺单位且履行了国家规定的批准手续。</content>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"明确例外情况\",\n      \"content\": \"文艺、体育和特种工艺单位的特殊需求是一个例外情况，这些单位可以雇佣未满16周岁的未成年人，但必须履行批准手续。需要进一步确认相关“批准手续”内容是否限定了具体条件。<search>文艺单位 未成年人 雇佣批准手续</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"核实批准条件\",\n      \"content\": \"<information>相关规定对于文艺、体育或特种工艺单位雇佣未满十六周岁未成年人规定了严格的审核程序，包括获得主管部门的审批，确保对未成年人的健康和安全无不利影响。</information>可以确定这一例外情况受到严格监管。</content>\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"根据《中华人民共和国劳动法》和《未成年人保护法》，用人单位一律不得雇佣未满十六周岁的未成年人，除非是文艺、体育或特种工艺单位且履行了国家规定的批准手续，且这种情况受到严格监管。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"法律条款清晰地规定了用人单位不得雇佣未满16周岁的未成年人，并明确了例外情况和批准条件。结论准确无误。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"嗯，这个问题要搞清楚，首先得查一下法律是怎么规定的。根据我的印象，未成年人保护和劳动法律应该都会有相关的内容，也许那里能找到答案。我得先看看《中华人民共和国劳动法》和《未成年人保护法》里有没有明确说未满16周岁能不能被雇佣的条款。<search>劳动法 未成年人 雇佣</search>\\n\\n哦，我找到了相关法律内容。《中华人民共和国劳动法》第15条说，用人单位不能招用未满16周岁的未成年人，这是禁止的。不过有个例外，说如果是文艺、体育或者特种工艺单位，因为一些特殊需求的话，就可以招用未满16周岁的未成年人，但前提是要依照国家有关规定办理审批手续。另外，《中华人民共和国未成年人保护法》第9条也强调，任何组织或个人不可以招用未满16周岁的未成年人，除非国家有特别的规定。<information>《中华人民共和国劳动法》第15条：禁止用人单位招用未满16周岁的未成年人。文艺、体育和特种工艺单位因特殊需要，招用未满16周岁的未成年人，必须依照国家有关规定履行批准手续。《中华人民共和国未成年人保护法》第9条：任何组织或个人不得招用未满16周岁的未成年人，国家另有规定的除外。</information>\\n\\n看起来，答案是一般情况下肯定不能雇佣未满16周岁的未成年人。但是，这里提到了一些例外情况，像文艺、体育、特种工艺单位可以在某些特别需要的时候招用未满16周岁的孩子，不过前提是需要办理什么批准手续。我觉得需要深入看看这个‘批准手续’具体是怎么规定的，以及有没有特别严格的条件。这样才能更确定这个特例到底适用哪些场合。<search>文艺单位 未成年人 雇佣批准手续</search>\\n\\n好，我又找到了一些信息。这里提到，如果文艺、体育或者特种工艺单位真要雇佣未满16周岁的未成年人，必须提前进行审核程序。这些程序包括向主管部门申请审批，还有一项特别强调的是需要确保不会对未成年人的健康或安全带来负面影响。看起来，这些例外情况其实被管控得很严格，并不是随随便便就能做的。<information>相关规定对于文艺、体育或特种工艺单位雇佣未满十六周岁未成年人规定了严格的审核程序，包括获得主管部门的审批，确保对未成年人的健康和安全无不利影响。</information>\\n\\n综上来看，用人单位基本上是不能雇佣未满十六周岁的未成年人的，这是法律的明确禁止。但文艺、体育或特种工艺单位是个特殊情况，如果他们有真实的特殊需求，并且办理了相关批准手续，同时还保证了对未成年人的健康和安全没有影响，那在这种情况下是可以的。当然，这样的批准手续需要经过严格的审查。\\n\\n总结说来，一般用人单位肯定不可以雇佣未满16周岁的小孩，而就算是有这种特殊需求的单位，也会受到严格监管，且只是个很有限的例外。我觉得我的推理是准确的，因为法律条款说得很清楚，条例之间也没有矛盾。\"\n}\n```",
+    "根据《中华人民共和国劳动法》第15条和《中华人民共和国未成年人保护法》第9条规定，**用人单位不得雇佣未满16周岁的未成年人**。这是法律明确禁止的行为。然而，这项规定存在一个例外情形：如果是文艺、体育或特种工艺单位因特殊需求需要招用未满16周岁的未成年人，这些单位可以在办理相关审批手续后进行雇佣。\n\n具体来说，这类单位需向相关主管部门提出审批申请，同时还必须确保不会对未成年人的健康或安全构成不利影响。这说明，即便存在例外，雇佣行为仍会受到严格限制和监管。这种特殊情况属于特例，审批条件非常严格，不能随意适用。\n\n总之，一般情况下，**未满16周岁的未成年人不能被雇佣**；只有在文艺、体育或特种工艺单位的特殊需求且经过严格审批的情况下，才可以进行有限的雇佣。这是法律的明确界定。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "明确法律框架",
+        "content": "要确定用人单位是否可以雇佣未满十六周岁的人，首先需要明确相关法律规定。根据中国法律，未成年人保护及劳动法律的相关规定会对此问题有所涉及。我需要搜索具体的法律，例如《中华人民共和国劳动法》和《未成年人保护法》。<search>劳动法 未成年人 雇佣</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "解读法律条款",
+        "content": "<information>《中华人民共和国劳动法》第15条：禁止用人单位招用未满16周岁的未成年人。文艺、体育和特种工艺单位因特殊需要，招用未满16周岁的未成年人，必须依照国家有关规定履行批准手续。《中华人民共和国未成年人保护法》第9条：任何组织或个人不得招用未满16周岁的未成年人，国家另有规定的除外。</information>根据上述信息，未满十六周岁的未成年人一般情况下不能被用人单位招用，除非是文艺、体育或特种工艺单位且履行了国家规定的批准手续。</content>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "明确例外情况",
+        "content": "文艺、体育和特种工艺单位的特殊需求是一个例外情况，这些单位可以雇佣未满16周岁的未成年人，但必须履行批准手续。需要进一步确认相关“批准手续”内容是否限定了具体条件。<search>文艺单位 未成年人 雇佣批准手续</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "核实批准条件",
+        "content": "<information>相关规定对于文艺、体育或特种工艺单位雇佣未满十六周岁未成年人规定了严格的审核程序，包括获得主管部门的审批，确保对未成年人的健康和安全无不利影响。</information>可以确定这一例外情况受到严格监管。</content>"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "根据《中华人民共和国劳动法》和《未成年人保护法》，用人单位一律不得雇佣未满十六周岁的未成年人，除非是文艺、体育或特种工艺单位且履行了国家规定的批准手续，且这种情况受到严格监管。"
+      },
+      {
+        "action": "Verification",
+        "content": "法律条款清晰地规定了用人单位不得雇佣未满16周岁的未成年人，并明确了例外情况和批准条件。结论准确无误。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "嗯，这个问题要搞清楚，首先得查一下法律是怎么规定的。根据我的印象，未成年人保护和劳动法律应该都会有相关的内容，也许那里能找到答案。我得先看看《中华人民共和国劳动法》和《未成年人保护法》里有没有明确说未满16周岁能不能被雇佣的条款。<search>劳动法 未成年人 雇佣</search>\n\n哦，我找到了相关法律内容。《中华人民共和国劳动法》第15条说，用人单位不能招用未满16周岁的未成年人，这是禁止的。不过有个例外，说如果是文艺、体育或者特种工艺单位，因为一些特殊需求的话，就可以招用未满16周岁的未成年人，但前提是要依照国家有关规定办理审批手续。另外，《中华人民共和国未成年人保护法》第9条也强调，任何组织或个人不可以招用未满16周岁的未成年人，除非国家有特别的规定。<information>《中华人民共和国劳动法》第15条：禁止用人单位招用未满16周岁的未成年人。文艺、体育和特种工艺单位因特殊需要，招用未满16周岁的未成年人，必须依照国家有关规定履行批准手续。《中华人民共和国未成年人保护法》第9条：任何组织或个人不得招用未满16周岁的未成年人，国家另有规定的除外。</information>\n\n看起来，答案是一般情况下肯定不能雇佣未满16周岁的未成年人。但是，这里提到了一些例外情况，像文艺、体育、特种工艺单位可以在某些特别需要的时候招用未满16周岁的孩子，不过前提是需要办理什么批准手续。我觉得需要深入看看这个‘批准手续’具体是怎么规定的，以及有没有特别严格的条件。这样才能更确定这个特例到底适用哪些场合。<search>文艺单位 未成年人 雇佣批准手续</search>\n\n好，我又找到了一些信息。这里提到，如果文艺、体育或者特种工艺单位真要雇佣未满16周岁的未成年人，必须提前进行审核程序。这些程序包括向主管部门申请审批，还有一项特别强调的是需要确保不会对未成年人的健康或安全带来负面影响。看起来，这些例外情况其实被管控得很严格，并不是随随便便就能做的。<information>相关规定对于文艺、体育或特种工艺单位雇佣未满十六周岁未成年人规定了严格的审核程序，包括获得主管部门的审批，确保对未成年人的健康和安全无不利影响。</information>\n\n综上来看，用人单位基本上是不能雇佣未满十六周岁的未成年人的，这是法律的明确禁止。但文艺、体育或特种工艺单位是个特殊情况，如果他们有真实的特殊需求，并且办理了相关批准手续，同时还保证了对未成年人的健康和安全没有影响，那在这种情况下是可以的。当然，这样的批准手续需要经过严格的审查。\n\n总结说来，一般用人单位肯定不可以雇佣未满16周岁的小孩，而就算是有这种特殊需求的单位，也会受到严格监管，且只是个很有限的例外。我觉得我的推理是准确的，因为法律条款说得很清楚，条例之间也没有矛盾。",
+  "Response": "根据《中华人民共和国劳动法》第15条和《中华人民共和国未成年人保护法》第9条规定，**用人单位不得雇佣未满16周岁的未成年人**。这是法律明确禁止的行为。然而，这项规定存在一个例外情形：如果是文艺、体育或特种工艺单位因特殊需求需要招用未满16周岁的未成年人，这些单位可以在办理相关审批手续后进行雇佣。\n\n具体来说，这类单位需向相关主管部门提出审批申请，同时还必须确保不会对未成年人的健康或安全构成不利影响。这说明，即便存在例外，雇佣行为仍会受到严格限制和监管。这种特殊情况属于特例，审批条件非常严格，不能随意适用。\n\n总之，一般情况下，**未满16周岁的未成年人不能被雇佣**；只有在文艺、体育或特种工艺单位的特殊需求且经过严格审批的情况下，才可以进行有限的雇佣。这是法律的明确界定。",
+  "Question": "用人单位到底能否雇佣未满十六周岁的人？"
+}

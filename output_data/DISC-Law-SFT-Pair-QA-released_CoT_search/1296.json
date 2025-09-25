@@ -1,0 +1,89 @@
+{
+  "Open-ended Verifiable Question": "撞伤人肇事逃逸算刑事案件吗?",
+  "Ground-True Answer": "撞伤人肇事逃逸算刑事案件。\n造成交通事故后逃逸的行为,根据不同情况,分别做如下处理:\n1.对造成交通事故后逃逸,尚不构成犯罪的,由公安机关处200元到2000元罚款,可以并处15以下拘留；\n2.对发生重大交通事故,构成犯罪,没有逃逸的,除依法追究刑事责任外,由公安机关吊销机动车驾驶证；\n3.对发生重大交通事故,构成犯罪,并逃逸的,除依法追究刑事责任外,由公安机关吊销机动车驾驶证,并终生不得重新领取机动车驾驶证。",
+  "process_id": 1296,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "分析撞伤人肇事逃逸的法律性质",
+      "content": "撞伤人肇事逃逸行为的法律性质取决于是否符合刑法中关于交通肇事罪的定义。同时，部分行为可能只构成违章，而不构成刑事案件。需要明确的是具体行为是否达到刑事责任的标准。首先确定相关法律依据。检索《中华人民共和国刑法》中有关交通肇事罪和肇事逃逸的规定。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "检索相关法律条款",
+      "content": "<search>中华人民共和国刑法 交通肇事罪及肇事逃逸相关规定</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "提取法律信息进行分析",
+      "content": "<information>《中华人民共和国刑法》第133条规定：交通肇事罪是因违反交通运输管理法规，发生重大交通事故，致人重伤、死亡或者使公私财产遭受重大损失，受到刑法处罚的行为。如果行为人在事故发生后逃逸，可能构成加重情节，《刑法》第133条进一步指出，因逃逸致人死亡的可能被加重处罚。</information>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "判断肇事逃逸是否符合刑事案件标准",
+      "content": "根据《中华人民共和国刑法》第133条，如果撞伤人的后果达到“重大交通事故”导致重伤、死亡，或者造成公私财产重大损失，并存在肇事逃逸的行为，则符合刑事案件标准，构成交通肇事罪。而普通的撞人且逃逸可能仅构成违反交通法规，本质上为行政或民事违法，但未达到刑事责任的门槛。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "撞伤人肇事逃逸是否构成刑事案件取决于实际情况。如果行为导致重大交通事故（如重伤、死亡或重大财产损失），并伴随逃逸行为，则构成交通肇事罪，为刑事案件；如果未达到上述严重后果，则可能仅为行政或民事案件。"
+    },
+    {
+      "action": "Verification",
+      "content": "结论准确，依据《中华人民共和国刑法》第133条对肇事逃逸恶劣后果的判断，撞伤人肇事逃逸有可能构成刑事案件，但需满足严重后果的条件。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n撞伤人肇事逃逸算刑事案件吗?\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n撞伤人肇事逃逸是否构成刑事案件取决于实际情况。如果行为导致重大交通事故（如重伤、死亡或重大财产损失），并伴随逃逸行为，则构成交通肇事罪，为刑事案件；如果未达到上述严重后果，则可能仅为行政或民事案件。  \n</Model Response>  \n\n<Reference Answer>  \n撞伤人肇事逃逸算刑事案件。\n造成交通事故后逃逸的行为,根据不同情况,分别做如下处理:\n1.对造成交通事故后逃逸,尚不构成犯罪的,由公安机关处200元到2000元罚款,可以并处15以下拘留；\n2.对发生重大交通事故,构成犯罪,没有逃逸的,除依法追究刑事责任外,由公安机关吊销机动车驾驶证；\n3.对发生重大交通事故,构成犯罪,并逃逸的,除依法追究刑事责任外,由公安机关吊销机动车驾驶证,并终生不得重新领取机动车驾驶证。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 分析撞伤人肇事逃逸的法律性质\n撞伤人肇事逃逸行为的法律性质取决于是否符合刑法中关于交通肇事罪的定义。同时，部分行为可能只构成违章，而不构成刑事案件。需要明确的是具体行为是否达到刑事责任的标准。首先确定相关法律依据。检索《中华人民共和国刑法》中有关交通肇事罪和肇事逃逸的规定。\n\n### 检索相关法律条款\n<search>中华人民共和国刑法 交通肇事罪及肇事逃逸相关规定</search>\n\n### 提取法律信息进行分析\n<information>《中华人民共和国刑法》第133条规定：交通肇事罪是因违反交通运输管理法规，发生重大交通事故，致人重伤、死亡或者使公私财产遭受重大损失，受到刑法处罚的行为。如果行为人在事故发生后逃逸，可能构成加重情节，《刑法》第133条进一步指出，因逃逸致人死亡的可能被加重处罚。</information>\n\n### 判断肇事逃逸是否符合刑事案件标准\n根据《中华人民共和国刑法》第133条，如果撞伤人的后果达到“重大交通事故”导致重伤、死亡，或者造成公私财产重大损失，并存在肇事逃逸的行为，则符合刑事案件标准，构成交通肇事罪。而普通的撞人且逃逸可能仅构成违反交通法规，本质上为行政或民事违法，但未达到刑事责任的门槛。\n\n### Conclusion\n撞伤人肇事逃逸是否构成刑事案件取决于实际情况。如果行为导致重大交通事故（如重伤、死亡或重大财产损失），并伴随逃逸行为，则构成交通肇事罪，为刑事案件；如果未达到上述严重后果，则可能仅为行政或民事案件。\n\n### Verification\n结论准确，依据《中华人民共和国刑法》第133条对肇事逃逸恶劣后果的判断，撞伤人肇事逃逸有可能构成刑事案件，但需满足严重后果的条件。\n</Thought Process>\n\n<Question>\n撞伤人肇事逃逸算刑事案件吗?\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n撞伤人后逃跑，这种行为到底算不算刑事案件呢？嗯，这得先看法律是怎么规定的。先来查一下交通肇事罪和肇事逃逸相关的法律规定吧。<search>中华人民共和国刑法 交通肇事罪及肇事逃逸相关规定</search>\n\n哦，搜到了。我看看具体怎么说的。<information>《中华人民共和国刑法》第133条规定：交通肇事罪是因违反交通运输管理法规，发生重大交通事故，致人重伤、死亡或者使公私财产遭受重大损失，受到刑法处罚的行为。如果行为人在事故发生后逃逸，可能构成加重情节，《刑法》第133条进一步指出，因逃逸致人死亡的可能被加重处罚。</information>\n\n看来这个法律条文里讲得很清楚。撞伤人后逃逸，如果导致重大的后果，比如重伤、死亡，或者造成公私财产的重大损失，那就属于刑事案件了。而且这种情况下，逃逸行为还会成为加重情节，可能面临更重的处罚。嗯，不过，如果对方只是轻微受伤，事故后果不严重，应该就构不上刑事责任，只是一般的交通违章问题，会按行政或者民事规定来处理。\n\n对了，我再确认一下。按照这条法律，重点是事故造成的后果是否够严重。如果后果够严重，还逃逸，那就是刑事案件，是交通肇事罪。如果后果没那么严重，或者只是单纯违反交通规则，虽然逃逸不道德，但没严重到触犯《刑法》，那就不算刑事案件。\n\n总结一下吧。所以说，撞伤人后逃逸算不算刑事案件，关键看你有没有引发重大交通事故。重大交通事故，比如重伤、死亡、或者公私财产很大的损失，这种情况再逃逸，就算刑事案件。如果只是轻微事故，可能只是行政或民事违法的问题。这要具体情况具体分析了，但重大的逃逸行为一般跑不了刑事责任。\n</Internal Thinking>\n\n<Question>\n撞伤人肇事逃逸算刑事案件吗?\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析撞伤人肇事逃逸的法律性质\",\n      \"content\": \"撞伤人肇事逃逸行为的法律性质取决于是否符合刑法中关于交通肇事罪的定义。同时，部分行为可能只构成违章，而不构成刑事案件。需要明确的是具体行为是否达到刑事责任的标准。首先确定相关法律依据。检索《中华人民共和国刑法》中有关交通肇事罪和肇事逃逸的规定。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"检索相关法律条款\",\n      \"content\": \"<search>中华人民共和国刑法 交通肇事罪及肇事逃逸相关规定</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"提取法律信息进行分析\",\n      \"content\": \"<information>《中华人民共和国刑法》第133条规定：交通肇事罪是因违反交通运输管理法规，发生重大交通事故，致人重伤、死亡或者使公私财产遭受重大损失，受到刑法处罚的行为。如果行为人在事故发生后逃逸，可能构成加重情节，《刑法》第133条进一步指出，因逃逸致人死亡的可能被加重处罚。</information>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"判断肇事逃逸是否符合刑事案件标准\",\n      \"content\": \"根据《中华人民共和国刑法》第133条，如果撞伤人的后果达到“重大交通事故”导致重伤、死亡，或者造成公私财产重大损失，并存在肇事逃逸的行为，则符合刑事案件标准，构成交通肇事罪。而普通的撞人且逃逸可能仅构成违反交通法规，本质上为行政或民事违法，但未达到刑事责任的门槛。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"撞伤人肇事逃逸是否构成刑事案件取决于实际情况。如果行为导致重大交通事故（如重伤、死亡或重大财产损失），并伴随逃逸行为，则构成交通肇事罪，为刑事案件；如果未达到上述严重后果，则可能仅为行政或民事案件。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"结论准确，依据《中华人民共和国刑法》第133条对肇事逃逸恶劣后果的判断，撞伤人肇事逃逸有可能构成刑事案件，但需满足严重后果的条件。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"撞伤人后逃跑，这种行为到底算不算刑事案件呢？嗯，这得先看法律是怎么规定的。先来查一下交通肇事罪和肇事逃逸相关的法律规定吧。<search>中华人民共和国刑法 交通肇事罪及肇事逃逸相关规定</search>\\n\\n哦，搜到了。我看看具体怎么说的。<information>《中华人民共和国刑法》第133条规定：交通肇事罪是因违反交通运输管理法规，发生重大交通事故，致人重伤、死亡或者使公私财产遭受重大损失，受到刑法处罚的行为。如果行为人在事故发生后逃逸，可能构成加重情节，《刑法》第133条进一步指出，因逃逸致人死亡的可能被加重处罚。</information>\\n\\n看来这个法律条文里讲得很清楚。撞伤人后逃逸，如果导致重大的后果，比如重伤、死亡，或者造成公私财产的重大损失，那就属于刑事案件了。而且这种情况下，逃逸行为还会成为加重情节，可能面临更重的处罚。嗯，不过，如果对方只是轻微受伤，事故后果不严重，应该就构不上刑事责任，只是一般的交通违章问题，会按行政或者民事规定来处理。\\n\\n对了，我再确认一下。按照这条法律，重点是事故造成的后果是否够严重。如果后果够严重，还逃逸，那就是刑事案件，是交通肇事罪。如果后果没那么严重，或者只是单纯违反交通规则，虽然逃逸不道德，但没严重到触犯《刑法》，那就不算刑事案件。\\n\\n总结一下吧。所以说，撞伤人后逃逸算不算刑事案件，关键看你有没有引发重大交通事故。重大交通事故，比如重伤、死亡、或者公私财产很大的损失，这种情况再逃逸，就算刑事案件。如果只是轻微事故，可能只是行政或民事违法的问题。这要具体情况具体分析了，但重大的逃逸行为一般跑不了刑事责任。\"\n}\n```",
+    "撞伤人并肇事逃逸是否算刑事案件，关键取决于事故造成的后果是否达到了刑法规定的严重程度。\n\n根据《中华人民共和国刑法》第133条的相关规定，交通肇事罪是因违反交通运输管理法规，导致重大交通事故的行为，包括致人重伤、死亡或造成公私财产重大损失。如果在这样的严重事故中发生肇事逃逸，逃逸行为将构成加重情节，可能面临更重的刑事处罚。如果因逃逸导致被害人死亡，则刑罚可能会进一步加重。\n\n然而，如果事故后果较轻，例如仅导致轻微受伤或财产损失不严重，则不构成交通肇事罪。这种情况下，肇事逃逸通常会被视为交通违章，会依据行政处罚或民事法律来处理，而不会被追究刑事责任。\n\n简而言之，肇事逃逸是否构成刑事案件，要根据事故后果的严重程度来判定：  \n- **造成重大交通事故（重伤、死亡或重大财产损失）并逃逸**：构成交通肇事罪，为刑事案件；  \n- **事故后果轻微，未达到重大程度**：虽不构成刑事案件，但仍会受到行政或民事处罚。\n\n具体情况需要结合事故实际后果以及逃逸行为来决定。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "分析撞伤人肇事逃逸的法律性质",
+        "content": "撞伤人肇事逃逸行为的法律性质取决于是否符合刑法中关于交通肇事罪的定义。同时，部分行为可能只构成违章，而不构成刑事案件。需要明确的是具体行为是否达到刑事责任的标准。首先确定相关法律依据。检索《中华人民共和国刑法》中有关交通肇事罪和肇事逃逸的规定。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "检索相关法律条款",
+        "content": "<search>中华人民共和国刑法 交通肇事罪及肇事逃逸相关规定</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "提取法律信息进行分析",
+        "content": "<information>《中华人民共和国刑法》第133条规定：交通肇事罪是因违反交通运输管理法规，发生重大交通事故，致人重伤、死亡或者使公私财产遭受重大损失，受到刑法处罚的行为。如果行为人在事故发生后逃逸，可能构成加重情节，《刑法》第133条进一步指出，因逃逸致人死亡的可能被加重处罚。</information>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "判断肇事逃逸是否符合刑事案件标准",
+        "content": "根据《中华人民共和国刑法》第133条，如果撞伤人的后果达到“重大交通事故”导致重伤、死亡，或者造成公私财产重大损失，并存在肇事逃逸的行为，则符合刑事案件标准，构成交通肇事罪。而普通的撞人且逃逸可能仅构成违反交通法规，本质上为行政或民事违法，但未达到刑事责任的门槛。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "撞伤人肇事逃逸是否构成刑事案件取决于实际情况。如果行为导致重大交通事故（如重伤、死亡或重大财产损失），并伴随逃逸行为，则构成交通肇事罪，为刑事案件；如果未达到上述严重后果，则可能仅为行政或民事案件。"
+      },
+      {
+        "action": "Verification",
+        "content": "结论准确，依据《中华人民共和国刑法》第133条对肇事逃逸恶劣后果的判断，撞伤人肇事逃逸有可能构成刑事案件，但需满足严重后果的条件。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "撞伤人后逃跑，这种行为到底算不算刑事案件呢？嗯，这得先看法律是怎么规定的。先来查一下交通肇事罪和肇事逃逸相关的法律规定吧。<search>中华人民共和国刑法 交通肇事罪及肇事逃逸相关规定</search>\n\n哦，搜到了。我看看具体怎么说的。<information>《中华人民共和国刑法》第133条规定：交通肇事罪是因违反交通运输管理法规，发生重大交通事故，致人重伤、死亡或者使公私财产遭受重大损失，受到刑法处罚的行为。如果行为人在事故发生后逃逸，可能构成加重情节，《刑法》第133条进一步指出，因逃逸致人死亡的可能被加重处罚。</information>\n\n看来这个法律条文里讲得很清楚。撞伤人后逃逸，如果导致重大的后果，比如重伤、死亡，或者造成公私财产的重大损失，那就属于刑事案件了。而且这种情况下，逃逸行为还会成为加重情节，可能面临更重的处罚。嗯，不过，如果对方只是轻微受伤，事故后果不严重，应该就构不上刑事责任，只是一般的交通违章问题，会按行政或者民事规定来处理。\n\n对了，我再确认一下。按照这条法律，重点是事故造成的后果是否够严重。如果后果够严重，还逃逸，那就是刑事案件，是交通肇事罪。如果后果没那么严重，或者只是单纯违反交通规则，虽然逃逸不道德，但没严重到触犯《刑法》，那就不算刑事案件。\n\n总结一下吧。所以说，撞伤人后逃逸算不算刑事案件，关键看你有没有引发重大交通事故。重大交通事故，比如重伤、死亡、或者公私财产很大的损失，这种情况再逃逸，就算刑事案件。如果只是轻微事故，可能只是行政或民事违法的问题。这要具体情况具体分析了，但重大的逃逸行为一般跑不了刑事责任。",
+  "Response": "撞伤人并肇事逃逸是否算刑事案件，关键取决于事故造成的后果是否达到了刑法规定的严重程度。\n\n根据《中华人民共和国刑法》第133条的相关规定，交通肇事罪是因违反交通运输管理法规，导致重大交通事故的行为，包括致人重伤、死亡或造成公私财产重大损失。如果在这样的严重事故中发生肇事逃逸，逃逸行为将构成加重情节，可能面临更重的刑事处罚。如果因逃逸导致被害人死亡，则刑罚可能会进一步加重。\n\n然而，如果事故后果较轻，例如仅导致轻微受伤或财产损失不严重，则不构成交通肇事罪。这种情况下，肇事逃逸通常会被视为交通违章，会依据行政处罚或民事法律来处理，而不会被追究刑事责任。\n\n简而言之，肇事逃逸是否构成刑事案件，要根据事故后果的严重程度来判定：  \n- **造成重大交通事故（重伤、死亡或重大财产损失）并逃逸**：构成交通肇事罪，为刑事案件；  \n- **事故后果轻微，未达到重大程度**：虽不构成刑事案件，但仍会受到行政或民事处罚。\n\n具体情况需要结合事故实际后果以及逃逸行为来决定。",
+  "Question": "撞伤人肇事逃逸算刑事案件吗?"
+}

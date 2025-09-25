@@ -1,0 +1,99 @@
+{
+  "Open-ended Verifiable Question": "楼房主通道能单独出售吗？",
+  "Ground-True Answer": "区分所有建筑物由专有部分和共用部分构成。专有部分主要是指通过一定的方式而对建筑物加以区分，由此所分割出的兼具建筑构造上的独立性和使用上的独立性的部分建筑。共用部分是指区分建筑物除专有部分外的其他部分及不属专有之附属建筑物。区分所有权人只能拥有共有部分一定价值上的份额，而不能对实物进行分割。区分建筑物共有部分的范围非常广泛，只要不属于建筑物专有部分，都是建筑物共有部分。通道属于综合楼的共用部分，若其中一个业主将本属于整栋楼房所有业主的公用通道出售给他人，侵犯了其他业主的共有权，当属无效。",
+  "process_id": 7331,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "问题分解",
+      "content": "楼房主通道是否能单独出售涉及多方面的法律因素，包括该通道的产权归属、相关法律法规的规定以及实际使用功能的限制。我需要先明确楼房主通道是否属于独立的物权。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "检索相关法律对公用设施的产权规定",
+      "content": "楼房主通道是否可以作为独立产权出售，可能需要参照有关《物权法》和《民法典》中关于共有部分及公共设施的规定。需要具体检索相关法律条款。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "查找《物权法》中关于共有部分的规定",
+      "content": "需要搜索与楼房共有部分有关的法律条款，以明确主通道是否属于整栋楼的共有财产，以及能否单独划归为特定产权销售对象。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "查找结果并分析",
+      "content": "<search>物权法 楼房 共有部分</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "应用法规",
+      "content": "<information>根据《物权法》第70条至第72条，以及《民法典》第282条，建筑物及其附属设施需要满足全体业主的共同利益，主通道一般被认定为全体业主共有，不能单独出售。</information>据此，楼房的主通道因其公共性质，通常依法属于业主共有，其产权无法分离单卖。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "楼房主通道作为全体业主共有部分，其产权无法单独分离并进行出售。这是因为根据《民法典》及《物权法》，主通道属于直接服务于全体业主利益的公用设施，受法律保护。任何出售必须在全体业主同意的前提下方可进行，而实践中通常不允许此类出售行为。"
+    },
+    {
+      "action": "Verification",
+      "content": "结论符合《物权法》和《民法典》中对共有部分的规定，且符合实际操作中对公共空间的管理惯例，结论正确。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n楼房主通道能单独出售吗？\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n楼房主通道作为全体业主共有部分，其产权无法单独分离并进行出售。这是因为根据《民法典》及《物权法》，主通道属于直接服务于全体业主利益的公用设施，受法律保护。任何出售必须在全体业主同意的前提下方可进行，而实践中通常不允许此类出售行为。  \n</Model Response>  \n\n<Reference Answer>  \n区分所有建筑物由专有部分和共用部分构成。专有部分主要是指通过一定的方式而对建筑物加以区分，由此所分割出的兼具建筑构造上的独立性和使用上的独立性的部分建筑。共用部分是指区分建筑物除专有部分外的其他部分及不属专有之附属建筑物。区分所有权人只能拥有共有部分一定价值上的份额，而不能对实物进行分割。区分建筑物共有部分的范围非常广泛，只要不属于建筑物专有部分，都是建筑物共有部分。通道属于综合楼的共用部分，若其中一个业主将本属于整栋楼房所有业主的公用通道出售给他人，侵犯了其他业主的共有权，当属无效。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 问题分解\n楼房主通道是否能单独出售涉及多方面的法律因素，包括该通道的产权归属、相关法律法规的规定以及实际使用功能的限制。我需要先明确楼房主通道是否属于独立的物权。\n\n### 检索相关法律对公用设施的产权规定\n楼房主通道是否可以作为独立产权出售，可能需要参照有关《物权法》和《民法典》中关于共有部分及公共设施的规定。需要具体检索相关法律条款。\n\n### 查找《物权法》中关于共有部分的规定\n需要搜索与楼房共有部分有关的法律条款，以明确主通道是否属于整栋楼的共有财产，以及能否单独划归为特定产权销售对象。\n\n### 查找结果并分析\n<search>物权法 楼房 共有部分</search>\n\n### 应用法规\n<information>根据《物权法》第70条至第72条，以及《民法典》第282条，建筑物及其附属设施需要满足全体业主的共同利益，主通道一般被认定为全体业主共有，不能单独出售。</information>据此，楼房的主通道因其公共性质，通常依法属于业主共有，其产权无法分离单卖。\n\n### Conclusion\n楼房主通道作为全体业主共有部分，其产权无法单独分离并进行出售。这是因为根据《民法典》及《物权法》，主通道属于直接服务于全体业主利益的公用设施，受法律保护。任何出售必须在全体业主同意的前提下方可进行，而实践中通常不允许此类出售行为。\n\n### Verification\n结论符合《物权法》和《民法典》中对共有部分的规定，且符合实际操作中对公共空间的管理惯例，结论正确。\n</Thought Process>\n\n<Question>\n楼房主通道能单独出售吗？\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n楼房的主通道能不能单独出售呢？这个问题得从几个方面来考虑。首先，这个通道到底是不是可以被认定为独立的产权呢？然后，法律上对这种情况是怎么规定的？有些东西虽然看着好像可以交易，但从法律角度未必行得通。\n\n嗯，先想想楼房的主通道到底算谁的。可以理解为整个楼每个住户都会用到的通道吧，所以可能是属于整栋楼的业主共有部分。那么，问题来了，它能不能脱离这样的共有性质，变成某个人单独拥有，并且去卖掉呢？\n\n要搞清楚这点，最好查一下法律怎么说。嗯，关于楼房共有部分或者公共设施的归属，就应该查《物权法》和《民法典》。这些法律应该会对类似情况有明确的解释。好，那我来搜一下相关内容，看看具体条文是怎么规定这类共有部分的。\n\n<search>物权法 楼房 共有部分</search>\n\n哦，找到了相关规定！\n\n<information>根据《物权法》第70条至第72条，以及《民法典》第282条，建筑物及其附属设施需要满足全体业主的共同利益，主通道一般被认定为全体业主共有，不能单独出售。</information>\n\n从这里看得很清楚了，主通道通常会被认定为公共部分，归全体业主共有。即使在实际中某人想出售，也得经过所有业主的同意。可是，具体操作起来涉及的权益协调太复杂，所以通常情况下，这种主通道是不能被单独出售的。\n\n再回头想想，也蛮合理的。毕竟主通道是大家每天都要用的，涉及到每一位业主的通行便利。如果一个人能单独把它卖掉，那其他业主的权益肯定会受到损害，法律上当然会有保护。\n\n总结一下，楼房的主通道因为属于全体业主共有部分，不能被单独分离成私产，更不能随便出售。《民法典》《物权法》的相关条款也明确保护了这类公共空间。来看，这么规定的确是合理的，结论没问题。\n</Internal Thinking>\n\n<Question>\n楼房主通道能单独出售吗？\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"问题分解\",\n      \"content\": \"楼房主通道是否能单独出售涉及多方面的法律因素，包括该通道的产权归属、相关法律法规的规定以及实际使用功能的限制。我需要先明确楼房主通道是否属于独立的物权。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"检索相关法律对公用设施的产权规定\",\n      \"content\": \"楼房主通道是否可以作为独立产权出售，可能需要参照有关《物权法》和《民法典》中关于共有部分及公共设施的规定。需要具体检索相关法律条款。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"查找《物权法》中关于共有部分的规定\",\n      \"content\": \"需要搜索与楼房共有部分有关的法律条款，以明确主通道是否属于整栋楼的共有财产，以及能否单独划归为特定产权销售对象。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"查找结果并分析\",\n      \"content\": \"<search>物权法 楼房 共有部分</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"应用法规\",\n      \"content\": \"<information>根据《物权法》第70条至第72条，以及《民法典》第282条，建筑物及其附属设施需要满足全体业主的共同利益，主通道一般被认定为全体业主共有，不能单独出售。</information>据此，楼房的主通道因其公共性质，通常依法属于业主共有，其产权无法分离单卖。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"楼房主通道作为全体业主共有部分，其产权无法单独分离并进行出售。这是因为根据《民法典》及《物权法》，主通道属于直接服务于全体业主利益的公用设施，受法律保护。任何出售必须在全体业主同意的前提下方可进行，而实践中通常不允许此类出售行为。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"结论符合《物权法》和《民法典》中对共有部分的规定，且符合实际操作中对公共空间的管理惯例，结论正确。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"楼房的主通道能不能单独出售呢？这个问题得从几个方面来考虑。首先，这个通道到底是不是可以被认定为独立的产权呢？然后，法律上对这种情况是怎么规定的？有些东西虽然看着好像可以交易，但从法律角度未必行得通。\\n\\n嗯，先想想楼房的主通道到底算谁的。可以理解为整个楼每个住户都会用到的通道吧，所以可能是属于整栋楼的业主共有部分。那么，问题来了，它能不能脱离这样的共有性质，变成某个人单独拥有，并且去卖掉呢？\\n\\n要搞清楚这点，最好查一下法律怎么说。嗯，关于楼房共有部分或者公共设施的归属，就应该查《物权法》和《民法典》。这些法律应该会对类似情况有明确的解释。好，那我来搜一下相关内容，看看具体条文是怎么规定这类共有部分的。\\n\\n<search>物权法 楼房 共有部分</search>\\n\\n哦，找到了相关规定！\\n\\n<information>根据《物权法》第70条至第72条，以及《民法典》第282条，建筑物及其附属设施需要满足全体业主的共同利益，主通道一般被认定为全体业主共有，不能单独出售。</information>\\n\\n从这里看得很清楚了，主通道通常会被认定为公共部分，归全体业主共有。即使在实际中某人想出售，也得经过所有业主的同意。可是，具体操作起来涉及的权益协调太复杂，所以通常情况下，这种主通道是不能被单独出售的。\\n\\n再回头想想，也蛮合理的。毕竟主通道是大家每天都要用的，涉及到每一位业主的通行便利。如果一个人能单独把它卖掉，那其他业主的权益肯定会受到损害，法律上当然会有保护。\\n\\n总结一下，楼房的主通道因为属于全体业主共有部分，不能被单独分离成私产，更不能随便出售。《民法典》《物权法》的相关条款也明确保护了这类公共空间。来看，这么规定的确是合理的，结论没问题。\"\n}\n```",
+    "楼房的主通道不能单独出售。根据《物权法》第70条至第72条及《民法典》第282条的规定，建筑物及其附属设施中用于服务全体业主的公共部分（如主通道）属于全体业主的共有财产，不能脱离共有性质单独分割或出售。此外，任何涉及公共部分的权益变动需要获得所有相关业主的同意，这种操作在实际中非常复杂，几乎不可行。总结来说，主通道作为全体业主的共有部分，法律明确保护其共有性质，无法作为独立产权进行交易。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "问题分解",
+        "content": "楼房主通道是否能单独出售涉及多方面的法律因素，包括该通道的产权归属、相关法律法规的规定以及实际使用功能的限制。我需要先明确楼房主通道是否属于独立的物权。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "检索相关法律对公用设施的产权规定",
+        "content": "楼房主通道是否可以作为独立产权出售，可能需要参照有关《物权法》和《民法典》中关于共有部分及公共设施的规定。需要具体检索相关法律条款。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "查找《物权法》中关于共有部分的规定",
+        "content": "需要搜索与楼房共有部分有关的法律条款，以明确主通道是否属于整栋楼的共有财产，以及能否单独划归为特定产权销售对象。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "查找结果并分析",
+        "content": "<search>物权法 楼房 共有部分</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "应用法规",
+        "content": "<information>根据《物权法》第70条至第72条，以及《民法典》第282条，建筑物及其附属设施需要满足全体业主的共同利益，主通道一般被认定为全体业主共有，不能单独出售。</information>据此，楼房的主通道因其公共性质，通常依法属于业主共有，其产权无法分离单卖。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "楼房主通道作为全体业主共有部分，其产权无法单独分离并进行出售。这是因为根据《民法典》及《物权法》，主通道属于直接服务于全体业主利益的公用设施，受法律保护。任何出售必须在全体业主同意的前提下方可进行，而实践中通常不允许此类出售行为。"
+      },
+      {
+        "action": "Verification",
+        "content": "结论符合《物权法》和《民法典》中对共有部分的规定，且符合实际操作中对公共空间的管理惯例，结论正确。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "楼房的主通道能不能单独出售呢？这个问题得从几个方面来考虑。首先，这个通道到底是不是可以被认定为独立的产权呢？然后，法律上对这种情况是怎么规定的？有些东西虽然看着好像可以交易，但从法律角度未必行得通。\n\n嗯，先想想楼房的主通道到底算谁的。可以理解为整个楼每个住户都会用到的通道吧，所以可能是属于整栋楼的业主共有部分。那么，问题来了，它能不能脱离这样的共有性质，变成某个人单独拥有，并且去卖掉呢？\n\n要搞清楚这点，最好查一下法律怎么说。嗯，关于楼房共有部分或者公共设施的归属，就应该查《物权法》和《民法典》。这些法律应该会对类似情况有明确的解释。好，那我来搜一下相关内容，看看具体条文是怎么规定这类共有部分的。\n\n<search>物权法 楼房 共有部分</search>\n\n哦，找到了相关规定！\n\n<information>根据《物权法》第70条至第72条，以及《民法典》第282条，建筑物及其附属设施需要满足全体业主的共同利益，主通道一般被认定为全体业主共有，不能单独出售。</information>\n\n从这里看得很清楚了，主通道通常会被认定为公共部分，归全体业主共有。即使在实际中某人想出售，也得经过所有业主的同意。可是，具体操作起来涉及的权益协调太复杂，所以通常情况下，这种主通道是不能被单独出售的。\n\n再回头想想，也蛮合理的。毕竟主通道是大家每天都要用的，涉及到每一位业主的通行便利。如果一个人能单独把它卖掉，那其他业主的权益肯定会受到损害，法律上当然会有保护。\n\n总结一下，楼房的主通道因为属于全体业主共有部分，不能被单独分离成私产，更不能随便出售。《民法典》《物权法》的相关条款也明确保护了这类公共空间。来看，这么规定的确是合理的，结论没问题。",
+  "Response": "楼房的主通道不能单独出售。根据《物权法》第70条至第72条及《民法典》第282条的规定，建筑物及其附属设施中用于服务全体业主的公共部分（如主通道）属于全体业主的共有财产，不能脱离共有性质单独分割或出售。此外，任何涉及公共部分的权益变动需要获得所有相关业主的同意，这种操作在实际中非常复杂，几乎不可行。总结来说，主通道作为全体业主的共有部分，法律明确保护其共有性质，无法作为独立产权进行交易。",
+  "Question": "楼房主通道能单独出售吗？"
+}

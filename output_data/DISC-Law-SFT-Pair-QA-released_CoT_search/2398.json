@@ -1,0 +1,103 @@
+{
+  "Open-ended Verifiable Question": "扫描件和复印件可以作为原件使用吗？",
+  "Ground-True Answer": "为确保证据的真实性，复制件需与原件进行一致性核对。电子数据虽是法律修正过程中新增加的一种证据形式，但这并不说明复制件、扫描件数据化后可不与原件进行核对；人民法院更不能不经审查电子数据证据的真实性就直接视同原件。本案中，杰雅帝公司提供的合同扫描件系由其单方提供，该电子数据的产生与保管过程，既未取得佳利公司的认可，也与案涉合同的约定不符。因此，杰雅帝公司关于《转让合同》扫描件存储于U盘属电子数据，U盘为原始介质，故具有类同于证据原件证明效力的主张，于法无据，不予支持。中华人民共和国最高人民法院民 事 裁 定 书（2020）最高法民申1212号",
+  "process_id": 2398,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "定义扫描件和复印件",
+      "content": "扫描件和复印件通常是对原始文件的电子复制或纸质复制品，它们的法律效力可能因司法制度或具体情况而异。接下来需要确认它们是否能在一般情况下被视作原件或具有与原件同等的法律效力。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "需要查找的相关法律依据",
+      "content": "为了更加准确地判断扫描件和复印件是否可以作为原件使用，需要查询相关法律法规或司法解释，尤其是与证据效力相关的内容。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "确定具体法律法规搜索对象",
+      "content": "寻找中国的法律法规，例如《中华人民共和国民事诉讼法》或其他提及证据形式及效力的法规。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "执行法律搜索",
+      "content": "<search>中华人民共和国民事诉讼法 证据效力</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "查询结果分析",
+      "content": "<information>根据《中华人民共和国民事诉讼法》第九十三条，复制件、影印件等可以作为证据提交，但前提是应与原件核对无误，并在特定情形下仍可能被要求提供原件。司法实践中，扫描件和复印件的效力需视其是否经公证、认证或其他方式确认其与原件一致。</information>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "结合结果得出初步答案",
+      "content": "结合法律条文，扫描件和复印件在一定条件下可以作为证据使用，但一般不能完全等同于原件，特别是在涉及法律效力的文件中，如合同或者遗嘱，通常需要提供真正的原件，除非扫描件或复印件经过合法的确认程序。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "扫描件和复印件可以在某些场景下作为证据或文件的替代形式使用，但它们并不在所有情况下具有原件的法律效力。特别是在关键性法律文件场景中，通常要求原件，除非扫描件或复印件经过公证、认证，或相关方确认其效力。"
+    },
+    {
+      "action": "Verification",
+      "content": "这一结论符合法律条文及司法实践的要求，已经明确说明了扫描件和复印件的法律适用条件和限制。因此结论正确，无需进一步推导。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n扫描件和复印件可以作为原件使用吗？\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n扫描件和复印件可以在某些场景下作为证据或文件的替代形式使用，但它们并不在所有情况下具有原件的法律效力。特别是在关键性法律文件场景中，通常要求原件，除非扫描件或复印件经过公证、认证，或相关方确认其效力。  \n</Model Response>  \n\n<Reference Answer>  \n为确保证据的真实性，复制件需与原件进行一致性核对。电子数据虽是法律修正过程中新增加的一种证据形式，但这并不说明复制件、扫描件数据化后可不与原件进行核对；人民法院更不能不经审查电子数据证据的真实性就直接视同原件。本案中，杰雅帝公司提供的合同扫描件系由其单方提供，该电子数据的产生与保管过程，既未取得佳利公司的认可，也与案涉合同的约定不符。因此，杰雅帝公司关于《转让合同》扫描件存储于U盘属电子数据，U盘为原始介质，故具有类同于证据原件证明效力的主张，于法无据，不予支持。中华人民共和国最高人民法院民 事 裁 定 书（2020）最高法民申1212号\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 定义扫描件和复印件\n扫描件和复印件通常是对原始文件的电子复制或纸质复制品，它们的法律效力可能因司法制度或具体情况而异。接下来需要确认它们是否能在一般情况下被视作原件或具有与原件同等的法律效力。\n\n### 需要查找的相关法律依据\n为了更加准确地判断扫描件和复印件是否可以作为原件使用，需要查询相关法律法规或司法解释，尤其是与证据效力相关的内容。\n\n### 确定具体法律法规搜索对象\n寻找中国的法律法规，例如《中华人民共和国民事诉讼法》或其他提及证据形式及效力的法规。\n\n### 执行法律搜索\n<search>中华人民共和国民事诉讼法 证据效力</search>\n\n### 查询结果分析\n<information>根据《中华人民共和国民事诉讼法》第九十三条，复制件、影印件等可以作为证据提交，但前提是应与原件核对无误，并在特定情形下仍可能被要求提供原件。司法实践中，扫描件和复印件的效力需视其是否经公证、认证或其他方式确认其与原件一致。</information>\n\n### 结合结果得出初步答案\n结合法律条文，扫描件和复印件在一定条件下可以作为证据使用，但一般不能完全等同于原件，特别是在涉及法律效力的文件中，如合同或者遗嘱，通常需要提供真正的原件，除非扫描件或复印件经过合法的确认程序。\n\n### Conclusion\n扫描件和复印件可以在某些场景下作为证据或文件的替代形式使用，但它们并不在所有情况下具有原件的法律效力。特别是在关键性法律文件场景中，通常要求原件，除非扫描件或复印件经过公证、认证，或相关方确认其效力。\n\n### Verification\n这一结论符合法律条文及司法实践的要求，已经明确说明了扫描件和复印件的法律适用条件和限制。因此结论正确，无需进一步推导。\n</Thought Process>\n\n<Question>\n扫描件和复印件可以作为原件使用吗？\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```"
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"定义扫描件和复印件\",\n      \"content\": \"扫描件和复印件通常是对原始文件的电子复制或纸质复制品，它们的法律效力可能因司法制度或具体情况而异。接下来需要确认它们是否能在一般情况下被视作原件或具有与原件同等的法律效力。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"需要查找的相关法律依据\",\n      \"content\": \"为了更加准确地判断扫描件和复印件是否可以作为原件使用，需要查询相关法律法规或司法解释，尤其是与证据效力相关的内容。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"确定具体法律法规搜索对象\",\n      \"content\": \"寻找中国的法律法规，例如《中华人民共和国民事诉讼法》或其他提及证据形式及效力的法规。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"执行法律搜索\",\n      \"content\": \"<search>中华人民共和国民事诉讼法 证据效力</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"查询结果分析\",\n      \"content\": \"<information>根据《中华人民共和国民事诉讼法》第九十三条，复制件、影印件等可以作为证据提交，但前提是应与原件核对无误，并在特定情形下仍可能被要求提供原件。司法实践中，扫描件和复印件的效力需视其是否经公证、认证或其他方式确认其与原件一致。</information>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"结合结果得出初步答案\",\n      \"content\": \"结合法律条文，扫描件和复印件在一定条件下可以作为证据使用，但一般不能完全等同于原件，特别是在涉及法律效力的文件中，如合同或者遗嘱，通常需要提供真正的原件，除非扫描件或复印件经过合法的确认程序。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"扫描件和复印件可以在某些场景下作为证据或文件的替代形式使用，但它们并不在所有情况下具有原件的法律效力。特别是在关键性法律文件场景中，通常要求原件，除非扫描件或复印件经过公证、认证，或相关方确认其效力。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"这一结论符合法律条文及司法实践的要求，已经明确说明了扫描件和复印件的法律适用条件和限制。因此结论正确，无需进一步推导。\"\n    }\n  ]\n}\n```",
+    "True"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "定义扫描件和复印件",
+        "content": "扫描件和复印件通常是对原始文件的电子复制或纸质复制品，它们的法律效力可能因司法制度或具体情况而异。接下来需要确认它们是否能在一般情况下被视作原件或具有与原件同等的法律效力。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "需要查找的相关法律依据",
+        "content": "为了更加准确地判断扫描件和复印件是否可以作为原件使用，需要查询相关法律法规或司法解释，尤其是与证据效力相关的内容。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "确定具体法律法规搜索对象",
+        "content": "寻找中国的法律法规，例如《中华人民共和国民事诉讼法》或其他提及证据形式及效力的法规。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "执行法律搜索",
+        "content": "<search>中华人民共和国民事诉讼法 证据效力</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "查询结果分析",
+        "content": "<information>根据《中华人民共和国民事诉讼法》第九十三条，复制件、影印件等可以作为证据提交，但前提是应与原件核对无误，并在特定情形下仍可能被要求提供原件。司法实践中，扫描件和复印件的效力需视其是否经公证、认证或其他方式确认其与原件一致。</information>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "结合结果得出初步答案",
+        "content": "结合法律条文，扫描件和复印件在一定条件下可以作为证据使用，但一般不能完全等同于原件，特别是在涉及法律效力的文件中，如合同或者遗嘱，通常需要提供真正的原件，除非扫描件或复印件经过合法的确认程序。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "扫描件和复印件可以在某些场景下作为证据或文件的替代形式使用，但它们并不在所有情况下具有原件的法律效力。特别是在关键性法律文件场景中，通常要求原件，除非扫描件或复印件经过公证、认证，或相关方确认其效力。"
+      },
+      {
+        "action": "Verification",
+        "content": "这一结论符合法律条文及司法实践的要求，已经明确说明了扫描件和复印件的法律适用条件和限制。因此结论正确，无需进一步推导。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": []
+}

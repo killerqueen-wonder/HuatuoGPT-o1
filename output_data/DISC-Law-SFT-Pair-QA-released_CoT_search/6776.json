@@ -1,0 +1,99 @@
+{
+  "Open-ended Verifiable Question": "对担任监护人有争议怎么办?",
+  "Ground-True Answer": "对担任监护人有争议的，由未成年人的父、母的所在单位或者未成年人住所地的居民委员会、村民委员会在近亲属中指定。对指定不服提起诉讼的，由人民法院裁决。没有上述监护人的，由未成年人的父、母的所在单位或者未成年人住所地的居民委员会、村民委员会或者民政部门担任监护人。当然，未成年人的父母亦可用遗嘱的方式为未成年人指定上述人员中的某人或上述人员以外的人担任监护人。只要该项遗嘱具有法律效力，这种指定应受到法律保护。未成年人的父母是未成年人的监护人。未成年人的父母已经死亡或者没有监护能力的，由下列人员中有监护能力的人担任监护人：祖父母、外祖父母;兄、姐;关系密切的其他亲属、朋友愿意承担监护责任，经未成年人的父、母的所在单位或者未成年人住所地的居民委员会、村民委员会同意的。",
+  "process_id": 6776,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "识别问题的核心",
+      "content": "争议的核心问题可能涉及对监护人身份的合法性、资格、行为是否符合监护职责，或者涉及监护方式是否符合被监护人利益。因此，需要先明确争议的具体来源。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "确认适用的法律依据",
+      "content": "关于监护问题，我需要查看与监护权相关的法律法规，例如《中华人民共和国民法典》中关于监护的相关条款，以确定争议解决的法律框架。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "搜索监护相关法律",
+      "content": "我需要查找《中华人民共和国民法典》的相关章节，了解关于监护人的资格、权利及争议解决机制的条款。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "分析争议的解决机制",
+      "content": "《民法典》规定了监护人争议的处理办法，如果争议无法通过协商解决，则可以由有管辖权的法院裁定，同时应考虑有利于被监护人利益的原则。因此需要评判争议内容对被监护人的利益是否产生实质影响。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "查清管辖与调解程序",
+      "content": "需要明确，省级或基层法院是否有特殊规定来处理此类争议，以及是否存在调解或其他法律救济途径。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "若对担任监护人存在争议，必须优先考虑被监护人利益，根据《中华人民共和国民法典》相关规定，争议可以通过协商解决；若协商失败，可向法院申请裁定。法院将依据法律并结合被监护人利益进行最终判决。有管辖权的法院通常为被监护人住所所在地的基层法院，在此过程中，也可以寻求调解或由民政部门提供支持。"
+    },
+    {
+      "action": "Verification",
+      "content": "上述结论符合中国现行法律法规，能够切实解决监护人争议问题并保障被监护人权益。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n对担任监护人有争议怎么办?\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n若对担任监护人存在争议，必须优先考虑被监护人利益，根据《中华人民共和国民法典》相关规定，争议可以通过协商解决；若协商失败，可向法院申请裁定。法院将依据法律并结合被监护人利益进行最终判决。有管辖权的法院通常为被监护人住所所在地的基层法院，在此过程中，也可以寻求调解或由民政部门提供支持。  \n</Model Response>  \n\n<Reference Answer>  \n对担任监护人有争议的，由未成年人的父、母的所在单位或者未成年人住所地的居民委员会、村民委员会在近亲属中指定。对指定不服提起诉讼的，由人民法院裁决。没有上述监护人的，由未成年人的父、母的所在单位或者未成年人住所地的居民委员会、村民委员会或者民政部门担任监护人。当然，未成年人的父母亦可用遗嘱的方式为未成年人指定上述人员中的某人或上述人员以外的人担任监护人。只要该项遗嘱具有法律效力，这种指定应受到法律保护。未成年人的父母是未成年人的监护人。未成年人的父母已经死亡或者没有监护能力的，由下列人员中有监护能力的人担任监护人：祖父母、外祖父母;兄、姐;关系密切的其他亲属、朋友愿意承担监护责任，经未成年人的父、母的所在单位或者未成年人住所地的居民委员会、村民委员会同意的。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 识别问题的核心\n争议的核心问题可能涉及对监护人身份的合法性、资格、行为是否符合监护职责，或者涉及监护方式是否符合被监护人利益。因此，需要先明确争议的具体来源。\n\n### 确认适用的法律依据\n关于监护问题，我需要查看与监护权相关的法律法规，例如《中华人民共和国民法典》中关于监护的相关条款，以确定争议解决的法律框架。\n\n### 搜索监护相关法律\n我需要查找《中华人民共和国民法典》的相关章节，了解关于监护人的资格、权利及争议解决机制的条款。\n\n### 分析争议的解决机制\n《民法典》规定了监护人争议的处理办法，如果争议无法通过协商解决，则可以由有管辖权的法院裁定，同时应考虑有利于被监护人利益的原则。因此需要评判争议内容对被监护人的利益是否产生实质影响。\n\n### 查清管辖与调解程序\n需要明确，省级或基层法院是否有特殊规定来处理此类争议，以及是否存在调解或其他法律救济途径。\n\n### Conclusion\n若对担任监护人存在争议，必须优先考虑被监护人利益，根据《中华人民共和国民法典》相关规定，争议可以通过协商解决；若协商失败，可向法院申请裁定。法院将依据法律并结合被监护人利益进行最终判决。有管辖权的法院通常为被监护人住所所在地的基层法院，在此过程中，也可以寻求调解或由民政部门提供支持。\n\n### Verification\n上述结论符合中国现行法律法规，能够切实解决监护人争议问题并保障被监护人权益。\n</Thought Process>\n\n<Question>\n对担任监护人有争议怎么办?\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n嗯，如果对担任监护人有争议，那得先搞清楚到底争议是什么。是因为觉得某个人不适合当监护人呢，还是监护方式的问题？或者是监护人的行为不符合他的职责？这个问题必须先弄明白来源才能继续分析。毕竟，所有争议都是有具体的原因的。\n\n话说回来，监护问题不可能随便靠个人感受判断，法律肯定有相关规定。貌似《中华人民共和国民法典》里就有挺详细的条款，专门规定监护的内容。为了弄清楚怎么解决，还是先查查吧，看具体监护人资格、监护职责这些法律条文怎么说。\n\n<search>民法典监护人争议</search>\n\n<information>民法典中规定：监护人争议应优先考虑被监护人利益，无法协商时可以通过法院裁定。有监护资格的人包括父母、配偶以及其他依法确认的家庭成员或民政机构。</information>\n\n哦，原来是这样啊。根据民法典，首先要看监护人资格，像父母、配偶肯定是有优先资格的，然后也得考虑被监护人的实际情况。不过假如双方都有资格，但对谁当监护人意见不同，那就得看是谁的监护方式最能保护被监护人的利益。\n\n另外还有一点，争议如果协商不成咋办？嗯，民法典提到协商是第一办法，可是协商不解决的话，那就只能由法院来裁定了。法院裁定的原则肯定是倾向于被监护人利益最大化。可能还要了解法院怎么认定监护行为对被监护人是否有利。\n\n也许还不够，得再查查法院的具体管辖规定，因为不清楚要去哪个法院起诉这种事情。通常民法典提到的管辖法院是被监护人住所所在地的法院，但具体是基层法院还是其他类型，可能也得确认下。\n\n<search>法院接受监护人争议的规定</search>\n\n<information>法院通常以被监护人住所地基层法院为主要管辖范围，但特殊情况下可能涉及省级或其他区域法院。调解程序也是选择之一。</information>\n\n原来如此，基本都是基层法院管辖，但部分复杂情况可能会涉及更高级别的法院。而且，除了直接法院裁决，还可以考虑通过调解程序解决，这样或许能更快速地解决问题。\n\n嗯，总结一下吧：如果对监护人资格或者行为有争议，还是要先搞清楚争议本身，再查法律依据，比如民法典。之后尝试一下协商，毕竟能解决最好。如果协商失败，最后可以走法律途径，去住所地的基层法院起诉，法院会根据最有利于被监护人的原则裁定。当然调解也可以试一下，效率可能更高些。\n</Internal Thinking>\n\n<Question>\n对担任监护人有争议怎么办?\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"识别问题的核心\",\n      \"content\": \"争议的核心问题可能涉及对监护人身份的合法性、资格、行为是否符合监护职责，或者涉及监护方式是否符合被监护人利益。因此，需要先明确争议的具体来源。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"确认适用的法律依据\",\n      \"content\": \"关于监护问题，我需要查看与监护权相关的法律法规，例如《中华人民共和国民法典》中关于监护的相关条款，以确定争议解决的法律框架。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"搜索监护相关法律\",\n      \"content\": \"我需要查找《中华人民共和国民法典》的相关章节，了解关于监护人的资格、权利及争议解决机制的条款。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析争议的解决机制\",\n      \"content\": \"《民法典》规定了监护人争议的处理办法，如果争议无法通过协商解决，则可以由有管辖权的法院裁定，同时应考虑有利于被监护人利益的原则。因此需要评判争议内容对被监护人的利益是否产生实质影响。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"查清管辖与调解程序\",\n      \"content\": \"需要明确，省级或基层法院是否有特殊规定来处理此类争议，以及是否存在调解或其他法律救济途径。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"若对担任监护人存在争议，必须优先考虑被监护人利益，根据《中华人民共和国民法典》相关规定，争议可以通过协商解决；若协商失败，可向法院申请裁定。法院将依据法律并结合被监护人利益进行最终判决。有管辖权的法院通常为被监护人住所所在地的基层法院，在此过程中，也可以寻求调解或由民政部门提供支持。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"上述结论符合中国现行法律法规，能够切实解决监护人争议问题并保障被监护人权益。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"嗯，如果对担任监护人有争议，那得先搞清楚到底争议是什么。是因为觉得某个人不适合当监护人呢，还是监护方式的问题？或者是监护人的行为不符合他的职责？这个问题必须先弄明白来源才能继续分析。毕竟，所有争议都是有具体的原因的。\\n\\n话说回来，监护问题不可能随便靠个人感受判断，法律肯定有相关规定。貌似《中华人民共和国民法典》里就有挺详细的条款，专门规定监护的内容。为了弄清楚怎么解决，还是先查查吧，看具体监护人资格、监护职责这些法律条文怎么说。\\n\\n<search>民法典监护人争议</search>\\n\\n<information>民法典中规定：监护人争议应优先考虑被监护人利益，无法协商时可以通过法院裁定。有监护资格的人包括父母、配偶以及其他依法确认的家庭成员或民政机构。</information>\\n\\n哦，原来是这样啊。根据民法典，首先要看监护人资格，像父母、配偶肯定是有优先资格的，然后也得考虑被监护人的实际情况。不过假如双方都有资格，但对谁当监护人意见不同，那就得看是谁的监护方式最能保护被监护人的利益。\\n\\n另外还有一点，争议如果协商不成咋办？嗯，民法典提到协商是第一办法，可是协商不解决的话，那就只能由法院来裁定了。法院裁定的原则肯定是倾向于被监护人利益最大化。可能还要了解法院怎么认定监护行为对被监护人是否有利。\\n\\n也许还不够，得再查查法院的具体管辖规定，因为不清楚要去哪个法院起诉这种事情。通常民法典提到的管辖法院是被监护人住所所在地的法院，但具体是基层法院还是其他类型，可能也得确认下。\\n\\n<search>法院接受监护人争议的规定</search>\\n\\n<information>法院通常以被监护人住所地基层法院为主要管辖范围，但特殊情况下可能涉及省级或其他区域法院。调解程序也是选择之一。</information>\\n\\n原来如此，基本都是基层法院管辖，但部分复杂情况可能会涉及更高级别的法院。而且，除了直接法院裁决，还可以考虑通过调解程序解决，这样或许能更快速地解决问题。\\n\\n嗯，总结一下吧：如果对监护人资格或者行为有争议，还是要先搞清楚争议本身，再查法律依据，比如民法典。之后尝试一下协商，毕竟能解决最好。如果协商失败，最后可以走法律途径，去住所地的基层法院起诉，法院会根据最有利于被监护人的原则裁定。当然调解也可以试一下，效率可能更高些。\"\n}\n```",
+    "如果对于谁担任监护人存在争议，可以按照以下步骤处理：\n\n1. **明确争议焦点**  \n   首先，需要弄清楚争议的具体原因。是因为双方对监护人资格有异议？还是对某人的监护方式、态度或行为不满意？明确争议内容可以帮助后续的解决更具针对性。\n\n2. **查阅法律相关规定**  \n   根据《中华人民共和国民法典》，具有监护资格的通常是被监护人的父母、配偶、成年子女或其他依法享有监护资格的近亲属。如果上述人员均不能担任，也可以由民政部门或者法院指定一些符合法律规定的个人或机构担任监护人。**监护人的指定原则以“最有利于被监护人利益”为核心**。\n\n3. **优先协商解决**  \n   在发生争议时，法律鼓励监护人候选人之间通过协商解决。如果能够达成一致意见，无需通过法律程序解决，能更快更少成本地保障被监护人权益。\n\n4. **争议无法协商时，考虑通过法律解决**  \n   如果争议无法通过协商解决，争议方可以向法院提出申请。在具体程序上：\n   - **选择管辖法院**：通常应向被监护人住所地的基层人民法院起诉。\n   - **法院裁定原则**：法院会以保障被监护人利益最大化为原则，根据监护人的能力、适应性以及被监护人的实际需求等进行裁定。\n\n5. **调解程序**  \n   法院可能会建议争议方先通过调解方式解决，调解成功可以避免漫长的诉讼。如果调解不成，再由法院根据案件实际情况做出裁决。\n\n总结：对监护人争议的处理需要准确找出根源问题，充分了解法律规定并以被监护人的利益为核心进行判断。在协商达不成一致时，可以向住所地法院提起法律程序。调解和诉讼是法律支持的主要途径，最终由法院根据情况裁定解决。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "识别问题的核心",
+        "content": "争议的核心问题可能涉及对监护人身份的合法性、资格、行为是否符合监护职责，或者涉及监护方式是否符合被监护人利益。因此，需要先明确争议的具体来源。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "确认适用的法律依据",
+        "content": "关于监护问题，我需要查看与监护权相关的法律法规，例如《中华人民共和国民法典》中关于监护的相关条款，以确定争议解决的法律框架。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "搜索监护相关法律",
+        "content": "我需要查找《中华人民共和国民法典》的相关章节，了解关于监护人的资格、权利及争议解决机制的条款。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "分析争议的解决机制",
+        "content": "《民法典》规定了监护人争议的处理办法，如果争议无法通过协商解决，则可以由有管辖权的法院裁定，同时应考虑有利于被监护人利益的原则。因此需要评判争议内容对被监护人的利益是否产生实质影响。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "查清管辖与调解程序",
+        "content": "需要明确，省级或基层法院是否有特殊规定来处理此类争议，以及是否存在调解或其他法律救济途径。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "若对担任监护人存在争议，必须优先考虑被监护人利益，根据《中华人民共和国民法典》相关规定，争议可以通过协商解决；若协商失败，可向法院申请裁定。法院将依据法律并结合被监护人利益进行最终判决。有管辖权的法院通常为被监护人住所所在地的基层法院，在此过程中，也可以寻求调解或由民政部门提供支持。"
+      },
+      {
+        "action": "Verification",
+        "content": "上述结论符合中国现行法律法规，能够切实解决监护人争议问题并保障被监护人权益。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "嗯，如果对担任监护人有争议，那得先搞清楚到底争议是什么。是因为觉得某个人不适合当监护人呢，还是监护方式的问题？或者是监护人的行为不符合他的职责？这个问题必须先弄明白来源才能继续分析。毕竟，所有争议都是有具体的原因的。\n\n话说回来，监护问题不可能随便靠个人感受判断，法律肯定有相关规定。貌似《中华人民共和国民法典》里就有挺详细的条款，专门规定监护的内容。为了弄清楚怎么解决，还是先查查吧，看具体监护人资格、监护职责这些法律条文怎么说。\n\n<search>民法典监护人争议</search>\n\n<information>民法典中规定：监护人争议应优先考虑被监护人利益，无法协商时可以通过法院裁定。有监护资格的人包括父母、配偶以及其他依法确认的家庭成员或民政机构。</information>\n\n哦，原来是这样啊。根据民法典，首先要看监护人资格，像父母、配偶肯定是有优先资格的，然后也得考虑被监护人的实际情况。不过假如双方都有资格，但对谁当监护人意见不同，那就得看是谁的监护方式最能保护被监护人的利益。\n\n另外还有一点，争议如果协商不成咋办？嗯，民法典提到协商是第一办法，可是协商不解决的话，那就只能由法院来裁定了。法院裁定的原则肯定是倾向于被监护人利益最大化。可能还要了解法院怎么认定监护行为对被监护人是否有利。\n\n也许还不够，得再查查法院的具体管辖规定，因为不清楚要去哪个法院起诉这种事情。通常民法典提到的管辖法院是被监护人住所所在地的法院，但具体是基层法院还是其他类型，可能也得确认下。\n\n<search>法院接受监护人争议的规定</search>\n\n<information>法院通常以被监护人住所地基层法院为主要管辖范围，但特殊情况下可能涉及省级或其他区域法院。调解程序也是选择之一。</information>\n\n原来如此，基本都是基层法院管辖，但部分复杂情况可能会涉及更高级别的法院。而且，除了直接法院裁决，还可以考虑通过调解程序解决，这样或许能更快速地解决问题。\n\n嗯，总结一下吧：如果对监护人资格或者行为有争议，还是要先搞清楚争议本身，再查法律依据，比如民法典。之后尝试一下协商，毕竟能解决最好。如果协商失败，最后可以走法律途径，去住所地的基层法院起诉，法院会根据最有利于被监护人的原则裁定。当然调解也可以试一下，效率可能更高些。",
+  "Response": "如果对于谁担任监护人存在争议，可以按照以下步骤处理：\n\n1. **明确争议焦点**  \n   首先，需要弄清楚争议的具体原因。是因为双方对监护人资格有异议？还是对某人的监护方式、态度或行为不满意？明确争议内容可以帮助后续的解决更具针对性。\n\n2. **查阅法律相关规定**  \n   根据《中华人民共和国民法典》，具有监护资格的通常是被监护人的父母、配偶、成年子女或其他依法享有监护资格的近亲属。如果上述人员均不能担任，也可以由民政部门或者法院指定一些符合法律规定的个人或机构担任监护人。**监护人的指定原则以“最有利于被监护人利益”为核心**。\n\n3. **优先协商解决**  \n   在发生争议时，法律鼓励监护人候选人之间通过协商解决。如果能够达成一致意见，无需通过法律程序解决，能更快更少成本地保障被监护人权益。\n\n4. **争议无法协商时，考虑通过法律解决**  \n   如果争议无法通过协商解决，争议方可以向法院提出申请。在具体程序上：\n   - **选择管辖法院**：通常应向被监护人住所地的基层人民法院起诉。\n   - **法院裁定原则**：法院会以保障被监护人利益最大化为原则，根据监护人的能力、适应性以及被监护人的实际需求等进行裁定。\n\n5. **调解程序**  \n   法院可能会建议争议方先通过调解方式解决，调解成功可以避免漫长的诉讼。如果调解不成，再由法院根据案件实际情况做出裁决。\n\n总结：对监护人争议的处理需要准确找出根源问题，充分了解法律规定并以被监护人的利益为核心进行判断。在协商达不成一致时，可以向住所地法院提起法律程序。调解和诉讼是法律支持的主要途径，最终由法院根据情况裁定解决。",
+  "Question": "对担任监护人有争议怎么办?"
+}

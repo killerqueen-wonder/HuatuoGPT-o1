@@ -1,0 +1,79 @@
+{
+  "Open-ended Verifiable Question": "中国刑法虐待罪怎么量刑",
+  "Ground-True Answer": "1、刑法中规定的虐待罪既遂量刑标准：一般会判处二年以下有期徒刑，拘役或者管制;致人重伤、死亡的，处二年以上十年以下有期徒刑。虐待罪，是指经常以打骂、禁闭、捆绑、冻饿、有病不给治疗、强迫过度体力劳动等方式，对共同生活的家庭成员进行肉体上、精神上的摧残、折磨，情节恶劣的行为。\n法律依据：《中华人民共和国刑法》第二百六十条 ，【虐待罪】虐待家庭成员，情节恶劣的，处二年以下有期徒刑、拘役或者管制。犯前款罪，致使被害人重伤、死亡的，处二年以上七年以下有期徒刑。第一款罪，告诉的才处理，但被害人没有能力告诉，或者因受到强制、威吓无法告诉的除外。二、虐待罪是如何认定的虐待罪不仅仅是身体伤害，按照法律规定，虐待罪中的虐待行为即是指对被害人，肉体和精神进行摧残、折磨、迫害的行为。比如说殴打、捆绑等身体伤害以及禁闭、讽刺、谩骂、侮辱等精神伤害。也就是说，虐待罪不仅仅是身体伤害，但以精神伤害状告虐待罪的，的确从举证方面来说，更为困难一点。有的人说，因消极的不作为而给受害人带来伤害的行为，比如该赡养父母的，却有病不治、不给吃饱饭等，这存在一定的争议性，一般来说单纯的不履行义务，却没有攻击性的，属于遗弃罪。",
+  "process_id": 3152,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "确定需要检索的法律条款",
+      "content": "问题关于中国刑法中虐待罪的量刑。首先，我们需要确认中国刑法具体规定虐待罪的条文，以便了解法律依据。需要检索《中华人民共和国刑法》关于虐待罪的相关条文。<search>《中华人民共和国刑法》虐待罪条文</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "提取检索结果信息",
+      "content": "<information>《中华人民共和国刑法》第260条规定：家庭成员中的一方对另一方或其他家庭成员长期实施虐待行为，情节恶劣的，构成虐待罪。根据该条文的规定，量刑标准如下：1. 处2年以下有期徒刑、拘役或者管制；2. 如果虐待行为导致被害人重伤、死亡，或者情节特别恶劣的，处2年以上7年以下有期徒刑。</information>根据检索结果，我们可以继续分析量刑依据和具体情节标准。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "分析量刑依据和适用情节",
+      "content": "根据检索结果，虐待罪的量刑分两个层次：第一层次是基本情节的量刑，即情节恶劣的情况下处2年以下刑罚；第二层次是情节特别严重（如导致被害人重伤、死亡的后果）的量刑，处2年以上7年以下有期徒刑。我们需要明确司法机关在裁决时如何确定‘情节恶劣’和‘情节特别恶劣’，通常依据被害人的受伤程度、虐待时间的长短、社会危害性等具体情况加以判断。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "根据《中华人民共和国刑法》第260条的规定，虐待罪的量刑标准具体如下：1. 对于情节恶劣的虐待行为，处2年以下有期徒刑、拘役或者管制；2. 如果虐待行为导致被害人重伤、死亡，或者有其他情节特别恶劣的情况，处2年以上7年以下有期徒刑。"
+    },
+    {
+      "action": "Verification",
+      "content": "结论与《中华人民共和国刑法》第260条的规定一致，且对‘量刑标准’有清晰划分。结论正确，可结束推理过程。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n中国刑法虐待罪怎么量刑\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n根据《中华人民共和国刑法》第260条的规定，虐待罪的量刑标准具体如下：1. 对于情节恶劣的虐待行为，处2年以下有期徒刑、拘役或者管制；2. 如果虐待行为导致被害人重伤、死亡，或者有其他情节特别恶劣的情况，处2年以上7年以下有期徒刑。  \n</Model Response>  \n\n<Reference Answer>  \n1、刑法中规定的虐待罪既遂量刑标准：一般会判处二年以下有期徒刑，拘役或者管制;致人重伤、死亡的，处二年以上十年以下有期徒刑。虐待罪，是指经常以打骂、禁闭、捆绑、冻饿、有病不给治疗、强迫过度体力劳动等方式，对共同生活的家庭成员进行肉体上、精神上的摧残、折磨，情节恶劣的行为。\n法律依据：《中华人民共和国刑法》第二百六十条 ，【虐待罪】虐待家庭成员，情节恶劣的，处二年以下有期徒刑、拘役或者管制。犯前款罪，致使被害人重伤、死亡的，处二年以上七年以下有期徒刑。第一款罪，告诉的才处理，但被害人没有能力告诉，或者因受到强制、威吓无法告诉的除外。二、虐待罪是如何认定的虐待罪不仅仅是身体伤害，按照法律规定，虐待罪中的虐待行为即是指对被害人，肉体和精神进行摧残、折磨、迫害的行为。比如说殴打、捆绑等身体伤害以及禁闭、讽刺、谩骂、侮辱等精神伤害。也就是说，虐待罪不仅仅是身体伤害，但以精神伤害状告虐待罪的，的确从举证方面来说，更为困难一点。有的人说，因消极的不作为而给受害人带来伤害的行为，比如该赡养父母的，却有病不治、不给吃饱饭等，这存在一定的争议性，一般来说单纯的不履行义务，却没有攻击性的，属于遗弃罪。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 确定需要检索的法律条款\n问题关于中国刑法中虐待罪的量刑。首先，我们需要确认中国刑法具体规定虐待罪的条文，以便了解法律依据。需要检索《中华人民共和国刑法》关于虐待罪的相关条文。<search>《中华人民共和国刑法》虐待罪条文</search>\n\n### 提取检索结果信息\n<information>《中华人民共和国刑法》第260条规定：家庭成员中的一方对另一方或其他家庭成员长期实施虐待行为，情节恶劣的，构成虐待罪。根据该条文的规定，量刑标准如下：1. 处2年以下有期徒刑、拘役或者管制；2. 如果虐待行为导致被害人重伤、死亡，或者情节特别恶劣的，处2年以上7年以下有期徒刑。</information>根据检索结果，我们可以继续分析量刑依据和具体情节标准。\n\n### 分析量刑依据和适用情节\n根据检索结果，虐待罪的量刑分两个层次：第一层次是基本情节的量刑，即情节恶劣的情况下处2年以下刑罚；第二层次是情节特别严重（如导致被害人重伤、死亡的后果）的量刑，处2年以上7年以下有期徒刑。我们需要明确司法机关在裁决时如何确定‘情节恶劣’和‘情节特别恶劣’，通常依据被害人的受伤程度、虐待时间的长短、社会危害性等具体情况加以判断。\n\n### Conclusion\n根据《中华人民共和国刑法》第260条的规定，虐待罪的量刑标准具体如下：1. 对于情节恶劣的虐待行为，处2年以下有期徒刑、拘役或者管制；2. 如果虐待行为导致被害人重伤、死亡，或者有其他情节特别恶劣的情况，处2年以上7年以下有期徒刑。\n\n### Verification\n结论与《中华人民共和国刑法》第260条的规定一致，且对‘量刑标准’有清晰划分。结论正确，可结束推理过程。\n</Thought Process>\n\n<Question>\n中国刑法虐待罪怎么量刑\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n我想知道中国刑法里对于虐待罪是怎么量刑的。嗯，首先得找到相关的法律条文，这样才有依据。既然问题是关于虐待罪的量刑，那应该去查一下《中华人民共和国刑法》中有没有明确的规定。<search>《中华人民共和国刑法》虐待罪条文</search>\n\n好的，我搜到了一些信息。<information>《中华人民共和国刑法》第260条规定：家庭成员中的一方对另一方或其他家庭成员长期实施虐待行为，情节恶劣的，构成虐待罪。根据该条文的规定，量刑标准如下：1. 处2年以下有期徒刑、拘役或者管制；2. 如果虐待行为导致被害人重伤、死亡，或者情节特别恶劣的，处2年以上7年以下有期徒刑。</information>这个结果很明确了，法律把虐待罪分成了两种情形，一个是一般的情节恶劣，另一个是情节特别严重。\n\n我再仔细想想这些量刑标准，基本上可以分为两层。第一层是‘情节恶劣’，具体是指一些严重但还达不到特别后果的虐待，比如长期对家庭成员动手打骂。但这种程度的话，刑罚是比较轻的，最多不超过2年。第二层就比较严重了，如果虐待行为导致比如受害人被重伤甚至死亡，或者有其他非常极端的情况，那就属于‘情节特别恶劣’。这种情况下，刑期会更长，可能在2年以上，但一般不超过7年。\n\n不过还有一个问题，就是怎么判断‘情节恶劣’和‘特别恶劣’。从司法实践来看，应该主要看受害人受到的伤害程度，还有行为发生的时间长度，以及对社会的影响，比如是否引发公众关注甚至恐慌。有时候证据也很关键，比如是否有目击者、是否有录音录像。\n\n所以总结一下，根据《中华人民共和国刑法》第260条的规定，虐待罪的量刑主要看情节恶劣的程度。如果只是一般恶劣，刑罚是2年以下；如果特别恶劣，比如造成人员重伤或死亡，那就是2到7年之间。\n\n嗯，回想一下刚才的思路，应该是没什么问题了，我的结论和刑法条文的信息完全一致。可以结束思考了。\n</Internal Thinking>\n\n<Question>\n中国刑法虐待罪怎么量刑\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"确定需要检索的法律条款\",\n      \"content\": \"问题关于中国刑法中虐待罪的量刑。首先，我们需要确认中国刑法具体规定虐待罪的条文，以便了解法律依据。需要检索《中华人民共和国刑法》关于虐待罪的相关条文。<search>《中华人民共和国刑法》虐待罪条文</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"提取检索结果信息\",\n      \"content\": \"<information>《中华人民共和国刑法》第260条规定：家庭成员中的一方对另一方或其他家庭成员长期实施虐待行为，情节恶劣的，构成虐待罪。根据该条文的规定，量刑标准如下：1. 处2年以下有期徒刑、拘役或者管制；2. 如果虐待行为导致被害人重伤、死亡，或者情节特别恶劣的，处2年以上7年以下有期徒刑。</information>根据检索结果，我们可以继续分析量刑依据和具体情节标准。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析量刑依据和适用情节\",\n      \"content\": \"根据检索结果，虐待罪的量刑分两个层次：第一层次是基本情节的量刑，即情节恶劣的情况下处2年以下刑罚；第二层次是情节特别严重（如导致被害人重伤、死亡的后果）的量刑，处2年以上7年以下有期徒刑。我们需要明确司法机关在裁决时如何确定‘情节恶劣’和‘情节特别恶劣’，通常依据被害人的受伤程度、虐待时间的长短、社会危害性等具体情况加以判断。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"根据《中华人民共和国刑法》第260条的规定，虐待罪的量刑标准具体如下：1. 对于情节恶劣的虐待行为，处2年以下有期徒刑、拘役或者管制；2. 如果虐待行为导致被害人重伤、死亡，或者有其他情节特别恶劣的情况，处2年以上7年以下有期徒刑。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"结论与《中华人民共和国刑法》第260条的规定一致，且对‘量刑标准’有清晰划分。结论正确，可结束推理过程。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"我想知道中国刑法里对于虐待罪是怎么量刑的。嗯，首先得找到相关的法律条文，这样才有依据。既然问题是关于虐待罪的量刑，那应该去查一下《中华人民共和国刑法》中有没有明确的规定。<search>《中华人民共和国刑法》虐待罪条文</search>\\n\\n好的，我搜到了一些信息。<information>《中华人民共和国刑法》第260条规定：家庭成员中的一方对另一方或其他家庭成员长期实施虐待行为，情节恶劣的，构成虐待罪。根据该条文的规定，量刑标准如下：1. 处2年以下有期徒刑、拘役或者管制；2. 如果虐待行为导致被害人重伤、死亡，或者情节特别恶劣的，处2年以上7年以下有期徒刑。</information>这个结果很明确了，法律把虐待罪分成了两种情形，一个是一般的情节恶劣，另一个是情节特别严重。\\n\\n我再仔细想想这些量刑标准，基本上可以分为两层。第一层是‘情节恶劣’，具体是指一些严重但还达不到特别后果的虐待，比如长期对家庭成员动手打骂。但这种程度的话，刑罚是比较轻的，最多不超过2年。第二层就比较严重了，如果虐待行为导致比如受害人被重伤甚至死亡，或者有其他非常极端的情况，那就属于‘情节特别恶劣’。这种情况下，刑期会更长，可能在2年以上，但一般不超过7年。\\n\\n不过还有一个问题，就是怎么判断‘情节恶劣’和‘特别恶劣’。从司法实践来看，应该主要看受害人受到的伤害程度，还有行为发生的时间长度，以及对社会的影响，比如是否引发公众关注甚至恐慌。有时候证据也很关键，比如是否有目击者、是否有录音录像。\\n\\n所以总结一下，根据《中华人民共和国刑法》第260条的规定，虐待罪的量刑主要看情节恶劣的程度。如果只是一般恶劣，刑罚是2年以下；如果特别恶劣，比如造成人员重伤或死亡，那就是2到7年之间。\\n\\n嗯，回想一下刚才的思路，应该是没什么问题了，我的结论和刑法条文的信息完全一致。可以结束思考了。\"\n}\n```",
+    "根据《中华人民共和国刑法》第260条的规定，虐待罪的量刑分为以下两种情况：\n\n1. **一般情节恶劣的情况**：对于家庭成员中的一方长期实施虐待，情节恶劣的，处2年以下有期徒刑、拘役或者管制。\n\n2. **情节特别恶劣的情况**：如果虐待行为导致被害人重伤、死亡，或者虐待的手段或后果极其严重，处2年以上7年以下有期徒刑。\n\n司法实践中，“情节恶劣”一般指行为人存在长期、频繁或严重打骂、控捏、精神折磨等虐待行为，而“情节特别恶劣”则强调结果和影响，例如被害人因虐待导致重伤、死亡，或社会产生较大负面效应等。\n\n量刑的决定会根据具体案情，综合考虑受害人受到的伤害程度、行为方式、持续时间、主观恶性程度等因素。同时，证据的充分性（例如目击证词、视频记录等）对量刑也有重要影响。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "确定需要检索的法律条款",
+        "content": "问题关于中国刑法中虐待罪的量刑。首先，我们需要确认中国刑法具体规定虐待罪的条文，以便了解法律依据。需要检索《中华人民共和国刑法》关于虐待罪的相关条文。<search>《中华人民共和国刑法》虐待罪条文</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "提取检索结果信息",
+        "content": "<information>《中华人民共和国刑法》第260条规定：家庭成员中的一方对另一方或其他家庭成员长期实施虐待行为，情节恶劣的，构成虐待罪。根据该条文的规定，量刑标准如下：1. 处2年以下有期徒刑、拘役或者管制；2. 如果虐待行为导致被害人重伤、死亡，或者情节特别恶劣的，处2年以上7年以下有期徒刑。</information>根据检索结果，我们可以继续分析量刑依据和具体情节标准。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "分析量刑依据和适用情节",
+        "content": "根据检索结果，虐待罪的量刑分两个层次：第一层次是基本情节的量刑，即情节恶劣的情况下处2年以下刑罚；第二层次是情节特别严重（如导致被害人重伤、死亡的后果）的量刑，处2年以上7年以下有期徒刑。我们需要明确司法机关在裁决时如何确定‘情节恶劣’和‘情节特别恶劣’，通常依据被害人的受伤程度、虐待时间的长短、社会危害性等具体情况加以判断。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "根据《中华人民共和国刑法》第260条的规定，虐待罪的量刑标准具体如下：1. 对于情节恶劣的虐待行为，处2年以下有期徒刑、拘役或者管制；2. 如果虐待行为导致被害人重伤、死亡，或者有其他情节特别恶劣的情况，处2年以上7年以下有期徒刑。"
+      },
+      {
+        "action": "Verification",
+        "content": "结论与《中华人民共和国刑法》第260条的规定一致，且对‘量刑标准’有清晰划分。结论正确，可结束推理过程。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "我想知道中国刑法里对于虐待罪是怎么量刑的。嗯，首先得找到相关的法律条文，这样才有依据。既然问题是关于虐待罪的量刑，那应该去查一下《中华人民共和国刑法》中有没有明确的规定。<search>《中华人民共和国刑法》虐待罪条文</search>\n\n好的，我搜到了一些信息。<information>《中华人民共和国刑法》第260条规定：家庭成员中的一方对另一方或其他家庭成员长期实施虐待行为，情节恶劣的，构成虐待罪。根据该条文的规定，量刑标准如下：1. 处2年以下有期徒刑、拘役或者管制；2. 如果虐待行为导致被害人重伤、死亡，或者情节特别恶劣的，处2年以上7年以下有期徒刑。</information>这个结果很明确了，法律把虐待罪分成了两种情形，一个是一般的情节恶劣，另一个是情节特别严重。\n\n我再仔细想想这些量刑标准，基本上可以分为两层。第一层是‘情节恶劣’，具体是指一些严重但还达不到特别后果的虐待，比如长期对家庭成员动手打骂。但这种程度的话，刑罚是比较轻的，最多不超过2年。第二层就比较严重了，如果虐待行为导致比如受害人被重伤甚至死亡，或者有其他非常极端的情况，那就属于‘情节特别恶劣’。这种情况下，刑期会更长，可能在2年以上，但一般不超过7年。\n\n不过还有一个问题，就是怎么判断‘情节恶劣’和‘特别恶劣’。从司法实践来看，应该主要看受害人受到的伤害程度，还有行为发生的时间长度，以及对社会的影响，比如是否引发公众关注甚至恐慌。有时候证据也很关键，比如是否有目击者、是否有录音录像。\n\n所以总结一下，根据《中华人民共和国刑法》第260条的规定，虐待罪的量刑主要看情节恶劣的程度。如果只是一般恶劣，刑罚是2年以下；如果特别恶劣，比如造成人员重伤或死亡，那就是2到7年之间。\n\n嗯，回想一下刚才的思路，应该是没什么问题了，我的结论和刑法条文的信息完全一致。可以结束思考了。",
+  "Response": "根据《中华人民共和国刑法》第260条的规定，虐待罪的量刑分为以下两种情况：\n\n1. **一般情节恶劣的情况**：对于家庭成员中的一方长期实施虐待，情节恶劣的，处2年以下有期徒刑、拘役或者管制。\n\n2. **情节特别恶劣的情况**：如果虐待行为导致被害人重伤、死亡，或者虐待的手段或后果极其严重，处2年以上7年以下有期徒刑。\n\n司法实践中，“情节恶劣”一般指行为人存在长期、频繁或严重打骂、控捏、精神折磨等虐待行为，而“情节特别恶劣”则强调结果和影响，例如被害人因虐待导致重伤、死亡，或社会产生较大负面效应等。\n\n量刑的决定会根据具体案情，综合考虑受害人受到的伤害程度、行为方式、持续时间、主观恶性程度等因素。同时，证据的充分性（例如目击证词、视频记录等）对量刑也有重要影响。",
+  "Question": "中国刑法虐待罪怎么量刑"
+}

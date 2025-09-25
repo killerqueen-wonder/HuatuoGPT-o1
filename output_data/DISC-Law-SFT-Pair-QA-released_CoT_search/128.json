@@ -1,0 +1,89 @@
+{
+  "Open-ended Verifiable Question": "哪些人不能作为遗嘱的见证人？",
+  "Ground-True Answer": "订立遗嘱之所以要有两个以上的见证人在场，其根本目的就在于保证遗嘱内容的真实性，防止他人擅自伪造、篡改、销毁遗嘱人所立的遗嘱。因此，合格的见证人就显得十分重要。根据《民法典》的规定，下列人员不得作为遗嘱见证人：1.无民事行为能力人、限制民事行为能力人。前者不能辨认自己行为，不能以自己名义参加民事活动并享有民事权利和承担义务。后者则是其民事行为能力受到限制，二者均不是完全民事行为能力人，不能参与订立遗嘱这类较复杂的民事活动；如果他们在场，其见证不具有法律效力。2.继承人、受遗赠人。继承人、受遗赠人不能作为见证人的原因不在于其是否有民事行为能力，而在于他们与遗嘱有直接利害关系，有可能影响遗嘱人自愿表达其内心意志，再者他们的证明难以保持客观性和真实性。因此，法律明确规定继承人、受遗赠人不得作为遗嘱见证人。3.与继承人、受遗赠人有利害关系的人。与继承人、受遗赠人有利害关系的人，由于利益关系的影响，难以保证其证明的客观性、真实性，所以这些人也不能做遗嘱见证人。根据有关司法解释，继承人、受遗赠人的债权人、债务人，共同经营的合伙人，也应当视为与继承人、受遗赠人有利害关系，不能作为遗嘱见证人。 法律依据：《中华人民共和国民法典》第一千一百四十条　下列人员不能作为遗嘱见证人：（一）无民事行为能力人、限制民事行为能力人以及其他不具有见证能力的人；（二）继承人、受遗赠人；（三）与继承人、受遗赠人有利害关系的人。",
+  "process_id": 128,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "明确问题范围",
+      "content": "问题涉及遗嘱见证人的资格限制，需要了解在中国法律中规定哪些人不能作为遗嘱的见证人。进一步确认遗嘱相关规范来源，可能涉及《民法典》中关于遗嘱的规定。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "寻找相关法律规定",
+      "content": "根据问题，若无法直接回忆具体条款内容，需要查阅中国法律，尤其是《民法典》中有关遗嘱见证人资格部分的规定。发起如下搜索请求：<search>《民法典》遗嘱见证人资格限制</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "分析搜索结果",
+      "content": "<information>《民法典》第1135条对遗嘱见证人资格有所规定。不具备见证人资格的人包括以下几类：1. 继承人及其配偶、近亲属；2. 遗嘱受益人及其配偶、近亲属；3. 未成年人；4. 语言或意识表达能力受限的人。</information>依据搜索结果，可继续推导具体不能担任遗嘱见证人的类别。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "归纳见证人资格限制的核心内容",
+      "content": "通过分析《民法典》第1135条列出的限制：1. 遗嘱见证人需与遗嘱无利害关系，例如不能是继承人或受益人；2. 要具备完全民事行为能力，排除未成年人；3. 需具备语言表达能力与意识清晰，以保证见证的真实性与合法性。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "根据《民法典》第1135条，以下人员不能作为遗嘱的见证人：1. 继承人及其配偶、近亲属；2. 遗嘱受益人及其配偶、近亲属；3. 未成年人；4. 语言或意识表达能力受限的人。"
+    },
+    {
+      "action": "Verification",
+      "content": "结论符合中国《民法典》相关规定，限制合理且逻辑无误，可终止推导。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n哪些人不能作为遗嘱的见证人？\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n根据《民法典》第1135条，以下人员不能作为遗嘱的见证人：1. 继承人及其配偶、近亲属；2. 遗嘱受益人及其配偶、近亲属；3. 未成年人；4. 语言或意识表达能力受限的人。  \n</Model Response>  \n\n<Reference Answer>  \n订立遗嘱之所以要有两个以上的见证人在场，其根本目的就在于保证遗嘱内容的真实性，防止他人擅自伪造、篡改、销毁遗嘱人所立的遗嘱。因此，合格的见证人就显得十分重要。根据《民法典》的规定，下列人员不得作为遗嘱见证人：1.无民事行为能力人、限制民事行为能力人。前者不能辨认自己行为，不能以自己名义参加民事活动并享有民事权利和承担义务。后者则是其民事行为能力受到限制，二者均不是完全民事行为能力人，不能参与订立遗嘱这类较复杂的民事活动；如果他们在场，其见证不具有法律效力。2.继承人、受遗赠人。继承人、受遗赠人不能作为见证人的原因不在于其是否有民事行为能力，而在于他们与遗嘱有直接利害关系，有可能影响遗嘱人自愿表达其内心意志，再者他们的证明难以保持客观性和真实性。因此，法律明确规定继承人、受遗赠人不得作为遗嘱见证人。3.与继承人、受遗赠人有利害关系的人。与继承人、受遗赠人有利害关系的人，由于利益关系的影响，难以保证其证明的客观性、真实性，所以这些人也不能做遗嘱见证人。根据有关司法解释，继承人、受遗赠人的债权人、债务人，共同经营的合伙人，也应当视为与继承人、受遗赠人有利害关系，不能作为遗嘱见证人。 法律依据：《中华人民共和国民法典》第一千一百四十条　下列人员不能作为遗嘱见证人：（一）无民事行为能力人、限制民事行为能力人以及其他不具有见证能力的人；（二）继承人、受遗赠人；（三）与继承人、受遗赠人有利害关系的人。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 明确问题范围\n问题涉及遗嘱见证人的资格限制，需要了解在中国法律中规定哪些人不能作为遗嘱的见证人。进一步确认遗嘱相关规范来源，可能涉及《民法典》中关于遗嘱的规定。\n\n### 寻找相关法律规定\n根据问题，若无法直接回忆具体条款内容，需要查阅中国法律，尤其是《民法典》中有关遗嘱见证人资格部分的规定。发起如下搜索请求：<search>《民法典》遗嘱见证人资格限制</search>\n\n### 分析搜索结果\n<information>《民法典》第1135条对遗嘱见证人资格有所规定。不具备见证人资格的人包括以下几类：1. 继承人及其配偶、近亲属；2. 遗嘱受益人及其配偶、近亲属；3. 未成年人；4. 语言或意识表达能力受限的人。</information>依据搜索结果，可继续推导具体不能担任遗嘱见证人的类别。\n\n### 归纳见证人资格限制的核心内容\n通过分析《民法典》第1135条列出的限制：1. 遗嘱见证人需与遗嘱无利害关系，例如不能是继承人或受益人；2. 要具备完全民事行为能力，排除未成年人；3. 需具备语言表达能力与意识清晰，以保证见证的真实性与合法性。\n\n### Conclusion\n根据《民法典》第1135条，以下人员不能作为遗嘱的见证人：1. 继承人及其配偶、近亲属；2. 遗嘱受益人及其配偶、近亲属；3. 未成年人；4. 语言或意识表达能力受限的人。\n\n### Verification\n结论符合中国《民法典》相关规定，限制合理且逻辑无误，可终止推导。\n</Thought Process>\n\n<Question>\n哪些人不能作为遗嘱的见证人？\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n嗯，这个问题问的是关于遗嘱见证人的资格限制，感觉跟法律关系挺紧密的。这个涉及到谁不能当见证人，我记得应该是《民法典》里有相关的规定。先想想自己了解的内容，有点记得，好像继承人和受益人不能当，但具体的内容有点模糊。还是查一下更保险。\n\n那么，我应该去找《民法典》中关于遗嘱和见证人资格的条文。最好用关键词搜索一下。嗯，就搜索：<search>《民法典》遗嘱见证人资格限制</search>。\n\n查了一下，结果还蛮清晰的。<information>根据《民法典》第1135条，有明确提到哪些人不能担任遗嘱的见证人。主要包括四类：第一类是继承人及其配偶、近亲属；第二类是遗嘱受益人及其配偶、近亲属；第三类是未成年人；第四类是语言或意识表达能力受限的人。</information>\n\n好，那我来分析一下这些限制的具体原因和逻辑。首先，继承人和遗嘱受益人，包括他们的配偶、近亲属，显然有直接利益关系。让这些人当见证人，可能会导致遗嘱的真实性被质疑。嗯，这种限制其实挺合理的，能避免将来继承麻烦。\n\n再看未成年人。这也能理解，因为未成年人不具备完全民事行为能力，很难确保他们能正确履行见证责任。再有是那些语言或者意识表达能力受限的人，比如有些人可能不擅长交流，或者精神不清楚。这部分人还真没办法胜任见证职责，法律限制也是为了保证公正性吧。\n\n总结下，根据第1135条，以下人不能当遗嘱见证人：1. 继承人及其配偶、近亲属；2. 遗嘱受益人及其配偶、近亲属；3. 未成年人；4. 语言或意识表达能力受限的人。这样分析应该是没问题的，这次理解还挺透彻的！\n</Internal Thinking>\n\n<Question>\n哪些人不能作为遗嘱的见证人？\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"明确问题范围\",\n      \"content\": \"问题涉及遗嘱见证人的资格限制，需要了解在中国法律中规定哪些人不能作为遗嘱的见证人。进一步确认遗嘱相关规范来源，可能涉及《民法典》中关于遗嘱的规定。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"寻找相关法律规定\",\n      \"content\": \"根据问题，若无法直接回忆具体条款内容，需要查阅中国法律，尤其是《民法典》中有关遗嘱见证人资格部分的规定。发起如下搜索请求：<search>《民法典》遗嘱见证人资格限制</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析搜索结果\",\n      \"content\": \"<information>《民法典》第1135条对遗嘱见证人资格有所规定。不具备见证人资格的人包括以下几类：1. 继承人及其配偶、近亲属；2. 遗嘱受益人及其配偶、近亲属；3. 未成年人；4. 语言或意识表达能力受限的人。</information>依据搜索结果，可继续推导具体不能担任遗嘱见证人的类别。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"归纳见证人资格限制的核心内容\",\n      \"content\": \"通过分析《民法典》第1135条列出的限制：1. 遗嘱见证人需与遗嘱无利害关系，例如不能是继承人或受益人；2. 要具备完全民事行为能力，排除未成年人；3. 需具备语言表达能力与意识清晰，以保证见证的真实性与合法性。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"根据《民法典》第1135条，以下人员不能作为遗嘱的见证人：1. 继承人及其配偶、近亲属；2. 遗嘱受益人及其配偶、近亲属；3. 未成年人；4. 语言或意识表达能力受限的人。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"结论符合中国《民法典》相关规定，限制合理且逻辑无误，可终止推导。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"嗯，这个问题问的是关于遗嘱见证人的资格限制，感觉跟法律关系挺紧密的。这个涉及到谁不能当见证人，我记得应该是《民法典》里有相关的规定。先想想自己了解的内容，有点记得，好像继承人和受益人不能当，但具体的内容有点模糊。还是查一下更保险。\\n\\n那么，我应该去找《民法典》中关于遗嘱和见证人资格的条文。最好用关键词搜索一下。嗯，就搜索：<search>《民法典》遗嘱见证人资格限制</search>。\\n\\n查了一下，结果还蛮清晰的。<information>根据《民法典》第1135条，有明确提到哪些人不能担任遗嘱的见证人。主要包括四类：第一类是继承人及其配偶、近亲属；第二类是遗嘱受益人及其配偶、近亲属；第三类是未成年人；第四类是语言或意识表达能力受限的人。</information>\\n\\n好，那我来分析一下这些限制的具体原因和逻辑。首先，继承人和遗嘱受益人，包括他们的配偶、近亲属，显然有直接利益关系。让这些人当见证人，可能会导致遗嘱的真实性被质疑。嗯，这种限制其实挺合理的，能避免将来继承麻烦。\\n\\n再看未成年人。这也能理解，因为未成年人不具备完全民事行为能力，很难确保他们能正确履行见证责任。再有是那些语言或者意识表达能力受限的人，比如有些人可能不擅长交流，或者精神不清楚。这部分人还真没办法胜任见证职责，法律限制也是为了保证公正性吧。\\n\\n总结下，根据第1135条，以下人不能当遗嘱见证人：1. 继承人及其配偶、近亲属；2. 遗嘱受益人及其配偶、近亲属；3. 未成年人；4. 语言或意识表达能力受限的人。这样分析应该是没问题的，这次理解还挺透彻的！\"\n}\n```",
+    "根据《中华人民共和国民法典》第1135条，以下人员不能担任遗嘱的见证人：\n\n1. **继承人及其配偶、近亲属**：这些人由于与遗嘱内容存在直接的利益关系，若担任见证人，可能会引发对遗嘱公正性的质疑。\n2. **遗嘱的受益人及其配偶、近亲属**：同样，这些人与遗嘱涉及的财产利益相关，担任见证人可能导致纠纷。\n3. **未成年人**：未成年人尚不具备完全民事行为能力，因此无法正确履行见证职责。\n4. **语言或意识表达能力受限的人**：例如有严重听障、语言表达困难或意识不清楚的人，无法确保他们能准确理解并确认遗嘱内容。\n\n这些限制的目的是为了保障遗嘱的真实性和法律效力，避免因见证人资格问题引发继承纠纷。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "明确问题范围",
+        "content": "问题涉及遗嘱见证人的资格限制，需要了解在中国法律中规定哪些人不能作为遗嘱的见证人。进一步确认遗嘱相关规范来源，可能涉及《民法典》中关于遗嘱的规定。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "寻找相关法律规定",
+        "content": "根据问题，若无法直接回忆具体条款内容，需要查阅中国法律，尤其是《民法典》中有关遗嘱见证人资格部分的规定。发起如下搜索请求：<search>《民法典》遗嘱见证人资格限制</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "分析搜索结果",
+        "content": "<information>《民法典》第1135条对遗嘱见证人资格有所规定。不具备见证人资格的人包括以下几类：1. 继承人及其配偶、近亲属；2. 遗嘱受益人及其配偶、近亲属；3. 未成年人；4. 语言或意识表达能力受限的人。</information>依据搜索结果，可继续推导具体不能担任遗嘱见证人的类别。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "归纳见证人资格限制的核心内容",
+        "content": "通过分析《民法典》第1135条列出的限制：1. 遗嘱见证人需与遗嘱无利害关系，例如不能是继承人或受益人；2. 要具备完全民事行为能力，排除未成年人；3. 需具备语言表达能力与意识清晰，以保证见证的真实性与合法性。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "根据《民法典》第1135条，以下人员不能作为遗嘱的见证人：1. 继承人及其配偶、近亲属；2. 遗嘱受益人及其配偶、近亲属；3. 未成年人；4. 语言或意识表达能力受限的人。"
+      },
+      {
+        "action": "Verification",
+        "content": "结论符合中国《民法典》相关规定，限制合理且逻辑无误，可终止推导。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "嗯，这个问题问的是关于遗嘱见证人的资格限制，感觉跟法律关系挺紧密的。这个涉及到谁不能当见证人，我记得应该是《民法典》里有相关的规定。先想想自己了解的内容，有点记得，好像继承人和受益人不能当，但具体的内容有点模糊。还是查一下更保险。\n\n那么，我应该去找《民法典》中关于遗嘱和见证人资格的条文。最好用关键词搜索一下。嗯，就搜索：<search>《民法典》遗嘱见证人资格限制</search>。\n\n查了一下，结果还蛮清晰的。<information>根据《民法典》第1135条，有明确提到哪些人不能担任遗嘱的见证人。主要包括四类：第一类是继承人及其配偶、近亲属；第二类是遗嘱受益人及其配偶、近亲属；第三类是未成年人；第四类是语言或意识表达能力受限的人。</information>\n\n好，那我来分析一下这些限制的具体原因和逻辑。首先，继承人和遗嘱受益人，包括他们的配偶、近亲属，显然有直接利益关系。让这些人当见证人，可能会导致遗嘱的真实性被质疑。嗯，这种限制其实挺合理的，能避免将来继承麻烦。\n\n再看未成年人。这也能理解，因为未成年人不具备完全民事行为能力，很难确保他们能正确履行见证责任。再有是那些语言或者意识表达能力受限的人，比如有些人可能不擅长交流，或者精神不清楚。这部分人还真没办法胜任见证职责，法律限制也是为了保证公正性吧。\n\n总结下，根据第1135条，以下人不能当遗嘱见证人：1. 继承人及其配偶、近亲属；2. 遗嘱受益人及其配偶、近亲属；3. 未成年人；4. 语言或意识表达能力受限的人。这样分析应该是没问题的，这次理解还挺透彻的！",
+  "Response": "根据《中华人民共和国民法典》第1135条，以下人员不能担任遗嘱的见证人：\n\n1. **继承人及其配偶、近亲属**：这些人由于与遗嘱内容存在直接的利益关系，若担任见证人，可能会引发对遗嘱公正性的质疑。\n2. **遗嘱的受益人及其配偶、近亲属**：同样，这些人与遗嘱涉及的财产利益相关，担任见证人可能导致纠纷。\n3. **未成年人**：未成年人尚不具备完全民事行为能力，因此无法正确履行见证职责。\n4. **语言或意识表达能力受限的人**：例如有严重听障、语言表达困难或意识不清楚的人，无法确保他们能准确理解并确认遗嘱内容。\n\n这些限制的目的是为了保障遗嘱的真实性和法律效力，避免因见证人资格问题引发继承纠纷。",
+  "Question": "哪些人不能作为遗嘱的见证人？"
+}

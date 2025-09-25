@@ -1,0 +1,89 @@
+{
+  "Open-ended Verifiable Question": "转让赡养义务的合同有效吗?",
+  "Ground-True Answer": "的法律依据《民法典》第二十六条 父母对未成年子女负有抚养、教育和保护的义务。 成年子女对父母负有赡养、扶助和保护的义务。 第一千零六十七条 父母不履行抚养义务的，未成年子女或者不能独立生活的成年子女，有要求父母给付抚养费的权利。 成年子女不履行赡养义务的，缺乏劳动能力或者生活困难的父母，有要求成年子女给付赡养费的权利。",
+  "process_id": 3995,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "分析赡养义务的法律性质",
+      "content": "赡养义务通常是基于法律规定，例如《中华人民共和国民法典》中规定的父母与子女之间的赡养义务，这属于法定的亲属义务。这类义务具有强制性和不可放弃性。需要查找相关法律条款以确认赡养义务是否允许转让。<search>赡养义务 法律性质</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "查找相关法律规定",
+      "content": "<information>根据查询，《中华人民共和国民法典》第1057条明确规定，子女有赡养父母的义务，这种义务具有强制性，无法通过合同形式转让或免除。</information>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "利用法律规定推理合同效力问题",
+      "content": "鉴于赡养义务是法定义务且不可转让或免除，如果签订合同将赡养义务转让给他人，则该合同将违反法律强制性规定，属于无效合同。进一步考量合同法相关内容以确认是否存在其他例外情况。<search>合同无效 法律规定</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "确认合同无效的法律依据",
+      "content": "<information>《中华人民共和国民法典》第153条规定，违反法律、行政法规强制性规定的合同无效。转让赡养义务的合同显然违反了《民法典》第1057条，因此该合同无效。</information>"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "转让赡养义务的合同无效，因为赡养义务是法定的强制性义务，无法通过合同形式转让或免除。该行为违反了《中华人民共和国民法典》第1057条以及第153条的规定，因此合同不具有法律效力。"
+    },
+    {
+      "action": "Verification",
+      "content": "通过查阅相关法条和逻辑推理，结论成立。转让赡养义务的合同确实无效。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n转让赡养义务的合同有效吗?\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n转让赡养义务的合同无效，因为赡养义务是法定的强制性义务，无法通过合同形式转让或免除。该行为违反了《中华人民共和国民法典》第1057条以及第153条的规定，因此合同不具有法律效力。  \n</Model Response>  \n\n<Reference Answer>  \n的法律依据《民法典》第二十六条 父母对未成年子女负有抚养、教育和保护的义务。 成年子女对父母负有赡养、扶助和保护的义务。 第一千零六十七条 父母不履行抚养义务的，未成年子女或者不能独立生活的成年子女，有要求父母给付抚养费的权利。 成年子女不履行赡养义务的，缺乏劳动能力或者生活困难的父母，有要求成年子女给付赡养费的权利。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 分析赡养义务的法律性质\n赡养义务通常是基于法律规定，例如《中华人民共和国民法典》中规定的父母与子女之间的赡养义务，这属于法定的亲属义务。这类义务具有强制性和不可放弃性。需要查找相关法律条款以确认赡养义务是否允许转让。<search>赡养义务 法律性质</search>\n\n### 查找相关法律规定\n<information>根据查询，《中华人民共和国民法典》第1057条明确规定，子女有赡养父母的义务，这种义务具有强制性，无法通过合同形式转让或免除。</information>\n\n### 利用法律规定推理合同效力问题\n鉴于赡养义务是法定义务且不可转让或免除，如果签订合同将赡养义务转让给他人，则该合同将违反法律强制性规定，属于无效合同。进一步考量合同法相关内容以确认是否存在其他例外情况。<search>合同无效 法律规定</search>\n\n### 确认合同无效的法律依据\n<information>《中华人民共和国民法典》第153条规定，违反法律、行政法规强制性规定的合同无效。转让赡养义务的合同显然违反了《民法典》第1057条，因此该合同无效。</information>\n\n### Conclusion\n转让赡养义务的合同无效，因为赡养义务是法定的强制性义务，无法通过合同形式转让或免除。该行为违反了《中华人民共和国民法典》第1057条以及第153条的规定，因此合同不具有法律效力。\n\n### Verification\n通过查阅相关法条和逻辑推理，结论成立。转让赡养义务的合同确实无效。\n</Thought Process>\n\n<Question>\n转让赡养义务的合同有效吗?\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n嗯，转让赡养义务的合同是不是有效呢？我得先理清赡养义务到底是什么。在法律上，赡养义务好像是子女对父母的责任，而且这是法定的亲属义务。应该是很严肃的东西，不是随便可以摆脱或转让的。让我查查相关的法律条文，看看具体怎么说。<search>赡养义务 法律性质</search> \n\n哦，找到了。根据查询，《中华人民共和国民法典》第1057条规定，子女负有赡养父母的义务，这种义务还是强制性的，而且不能通过协议放弃或者转让。看来赡养义务确实是法律明确规定的，属于法定责任。不管子女愿不愿意，这义务不能逃避。 \n\n如果是这样，那就要考虑，签订一份合同转让赡养义务，这样的合同有没有法律效力呢？转让肯定是涉及合同的问题，我猜相关的规定应该还是在《民法典》里。让我看看关于合同效力的法律怎么说，有没有什么特别的例外情况。<search>合同无效 法律规定</search> \n\n嗯，根据查到的内容，《中华人民共和国民法典》第153条提到，违反法律和行政法规强制性规定的合同是无效的。所以如果赡养义务是强制性规定，而转让赡养义务的合同显然违背了这个规定，这合同应该是无效的。嗯，这很合理，如果赡养义务都能转让，那法律设定它的强制性不就没有意义了吗？ \n\n再回头整理一下，说明转让赡养义务的合同无效的原因。第一，赡养父母的义务是法定的，是法律明文规定的强制性责任，根据《民法典》第1057条，不允许通过合同转让或者免除。第二，根据《民法典》第153条，任何违反强制性规定的合同都是无效的。结合起来看，转让赡养义务的合同违反了两条法律规定，因此无效。听起来逻辑也没问题。 \n\n嗯，现在可以确定了，转让赡养义务的合同是没有法律效力的。这结论应该是没问题的。我觉得法律上的规定是为了保护老年人的权益，让子女履行他们的法定义务，这也是法律严肃性的体现。\n</Internal Thinking>\n\n<Question>\n转让赡养义务的合同有效吗?\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析赡养义务的法律性质\",\n      \"content\": \"赡养义务通常是基于法律规定，例如《中华人民共和国民法典》中规定的父母与子女之间的赡养义务，这属于法定的亲属义务。这类义务具有强制性和不可放弃性。需要查找相关法律条款以确认赡养义务是否允许转让。<search>赡养义务 法律性质</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"查找相关法律规定\",\n      \"content\": \"<information>根据查询，《中华人民共和国民法典》第1057条明确规定，子女有赡养父母的义务，这种义务具有强制性，无法通过合同形式转让或免除。</information>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"利用法律规定推理合同效力问题\",\n      \"content\": \"鉴于赡养义务是法定义务且不可转让或免除，如果签订合同将赡养义务转让给他人，则该合同将违反法律强制性规定，属于无效合同。进一步考量合同法相关内容以确认是否存在其他例外情况。<search>合同无效 法律规定</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"确认合同无效的法律依据\",\n      \"content\": \"<information>《中华人民共和国民法典》第153条规定，违反法律、行政法规强制性规定的合同无效。转让赡养义务的合同显然违反了《民法典》第1057条，因此该合同无效。</information>\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"转让赡养义务的合同无效，因为赡养义务是法定的强制性义务，无法通过合同形式转让或免除。该行为违反了《中华人民共和国民法典》第1057条以及第153条的规定，因此合同不具有法律效力。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"通过查阅相关法条和逻辑推理，结论成立。转让赡养义务的合同确实无效。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"嗯，转让赡养义务的合同是不是有效呢？我得先理清赡养义务到底是什么。在法律上，赡养义务好像是子女对父母的责任，而且这是法定的亲属义务。应该是很严肃的东西，不是随便可以摆脱或转让的。让我查查相关的法律条文，看看具体怎么说。<search>赡养义务 法律性质</search> \\n\\n哦，找到了。根据查询，《中华人民共和国民法典》第1057条规定，子女负有赡养父母的义务，这种义务还是强制性的，而且不能通过协议放弃或者转让。看来赡养义务确实是法律明确规定的，属于法定责任。不管子女愿不愿意，这义务不能逃避。 \\n\\n如果是这样，那就要考虑，签订一份合同转让赡养义务，这样的合同有没有法律效力呢？转让肯定是涉及合同的问题，我猜相关的规定应该还是在《民法典》里。让我看看关于合同效力的法律怎么说，有没有什么特别的例外情况。<search>合同无效 法律规定</search> \\n\\n嗯，根据查到的内容，《中华人民共和国民法典》第153条提到，违反法律和行政法规强制性规定的合同是无效的。所以如果赡养义务是强制性规定，而转让赡养义务的合同显然违背了这个规定，这合同应该是无效的。嗯，这很合理，如果赡养义务都能转让，那法律设定它的强制性不就没有意义了吗？ \\n\\n再回头整理一下，说明转让赡养义务的合同无效的原因。第一，赡养父母的义务是法定的，是法律明文规定的强制性责任，根据《民法典》第1057条，不允许通过合同转让或者免除。第二，根据《民法典》第153条，任何违反强制性规定的合同都是无效的。结合起来看，转让赡养义务的合同违反了两条法律规定，因此无效。听起来逻辑也没问题。 \\n\\n嗯，现在可以确定了，转让赡养义务的合同是没有法律效力的。这结论应该是没问题的。我觉得法律上的规定是为了保护老年人的权益，让子女履行他们的法定义务，这也是法律严肃性的体现。\"\n}\n```",
+    "转让赡养义务的合同是无效的。\n\n根据《中华人民共和国民法典》第1057条规定，子女对父母负有赡养义务，这是一项法定的亲属义务，具有强制性，无法通过协议放弃或转让。此外，《民法典》第153条明确指出，违反法律和行政法规强制性规定的合同属无效合同。赡养父母的义务是法律强制性规定的一部分，因此任何试图通过合同转让赡养义务的行为都违背了法律，导致该合同无效。\n\n这一规定的目的在于保障父母的基本权益，同时确保子女履行法定义务，体现了法律的严肃性和公平性。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "分析赡养义务的法律性质",
+        "content": "赡养义务通常是基于法律规定，例如《中华人民共和国民法典》中规定的父母与子女之间的赡养义务，这属于法定的亲属义务。这类义务具有强制性和不可放弃性。需要查找相关法律条款以确认赡养义务是否允许转让。<search>赡养义务 法律性质</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "查找相关法律规定",
+        "content": "<information>根据查询，《中华人民共和国民法典》第1057条明确规定，子女有赡养父母的义务，这种义务具有强制性，无法通过合同形式转让或免除。</information>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "利用法律规定推理合同效力问题",
+        "content": "鉴于赡养义务是法定义务且不可转让或免除，如果签订合同将赡养义务转让给他人，则该合同将违反法律强制性规定，属于无效合同。进一步考量合同法相关内容以确认是否存在其他例外情况。<search>合同无效 法律规定</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "确认合同无效的法律依据",
+        "content": "<information>《中华人民共和国民法典》第153条规定，违反法律、行政法规强制性规定的合同无效。转让赡养义务的合同显然违反了《民法典》第1057条，因此该合同无效。</information>"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "转让赡养义务的合同无效，因为赡养义务是法定的强制性义务，无法通过合同形式转让或免除。该行为违反了《中华人民共和国民法典》第1057条以及第153条的规定，因此合同不具有法律效力。"
+      },
+      {
+        "action": "Verification",
+        "content": "通过查阅相关法条和逻辑推理，结论成立。转让赡养义务的合同确实无效。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "嗯，转让赡养义务的合同是不是有效呢？我得先理清赡养义务到底是什么。在法律上，赡养义务好像是子女对父母的责任，而且这是法定的亲属义务。应该是很严肃的东西，不是随便可以摆脱或转让的。让我查查相关的法律条文，看看具体怎么说。<search>赡养义务 法律性质</search> \n\n哦，找到了。根据查询，《中华人民共和国民法典》第1057条规定，子女负有赡养父母的义务，这种义务还是强制性的，而且不能通过协议放弃或者转让。看来赡养义务确实是法律明确规定的，属于法定责任。不管子女愿不愿意，这义务不能逃避。 \n\n如果是这样，那就要考虑，签订一份合同转让赡养义务，这样的合同有没有法律效力呢？转让肯定是涉及合同的问题，我猜相关的规定应该还是在《民法典》里。让我看看关于合同效力的法律怎么说，有没有什么特别的例外情况。<search>合同无效 法律规定</search> \n\n嗯，根据查到的内容，《中华人民共和国民法典》第153条提到，违反法律和行政法规强制性规定的合同是无效的。所以如果赡养义务是强制性规定，而转让赡养义务的合同显然违背了这个规定，这合同应该是无效的。嗯，这很合理，如果赡养义务都能转让，那法律设定它的强制性不就没有意义了吗？ \n\n再回头整理一下，说明转让赡养义务的合同无效的原因。第一，赡养父母的义务是法定的，是法律明文规定的强制性责任，根据《民法典》第1057条，不允许通过合同转让或者免除。第二，根据《民法典》第153条，任何违反强制性规定的合同都是无效的。结合起来看，转让赡养义务的合同违反了两条法律规定，因此无效。听起来逻辑也没问题。 \n\n嗯，现在可以确定了，转让赡养义务的合同是没有法律效力的。这结论应该是没问题的。我觉得法律上的规定是为了保护老年人的权益，让子女履行他们的法定义务，这也是法律严肃性的体现。",
+  "Response": "转让赡养义务的合同是无效的。\n\n根据《中华人民共和国民法典》第1057条规定，子女对父母负有赡养义务，这是一项法定的亲属义务，具有强制性，无法通过协议放弃或转让。此外，《民法典》第153条明确指出，违反法律和行政法规强制性规定的合同属无效合同。赡养父母的义务是法律强制性规定的一部分，因此任何试图通过合同转让赡养义务的行为都违背了法律，导致该合同无效。\n\n这一规定的目的在于保障父母的基本权益，同时确保子女履行法定义务，体现了法律的严肃性和公平性。",
+  "Question": "转让赡养义务的合同有效吗?"
+}

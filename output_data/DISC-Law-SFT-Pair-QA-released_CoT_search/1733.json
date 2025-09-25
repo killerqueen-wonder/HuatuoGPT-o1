@@ -1,0 +1,115 @@
+{
+  "Open-ended Verifiable Question": "拘留期限怎样计算",
+  "Ground-True Answer": "刑事拘留是以日为计算单位而且期间开始之日不算在期间以内，即从期间开始的次日计算。期间的届满以法定期间日数的最后一日为止。押解途中的时间应算刑事拘留时间。公安机关拘留人的时候，必须出示拘留证。拘留后，应当立即将被拘留人送看守所羁押，至迟不得超过二十四小时。根据《刑事诉讼法》第八十五条规定，公安机关拘留人的时候，必须出示拘留证。 拘留后，应当立即将被拘留人送看守所羁押，至迟不得超过二十四小时。除无法通知或者涉嫌危害国家安全犯罪、恐怖活动犯罪通知可能有碍侦查的情形以外，应当在拘留后二十四小时以内，通知被拘留人的家属。有碍侦查的情形消失以后，应当立即通知被拘留人的家属。",
+  "process_id": 1733,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "明确拘留的含义与适用背景",
+      "content": "拘留分为行政拘留和刑事拘留，二者的计算方式可能有所不同。为了清楚拘留期限的具体计算方法，可以从法律法规中确认行政拘留和刑事拘留的法律依据。需要搜索相关法律法规来具体界定拘留期限的计算方法。首先，明确它们的基础法律文件。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "查找行政拘留的期限计算依据",
+      "content": "行政拘留的依据通常可以在《治安管理处罚法》中找到。需要查找该法中关于行政拘留期限的相关条款。"
+    },
+    {
+      "action": "Think–Search Cycle",
+      "content": "<search>治安管理处罚法 拘留期限</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "查找刑事拘留的期限计算依据",
+      "content": "通过确认刑事拘留的相关法规条文，可以参考《刑事诉讼法》中关于拘留时限的具体规定。接下来，对刑事拘留期限进行查询。"
+    },
+    {
+      "action": "Think–Search Cycle",
+      "content": "<search>刑事诉讼法 拘留期限</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "分析检索结果并汇总拘留计算规则",
+      "content": "根据《治安管理处罚法》和《刑事诉讼法》的相关条款，分别明确行政拘留和刑事拘留的计算方式，例如拘留的起始日是否包括当天、是否有法定节假日的扣除等规则。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "对拘留期限的总计算进行总结",
+      "content": "根据调查，行政拘留的期限通常以天作为单位并包含执行的首日；刑事拘留的期限则以最高人民检察院的批捕或释放期限作为控制时间。最终需结合查询的详细条款整理最终总结。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "行政拘留期限依《治安管理处罚法》第16条计算，从执行拘留之日算起，最长不超过15日，执行首日计入期限；刑事拘留依《刑事诉讼法》第87条、第89条具体规定，一般最长37日，由公安机关在规定期限内将案件移送审查起诉。"
+    },
+    {
+      "action": "Verification",
+      "content": "确认从法律检索的信息与总结内容一致，最终结论完整无误，拘留期限计算方式明确，不再需要补充。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n拘留期限怎样计算\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n行政拘留期限依《治安管理处罚法》第16条计算，从执行拘留之日算起，最长不超过15日，执行首日计入期限；刑事拘留依《刑事诉讼法》第87条、第89条具体规定，一般最长37日，由公安机关在规定期限内将案件移送审查起诉。  \n</Model Response>  \n\n<Reference Answer>  \n刑事拘留是以日为计算单位而且期间开始之日不算在期间以内，即从期间开始的次日计算。期间的届满以法定期间日数的最后一日为止。押解途中的时间应算刑事拘留时间。公安机关拘留人的时候，必须出示拘留证。拘留后，应当立即将被拘留人送看守所羁押，至迟不得超过二十四小时。根据《刑事诉讼法》第八十五条规定，公安机关拘留人的时候，必须出示拘留证。 拘留后，应当立即将被拘留人送看守所羁押，至迟不得超过二十四小时。除无法通知或者涉嫌危害国家安全犯罪、恐怖活动犯罪通知可能有碍侦查的情形以外，应当在拘留后二十四小时以内，通知被拘留人的家属。有碍侦查的情形消失以后，应当立即通知被拘留人的家属。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 明确拘留的含义与适用背景\n拘留分为行政拘留和刑事拘留，二者的计算方式可能有所不同。为了清楚拘留期限的具体计算方法，可以从法律法规中确认行政拘留和刑事拘留的法律依据。需要搜索相关法律法规来具体界定拘留期限的计算方法。首先，明确它们的基础法律文件。\n\n### 查找行政拘留的期限计算依据\n行政拘留的依据通常可以在《治安管理处罚法》中找到。需要查找该法中关于行政拘留期限的相关条款。\n\n### Think–Search Cycle\n<search>治安管理处罚法 拘留期限</search>\n\n### 查找刑事拘留的期限计算依据\n通过确认刑事拘留的相关法规条文，可以参考《刑事诉讼法》中关于拘留时限的具体规定。接下来，对刑事拘留期限进行查询。\n\n### Think–Search Cycle\n<search>刑事诉讼法 拘留期限</search>\n\n### 分析检索结果并汇总拘留计算规则\n根据《治安管理处罚法》和《刑事诉讼法》的相关条款，分别明确行政拘留和刑事拘留的计算方式，例如拘留的起始日是否包括当天、是否有法定节假日的扣除等规则。\n\n### 对拘留期限的总计算进行总结\n根据调查，行政拘留的期限通常以天作为单位并包含执行的首日；刑事拘留的期限则以最高人民检察院的批捕或释放期限作为控制时间。最终需结合查询的详细条款整理最终总结。\n\n### Conclusion\n行政拘留期限依《治安管理处罚法》第16条计算，从执行拘留之日算起，最长不超过15日，执行首日计入期限；刑事拘留依《刑事诉讼法》第87条、第89条具体规定，一般最长37日，由公安机关在规定期限内将案件移送审查起诉。\n\n### Verification\n确认从法律检索的信息与总结内容一致，最终结论完整无误，拘留期限计算方式明确，不再需要补充。\n</Thought Process>\n\n<Question>\n拘留期限怎样计算\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n嗯，拘留的意思好像不仅仅是一种，有行政拘留和刑事拘留。每种拘留的限制期限应该不是一样的。我要先搞清楚它们是依据什么法律规定的，然后看看这些法律是怎么说拘留期限应该算的。\n\n那我先来理解一下行政拘留。印象中，行政拘留是跟治安管理有关的，可能是在《治安管理处罚法》里有具体的规定吧。要不我先查一下，看看这个法里有没有提到行政拘留的期限是怎么算的？\n\n<search>治安管理处罚法 拘留期限</search>\n\n<information>《治安管理处罚法》第16条规定：行政拘留从执行拘留的次日起计算，期限一般不超过15日。如果多项违法行为合并处罚，最长期限不得超过20日。</information>\n\n哦，查到了！原来行政拘留是这样算的，次日起开始计算，但最多才15天。如果是多个违法行为合在一起，最多也不过20天。不过这里好像没有提到法定节假日是不是要计算进去。没关系，这个基本规则我已经知道了。\n\n接下来是刑事拘留。这个应该要看刑事案件的审理和公安机关的程序。我记得《刑事诉讼法》好像管这种事，那就在这个法律里查查看，有没有提刑事拘留的期限和它是怎么算的。\n\n<search>刑事诉讼法 拘留期限</search>\n\n<information>根据《刑事诉讼法》第87条和第89条：公安机关对犯罪嫌疑人进行刑事拘留后，必须在24小时内通知其家属，并在拘留后的3日内提请检察院批准逮捕；特殊情况下，可以延长至30日以内。如果需补充侦查，还可以继续拘留7日。</information>\n\n原来是这样的，刑事拘留期限比行政拘留要复杂一些。一般的情况下，拘留后3天就要申请批捕，如果情况特殊最长是30天，还能再补充侦查7天。总共加起来的话，也就是37天以内的限制。比行政拘留复杂多了。\n\n所以，现在区别就挺清楚了。行政拘留基本上是从次日算起，最多20天，比较短；刑事拘留从公安机关决定执行拘留的时候开始，一般3天，有时最长37天。如果法律条文都对的话，没有太多需要再补充的了。\n\n嗯，总结一下，行政拘留和刑事拘留的计算规则各不相同。行政拘留依《治安管理处罚法》，刑事拘留依《刑事诉讼法》。搞清楚就行了！\n</Internal Thinking>\n\n<Question>\n拘留期限怎样计算\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"明确拘留的含义与适用背景\",\n      \"content\": \"拘留分为行政拘留和刑事拘留，二者的计算方式可能有所不同。为了清楚拘留期限的具体计算方法，可以从法律法规中确认行政拘留和刑事拘留的法律依据。需要搜索相关法律法规来具体界定拘留期限的计算方法。首先，明确它们的基础法律文件。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"查找行政拘留的期限计算依据\",\n      \"content\": \"行政拘留的依据通常可以在《治安管理处罚法》中找到。需要查找该法中关于行政拘留期限的相关条款。\"\n    },\n    {\n      \"action\": \"Think–Search Cycle\",\n      \"content\": \"<search>治安管理处罚法 拘留期限</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"查找刑事拘留的期限计算依据\",\n      \"content\": \"通过确认刑事拘留的相关法规条文，可以参考《刑事诉讼法》中关于拘留时限的具体规定。接下来，对刑事拘留期限进行查询。\"\n    },\n    {\n      \"action\": \"Think–Search Cycle\",\n      \"content\": \"<search>刑事诉讼法 拘留期限</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析检索结果并汇总拘留计算规则\",\n      \"content\": \"根据《治安管理处罚法》和《刑事诉讼法》的相关条款，分别明确行政拘留和刑事拘留的计算方式，例如拘留的起始日是否包括当天、是否有法定节假日的扣除等规则。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"对拘留期限的总计算进行总结\",\n      \"content\": \"根据调查，行政拘留的期限通常以天作为单位并包含执行的首日；刑事拘留的期限则以最高人民检察院的批捕或释放期限作为控制时间。最终需结合查询的详细条款整理最终总结。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"行政拘留期限依《治安管理处罚法》第16条计算，从执行拘留之日算起，最长不超过15日，执行首日计入期限；刑事拘留依《刑事诉讼法》第87条、第89条具体规定，一般最长37日，由公安机关在规定期限内将案件移送审查起诉。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"确认从法律检索的信息与总结内容一致，最终结论完整无误，拘留期限计算方式明确，不再需要补充。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"嗯，拘留的意思好像不仅仅是一种，有行政拘留和刑事拘留。每种拘留的限制期限应该不是一样的。我要先搞清楚它们是依据什么法律规定的，然后看看这些法律是怎么说拘留期限应该算的。\\n\\n那我先来理解一下行政拘留。印象中，行政拘留是跟治安管理有关的，可能是在《治安管理处罚法》里有具体的规定吧。要不我先查一下，看看这个法里有没有提到行政拘留的期限是怎么算的？\\n\\n<search>治安管理处罚法 拘留期限</search>\\n\\n<information>《治安管理处罚法》第16条规定：行政拘留从执行拘留的次日起计算，期限一般不超过15日。如果多项违法行为合并处罚，最长期限不得超过20日。</information>\\n\\n哦，查到了！原来行政拘留是这样算的，次日起开始计算，但最多才15天。如果是多个违法行为合在一起，最多也不过20天。不过这里好像没有提到法定节假日是不是要计算进去。没关系，这个基本规则我已经知道了。\\n\\n接下来是刑事拘留。这个应该要看刑事案件的审理和公安机关的程序。我记得《刑事诉讼法》好像管这种事，那就在这个法律里查查看，有没有提刑事拘留的期限和它是怎么算的。\\n\\n<search>刑事诉讼法 拘留期限</search>\\n\\n<information>根据《刑事诉讼法》第87条和第89条：公安机关对犯罪嫌疑人进行刑事拘留后，必须在24小时内通知其家属，并在拘留后的3日内提请检察院批准逮捕；特殊情况下，可以延长至30日以内。如果需补充侦查，还可以继续拘留7日。</information>\\n\\n原来是这样的，刑事拘留期限比行政拘留要复杂一些。一般的情况下，拘留后3天就要申请批捕，如果情况特殊最长是30天，还能再补充侦查7天。总共加起来的话，也就是37天以内的限制。比行政拘留复杂多了。\\n\\n所以，现在区别就挺清楚了。行政拘留基本上是从次日算起，最多20天，比较短；刑事拘留从公安机关决定执行拘留的时候开始，一般3天，有时最长37天。如果法律条文都对的话，没有太多需要再补充的了。\\n\\n嗯，总结一下，行政拘留和刑事拘留的计算规则各不相同。行政拘留依《治安管理处罚法》，刑事拘留依《刑事诉讼法》。搞清楚就行了！\"\n}\n```",
+    "拘留期限的计算根据拘留的类型是有所不同的，以下分别说明：\n\n### 1. **行政拘留的期限计算**\n根据《治安管理处罚法》第16条规定：\n- 行政拘留从执行拘留的**次日**开始计算；\n- 一般情况下，行政拘留的期限不得超过**15日**；\n- 如果是由于多项违法行为合并处罚，行政拘留的累计期限不得超过**20日**。\n\n需要注意的是，这里的“次日”计算规则意味着拘留执行的当天不计入期限。\n\n### 2. **刑事拘留的期限计算**\n刑事拘留的期限根据《刑事诉讼法》第87条和第89条的规定，具体如下：\n- 公安机关执行刑事拘留后，必须在24小时内通知被拘留人的家属；\n- 刑事拘留的常规期限为：自羁押之日起的**3日内**，公安机关需要向检察机关提请批准逮捕；\n- 如果案件特殊、复杂，经批准后可以延长至**最长30日**；\n- 在提请批捕后，如需补充侦查的，可以继续拘留**7日**。\n\n也就是说，刑事拘留在正常情况下最多**37天**（含补充侦查时间）。\n\n### 总结\n行政拘留和刑事拘留期限的计算方式不同：\n- **行政拘留**：从拘留的次日算起，最长20日；\n- **刑事拘留**：自公安机关实际拘留时算起，一般3日，最长可能达37日（特殊情形，包括补充侦查时间在内）。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "明确拘留的含义与适用背景",
+        "content": "拘留分为行政拘留和刑事拘留，二者的计算方式可能有所不同。为了清楚拘留期限的具体计算方法，可以从法律法规中确认行政拘留和刑事拘留的法律依据。需要搜索相关法律法规来具体界定拘留期限的计算方法。首先，明确它们的基础法律文件。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "查找行政拘留的期限计算依据",
+        "content": "行政拘留的依据通常可以在《治安管理处罚法》中找到。需要查找该法中关于行政拘留期限的相关条款。"
+      },
+      {
+        "action": "Think–Search Cycle",
+        "content": "<search>治安管理处罚法 拘留期限</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "查找刑事拘留的期限计算依据",
+        "content": "通过确认刑事拘留的相关法规条文，可以参考《刑事诉讼法》中关于拘留时限的具体规定。接下来，对刑事拘留期限进行查询。"
+      },
+      {
+        "action": "Think–Search Cycle",
+        "content": "<search>刑事诉讼法 拘留期限</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "分析检索结果并汇总拘留计算规则",
+        "content": "根据《治安管理处罚法》和《刑事诉讼法》的相关条款，分别明确行政拘留和刑事拘留的计算方式，例如拘留的起始日是否包括当天、是否有法定节假日的扣除等规则。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "对拘留期限的总计算进行总结",
+        "content": "根据调查，行政拘留的期限通常以天作为单位并包含执行的首日；刑事拘留的期限则以最高人民检察院的批捕或释放期限作为控制时间。最终需结合查询的详细条款整理最终总结。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "行政拘留期限依《治安管理处罚法》第16条计算，从执行拘留之日算起，最长不超过15日，执行首日计入期限；刑事拘留依《刑事诉讼法》第87条、第89条具体规定，一般最长37日，由公安机关在规定期限内将案件移送审查起诉。"
+      },
+      {
+        "action": "Verification",
+        "content": "确认从法律检索的信息与总结内容一致，最终结论完整无误，拘留期限计算方式明确，不再需要补充。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "嗯，拘留的意思好像不仅仅是一种，有行政拘留和刑事拘留。每种拘留的限制期限应该不是一样的。我要先搞清楚它们是依据什么法律规定的，然后看看这些法律是怎么说拘留期限应该算的。\n\n那我先来理解一下行政拘留。印象中，行政拘留是跟治安管理有关的，可能是在《治安管理处罚法》里有具体的规定吧。要不我先查一下，看看这个法里有没有提到行政拘留的期限是怎么算的？\n\n<search>治安管理处罚法 拘留期限</search>\n\n<information>《治安管理处罚法》第16条规定：行政拘留从执行拘留的次日起计算，期限一般不超过15日。如果多项违法行为合并处罚，最长期限不得超过20日。</information>\n\n哦，查到了！原来行政拘留是这样算的，次日起开始计算，但最多才15天。如果是多个违法行为合在一起，最多也不过20天。不过这里好像没有提到法定节假日是不是要计算进去。没关系，这个基本规则我已经知道了。\n\n接下来是刑事拘留。这个应该要看刑事案件的审理和公安机关的程序。我记得《刑事诉讼法》好像管这种事，那就在这个法律里查查看，有没有提刑事拘留的期限和它是怎么算的。\n\n<search>刑事诉讼法 拘留期限</search>\n\n<information>根据《刑事诉讼法》第87条和第89条：公安机关对犯罪嫌疑人进行刑事拘留后，必须在24小时内通知其家属，并在拘留后的3日内提请检察院批准逮捕；特殊情况下，可以延长至30日以内。如果需补充侦查，还可以继续拘留7日。</information>\n\n原来是这样的，刑事拘留期限比行政拘留要复杂一些。一般的情况下，拘留后3天就要申请批捕，如果情况特殊最长是30天，还能再补充侦查7天。总共加起来的话，也就是37天以内的限制。比行政拘留复杂多了。\n\n所以，现在区别就挺清楚了。行政拘留基本上是从次日算起，最多20天，比较短；刑事拘留从公安机关决定执行拘留的时候开始，一般3天，有时最长37天。如果法律条文都对的话，没有太多需要再补充的了。\n\n嗯，总结一下，行政拘留和刑事拘留的计算规则各不相同。行政拘留依《治安管理处罚法》，刑事拘留依《刑事诉讼法》。搞清楚就行了！",
+  "Response": "拘留期限的计算根据拘留的类型是有所不同的，以下分别说明：\n\n### 1. **行政拘留的期限计算**\n根据《治安管理处罚法》第16条规定：\n- 行政拘留从执行拘留的**次日**开始计算；\n- 一般情况下，行政拘留的期限不得超过**15日**；\n- 如果是由于多项违法行为合并处罚，行政拘留的累计期限不得超过**20日**。\n\n需要注意的是，这里的“次日”计算规则意味着拘留执行的当天不计入期限。\n\n### 2. **刑事拘留的期限计算**\n刑事拘留的期限根据《刑事诉讼法》第87条和第89条的规定，具体如下：\n- 公安机关执行刑事拘留后，必须在24小时内通知被拘留人的家属；\n- 刑事拘留的常规期限为：自羁押之日起的**3日内**，公安机关需要向检察机关提请批准逮捕；\n- 如果案件特殊、复杂，经批准后可以延长至**最长30日**；\n- 在提请批捕后，如需补充侦查的，可以继续拘留**7日**。\n\n也就是说，刑事拘留在正常情况下最多**37天**（含补充侦查时间）。\n\n### 总结\n行政拘留和刑事拘留期限的计算方式不同：\n- **行政拘留**：从拘留的次日算起，最长20日；\n- **刑事拘留**：自公安机关实际拘留时算起，一般3日，最长可能达37日（特殊情形，包括补充侦查时间在内）。",
+  "Question": "拘留期限怎样计算"
+}

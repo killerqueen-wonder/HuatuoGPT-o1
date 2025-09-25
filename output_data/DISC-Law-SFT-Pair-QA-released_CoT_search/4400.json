@@ -1,0 +1,79 @@
+{
+  "Open-ended Verifiable Question": "对法院减刑、假释裁定的纠正意见由谁提出",
+  "Ground-True Answer": "1、对人民法院减刑、假释裁定的纠正意见，由作出减刑、假释裁定的人民法院的同级人民检察院书面提出。下级检察院发现法院减刑、假释裁定不当的，应当向作出减刑、假释裁定的法院的同级检察院报告。\n法律依据：《人民检察院刑事诉讼规则》第六百六十一条二、撤销假释的情形假释的撤销，是指获得假释的犯罪分子在假释考验期内又犯新罪或者被查出前罪宣判前有漏罪没有宣判，或者在假释考验期内违反法律、行政法规和监管机关的相关规定，被人民法院裁定收监执行刑罚的执法活动。刑法规定获假释的犯罪分子具有下列法定情形之一，撤销假释：(一)在假释考验期内又犯新罪，无论所犯新罪的性质和形式，也无论所犯罪行会被判处何种刑罚，都应当撤销假释，对所犯新罪进行判决，并把前罪未执行完毕的刑期和新罪判决的刑期，按总和刑期以下数罪中最高刑期以上酌情决定执行数罪的刑期并罚。(二)获假释的犯罪分子在假释考验期满后才被发现所犯新罪，如果发现的新罪是在追诉时效内的，也要撤销假释，按第一条的规定处罚;(三)获假释的犯罪分子在假释考验期内发现有在前罪判决之后没有判决的漏罪，并且没有超过追诉时效，不论其漏罪的性质，应判何种刑罚，都要撤销假释，把前后两罪所判刑罚合并，在总和刑期以下，最高刑期以上决定执行数罪并罚的刑期。(四)获假释的犯罪分子在假释考验期内违反下列规定之一，撤销假释：1、遵守法律、行政法规、服从监督;2、按照监督机关的规定报告自己的活动情况;3、遵守监督机关关于会客的规定;4、离开所居住的市、县或者迁居，应当报监督机关批准。依据《人民检察院刑事诉讼规则》的规定，对人民法院减刑、假释裁定的纠正意见，由作出减刑、假释裁定的人民法院的同级人民检察院书面提出",
+  "process_id": 4400,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "明确裁定性质",
+      "content": "对于法院作出的减刑、假释裁定，相关审判行为属于裁定范畴，依法需要一定监督和纠正程序。因此，需要确定有哪些主体能够对裁定不当提出纠正意见，以及依据的法律法规。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "搜索法律依据",
+      "content": "为了明确谁可以对减刑、假释裁定提出纠正意见，我需要查找相关法律条文。重点可能涉及《刑事诉讼法》和减刑、假释相关司法解释。<search>刑事诉讼法 减刑假释纠正意见</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "审查搜索结果",
+      "content": "<information>《中华人民共和国刑事诉讼法》第253条规定，人民检察院可以对减刑、假释裁定发现违法的情况，依法向人民法院提出纠正意见。此外，《最高人民法院、最高人民检察院关于办理减刑、假释案件相关规定》中进一步明确检察机关的监督职责。</information>根据搜索结果，检察机关负责对法院的减刑、假释裁定进行监督，并在发现违法或不当的情况下提出纠正意见。关键内容是检察院职责。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "对法院减刑、假释裁定的纠正意见由人民检察院提出。检察机关依据《中华人民共和国刑事诉讼法》第253条以及相关司法解释，负责对减刑、假释执行的合法性进行监督，当发现问题时，有权向人民法院提出纠正意见。"
+    },
+    {
+      "action": "Verification",
+      "content": "结论根据现行法律规定，是正确的。《刑事诉讼法》明确了检察机关的监督职责，司法解释也对此进一步说明。因此，答案正确且无矛盾。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n对法院减刑、假释裁定的纠正意见由谁提出\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n对法院减刑、假释裁定的纠正意见由人民检察院提出。检察机关依据《中华人民共和国刑事诉讼法》第253条以及相关司法解释，负责对减刑、假释执行的合法性进行监督，当发现问题时，有权向人民法院提出纠正意见。  \n</Model Response>  \n\n<Reference Answer>  \n1、对人民法院减刑、假释裁定的纠正意见，由作出减刑、假释裁定的人民法院的同级人民检察院书面提出。下级检察院发现法院减刑、假释裁定不当的，应当向作出减刑、假释裁定的法院的同级检察院报告。\n法律依据：《人民检察院刑事诉讼规则》第六百六十一条二、撤销假释的情形假释的撤销，是指获得假释的犯罪分子在假释考验期内又犯新罪或者被查出前罪宣判前有漏罪没有宣判，或者在假释考验期内违反法律、行政法规和监管机关的相关规定，被人民法院裁定收监执行刑罚的执法活动。刑法规定获假释的犯罪分子具有下列法定情形之一，撤销假释：(一)在假释考验期内又犯新罪，无论所犯新罪的性质和形式，也无论所犯罪行会被判处何种刑罚，都应当撤销假释，对所犯新罪进行判决，并把前罪未执行完毕的刑期和新罪判决的刑期，按总和刑期以下数罪中最高刑期以上酌情决定执行数罪的刑期并罚。(二)获假释的犯罪分子在假释考验期满后才被发现所犯新罪，如果发现的新罪是在追诉时效内的，也要撤销假释，按第一条的规定处罚;(三)获假释的犯罪分子在假释考验期内发现有在前罪判决之后没有判决的漏罪，并且没有超过追诉时效，不论其漏罪的性质，应判何种刑罚，都要撤销假释，把前后两罪所判刑罚合并，在总和刑期以下，最高刑期以上决定执行数罪并罚的刑期。(四)获假释的犯罪分子在假释考验期内违反下列规定之一，撤销假释：1、遵守法律、行政法规、服从监督;2、按照监督机关的规定报告自己的活动情况;3、遵守监督机关关于会客的规定;4、离开所居住的市、县或者迁居，应当报监督机关批准。依据《人民检察院刑事诉讼规则》的规定，对人民法院减刑、假释裁定的纠正意见，由作出减刑、假释裁定的人民法院的同级人民检察院书面提出\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 明确裁定性质\n对于法院作出的减刑、假释裁定，相关审判行为属于裁定范畴，依法需要一定监督和纠正程序。因此，需要确定有哪些主体能够对裁定不当提出纠正意见，以及依据的法律法规。\n\n### 搜索法律依据\n为了明确谁可以对减刑、假释裁定提出纠正意见，我需要查找相关法律条文。重点可能涉及《刑事诉讼法》和减刑、假释相关司法解释。<search>刑事诉讼法 减刑假释纠正意见</search>\n\n### 审查搜索结果\n<information>《中华人民共和国刑事诉讼法》第253条规定，人民检察院可以对减刑、假释裁定发现违法的情况，依法向人民法院提出纠正意见。此外，《最高人民法院、最高人民检察院关于办理减刑、假释案件相关规定》中进一步明确检察机关的监督职责。</information>根据搜索结果，检察机关负责对法院的减刑、假释裁定进行监督，并在发现违法或不当的情况下提出纠正意见。关键内容是检察院职责。\n\n### Conclusion\n对法院减刑、假释裁定的纠正意见由人民检察院提出。检察机关依据《中华人民共和国刑事诉讼法》第253条以及相关司法解释，负责对减刑、假释执行的合法性进行监督，当发现问题时，有权向人民法院提出纠正意见。\n\n### Verification\n结论根据现行法律规定，是正确的。《刑事诉讼法》明确了检察机关的监督职责，司法解释也对此进一步说明。因此，答案正确且无矛盾。\n</Thought Process>\n\n<Question>\n对法院减刑、假释裁定的纠正意见由谁提出\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n好，首先我需要搞清楚，这里的问题是关于法院减刑、假释裁定的纠正意见该由谁提出。听起来这应该涉及法律相关的具体规定，特别是关于监督和纠正程序的主体。嗯，减刑、假释是刑事案件中的特殊环节，我觉得可以先看看《刑事诉讼法》，可能会有答案。\n\n所以，我想着搜索一下相关法律条文，看看有没有明确提到谁有权对裁定提出纠正意见。我觉得关键词可以是“刑事诉讼法 减刑假释纠正意见”。好，我去搜一下。<search>刑事诉讼法 减刑假释纠正意见</search>\n\n哦，找到了相关信息。<information>根据《中华人民共和国刑事诉讼法》第253条的规定，人民检察院可以对减刑、假释裁定发现违法的情况，依法向人民法院提出纠正意见。此外，还有《最高人民法院、最高人民检察院关于办理减刑、假释案件相关规定》，进一步明确了检察机关的监督职责。</information>嗯，看起来检察院在这里起到关键作用。他们负责监督减刑和假释裁定的合法性，如果发现违法或者不当，可以提出纠正意见。\n\n所以，简单来说，检察机关负责对法院的减刑、假释裁定进行监督，并且有权在发现问题的时候向法院提出意见。这是法律明确规定的职责，依据主要来自《刑事诉讼法》第253条。除此之外，还有司法解释补充说明了检察机关的职责范围。\n\n总体来说，这样看问题就很清楚了。法院的减刑、假释裁定如果出现违法或者不当的情况，需要通过检察院来监督纠正。他们有法律授权，能够提出针对裁定的纠正意见。嗯，这个结论是靠谱的，条文和规定都支持这个观点，没什么漏洞。\n</Internal Thinking>\n\n<Question>\n对法院减刑、假释裁定的纠正意见由谁提出\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"明确裁定性质\",\n      \"content\": \"对于法院作出的减刑、假释裁定，相关审判行为属于裁定范畴，依法需要一定监督和纠正程序。因此，需要确定有哪些主体能够对裁定不当提出纠正意见，以及依据的法律法规。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"搜索法律依据\",\n      \"content\": \"为了明确谁可以对减刑、假释裁定提出纠正意见，我需要查找相关法律条文。重点可能涉及《刑事诉讼法》和减刑、假释相关司法解释。<search>刑事诉讼法 减刑假释纠正意见</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"审查搜索结果\",\n      \"content\": \"<information>《中华人民共和国刑事诉讼法》第253条规定，人民检察院可以对减刑、假释裁定发现违法的情况，依法向人民法院提出纠正意见。此外，《最高人民法院、最高人民检察院关于办理减刑、假释案件相关规定》中进一步明确检察机关的监督职责。</information>根据搜索结果，检察机关负责对法院的减刑、假释裁定进行监督，并在发现违法或不当的情况下提出纠正意见。关键内容是检察院职责。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"对法院减刑、假释裁定的纠正意见由人民检察院提出。检察机关依据《中华人民共和国刑事诉讼法》第253条以及相关司法解释，负责对减刑、假释执行的合法性进行监督，当发现问题时，有权向人民法院提出纠正意见。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"结论根据现行法律规定，是正确的。《刑事诉讼法》明确了检察机关的监督职责，司法解释也对此进一步说明。因此，答案正确且无矛盾。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"好，首先我需要搞清楚，这里的问题是关于法院减刑、假释裁定的纠正意见该由谁提出。听起来这应该涉及法律相关的具体规定，特别是关于监督和纠正程序的主体。嗯，减刑、假释是刑事案件中的特殊环节，我觉得可以先看看《刑事诉讼法》，可能会有答案。\\n\\n所以，我想着搜索一下相关法律条文，看看有没有明确提到谁有权对裁定提出纠正意见。我觉得关键词可以是“刑事诉讼法 减刑假释纠正意见”。好，我去搜一下。<search>刑事诉讼法 减刑假释纠正意见</search>\\n\\n哦，找到了相关信息。<information>根据《中华人民共和国刑事诉讼法》第253条的规定，人民检察院可以对减刑、假释裁定发现违法的情况，依法向人民法院提出纠正意见。此外，还有《最高人民法院、最高人民检察院关于办理减刑、假释案件相关规定》，进一步明确了检察机关的监督职责。</information>嗯，看起来检察院在这里起到关键作用。他们负责监督减刑和假释裁定的合法性，如果发现违法或者不当，可以提出纠正意见。\\n\\n所以，简单来说，检察机关负责对法院的减刑、假释裁定进行监督，并且有权在发现问题的时候向法院提出意见。这是法律明确规定的职责，依据主要来自《刑事诉讼法》第253条。除此之外，还有司法解释补充说明了检察机关的职责范围。\\n\\n总体来说，这样看问题就很清楚了。法院的减刑、假释裁定如果出现违法或者不当的情况，需要通过检察院来监督纠正。他们有法律授权，能够提出针对裁定的纠正意见。嗯，这个结论是靠谱的，条文和规定都支持这个观点，没什么漏洞。\"\n}\n```",
+    "根据《中华人民共和国刑事诉讼法》第253条的规定，人民检察院有权对法院作出的减刑、假释裁定进行监督。如果发现裁定违法，检察机关可以依法向人民法院提出纠正意见。此外，《最高人民法院、最高人民检察院关于办理减刑、假释案件相关规定》也进一步明确了检察机关在减刑、假释案件中的监督职责。\n\n因此，法院减刑、假释裁定的纠正意见应由人民检察院提出。这是法律明确规定的检察机关职责，旨在确保裁定的公正合法。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "明确裁定性质",
+        "content": "对于法院作出的减刑、假释裁定，相关审判行为属于裁定范畴，依法需要一定监督和纠正程序。因此，需要确定有哪些主体能够对裁定不当提出纠正意见，以及依据的法律法规。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "搜索法律依据",
+        "content": "为了明确谁可以对减刑、假释裁定提出纠正意见，我需要查找相关法律条文。重点可能涉及《刑事诉讼法》和减刑、假释相关司法解释。<search>刑事诉讼法 减刑假释纠正意见</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "审查搜索结果",
+        "content": "<information>《中华人民共和国刑事诉讼法》第253条规定，人民检察院可以对减刑、假释裁定发现违法的情况，依法向人民法院提出纠正意见。此外，《最高人民法院、最高人民检察院关于办理减刑、假释案件相关规定》中进一步明确检察机关的监督职责。</information>根据搜索结果，检察机关负责对法院的减刑、假释裁定进行监督，并在发现违法或不当的情况下提出纠正意见。关键内容是检察院职责。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "对法院减刑、假释裁定的纠正意见由人民检察院提出。检察机关依据《中华人民共和国刑事诉讼法》第253条以及相关司法解释，负责对减刑、假释执行的合法性进行监督，当发现问题时，有权向人民法院提出纠正意见。"
+      },
+      {
+        "action": "Verification",
+        "content": "结论根据现行法律规定，是正确的。《刑事诉讼法》明确了检察机关的监督职责，司法解释也对此进一步说明。因此，答案正确且无矛盾。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "好，首先我需要搞清楚，这里的问题是关于法院减刑、假释裁定的纠正意见该由谁提出。听起来这应该涉及法律相关的具体规定，特别是关于监督和纠正程序的主体。嗯，减刑、假释是刑事案件中的特殊环节，我觉得可以先看看《刑事诉讼法》，可能会有答案。\n\n所以，我想着搜索一下相关法律条文，看看有没有明确提到谁有权对裁定提出纠正意见。我觉得关键词可以是“刑事诉讼法 减刑假释纠正意见”。好，我去搜一下。<search>刑事诉讼法 减刑假释纠正意见</search>\n\n哦，找到了相关信息。<information>根据《中华人民共和国刑事诉讼法》第253条的规定，人民检察院可以对减刑、假释裁定发现违法的情况，依法向人民法院提出纠正意见。此外，还有《最高人民法院、最高人民检察院关于办理减刑、假释案件相关规定》，进一步明确了检察机关的监督职责。</information>嗯，看起来检察院在这里起到关键作用。他们负责监督减刑和假释裁定的合法性，如果发现违法或者不当，可以提出纠正意见。\n\n所以，简单来说，检察机关负责对法院的减刑、假释裁定进行监督，并且有权在发现问题的时候向法院提出意见。这是法律明确规定的职责，依据主要来自《刑事诉讼法》第253条。除此之外，还有司法解释补充说明了检察机关的职责范围。\n\n总体来说，这样看问题就很清楚了。法院的减刑、假释裁定如果出现违法或者不当的情况，需要通过检察院来监督纠正。他们有法律授权，能够提出针对裁定的纠正意见。嗯，这个结论是靠谱的，条文和规定都支持这个观点，没什么漏洞。",
+  "Response": "根据《中华人民共和国刑事诉讼法》第253条的规定，人民检察院有权对法院作出的减刑、假释裁定进行监督。如果发现裁定违法，检察机关可以依法向人民法院提出纠正意见。此外，《最高人民法院、最高人民检察院关于办理减刑、假释案件相关规定》也进一步明确了检察机关在减刑、假释案件中的监督职责。\n\n因此，法院减刑、假释裁定的纠正意见应由人民检察院提出。这是法律明确规定的检察机关职责，旨在确保裁定的公正合法。",
+  "Question": "对法院减刑、假释裁定的纠正意见由谁提出"
+}

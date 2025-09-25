@@ -1,0 +1,89 @@
+{
+  "Open-ended Verifiable Question": "以出让方式取得的国有土地使用权转让条件?",
+  "Ground-True Answer": "以出让方式取得的国有土地使用权转让条件。(1)按照出让合同约定支付全部土地出让金，并取得国有土地使用权；(2)按照出让合同约定进行投资开发，属于房屋建设工程的，完成开发投资总额的25%以上，属于成片开发土地的，形成工业用地或者其他建设用地条件；(3)转让房地产时房屋已经建成的，还应当持有房屋所有权证书。",
+  "process_id": 2502,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "了解问题背景",
+      "content": "问题询问的是以出让方式取得的国有土地使用权，其转让的条件。首先需要明确关于国有土地使用权出让和转让的法律和法规要求。这涉及《中华人民共和国土地管理法》及《城市房地产管理法》。需要进一步研究具体条款规定以明确条件。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "搜索相关法律条款",
+      "content": "需要查找《中华人民共和国土地管理法》和《城市房地产管理法》中关于国有土地使用权出让及转让的相关规定以获取具体条件。开始搜索以下关键字：<search>土地管理法 国有土地使用权转让</search> 和 <search>城市房地产管理法 国有土地使用权转让条件</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "整理搜索结果",
+      "content": "<information>根据《城市房地产管理法》的相关规定，国有土地使用权转让的条件包括：1. 土地使用权出让合同已经签订并按照合同约定支付了土地使用权出让金；2. 已经依法取得土地使用权证书；3. 根据批准用途开发建设土地的，应当进行投入开发建设并达到约定的条件；与上述法律同时《土地管理法》规定，土地用途必须符合规划法律要求。</information>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "分析并概括条件",
+      "content": "从搜索结果可以得出，国有土地使用权转让的条件涉及四个关键方面：签订并支付出让金、取得土地使用权证书、达到开发建设要求、用途符合规划法规。这些条件分别是《城市房地产管理法》和《土地管理法》中规定的。因此可以进行总结并给出答案。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "以出让方式取得的国有土地使用权转让必须满足以下条件：1. 签订土地使用权出让合同并支付了全部土地使用权出让金；2. 已依法取得土地使用权证书；3. 如果转让的土地涉及开发建设用途，则需要按合同约定投入开发建设并达到约定条件；4. 土地用途必须符合规划法律规定。"
+    },
+    {
+      "action": "Verification",
+      "content": "根据搜索结果和分析出的条件，结论与法律规定相符。四个条件均是转让所需的法定前提。因此，结论正确，无需进一步修改。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n以出让方式取得的国有土地使用权转让条件?\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n以出让方式取得的国有土地使用权转让必须满足以下条件：1. 签订土地使用权出让合同并支付了全部土地使用权出让金；2. 已依法取得土地使用权证书；3. 如果转让的土地涉及开发建设用途，则需要按合同约定投入开发建设并达到约定条件；4. 土地用途必须符合规划法律规定。  \n</Model Response>  \n\n<Reference Answer>  \n以出让方式取得的国有土地使用权转让条件。(1)按照出让合同约定支付全部土地出让金，并取得国有土地使用权；(2)按照出让合同约定进行投资开发，属于房屋建设工程的，完成开发投资总额的25%以上，属于成片开发土地的，形成工业用地或者其他建设用地条件；(3)转让房地产时房屋已经建成的，还应当持有房屋所有权证书。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 了解问题背景\n问题询问的是以出让方式取得的国有土地使用权，其转让的条件。首先需要明确关于国有土地使用权出让和转让的法律和法规要求。这涉及《中华人民共和国土地管理法》及《城市房地产管理法》。需要进一步研究具体条款规定以明确条件。\n\n### 搜索相关法律条款\n需要查找《中华人民共和国土地管理法》和《城市房地产管理法》中关于国有土地使用权出让及转让的相关规定以获取具体条件。开始搜索以下关键字：<search>土地管理法 国有土地使用权转让</search> 和 <search>城市房地产管理法 国有土地使用权转让条件</search>\n\n### 整理搜索结果\n<information>根据《城市房地产管理法》的相关规定，国有土地使用权转让的条件包括：1. 土地使用权出让合同已经签订并按照合同约定支付了土地使用权出让金；2. 已经依法取得土地使用权证书；3. 根据批准用途开发建设土地的，应当进行投入开发建设并达到约定的条件；与上述法律同时《土地管理法》规定，土地用途必须符合规划法律要求。</information>\n\n### 分析并概括条件\n从搜索结果可以得出，国有土地使用权转让的条件涉及四个关键方面：签订并支付出让金、取得土地使用权证书、达到开发建设要求、用途符合规划法规。这些条件分别是《城市房地产管理法》和《土地管理法》中规定的。因此可以进行总结并给出答案。\n\n### Conclusion\n以出让方式取得的国有土地使用权转让必须满足以下条件：1. 签订土地使用权出让合同并支付了全部土地使用权出让金；2. 已依法取得土地使用权证书；3. 如果转让的土地涉及开发建设用途，则需要按合同约定投入开发建设并达到约定条件；4. 土地用途必须符合规划法律规定。\n\n### Verification\n根据搜索结果和分析出的条件，结论与法律规定相符。四个条件均是转让所需的法定前提。因此，结论正确，无需进一步修改。\n</Thought Process>\n\n<Question>\n以出让方式取得的国有土地使用权转让条件?\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n嗯，这个问题问的是以出让方式取得的国有土地使用权，在转让时需要满足什么条件。我得先搞清楚这些条件是怎么规定的，应该是和土地管理相关的法律有关系，比如《土地管理法》和《城市房地产管理法》，这两个法里应该有明确的规定。\n\n那我得先想想，这个问题的关键点是什么呢？哦，国有土地使用权是通过出让取得的，这个“出让”是有合同约定的。所以转让的时候，应该也得根据合同，还有法律的具体要求。好像和土地的开发、用途也有点关系，因为这些条件通常要符合规划。为了更准确，我需要查查法律条文。\n\n让我搜索一下，看看《土地管理法》和《城市房地产管理法》里怎么说。我输入关键字：<search>土地管理法 国有土地使用权转让</search>，再试试另外一个更具体的：<search>城市房地产管理法 国有土地使用权转让条件</search>。\n\n哦，我看到了相关信息，有点头绪了。根据《城市房地产管理法》的内容，国有土地使用权转让首先得签好出让合同，然后按照合同约定把土地使用权出让金给付完，这应该是最基本的先决条件了。另外，还提到转让之前要有合法的土地使用权证书，也就是说得先办好证，不能只是合同状态就转让。\n\n还有一部分内容，是说如果这块地是用来开发建设的，那就得按合同的约定投入开发，得达到一定的条件才行，比如说开发完成一定比例之类的。不然的话，可能空地就被频繁倒卖，违法囤地。这部分要求挺严密的。另外，根据《土地管理法》也明确了，土地用途要符合法律规划，不能随便乱用土地。\n\n总结一下，现在基本搞清楚了，想转让以出让方式取得的国有土地使用权得满足这几个条件：第一，签了合同且已经支付了出让金；第二，拿到了土地使用权证书；第三，要是开发用地的话，还得按合同开发，达到要求；最后，土地用途得符合国家的规划和相关法律。\n\n这些条件看起来合理，而且都是基于法律的具体要求，现在应该能完整回答问题了！\n</Internal Thinking>\n\n<Question>\n以出让方式取得的国有土地使用权转让条件?\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"了解问题背景\",\n      \"content\": \"问题询问的是以出让方式取得的国有土地使用权，其转让的条件。首先需要明确关于国有土地使用权出让和转让的法律和法规要求。这涉及《中华人民共和国土地管理法》及《城市房地产管理法》。需要进一步研究具体条款规定以明确条件。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"搜索相关法律条款\",\n      \"content\": \"需要查找《中华人民共和国土地管理法》和《城市房地产管理法》中关于国有土地使用权出让及转让的相关规定以获取具体条件。开始搜索以下关键字：<search>土地管理法 国有土地使用权转让</search> 和 <search>城市房地产管理法 国有土地使用权转让条件</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"整理搜索结果\",\n      \"content\": \"<information>根据《城市房地产管理法》的相关规定，国有土地使用权转让的条件包括：1. 土地使用权出让合同已经签订并按照合同约定支付了土地使用权出让金；2. 已经依法取得土地使用权证书；3. 根据批准用途开发建设土地的，应当进行投入开发建设并达到约定的条件；与上述法律同时《土地管理法》规定，土地用途必须符合规划法律要求。</information>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析并概括条件\",\n      \"content\": \"从搜索结果可以得出，国有土地使用权转让的条件涉及四个关键方面：签订并支付出让金、取得土地使用权证书、达到开发建设要求、用途符合规划法规。这些条件分别是《城市房地产管理法》和《土地管理法》中规定的。因此可以进行总结并给出答案。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"以出让方式取得的国有土地使用权转让必须满足以下条件：1. 签订土地使用权出让合同并支付了全部土地使用权出让金；2. 已依法取得土地使用权证书；3. 如果转让的土地涉及开发建设用途，则需要按合同约定投入开发建设并达到约定条件；4. 土地用途必须符合规划法律规定。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"根据搜索结果和分析出的条件，结论与法律规定相符。四个条件均是转让所需的法定前提。因此，结论正确，无需进一步修改。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"嗯，这个问题问的是以出让方式取得的国有土地使用权，在转让时需要满足什么条件。我得先搞清楚这些条件是怎么规定的，应该是和土地管理相关的法律有关系，比如《土地管理法》和《城市房地产管理法》，这两个法里应该有明确的规定。\\n\\n那我得先想想，这个问题的关键点是什么呢？哦，国有土地使用权是通过出让取得的，这个“出让”是有合同约定的。所以转让的时候，应该也得根据合同，还有法律的具体要求。好像和土地的开发、用途也有点关系，因为这些条件通常要符合规划。为了更准确，我需要查查法律条文。\\n\\n让我搜索一下，看看《土地管理法》和《城市房地产管理法》里怎么说。我输入关键字：<search>土地管理法 国有土地使用权转让</search>，再试试另外一个更具体的：<search>城市房地产管理法 国有土地使用权转让条件</search>。\\n\\n哦，我看到了相关信息，有点头绪了。根据《城市房地产管理法》的内容，国有土地使用权转让首先得签好出让合同，然后按照合同约定把土地使用权出让金给付完，这应该是最基本的先决条件了。另外，还提到转让之前要有合法的土地使用权证书，也就是说得先办好证，不能只是合同状态就转让。\\n\\n还有一部分内容，是说如果这块地是用来开发建设的，那就得按合同的约定投入开发，得达到一定的条件才行，比如说开发完成一定比例之类的。不然的话，可能空地就被频繁倒卖，违法囤地。这部分要求挺严密的。另外，根据《土地管理法》也明确了，土地用途要符合法律规划，不能随便乱用土地。\\n\\n总结一下，现在基本搞清楚了，想转让以出让方式取得的国有土地使用权得满足这几个条件：第一，签了合同且已经支付了出让金；第二，拿到了土地使用权证书；第三，要是开发用地的话，还得按合同开发，达到要求；最后，土地用途得符合国家的规划和相关法律。\\n\\n这些条件看起来合理，而且都是基于法律的具体要求，现在应该能完整回答问题了！\"\n}\n```",
+    "以出让方式取得的国有土地使用权在转让时需要满足以下条件：\n\n1. **履行出让合同义务并支付出让金**：转让方必须已经按照与土地管理部门签订的《国有土地使用权出让合同》履行相关条款，特别是支付完成土地使用权出让金。\n\n2. **取得土地使用权证书**：转让方必须已经依法办理国有土地使用权证书，确保其合法拥有该土地使用权，只有在取得土地使用权证书后才能进行转让。\n\n3. **开发建设达到合同约定条件（开发用地的特定要求）**：对于以出让方式取得的土地用于开发建设的情形，必须根据《城市房地产管理法》第39条要求，按出让合同约定完成一定程度的开发：\n   - 已完成土地投资开发，形成年约定的开发条件或者完成开发建设的，方可进行转让。\n   - 如果土地尚未投入开发或开发未达条件，则不得转让土地使用权。\n\n4. **土地用途符合法律法规和规划**：土地转让时，其用途必须与《国有土地使用权出让合同》约定以及国家相关的土地利用总体规划、城市规划保持一致，不能随意改变用途以规避法律约束。\n\n上述条件主要依据《城市房地产管理法》和《土地管理法》中相关规定，是保障国有土地规范流转的重要法律要求。如果相关条件未满足，土地使用权转让行为可能会受到限制或被认定为违法。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "了解问题背景",
+        "content": "问题询问的是以出让方式取得的国有土地使用权，其转让的条件。首先需要明确关于国有土地使用权出让和转让的法律和法规要求。这涉及《中华人民共和国土地管理法》及《城市房地产管理法》。需要进一步研究具体条款规定以明确条件。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "搜索相关法律条款",
+        "content": "需要查找《中华人民共和国土地管理法》和《城市房地产管理法》中关于国有土地使用权出让及转让的相关规定以获取具体条件。开始搜索以下关键字：<search>土地管理法 国有土地使用权转让</search> 和 <search>城市房地产管理法 国有土地使用权转让条件</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "整理搜索结果",
+        "content": "<information>根据《城市房地产管理法》的相关规定，国有土地使用权转让的条件包括：1. 土地使用权出让合同已经签订并按照合同约定支付了土地使用权出让金；2. 已经依法取得土地使用权证书；3. 根据批准用途开发建设土地的，应当进行投入开发建设并达到约定的条件；与上述法律同时《土地管理法》规定，土地用途必须符合规划法律要求。</information>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "分析并概括条件",
+        "content": "从搜索结果可以得出，国有土地使用权转让的条件涉及四个关键方面：签订并支付出让金、取得土地使用权证书、达到开发建设要求、用途符合规划法规。这些条件分别是《城市房地产管理法》和《土地管理法》中规定的。因此可以进行总结并给出答案。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "以出让方式取得的国有土地使用权转让必须满足以下条件：1. 签订土地使用权出让合同并支付了全部土地使用权出让金；2. 已依法取得土地使用权证书；3. 如果转让的土地涉及开发建设用途，则需要按合同约定投入开发建设并达到约定条件；4. 土地用途必须符合规划法律规定。"
+      },
+      {
+        "action": "Verification",
+        "content": "根据搜索结果和分析出的条件，结论与法律规定相符。四个条件均是转让所需的法定前提。因此，结论正确，无需进一步修改。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "嗯，这个问题问的是以出让方式取得的国有土地使用权，在转让时需要满足什么条件。我得先搞清楚这些条件是怎么规定的，应该是和土地管理相关的法律有关系，比如《土地管理法》和《城市房地产管理法》，这两个法里应该有明确的规定。\n\n那我得先想想，这个问题的关键点是什么呢？哦，国有土地使用权是通过出让取得的，这个“出让”是有合同约定的。所以转让的时候，应该也得根据合同，还有法律的具体要求。好像和土地的开发、用途也有点关系，因为这些条件通常要符合规划。为了更准确，我需要查查法律条文。\n\n让我搜索一下，看看《土地管理法》和《城市房地产管理法》里怎么说。我输入关键字：<search>土地管理法 国有土地使用权转让</search>，再试试另外一个更具体的：<search>城市房地产管理法 国有土地使用权转让条件</search>。\n\n哦，我看到了相关信息，有点头绪了。根据《城市房地产管理法》的内容，国有土地使用权转让首先得签好出让合同，然后按照合同约定把土地使用权出让金给付完，这应该是最基本的先决条件了。另外，还提到转让之前要有合法的土地使用权证书，也就是说得先办好证，不能只是合同状态就转让。\n\n还有一部分内容，是说如果这块地是用来开发建设的，那就得按合同的约定投入开发，得达到一定的条件才行，比如说开发完成一定比例之类的。不然的话，可能空地就被频繁倒卖，违法囤地。这部分要求挺严密的。另外，根据《土地管理法》也明确了，土地用途要符合法律规划，不能随便乱用土地。\n\n总结一下，现在基本搞清楚了，想转让以出让方式取得的国有土地使用权得满足这几个条件：第一，签了合同且已经支付了出让金；第二，拿到了土地使用权证书；第三，要是开发用地的话，还得按合同开发，达到要求；最后，土地用途得符合国家的规划和相关法律。\n\n这些条件看起来合理，而且都是基于法律的具体要求，现在应该能完整回答问题了！",
+  "Response": "以出让方式取得的国有土地使用权在转让时需要满足以下条件：\n\n1. **履行出让合同义务并支付出让金**：转让方必须已经按照与土地管理部门签订的《国有土地使用权出让合同》履行相关条款，特别是支付完成土地使用权出让金。\n\n2. **取得土地使用权证书**：转让方必须已经依法办理国有土地使用权证书，确保其合法拥有该土地使用权，只有在取得土地使用权证书后才能进行转让。\n\n3. **开发建设达到合同约定条件（开发用地的特定要求）**：对于以出让方式取得的土地用于开发建设的情形，必须根据《城市房地产管理法》第39条要求，按出让合同约定完成一定程度的开发：\n   - 已完成土地投资开发，形成年约定的开发条件或者完成开发建设的，方可进行转让。\n   - 如果土地尚未投入开发或开发未达条件，则不得转让土地使用权。\n\n4. **土地用途符合法律法规和规划**：土地转让时，其用途必须与《国有土地使用权出让合同》约定以及国家相关的土地利用总体规划、城市规划保持一致，不能随意改变用途以规避法律约束。\n\n上述条件主要依据《城市房地产管理法》和《土地管理法》中相关规定，是保障国有土地规范流转的重要法律要求。如果相关条件未满足，土地使用权转让行为可能会受到限制或被认定为违法。",
+  "Question": "以出让方式取得的国有土地使用权转让条件?"
+}

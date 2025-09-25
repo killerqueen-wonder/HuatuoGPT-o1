@@ -1,0 +1,99 @@
+{
+  "Open-ended Verifiable Question": "离婚财产分割对方说没钱怎么办？",
+  "Ground-True Answer": "1、如果是通过协议离婚的夫妻，如果在离婚时未发现另一方名下有财产在离婚后发现的，可以提起离婚后财产分割诉讼，要求分割新发现的夫妻共同财产;2、如果是通过法院诉讼离婚的，一方说没钱，另一方可以向法院申请调查对方名下的财产信息来获知对方实际的财产状况，但是没有一方的申请，法院是不会主动去查的。当然通过诉讼离婚的，在离婚后发现对方有财产未进行分割的，也可以再提起诉讼要求分割。",
+  "process_id": 1496,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "确认离婚财产分割原则",
+      "content": "根据中国婚姻法，夫妻共同财产在离婚时应依法分割。需要确认对方口中的‘没钱’是否真实，以及是否涉及隐匿、转移、变卖、毁损共同财产的情况。因此需要查阅具体法律依据支持相关原则。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "查询法律依据",
+      "content": "需要查阅相关法律以确认夫妻共同财产分割的具体规定、以及如何处理对方以‘没钱’为由逃避分割可能的策略。 <search>《中华人民共和国民法典》婚姻家庭编</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "分析法律依据",
+      "content": "<information>《中华人民共和国民法典》第1062条明确规定夫妻在婚姻关系存续期间所得的收入一般为夫妻共同财产，包括工资、奖金、生产经营所得等。同时第1092条指出，如果一方在离婚诉讼过程中恶意转移、隐匿财产，违法所得部分将少分甚至不分。</information>基于法律条款，可以确认分割夫妻共同财产是权利，若对方未如实陈述财产情况，可以依法追究。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "核实对方“没钱”的真实性",
+      "content": "下一步需确认对方‘没钱’的主张是否客观属实。如果其真实没有可分财产，可通过要求对方提供详细的财产清单、银行对账单及潜在资产证明进行核实。如对方拒绝，法院可以采取强制措施，包括第三方查询其财产状况。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "法律手段应对对方隐匿财产",
+      "content": "如果确认对方有隐匿财产的可能，则可以向法院申请调查令，要求强制查询对方名下的财产状况，包括银行账户、房产、车辆等，确保公平分割夫妻共同财产。必要时对方因拒不执行而可能承担法律责任。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "当对方声称‘没钱’时，首先应核实其主张的真实性，可以通过要求其提供财产清单和证据、以及在法院的协助下查询其财产状况。如果发现对方存在隐匿、转移共同财产行为，可以通过提起法律诉讼或向法院申请调查令，应对对方的行为。对涉嫌违法的财产隐匿行为，可请求法院减少对方的分割权益直至追究法律责任。"
+    },
+    {
+      "action": "Verification",
+      "content": "以上结论与《民法典》的相关条款一致，能够提供合法可行的解决路径，程序合理且合法，因此结论成立。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n离婚财产分割对方说没钱怎么办？\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n当对方声称‘没钱’时，首先应核实其主张的真实性，可以通过要求其提供财产清单和证据、以及在法院的协助下查询其财产状况。如果发现对方存在隐匿、转移共同财产行为，可以通过提起法律诉讼或向法院申请调查令，应对对方的行为。对涉嫌违法的财产隐匿行为，可请求法院减少对方的分割权益直至追究法律责任。  \n</Model Response>  \n\n<Reference Answer>  \n1、如果是通过协议离婚的夫妻，如果在离婚时未发现另一方名下有财产在离婚后发现的，可以提起离婚后财产分割诉讼，要求分割新发现的夫妻共同财产;2、如果是通过法院诉讼离婚的，一方说没钱，另一方可以向法院申请调查对方名下的财产信息来获知对方实际的财产状况，但是没有一方的申请，法院是不会主动去查的。当然通过诉讼离婚的，在离婚后发现对方有财产未进行分割的，也可以再提起诉讼要求分割。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 确认离婚财产分割原则\n根据中国婚姻法，夫妻共同财产在离婚时应依法分割。需要确认对方口中的‘没钱’是否真实，以及是否涉及隐匿、转移、变卖、毁损共同财产的情况。因此需要查阅具体法律依据支持相关原则。\n\n### 查询法律依据\n需要查阅相关法律以确认夫妻共同财产分割的具体规定、以及如何处理对方以‘没钱’为由逃避分割可能的策略。 <search>《中华人民共和国民法典》婚姻家庭编</search>\n\n### 分析法律依据\n<information>《中华人民共和国民法典》第1062条明确规定夫妻在婚姻关系存续期间所得的收入一般为夫妻共同财产，包括工资、奖金、生产经营所得等。同时第1092条指出，如果一方在离婚诉讼过程中恶意转移、隐匿财产，违法所得部分将少分甚至不分。</information>基于法律条款，可以确认分割夫妻共同财产是权利，若对方未如实陈述财产情况，可以依法追究。\n\n### 核实对方“没钱”的真实性\n下一步需确认对方‘没钱’的主张是否客观属实。如果其真实没有可分财产，可通过要求对方提供详细的财产清单、银行对账单及潜在资产证明进行核实。如对方拒绝，法院可以采取强制措施，包括第三方查询其财产状况。\n\n### 法律手段应对对方隐匿财产\n如果确认对方有隐匿财产的可能，则可以向法院申请调查令，要求强制查询对方名下的财产状况，包括银行账户、房产、车辆等，确保公平分割夫妻共同财产。必要时对方因拒不执行而可能承担法律责任。\n\n### Conclusion\n当对方声称‘没钱’时，首先应核实其主张的真实性，可以通过要求其提供财产清单和证据、以及在法院的协助下查询其财产状况。如果发现对方存在隐匿、转移共同财产行为，可以通过提起法律诉讼或向法院申请调查令，应对对方的行为。对涉嫌违法的财产隐匿行为，可请求法院减少对方的分割权益直至追究法律责任。\n\n### Verification\n以上结论与《民法典》的相关条款一致，能够提供合法可行的解决路径，程序合理且合法，因此结论成立。\n</Thought Process>\n\n<Question>\n离婚财产分割对方说没钱怎么办？\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n对方说离婚时没有钱时，我首先觉得不能轻信。毕竟，财产分割是离婚的重要部分，对方口头说‘没钱’，我得先确认这是真是假。\n\n嗯……夫妻共同财产的范围是什么呢？我记得中国法律里有明确规定。为了确保我的理解没问题，还是查一下具体法律条文比较稳妥。<search>《中华人民共和国民法典》婚姻家庭编</search>\n\n查到了！<information>《中华人民共和国民法典》第1062条提到，夫妻共同财产包括婚姻存续期间的工资、奖金、生产经营所得等。如果一方恶意转移、隐匿财产，第1092条说违法所得的部分可以少分甚至不分。</information>嗯，对的，这就说明，不管对方‘没钱’是真是假，这些财产都是该分的。如果对方真的没有遵守法律隐匿了财产，是可以追究的。\n\n那我要怎么确认对方“没钱”的说法是真是假呢……首先，他得提供具体的财产信息。比如银行流水、房产证、股票账户等，这样我可以先核实。如果对方不愿提供或者提供的信息有问题，那是不是可以通过法律途径查询？似乎在法院申请调查令可以对他的名下财产进行全面调查。\n\n但如果对方真的在为了逃避分割而转移、隐瞒甚至变卖财产呢？我觉得这种情况得严肃对待。嗯……法律上是有办法处理的。刚才查的第1092条说了，如果他被发现有这些行为，法院可能会减少甚至不给他分割财产的机会。这么看，我得特别注意搜集证据——包括他在离婚期间所有不寻常的财务活动。\n\n对了，如果他拒绝提供财产信息或者试图拖延，我还能向法院申请让他依法披露所有财产情况，包括通过第三方机构查账。如果发现问题或者有证据，他可能还要承担法律责任，比如罚款甚至更严重的后果。\n\n总体来说，这事不能光信他‘没钱’这种说辞。我得通过具体的资产核实来确认真相。一步步来，先让对方摊开他的财产信息，如果走不通，就通过法院帮忙调查。如果发现他真的有意隐匿，那不仅可以要求法院少分甚至不分给他，还可以依法追责。嗯，这样处理就合理了，也和法律规定是一致的。\n</Internal Thinking>\n\n<Question>\n离婚财产分割对方说没钱怎么办？\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"确认离婚财产分割原则\",\n      \"content\": \"根据中国婚姻法，夫妻共同财产在离婚时应依法分割。需要确认对方口中的‘没钱’是否真实，以及是否涉及隐匿、转移、变卖、毁损共同财产的情况。因此需要查阅具体法律依据支持相关原则。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"查询法律依据\",\n      \"content\": \"需要查阅相关法律以确认夫妻共同财产分割的具体规定、以及如何处理对方以‘没钱’为由逃避分割可能的策略。 <search>《中华人民共和国民法典》婚姻家庭编</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析法律依据\",\n      \"content\": \"<information>《中华人民共和国民法典》第1062条明确规定夫妻在婚姻关系存续期间所得的收入一般为夫妻共同财产，包括工资、奖金、生产经营所得等。同时第1092条指出，如果一方在离婚诉讼过程中恶意转移、隐匿财产，违法所得部分将少分甚至不分。</information>基于法律条款，可以确认分割夫妻共同财产是权利，若对方未如实陈述财产情况，可以依法追究。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"核实对方“没钱”的真实性\",\n      \"content\": \"下一步需确认对方‘没钱’的主张是否客观属实。如果其真实没有可分财产，可通过要求对方提供详细的财产清单、银行对账单及潜在资产证明进行核实。如对方拒绝，法院可以采取强制措施，包括第三方查询其财产状况。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"法律手段应对对方隐匿财产\",\n      \"content\": \"如果确认对方有隐匿财产的可能，则可以向法院申请调查令，要求强制查询对方名下的财产状况，包括银行账户、房产、车辆等，确保公平分割夫妻共同财产。必要时对方因拒不执行而可能承担法律责任。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"当对方声称‘没钱’时，首先应核实其主张的真实性，可以通过要求其提供财产清单和证据、以及在法院的协助下查询其财产状况。如果发现对方存在隐匿、转移共同财产行为，可以通过提起法律诉讼或向法院申请调查令，应对对方的行为。对涉嫌违法的财产隐匿行为，可请求法院减少对方的分割权益直至追究法律责任。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"以上结论与《民法典》的相关条款一致，能够提供合法可行的解决路径，程序合理且合法，因此结论成立。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"对方说离婚时没有钱时，我首先觉得不能轻信。毕竟，财产分割是离婚的重要部分，对方口头说‘没钱’，我得先确认这是真是假。\\n\\n嗯……夫妻共同财产的范围是什么呢？我记得中国法律里有明确规定。为了确保我的理解没问题，还是查一下具体法律条文比较稳妥。<search>《中华人民共和国民法典》婚姻家庭编</search>\\n\\n查到了！<information>《中华人民共和国民法典》第1062条提到，夫妻共同财产包括婚姻存续期间的工资、奖金、生产经营所得等。如果一方恶意转移、隐匿财产，第1092条说违法所得的部分可以少分甚至不分。</information>嗯，对的，这就说明，不管对方‘没钱’是真是假，这些财产都是该分的。如果对方真的没有遵守法律隐匿了财产，是可以追究的。\\n\\n那我要怎么确认对方“没钱”的说法是真是假呢……首先，他得提供具体的财产信息。比如银行流水、房产证、股票账户等，这样我可以先核实。如果对方不愿提供或者提供的信息有问题，那是不是可以通过法律途径查询？似乎在法院申请调查令可以对他的名下财产进行全面调查。\\n\\n但如果对方真的在为了逃避分割而转移、隐瞒甚至变卖财产呢？我觉得这种情况得严肃对待。嗯……法律上是有办法处理的。刚才查的第1092条说了，如果他被发现有这些行为，法院可能会减少甚至不给他分割财产的机会。这么看，我得特别注意搜集证据——包括他在离婚期间所有不寻常的财务活动。\\n\\n对了，如果他拒绝提供财产信息或者试图拖延，我还能向法院申请让他依法披露所有财产情况，包括通过第三方机构查账。如果发现问题或者有证据，他可能还要承担法律责任，比如罚款甚至更严重的后果。\\n\\n总体来说，这事不能光信他‘没钱’这种说辞。我得通过具体的资产核实来确认真相。一步步来，先让对方摊开他的财产信息，如果走不通，就通过法院帮忙调查。如果发现他真的有意隐匿，那不仅可以要求法院少分甚至不分给他，还可以依法追责。嗯，这样处理就合理了，也和法律规定是一致的。\"\n}\n```",
+    "在离婚财产分割时，如果对方声称“没钱”，你需要采取冷静且合理的方式来核实，不能单纯依赖对方的口头陈述。以下是具体处理步骤：\n\n1. **确认夫妻共同财产的范围**  \n   根据《中华人民共和国民法典》第1062条，夫妻共同财产通常包括婚姻存续期间的工资、奖金、劳务报酬，生产经营收益，知识产权收益，以及其他应当归共同所有的财产（如存款、房产、证券等）。也就是说，即便对方声称自己“没钱”，这些财产仍然需要依法查明和分割。\n\n2. **要求对方披露财产信息**  \n   你可以要求对方提供详细的财产清单，包括当下名下的银行账户流水、房产证明、车辆登记信息、股票账户等。如果对方愿意配合，可以通过核对这些信息来验证其说法。如果提供的信息不完整或者存在明显问题，你可以进一步追查。\n\n3. **借助法律途径调查财产情况**  \n   如果对方拒绝提供材料或者有隐瞒财产的嫌疑，你可以向法院提起诉讼，主张离婚财产分割。诉讼过程中，可以申请法院签发“调查令”，通过调查银行账户、房产信息、税务申报等方法来确认对方的资产情况。法院有权调取对方名下隐藏或者转移的资产信息。\n\n4. **防范对方隐匿或转移财产**  \n   若对方存在恶意隐匿、转移、变卖夫妻共同财产的行为，根据《中华人民共和国民法典》第1092条，法院在分割财产时可以依法对其少分甚至不分，同时违法行为可能受到追究。重要的是，你需要搜集相关证据，例如可疑交易记录、资产出售记录，或者对方异常转移财产的行为。\n\n5. **申请财产保全**  \n   如果你怀疑对方为了逃避分割对财产进行了处置，比如转移现金、低价出售房产等，你可以向法院申请财产保全，要求暂时冻结某些资产，防止财产损失不可追溯。\n\n6. **维护自身权益**  \n   假如对方确实“没钱”或者名下财产较少，但你认为他隐瞒了实际财产情况，可以继续通过法律程序追踪。他在离婚诉讼过程中对财产申报的合法性负有义务。如果发现欺骗行为，可依法追责并要求对方承担相应责任。\n\n### 总结 \n对方说“没钱”并不能作为分割财产的依据。你需要结合夫妻共同财产的法定范围，通过对财产信息的核查或者法院调查来确认。如果发现对方确实存在隐瞒、转移财产的行为，可以依法追究，并在财产分割时要求法院少分甚至不分配给对方。同时建议全程保持冷静，依法办事，保护自己的合法权益。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "确认离婚财产分割原则",
+        "content": "根据中国婚姻法，夫妻共同财产在离婚时应依法分割。需要确认对方口中的‘没钱’是否真实，以及是否涉及隐匿、转移、变卖、毁损共同财产的情况。因此需要查阅具体法律依据支持相关原则。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "查询法律依据",
+        "content": "需要查阅相关法律以确认夫妻共同财产分割的具体规定、以及如何处理对方以‘没钱’为由逃避分割可能的策略。 <search>《中华人民共和国民法典》婚姻家庭编</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "分析法律依据",
+        "content": "<information>《中华人民共和国民法典》第1062条明确规定夫妻在婚姻关系存续期间所得的收入一般为夫妻共同财产，包括工资、奖金、生产经营所得等。同时第1092条指出，如果一方在离婚诉讼过程中恶意转移、隐匿财产，违法所得部分将少分甚至不分。</information>基于法律条款，可以确认分割夫妻共同财产是权利，若对方未如实陈述财产情况，可以依法追究。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "核实对方“没钱”的真实性",
+        "content": "下一步需确认对方‘没钱’的主张是否客观属实。如果其真实没有可分财产，可通过要求对方提供详细的财产清单、银行对账单及潜在资产证明进行核实。如对方拒绝，法院可以采取强制措施，包括第三方查询其财产状况。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "法律手段应对对方隐匿财产",
+        "content": "如果确认对方有隐匿财产的可能，则可以向法院申请调查令，要求强制查询对方名下的财产状况，包括银行账户、房产、车辆等，确保公平分割夫妻共同财产。必要时对方因拒不执行而可能承担法律责任。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "当对方声称‘没钱’时，首先应核实其主张的真实性，可以通过要求其提供财产清单和证据、以及在法院的协助下查询其财产状况。如果发现对方存在隐匿、转移共同财产行为，可以通过提起法律诉讼或向法院申请调查令，应对对方的行为。对涉嫌违法的财产隐匿行为，可请求法院减少对方的分割权益直至追究法律责任。"
+      },
+      {
+        "action": "Verification",
+        "content": "以上结论与《民法典》的相关条款一致，能够提供合法可行的解决路径，程序合理且合法，因此结论成立。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "对方说离婚时没有钱时，我首先觉得不能轻信。毕竟，财产分割是离婚的重要部分，对方口头说‘没钱’，我得先确认这是真是假。\n\n嗯……夫妻共同财产的范围是什么呢？我记得中国法律里有明确规定。为了确保我的理解没问题，还是查一下具体法律条文比较稳妥。<search>《中华人民共和国民法典》婚姻家庭编</search>\n\n查到了！<information>《中华人民共和国民法典》第1062条提到，夫妻共同财产包括婚姻存续期间的工资、奖金、生产经营所得等。如果一方恶意转移、隐匿财产，第1092条说违法所得的部分可以少分甚至不分。</information>嗯，对的，这就说明，不管对方‘没钱’是真是假，这些财产都是该分的。如果对方真的没有遵守法律隐匿了财产，是可以追究的。\n\n那我要怎么确认对方“没钱”的说法是真是假呢……首先，他得提供具体的财产信息。比如银行流水、房产证、股票账户等，这样我可以先核实。如果对方不愿提供或者提供的信息有问题，那是不是可以通过法律途径查询？似乎在法院申请调查令可以对他的名下财产进行全面调查。\n\n但如果对方真的在为了逃避分割而转移、隐瞒甚至变卖财产呢？我觉得这种情况得严肃对待。嗯……法律上是有办法处理的。刚才查的第1092条说了，如果他被发现有这些行为，法院可能会减少甚至不给他分割财产的机会。这么看，我得特别注意搜集证据——包括他在离婚期间所有不寻常的财务活动。\n\n对了，如果他拒绝提供财产信息或者试图拖延，我还能向法院申请让他依法披露所有财产情况，包括通过第三方机构查账。如果发现问题或者有证据，他可能还要承担法律责任，比如罚款甚至更严重的后果。\n\n总体来说，这事不能光信他‘没钱’这种说辞。我得通过具体的资产核实来确认真相。一步步来，先让对方摊开他的财产信息，如果走不通，就通过法院帮忙调查。如果发现他真的有意隐匿，那不仅可以要求法院少分甚至不分给他，还可以依法追责。嗯，这样处理就合理了，也和法律规定是一致的。",
+  "Response": "在离婚财产分割时，如果对方声称“没钱”，你需要采取冷静且合理的方式来核实，不能单纯依赖对方的口头陈述。以下是具体处理步骤：\n\n1. **确认夫妻共同财产的范围**  \n   根据《中华人民共和国民法典》第1062条，夫妻共同财产通常包括婚姻存续期间的工资、奖金、劳务报酬，生产经营收益，知识产权收益，以及其他应当归共同所有的财产（如存款、房产、证券等）。也就是说，即便对方声称自己“没钱”，这些财产仍然需要依法查明和分割。\n\n2. **要求对方披露财产信息**  \n   你可以要求对方提供详细的财产清单，包括当下名下的银行账户流水、房产证明、车辆登记信息、股票账户等。如果对方愿意配合，可以通过核对这些信息来验证其说法。如果提供的信息不完整或者存在明显问题，你可以进一步追查。\n\n3. **借助法律途径调查财产情况**  \n   如果对方拒绝提供材料或者有隐瞒财产的嫌疑，你可以向法院提起诉讼，主张离婚财产分割。诉讼过程中，可以申请法院签发“调查令”，通过调查银行账户、房产信息、税务申报等方法来确认对方的资产情况。法院有权调取对方名下隐藏或者转移的资产信息。\n\n4. **防范对方隐匿或转移财产**  \n   若对方存在恶意隐匿、转移、变卖夫妻共同财产的行为，根据《中华人民共和国民法典》第1092条，法院在分割财产时可以依法对其少分甚至不分，同时违法行为可能受到追究。重要的是，你需要搜集相关证据，例如可疑交易记录、资产出售记录，或者对方异常转移财产的行为。\n\n5. **申请财产保全**  \n   如果你怀疑对方为了逃避分割对财产进行了处置，比如转移现金、低价出售房产等，你可以向法院申请财产保全，要求暂时冻结某些资产，防止财产损失不可追溯。\n\n6. **维护自身权益**  \n   假如对方确实“没钱”或者名下财产较少，但你认为他隐瞒了实际财产情况，可以继续通过法律程序追踪。他在离婚诉讼过程中对财产申报的合法性负有义务。如果发现欺骗行为，可依法追责并要求对方承担相应责任。\n\n### 总结 \n对方说“没钱”并不能作为分割财产的依据。你需要结合夫妻共同财产的法定范围，通过对财产信息的核查或者法院调查来确认。如果发现对方确实存在隐瞒、转移财产的行为，可以依法追究，并在财产分割时要求法院少分甚至不分配给对方。同时建议全程保持冷静，依法办事，保护自己的合法权益。",
+  "Question": "离婚财产分割对方说没钱怎么办？"
+}

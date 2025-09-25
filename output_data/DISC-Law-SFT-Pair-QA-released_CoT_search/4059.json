@@ -1,0 +1,79 @@
+{
+  "Open-ended Verifiable Question": "什么是遗赠",
+  "Ground-True Answer": "公民通过遗嘱方式将其遗产的一部分或全部赠与法定继承人以外的个人或者社会组织，并于遗嘱人死亡时发生法律效力的行为。\n设定遗赠的人称遗赠人，接受遗赠的人称受赠人或遗赠受赠人，通过遗赠赠与的财物称为遗赠财产或遗赠物。遗赠是单方的、无偿的法律行为，只须遗赠人一方作出意思表示即可成立，并不需要征得受赠人的同意。但遗赠不同于生前赠与，必须在形式上和内容上具备设立遗嘱的法定要件方为有效。",
+  "process_id": 4059,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "分析问题并定义遗赠",
+      "content": "遗赠属于民法中的继承问题。核心在于遗赠是设立遗嘱后将个人财产赠与某人或某机构的行为，通常适用于自然人或法律实体之间的财产转移。因此需要明确遗嘱和遗赠的相关法律规定。为确认标准定义，需要搜索相关法律内容。<search>遗赠定义</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "检索遗赠定义的法律依据",
+      "content": "<information>遗赠是死者通过遗嘱方式将个人财产的一部分赠与遗嘱中确定的个人或法人。依据《中华人民共和国民法典》相关继承章节规定，遗赠需明确协议主体和财产范围。</information>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "提炼定义说明并确认各要素",
+      "content": "将遗赠定义为一种通过遗嘱设立，实现财产继承或赠与的法律行为。其成立条件包括：遗赠人死亡后遗嘱生效、遗嘱中明确受赠人及赠与物范围、行为符合法律规定。此外遗赠需区分与遗赠抚养协议之间的差异，这是另外一种特殊继承形式。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "遗赠指的是自然人通过订立遗嘱的方式，在法律允许的范围内，将个人财产的一部分在死亡后赠送给遗嘱中指定的受赠人或法人组织。遗赠行为的核心条件是遗嘱的合法性及明确的赠与范围，同时需符合《中华人民共和国民法典》的相关规定。"
+    },
+    {
+      "action": "Verification",
+      "content": "通过对民法典继承章节内容的核对，遗赠的定义表述准确。遗赠作为一种继承制度，需基于合法遗嘱和法律允许范围，因此结论无误。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n什么是遗赠\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n遗赠指的是自然人通过订立遗嘱的方式，在法律允许的范围内，将个人财产的一部分在死亡后赠送给遗嘱中指定的受赠人或法人组织。遗赠行为的核心条件是遗嘱的合法性及明确的赠与范围，同时需符合《中华人民共和国民法典》的相关规定。  \n</Model Response>  \n\n<Reference Answer>  \n公民通过遗嘱方式将其遗产的一部分或全部赠与法定继承人以外的个人或者社会组织，并于遗嘱人死亡时发生法律效力的行为。\n设定遗赠的人称遗赠人，接受遗赠的人称受赠人或遗赠受赠人，通过遗赠赠与的财物称为遗赠财产或遗赠物。遗赠是单方的、无偿的法律行为，只须遗赠人一方作出意思表示即可成立，并不需要征得受赠人的同意。但遗赠不同于生前赠与，必须在形式上和内容上具备设立遗嘱的法定要件方为有效。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 分析问题并定义遗赠\n遗赠属于民法中的继承问题。核心在于遗赠是设立遗嘱后将个人财产赠与某人或某机构的行为，通常适用于自然人或法律实体之间的财产转移。因此需要明确遗嘱和遗赠的相关法律规定。为确认标准定义，需要搜索相关法律内容。<search>遗赠定义</search>\n\n### 检索遗赠定义的法律依据\n<information>遗赠是死者通过遗嘱方式将个人财产的一部分赠与遗嘱中确定的个人或法人。依据《中华人民共和国民法典》相关继承章节规定，遗赠需明确协议主体和财产范围。</information>\n\n### 提炼定义说明并确认各要素\n将遗赠定义为一种通过遗嘱设立，实现财产继承或赠与的法律行为。其成立条件包括：遗赠人死亡后遗嘱生效、遗嘱中明确受赠人及赠与物范围、行为符合法律规定。此外遗赠需区分与遗赠抚养协议之间的差异，这是另外一种特殊继承形式。\n\n### Conclusion\n遗赠指的是自然人通过订立遗嘱的方式，在法律允许的范围内，将个人财产的一部分在死亡后赠送给遗嘱中指定的受赠人或法人组织。遗赠行为的核心条件是遗嘱的合法性及明确的赠与范围，同时需符合《中华人民共和国民法典》的相关规定。\n\n### Verification\n通过对民法典继承章节内容的核对，遗赠的定义表述准确。遗赠作为一种继承制度，需基于合法遗嘱和法律允许范围，因此结论无误。\n</Thought Process>\n\n<Question>\n什么是遗赠\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n嗯，遗赠应该是和遗嘱、财产继承有关的概念吧。遗赠这个名词看起来和继承不太一样，好像更偏向于赠与的意思。所以，首先我要搞清楚遗赠的具体定义是什么，这样才能准确理解它和继承之间的关系是什么。我觉得这是一个法律上的概念，应该跟民法里的继承制度相关，那不如先搜索一下『遗赠定义』看看有没有明确的法律依据解释清楚。\n\n<search>遗赠定义</search>\n\n啊，这里有相关的信息。<information>遗赠是死者通过遗嘱方式将个人财产的一部分赠与遗嘱中确定的个人或法人。依据《中华人民共和国民法典》相关继承章节规定，遗赠需明确协议主体和财产范围。</information> 原来如此，遗赠似乎是通过遗嘱安排的，关键点是死者在遗嘱里表达了自己希望把财产的一部分赠送给某个特定的人或者机构。这和继承确实有点不一样，继承好像更多是法定的，而遗赠就需要看死者的个人意愿了。\n\n好，我把刚刚搜索到的信息整理一下。遗赠似乎包含几个要点：首先，要有一份合法的遗嘱；然后，遗嘱里面需要明确写清楚谁是受赠人，也就是要赠与财产的人或者机构，同时要具体写明哪些财产会被赠与；最后，这些行为是需要通过法律认可的，应该符合《民法典》的规定。\n\n但是，我刚刚突然想到一件事，遗赠和另外一个叫『遗赠抚养协议』的概念好像有点类似，我得确认一下它们是不是有区别？遗赠抚养协议好像是涉及一种特殊的继承方式吧，比如让被继承人得到一些生前照顾之类的回报性权利义务，而遗赠似乎没有这种双向的约束？嗯，确实，遗赠更偏单向，抚养协议则是双方事先约定好的。\n\n所以综合来看，遗赠的定义可以定下来。遗赠是自然人通过订立遗嘱，要求在自己去世以后，把个人财产的一部分赠送给遗嘱里特定的对象。这不仅需要有合法的遗嘱，还要求赠与的对象和财产范围都明确。另外，赠与行为要符合法律规定。这和继承、遗赠抚养协议都有不同之处，遗赠的核心是『根据遗嘱转移财产』这一特点。\n\n嗯，这样定义应该是准确的，也和《民法典》的内容相一致。我觉得这个理解没问题了，清晰又合理。\n</Internal Thinking>\n\n<Question>\n什么是遗赠\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析问题并定义遗赠\",\n      \"content\": \"遗赠属于民法中的继承问题。核心在于遗赠是设立遗嘱后将个人财产赠与某人或某机构的行为，通常适用于自然人或法律实体之间的财产转移。因此需要明确遗嘱和遗赠的相关法律规定。为确认标准定义，需要搜索相关法律内容。<search>遗赠定义</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"检索遗赠定义的法律依据\",\n      \"content\": \"<information>遗赠是死者通过遗嘱方式将个人财产的一部分赠与遗嘱中确定的个人或法人。依据《中华人民共和国民法典》相关继承章节规定，遗赠需明确协议主体和财产范围。</information>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"提炼定义说明并确认各要素\",\n      \"content\": \"将遗赠定义为一种通过遗嘱设立，实现财产继承或赠与的法律行为。其成立条件包括：遗赠人死亡后遗嘱生效、遗嘱中明确受赠人及赠与物范围、行为符合法律规定。此外遗赠需区分与遗赠抚养协议之间的差异，这是另外一种特殊继承形式。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"遗赠指的是自然人通过订立遗嘱的方式，在法律允许的范围内，将个人财产的一部分在死亡后赠送给遗嘱中指定的受赠人或法人组织。遗赠行为的核心条件是遗嘱的合法性及明确的赠与范围，同时需符合《中华人民共和国民法典》的相关规定。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"通过对民法典继承章节内容的核对，遗赠的定义表述准确。遗赠作为一种继承制度，需基于合法遗嘱和法律允许范围，因此结论无误。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"嗯，遗赠应该是和遗嘱、财产继承有关的概念吧。遗赠这个名词看起来和继承不太一样，好像更偏向于赠与的意思。所以，首先我要搞清楚遗赠的具体定义是什么，这样才能准确理解它和继承之间的关系是什么。我觉得这是一个法律上的概念，应该跟民法里的继承制度相关，那不如先搜索一下『遗赠定义』看看有没有明确的法律依据解释清楚。\\n\\n<search>遗赠定义</search>\\n\\n啊，这里有相关的信息。<information>遗赠是死者通过遗嘱方式将个人财产的一部分赠与遗嘱中确定的个人或法人。依据《中华人民共和国民法典》相关继承章节规定，遗赠需明确协议主体和财产范围。</information> 原来如此，遗赠似乎是通过遗嘱安排的，关键点是死者在遗嘱里表达了自己希望把财产的一部分赠送给某个特定的人或者机构。这和继承确实有点不一样，继承好像更多是法定的，而遗赠就需要看死者的个人意愿了。\\n\\n好，我把刚刚搜索到的信息整理一下。遗赠似乎包含几个要点：首先，要有一份合法的遗嘱；然后，遗嘱里面需要明确写清楚谁是受赠人，也就是要赠与财产的人或者机构，同时要具体写明哪些财产会被赠与；最后，这些行为是需要通过法律认可的，应该符合《民法典》的规定。\\n\\n但是，我刚刚突然想到一件事，遗赠和另外一个叫『遗赠抚养协议』的概念好像有点类似，我得确认一下它们是不是有区别？遗赠抚养协议好像是涉及一种特殊的继承方式吧，比如让被继承人得到一些生前照顾之类的回报性权利义务，而遗赠似乎没有这种双向的约束？嗯，确实，遗赠更偏单向，抚养协议则是双方事先约定好的。\\n\\n所以综合来看，遗赠的定义可以定下来。遗赠是自然人通过订立遗嘱，要求在自己去世以后，把个人财产的一部分赠送给遗嘱里特定的对象。这不仅需要有合法的遗嘱，还要求赠与的对象和财产范围都明确。另外，赠与行为要符合法律规定。这和继承、遗赠抚养协议都有不同之处，遗赠的核心是『根据遗嘱转移财产』这一特点。\\n\\n嗯，这样定义应该是准确的，也和《民法典》的内容相一致。我觉得这个理解没问题了，清晰又合理。\"\n}\n```",
+    "遗赠是指自然人通过立遗嘱的方式，决定在其去世后，将其个人财产的一部分赠与遗嘱中指定的个人或法人。根据《中华人民共和国民法典》的有关规定，遗赠具有以下几个要点：\n\n1. **以遗嘱为基础**：遗赠必须通过合法有效的遗嘱表达遗赠人的意愿。\n2. **受赠对象明确**：遗嘱中需要清楚指明受赠人，可以是自然人，也可以是法人或其他组织。\n3. **赠与范围具体**：遗嘱应明确写明遗赠的具体财产范围。\n4. **行为单向性**：遗赠是单向的赠与行为，不以被赠与人履行特定义务为前提。\n5. **符合法律规定**：遗赠需要依据《民法典》相关继承法律的规定执行，否则可能被视为无效。\n\n需要注意的是，遗赠与法定继承有区别，其核心特点是依据遗嘱自主转移财产，体现遗赠人的个人意愿。这也不同于遗赠抚养协议，后者是一种双方约定、具有权利义务对价关系的特殊协议。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "分析问题并定义遗赠",
+        "content": "遗赠属于民法中的继承问题。核心在于遗赠是设立遗嘱后将个人财产赠与某人或某机构的行为，通常适用于自然人或法律实体之间的财产转移。因此需要明确遗嘱和遗赠的相关法律规定。为确认标准定义，需要搜索相关法律内容。<search>遗赠定义</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "检索遗赠定义的法律依据",
+        "content": "<information>遗赠是死者通过遗嘱方式将个人财产的一部分赠与遗嘱中确定的个人或法人。依据《中华人民共和国民法典》相关继承章节规定，遗赠需明确协议主体和财产范围。</information>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "提炼定义说明并确认各要素",
+        "content": "将遗赠定义为一种通过遗嘱设立，实现财产继承或赠与的法律行为。其成立条件包括：遗赠人死亡后遗嘱生效、遗嘱中明确受赠人及赠与物范围、行为符合法律规定。此外遗赠需区分与遗赠抚养协议之间的差异，这是另外一种特殊继承形式。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "遗赠指的是自然人通过订立遗嘱的方式，在法律允许的范围内，将个人财产的一部分在死亡后赠送给遗嘱中指定的受赠人或法人组织。遗赠行为的核心条件是遗嘱的合法性及明确的赠与范围，同时需符合《中华人民共和国民法典》的相关规定。"
+      },
+      {
+        "action": "Verification",
+        "content": "通过对民法典继承章节内容的核对，遗赠的定义表述准确。遗赠作为一种继承制度，需基于合法遗嘱和法律允许范围，因此结论无误。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "嗯，遗赠应该是和遗嘱、财产继承有关的概念吧。遗赠这个名词看起来和继承不太一样，好像更偏向于赠与的意思。所以，首先我要搞清楚遗赠的具体定义是什么，这样才能准确理解它和继承之间的关系是什么。我觉得这是一个法律上的概念，应该跟民法里的继承制度相关，那不如先搜索一下『遗赠定义』看看有没有明确的法律依据解释清楚。\n\n<search>遗赠定义</search>\n\n啊，这里有相关的信息。<information>遗赠是死者通过遗嘱方式将个人财产的一部分赠与遗嘱中确定的个人或法人。依据《中华人民共和国民法典》相关继承章节规定，遗赠需明确协议主体和财产范围。</information> 原来如此，遗赠似乎是通过遗嘱安排的，关键点是死者在遗嘱里表达了自己希望把财产的一部分赠送给某个特定的人或者机构。这和继承确实有点不一样，继承好像更多是法定的，而遗赠就需要看死者的个人意愿了。\n\n好，我把刚刚搜索到的信息整理一下。遗赠似乎包含几个要点：首先，要有一份合法的遗嘱；然后，遗嘱里面需要明确写清楚谁是受赠人，也就是要赠与财产的人或者机构，同时要具体写明哪些财产会被赠与；最后，这些行为是需要通过法律认可的，应该符合《民法典》的规定。\n\n但是，我刚刚突然想到一件事，遗赠和另外一个叫『遗赠抚养协议』的概念好像有点类似，我得确认一下它们是不是有区别？遗赠抚养协议好像是涉及一种特殊的继承方式吧，比如让被继承人得到一些生前照顾之类的回报性权利义务，而遗赠似乎没有这种双向的约束？嗯，确实，遗赠更偏单向，抚养协议则是双方事先约定好的。\n\n所以综合来看，遗赠的定义可以定下来。遗赠是自然人通过订立遗嘱，要求在自己去世以后，把个人财产的一部分赠送给遗嘱里特定的对象。这不仅需要有合法的遗嘱，还要求赠与的对象和财产范围都明确。另外，赠与行为要符合法律规定。这和继承、遗赠抚养协议都有不同之处，遗赠的核心是『根据遗嘱转移财产』这一特点。\n\n嗯，这样定义应该是准确的，也和《民法典》的内容相一致。我觉得这个理解没问题了，清晰又合理。",
+  "Response": "遗赠是指自然人通过立遗嘱的方式，决定在其去世后，将其个人财产的一部分赠与遗嘱中指定的个人或法人。根据《中华人民共和国民法典》的有关规定，遗赠具有以下几个要点：\n\n1. **以遗嘱为基础**：遗赠必须通过合法有效的遗嘱表达遗赠人的意愿。\n2. **受赠对象明确**：遗嘱中需要清楚指明受赠人，可以是自然人，也可以是法人或其他组织。\n3. **赠与范围具体**：遗嘱应明确写明遗赠的具体财产范围。\n4. **行为单向性**：遗赠是单向的赠与行为，不以被赠与人履行特定义务为前提。\n5. **符合法律规定**：遗赠需要依据《民法典》相关继承法律的规定执行，否则可能被视为无效。\n\n需要注意的是，遗赠与法定继承有区别，其核心特点是依据遗嘱自主转移财产，体现遗赠人的个人意愿。这也不同于遗赠抚养协议，后者是一种双方约定、具有权利义务对价关系的特殊协议。",
+  "Question": "什么是遗赠"
+}

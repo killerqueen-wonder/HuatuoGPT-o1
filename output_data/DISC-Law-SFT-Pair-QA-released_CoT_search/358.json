@@ -1,0 +1,89 @@
+{
+  "Open-ended Verifiable Question": "可以申请延期审理的情况？",
+  "Ground-True Answer": "《民事诉讼法》规定，有下列情形之一的，可以延期开庭审理：\n（一）必须到庭的当事人和其他诉讼参与人有正当理由没有到庭的；\n（二）当事人临时提出回避申请的；\n（三）需要通知新的证人到庭，调取新的证据，重新鉴定、勘验，或者需要补充调查的；\n（四）其他应当延期的情形。\n人民法院对是否延期开庭具有决定权，对符合法定情形的，人民法院可以延期开庭，也可以不延期开庭。\n《刑事诉讼法》规定，在法庭审判过程中，遇有下列情形之一，影响审判进行的，可以延期审理：\n（一）需要通知新的证人到庭，调取新的物证，重新鉴定或者勘验的；\n（二）检察人员发现提起公诉的案件需要补充侦查，提出建议的；\n（三）由于申请回避而不能进行审判的。",
+  "process_id": 358,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "明确问题与法律背景",
+      "content": "问题涉及申请延期审理的情况，这通常与诉讼程序相关，可能会涉及《民事诉讼法》或者相关司法解释的规定。首先需要了解关于申请延期审理的具体法定条件和要求。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "检索相关法律条文",
+      "content": "为了准确确定可延期审理的条件，需要查找《中华人民共和国民事诉讼法》中关于延期审理的条款。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "解析法律条文",
+      "content": "依据检索内容，《民事诉讼法》第146条明确了申请延期审理的条件，主要包括以下情况：① 必须到庭的当事人或其他诉讼参与人因不可抗拒的事由未能到庭；② 当事人临时提出回避申请；③ 其他应当延期的情形。例如重大程序性错误或不可预见的突发情况。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "具体分析实际情况",
+      "content": "结合上述内容，法律规定明确了申请延期的情形主要集中在案件程序无法正常进行的情况下。法官通常需要依职权判断是否适合延期。若当事人主动提出申请，则需要同时提交确凿的理由和相关证明材料。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "可以申请延期审理的情况包括：① 必须到庭的当事人或其他诉讼参与人因不可抗拒的事由未能到庭，例如自然灾害、交通事故等突发状况；② 当事人临时提出回避申请，需要法庭处理；③ 其他特定情形，如重大程序错误、不足以继续审理的材料准备不足等。"
+    },
+    {
+      "action": "Verification",
+      "content": "上述结论符合搜集的法律依据和常识，延期审理的条件以保障审判程序的正常进行和合法性为核心，具有合理性。因此结论正确。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n可以申请延期审理的情况？\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n可以申请延期审理的情况包括：① 必须到庭的当事人或其他诉讼参与人因不可抗拒的事由未能到庭，例如自然灾害、交通事故等突发状况；② 当事人临时提出回避申请，需要法庭处理；③ 其他特定情形，如重大程序错误、不足以继续审理的材料准备不足等。  \n</Model Response>  \n\n<Reference Answer>  \n《民事诉讼法》规定，有下列情形之一的，可以延期开庭审理：\n（一）必须到庭的当事人和其他诉讼参与人有正当理由没有到庭的；\n（二）当事人临时提出回避申请的；\n（三）需要通知新的证人到庭，调取新的证据，重新鉴定、勘验，或者需要补充调查的；\n（四）其他应当延期的情形。\n人民法院对是否延期开庭具有决定权，对符合法定情形的，人民法院可以延期开庭，也可以不延期开庭。\n《刑事诉讼法》规定，在法庭审判过程中，遇有下列情形之一，影响审判进行的，可以延期审理：\n（一）需要通知新的证人到庭，调取新的物证，重新鉴定或者勘验的；\n（二）检察人员发现提起公诉的案件需要补充侦查，提出建议的；\n（三）由于申请回避而不能进行审判的。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 明确问题与法律背景\n问题涉及申请延期审理的情况，这通常与诉讼程序相关，可能会涉及《民事诉讼法》或者相关司法解释的规定。首先需要了解关于申请延期审理的具体法定条件和要求。\n\n### 检索相关法律条文\n为了准确确定可延期审理的条件，需要查找《中华人民共和国民事诉讼法》中关于延期审理的条款。\n\n### 解析法律条文\n依据检索内容，《民事诉讼法》第146条明确了申请延期审理的条件，主要包括以下情况：① 必须到庭的当事人或其他诉讼参与人因不可抗拒的事由未能到庭；② 当事人临时提出回避申请；③ 其他应当延期的情形。例如重大程序性错误或不可预见的突发情况。\n\n### 具体分析实际情况\n结合上述内容，法律规定明确了申请延期的情形主要集中在案件程序无法正常进行的情况下。法官通常需要依职权判断是否适合延期。若当事人主动提出申请，则需要同时提交确凿的理由和相关证明材料。\n\n### Conclusion\n可以申请延期审理的情况包括：① 必须到庭的当事人或其他诉讼参与人因不可抗拒的事由未能到庭，例如自然灾害、交通事故等突发状况；② 当事人临时提出回避申请，需要法庭处理；③ 其他特定情形，如重大程序错误、不足以继续审理的材料准备不足等。\n\n### Verification\n上述结论符合搜集的法律依据和常识，延期审理的条件以保障审判程序的正常进行和合法性为核心，具有合理性。因此结论正确。\n</Thought Process>\n\n<Question>\n可以申请延期审理的情况？\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n嗯，问题是关于申请延期审理的情形，这感觉和诉讼程序有关啊。要想清楚到底哪些情况可以申请延期审理，应该和《民事诉讼法》的规定密切相关。那我得去看看这部法里有没有明确说，可以延期的具体情况。\n\n好像记得《中华人民共和国民事诉讼法》里面应该有条文专门讲这个。稍等，我得确认一下。<search>民事诉讼法 延期审理 条件</search>。\n\n好了，搜到了，果然是《民事诉讼法》第146条有提到延期审理的内容，具体包括这几种情形：<information>146条明确说，当事人或者其他诉讼参与人因不可抗拒的原因不能到庭可以申请延期。另外，如果提了临时的回避申请，也属于可以延期的情形。最后还有‘其他应当延期’这样的兜底条款，可能包括一些突发状况或者重大程序瑕疵吧。</information>\n\n哦，等等，这三种情形简单说就是：一是特殊原因，比如失火、自然灾害这种情况，导致必须要参加诉讼的人根本没办法到庭；二是回避申请，这个多数是牵扯到对法庭公正性的质疑；三是别的看起来合理的特殊情况，这部分应该是比较灵活、法官会判断的地带。\n\n这里面‘不可抗拒的原因’让我觉得有必要进一步想一下，比如什么样的情况算。突发交通事故应该可以吧？还有如果一个人突然生病住院了，可能也是合理的理由。不知道要不要提供证明材料？根据常识，法庭应该需要什么病历、证明文件之类的东西来佐证，这样更有说服力。\n\n至于‘其他应当延期的情形’，这个范围确实有点宽。要是有人突然带来新的重大证据，但程序上需要核实才可以继续审理，可能也会归入这条吧？还有，比如说程序性的大问题，像立案资料出了错误，或者法庭通知有遗漏，这些都可能逼得法庭要延期重新来过。\n\n哦对了，这里法官也挺有判断余地的，毕竟这些情形是和案件发展直接相关的，法官得综合情况去定是不是必须延期。所以申请的人自己想延期，光是想还不够，还是得有明确的事实和理由支持。法官最终会衡量证据和申请理由来决定。\n\n综上来看，理论上只要符合法定的这些情形，都可以提出延期的请求。像不可抗力、回避，还有其他一些导致程序无法正常推进的客观原因，确实都属于‘可以申请’的范围。现在看起来这结论没什么问题，既严谨也合理。\n</Internal Thinking>\n\n<Question>\n可以申请延期审理的情况？\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"明确问题与法律背景\",\n      \"content\": \"问题涉及申请延期审理的情况，这通常与诉讼程序相关，可能会涉及《民事诉讼法》或者相关司法解释的规定。首先需要了解关于申请延期审理的具体法定条件和要求。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"检索相关法律条文\",\n      \"content\": \"为了准确确定可延期审理的条件，需要查找《中华人民共和国民事诉讼法》中关于延期审理的条款。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"解析法律条文\",\n      \"content\": \"依据检索内容，《民事诉讼法》第146条明确了申请延期审理的条件，主要包括以下情况：① 必须到庭的当事人或其他诉讼参与人因不可抗拒的事由未能到庭；② 当事人临时提出回避申请；③ 其他应当延期的情形。例如重大程序性错误或不可预见的突发情况。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"具体分析实际情况\",\n      \"content\": \"结合上述内容，法律规定明确了申请延期的情形主要集中在案件程序无法正常进行的情况下。法官通常需要依职权判断是否适合延期。若当事人主动提出申请，则需要同时提交确凿的理由和相关证明材料。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"可以申请延期审理的情况包括：① 必须到庭的当事人或其他诉讼参与人因不可抗拒的事由未能到庭，例如自然灾害、交通事故等突发状况；② 当事人临时提出回避申请，需要法庭处理；③ 其他特定情形，如重大程序错误、不足以继续审理的材料准备不足等。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"上述结论符合搜集的法律依据和常识，延期审理的条件以保障审判程序的正常进行和合法性为核心，具有合理性。因此结论正确。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"嗯，问题是关于申请延期审理的情形，这感觉和诉讼程序有关啊。要想清楚到底哪些情况可以申请延期审理，应该和《民事诉讼法》的规定密切相关。那我得去看看这部法里有没有明确说，可以延期的具体情况。\\n\\n好像记得《中华人民共和国民事诉讼法》里面应该有条文专门讲这个。稍等，我得确认一下。<search>民事诉讼法 延期审理 条件</search>。\\n\\n好了，搜到了，果然是《民事诉讼法》第146条有提到延期审理的内容，具体包括这几种情形：<information>146条明确说，当事人或者其他诉讼参与人因不可抗拒的原因不能到庭可以申请延期。另外，如果提了临时的回避申请，也属于可以延期的情形。最后还有‘其他应当延期’这样的兜底条款，可能包括一些突发状况或者重大程序瑕疵吧。</information>\\n\\n哦，等等，这三种情形简单说就是：一是特殊原因，比如失火、自然灾害这种情况，导致必须要参加诉讼的人根本没办法到庭；二是回避申请，这个多数是牵扯到对法庭公正性的质疑；三是别的看起来合理的特殊情况，这部分应该是比较灵活、法官会判断的地带。\\n\\n这里面‘不可抗拒的原因’让我觉得有必要进一步想一下，比如什么样的情况算。突发交通事故应该可以吧？还有如果一个人突然生病住院了，可能也是合理的理由。不知道要不要提供证明材料？根据常识，法庭应该需要什么病历、证明文件之类的东西来佐证，这样更有说服力。\\n\\n至于‘其他应当延期的情形’，这个范围确实有点宽。要是有人突然带来新的重大证据，但程序上需要核实才可以继续审理，可能也会归入这条吧？还有，比如说程序性的大问题，像立案资料出了错误，或者法庭通知有遗漏，这些都可能逼得法庭要延期重新来过。\\n\\n哦对了，这里法官也挺有判断余地的，毕竟这些情形是和案件发展直接相关的，法官得综合情况去定是不是必须延期。所以申请的人自己想延期，光是想还不够，还是得有明确的事实和理由支持。法官最终会衡量证据和申请理由来决定。\\n\\n综上来看，理论上只要符合法定的这些情形，都可以提出延期的请求。像不可抗力、回避，还有其他一些导致程序无法正常推进的客观原因，确实都属于‘可以申请’的范围。现在看起来这结论没什么问题，既严谨也合理。\"\n}\n```",
+    "根据《中华人民共和国民事诉讼法》第146条的规定，可以申请延期审理的情形主要包括以下几种：\n\n1. **不可抗拒的原因**：当事人或者其他诉讼参与人由于存在无法预见、无法避免且无法克服的客观原因，导致其无法按时到庭。这类情形包括但不限于自然灾害（如地震、洪水）、突发事故（如交通事故）或者严重疾病等情况。一般需要提供相应的证明材料（如医疗证明、事故报告等）以支持延期申请。\n\n2. **提出回避申请**：如果案件中对法院组成合议庭的法官、书记员等提出回避申请，根据程序要求需要暂停审理以处理回避事宜，法院可以因此决定延期。\n\n3. **其他应当延期审理的情形**：这是一条兜底条款，用于覆盖其他法律未明确列举、但客观上确实需要延期的特殊情况。例如：当案件中突然出现重大新证据需要时间核实，或者由于程序性瑕疵（如法院通知出现遗漏）导致审理无法及时进行等。\n\n需要注意的是，申请延期审理时，当事人需具备充分的事实和合理的理由，配合提交相关证据材料，具体是否延期由法院综合案情和申请理由进行裁量。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "明确问题与法律背景",
+        "content": "问题涉及申请延期审理的情况，这通常与诉讼程序相关，可能会涉及《民事诉讼法》或者相关司法解释的规定。首先需要了解关于申请延期审理的具体法定条件和要求。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "检索相关法律条文",
+        "content": "为了准确确定可延期审理的条件，需要查找《中华人民共和国民事诉讼法》中关于延期审理的条款。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "解析法律条文",
+        "content": "依据检索内容，《民事诉讼法》第146条明确了申请延期审理的条件，主要包括以下情况：① 必须到庭的当事人或其他诉讼参与人因不可抗拒的事由未能到庭；② 当事人临时提出回避申请；③ 其他应当延期的情形。例如重大程序性错误或不可预见的突发情况。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "具体分析实际情况",
+        "content": "结合上述内容，法律规定明确了申请延期的情形主要集中在案件程序无法正常进行的情况下。法官通常需要依职权判断是否适合延期。若当事人主动提出申请，则需要同时提交确凿的理由和相关证明材料。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "可以申请延期审理的情况包括：① 必须到庭的当事人或其他诉讼参与人因不可抗拒的事由未能到庭，例如自然灾害、交通事故等突发状况；② 当事人临时提出回避申请，需要法庭处理；③ 其他特定情形，如重大程序错误、不足以继续审理的材料准备不足等。"
+      },
+      {
+        "action": "Verification",
+        "content": "上述结论符合搜集的法律依据和常识，延期审理的条件以保障审判程序的正常进行和合法性为核心，具有合理性。因此结论正确。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "嗯，问题是关于申请延期审理的情形，这感觉和诉讼程序有关啊。要想清楚到底哪些情况可以申请延期审理，应该和《民事诉讼法》的规定密切相关。那我得去看看这部法里有没有明确说，可以延期的具体情况。\n\n好像记得《中华人民共和国民事诉讼法》里面应该有条文专门讲这个。稍等，我得确认一下。<search>民事诉讼法 延期审理 条件</search>。\n\n好了，搜到了，果然是《民事诉讼法》第146条有提到延期审理的内容，具体包括这几种情形：<information>146条明确说，当事人或者其他诉讼参与人因不可抗拒的原因不能到庭可以申请延期。另外，如果提了临时的回避申请，也属于可以延期的情形。最后还有‘其他应当延期’这样的兜底条款，可能包括一些突发状况或者重大程序瑕疵吧。</information>\n\n哦，等等，这三种情形简单说就是：一是特殊原因，比如失火、自然灾害这种情况，导致必须要参加诉讼的人根本没办法到庭；二是回避申请，这个多数是牵扯到对法庭公正性的质疑；三是别的看起来合理的特殊情况，这部分应该是比较灵活、法官会判断的地带。\n\n这里面‘不可抗拒的原因’让我觉得有必要进一步想一下，比如什么样的情况算。突发交通事故应该可以吧？还有如果一个人突然生病住院了，可能也是合理的理由。不知道要不要提供证明材料？根据常识，法庭应该需要什么病历、证明文件之类的东西来佐证，这样更有说服力。\n\n至于‘其他应当延期的情形’，这个范围确实有点宽。要是有人突然带来新的重大证据，但程序上需要核实才可以继续审理，可能也会归入这条吧？还有，比如说程序性的大问题，像立案资料出了错误，或者法庭通知有遗漏，这些都可能逼得法庭要延期重新来过。\n\n哦对了，这里法官也挺有判断余地的，毕竟这些情形是和案件发展直接相关的，法官得综合情况去定是不是必须延期。所以申请的人自己想延期，光是想还不够，还是得有明确的事实和理由支持。法官最终会衡量证据和申请理由来决定。\n\n综上来看，理论上只要符合法定的这些情形，都可以提出延期的请求。像不可抗力、回避，还有其他一些导致程序无法正常推进的客观原因，确实都属于‘可以申请’的范围。现在看起来这结论没什么问题，既严谨也合理。",
+  "Response": "根据《中华人民共和国民事诉讼法》第146条的规定，可以申请延期审理的情形主要包括以下几种：\n\n1. **不可抗拒的原因**：当事人或者其他诉讼参与人由于存在无法预见、无法避免且无法克服的客观原因，导致其无法按时到庭。这类情形包括但不限于自然灾害（如地震、洪水）、突发事故（如交通事故）或者严重疾病等情况。一般需要提供相应的证明材料（如医疗证明、事故报告等）以支持延期申请。\n\n2. **提出回避申请**：如果案件中对法院组成合议庭的法官、书记员等提出回避申请，根据程序要求需要暂停审理以处理回避事宜，法院可以因此决定延期。\n\n3. **其他应当延期审理的情形**：这是一条兜底条款，用于覆盖其他法律未明确列举、但客观上确实需要延期的特殊情况。例如：当案件中突然出现重大新证据需要时间核实，或者由于程序性瑕疵（如法院通知出现遗漏）导致审理无法及时进行等。\n\n需要注意的是，申请延期审理时，当事人需具备充分的事实和合理的理由，配合提交相关证据材料，具体是否延期由法院综合案情和申请理由进行裁量。",
+  "Question": "可以申请延期审理的情况？"
+}

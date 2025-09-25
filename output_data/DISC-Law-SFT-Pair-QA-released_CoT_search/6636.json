@@ -1,0 +1,89 @@
+{
+  "Open-ended Verifiable Question": "认购合同交了定金如何要回",
+  "Ground-True Answer": "认购合同交了定金一般是不可以要回的，但任何一方单方违约不能签定合同的情况下且需要退还定金的，应赔付定金双倍；因特殊情况如政策变化，天然要素导致不能签定生意合同定金可以退还；对协议及补充协议内容未能达成合意而无法签约的，不归责于任何一方，定金可以退还，其他情况定金均不可退。",
+  "process_id": 6636,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "确定认购合同和定金的法律性质",
+      "content": "首先要分析认购合同和定金的法律性质。认购合同通常被视为一个预约合同，定金则在合同法中具有明确规定，涉及合同履行保证。需了解适用的法律条款：<search>合同法 定金相关规定</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "查询合同法中有关定金的条款",
+      "content": "<information>根据《中华人民共和国合同法》第115条，提供定金的一方如果不履行合同，定金可能被没收；而收取定金的一方如果不履行合同，应双倍返还定金。</information>有了这些信息，可以分析如何合法讨回定金的依据和条件。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "分析哪些情况下可以要回定金",
+      "content": "确定是否存在毁约方的问题。若认购合同的另一方没有履行约定，属于法律规定的退款条件，可主张双倍返还定金；若自己一方毁约，则需要确认违约责任可能会导致无法追讨定金。此外，还需考虑合同中是否有约定特殊条款对定金处理另做规定。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "尝试追讨定金的具体做法",
+      "content": "首先提出主张，依据认购合同条款及法律规定要求退款。如果对方拒绝，可以通过调解方式解决，若调解不成则可提起法律诉讼。在诉讼过程中需要提交合同文本、定金支付证明及与对方沟通记录作为证据。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "依据《合同法》第115条，收取定金的一方如不履行合同约定，应双倍返还定金。因此，若认购合同的对方未履行约定，您可以主张退款并要求双倍返还定金。具体操作包括提交证据与对方进行协商调解，若无果则可通过法院提起诉讼。需要注意的是，如果是您一方违约，可能会面临无法追讨定金的法律后果。"
+    },
+    {
+      "action": "Verification",
+      "content": "结论符合《合同法》第115条的规定和常规处理方式。如果认购合同对定金处理有特殊约定，则需结合合同内容具体分析。但总体流程和方案可行。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n认购合同交了定金如何要回\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n依据《合同法》第115条，收取定金的一方如不履行合同约定，应双倍返还定金。因此，若认购合同的对方未履行约定，您可以主张退款并要求双倍返还定金。具体操作包括提交证据与对方进行协商调解，若无果则可通过法院提起诉讼。需要注意的是，如果是您一方违约，可能会面临无法追讨定金的法律后果。  \n</Model Response>  \n\n<Reference Answer>  \n认购合同交了定金一般是不可以要回的，但任何一方单方违约不能签定合同的情况下且需要退还定金的，应赔付定金双倍；因特殊情况如政策变化，天然要素导致不能签定生意合同定金可以退还；对协议及补充协议内容未能达成合意而无法签约的，不归责于任何一方，定金可以退还，其他情况定金均不可退。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 确定认购合同和定金的法律性质\n首先要分析认购合同和定金的法律性质。认购合同通常被视为一个预约合同，定金则在合同法中具有明确规定，涉及合同履行保证。需了解适用的法律条款：<search>合同法 定金相关规定</search>\n\n### 查询合同法中有关定金的条款\n<information>根据《中华人民共和国合同法》第115条，提供定金的一方如果不履行合同，定金可能被没收；而收取定金的一方如果不履行合同，应双倍返还定金。</information>有了这些信息，可以分析如何合法讨回定金的依据和条件。\n\n### 分析哪些情况下可以要回定金\n确定是否存在毁约方的问题。若认购合同的另一方没有履行约定，属于法律规定的退款条件，可主张双倍返还定金；若自己一方毁约，则需要确认违约责任可能会导致无法追讨定金。此外，还需考虑合同中是否有约定特殊条款对定金处理另做规定。\n\n### 尝试追讨定金的具体做法\n首先提出主张，依据认购合同条款及法律规定要求退款。如果对方拒绝，可以通过调解方式解决，若调解不成则可提起法律诉讼。在诉讼过程中需要提交合同文本、定金支付证明及与对方沟通记录作为证据。\n\n### Conclusion\n依据《合同法》第115条，收取定金的一方如不履行合同约定，应双倍返还定金。因此，若认购合同的对方未履行约定，您可以主张退款并要求双倍返还定金。具体操作包括提交证据与对方进行协商调解，若无果则可通过法院提起诉讼。需要注意的是，如果是您一方违约，可能会面临无法追讨定金的法律后果。\n\n### Verification\n结论符合《合同法》第115条的规定和常规处理方式。如果认购合同对定金处理有特殊约定，则需结合合同内容具体分析。但总体流程和方案可行。\n</Thought Process>\n\n<Question>\n认购合同交了定金如何要回\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n嗯，首先得弄清楚认购合同和定金的关系到底是什么。认购合同看着有点像一种预约性质的合同，双方约定未来可能要签正式合同，但不一定就已经是买卖合同。定金呢，是很明确的法律概念，《合同法》里面有专门的规定，说定金是用来确保合同履行的。这里的关键是要找准跟定金相关的法律条款，这样才能搞清楚不同情况下定金该怎么处理。为了确认，先查一下法律条文吧：<search>合同法 定金相关规定</search>\n\n哦，根据查到的内容，《中华人民共和国合同法》第115条里明确写了，定金是有“惩罚”和“担保”作用的。如果支付定金的一方自己不履行合同，那定金基本上是拿不回来的，会被对方没收。反过来，如果是收了定金的一方违约，那就得双倍返还定金。这个条款提供了一个基本的法律依据。那么接下来要分析的是，当前情况是谁违了约。\n\n要搞清楚的关键问题是：合同约定的主要内容到底有没有被对方履行。如果对方不履行合同，那我就可以依照第115条要求不但退回定金，还要双倍赔偿。可是如果是我自己这边反悔，不想履行合同，那就有可能定金拿不回来了。这时候也得看看认购合同里面有没有什么特殊约定，有些合同里可能会对定金的退还作出自己的一套处理规定。如果有，那得以合同为准。\n\n接下来该考虑具体怎么追讨定金了。先尝试跟对方协商吧，讲清楚法律依据以及合同内容，争取和平解决。如果对方态度强硬拒退，那就只能通过法律途径来维护自己的权益了。准备起诉的话，得收集好证据，像合同文本、定金支付的相关凭证、还有一些沟通记录，能证明自己的主张和对方的不履约行为。\n\n所以总结一下吧：如果对方违约，是可以要求对方双倍返还定金的，这是基于《合同法》第115条的明确规定。而如果是自己这方面的问题，那就很可能面临定金被没收的风险，要根据合同具体内容进一步判断。当然，协议协商是最省事的方法，实在不行就得考虑总证据走法律程序了。嗯，这套流程应该是靠谱的。如果认购合同里有涉及定金特殊处理的条款，也记得一定要结合起来具体分析，总得按约定和法律来走才行。\n</Internal Thinking>\n\n<Question>\n认购合同交了定金如何要回\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"确定认购合同和定金的法律性质\",\n      \"content\": \"首先要分析认购合同和定金的法律性质。认购合同通常被视为一个预约合同，定金则在合同法中具有明确规定，涉及合同履行保证。需了解适用的法律条款：<search>合同法 定金相关规定</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"查询合同法中有关定金的条款\",\n      \"content\": \"<information>根据《中华人民共和国合同法》第115条，提供定金的一方如果不履行合同，定金可能被没收；而收取定金的一方如果不履行合同，应双倍返还定金。</information>有了这些信息，可以分析如何合法讨回定金的依据和条件。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析哪些情况下可以要回定金\",\n      \"content\": \"确定是否存在毁约方的问题。若认购合同的另一方没有履行约定，属于法律规定的退款条件，可主张双倍返还定金；若自己一方毁约，则需要确认违约责任可能会导致无法追讨定金。此外，还需考虑合同中是否有约定特殊条款对定金处理另做规定。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"尝试追讨定金的具体做法\",\n      \"content\": \"首先提出主张，依据认购合同条款及法律规定要求退款。如果对方拒绝，可以通过调解方式解决，若调解不成则可提起法律诉讼。在诉讼过程中需要提交合同文本、定金支付证明及与对方沟通记录作为证据。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"依据《合同法》第115条，收取定金的一方如不履行合同约定，应双倍返还定金。因此，若认购合同的对方未履行约定，您可以主张退款并要求双倍返还定金。具体操作包括提交证据与对方进行协商调解，若无果则可通过法院提起诉讼。需要注意的是，如果是您一方违约，可能会面临无法追讨定金的法律后果。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"结论符合《合同法》第115条的规定和常规处理方式。如果认购合同对定金处理有特殊约定，则需结合合同内容具体分析。但总体流程和方案可行。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"嗯，首先得弄清楚认购合同和定金的关系到底是什么。认购合同看着有点像一种预约性质的合同，双方约定未来可能要签正式合同，但不一定就已经是买卖合同。定金呢，是很明确的法律概念，《合同法》里面有专门的规定，说定金是用来确保合同履行的。这里的关键是要找准跟定金相关的法律条款，这样才能搞清楚不同情况下定金该怎么处理。为了确认，先查一下法律条文吧：<search>合同法 定金相关规定</search>\\n\\n哦，根据查到的内容，《中华人民共和国合同法》第115条里明确写了，定金是有“惩罚”和“担保”作用的。如果支付定金的一方自己不履行合同，那定金基本上是拿不回来的，会被对方没收。反过来，如果是收了定金的一方违约，那就得双倍返还定金。这个条款提供了一个基本的法律依据。那么接下来要分析的是，当前情况是谁违了约。\\n\\n要搞清楚的关键问题是：合同约定的主要内容到底有没有被对方履行。如果对方不履行合同，那我就可以依照第115条要求不但退回定金，还要双倍赔偿。可是如果是我自己这边反悔，不想履行合同，那就有可能定金拿不回来了。这时候也得看看认购合同里面有没有什么特殊约定，有些合同里可能会对定金的退还作出自己的一套处理规定。如果有，那得以合同为准。\\n\\n接下来该考虑具体怎么追讨定金了。先尝试跟对方协商吧，讲清楚法律依据以及合同内容，争取和平解决。如果对方态度强硬拒退，那就只能通过法律途径来维护自己的权益了。准备起诉的话，得收集好证据，像合同文本、定金支付的相关凭证、还有一些沟通记录，能证明自己的主张和对方的不履约行为。\\n\\n所以总结一下吧：如果对方违约，是可以要求对方双倍返还定金的，这是基于《合同法》第115条的明确规定。而如果是自己这方面的问题，那就很可能面临定金被没收的风险，要根据合同具体内容进一步判断。当然，协议协商是最省事的方法，实在不行就得考虑总证据走法律程序了。嗯，这套流程应该是靠谱的。如果认购合同里有涉及定金特殊处理的条款，也记得一定要结合起来具体分析，总得按约定和法律来走才行。\"\n}\n```",
+    "要回认购合同中的定金，关键问题在于双方是否履行或违反了合同约定。定金的处理一般可以依据《中华人民共和国合同法》第115条的规定，具体情况如下：\n\n1. **确认违约责任**：\n   - 如果收取定金的一方违约：根据《合同法》第115条，违约方需要双倍返还定金。例如，对方未履行认购合同中承诺的主要内容（比如拒绝继续签订正式合同或改变约定条件），你可以要求其将定金双倍返还。\n   - 如果支付定金的一方违约：例如，你单方面反悔不履行合同，定金通常会被对方没收。此为定金的担保性质。\n\n2. **认购合同的特殊约定**：\n   - 你需要仔细审查认购合同中是否有关于定金处理的特别条款。有些认购合同可能对定金的退还条件、违约责任等做了具体约定，如果约定的内容合法有效，应以合同约定为准。\n\n3. **协商解决**：\n   - 如果对方违约且拒绝退还（或双倍返还）定金，建议首先尝试通过友好协商的方式解决问题。明确告知对方违约行为并说明法律依据，如《合同法》第115条，要求及时退还定金以避免进一步纠纷。\n\n4. **通过法律途径解决**：\n   - 如果协商无果，可以考虑提起诉讼。收集以下证据非常重要：\n     - 认购合同文本（证明定金条款及相关约定）。\n     - 定金支付凭证（如转账记录、收据）。\n     - 对方违约行为的相关证据（如沟通记录）。\n   - 诉讼时可以直接要求双倍返还定金，同时可以提出对因违约产生其他损失的赔偿要求。\n\n**建议**：具体情形因合同内容而异，如果涉及金额较大或法律细节较复杂，建议尽快咨询专业律师，获得准确的法律建议并辅助处理相关事项。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "确定认购合同和定金的法律性质",
+        "content": "首先要分析认购合同和定金的法律性质。认购合同通常被视为一个预约合同，定金则在合同法中具有明确规定，涉及合同履行保证。需了解适用的法律条款：<search>合同法 定金相关规定</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "查询合同法中有关定金的条款",
+        "content": "<information>根据《中华人民共和国合同法》第115条，提供定金的一方如果不履行合同，定金可能被没收；而收取定金的一方如果不履行合同，应双倍返还定金。</information>有了这些信息，可以分析如何合法讨回定金的依据和条件。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "分析哪些情况下可以要回定金",
+        "content": "确定是否存在毁约方的问题。若认购合同的另一方没有履行约定，属于法律规定的退款条件，可主张双倍返还定金；若自己一方毁约，则需要确认违约责任可能会导致无法追讨定金。此外，还需考虑合同中是否有约定特殊条款对定金处理另做规定。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "尝试追讨定金的具体做法",
+        "content": "首先提出主张，依据认购合同条款及法律规定要求退款。如果对方拒绝，可以通过调解方式解决，若调解不成则可提起法律诉讼。在诉讼过程中需要提交合同文本、定金支付证明及与对方沟通记录作为证据。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "依据《合同法》第115条，收取定金的一方如不履行合同约定，应双倍返还定金。因此，若认购合同的对方未履行约定，您可以主张退款并要求双倍返还定金。具体操作包括提交证据与对方进行协商调解，若无果则可通过法院提起诉讼。需要注意的是，如果是您一方违约，可能会面临无法追讨定金的法律后果。"
+      },
+      {
+        "action": "Verification",
+        "content": "结论符合《合同法》第115条的规定和常规处理方式。如果认购合同对定金处理有特殊约定，则需结合合同内容具体分析。但总体流程和方案可行。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "嗯，首先得弄清楚认购合同和定金的关系到底是什么。认购合同看着有点像一种预约性质的合同，双方约定未来可能要签正式合同，但不一定就已经是买卖合同。定金呢，是很明确的法律概念，《合同法》里面有专门的规定，说定金是用来确保合同履行的。这里的关键是要找准跟定金相关的法律条款，这样才能搞清楚不同情况下定金该怎么处理。为了确认，先查一下法律条文吧：<search>合同法 定金相关规定</search>\n\n哦，根据查到的内容，《中华人民共和国合同法》第115条里明确写了，定金是有“惩罚”和“担保”作用的。如果支付定金的一方自己不履行合同，那定金基本上是拿不回来的，会被对方没收。反过来，如果是收了定金的一方违约，那就得双倍返还定金。这个条款提供了一个基本的法律依据。那么接下来要分析的是，当前情况是谁违了约。\n\n要搞清楚的关键问题是：合同约定的主要内容到底有没有被对方履行。如果对方不履行合同，那我就可以依照第115条要求不但退回定金，还要双倍赔偿。可是如果是我自己这边反悔，不想履行合同，那就有可能定金拿不回来了。这时候也得看看认购合同里面有没有什么特殊约定，有些合同里可能会对定金的退还作出自己的一套处理规定。如果有，那得以合同为准。\n\n接下来该考虑具体怎么追讨定金了。先尝试跟对方协商吧，讲清楚法律依据以及合同内容，争取和平解决。如果对方态度强硬拒退，那就只能通过法律途径来维护自己的权益了。准备起诉的话，得收集好证据，像合同文本、定金支付的相关凭证、还有一些沟通记录，能证明自己的主张和对方的不履约行为。\n\n所以总结一下吧：如果对方违约，是可以要求对方双倍返还定金的，这是基于《合同法》第115条的明确规定。而如果是自己这方面的问题，那就很可能面临定金被没收的风险，要根据合同具体内容进一步判断。当然，协议协商是最省事的方法，实在不行就得考虑总证据走法律程序了。嗯，这套流程应该是靠谱的。如果认购合同里有涉及定金特殊处理的条款，也记得一定要结合起来具体分析，总得按约定和法律来走才行。",
+  "Response": "要回认购合同中的定金，关键问题在于双方是否履行或违反了合同约定。定金的处理一般可以依据《中华人民共和国合同法》第115条的规定，具体情况如下：\n\n1. **确认违约责任**：\n   - 如果收取定金的一方违约：根据《合同法》第115条，违约方需要双倍返还定金。例如，对方未履行认购合同中承诺的主要内容（比如拒绝继续签订正式合同或改变约定条件），你可以要求其将定金双倍返还。\n   - 如果支付定金的一方违约：例如，你单方面反悔不履行合同，定金通常会被对方没收。此为定金的担保性质。\n\n2. **认购合同的特殊约定**：\n   - 你需要仔细审查认购合同中是否有关于定金处理的特别条款。有些认购合同可能对定金的退还条件、违约责任等做了具体约定，如果约定的内容合法有效，应以合同约定为准。\n\n3. **协商解决**：\n   - 如果对方违约且拒绝退还（或双倍返还）定金，建议首先尝试通过友好协商的方式解决问题。明确告知对方违约行为并说明法律依据，如《合同法》第115条，要求及时退还定金以避免进一步纠纷。\n\n4. **通过法律途径解决**：\n   - 如果协商无果，可以考虑提起诉讼。收集以下证据非常重要：\n     - 认购合同文本（证明定金条款及相关约定）。\n     - 定金支付凭证（如转账记录、收据）。\n     - 对方违约行为的相关证据（如沟通记录）。\n   - 诉讼时可以直接要求双倍返还定金，同时可以提出对因违约产生其他损失的赔偿要求。\n\n**建议**：具体情形因合同内容而异，如果涉及金额较大或法律细节较复杂，建议尽快咨询专业律师，获得准确的法律建议并辅助处理相关事项。",
+  "Question": "认购合同交了定金如何要回"
+}

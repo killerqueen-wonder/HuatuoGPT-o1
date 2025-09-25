@@ -1,0 +1,87 @@
+{
+  "Open-ended Verifiable Question": "违法建筑包括哪几种类型?",
+  "Ground-True Answer": "违法建筑包括下列类型：\n1.建筑人未取得土地使用权，因而也无法取得建筑许可证。\n2.在自己取得土地使用权的土地上建造违章建筑物，即虽有利用该建筑物占有范围内的土地建造房屋等建筑物的权利，但未经取得建筑许可证而擅自建设的建筑违章建筑，主要包括：\n（1）未申请或申请未获得批准，未取得建设用地规划许可证和建设工程规划许可证而建成的建筑。\n（2）擅自改变建设工程规划许可证的规定建成的建筑。\n（3）擅自改变了使用性质建成的建筑。\n（4）擅自将临时建筑设成为永久性建筑。",
+  "process_id": 1243,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "提出问题的范围和定义",
+      "content": "首先需要定义违法建筑的范围和种类，依据中国的法律法规对此问题进行分类，以便确认具体包括哪些内容。可以从城乡规划法与相关地方性法规入手。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "检索城乡规划法中的相关定义",
+      "content": "违法建筑通常涉及未取得规划许可证、擅自改变用途或违反建设工程设计规范等情况。需要明确城乡规划法或其他相关法律中对违法建筑的具体定义或分类。进行检索以获取信息。<search>城乡规划法中违法建筑的定义</search>"
+    },
+    {
+      "action": "Information",
+      "content": "《中华人民共和国城乡规划法》中规定，未取得建设工程规划许可证或未按照许可证规定的内容进行建设的建筑，属于违法建筑。同时，《物权法》第三十五条也涉及违法建筑拆除的条款。违法建筑主要包括以下类型：1. 未经批准私自建设的建筑；2. 未按批准规划实施的建筑；3. 擅自改变用途的建筑；4. 占用公共用地的建筑等。地方性法规可能会根据实际情况补充条例。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "整合违法建筑类型及补充地方性规定",
+      "content": "根据《城乡规划法》和相关法律法规，违法建筑可以包括以下类型：未经许可擅自建设、未按许可规划建设、擅自改变建筑用途及占用公共土地。此外，地方政府通常会通过地方性法规规定例如危害公共安全或环境的违法建筑形式。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "违法建筑根据中国法律法规主要包括以下几种类型：1. 未经许可擅自建设的建筑；2. 未按建设工程规划许可证内容建设的建筑；3. 擅自改变建筑用途的建筑；4. 占用公共用地的建筑；5. 违反地方性法规且危害公共安全或环境的建筑。"
+    },
+    {
+      "action": "Verification",
+      "content": "确认结论与法律法规的定义及分类一致，且涵盖城乡规划法和地方性补充规定。结论正确，无需进一步修改。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n违法建筑包括哪几种类型?\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n违法建筑根据中国法律法规主要包括以下几种类型：1. 未经许可擅自建设的建筑；2. 未按建设工程规划许可证内容建设的建筑；3. 擅自改变建筑用途的建筑；4. 占用公共用地的建筑；5. 违反地方性法规且危害公共安全或环境的建筑。  \n</Model Response>  \n\n<Reference Answer>  \n违法建筑包括下列类型：\n1.建筑人未取得土地使用权，因而也无法取得建筑许可证。\n2.在自己取得土地使用权的土地上建造违章建筑物，即虽有利用该建筑物占有范围内的土地建造房屋等建筑物的权利，但未经取得建筑许可证而擅自建设的建筑违章建筑，主要包括：\n（1）未申请或申请未获得批准，未取得建设用地规划许可证和建设工程规划许可证而建成的建筑。\n（2）擅自改变建设工程规划许可证的规定建成的建筑。\n（3）擅自改变了使用性质建成的建筑。\n（4）擅自将临时建筑设成为永久性建筑。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 提出问题的范围和定义\n首先需要定义违法建筑的范围和种类，依据中国的法律法规对此问题进行分类，以便确认具体包括哪些内容。可以从城乡规划法与相关地方性法规入手。\n\n### 检索城乡规划法中的相关定义\n违法建筑通常涉及未取得规划许可证、擅自改变用途或违反建设工程设计规范等情况。需要明确城乡规划法或其他相关法律中对违法建筑的具体定义或分类。进行检索以获取信息。<search>城乡规划法中违法建筑的定义</search>\n\n### Information\n《中华人民共和国城乡规划法》中规定，未取得建设工程规划许可证或未按照许可证规定的内容进行建设的建筑，属于违法建筑。同时，《物权法》第三十五条也涉及违法建筑拆除的条款。违法建筑主要包括以下类型：1. 未经批准私自建设的建筑；2. 未按批准规划实施的建筑；3. 擅自改变用途的建筑；4. 占用公共用地的建筑等。地方性法规可能会根据实际情况补充条例。\n\n### 整合违法建筑类型及补充地方性规定\n根据《城乡规划法》和相关法律法规，违法建筑可以包括以下类型：未经许可擅自建设、未按许可规划建设、擅自改变建筑用途及占用公共土地。此外，地方政府通常会通过地方性法规规定例如危害公共安全或环境的违法建筑形式。\n\n### Conclusion\n违法建筑根据中国法律法规主要包括以下几种类型：1. 未经许可擅自建设的建筑；2. 未按建设工程规划许可证内容建设的建筑；3. 擅自改变建筑用途的建筑；4. 占用公共用地的建筑；5. 违反地方性法规且危害公共安全或环境的建筑。\n\n### Verification\n确认结论与法律法规的定义及分类一致，且涵盖城乡规划法和地方性补充规定。结论正确，无需进一步修改。\n</Thought Process>\n\n<Question>\n违法建筑包括哪几种类型?\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n嗯，如果要弄明白什么是违法建筑，首先得搞清楚它的定义。违法建筑听起来应该就是那些不符合规定的建筑物，这些规定肯定跟法律有关，应该是《城乡规划法》或者一些地方性的法规。先从这两个方向入手吧，我去查一下相关内容。<search>城乡规划法中违法建筑的定义</search>\n\n<information>我找到的信息是，根据《中华人民共和国城乡规划法》，违法建筑主要有这几种情况：没有拿到建设工程规划许可证就乱建的，或者拿到了证但是建设的时候没按许可证规定来的，再有就是擅自改变用途的建筑物，还有一种是占用公共用地的不合法建筑。除此之外，《物权法》第三十五条也提到了有关违法建筑的拆除问题。不过呢，不同地方可能会有些具体的补充条例，说不定还有些其他类型。</information>\n\n哦，那这样的话，根据这个法律，我大概可以归纳一下违法建筑的几种类型：一是完全没有批准的私自建造的建筑；二是虽然有批准，但建的时候没有按批准的内容执行；三就是那种改变了本来用途的建筑，比如拿住宅改成商铺；还有一种是占用公共用地的，我觉得这应该也是比较常见的。另外，地方上可能还会有一些更细的规定，比如以安全和环境为理由来认定某些建筑违法。\n\n总结一下，违法建筑大概可以分成以下几类：未经许可擅自建设的，拿许可证却没有按照内容执行的，擅自改变用途的，占用公共用地的，以及违反地方性规定危害公共利益的。这基本上和我前面搜到的信息是吻合的，应该没问题啦。\n</Internal Thinking>\n\n<Question>\n违法建筑包括哪几种类型?\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"提出问题的范围和定义\",\n      \"content\": \"首先需要定义违法建筑的范围和种类，依据中国的法律法规对此问题进行分类，以便确认具体包括哪些内容。可以从城乡规划法与相关地方性法规入手。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"检索城乡规划法中的相关定义\",\n      \"content\": \"违法建筑通常涉及未取得规划许可证、擅自改变用途或违反建设工程设计规范等情况。需要明确城乡规划法或其他相关法律中对违法建筑的具体定义或分类。进行检索以获取信息。<search>城乡规划法中违法建筑的定义</search>\"\n    },\n    {\n      \"action\": \"Information\",\n      \"content\": \"《中华人民共和国城乡规划法》中规定，未取得建设工程规划许可证或未按照许可证规定的内容进行建设的建筑，属于违法建筑。同时，《物权法》第三十五条也涉及违法建筑拆除的条款。违法建筑主要包括以下类型：1. 未经批准私自建设的建筑；2. 未按批准规划实施的建筑；3. 擅自改变用途的建筑；4. 占用公共用地的建筑等。地方性法规可能会根据实际情况补充条例。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"整合违法建筑类型及补充地方性规定\",\n      \"content\": \"根据《城乡规划法》和相关法律法规，违法建筑可以包括以下类型：未经许可擅自建设、未按许可规划建设、擅自改变建筑用途及占用公共土地。此外，地方政府通常会通过地方性法规规定例如危害公共安全或环境的违法建筑形式。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"违法建筑根据中国法律法规主要包括以下几种类型：1. 未经许可擅自建设的建筑；2. 未按建设工程规划许可证内容建设的建筑；3. 擅自改变建筑用途的建筑；4. 占用公共用地的建筑；5. 违反地方性法规且危害公共安全或环境的建筑。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"确认结论与法律法规的定义及分类一致，且涵盖城乡规划法和地方性补充规定。结论正确，无需进一步修改。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"嗯，如果要弄明白什么是违法建筑，首先得搞清楚它的定义。违法建筑听起来应该就是那些不符合规定的建筑物，这些规定肯定跟法律有关，应该是《城乡规划法》或者一些地方性的法规。先从这两个方向入手吧，我去查一下相关内容。<search>城乡规划法中违法建筑的定义</search>\\n\\n<information>我找到的信息是，根据《中华人民共和国城乡规划法》，违法建筑主要有这几种情况：没有拿到建设工程规划许可证就乱建的，或者拿到了证但是建设的时候没按许可证规定来的，再有就是擅自改变用途的建筑物，还有一种是占用公共用地的不合法建筑。除此之外，《物权法》第三十五条也提到了有关违法建筑的拆除问题。不过呢，不同地方可能会有些具体的补充条例，说不定还有些其他类型。</information>\\n\\n哦，那这样的话，根据这个法律，我大概可以归纳一下违法建筑的几种类型：一是完全没有批准的私自建造的建筑；二是虽然有批准，但建的时候没有按批准的内容执行；三就是那种改变了本来用途的建筑，比如拿住宅改成商铺；还有一种是占用公共用地的，我觉得这应该也是比较常见的。另外，地方上可能还会有一些更细的规定，比如以安全和环境为理由来认定某些建筑违法。\\n\\n总结一下，违法建筑大概可以分成以下几类：未经许可擅自建设的，拿许可证却没有按照内容执行的，擅自改变用途的，占用公共用地的，以及违反地方性规定危害公共利益的。这基本上和我前面搜到的信息是吻合的，应该没问题啦。\"\n}\n```",
+    "违法建筑通常包括以下几种类型：\n\n1. **未经许可擅自建设的建筑**：即在未取得《建设工程规划许可证》或其他必要批准文件的情况下，私自进行建设的建筑物。\n\n2. **取得许可证但未按批准内容建设的建筑**：虽然取得相关许可证，但在实际建设过程中偏离原规划或批准内容的建筑物。\n\n3. **擅自改变用途的建筑**：原本规划为某种用途的建筑，未经许可擅自改作其他用途，例如将住宅改为商业用途。\n\n4. **占用公共用地的建筑**：未经审批或非法占用公共空间、土地进行建设的建筑物。\n\n5. **违反地方性规定或危害公共利益的建筑**：根据各地的具体补充法规，可能包括危害公共安全、破坏环境或者影响市容市貌的建筑物。\n\n总结来说，违法建筑主要是指不符合现行法律、法规规定的建筑行为或建筑物，具体类型需结合国家法律与地方性法规来判断。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "提出问题的范围和定义",
+        "content": "首先需要定义违法建筑的范围和种类，依据中国的法律法规对此问题进行分类，以便确认具体包括哪些内容。可以从城乡规划法与相关地方性法规入手。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "检索城乡规划法中的相关定义",
+        "content": "违法建筑通常涉及未取得规划许可证、擅自改变用途或违反建设工程设计规范等情况。需要明确城乡规划法或其他相关法律中对违法建筑的具体定义或分类。进行检索以获取信息。<search>城乡规划法中违法建筑的定义</search>"
+      },
+      {
+        "action": "Information",
+        "content": "《中华人民共和国城乡规划法》中规定，未取得建设工程规划许可证或未按照许可证规定的内容进行建设的建筑，属于违法建筑。同时，《物权法》第三十五条也涉及违法建筑拆除的条款。违法建筑主要包括以下类型：1. 未经批准私自建设的建筑；2. 未按批准规划实施的建筑；3. 擅自改变用途的建筑；4. 占用公共用地的建筑等。地方性法规可能会根据实际情况补充条例。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "整合违法建筑类型及补充地方性规定",
+        "content": "根据《城乡规划法》和相关法律法规，违法建筑可以包括以下类型：未经许可擅自建设、未按许可规划建设、擅自改变建筑用途及占用公共土地。此外，地方政府通常会通过地方性法规规定例如危害公共安全或环境的违法建筑形式。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "违法建筑根据中国法律法规主要包括以下几种类型：1. 未经许可擅自建设的建筑；2. 未按建设工程规划许可证内容建设的建筑；3. 擅自改变建筑用途的建筑；4. 占用公共用地的建筑；5. 违反地方性法规且危害公共安全或环境的建筑。"
+      },
+      {
+        "action": "Verification",
+        "content": "确认结论与法律法规的定义及分类一致，且涵盖城乡规划法和地方性补充规定。结论正确，无需进一步修改。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "嗯，如果要弄明白什么是违法建筑，首先得搞清楚它的定义。违法建筑听起来应该就是那些不符合规定的建筑物，这些规定肯定跟法律有关，应该是《城乡规划法》或者一些地方性的法规。先从这两个方向入手吧，我去查一下相关内容。<search>城乡规划法中违法建筑的定义</search>\n\n<information>我找到的信息是，根据《中华人民共和国城乡规划法》，违法建筑主要有这几种情况：没有拿到建设工程规划许可证就乱建的，或者拿到了证但是建设的时候没按许可证规定来的，再有就是擅自改变用途的建筑物，还有一种是占用公共用地的不合法建筑。除此之外，《物权法》第三十五条也提到了有关违法建筑的拆除问题。不过呢，不同地方可能会有些具体的补充条例，说不定还有些其他类型。</information>\n\n哦，那这样的话，根据这个法律，我大概可以归纳一下违法建筑的几种类型：一是完全没有批准的私自建造的建筑；二是虽然有批准，但建的时候没有按批准的内容执行；三就是那种改变了本来用途的建筑，比如拿住宅改成商铺；还有一种是占用公共用地的，我觉得这应该也是比较常见的。另外，地方上可能还会有一些更细的规定，比如以安全和环境为理由来认定某些建筑违法。\n\n总结一下，违法建筑大概可以分成以下几类：未经许可擅自建设的，拿许可证却没有按照内容执行的，擅自改变用途的，占用公共用地的，以及违反地方性规定危害公共利益的。这基本上和我前面搜到的信息是吻合的，应该没问题啦。",
+  "Response": "违法建筑通常包括以下几种类型：\n\n1. **未经许可擅自建设的建筑**：即在未取得《建设工程规划许可证》或其他必要批准文件的情况下，私自进行建设的建筑物。\n\n2. **取得许可证但未按批准内容建设的建筑**：虽然取得相关许可证，但在实际建设过程中偏离原规划或批准内容的建筑物。\n\n3. **擅自改变用途的建筑**：原本规划为某种用途的建筑，未经许可擅自改作其他用途，例如将住宅改为商业用途。\n\n4. **占用公共用地的建筑**：未经审批或非法占用公共空间、土地进行建设的建筑物。\n\n5. **违反地方性规定或危害公共利益的建筑**：根据各地的具体补充法规，可能包括危害公共安全、破坏环境或者影响市容市貌的建筑物。\n\n总结来说，违法建筑主要是指不符合现行法律、法规规定的建筑行为或建筑物，具体类型需结合国家法律与地方性法规来判断。",
+  "Question": "违法建筑包括哪几种类型?"
+}

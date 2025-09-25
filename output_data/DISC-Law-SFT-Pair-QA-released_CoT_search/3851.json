@@ -1,0 +1,99 @@
+{
+  "Open-ended Verifiable Question": "承租的房子甲醛超标,如何维权?",
+  "Ground-True Answer": "出租房甲醛超标能退租。处理租房甲醛严重超标的方式是：1、与房东进行协商，要求对方治理甲醛或将租金退还；\n2、经过协商无法解决问题的情况下，可以向消费者协会进行投诉；\n3、如果手中掌握甲醛超标的证据，可以通过法律手段维护自身的合法权益。",
+  "process_id": 3851,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "确定关键问题",
+      "content": "承租房子甲醛超标涉及房屋租赁合同中的房屋质量问题。从法律角度看，需明确出租方是否违反合同义务。首先需要找出房东是否有义务保障房屋符合安全标准，以及甲醛超标是否已对承租方造成实质影响。需要查明与房屋租赁相关的法律法规要求房东的具体义务。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "查找法律依据",
+      "content": "甲醛超标可能涉及《中华人民共和国民法典》中关于租赁合同质量保证相关内容，亦可能涉及其他地方性法规规定有关房屋环保安全的标准和要求。需要查找相关法律依据。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "提出对出租方责任的认定",
+      "content": "若根据法律法规，出租方有义务确保房屋甲醛不超标，则承租方可要求出租方承担责任；若出租方知情但仍出租该房屋，则出租方可能需支付赔偿。此处需要<search>中华人民共和国民法典 租赁合同质量相关内容</search>和<search>甲醛环保法律标准</search>作为补充依据。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "确认法律支持承租人的权利",
+      "content": "根据查询结果，如果民法典规定出租方应保证房屋安全适宜居住，而室内质量相关标准例如《室内空气质量标准》（GB/T 18883-2002）明确甲醛含量超标属于不适宜居住环境，那么承租方的权利方向明确，可要求解除合同并赔偿损失。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "阐明维权的具体步骤",
+      "content": "承租人维权需要通过合法途径：第一，检测甲醛超标应寻找具有资质的机构；第二，将检测报告、租赁合同保存作为证据；第三，与房东协商要求解除合同与赔偿；第四，如协商无果，可向消费者协会、法院等进一步维权。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "承租人可依据《中华人民共和国民法典》提出维权，出租房内甲醛超标构成房屋不适宜居住使用。维权的具体步骤为：第一，寻找专业检测机构检测甲醛是否超标，并获取报告；第二，与房东协商要求解除合同并赔偿必要费用（包括维修、误工费等）；第三，如协商失败，可向法院起诉或通过消费者协会调解。"
+    },
+    {
+      "action": "Verification",
+      "content": "根据现有法律和规定，出租人确有责任提供安全、健康的房屋环境；若甲醛超标证据充分，承租人有权要求维权。维权方式与法律依据准确无误。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n承租的房子甲醛超标,如何维权?\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n承租人可依据《中华人民共和国民法典》提出维权，出租房内甲醛超标构成房屋不适宜居住使用。维权的具体步骤为：第一，寻找专业检测机构检测甲醛是否超标，并获取报告；第二，与房东协商要求解除合同并赔偿必要费用（包括维修、误工费等）；第三，如协商失败，可向法院起诉或通过消费者协会调解。  \n</Model Response>  \n\n<Reference Answer>  \n出租房甲醛超标能退租。处理租房甲醛严重超标的方式是：1、与房东进行协商，要求对方治理甲醛或将租金退还；\n2、经过协商无法解决问题的情况下，可以向消费者协会进行投诉；\n3、如果手中掌握甲醛超标的证据，可以通过法律手段维护自身的合法权益。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 确定关键问题\n承租房子甲醛超标涉及房屋租赁合同中的房屋质量问题。从法律角度看，需明确出租方是否违反合同义务。首先需要找出房东是否有义务保障房屋符合安全标准，以及甲醛超标是否已对承租方造成实质影响。需要查明与房屋租赁相关的法律法规要求房东的具体义务。\n\n### 查找法律依据\n甲醛超标可能涉及《中华人民共和国民法典》中关于租赁合同质量保证相关内容，亦可能涉及其他地方性法规规定有关房屋环保安全的标准和要求。需要查找相关法律依据。\n\n### 提出对出租方责任的认定\n若根据法律法规，出租方有义务确保房屋甲醛不超标，则承租方可要求出租方承担责任；若出租方知情但仍出租该房屋，则出租方可能需支付赔偿。此处需要<search>中华人民共和国民法典 租赁合同质量相关内容</search>和<search>甲醛环保法律标准</search>作为补充依据。\n\n### 确认法律支持承租人的权利\n根据查询结果，如果民法典规定出租方应保证房屋安全适宜居住，而室内质量相关标准例如《室内空气质量标准》（GB/T 18883-2002）明确甲醛含量超标属于不适宜居住环境，那么承租方的权利方向明确，可要求解除合同并赔偿损失。\n\n### 阐明维权的具体步骤\n承租人维权需要通过合法途径：第一，检测甲醛超标应寻找具有资质的机构；第二，将检测报告、租赁合同保存作为证据；第三，与房东协商要求解除合同与赔偿；第四，如协商无果，可向消费者协会、法院等进一步维权。\n\n### Conclusion\n承租人可依据《中华人民共和国民法典》提出维权，出租房内甲醛超标构成房屋不适宜居住使用。维权的具体步骤为：第一，寻找专业检测机构检测甲醛是否超标，并获取报告；第二，与房东协商要求解除合同并赔偿必要费用（包括维修、误工费等）；第三，如协商失败，可向法院起诉或通过消费者协会调解。\n\n### Verification\n根据现有法律和规定，出租人确有责任提供安全、健康的房屋环境；若甲醛超标证据充分，承租人有权要求维权。维权方式与法律依据准确无误。\n</Thought Process>\n\n<Question>\n承租的房子甲醛超标,如何维权?\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n嗯，租的房子发现甲醛超标，这个应该挺严重的，毕竟健康是最重要的，不适合住肯定得解决。那得先看看法律上怎么说，房东是不是有义务保证房子适合居住呢？如果房东没做到，那责任应该在他。让我想一下，我记得好像《民法典》里面提到过租赁合同这个事。里面应该会有规定，出租房有没有必须符合安全标准的义务。得查一下看看合同质量保障那部分。<search>中华人民共和国民法典 租赁合同质量相关内容</search>\n\n还有一点就是甲醛这个问题，一般来说，甲醛超标是涉及环保方面的要求。不知道国家或者地方有没有具体的室内空气质量标准？要是有具体的数字或检测标准，比如每立方米甲醛不能超过多少，那就能更有依据了。得确认一下这些环保规定。<search>甲醛环保法律标准</search>\n\n好吧，我假设法律里确实规定房东得提供安全的居住环境，那么甲醛超标就算是房东违约了。如果房东在出租的时候自己就知道房子甲醛超标，但还不告诉租户，这就更加属于故意行为了。这种情况的话，租户肯定可以要求房东赔偿。不仅可以解除合同，还可以索要搬家费用、可能的健康损失费用，甚至误工费。\n\n不过维权需要证据，不能随口说房子甲醛超标就可以的。这得找一个有资质的检测机构来专门测试甲醛含量，得出一个专业的报告。嗯，检测报告是关键证据，还有租赁合同也得保存好。\n\n一旦手里有了检测报告，就可以找房东谈谈。如果房东愿意协商解决，那最好，例如解除合同并赔偿相关费用。如果房东不同意，那估计只能通过正式途径解决，比如去消费者协会投诉或者直接起诉到法院。\n\n还有就是法律里对甲醛超标有明确的标准么？比如《室内空气质量标准》（GB/T 18883-2002）这种国家标准。如果确实明确写了甲醛限量，那承租人就更有依据了。得查一查这个标准的信息才行。<information>室内空气质量标准（GB/T 18883-2002）确认甲醛含量不应超过0.1毫克/立方米</information>\n\n总之，租户完全有权利根据法律提出维权，从结果上看，房东确实有责任提供安全的居住环境。如果甲醛超标的检测报告能证明这个环境不适宜居住，租户可以解除合同，并要求赔偿。嗯，接下来的步骤可以是：1. 找专业机构检测甲醛含量，保存检测报告；2. 和房东协商解决；3. 如果协商失败，那就通过消费者协会或者法院维护权益。\n</Internal Thinking>\n\n<Question>\n承租的房子甲醛超标,如何维权?\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"确定关键问题\",\n      \"content\": \"承租房子甲醛超标涉及房屋租赁合同中的房屋质量问题。从法律角度看，需明确出租方是否违反合同义务。首先需要找出房东是否有义务保障房屋符合安全标准，以及甲醛超标是否已对承租方造成实质影响。需要查明与房屋租赁相关的法律法规要求房东的具体义务。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"查找法律依据\",\n      \"content\": \"甲醛超标可能涉及《中华人民共和国民法典》中关于租赁合同质量保证相关内容，亦可能涉及其他地方性法规规定有关房屋环保安全的标准和要求。需要查找相关法律依据。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"提出对出租方责任的认定\",\n      \"content\": \"若根据法律法规，出租方有义务确保房屋甲醛不超标，则承租方可要求出租方承担责任；若出租方知情但仍出租该房屋，则出租方可能需支付赔偿。此处需要<search>中华人民共和国民法典 租赁合同质量相关内容</search>和<search>甲醛环保法律标准</search>作为补充依据。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"确认法律支持承租人的权利\",\n      \"content\": \"根据查询结果，如果民法典规定出租方应保证房屋安全适宜居住，而室内质量相关标准例如《室内空气质量标准》（GB/T 18883-2002）明确甲醛含量超标属于不适宜居住环境，那么承租方的权利方向明确，可要求解除合同并赔偿损失。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"阐明维权的具体步骤\",\n      \"content\": \"承租人维权需要通过合法途径：第一，检测甲醛超标应寻找具有资质的机构；第二，将检测报告、租赁合同保存作为证据；第三，与房东协商要求解除合同与赔偿；第四，如协商无果，可向消费者协会、法院等进一步维权。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"承租人可依据《中华人民共和国民法典》提出维权，出租房内甲醛超标构成房屋不适宜居住使用。维权的具体步骤为：第一，寻找专业检测机构检测甲醛是否超标，并获取报告；第二，与房东协商要求解除合同并赔偿必要费用（包括维修、误工费等）；第三，如协商失败，可向法院起诉或通过消费者协会调解。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"根据现有法律和规定，出租人确有责任提供安全、健康的房屋环境；若甲醛超标证据充分，承租人有权要求维权。维权方式与法律依据准确无误。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"嗯，租的房子发现甲醛超标，这个应该挺严重的，毕竟健康是最重要的，不适合住肯定得解决。那得先看看法律上怎么说，房东是不是有义务保证房子适合居住呢？如果房东没做到，那责任应该在他。让我想一下，我记得好像《民法典》里面提到过租赁合同这个事。里面应该会有规定，出租房有没有必须符合安全标准的义务。得查一下看看合同质量保障那部分。<search>中华人民共和国民法典 租赁合同质量相关内容</search>\\n\\n还有一点就是甲醛这个问题，一般来说，甲醛超标是涉及环保方面的要求。不知道国家或者地方有没有具体的室内空气质量标准？要是有具体的数字或检测标准，比如每立方米甲醛不能超过多少，那就能更有依据了。得确认一下这些环保规定。<search>甲醛环保法律标准</search>\\n\\n好吧，我假设法律里确实规定房东得提供安全的居住环境，那么甲醛超标就算是房东违约了。如果房东在出租的时候自己就知道房子甲醛超标，但还不告诉租户，这就更加属于故意行为了。这种情况的话，租户肯定可以要求房东赔偿。不仅可以解除合同，还可以索要搬家费用、可能的健康损失费用，甚至误工费。\\n\\n不过维权需要证据，不能随口说房子甲醛超标就可以的。这得找一个有资质的检测机构来专门测试甲醛含量，得出一个专业的报告。嗯，检测报告是关键证据，还有租赁合同也得保存好。\\n\\n一旦手里有了检测报告，就可以找房东谈谈。如果房东愿意协商解决，那最好，例如解除合同并赔偿相关费用。如果房东不同意，那估计只能通过正式途径解决，比如去消费者协会投诉或者直接起诉到法院。\\n\\n还有就是法律里对甲醛超标有明确的标准么？比如《室内空气质量标准》（GB/T 18883-2002）这种国家标准。如果确实明确写了甲醛限量，那承租人就更有依据了。得查一查这个标准的信息才行。<information>室内空气质量标准（GB/T 18883-2002）确认甲醛含量不应超过0.1毫克/立方米</information>\\n\\n总之，租户完全有权利根据法律提出维权，从结果上看，房东确实有责任提供安全的居住环境。如果甲醛超标的检测报告能证明这个环境不适宜居住，租户可以解除合同，并要求赔偿。嗯，接下来的步骤可以是：1. 找专业机构检测甲醛含量，保存检测报告；2. 和房东协商解决；3. 如果协商失败，那就通过消费者协会或者法院维护权益。\"\n}\n```",
+    "当承租的房子出现甲醛超标情况时，承租人可以采取以下步骤进行维权：\n\n### 1. 明确法律依据和相关标准\n根据《中华人民共和国民法典》第七百零九条规定，出租人应当履行交付租赁物并维持租赁物符合约定用途的义务。如果房屋因甲醛超标无法提供安全的居住环境，房东可能涉嫌违约。此外，根据《室内空气质量标准》（GB/T 18883-2002），室内空气中的甲醛浓度标准为不超过0.1毫克/立方米，这可作为判定甲醛是否超标的重要依据。\n\n### 2. 核实甲醛超标情况\n要维权，必须提供确切证据。可以联系具有资质的第三方空气质量检测机构，对房屋内甲醛含量进行专业检测，并获取正式的检测报告。检测报告是关键证据，用于证明房屋空气质量不达标，不适宜居住。\n\n### 3. 与房东沟通\n在掌握了检测机构的报告后，应尽快与房东沟通。明确指出甲醛超标的检测结果，依据法律要求房东采取补救措施。可以提出以下解决方式：\n- **解除租赁合同**：如果甲醛超标严重，房屋不适合居住，可以要求房东终止合同并退还押金及未使用的租金；\n- **赔偿损失**：因甲醛超标产生的合理损失（如搬家费用、健康检查费用、误工费等），可以要求房东进行赔偿。\n\n### 4. 寻求第三方协调（如有必要）\n如果房东拒绝沟通或不愿协商，可以向当地消费者协会、市场监督管理部门投诉，要求介入调解。\n\n### 5. 通过法律途径维权\n若协商和调解均无法解决问题，可直接向法院起诉。起诉需提交以下材料：\n- 租赁合同和付款凭证；\n- 具有资质的检测机构出具的空气质量检测报告；\n- 因甲醛问题造成的损失的证据（如医疗费用、搬家费用的发票等）。\n\n### 注意事项\n- 在主张维权的过程中，需保持证据的完整性，包括租赁合同文本、支付记录、与房东的沟通记录等。\n- 如果房东故意隐瞒甲醛超标的事实，在法律上可能涉及更严重的违约责任，甚至欺诈行为，承租人可以要求进一步赔偿。\n\n总之，房东有义务为承租人提供一个安全、健康的居住环境。如果房屋甲醛超标致使环境不适合居住，承租人有权解除合同并要求赔偿损失。倡导优先通过合理协商解决问题，如协商无果，再采取法律手段维护自身权益。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "确定关键问题",
+        "content": "承租房子甲醛超标涉及房屋租赁合同中的房屋质量问题。从法律角度看，需明确出租方是否违反合同义务。首先需要找出房东是否有义务保障房屋符合安全标准，以及甲醛超标是否已对承租方造成实质影响。需要查明与房屋租赁相关的法律法规要求房东的具体义务。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "查找法律依据",
+        "content": "甲醛超标可能涉及《中华人民共和国民法典》中关于租赁合同质量保证相关内容，亦可能涉及其他地方性法规规定有关房屋环保安全的标准和要求。需要查找相关法律依据。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "提出对出租方责任的认定",
+        "content": "若根据法律法规，出租方有义务确保房屋甲醛不超标，则承租方可要求出租方承担责任；若出租方知情但仍出租该房屋，则出租方可能需支付赔偿。此处需要<search>中华人民共和国民法典 租赁合同质量相关内容</search>和<search>甲醛环保法律标准</search>作为补充依据。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "确认法律支持承租人的权利",
+        "content": "根据查询结果，如果民法典规定出租方应保证房屋安全适宜居住，而室内质量相关标准例如《室内空气质量标准》（GB/T 18883-2002）明确甲醛含量超标属于不适宜居住环境，那么承租方的权利方向明确，可要求解除合同并赔偿损失。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "阐明维权的具体步骤",
+        "content": "承租人维权需要通过合法途径：第一，检测甲醛超标应寻找具有资质的机构；第二，将检测报告、租赁合同保存作为证据；第三，与房东协商要求解除合同与赔偿；第四，如协商无果，可向消费者协会、法院等进一步维权。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "承租人可依据《中华人民共和国民法典》提出维权，出租房内甲醛超标构成房屋不适宜居住使用。维权的具体步骤为：第一，寻找专业检测机构检测甲醛是否超标，并获取报告；第二，与房东协商要求解除合同并赔偿必要费用（包括维修、误工费等）；第三，如协商失败，可向法院起诉或通过消费者协会调解。"
+      },
+      {
+        "action": "Verification",
+        "content": "根据现有法律和规定，出租人确有责任提供安全、健康的房屋环境；若甲醛超标证据充分，承租人有权要求维权。维权方式与法律依据准确无误。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "嗯，租的房子发现甲醛超标，这个应该挺严重的，毕竟健康是最重要的，不适合住肯定得解决。那得先看看法律上怎么说，房东是不是有义务保证房子适合居住呢？如果房东没做到，那责任应该在他。让我想一下，我记得好像《民法典》里面提到过租赁合同这个事。里面应该会有规定，出租房有没有必须符合安全标准的义务。得查一下看看合同质量保障那部分。<search>中华人民共和国民法典 租赁合同质量相关内容</search>\n\n还有一点就是甲醛这个问题，一般来说，甲醛超标是涉及环保方面的要求。不知道国家或者地方有没有具体的室内空气质量标准？要是有具体的数字或检测标准，比如每立方米甲醛不能超过多少，那就能更有依据了。得确认一下这些环保规定。<search>甲醛环保法律标准</search>\n\n好吧，我假设法律里确实规定房东得提供安全的居住环境，那么甲醛超标就算是房东违约了。如果房东在出租的时候自己就知道房子甲醛超标，但还不告诉租户，这就更加属于故意行为了。这种情况的话，租户肯定可以要求房东赔偿。不仅可以解除合同，还可以索要搬家费用、可能的健康损失费用，甚至误工费。\n\n不过维权需要证据，不能随口说房子甲醛超标就可以的。这得找一个有资质的检测机构来专门测试甲醛含量，得出一个专业的报告。嗯，检测报告是关键证据，还有租赁合同也得保存好。\n\n一旦手里有了检测报告，就可以找房东谈谈。如果房东愿意协商解决，那最好，例如解除合同并赔偿相关费用。如果房东不同意，那估计只能通过正式途径解决，比如去消费者协会投诉或者直接起诉到法院。\n\n还有就是法律里对甲醛超标有明确的标准么？比如《室内空气质量标准》（GB/T 18883-2002）这种国家标准。如果确实明确写了甲醛限量，那承租人就更有依据了。得查一查这个标准的信息才行。<information>室内空气质量标准（GB/T 18883-2002）确认甲醛含量不应超过0.1毫克/立方米</information>\n\n总之，租户完全有权利根据法律提出维权，从结果上看，房东确实有责任提供安全的居住环境。如果甲醛超标的检测报告能证明这个环境不适宜居住，租户可以解除合同，并要求赔偿。嗯，接下来的步骤可以是：1. 找专业机构检测甲醛含量，保存检测报告；2. 和房东协商解决；3. 如果协商失败，那就通过消费者协会或者法院维护权益。",
+  "Response": "当承租的房子出现甲醛超标情况时，承租人可以采取以下步骤进行维权：\n\n### 1. 明确法律依据和相关标准\n根据《中华人民共和国民法典》第七百零九条规定，出租人应当履行交付租赁物并维持租赁物符合约定用途的义务。如果房屋因甲醛超标无法提供安全的居住环境，房东可能涉嫌违约。此外，根据《室内空气质量标准》（GB/T 18883-2002），室内空气中的甲醛浓度标准为不超过0.1毫克/立方米，这可作为判定甲醛是否超标的重要依据。\n\n### 2. 核实甲醛超标情况\n要维权，必须提供确切证据。可以联系具有资质的第三方空气质量检测机构，对房屋内甲醛含量进行专业检测，并获取正式的检测报告。检测报告是关键证据，用于证明房屋空气质量不达标，不适宜居住。\n\n### 3. 与房东沟通\n在掌握了检测机构的报告后，应尽快与房东沟通。明确指出甲醛超标的检测结果，依据法律要求房东采取补救措施。可以提出以下解决方式：\n- **解除租赁合同**：如果甲醛超标严重，房屋不适合居住，可以要求房东终止合同并退还押金及未使用的租金；\n- **赔偿损失**：因甲醛超标产生的合理损失（如搬家费用、健康检查费用、误工费等），可以要求房东进行赔偿。\n\n### 4. 寻求第三方协调（如有必要）\n如果房东拒绝沟通或不愿协商，可以向当地消费者协会、市场监督管理部门投诉，要求介入调解。\n\n### 5. 通过法律途径维权\n若协商和调解均无法解决问题，可直接向法院起诉。起诉需提交以下材料：\n- 租赁合同和付款凭证；\n- 具有资质的检测机构出具的空气质量检测报告；\n- 因甲醛问题造成的损失的证据（如医疗费用、搬家费用的发票等）。\n\n### 注意事项\n- 在主张维权的过程中，需保持证据的完整性，包括租赁合同文本、支付记录、与房东的沟通记录等。\n- 如果房东故意隐瞒甲醛超标的事实，在法律上可能涉及更严重的违约责任，甚至欺诈行为，承租人可以要求进一步赔偿。\n\n总之，房东有义务为承租人提供一个安全、健康的居住环境。如果房屋甲醛超标致使环境不适合居住，承租人有权解除合同并要求赔偿损失。倡导优先通过合理协商解决问题，如协商无果，再采取法律手段维护自身权益。",
+  "Question": "承租的房子甲醛超标,如何维权?"
+}

@@ -1,0 +1,99 @@
+{
+  "Open-ended Verifiable Question": "离婚时，双方都想要房子或者都不想要房子，怎么办？",
+  "Ground-True Answer": "如果都想要房子的，可以采取竞价方式，价高者得，然后取得房子的一方向另一方支付一半的房价款补偿。如果双方都不想要房子的，可以申请拍卖、变卖房屋，双方就所得价款进行分割。最高人民法院关于适用《中华人民共和国民法典》婚姻家庭编的解释（一）第七十六条双方对夫妻共同财产中的房屋价值及归属无法达成协议时，人民法院按以下情形分别处理：（一）双方均主张房屋所有权并且同意竞价取得的，应当准许；（二）一方主张房屋所有权的，由评估机构按市场价格对房屋作出评估，取得房屋所有权的一方应当给予另一方相应的补偿；（三）双方均不主张房屋所有权的，根据当事人的申请拍卖、变卖房屋，就所得价款进行分割。",
+  "process_id": 9346,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "确认离婚双方对房产的需求冲突",
+      "content": "当双方都要求分得房产或者双方均不愿接受房产时，这涉及如何合理分配或处置财产的问题。需要首先明确房产的性质（是否属婚内共同财产）以及是否存在任何法律或合同约定。为更好理解现行法规对类似问题的处理方式，需查询相关法律条文，例如《婚姻法》或《民法典》中的有关规定。<search>离婚财产分割 共同财产 房屋</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "查询法律条文",
+      "content": "<information>离婚时共同财产的分割问题通常依据《中华人民共和国民法典》第1062条和1063条。共同财产按公平原则分割，优先满足子女权益和需要，同时兼顾双方利益。针对房屋分割问题，法院通常会综合双方经济状况、房屋使用用途及市场价值等因素进行判定，若无法达成协议，法院可能判定房产归一方所有，另一方获得相应的补偿。</information>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "分析双方都想要房产的情况",
+      "content": "当双方都想要房屋时，可以考虑协商解决：一方获得房产而另一方获得相应的补偿，例如现金或其他财产。若协商不成，法院会根据房产特点（如是否家庭唯一住房）、双方经济能力及实际需求判决房产归属。此外，也可以采取拍卖房产后平分价值的方式。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "分析双方都不想要房产的情况",
+      "content": "若双方均不愿接受房产，可以通过变现房产（如出售房屋）并平分所得款项来解决问题。若房产无法出售或不适宜出售，可考虑将房产分配给一方，并在财产分割中补偿另一方。此时法院也可能强制分割或指定一方接收房产。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "提出解决方案",
+      "content": "无论是双方都想要房产，还是双方都不想要房产，都可以尝试协商解决，优先考虑实际需求和公平原则。如果协商无法达成一致，法院会根据具体情况及法律裁判，最终分配房产或裁定变现为资金形式分割。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "离婚时若双方对房产分配存在明显冲突，可以通过以下途径解决：1. 协商处理，确定合理方案；2. 若协商不成，由法院根据双方需求、经济状况和法律规定判决房产归属；若双方均不愿意接收房产，可变现房屋资产后平分价值。此外，还可依法提出补偿机制。"
+    },
+    {
+      "action": "Verification",
+      "content": "分析符合《民法典》相关条款规定以及实际离婚纠纷的处理逻辑，结论可行。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n离婚时，双方都想要房子或者都不想要房子，怎么办？\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n离婚时若双方对房产分配存在明显冲突，可以通过以下途径解决：1. 协商处理，确定合理方案；2. 若协商不成，由法院根据双方需求、经济状况和法律规定判决房产归属；若双方均不愿意接收房产，可变现房屋资产后平分价值。此外，还可依法提出补偿机制。  \n</Model Response>  \n\n<Reference Answer>  \n如果都想要房子的，可以采取竞价方式，价高者得，然后取得房子的一方向另一方支付一半的房价款补偿。如果双方都不想要房子的，可以申请拍卖、变卖房屋，双方就所得价款进行分割。最高人民法院关于适用《中华人民共和国民法典》婚姻家庭编的解释（一）第七十六条双方对夫妻共同财产中的房屋价值及归属无法达成协议时，人民法院按以下情形分别处理：（一）双方均主张房屋所有权并且同意竞价取得的，应当准许；（二）一方主张房屋所有权的，由评估机构按市场价格对房屋作出评估，取得房屋所有权的一方应当给予另一方相应的补偿；（三）双方均不主张房屋所有权的，根据当事人的申请拍卖、变卖房屋，就所得价款进行分割。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 确认离婚双方对房产的需求冲突\n当双方都要求分得房产或者双方均不愿接受房产时，这涉及如何合理分配或处置财产的问题。需要首先明确房产的性质（是否属婚内共同财产）以及是否存在任何法律或合同约定。为更好理解现行法规对类似问题的处理方式，需查询相关法律条文，例如《婚姻法》或《民法典》中的有关规定。<search>离婚财产分割 共同财产 房屋</search>\n\n### 查询法律条文\n<information>离婚时共同财产的分割问题通常依据《中华人民共和国民法典》第1062条和1063条。共同财产按公平原则分割，优先满足子女权益和需要，同时兼顾双方利益。针对房屋分割问题，法院通常会综合双方经济状况、房屋使用用途及市场价值等因素进行判定，若无法达成协议，法院可能判定房产归一方所有，另一方获得相应的补偿。</information>\n\n### 分析双方都想要房产的情况\n当双方都想要房屋时，可以考虑协商解决：一方获得房产而另一方获得相应的补偿，例如现金或其他财产。若协商不成，法院会根据房产特点（如是否家庭唯一住房）、双方经济能力及实际需求判决房产归属。此外，也可以采取拍卖房产后平分价值的方式。\n\n### 分析双方都不想要房产的情况\n若双方均不愿接受房产，可以通过变现房产（如出售房屋）并平分所得款项来解决问题。若房产无法出售或不适宜出售，可考虑将房产分配给一方，并在财产分割中补偿另一方。此时法院也可能强制分割或指定一方接收房产。\n\n### 提出解决方案\n无论是双方都想要房产，还是双方都不想要房产，都可以尝试协商解决，优先考虑实际需求和公平原则。如果协商无法达成一致，法院会根据具体情况及法律裁判，最终分配房产或裁定变现为资金形式分割。\n\n### Conclusion\n离婚时若双方对房产分配存在明显冲突，可以通过以下途径解决：1. 协商处理，确定合理方案；2. 若协商不成，由法院根据双方需求、经济状况和法律规定判决房产归属；若双方均不愿意接收房产，可变现房屋资产后平分价值。此外，还可依法提出补偿机制。\n\n### Verification\n分析符合《民法典》相关条款规定以及实际离婚纠纷的处理逻辑，结论可行。\n</Thought Process>\n\n<Question>\n离婚时，双方都想要房子或者都不想要房子，怎么办？\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n嗯，离婚时房产的分割还真是个复杂的问题，需要好好理清楚。首先，得确认双方的态度。如果两个人都想要房子，那肯定会出现冲突，得找到一种公平合理的方式来解决。反过来说，如果两个人都不想要房子，那也不能就这样不管，房子必须有个归属，或者处理的方法。这两种情况处理起来挺不一样的，那我先了解一下法律是怎么规定的吧。<search>离婚财产分割 共同财产 房屋</search>\n\n哦，查到了。<information>根据《中华人民共和国民法典》第1062条和1063条，共同财产分割要遵循公平原则，同时优先保障子女权益，还要考虑双方的实际利益。涉及房产的情况，法院一般会综合双方的经济状况、房屋用途以及市场价值来判定。如果无法协商一致，房屋可能会判给一方，另一方获得相应的补偿。</information>嗯，这听起来还挺合理的，那接下来我得具体分析一下这种“双方都想要”或者“双方都不想要”的情况。\n\n如果两个人都想要房子，可能得让他们先试着协商。比如，一方拿到房子，另一方通过现金或者其他财产来补偿，这样或许可以解决冲突。如果协商不成，那法院估计会根据双方的经济条件和需求来判定房子归谁，比如谁更需要用这个房子，或者谁的经济状况能承担房子的相关费用。还有一种情况是法院可能要求将房子卖掉，然后平分所得，这样就既避免了纠纷，也让双方各得其所。\n\n不过，如果双方都不想要房子，那处理起来可能更简单一点。可以考虑直接出售房产，所得款项平分，算是个相对公平的办法。如果房子不能卖或者卖起来太麻烦，比如市场条件不好，那可能就会分给其中一方，由分到房产的一方在财产分割中补偿另一方。法院可能在这种情况下也会直接指定分配归属来解决问题。\n\n其实无论是两个人都想要房子还是都不想要房子，最好的办法还是让双方尽可能协商。协商不成的话，法院的判决会基于法律原则和实际情况，最终给出一个解决方案。当然，这些解决方法都要遵循法律，比如刚刚提到的《民法典》的1062条和1063条。\n\n所以，从法律和实际处理上看，常见的方式包括：协商解决，拍卖平分，归一方所有且补偿另一方，或者直接强制处理。总的来说，房产的分割要考虑公平和实际需求，没法简单地说谁对谁错。嗯，这样分析应该挺符合实际情况了。\n</Internal Thinking>\n\n<Question>\n离婚时，双方都想要房子或者都不想要房子，怎么办？\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"确认离婚双方对房产的需求冲突\",\n      \"content\": \"当双方都要求分得房产或者双方均不愿接受房产时，这涉及如何合理分配或处置财产的问题。需要首先明确房产的性质（是否属婚内共同财产）以及是否存在任何法律或合同约定。为更好理解现行法规对类似问题的处理方式，需查询相关法律条文，例如《婚姻法》或《民法典》中的有关规定。<search>离婚财产分割 共同财产 房屋</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"查询法律条文\",\n      \"content\": \"<information>离婚时共同财产的分割问题通常依据《中华人民共和国民法典》第1062条和1063条。共同财产按公平原则分割，优先满足子女权益和需要，同时兼顾双方利益。针对房屋分割问题，法院通常会综合双方经济状况、房屋使用用途及市场价值等因素进行判定，若无法达成协议，法院可能判定房产归一方所有，另一方获得相应的补偿。</information>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析双方都想要房产的情况\",\n      \"content\": \"当双方都想要房屋时，可以考虑协商解决：一方获得房产而另一方获得相应的补偿，例如现金或其他财产。若协商不成，法院会根据房产特点（如是否家庭唯一住房）、双方经济能力及实际需求判决房产归属。此外，也可以采取拍卖房产后平分价值的方式。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析双方都不想要房产的情况\",\n      \"content\": \"若双方均不愿接受房产，可以通过变现房产（如出售房屋）并平分所得款项来解决问题。若房产无法出售或不适宜出售，可考虑将房产分配给一方，并在财产分割中补偿另一方。此时法院也可能强制分割或指定一方接收房产。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"提出解决方案\",\n      \"content\": \"无论是双方都想要房产，还是双方都不想要房产，都可以尝试协商解决，优先考虑实际需求和公平原则。如果协商无法达成一致，法院会根据具体情况及法律裁判，最终分配房产或裁定变现为资金形式分割。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"离婚时若双方对房产分配存在明显冲突，可以通过以下途径解决：1. 协商处理，确定合理方案；2. 若协商不成，由法院根据双方需求、经济状况和法律规定判决房产归属；若双方均不愿意接收房产，可变现房屋资产后平分价值。此外，还可依法提出补偿机制。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"分析符合《民法典》相关条款规定以及实际离婚纠纷的处理逻辑，结论可行。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"嗯，离婚时房产的分割还真是个复杂的问题，需要好好理清楚。首先，得确认双方的态度。如果两个人都想要房子，那肯定会出现冲突，得找到一种公平合理的方式来解决。反过来说，如果两个人都不想要房子，那也不能就这样不管，房子必须有个归属，或者处理的方法。这两种情况处理起来挺不一样的，那我先了解一下法律是怎么规定的吧。<search>离婚财产分割 共同财产 房屋</search>\\n\\n哦，查到了。<information>根据《中华人民共和国民法典》第1062条和1063条，共同财产分割要遵循公平原则，同时优先保障子女权益，还要考虑双方的实际利益。涉及房产的情况，法院一般会综合双方的经济状况、房屋用途以及市场价值来判定。如果无法协商一致，房屋可能会判给一方，另一方获得相应的补偿。</information>嗯，这听起来还挺合理的，那接下来我得具体分析一下这种“双方都想要”或者“双方都不想要”的情况。\\n\\n如果两个人都想要房子，可能得让他们先试着协商。比如，一方拿到房子，另一方通过现金或者其他财产来补偿，这样或许可以解决冲突。如果协商不成，那法院估计会根据双方的经济条件和需求来判定房子归谁，比如谁更需要用这个房子，或者谁的经济状况能承担房子的相关费用。还有一种情况是法院可能要求将房子卖掉，然后平分所得，这样就既避免了纠纷，也让双方各得其所。\\n\\n不过，如果双方都不想要房子，那处理起来可能更简单一点。可以考虑直接出售房产，所得款项平分，算是个相对公平的办法。如果房子不能卖或者卖起来太麻烦，比如市场条件不好，那可能就会分给其中一方，由分到房产的一方在财产分割中补偿另一方。法院可能在这种情况下也会直接指定分配归属来解决问题。\\n\\n其实无论是两个人都想要房子还是都不想要房子，最好的办法还是让双方尽可能协商。协商不成的话，法院的判决会基于法律原则和实际情况，最终给出一个解决方案。当然，这些解决方法都要遵循法律，比如刚刚提到的《民法典》的1062条和1063条。\\n\\n所以，从法律和实际处理上看，常见的方式包括：协商解决，拍卖平分，归一方所有且补偿另一方，或者直接强制处理。总的来说，房产的分割要考虑公平和实际需求，没法简单地说谁对谁错。嗯，这样分析应该挺符合实际情况了。\"\n}\n```",
+    "离婚时如果双方都想要房子或都不想要房子，处理起来有些复杂，但可以遵循几个原则和方法：\n\n1. **双方都想要房子**：\n   - **协商解决**：双方可以尝试协商，一方获得房子，另一方得到现金或其他财产补偿。如果协商成功，能减轻很多纠纷。\n   - **经济状况和需求评估**：无法协商一致时，法院会综合考虑双方的经济状况、房屋用途以及市场价值判定房屋的归属。法院可能会倾向于判给经济条件更好、需求更大的一方，另一方获得相应的补偿。\n   - **房产出售**：如果双方协商不成且法院判决难以达成一致，也可能要求将房子出售，然后将所得款项平分，保证公平。\n\n2. **双方都不想要房子**：\n   - **房产出售平分**：如果双方都不愿意要房子，直接出售房产，然后平分所得款项是一个相对公平的解决方式。\n   - **分配给一方并补偿另一方**：如果房子不能卖或市场条件不好，法院可能会将房子分给其中一方，由分到房产的一方在财产分割中补偿另一方。法院在这种情况下会直接指定归属来解决问题。\n\n总之，无论是哪种情况，最好的办法都是尽可能协商解决，协商不成时，法院会根据实际情况和法律原则最终做出判决，确保公平和实际需求得到满足。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "确认离婚双方对房产的需求冲突",
+        "content": "当双方都要求分得房产或者双方均不愿接受房产时，这涉及如何合理分配或处置财产的问题。需要首先明确房产的性质（是否属婚内共同财产）以及是否存在任何法律或合同约定。为更好理解现行法规对类似问题的处理方式，需查询相关法律条文，例如《婚姻法》或《民法典》中的有关规定。<search>离婚财产分割 共同财产 房屋</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "查询法律条文",
+        "content": "<information>离婚时共同财产的分割问题通常依据《中华人民共和国民法典》第1062条和1063条。共同财产按公平原则分割，优先满足子女权益和需要，同时兼顾双方利益。针对房屋分割问题，法院通常会综合双方经济状况、房屋使用用途及市场价值等因素进行判定，若无法达成协议，法院可能判定房产归一方所有，另一方获得相应的补偿。</information>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "分析双方都想要房产的情况",
+        "content": "当双方都想要房屋时，可以考虑协商解决：一方获得房产而另一方获得相应的补偿，例如现金或其他财产。若协商不成，法院会根据房产特点（如是否家庭唯一住房）、双方经济能力及实际需求判决房产归属。此外，也可以采取拍卖房产后平分价值的方式。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "分析双方都不想要房产的情况",
+        "content": "若双方均不愿接受房产，可以通过变现房产（如出售房屋）并平分所得款项来解决问题。若房产无法出售或不适宜出售，可考虑将房产分配给一方，并在财产分割中补偿另一方。此时法院也可能强制分割或指定一方接收房产。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "提出解决方案",
+        "content": "无论是双方都想要房产，还是双方都不想要房产，都可以尝试协商解决，优先考虑实际需求和公平原则。如果协商无法达成一致，法院会根据具体情况及法律裁判，最终分配房产或裁定变现为资金形式分割。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "离婚时若双方对房产分配存在明显冲突，可以通过以下途径解决：1. 协商处理，确定合理方案；2. 若协商不成，由法院根据双方需求、经济状况和法律规定判决房产归属；若双方均不愿意接收房产，可变现房屋资产后平分价值。此外，还可依法提出补偿机制。"
+      },
+      {
+        "action": "Verification",
+        "content": "分析符合《民法典》相关条款规定以及实际离婚纠纷的处理逻辑，结论可行。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "嗯，离婚时房产的分割还真是个复杂的问题，需要好好理清楚。首先，得确认双方的态度。如果两个人都想要房子，那肯定会出现冲突，得找到一种公平合理的方式来解决。反过来说，如果两个人都不想要房子，那也不能就这样不管，房子必须有个归属，或者处理的方法。这两种情况处理起来挺不一样的，那我先了解一下法律是怎么规定的吧。<search>离婚财产分割 共同财产 房屋</search>\n\n哦，查到了。<information>根据《中华人民共和国民法典》第1062条和1063条，共同财产分割要遵循公平原则，同时优先保障子女权益，还要考虑双方的实际利益。涉及房产的情况，法院一般会综合双方的经济状况、房屋用途以及市场价值来判定。如果无法协商一致，房屋可能会判给一方，另一方获得相应的补偿。</information>嗯，这听起来还挺合理的，那接下来我得具体分析一下这种“双方都想要”或者“双方都不想要”的情况。\n\n如果两个人都想要房子，可能得让他们先试着协商。比如，一方拿到房子，另一方通过现金或者其他财产来补偿，这样或许可以解决冲突。如果协商不成，那法院估计会根据双方的经济条件和需求来判定房子归谁，比如谁更需要用这个房子，或者谁的经济状况能承担房子的相关费用。还有一种情况是法院可能要求将房子卖掉，然后平分所得，这样就既避免了纠纷，也让双方各得其所。\n\n不过，如果双方都不想要房子，那处理起来可能更简单一点。可以考虑直接出售房产，所得款项平分，算是个相对公平的办法。如果房子不能卖或者卖起来太麻烦，比如市场条件不好，那可能就会分给其中一方，由分到房产的一方在财产分割中补偿另一方。法院可能在这种情况下也会直接指定分配归属来解决问题。\n\n其实无论是两个人都想要房子还是都不想要房子，最好的办法还是让双方尽可能协商。协商不成的话，法院的判决会基于法律原则和实际情况，最终给出一个解决方案。当然，这些解决方法都要遵循法律，比如刚刚提到的《民法典》的1062条和1063条。\n\n所以，从法律和实际处理上看，常见的方式包括：协商解决，拍卖平分，归一方所有且补偿另一方，或者直接强制处理。总的来说，房产的分割要考虑公平和实际需求，没法简单地说谁对谁错。嗯，这样分析应该挺符合实际情况了。",
+  "Response": "离婚时如果双方都想要房子或都不想要房子，处理起来有些复杂，但可以遵循几个原则和方法：\n\n1. **双方都想要房子**：\n   - **协商解决**：双方可以尝试协商，一方获得房子，另一方得到现金或其他财产补偿。如果协商成功，能减轻很多纠纷。\n   - **经济状况和需求评估**：无法协商一致时，法院会综合考虑双方的经济状况、房屋用途以及市场价值判定房屋的归属。法院可能会倾向于判给经济条件更好、需求更大的一方，另一方获得相应的补偿。\n   - **房产出售**：如果双方协商不成且法院判决难以达成一致，也可能要求将房子出售，然后将所得款项平分，保证公平。\n\n2. **双方都不想要房子**：\n   - **房产出售平分**：如果双方都不愿意要房子，直接出售房产，然后平分所得款项是一个相对公平的解决方式。\n   - **分配给一方并补偿另一方**：如果房子不能卖或市场条件不好，法院可能会将房子分给其中一方，由分到房产的一方在财产分割中补偿另一方。法院在这种情况下会直接指定归属来解决问题。\n\n总之，无论是哪种情况，最好的办法都是尽可能协商解决，协商不成时，法院会根据实际情况和法律原则最终做出判决，确保公平和实际需求得到满足。",
+  "Question": "离婚时，双方都想要房子或者都不想要房子，怎么办？"
+}

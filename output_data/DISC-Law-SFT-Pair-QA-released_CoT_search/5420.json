@@ -1,0 +1,79 @@
+{
+  "Open-ended Verifiable Question": "三年未签劳动合同怎么办？",
+  "Ground-True Answer": "1、按照规定，3年未签劳动合同是需要赔偿双倍工资：（1）单位在自用工之日起一个月内都没有和劳动者签订劳动合同的，劳动者有权主张从用工之日的第二个月起到一年内的双倍工资；（2）其中的一倍工资在之前已经发放的，直接主张另外一倍；（3）用人单位自用工之日起满一年不与劳动者订立书面劳动合同的，视为用人单位与劳动者已订立无固定期限劳动合同；\n2、按照规定，3年未签劳动合同是需要主张实际工作的工资、社保：（1）没有和员工签订劳动合同意识的用人单位，往往也会漏缴、不缴员工的社保；（2）劳动者离职的，可以收集证据，向当地劳动局投诉，要求补缴从工作之月起的社保。",
+  "process_id": 5420,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "了解三年未签劳动合同的法律后果",
+      "content": "根据中国《劳动合同法》，企业应当在员工入职时及时签订劳动合同。如果未签订劳动合同，企业可能需要支付双倍工资，并且存在违法行为。需要进一步查找相关法律条款以确认细节。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "查找相关法律条款",
+      "content": "搜索条款关键词：<search>劳动合同法未签合同责任</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "明确法律责任和处理步骤",
+      "content": "<information>根据《中华人民共和国劳动合同法》第八十二条的规定，用人单位自用工之日起超过一个月不满一年未与劳动者订立书面劳动合同的，应当向劳动者每月支付二倍工资；超过一年未签合同，视为已订立无固定期限劳动合同。同时，劳动者有权向劳动仲裁机构提出仲裁申请。</information>从以上信息可得，员工如果三年未签订合同，公司责任重大，且劳动者有明确法律救济途径。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "根据《中华人民共和国劳动合同法》，如果员工三年内未签劳动合同，公司应从第二个月起支付双倍工资，并且视为已订立无固定期限劳动合同。劳动者可以向劳动仲裁机构申请仲裁以维护权益。"
+    },
+    {
+      "action": "Verification",
+      "content": "结论与法律条款一致，逻辑合理，且信息全面。可以采取行动维护劳动者权益。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n三年未签劳动合同怎么办？\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n根据《中华人民共和国劳动合同法》，如果员工三年内未签劳动合同，公司应从第二个月起支付双倍工资，并且视为已订立无固定期限劳动合同。劳动者可以向劳动仲裁机构申请仲裁以维护权益。  \n</Model Response>  \n\n<Reference Answer>  \n1、按照规定，3年未签劳动合同是需要赔偿双倍工资：（1）单位在自用工之日起一个月内都没有和劳动者签订劳动合同的，劳动者有权主张从用工之日的第二个月起到一年内的双倍工资；（2）其中的一倍工资在之前已经发放的，直接主张另外一倍；（3）用人单位自用工之日起满一年不与劳动者订立书面劳动合同的，视为用人单位与劳动者已订立无固定期限劳动合同；\n2、按照规定，3年未签劳动合同是需要主张实际工作的工资、社保：（1）没有和员工签订劳动合同意识的用人单位，往往也会漏缴、不缴员工的社保；（2）劳动者离职的，可以收集证据，向当地劳动局投诉，要求补缴从工作之月起的社保。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 了解三年未签劳动合同的法律后果\n根据中国《劳动合同法》，企业应当在员工入职时及时签订劳动合同。如果未签订劳动合同，企业可能需要支付双倍工资，并且存在违法行为。需要进一步查找相关法律条款以确认细节。\n\n### 查找相关法律条款\n搜索条款关键词：<search>劳动合同法未签合同责任</search>\n\n### 明确法律责任和处理步骤\n<information>根据《中华人民共和国劳动合同法》第八十二条的规定，用人单位自用工之日起超过一个月不满一年未与劳动者订立书面劳动合同的，应当向劳动者每月支付二倍工资；超过一年未签合同，视为已订立无固定期限劳动合同。同时，劳动者有权向劳动仲裁机构提出仲裁申请。</information>从以上信息可得，员工如果三年未签订合同，公司责任重大，且劳动者有明确法律救济途径。\n\n### Conclusion\n根据《中华人民共和国劳动合同法》，如果员工三年内未签劳动合同，公司应从第二个月起支付双倍工资，并且视为已订立无固定期限劳动合同。劳动者可以向劳动仲裁机构申请仲裁以维护权益。\n\n### Verification\n结论与法律条款一致，逻辑合理，且信息全面。可以采取行动维护劳动者权益。\n</Thought Process>\n\n<Question>\n三年未签劳动合同怎么办？\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n嗯，关于员工三年未签劳动合同的问题，这是不是有点严重？我记得中国的《劳动合同法》里面有专门的规定，说企业要在员工入职的时候及时签订劳动合同。如果超过一定时间还不签，公司是有法律责任的，我得确认一下具体是什么。\n\n先从法律到底怎么说查起吧。像这种关键词应该有用——<search>劳动合同法未签合同责任</search>，看看有没有能找到具体条款的。\n\n<information>找到了！《中华人民共和国劳动合同法》第八十二条似乎就提到了这个问题。这么说来，用人单位如果在员工入职后一个月内还没签劳动合同，事情就开始麻烦了。从第二个月起，公司得支付双倍工资，最多持续到第十二个月。而要是超过一年还没签合同，那法律会直接视为双方已经签订了无固定期限劳动合同。也就是说，员工不但可以拿双倍工资差额，还能有一个很稳定的合同保障。此外，听上去这种情况下劳动者可以去申请劳动仲裁，让公司承担责任呢。</information>\n\n根据以上这些信息来看，三年没签合同绝对是违规的。从第二个月开始，公司就该给双倍工资，而且员工劳动关系算是自动转为了无固定期限合同。那接下来能做的就是维护自己的权益了，比如申请劳动仲裁，要求补偿这些年的双倍工资差额。\n\n说回来，法律规定确实挺清楚的，逻辑也说得通。这种情况下，员工完全可以根据法条行动。总之，去劳动仲裁是比较直接的解法，对方法律责任还真不小。\n</Internal Thinking>\n\n<Question>\n三年未签劳动合同怎么办？\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"了解三年未签劳动合同的法律后果\",\n      \"content\": \"根据中国《劳动合同法》，企业应当在员工入职时及时签订劳动合同。如果未签订劳动合同，企业可能需要支付双倍工资，并且存在违法行为。需要进一步查找相关法律条款以确认细节。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"查找相关法律条款\",\n      \"content\": \"搜索条款关键词：<search>劳动合同法未签合同责任</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"明确法律责任和处理步骤\",\n      \"content\": \"<information>根据《中华人民共和国劳动合同法》第八十二条的规定，用人单位自用工之日起超过一个月不满一年未与劳动者订立书面劳动合同的，应当向劳动者每月支付二倍工资；超过一年未签合同，视为已订立无固定期限劳动合同。同时，劳动者有权向劳动仲裁机构提出仲裁申请。</information>从以上信息可得，员工如果三年未签订合同，公司责任重大，且劳动者有明确法律救济途径。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"根据《中华人民共和国劳动合同法》，如果员工三年内未签劳动合同，公司应从第二个月起支付双倍工资，并且视为已订立无固定期限劳动合同。劳动者可以向劳动仲裁机构申请仲裁以维护权益。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"结论与法律条款一致，逻辑合理，且信息全面。可以采取行动维护劳动者权益。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"嗯，关于员工三年未签劳动合同的问题，这是不是有点严重？我记得中国的《劳动合同法》里面有专门的规定，说企业要在员工入职的时候及时签订劳动合同。如果超过一定时间还不签，公司是有法律责任的，我得确认一下具体是什么。\\n\\n先从法律到底怎么说查起吧。像这种关键词应该有用——<search>劳动合同法未签合同责任</search>，看看有没有能找到具体条款的。\\n\\n<information>找到了！《中华人民共和国劳动合同法》第八十二条似乎就提到了这个问题。这么说来，用人单位如果在员工入职后一个月内还没签劳动合同，事情就开始麻烦了。从第二个月起，公司得支付双倍工资，最多持续到第十二个月。而要是超过一年还没签合同，那法律会直接视为双方已经签订了无固定期限劳动合同。也就是说，员工不但可以拿双倍工资差额，还能有一个很稳定的合同保障。此外，听上去这种情况下劳动者可以去申请劳动仲裁，让公司承担责任呢。</information>\\n\\n根据以上这些信息来看，三年没签合同绝对是违规的。从第二个月开始，公司就该给双倍工资，而且员工劳动关系算是自动转为了无固定期限合同。那接下来能做的就是维护自己的权益了，比如申请劳动仲裁，要求补偿这些年的双倍工资差额。\\n\\n说回来，法律规定确实挺清楚的，逻辑也说得通。这种情况下，员工完全可以根据法条行动。总之，去劳动仲裁是比较直接的解法，对方法律责任还真不小。\"\n}\n```",
+    "根据《中华人民共和国劳动合同法》的相关规定，用人单位在员工入职后，一个月内未签订书面劳动合同的，应该从第二个月开始按法律要求支付双倍工资，最多支付至第十二个月。如果超过一年仍未签订书面劳动合同，法律将视同双方已经订立无固定期限劳动合同。\n\n因此，对于您提到的情况：三年未签订劳动合同，实际上企业已经严重违法，员工可以采取以下步骤维护自己的权益：\n\n1. **确认劳动关系**  \n   首先要注意保留能够证明劳动关系的证据，例如工作记录、工资支付凭证、工牌、考勤记录等。这些证据可以帮助您确认和公司存在事实上的劳动关系。\n\n2. **申请劳动仲裁**  \n   您可以向当地劳动争议仲裁委员会申请仲裁，要求用人单位补发未签订劳动合同期间的双倍工资差额（自入职第二个月开始最多补偿11个月），并确认劳动关系为无固定期限劳动合同。\n\n3. **要求合同补签**  \n   法律上视为双方已经订立无固定期限劳动合同，您也可以要求补签劳动合同，以明确未来的劳动关系。\n\n4. **法律时效问题**  \n   需要注意，双倍工资的补偿请求一般适用仲裁时效，通常为一年计算。这意味着您如果在三年内未主张权利，部分工资补偿可能会超出现行时效，建议尽快采取行动。\n\n总之，三年未签劳动合同属于用人单位的严重过失，员工完全可以依法维护自己的权益。如果需要进一步指导，建议向专业劳务律师或当地劳动监察部门咨询。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "了解三年未签劳动合同的法律后果",
+        "content": "根据中国《劳动合同法》，企业应当在员工入职时及时签订劳动合同。如果未签订劳动合同，企业可能需要支付双倍工资，并且存在违法行为。需要进一步查找相关法律条款以确认细节。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "查找相关法律条款",
+        "content": "搜索条款关键词：<search>劳动合同法未签合同责任</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "明确法律责任和处理步骤",
+        "content": "<information>根据《中华人民共和国劳动合同法》第八十二条的规定，用人单位自用工之日起超过一个月不满一年未与劳动者订立书面劳动合同的，应当向劳动者每月支付二倍工资；超过一年未签合同，视为已订立无固定期限劳动合同。同时，劳动者有权向劳动仲裁机构提出仲裁申请。</information>从以上信息可得，员工如果三年未签订合同，公司责任重大，且劳动者有明确法律救济途径。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "根据《中华人民共和国劳动合同法》，如果员工三年内未签劳动合同，公司应从第二个月起支付双倍工资，并且视为已订立无固定期限劳动合同。劳动者可以向劳动仲裁机构申请仲裁以维护权益。"
+      },
+      {
+        "action": "Verification",
+        "content": "结论与法律条款一致，逻辑合理，且信息全面。可以采取行动维护劳动者权益。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "嗯，关于员工三年未签劳动合同的问题，这是不是有点严重？我记得中国的《劳动合同法》里面有专门的规定，说企业要在员工入职的时候及时签订劳动合同。如果超过一定时间还不签，公司是有法律责任的，我得确认一下具体是什么。\n\n先从法律到底怎么说查起吧。像这种关键词应该有用——<search>劳动合同法未签合同责任</search>，看看有没有能找到具体条款的。\n\n<information>找到了！《中华人民共和国劳动合同法》第八十二条似乎就提到了这个问题。这么说来，用人单位如果在员工入职后一个月内还没签劳动合同，事情就开始麻烦了。从第二个月起，公司得支付双倍工资，最多持续到第十二个月。而要是超过一年还没签合同，那法律会直接视为双方已经签订了无固定期限劳动合同。也就是说，员工不但可以拿双倍工资差额，还能有一个很稳定的合同保障。此外，听上去这种情况下劳动者可以去申请劳动仲裁，让公司承担责任呢。</information>\n\n根据以上这些信息来看，三年没签合同绝对是违规的。从第二个月开始，公司就该给双倍工资，而且员工劳动关系算是自动转为了无固定期限合同。那接下来能做的就是维护自己的权益了，比如申请劳动仲裁，要求补偿这些年的双倍工资差额。\n\n说回来，法律规定确实挺清楚的，逻辑也说得通。这种情况下，员工完全可以根据法条行动。总之，去劳动仲裁是比较直接的解法，对方法律责任还真不小。",
+  "Response": "根据《中华人民共和国劳动合同法》的相关规定，用人单位在员工入职后，一个月内未签订书面劳动合同的，应该从第二个月开始按法律要求支付双倍工资，最多支付至第十二个月。如果超过一年仍未签订书面劳动合同，法律将视同双方已经订立无固定期限劳动合同。\n\n因此，对于您提到的情况：三年未签订劳动合同，实际上企业已经严重违法，员工可以采取以下步骤维护自己的权益：\n\n1. **确认劳动关系**  \n   首先要注意保留能够证明劳动关系的证据，例如工作记录、工资支付凭证、工牌、考勤记录等。这些证据可以帮助您确认和公司存在事实上的劳动关系。\n\n2. **申请劳动仲裁**  \n   您可以向当地劳动争议仲裁委员会申请仲裁，要求用人单位补发未签订劳动合同期间的双倍工资差额（自入职第二个月开始最多补偿11个月），并确认劳动关系为无固定期限劳动合同。\n\n3. **要求合同补签**  \n   法律上视为双方已经订立无固定期限劳动合同，您也可以要求补签劳动合同，以明确未来的劳动关系。\n\n4. **法律时效问题**  \n   需要注意，双倍工资的补偿请求一般适用仲裁时效，通常为一年计算。这意味着您如果在三年内未主张权利，部分工资补偿可能会超出现行时效，建议尽快采取行动。\n\n总之，三年未签劳动合同属于用人单位的严重过失，员工完全可以依法维护自己的权益。如果需要进一步指导，建议向专业劳务律师或当地劳动监察部门咨询。",
+  "Question": "三年未签劳动合同怎么办？"
+}

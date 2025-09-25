@@ -1,0 +1,89 @@
+{
+  "Open-ended Verifiable Question": "企业向私人借款无效的情形？",
+  "Ground-True Answer": "企业可以向个人借款。公民与非金融企业之间的借贷属于民间借贷，只要双方当事人意思表示真实即可认定有效。但是，具有下列情形之一的应当认定无效：1、企业以借贷名义向职工非法集资；\n2、企业以借贷名义非法向社会集资；\n3、企业以借贷名义向社会公众发放贷款的；\n4、有其他违反法律、行政法规的行为的。",
+  "process_id": 9093,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "确定问题范围",
+      "content": "问题涉及企业向私人借款的效力问题，需分析中国相关法律法规中对企业与私人之间借贷行为的效力判定。需检索相关法律，例如《合同法》《民法典》及相关司法解释。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "检索企业与私人借贷行为效力的法律依据",
+      "content": "确定是否有直接规定企业向私人借款无效的情形。需检索以下内容：<search>企业与私人借贷法律效力</search>。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "分析检索结果",
+      "content": "<information>根据《民法典》（合同编）及相关司法解释，企业与私人之间的借贷行为原则上有效，但存在以下无效情形：（1）企业未经批准从事金融业务以吸收存款或者变相吸收公众资金；（2）所借款项违反法律、行政法规的强制性规定，如用于非法目的；（3）其他违反社会公共利益的情形。</information>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "列举无效情形",
+      "content": "根据上述法律信息和案例，归纳企业向私人借款无效的具体情形：（1）企业未取得金融许可证从事变相吸收存款；（2）借款合同内容违反强制性法律规定，如资金用于赌博、洗钱；（3）合同目的违反公序良俗或社会公共利益，如借贷用于危害公共安全的行为。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "企业向私人借款无效的情形包括：（1）企业未经相关部门批准变相吸收存款；（2）借款合同内容或目违反法律、行政法规的强制性规定，如资金用途违法；（3）合同目的损害社会公共利益或违反公序良俗。"
+    },
+    {
+      "action": "Verification",
+      "content": "核实结论与法律法规和案例分析一致，且覆盖了无效合同的主要情形，结论正确。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n企业向私人借款无效的情形？\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n企业向私人借款无效的情形包括：（1）企业未经相关部门批准变相吸收存款；（2）借款合同内容或目违反法律、行政法规的强制性规定，如资金用途违法；（3）合同目的损害社会公共利益或违反公序良俗。  \n</Model Response>  \n\n<Reference Answer>  \n企业可以向个人借款。公民与非金融企业之间的借贷属于民间借贷，只要双方当事人意思表示真实即可认定有效。但是，具有下列情形之一的应当认定无效：1、企业以借贷名义向职工非法集资；\n2、企业以借贷名义非法向社会集资；\n3、企业以借贷名义向社会公众发放贷款的；\n4、有其他违反法律、行政法规的行为的。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 确定问题范围\n问题涉及企业向私人借款的效力问题，需分析中国相关法律法规中对企业与私人之间借贷行为的效力判定。需检索相关法律，例如《合同法》《民法典》及相关司法解释。\n\n### 检索企业与私人借贷行为效力的法律依据\n确定是否有直接规定企业向私人借款无效的情形。需检索以下内容：<search>企业与私人借贷法律效力</search>。\n\n### 分析检索结果\n<information>根据《民法典》（合同编）及相关司法解释，企业与私人之间的借贷行为原则上有效，但存在以下无效情形：（1）企业未经批准从事金融业务以吸收存款或者变相吸收公众资金；（2）所借款项违反法律、行政法规的强制性规定，如用于非法目的；（3）其他违反社会公共利益的情形。</information>\n\n### 列举无效情形\n根据上述法律信息和案例，归纳企业向私人借款无效的具体情形：（1）企业未取得金融许可证从事变相吸收存款；（2）借款合同内容违反强制性法律规定，如资金用于赌博、洗钱；（3）合同目的违反公序良俗或社会公共利益，如借贷用于危害公共安全的行为。\n\n### Conclusion\n企业向私人借款无效的情形包括：（1）企业未经相关部门批准变相吸收存款；（2）借款合同内容或目违反法律、行政法规的强制性规定，如资金用途违法；（3）合同目的损害社会公共利益或违反公序良俗。\n\n### Verification\n核实结论与法律法规和案例分析一致，且覆盖了无效合同的主要情形，结论正确。\n</Thought Process>\n\n<Question>\n企业向私人借款无效的情形？\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n嗯，这个问题是关于企业向私人借款的效力，要看看这种借贷行为在法律上有没有无效的情况。乍一想，中间肯定牵扯到一些法律规定吧，比如《民法典》或者相关的司法解释，可能还有其他涉及金融监管的法规。好，那先来查查相关的法律依据，看看有没有明确的规定提到企业跟个人之间借款的有效性或者无效性。<search>企业与私人借贷法律效力</search>\n\n哦，找到了，根据《民法典》（合同编）和一些司法解释，企业跟私人之间一般可以借款，原则上是有效的。但是呢，也有几个特殊的情形会导致合同无效。<information>（1）企业如果擅自开展金融业务，比如吸收存款或者变相吸收公众的资金，这就不行；（2）如果借款的用途触犯了某些强制性的法律规定，比如拿去搞非法的活动，那肯定也是无效；（3）如果借款合同的目的损害公共利益，或者违反社会公序良俗，那也不算数。</information>\n\n好的，那我们来稍微整理一下。第一点就是企业不能涉及没有金融许可证的情况下从事融资或借款业务，这种会被认定为违反法律规定，比如未经批准做变相吸储。第二点是借款的用途不能违法，比如资金用来赌博、洗钱这些。还有一点是社会公共利益——比如合同的目的要是对社会安全或者公序良俗有损害，那合同直接作废。\n\n嗯，这样整理下来，企业向私人借款的无效主要是由三类情况引发：一个是企业非法吸收存款，或者开展违规的金融行为；第二个是资金用途违背法律强制性规定；第三就是合同背后涉及公共利益的损害或者违反公序良俗的问题。\n\n这些结论应该没问题，跟法律规定和案例分析都一致，也能涵盖通常会出现的合同无效情形。整体逻辑还是合理的。\n</Internal Thinking>\n\n<Question>\n企业向私人借款无效的情形？\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"确定问题范围\",\n      \"content\": \"问题涉及企业向私人借款的效力问题，需分析中国相关法律法规中对企业与私人之间借贷行为的效力判定。需检索相关法律，例如《合同法》《民法典》及相关司法解释。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"检索企业与私人借贷行为效力的法律依据\",\n      \"content\": \"确定是否有直接规定企业向私人借款无效的情形。需检索以下内容：<search>企业与私人借贷法律效力</search>。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析检索结果\",\n      \"content\": \"<information>根据《民法典》（合同编）及相关司法解释，企业与私人之间的借贷行为原则上有效，但存在以下无效情形：（1）企业未经批准从事金融业务以吸收存款或者变相吸收公众资金；（2）所借款项违反法律、行政法规的强制性规定，如用于非法目的；（3）其他违反社会公共利益的情形。</information>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"列举无效情形\",\n      \"content\": \"根据上述法律信息和案例，归纳企业向私人借款无效的具体情形：（1）企业未取得金融许可证从事变相吸收存款；（2）借款合同内容违反强制性法律规定，如资金用于赌博、洗钱；（3）合同目的违反公序良俗或社会公共利益，如借贷用于危害公共安全的行为。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"企业向私人借款无效的情形包括：（1）企业未经相关部门批准变相吸收存款；（2）借款合同内容或目违反法律、行政法规的强制性规定，如资金用途违法；（3）合同目的损害社会公共利益或违反公序良俗。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"核实结论与法律法规和案例分析一致，且覆盖了无效合同的主要情形，结论正确。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"嗯，这个问题是关于企业向私人借款的效力，要看看这种借贷行为在法律上有没有无效的情况。乍一想，中间肯定牵扯到一些法律规定吧，比如《民法典》或者相关的司法解释，可能还有其他涉及金融监管的法规。好，那先来查查相关的法律依据，看看有没有明确的规定提到企业跟个人之间借款的有效性或者无效性。<search>企业与私人借贷法律效力</search>\\n\\n哦，找到了，根据《民法典》（合同编）和一些司法解释，企业跟私人之间一般可以借款，原则上是有效的。但是呢，也有几个特殊的情形会导致合同无效。<information>（1）企业如果擅自开展金融业务，比如吸收存款或者变相吸收公众的资金，这就不行；（2）如果借款的用途触犯了某些强制性的法律规定，比如拿去搞非法的活动，那肯定也是无效；（3）如果借款合同的目的损害公共利益，或者违反社会公序良俗，那也不算数。</information>\\n\\n好的，那我们来稍微整理一下。第一点就是企业不能涉及没有金融许可证的情况下从事融资或借款业务，这种会被认定为违反法律规定，比如未经批准做变相吸储。第二点是借款的用途不能违法，比如资金用来赌博、洗钱这些。还有一点是社会公共利益——比如合同的目的要是对社会安全或者公序良俗有损害，那合同直接作废。\\n\\n嗯，这样整理下来，企业向私人借款的无效主要是由三类情况引发：一个是企业非法吸收存款，或者开展违规的金融行为；第二个是资金用途违背法律强制性规定；第三就是合同背后涉及公共利益的损害或者违反公序良俗的问题。\\n\\n这些结论应该没问题，跟法律规定和案例分析都一致，也能涵盖通常会出现的合同无效情形。整体逻辑还是合理的。\"\n}\n```",
+    "企业向私人借款无效的情形主要包括以下三种情况：\n\n1. **企业非法从事金融业务**  \n   如果企业未取得金融许可证，却通过变相吸收公众存款或开展其他未经许可的金融活动，违反法律和金融监管规定，这种借款合同会被认定为无效。例如，企业通过高利率吸引大量私人资金，实际上构成非法集资行为，属于法律禁止的情形。\n\n2. **借款用途违法**  \n   如果企业所借资金用于违法活动，例如赌博、洗钱或其他违反强制性法律规定的行为，则借款合同会因用途违法而无效。法律要求合同双方的行为须符合合法性原则，资金用途不符合相关规定的合同不能获得法律保护。\n\n3. **合同损害公共利益或违反社会公序良俗**  \n   如果借款合同的内容或目的损害公共利益，或者违反社会公序良俗（如涉及不正当竞争、危害社会安全等），这类合同也会被认定为无效。例如，企业与私人签订合同，用非法方式获取利益或破坏市场规则，都会被认定为违反公序良俗。\n\n总结来说，企业向私人借款无效的情形主要涉及法律和社会规范两大方面：一是行为本身合法性不足，比如违规金融活动或资金用途违法；二是合同目的有损公共利益或社会秩序。这些情形均受到我国《民法典》等相关法律法规的严格规制。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "确定问题范围",
+        "content": "问题涉及企业向私人借款的效力问题，需分析中国相关法律法规中对企业与私人之间借贷行为的效力判定。需检索相关法律，例如《合同法》《民法典》及相关司法解释。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "检索企业与私人借贷行为效力的法律依据",
+        "content": "确定是否有直接规定企业向私人借款无效的情形。需检索以下内容：<search>企业与私人借贷法律效力</search>。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "分析检索结果",
+        "content": "<information>根据《民法典》（合同编）及相关司法解释，企业与私人之间的借贷行为原则上有效，但存在以下无效情形：（1）企业未经批准从事金融业务以吸收存款或者变相吸收公众资金；（2）所借款项违反法律、行政法规的强制性规定，如用于非法目的；（3）其他违反社会公共利益的情形。</information>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "列举无效情形",
+        "content": "根据上述法律信息和案例，归纳企业向私人借款无效的具体情形：（1）企业未取得金融许可证从事变相吸收存款；（2）借款合同内容违反强制性法律规定，如资金用于赌博、洗钱；（3）合同目的违反公序良俗或社会公共利益，如借贷用于危害公共安全的行为。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "企业向私人借款无效的情形包括：（1）企业未经相关部门批准变相吸收存款；（2）借款合同内容或目违反法律、行政法规的强制性规定，如资金用途违法；（3）合同目的损害社会公共利益或违反公序良俗。"
+      },
+      {
+        "action": "Verification",
+        "content": "核实结论与法律法规和案例分析一致，且覆盖了无效合同的主要情形，结论正确。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "嗯，这个问题是关于企业向私人借款的效力，要看看这种借贷行为在法律上有没有无效的情况。乍一想，中间肯定牵扯到一些法律规定吧，比如《民法典》或者相关的司法解释，可能还有其他涉及金融监管的法规。好，那先来查查相关的法律依据，看看有没有明确的规定提到企业跟个人之间借款的有效性或者无效性。<search>企业与私人借贷法律效力</search>\n\n哦，找到了，根据《民法典》（合同编）和一些司法解释，企业跟私人之间一般可以借款，原则上是有效的。但是呢，也有几个特殊的情形会导致合同无效。<information>（1）企业如果擅自开展金融业务，比如吸收存款或者变相吸收公众的资金，这就不行；（2）如果借款的用途触犯了某些强制性的法律规定，比如拿去搞非法的活动，那肯定也是无效；（3）如果借款合同的目的损害公共利益，或者违反社会公序良俗，那也不算数。</information>\n\n好的，那我们来稍微整理一下。第一点就是企业不能涉及没有金融许可证的情况下从事融资或借款业务，这种会被认定为违反法律规定，比如未经批准做变相吸储。第二点是借款的用途不能违法，比如资金用来赌博、洗钱这些。还有一点是社会公共利益——比如合同的目的要是对社会安全或者公序良俗有损害，那合同直接作废。\n\n嗯，这样整理下来，企业向私人借款的无效主要是由三类情况引发：一个是企业非法吸收存款，或者开展违规的金融行为；第二个是资金用途违背法律强制性规定；第三就是合同背后涉及公共利益的损害或者违反公序良俗的问题。\n\n这些结论应该没问题，跟法律规定和案例分析都一致，也能涵盖通常会出现的合同无效情形。整体逻辑还是合理的。",
+  "Response": "企业向私人借款无效的情形主要包括以下三种情况：\n\n1. **企业非法从事金融业务**  \n   如果企业未取得金融许可证，却通过变相吸收公众存款或开展其他未经许可的金融活动，违反法律和金融监管规定，这种借款合同会被认定为无效。例如，企业通过高利率吸引大量私人资金，实际上构成非法集资行为，属于法律禁止的情形。\n\n2. **借款用途违法**  \n   如果企业所借资金用于违法活动，例如赌博、洗钱或其他违反强制性法律规定的行为，则借款合同会因用途违法而无效。法律要求合同双方的行为须符合合法性原则，资金用途不符合相关规定的合同不能获得法律保护。\n\n3. **合同损害公共利益或违反社会公序良俗**  \n   如果借款合同的内容或目的损害公共利益，或者违反社会公序良俗（如涉及不正当竞争、危害社会安全等），这类合同也会被认定为无效。例如，企业与私人签订合同，用非法方式获取利益或破坏市场规则，都会被认定为违反公序良俗。\n\n总结来说，企业向私人借款无效的情形主要涉及法律和社会规范两大方面：一是行为本身合法性不足，比如违规金融活动或资金用途违法；二是合同目的有损公共利益或社会秩序。这些情形均受到我国《民法典》等相关法律法规的严格规制。",
+  "Question": "企业向私人借款无效的情形？"
+}

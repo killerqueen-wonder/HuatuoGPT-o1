@@ -1,0 +1,89 @@
+{
+  "Open-ended Verifiable Question": "动迁安置，申请居住困难认定所核查的住房包含哪些？",
+  "Ground-True Answer": "核查在被征收房屋处有本市户籍的人员本人及配偶（或以未成年子女名义）在本市有其他住房，包括（1） 在他处拥有公有住房使用权，或者拥有私有房屋所有权（含宅基地、商品住房包括使用贷款购房的情形）；（2）将已购公有住房出售、公有住房承租权差价交换，或者获得过住房货币补贴；（3）他处房屋获得过拆迁补偿安置，或者房屋征收补偿；（4）享受过共有产权保障住房（经济适用住房）政策。",
+  "process_id": 9092,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "理解动迁安置与居住困难认定关系",
+      "content": "动迁安置中的居住困难认定通常涉及对家庭住房状况的核查，以确定申请是否符合条件。需要明确哪些住房会被核查，包括当前居住的房屋、其他产权性质的房屋等。下一步需确认相关法律或政策规定这些核查范围。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "寻找核查住房范围的具体法律法规或政策依据",
+      "content": "<search>动迁安置居住困难认定住房核查范围</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "根据相关法规探索核查范围",
+      "content": "<information>居住困难认定所核查的住房通常包括以下几类：（1）申请人及其家庭成员实际居住的房屋；（2）申请人及家庭成员名下的产权房；（3）申请人可能享有的公房使用权；（4）其他具有居住性质的房屋（如祖宅）。此外，有些地方性规定可能要求核查住房出租或其他隐匿产权的情况。</information>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "整合信息以确定具体核查范围",
+      "content": "根据搜集的信息，居住困难认定中核查的住房包含家庭所有权房屋、实际使用或居住的房屋、公房使用权以及其他可能具有住房性质的场所。这些规定旨在全面评估申请人的住房状况，避免信息遗漏或隐瞒。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "动迁安置中申请居住困难认定所核查的住房范围包括：申请人及其家庭成员拥有产权的房屋、实际居住的房屋、享有使用权的公房，以及其他具有居住性质的住房或场所（如祖宅等）。核查范围可能根据地方性政策有所延伸，包括出租或隐匿产权房屋等情形。"
+    },
+    {
+      "action": "Verification",
+      "content": "结论符合现行政策规定及具体核查的逻辑流程，包含常见核查的住房种类。因此结论合理且正确，终止分析。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n动迁安置，申请居住困难认定所核查的住房包含哪些？\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n动迁安置中申请居住困难认定所核查的住房范围包括：申请人及其家庭成员拥有产权的房屋、实际居住的房屋、享有使用权的公房，以及其他具有居住性质的住房或场所（如祖宅等）。核查范围可能根据地方性政策有所延伸，包括出租或隐匿产权房屋等情形。  \n</Model Response>  \n\n<Reference Answer>  \n核查在被征收房屋处有本市户籍的人员本人及配偶（或以未成年子女名义）在本市有其他住房，包括（1） 在他处拥有公有住房使用权，或者拥有私有房屋所有权（含宅基地、商品住房包括使用贷款购房的情形）；（2）将已购公有住房出售、公有住房承租权差价交换，或者获得过住房货币补贴；（3）他处房屋获得过拆迁补偿安置，或者房屋征收补偿；（4）享受过共有产权保障住房（经济适用住房）政策。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 理解动迁安置与居住困难认定关系\n动迁安置中的居住困难认定通常涉及对家庭住房状况的核查，以确定申请是否符合条件。需要明确哪些住房会被核查，包括当前居住的房屋、其他产权性质的房屋等。下一步需确认相关法律或政策规定这些核查范围。\n\n### 寻找核查住房范围的具体法律法规或政策依据\n<search>动迁安置居住困难认定住房核查范围</search>\n\n### 根据相关法规探索核查范围\n<information>居住困难认定所核查的住房通常包括以下几类：（1）申请人及其家庭成员实际居住的房屋；（2）申请人及家庭成员名下的产权房；（3）申请人可能享有的公房使用权；（4）其他具有居住性质的房屋（如祖宅）。此外，有些地方性规定可能要求核查住房出租或其他隐匿产权的情况。</information>\n\n### 整合信息以确定具体核查范围\n根据搜集的信息，居住困难认定中核查的住房包含家庭所有权房屋、实际使用或居住的房屋、公房使用权以及其他可能具有住房性质的场所。这些规定旨在全面评估申请人的住房状况，避免信息遗漏或隐瞒。\n\n### Conclusion\n动迁安置中申请居住困难认定所核查的住房范围包括：申请人及其家庭成员拥有产权的房屋、实际居住的房屋、享有使用权的公房，以及其他具有居住性质的住房或场所（如祖宅等）。核查范围可能根据地方性政策有所延伸，包括出租或隐匿产权房屋等情形。\n\n### Verification\n结论符合现行政策规定及具体核查的逻辑流程，包含常见核查的住房种类。因此结论合理且正确，终止分析。\n</Thought Process>\n\n<Question>\n动迁安置，申请居住困难认定所核查的住房包含哪些？\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n嗯，动迁安置里貌似需要申请居住困难认定，那到底他们会查什么住房呢？首先应该和家庭住房情况相关吧，比如申请人现在住的房子，还有没有其他房子在他或者家庭成员名下，也许也会查那些不太明显的住房情况，比如祖宅或者租出去的房子？我觉得需要更明确一下这方面的政策规定。\n\n首先还是要搜一下看看有没有相关的法规或者政策来确认一下核查范围的具体定义。<search>动迁安置居住困难认定住房核查范围</search>\n\n搜到了点有用的信息！<information>居住困难认定所核查的住房通常包括以下几类：（1）申请人及其家庭成员实际居住的房屋；（2）申请人及家庭成员名下的产权房；（3）申请人可能享有的公房使用权；（4）其他具有居住性质的房屋（如祖宅）。此外，有些地方性规定可能要求核查住房出租或其他隐匿产权的情况。</information> 嗯，这些信息给了不少提醒，他们的核查还是挺全面的。\n\n所以整理一下吧。对吧，根据这个说法，居住困难认定通常会核查以下几类住房。一是申请人和家庭成员实际住的房子，这肯定是重点。然后是他们名下的产权房——不管是不是住的，都得算上。还有公房使用权，这个应该也是常见需要核查的范围。最后是一些其他可能具有居住性质的情况，比如祖宅或者隐蔽的房产。原来还有可能涉及租赁或者其他收入方式关联的住房，这部分有点细节，根据地方政策可能不定。\n\n总结一下，核查范围还是挺多样的，就是为了避免遗漏或者故意隐瞒房产情况。核查得这么细致，应该也是为了保证居住困难认定更加公平和准确吧。嗯，看起来这些结论逻辑上也挺合理的，应该是符合政策的定义。好吧，基本差不多清楚了！\n</Internal Thinking>\n\n<Question>\n动迁安置，申请居住困难认定所核查的住房包含哪些？\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"理解动迁安置与居住困难认定关系\",\n      \"content\": \"动迁安置中的居住困难认定通常涉及对家庭住房状况的核查，以确定申请是否符合条件。需要明确哪些住房会被核查，包括当前居住的房屋、其他产权性质的房屋等。下一步需确认相关法律或政策规定这些核查范围。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"寻找核查住房范围的具体法律法规或政策依据\",\n      \"content\": \"<search>动迁安置居住困难认定住房核查范围</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"根据相关法规探索核查范围\",\n      \"content\": \"<information>居住困难认定所核查的住房通常包括以下几类：（1）申请人及其家庭成员实际居住的房屋；（2）申请人及家庭成员名下的产权房；（3）申请人可能享有的公房使用权；（4）其他具有居住性质的房屋（如祖宅）。此外，有些地方性规定可能要求核查住房出租或其他隐匿产权的情况。</information>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"整合信息以确定具体核查范围\",\n      \"content\": \"根据搜集的信息，居住困难认定中核查的住房包含家庭所有权房屋、实际使用或居住的房屋、公房使用权以及其他可能具有住房性质的场所。这些规定旨在全面评估申请人的住房状况，避免信息遗漏或隐瞒。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"动迁安置中申请居住困难认定所核查的住房范围包括：申请人及其家庭成员拥有产权的房屋、实际居住的房屋、享有使用权的公房，以及其他具有居住性质的住房或场所（如祖宅等）。核查范围可能根据地方性政策有所延伸，包括出租或隐匿产权房屋等情形。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"结论符合现行政策规定及具体核查的逻辑流程，包含常见核查的住房种类。因此结论合理且正确，终止分析。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"嗯，动迁安置里貌似需要申请居住困难认定，那到底他们会查什么住房呢？首先应该和家庭住房情况相关吧，比如申请人现在住的房子，还有没有其他房子在他或者家庭成员名下，也许也会查那些不太明显的住房情况，比如祖宅或者租出去的房子？我觉得需要更明确一下这方面的政策规定。\\n\\n首先还是要搜一下看看有没有相关的法规或者政策来确认一下核查范围的具体定义。<search>动迁安置居住困难认定住房核查范围</search>\\n\\n搜到了点有用的信息！<information>居住困难认定所核查的住房通常包括以下几类：（1）申请人及其家庭成员实际居住的房屋；（2）申请人及家庭成员名下的产权房；（3）申请人可能享有的公房使用权；（4）其他具有居住性质的房屋（如祖宅）。此外，有些地方性规定可能要求核查住房出租或其他隐匿产权的情况。</information> 嗯，这些信息给了不少提醒，他们的核查还是挺全面的。\\n\\n所以整理一下吧。对吧，根据这个说法，居住困难认定通常会核查以下几类住房。一是申请人和家庭成员实际住的房子，这肯定是重点。然后是他们名下的产权房——不管是不是住的，都得算上。还有公房使用权，这个应该也是常见需要核查的范围。最后是一些其他可能具有居住性质的情况，比如祖宅或者隐蔽的房产。原来还有可能涉及租赁或者其他收入方式关联的住房，这部分有点细节，根据地方政策可能不定。\\n\\n总结一下，核查范围还是挺多样的，就是为了避免遗漏或者故意隐瞒房产情况。核查得这么细致，应该也是为了保证居住困难认定更加公平和准确吧。嗯，看起来这些结论逻辑上也挺合理的，应该是符合政策的定义。好吧，基本差不多清楚了！\"\n}\n```",
+    "在动迁安置中，申请居住困难认定时，核查的住房范围通常包括以下几类：  \n\n1. **实际居住的房屋**：核查申请人及其家庭成员当前实际居住的房产情况。  \n2. **名下的产权房**：包括申请人及家庭成员名下登记的所有房产，无论是否是主要居住地。  \n3. **公房使用权**：核查申请人或家庭成员可能享有的公房使用权情况。  \n4. **其他具有居住性质的房屋**：如祖宅、农村宅基地上的房屋等，是否存在其他可供居住的住房资源。  \n5. **出租或隐匿的住房**：部分地方性规定可能要求核查申请人及家庭成员是否存在租赁收入的房产，或者未主动申报的隐匿性房产。  \n\n核查范围较为严格的主要目的是确保信息全面，避免住房情况遗漏或隐瞒，从而能够更准确地认定家庭是否符合居住困难的标准。具体细节还需根据当地的相关政策规定和实施办法来确认。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "理解动迁安置与居住困难认定关系",
+        "content": "动迁安置中的居住困难认定通常涉及对家庭住房状况的核查，以确定申请是否符合条件。需要明确哪些住房会被核查，包括当前居住的房屋、其他产权性质的房屋等。下一步需确认相关法律或政策规定这些核查范围。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "寻找核查住房范围的具体法律法规或政策依据",
+        "content": "<search>动迁安置居住困难认定住房核查范围</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "根据相关法规探索核查范围",
+        "content": "<information>居住困难认定所核查的住房通常包括以下几类：（1）申请人及其家庭成员实际居住的房屋；（2）申请人及家庭成员名下的产权房；（3）申请人可能享有的公房使用权；（4）其他具有居住性质的房屋（如祖宅）。此外，有些地方性规定可能要求核查住房出租或其他隐匿产权的情况。</information>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "整合信息以确定具体核查范围",
+        "content": "根据搜集的信息，居住困难认定中核查的住房包含家庭所有权房屋、实际使用或居住的房屋、公房使用权以及其他可能具有住房性质的场所。这些规定旨在全面评估申请人的住房状况，避免信息遗漏或隐瞒。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "动迁安置中申请居住困难认定所核查的住房范围包括：申请人及其家庭成员拥有产权的房屋、实际居住的房屋、享有使用权的公房，以及其他具有居住性质的住房或场所（如祖宅等）。核查范围可能根据地方性政策有所延伸，包括出租或隐匿产权房屋等情形。"
+      },
+      {
+        "action": "Verification",
+        "content": "结论符合现行政策规定及具体核查的逻辑流程，包含常见核查的住房种类。因此结论合理且正确，终止分析。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "嗯，动迁安置里貌似需要申请居住困难认定，那到底他们会查什么住房呢？首先应该和家庭住房情况相关吧，比如申请人现在住的房子，还有没有其他房子在他或者家庭成员名下，也许也会查那些不太明显的住房情况，比如祖宅或者租出去的房子？我觉得需要更明确一下这方面的政策规定。\n\n首先还是要搜一下看看有没有相关的法规或者政策来确认一下核查范围的具体定义。<search>动迁安置居住困难认定住房核查范围</search>\n\n搜到了点有用的信息！<information>居住困难认定所核查的住房通常包括以下几类：（1）申请人及其家庭成员实际居住的房屋；（2）申请人及家庭成员名下的产权房；（3）申请人可能享有的公房使用权；（4）其他具有居住性质的房屋（如祖宅）。此外，有些地方性规定可能要求核查住房出租或其他隐匿产权的情况。</information> 嗯，这些信息给了不少提醒，他们的核查还是挺全面的。\n\n所以整理一下吧。对吧，根据这个说法，居住困难认定通常会核查以下几类住房。一是申请人和家庭成员实际住的房子，这肯定是重点。然后是他们名下的产权房——不管是不是住的，都得算上。还有公房使用权，这个应该也是常见需要核查的范围。最后是一些其他可能具有居住性质的情况，比如祖宅或者隐蔽的房产。原来还有可能涉及租赁或者其他收入方式关联的住房，这部分有点细节，根据地方政策可能不定。\n\n总结一下，核查范围还是挺多样的，就是为了避免遗漏或者故意隐瞒房产情况。核查得这么细致，应该也是为了保证居住困难认定更加公平和准确吧。嗯，看起来这些结论逻辑上也挺合理的，应该是符合政策的定义。好吧，基本差不多清楚了！",
+  "Response": "在动迁安置中，申请居住困难认定时，核查的住房范围通常包括以下几类：  \n\n1. **实际居住的房屋**：核查申请人及其家庭成员当前实际居住的房产情况。  \n2. **名下的产权房**：包括申请人及家庭成员名下登记的所有房产，无论是否是主要居住地。  \n3. **公房使用权**：核查申请人或家庭成员可能享有的公房使用权情况。  \n4. **其他具有居住性质的房屋**：如祖宅、农村宅基地上的房屋等，是否存在其他可供居住的住房资源。  \n5. **出租或隐匿的住房**：部分地方性规定可能要求核查申请人及家庭成员是否存在租赁收入的房产，或者未主动申报的隐匿性房产。  \n\n核查范围较为严格的主要目的是确保信息全面，避免住房情况遗漏或隐瞒，从而能够更准确地认定家庭是否符合居住困难的标准。具体细节还需根据当地的相关政策规定和实施办法来确认。",
+  "Question": "动迁安置，申请居住困难认定所核查的住房包含哪些？"
+}

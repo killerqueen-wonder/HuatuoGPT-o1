@@ -1,0 +1,79 @@
+{
+  "Open-ended Verifiable Question": "破产是否就是清算，有什么区别",
+  "Ground-True Answer": "破产不是清算。清算，是终结现存的法律关系，处理其剩余财产，使之归于消灭的程序。清算是一种法律程序，社团注销时，必须进行财产清算。未经清算就自行终止的行为是没有法律效力的，不受法律保护。而破产是指当债务人的全部资产无法清偿到期债务时，债权人通过一定法律程序将债务人的全部资产供其平均受偿，从而使债务人免除不能清偿的其他债务。破产多数情况下都指一种公司行为和经济行为。但人们有时也习惯把个人或者公司停止继续经营亦叫做破产。清算本身包涵了两个分类：解散清算与破产清算。解散清算，是公司因相应原因(公司法181条规定)导致解散，按照公司法的程序进行清算的过程。破产清算，是公司被宣告破产时，依照破产法的相关程序进行清算的过程。它们二者的区别具体如下：1、导致清算的原因不同。公司解散清算的原因包括：营业期限届满、公司章程规定的解散事由出现、股东会决议解散、被吊销执照或责令关闭等等;破产清算的原因是因公司资不抵债，不能清偿到期债务，且资产不足以清偿全部债务或明显缺乏清偿能力。2、清算程序不同。解散清算按《公司法》规定程序进行，具有很大任意性，可以公司自行清算，也可以在公司无法自行清算时由债权人或股东向法院提请强制清算;破产清算要严格依照《企业破产法》的程序进行，具有很强的强制性。3、清算组成员组成不同。解散清算可以由公司股东为清算人，在需要法院强制清算时才由法院依法指定清算组成员;破产清算只能由法院依照《企业破产法》规定，从法定人员范围中以法定程序和方法选任。4、债权人的作用迥异。在公司解散清算中，债权人的地位被动，清算程序由清算组掌握;在破产清算中，债权人组成债权人会议，参与破产清算程序，决定公司清算中的有关重大事项，决定破产财产的分配处理方案等。解散清算与破产清算虽有这样那样的区别，但在一定条件下，二者可以进行转化，但转化方向单一：《公司法》188条及相关司法解释规定，在解散清算过程中，清算组发现公司资产不足以清偿债务，且无法通过协商机制解决的，应将清算程序转为破产清算。所以，针对破产是否就是清算这个问题，我们可以总结一下：那就是清算和破产是两个不同的法律概念，不可以将二者混淆，破产程序里有破产清算这个环节，而清算本身有破产清算和非破产清算的分类。",
+  "process_id": 2105,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "明确破产和清算的基础概念",
+      "content": "破产是一种法律状态，意味着一个企业或个人由于无力偿还到期债务而进入特定的法律程序。清算通常是一种具体的法律程序，用于分配破产实体的资产以偿还债务。需要进一步确认这两个术语在法律中的定义，以确保准确区分。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "查找破产的法律定义",
+      "content": "为了确保对破产有准确的定义，需要搜索相关法律法规对破产的解释。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "查找清算的法律定义",
+      "content": "为了清晰区分两者，需要搜索关于清算的法律法规规定。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "破产和清算有明显区别。破产是一个法律状态，表明债务人处于无法偿还债务的状态，通常是破产程序的启动依据。而清算是处理债务人财产的过程，可以是破产清算，也可以是非破产清算（如公司自愿解散清算）。破产清算是特定条件下的清算手段，但清算未必都是在破产状态下进行。"
+    },
+    {
+      "action": "Verification",
+      "content": "验证结论无误。破产是法律状态，清算是实施财产分配的过程，两者概念不同且有交集。验证通过，无需进一步修正。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n破产是否就是清算，有什么区别\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n破产和清算有明显区别。破产是一个法律状态，表明债务人处于无法偿还债务的状态，通常是破产程序的启动依据。而清算是处理债务人财产的过程，可以是破产清算，也可以是非破产清算（如公司自愿解散清算）。破产清算是特定条件下的清算手段，但清算未必都是在破产状态下进行。  \n</Model Response>  \n\n<Reference Answer>  \n破产不是清算。清算，是终结现存的法律关系，处理其剩余财产，使之归于消灭的程序。清算是一种法律程序，社团注销时，必须进行财产清算。未经清算就自行终止的行为是没有法律效力的，不受法律保护。而破产是指当债务人的全部资产无法清偿到期债务时，债权人通过一定法律程序将债务人的全部资产供其平均受偿，从而使债务人免除不能清偿的其他债务。破产多数情况下都指一种公司行为和经济行为。但人们有时也习惯把个人或者公司停止继续经营亦叫做破产。清算本身包涵了两个分类：解散清算与破产清算。解散清算，是公司因相应原因(公司法181条规定)导致解散，按照公司法的程序进行清算的过程。破产清算，是公司被宣告破产时，依照破产法的相关程序进行清算的过程。它们二者的区别具体如下：1、导致清算的原因不同。公司解散清算的原因包括：营业期限届满、公司章程规定的解散事由出现、股东会决议解散、被吊销执照或责令关闭等等;破产清算的原因是因公司资不抵债，不能清偿到期债务，且资产不足以清偿全部债务或明显缺乏清偿能力。2、清算程序不同。解散清算按《公司法》规定程序进行，具有很大任意性，可以公司自行清算，也可以在公司无法自行清算时由债权人或股东向法院提请强制清算;破产清算要严格依照《企业破产法》的程序进行，具有很强的强制性。3、清算组成员组成不同。解散清算可以由公司股东为清算人，在需要法院强制清算时才由法院依法指定清算组成员;破产清算只能由法院依照《企业破产法》规定，从法定人员范围中以法定程序和方法选任。4、债权人的作用迥异。在公司解散清算中，债权人的地位被动，清算程序由清算组掌握;在破产清算中，债权人组成债权人会议，参与破产清算程序，决定公司清算中的有关重大事项，决定破产财产的分配处理方案等。解散清算与破产清算虽有这样那样的区别，但在一定条件下，二者可以进行转化，但转化方向单一：《公司法》188条及相关司法解释规定，在解散清算过程中，清算组发现公司资产不足以清偿债务，且无法通过协商机制解决的，应将清算程序转为破产清算。所以，针对破产是否就是清算这个问题，我们可以总结一下：那就是清算和破产是两个不同的法律概念，不可以将二者混淆，破产程序里有破产清算这个环节，而清算本身有破产清算和非破产清算的分类。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 明确破产和清算的基础概念\n破产是一种法律状态，意味着一个企业或个人由于无力偿还到期债务而进入特定的法律程序。清算通常是一种具体的法律程序，用于分配破产实体的资产以偿还债务。需要进一步确认这两个术语在法律中的定义，以确保准确区分。\n\n### 查找破产的法律定义\n为了确保对破产有准确的定义，需要搜索相关法律法规对破产的解释。\n\n### 查找清算的法律定义\n为了清晰区分两者，需要搜索关于清算的法律法规规定。\n\n### Conclusion\n破产和清算有明显区别。破产是一个法律状态，表明债务人处于无法偿还债务的状态，通常是破产程序的启动依据。而清算是处理债务人财产的过程，可以是破产清算，也可以是非破产清算（如公司自愿解散清算）。破产清算是特定条件下的清算手段，但清算未必都是在破产状态下进行。\n\n### Verification\n验证结论无误。破产是法律状态，清算是实施财产分配的过程，两者概念不同且有交集。验证通过，无需进一步修正。\n</Thought Process>\n\n<Question>\n破产是否就是清算，有什么区别\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n嗯，先来搞清楚破产和清算到底是什么吧。这两个词听起来有点相似，但感觉应该不是一回事。破产可能更像某种状态，而清算听着就像是一个具体的处理过程。不如先去找一下法律定义，搞清楚它们分别什么意思。\n\n<search>破产的法律定义</search>\n<information>破产指债务人因为无法偿还到期债务而进入的一种法律状态，这一般会触发一系列法律程序，比如债权人申请破产或债务人主动申请破产保护。</information>\n\n哦，原来破产是法律定义的一个状态，是因为还不起债务。它本身并不是处理的过程，而是一种触发点，债务人或相关方需要正式启动某些程序。\n\n那清算呢？听着好像是处理财产的过程。要不也查一下清算的法律定义吧。\n\n<search>清算的法律定义</search>\n<information>清算是指一个企业或实体停止经营，并对其资产进行货币化后分配给债权人或股东的过程。清算可以发生在破产情况下，也可以是公司正常解散时的一种步骤。</information>\n\n哦，果然清算更偏向具体的操作过程。法律上看，清算可以是一种为了偿还债务处理资产的过程。它可以发生在破产时，例如破产清算，但也可以是其他场景，比如公司自愿解散。\n\n如果这样的话，破产不是清算，清算也不是破产，它们是两回事。不过这两者确实可能会有交集。比如破产后有时会走破产清算程序，这种清算就是发生在破产状态下。但清算未必一定都和破产挂钩，比如公司正常解散时也要清算。\n\n所以结论是，破产是法律状态，表明债务人没办法还钱；清算则是一个处理财产的过程，可以发生在破产里的破产清算，也可以在非破产情况运行。嗯，这个逻辑看起来没问题，如果这没啥漏洞的话就可以确认了。\n</Internal Thinking>\n\n<Question>\n破产是否就是清算，有什么区别\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"明确破产和清算的基础概念\",\n      \"content\": \"破产是一种法律状态，意味着一个企业或个人由于无力偿还到期债务而进入特定的法律程序。清算通常是一种具体的法律程序，用于分配破产实体的资产以偿还债务。需要进一步确认这两个术语在法律中的定义，以确保准确区分。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"查找破产的法律定义\",\n      \"content\": \"为了确保对破产有准确的定义，需要搜索相关法律法规对破产的解释。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"查找清算的法律定义\",\n      \"content\": \"为了清晰区分两者，需要搜索关于清算的法律法规规定。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"破产和清算有明显区别。破产是一个法律状态，表明债务人处于无法偿还债务的状态，通常是破产程序的启动依据。而清算是处理债务人财产的过程，可以是破产清算，也可以是非破产清算（如公司自愿解散清算）。破产清算是特定条件下的清算手段，但清算未必都是在破产状态下进行。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"验证结论无误。破产是法律状态，清算是实施财产分配的过程，两者概念不同且有交集。验证通过，无需进一步修正。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"嗯，先来搞清楚破产和清算到底是什么吧。这两个词听起来有点相似，但感觉应该不是一回事。破产可能更像某种状态，而清算听着就像是一个具体的处理过程。不如先去找一下法律定义，搞清楚它们分别什么意思。\\n\\n<search>破产的法律定义</search>\\n<information>破产指债务人因为无法偿还到期债务而进入的一种法律状态，这一般会触发一系列法律程序，比如债权人申请破产或债务人主动申请破产保护。</information>\\n\\n哦，原来破产是法律定义的一个状态，是因为还不起债务。它本身并不是处理的过程，而是一种触发点，债务人或相关方需要正式启动某些程序。\\n\\n那清算呢？听着好像是处理财产的过程。要不也查一下清算的法律定义吧。\\n\\n<search>清算的法律定义</search>\\n<information>清算是指一个企业或实体停止经营，并对其资产进行货币化后分配给债权人或股东的过程。清算可以发生在破产情况下，也可以是公司正常解散时的一种步骤。</information>\\n\\n哦，果然清算更偏向具体的操作过程。法律上看，清算可以是一种为了偿还债务处理资产的过程。它可以发生在破产时，例如破产清算，但也可以是其他场景，比如公司自愿解散。\\n\\n如果这样的话，破产不是清算，清算也不是破产，它们是两回事。不过这两者确实可能会有交集。比如破产后有时会走破产清算程序，这种清算就是发生在破产状态下。但清算未必一定都和破产挂钩，比如公司正常解散时也要清算。\\n\\n所以结论是，破产是法律状态，表明债务人没办法还钱；清算则是一个处理财产的过程，可以发生在破产里的破产清算，也可以在非破产情况运行。嗯，这个逻辑看起来没问题，如果这没啥漏洞的话就可以确认了。\"\n}\n```",
+    "破产并不等同于清算，两者在法律上有明确的定义和区别。\n\n**1. 破产的含义**  \n破产是一种法律状态，表明债务人由于资产不足以偿还到期债务，无法继续履行其债务义务。破产的发生通常需要经过法律程序确认，例如债务人主动申请破产保护或债权人向法院提出破产申请。一旦进入破产状态，通常会引发一系列后续处理措施，但破产本身是一种状态，而非处理过程。\n\n**2. 清算的含义**  \n清算则是一个具体的法律操作过程，指在企业或实体停止经营的情况下，对其资产进行整理、评估、变现并分配给利益相关方（如债权人或股东）的过程。清算可以发生在破产的背景下（称为破产清算），也可以独立于破产，例如公司主动解散时的清算。\n\n**3. 两者的关系**  \n破产和清算尽管在某些场景中相关，但本质上是不同的：  \n- **破产是状态，清算是过程**：破产表明债务陷入困境，是触发后续处理步骤的条件；清算是具体的步骤，用于处理资产并结清债权债务关系。  \n- **破产不一定走向清算**：破产后不一定直接进入清算程序，例如企业可能通过重组或和解的方式改善财务状况，重新复苏。  \n- **清算不一定基于破产**：比如某些企业即使没有债务问题，也可能因股东决议进行自愿清算。  \n\n**总结**  \n破产是一种法律状态，是债务无法偿还的表现；清算是一项处理资产的法律程序。两者有可能在破产清算的场景下发生交集，但破产并不等于清算，也无法相互替代。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "明确破产和清算的基础概念",
+        "content": "破产是一种法律状态，意味着一个企业或个人由于无力偿还到期债务而进入特定的法律程序。清算通常是一种具体的法律程序，用于分配破产实体的资产以偿还债务。需要进一步确认这两个术语在法律中的定义，以确保准确区分。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "查找破产的法律定义",
+        "content": "为了确保对破产有准确的定义，需要搜索相关法律法规对破产的解释。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "查找清算的法律定义",
+        "content": "为了清晰区分两者，需要搜索关于清算的法律法规规定。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "破产和清算有明显区别。破产是一个法律状态，表明债务人处于无法偿还债务的状态，通常是破产程序的启动依据。而清算是处理债务人财产的过程，可以是破产清算，也可以是非破产清算（如公司自愿解散清算）。破产清算是特定条件下的清算手段，但清算未必都是在破产状态下进行。"
+      },
+      {
+        "action": "Verification",
+        "content": "验证结论无误。破产是法律状态，清算是实施财产分配的过程，两者概念不同且有交集。验证通过，无需进一步修正。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "嗯，先来搞清楚破产和清算到底是什么吧。这两个词听起来有点相似，但感觉应该不是一回事。破产可能更像某种状态，而清算听着就像是一个具体的处理过程。不如先去找一下法律定义，搞清楚它们分别什么意思。\n\n<search>破产的法律定义</search>\n<information>破产指债务人因为无法偿还到期债务而进入的一种法律状态，这一般会触发一系列法律程序，比如债权人申请破产或债务人主动申请破产保护。</information>\n\n哦，原来破产是法律定义的一个状态，是因为还不起债务。它本身并不是处理的过程，而是一种触发点，债务人或相关方需要正式启动某些程序。\n\n那清算呢？听着好像是处理财产的过程。要不也查一下清算的法律定义吧。\n\n<search>清算的法律定义</search>\n<information>清算是指一个企业或实体停止经营，并对其资产进行货币化后分配给债权人或股东的过程。清算可以发生在破产情况下，也可以是公司正常解散时的一种步骤。</information>\n\n哦，果然清算更偏向具体的操作过程。法律上看，清算可以是一种为了偿还债务处理资产的过程。它可以发生在破产时，例如破产清算，但也可以是其他场景，比如公司自愿解散。\n\n如果这样的话，破产不是清算，清算也不是破产，它们是两回事。不过这两者确实可能会有交集。比如破产后有时会走破产清算程序，这种清算就是发生在破产状态下。但清算未必一定都和破产挂钩，比如公司正常解散时也要清算。\n\n所以结论是，破产是法律状态，表明债务人没办法还钱；清算则是一个处理财产的过程，可以发生在破产里的破产清算，也可以在非破产情况运行。嗯，这个逻辑看起来没问题，如果这没啥漏洞的话就可以确认了。",
+  "Response": "破产并不等同于清算，两者在法律上有明确的定义和区别。\n\n**1. 破产的含义**  \n破产是一种法律状态，表明债务人由于资产不足以偿还到期债务，无法继续履行其债务义务。破产的发生通常需要经过法律程序确认，例如债务人主动申请破产保护或债权人向法院提出破产申请。一旦进入破产状态，通常会引发一系列后续处理措施，但破产本身是一种状态，而非处理过程。\n\n**2. 清算的含义**  \n清算则是一个具体的法律操作过程，指在企业或实体停止经营的情况下，对其资产进行整理、评估、变现并分配给利益相关方（如债权人或股东）的过程。清算可以发生在破产的背景下（称为破产清算），也可以独立于破产，例如公司主动解散时的清算。\n\n**3. 两者的关系**  \n破产和清算尽管在某些场景中相关，但本质上是不同的：  \n- **破产是状态，清算是过程**：破产表明债务陷入困境，是触发后续处理步骤的条件；清算是具体的步骤，用于处理资产并结清债权债务关系。  \n- **破产不一定走向清算**：破产后不一定直接进入清算程序，例如企业可能通过重组或和解的方式改善财务状况，重新复苏。  \n- **清算不一定基于破产**：比如某些企业即使没有债务问题，也可能因股东决议进行自愿清算。  \n\n**总结**  \n破产是一种法律状态，是债务无法偿还的表现；清算是一项处理资产的法律程序。两者有可能在破产清算的场景下发生交集，但破产并不等于清算，也无法相互替代。",
+  "Question": "破产是否就是清算，有什么区别"
+}

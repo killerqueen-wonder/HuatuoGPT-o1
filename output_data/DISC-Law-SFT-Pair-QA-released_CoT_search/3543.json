@@ -1,0 +1,115 @@
+{
+  "Open-ended Verifiable Question": "婚前买房婚后办产权证房屋是否是夫妻共同财产？",
+  "Ground-True Answer": "1、如果购房时无贷款，不影响一方婚前财产的认定，婚后房屋也不会随着时间的推移而转为夫妻共同财产。\n2、如果购房时有贷款，婚后共同偿还，产权则为按份共有，婚前一方出资部分为婚前财产，婚后共同还贷部分为夫妻共同财产。\n注意：保留好《房屋买卖合同》、《抵押贷款合同》、付款凭证、银行存取款单据。\n三、父母出资为子女购房，特别是一方出资，另一方未出资的情况\n分为如下两种情况：\n1、赠与关系，如没有凭据证明父母的出资性质即视为赠与。\n2、借贷关系，子女向父母借钱并打借条，婚后视为夫妻共同债务。\n注意：为防止将来发生争议，父母出资也应与子女签订签订借款协议，最好办理公证。\n恋人婚前购房最好采用“联名”方式，也就是把两个人的名字都写到房产证或购房合同上。“联名购房”的程序并不复杂，在购房合同买受人一栏中同时填入两个人的名字和身份证号码，等到办理房产证的时候，男女双方都向房管部门交纳相关的证件 ",
+  "process_id": 3543,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "婚前购房行为的财产权分析",
+      "content": "根据中国婚姻法及相关司法解释，婚前购买的房产通常因为购房时间点早于婚姻关系的成立时间，所以一般被认定为购房人的个人财产。需进一步明确婚前行为是否以实际支付款项或签订购房合同为认定依据。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "办理产权证时间点的影响",
+      "content": "产权证办理通常是房产登记的重要凭证，但根据司法实践，产权证的办理时间点并不是决定房产性质（个人财产或共同财产）的主要依据。需要查明是否有明确的法律依据对此另有规定。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "法律对婚前财产的保护",
+      "content": "中国《婚姻法》及其解释（如《婚姻法解释（一）》）规定：婚前一方所有的财产，为夫妻一方的个人财产。这说明即便产权证婚后办理，若房产的出资或购房协议均发生在婚前，原则上为个人财产。为了确保适用无误，需查阅具体的司法规定。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "检索婚前购房婚后办产权证的法律效应",
+      "content": "需进一步查找《中华人民共和国婚姻法》及相关司法解释中关于婚前购房且婚后办证的具体条款内容。"
+    },
+    {
+      "action": "Inner Thinking",
+      "content": "<search>婚前购房婚后产权证夫妻财产性质</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "content": "<information>根据《婚姻法解释（三）》和相关案例，婚前以个人财产支付购房款的情况，房产除非婚后有明确约定为夫妻共同财产，通常归属于婚前付款方的个人财产，即使产权证婚后办理也不会影响这一认定。</information>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "婚姻法解释结果的应用",
+      "content": "从检索到的信息看，婚前支付款项，产权证婚后办理的房产，性质依然取决于原始出资时间点及属性。而婚后是否特意将房产转化为夫妻共同财产，是影响产权归属的关键例外情形之一。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "婚前购买房产即婚前支付款项，即便产权证婚后办理，该房产一般仍然认定为购房人的个人财产，除非婚后夫妻双方明确约定将其转化为夫妻共同财产。"
+    },
+    {
+      "action": "Verification",
+      "content": "结论与法律规定及司法解释相符，即产权性质追溯于资金来源和时间点，因此结论正确。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n婚前买房婚后办产权证房屋是否是夫妻共同财产？\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n婚前购买房产即婚前支付款项，即便产权证婚后办理，该房产一般仍然认定为购房人的个人财产，除非婚后夫妻双方明确约定将其转化为夫妻共同财产。  \n</Model Response>  \n\n<Reference Answer>  \n1、如果购房时无贷款，不影响一方婚前财产的认定，婚后房屋也不会随着时间的推移而转为夫妻共同财产。\n2、如果购房时有贷款，婚后共同偿还，产权则为按份共有，婚前一方出资部分为婚前财产，婚后共同还贷部分为夫妻共同财产。\n注意：保留好《房屋买卖合同》、《抵押贷款合同》、付款凭证、银行存取款单据。\n三、父母出资为子女购房，特别是一方出资，另一方未出资的情况\n分为如下两种情况：\n1、赠与关系，如没有凭据证明父母的出资性质即视为赠与。\n2、借贷关系，子女向父母借钱并打借条，婚后视为夫妻共同债务。\n注意：为防止将来发生争议，父母出资也应与子女签订签订借款协议，最好办理公证。\n恋人婚前购房最好采用“联名”方式，也就是把两个人的名字都写到房产证或购房合同上。“联名购房”的程序并不复杂，在购房合同买受人一栏中同时填入两个人的名字和身份证号码，等到办理房产证的时候，男女双方都向房管部门交纳相关的证件 \n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 婚前购房行为的财产权分析\n根据中国婚姻法及相关司法解释，婚前购买的房产通常因为购房时间点早于婚姻关系的成立时间，所以一般被认定为购房人的个人财产。需进一步明确婚前行为是否以实际支付款项或签订购房合同为认定依据。\n\n### 办理产权证时间点的影响\n产权证办理通常是房产登记的重要凭证，但根据司法实践，产权证的办理时间点并不是决定房产性质（个人财产或共同财产）的主要依据。需要查明是否有明确的法律依据对此另有规定。\n\n### 法律对婚前财产的保护\n中国《婚姻法》及其解释（如《婚姻法解释（一）》）规定：婚前一方所有的财产，为夫妻一方的个人财产。这说明即便产权证婚后办理，若房产的出资或购房协议均发生在婚前，原则上为个人财产。为了确保适用无误，需查阅具体的司法规定。\n\n### 检索婚前购房婚后办产权证的法律效应\n需进一步查找《中华人民共和国婚姻法》及相关司法解释中关于婚前购房且婚后办证的具体条款内容。\n\n### Inner Thinking\n<search>婚前购房婚后产权证夫妻财产性质</search>\n\n### Inner Thinking\n<information>根据《婚姻法解释（三）》和相关案例，婚前以个人财产支付购房款的情况，房产除非婚后有明确约定为夫妻共同财产，通常归属于婚前付款方的个人财产，即使产权证婚后办理也不会影响这一认定。</information>\n\n### 婚姻法解释结果的应用\n从检索到的信息看，婚前支付款项，产权证婚后办理的房产，性质依然取决于原始出资时间点及属性。而婚后是否特意将房产转化为夫妻共同财产，是影响产权归属的关键例外情形之一。\n\n### Conclusion\n婚前购买房产即婚前支付款项，即便产权证婚后办理，该房产一般仍然认定为购房人的个人财产，除非婚后夫妻双方明确约定将其转化为夫妻共同财产。\n\n### Verification\n结论与法律规定及司法解释相符，即产权性质追溯于资金来源和时间点，因此结论正确。\n</Thought Process>\n\n<Question>\n婚前买房婚后办产权证房屋是否是夫妻共同财产？\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n婚前买房但婚后办产权证，这个问题听起来有点复杂。首先，应该先弄清楚一个基本原则，就是中国婚姻法对婚前财产的规定。根据婚姻法，一方婚前所有的财产，原则上属于个人财产。那问题就来了，是不是说只要是在婚前买的房子，无论产权证什么时候办理，都一定是个人财产？\n\n先别急，我觉得还是要分析一下具体情况。房子的性质，可能主要看购房的关键时间节点，比如购房时候的付款时间是在婚前还是婚后。签订购房合同的时候又是在婚前还是婚后？这些时间点可能会决定它的归属。但产权证呢？我记得产权证虽然是房子的官方登记凭证，但是很多案例中，好像并没有因为产权证是在婚后办的就影响它的本质归属。\n\n嗯，这时候我想到一个问题，法律里面到底有没有对“婚前买房婚后办证”这件事情特别规定呢？因为如果有明确的条款，那可能一切都清楚了。<search>婚前购房婚后产权证夫妻财产性质</search>\n\n哦，找到了！根据《婚姻法解释（三）》和一些案例里面分析的情况来看，如果婚前是以个人资金支付购房款，房产就算产权证婚后才办，一般仍然会被认定为支付方的个人财产。除非婚后夫妻双方明确约定，或者通过其他行为明确表示，要把这个房子转成夫妻共同财产。\n\n所以这样来看，事情其实没有想象的那么复杂了。不管产权证婚后办没办，关键还是看房子的钱是哪一方在婚前出的。如果是婚前用个人的钱付的，那房子就是个人的，跟产权证什么时候出来关系不大。要是婚后才约定转为共同财产，那就另说了。\n\n想到这里，我觉得更有把握了。结论就是，婚前买房婚后办产权证，房子还是属于婚前支付方的个人财产，除非有明确的婚后共同财产约定。这个结论能对得上婚姻法里的规定，也能解释很多司法案例中的做法。嗯，应该没错了。\n</Internal Thinking>\n\n<Question>\n婚前买房婚后办产权证房屋是否是夫妻共同财产？\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"婚前购房行为的财产权分析\",\n      \"content\": \"根据中国婚姻法及相关司法解释，婚前购买的房产通常因为购房时间点早于婚姻关系的成立时间，所以一般被认定为购房人的个人财产。需进一步明确婚前行为是否以实际支付款项或签订购房合同为认定依据。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"办理产权证时间点的影响\",\n      \"content\": \"产权证办理通常是房产登记的重要凭证，但根据司法实践，产权证的办理时间点并不是决定房产性质（个人财产或共同财产）的主要依据。需要查明是否有明确的法律依据对此另有规定。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"法律对婚前财产的保护\",\n      \"content\": \"中国《婚姻法》及其解释（如《婚姻法解释（一）》）规定：婚前一方所有的财产，为夫妻一方的个人财产。这说明即便产权证婚后办理，若房产的出资或购房协议均发生在婚前，原则上为个人财产。为了确保适用无误，需查阅具体的司法规定。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"检索婚前购房婚后办产权证的法律效应\",\n      \"content\": \"需进一步查找《中华人民共和国婚姻法》及相关司法解释中关于婚前购房且婚后办证的具体条款内容。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"content\": \"<search>婚前购房婚后产权证夫妻财产性质</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"content\": \"<information>根据《婚姻法解释（三）》和相关案例，婚前以个人财产支付购房款的情况，房产除非婚后有明确约定为夫妻共同财产，通常归属于婚前付款方的个人财产，即使产权证婚后办理也不会影响这一认定。</information>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"婚姻法解释结果的应用\",\n      \"content\": \"从检索到的信息看，婚前支付款项，产权证婚后办理的房产，性质依然取决于原始出资时间点及属性。而婚后是否特意将房产转化为夫妻共同财产，是影响产权归属的关键例外情形之一。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"婚前购买房产即婚前支付款项，即便产权证婚后办理，该房产一般仍然认定为购房人的个人财产，除非婚后夫妻双方明确约定将其转化为夫妻共同财产。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"结论与法律规定及司法解释相符，即产权性质追溯于资金来源和时间点，因此结论正确。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"婚前买房但婚后办产权证，这个问题听起来有点复杂。首先，应该先弄清楚一个基本原则，就是中国婚姻法对婚前财产的规定。根据婚姻法，一方婚前所有的财产，原则上属于个人财产。那问题就来了，是不是说只要是在婚前买的房子，无论产权证什么时候办理，都一定是个人财产？\\n\\n先别急，我觉得还是要分析一下具体情况。房子的性质，可能主要看购房的关键时间节点，比如购房时候的付款时间是在婚前还是婚后。签订购房合同的时候又是在婚前还是婚后？这些时间点可能会决定它的归属。但产权证呢？我记得产权证虽然是房子的官方登记凭证，但是很多案例中，好像并没有因为产权证是在婚后办的就影响它的本质归属。\\n\\n嗯，这时候我想到一个问题，法律里面到底有没有对“婚前买房婚后办证”这件事情特别规定呢？因为如果有明确的条款，那可能一切都清楚了。<search>婚前购房婚后产权证夫妻财产性质</search>\\n\\n哦，找到了！根据《婚姻法解释（三）》和一些案例里面分析的情况来看，如果婚前是以个人资金支付购房款，房产就算产权证婚后才办，一般仍然会被认定为支付方的个人财产。除非婚后夫妻双方明确约定，或者通过其他行为明确表示，要把这个房子转成夫妻共同财产。\\n\\n所以这样来看，事情其实没有想象的那么复杂了。不管产权证婚后办没办，关键还是看房子的钱是哪一方在婚前出的。如果是婚前用个人的钱付的，那房子就是个人的，跟产权证什么时候出来关系不大。要是婚后才约定转为共同财产，那就另说了。\\n\\n想到这里，我觉得更有把握了。结论就是，婚前买房婚后办产权证，房子还是属于婚前支付方的个人财产，除非有明确的婚后共同财产约定。这个结论能对得上婚姻法里的规定，也能解释很多司法案例中的做法。嗯，应该没错了。\"\n}\n```",
+    "婚前买房但产权证在婚后办理，房屋是否属于夫妻共同财产，需要根据实际情况具体分析，但通常会按照以下原则来判断：\n\n根据《婚姻法》及相关司法解释（如《婚姻法解释（三）》）的规定， **房产的归属主要看购房资金的来源和购房行为的时间，而不是产权证的办理时间**。以下是关键的判断依据：\n\n1. **如果房屋的购房款完全由一方在婚前以个人财产支付**（包括全款购买或支付首付、办理贷款等），即使房产证是在婚后办理，该房屋原则上仍然属于支付方的个人财产。产权证的办理时间不会改变其财产性质。\n\n2. **如果购房款包含婚后夫妻共同财产的出资**（例如，婚后共同还贷），则可能涉及部分产权归属的调整。按法律规定，婚后共同还贷部分对应的房屋增值部分及还贷部分，属于夫妻双方的共同财产。通常，法院在分割财产时会酌情考虑这一部分。\n\n3. **婚后夫妻双方是否有明确约定**：如果在婚后双方通过书面协议或其他方式明确约定该房屋转为夫妻共同财产，则从约定生效时起，房屋的性质变为共同财产。\n\n### 具体结论\n通常情况下，婚前由个人出资购买的房产，无论产权证是在婚前还是婚后办理，都会认定为购买方的 **婚前个人财产**。但如果在婚后有共同还贷行为或明确约定，则需具体分析相关部分的财产归属及增值分配。\n\n因此，产权证何时办理仅是房产登记的时间节点， **不能决定房屋的归属**。判断标准的核心是购房款的出资时间及性质，以及双方是否有明确的约定。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "婚前购房行为的财产权分析",
+        "content": "根据中国婚姻法及相关司法解释，婚前购买的房产通常因为购房时间点早于婚姻关系的成立时间，所以一般被认定为购房人的个人财产。需进一步明确婚前行为是否以实际支付款项或签订购房合同为认定依据。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "办理产权证时间点的影响",
+        "content": "产权证办理通常是房产登记的重要凭证，但根据司法实践，产权证的办理时间点并不是决定房产性质（个人财产或共同财产）的主要依据。需要查明是否有明确的法律依据对此另有规定。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "法律对婚前财产的保护",
+        "content": "中国《婚姻法》及其解释（如《婚姻法解释（一）》）规定：婚前一方所有的财产，为夫妻一方的个人财产。这说明即便产权证婚后办理，若房产的出资或购房协议均发生在婚前，原则上为个人财产。为了确保适用无误，需查阅具体的司法规定。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "检索婚前购房婚后办产权证的法律效应",
+        "content": "需进一步查找《中华人民共和国婚姻法》及相关司法解释中关于婚前购房且婚后办证的具体条款内容。"
+      },
+      {
+        "action": "Inner Thinking",
+        "content": "<search>婚前购房婚后产权证夫妻财产性质</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "content": "<information>根据《婚姻法解释（三）》和相关案例，婚前以个人财产支付购房款的情况，房产除非婚后有明确约定为夫妻共同财产，通常归属于婚前付款方的个人财产，即使产权证婚后办理也不会影响这一认定。</information>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "婚姻法解释结果的应用",
+        "content": "从检索到的信息看，婚前支付款项，产权证婚后办理的房产，性质依然取决于原始出资时间点及属性。而婚后是否特意将房产转化为夫妻共同财产，是影响产权归属的关键例外情形之一。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "婚前购买房产即婚前支付款项，即便产权证婚后办理，该房产一般仍然认定为购房人的个人财产，除非婚后夫妻双方明确约定将其转化为夫妻共同财产。"
+      },
+      {
+        "action": "Verification",
+        "content": "结论与法律规定及司法解释相符，即产权性质追溯于资金来源和时间点，因此结论正确。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "婚前买房但婚后办产权证，这个问题听起来有点复杂。首先，应该先弄清楚一个基本原则，就是中国婚姻法对婚前财产的规定。根据婚姻法，一方婚前所有的财产，原则上属于个人财产。那问题就来了，是不是说只要是在婚前买的房子，无论产权证什么时候办理，都一定是个人财产？\n\n先别急，我觉得还是要分析一下具体情况。房子的性质，可能主要看购房的关键时间节点，比如购房时候的付款时间是在婚前还是婚后。签订购房合同的时候又是在婚前还是婚后？这些时间点可能会决定它的归属。但产权证呢？我记得产权证虽然是房子的官方登记凭证，但是很多案例中，好像并没有因为产权证是在婚后办的就影响它的本质归属。\n\n嗯，这时候我想到一个问题，法律里面到底有没有对“婚前买房婚后办证”这件事情特别规定呢？因为如果有明确的条款，那可能一切都清楚了。<search>婚前购房婚后产权证夫妻财产性质</search>\n\n哦，找到了！根据《婚姻法解释（三）》和一些案例里面分析的情况来看，如果婚前是以个人资金支付购房款，房产就算产权证婚后才办，一般仍然会被认定为支付方的个人财产。除非婚后夫妻双方明确约定，或者通过其他行为明确表示，要把这个房子转成夫妻共同财产。\n\n所以这样来看，事情其实没有想象的那么复杂了。不管产权证婚后办没办，关键还是看房子的钱是哪一方在婚前出的。如果是婚前用个人的钱付的，那房子就是个人的，跟产权证什么时候出来关系不大。要是婚后才约定转为共同财产，那就另说了。\n\n想到这里，我觉得更有把握了。结论就是，婚前买房婚后办产权证，房子还是属于婚前支付方的个人财产，除非有明确的婚后共同财产约定。这个结论能对得上婚姻法里的规定，也能解释很多司法案例中的做法。嗯，应该没错了。",
+  "Response": "婚前买房但产权证在婚后办理，房屋是否属于夫妻共同财产，需要根据实际情况具体分析，但通常会按照以下原则来判断：\n\n根据《婚姻法》及相关司法解释（如《婚姻法解释（三）》）的规定， **房产的归属主要看购房资金的来源和购房行为的时间，而不是产权证的办理时间**。以下是关键的判断依据：\n\n1. **如果房屋的购房款完全由一方在婚前以个人财产支付**（包括全款购买或支付首付、办理贷款等），即使房产证是在婚后办理，该房屋原则上仍然属于支付方的个人财产。产权证的办理时间不会改变其财产性质。\n\n2. **如果购房款包含婚后夫妻共同财产的出资**（例如，婚后共同还贷），则可能涉及部分产权归属的调整。按法律规定，婚后共同还贷部分对应的房屋增值部分及还贷部分，属于夫妻双方的共同财产。通常，法院在分割财产时会酌情考虑这一部分。\n\n3. **婚后夫妻双方是否有明确约定**：如果在婚后双方通过书面协议或其他方式明确约定该房屋转为夫妻共同财产，则从约定生效时起，房屋的性质变为共同财产。\n\n### 具体结论\n通常情况下，婚前由个人出资购买的房产，无论产权证是在婚前还是婚后办理，都会认定为购买方的 **婚前个人财产**。但如果在婚后有共同还贷行为或明确约定，则需具体分析相关部分的财产归属及增值分配。\n\n因此，产权证何时办理仅是房产登记的时间节点， **不能决定房屋的归属**。判断标准的核心是购房款的出资时间及性质，以及双方是否有明确的约定。",
+  "Question": "婚前买房婚后办产权证房屋是否是夫妻共同财产？"
+}

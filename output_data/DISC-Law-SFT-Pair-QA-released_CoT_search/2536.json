@@ -1,0 +1,91 @@
+{
+  "Open-ended Verifiable Question": "辩护人的权利有哪些?",
+  "Ground-True Answer": "辩护律师自人民检察院对案件审查起诉之日起，可以查阅、摘抄、复制本案的诉讼文书、技术性鉴定材料，可以同在押的犯罪嫌疑人会见和通信。其他辩护人经人民检察院许可，也可以查阅、摘抄、复制上述材料，同在押的犯罪嫌疑人会见和通信。辩护律师自人民法院受理案件之日起，可以查阅、摘抄、复制本案所指控的犯罪事实的材料，可以同在押的被告人会见和通信。其他辩护人经人民法院许可，也可以查阅、摘抄、复制上述材料，同在押的被告人会见和通信。",
+  "process_id": 2536,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "定义辩护人及其法律依据",
+      "content": "在讨论辩护人权利之前，需要明确辩护人的法律定义及其权利的来源。根据中国法律体系，辩护人通常包括律师、当事人的近亲属或监护人，但需要确认其权利主要依据《刑事诉讼法》。因此，需要查询具体法律条款以明确辩护人的权利范围。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "查询《刑事诉讼法》关于辩护人权利的规定",
+      "content": "辩护人的权利通常涵盖为刑事被告提供法律帮助、调取证据、参与庭审等内容。为准确说明这些权利，必须检索最新版本的《刑事诉讼法》中相关条款。",
+      "search": "<search>刑事诉讼法 辩护人权利</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "信息整理和归纳法律条款",
+      "content": "<information>《刑事诉讼法》第37条至第40条规定了辩护人的权利，包括：1. 接触并会见犯罪嫌疑人或被告人；2. 为被告辩护并提供法律帮助；3. 调取证据材料；4. 出席庭审并进行辩护；5. 提出上诉等。这些条款构成辩护人权利的主要法律依据。</information> 根据检索结果，可以总结辩护人主要具有参与诉讼、争取权利与获取证据的权利。</content>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "细化权利内容",
+      "content": "根据整理出的法律条款，可以归纳辩护人的权利为以下几点具体内容：1. 会见与通信权；2. 调查取证权；3. 提供法律意见权；4. 法庭辩论权；5. 维护犯罪嫌疑人合法权益权。这些权利在刑事诉讼的不同阶段被赋予不同的具体形式。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "根据中国《刑事诉讼法》的相关规定，辩护人的主要权利包括：一是会见和通信权，辩护人有权会见犯罪嫌疑人或被告人并交流案情；二是调查取证权，有权调取与案件相关的证据材料；三是提供法律帮助与意见权，为犯罪嫌疑人或被告人提出法律建议；四是法庭辩论权，在庭审过程中进行有效辩护；五是维护犯罪嫌疑人和被告人合法权益的权利，包括提出上诉或申诉。此外，辩护人的行动必须遵守法律规定，以确保诉讼程序的公平、公正。"
+    },
+    {
+      "action": "Verification",
+      "content": "上述结论与中国《刑事诉讼法》规定相吻合，准确全面地概括了辩护人的权利范围。因此，结论正确无误，无需进一步修正。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n辩护人的权利有哪些?\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n根据中国《刑事诉讼法》的相关规定，辩护人的主要权利包括：一是会见和通信权，辩护人有权会见犯罪嫌疑人或被告人并交流案情；二是调查取证权，有权调取与案件相关的证据材料；三是提供法律帮助与意见权，为犯罪嫌疑人或被告人提出法律建议；四是法庭辩论权，在庭审过程中进行有效辩护；五是维护犯罪嫌疑人和被告人合法权益的权利，包括提出上诉或申诉。此外，辩护人的行动必须遵守法律规定，以确保诉讼程序的公平、公正。  \n</Model Response>  \n\n<Reference Answer>  \n辩护律师自人民检察院对案件审查起诉之日起，可以查阅、摘抄、复制本案的诉讼文书、技术性鉴定材料，可以同在押的犯罪嫌疑人会见和通信。其他辩护人经人民检察院许可，也可以查阅、摘抄、复制上述材料，同在押的犯罪嫌疑人会见和通信。辩护律师自人民法院受理案件之日起，可以查阅、摘抄、复制本案所指控的犯罪事实的材料，可以同在押的被告人会见和通信。其他辩护人经人民法院许可，也可以查阅、摘抄、复制上述材料，同在押的被告人会见和通信。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 定义辩护人及其法律依据\n在讨论辩护人权利之前，需要明确辩护人的法律定义及其权利的来源。根据中国法律体系，辩护人通常包括律师、当事人的近亲属或监护人，但需要确认其权利主要依据《刑事诉讼法》。因此，需要查询具体法律条款以明确辩护人的权利范围。\n\n### 查询《刑事诉讼法》关于辩护人权利的规定\n辩护人的权利通常涵盖为刑事被告提供法律帮助、调取证据、参与庭审等内容。为准确说明这些权利，必须检索最新版本的《刑事诉讼法》中相关条款。\n\n### 信息整理和归纳法律条款\n<information>《刑事诉讼法》第37条至第40条规定了辩护人的权利，包括：1. 接触并会见犯罪嫌疑人或被告人；2. 为被告辩护并提供法律帮助；3. 调取证据材料；4. 出席庭审并进行辩护；5. 提出上诉等。这些条款构成辩护人权利的主要法律依据。</information> 根据检索结果，可以总结辩护人主要具有参与诉讼、争取权利与获取证据的权利。</content>\n\n### 细化权利内容\n根据整理出的法律条款，可以归纳辩护人的权利为以下几点具体内容：1. 会见与通信权；2. 调查取证权；3. 提供法律意见权；4. 法庭辩论权；5. 维护犯罪嫌疑人合法权益权。这些权利在刑事诉讼的不同阶段被赋予不同的具体形式。\n\n### Conclusion\n根据中国《刑事诉讼法》的相关规定，辩护人的主要权利包括：一是会见和通信权，辩护人有权会见犯罪嫌疑人或被告人并交流案情；二是调查取证权，有权调取与案件相关的证据材料；三是提供法律帮助与意见权，为犯罪嫌疑人或被告人提出法律建议；四是法庭辩论权，在庭审过程中进行有效辩护；五是维护犯罪嫌疑人和被告人合法权益的权利，包括提出上诉或申诉。此外，辩护人的行动必须遵守法律规定，以确保诉讼程序的公平、公正。\n\n### Verification\n上述结论与中国《刑事诉讼法》规定相吻合，准确全面地概括了辩护人的权利范围。因此，结论正确无误，无需进一步修正。\n</Thought Process>\n\n<Question>\n辩护人的权利有哪些?\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n我在思考辩护人的权利之前，首先得搞清楚辩护人到底指的是谁。在中国法律体系中，辩护人包括律师，也可能是犯罪嫌疑人或者被告人的近亲属、监护人。这些人的权利具体来源于哪儿？嗯，应该就是《刑事诉讼法》。我得去翻一下相关的法律条款，看看具体写了什么。<search>《刑事诉讼法》辩护人权利</search>\n\n嗯，我找到了相关内容。《刑事诉讼法》第37条到第40条专门讲了辩护人的权利，写得挺清楚的。<information>第37条主要讲辩护人有权会见和通信犯罪嫌疑人或者被告人；第38条提到辩护人可以为犯罪嫌疑人或者被告人争取合法权益；第39条强调辩护人有权调取证据材料；而第40条则进一步明确了辩护人在庭审环节的辩护权和上诉建议权。</information>这样看起来，辩护人在整个刑事诉讼过程中真的有挺多权利。\n\n整理一下吧，这些权利可以分为几个类型。首先是会见权，这就是辩护人可以和犯罪嫌疑人或者被告人进行接触并通信的权利。其次是调查取证权，包括调取证据材料或者提出相关申请。然后就是法庭辩论权，这个是法庭里进行辩护意见表达的权利。另外还有一个比较重要的维护嫌疑人合法权益的权利，像帮助提出上诉或者申诉等等。最后，是为犯罪嫌疑人或者被告人提供法律意见的权利，我觉得这其实贯穿了整个诉讼过程。\n\n哦，还得注意到，其实这些权利虽然法律有明确规定，但辩护人的行动一定是有限制的，不能违反诉讼程序的公正性和法律规定。这样梳理下来，辩护人在刑事诉讼里的角色基本都覆盖到了，从见面交流，到证据调取，再到法庭辩护和上诉建议，都在法律里有清楚的规定。\n\n总结来说，根据《刑事诉讼法》的相关规定，辩护人的权利主要包括五个方面。第一，会见和沟通权；第二，调取证据权；第三，提供法律帮助和建议权；第四，庭审辩论权；最后，维护嫌疑人合法权益的权利。这些权利在不同诉讼阶段形态是不一样的，但都围绕一个核心目标——确保被告人的合法权益。嗯，这样看起来，我的结论和法律规定是符合的，应该没有问题了。\n</Internal Thinking>\n\n<Question>\n辩护人的权利有哪些?\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"定义辩护人及其法律依据\",\n      \"content\": \"在讨论辩护人权利之前，需要明确辩护人的法律定义及其权利的来源。根据中国法律体系，辩护人通常包括律师、当事人的近亲属或监护人，但需要确认其权利主要依据《刑事诉讼法》。因此，需要查询具体法律条款以明确辩护人的权利范围。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"查询《刑事诉讼法》关于辩护人权利的规定\",\n      \"content\": \"辩护人的权利通常涵盖为刑事被告提供法律帮助、调取证据、参与庭审等内容。为准确说明这些权利，必须检索最新版本的《刑事诉讼法》中相关条款。\",\n      \"search\": \"<search>刑事诉讼法 辩护人权利</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"信息整理和归纳法律条款\",\n      \"content\": \"<information>《刑事诉讼法》第37条至第40条规定了辩护人的权利，包括：1. 接触并会见犯罪嫌疑人或被告人；2. 为被告辩护并提供法律帮助；3. 调取证据材料；4. 出席庭审并进行辩护；5. 提出上诉等。这些条款构成辩护人权利的主要法律依据。</information> 根据检索结果，可以总结辩护人主要具有参与诉讼、争取权利与获取证据的权利。</content>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"细化权利内容\",\n      \"content\": \"根据整理出的法律条款，可以归纳辩护人的权利为以下几点具体内容：1. 会见与通信权；2. 调查取证权；3. 提供法律意见权；4. 法庭辩论权；5. 维护犯罪嫌疑人合法权益权。这些权利在刑事诉讼的不同阶段被赋予不同的具体形式。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"根据中国《刑事诉讼法》的相关规定，辩护人的主要权利包括：一是会见和通信权，辩护人有权会见犯罪嫌疑人或被告人并交流案情；二是调查取证权，有权调取与案件相关的证据材料；三是提供法律帮助与意见权，为犯罪嫌疑人或被告人提出法律建议；四是法庭辩论权，在庭审过程中进行有效辩护；五是维护犯罪嫌疑人和被告人合法权益的权利，包括提出上诉或申诉。此外，辩护人的行动必须遵守法律规定，以确保诉讼程序的公平、公正。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"上述结论与中国《刑事诉讼法》规定相吻合，准确全面地概括了辩护人的权利范围。因此，结论正确无误，无需进一步修正。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"我在思考辩护人的权利之前，首先得搞清楚辩护人到底指的是谁。在中国法律体系中，辩护人包括律师，也可能是犯罪嫌疑人或者被告人的近亲属、监护人。这些人的权利具体来源于哪儿？嗯，应该就是《刑事诉讼法》。我得去翻一下相关的法律条款，看看具体写了什么。<search>《刑事诉讼法》辩护人权利</search>\\n\\n嗯，我找到了相关内容。《刑事诉讼法》第37条到第40条专门讲了辩护人的权利，写得挺清楚的。<information>第37条主要讲辩护人有权会见和通信犯罪嫌疑人或者被告人；第38条提到辩护人可以为犯罪嫌疑人或者被告人争取合法权益；第39条强调辩护人有权调取证据材料；而第40条则进一步明确了辩护人在庭审环节的辩护权和上诉建议权。</information>这样看起来，辩护人在整个刑事诉讼过程中真的有挺多权利。\\n\\n整理一下吧，这些权利可以分为几个类型。首先是会见权，这就是辩护人可以和犯罪嫌疑人或者被告人进行接触并通信的权利。其次是调查取证权，包括调取证据材料或者提出相关申请。然后就是法庭辩论权，这个是法庭里进行辩护意见表达的权利。另外还有一个比较重要的维护嫌疑人合法权益的权利，像帮助提出上诉或者申诉等等。最后，是为犯罪嫌疑人或者被告人提供法律意见的权利，我觉得这其实贯穿了整个诉讼过程。\\n\\n哦，还得注意到，其实这些权利虽然法律有明确规定，但辩护人的行动一定是有限制的，不能违反诉讼程序的公正性和法律规定。这样梳理下来，辩护人在刑事诉讼里的角色基本都覆盖到了，从见面交流，到证据调取，再到法庭辩护和上诉建议，都在法律里有清楚的规定。\\n\\n总结来说，根据《刑事诉讼法》的相关规定，辩护人的权利主要包括五个方面。第一，会见和沟通权；第二，调取证据权；第三，提供法律帮助和建议权；第四，庭审辩论权；最后，维护嫌疑人合法权益的权利。这些权利在不同诉讼阶段形态是不一样的，但都围绕一个核心目标——确保被告人的合法权益。嗯，这样看起来，我的结论和法律规定是符合的，应该没有问题了。\"\n}\n```",
+    "根据《中华人民共和国刑事诉讼法》的相关规定，辩护人的权利主要包括以下几个方面：\n\n1. **会见权和通信权**：辩护人有权与犯罪嫌疑人、被告人会见和通信，特别是在侦查和起诉阶段，与嫌疑人交流案情、提供法律帮助。\n\n2. **调查取证权**：辩护人有权向有关单位或个人收集案件相关证据，或者向人民检察院或人民法院申请调取证据，以支持嫌疑人或被告人的无罪或罪轻主张。\n\n3. **法律帮助与意见权**：辩护人在诉讼全程中为犯罪嫌疑人、被告人提供法律咨询和指导，并根据案件具体情节发表专业意见。\n\n4. **法庭辩论权**：在庭审过程中，辩护人有权为被告人进行辩护，提出证据分析与法律依据，维护被告人的合法权益。\n\n5. **维护合法权益权**：辩护人可以帮助犯罪嫌疑人、被告人提出申诉、上诉等，争取依法保护其合法权利。\n\n这些权利覆盖了刑事诉讼的各个阶段，旨在确保案件审判的公平公正，维护犯罪嫌疑人及被告人的合法权益。不过，这些权利的行使需要符合法律规定，不能妨碍司法公正。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "定义辩护人及其法律依据",
+        "content": "在讨论辩护人权利之前，需要明确辩护人的法律定义及其权利的来源。根据中国法律体系，辩护人通常包括律师、当事人的近亲属或监护人，但需要确认其权利主要依据《刑事诉讼法》。因此，需要查询具体法律条款以明确辩护人的权利范围。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "查询《刑事诉讼法》关于辩护人权利的规定",
+        "content": "辩护人的权利通常涵盖为刑事被告提供法律帮助、调取证据、参与庭审等内容。为准确说明这些权利，必须检索最新版本的《刑事诉讼法》中相关条款。",
+        "search": "<search>刑事诉讼法 辩护人权利</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "信息整理和归纳法律条款",
+        "content": "<information>《刑事诉讼法》第37条至第40条规定了辩护人的权利，包括：1. 接触并会见犯罪嫌疑人或被告人；2. 为被告辩护并提供法律帮助；3. 调取证据材料；4. 出席庭审并进行辩护；5. 提出上诉等。这些条款构成辩护人权利的主要法律依据。</information> 根据检索结果，可以总结辩护人主要具有参与诉讼、争取权利与获取证据的权利。</content>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "细化权利内容",
+        "content": "根据整理出的法律条款，可以归纳辩护人的权利为以下几点具体内容：1. 会见与通信权；2. 调查取证权；3. 提供法律意见权；4. 法庭辩论权；5. 维护犯罪嫌疑人合法权益权。这些权利在刑事诉讼的不同阶段被赋予不同的具体形式。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "根据中国《刑事诉讼法》的相关规定，辩护人的主要权利包括：一是会见和通信权，辩护人有权会见犯罪嫌疑人或被告人并交流案情；二是调查取证权，有权调取与案件相关的证据材料；三是提供法律帮助与意见权，为犯罪嫌疑人或被告人提出法律建议；四是法庭辩论权，在庭审过程中进行有效辩护；五是维护犯罪嫌疑人和被告人合法权益的权利，包括提出上诉或申诉。此外，辩护人的行动必须遵守法律规定，以确保诉讼程序的公平、公正。"
+      },
+      {
+        "action": "Verification",
+        "content": "上述结论与中国《刑事诉讼法》规定相吻合，准确全面地概括了辩护人的权利范围。因此，结论正确无误，无需进一步修正。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "我在思考辩护人的权利之前，首先得搞清楚辩护人到底指的是谁。在中国法律体系中，辩护人包括律师，也可能是犯罪嫌疑人或者被告人的近亲属、监护人。这些人的权利具体来源于哪儿？嗯，应该就是《刑事诉讼法》。我得去翻一下相关的法律条款，看看具体写了什么。<search>《刑事诉讼法》辩护人权利</search>\n\n嗯，我找到了相关内容。《刑事诉讼法》第37条到第40条专门讲了辩护人的权利，写得挺清楚的。<information>第37条主要讲辩护人有权会见和通信犯罪嫌疑人或者被告人；第38条提到辩护人可以为犯罪嫌疑人或者被告人争取合法权益；第39条强调辩护人有权调取证据材料；而第40条则进一步明确了辩护人在庭审环节的辩护权和上诉建议权。</information>这样看起来，辩护人在整个刑事诉讼过程中真的有挺多权利。\n\n整理一下吧，这些权利可以分为几个类型。首先是会见权，这就是辩护人可以和犯罪嫌疑人或者被告人进行接触并通信的权利。其次是调查取证权，包括调取证据材料或者提出相关申请。然后就是法庭辩论权，这个是法庭里进行辩护意见表达的权利。另外还有一个比较重要的维护嫌疑人合法权益的权利，像帮助提出上诉或者申诉等等。最后，是为犯罪嫌疑人或者被告人提供法律意见的权利，我觉得这其实贯穿了整个诉讼过程。\n\n哦，还得注意到，其实这些权利虽然法律有明确规定，但辩护人的行动一定是有限制的，不能违反诉讼程序的公正性和法律规定。这样梳理下来，辩护人在刑事诉讼里的角色基本都覆盖到了，从见面交流，到证据调取，再到法庭辩护和上诉建议，都在法律里有清楚的规定。\n\n总结来说，根据《刑事诉讼法》的相关规定，辩护人的权利主要包括五个方面。第一，会见和沟通权；第二，调取证据权；第三，提供法律帮助和建议权；第四，庭审辩论权；最后，维护嫌疑人合法权益的权利。这些权利在不同诉讼阶段形态是不一样的，但都围绕一个核心目标——确保被告人的合法权益。嗯，这样看起来，我的结论和法律规定是符合的，应该没有问题了。",
+  "Response": "根据《中华人民共和国刑事诉讼法》的相关规定，辩护人的权利主要包括以下几个方面：\n\n1. **会见权和通信权**：辩护人有权与犯罪嫌疑人、被告人会见和通信，特别是在侦查和起诉阶段，与嫌疑人交流案情、提供法律帮助。\n\n2. **调查取证权**：辩护人有权向有关单位或个人收集案件相关证据，或者向人民检察院或人民法院申请调取证据，以支持嫌疑人或被告人的无罪或罪轻主张。\n\n3. **法律帮助与意见权**：辩护人在诉讼全程中为犯罪嫌疑人、被告人提供法律咨询和指导，并根据案件具体情节发表专业意见。\n\n4. **法庭辩论权**：在庭审过程中，辩护人有权为被告人进行辩护，提出证据分析与法律依据，维护被告人的合法权益。\n\n5. **维护合法权益权**：辩护人可以帮助犯罪嫌疑人、被告人提出申诉、上诉等，争取依法保护其合法权利。\n\n这些权利覆盖了刑事诉讼的各个阶段，旨在确保案件审判的公平公正，维护犯罪嫌疑人及被告人的合法权益。不过，这些权利的行使需要符合法律规定，不能妨碍司法公正。",
+  "Question": "辩护人的权利有哪些?"
+}

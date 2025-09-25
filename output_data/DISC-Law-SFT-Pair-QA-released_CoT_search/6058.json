@@ -1,0 +1,89 @@
+{
+  "Open-ended Verifiable Question": "如何处理邻里之间的土地界线或围墙纠纷？",
+  "Ground-True Answer": "邻里之间的土地界线或围墙纠纷是常见的社区纠纷问题。当邻居之间对土地边界或围墙位置存在争议时，可能会导致紧张关系和法律纠纷。",
+  "process_id": 6058,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "明确纠纷的具体类型",
+      "content": "首先需要明确邻里之间的纠纷是因为土地边界引起的，还是围墙侵占问题。确定具体的纠纷类型有助于针对性地采取措施处理。在这种情况下，有必要了解相关土地所有权证书以及围墙的建造许可。接下来需要查找可能涉及的土地管理或围墙建造相关法律。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "查找土地边界或围墙相关法律",
+      "content": "<search>土地管理法 围墙建筑规范</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "分析相关法律或规定信息",
+      "content": "<information>《土地管理法》规定，土地权属纠纷可以由双方协商解决；如果协商不成，可以申请当地政府调解或向人民法院提起诉讼。《民法典》第16章也对邻里关系中的纠纷处理有一定规范。此外，围墙建设需要符合《城乡规划法》，需取得建设许可，避免影响邻人土地产权或居住权益。</information>基于以上信息，明确解决步骤可以为：协商、调解或诉讼处理，同时核实围墙是否符合当地规划和许可规定。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "建议初步处理方式",
+      "content": "建议首先通过沟通和协商方式解决纠纷。如果邻里双方无法达成一致，需要向当地村委会或社区居委会申请调解。调解的基础通常需要双方提交相关土地证明文件或围墙建造许可。如果调解无果，可选择通过诉讼程序解决。此时需要咨询法律专业人士来帮助整理证据和申请诉讼处理。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "处理邻里之间的土地界线或围墙纠纷建议分以下几个步骤：第一，通过协商解决，核实相关土地和建筑许可文件；第二，如果协商无果，可以申请当地村委会或社区居委会进行调解；第三，如果调解仍无法解决，可以准备证据向法院提起诉讼。在此过程中应确保所处理事项符合相关法律，如《土地管理法》《民法典》和《城乡规划法》等。"
+    },
+    {
+      "action": "Verification",
+      "content": "结论逻辑正确，协商-调解-诉讼的步骤合理且符合法律规定。无需进一步修改。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n如何处理邻里之间的土地界线或围墙纠纷？\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n处理邻里之间的土地界线或围墙纠纷建议分以下几个步骤：第一，通过协商解决，核实相关土地和建筑许可文件；第二，如果协商无果，可以申请当地村委会或社区居委会进行调解；第三，如果调解仍无法解决，可以准备证据向法院提起诉讼。在此过程中应确保所处理事项符合相关法律，如《土地管理法》《民法典》和《城乡规划法》等。  \n</Model Response>  \n\n<Reference Answer>  \n邻里之间的土地界线或围墙纠纷是常见的社区纠纷问题。当邻居之间对土地边界或围墙位置存在争议时，可能会导致紧张关系和法律纠纷。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 明确纠纷的具体类型\n首先需要明确邻里之间的纠纷是因为土地边界引起的，还是围墙侵占问题。确定具体的纠纷类型有助于针对性地采取措施处理。在这种情况下，有必要了解相关土地所有权证书以及围墙的建造许可。接下来需要查找可能涉及的土地管理或围墙建造相关法律。\n\n### 查找土地边界或围墙相关法律\n<search>土地管理法 围墙建筑规范</search>\n\n### 分析相关法律或规定信息\n<information>《土地管理法》规定，土地权属纠纷可以由双方协商解决；如果协商不成，可以申请当地政府调解或向人民法院提起诉讼。《民法典》第16章也对邻里关系中的纠纷处理有一定规范。此外，围墙建设需要符合《城乡规划法》，需取得建设许可，避免影响邻人土地产权或居住权益。</information>基于以上信息，明确解决步骤可以为：协商、调解或诉讼处理，同时核实围墙是否符合当地规划和许可规定。\n\n### 建议初步处理方式\n建议首先通过沟通和协商方式解决纠纷。如果邻里双方无法达成一致，需要向当地村委会或社区居委会申请调解。调解的基础通常需要双方提交相关土地证明文件或围墙建造许可。如果调解无果，可选择通过诉讼程序解决。此时需要咨询法律专业人士来帮助整理证据和申请诉讼处理。\n\n### Conclusion\n处理邻里之间的土地界线或围墙纠纷建议分以下几个步骤：第一，通过协商解决，核实相关土地和建筑许可文件；第二，如果协商无果，可以申请当地村委会或社区居委会进行调解；第三，如果调解仍无法解决，可以准备证据向法院提起诉讼。在此过程中应确保所处理事项符合相关法律，如《土地管理法》《民法典》和《城乡规划法》等。\n\n### Verification\n结论逻辑正确，协商-调解-诉讼的步骤合理且符合法律规定。无需进一步修改。\n</Thought Process>\n\n<Question>\n如何处理邻里之间的土地界线或围墙纠纷？\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n嗯，处理邻里之间的纠纷，首先得搞清楚具体是因为什么。好像是关于土地界线或者围墙的问题吧？我觉得得先确认一下纠纷的类型，是边界有问题还是说围墙侵占了别人的地。嗯，要搞清楚这个的话，可能需要看看有没有土地权属的相关证书，或者围墙有没有合法的建设许可。这样就能更好判断接下来该怎么处理了。\n\n然后，我觉得需要了解一下相关的法律规定。比如土地界线的问题可能跟土地管理法有关，而围墙的话可能涉及建筑的一些规范或者城乡规划法吧？好，先搜一下相关的信息看看。\n\n<search>土地管理法 围墙建筑规范</search>\n\n哦，我找到了些相关内容。在《土地管理法》里好像提到过，土地权属纠纷可以先试着通过双方协商解决。如果协商解决不了的话，可以申请当地政府来调解，或者直接向法院提起诉讼。而且呢，《民法典》里也有对邻里之间纠纷的一些处理规定，像是维护双方的权益什么的。另外，围墙建设的话是要符合《城乡规划法》的，得有规划和建设许可，同时不能影响邻居的土地使用权或者生活权益。嗯，这些信息蛮有用。\n\n那怎么处理呢？我觉得可以分几个步骤来解决。第一步嘛，还是先试着沟通和协商。毕竟邻里之间的关系也要考虑，直接弄到调解甚至法院的话可能影响以后相处。如果双方能坐下来好好聊，为啥界线有争议，或者围墙是不是有问题，可能就能解决了。要是协商了还是不行呢，那就第二步，可以找当地村委会或者社区的居委会来调解。调解的时候，双方可能需要准备一些文件，比如土地证明或者围墙建造的许可文件。哦，这样调解才有依据嘛。如果调解还是没结果，那第三步可能就只能走法律途径了。\n\n嗯，要是要诉讼，应该先咨询一下专业的律师或者法律人士，他们能帮忙整理证据，告诉你需要准备些什么东西。还有就是在诉讼过程中，一定得确保处理的行为符合法律，比如刚才提到的《土地管理法》、《民法典》和《城乡规划法》。不能少了这些哦。\n\n所以总结一下，处理邻里之间的土地界线或者围墙纠纷可以这样：先通过沟通协商试着解决问题，这样简单又直接。如果协商不了，就申请村委会或者居委会帮忙调解，但得准备相关证据。最后没办法的话，可以考虑诉讼，让法院来解决，同时最好找个律师帮忙。在这个过程中要注意遵守相关法律规定。这整个流程看起来蛮清楚的，也合理，不需要调整什么。\n</Internal Thinking>\n\n<Question>\n如何处理邻里之间的土地界线或围墙纠纷？\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"明确纠纷的具体类型\",\n      \"content\": \"首先需要明确邻里之间的纠纷是因为土地边界引起的，还是围墙侵占问题。确定具体的纠纷类型有助于针对性地采取措施处理。在这种情况下，有必要了解相关土地所有权证书以及围墙的建造许可。接下来需要查找可能涉及的土地管理或围墙建造相关法律。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"查找土地边界或围墙相关法律\",\n      \"content\": \"<search>土地管理法 围墙建筑规范</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析相关法律或规定信息\",\n      \"content\": \"<information>《土地管理法》规定，土地权属纠纷可以由双方协商解决；如果协商不成，可以申请当地政府调解或向人民法院提起诉讼。《民法典》第16章也对邻里关系中的纠纷处理有一定规范。此外，围墙建设需要符合《城乡规划法》，需取得建设许可，避免影响邻人土地产权或居住权益。</information>基于以上信息，明确解决步骤可以为：协商、调解或诉讼处理，同时核实围墙是否符合当地规划和许可规定。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"建议初步处理方式\",\n      \"content\": \"建议首先通过沟通和协商方式解决纠纷。如果邻里双方无法达成一致，需要向当地村委会或社区居委会申请调解。调解的基础通常需要双方提交相关土地证明文件或围墙建造许可。如果调解无果，可选择通过诉讼程序解决。此时需要咨询法律专业人士来帮助整理证据和申请诉讼处理。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"处理邻里之间的土地界线或围墙纠纷建议分以下几个步骤：第一，通过协商解决，核实相关土地和建筑许可文件；第二，如果协商无果，可以申请当地村委会或社区居委会进行调解；第三，如果调解仍无法解决，可以准备证据向法院提起诉讼。在此过程中应确保所处理事项符合相关法律，如《土地管理法》《民法典》和《城乡规划法》等。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"结论逻辑正确，协商-调解-诉讼的步骤合理且符合法律规定。无需进一步修改。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"嗯，处理邻里之间的纠纷，首先得搞清楚具体是因为什么。好像是关于土地界线或者围墙的问题吧？我觉得得先确认一下纠纷的类型，是边界有问题还是说围墙侵占了别人的地。嗯，要搞清楚这个的话，可能需要看看有没有土地权属的相关证书，或者围墙有没有合法的建设许可。这样就能更好判断接下来该怎么处理了。\\n\\n然后，我觉得需要了解一下相关的法律规定。比如土地界线的问题可能跟土地管理法有关，而围墙的话可能涉及建筑的一些规范或者城乡规划法吧？好，先搜一下相关的信息看看。\\n\\n<search>土地管理法 围墙建筑规范</search>\\n\\n哦，我找到了些相关内容。在《土地管理法》里好像提到过，土地权属纠纷可以先试着通过双方协商解决。如果协商解决不了的话，可以申请当地政府来调解，或者直接向法院提起诉讼。而且呢，《民法典》里也有对邻里之间纠纷的一些处理规定，像是维护双方的权益什么的。另外，围墙建设的话是要符合《城乡规划法》的，得有规划和建设许可，同时不能影响邻居的土地使用权或者生活权益。嗯，这些信息蛮有用。\\n\\n那怎么处理呢？我觉得可以分几个步骤来解决。第一步嘛，还是先试着沟通和协商。毕竟邻里之间的关系也要考虑，直接弄到调解甚至法院的话可能影响以后相处。如果双方能坐下来好好聊，为啥界线有争议，或者围墙是不是有问题，可能就能解决了。要是协商了还是不行呢，那就第二步，可以找当地村委会或者社区的居委会来调解。调解的时候，双方可能需要准备一些文件，比如土地证明或者围墙建造的许可文件。哦，这样调解才有依据嘛。如果调解还是没结果，那第三步可能就只能走法律途径了。\\n\\n嗯，要是要诉讼，应该先咨询一下专业的律师或者法律人士，他们能帮忙整理证据，告诉你需要准备些什么东西。还有就是在诉讼过程中，一定得确保处理的行为符合法律，比如刚才提到的《土地管理法》、《民法典》和《城乡规划法》。不能少了这些哦。\\n\\n所以总结一下，处理邻里之间的土地界线或者围墙纠纷可以这样：先通过沟通协商试着解决问题，这样简单又直接。如果协商不了，就申请村委会或者居委会帮忙调解，但得准备相关证据。最后没办法的话，可以考虑诉讼，让法院来解决，同时最好找个律师帮忙。在这个过程中要注意遵守相关法律规定。这整个流程看起来蛮清楚的，也合理，不需要调整什么。\"\n}\n```",
+    "处理邻里之间的土地界线或围墙纠纷，一般可以按照以下步骤进行：\n\n### 1. **沟通与协商**\n   首先，尝试与邻居进行友好沟通，明确双方对问题的看法和诉求。纠纷的根源可能是因为土地界线模糊、围墙位置争议或者施工时未充分沟通。双方可以拿出各自的土地权属证书（如土地使用证等）、围墙建设的相关许可证件等资料，共同核对问题所在。协商是解决问题的第一步，也是对邻里关系影响最小的方式。\n\n### 2. **申请基层组织调解**\n   如果协商无法达成一致，可以向当地的村委会、居委会或社区管理机构申请调解。这些基层组织有调解邻里纠纷的职能，可作为中立方帮助双方厘清事实、分析证据并提出解决方案。在调解过程中，双方应提供相关文件，如：\n   - 土地的权属证明；\n   - 围墙建设的规划、设计或施工许可；\n   - 其他与争议相关的图纸、合同等文件。\n\n### 3. **政府部门处理**\n   若调解无果，可以向当地国土管理部门或城乡规划主管部门反映，申请行政介入处理。尤其是土地界线模糊的问题，国土部门可以派出专业人员进行实地测绘，并根据土地权属证书或政府规划调整界线，寻找公平合理的解决方案。\n\n### 4. **法律途径解决**\n   如果上述方法仍未解决问题，双方可通过法院诉讼来最终确定边界或处理侵权行为。诉讼过程中，需要准备详细的证据，包括土地权属证明、围墙建设相关凭证、争议记录、调解笔录等。同时，可以咨询专业律师，确保诉讼程序合法且保护自身权益。\n   - 根据《中华人民共和国民法典》，法院会在尊重双方合法权益的基础上，妥善解决邻里纠纷。\n   - 若涉及围墙建设，还需检查其是否符合《城乡规划法》的相关规定，是否取得必要许可并未侵占他人权益。\n\n### 相关法律依据：\n   - 《中华人民共和国土地管理法》：对土地的权属和界线划分有明确规定，土地纠纷应优先协商调解。\n   - 《中华人民共和国民法典》：规定了邻里权利义务以及处理涉及土地、财产的争议方式。\n   - 《中华人民共和国城乡规划法》：对涉及围墙等建筑的规划许可和建设规范有相关要求。\n\n### 总结\n处理土地界线或围墙纠纷时，建议优先通过协商或调解方式，避免因诉讼影响邻里关系。在无法达成共识时，可借助政府部门的力量，或者通过法律途径维护自身权益。无论选择哪种方式，均需保持理性，提供合法有效的证据，并充分尊重相关法律规定。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "明确纠纷的具体类型",
+        "content": "首先需要明确邻里之间的纠纷是因为土地边界引起的，还是围墙侵占问题。确定具体的纠纷类型有助于针对性地采取措施处理。在这种情况下，有必要了解相关土地所有权证书以及围墙的建造许可。接下来需要查找可能涉及的土地管理或围墙建造相关法律。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "查找土地边界或围墙相关法律",
+        "content": "<search>土地管理法 围墙建筑规范</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "分析相关法律或规定信息",
+        "content": "<information>《土地管理法》规定，土地权属纠纷可以由双方协商解决；如果协商不成，可以申请当地政府调解或向人民法院提起诉讼。《民法典》第16章也对邻里关系中的纠纷处理有一定规范。此外，围墙建设需要符合《城乡规划法》，需取得建设许可，避免影响邻人土地产权或居住权益。</information>基于以上信息，明确解决步骤可以为：协商、调解或诉讼处理，同时核实围墙是否符合当地规划和许可规定。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "建议初步处理方式",
+        "content": "建议首先通过沟通和协商方式解决纠纷。如果邻里双方无法达成一致，需要向当地村委会或社区居委会申请调解。调解的基础通常需要双方提交相关土地证明文件或围墙建造许可。如果调解无果，可选择通过诉讼程序解决。此时需要咨询法律专业人士来帮助整理证据和申请诉讼处理。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "处理邻里之间的土地界线或围墙纠纷建议分以下几个步骤：第一，通过协商解决，核实相关土地和建筑许可文件；第二，如果协商无果，可以申请当地村委会或社区居委会进行调解；第三，如果调解仍无法解决，可以准备证据向法院提起诉讼。在此过程中应确保所处理事项符合相关法律，如《土地管理法》《民法典》和《城乡规划法》等。"
+      },
+      {
+        "action": "Verification",
+        "content": "结论逻辑正确，协商-调解-诉讼的步骤合理且符合法律规定。无需进一步修改。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "嗯，处理邻里之间的纠纷，首先得搞清楚具体是因为什么。好像是关于土地界线或者围墙的问题吧？我觉得得先确认一下纠纷的类型，是边界有问题还是说围墙侵占了别人的地。嗯，要搞清楚这个的话，可能需要看看有没有土地权属的相关证书，或者围墙有没有合法的建设许可。这样就能更好判断接下来该怎么处理了。\n\n然后，我觉得需要了解一下相关的法律规定。比如土地界线的问题可能跟土地管理法有关，而围墙的话可能涉及建筑的一些规范或者城乡规划法吧？好，先搜一下相关的信息看看。\n\n<search>土地管理法 围墙建筑规范</search>\n\n哦，我找到了些相关内容。在《土地管理法》里好像提到过，土地权属纠纷可以先试着通过双方协商解决。如果协商解决不了的话，可以申请当地政府来调解，或者直接向法院提起诉讼。而且呢，《民法典》里也有对邻里之间纠纷的一些处理规定，像是维护双方的权益什么的。另外，围墙建设的话是要符合《城乡规划法》的，得有规划和建设许可，同时不能影响邻居的土地使用权或者生活权益。嗯，这些信息蛮有用。\n\n那怎么处理呢？我觉得可以分几个步骤来解决。第一步嘛，还是先试着沟通和协商。毕竟邻里之间的关系也要考虑，直接弄到调解甚至法院的话可能影响以后相处。如果双方能坐下来好好聊，为啥界线有争议，或者围墙是不是有问题，可能就能解决了。要是协商了还是不行呢，那就第二步，可以找当地村委会或者社区的居委会来调解。调解的时候，双方可能需要准备一些文件，比如土地证明或者围墙建造的许可文件。哦，这样调解才有依据嘛。如果调解还是没结果，那第三步可能就只能走法律途径了。\n\n嗯，要是要诉讼，应该先咨询一下专业的律师或者法律人士，他们能帮忙整理证据，告诉你需要准备些什么东西。还有就是在诉讼过程中，一定得确保处理的行为符合法律，比如刚才提到的《土地管理法》、《民法典》和《城乡规划法》。不能少了这些哦。\n\n所以总结一下，处理邻里之间的土地界线或者围墙纠纷可以这样：先通过沟通协商试着解决问题，这样简单又直接。如果协商不了，就申请村委会或者居委会帮忙调解，但得准备相关证据。最后没办法的话，可以考虑诉讼，让法院来解决，同时最好找个律师帮忙。在这个过程中要注意遵守相关法律规定。这整个流程看起来蛮清楚的，也合理，不需要调整什么。",
+  "Response": "处理邻里之间的土地界线或围墙纠纷，一般可以按照以下步骤进行：\n\n### 1. **沟通与协商**\n   首先，尝试与邻居进行友好沟通，明确双方对问题的看法和诉求。纠纷的根源可能是因为土地界线模糊、围墙位置争议或者施工时未充分沟通。双方可以拿出各自的土地权属证书（如土地使用证等）、围墙建设的相关许可证件等资料，共同核对问题所在。协商是解决问题的第一步，也是对邻里关系影响最小的方式。\n\n### 2. **申请基层组织调解**\n   如果协商无法达成一致，可以向当地的村委会、居委会或社区管理机构申请调解。这些基层组织有调解邻里纠纷的职能，可作为中立方帮助双方厘清事实、分析证据并提出解决方案。在调解过程中，双方应提供相关文件，如：\n   - 土地的权属证明；\n   - 围墙建设的规划、设计或施工许可；\n   - 其他与争议相关的图纸、合同等文件。\n\n### 3. **政府部门处理**\n   若调解无果，可以向当地国土管理部门或城乡规划主管部门反映，申请行政介入处理。尤其是土地界线模糊的问题，国土部门可以派出专业人员进行实地测绘，并根据土地权属证书或政府规划调整界线，寻找公平合理的解决方案。\n\n### 4. **法律途径解决**\n   如果上述方法仍未解决问题，双方可通过法院诉讼来最终确定边界或处理侵权行为。诉讼过程中，需要准备详细的证据，包括土地权属证明、围墙建设相关凭证、争议记录、调解笔录等。同时，可以咨询专业律师，确保诉讼程序合法且保护自身权益。\n   - 根据《中华人民共和国民法典》，法院会在尊重双方合法权益的基础上，妥善解决邻里纠纷。\n   - 若涉及围墙建设，还需检查其是否符合《城乡规划法》的相关规定，是否取得必要许可并未侵占他人权益。\n\n### 相关法律依据：\n   - 《中华人民共和国土地管理法》：对土地的权属和界线划分有明确规定，土地纠纷应优先协商调解。\n   - 《中华人民共和国民法典》：规定了邻里权利义务以及处理涉及土地、财产的争议方式。\n   - 《中华人民共和国城乡规划法》：对涉及围墙等建筑的规划许可和建设规范有相关要求。\n\n### 总结\n处理土地界线或围墙纠纷时，建议优先通过协商或调解方式，避免因诉讼影响邻里关系。在无法达成共识时，可借助政府部门的力量，或者通过法律途径维护自身权益。无论选择哪种方式，均需保持理性，提供合法有效的证据，并充分尊重相关法律规定。",
+  "Question": "如何处理邻里之间的土地界线或围墙纠纷？"
+}

@@ -93,39 +93,7 @@ The output format must strictly follow the JSON structure below, and all content
 }}
 ```"""
 
-gen_prompt_rethink_Backtracking = """<question>
-{}
-</question>
 
-<previous reasoning>
-{}
-<previous reasoning>
-
-<response requirements>
-Your response must include the following steps, each composed of three types of actions: **"Inner Thinking"**, **"Final Conclusion"**, and **"Verification"**:
-
-1. **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>"keyword"</search>, where "keyword" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>"search results"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>"final answer"</answer>.
-2. **Final Conclusion**: Summarize the correct reasoning from all previous 'Inner Thinking' steps and provide the final answer. No title is needed for this section.
-3. **Verification**: Verify the accuracy of the "Final Conclusion". If it holds, conclude the process. Otherwise, return to "Inner Thinking" for further refinement.
-
-</response requirements>
-
-<question> represents the question to be answered, and <previous reasoning> contains your prior reasoning. Your task is to continue from the current 'Verification' step. I have manually reviewed the reasoning and determined that the **Final Conclusion** is false. Your 'Verification' results must align with mine. Proceed to refine the reasoning using **backtracking** to revisit earlier points of reasoning and construct a new Final Conclusion.
-
-### Output Format
-Strictly follow the JSON structure below. All content within the JSON fields must be written in **Chinese**. You do not need to repeat your previous reasoning. Begin directly from the next 'Verification' stage.
-
-```json
-{{
-"CoT": [
-    {{"action": "Verification", "content": "..."}},
-    {{"action": "Inner Thinking", "title": "...", "content": "..."}},
-    ...,
-    {{"action": "Final Conclusion", "content": "..."}},
-    {{"action": "Verification", "content": "..."}}
-]
-}}
-```"""
 
 gen_prompt_rethink_Exploring_New_Path = """<question>
 {}
@@ -161,73 +129,7 @@ Strictly follow the JSON structure below. All content within the JSON fields mus
 }}
 ```"""
 
-gen_prompt_rethink_Verification = """<question>
-{}
-</question>
 
-<previous reasoning>
-{}
-<previous reasoning>
-
-<response requirements>
-Your response must include the following steps, each composed of three types of actions: **"Inner Thinking"**, **"Final Conclusion"**, and **"Verification"**:
-
-1. **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>"keyword"</search>, where "keyword" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>"search results"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>"final answer"</answer>.
-2. **Final Conclusion**: Summarize the correct reasoning from all previous 'Inner Thinking' steps and provide the final answer. No title is needed for this section.
-3. **Verification**: Verify the accuracy of the "Final Conclusion". If it holds, conclude the process. Otherwise, return to "Inner Thinking" for further refinement.
-
-</response requirements>
-
-<question> represents the question to be answered, and <previous reasoning> contains your prior reasoning. Your task is to continue from the current 'Verification' step. I have manually reviewed the reasoning and determined that the **Final Conclusion** is false. Your 'Verification' results must align with mine. Proceed to refine the reasoning by conducting a thorough **validation** process to ensure validity and construct a new Final Conclusion.
-
-### Output Format
-Strictly follow the JSON structure below. All content within the JSON fields must be written in **Chinese**. You do not need to repeat your previous reasoning. Begin directly from the next 'Verification' stage.
-
-```json
-{{
-"CoT": [
-    {{"action": "Verification", "content": "..."}},
-    {{"action": "Inner Thinking", "title": "...", "content": "..."}},
-    ...,
-    {{"action": "Final Conclusion", "content": "..."}},
-    {{"action": "Verification", "content": "..."}}
-]
-}}
-```"""
-
-gen_prompt_rethink_Correction = """<question>
-{}
-</question>
-
-<previous reasoning>
-{}
-<previous reasoning>
-
-<response requirements>
-Your response must include the following steps, each composed of three types of actions: **"Inner Thinking"**, **"Final Conclusion"**, and **"Verification"**:
-
-1. **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>"keyword"</search>, where "keyword" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>"search results"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>"final answer"</answer>.
-2. **Final Conclusion**: Summarize the correct reasoning from all previous 'Inner Thinking' steps and provide the final answer. No title is needed for this section.
-3. **Verification**: Verify the accuracy of the "Final Conclusion". If it holds, conclude the process. Otherwise, return to "Inner Thinking" for further refinement.
-
-</response requirements>
-
-<question> represents the question to be answered, and <previous reasoning> contains your prior reasoning. Your task is to continue from the current 'Verification' step. I have manually reviewed the reasoning and determined that the **Final Conclusion** is false. Your 'Verification' results must align with mine. Proceed to refine the reasoning by making precise **corrections** to address prior flaws and construct a new Final Conclusion.
-
-### Output Format
-Strictly follow the JSON structure below. All content within the JSON fields must be written in **Chinese**. You do not need to repeat your previous reasoning. Begin directly from the next 'Verification' stage.
-
-```json
-{{
-"CoT": [
-    {{"action": "Verification", "content": "..."}},
-    {{"action": "Inner Thinking", "title": "...", "content": "..."}},
-    ...,
-    {{"action": "Final Conclusion", "content": "..."}},
-    {{"action": "Verification", "content": "..."}}
-]
-}}
-```"""
 
 gen_prompt_w_label = """<question>
 {}
@@ -460,7 +362,8 @@ def main():
                     reasoning = json.dumps(d['Long_CoT'][:-1],ensure_ascii=False,indent=2)
                     # Search strategy
                     
-                    strategy_name,strategy = random.choice(search_strategies)
+                    strategy_name,strategy = (search_strategies[0])
+                    # strategy_name,strategy = random.choice(search_strategies)
                     
 
                     query = strategy.format(d['Open-ended Verifiable Question'],reasoning)

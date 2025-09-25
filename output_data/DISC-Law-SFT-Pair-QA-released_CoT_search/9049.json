@@ -1,0 +1,109 @@
+{
+  "Open-ended Verifiable Question": "婚姻关系存续期间，一方不起诉离婚，而单独起诉向对方提出损害赔偿，法院应否支持",
+  "Ground-True Answer": "人民法院不应对该请求予以支持。陈立家律师认为，在婚姻关系继续存续的情况下，因共有财产状态的存续，损害赔偿可能没有财产赔付的基础，且近亲属身份关系的存在，司法介入调整家庭内部权利义务不是必要的。",
+  "process_id": 9049,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "分析问题的法律适用背景",
+      "content": "题目涉及婚姻关系存续期间一方单独起诉要求赔偿的问题。首先，需要确认法律是否允许在婚姻关系存续期间提起损害赔偿，以及该损害赔偿的法律依据可能是什么。需要查找相关法律法规，明确判断依据。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "查找相关法律条文",
+      "content": "需要查找《中华人民共和国民法典》中有关婚姻关系存续期间损害赔偿的相关规定，例如是否涉及到婚姻法的配偶权、侵权行为等内容。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "明确婚姻关系存续期间的赔偿规则",
+      "content": "在通常情况下，损害赔偿制度适用于侵权行为或者违法行为导致的直接损害，但在夫妻关系中，可能需要考虑特殊条款，例如感情损害赔偿是否适用于婚姻存续期间。因此，是否允许一方单独提起赔偿诉讼与相关法律是否对此有规定息息相关。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "查找具体规定",
+      "content": "<search>民法典 婚姻赔偿 非离婚</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "获取信息和分析",
+      "content": "<information>《中华人民共和国民法典》第1091条规定：因重婚、与他人同居、实施家庭暴力、虐待、遗弃家庭成员等，导致离婚的，无过错方有权请求损害赔偿。但本条规定明确仅限于‘导致离婚’的情形。因此，在婚姻关系存续期间单独提起要求损害赔偿，可能超出法律的直接授权范围。</information>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "结合司法实践分析",
+      "content": "根据法律条文和司法实践来看，损害赔偿请求通常作为离婚诉讼中的附带请求提出。例如，根据《民法典》第1091条的精神，只有在‘导致离婚’的情况下才可请求损害赔偿。因此，如果不在离婚程序框架内提出赔偿诉讼，法院一般不会支持。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "法院一般不支持在婚姻关系存续期间，一方单独起诉向另一方提出损害赔偿的诉求，因为《中华人民共和国民法典》第1091条将无过错方请求损害赔偿的权利限定在‘导致离婚’的情形中，而非一般婚姻存续期间的情形。"
+    },
+    {
+      "action": "Verification",
+      "content": "经过进一步分析，确认法律上确无明确支持婚姻存续期间直接提起损害赔偿的依据，同时司法实践也倾向于将此类请求限定在离婚诉讼中作为附带请求予以处理。因此，结论正确。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n婚姻关系存续期间，一方不起诉离婚，而单独起诉向对方提出损害赔偿，法院应否支持\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n法院一般不支持在婚姻关系存续期间，一方单独起诉向另一方提出损害赔偿的诉求，因为《中华人民共和国民法典》第1091条将无过错方请求损害赔偿的权利限定在‘导致离婚’的情形中，而非一般婚姻存续期间的情形。  \n</Model Response>  \n\n<Reference Answer>  \n人民法院不应对该请求予以支持。陈立家律师认为，在婚姻关系继续存续的情况下，因共有财产状态的存续，损害赔偿可能没有财产赔付的基础，且近亲属身份关系的存在，司法介入调整家庭内部权利义务不是必要的。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 分析问题的法律适用背景\n题目涉及婚姻关系存续期间一方单独起诉要求赔偿的问题。首先，需要确认法律是否允许在婚姻关系存续期间提起损害赔偿，以及该损害赔偿的法律依据可能是什么。需要查找相关法律法规，明确判断依据。\n\n### 查找相关法律条文\n需要查找《中华人民共和国民法典》中有关婚姻关系存续期间损害赔偿的相关规定，例如是否涉及到婚姻法的配偶权、侵权行为等内容。\n\n### 明确婚姻关系存续期间的赔偿规则\n在通常情况下，损害赔偿制度适用于侵权行为或者违法行为导致的直接损害，但在夫妻关系中，可能需要考虑特殊条款，例如感情损害赔偿是否适用于婚姻存续期间。因此，是否允许一方单独提起赔偿诉讼与相关法律是否对此有规定息息相关。\n\n### 查找具体规定\n<search>民法典 婚姻赔偿 非离婚</search>\n\n### 获取信息和分析\n<information>《中华人民共和国民法典》第1091条规定：因重婚、与他人同居、实施家庭暴力、虐待、遗弃家庭成员等，导致离婚的，无过错方有权请求损害赔偿。但本条规定明确仅限于‘导致离婚’的情形。因此，在婚姻关系存续期间单独提起要求损害赔偿，可能超出法律的直接授权范围。</information>\n\n### 结合司法实践分析\n根据法律条文和司法实践来看，损害赔偿请求通常作为离婚诉讼中的附带请求提出。例如，根据《民法典》第1091条的精神，只有在‘导致离婚’的情况下才可请求损害赔偿。因此，如果不在离婚程序框架内提出赔偿诉讼，法院一般不会支持。\n\n### Conclusion\n法院一般不支持在婚姻关系存续期间，一方单独起诉向另一方提出损害赔偿的诉求，因为《中华人民共和国民法典》第1091条将无过错方请求损害赔偿的权利限定在‘导致离婚’的情形中，而非一般婚姻存续期间的情形。\n\n### Verification\n经过进一步分析，确认法律上确无明确支持婚姻存续期间直接提起损害赔偿的依据，同时司法实践也倾向于将此类请求限定在离婚诉讼中作为附带请求予以处理。因此，结论正确。\n</Thought Process>\n\n<Question>\n婚姻关系存续期间，一方不起诉离婚，而单独起诉向对方提出损害赔偿，法院应否支持\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n嗯，一方在婚姻关系存续期间不提出离婚，却想单独起诉伴侣要求损害赔偿，这个问题有点复杂，得好好梳理一下法律上到底怎么规定，毕竟涉及夫妻之间的关系和法律能否支持的问题。\n\n首先得从法律规定入手，想想看，中国现在适用的是《中华人民共和国民法典》。在婚姻家庭这块，有没有明确提到婚姻关系存续期间可以提损害赔偿的情况呢？赔偿一般和侵权行为有关，所以得看民法典里是否有相关解释。\n\n嗯，我记得《民法典》第1091条好像对损害赔偿有一些说明。这一条是不是提到离婚时可以要求损害赔偿的情形？如果是，那就意味着可能只有在离婚诉讼中才能提这种赔偿要求。最好确认一下条文内容，直接去找一下吧。\n\n<search>民法典 婚姻赔偿 非离婚</search>\n\n哦，好了，有个明确的答案。《民法典》第1091条确实提到类似的情况，规定因为重婚、与他人同居、实施家庭暴力、虐待、遗弃等导致离婚的，无过错方有权请求损害赔偿。但是这里特别强调了‘导致离婚’这个前提，所以如果还没到离婚这一步，或者婚姻关系依然存续，那理论上不太支持直接起诉对方要求赔偿。\n\n嗯，这么说的话，婚姻存续期间直接提赔偿有点超出法律允许范围。这让我想到，实际案例中，这种赔偿请求通常是附带在离婚诉讼里面的，比如夫妻要办离婚了，其中一方认为自己是无过错方，于是同时要求精神损害赔偿或者其他赔偿。这样看起来更符合法律的规定。\n\n不过有时候法律和实际操作会有细微不同，得看看司法实践是怎么处理这种情况的。比如，如果法院收到婚姻存续期间一方单独提起这样的诉讼，会不会破例支持呢？从目前的法律条文来看，法院一般还是会以‘导致离婚’为前提。这也符合第1091条背后的立法初衷吧，毕竟这种损害赔偿通常是基于婚姻基本破裂的事实，自然要和离婚诉讼挂钩。\n\n再梳理一下：从法律上说，婚姻关系存续期间直接起诉损害赔偿，缺乏明确的法律依据。如果法院收到这样的诉讼请求，估计不会支持。尤其是条文里已经限定了这种权利是在‘导致离婚’的情形中，而不是随时随地可以提。看来结论是比较明确的。\n\n总的来说，根据法律和司法实践，婚姻关系存续期间单独提起损害赔偿的请求并不符合法律规定，法院通常不会支持这种诉求。\n</Internal Thinking>\n\n<Question>\n婚姻关系存续期间，一方不起诉离婚，而单独起诉向对方提出损害赔偿，法院应否支持\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析问题的法律适用背景\",\n      \"content\": \"题目涉及婚姻关系存续期间一方单独起诉要求赔偿的问题。首先，需要确认法律是否允许在婚姻关系存续期间提起损害赔偿，以及该损害赔偿的法律依据可能是什么。需要查找相关法律法规，明确判断依据。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"查找相关法律条文\",\n      \"content\": \"需要查找《中华人民共和国民法典》中有关婚姻关系存续期间损害赔偿的相关规定，例如是否涉及到婚姻法的配偶权、侵权行为等内容。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"明确婚姻关系存续期间的赔偿规则\",\n      \"content\": \"在通常情况下，损害赔偿制度适用于侵权行为或者违法行为导致的直接损害，但在夫妻关系中，可能需要考虑特殊条款，例如感情损害赔偿是否适用于婚姻存续期间。因此，是否允许一方单独提起赔偿诉讼与相关法律是否对此有规定息息相关。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"查找具体规定\",\n      \"content\": \"<search>民法典 婚姻赔偿 非离婚</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"获取信息和分析\",\n      \"content\": \"<information>《中华人民共和国民法典》第1091条规定：因重婚、与他人同居、实施家庭暴力、虐待、遗弃家庭成员等，导致离婚的，无过错方有权请求损害赔偿。但本条规定明确仅限于‘导致离婚’的情形。因此，在婚姻关系存续期间单独提起要求损害赔偿，可能超出法律的直接授权范围。</information>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"结合司法实践分析\",\n      \"content\": \"根据法律条文和司法实践来看，损害赔偿请求通常作为离婚诉讼中的附带请求提出。例如，根据《民法典》第1091条的精神，只有在‘导致离婚’的情况下才可请求损害赔偿。因此，如果不在离婚程序框架内提出赔偿诉讼，法院一般不会支持。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"法院一般不支持在婚姻关系存续期间，一方单独起诉向另一方提出损害赔偿的诉求，因为《中华人民共和国民法典》第1091条将无过错方请求损害赔偿的权利限定在‘导致离婚’的情形中，而非一般婚姻存续期间的情形。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"经过进一步分析，确认法律上确无明确支持婚姻存续期间直接提起损害赔偿的依据，同时司法实践也倾向于将此类请求限定在离婚诉讼中作为附带请求予以处理。因此，结论正确。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"嗯，一方在婚姻关系存续期间不提出离婚，却想单独起诉伴侣要求损害赔偿，这个问题有点复杂，得好好梳理一下法律上到底怎么规定，毕竟涉及夫妻之间的关系和法律能否支持的问题。\\n\\n首先得从法律规定入手，想想看，中国现在适用的是《中华人民共和国民法典》。在婚姻家庭这块，有没有明确提到婚姻关系存续期间可以提损害赔偿的情况呢？赔偿一般和侵权行为有关，所以得看民法典里是否有相关解释。\\n\\n嗯，我记得《民法典》第1091条好像对损害赔偿有一些说明。这一条是不是提到离婚时可以要求损害赔偿的情形？如果是，那就意味着可能只有在离婚诉讼中才能提这种赔偿要求。最好确认一下条文内容，直接去找一下吧。\\n\\n<search>民法典 婚姻赔偿 非离婚</search>\\n\\n哦，好了，有个明确的答案。《民法典》第1091条确实提到类似的情况，规定因为重婚、与他人同居、实施家庭暴力、虐待、遗弃等导致离婚的，无过错方有权请求损害赔偿。但是这里特别强调了‘导致离婚’这个前提，所以如果还没到离婚这一步，或者婚姻关系依然存续，那理论上不太支持直接起诉对方要求赔偿。\\n\\n嗯，这么说的话，婚姻存续期间直接提赔偿有点超出法律允许范围。这让我想到，实际案例中，这种赔偿请求通常是附带在离婚诉讼里面的，比如夫妻要办离婚了，其中一方认为自己是无过错方，于是同时要求精神损害赔偿或者其他赔偿。这样看起来更符合法律的规定。\\n\\n不过有时候法律和实际操作会有细微不同，得看看司法实践是怎么处理这种情况的。比如，如果法院收到婚姻存续期间一方单独提起这样的诉讼，会不会破例支持呢？从目前的法律条文来看，法院一般还是会以‘导致离婚’为前提。这也符合第1091条背后的立法初衷吧，毕竟这种损害赔偿通常是基于婚姻基本破裂的事实，自然要和离婚诉讼挂钩。\\n\\n再梳理一下：从法律上说，婚姻关系存续期间直接起诉损害赔偿，缺乏明确的法律依据。如果法院收到这样的诉讼请求，估计不会支持。尤其是条文里已经限定了这种权利是在‘导致离婚’的情形中，而不是随时随地可以提。看来结论是比较明确的。\\n\\n总的来说，根据法律和司法实践，婚姻关系存续期间单独提起损害赔偿的请求并不符合法律规定，法院通常不会支持这种诉求。\"\n}\n```",
+    "根据《中华人民共和国民法典》的相关规定，目前的法律体系并不支持在婚姻关系存续期间，一方单独起诉配偶要求损害赔偿的行为。\n\n具体来说，《民法典》第1091条明确规定：“有下列情形导致离婚的，无过错方有权请求损害赔偿：（一）重婚；（二）与他人同居；（三）实施家庭暴力；（四）虐待、遗弃家庭成员。”可以看出，该条文的适用条件是“导致离婚”这个前提，即无过错方应当在离婚诉讼中一并提出损害赔偿请求，而非在婚姻关系存续期间单独提起。因此，在现有法律框架下，如果仅仅是起诉损害赔偿而未涉及离婚事项，法院通常不会支持这样的诉请。\n\n此外，从立法逻辑来看，损害赔偿的设计主要是为了弥补因婚姻破裂给无过错方带来的损害，其前提往往是婚姻关系的终止。因此，无过错方的赔偿请求一般与离婚诉讼相结合。\n\n在司法实践中，法院在处理类似案件时也会依据法律要求，严格把握“导致离婚”的条件。如果婚姻尚未解除，仅仅存在过错行为且没有提起离婚，单独索赔缺乏法律依据。可是，如果行为涉及其他法律关系（如一般侵权），则可能另行主张。\n\n综上，婚姻关系存续期间单独起诉损害赔偿并不符合《民法典》第1091条的规定，法院原则上不会支持。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "分析问题的法律适用背景",
+        "content": "题目涉及婚姻关系存续期间一方单独起诉要求赔偿的问题。首先，需要确认法律是否允许在婚姻关系存续期间提起损害赔偿，以及该损害赔偿的法律依据可能是什么。需要查找相关法律法规，明确判断依据。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "查找相关法律条文",
+        "content": "需要查找《中华人民共和国民法典》中有关婚姻关系存续期间损害赔偿的相关规定，例如是否涉及到婚姻法的配偶权、侵权行为等内容。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "明确婚姻关系存续期间的赔偿规则",
+        "content": "在通常情况下，损害赔偿制度适用于侵权行为或者违法行为导致的直接损害，但在夫妻关系中，可能需要考虑特殊条款，例如感情损害赔偿是否适用于婚姻存续期间。因此，是否允许一方单独提起赔偿诉讼与相关法律是否对此有规定息息相关。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "查找具体规定",
+        "content": "<search>民法典 婚姻赔偿 非离婚</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "获取信息和分析",
+        "content": "<information>《中华人民共和国民法典》第1091条规定：因重婚、与他人同居、实施家庭暴力、虐待、遗弃家庭成员等，导致离婚的，无过错方有权请求损害赔偿。但本条规定明确仅限于‘导致离婚’的情形。因此，在婚姻关系存续期间单独提起要求损害赔偿，可能超出法律的直接授权范围。</information>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "结合司法实践分析",
+        "content": "根据法律条文和司法实践来看，损害赔偿请求通常作为离婚诉讼中的附带请求提出。例如，根据《民法典》第1091条的精神，只有在‘导致离婚’的情况下才可请求损害赔偿。因此，如果不在离婚程序框架内提出赔偿诉讼，法院一般不会支持。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "法院一般不支持在婚姻关系存续期间，一方单独起诉向另一方提出损害赔偿的诉求，因为《中华人民共和国民法典》第1091条将无过错方请求损害赔偿的权利限定在‘导致离婚’的情形中，而非一般婚姻存续期间的情形。"
+      },
+      {
+        "action": "Verification",
+        "content": "经过进一步分析，确认法律上确无明确支持婚姻存续期间直接提起损害赔偿的依据，同时司法实践也倾向于将此类请求限定在离婚诉讼中作为附带请求予以处理。因此，结论正确。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "嗯，一方在婚姻关系存续期间不提出离婚，却想单独起诉伴侣要求损害赔偿，这个问题有点复杂，得好好梳理一下法律上到底怎么规定，毕竟涉及夫妻之间的关系和法律能否支持的问题。\n\n首先得从法律规定入手，想想看，中国现在适用的是《中华人民共和国民法典》。在婚姻家庭这块，有没有明确提到婚姻关系存续期间可以提损害赔偿的情况呢？赔偿一般和侵权行为有关，所以得看民法典里是否有相关解释。\n\n嗯，我记得《民法典》第1091条好像对损害赔偿有一些说明。这一条是不是提到离婚时可以要求损害赔偿的情形？如果是，那就意味着可能只有在离婚诉讼中才能提这种赔偿要求。最好确认一下条文内容，直接去找一下吧。\n\n<search>民法典 婚姻赔偿 非离婚</search>\n\n哦，好了，有个明确的答案。《民法典》第1091条确实提到类似的情况，规定因为重婚、与他人同居、实施家庭暴力、虐待、遗弃等导致离婚的，无过错方有权请求损害赔偿。但是这里特别强调了‘导致离婚’这个前提，所以如果还没到离婚这一步，或者婚姻关系依然存续，那理论上不太支持直接起诉对方要求赔偿。\n\n嗯，这么说的话，婚姻存续期间直接提赔偿有点超出法律允许范围。这让我想到，实际案例中，这种赔偿请求通常是附带在离婚诉讼里面的，比如夫妻要办离婚了，其中一方认为自己是无过错方，于是同时要求精神损害赔偿或者其他赔偿。这样看起来更符合法律的规定。\n\n不过有时候法律和实际操作会有细微不同，得看看司法实践是怎么处理这种情况的。比如，如果法院收到婚姻存续期间一方单独提起这样的诉讼，会不会破例支持呢？从目前的法律条文来看，法院一般还是会以‘导致离婚’为前提。这也符合第1091条背后的立法初衷吧，毕竟这种损害赔偿通常是基于婚姻基本破裂的事实，自然要和离婚诉讼挂钩。\n\n再梳理一下：从法律上说，婚姻关系存续期间直接起诉损害赔偿，缺乏明确的法律依据。如果法院收到这样的诉讼请求，估计不会支持。尤其是条文里已经限定了这种权利是在‘导致离婚’的情形中，而不是随时随地可以提。看来结论是比较明确的。\n\n总的来说，根据法律和司法实践，婚姻关系存续期间单独提起损害赔偿的请求并不符合法律规定，法院通常不会支持这种诉求。",
+  "Response": "根据《中华人民共和国民法典》的相关规定，目前的法律体系并不支持在婚姻关系存续期间，一方单独起诉配偶要求损害赔偿的行为。\n\n具体来说，《民法典》第1091条明确规定：“有下列情形导致离婚的，无过错方有权请求损害赔偿：（一）重婚；（二）与他人同居；（三）实施家庭暴力；（四）虐待、遗弃家庭成员。”可以看出，该条文的适用条件是“导致离婚”这个前提，即无过错方应当在离婚诉讼中一并提出损害赔偿请求，而非在婚姻关系存续期间单独提起。因此，在现有法律框架下，如果仅仅是起诉损害赔偿而未涉及离婚事项，法院通常不会支持这样的诉请。\n\n此外，从立法逻辑来看，损害赔偿的设计主要是为了弥补因婚姻破裂给无过错方带来的损害，其前提往往是婚姻关系的终止。因此，无过错方的赔偿请求一般与离婚诉讼相结合。\n\n在司法实践中，法院在处理类似案件时也会依据法律要求，严格把握“导致离婚”的条件。如果婚姻尚未解除，仅仅存在过错行为且没有提起离婚，单独索赔缺乏法律依据。可是，如果行为涉及其他法律关系（如一般侵权），则可能另行主张。\n\n综上，婚姻关系存续期间单独起诉损害赔偿并不符合《民法典》第1091条的规定，法院原则上不会支持。",
+  "Question": "婚姻关系存续期间，一方不起诉离婚，而单独起诉向对方提出损害赔偿，法院应否支持"
+}

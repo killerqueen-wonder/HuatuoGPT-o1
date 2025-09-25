@@ -1,0 +1,91 @@
+{
+  "Open-ended Verifiable Question": "被取保候审的轻伤案多久能结案",
+  "Ground-True Answer": "被取保候审的轻伤案什么时候能结案轻伤案件被取保候审什么时候能结案是没有明确规定的，如果进入诉讼程序的，用普通程序审理的，要在二个月内审结。《中华人民共和国刑事诉讼法》第二百零二条 人民法院审理公诉案件，应当在受理后二个月以内宣判，至迟不得超过三个月。对于可能判处死刑的案件或者附带民事诉讼的案件，以及有本法第一百五十六条规定情形之一的，经上一级人民法院批准，可以延长三个月;因特殊情况还需要延长的，报请最高人民法院批准。人民法院改变管辖的案件，从改变后的人民法院收到案件之日起计算审理期限。人民检察院补充侦查的案件，补充侦查完毕移送人民法院后，人民法院重新计算审理期限。",
+  "process_id": 3138,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "定义轻伤案涉及的法律规定",
+      "content": "轻伤案件在刑法中属于故意伤害罪的一种。如果被取保候审，则说明案件尚未审结，但嫌疑人已经被采取相关限制措施。需明确《刑事诉讼法》中规定的办案期限和结案流程。搜索关于取保候审期间案件办多久能结案相关法律规定。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "搜索相关法定处理期限条款",
+      "content": "<search>取保候审结案时间规定</search>"
+    },
+    {
+      "information": "《刑事诉讼法》第77条规定：取保候审期限不得超过12个月；此外，《刑事诉讼法》第202条明确规定一般案件侦查期限为2个月，复杂案件可申请延长，每次延长不得超过1个月，上级机关批准后最长侦查期限为6个月。",
+      "action": "Inner Thinking",
+      "title": "分析轻伤案件结案可能的时间范围",
+      "content": "根据上述规定，轻伤案件通常属于普通案件，侦查期限一般为2个月，如案情复杂或证据难以取得，可申请延长到最长6个月。此外，取保候审的期限不得超过12个月，确保嫌疑人权利保障。案件结案时间受侦查、起诉阶段及法院程序等影响，通常轻伤案在3到6个月内处理较为常见。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "结合案件实际情况估算结案时间",
+      "content": "轻伤案件案件性质简单，若证据充分可能结束侦查、移交起诉并结案的时间较短；若证据不足或案情复杂，则有可能持续到取保候审的满期限时间（12个月）。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "被取保候审的轻伤案件通常在3到6个月内可以结案，但若涉及复杂情况或需进一步侦查，最长不得超过取保候审的期限12个月。"
+    },
+    {
+      "action": "Verification",
+      "content": "结论符合《刑事诉讼法》规定的侦查期限和取保候审的最长期限，能够解释正常办案的结案时间范围，因此结论正确。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n被取保候审的轻伤案多久能结案\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n被取保候审的轻伤案件通常在3到6个月内可以结案，但若涉及复杂情况或需进一步侦查，最长不得超过取保候审的期限12个月。  \n</Model Response>  \n\n<Reference Answer>  \n被取保候审的轻伤案什么时候能结案轻伤案件被取保候审什么时候能结案是没有明确规定的，如果进入诉讼程序的，用普通程序审理的，要在二个月内审结。《中华人民共和国刑事诉讼法》第二百零二条 人民法院审理公诉案件，应当在受理后二个月以内宣判，至迟不得超过三个月。对于可能判处死刑的案件或者附带民事诉讼的案件，以及有本法第一百五十六条规定情形之一的，经上一级人民法院批准，可以延长三个月;因特殊情况还需要延长的，报请最高人民法院批准。人民法院改变管辖的案件，从改变后的人民法院收到案件之日起计算审理期限。人民检察院补充侦查的案件，补充侦查完毕移送人民法院后，人民法院重新计算审理期限。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 定义轻伤案涉及的法律规定\n轻伤案件在刑法中属于故意伤害罪的一种。如果被取保候审，则说明案件尚未审结，但嫌疑人已经被采取相关限制措施。需明确《刑事诉讼法》中规定的办案期限和结案流程。搜索关于取保候审期间案件办多久能结案相关法律规定。\n\n### 搜索相关法定处理期限条款\n<search>取保候审结案时间规定</search>\n\n### 分析轻伤案件结案可能的时间范围\n根据上述规定，轻伤案件通常属于普通案件，侦查期限一般为2个月，如案情复杂或证据难以取得，可申请延长到最长6个月。此外，取保候审的期限不得超过12个月，确保嫌疑人权利保障。案件结案时间受侦查、起诉阶段及法院程序等影响，通常轻伤案在3到6个月内处理较为常见。\n\n### 结合案件实际情况估算结案时间\n轻伤案件案件性质简单，若证据充分可能结束侦查、移交起诉并结案的时间较短；若证据不足或案情复杂，则有可能持续到取保候审的满期限时间（12个月）。\n\n### Conclusion\n被取保候审的轻伤案件通常在3到6个月内可以结案，但若涉及复杂情况或需进一步侦查，最长不得超过取保候审的期限12个月。\n\n### Verification\n结论符合《刑事诉讼法》规定的侦查期限和取保候审的最长期限，能够解释正常办案的结案时间范围，因此结论正确。\n</Thought Process>\n\n<Question>\n被取保候审的轻伤案多久能结案\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n嗯，有人问被取保候审的轻伤案多久能结案，这个问题在刑法中其实涉及到故意伤害罪相关的规定。既然是取保候审，那说明这个案件目前应该还没审理完，不过嫌疑人已经被采取了一些限制措施。那现在关键是搞清楚，办案的时间有没有明确规定，以及法律上有哪些关于结案期限的要求。\n\n先说说轻伤案件吧，类似这种案件，通常属于普通的刑事案件。那我得看看《刑事诉讼法》是不是有关于案件办理时间的具体条文。还有取保候审期间，最长到底能有多长时间？\n\n我得查一下有关规定，好像记得取保候审和侦查期限都有时间限制，搜索一下这个问题更准确。<search>取保候审结案时间规定</search>\n\n<information>根据《刑事诉讼法》，普通刑事案件的侦查期限一般为2个月。如果案情复杂或者取证比较麻烦，侦查期限可以申请延长，一般来说最多延长到6个月。同时，取保候审的期限是不能超过12个月的，也就是说，如果12个月到了案件还没办完，那就必须解除取保措施。</information>\n\n这样的话，我基本有个思路了。轻伤案件本身不是那种特别复杂的案子，所以像这种普通案件的话，从侦查到移交起诉，再到结案，应该不会拖太久。如果证据确凿、案情简单，最快可能3个月左右搞定；但如果遇到复杂情况，比如需要补充侦查或者证据链不完整，6个月也不是没有可能。\n\n不过还有一种极端情况，比如说侦查机关可能一直在追加调查，或者取证过程遇到障碍，那结案时间可能会拖到接近取保候审期限，也就是12个月。但法律上是明确规定12个月是取保的上限，肯定不能超过这一时间。\n\n这样综合下来，我觉得正常来说，轻伤案件有很大可能在3到6个月内就能结案。如果超过6个月，那可能是因为案情复杂或者证据的甄别拖延，不过绝对不可能超过12个月这个最大的时间节点。\n\n嗯，感觉答案就是这个样子，总体结论还是可以说得过去的，符合《刑事诉讼法》的规定。所以，3到6个月算常态，复杂情况下一年内结案。\n</Internal Thinking>\n\n<Question>\n被取保候审的轻伤案多久能结案\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"定义轻伤案涉及的法律规定\",\n      \"content\": \"轻伤案件在刑法中属于故意伤害罪的一种。如果被取保候审，则说明案件尚未审结，但嫌疑人已经被采取相关限制措施。需明确《刑事诉讼法》中规定的办案期限和结案流程。搜索关于取保候审期间案件办多久能结案相关法律规定。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"搜索相关法定处理期限条款\",\n      \"content\": \"<search>取保候审结案时间规定</search>\"\n    },\n    {\n      \"information\": \"《刑事诉讼法》第77条规定：取保候审期限不得超过12个月；此外，《刑事诉讼法》第202条明确规定一般案件侦查期限为2个月，复杂案件可申请延长，每次延长不得超过1个月，上级机关批准后最长侦查期限为6个月。\",\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析轻伤案件结案可能的时间范围\",\n      \"content\": \"根据上述规定，轻伤案件通常属于普通案件，侦查期限一般为2个月，如案情复杂或证据难以取得，可申请延长到最长6个月。此外，取保候审的期限不得超过12个月，确保嫌疑人权利保障。案件结案时间受侦查、起诉阶段及法院程序等影响，通常轻伤案在3到6个月内处理较为常见。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"结合案件实际情况估算结案时间\",\n      \"content\": \"轻伤案件案件性质简单，若证据充分可能结束侦查、移交起诉并结案的时间较短；若证据不足或案情复杂，则有可能持续到取保候审的满期限时间（12个月）。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"被取保候审的轻伤案件通常在3到6个月内可以结案，但若涉及复杂情况或需进一步侦查，最长不得超过取保候审的期限12个月。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"结论符合《刑事诉讼法》规定的侦查期限和取保候审的最长期限，能够解释正常办案的结案时间范围，因此结论正确。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"嗯，有人问被取保候审的轻伤案多久能结案，这个问题在刑法中其实涉及到故意伤害罪相关的规定。既然是取保候审，那说明这个案件目前应该还没审理完，不过嫌疑人已经被采取了一些限制措施。那现在关键是搞清楚，办案的时间有没有明确规定，以及法律上有哪些关于结案期限的要求。\\n\\n先说说轻伤案件吧，类似这种案件，通常属于普通的刑事案件。那我得看看《刑事诉讼法》是不是有关于案件办理时间的具体条文。还有取保候审期间，最长到底能有多长时间？\\n\\n我得查一下有关规定，好像记得取保候审和侦查期限都有时间限制，搜索一下这个问题更准确。<search>取保候审结案时间规定</search>\\n\\n<information>根据《刑事诉讼法》，普通刑事案件的侦查期限一般为2个月。如果案情复杂或者取证比较麻烦，侦查期限可以申请延长，一般来说最多延长到6个月。同时，取保候审的期限是不能超过12个月的，也就是说，如果12个月到了案件还没办完，那就必须解除取保措施。</information>\\n\\n这样的话，我基本有个思路了。轻伤案件本身不是那种特别复杂的案子，所以像这种普通案件的话，从侦查到移交起诉，再到结案，应该不会拖太久。如果证据确凿、案情简单，最快可能3个月左右搞定；但如果遇到复杂情况，比如需要补充侦查或者证据链不完整，6个月也不是没有可能。\\n\\n不过还有一种极端情况，比如说侦查机关可能一直在追加调查，或者取证过程遇到障碍，那结案时间可能会拖到接近取保候审期限，也就是12个月。但法律上是明确规定12个月是取保的上限，肯定不能超过这一时间。\\n\\n这样综合下来，我觉得正常来说，轻伤案件有很大可能在3到6个月内就能结案。如果超过6个月，那可能是因为案情复杂或者证据的甄别拖延，不过绝对不可能超过12个月这个最大的时间节点。\\n\\n嗯，感觉答案就是这个样子，总体结论还是可以说得过去的，符合《刑事诉讼法》的规定。所以，3到6个月算常态，复杂情况下一年内结案。\"\n}\n```",
+    "被取保候审的轻伤案件多久能结案，主要取决于案件的具体情况以及法律程序的推进速度。根据《刑事诉讼法》的相关规定，提供以下分析：\n\n1. **普通侦查期限**：轻伤案件如果案情清晰、证据确凿，属于普通刑事案件，侦查期限通常为2个月。如果在此期间完成侦查并移送审查起诉，后续的检察院审查和法院审判时间一般也比较短，因此整体从立案到结案，大约在3个月左右。\n\n2. **侦查期限延长**：如果案情复杂、证据需要补充，侦查期限可以依法延长。对于故意伤害轻伤案，根据法律规定，侦查期限最多可以延长到6个月。此类复杂情况下，案件整体办结时间可能要延长，但通常6个月内可以结案。\n\n3. **取保候审期限限制**：取保候审的法定期限不得超过12个月。如果案件尚未结案，法律要求侦查机关在期限内解除取保候审或者采取其他措施。因此，即使遇到极端复杂的情况，案件在取保候审期间也必须在12个月内完成侦查并进入下一阶段。\n\n**总结**：  \n轻伤案件一般案情较为简单，如程序推进顺畅，3至6个月内较为常见。如果遇到复杂或特殊情况，可能会接近取保候审的12个月期限，但这是法律规定的最长时限，不会超过这一时间。所以，一般来说，被取保候审的轻伤案件多会在几个月内结案，最长不超过一年。\n\n如需更具体的时间预期，建议结合案件的实际进展向承办机关确认。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "定义轻伤案涉及的法律规定",
+        "content": "轻伤案件在刑法中属于故意伤害罪的一种。如果被取保候审，则说明案件尚未审结，但嫌疑人已经被采取相关限制措施。需明确《刑事诉讼法》中规定的办案期限和结案流程。搜索关于取保候审期间案件办多久能结案相关法律规定。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "搜索相关法定处理期限条款",
+        "content": "<search>取保候审结案时间规定</search>"
+      },
+      {
+        "information": "《刑事诉讼法》第77条规定：取保候审期限不得超过12个月；此外，《刑事诉讼法》第202条明确规定一般案件侦查期限为2个月，复杂案件可申请延长，每次延长不得超过1个月，上级机关批准后最长侦查期限为6个月。",
+        "action": "Inner Thinking",
+        "title": "分析轻伤案件结案可能的时间范围",
+        "content": "根据上述规定，轻伤案件通常属于普通案件，侦查期限一般为2个月，如案情复杂或证据难以取得，可申请延长到最长6个月。此外，取保候审的期限不得超过12个月，确保嫌疑人权利保障。案件结案时间受侦查、起诉阶段及法院程序等影响，通常轻伤案在3到6个月内处理较为常见。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "结合案件实际情况估算结案时间",
+        "content": "轻伤案件案件性质简单，若证据充分可能结束侦查、移交起诉并结案的时间较短；若证据不足或案情复杂，则有可能持续到取保候审的满期限时间（12个月）。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "被取保候审的轻伤案件通常在3到6个月内可以结案，但若涉及复杂情况或需进一步侦查，最长不得超过取保候审的期限12个月。"
+      },
+      {
+        "action": "Verification",
+        "content": "结论符合《刑事诉讼法》规定的侦查期限和取保候审的最长期限，能够解释正常办案的结案时间范围，因此结论正确。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "嗯，有人问被取保候审的轻伤案多久能结案，这个问题在刑法中其实涉及到故意伤害罪相关的规定。既然是取保候审，那说明这个案件目前应该还没审理完，不过嫌疑人已经被采取了一些限制措施。那现在关键是搞清楚，办案的时间有没有明确规定，以及法律上有哪些关于结案期限的要求。\n\n先说说轻伤案件吧，类似这种案件，通常属于普通的刑事案件。那我得看看《刑事诉讼法》是不是有关于案件办理时间的具体条文。还有取保候审期间，最长到底能有多长时间？\n\n我得查一下有关规定，好像记得取保候审和侦查期限都有时间限制，搜索一下这个问题更准确。<search>取保候审结案时间规定</search>\n\n<information>根据《刑事诉讼法》，普通刑事案件的侦查期限一般为2个月。如果案情复杂或者取证比较麻烦，侦查期限可以申请延长，一般来说最多延长到6个月。同时，取保候审的期限是不能超过12个月的，也就是说，如果12个月到了案件还没办完，那就必须解除取保措施。</information>\n\n这样的话，我基本有个思路了。轻伤案件本身不是那种特别复杂的案子，所以像这种普通案件的话，从侦查到移交起诉，再到结案，应该不会拖太久。如果证据确凿、案情简单，最快可能3个月左右搞定；但如果遇到复杂情况，比如需要补充侦查或者证据链不完整，6个月也不是没有可能。\n\n不过还有一种极端情况，比如说侦查机关可能一直在追加调查，或者取证过程遇到障碍，那结案时间可能会拖到接近取保候审期限，也就是12个月。但法律上是明确规定12个月是取保的上限，肯定不能超过这一时间。\n\n这样综合下来，我觉得正常来说，轻伤案件有很大可能在3到6个月内就能结案。如果超过6个月，那可能是因为案情复杂或者证据的甄别拖延，不过绝对不可能超过12个月这个最大的时间节点。\n\n嗯，感觉答案就是这个样子，总体结论还是可以说得过去的，符合《刑事诉讼法》的规定。所以，3到6个月算常态，复杂情况下一年内结案。",
+  "Response": "被取保候审的轻伤案件多久能结案，主要取决于案件的具体情况以及法律程序的推进速度。根据《刑事诉讼法》的相关规定，提供以下分析：\n\n1. **普通侦查期限**：轻伤案件如果案情清晰、证据确凿，属于普通刑事案件，侦查期限通常为2个月。如果在此期间完成侦查并移送审查起诉，后续的检察院审查和法院审判时间一般也比较短，因此整体从立案到结案，大约在3个月左右。\n\n2. **侦查期限延长**：如果案情复杂、证据需要补充，侦查期限可以依法延长。对于故意伤害轻伤案，根据法律规定，侦查期限最多可以延长到6个月。此类复杂情况下，案件整体办结时间可能要延长，但通常6个月内可以结案。\n\n3. **取保候审期限限制**：取保候审的法定期限不得超过12个月。如果案件尚未结案，法律要求侦查机关在期限内解除取保候审或者采取其他措施。因此，即使遇到极端复杂的情况，案件在取保候审期间也必须在12个月内完成侦查并进入下一阶段。\n\n**总结**：  \n轻伤案件一般案情较为简单，如程序推进顺畅，3至6个月内较为常见。如果遇到复杂或特殊情况，可能会接近取保候审的12个月期限，但这是法律规定的最长时限，不会超过这一时间。所以，一般来说，被取保候审的轻伤案件多会在几个月内结案，最长不超过一年。\n\n如需更具体的时间预期，建议结合案件的实际进展向承办机关确认。",
+  "Question": "被取保候审的轻伤案多久能结案"
+}

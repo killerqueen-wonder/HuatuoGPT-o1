@@ -1,0 +1,129 @@
+{
+  "Open-ended Verifiable Question": "考察行政行为是否合法的因素有哪些？",
+  "Ground-True Answer": "一般提到行政行为是否合法，人们首先想到的是该行政行为有无法律依据。如果有法律依据，便是合法；如果没有，便是不合法。其实，行政行为的合法性包括很多要素。《行政复议法》规定，具体行政行为有下列情形之一，复议机关可以撤销、变更或者确认该具体行政行为违法：1.主要事实不清、证据不足的；2.适用依据错误的；3.违反法定程序的；4.超越或者滥用职权的；5.具体行政行为明显不当的。",
+  "process_id": 721,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "明确问题范围",
+      "content": "考察行政行为是否合法涉及多个因素。这些因素通常包括法律依据、程序合理性、主体资格等。为了提供准确答案，需要进一步分析这些因素的具体定义和要求。首先就每一个潜在因素展开逐步分析。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "确认行政行为需审查的法律依据",
+      "content": "行政行为是否具有法律依据是判断其合法性的核心标准之一。如果没有法律依据，行政行为可能违反法律原则。我需要确认与此相关的法律条文和规定。请求搜索相关内容。"
+    },
+    {
+      "action": "Search",
+      "title": "请求搜索相关法律规定",
+      "content": "<search>行政行为法律依据</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "确认行政行为的主体资格",
+      "content": "行政行为必须由具有法定权力的行政主体作出。如果主体无权作出该行为，则行为可能违法。这需要进一步分析行政主体资格的具体法律标准。请求搜索相关内容。"
+    },
+    {
+      "action": "Search",
+      "title": "请求搜索行政行为主体资格相关法律",
+      "content": "<search>行政主体资格法律标准</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "确认行政行为的程序合法性",
+      "content": "行政行为还需要满足程序正当原则，包括通知、听证和决策过程的规范性。程序不合法可能导致行政行为被撤销。请求搜索相关内容。"
+    },
+    {
+      "action": "Search",
+      "title": "请求搜索行政行为程序正当性原则",
+      "content": "<search>程序正当原则</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "综合各因素分析",
+      "content": "根据上述分析，考察行政行为是否合法需要包括以下三个主要方面：1）法律依据（行为是否基于法定权限）；2）主体资格（行为是否由合法主体作出）；3）程序合法性（行为是否符合正当程序）。如果某一方面不符合要求，则行政行为可能被认定为违法。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "考察行政行为是否合法的因素主要包括三个方面：法律依据（行为是否基于法定权限）、主体资格（行为是否由合法主体作出）和程序合法性（行为是否符合正当程序）。"
+    },
+    {
+      "action": "Verification",
+      "content": "通过对法律依据、主体资格以及程序正当性原则的前后分析，可以确认结论准确无误。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n考察行政行为是否合法的因素有哪些？\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n考察行政行为是否合法的因素主要包括三个方面：法律依据（行为是否基于法定权限）、主体资格（行为是否由合法主体作出）和程序合法性（行为是否符合正当程序）。  \n</Model Response>  \n\n<Reference Answer>  \n一般提到行政行为是否合法，人们首先想到的是该行政行为有无法律依据。如果有法律依据，便是合法；如果没有，便是不合法。其实，行政行为的合法性包括很多要素。《行政复议法》规定，具体行政行为有下列情形之一，复议机关可以撤销、变更或者确认该具体行政行为违法：1.主要事实不清、证据不足的；2.适用依据错误的；3.违反法定程序的；4.超越或者滥用职权的；5.具体行政行为明显不当的。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 明确问题范围\n考察行政行为是否合法涉及多个因素。这些因素通常包括法律依据、程序合理性、主体资格等。为了提供准确答案，需要进一步分析这些因素的具体定义和要求。首先就每一个潜在因素展开逐步分析。\n\n### 确认行政行为需审查的法律依据\n行政行为是否具有法律依据是判断其合法性的核心标准之一。如果没有法律依据，行政行为可能违反法律原则。我需要确认与此相关的法律条文和规定。请求搜索相关内容。\n\n### 请求搜索相关法律规定\n<search>行政行为法律依据</search>\n\n### 确认行政行为的主体资格\n行政行为必须由具有法定权力的行政主体作出。如果主体无权作出该行为，则行为可能违法。这需要进一步分析行政主体资格的具体法律标准。请求搜索相关内容。\n\n### 请求搜索行政行为主体资格相关法律\n<search>行政主体资格法律标准</search>\n\n### 确认行政行为的程序合法性\n行政行为还需要满足程序正当原则，包括通知、听证和决策过程的规范性。程序不合法可能导致行政行为被撤销。请求搜索相关内容。\n\n### 请求搜索行政行为程序正当性原则\n<search>程序正当原则</search>\n\n### 综合各因素分析\n根据上述分析，考察行政行为是否合法需要包括以下三个主要方面：1）法律依据（行为是否基于法定权限）；2）主体资格（行为是否由合法主体作出）；3）程序合法性（行为是否符合正当程序）。如果某一方面不符合要求，则行政行为可能被认定为违法。\n\n### Conclusion\n考察行政行为是否合法的因素主要包括三个方面：法律依据（行为是否基于法定权限）、主体资格（行为是否由合法主体作出）和程序合法性（行为是否符合正当程序）。\n\n### Verification\n通过对法律依据、主体资格以及程序正当性原则的前后分析，可以确认结论准确无误。\n</Thought Process>\n\n<Question>\n考察行政行为是否合法的因素有哪些？\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n嗯，要判断一个行政行为是否合法，好像有挺多地方需要注意。首先，这事儿得有法律依据吧？如果行政机关没事儿乱搞，没有法律支持，那肯定不行。我要看看法律对这个有没有明确的规定，比如哪些行为是可以做的，哪些是越权了。<search>行政行为法律依据</search>\n\n然后又想到，这个行政行为是哪个机构做出来的呢？有些事只有特定的行政主体才能做，比如某个部门或者单位有没有权限，好像挺讲究的。如果主体不合法，那不管它做的事情看起来正不正常，都不行吧？我应该找找关于行政主体资格的法律标准是什么样的。<search>行政主体资格法律标准</search>\n\n啊，对了，还有程序问题。就算行政行为看上去有法律依据，而且主体也没问题，但如果过程不正规，比如没有给当事人通知，没有听证，或者程序搞得很乱，那好像也是不合法的吧？这个程序正当性好重要，我得查查这方面的原则是怎么说的。<search>程序正当原则</search>\n\n综上来看，判断行政行为是否合法这事儿，至少得从三个方面考虑：一是行为有没有法律依据；二是行为是不是合法主体做出来的；三就是过程是否按规矩来，是不是正当程序，这三点应该都挺重要的。我感觉，得把这些都明确了，才能估计得出结论。\n\n还有，我刚刚理了下思路，发现这个判断标准还挺完善的，自己再回头捋一遍好像也没有遗漏的地方，三个核心要素听起来挺合理。法律依据、主体资格和程序正当性，应该就是判断行政行为是否合法的主要标准。嗯，差不多就这样了。\n</Internal Thinking>\n\n<Question>\n考察行政行为是否合法的因素有哪些？\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"明确问题范围\",\n      \"content\": \"考察行政行为是否合法涉及多个因素。这些因素通常包括法律依据、程序合理性、主体资格等。为了提供准确答案，需要进一步分析这些因素的具体定义和要求。首先就每一个潜在因素展开逐步分析。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"确认行政行为需审查的法律依据\",\n      \"content\": \"行政行为是否具有法律依据是判断其合法性的核心标准之一。如果没有法律依据，行政行为可能违反法律原则。我需要确认与此相关的法律条文和规定。请求搜索相关内容。\"\n    },\n    {\n      \"action\": \"Search\",\n      \"title\": \"请求搜索相关法律规定\",\n      \"content\": \"<search>行政行为法律依据</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"确认行政行为的主体资格\",\n      \"content\": \"行政行为必须由具有法定权力的行政主体作出。如果主体无权作出该行为，则行为可能违法。这需要进一步分析行政主体资格的具体法律标准。请求搜索相关内容。\"\n    },\n    {\n      \"action\": \"Search\",\n      \"title\": \"请求搜索行政行为主体资格相关法律\",\n      \"content\": \"<search>行政主体资格法律标准</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"确认行政行为的程序合法性\",\n      \"content\": \"行政行为还需要满足程序正当原则，包括通知、听证和决策过程的规范性。程序不合法可能导致行政行为被撤销。请求搜索相关内容。\"\n    },\n    {\n      \"action\": \"Search\",\n      \"title\": \"请求搜索行政行为程序正当性原则\",\n      \"content\": \"<search>程序正当原则</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"综合各因素分析\",\n      \"content\": \"根据上述分析，考察行政行为是否合法需要包括以下三个主要方面：1）法律依据（行为是否基于法定权限）；2）主体资格（行为是否由合法主体作出）；3）程序合法性（行为是否符合正当程序）。如果某一方面不符合要求，则行政行为可能被认定为违法。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"考察行政行为是否合法的因素主要包括三个方面：法律依据（行为是否基于法定权限）、主体资格（行为是否由合法主体作出）和程序合法性（行为是否符合正当程序）。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"通过对法律依据、主体资格以及程序正当性原则的前后分析，可以确认结论准确无误。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"嗯，要判断一个行政行为是否合法，好像有挺多地方需要注意。首先，这事儿得有法律依据吧？如果行政机关没事儿乱搞，没有法律支持，那肯定不行。我要看看法律对这个有没有明确的规定，比如哪些行为是可以做的，哪些是越权了。<search>行政行为法律依据</search>\\n\\n然后又想到，这个行政行为是哪个机构做出来的呢？有些事只有特定的行政主体才能做，比如某个部门或者单位有没有权限，好像挺讲究的。如果主体不合法，那不管它做的事情看起来正不正常，都不行吧？我应该找找关于行政主体资格的法律标准是什么样的。<search>行政主体资格法律标准</search>\\n\\n啊，对了，还有程序问题。就算行政行为看上去有法律依据，而且主体也没问题，但如果过程不正规，比如没有给当事人通知，没有听证，或者程序搞得很乱，那好像也是不合法的吧？这个程序正当性好重要，我得查查这方面的原则是怎么说的。<search>程序正当原则</search>\\n\\n综上来看，判断行政行为是否合法这事儿，至少得从三个方面考虑：一是行为有没有法律依据；二是行为是不是合法主体做出来的；三就是过程是否按规矩来，是不是正当程序，这三点应该都挺重要的。我感觉，得把这些都明确了，才能估计得出结论。\\n\\n还有，我刚刚理了下思路，发现这个判断标准还挺完善的，自己再回头捋一遍好像也没有遗漏的地方，三个核心要素听起来挺合理。法律依据、主体资格和程序正当性，应该就是判断行政行为是否合法的主要标准。嗯，差不多就这样了。\"\n}\n```",
+    "考察行政行为是否合法主要涉及以下三个核心因素：\n\n1. **法律依据**：行政行为必须有明确的法律依据。行政机关不能随意行使权力，其行为需符合相关法律、行政法规或规章的规定。如果行政行为缺乏法律支持，或者超出了法律授权的范围，就会构成违法行为。这一点要求检查行为是否在合法权限内，并是否遵守具体的法律条文。\n\n2. **行政主体资格**：实施行政行为的主体必须具有合法的资格。行政机关或相关单位必须拥有法定权限，如果某个行为超出了其职责范围，或者该主体根本无权实施该行为，则其行为属于无效或违法。例如，不具备特定职权的部门实施某些特定行为，就构成主体不合法。\n\n3. **程序正当性**：行政行为必须遵循法定程序。行政机关在作出决定或采取行动时，必须依法履行必要的程序，如告知义务、公开听证、征求意见、给予当事人申辩机会等。如果行政程序存在瑕疵，例如未履行法定步骤或侵犯当事人权利，也会导致该行为被认定为不合法。\n\n这三个因素是判断行政行为是否合法的基本标准。只有同时满足法律依据、行政主体资格与程序正当性，行政行为才能被认定为合法。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "明确问题范围",
+        "content": "考察行政行为是否合法涉及多个因素。这些因素通常包括法律依据、程序合理性、主体资格等。为了提供准确答案，需要进一步分析这些因素的具体定义和要求。首先就每一个潜在因素展开逐步分析。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "确认行政行为需审查的法律依据",
+        "content": "行政行为是否具有法律依据是判断其合法性的核心标准之一。如果没有法律依据，行政行为可能违反法律原则。我需要确认与此相关的法律条文和规定。请求搜索相关内容。"
+      },
+      {
+        "action": "Search",
+        "title": "请求搜索相关法律规定",
+        "content": "<search>行政行为法律依据</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "确认行政行为的主体资格",
+        "content": "行政行为必须由具有法定权力的行政主体作出。如果主体无权作出该行为，则行为可能违法。这需要进一步分析行政主体资格的具体法律标准。请求搜索相关内容。"
+      },
+      {
+        "action": "Search",
+        "title": "请求搜索行政行为主体资格相关法律",
+        "content": "<search>行政主体资格法律标准</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "确认行政行为的程序合法性",
+        "content": "行政行为还需要满足程序正当原则，包括通知、听证和决策过程的规范性。程序不合法可能导致行政行为被撤销。请求搜索相关内容。"
+      },
+      {
+        "action": "Search",
+        "title": "请求搜索行政行为程序正当性原则",
+        "content": "<search>程序正当原则</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "综合各因素分析",
+        "content": "根据上述分析，考察行政行为是否合法需要包括以下三个主要方面：1）法律依据（行为是否基于法定权限）；2）主体资格（行为是否由合法主体作出）；3）程序合法性（行为是否符合正当程序）。如果某一方面不符合要求，则行政行为可能被认定为违法。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "考察行政行为是否合法的因素主要包括三个方面：法律依据（行为是否基于法定权限）、主体资格（行为是否由合法主体作出）和程序合法性（行为是否符合正当程序）。"
+      },
+      {
+        "action": "Verification",
+        "content": "通过对法律依据、主体资格以及程序正当性原则的前后分析，可以确认结论准确无误。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "嗯，要判断一个行政行为是否合法，好像有挺多地方需要注意。首先，这事儿得有法律依据吧？如果行政机关没事儿乱搞，没有法律支持，那肯定不行。我要看看法律对这个有没有明确的规定，比如哪些行为是可以做的，哪些是越权了。<search>行政行为法律依据</search>\n\n然后又想到，这个行政行为是哪个机构做出来的呢？有些事只有特定的行政主体才能做，比如某个部门或者单位有没有权限，好像挺讲究的。如果主体不合法，那不管它做的事情看起来正不正常，都不行吧？我应该找找关于行政主体资格的法律标准是什么样的。<search>行政主体资格法律标准</search>\n\n啊，对了，还有程序问题。就算行政行为看上去有法律依据，而且主体也没问题，但如果过程不正规，比如没有给当事人通知，没有听证，或者程序搞得很乱，那好像也是不合法的吧？这个程序正当性好重要，我得查查这方面的原则是怎么说的。<search>程序正当原则</search>\n\n综上来看，判断行政行为是否合法这事儿，至少得从三个方面考虑：一是行为有没有法律依据；二是行为是不是合法主体做出来的；三就是过程是否按规矩来，是不是正当程序，这三点应该都挺重要的。我感觉，得把这些都明确了，才能估计得出结论。\n\n还有，我刚刚理了下思路，发现这个判断标准还挺完善的，自己再回头捋一遍好像也没有遗漏的地方，三个核心要素听起来挺合理。法律依据、主体资格和程序正当性，应该就是判断行政行为是否合法的主要标准。嗯，差不多就这样了。",
+  "Response": "考察行政行为是否合法主要涉及以下三个核心因素：\n\n1. **法律依据**：行政行为必须有明确的法律依据。行政机关不能随意行使权力，其行为需符合相关法律、行政法规或规章的规定。如果行政行为缺乏法律支持，或者超出了法律授权的范围，就会构成违法行为。这一点要求检查行为是否在合法权限内，并是否遵守具体的法律条文。\n\n2. **行政主体资格**：实施行政行为的主体必须具有合法的资格。行政机关或相关单位必须拥有法定权限，如果某个行为超出了其职责范围，或者该主体根本无权实施该行为，则其行为属于无效或违法。例如，不具备特定职权的部门实施某些特定行为，就构成主体不合法。\n\n3. **程序正当性**：行政行为必须遵循法定程序。行政机关在作出决定或采取行动时，必须依法履行必要的程序，如告知义务、公开听证、征求意见、给予当事人申辩机会等。如果行政程序存在瑕疵，例如未履行法定步骤或侵犯当事人权利，也会导致该行为被认定为不合法。\n\n这三个因素是判断行政行为是否合法的基本标准。只有同时满足法律依据、行政主体资格与程序正当性，行政行为才能被认定为合法。",
+  "Question": "考察行政行为是否合法的因素有哪些？"
+}

@@ -1,0 +1,99 @@
+{
+  "Open-ended Verifiable Question": "单位虚假出资主要表现有哪些？",
+  "Ground-True Answer": "（1）以无实际现金或高于实际现金的虚假银行进账单、对账单骗取验资报告，从而获得公司登记；\n（2）以虚假的实物投资手续骗取验资报告，从而获得公司登记；\n（3）以实物、工业产权、非专利技术、土地使用权出资，但并未办理财产权转移手续；\n（4）作为出资的实物、工业产权、非专利技术、土地使用权的实际价额显著低于公司章程所定价额；\n（5）单位股东设立公司时，为了应付验资，将款项短期转入公司账户后又立即转出，公司未实际使用该款项进行经营；\n（6）未对投入的净资产进行审计，仅以投资者提供的少记负债高估资产的会计报表验资。",
+  "process_id": 4933,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "理解单位虚假出资的定义",
+      "content": "单位虚假出资是指公司或者其他企业在设立或增资过程中，以欺骗手段验资、验股，但未按法律规定实际缴纳出资或者实际缴纳的出资数额与申报的出资不符的行为。这种行为可能导致公司的资本形成不真实，对外部债权人和市场秩序造成潜在危害。接下来需要了解具体表现形式以便明显识别。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "检索虚假出资的具体表现形式",
+      "content": "为了厘清单位虚假出资的主要表现形式，需要参考相关法律法规关于虚假出资的具体规定，以及典型案例中如何界定其表现形式。因此，检索相关关键内容。"
+    },
+    {
+      "action": "<search>",
+      "title": "查找单位虚假出资的表现依据",
+      "content": "虚假出资行为相关规定和法律，例如《公司法》和司法解释"
+    },
+    {
+      "action": "<information>",
+      "title": "法律搜索结果",
+      "content": "1. 根据中国《公司法》第28条，股东虚假出资是未按照公司章程的规定缴纳所认缴的出资额的行为；\n2. 《最高人民法院关于适用<中华人民共和国公司法>若干问题的规定(三)》明确了虚假出资的具体责任形式；\n3. 虚假出资包括以下行为：以非货币财产虚假评估、重复验资、抽逃投资资金、利用借款等方式应付验资程序。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "整理虚假出资的主要表现形式",
+      "content": "结合法律条文和实践案例，虚假出资的表现形式可以具体总结为以下几类：\n1. 以虚假资产进行出资，比如伪造资产价值。\n2. 虚报出资金额，缴纳的资金未达到实际承诺的数额。\n3. 重复验资行为，以同一笔资金多次出资应付审查环节。\n4. 骗取验资证明，例如通过第三方临时借款或者短期注资后抽离资金。\n5. 抽逃投资资金，即在完成公司注册后将出资金额抽离，导致公司资本无法真实达到登记水平。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "单位虚假出资的主要表现包括：\n1. 以虚假资产进行出资，例如伪造财产价值；\n2. 虚报出资金额，资金实际未达承诺出资额；\n3. 重复验资，以同一笔资金多次认证；\n4. 骗取验资证明，短期注资后撤资；\n5. 抽逃资金，在注册完成后撤回出资金额。"
+    },
+    {
+      "action": "Verification",
+      "content": "结论符合我国《公司法》相关规定以及司法解释中的适用条款，涵盖虚假出资的主要表现形式，逻辑全面且准确。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n单位虚假出资主要表现有哪些？\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n单位虚假出资的主要表现包括：\n1. 以虚假资产进行出资，例如伪造财产价值；\n2. 虚报出资金额，资金实际未达承诺出资额；\n3. 重复验资，以同一笔资金多次认证；\n4. 骗取验资证明，短期注资后撤资；\n5. 抽逃资金，在注册完成后撤回出资金额。  \n</Model Response>  \n\n<Reference Answer>  \n（1）以无实际现金或高于实际现金的虚假银行进账单、对账单骗取验资报告，从而获得公司登记；\n（2）以虚假的实物投资手续骗取验资报告，从而获得公司登记；\n（3）以实物、工业产权、非专利技术、土地使用权出资，但并未办理财产权转移手续；\n（4）作为出资的实物、工业产权、非专利技术、土地使用权的实际价额显著低于公司章程所定价额；\n（5）单位股东设立公司时，为了应付验资，将款项短期转入公司账户后又立即转出，公司未实际使用该款项进行经营；\n（6）未对投入的净资产进行审计，仅以投资者提供的少记负债高估资产的会计报表验资。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 理解单位虚假出资的定义\n单位虚假出资是指公司或者其他企业在设立或增资过程中，以欺骗手段验资、验股，但未按法律规定实际缴纳出资或者实际缴纳的出资数额与申报的出资不符的行为。这种行为可能导致公司的资本形成不真实，对外部债权人和市场秩序造成潜在危害。接下来需要了解具体表现形式以便明显识别。\n\n### 检索虚假出资的具体表现形式\n为了厘清单位虚假出资的主要表现形式，需要参考相关法律法规关于虚假出资的具体规定，以及典型案例中如何界定其表现形式。因此，检索相关关键内容。\n\n### 查找单位虚假出资的表现依据\n虚假出资行为相关规定和法律，例如《公司法》和司法解释\n\n### 法律搜索结果\n1. 根据中国《公司法》第28条，股东虚假出资是未按照公司章程的规定缴纳所认缴的出资额的行为；\n2. 《最高人民法院关于适用<中华人民共和国公司法>若干问题的规定(三)》明确了虚假出资的具体责任形式；\n3. 虚假出资包括以下行为：以非货币财产虚假评估、重复验资、抽逃投资资金、利用借款等方式应付验资程序。\n\n### 整理虚假出资的主要表现形式\n结合法律条文和实践案例，虚假出资的表现形式可以具体总结为以下几类：\n1. 以虚假资产进行出资，比如伪造资产价值。\n2. 虚报出资金额，缴纳的资金未达到实际承诺的数额。\n3. 重复验资行为，以同一笔资金多次出资应付审查环节。\n4. 骗取验资证明，例如通过第三方临时借款或者短期注资后抽离资金。\n5. 抽逃投资资金，即在完成公司注册后将出资金额抽离，导致公司资本无法真实达到登记水平。\n\n### Conclusion\n单位虚假出资的主要表现包括：\n1. 以虚假资产进行出资，例如伪造财产价值；\n2. 虚报出资金额，资金实际未达承诺出资额；\n3. 重复验资，以同一笔资金多次认证；\n4. 骗取验资证明，短期注资后撤资；\n5. 抽逃资金，在注册完成后撤回出资金额。\n\n### Verification\n结论符合我国《公司法》相关规定以及司法解释中的适用条款，涵盖虚假出资的主要表现形式，逻辑全面且准确。\n</Thought Process>\n\n<Question>\n单位虚假出资主要表现有哪些？\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n嗯，我得先弄清楚单位虚假出资的概念。其实这个词听着有点儿法律范儿，好像和公司出资相关。之前看到过一个定义，意思就是说公司或者企业在设立或者增资的时候玩了点儿花招，表面上看起来出资了，但实际没按规定真的掏钱，或者掏的钱和申报的不一样。想到这里，虚假出资感觉应该挺严重的，可能会影响公司资本的真实情况，也不利于保护债权人的利益吧。嗯，我需要确认它具体有哪些表现形式，这样才能更好识别这种行为，防止被坑。\n\n接下来，我要开始找找看法律上到底怎么定义虚假出资，还有一些实际案例是怎么描述的。可以试着搜关键词，比如虚假出资的表现形式、法律条文之类的。哦，《公司法》好像有相关规定，这个得查一下。\n\n<search>公司法虚假出资</search>\n\n<information>根据中国《公司法》第28条，股东虚假出资是未按照公司章程的规定缴纳所认缴的出资额的行为。</information>\n<information>还有《最高人民法院关于适用<中华人民共和国公司法>若干问题的规定(三)》，里面好像也明确了虚假出资该怎么追究责任。</information>\n\n嗯，根据这些内容我可以总结一下，虚假出资感觉不止是不交钱那么简单，可能还有很多特殊方式来达成。比如有的公司用假的东西来充数，说自己出了资产，但其实那个资产根本不值它申报的那么多；还有一些公司短期把钱注入账户就为了骗验资证明，完事儿就把钱抽走了。\n\n看来我需要再具体栓栓这里面的逻辑。刚刚查到的规定提到了一些细节，一种是用非货币财产虚假出资，比如伪造资产价值；还有重复验资，就是拿同一笔资金只转来转去看上去好像有钱充足的样子；另外就是抽逃资金，这种方式好像最常见，注册公司之后把最初申报的出资偷偷撤回。哦，对了，还有利用借款应付验资程序，这些行为都挺鬼的。\n\n让我整理下吧，虚假出资的表现形式应该可以归为几类：第一，用虚假的资产去出资，比如伪造财产价值；第二，虚报资金，这样实际缴纳的和承诺的金额不符；第三，重复验资，钱转圈后多次验资通过；第四，借钱临时注资骗取验资证明；最后，抽逃资金，注册后偷偷把出资的钱撤走。这些方式听上去都很有欺骗性。\n\n嗯，看起来这总结和法律规定的条款还有相关案例中的讨论是对得上的，逻辑应该没问题。我想单位虚假出资就是这几种主要表现形式了，把这些记下来，以后碰到可得注意点。\n</Internal Thinking>\n\n<Question>\n单位虚假出资主要表现有哪些？\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"理解单位虚假出资的定义\",\n      \"content\": \"单位虚假出资是指公司或者其他企业在设立或增资过程中，以欺骗手段验资、验股，但未按法律规定实际缴纳出资或者实际缴纳的出资数额与申报的出资不符的行为。这种行为可能导致公司的资本形成不真实，对外部债权人和市场秩序造成潜在危害。接下来需要了解具体表现形式以便明显识别。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"检索虚假出资的具体表现形式\",\n      \"content\": \"为了厘清单位虚假出资的主要表现形式，需要参考相关法律法规关于虚假出资的具体规定，以及典型案例中如何界定其表现形式。因此，检索相关关键内容。\"\n    },\n    {\n      \"action\": \"<search>\",\n      \"title\": \"查找单位虚假出资的表现依据\",\n      \"content\": \"虚假出资行为相关规定和法律，例如《公司法》和司法解释\"\n    },\n    {\n      \"action\": \"<information>\",\n      \"title\": \"法律搜索结果\",\n      \"content\": \"1. 根据中国《公司法》第28条，股东虚假出资是未按照公司章程的规定缴纳所认缴的出资额的行为；\\n2. 《最高人民法院关于适用<中华人民共和国公司法>若干问题的规定(三)》明确了虚假出资的具体责任形式；\\n3. 虚假出资包括以下行为：以非货币财产虚假评估、重复验资、抽逃投资资金、利用借款等方式应付验资程序。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"整理虚假出资的主要表现形式\",\n      \"content\": \"结合法律条文和实践案例，虚假出资的表现形式可以具体总结为以下几类：\\n1. 以虚假资产进行出资，比如伪造资产价值。\\n2. 虚报出资金额，缴纳的资金未达到实际承诺的数额。\\n3. 重复验资行为，以同一笔资金多次出资应付审查环节。\\n4. 骗取验资证明，例如通过第三方临时借款或者短期注资后抽离资金。\\n5. 抽逃投资资金，即在完成公司注册后将出资金额抽离，导致公司资本无法真实达到登记水平。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"单位虚假出资的主要表现包括：\\n1. 以虚假资产进行出资，例如伪造财产价值；\\n2. 虚报出资金额，资金实际未达承诺出资额；\\n3. 重复验资，以同一笔资金多次认证；\\n4. 骗取验资证明，短期注资后撤资；\\n5. 抽逃资金，在注册完成后撤回出资金额。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"结论符合我国《公司法》相关规定以及司法解释中的适用条款，涵盖虚假出资的主要表现形式，逻辑全面且准确。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"嗯，我得先弄清楚单位虚假出资的概念。其实这个词听着有点儿法律范儿，好像和公司出资相关。之前看到过一个定义，意思就是说公司或者企业在设立或者增资的时候玩了点儿花招，表面上看起来出资了，但实际没按规定真的掏钱，或者掏的钱和申报的不一样。想到这里，虚假出资感觉应该挺严重的，可能会影响公司资本的真实情况，也不利于保护债权人的利益吧。嗯，我需要确认它具体有哪些表现形式，这样才能更好识别这种行为，防止被坑。\\n\\n接下来，我要开始找找看法律上到底怎么定义虚假出资，还有一些实际案例是怎么描述的。可以试着搜关键词，比如虚假出资的表现形式、法律条文之类的。哦，《公司法》好像有相关规定，这个得查一下。\\n\\n<search>公司法虚假出资</search>\\n\\n<information>根据中国《公司法》第28条，股东虚假出资是未按照公司章程的规定缴纳所认缴的出资额的行为。</information>\\n<information>还有《最高人民法院关于适用<中华人民共和国公司法>若干问题的规定(三)》，里面好像也明确了虚假出资该怎么追究责任。</information>\\n\\n嗯，根据这些内容我可以总结一下，虚假出资感觉不止是不交钱那么简单，可能还有很多特殊方式来达成。比如有的公司用假的东西来充数，说自己出了资产，但其实那个资产根本不值它申报的那么多；还有一些公司短期把钱注入账户就为了骗验资证明，完事儿就把钱抽走了。\\n\\n看来我需要再具体栓栓这里面的逻辑。刚刚查到的规定提到了一些细节，一种是用非货币财产虚假出资，比如伪造资产价值；还有重复验资，就是拿同一笔资金只转来转去看上去好像有钱充足的样子；另外就是抽逃资金，这种方式好像最常见，注册公司之后把最初申报的出资偷偷撤回。哦，对了，还有利用借款应付验资程序，这些行为都挺鬼的。\\n\\n让我整理下吧，虚假出资的表现形式应该可以归为几类：第一，用虚假的资产去出资，比如伪造财产价值；第二，虚报资金，这样实际缴纳的和承诺的金额不符；第三，重复验资，钱转圈后多次验资通过；第四，借钱临时注资骗取验资证明；最后，抽逃资金，注册后偷偷把出资的钱撤走。这些方式听上去都很有欺骗性。\\n\\n嗯，看起来这总结和法律规定的条款还有相关案例中的讨论是对得上的，逻辑应该没问题。我想单位虚假出资就是这几种主要表现形式了，把这些记下来，以后碰到可得注意点。\"\n}\n```",
+    "单位虚假出资主要有以下几种表现形式：\n\n1. **以虚假的资产出资**：将实际上不具备出资能力的资产，比如虚假的货币、以显著高估价值的非货币财产（如不值钱的机器设备、过期或无实际价值的技术专利等）作为出资，从而虚增注册资本。\n\n2. **实际出资不足**：申报的出资金额与实际缴纳的金额不符，比如承诺出资100万元，但实际只缴纳了50万元。\n\n3. **重复验资**：通过多次使用同一笔资金完成验资程序，比如将资金从一个公司账户转到另一个账户，不断流转制造出多笔资金注入的假象。\n\n4. **借款临时注资**：通过短期借款在验资过程中临时将资金存入公司账户，验资完成后立即撤回，这种方式会在公司成立时导致虚假的资本充实情况。\n\n5. **抽逃出资**：在公司注册成立后，股东将原本用于注册资本的款项以各种方式抽走，导致注册资本无法维持公司实际运营所需。\n\n上述这些表现形式不仅违反《公司法》第28条的规定，还可能扰乱市场经济秩序，侵害债权人的合法权益。一旦发现，相关责任人可能面临被追究法律责任，包括但不限于行政处罚、民事赔偿甚至刑事责任。因此，在实际经营中，应避免触碰这些法律红线。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "理解单位虚假出资的定义",
+        "content": "单位虚假出资是指公司或者其他企业在设立或增资过程中，以欺骗手段验资、验股，但未按法律规定实际缴纳出资或者实际缴纳的出资数额与申报的出资不符的行为。这种行为可能导致公司的资本形成不真实，对外部债权人和市场秩序造成潜在危害。接下来需要了解具体表现形式以便明显识别。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "检索虚假出资的具体表现形式",
+        "content": "为了厘清单位虚假出资的主要表现形式，需要参考相关法律法规关于虚假出资的具体规定，以及典型案例中如何界定其表现形式。因此，检索相关关键内容。"
+      },
+      {
+        "action": "<search>",
+        "title": "查找单位虚假出资的表现依据",
+        "content": "虚假出资行为相关规定和法律，例如《公司法》和司法解释"
+      },
+      {
+        "action": "<information>",
+        "title": "法律搜索结果",
+        "content": "1. 根据中国《公司法》第28条，股东虚假出资是未按照公司章程的规定缴纳所认缴的出资额的行为；\n2. 《最高人民法院关于适用<中华人民共和国公司法>若干问题的规定(三)》明确了虚假出资的具体责任形式；\n3. 虚假出资包括以下行为：以非货币财产虚假评估、重复验资、抽逃投资资金、利用借款等方式应付验资程序。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "整理虚假出资的主要表现形式",
+        "content": "结合法律条文和实践案例，虚假出资的表现形式可以具体总结为以下几类：\n1. 以虚假资产进行出资，比如伪造资产价值。\n2. 虚报出资金额，缴纳的资金未达到实际承诺的数额。\n3. 重复验资行为，以同一笔资金多次出资应付审查环节。\n4. 骗取验资证明，例如通过第三方临时借款或者短期注资后抽离资金。\n5. 抽逃投资资金，即在完成公司注册后将出资金额抽离，导致公司资本无法真实达到登记水平。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "单位虚假出资的主要表现包括：\n1. 以虚假资产进行出资，例如伪造财产价值；\n2. 虚报出资金额，资金实际未达承诺出资额；\n3. 重复验资，以同一笔资金多次认证；\n4. 骗取验资证明，短期注资后撤资；\n5. 抽逃资金，在注册完成后撤回出资金额。"
+      },
+      {
+        "action": "Verification",
+        "content": "结论符合我国《公司法》相关规定以及司法解释中的适用条款，涵盖虚假出资的主要表现形式，逻辑全面且准确。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "嗯，我得先弄清楚单位虚假出资的概念。其实这个词听着有点儿法律范儿，好像和公司出资相关。之前看到过一个定义，意思就是说公司或者企业在设立或者增资的时候玩了点儿花招，表面上看起来出资了，但实际没按规定真的掏钱，或者掏的钱和申报的不一样。想到这里，虚假出资感觉应该挺严重的，可能会影响公司资本的真实情况，也不利于保护债权人的利益吧。嗯，我需要确认它具体有哪些表现形式，这样才能更好识别这种行为，防止被坑。\n\n接下来，我要开始找找看法律上到底怎么定义虚假出资，还有一些实际案例是怎么描述的。可以试着搜关键词，比如虚假出资的表现形式、法律条文之类的。哦，《公司法》好像有相关规定，这个得查一下。\n\n<search>公司法虚假出资</search>\n\n<information>根据中国《公司法》第28条，股东虚假出资是未按照公司章程的规定缴纳所认缴的出资额的行为。</information>\n<information>还有《最高人民法院关于适用<中华人民共和国公司法>若干问题的规定(三)》，里面好像也明确了虚假出资该怎么追究责任。</information>\n\n嗯，根据这些内容我可以总结一下，虚假出资感觉不止是不交钱那么简单，可能还有很多特殊方式来达成。比如有的公司用假的东西来充数，说自己出了资产，但其实那个资产根本不值它申报的那么多；还有一些公司短期把钱注入账户就为了骗验资证明，完事儿就把钱抽走了。\n\n看来我需要再具体栓栓这里面的逻辑。刚刚查到的规定提到了一些细节，一种是用非货币财产虚假出资，比如伪造资产价值；还有重复验资，就是拿同一笔资金只转来转去看上去好像有钱充足的样子；另外就是抽逃资金，这种方式好像最常见，注册公司之后把最初申报的出资偷偷撤回。哦，对了，还有利用借款应付验资程序，这些行为都挺鬼的。\n\n让我整理下吧，虚假出资的表现形式应该可以归为几类：第一，用虚假的资产去出资，比如伪造财产价值；第二，虚报资金，这样实际缴纳的和承诺的金额不符；第三，重复验资，钱转圈后多次验资通过；第四，借钱临时注资骗取验资证明；最后，抽逃资金，注册后偷偷把出资的钱撤走。这些方式听上去都很有欺骗性。\n\n嗯，看起来这总结和法律规定的条款还有相关案例中的讨论是对得上的，逻辑应该没问题。我想单位虚假出资就是这几种主要表现形式了，把这些记下来，以后碰到可得注意点。",
+  "Response": "单位虚假出资主要有以下几种表现形式：\n\n1. **以虚假的资产出资**：将实际上不具备出资能力的资产，比如虚假的货币、以显著高估价值的非货币财产（如不值钱的机器设备、过期或无实际价值的技术专利等）作为出资，从而虚增注册资本。\n\n2. **实际出资不足**：申报的出资金额与实际缴纳的金额不符，比如承诺出资100万元，但实际只缴纳了50万元。\n\n3. **重复验资**：通过多次使用同一笔资金完成验资程序，比如将资金从一个公司账户转到另一个账户，不断流转制造出多笔资金注入的假象。\n\n4. **借款临时注资**：通过短期借款在验资过程中临时将资金存入公司账户，验资完成后立即撤回，这种方式会在公司成立时导致虚假的资本充实情况。\n\n5. **抽逃出资**：在公司注册成立后，股东将原本用于注册资本的款项以各种方式抽走，导致注册资本无法维持公司实际运营所需。\n\n上述这些表现形式不仅违反《公司法》第28条的规定，还可能扰乱市场经济秩序，侵害债权人的合法权益。一旦发现，相关责任人可能面临被追究法律责任，包括但不限于行政处罚、民事赔偿甚至刑事责任。因此，在实际经营中，应避免触碰这些法律红线。",
+  "Question": "单位虚假出资主要表现有哪些？"
+}

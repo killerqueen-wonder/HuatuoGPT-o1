@@ -1,0 +1,89 @@
+{
+  "Open-ended Verifiable Question": "工作时间工作原因导致基础病发作算工伤吗?",
+  "Ground-True Answer": "工作期间突发疾病算工伤。在工作时间和工作地点内突发疾病死亡可以认定为工伤，工伤的范围如下：第一，在工作时间和工作场所内受伤；第二，从事收尾性或预备性工作受伤；第三，因履职受到暴力伤害；第四，患职业病；第五，上下班途中非本人主要责任的交通事故等等。如果只是基础病发作不算工伤",
+  "process_id": 6905,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "明确问题的法律性质",
+      "content": "该问题涉及劳动法和工伤保险条例中的相关内容，需要确认工作的原因是否直接导致了基础病的发作，以及这是否符合工伤认定的条件。初步判断需要查看《工伤保险条例》的相关规定。<search>《工伤保险条例》工伤认定</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "查阅《工伤保险条例》的工伤认定条件",
+      "content": "<information>《工伤保险条例》第十四条规定以下情形视为工伤：1.在工作时间和工作场所内因工作原因受到事故伤害的；2.因工外出期间由于工作原因受到伤害或发生事故等。</information>。进一步分析：基础病发作是否因工作原因直接导致需要明确因果关系，这属于工伤认定的核心要素。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "分析“工作原因导致基础病发作”是否符合条件",
+      "content": "根据《工伤保险条例》第十四条，如果工作原因与疾病发作之间存在直接因果关系，并且疾病发作是在工作时间和工作场所发生，则可能被认定为工伤。但通常基础病本身不属于工伤范畴，必须证明工作场所的环境或工作的强度等直接诱发了疾病的发作。这需要医疗及相关证据支持。继续查阅专业解释或案例支持此观点。<search>工伤认定基础病案例</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "查阅案例或相关专业解释",
+      "content": "<information>一些案例显示，如果劳动者因工作原因导致突发性、急性的基础病症加重（如心脏病等），并存在直接的因果关系，某些情况下会被认定为工伤，例如长时间高压力工作诱发急性病症。一些法院依据具体情况和专家意见支持认定为工伤。</information>。这表明需要具体场景中的证据，包括医学鉴定和工作环境对病发影响的证明。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "在工作时间因工作原因导致基础病发作可以被认定为工伤，但必须满足以下条件：1.基础病的发作与工作原因（如工作强度、压力、环境等）存在直接的因果关系；2.发作发生在工作时间或者因工外出期间。这需要通过医疗鉴定和相关证明进行确认。"
+    },
+    {
+      "action": "Verification",
+      "content": "结论符合《工伤保险条例》及相关案例解读，判断合理，逻辑无误。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n工作时间工作原因导致基础病发作算工伤吗?\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n在工作时间因工作原因导致基础病发作可以被认定为工伤，但必须满足以下条件：1.基础病的发作与工作原因（如工作强度、压力、环境等）存在直接的因果关系；2.发作发生在工作时间或者因工外出期间。这需要通过医疗鉴定和相关证明进行确认。  \n</Model Response>  \n\n<Reference Answer>  \n工作期间突发疾病算工伤。在工作时间和工作地点内突发疾病死亡可以认定为工伤，工伤的范围如下：第一，在工作时间和工作场所内受伤；第二，从事收尾性或预备性工作受伤；第三，因履职受到暴力伤害；第四，患职业病；第五，上下班途中非本人主要责任的交通事故等等。如果只是基础病发作不算工伤\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 明确问题的法律性质\n该问题涉及劳动法和工伤保险条例中的相关内容，需要确认工作的原因是否直接导致了基础病的发作，以及这是否符合工伤认定的条件。初步判断需要查看《工伤保险条例》的相关规定。<search>《工伤保险条例》工伤认定</search>\n\n### 查阅《工伤保险条例》的工伤认定条件\n<information>《工伤保险条例》第十四条规定以下情形视为工伤：1.在工作时间和工作场所内因工作原因受到事故伤害的；2.因工外出期间由于工作原因受到伤害或发生事故等。</information>。进一步分析：基础病发作是否因工作原因直接导致需要明确因果关系，这属于工伤认定的核心要素。\n\n### 分析“工作原因导致基础病发作”是否符合条件\n根据《工伤保险条例》第十四条，如果工作原因与疾病发作之间存在直接因果关系，并且疾病发作是在工作时间和工作场所发生，则可能被认定为工伤。但通常基础病本身不属于工伤范畴，必须证明工作场所的环境或工作的强度等直接诱发了疾病的发作。这需要医疗及相关证据支持。继续查阅专业解释或案例支持此观点。<search>工伤认定基础病案例</search>\n\n### 查阅案例或相关专业解释\n<information>一些案例显示，如果劳动者因工作原因导致突发性、急性的基础病症加重（如心脏病等），并存在直接的因果关系，某些情况下会被认定为工伤，例如长时间高压力工作诱发急性病症。一些法院依据具体情况和专家意见支持认定为工伤。</information>。这表明需要具体场景中的证据，包括医学鉴定和工作环境对病发影响的证明。\n\n### Conclusion\n在工作时间因工作原因导致基础病发作可以被认定为工伤，但必须满足以下条件：1.基础病的发作与工作原因（如工作强度、压力、环境等）存在直接的因果关系；2.发作发生在工作时间或者因工外出期间。这需要通过医疗鉴定和相关证明进行确认。\n\n### Verification\n结论符合《工伤保险条例》及相关案例解读，判断合理，逻辑无误。\n</Thought Process>\n\n<Question>\n工作时间工作原因导致基础病发作算工伤吗?\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n工作时间因为工作原因导致基础病发作算不算工伤呢？嗯，这听起来应该涉及到劳动法和工伤保险的相关规定吧。我要先搞清楚工伤的定义，看看《工伤保险条例》怎么说。<search>《工伤保险条例》工伤认定</search>\n\n找到了。《工伤保险条例》第十四条说了几种情况可以认定为工伤。比如，在工作时间和工作场所内因为工作原因发生事故伤害，或者因工外出期间因为工作原因受伤或发生事故等等。嗯，看来重点在于“工作原因”和“事故伤害”。但基础病这个情况好像有点特别，我得仔细想想，这种疾病发作和工作有直接关系的可能性怎么判断。\n\n嗯，再想想看。基础病呢，本身一般是不属于工伤的对吧，因为是个人健康问题。但是如果这次发病是直接因为工作的原因诱发，比如高强度的工作压力，或者是因为工作的环境恶劣才导致病情急性加重，那么也许可以算工伤吧？这里因果关系就很关键了。得看看有没有什么案例或者专业解释能支持这个观点。<search>工伤认定基础病案例</search>\n\n哦，找到了一些相关的信息。有案例显示，比如有劳动者在高压力工作环境里，导致心脏病急性发作还有其他突发病症，由于能证明是工作原因直接诱发的，最后被认定为工伤。还提到法院会根据医疗鉴定和专家意见去判断因果关系，这还挺有道理的，毕竟这个关系必须清楚，不然基础病发作很难界定工伤。\n\n这么看下来，如果一定能证明基础病发作和工作直接相关，比如说工作强度太大或者压力导致病情加重，或者环境因素影响，可能是能够认定工伤的。另外还必须是在工作时间或者因工外出期间发病，符合《工伤保险条例》里的时间和场所条件。这些应该都得有医疗鉴定或具体证据的支持才行。\n\n嗯，综上看来，工作时间因为工作的原因直接导致基础病发作，确实是有可能被认定为工伤的，但这需要满足明确的因果关系和条例规定的时间、场所条件。感觉这样分析下来挺清楚的。\n</Internal Thinking>\n\n<Question>\n工作时间工作原因导致基础病发作算工伤吗?\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"明确问题的法律性质\",\n      \"content\": \"该问题涉及劳动法和工伤保险条例中的相关内容，需要确认工作的原因是否直接导致了基础病的发作，以及这是否符合工伤认定的条件。初步判断需要查看《工伤保险条例》的相关规定。<search>《工伤保险条例》工伤认定</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"查阅《工伤保险条例》的工伤认定条件\",\n      \"content\": \"<information>《工伤保险条例》第十四条规定以下情形视为工伤：1.在工作时间和工作场所内因工作原因受到事故伤害的；2.因工外出期间由于工作原因受到伤害或发生事故等。</information>。进一步分析：基础病发作是否因工作原因直接导致需要明确因果关系，这属于工伤认定的核心要素。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析“工作原因导致基础病发作”是否符合条件\",\n      \"content\": \"根据《工伤保险条例》第十四条，如果工作原因与疾病发作之间存在直接因果关系，并且疾病发作是在工作时间和工作场所发生，则可能被认定为工伤。但通常基础病本身不属于工伤范畴，必须证明工作场所的环境或工作的强度等直接诱发了疾病的发作。这需要医疗及相关证据支持。继续查阅专业解释或案例支持此观点。<search>工伤认定基础病案例</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"查阅案例或相关专业解释\",\n      \"content\": \"<information>一些案例显示，如果劳动者因工作原因导致突发性、急性的基础病症加重（如心脏病等），并存在直接的因果关系，某些情况下会被认定为工伤，例如长时间高压力工作诱发急性病症。一些法院依据具体情况和专家意见支持认定为工伤。</information>。这表明需要具体场景中的证据，包括医学鉴定和工作环境对病发影响的证明。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"在工作时间因工作原因导致基础病发作可以被认定为工伤，但必须满足以下条件：1.基础病的发作与工作原因（如工作强度、压力、环境等）存在直接的因果关系；2.发作发生在工作时间或者因工外出期间。这需要通过医疗鉴定和相关证明进行确认。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"结论符合《工伤保险条例》及相关案例解读，判断合理，逻辑无误。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"工作时间因为工作原因导致基础病发作算不算工伤呢？嗯，这听起来应该涉及到劳动法和工伤保险的相关规定吧。我要先搞清楚工伤的定义，看看《工伤保险条例》怎么说。<search>《工伤保险条例》工伤认定</search>\\n\\n找到了。《工伤保险条例》第十四条说了几种情况可以认定为工伤。比如，在工作时间和工作场所内因为工作原因发生事故伤害，或者因工外出期间因为工作原因受伤或发生事故等等。嗯，看来重点在于“工作原因”和“事故伤害”。但基础病这个情况好像有点特别，我得仔细想想，这种疾病发作和工作有直接关系的可能性怎么判断。\\n\\n嗯，再想想看。基础病呢，本身一般是不属于工伤的对吧，因为是个人健康问题。但是如果这次发病是直接因为工作的原因诱发，比如高强度的工作压力，或者是因为工作的环境恶劣才导致病情急性加重，那么也许可以算工伤吧？这里因果关系就很关键了。得看看有没有什么案例或者专业解释能支持这个观点。<search>工伤认定基础病案例</search>\\n\\n哦，找到了一些相关的信息。有案例显示，比如有劳动者在高压力工作环境里，导致心脏病急性发作还有其他突发病症，由于能证明是工作原因直接诱发的，最后被认定为工伤。还提到法院会根据医疗鉴定和专家意见去判断因果关系，这还挺有道理的，毕竟这个关系必须清楚，不然基础病发作很难界定工伤。\\n\\n这么看下来，如果一定能证明基础病发作和工作直接相关，比如说工作强度太大或者压力导致病情加重，或者环境因素影响，可能是能够认定工伤的。另外还必须是在工作时间或者因工外出期间发病，符合《工伤保险条例》里的时间和场所条件。这些应该都得有医疗鉴定或具体证据的支持才行。\\n\\n嗯，综上看来，工作时间因为工作的原因直接导致基础病发作，确实是有可能被认定为工伤的，但这需要满足明确的因果关系和条例规定的时间、场所条件。感觉这样分析下来挺清楚的。\"\n}\n```",
+    "根据《工伤保险条例》第十四条的规定，工伤认定的核心在于“因工作原因”和“事故伤害”。尽管基础疾病通常属于个人的健康问题，原则上不直接认定为工伤，但如果劳动者在工作时间、工作场所内因工作的原因诱发基础疾病（例如过度劳累、工作压力过大或恶劣的工作环境导致基础疾病急性发作或症状加重），且能够证明基础病的急性发作与工作之间具有直接的因果关系，则可能被认定为工伤。\n\n认定过程中，因果关系的证明是关键，往往需要通过医疗机构的专业鉴定以及与工作相关的证据支持。此外，必须满足条例规定的时间和场所条件，也即发病时为工作时间内且在工作场所，或因工外出期间。\n\n因此，如果您或他人在工作时间因工作原因导致基础病急性发作，并且能够通过相关证据和鉴定证明两者的直接关联，是有可能被认定为工伤的。建议及时保留工作相关的证据，并尽快寻求专业法律或医疗机构的帮助以保障权益。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "明确问题的法律性质",
+        "content": "该问题涉及劳动法和工伤保险条例中的相关内容，需要确认工作的原因是否直接导致了基础病的发作，以及这是否符合工伤认定的条件。初步判断需要查看《工伤保险条例》的相关规定。<search>《工伤保险条例》工伤认定</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "查阅《工伤保险条例》的工伤认定条件",
+        "content": "<information>《工伤保险条例》第十四条规定以下情形视为工伤：1.在工作时间和工作场所内因工作原因受到事故伤害的；2.因工外出期间由于工作原因受到伤害或发生事故等。</information>。进一步分析：基础病发作是否因工作原因直接导致需要明确因果关系，这属于工伤认定的核心要素。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "分析“工作原因导致基础病发作”是否符合条件",
+        "content": "根据《工伤保险条例》第十四条，如果工作原因与疾病发作之间存在直接因果关系，并且疾病发作是在工作时间和工作场所发生，则可能被认定为工伤。但通常基础病本身不属于工伤范畴，必须证明工作场所的环境或工作的强度等直接诱发了疾病的发作。这需要医疗及相关证据支持。继续查阅专业解释或案例支持此观点。<search>工伤认定基础病案例</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "查阅案例或相关专业解释",
+        "content": "<information>一些案例显示，如果劳动者因工作原因导致突发性、急性的基础病症加重（如心脏病等），并存在直接的因果关系，某些情况下会被认定为工伤，例如长时间高压力工作诱发急性病症。一些法院依据具体情况和专家意见支持认定为工伤。</information>。这表明需要具体场景中的证据，包括医学鉴定和工作环境对病发影响的证明。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "在工作时间因工作原因导致基础病发作可以被认定为工伤，但必须满足以下条件：1.基础病的发作与工作原因（如工作强度、压力、环境等）存在直接的因果关系；2.发作发生在工作时间或者因工外出期间。这需要通过医疗鉴定和相关证明进行确认。"
+      },
+      {
+        "action": "Verification",
+        "content": "结论符合《工伤保险条例》及相关案例解读，判断合理，逻辑无误。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "工作时间因为工作原因导致基础病发作算不算工伤呢？嗯，这听起来应该涉及到劳动法和工伤保险的相关规定吧。我要先搞清楚工伤的定义，看看《工伤保险条例》怎么说。<search>《工伤保险条例》工伤认定</search>\n\n找到了。《工伤保险条例》第十四条说了几种情况可以认定为工伤。比如，在工作时间和工作场所内因为工作原因发生事故伤害，或者因工外出期间因为工作原因受伤或发生事故等等。嗯，看来重点在于“工作原因”和“事故伤害”。但基础病这个情况好像有点特别，我得仔细想想，这种疾病发作和工作有直接关系的可能性怎么判断。\n\n嗯，再想想看。基础病呢，本身一般是不属于工伤的对吧，因为是个人健康问题。但是如果这次发病是直接因为工作的原因诱发，比如高强度的工作压力，或者是因为工作的环境恶劣才导致病情急性加重，那么也许可以算工伤吧？这里因果关系就很关键了。得看看有没有什么案例或者专业解释能支持这个观点。<search>工伤认定基础病案例</search>\n\n哦，找到了一些相关的信息。有案例显示，比如有劳动者在高压力工作环境里，导致心脏病急性发作还有其他突发病症，由于能证明是工作原因直接诱发的，最后被认定为工伤。还提到法院会根据医疗鉴定和专家意见去判断因果关系，这还挺有道理的，毕竟这个关系必须清楚，不然基础病发作很难界定工伤。\n\n这么看下来，如果一定能证明基础病发作和工作直接相关，比如说工作强度太大或者压力导致病情加重，或者环境因素影响，可能是能够认定工伤的。另外还必须是在工作时间或者因工外出期间发病，符合《工伤保险条例》里的时间和场所条件。这些应该都得有医疗鉴定或具体证据的支持才行。\n\n嗯，综上看来，工作时间因为工作的原因直接导致基础病发作，确实是有可能被认定为工伤的，但这需要满足明确的因果关系和条例规定的时间、场所条件。感觉这样分析下来挺清楚的。",
+  "Response": "根据《工伤保险条例》第十四条的规定，工伤认定的核心在于“因工作原因”和“事故伤害”。尽管基础疾病通常属于个人的健康问题，原则上不直接认定为工伤，但如果劳动者在工作时间、工作场所内因工作的原因诱发基础疾病（例如过度劳累、工作压力过大或恶劣的工作环境导致基础疾病急性发作或症状加重），且能够证明基础病的急性发作与工作之间具有直接的因果关系，则可能被认定为工伤。\n\n认定过程中，因果关系的证明是关键，往往需要通过医疗机构的专业鉴定以及与工作相关的证据支持。此外，必须满足条例规定的时间和场所条件，也即发病时为工作时间内且在工作场所，或因工外出期间。\n\n因此，如果您或他人在工作时间因工作原因导致基础病急性发作，并且能够通过相关证据和鉴定证明两者的直接关联，是有可能被认定为工伤的。建议及时保留工作相关的证据，并尽快寻求专业法律或医疗机构的帮助以保障权益。",
+  "Question": "工作时间工作原因导致基础病发作算工伤吗?"
+}

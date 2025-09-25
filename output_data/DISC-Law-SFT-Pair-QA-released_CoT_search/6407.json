@@ -1,0 +1,99 @@
+{
+  "Open-ended Verifiable Question": "离婚财产分割诉讼时效是多久",
+  "Ground-True Answer": "向人民法院请求保护民事权利的诉讼时效期间为三年。法律另有规定的，依照其规定。诉讼时效期间自权利人知道或者应当知道权利受到损害以及义务人之日起计算。法律另有规定的，依照其规定。但是，自权利受到损害之日起超过二十年的，人民法院不予保护，有特殊情况的，人民法院可以根据权利人的申请决定延长。\n婚姻存续共同财产的认定首先要看是否有夫妻财产协议，其次要看财产是否为夫妻在婚姻关系存续期间所得，最后还要看是否有法定的应当归于个人所有的情况，夫妻共同财产包括以下几类：\n1.工资、奖金。工资是指作为劳动者的劳动报酬按期付给劳动者的货币或实物;奖金是指用人单位为了鼓励和表扬劳动者而向其给予的货币或实物。\n2.生产、经营的收益。夫妻一方或双方从事个体经营、租赁或承包经营所得的收益为夫妻共同财产。\n3.知识产权的收益。知识产权中的财产权，权利人可通过转让或许可使用知识产权中的财产权而获得收益，其收益属于夫妻双方共同所有。\n4.因继承或赠与所得的财产。",
+  "process_id": 6407,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "明确定义问题",
+      "content": "离婚财产分割诉讼时效是指在离婚后，当事人对于财产分割提出诉讼的法定时限。对此，需要了解相关法律法规中的明确规定。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "确定时效是否有法律基础",
+      "content": "查询中国法律，例如《民法典》和《婚姻法》，特别是有关财产分割和诉讼时效的条款内容，以确认相关规定。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "搜索相关法律条款",
+      "content": "<search>民法典 诉讼时效离婚财产分割</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "分析搜索结果",
+      "content": "<information>《中华人民共和国民法典》第188条规定，一般民事争议的诉讼时效为3年，自权利人知道或者应当知道其权利受到侵害之日起计算。此外，根据《婚姻家庭编》第1087条，离婚时对财产分割有争议，可以通过诉讼解决，但并未规定具体时效。</information> 基于民法典中的一般诉讼时效，对于离婚财产分割，也应遵循3年的时效规定。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "结合特殊情况调整判定",
+      "content": "离婚财产分割争议属于民事案件范围，遵循民法典的诉讼时效规定。但如涉及隐匿财产或其他特殊情况，应另行查阅相关解释。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "根据《民法典》第188条规定，离婚财产分割的诉讼时效通常为3年，自当事人知道或者应当知道权利受到侵害之日起计算。具体情况可能因实际案例而有所调整。"
+    },
+    {
+      "action": "Verification",
+      "content": "通过核对中华人民共和国民法典第188条以及婚姻家庭编内容，确认离婚财产分割的诉讼时效规定为3年。因此，结论无误。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n离婚财产分割诉讼时效是多久\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n根据《民法典》第188条规定，离婚财产分割的诉讼时效通常为3年，自当事人知道或者应当知道权利受到侵害之日起计算。具体情况可能因实际案例而有所调整。  \n</Model Response>  \n\n<Reference Answer>  \n向人民法院请求保护民事权利的诉讼时效期间为三年。法律另有规定的，依照其规定。诉讼时效期间自权利人知道或者应当知道权利受到损害以及义务人之日起计算。法律另有规定的，依照其规定。但是，自权利受到损害之日起超过二十年的，人民法院不予保护，有特殊情况的，人民法院可以根据权利人的申请决定延长。\n婚姻存续共同财产的认定首先要看是否有夫妻财产协议，其次要看财产是否为夫妻在婚姻关系存续期间所得，最后还要看是否有法定的应当归于个人所有的情况，夫妻共同财产包括以下几类：\n1.工资、奖金。工资是指作为劳动者的劳动报酬按期付给劳动者的货币或实物;奖金是指用人单位为了鼓励和表扬劳动者而向其给予的货币或实物。\n2.生产、经营的收益。夫妻一方或双方从事个体经营、租赁或承包经营所得的收益为夫妻共同财产。\n3.知识产权的收益。知识产权中的财产权，权利人可通过转让或许可使用知识产权中的财产权而获得收益，其收益属于夫妻双方共同所有。\n4.因继承或赠与所得的财产。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 明确定义问题\n离婚财产分割诉讼时效是指在离婚后，当事人对于财产分割提出诉讼的法定时限。对此，需要了解相关法律法规中的明确规定。\n\n### 确定时效是否有法律基础\n查询中国法律，例如《民法典》和《婚姻法》，特别是有关财产分割和诉讼时效的条款内容，以确认相关规定。\n\n### 搜索相关法律条款\n<search>民法典 诉讼时效离婚财产分割</search>\n\n### 分析搜索结果\n<information>《中华人民共和国民法典》第188条规定，一般民事争议的诉讼时效为3年，自权利人知道或者应当知道其权利受到侵害之日起计算。此外，根据《婚姻家庭编》第1087条，离婚时对财产分割有争议，可以通过诉讼解决，但并未规定具体时效。</information> 基于民法典中的一般诉讼时效，对于离婚财产分割，也应遵循3年的时效规定。\n\n### 结合特殊情况调整判定\n离婚财产分割争议属于民事案件范围，遵循民法典的诉讼时效规定。但如涉及隐匿财产或其他特殊情况，应另行查阅相关解释。\n\n### Conclusion\n根据《民法典》第188条规定，离婚财产分割的诉讼时效通常为3年，自当事人知道或者应当知道权利受到侵害之日起计算。具体情况可能因实际案例而有所调整。\n\n### Verification\n通过核对中华人民共和国民法典第188条以及婚姻家庭编内容，确认离婚财产分割的诉讼时效规定为3年。因此，结论无误。\n</Thought Process>\n\n<Question>\n离婚财产分割诉讼时效是多久\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n好，离婚财产分割的诉讼时效是多久呢？我得先搞清楚这个概念。从一般的理解来看，诉讼时效就是对权利主张的一个时间限制，过了这个时间再去主张可能就会遇到法律障碍。既然是跟离婚相关的，那肯定需要在法律中找找依据，尤其是像《民法典》和以前的《婚姻法》。\n\n我得先查一下相关的法律条文。嗯，应该可以直接搜索关键词，比如“民法典 诉讼时效 离婚财产分割”。\n\n<search>民法典 诉讼时效离婚财产分割</search>\n\n看一下搜索结果。哦，很清楚，搜索内容显示：《中华人民共和国民法典》第188条提到了诉讼时效的普遍规则，规定一般民事争议的诉讼时效为3年，并且从权利人“知道或应当知道权利受到侵害之日”开始计算。而《民法典》婚姻家庭编第1087条提到离婚时可以对财产分割提起诉讼，但没明确具体的诉讼时效。似乎可以推断出，这种情况应该会适用一般的3年诉讼时效规则。\n\n不过我又想了一下，如果是财产分割的特殊情况呢？比如有人离婚时隐瞒或转移了财产，或者分割协议有其他问题，这种情况会不会另有规定？先按照目前的结论来说，离婚财产分割的诉讼通常是3年的时效，但特殊情况可能需要再详细查询法律解释或案例。\n\n综上，目前可以比较确定的是，离婚财产分割的诉讼时效大体遵循《民法典》第188条，也就是3年。从当事人知道或应该知道权利受侵害的那一天开始算起。当然，如果还有特殊的争议，比如隐匿财产之类的，就需要更具体地咨询处理。\n\n最后，核实一下《民法典》的明确条文以及相关实践内容，嗯嗯，没错，3年的诉讼时效还是比较权威的答案。\n</Internal Thinking>\n\n<Question>\n离婚财产分割诉讼时效是多久\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"明确定义问题\",\n      \"content\": \"离婚财产分割诉讼时效是指在离婚后，当事人对于财产分割提出诉讼的法定时限。对此，需要了解相关法律法规中的明确规定。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"确定时效是否有法律基础\",\n      \"content\": \"查询中国法律，例如《民法典》和《婚姻法》，特别是有关财产分割和诉讼时效的条款内容，以确认相关规定。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"搜索相关法律条款\",\n      \"content\": \"<search>民法典 诉讼时效离婚财产分割</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析搜索结果\",\n      \"content\": \"<information>《中华人民共和国民法典》第188条规定，一般民事争议的诉讼时效为3年，自权利人知道或者应当知道其权利受到侵害之日起计算。此外，根据《婚姻家庭编》第1087条，离婚时对财产分割有争议，可以通过诉讼解决，但并未规定具体时效。</information> 基于民法典中的一般诉讼时效，对于离婚财产分割，也应遵循3年的时效规定。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"结合特殊情况调整判定\",\n      \"content\": \"离婚财产分割争议属于民事案件范围，遵循民法典的诉讼时效规定。但如涉及隐匿财产或其他特殊情况，应另行查阅相关解释。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"根据《民法典》第188条规定，离婚财产分割的诉讼时效通常为3年，自当事人知道或者应当知道权利受到侵害之日起计算。具体情况可能因实际案例而有所调整。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"通过核对中华人民共和国民法典第188条以及婚姻家庭编内容，确认离婚财产分割的诉讼时效规定为3年。因此，结论无误。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"好，离婚财产分割的诉讼时效是多久呢？我得先搞清楚这个概念。从一般的理解来看，诉讼时效就是对权利主张的一个时间限制，过了这个时间再去主张可能就会遇到法律障碍。既然是跟离婚相关的，那肯定需要在法律中找找依据，尤其是像《民法典》和以前的《婚姻法》。\\n\\n我得先查一下相关的法律条文。嗯，应该可以直接搜索关键词，比如“民法典 诉讼时效 离婚财产分割”。\\n\\n<search>民法典 诉讼时效离婚财产分割</search>\\n\\n看一下搜索结果。哦，很清楚，搜索内容显示：《中华人民共和国民法典》第188条提到了诉讼时效的普遍规则，规定一般民事争议的诉讼时效为3年，并且从权利人“知道或应当知道权利受到侵害之日”开始计算。而《民法典》婚姻家庭编第1087条提到离婚时可以对财产分割提起诉讼，但没明确具体的诉讼时效。似乎可以推断出，这种情况应该会适用一般的3年诉讼时效规则。\\n\\n不过我又想了一下，如果是财产分割的特殊情况呢？比如有人离婚时隐瞒或转移了财产，或者分割协议有其他问题，这种情况会不会另有规定？先按照目前的结论来说，离婚财产分割的诉讼通常是3年的时效，但特殊情况可能需要再详细查询法律解释或案例。\\n\\n综上，目前可以比较确定的是，离婚财产分割的诉讼时效大体遵循《民法典》第188条，也就是3年。从当事人知道或应该知道权利受侵害的那一天开始算起。当然，如果还有特殊的争议，比如隐匿财产之类的，就需要更具体地咨询处理。\\n\\n最后，核实一下《民法典》的明确条文以及相关实践内容，嗯嗯，没错，3年的诉讼时效还是比较权威的答案。\"\n}\n```",
+    "离婚财产分割的诉讼时效一般根据《中华人民共和国民法典》第188条的规定来确定。民法典规定，普通民事案件的诉讼时效为3年，该时效从当事人“知道或应当知道权利受到侵害之日”开始计算。因此，涉及离婚财产分割纠纷的诉讼通常适用这一规则。\n\n需要注意的是，如果在离婚过程中有隐瞒、转移财产等特殊情形，从当事人发现相关事实的时间起计算诉讼时效。此外，具体情况可能因个案而异，为保障自身权益，建议尽早采取措施，并向律师或相关法律专业人士咨询，以便明确自己的维权期限和具体操作步骤。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "明确定义问题",
+        "content": "离婚财产分割诉讼时效是指在离婚后，当事人对于财产分割提出诉讼的法定时限。对此，需要了解相关法律法规中的明确规定。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "确定时效是否有法律基础",
+        "content": "查询中国法律，例如《民法典》和《婚姻法》，特别是有关财产分割和诉讼时效的条款内容，以确认相关规定。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "搜索相关法律条款",
+        "content": "<search>民法典 诉讼时效离婚财产分割</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "分析搜索结果",
+        "content": "<information>《中华人民共和国民法典》第188条规定，一般民事争议的诉讼时效为3年，自权利人知道或者应当知道其权利受到侵害之日起计算。此外，根据《婚姻家庭编》第1087条，离婚时对财产分割有争议，可以通过诉讼解决，但并未规定具体时效。</information> 基于民法典中的一般诉讼时效，对于离婚财产分割，也应遵循3年的时效规定。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "结合特殊情况调整判定",
+        "content": "离婚财产分割争议属于民事案件范围，遵循民法典的诉讼时效规定。但如涉及隐匿财产或其他特殊情况，应另行查阅相关解释。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "根据《民法典》第188条规定，离婚财产分割的诉讼时效通常为3年，自当事人知道或者应当知道权利受到侵害之日起计算。具体情况可能因实际案例而有所调整。"
+      },
+      {
+        "action": "Verification",
+        "content": "通过核对中华人民共和国民法典第188条以及婚姻家庭编内容，确认离婚财产分割的诉讼时效规定为3年。因此，结论无误。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "好，离婚财产分割的诉讼时效是多久呢？我得先搞清楚这个概念。从一般的理解来看，诉讼时效就是对权利主张的一个时间限制，过了这个时间再去主张可能就会遇到法律障碍。既然是跟离婚相关的，那肯定需要在法律中找找依据，尤其是像《民法典》和以前的《婚姻法》。\n\n我得先查一下相关的法律条文。嗯，应该可以直接搜索关键词，比如“民法典 诉讼时效 离婚财产分割”。\n\n<search>民法典 诉讼时效离婚财产分割</search>\n\n看一下搜索结果。哦，很清楚，搜索内容显示：《中华人民共和国民法典》第188条提到了诉讼时效的普遍规则，规定一般民事争议的诉讼时效为3年，并且从权利人“知道或应当知道权利受到侵害之日”开始计算。而《民法典》婚姻家庭编第1087条提到离婚时可以对财产分割提起诉讼，但没明确具体的诉讼时效。似乎可以推断出，这种情况应该会适用一般的3年诉讼时效规则。\n\n不过我又想了一下，如果是财产分割的特殊情况呢？比如有人离婚时隐瞒或转移了财产，或者分割协议有其他问题，这种情况会不会另有规定？先按照目前的结论来说，离婚财产分割的诉讼通常是3年的时效，但特殊情况可能需要再详细查询法律解释或案例。\n\n综上，目前可以比较确定的是，离婚财产分割的诉讼时效大体遵循《民法典》第188条，也就是3年。从当事人知道或应该知道权利受侵害的那一天开始算起。当然，如果还有特殊的争议，比如隐匿财产之类的，就需要更具体地咨询处理。\n\n最后，核实一下《民法典》的明确条文以及相关实践内容，嗯嗯，没错，3年的诉讼时效还是比较权威的答案。",
+  "Response": "离婚财产分割的诉讼时效一般根据《中华人民共和国民法典》第188条的规定来确定。民法典规定，普通民事案件的诉讼时效为3年，该时效从当事人“知道或应当知道权利受到侵害之日”开始计算。因此，涉及离婚财产分割纠纷的诉讼通常适用这一规则。\n\n需要注意的是，如果在离婚过程中有隐瞒、转移财产等特殊情形，从当事人发现相关事实的时间起计算诉讼时效。此外，具体情况可能因个案而异，为保障自身权益，建议尽早采取措施，并向律师或相关法律专业人士咨询，以便明确自己的维权期限和具体操作步骤。",
+  "Question": "离婚财产分割诉讼时效是多久"
+}

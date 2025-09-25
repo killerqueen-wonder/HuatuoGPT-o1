@@ -1,0 +1,129 @@
+{
+  "Open-ended Verifiable Question": "动迁安置，私房征收补偿建筑面积如何认定？",
+  "Ground-True Answer": "私房已办产证的，按产证记载面积；私房中的阁楼（包括房地产权证“附记”部分的阁楼），不予认定建筑面积；房地产权证记载以外的搭建面积，不予认定建筑面积。未经登记的私有居住房屋但有政府批文的，以相关批准文件记载的建筑面积为准，实际建筑面积小于相关批准文件记载的建筑面积的，以实际建筑面积为准。未经登记的私有居住房屋但有房屋建造批准文件但未记载建筑面积的，以房屋行政管理部门认定的房屋调查机构实地丈量建筑面积为准，超出房屋建造批准范围的搭建部位不予认定建筑面积。未经登记的私有居住房屋，无批准文件的不予认定建筑面积，但有相关材料证明在1981年以前建造、并用于居住的房屋，以房屋行政管理部门认定的房屋调查机构实地丈量的建筑面积为准，1981年以后改扩建增加的部位不予认定建筑面积。相关材料指房管历史资料、地籍图、街道（乡镇）出具的证明等。按以上规定中不予认定建筑面积的部分，可以给予建筑物残值补偿，但经认定为违法建筑的不予补偿。",
+  "process_id": 5424,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "明确问题背景",
+      "content": "问题涉及动迁安置与私房征收的补偿问题，需确认其建筑面积如何认定。这可能包含法律法规的定义、补偿计算标准，以及数据核实流程。先确定相关法律依据。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "确定相关法律和政策",
+      "content": "建筑面积的认定可能涉及土地法规、《国有土地上房屋征收与补偿条例》或地方相关规定。需先查明明确建筑面积认定标准的法律依据。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "搜索相关法律法规",
+      "content": "<search>国有土地上房屋征收与补偿条例</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "分析获取的信息",
+      "content": "<information>《国有土地上房屋征收与补偿条例》第22条规定，房屋征收补偿包括被征收房屋的价值评估，并应依据房地产市场价格估算补偿。此外，地方政府可能有独立补充标准。</information>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "分析建筑面积的认定",
+      "content": "相关法律条款提到补偿按房屋价值评估进行，而建筑面积是其关键评估要素。但理解建筑面积认定，需要进一步明确定义数据采集方式，如产权证或房产测绘结果。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "搜索房屋面积核算标准",
+      "content": "<search>建筑面积认定与产权证书</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "整合检索获得的信息",
+      "content": "<information>建筑面积通常以房产登记中载明的面积为准，若无产权证书，则需通过专业测绘机构测绘认定建筑面积；地方政府可能另有针对无证房屋或特殊房屋的补偿政策。</information>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "确认地方政策影响",
+      "content": "若具体补偿涉及地方性细则，需确认这些细则是否明确规定建筑面积的计算及补偿方式。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "动迁安置中的私房征收补偿建筑面积认定通常以房屋产权登记中的面积为依据；若无产权证书，则需通过专业测绘机构测绘认定。此外，地方政府可能存在针对特定情况的补充政策，例如对未登记房屋的处理细则。"
+    },
+    {
+      "action": "Verification",
+      "content": "结论符合《国有土地上房屋征收与补偿条例》的相关规定，并结合地方性政策及测绘标准考虑了实际情况，逻辑完整，信息准确，可验证。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n动迁安置，私房征收补偿建筑面积如何认定？\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n动迁安置中的私房征收补偿建筑面积认定通常以房屋产权登记中的面积为依据；若无产权证书，则需通过专业测绘机构测绘认定。此外，地方政府可能存在针对特定情况的补充政策，例如对未登记房屋的处理细则。  \n</Model Response>  \n\n<Reference Answer>  \n私房已办产证的，按产证记载面积；私房中的阁楼（包括房地产权证“附记”部分的阁楼），不予认定建筑面积；房地产权证记载以外的搭建面积，不予认定建筑面积。未经登记的私有居住房屋但有政府批文的，以相关批准文件记载的建筑面积为准，实际建筑面积小于相关批准文件记载的建筑面积的，以实际建筑面积为准。未经登记的私有居住房屋但有房屋建造批准文件但未记载建筑面积的，以房屋行政管理部门认定的房屋调查机构实地丈量建筑面积为准，超出房屋建造批准范围的搭建部位不予认定建筑面积。未经登记的私有居住房屋，无批准文件的不予认定建筑面积，但有相关材料证明在1981年以前建造、并用于居住的房屋，以房屋行政管理部门认定的房屋调查机构实地丈量的建筑面积为准，1981年以后改扩建增加的部位不予认定建筑面积。相关材料指房管历史资料、地籍图、街道（乡镇）出具的证明等。按以上规定中不予认定建筑面积的部分，可以给予建筑物残值补偿，但经认定为违法建筑的不予补偿。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 明确问题背景\n问题涉及动迁安置与私房征收的补偿问题，需确认其建筑面积如何认定。这可能包含法律法规的定义、补偿计算标准，以及数据核实流程。先确定相关法律依据。\n\n### 确定相关法律和政策\n建筑面积的认定可能涉及土地法规、《国有土地上房屋征收与补偿条例》或地方相关规定。需先查明明确建筑面积认定标准的法律依据。\n\n### 搜索相关法律法规\n<search>国有土地上房屋征收与补偿条例</search>\n\n### 分析获取的信息\n<information>《国有土地上房屋征收与补偿条例》第22条规定，房屋征收补偿包括被征收房屋的价值评估，并应依据房地产市场价格估算补偿。此外，地方政府可能有独立补充标准。</information>\n\n### 分析建筑面积的认定\n相关法律条款提到补偿按房屋价值评估进行，而建筑面积是其关键评估要素。但理解建筑面积认定，需要进一步明确定义数据采集方式，如产权证或房产测绘结果。\n\n### 搜索房屋面积核算标准\n<search>建筑面积认定与产权证书</search>\n\n### 整合检索获得的信息\n<information>建筑面积通常以房产登记中载明的面积为准，若无产权证书，则需通过专业测绘机构测绘认定建筑面积；地方政府可能另有针对无证房屋或特殊房屋的补偿政策。</information>\n\n### 确认地方政策影响\n若具体补偿涉及地方性细则，需确认这些细则是否明确规定建筑面积的计算及补偿方式。\n\n### Conclusion\n动迁安置中的私房征收补偿建筑面积认定通常以房屋产权登记中的面积为依据；若无产权证书，则需通过专业测绘机构测绘认定。此外，地方政府可能存在针对特定情况的补充政策，例如对未登记房屋的处理细则。\n\n### Verification\n结论符合《国有土地上房屋征收与补偿条例》的相关规定，并结合地方性政策及测绘标准考虑了实际情况，逻辑完整，信息准确，可验证。\n</Thought Process>\n\n<Question>\n动迁安置，私房征收补偿建筑面积如何认定？\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n好的，先来思考这个问题——动迁安置中，私房征收的补偿涉及建筑面积的认定。那么，要看是通过什么标准或者流程来确定建筑面积的。这个肯定会关联到一些法律法规吧。\n\n既然是房屋征收补偿，那《国有土地上房屋征收与补偿条例》应该会提到这方面的内容。先搜索一下吧，<search>国有土地上房屋征收与补偿条例</search>。\n\n哦，找到了！<information>《国有土地上房屋征收与补偿条例》第22条规定，房屋征收补偿应该包括被征收房屋的价值评估，而且这些评估主要依据的是房地产的市场价格。</information>嗯，这个条例是提到了评估房屋的价值，但没有明确解释建筑面积要怎么认定。不过补偿金额跟房子的面积肯定是强相关的，所以接下来得弄清楚建筑面积的具体确定方式。\n\n那建筑面积的认定，一般应该跟房产证或者登记数据有关系吧？不过，有些老房子可能没有产权证书啊，那这种情况下怎么办呢？再搜一下吧。<search>建筑面积认定与产权证书</search>\n\n嗯，这个也有了！<information>建筑面积一般是根据房产登记信息确定的。如果没有产权证书或者登记数据，可以通过专业的测绘机构来测量房屋的实际面积。不过，如果是无证房屋或者有其他特殊情况，比如历史遗留问题等，地方政府可能会有对应的补偿政策。</information>嗯，这样子的话，如果有产权证，认定面积应该很直接，就以证上的为准；要是没有产权证，那就得测绘了。\n\n不过还有一个问题——地方政策会有什么影响呢？有可能会有一些特殊的地方性细则，特别是处理那些无证房屋、违建或者其他类型房屋的补偿方法。不如先假设一般情况下是以产权证或测绘为主，但有地方性补充。因为这件事情常涉及地方实际情况，可能会影响具体认定方式。\n\n总结一下吧，动迁安置过程中，私房征收补偿的建筑面积通常是以房屋产权证书记录的面积为准。如果没有产权证书，那么需要通过专业测绘机构测定建筑面积。特殊情况下，比如无证房屋、违建等，地方性政策可能会提供具体细则或补偿标准。这种思路基本符合《国有土地上房屋征收与补偿条例》的原则，而且也考虑到了实际可行性。\n\n嗯，这样的结论逻辑合理，也覆盖了常见情形。\n</Internal Thinking>\n\n<Question>\n动迁安置，私房征收补偿建筑面积如何认定？\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"明确问题背景\",\n      \"content\": \"问题涉及动迁安置与私房征收的补偿问题，需确认其建筑面积如何认定。这可能包含法律法规的定义、补偿计算标准，以及数据核实流程。先确定相关法律依据。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"确定相关法律和政策\",\n      \"content\": \"建筑面积的认定可能涉及土地法规、《国有土地上房屋征收与补偿条例》或地方相关规定。需先查明明确建筑面积认定标准的法律依据。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"搜索相关法律法规\",\n      \"content\": \"<search>国有土地上房屋征收与补偿条例</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析获取的信息\",\n      \"content\": \"<information>《国有土地上房屋征收与补偿条例》第22条规定，房屋征收补偿包括被征收房屋的价值评估，并应依据房地产市场价格估算补偿。此外，地方政府可能有独立补充标准。</information>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析建筑面积的认定\",\n      \"content\": \"相关法律条款提到补偿按房屋价值评估进行，而建筑面积是其关键评估要素。但理解建筑面积认定，需要进一步明确定义数据采集方式，如产权证或房产测绘结果。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"搜索房屋面积核算标准\",\n      \"content\": \"<search>建筑面积认定与产权证书</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"整合检索获得的信息\",\n      \"content\": \"<information>建筑面积通常以房产登记中载明的面积为准，若无产权证书，则需通过专业测绘机构测绘认定建筑面积；地方政府可能另有针对无证房屋或特殊房屋的补偿政策。</information>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"确认地方政策影响\",\n      \"content\": \"若具体补偿涉及地方性细则，需确认这些细则是否明确规定建筑面积的计算及补偿方式。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"动迁安置中的私房征收补偿建筑面积认定通常以房屋产权登记中的面积为依据；若无产权证书，则需通过专业测绘机构测绘认定。此外，地方政府可能存在针对特定情况的补充政策，例如对未登记房屋的处理细则。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"结论符合《国有土地上房屋征收与补偿条例》的相关规定，并结合地方性政策及测绘标准考虑了实际情况，逻辑完整，信息准确，可验证。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"好的，先来思考这个问题——动迁安置中，私房征收的补偿涉及建筑面积的认定。那么，要看是通过什么标准或者流程来确定建筑面积的。这个肯定会关联到一些法律法规吧。\\n\\n既然是房屋征收补偿，那《国有土地上房屋征收与补偿条例》应该会提到这方面的内容。先搜索一下吧，<search>国有土地上房屋征收与补偿条例</search>。\\n\\n哦，找到了！<information>《国有土地上房屋征收与补偿条例》第22条规定，房屋征收补偿应该包括被征收房屋的价值评估，而且这些评估主要依据的是房地产的市场价格。</information>嗯，这个条例是提到了评估房屋的价值，但没有明确解释建筑面积要怎么认定。不过补偿金额跟房子的面积肯定是强相关的，所以接下来得弄清楚建筑面积的具体确定方式。\\n\\n那建筑面积的认定，一般应该跟房产证或者登记数据有关系吧？不过，有些老房子可能没有产权证书啊，那这种情况下怎么办呢？再搜一下吧。<search>建筑面积认定与产权证书</search>\\n\\n嗯，这个也有了！<information>建筑面积一般是根据房产登记信息确定的。如果没有产权证书或者登记数据，可以通过专业的测绘机构来测量房屋的实际面积。不过，如果是无证房屋或者有其他特殊情况，比如历史遗留问题等，地方政府可能会有对应的补偿政策。</information>嗯，这样子的话，如果有产权证，认定面积应该很直接，就以证上的为准；要是没有产权证，那就得测绘了。\\n\\n不过还有一个问题——地方政策会有什么影响呢？有可能会有一些特殊的地方性细则，特别是处理那些无证房屋、违建或者其他类型房屋的补偿方法。不如先假设一般情况下是以产权证或测绘为主，但有地方性补充。因为这件事情常涉及地方实际情况，可能会影响具体认定方式。\\n\\n总结一下吧，动迁安置过程中，私房征收补偿的建筑面积通常是以房屋产权证书记录的面积为准。如果没有产权证书，那么需要通过专业测绘机构测定建筑面积。特殊情况下，比如无证房屋、违建等，地方性政策可能会提供具体细则或补偿标准。这种思路基本符合《国有土地上房屋征收与补偿条例》的原则，而且也考虑到了实际可行性。\\n\\n嗯，这样的结论逻辑合理，也覆盖了常见情形。\"\n}\n```",
+    "在动迁安置中，私房征收补偿的建筑面积认定通常遵循以下原则：\n\n1. **产权证书记录面积**：如果房屋已有合法的产权证书，建筑面积通常以产权证书上的登记面积为准，这是最直接且权威的认定依据。\n\n2. **测绘机构测量面积**：如果房屋因历史原因没有产权证书或相关登记信息，通常需要通过专业的测绘机构对实际建筑面积进行测量。测绘报告将成为认定建筑面积的重要依据。\n\n3. **特殊情况处理**：\n   - **无证房屋**：对于无产权证的房屋，认定方式可能依据地方政府出台的具体政策。地方政府通常会根据房屋的实际使用情况、建造年限以及动迁补偿原则来制定更具体的处理办法。\n   - **违建建筑**：如果涉及违法建设的房屋，通常不予补偿或按特别规定处理。地方性政策可能会对部分符合条件的历史遗留问题有所宽容。\n\n上述认定方式的实施以《国有土地上房屋征收与补偿条例》第22条的规定为基础，即房屋征收补偿需依房屋价值评估，而建筑面积的认定直接影响评估结果。此外，各地区往往会结合地方性规定，对具体操作流程和补偿细则作进一步规范。\n\n总之，建筑面积认定通常以产权证面积为核心，辅以测绘技术支持，并结合地方性政策处理复杂或特殊情况。建议在动迁过程中，主动咨询当地征收部门，了解具体的政策细则以确保权益保障。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "明确问题背景",
+        "content": "问题涉及动迁安置与私房征收的补偿问题，需确认其建筑面积如何认定。这可能包含法律法规的定义、补偿计算标准，以及数据核实流程。先确定相关法律依据。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "确定相关法律和政策",
+        "content": "建筑面积的认定可能涉及土地法规、《国有土地上房屋征收与补偿条例》或地方相关规定。需先查明明确建筑面积认定标准的法律依据。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "搜索相关法律法规",
+        "content": "<search>国有土地上房屋征收与补偿条例</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "分析获取的信息",
+        "content": "<information>《国有土地上房屋征收与补偿条例》第22条规定，房屋征收补偿包括被征收房屋的价值评估，并应依据房地产市场价格估算补偿。此外，地方政府可能有独立补充标准。</information>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "分析建筑面积的认定",
+        "content": "相关法律条款提到补偿按房屋价值评估进行，而建筑面积是其关键评估要素。但理解建筑面积认定，需要进一步明确定义数据采集方式，如产权证或房产测绘结果。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "搜索房屋面积核算标准",
+        "content": "<search>建筑面积认定与产权证书</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "整合检索获得的信息",
+        "content": "<information>建筑面积通常以房产登记中载明的面积为准，若无产权证书，则需通过专业测绘机构测绘认定建筑面积；地方政府可能另有针对无证房屋或特殊房屋的补偿政策。</information>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "确认地方政策影响",
+        "content": "若具体补偿涉及地方性细则，需确认这些细则是否明确规定建筑面积的计算及补偿方式。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "动迁安置中的私房征收补偿建筑面积认定通常以房屋产权登记中的面积为依据；若无产权证书，则需通过专业测绘机构测绘认定。此外，地方政府可能存在针对特定情况的补充政策，例如对未登记房屋的处理细则。"
+      },
+      {
+        "action": "Verification",
+        "content": "结论符合《国有土地上房屋征收与补偿条例》的相关规定，并结合地方性政策及测绘标准考虑了实际情况，逻辑完整，信息准确，可验证。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "好的，先来思考这个问题——动迁安置中，私房征收的补偿涉及建筑面积的认定。那么，要看是通过什么标准或者流程来确定建筑面积的。这个肯定会关联到一些法律法规吧。\n\n既然是房屋征收补偿，那《国有土地上房屋征收与补偿条例》应该会提到这方面的内容。先搜索一下吧，<search>国有土地上房屋征收与补偿条例</search>。\n\n哦，找到了！<information>《国有土地上房屋征收与补偿条例》第22条规定，房屋征收补偿应该包括被征收房屋的价值评估，而且这些评估主要依据的是房地产的市场价格。</information>嗯，这个条例是提到了评估房屋的价值，但没有明确解释建筑面积要怎么认定。不过补偿金额跟房子的面积肯定是强相关的，所以接下来得弄清楚建筑面积的具体确定方式。\n\n那建筑面积的认定，一般应该跟房产证或者登记数据有关系吧？不过，有些老房子可能没有产权证书啊，那这种情况下怎么办呢？再搜一下吧。<search>建筑面积认定与产权证书</search>\n\n嗯，这个也有了！<information>建筑面积一般是根据房产登记信息确定的。如果没有产权证书或者登记数据，可以通过专业的测绘机构来测量房屋的实际面积。不过，如果是无证房屋或者有其他特殊情况，比如历史遗留问题等，地方政府可能会有对应的补偿政策。</information>嗯，这样子的话，如果有产权证，认定面积应该很直接，就以证上的为准；要是没有产权证，那就得测绘了。\n\n不过还有一个问题——地方政策会有什么影响呢？有可能会有一些特殊的地方性细则，特别是处理那些无证房屋、违建或者其他类型房屋的补偿方法。不如先假设一般情况下是以产权证或测绘为主，但有地方性补充。因为这件事情常涉及地方实际情况，可能会影响具体认定方式。\n\n总结一下吧，动迁安置过程中，私房征收补偿的建筑面积通常是以房屋产权证书记录的面积为准。如果没有产权证书，那么需要通过专业测绘机构测定建筑面积。特殊情况下，比如无证房屋、违建等，地方性政策可能会提供具体细则或补偿标准。这种思路基本符合《国有土地上房屋征收与补偿条例》的原则，而且也考虑到了实际可行性。\n\n嗯，这样的结论逻辑合理，也覆盖了常见情形。",
+  "Response": "在动迁安置中，私房征收补偿的建筑面积认定通常遵循以下原则：\n\n1. **产权证书记录面积**：如果房屋已有合法的产权证书，建筑面积通常以产权证书上的登记面积为准，这是最直接且权威的认定依据。\n\n2. **测绘机构测量面积**：如果房屋因历史原因没有产权证书或相关登记信息，通常需要通过专业的测绘机构对实际建筑面积进行测量。测绘报告将成为认定建筑面积的重要依据。\n\n3. **特殊情况处理**：\n   - **无证房屋**：对于无产权证的房屋，认定方式可能依据地方政府出台的具体政策。地方政府通常会根据房屋的实际使用情况、建造年限以及动迁补偿原则来制定更具体的处理办法。\n   - **违建建筑**：如果涉及违法建设的房屋，通常不予补偿或按特别规定处理。地方性政策可能会对部分符合条件的历史遗留问题有所宽容。\n\n上述认定方式的实施以《国有土地上房屋征收与补偿条例》第22条的规定为基础，即房屋征收补偿需依房屋价值评估，而建筑面积的认定直接影响评估结果。此外，各地区往往会结合地方性规定，对具体操作流程和补偿细则作进一步规范。\n\n总之，建筑面积认定通常以产权证面积为核心，辅以测绘技术支持，并结合地方性政策处理复杂或特殊情况。建议在动迁过程中，主动咨询当地征收部门，了解具体的政策细则以确保权益保障。",
+  "Question": "动迁安置，私房征收补偿建筑面积如何认定？"
+}

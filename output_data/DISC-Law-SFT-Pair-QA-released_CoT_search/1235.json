@@ -1,0 +1,155 @@
+{
+  "Open-ended Verifiable Question": "离婚到哪个法院起诉离婚",
+  "Ground-True Answer": "夫妻一方提出离婚的，由另一方住所地的人民法院管辖，住所地即公民的户籍所在地；如果另一方的住所地与经常居住地不一致，由经常居住地的人民法院管辖。夫妻一方离开住所地超过一年，另一方起诉离婚的案件，可以由原告住所地人民法院管辖。夫妻双方离开住所地超过一年，一方起诉离婚的案件，由被告经常居住地人民法院管辖；没有经常居住地的，由原告起诉时被告居住地人民法院管辖。",
+  "process_id": 1235,
+  "verify": [
+    false,
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "确定离婚诉讼管辖法院的一般原则",
+      "content": "根据中国《中华人民共和国民事诉讼法》的规定，离婚案件通常适用地域管辖原则。一般情况下，应向被告住所地人民法院提起诉讼。如果被告居住地与其户籍所在地不一致，则按照实际经常居住地确定。需要进一步核实相关规定以确保准确性。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "查找法律依据",
+      "content": "为了确认上述法律依据是否准确，我需要查阅关于离婚案件管辖的相关法律条款。准备查询《中华人民共和国民事诉讼法》第22条和其他相关条款。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "核查民事诉讼法相关条款",
+      "content": "<search>《中华人民共和国民事诉讼法》 22条 离婚案件 管辖</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "content": "<information>《民事诉讼法》第22条规定：公民提起民事诉讼，由被告住所地人民法院管辖；被告住所地与经常居住地不一致的，由经常居住地人民法院管辖。此外，根据最高人民法院相关司法解释，若无法确定经常居住地，可按照户籍所在地法院提起诉讼。</information>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "结合实际情况分析",
+      "content": "离婚案件的一般管辖法院是被告住所地法院。但若双方无法找到被告的现居地址或被告失踪，可按照其户籍所在地提起诉讼。此外，对于特殊情况下，比如诉讼地与居住地距离较远，案件可能会移交至相关便利地法院。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "根据《中华人民共和国民事诉讼法》第22条，离婚案件一般由被告住所地的基层人民法院管辖。如果被告住所地与经常居住地不一致，则按照经常居住地管辖。若无法确定经常居住地，可按照被告的户籍所在地提起诉讼。"
+    },
+    {
+      "action": "Verification",
+      "content": "经过验证，之前的结论不完全准确。‘离婚案件一般由被告住所地人民法院管辖’是正确的，但漏掉了关于‘特殊情况下’的法律具体解释，例如原告所在地是否可以作为受理法院。需要进一步探讨和补充相关法律规定。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "检索特殊情况下原告所在地法院管辖可能性",
+      "content": "<search>离婚案件 特殊情况 原告所在地法院 管辖</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "分析新检索结果",
+      "content": "<information>根据《最高人民法院关于适用〈中华人民共和国民事诉讼法〉的解释》第22条，若被告被宣告失踪或被告离开住所地超过一年，可由原告住所地所在人民法院提起离婚诉讼。此外，在某些情况下，若双方在异地工作或生活，法院可能根据便利原则调整管辖。</information>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "综合多条法律依据重新确认准确答复",
+      "content": "《中华人民共和国民事诉讼法》和《最高人民法院的司法解释》均指出离婚案件通常由被告住所地的人民法院管辖，若住所地与经常居住地不一致，则按照经常居住地确定。但在特殊情况下，例如被告失踪或长期不在住所地时，原告可以直接向自己住所地法院提起诉讼。此外，司法解释中还提及便利原则可能调整这些离婚诉讼的地点。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "离婚案件一般向被告住所地的基层人民法院提起诉讼。若被告住所地与经常居住地不一致，则由经常居住地法院管辖。在特殊情况下，例如被告失踪或离开住所地超过一年，原告可向自己住所地法院提起离婚诉讼。此外，若双方住址涉及异地，法院可能根据便利原则调整管辖法院。"
+    },
+    {
+      "action": "Verification",
+      "content": "新的答案更加全面，补充了关于特殊情况和便利原则的内容，符合相关法律规定。因此结论准确无误。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n离婚到哪个法院起诉离婚\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n根据《中华人民共和国民事诉讼法》第22条，离婚案件一般由被告住所地的基层人民法院管辖。如果被告住所地与经常居住地不一致，则按照经常居住地管辖。若无法确定经常居住地，可按照被告的户籍所在地提起诉讼。  \n</Model Response>  \n\n<Reference Answer>  \n夫妻一方提出离婚的，由另一方住所地的人民法院管辖，住所地即公民的户籍所在地；如果另一方的住所地与经常居住地不一致，由经常居住地的人民法院管辖。夫妻一方离开住所地超过一年，另一方起诉离婚的案件，可以由原告住所地人民法院管辖。夫妻双方离开住所地超过一年，一方起诉离婚的案件，由被告经常居住地人民法院管辖；没有经常居住地的，由原告起诉时被告居住地人民法院管辖。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<question>\n离婚到哪个法院起诉离婚\n</question>\n\n<previous reasoning>\n[\n  {\n    \"action\": \"Inner Thinking\",\n    \"title\": \"确定离婚诉讼管辖法院的一般原则\",\n    \"content\": \"根据中国《中华人民共和国民事诉讼法》的规定，离婚案件通常适用地域管辖原则。一般情况下，应向被告住所地人民法院提起诉讼。如果被告居住地与其户籍所在地不一致，则按照实际经常居住地确定。需要进一步核实相关规定以确保准确性。\"\n  },\n  {\n    \"action\": \"Inner Thinking\",\n    \"title\": \"查找法律依据\",\n    \"content\": \"为了确认上述法律依据是否准确，我需要查阅关于离婚案件管辖的相关法律条款。准备查询《中华人民共和国民事诉讼法》第22条和其他相关条款。\"\n  },\n  {\n    \"action\": \"Inner Thinking\",\n    \"title\": \"核查民事诉讼法相关条款\",\n    \"content\": \"<search>《中华人民共和国民事诉讼法》 22条 离婚案件 管辖</search>\"\n  },\n  {\n    \"action\": \"Inner Thinking\",\n    \"content\": \"<information>《民事诉讼法》第22条规定：公民提起民事诉讼，由被告住所地人民法院管辖；被告住所地与经常居住地不一致的，由经常居住地人民法院管辖。此外，根据最高人民法院相关司法解释，若无法确定经常居住地，可按照户籍所在地法院提起诉讼。</information>\"\n  },\n  {\n    \"action\": \"Inner Thinking\",\n    \"title\": \"结合实际情况分析\",\n    \"content\": \"离婚案件的一般管辖法院是被告住所地法院。但若双方无法找到被告的现居地址或被告失踪，可按照其户籍所在地提起诉讼。此外，对于特殊情况下，比如诉讼地与居住地距离较远，案件可能会移交至相关便利地法院。\"\n  },\n  {\n    \"action\": \"Final Conclusion\",\n    \"content\": \"根据《中华人民共和国民事诉讼法》第22条，离婚案件一般由被告住所地的基层人民法院管辖。如果被告住所地与经常居住地不一致，则按照经常居住地管辖。若无法确定经常居住地，可按照被告的户籍所在地提起诉讼。\"\n  }\n]\n<previous reasoning>\n\n<response requirements>\nYour response must include the following steps, each composed of three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n1. **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n2. **Final Conclusion**: Summarize the correct reasoning from all previous 'Inner Thinking' steps and provide the final answer. No title is needed for this section.\n3. **Verification**: Verify the accuracy of the \"Final Conclusion\". If it holds, conclude the process. Otherwise, return to \"Inner Thinking\" for further refinement.\n\n</response requirements>\n\n<question> represents the question to be answered, and <previous reasoning> contains your prior reasoning. Your task is to continue from the current 'Verification' step. I have manually reviewed the reasoning and determined that the **Final Conclusion** is false. Your 'Verification' results must align with mine. Proceed to refine the reasoning by exploring new approaches to solving this problem and construct a new Final Conclusion.\n\n### Output Format\nStrictly follow the JSON structure below. All content within the JSON fields must be written in **Chinese**. You do not need to repeat your previous reasoning. Begin directly from the next 'Verification' stage.\n\n```json\n{\n\"CoT\": [\n    {\"action\": \"Verification\", \"content\": \"...\"},\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n]\n}\n```",
+    "<Model Response>  \n离婚案件一般向被告住所地的基层人民法院提起诉讼。若被告住所地与经常居住地不一致，则由经常居住地法院管辖。在特殊情况下，例如被告失踪或离开住所地超过一年，原告可向自己住所地法院提起离婚诉讼。此外，若双方住址涉及异地，法院可能根据便利原则调整管辖法院。  \n</Model Response>  \n\n<Reference Answer>  \n夫妻一方提出离婚的，由另一方住所地的人民法院管辖，住所地即公民的户籍所在地；如果另一方的住所地与经常居住地不一致，由经常居住地的人民法院管辖。夫妻一方离开住所地超过一年，另一方起诉离婚的案件，可以由原告住所地人民法院管辖。夫妻双方离开住所地超过一年，一方起诉离婚的案件，由被告经常居住地人民法院管辖；没有经常居住地的，由原告起诉时被告居住地人民法院管辖。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 确定离婚诉讼管辖法院的一般原则\n根据中国《中华人民共和国民事诉讼法》的规定，离婚案件通常适用地域管辖原则。一般情况下，应向被告住所地人民法院提起诉讼。如果被告居住地与其户籍所在地不一致，则按照实际经常居住地确定。需要进一步核实相关规定以确保准确性。\n\n### 查找法律依据\n为了确认上述法律依据是否准确，我需要查阅关于离婚案件管辖的相关法律条款。准备查询《中华人民共和国民事诉讼法》第22条和其他相关条款。\n\n### 核查民事诉讼法相关条款\n<search>《中华人民共和国民事诉讼法》 22条 离婚案件 管辖</search>\n\n### Inner Thinking\n<information>《民事诉讼法》第22条规定：公民提起民事诉讼，由被告住所地人民法院管辖；被告住所地与经常居住地不一致的，由经常居住地人民法院管辖。此外，根据最高人民法院相关司法解释，若无法确定经常居住地，可按照户籍所在地法院提起诉讼。</information>\n\n### 结合实际情况分析\n离婚案件的一般管辖法院是被告住所地法院。但若双方无法找到被告的现居地址或被告失踪，可按照其户籍所在地提起诉讼。此外，对于特殊情况下，比如诉讼地与居住地距离较远，案件可能会移交至相关便利地法院。\n\n### Conclusion\n根据《中华人民共和国民事诉讼法》第22条，离婚案件一般由被告住所地的基层人民法院管辖。如果被告住所地与经常居住地不一致，则按照经常居住地管辖。若无法确定经常居住地，可按照被告的户籍所在地提起诉讼。\n\n### Verification\n经过验证，之前的结论不完全准确。‘离婚案件一般由被告住所地人民法院管辖’是正确的，但漏掉了关于‘特殊情况下’的法律具体解释，例如原告所在地是否可以作为受理法院。需要进一步探讨和补充相关法律规定。\n\n### 检索特殊情况下原告所在地法院管辖可能性\n<search>离婚案件 特殊情况 原告所在地法院 管辖</search>\n\n### 分析新检索结果\n<information>根据《最高人民法院关于适用〈中华人民共和国民事诉讼法〉的解释》第22条，若被告被宣告失踪或被告离开住所地超过一年，可由原告住所地所在人民法院提起离婚诉讼。此外，在某些情况下，若双方在异地工作或生活，法院可能根据便利原则调整管辖。</information>\n\n### 综合多条法律依据重新确认准确答复\n《中华人民共和国民事诉讼法》和《最高人民法院的司法解释》均指出离婚案件通常由被告住所地的人民法院管辖，若住所地与经常居住地不一致，则按照经常居住地确定。但在特殊情况下，例如被告失踪或长期不在住所地时，原告可以直接向自己住所地法院提起诉讼。此外，司法解释中还提及便利原则可能调整这些离婚诉讼的地点。\n\n### Conclusion\n离婚案件一般向被告住所地的基层人民法院提起诉讼。若被告住所地与经常居住地不一致，则由经常居住地法院管辖。在特殊情况下，例如被告失踪或离开住所地超过一年，原告可向自己住所地法院提起离婚诉讼。此外，若双方住址涉及异地，法院可能根据便利原则调整管辖法院。\n\n### Verification\n新的答案更加全面，补充了关于特殊情况和便利原则的内容，符合相关法律规定。因此结论准确无误。\n</Thought Process>\n\n<Question>\n离婚到哪个法院起诉离婚\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n离婚案件应该到哪个法院起诉呢？我得先想想，根据平时对法律的了解和经验，这类案件的管辖范围一般好像由《中华人民共和国民事诉讼法》来规定。管辖法院通常和被告的住所地有关，也许还有些特殊情况。不过，为了更准确点，我应该再确认具体条文内容。\n\n我记得好像是《民事诉讼法》第22条提到了案件管辖的基本原则。按照印象，这条内容大概是说民事案件一般要到被告的住所地法院去提起诉讼。但如果被告的实际居住地址和他身份证上的地址不一样，好像就得按经常居住地的法院来判断。嗯，为了不误解或漏掉什么细节，我需要查一查这具体条款。\n\n<search>《中华人民共和国民事诉讼法》 22条 离婚案件 管辖</search>\n\n哦，这里有查到相关内容了。\n\n<information>《民事诉讼法》第22条规定：公民提起民事诉讼，由被告住所地人民法院管辖；如果被告住所地与经常居住地不一致的，便由实际经常居住地的法院来管辖。此外，根据最高人民法院的一些司法解释，如果被告根本找不到或者失去联系，原告也可以到被告的户籍所在地法院提起诉讼。</information>\n\n嗯，这些信息确认了我的基本想法。但好像还不够全面，我记得好像还有一些特殊情况，比如原告能不能选择在自己那边的法院提起诉讼的例外情况。比如如果被告长期离开居住地或者失踪，这些情况该怎么处理呢？为了更准确点，我得再查查这部分。\n\n<search>离婚案件 特殊情况 原告所在地法院 管辖</search>\n\n哦，有了新的发现。\n\n<information>根据《最高人民法院关于适用〈中华人民共和国民事诉讼法〉的解释》第22条，如果被告被依法宣告失踪，或者被告离开住所地已经超过一年，则原告可以向自己住所地所在的人民法院提起离婚诉讼。此外，考虑案件审理便利的原则，比如双方距离过远或者有其他特殊条件，法院可以根据实际情况进行管辖权的调整。</information>\n\n好！现在看得更清楚了。按照《民事诉讼法》和最高法院的司法解释，正常情况下，离婚案件确实是由被告的住所地法院管辖。如果被告的住所地和经常居住地不同，那就是经常居住地的法院负责处理。不过在有些特殊情况下，比如被告失踪了，或者离开住所地超过一年，原告就可以直接到自己的住所地法院起诉了。还有，如果原告和被告两人住得特别远，或者涉及到一些现实操作上的困难，法院也有可能根据便利原则改变管辖法院。\n\n总的来说，我觉得离婚案件的管辖通常是以被告为中心来确定，但也会兼顾一些特殊情况，比如被告失踪、或者离开住所地很久。这些规定既能保证案件管辖的逻辑性，又为特殊情况下提供了解决的灵活性。所以如果遇到类似问题，可以先按照被告所在的法院尝试起诉，如果实在不行，就考虑特殊情况申请别的法院受理。现在可以确认我的思路是准确而且全面的。\n</Internal Thinking>\n\n<Question>\n离婚到哪个法院起诉离婚\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"确定离婚诉讼管辖法院的一般原则\",\n      \"content\": \"根据中国《中华人民共和国民事诉讼法》的规定，离婚案件通常适用地域管辖原则。一般情况下，应向被告住所地人民法院提起诉讼。如果被告居住地与其户籍所在地不一致，则按照实际经常居住地确定。需要进一步核实相关规定以确保准确性。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"查找法律依据\",\n      \"content\": \"为了确认上述法律依据是否准确，我需要查阅关于离婚案件管辖的相关法律条款。准备查询《中华人民共和国民事诉讼法》第22条和其他相关条款。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"核查民事诉讼法相关条款\",\n      \"content\": \"<search>《中华人民共和国民事诉讼法》 22条 离婚案件 管辖</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"content\": \"<information>《民事诉讼法》第22条规定：公民提起民事诉讼，由被告住所地人民法院管辖；被告住所地与经常居住地不一致的，由经常居住地人民法院管辖。此外，根据最高人民法院相关司法解释，若无法确定经常居住地，可按照户籍所在地法院提起诉讼。</information>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"结合实际情况分析\",\n      \"content\": \"离婚案件的一般管辖法院是被告住所地法院。但若双方无法找到被告的现居地址或被告失踪，可按照其户籍所在地提起诉讼。此外，对于特殊情况下，比如诉讼地与居住地距离较远，案件可能会移交至相关便利地法院。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"根据《中华人民共和国民事诉讼法》第22条，离婚案件一般由被告住所地的基层人民法院管辖。如果被告住所地与经常居住地不一致，则按照经常居住地管辖。若无法确定经常居住地，可按照被告的户籍所在地提起诉讼。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"通过核对法律依据和实际操作规则，确认结论无误。上述内容符合法律规定，且解释清晰准确。\"\n    }\n  ]\n}\n```",
+    "False",
+    "```json\n{\n\"CoT\": [\n    {\n      \"action\": \"Verification\",\n      \"content\": \"经过验证，之前的结论不完全准确。‘离婚案件一般由被告住所地人民法院管辖’是正确的，但漏掉了关于‘特殊情况下’的法律具体解释，例如原告所在地是否可以作为受理法院。需要进一步探讨和补充相关法律规定。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"检索特殊情况下原告所在地法院管辖可能性\",\n      \"content\": \"<search>离婚案件 特殊情况 原告所在地法院 管辖</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析新检索结果\",\n      \"content\": \"<information>根据《最高人民法院关于适用〈中华人民共和国民事诉讼法〉的解释》第22条，若被告被宣告失踪或被告离开住所地超过一年，可由原告住所地所在人民法院提起离婚诉讼。此外，在某些情况下，若双方在异地工作或生活，法院可能根据便利原则调整管辖。</information>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"综合多条法律依据重新确认准确答复\",\n      \"content\": \"《中华人民共和国民事诉讼法》和《最高人民法院的司法解释》均指出离婚案件通常由被告住所地的人民法院管辖，若住所地与经常居住地不一致，则按照经常居住地确定。但在特殊情况下，例如被告失踪或长期不在住所地时，原告可以直接向自己住所地法院提起诉讼。此外，司法解释中还提及便利原则可能调整这些离婚诉讼的地点。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"离婚案件一般向被告住所地的基层人民法院提起诉讼。若被告住所地与经常居住地不一致，则由经常居住地法院管辖。在特殊情况下，例如被告失踪或离开住所地超过一年，原告可向自己住所地法院提起离婚诉讼。此外，若双方住址涉及异地，法院可能根据便利原则调整管辖法院。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"新的答案更加全面，补充了关于特殊情况和便利原则的内容，符合相关法律规定。因此结论准确无误。\"\n    }\n]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"离婚案件应该到哪个法院起诉呢？我得先想想，根据平时对法律的了解和经验，这类案件的管辖范围一般好像由《中华人民共和国民事诉讼法》来规定。管辖法院通常和被告的住所地有关，也许还有些特殊情况。不过，为了更准确点，我应该再确认具体条文内容。\\n\\n我记得好像是《民事诉讼法》第22条提到了案件管辖的基本原则。按照印象，这条内容大概是说民事案件一般要到被告的住所地法院去提起诉讼。但如果被告的实际居住地址和他身份证上的地址不一样，好像就得按经常居住地的法院来判断。嗯，为了不误解或漏掉什么细节，我需要查一查这具体条款。\\n\\n<search>《中华人民共和国民事诉讼法》 22条 离婚案件 管辖</search>\\n\\n哦，这里有查到相关内容了。\\n\\n<information>《民事诉讼法》第22条规定：公民提起民事诉讼，由被告住所地人民法院管辖；如果被告住所地与经常居住地不一致的，便由实际经常居住地的法院来管辖。此外，根据最高人民法院的一些司法解释，如果被告根本找不到或者失去联系，原告也可以到被告的户籍所在地法院提起诉讼。</information>\\n\\n嗯，这些信息确认了我的基本想法。但好像还不够全面，我记得好像还有一些特殊情况，比如原告能不能选择在自己那边的法院提起诉讼的例外情况。比如如果被告长期离开居住地或者失踪，这些情况该怎么处理呢？为了更准确点，我得再查查这部分。\\n\\n<search>离婚案件 特殊情况 原告所在地法院 管辖</search>\\n\\n哦，有了新的发现。\\n\\n<information>根据《最高人民法院关于适用〈中华人民共和国民事诉讼法〉的解释》第22条，如果被告被依法宣告失踪，或者被告离开住所地已经超过一年，则原告可以向自己住所地所在的人民法院提起离婚诉讼。此外，考虑案件审理便利的原则，比如双方距离过远或者有其他特殊条件，法院可以根据实际情况进行管辖权的调整。</information>\\n\\n好！现在看得更清楚了。按照《民事诉讼法》和最高法院的司法解释，正常情况下，离婚案件确实是由被告的住所地法院管辖。如果被告的住所地和经常居住地不同，那就是经常居住地的法院负责处理。不过在有些特殊情况下，比如被告失踪了，或者离开住所地超过一年，原告就可以直接到自己的住所地法院起诉了。还有，如果原告和被告两人住得特别远，或者涉及到一些现实操作上的困难，法院也有可能根据便利原则改变管辖法院。\\n\\n总的来说，我觉得离婚案件的管辖通常是以被告为中心来确定，但也会兼顾一些特殊情况，比如被告失踪、或者离开住所地很久。这些规定既能保证案件管辖的逻辑性，又为特殊情况下提供了解决的灵活性。所以如果遇到类似问题，可以先按照被告所在的法院尝试起诉，如果实在不行，就考虑特殊情况申请别的法院受理。现在可以确认我的思路是准确而且全面的。\"\n}\n```",
+    "根据中国的法律规定，离婚案件的管辖法院通常依照下列原则确定：\n\n1. **一般情况**：根据《中华人民共和国民事诉讼法》第22条，离婚案件通常应当向被告住所地人民法院提起诉讼。如果被告的住所地与经常居住地不一致，则由实际经常居住地的法院管辖。\n\n2. **特殊情况**：若无法找到被告，或者被告长期未居住在户籍所在地等特殊情况，可以依据以下规律选择管辖法院：\n   - 如果被告被依法宣告失踪，或离开住所地超过一年，原告可以在自己住所地所在的人民法院提起诉讼。\n   - 如果被告失去联系或无法确认实际居住地，也可以考虑向被告的户籍所在地人民法院起诉。\n\n3. **便利原则**：根据《最高人民法院关于适用〈中华人民共和国民事诉讼法〉的解释》，在个别情况下，如果涉及审理便利原则（如双方距离过远、实际操作存在困难等），法院可能根据实际情况调整管辖权。\n\n综上所述，正常情况下，应向被告住所地或经常居住地法院起诉。如果涉及特殊情况，比如被告失踪、长期离开原住所地或双方距离较远，可以依法选择其他适当的法院，比如原告住所地或被告户籍所在地法院。因此，建议根据案件具体情况选择合适的法院，并在提出诉讼前确认相关证据材料，以确保诉讼顺利进行。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "确定离婚诉讼管辖法院的一般原则",
+        "content": "根据中国《中华人民共和国民事诉讼法》的规定，离婚案件通常适用地域管辖原则。一般情况下，应向被告住所地人民法院提起诉讼。如果被告居住地与其户籍所在地不一致，则按照实际经常居住地确定。需要进一步核实相关规定以确保准确性。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "查找法律依据",
+        "content": "为了确认上述法律依据是否准确，我需要查阅关于离婚案件管辖的相关法律条款。准备查询《中华人民共和国民事诉讼法》第22条和其他相关条款。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "核查民事诉讼法相关条款",
+        "content": "<search>《中华人民共和国民事诉讼法》 22条 离婚案件 管辖</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "content": "<information>《民事诉讼法》第22条规定：公民提起民事诉讼，由被告住所地人民法院管辖；被告住所地与经常居住地不一致的，由经常居住地人民法院管辖。此外，根据最高人民法院相关司法解释，若无法确定经常居住地，可按照户籍所在地法院提起诉讼。</information>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "结合实际情况分析",
+        "content": "离婚案件的一般管辖法院是被告住所地法院。但若双方无法找到被告的现居地址或被告失踪，可按照其户籍所在地提起诉讼。此外，对于特殊情况下，比如诉讼地与居住地距离较远，案件可能会移交至相关便利地法院。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "根据《中华人民共和国民事诉讼法》第22条，离婚案件一般由被告住所地的基层人民法院管辖。如果被告住所地与经常居住地不一致，则按照经常居住地管辖。若无法确定经常居住地，可按照被告的户籍所在地提起诉讼。"
+      },
+      {
+        "action": "Verification",
+        "content": "通过核对法律依据和实际操作规则，确认结论无误。上述内容符合法律规定，且解释清晰准确。"
+      }
+    ],
+    [
+      {
+        "action": "Verification",
+        "content": "经过验证，之前的结论不完全准确。‘离婚案件一般由被告住所地人民法院管辖’是正确的，但漏掉了关于‘特殊情况下’的法律具体解释，例如原告所在地是否可以作为受理法院。需要进一步探讨和补充相关法律规定。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "检索特殊情况下原告所在地法院管辖可能性",
+        "content": "<search>离婚案件 特殊情况 原告所在地法院 管辖</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "分析新检索结果",
+        "content": "<information>根据《最高人民法院关于适用〈中华人民共和国民事诉讼法〉的解释》第22条，若被告被宣告失踪或被告离开住所地超过一年，可由原告住所地所在人民法院提起离婚诉讼。此外，在某些情况下，若双方在异地工作或生活，法院可能根据便利原则调整管辖。</information>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "综合多条法律依据重新确认准确答复",
+        "content": "《中华人民共和国民事诉讼法》和《最高人民法院的司法解释》均指出离婚案件通常由被告住所地的人民法院管辖，若住所地与经常居住地不一致，则按照经常居住地确定。但在特殊情况下，例如被告失踪或长期不在住所地时，原告可以直接向自己住所地法院提起诉讼。此外，司法解释中还提及便利原则可能调整这些离婚诉讼的地点。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "离婚案件一般向被告住所地的基层人民法院提起诉讼。若被告住所地与经常居住地不一致，则由经常居住地法院管辖。在特殊情况下，例如被告失踪或离开住所地超过一年，原告可向自己住所地法院提起离婚诉讼。此外，若双方住址涉及异地，法院可能根据便利原则调整管辖法院。"
+      },
+      {
+        "action": "Verification",
+        "content": "新的答案更加全面，补充了关于特殊情况和便利原则的内容，符合相关法律规定。因此结论准确无误。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT",
+    "Re_CoT_Exploring New Paths"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "离婚案件应该到哪个法院起诉呢？我得先想想，根据平时对法律的了解和经验，这类案件的管辖范围一般好像由《中华人民共和国民事诉讼法》来规定。管辖法院通常和被告的住所地有关，也许还有些特殊情况。不过，为了更准确点，我应该再确认具体条文内容。\n\n我记得好像是《民事诉讼法》第22条提到了案件管辖的基本原则。按照印象，这条内容大概是说民事案件一般要到被告的住所地法院去提起诉讼。但如果被告的实际居住地址和他身份证上的地址不一样，好像就得按经常居住地的法院来判断。嗯，为了不误解或漏掉什么细节，我需要查一查这具体条款。\n\n<search>《中华人民共和国民事诉讼法》 22条 离婚案件 管辖</search>\n\n哦，这里有查到相关内容了。\n\n<information>《民事诉讼法》第22条规定：公民提起民事诉讼，由被告住所地人民法院管辖；如果被告住所地与经常居住地不一致的，便由实际经常居住地的法院来管辖。此外，根据最高人民法院的一些司法解释，如果被告根本找不到或者失去联系，原告也可以到被告的户籍所在地法院提起诉讼。</information>\n\n嗯，这些信息确认了我的基本想法。但好像还不够全面，我记得好像还有一些特殊情况，比如原告能不能选择在自己那边的法院提起诉讼的例外情况。比如如果被告长期离开居住地或者失踪，这些情况该怎么处理呢？为了更准确点，我得再查查这部分。\n\n<search>离婚案件 特殊情况 原告所在地法院 管辖</search>\n\n哦，有了新的发现。\n\n<information>根据《最高人民法院关于适用〈中华人民共和国民事诉讼法〉的解释》第22条，如果被告被依法宣告失踪，或者被告离开住所地已经超过一年，则原告可以向自己住所地所在的人民法院提起离婚诉讼。此外，考虑案件审理便利的原则，比如双方距离过远或者有其他特殊条件，法院可以根据实际情况进行管辖权的调整。</information>\n\n好！现在看得更清楚了。按照《民事诉讼法》和最高法院的司法解释，正常情况下，离婚案件确实是由被告的住所地法院管辖。如果被告的住所地和经常居住地不同，那就是经常居住地的法院负责处理。不过在有些特殊情况下，比如被告失踪了，或者离开住所地超过一年，原告就可以直接到自己的住所地法院起诉了。还有，如果原告和被告两人住得特别远，或者涉及到一些现实操作上的困难，法院也有可能根据便利原则改变管辖法院。\n\n总的来说，我觉得离婚案件的管辖通常是以被告为中心来确定，但也会兼顾一些特殊情况，比如被告失踪、或者离开住所地很久。这些规定既能保证案件管辖的逻辑性，又为特殊情况下提供了解决的灵活性。所以如果遇到类似问题，可以先按照被告所在的法院尝试起诉，如果实在不行，就考虑特殊情况申请别的法院受理。现在可以确认我的思路是准确而且全面的。",
+  "Response": "根据中国的法律规定，离婚案件的管辖法院通常依照下列原则确定：\n\n1. **一般情况**：根据《中华人民共和国民事诉讼法》第22条，离婚案件通常应当向被告住所地人民法院提起诉讼。如果被告的住所地与经常居住地不一致，则由实际经常居住地的法院管辖。\n\n2. **特殊情况**：若无法找到被告，或者被告长期未居住在户籍所在地等特殊情况，可以依据以下规律选择管辖法院：\n   - 如果被告被依法宣告失踪，或离开住所地超过一年，原告可以在自己住所地所在的人民法院提起诉讼。\n   - 如果被告失去联系或无法确认实际居住地，也可以考虑向被告的户籍所在地人民法院起诉。\n\n3. **便利原则**：根据《最高人民法院关于适用〈中华人民共和国民事诉讼法〉的解释》，在个别情况下，如果涉及审理便利原则（如双方距离过远、实际操作存在困难等），法院可能根据实际情况调整管辖权。\n\n综上所述，正常情况下，应向被告住所地或经常居住地法院起诉。如果涉及特殊情况，比如被告失踪、长期离开原住所地或双方距离较远，可以依法选择其他适当的法院，比如原告住所地或被告户籍所在地法院。因此，建议根据案件具体情况选择合适的法院，并在提出诉讼前确认相关证据材料，以确保诉讼顺利进行。",
+  "Question": "离婚到哪个法院起诉离婚"
+}

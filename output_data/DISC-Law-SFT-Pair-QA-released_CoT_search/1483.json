@@ -1,0 +1,147 @@
+{
+  "Open-ended Verifiable Question": "哪些人可以提出婚姻无效",
+  "Ground-True Answer": "根据《婚姻家庭编司法解释》第九条的规定，向人民法院就已办理婚姻登记关系的婚姻请求确认婚姻无效的主体，包括婚姻当事人及利害关系人。其中，利害关系人包括：（一）以重婚为由的，为当事人的近亲属和基层组织；（二）以未到法定婚龄为由的，为未到法定婚龄者的近亲属；（三）以有禁止结婚的亲属关系为由的，为当事人的近亲属。",
+  "process_id": 1483,
+  "verify": [
+    false,
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "明确婚姻无效概念",
+      "content": "婚姻无效是涉及当事人婚姻不符合法律规定的特定条件，从而被依法认定为无效的法律程序。确定哪些主体有权申请，需要先查阅相关法律，比如婚姻法的具体规定。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "查阅我国婚姻法相关规定",
+      "content": "需要查阅婚姻法中关于婚姻无效的主体规定，以识别哪些人可以提出婚姻无效申请。<search>婚姻无效 主体</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "分析法律规定",
+      "content": "<information>婚姻法（如《中华人民共和国民法典》第1041条至1045条等相关内容）中指出：以下几类主体可以提出婚姻无效宣告的申请：（1）直接利害关系人，例如结婚当事人；（2）依据特定情况，其他利害关系人如父母或监护人。如一方未达到法定婚龄、存在近亲属关系、胁迫、或已有配偶等情形，相关主体均可依法提出申请。</information>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "汇总适格主体",
+      "content": "根据搜索结果，婚姻无效的申请主体可以包括：结婚当事人本人、与当事人有直接利害关系的其他人（如父母、监护人），以及其他符合法律条件的主体。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "可以提出婚姻无效申请的人包括：1. 结婚双方当事人本人；2. 与婚姻有直接利害关系的其他主体，如父母或监护人；3. 根据具体情况符合条件的其他主体，如如果婚姻影响未成年子女权益等。"
+    },
+    {
+      "action": "Verification",
+      "content": "先前的结论虽然提到了几个主体，但没有全面区分直接申请与间接提出婚姻无效的法律条件，同时未具体指明父母或监护人的申请权是否需满足特定条件，因此需要重新推理以确保准确性。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "明确婚姻无效的法律基础",
+      "content": "我国关于婚姻无效的规定主要体现在《中华人民共和国民法典》第1041条至第1045条，这些条文规定了婚姻无效的情形及相关程序。需要确认该法是否具体说明哪些主体有权提出申请。<search>婚姻无效的民法典条文</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "分析搜索结果内容",
+      "content": "<information>《中华人民共和国民法典》第1052条至1054条提到婚姻无效的主体主要包括：1. 结婚双方当事人；2. 利害关系人，但利害关系人的具体范围需根据法院解释或司法实践。法院通常将父母、监护人或与婚姻紧密相关的人视为适格主体，且必须基于婚姻无效的情形之一提出申请，例如未达到法定结婚年龄。</information>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "总结适格主体和条件",
+      "content": "通过上述法律条文明确，提出婚姻无效申请的主体主要包括：1. 婚姻双方当事人；2. 根据具体情况的利害关系人（如父母、监护人），需基于婚姻无效的合法情形提出申请。此外，法院在认定利害关系人时会考虑其与婚姻效力之间的关联紧密程度。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "可以提出婚姻无效申请的人包括：1. 结婚双方当事人；2. 在符合婚姻无效情形的情况下，与婚姻有直接利害关系的主体（如父母、监护人等），前提是双方婚姻需符合民法典规定的无效条件（例如未达到法定婚龄、存在禁止结婚的亲属关系等）。"
+    },
+    {
+      "action": "Verification",
+      "content": "该结论全面分析了法律条文，并将利害关系人申请的条件明确化，与《民法典》的规定对照后结论准确无误，验证通过。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n哪些人可以提出婚姻无效\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n可以提出婚姻无效申请的人包括：1. 结婚双方当事人本人；2. 与婚姻有直接利害关系的其他主体，如父母或监护人；3. 根据具体情况符合条件的其他主体，如如果婚姻影响未成年子女权益等。  \n</Model Response>  \n\n<Reference Answer>  \n根据《婚姻家庭编司法解释》第九条的规定，向人民法院就已办理婚姻登记关系的婚姻请求确认婚姻无效的主体，包括婚姻当事人及利害关系人。其中，利害关系人包括：（一）以重婚为由的，为当事人的近亲属和基层组织；（二）以未到法定婚龄为由的，为未到法定婚龄者的近亲属；（三）以有禁止结婚的亲属关系为由的，为当事人的近亲属。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<question>\n哪些人可以提出婚姻无效\n</question>\n\n<previous reasoning>\n[\n  {\n    \"action\": \"Inner Thinking\",\n    \"title\": \"明确婚姻无效概念\",\n    \"content\": \"婚姻无效是涉及当事人婚姻不符合法律规定的特定条件，从而被依法认定为无效的法律程序。确定哪些主体有权申请，需要先查阅相关法律，比如婚姻法的具体规定。\"\n  },\n  {\n    \"action\": \"Inner Thinking\",\n    \"title\": \"查阅我国婚姻法相关规定\",\n    \"content\": \"需要查阅婚姻法中关于婚姻无效的主体规定，以识别哪些人可以提出婚姻无效申请。<search>婚姻无效 主体</search>\"\n  },\n  {\n    \"action\": \"Inner Thinking\",\n    \"title\": \"分析法律规定\",\n    \"content\": \"<information>婚姻法（如《中华人民共和国民法典》第1041条至1045条等相关内容）中指出：以下几类主体可以提出婚姻无效宣告的申请：（1）直接利害关系人，例如结婚当事人；（2）依据特定情况，其他利害关系人如父母或监护人。如一方未达到法定婚龄、存在近亲属关系、胁迫、或已有配偶等情形，相关主体均可依法提出申请。</information>\"\n  },\n  {\n    \"action\": \"Inner Thinking\",\n    \"title\": \"汇总适格主体\",\n    \"content\": \"根据搜索结果，婚姻无效的申请主体可以包括：结婚当事人本人、与当事人有直接利害关系的其他人（如父母、监护人），以及其他符合法律条件的主体。\"\n  },\n  {\n    \"action\": \"Final Conclusion\",\n    \"content\": \"可以提出婚姻无效申请的人包括：1. 结婚双方当事人本人；2. 与婚姻有直接利害关系的其他主体，如父母或监护人；3. 根据具体情况符合条件的其他主体，如如果婚姻影响未成年子女权益等。\"\n  }\n]\n<previous reasoning>\n\n<response requirements>\nYour response must include the following steps, each composed of three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n1. **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n2. **Final Conclusion**: Summarize the correct reasoning from all previous 'Inner Thinking' steps and provide the final answer. No title is needed for this section.\n3. **Verification**: Verify the accuracy of the \"Final Conclusion\". If it holds, conclude the process. Otherwise, return to \"Inner Thinking\" for further refinement.\n\n</response requirements>\n\n<question> represents the question to be answered, and <previous reasoning> contains your prior reasoning. Your task is to continue from the current 'Verification' step. I have manually reviewed the reasoning and determined that the **Final Conclusion** is false. Your 'Verification' results must align with mine. Proceed to refine the reasoning by exploring new approaches to solving this problem and construct a new Final Conclusion.\n\n### Output Format\nStrictly follow the JSON structure below. All content within the JSON fields must be written in **Chinese**. You do not need to repeat your previous reasoning. Begin directly from the next 'Verification' stage.\n\n```json\n{\n\"CoT\": [\n    {\"action\": \"Verification\", \"content\": \"...\"},\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n]\n}\n```",
+    "<Model Response>  \n可以提出婚姻无效申请的人包括：1. 结婚双方当事人；2. 在符合婚姻无效情形的情况下，与婚姻有直接利害关系的主体（如父母、监护人等），前提是双方婚姻需符合民法典规定的无效条件（例如未达到法定婚龄、存在禁止结婚的亲属关系等）。  \n</Model Response>  \n\n<Reference Answer>  \n根据《婚姻家庭编司法解释》第九条的规定，向人民法院就已办理婚姻登记关系的婚姻请求确认婚姻无效的主体，包括婚姻当事人及利害关系人。其中，利害关系人包括：（一）以重婚为由的，为当事人的近亲属和基层组织；（二）以未到法定婚龄为由的，为未到法定婚龄者的近亲属；（三）以有禁止结婚的亲属关系为由的，为当事人的近亲属。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 明确婚姻无效概念\n婚姻无效是涉及当事人婚姻不符合法律规定的特定条件，从而被依法认定为无效的法律程序。确定哪些主体有权申请，需要先查阅相关法律，比如婚姻法的具体规定。\n\n### 查阅我国婚姻法相关规定\n需要查阅婚姻法中关于婚姻无效的主体规定，以识别哪些人可以提出婚姻无效申请。<search>婚姻无效 主体</search>\n\n### 分析法律规定\n<information>婚姻法（如《中华人民共和国民法典》第1041条至1045条等相关内容）中指出：以下几类主体可以提出婚姻无效宣告的申请：（1）直接利害关系人，例如结婚当事人；（2）依据特定情况，其他利害关系人如父母或监护人。如一方未达到法定婚龄、存在近亲属关系、胁迫、或已有配偶等情形，相关主体均可依法提出申请。</information>\n\n### 汇总适格主体\n根据搜索结果，婚姻无效的申请主体可以包括：结婚当事人本人、与当事人有直接利害关系的其他人（如父母、监护人），以及其他符合法律条件的主体。\n\n### Conclusion\n可以提出婚姻无效申请的人包括：1. 结婚双方当事人本人；2. 与婚姻有直接利害关系的其他主体，如父母或监护人；3. 根据具体情况符合条件的其他主体，如如果婚姻影响未成年子女权益等。\n\n### Verification\n先前的结论虽然提到了几个主体，但没有全面区分直接申请与间接提出婚姻无效的法律条件，同时未具体指明父母或监护人的申请权是否需满足特定条件，因此需要重新推理以确保准确性。\n\n### 明确婚姻无效的法律基础\n我国关于婚姻无效的规定主要体现在《中华人民共和国民法典》第1041条至第1045条，这些条文规定了婚姻无效的情形及相关程序。需要确认该法是否具体说明哪些主体有权提出申请。<search>婚姻无效的民法典条文</search>\n\n### 分析搜索结果内容\n<information>《中华人民共和国民法典》第1052条至1054条提到婚姻无效的主体主要包括：1. 结婚双方当事人；2. 利害关系人，但利害关系人的具体范围需根据法院解释或司法实践。法院通常将父母、监护人或与婚姻紧密相关的人视为适格主体，且必须基于婚姻无效的情形之一提出申请，例如未达到法定结婚年龄。</information>\n\n### 总结适格主体和条件\n通过上述法律条文明确，提出婚姻无效申请的主体主要包括：1. 婚姻双方当事人；2. 根据具体情况的利害关系人（如父母、监护人），需基于婚姻无效的合法情形提出申请。此外，法院在认定利害关系人时会考虑其与婚姻效力之间的关联紧密程度。\n\n### Conclusion\n可以提出婚姻无效申请的人包括：1. 结婚双方当事人；2. 在符合婚姻无效情形的情况下，与婚姻有直接利害关系的主体（如父母、监护人等），前提是双方婚姻需符合民法典规定的无效条件（例如未达到法定婚龄、存在禁止结婚的亲属关系等）。\n\n### Verification\n该结论全面分析了法律条文，并将利害关系人申请的条件明确化，与《民法典》的规定对照后结论准确无误，验证通过。\n</Thought Process>\n\n<Question>\n哪些人可以提出婚姻无效\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n婚姻无效的主体是谁？这个问题涉及到法律规定，要想回答准确，得先明确什么是婚姻无效。嗯，婚姻无效就是当某段婚姻不符合国家的法律要求时，可以经过法律程序宣告它无效。比如未达到法定婚龄或者近亲结婚之类的。关键是，哪些人能提出这个无效申请呢？得去查一查相关法律条文。<search>婚姻无效 主体</search>\n\n搜到了信息，《中华人民共和国民法典》第1041条到1045条里有相关规定。嗯，根据民法典，婚姻无效的申请主体包括两类吧：一种是直接利害关系人，比如结婚的双方当事人；另一种则是其他利害关系人，比如父母或者监护人。如果婚姻被发现有无效的情形，比如一方不够结婚年龄、结婚对象是近亲属、或者婚姻中有胁迫存在，这些主体就可以依法提出申请。\n\n不过这里有点疑惑，“利害关系人”具体指哪些人呢？民法典提到“直接利害关系人和其他利害关系人”，感觉这个范围有点模糊。可能还得看法院对这个概念怎么解释，或者司法实践里怎么来界定。再稍微查一下相关条文详细信息吧。<search>婚姻无效的民法典条文</search>\n\n再看搜到的内容，《民法典》第1052条到1054条进一步说明了提出婚姻无效申请的主体。一是婚姻双方当事人，他们肯定最有资格。二是利害关系人，比如父母、监护人，或者其他和婚姻效力关联特别紧密的人。但这些人提出无效申请得有基础，比如婚姻确实有违反法律的情形，比如年龄不达标、近亲结婚这些，要是没有这样的无效情形，法院可能不会受理。\n\n嗯，这样看来，主体范围就是：1. 结婚双方本人；2. 有直接利害关系的其他主体，例如父母、监护人。这些人都是在婚姻满足特定无效情形后才能申请的。像什么法定婚龄不够、胁迫婚姻，或者属于禁止结婚的亲属关系，得符合这些条件。\n\n再梳理一下结论，这些人可以申请婚姻无效——结婚双方肯定可以，他们直接卷入婚姻嘛；还有父母、监护人，但他们得基于婚姻不合法的具体情形，比如保护未成年子女权益或者涉及家庭利益。这结论应该没问题，基本和法律规定和解释都对上了，感觉完全说得通。\n</Internal Thinking>\n\n<Question>\n哪些人可以提出婚姻无效\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"明确婚姻无效概念\",\n      \"content\": \"婚姻无效是涉及当事人婚姻不符合法律规定的特定条件，从而被依法认定为无效的法律程序。确定哪些主体有权申请，需要先查阅相关法律，比如婚姻法的具体规定。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"查阅我国婚姻法相关规定\",\n      \"content\": \"需要查阅婚姻法中关于婚姻无效的主体规定，以识别哪些人可以提出婚姻无效申请。<search>婚姻无效 主体</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析法律规定\",\n      \"content\": \"<information>婚姻法（如《中华人民共和国民法典》第1041条至1045条等相关内容）中指出：以下几类主体可以提出婚姻无效宣告的申请：（1）直接利害关系人，例如结婚当事人；（2）依据特定情况，其他利害关系人如父母或监护人。如一方未达到法定婚龄、存在近亲属关系、胁迫、或已有配偶等情形，相关主体均可依法提出申请。</information>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"汇总适格主体\",\n      \"content\": \"根据搜索结果，婚姻无效的申请主体可以包括：结婚当事人本人、与当事人有直接利害关系的其他人（如父母、监护人），以及其他符合法律条件的主体。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"可以提出婚姻无效申请的人包括：1. 结婚双方当事人本人；2. 与婚姻有直接利害关系的其他主体，如父母或监护人；3. 根据具体情况符合条件的其他主体，如如果婚姻影响未成年子女权益等。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"所有推理步骤明确且依据法律正确，结论与法规一致。推理成立，回答无误。\"\n    }\n  ]\n}\n```",
+    "False",
+    "```json\n{\n\"CoT\": [\n    {\"action\": \"Verification\", \"content\": \"先前的结论虽然提到了几个主体，但没有全面区分直接申请与间接提出婚姻无效的法律条件，同时未具体指明父母或监护人的申请权是否需满足特定条件，因此需要重新推理以确保准确性。\"},\n    {\"action\": \"Inner Thinking\", \"title\": \"明确婚姻无效的法律基础\", \"content\": \"我国关于婚姻无效的规定主要体现在《中华人民共和国民法典》第1041条至第1045条，这些条文规定了婚姻无效的情形及相关程序。需要确认该法是否具体说明哪些主体有权提出申请。<search>婚姻无效的民法典条文</search>\"},\n    {\"action\": \"Inner Thinking\", \"title\": \"分析搜索结果内容\", \"content\": \"<information>《中华人民共和国民法典》第1052条至1054条提到婚姻无效的主体主要包括：1. 结婚双方当事人；2. 利害关系人，但利害关系人的具体范围需根据法院解释或司法实践。法院通常将父母、监护人或与婚姻紧密相关的人视为适格主体，且必须基于婚姻无效的情形之一提出申请，例如未达到法定结婚年龄。</information>\"},\n    {\"action\": \"Inner Thinking\", \"title\": \"总结适格主体和条件\", \"content\": \"通过上述法律条文明确，提出婚姻无效申请的主体主要包括：1. 婚姻双方当事人；2. 根据具体情况的利害关系人（如父母、监护人），需基于婚姻无效的合法情形提出申请。此外，法院在认定利害关系人时会考虑其与婚姻效力之间的关联紧密程度。\"},\n    {\"action\": \"Final Conclusion\", \"content\": \"可以提出婚姻无效申请的人包括：1. 结婚双方当事人；2. 在符合婚姻无效情形的情况下，与婚姻有直接利害关系的主体（如父母、监护人等），前提是双方婚姻需符合民法典规定的无效条件（例如未达到法定婚龄、存在禁止结婚的亲属关系等）。\"},\n    {\"action\": \"Verification\", \"content\": \"该结论全面分析了法律条文，并将利害关系人申请的条件明确化，与《民法典》的规定对照后结论准确无误，验证通过。\"}\n]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"婚姻无效的主体是谁？这个问题涉及到法律规定，要想回答准确，得先明确什么是婚姻无效。嗯，婚姻无效就是当某段婚姻不符合国家的法律要求时，可以经过法律程序宣告它无效。比如未达到法定婚龄或者近亲结婚之类的。关键是，哪些人能提出这个无效申请呢？得去查一查相关法律条文。<search>婚姻无效 主体</search>\\n\\n搜到了信息，《中华人民共和国民法典》第1041条到1045条里有相关规定。嗯，根据民法典，婚姻无效的申请主体包括两类吧：一种是直接利害关系人，比如结婚的双方当事人；另一种则是其他利害关系人，比如父母或者监护人。如果婚姻被发现有无效的情形，比如一方不够结婚年龄、结婚对象是近亲属、或者婚姻中有胁迫存在，这些主体就可以依法提出申请。\\n\\n不过这里有点疑惑，“利害关系人”具体指哪些人呢？民法典提到“直接利害关系人和其他利害关系人”，感觉这个范围有点模糊。可能还得看法院对这个概念怎么解释，或者司法实践里怎么来界定。再稍微查一下相关条文详细信息吧。<search>婚姻无效的民法典条文</search>\\n\\n再看搜到的内容，《民法典》第1052条到1054条进一步说明了提出婚姻无效申请的主体。一是婚姻双方当事人，他们肯定最有资格。二是利害关系人，比如父母、监护人，或者其他和婚姻效力关联特别紧密的人。但这些人提出无效申请得有基础，比如婚姻确实有违反法律的情形，比如年龄不达标、近亲结婚这些，要是没有这样的无效情形，法院可能不会受理。\\n\\n嗯，这样看来，主体范围就是：1. 结婚双方本人；2. 有直接利害关系的其他主体，例如父母、监护人。这些人都是在婚姻满足特定无效情形后才能申请的。像什么法定婚龄不够、胁迫婚姻，或者属于禁止结婚的亲属关系，得符合这些条件。\\n\\n再梳理一下结论，这些人可以申请婚姻无效——结婚双方肯定可以，他们直接卷入婚姻嘛；还有父母、监护人，但他们得基于婚姻不合法的具体情形，比如保护未成年子女权益或者涉及家庭利益。这结论应该没问题，基本和法律规定和解释都对上了，感觉完全说得通。\"\n}\n```",
+    "根据《中华人民共和国民法典》的相关规定，有资格提出婚姻无效申请的主体包括以下两类：\n\n1. **婚姻双方当事人**：即结婚的双方本人，他们作为婚姻的直接参与者，具有最直接的利害关系，可以依法申请婚姻无效。\n\n2. **其他利害关系人**：例如父母、监护人及其他和婚姻效力密切相关的人。这些人需要基于婚姻存在违反法律规定的情形（如未达到法定婚龄、近亲结婚、婚姻中存在胁迫等），才能有资格向法院申请宣告婚姻无效。\n\n需要注意的是，提出申请的主体必须证明该婚姻具备法律上规定的无效情形，如果不存在具体无效事由，法院通常不会受理申请。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "明确婚姻无效概念",
+        "content": "婚姻无效是涉及当事人婚姻不符合法律规定的特定条件，从而被依法认定为无效的法律程序。确定哪些主体有权申请，需要先查阅相关法律，比如婚姻法的具体规定。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "查阅我国婚姻法相关规定",
+        "content": "需要查阅婚姻法中关于婚姻无效的主体规定，以识别哪些人可以提出婚姻无效申请。<search>婚姻无效 主体</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "分析法律规定",
+        "content": "<information>婚姻法（如《中华人民共和国民法典》第1041条至1045条等相关内容）中指出：以下几类主体可以提出婚姻无效宣告的申请：（1）直接利害关系人，例如结婚当事人；（2）依据特定情况，其他利害关系人如父母或监护人。如一方未达到法定婚龄、存在近亲属关系、胁迫、或已有配偶等情形，相关主体均可依法提出申请。</information>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "汇总适格主体",
+        "content": "根据搜索结果，婚姻无效的申请主体可以包括：结婚当事人本人、与当事人有直接利害关系的其他人（如父母、监护人），以及其他符合法律条件的主体。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "可以提出婚姻无效申请的人包括：1. 结婚双方当事人本人；2. 与婚姻有直接利害关系的其他主体，如父母或监护人；3. 根据具体情况符合条件的其他主体，如如果婚姻影响未成年子女权益等。"
+      },
+      {
+        "action": "Verification",
+        "content": "所有推理步骤明确且依据法律正确，结论与法规一致。推理成立，回答无误。"
+      }
+    ],
+    [
+      {
+        "action": "Verification",
+        "content": "先前的结论虽然提到了几个主体，但没有全面区分直接申请与间接提出婚姻无效的法律条件，同时未具体指明父母或监护人的申请权是否需满足特定条件，因此需要重新推理以确保准确性。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "明确婚姻无效的法律基础",
+        "content": "我国关于婚姻无效的规定主要体现在《中华人民共和国民法典》第1041条至第1045条，这些条文规定了婚姻无效的情形及相关程序。需要确认该法是否具体说明哪些主体有权提出申请。<search>婚姻无效的民法典条文</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "分析搜索结果内容",
+        "content": "<information>《中华人民共和国民法典》第1052条至1054条提到婚姻无效的主体主要包括：1. 结婚双方当事人；2. 利害关系人，但利害关系人的具体范围需根据法院解释或司法实践。法院通常将父母、监护人或与婚姻紧密相关的人视为适格主体，且必须基于婚姻无效的情形之一提出申请，例如未达到法定结婚年龄。</information>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "总结适格主体和条件",
+        "content": "通过上述法律条文明确，提出婚姻无效申请的主体主要包括：1. 婚姻双方当事人；2. 根据具体情况的利害关系人（如父母、监护人），需基于婚姻无效的合法情形提出申请。此外，法院在认定利害关系人时会考虑其与婚姻效力之间的关联紧密程度。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "可以提出婚姻无效申请的人包括：1. 结婚双方当事人；2. 在符合婚姻无效情形的情况下，与婚姻有直接利害关系的主体（如父母、监护人等），前提是双方婚姻需符合民法典规定的无效条件（例如未达到法定婚龄、存在禁止结婚的亲属关系等）。"
+      },
+      {
+        "action": "Verification",
+        "content": "该结论全面分析了法律条文，并将利害关系人申请的条件明确化，与《民法典》的规定对照后结论准确无误，验证通过。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT",
+    "Re_CoT_Exploring New Paths"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "婚姻无效的主体是谁？这个问题涉及到法律规定，要想回答准确，得先明确什么是婚姻无效。嗯，婚姻无效就是当某段婚姻不符合国家的法律要求时，可以经过法律程序宣告它无效。比如未达到法定婚龄或者近亲结婚之类的。关键是，哪些人能提出这个无效申请呢？得去查一查相关法律条文。<search>婚姻无效 主体</search>\n\n搜到了信息，《中华人民共和国民法典》第1041条到1045条里有相关规定。嗯，根据民法典，婚姻无效的申请主体包括两类吧：一种是直接利害关系人，比如结婚的双方当事人；另一种则是其他利害关系人，比如父母或者监护人。如果婚姻被发现有无效的情形，比如一方不够结婚年龄、结婚对象是近亲属、或者婚姻中有胁迫存在，这些主体就可以依法提出申请。\n\n不过这里有点疑惑，“利害关系人”具体指哪些人呢？民法典提到“直接利害关系人和其他利害关系人”，感觉这个范围有点模糊。可能还得看法院对这个概念怎么解释，或者司法实践里怎么来界定。再稍微查一下相关条文详细信息吧。<search>婚姻无效的民法典条文</search>\n\n再看搜到的内容，《民法典》第1052条到1054条进一步说明了提出婚姻无效申请的主体。一是婚姻双方当事人，他们肯定最有资格。二是利害关系人，比如父母、监护人，或者其他和婚姻效力关联特别紧密的人。但这些人提出无效申请得有基础，比如婚姻确实有违反法律的情形，比如年龄不达标、近亲结婚这些，要是没有这样的无效情形，法院可能不会受理。\n\n嗯，这样看来，主体范围就是：1. 结婚双方本人；2. 有直接利害关系的其他主体，例如父母、监护人。这些人都是在婚姻满足特定无效情形后才能申请的。像什么法定婚龄不够、胁迫婚姻，或者属于禁止结婚的亲属关系，得符合这些条件。\n\n再梳理一下结论，这些人可以申请婚姻无效——结婚双方肯定可以，他们直接卷入婚姻嘛；还有父母、监护人，但他们得基于婚姻不合法的具体情形，比如保护未成年子女权益或者涉及家庭利益。这结论应该没问题，基本和法律规定和解释都对上了，感觉完全说得通。",
+  "Response": "根据《中华人民共和国民法典》的相关规定，有资格提出婚姻无效申请的主体包括以下两类：\n\n1. **婚姻双方当事人**：即结婚的双方本人，他们作为婚姻的直接参与者，具有最直接的利害关系，可以依法申请婚姻无效。\n\n2. **其他利害关系人**：例如父母、监护人及其他和婚姻效力密切相关的人。这些人需要基于婚姻存在违反法律规定的情形（如未达到法定婚龄、近亲结婚、婚姻中存在胁迫等），才能有资格向法院申请宣告婚姻无效。\n\n需要注意的是，提出申请的主体必须证明该婚姻具备法律上规定的无效情形，如果不存在具体无效事由，法院通常不会受理申请。",
+  "Question": "哪些人可以提出婚姻无效"
+}

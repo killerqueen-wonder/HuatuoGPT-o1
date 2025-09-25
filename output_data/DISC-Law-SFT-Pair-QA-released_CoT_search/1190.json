@@ -1,0 +1,89 @@
+{
+  "Open-ended Verifiable Question": "购房者如何向开发商索要购房发票?",
+  "Ground-True Answer": "买房同购买其他商品一样，购房者有权利向开发商索要发票。依据购房者付款方式的不同，开发商给购房者开具的发票也不同。如果购房者采取一次性付款的方式购房、那么当购房者支付了全部价款以后，开发商便应向购房者出具全额增值税普通发票或者增值税专用发票；如果购房者采取按揭付款的方式购房、由于其没有支付全部的款项，因此每当购房者支付一部分分期付款的款项时，开发商都应向购房者出具相应款项的增值税普通发票（使用“未发生销售行为的不征税项目”编码，发票税率栏填写“不征税”，不得开具增值税专用发票），待购房者支付了全部的房款以后，开发商将原先已开具的发票收回，向购房者出具全额增值税普通发票或者增值税专用发票。购房发票是购房者向开发商支付了全部或部分房款的有效凭证。购房者在办理商业贷款、公积金贷款、入住手续或者办理不动产权证时，都需要出具购房发票。没有购房发票，办理贷款的银行和办理不动产权证的有关部门是不予受理的。因此，购房者在向开发商交纳了全部或部分房款以后，一定要向开发商索要发票。为了维护自身权益，购房者最好要求将此项内容载入商品房买卖合同，并明确开发商不按约定开具发票的违约责任。 法律依据：《中华人民共和国发票管理办法》第十九条　销售商品、提供服务以及从事其他经营活动的单位和个人，对外发生经营业务收取款项，收款方应当向付款方开具发票；特殊情况下，由付款方向收款方开具发票。第二十条　所有单位和从事生产、经营活动的个人在购买商品、接受服务以及从事其他经营活动支付款项，应当向收款方取得发票。取得发票时，不得要求变更品名和金额。",
+  "process_id": 1190,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "明确发票性质和购房相关法律",
+      "content": "购房发票是购房者支付房款后开发商依法开具的正式税务凭据，是购房者维权及办理相关手续的重要法律文件。因此，首先需要确认开发商有义务开具发票。要确保开发商严格遵循税务相关法律法规，需要查验适用的法律规定。<search>购房发票法律规定</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "查找购房发票相关法律规定",
+      "content": "<information>根据我国《中华人民共和国发票管理办法》第十九条规定，销售商品、提供服务以及从事其他经营活动的单位和个人，应当向付款方开具发票。同时，购房者支付购房款后，开发商有法律义务开具购房发票。</information>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "分析索要发票的实际流程",
+      "content": "购房者向开发商索要购房发票通常需要提供一些必要材料，例如购房合同、房款支付凭据等。此外，可以通过适当沟通窗口（如开发商的财务部或销售中心）递交相关申请。如果开发商拒绝，可以进一步向税务机关举报。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "找到开发商拒绝的解决途径",
+      "content": "作为购房者，如果开发商拒绝开具发票，购房者可以凭借购房合同及付款凭证向当地税务机关举报开发商不依法开票行为。税务机关会进行调查和处理。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "购房者应首先向开发商索要购房发票，提供必要材料如购房合同和支付凭据，联系开发商的财务部门或销售处。若开发商拒绝，可以通过向税务机关举报其违法行为。我国《中华人民共和国发票管理办法》明确规定，开发商有义务依法开具发票。"
+    },
+    {
+      "action": "Verification",
+      "content": "结论符合实际，可以通过开发商或税务机关的行政手段顺利获得购房发票，流程合理有效，无需进一步推理。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n购房者如何向开发商索要购房发票?\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n购房者应首先向开发商索要购房发票，提供必要材料如购房合同和支付凭据，联系开发商的财务部门或销售处。若开发商拒绝，可以通过向税务机关举报其违法行为。我国《中华人民共和国发票管理办法》明确规定，开发商有义务依法开具发票。  \n</Model Response>  \n\n<Reference Answer>  \n买房同购买其他商品一样，购房者有权利向开发商索要发票。依据购房者付款方式的不同，开发商给购房者开具的发票也不同。如果购房者采取一次性付款的方式购房、那么当购房者支付了全部价款以后，开发商便应向购房者出具全额增值税普通发票或者增值税专用发票；如果购房者采取按揭付款的方式购房、由于其没有支付全部的款项，因此每当购房者支付一部分分期付款的款项时，开发商都应向购房者出具相应款项的增值税普通发票（使用“未发生销售行为的不征税项目”编码，发票税率栏填写“不征税”，不得开具增值税专用发票），待购房者支付了全部的房款以后，开发商将原先已开具的发票收回，向购房者出具全额增值税普通发票或者增值税专用发票。购房发票是购房者向开发商支付了全部或部分房款的有效凭证。购房者在办理商业贷款、公积金贷款、入住手续或者办理不动产权证时，都需要出具购房发票。没有购房发票，办理贷款的银行和办理不动产权证的有关部门是不予受理的。因此，购房者在向开发商交纳了全部或部分房款以后，一定要向开发商索要发票。为了维护自身权益，购房者最好要求将此项内容载入商品房买卖合同，并明确开发商不按约定开具发票的违约责任。 法律依据：《中华人民共和国发票管理办法》第十九条　销售商品、提供服务以及从事其他经营活动的单位和个人，对外发生经营业务收取款项，收款方应当向付款方开具发票；特殊情况下，由付款方向收款方开具发票。第二十条　所有单位和从事生产、经营活动的个人在购买商品、接受服务以及从事其他经营活动支付款项，应当向收款方取得发票。取得发票时，不得要求变更品名和金额。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 明确发票性质和购房相关法律\n购房发票是购房者支付房款后开发商依法开具的正式税务凭据，是购房者维权及办理相关手续的重要法律文件。因此，首先需要确认开发商有义务开具发票。要确保开发商严格遵循税务相关法律法规，需要查验适用的法律规定。<search>购房发票法律规定</search>\n\n### 查找购房发票相关法律规定\n<information>根据我国《中华人民共和国发票管理办法》第十九条规定，销售商品、提供服务以及从事其他经营活动的单位和个人，应当向付款方开具发票。同时，购房者支付购房款后，开发商有法律义务开具购房发票。</information>\n\n### 分析索要发票的实际流程\n购房者向开发商索要购房发票通常需要提供一些必要材料，例如购房合同、房款支付凭据等。此外，可以通过适当沟通窗口（如开发商的财务部或销售中心）递交相关申请。如果开发商拒绝，可以进一步向税务机关举报。\n\n### 找到开发商拒绝的解决途径\n作为购房者，如果开发商拒绝开具发票，购房者可以凭借购房合同及付款凭证向当地税务机关举报开发商不依法开票行为。税务机关会进行调查和处理。\n\n### Conclusion\n购房者应首先向开发商索要购房发票，提供必要材料如购房合同和支付凭据，联系开发商的财务部门或销售处。若开发商拒绝，可以通过向税务机关举报其违法行为。我国《中华人民共和国发票管理办法》明确规定，开发商有义务依法开具发票。\n\n### Verification\n结论符合实际，可以通过开发商或税务机关的行政手段顺利获得购房发票，流程合理有效，无需进一步推理。\n</Thought Process>\n\n<Question>\n购房者如何向开发商索要购房发票?\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n好吧，首先应该搞清楚这个“购房发票”到底是干什么用的，有没有法律要求开发商必须开具？毕竟这是购房的一部分，发票应该也挺重要的。听说发票是购房后办贷款、过户手续、还有缴税之类的一个必要材料，那开发商是不是必须得开呢？为了确认这个，我觉得还是查一查相关的法律更靠谱。<search>购房发票法律规定</search>\n\n嗯，找到一些信息了。我看到根据《中华人民共和国发票管理办法》第十九条的规定，卖东西、提供服务或者其他经营活动的单位和个人，都必须向付款方开具发票。这样看起来，开发商是有义务给购房者开发票的，特别是在房款都支付了的情况下——这个法律规定挺明确的。另外这是正规正式的税务凭据，感觉开发商没有理由拒绝啊。\n\n好了，既然确认了开发商必须开发票，那接下来就是看看具体操作了。一般来说，购房者要提供一些材料吧，比如购房合同、付款的凭证之类的。这些东西证明你确实付了款，开发商没有理由不配合。不知道具体要去哪个部门，但感觉他们的财务部门或者销售中心是比较靠谱的地方，可以尝试去联系看看。然后向他们递交申请，说明情况。\n\n不过我还想了一下，如果开发商一直拖着，不愿意开发票怎么办？好像可以向税务机关举报开发商不依法履行责任吧。税务机关应该会有相应的处理流程，去调查核实情况，说不定还能催促开发商尽快拿出票来。\n\n大概整理一下关键点吧：第一步，先确认开发商的法律义务（这个已经搞清楚了，《发票管理办法》明确规定开发商必须开票）。第二步，准备好材料，比如合同和付款凭证，联系开发商的相关部门申请发票。第三步，如果碰上问题，比如开发商不愿意配合，那就要抓紧向税务部门举报。这样应该问题不大，发票是可以顺利拿到的。\n\n总之，这个流程挺清晰，理论上可行。这么想问题已经解决得差不多了，应该不用再去验证或者深挖其他内容了，直接行动吧。\n</Internal Thinking>\n\n<Question>\n购房者如何向开发商索要购房发票?\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"明确发票性质和购房相关法律\",\n      \"content\": \"购房发票是购房者支付房款后开发商依法开具的正式税务凭据，是购房者维权及办理相关手续的重要法律文件。因此，首先需要确认开发商有义务开具发票。要确保开发商严格遵循税务相关法律法规，需要查验适用的法律规定。<search>购房发票法律规定</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"查找购房发票相关法律规定\",\n      \"content\": \"<information>根据我国《中华人民共和国发票管理办法》第十九条规定，销售商品、提供服务以及从事其他经营活动的单位和个人，应当向付款方开具发票。同时，购房者支付购房款后，开发商有法律义务开具购房发票。</information>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析索要发票的实际流程\",\n      \"content\": \"购房者向开发商索要购房发票通常需要提供一些必要材料，例如购房合同、房款支付凭据等。此外，可以通过适当沟通窗口（如开发商的财务部或销售中心）递交相关申请。如果开发商拒绝，可以进一步向税务机关举报。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"找到开发商拒绝的解决途径\",\n      \"content\": \"作为购房者，如果开发商拒绝开具发票，购房者可以凭借购房合同及付款凭证向当地税务机关举报开发商不依法开票行为。税务机关会进行调查和处理。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"购房者应首先向开发商索要购房发票，提供必要材料如购房合同和支付凭据，联系开发商的财务部门或销售处。若开发商拒绝，可以通过向税务机关举报其违法行为。我国《中华人民共和国发票管理办法》明确规定，开发商有义务依法开具发票。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"结论符合实际，可以通过开发商或税务机关的行政手段顺利获得购房发票，流程合理有效，无需进一步推理。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"好吧，首先应该搞清楚这个“购房发票”到底是干什么用的，有没有法律要求开发商必须开具？毕竟这是购房的一部分，发票应该也挺重要的。听说发票是购房后办贷款、过户手续、还有缴税之类的一个必要材料，那开发商是不是必须得开呢？为了确认这个，我觉得还是查一查相关的法律更靠谱。<search>购房发票法律规定</search>\\n\\n嗯，找到一些信息了。我看到根据《中华人民共和国发票管理办法》第十九条的规定，卖东西、提供服务或者其他经营活动的单位和个人，都必须向付款方开具发票。这样看起来，开发商是有义务给购房者开发票的，特别是在房款都支付了的情况下——这个法律规定挺明确的。另外这是正规正式的税务凭据，感觉开发商没有理由拒绝啊。\\n\\n好了，既然确认了开发商必须开发票，那接下来就是看看具体操作了。一般来说，购房者要提供一些材料吧，比如购房合同、付款的凭证之类的。这些东西证明你确实付了款，开发商没有理由不配合。不知道具体要去哪个部门，但感觉他们的财务部门或者销售中心是比较靠谱的地方，可以尝试去联系看看。然后向他们递交申请，说明情况。\\n\\n不过我还想了一下，如果开发商一直拖着，不愿意开发票怎么办？好像可以向税务机关举报开发商不依法履行责任吧。税务机关应该会有相应的处理流程，去调查核实情况，说不定还能催促开发商尽快拿出票来。\\n\\n大概整理一下关键点吧：第一步，先确认开发商的法律义务（这个已经搞清楚了，《发票管理办法》明确规定开发商必须开票）。第二步，准备好材料，比如合同和付款凭证，联系开发商的相关部门申请发票。第三步，如果碰上问题，比如开发商不愿意配合，那就要抓紧向税务部门举报。这样应该问题不大，发票是可以顺利拿到的。\\n\\n总之，这个流程挺清晰，理论上可行。这么想问题已经解决得差不多了，应该不用再去验证或者深挖其他内容了，直接行动吧。\"\n}\n```",
+    "购房者向开发商索要购房发票通常需要按照以下步骤操作：\n\n1. **了解法律依据与权利**  \n   根据《中华人民共和国发票管理办法》第十九条的规定，销售商品、提供服务或者从事其他经营活动的单位和个人必须向付款方开具发票。因此，开发商在购房者支付房款后，有法定义务向购房者提供购房发票。\n\n2. **准备必要材料**  \n   为确保能顺利拿到发票，购房者需要准备以下材料：  \n   - 购房合同  \n   - 付款凭证（如银行转账记录或收据）  \n   - 个人身份证明  \n   这些材料用于证明购房交易已经完成并支付了款项，是向开发商索要发票的基本依据。\n\n3. **联系开发商相关部门**  \n   通常购房发票由开发商的财务部门或销售客服部门负责。购房者可以通过电话或前往开发商的销售中心，向相关负责人明确表达开票需求。同时，递交上述材料，说明房款支付情况并申请发票。\n\n4. **协调处理流程**  \n   开发商一般需要一定时间来处理税务申报并开具发票。购房者可以询问预计的时间表，并保留沟通记录，以便后续跟进。\n\n5. **应对拖延或拒绝开票情况**  \n   - 若开发商拒绝提供发票或长期拖延，购房者可尝试通过书面形式（如正式的函件或邮件）提出索票要求，保留凭证。  \n   - 如果对方依然不履行义务，购房者可以携相关材料（合同、付款凭证、书面沟通记录等），向开发商所在地的税务机关举报。税务机关会根据《发票管理办法》对开发商的行为进行调查，并责令其依法开票。  \n\n6. **法律途径**  \n   在极端情况下，如果开发商既不开发票，也不配合税务机关的调查，购房者还可选择通过法律诉讼的方式维护权益，要求开发商履行合同义务并承担法律责任。\n\n综上所述，购房发票是购房过程中一项法定权利，如果购房者发现问题，可以通过合理合法的途径保护自己的权益。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "明确发票性质和购房相关法律",
+        "content": "购房发票是购房者支付房款后开发商依法开具的正式税务凭据，是购房者维权及办理相关手续的重要法律文件。因此，首先需要确认开发商有义务开具发票。要确保开发商严格遵循税务相关法律法规，需要查验适用的法律规定。<search>购房发票法律规定</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "查找购房发票相关法律规定",
+        "content": "<information>根据我国《中华人民共和国发票管理办法》第十九条规定，销售商品、提供服务以及从事其他经营活动的单位和个人，应当向付款方开具发票。同时，购房者支付购房款后，开发商有法律义务开具购房发票。</information>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "分析索要发票的实际流程",
+        "content": "购房者向开发商索要购房发票通常需要提供一些必要材料，例如购房合同、房款支付凭据等。此外，可以通过适当沟通窗口（如开发商的财务部或销售中心）递交相关申请。如果开发商拒绝，可以进一步向税务机关举报。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "找到开发商拒绝的解决途径",
+        "content": "作为购房者，如果开发商拒绝开具发票，购房者可以凭借购房合同及付款凭证向当地税务机关举报开发商不依法开票行为。税务机关会进行调查和处理。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "购房者应首先向开发商索要购房发票，提供必要材料如购房合同和支付凭据，联系开发商的财务部门或销售处。若开发商拒绝，可以通过向税务机关举报其违法行为。我国《中华人民共和国发票管理办法》明确规定，开发商有义务依法开具发票。"
+      },
+      {
+        "action": "Verification",
+        "content": "结论符合实际，可以通过开发商或税务机关的行政手段顺利获得购房发票，流程合理有效，无需进一步推理。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "好吧，首先应该搞清楚这个“购房发票”到底是干什么用的，有没有法律要求开发商必须开具？毕竟这是购房的一部分，发票应该也挺重要的。听说发票是购房后办贷款、过户手续、还有缴税之类的一个必要材料，那开发商是不是必须得开呢？为了确认这个，我觉得还是查一查相关的法律更靠谱。<search>购房发票法律规定</search>\n\n嗯，找到一些信息了。我看到根据《中华人民共和国发票管理办法》第十九条的规定，卖东西、提供服务或者其他经营活动的单位和个人，都必须向付款方开具发票。这样看起来，开发商是有义务给购房者开发票的，特别是在房款都支付了的情况下——这个法律规定挺明确的。另外这是正规正式的税务凭据，感觉开发商没有理由拒绝啊。\n\n好了，既然确认了开发商必须开发票，那接下来就是看看具体操作了。一般来说，购房者要提供一些材料吧，比如购房合同、付款的凭证之类的。这些东西证明你确实付了款，开发商没有理由不配合。不知道具体要去哪个部门，但感觉他们的财务部门或者销售中心是比较靠谱的地方，可以尝试去联系看看。然后向他们递交申请，说明情况。\n\n不过我还想了一下，如果开发商一直拖着，不愿意开发票怎么办？好像可以向税务机关举报开发商不依法履行责任吧。税务机关应该会有相应的处理流程，去调查核实情况，说不定还能催促开发商尽快拿出票来。\n\n大概整理一下关键点吧：第一步，先确认开发商的法律义务（这个已经搞清楚了，《发票管理办法》明确规定开发商必须开票）。第二步，准备好材料，比如合同和付款凭证，联系开发商的相关部门申请发票。第三步，如果碰上问题，比如开发商不愿意配合，那就要抓紧向税务部门举报。这样应该问题不大，发票是可以顺利拿到的。\n\n总之，这个流程挺清晰，理论上可行。这么想问题已经解决得差不多了，应该不用再去验证或者深挖其他内容了，直接行动吧。",
+  "Response": "购房者向开发商索要购房发票通常需要按照以下步骤操作：\n\n1. **了解法律依据与权利**  \n   根据《中华人民共和国发票管理办法》第十九条的规定，销售商品、提供服务或者从事其他经营活动的单位和个人必须向付款方开具发票。因此，开发商在购房者支付房款后，有法定义务向购房者提供购房发票。\n\n2. **准备必要材料**  \n   为确保能顺利拿到发票，购房者需要准备以下材料：  \n   - 购房合同  \n   - 付款凭证（如银行转账记录或收据）  \n   - 个人身份证明  \n   这些材料用于证明购房交易已经完成并支付了款项，是向开发商索要发票的基本依据。\n\n3. **联系开发商相关部门**  \n   通常购房发票由开发商的财务部门或销售客服部门负责。购房者可以通过电话或前往开发商的销售中心，向相关负责人明确表达开票需求。同时，递交上述材料，说明房款支付情况并申请发票。\n\n4. **协调处理流程**  \n   开发商一般需要一定时间来处理税务申报并开具发票。购房者可以询问预计的时间表，并保留沟通记录，以便后续跟进。\n\n5. **应对拖延或拒绝开票情况**  \n   - 若开发商拒绝提供发票或长期拖延，购房者可尝试通过书面形式（如正式的函件或邮件）提出索票要求，保留凭证。  \n   - 如果对方依然不履行义务，购房者可以携相关材料（合同、付款凭证、书面沟通记录等），向开发商所在地的税务机关举报。税务机关会根据《发票管理办法》对开发商的行为进行调查，并责令其依法开票。  \n\n6. **法律途径**  \n   在极端情况下，如果开发商既不开发票，也不配合税务机关的调查，购房者还可选择通过法律诉讼的方式维护权益，要求开发商履行合同义务并承担法律责任。\n\n综上所述，购房发票是购房过程中一项法定权利，如果购房者发现问题，可以通过合理合法的途径保护自己的权益。",
+  "Question": "购房者如何向开发商索要购房发票?"
+}

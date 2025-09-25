@@ -1,0 +1,109 @@
+{
+  "Open-ended Verifiable Question": "工伤认定申请书下来后该做什么?",
+  "Ground-True Answer": "工伤认定申请书下来后该做的事是：交给单位和个人，双方没有异议，把治疗工伤发生的费用及病历、出院明细、小结，摄片报告等，拿到工伤保险部门去报销费用。需要继续治疗的，办理工伤病历、康复申请，配置辅助器械等等，病情稳定或治愈后，进行劳动能力鉴定，达到等级的，领取一次性伤残补助金等。",
+  "process_id": 2152,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "确认工伤认定的法律依据",
+      "content": "工伤认定申请书下来后，首先需要确认工伤认定的相关法律依据，以便了解后续可能涉及的程序和权利保障。关于工伤的处理流程主要依据《工伤保险条例》。需要搜索相关条款以明确接下来的步骤。<search>《工伤保险条例》工伤认定后续流程</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "检索工伤认定后的流程",
+      "content": "<information>工伤认定完成后，劳动者需要向所在单位或者工伤管理部门申请劳动能力鉴定；如果劳动能力鉴定结果可确定劳动赔偿的范围和金额，接着可以申请工伤赔偿。</information>根据检索结果，下一步是申请劳动能力鉴定，鉴定结果对于赔偿和后续支持至关重要。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "申请劳动能力鉴定具体步骤",
+      "content": "劳动能力鉴定需要准备相关材料，包括工伤认定书、医疗诊断报告等，并向当地的劳动能力鉴定委员会提出申请。同时需要注意申请时限，以免影响后续赔偿和权益保障。检查《工伤保险条例》中是否有规定具体时限。<search>《工伤保险条例》劳动能力鉴定申请时限</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "确定劳动能力鉴定申请时限",
+      "content": "<information>《工伤保险条例》第27条规定，劳动者自收到工伤认定决定书之日起，可以随时申请劳动能力鉴定，但鉴定结果之后如果不服，也有一定时间限制申请复核。</information>根据规定，劳动能力鉴定申请不受严格时限限制，但建议尽快办理，以便早日进入赔偿环节。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "工伤赔偿申请的条件和流程",
+      "content": "完成劳动能力鉴定后，根据鉴定结果可以进一步协商或申请赔偿，包括医疗费用、伤残津贴等。向单位申请赔偿时需要提交鉴定证明书、工伤认定书、费用票据等。必要时可以通过劳动仲裁解决争议。<search>工伤赔偿涉及的费用和申请流程</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "确认赔偿内容和争议解决方式",
+      "content": "<information>工伤赔偿主要包括医疗费、误工费、护理费、交通费，以及伤残津贴和一次性补偿，同时可以通过劳动仲裁解决赔偿争议。</information>明确赔偿范围后，可以正式准备申请，与单位协商并启动赔偿办理。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "工伤认定申请书下来后，需先申请劳动能力鉴定，并准备相关材料向鉴定委员会提交鉴定申请。鉴定完成后，依据结果准备工伤赔偿申请书及相关证明文件，与单位协商赔偿事宜。如有争议，及时启动劳动仲裁程序维护合法权益。"
+    },
+    {
+      "action": "Verification",
+      "content": "根据《工伤保险条例》等法律法规的规定，工伤认定后的流程确实包括劳动能力鉴定及赔偿申请，与上述结论一致，流程合理可行。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n工伤认定申请书下来后该做什么?\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n工伤认定申请书下来后，需先申请劳动能力鉴定，并准备相关材料向鉴定委员会提交鉴定申请。鉴定完成后，依据结果准备工伤赔偿申请书及相关证明文件，与单位协商赔偿事宜。如有争议，及时启动劳动仲裁程序维护合法权益。  \n</Model Response>  \n\n<Reference Answer>  \n工伤认定申请书下来后该做的事是：交给单位和个人，双方没有异议，把治疗工伤发生的费用及病历、出院明细、小结，摄片报告等，拿到工伤保险部门去报销费用。需要继续治疗的，办理工伤病历、康复申请，配置辅助器械等等，病情稳定或治愈后，进行劳动能力鉴定，达到等级的，领取一次性伤残补助金等。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 确认工伤认定的法律依据\n工伤认定申请书下来后，首先需要确认工伤认定的相关法律依据，以便了解后续可能涉及的程序和权利保障。关于工伤的处理流程主要依据《工伤保险条例》。需要搜索相关条款以明确接下来的步骤。<search>《工伤保险条例》工伤认定后续流程</search>\n\n### 检索工伤认定后的流程\n<information>工伤认定完成后，劳动者需要向所在单位或者工伤管理部门申请劳动能力鉴定；如果劳动能力鉴定结果可确定劳动赔偿的范围和金额，接着可以申请工伤赔偿。</information>根据检索结果，下一步是申请劳动能力鉴定，鉴定结果对于赔偿和后续支持至关重要。\n\n### 申请劳动能力鉴定具体步骤\n劳动能力鉴定需要准备相关材料，包括工伤认定书、医疗诊断报告等，并向当地的劳动能力鉴定委员会提出申请。同时需要注意申请时限，以免影响后续赔偿和权益保障。检查《工伤保险条例》中是否有规定具体时限。<search>《工伤保险条例》劳动能力鉴定申请时限</search>\n\n### 确定劳动能力鉴定申请时限\n<information>《工伤保险条例》第27条规定，劳动者自收到工伤认定决定书之日起，可以随时申请劳动能力鉴定，但鉴定结果之后如果不服，也有一定时间限制申请复核。</information>根据规定，劳动能力鉴定申请不受严格时限限制，但建议尽快办理，以便早日进入赔偿环节。\n\n### 工伤赔偿申请的条件和流程\n完成劳动能力鉴定后，根据鉴定结果可以进一步协商或申请赔偿，包括医疗费用、伤残津贴等。向单位申请赔偿时需要提交鉴定证明书、工伤认定书、费用票据等。必要时可以通过劳动仲裁解决争议。<search>工伤赔偿涉及的费用和申请流程</search>\n\n### 确认赔偿内容和争议解决方式\n<information>工伤赔偿主要包括医疗费、误工费、护理费、交通费，以及伤残津贴和一次性补偿，同时可以通过劳动仲裁解决赔偿争议。</information>明确赔偿范围后，可以正式准备申请，与单位协商并启动赔偿办理。\n\n### Conclusion\n工伤认定申请书下来后，需先申请劳动能力鉴定，并准备相关材料向鉴定委员会提交鉴定申请。鉴定完成后，依据结果准备工伤赔偿申请书及相关证明文件，与单位协商赔偿事宜。如有争议，及时启动劳动仲裁程序维护合法权益。\n\n### Verification\n根据《工伤保险条例》等法律法规的规定，工伤认定后的流程确实包括劳动能力鉴定及赔偿申请，与上述结论一致，流程合理可行。\n</Thought Process>\n\n<Question>\n工伤认定申请书下来后该做什么?\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n工伤认定申请书终于下来了，现在需要确认一下工伤认定之后的相关法律依据，该怎么往下走。工伤处理这一块好像是根据《工伤保险条例》的规定吧？我得查一下看看认定后接下来应该怎么操作。<search>《工伤保险条例》工伤认定后续流程</search>\n\n哦，结果查到了。<information>工伤认定完成后，接下来好像就是申请劳动能力鉴定，这一步很关键，鉴定结果会直接影响赔偿范围和金额。申请劳动能力鉴定需要准备工伤认定书和相关医疗报告，还要提交到当地的劳动能力鉴定委员会去。</information>这样看来，下一个要做的步骤就是准备好材料去申请鉴定。但鉴定申请有没有规定时间范围呢？我得再查一查具体的时限，以便不耽误接下来的赔偿流程。<search>《工伤保险条例》劳动能力鉴定申请时限</search>\n\n查了查条款，找到了。<information>《工伤保险条例》第27条提到劳动能力鉴定申请其实没有严格的时间限制，可以随时申请。不过，如果对鉴定结果不满意，要记得在规定时间内申请复核。</information>原来这样，那虽然没有时间限制，但还是建议尽快申请，毕竟早点鉴定完才能早点进入赔偿流程。\n\n接下来就是工伤赔偿的申请了，这时需要按照劳动能力鉴定的结果准备材料，比如鉴定证明书、工伤认定书，还有医疗费用票据等，向单位正式提出赔偿申请。如果赔偿协商有问题，听说可以通过劳动仲裁来处理这个争议。我看看工伤赔偿具体涉及哪些费用和流程，确保到时候提交的材料都齐全了。<search>工伤赔偿涉及的费用和申请流程</search>\n\n查到了一些信息。<information>工伤赔偿一般包括医疗费、误工费、护理费、交通费，还有伤残津贴以及一次性补偿。如果对于赔偿金额协商不成，可以申请劳动仲裁来解决问题。</information>这些赔偿项目看起来挺全面，而且都需要对应的证明材料，我得提前把所有的票据和申请书准备齐全。另外，如果真遇到争议，那劳动仲裁是一个重要的维权途径，这点不能忽视。\n\n总结一下，工伤认定完成后，先申请劳动能力鉴定，准备好材料递交到鉴定委员会。鉴定结果出来后，再根据情况进行赔偿申请。同时也要随时关注与单位的协商情况，如果有赔偿争议，按规定及时申请劳动仲裁来维护自己权益。整个流程看起来挺清楚的，我得尽快着手准备相关的材料和申请书，确保后续步骤不耽误进程。\n</Internal Thinking>\n\n<Question>\n工伤认定申请书下来后该做什么?\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"确认工伤认定的法律依据\",\n      \"content\": \"工伤认定申请书下来后，首先需要确认工伤认定的相关法律依据，以便了解后续可能涉及的程序和权利保障。关于工伤的处理流程主要依据《工伤保险条例》。需要搜索相关条款以明确接下来的步骤。<search>《工伤保险条例》工伤认定后续流程</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"检索工伤认定后的流程\",\n      \"content\": \"<information>工伤认定完成后，劳动者需要向所在单位或者工伤管理部门申请劳动能力鉴定；如果劳动能力鉴定结果可确定劳动赔偿的范围和金额，接着可以申请工伤赔偿。</information>根据检索结果，下一步是申请劳动能力鉴定，鉴定结果对于赔偿和后续支持至关重要。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"申请劳动能力鉴定具体步骤\",\n      \"content\": \"劳动能力鉴定需要准备相关材料，包括工伤认定书、医疗诊断报告等，并向当地的劳动能力鉴定委员会提出申请。同时需要注意申请时限，以免影响后续赔偿和权益保障。检查《工伤保险条例》中是否有规定具体时限。<search>《工伤保险条例》劳动能力鉴定申请时限</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"确定劳动能力鉴定申请时限\",\n      \"content\": \"<information>《工伤保险条例》第27条规定，劳动者自收到工伤认定决定书之日起，可以随时申请劳动能力鉴定，但鉴定结果之后如果不服，也有一定时间限制申请复核。</information>根据规定，劳动能力鉴定申请不受严格时限限制，但建议尽快办理，以便早日进入赔偿环节。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"工伤赔偿申请的条件和流程\",\n      \"content\": \"完成劳动能力鉴定后，根据鉴定结果可以进一步协商或申请赔偿，包括医疗费用、伤残津贴等。向单位申请赔偿时需要提交鉴定证明书、工伤认定书、费用票据等。必要时可以通过劳动仲裁解决争议。<search>工伤赔偿涉及的费用和申请流程</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"确认赔偿内容和争议解决方式\",\n      \"content\": \"<information>工伤赔偿主要包括医疗费、误工费、护理费、交通费，以及伤残津贴和一次性补偿，同时可以通过劳动仲裁解决赔偿争议。</information>明确赔偿范围后，可以正式准备申请，与单位协商并启动赔偿办理。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"工伤认定申请书下来后，需先申请劳动能力鉴定，并准备相关材料向鉴定委员会提交鉴定申请。鉴定完成后，依据结果准备工伤赔偿申请书及相关证明文件，与单位协商赔偿事宜。如有争议，及时启动劳动仲裁程序维护合法权益。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"根据《工伤保险条例》等法律法规的规定，工伤认定后的流程确实包括劳动能力鉴定及赔偿申请，与上述结论一致，流程合理可行。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"工伤认定申请书终于下来了，现在需要确认一下工伤认定之后的相关法律依据，该怎么往下走。工伤处理这一块好像是根据《工伤保险条例》的规定吧？我得查一下看看认定后接下来应该怎么操作。<search>《工伤保险条例》工伤认定后续流程</search>\\n\\n哦，结果查到了。<information>工伤认定完成后，接下来好像就是申请劳动能力鉴定，这一步很关键，鉴定结果会直接影响赔偿范围和金额。申请劳动能力鉴定需要准备工伤认定书和相关医疗报告，还要提交到当地的劳动能力鉴定委员会去。</information>这样看来，下一个要做的步骤就是准备好材料去申请鉴定。但鉴定申请有没有规定时间范围呢？我得再查一查具体的时限，以便不耽误接下来的赔偿流程。<search>《工伤保险条例》劳动能力鉴定申请时限</search>\\n\\n查了查条款，找到了。<information>《工伤保险条例》第27条提到劳动能力鉴定申请其实没有严格的时间限制，可以随时申请。不过，如果对鉴定结果不满意，要记得在规定时间内申请复核。</information>原来这样，那虽然没有时间限制，但还是建议尽快申请，毕竟早点鉴定完才能早点进入赔偿流程。\\n\\n接下来就是工伤赔偿的申请了，这时需要按照劳动能力鉴定的结果准备材料，比如鉴定证明书、工伤认定书，还有医疗费用票据等，向单位正式提出赔偿申请。如果赔偿协商有问题，听说可以通过劳动仲裁来处理这个争议。我看看工伤赔偿具体涉及哪些费用和流程，确保到时候提交的材料都齐全了。<search>工伤赔偿涉及的费用和申请流程</search>\\n\\n查到了一些信息。<information>工伤赔偿一般包括医疗费、误工费、护理费、交通费，还有伤残津贴以及一次性补偿。如果对于赔偿金额协商不成，可以申请劳动仲裁来解决问题。</information>这些赔偿项目看起来挺全面，而且都需要对应的证明材料，我得提前把所有的票据和申请书准备齐全。另外，如果真遇到争议，那劳动仲裁是一个重要的维权途径，这点不能忽视。\\n\\n总结一下，工伤认定完成后，先申请劳动能力鉴定，准备好材料递交到鉴定委员会。鉴定结果出来后，再根据情况进行赔偿申请。同时也要随时关注与单位的协商情况，如果有赔偿争议，按规定及时申请劳动仲裁来维护自己权益。整个流程看起来挺清楚的，我得尽快着手准备相关的材料和申请书，确保后续步骤不耽误进程。\"\n}\n```",
+    "工伤认定申请书下来后，接下来的主要步骤是申请劳动能力鉴定。根据《工伤保险条例》的规定，劳动能力鉴定是确认职工伤残等级、丧失劳动能力程度的重要环节，鉴定结果将直接影响赔偿范围和金额。\n\n以下是具体操作步骤和建议：\n\n1. **申请劳动能力鉴定**  \n   - 劳动能力鉴定需要准备：\n     - 工伤认定书；\n     - 工伤治疗期间的病历、诊断证明、医疗费用票据等相关医疗材料。  \n   - 完成材料准备后，将申请递交至当地劳动能力鉴定委员会。根据《工伤保险条例》第27条，此项申请没有严格时间限制，但建议尽快办理，以减少等待时间。\n\n2. **根据鉴定结果申请工伤赔偿**  \n   - 劳动能力鉴定完成后，根据鉴定结果准备赔偿所需材料，向单位提出工伤赔偿申请。  \n   - 工伤赔偿通常包括以下费用：\n     - 医疗费；\n     - 误工费；\n     - 护理费；\n     - 交通费；\n     - 伤残津贴；\n     - 一次性伤残补助金或一次性医疗补助金等。  \n   - 提交的材料需要包括工伤认定书、劳动能力鉴定证明、医疗票据等，确保材料完整。\n\n3. **处理赔偿争议（若出现）**  \n   - 如果与单位在赔偿金额或项目上无法达成一致，可申请劳动仲裁解决争议。劳动仲裁是依法维护工伤职工合法权益的重要途径，需在法定时限内提交。\n\n总结来说，工伤认定完成后首要任务是申请劳动能力鉴定，鉴定完成后再根据流程申请工伤赔偿，同时保持对赔偿协商情况的关注，确保各个环节的权益争取到位。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "确认工伤认定的法律依据",
+        "content": "工伤认定申请书下来后，首先需要确认工伤认定的相关法律依据，以便了解后续可能涉及的程序和权利保障。关于工伤的处理流程主要依据《工伤保险条例》。需要搜索相关条款以明确接下来的步骤。<search>《工伤保险条例》工伤认定后续流程</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "检索工伤认定后的流程",
+        "content": "<information>工伤认定完成后，劳动者需要向所在单位或者工伤管理部门申请劳动能力鉴定；如果劳动能力鉴定结果可确定劳动赔偿的范围和金额，接着可以申请工伤赔偿。</information>根据检索结果，下一步是申请劳动能力鉴定，鉴定结果对于赔偿和后续支持至关重要。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "申请劳动能力鉴定具体步骤",
+        "content": "劳动能力鉴定需要准备相关材料，包括工伤认定书、医疗诊断报告等，并向当地的劳动能力鉴定委员会提出申请。同时需要注意申请时限，以免影响后续赔偿和权益保障。检查《工伤保险条例》中是否有规定具体时限。<search>《工伤保险条例》劳动能力鉴定申请时限</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "确定劳动能力鉴定申请时限",
+        "content": "<information>《工伤保险条例》第27条规定，劳动者自收到工伤认定决定书之日起，可以随时申请劳动能力鉴定，但鉴定结果之后如果不服，也有一定时间限制申请复核。</information>根据规定，劳动能力鉴定申请不受严格时限限制，但建议尽快办理，以便早日进入赔偿环节。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "工伤赔偿申请的条件和流程",
+        "content": "完成劳动能力鉴定后，根据鉴定结果可以进一步协商或申请赔偿，包括医疗费用、伤残津贴等。向单位申请赔偿时需要提交鉴定证明书、工伤认定书、费用票据等。必要时可以通过劳动仲裁解决争议。<search>工伤赔偿涉及的费用和申请流程</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "确认赔偿内容和争议解决方式",
+        "content": "<information>工伤赔偿主要包括医疗费、误工费、护理费、交通费，以及伤残津贴和一次性补偿，同时可以通过劳动仲裁解决赔偿争议。</information>明确赔偿范围后，可以正式准备申请，与单位协商并启动赔偿办理。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "工伤认定申请书下来后，需先申请劳动能力鉴定，并准备相关材料向鉴定委员会提交鉴定申请。鉴定完成后，依据结果准备工伤赔偿申请书及相关证明文件，与单位协商赔偿事宜。如有争议，及时启动劳动仲裁程序维护合法权益。"
+      },
+      {
+        "action": "Verification",
+        "content": "根据《工伤保险条例》等法律法规的规定，工伤认定后的流程确实包括劳动能力鉴定及赔偿申请，与上述结论一致，流程合理可行。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "工伤认定申请书终于下来了，现在需要确认一下工伤认定之后的相关法律依据，该怎么往下走。工伤处理这一块好像是根据《工伤保险条例》的规定吧？我得查一下看看认定后接下来应该怎么操作。<search>《工伤保险条例》工伤认定后续流程</search>\n\n哦，结果查到了。<information>工伤认定完成后，接下来好像就是申请劳动能力鉴定，这一步很关键，鉴定结果会直接影响赔偿范围和金额。申请劳动能力鉴定需要准备工伤认定书和相关医疗报告，还要提交到当地的劳动能力鉴定委员会去。</information>这样看来，下一个要做的步骤就是准备好材料去申请鉴定。但鉴定申请有没有规定时间范围呢？我得再查一查具体的时限，以便不耽误接下来的赔偿流程。<search>《工伤保险条例》劳动能力鉴定申请时限</search>\n\n查了查条款，找到了。<information>《工伤保险条例》第27条提到劳动能力鉴定申请其实没有严格的时间限制，可以随时申请。不过，如果对鉴定结果不满意，要记得在规定时间内申请复核。</information>原来这样，那虽然没有时间限制，但还是建议尽快申请，毕竟早点鉴定完才能早点进入赔偿流程。\n\n接下来就是工伤赔偿的申请了，这时需要按照劳动能力鉴定的结果准备材料，比如鉴定证明书、工伤认定书，还有医疗费用票据等，向单位正式提出赔偿申请。如果赔偿协商有问题，听说可以通过劳动仲裁来处理这个争议。我看看工伤赔偿具体涉及哪些费用和流程，确保到时候提交的材料都齐全了。<search>工伤赔偿涉及的费用和申请流程</search>\n\n查到了一些信息。<information>工伤赔偿一般包括医疗费、误工费、护理费、交通费，还有伤残津贴以及一次性补偿。如果对于赔偿金额协商不成，可以申请劳动仲裁来解决问题。</information>这些赔偿项目看起来挺全面，而且都需要对应的证明材料，我得提前把所有的票据和申请书准备齐全。另外，如果真遇到争议，那劳动仲裁是一个重要的维权途径，这点不能忽视。\n\n总结一下，工伤认定完成后，先申请劳动能力鉴定，准备好材料递交到鉴定委员会。鉴定结果出来后，再根据情况进行赔偿申请。同时也要随时关注与单位的协商情况，如果有赔偿争议，按规定及时申请劳动仲裁来维护自己权益。整个流程看起来挺清楚的，我得尽快着手准备相关的材料和申请书，确保后续步骤不耽误进程。",
+  "Response": "工伤认定申请书下来后，接下来的主要步骤是申请劳动能力鉴定。根据《工伤保险条例》的规定，劳动能力鉴定是确认职工伤残等级、丧失劳动能力程度的重要环节，鉴定结果将直接影响赔偿范围和金额。\n\n以下是具体操作步骤和建议：\n\n1. **申请劳动能力鉴定**  \n   - 劳动能力鉴定需要准备：\n     - 工伤认定书；\n     - 工伤治疗期间的病历、诊断证明、医疗费用票据等相关医疗材料。  \n   - 完成材料准备后，将申请递交至当地劳动能力鉴定委员会。根据《工伤保险条例》第27条，此项申请没有严格时间限制，但建议尽快办理，以减少等待时间。\n\n2. **根据鉴定结果申请工伤赔偿**  \n   - 劳动能力鉴定完成后，根据鉴定结果准备赔偿所需材料，向单位提出工伤赔偿申请。  \n   - 工伤赔偿通常包括以下费用：\n     - 医疗费；\n     - 误工费；\n     - 护理费；\n     - 交通费；\n     - 伤残津贴；\n     - 一次性伤残补助金或一次性医疗补助金等。  \n   - 提交的材料需要包括工伤认定书、劳动能力鉴定证明、医疗票据等，确保材料完整。\n\n3. **处理赔偿争议（若出现）**  \n   - 如果与单位在赔偿金额或项目上无法达成一致，可申请劳动仲裁解决争议。劳动仲裁是依法维护工伤职工合法权益的重要途径，需在法定时限内提交。\n\n总结来说，工伤认定完成后首要任务是申请劳动能力鉴定，鉴定完成后再根据流程申请工伤赔偿，同时保持对赔偿协商情况的关注，确保各个环节的权益争取到位。",
+  "Question": "工伤认定申请书下来后该做什么?"
+}

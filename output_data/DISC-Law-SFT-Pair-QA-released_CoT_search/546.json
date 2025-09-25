@@ -1,0 +1,125 @@
+{
+  "Open-ended Verifiable Question": "合同纠纷如何确定管辖法院？",
+  "Ground-True Answer": "一、协议优先，合同双方可以书面约定管辖条款，发生纠纷时到双方约定的法院起诉，但约定的管辖不能违反《民事诉讼法》中关于专属管辖和级别管辖的规定。\n二、一般合同纠纷，由被告住所地或者合同履行地法院管辖。\n（一）合同约定履行地点的，以约定的履行地点为合同履行地。\n（二）合同对履行地点没有约定或者约定不明确，争议标的为给付货币的，接收货币一方所在地为合同履行地；交付不动产的，不动产所在地为合同履行地；其他标的，履行义务一方所在地为合同履行地。即时结清的合同，交易行为地为合同履行地。\n（三）合同没有实际履行，当事人双方住所地都不在合同约定的履行地的，由被告住所地人民法院管辖。\n（四）因保险合同纠纷提起的诉讼，由被告住所地或者保险标的物所在地人民法院管辖。\n（五）因铁路、公路、水上、航空运输和联合运输合同纠纷提起的诉讼，由运输始发地、目的地或者被告住所地人民法院管辖。\n三、专属管辖\n（一）因不动产纠纷提起的诉讼，由不动产所在地人民法院管辖；\n（二）因港口作业中发生纠纷提起的诉讼，由港口所在地人民法院管辖；\n（三）因继承遗产纠纷提起的诉讼，由被继承人死亡时住所地或者主要遗产所在地人民法院管辖。",
+  "process_id": 546,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "分析合同纠纷案件管辖原则的法律依据",
+      "content": "合同纠纷案件的管辖通常取决于法律中的一般管辖规则和特殊管辖规则。需要找到相关法律依据规定合同纠纷如何适用管辖规定。具体来说，需要查阅民事诉讼法中关于案件管辖的条款。准备查找案件管辖的法律依据。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "查找《中华人民共和国民事诉讼法》相关管辖规定",
+      "content": "根据问题，‘合同纠纷’的管辖法院与民事案件的地域管辖和级别管辖相关，因此需要查找《中华人民共和国民事诉讼法》中关于合同纠纷案件管辖的具体条文内容。"
+    },
+    {
+      "action": "Search",
+      "content": "<search>民事诉讼法 案件管辖</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "从法律条文提取明确的管辖规定",
+      "content": "根据搜索结果，《民事诉讼法》第21条规定了一般地域管辖——即被告住所地法院管辖，但如果案件属于合同纠纷，尤其要结合第23条，该条规定因合同纠纷提起的诉讼，可由被告住所地或合同履行地人民法院管辖。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "结合特殊管辖明确‘合同履行地’的界定",
+      "content": "合同履行地是合同纠纷管辖的重要因素之一，因此还需要确认合同履行地的法律解释。需要进一步查找关于‘合同履行地’如何界定的法律和司法解释。"
+    },
+    {
+      "action": "Search",
+      "content": "<search>合同履行地司法解释</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "分析合同履行地相关司法解释",
+      "content": "通过搜索结果可以了解到，最高人民法院的相关司法解释明确，所谓‘合同履行地’根据合同内容不同而变化，例如，涉及支付货币的，应作为付款地，涉及交付标的物的以交付地为准。因此，管辖地需要结合具体合同的履行方式判断。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "总结合同纠纷管辖的规则",
+      "content": "根据法律和司法解释，在合同纠纷案件中，原告可以选择在被告住所地法院或合同履行地法院提起诉讼；而合同履行地又需根据合同类型（如货币支付或标的物交付）确定具体地点。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "合同纠纷管辖法院按照《中华人民共和国民事诉讼法》第21条和第23条的规定，一般由被告住所地法院或合同履行地法院管辖。合同履行地的确认依据最高人民法院的司法解释：针对支付货币的合同，履行地为付款地；针对交付标的物的合同，履行地为交付地。"
+    },
+    {
+      "action": "Verification",
+      "content": "结论已经基于《民事诉讼法》以及最高法司法解释得出，论证符合逻辑，内容准备充足，结论正确。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n合同纠纷如何确定管辖法院？\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n合同纠纷管辖法院按照《中华人民共和国民事诉讼法》第21条和第23条的规定，一般由被告住所地法院或合同履行地法院管辖。合同履行地的确认依据最高人民法院的司法解释：针对支付货币的合同，履行地为付款地；针对交付标的物的合同，履行地为交付地。  \n</Model Response>  \n\n<Reference Answer>  \n一、协议优先，合同双方可以书面约定管辖条款，发生纠纷时到双方约定的法院起诉，但约定的管辖不能违反《民事诉讼法》中关于专属管辖和级别管辖的规定。\n二、一般合同纠纷，由被告住所地或者合同履行地法院管辖。\n（一）合同约定履行地点的，以约定的履行地点为合同履行地。\n（二）合同对履行地点没有约定或者约定不明确，争议标的为给付货币的，接收货币一方所在地为合同履行地；交付不动产的，不动产所在地为合同履行地；其他标的，履行义务一方所在地为合同履行地。即时结清的合同，交易行为地为合同履行地。\n（三）合同没有实际履行，当事人双方住所地都不在合同约定的履行地的，由被告住所地人民法院管辖。\n（四）因保险合同纠纷提起的诉讼，由被告住所地或者保险标的物所在地人民法院管辖。\n（五）因铁路、公路、水上、航空运输和联合运输合同纠纷提起的诉讼，由运输始发地、目的地或者被告住所地人民法院管辖。\n三、专属管辖\n（一）因不动产纠纷提起的诉讼，由不动产所在地人民法院管辖；\n（二）因港口作业中发生纠纷提起的诉讼，由港口所在地人民法院管辖；\n（三）因继承遗产纠纷提起的诉讼，由被继承人死亡时住所地或者主要遗产所在地人民法院管辖。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 分析合同纠纷案件管辖原则的法律依据\n合同纠纷案件的管辖通常取决于法律中的一般管辖规则和特殊管辖规则。需要找到相关法律依据规定合同纠纷如何适用管辖规定。具体来说，需要查阅民事诉讼法中关于案件管辖的条款。准备查找案件管辖的法律依据。\n\n### 查找《中华人民共和国民事诉讼法》相关管辖规定\n根据问题，‘合同纠纷’的管辖法院与民事案件的地域管辖和级别管辖相关，因此需要查找《中华人民共和国民事诉讼法》中关于合同纠纷案件管辖的具体条文内容。\n\n### Search\n<search>民事诉讼法 案件管辖</search>\n\n### 从法律条文提取明确的管辖规定\n根据搜索结果，《民事诉讼法》第21条规定了一般地域管辖——即被告住所地法院管辖，但如果案件属于合同纠纷，尤其要结合第23条，该条规定因合同纠纷提起的诉讼，可由被告住所地或合同履行地人民法院管辖。\n\n### 结合特殊管辖明确‘合同履行地’的界定\n合同履行地是合同纠纷管辖的重要因素之一，因此还需要确认合同履行地的法律解释。需要进一步查找关于‘合同履行地’如何界定的法律和司法解释。\n\n### Search\n<search>合同履行地司法解释</search>\n\n### 分析合同履行地相关司法解释\n通过搜索结果可以了解到，最高人民法院的相关司法解释明确，所谓‘合同履行地’根据合同内容不同而变化，例如，涉及支付货币的，应作为付款地，涉及交付标的物的以交付地为准。因此，管辖地需要结合具体合同的履行方式判断。\n\n### 总结合同纠纷管辖的规则\n根据法律和司法解释，在合同纠纷案件中，原告可以选择在被告住所地法院或合同履行地法院提起诉讼；而合同履行地又需根据合同类型（如货币支付或标的物交付）确定具体地点。\n\n### Conclusion\n合同纠纷管辖法院按照《中华人民共和国民事诉讼法》第21条和第23条的规定，一般由被告住所地法院或合同履行地法院管辖。合同履行地的确认依据最高人民法院的司法解释：针对支付货币的合同，履行地为付款地；针对交付标的物的合同，履行地为交付地。\n\n### Verification\n结论已经基于《民事诉讼法》以及最高法司法解释得出，论证符合逻辑，内容准备充足，结论正确。\n</Thought Process>\n\n<Question>\n合同纠纷如何确定管辖法院？\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n好的，要确认合同纠纷案件的管辖法院我得先从法律规定入手。嗯......我知道民事诉讼法应该是主要法律依据。管辖原则一般涉及地域管辖和级别管辖，涉及到案件的具体类型时可能会有特殊的规则，合同纠纷是个很常见的类型，应该会有细致的规定。那么我可以先搜一下相关条款看看。<search>民事诉讼法 案件管辖</search>\n\n<information>结果显示，《民事诉讼法》第21条提到一般地域管辖的规定，说案件应该由被告住所地的法院管辖。然后还找到了第23条，专门提到了合同纠纷案件的特殊规定，原来这里还允许由合同履行地的法院管辖！</information>\n\n哦，这样的话，合同纠纷诉讼中原告就有两个选择嘛，可以去被告住所地的法院，也可以去合同履行地的法院提交诉讼。不过合同履行地到底怎么定义呢？合同履行地应该不是统一的，可能跟合同的具体内容有关。我觉得这个问题可能需要更深入一点来查具体解释了，再搜搜看吧。<search>合同履行地司法解释</search>\n\n<information>通过搜索结果发现，最高人民法院确实有相关司法解释。解释中提到“合同履行地”是根据合同的类型判断的。例如，如果合同是关于支付货币的，那么履行地指向付款地；如果合同是关于交付标的物的，那么履行地就是标的物的交付地。这让我注意到，具体案件需要结合合同的内容和履行方式才能明确履行地。</information>\n\n这样看来合同履行地可以很灵活，要看合同里怎么约定履行方式，而且涉及到实际操作地点。总结一下，合同纠纷案件的管辖法院其实就两个主要选项：被告住所地和合同履行地。然后合同履行地的具体位置会根据合同的性质来确认，比如付款合同是在付款地点，交付标的合同就在交付地点。\n\n我觉得这个逻辑基本没问题，因为它符合《民事诉讼法》第21条和第23条的规定，也结合了最高法院司法解释，把规则分析得比较透了。可以确认答案了，合同纠纷案件的管辖法院就是根据被告住所地或合同履行地来确定，履行地则由合同类型具体判断。\n</Internal Thinking>\n\n<Question>\n合同纠纷如何确定管辖法院？\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析合同纠纷案件管辖原则的法律依据\",\n      \"content\": \"合同纠纷案件的管辖通常取决于法律中的一般管辖规则和特殊管辖规则。需要找到相关法律依据规定合同纠纷如何适用管辖规定。具体来说，需要查阅民事诉讼法中关于案件管辖的条款。准备查找案件管辖的法律依据。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"查找《中华人民共和国民事诉讼法》相关管辖规定\",\n      \"content\": \"根据问题，‘合同纠纷’的管辖法院与民事案件的地域管辖和级别管辖相关，因此需要查找《中华人民共和国民事诉讼法》中关于合同纠纷案件管辖的具体条文内容。\"\n    },\n    {\n      \"action\": \"Search\",\n      \"content\": \"<search>民事诉讼法 案件管辖</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"从法律条文提取明确的管辖规定\",\n      \"content\": \"根据搜索结果，《民事诉讼法》第21条规定了一般地域管辖——即被告住所地法院管辖，但如果案件属于合同纠纷，尤其要结合第23条，该条规定因合同纠纷提起的诉讼，可由被告住所地或合同履行地人民法院管辖。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"结合特殊管辖明确‘合同履行地’的界定\",\n      \"content\": \"合同履行地是合同纠纷管辖的重要因素之一，因此还需要确认合同履行地的法律解释。需要进一步查找关于‘合同履行地’如何界定的法律和司法解释。\"\n    },\n    {\n      \"action\": \"Search\",\n      \"content\": \"<search>合同履行地司法解释</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析合同履行地相关司法解释\",\n      \"content\": \"通过搜索结果可以了解到，最高人民法院的相关司法解释明确，所谓‘合同履行地’根据合同内容不同而变化，例如，涉及支付货币的，应作为付款地，涉及交付标的物的以交付地为准。因此，管辖地需要结合具体合同的履行方式判断。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"总结合同纠纷管辖的规则\",\n      \"content\": \"根据法律和司法解释，在合同纠纷案件中，原告可以选择在被告住所地法院或合同履行地法院提起诉讼；而合同履行地又需根据合同类型（如货币支付或标的物交付）确定具体地点。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"合同纠纷管辖法院按照《中华人民共和国民事诉讼法》第21条和第23条的规定，一般由被告住所地法院或合同履行地法院管辖。合同履行地的确认依据最高人民法院的司法解释：针对支付货币的合同，履行地为付款地；针对交付标的物的合同，履行地为交付地。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"结论已经基于《民事诉讼法》以及最高法司法解释得出，论证符合逻辑，内容准备充足，结论正确。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"好的，要确认合同纠纷案件的管辖法院我得先从法律规定入手。嗯......我知道民事诉讼法应该是主要法律依据。管辖原则一般涉及地域管辖和级别管辖，涉及到案件的具体类型时可能会有特殊的规则，合同纠纷是个很常见的类型，应该会有细致的规定。那么我可以先搜一下相关条款看看。<search>民事诉讼法 案件管辖</search>\\n\\n<information>结果显示，《民事诉讼法》第21条提到一般地域管辖的规定，说案件应该由被告住所地的法院管辖。然后还找到了第23条，专门提到了合同纠纷案件的特殊规定，原来这里还允许由合同履行地的法院管辖！</information>\\n\\n哦，这样的话，合同纠纷诉讼中原告就有两个选择嘛，可以去被告住所地的法院，也可以去合同履行地的法院提交诉讼。不过合同履行地到底怎么定义呢？合同履行地应该不是统一的，可能跟合同的具体内容有关。我觉得这个问题可能需要更深入一点来查具体解释了，再搜搜看吧。<search>合同履行地司法解释</search>\\n\\n<information>通过搜索结果发现，最高人民法院确实有相关司法解释。解释中提到“合同履行地”是根据合同的类型判断的。例如，如果合同是关于支付货币的，那么履行地指向付款地；如果合同是关于交付标的物的，那么履行地就是标的物的交付地。这让我注意到，具体案件需要结合合同的内容和履行方式才能明确履行地。</information>\\n\\n这样看来合同履行地可以很灵活，要看合同里怎么约定履行方式，而且涉及到实际操作地点。总结一下，合同纠纷案件的管辖法院其实就两个主要选项：被告住所地和合同履行地。然后合同履行地的具体位置会根据合同的性质来确认，比如付款合同是在付款地点，交付标的合同就在交付地点。\\n\\n我觉得这个逻辑基本没问题，因为它符合《民事诉讼法》第21条和第23条的规定，也结合了最高法院司法解释，把规则分析得比较透了。可以确认答案了，合同纠纷案件的管辖法院就是根据被告住所地或合同履行地来确定，履行地则由合同类型具体判断。\"\n}\n```",
+    "合同纠纷管辖法院的确定主要依据《中华人民共和国民事诉讼法》的相关规定。根据该法第21条和第23条，合同纠纷案件可以由以下两种法院管辖：  \n\n1. **被告住所地法院**：这是一般地域管辖的规则，即案件应向被告住所地的法院提起诉讼。  \n   \n2. **合同履行地法院**：这是合同纠纷案件的特殊规定，原告可以选择向合同履行地的法院提起诉讼。   \n\n对于“合同履行地”的认定，根据最高人民法院的相关司法解释，需要结合合同的类型和约定履行方式具体判断。例如：  \n- 如果合同是涉及支付货币的，履行地一般为付款地；  \n- 如果合同是关于交付标的物的，履行地通常为标的物的实际交付地。  \n\n因此，实际确定管辖法院时，需要具体分析合同条款中约定的履行方式或者结合合同履行的实际情况确认“履行地”。如果对于履行地的认定存在争议，还可以参考合同相关的约定、特定法律解释或者执行地点等实际情况作具体判断。  \n\n总结而言，合同纠纷案件的管辖法院通常是被告住所地的法院或合同履行地的法院，具体选择由原告决定。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "分析合同纠纷案件管辖原则的法律依据",
+        "content": "合同纠纷案件的管辖通常取决于法律中的一般管辖规则和特殊管辖规则。需要找到相关法律依据规定合同纠纷如何适用管辖规定。具体来说，需要查阅民事诉讼法中关于案件管辖的条款。准备查找案件管辖的法律依据。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "查找《中华人民共和国民事诉讼法》相关管辖规定",
+        "content": "根据问题，‘合同纠纷’的管辖法院与民事案件的地域管辖和级别管辖相关，因此需要查找《中华人民共和国民事诉讼法》中关于合同纠纷案件管辖的具体条文内容。"
+      },
+      {
+        "action": "Search",
+        "content": "<search>民事诉讼法 案件管辖</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "从法律条文提取明确的管辖规定",
+        "content": "根据搜索结果，《民事诉讼法》第21条规定了一般地域管辖——即被告住所地法院管辖，但如果案件属于合同纠纷，尤其要结合第23条，该条规定因合同纠纷提起的诉讼，可由被告住所地或合同履行地人民法院管辖。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "结合特殊管辖明确‘合同履行地’的界定",
+        "content": "合同履行地是合同纠纷管辖的重要因素之一，因此还需要确认合同履行地的法律解释。需要进一步查找关于‘合同履行地’如何界定的法律和司法解释。"
+      },
+      {
+        "action": "Search",
+        "content": "<search>合同履行地司法解释</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "分析合同履行地相关司法解释",
+        "content": "通过搜索结果可以了解到，最高人民法院的相关司法解释明确，所谓‘合同履行地’根据合同内容不同而变化，例如，涉及支付货币的，应作为付款地，涉及交付标的物的以交付地为准。因此，管辖地需要结合具体合同的履行方式判断。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "总结合同纠纷管辖的规则",
+        "content": "根据法律和司法解释，在合同纠纷案件中，原告可以选择在被告住所地法院或合同履行地法院提起诉讼；而合同履行地又需根据合同类型（如货币支付或标的物交付）确定具体地点。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "合同纠纷管辖法院按照《中华人民共和国民事诉讼法》第21条和第23条的规定，一般由被告住所地法院或合同履行地法院管辖。合同履行地的确认依据最高人民法院的司法解释：针对支付货币的合同，履行地为付款地；针对交付标的物的合同，履行地为交付地。"
+      },
+      {
+        "action": "Verification",
+        "content": "结论已经基于《民事诉讼法》以及最高法司法解释得出，论证符合逻辑，内容准备充足，结论正确。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "好的，要确认合同纠纷案件的管辖法院我得先从法律规定入手。嗯......我知道民事诉讼法应该是主要法律依据。管辖原则一般涉及地域管辖和级别管辖，涉及到案件的具体类型时可能会有特殊的规则，合同纠纷是个很常见的类型，应该会有细致的规定。那么我可以先搜一下相关条款看看。<search>民事诉讼法 案件管辖</search>\n\n<information>结果显示，《民事诉讼法》第21条提到一般地域管辖的规定，说案件应该由被告住所地的法院管辖。然后还找到了第23条，专门提到了合同纠纷案件的特殊规定，原来这里还允许由合同履行地的法院管辖！</information>\n\n哦，这样的话，合同纠纷诉讼中原告就有两个选择嘛，可以去被告住所地的法院，也可以去合同履行地的法院提交诉讼。不过合同履行地到底怎么定义呢？合同履行地应该不是统一的，可能跟合同的具体内容有关。我觉得这个问题可能需要更深入一点来查具体解释了，再搜搜看吧。<search>合同履行地司法解释</search>\n\n<information>通过搜索结果发现，最高人民法院确实有相关司法解释。解释中提到“合同履行地”是根据合同的类型判断的。例如，如果合同是关于支付货币的，那么履行地指向付款地；如果合同是关于交付标的物的，那么履行地就是标的物的交付地。这让我注意到，具体案件需要结合合同的内容和履行方式才能明确履行地。</information>\n\n这样看来合同履行地可以很灵活，要看合同里怎么约定履行方式，而且涉及到实际操作地点。总结一下，合同纠纷案件的管辖法院其实就两个主要选项：被告住所地和合同履行地。然后合同履行地的具体位置会根据合同的性质来确认，比如付款合同是在付款地点，交付标的合同就在交付地点。\n\n我觉得这个逻辑基本没问题，因为它符合《民事诉讼法》第21条和第23条的规定，也结合了最高法院司法解释，把规则分析得比较透了。可以确认答案了，合同纠纷案件的管辖法院就是根据被告住所地或合同履行地来确定，履行地则由合同类型具体判断。",
+  "Response": "合同纠纷管辖法院的确定主要依据《中华人民共和国民事诉讼法》的相关规定。根据该法第21条和第23条，合同纠纷案件可以由以下两种法院管辖：  \n\n1. **被告住所地法院**：这是一般地域管辖的规则，即案件应向被告住所地的法院提起诉讼。  \n   \n2. **合同履行地法院**：这是合同纠纷案件的特殊规定，原告可以选择向合同履行地的法院提起诉讼。   \n\n对于“合同履行地”的认定，根据最高人民法院的相关司法解释，需要结合合同的类型和约定履行方式具体判断。例如：  \n- 如果合同是涉及支付货币的，履行地一般为付款地；  \n- 如果合同是关于交付标的物的，履行地通常为标的物的实际交付地。  \n\n因此，实际确定管辖法院时，需要具体分析合同条款中约定的履行方式或者结合合同履行的实际情况确认“履行地”。如果对于履行地的认定存在争议，还可以参考合同相关的约定、特定法律解释或者执行地点等实际情况作具体判断。  \n\n总结而言，合同纠纷案件的管辖法院通常是被告住所地的法院或合同履行地的法院，具体选择由原告决定。",
+  "Question": "合同纠纷如何确定管辖法院？"
+}

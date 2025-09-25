@@ -1,0 +1,99 @@
+{
+  "Open-ended Verifiable Question": "生命健康损害刑事赔偿的案件有哪些？",
+  "Ground-True Answer": "适用于赔偿请求人主张赔偿义务机关在行使刑事司法职权时侵犯生命健康的赔偿案件。1.刑讯逼供致伤、致死赔偿适用于赔偿请求人主张赔偿义务机关刑讯逼供造成身体伤害或者死亡的赔偿案件。2.殴打、虐待致伤、致死赔偿适用于赔偿请求人主张赔偿义务机关以殴打、虐待行为或者唆使、放纵他人以殴打、虐待行为造成身体伤害或者死亡的赔偿案件。3.怠于履行监管职责致伤、致死赔偿适用于赔偿请求人主张赔偿义务机关未尽法定监管、救治职责，造成被羁押人身体伤害或者死亡的赔偿案件。4.违法使用武器、警械致伤、致死赔偿适用于赔偿请求人主张赔偿义务机关违法使用武器、警械造成身体伤害或者死亡的赔偿案件。",
+  "process_id": 5915,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "明确问题范围",
+      "content": "生命健康损害刑事赔偿案件涉及犯罪导致生命健康权受到侵害，需要分析哪些法律及案例适用于这种类型的刑事赔偿。首先需明确刑事赔偿的法律依据。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "搜索刑事赔偿的法律依据",
+      "content": "<search>刑事赔偿法律依据</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "分析法律依据",
+      "content": "<information>刑事赔偿的法律依据主要是《中华人民共和国国家赔偿法》，其中规定了因司法行为受到生命健康损害的赔偿责任范围。</information>根据搜索结果，《国家赔偿法》第17条规定了生命健康权受到侵害时应予赔偿的具体情形，如违法拘留、使用暴力造成伤害等。需要结合实际案例分析具体案件类型。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "搜索具体案件类型",
+      "content": "<search>生命健康损害刑事赔偿案件类型</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "整合案件类型信息",
+      "content": "<information>常见生命健康损害刑事赔偿案件包括：1）因错误逮捕、拘留等司法行为导致身体伤害；2）刑讯逼供造成身体或心理伤害；3）违法使用武器或警械致人伤亡；4）因执法人员违法行为造成的人员死亡或重伤等。</information>基于此，可以初步确定这些案件具体涉及不同情形的司法赔偿。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "生命健康损害刑事赔偿案件主要包括以下类型：1）错误逮捕或拘留导致的人身伤害；2）刑讯逼供带来的身体健康损害；3）因违法使用武器或其他强制措施致人受伤或死亡；4）因执法人员违法行为引发的生命健康权侵害。这些案件依据《国家赔偿法》进行赔偿认定。"
+    },
+    {
+      "action": "Verification",
+      "content": "通过对《国家赔偿法》的分析以及案件类型的整合，结论正确无误。明确了常见的生命健康损害刑事赔偿案件类型，符合法律规定。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n生命健康损害刑事赔偿的案件有哪些？\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n生命健康损害刑事赔偿案件主要包括以下类型：1）错误逮捕或拘留导致的人身伤害；2）刑讯逼供带来的身体健康损害；3）因违法使用武器或其他强制措施致人受伤或死亡；4）因执法人员违法行为引发的生命健康权侵害。这些案件依据《国家赔偿法》进行赔偿认定。  \n</Model Response>  \n\n<Reference Answer>  \n适用于赔偿请求人主张赔偿义务机关在行使刑事司法职权时侵犯生命健康的赔偿案件。1.刑讯逼供致伤、致死赔偿适用于赔偿请求人主张赔偿义务机关刑讯逼供造成身体伤害或者死亡的赔偿案件。2.殴打、虐待致伤、致死赔偿适用于赔偿请求人主张赔偿义务机关以殴打、虐待行为或者唆使、放纵他人以殴打、虐待行为造成身体伤害或者死亡的赔偿案件。3.怠于履行监管职责致伤、致死赔偿适用于赔偿请求人主张赔偿义务机关未尽法定监管、救治职责，造成被羁押人身体伤害或者死亡的赔偿案件。4.违法使用武器、警械致伤、致死赔偿适用于赔偿请求人主张赔偿义务机关违法使用武器、警械造成身体伤害或者死亡的赔偿案件。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 明确问题范围\n生命健康损害刑事赔偿案件涉及犯罪导致生命健康权受到侵害，需要分析哪些法律及案例适用于这种类型的刑事赔偿。首先需明确刑事赔偿的法律依据。\n\n### 搜索刑事赔偿的法律依据\n<search>刑事赔偿法律依据</search>\n\n### 分析法律依据\n<information>刑事赔偿的法律依据主要是《中华人民共和国国家赔偿法》，其中规定了因司法行为受到生命健康损害的赔偿责任范围。</information>根据搜索结果，《国家赔偿法》第17条规定了生命健康权受到侵害时应予赔偿的具体情形，如违法拘留、使用暴力造成伤害等。需要结合实际案例分析具体案件类型。\n\n### 搜索具体案件类型\n<search>生命健康损害刑事赔偿案件类型</search>\n\n### 整合案件类型信息\n<information>常见生命健康损害刑事赔偿案件包括：1）因错误逮捕、拘留等司法行为导致身体伤害；2）刑讯逼供造成身体或心理伤害；3）违法使用武器或警械致人伤亡；4）因执法人员违法行为造成的人员死亡或重伤等。</information>基于此，可以初步确定这些案件具体涉及不同情形的司法赔偿。\n\n### Conclusion\n生命健康损害刑事赔偿案件主要包括以下类型：1）错误逮捕或拘留导致的人身伤害；2）刑讯逼供带来的身体健康损害；3）因违法使用武器或其他强制措施致人受伤或死亡；4）因执法人员违法行为引发的生命健康权侵害。这些案件依据《国家赔偿法》进行赔偿认定。\n\n### Verification\n通过对《国家赔偿法》的分析以及案件类型的整合，结论正确无误。明确了常见的生命健康损害刑事赔偿案件类型，符合法律规定。\n</Thought Process>\n\n<Question>\n生命健康损害刑事赔偿的案件有哪些？\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n嗯，先来看看问题是什么样的。问题是在说关于生命健康损害的刑事赔偿案件。这类案件是因为犯罪行为导致别人生命健康权受损，所以涉及到赔偿的法律问题，嗯，得先搞清楚刑事赔偿的法律依据是什么。\n\n让我找一下看看相关的法律依据是什么。<search>刑事赔偿法律依据</search>\n\n哦，看到了，刚查到的信息说，刑事赔偿的法律依据主要是《中华人民共和国国家赔偿法》。这里面竟然有关于司法行为导致生命健康权受害需要赔偿的一些规定。特别是《国家赔偿法》第17条，好像很重要。这里说了，如果因为像违法拘留或者使用暴力而对他人造成了一些伤害，赔偿是有具体的依据的。这条似乎很关键，需要进一步关注这个法律。\n\n不过光知道法律还不够，我得再看一下，像这种生命健康损害的案件具体都有什么类型，这样才能更清楚适用的情形是什么样的。<search>生命健康损害刑事赔偿案件类型</search>\n\n有了！刚刚找到的信息挺有用，说这种案件常见的类型包括以下几种：第一，是因为司法机关的错误，比如违法逮捕、非法拘留，对个人身体健康直接造成伤害；第二，是因为刑讯逼供，这种情况会对人的身体或者心理造成严重损害；第三，是不合法地使用武器或者其他强制措施，导致人受伤甚至死亡；第四种就是执法人员违法行为造成的人员死亡或者重伤这种比较严重的情况。\n\n这听上去很符合实际情况啊。总结下来，生命健康损害的刑事赔偿案件基本就是涉及这四种情形。一方面，这和《国家赔偿法》的规定是一致的；另一方面，也明确了具体情况应该怎么判断。\n\n所以，看起来答案是清楚了：所有这种案件的大体类型主要包括这四种情况——1）错误逮捕、错误拘留带来的身体健康损害；2）刑讯逼供引发的身心伤害；3）违法使用武器、警械造成的死亡或伤害；4）执法人员违法行为导致的死亡或重伤。这些案件的赔偿依据就是《国家赔偿法》的规定。嗯，逻辑上看完全没问题。\n</Internal Thinking>\n\n<Question>\n生命健康损害刑事赔偿的案件有哪些？\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"明确问题范围\",\n      \"content\": \"生命健康损害刑事赔偿案件涉及犯罪导致生命健康权受到侵害，需要分析哪些法律及案例适用于这种类型的刑事赔偿。首先需明确刑事赔偿的法律依据。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"搜索刑事赔偿的法律依据\",\n      \"content\": \"<search>刑事赔偿法律依据</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析法律依据\",\n      \"content\": \"<information>刑事赔偿的法律依据主要是《中华人民共和国国家赔偿法》，其中规定了因司法行为受到生命健康损害的赔偿责任范围。</information>根据搜索结果，《国家赔偿法》第17条规定了生命健康权受到侵害时应予赔偿的具体情形，如违法拘留、使用暴力造成伤害等。需要结合实际案例分析具体案件类型。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"搜索具体案件类型\",\n      \"content\": \"<search>生命健康损害刑事赔偿案件类型</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"整合案件类型信息\",\n      \"content\": \"<information>常见生命健康损害刑事赔偿案件包括：1）因错误逮捕、拘留等司法行为导致身体伤害；2）刑讯逼供造成身体或心理伤害；3）违法使用武器或警械致人伤亡；4）因执法人员违法行为造成的人员死亡或重伤等。</information>基于此，可以初步确定这些案件具体涉及不同情形的司法赔偿。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"生命健康损害刑事赔偿案件主要包括以下类型：1）错误逮捕或拘留导致的人身伤害；2）刑讯逼供带来的身体健康损害；3）因违法使用武器或其他强制措施致人受伤或死亡；4）因执法人员违法行为引发的生命健康权侵害。这些案件依据《国家赔偿法》进行赔偿认定。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"通过对《国家赔偿法》的分析以及案件类型的整合，结论正确无误。明确了常见的生命健康损害刑事赔偿案件类型，符合法律规定。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"嗯，先来看看问题是什么样的。问题是在说关于生命健康损害的刑事赔偿案件。这类案件是因为犯罪行为导致别人生命健康权受损，所以涉及到赔偿的法律问题，嗯，得先搞清楚刑事赔偿的法律依据是什么。\\n\\n让我找一下看看相关的法律依据是什么。<search>刑事赔偿法律依据</search>\\n\\n哦，看到了，刚查到的信息说，刑事赔偿的法律依据主要是《中华人民共和国国家赔偿法》。这里面竟然有关于司法行为导致生命健康权受害需要赔偿的一些规定。特别是《国家赔偿法》第17条，好像很重要。这里说了，如果因为像违法拘留或者使用暴力而对他人造成了一些伤害，赔偿是有具体的依据的。这条似乎很关键，需要进一步关注这个法律。\\n\\n不过光知道法律还不够，我得再看一下，像这种生命健康损害的案件具体都有什么类型，这样才能更清楚适用的情形是什么样的。<search>生命健康损害刑事赔偿案件类型</search>\\n\\n有了！刚刚找到的信息挺有用，说这种案件常见的类型包括以下几种：第一，是因为司法机关的错误，比如违法逮捕、非法拘留，对个人身体健康直接造成伤害；第二，是因为刑讯逼供，这种情况会对人的身体或者心理造成严重损害；第三，是不合法地使用武器或者其他强制措施，导致人受伤甚至死亡；第四种就是执法人员违法行为造成的人员死亡或者重伤这种比较严重的情况。\\n\\n这听上去很符合实际情况啊。总结下来，生命健康损害的刑事赔偿案件基本就是涉及这四种情形。一方面，这和《国家赔偿法》的规定是一致的；另一方面，也明确了具体情况应该怎么判断。\\n\\n所以，看起来答案是清楚了：所有这种案件的大体类型主要包括这四种情况——1）错误逮捕、错误拘留带来的身体健康损害；2）刑讯逼供引发的身心伤害；3）违法使用武器、警械造成的死亡或伤害；4）执法人员违法行为导致的死亡或重伤。这些案件的赔偿依据就是《国家赔偿法》的规定。嗯，逻辑上看完全没问题。\"\n}\n```",
+    "生命健康损害刑事赔偿的案件通常包括以下几类：\n\n1. **因司法机关错误行为导致的损害**：例如违法逮捕、非法拘留等错误司法行为直接或间接造成个人的身体健康损害。这类情形下，受害人有权依据《中华人民共和国国家赔偿法》获得相应赔偿。\n\n2. **刑讯逼供造成的身体或心理伤害**：在刑事诉讼过程中，执法人员通过非法的刑讯逼供导致被害人身体受伤或心理受创。这种情况属于严重违法行为，也涉及赔偿问题。\n\n3. **非法使用武器或警械引发的伤亡**：如果执法人员在执行任务时不合理或违法使用武器、警棍等强制工具，从而伤害甚至导致人员死亡，受害人或其家属可以依据法律要求赔偿。\n\n4. **因执法人员违法行为导致的重伤或死亡**：包括执法过程中因滥权、过失或故意伤害行为，给当事人造成严重身体损害或死亡的情况。\n\n这些案件的法律依据主要是《中华人民共和国国家赔偿法》，特别是第十七条，该条规定了当司法机关违法行使职权造成公民生命健康权受到侵害时，应依法给予赔偿。这些规定旨在保障公民基本的生命健康权，确保司法机关严格依法履职。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "明确问题范围",
+        "content": "生命健康损害刑事赔偿案件涉及犯罪导致生命健康权受到侵害，需要分析哪些法律及案例适用于这种类型的刑事赔偿。首先需明确刑事赔偿的法律依据。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "搜索刑事赔偿的法律依据",
+        "content": "<search>刑事赔偿法律依据</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "分析法律依据",
+        "content": "<information>刑事赔偿的法律依据主要是《中华人民共和国国家赔偿法》，其中规定了因司法行为受到生命健康损害的赔偿责任范围。</information>根据搜索结果，《国家赔偿法》第17条规定了生命健康权受到侵害时应予赔偿的具体情形，如违法拘留、使用暴力造成伤害等。需要结合实际案例分析具体案件类型。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "搜索具体案件类型",
+        "content": "<search>生命健康损害刑事赔偿案件类型</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "整合案件类型信息",
+        "content": "<information>常见生命健康损害刑事赔偿案件包括：1）因错误逮捕、拘留等司法行为导致身体伤害；2）刑讯逼供造成身体或心理伤害；3）违法使用武器或警械致人伤亡；4）因执法人员违法行为造成的人员死亡或重伤等。</information>基于此，可以初步确定这些案件具体涉及不同情形的司法赔偿。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "生命健康损害刑事赔偿案件主要包括以下类型：1）错误逮捕或拘留导致的人身伤害；2）刑讯逼供带来的身体健康损害；3）因违法使用武器或其他强制措施致人受伤或死亡；4）因执法人员违法行为引发的生命健康权侵害。这些案件依据《国家赔偿法》进行赔偿认定。"
+      },
+      {
+        "action": "Verification",
+        "content": "通过对《国家赔偿法》的分析以及案件类型的整合，结论正确无误。明确了常见的生命健康损害刑事赔偿案件类型，符合法律规定。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "嗯，先来看看问题是什么样的。问题是在说关于生命健康损害的刑事赔偿案件。这类案件是因为犯罪行为导致别人生命健康权受损，所以涉及到赔偿的法律问题，嗯，得先搞清楚刑事赔偿的法律依据是什么。\n\n让我找一下看看相关的法律依据是什么。<search>刑事赔偿法律依据</search>\n\n哦，看到了，刚查到的信息说，刑事赔偿的法律依据主要是《中华人民共和国国家赔偿法》。这里面竟然有关于司法行为导致生命健康权受害需要赔偿的一些规定。特别是《国家赔偿法》第17条，好像很重要。这里说了，如果因为像违法拘留或者使用暴力而对他人造成了一些伤害，赔偿是有具体的依据的。这条似乎很关键，需要进一步关注这个法律。\n\n不过光知道法律还不够，我得再看一下，像这种生命健康损害的案件具体都有什么类型，这样才能更清楚适用的情形是什么样的。<search>生命健康损害刑事赔偿案件类型</search>\n\n有了！刚刚找到的信息挺有用，说这种案件常见的类型包括以下几种：第一，是因为司法机关的错误，比如违法逮捕、非法拘留，对个人身体健康直接造成伤害；第二，是因为刑讯逼供，这种情况会对人的身体或者心理造成严重损害；第三，是不合法地使用武器或者其他强制措施，导致人受伤甚至死亡；第四种就是执法人员违法行为造成的人员死亡或者重伤这种比较严重的情况。\n\n这听上去很符合实际情况啊。总结下来，生命健康损害的刑事赔偿案件基本就是涉及这四种情形。一方面，这和《国家赔偿法》的规定是一致的；另一方面，也明确了具体情况应该怎么判断。\n\n所以，看起来答案是清楚了：所有这种案件的大体类型主要包括这四种情况——1）错误逮捕、错误拘留带来的身体健康损害；2）刑讯逼供引发的身心伤害；3）违法使用武器、警械造成的死亡或伤害；4）执法人员违法行为导致的死亡或重伤。这些案件的赔偿依据就是《国家赔偿法》的规定。嗯，逻辑上看完全没问题。",
+  "Response": "生命健康损害刑事赔偿的案件通常包括以下几类：\n\n1. **因司法机关错误行为导致的损害**：例如违法逮捕、非法拘留等错误司法行为直接或间接造成个人的身体健康损害。这类情形下，受害人有权依据《中华人民共和国国家赔偿法》获得相应赔偿。\n\n2. **刑讯逼供造成的身体或心理伤害**：在刑事诉讼过程中，执法人员通过非法的刑讯逼供导致被害人身体受伤或心理受创。这种情况属于严重违法行为，也涉及赔偿问题。\n\n3. **非法使用武器或警械引发的伤亡**：如果执法人员在执行任务时不合理或违法使用武器、警棍等强制工具，从而伤害甚至导致人员死亡，受害人或其家属可以依据法律要求赔偿。\n\n4. **因执法人员违法行为导致的重伤或死亡**：包括执法过程中因滥权、过失或故意伤害行为，给当事人造成严重身体损害或死亡的情况。\n\n这些案件的法律依据主要是《中华人民共和国国家赔偿法》，特别是第十七条，该条规定了当司法机关违法行使职权造成公民生命健康权受到侵害时，应依法给予赔偿。这些规定旨在保障公民基本的生命健康权，确保司法机关严格依法履职。",
+  "Question": "生命健康损害刑事赔偿的案件有哪些？"
+}

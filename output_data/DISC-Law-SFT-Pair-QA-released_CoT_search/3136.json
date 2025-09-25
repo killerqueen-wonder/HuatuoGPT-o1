@@ -1,0 +1,69 @@
+{
+  "Open-ended Verifiable Question": "未签订劳动合同双倍工资最多几个月",
+  "Ground-True Answer": "未签订劳动合同双倍工资最多11个月。DISC-LawLLM提醒您，用人单位自用工之日起超过一个月不满一年未与劳动者订立书面劳动合同的，应当向劳动者每月支付两倍的工资。\n《中华人民共和国劳动合同法》第三条订立劳动合同，应当遵循合法、公平、平等自愿、协商一致、诚实信用的原则。依法订立的劳动合同具有约束力，用人单位与劳动者应当履行劳动合同约定的义务。\n第十条建立劳动关系，应当订立书面劳动合同。已建立劳动关系，未同时订立书面劳动合同的，应当自用工之日起一个月内订立书面劳动合同。用人单位与劳动者在用工前订立劳动合同的，劳动关系自用工之日起建立。\n二、未签订劳动合同的劳动仲裁证据包括哪些\n1. 工资卡或其它工资发放记录；\n2. 用人单位为劳动者缴纳的各项社会保险费的记录；\n3. 用人单位向劳动者发放能够证明职务职位身份的证件；\n4. 填写的用人单位招工招聘等招用记录；\n5. 用人单位的考勤记录；\n6. 其他劳动者的证言；\n7. 其它能够证明双方存在事实劳动关系的证据。\n三、未签订劳动合同劳动仲裁流程\n1.提交申请书：当事人申请仲裁，应当提交书面仲裁申请书，并按照被申请人数提交副本。\n2.仲裁受理：仲裁委员会应当自收到仲裁申请之日起五日内作出受理或者不予受理的决定。仲裁委员会决定受理的，应当自作出决定之日起五日内将申诉书副本送达被申请人。决定不予受理的，应当说明理由。\n3.开庭审理：仲裁庭应当于开庭的五日前，将开庭日期、地点书面通知双方当事人。\n4.仲裁调解：仲裁庭处理劳动争议应当先行调解，在查明事实的基础上促使当事人双方自愿达成协议。调解达成协议的，仲裁庭应当根据协议内容制作调解书，调解书自送达之日起具有法律效力;调解未达成协议的，仲裁庭应当及时裁决。\n5.仲裁裁决：仲裁庭裁决劳动争议案件，应当自劳动仲裁委员会受理仲裁申请之日起四十五日内结束。",
+  "process_id": 3136,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "确定相关法律法规",
+      "content": "关于未签订劳动合同支付双倍工资的问题，需要检查《劳动合同法》的相关规定。因此需要搜索相关法律条款以明确具体双倍工资支付的时限。<search>劳动合同法未签订劳动合同双倍工资时限</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "分析搜索结果",
+      "content": "<information>根据《劳动合同法》第82条规定，用人单位自用工之日起超过一个月但不足一年未与劳动者签订书面劳动合同的，需支付双倍工资；超过一年未签订劳动合同的，视为已签订无固定期限劳动合同。</information>基于以上信息，可得双倍工资最多支付时限为自用工之日起满一个月后的11个月（即总计12个月的范围内，1个月为普通工资期，之后为双倍工资期）。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "未签订劳动合同的情况下，用人单位需支付双倍工资最多为11个月（即从用工之日起的第二个月起算至满一年）。"
+    },
+    {
+      "action": "Verification",
+      "content": "经过核对法律条款，《劳动合同法》第82条确实规定了未签订劳动合同支付双倍工资的具体期限为最多11个月，因此结论正确。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n未签订劳动合同双倍工资最多几个月\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n未签订劳动合同的情况下，用人单位需支付双倍工资最多为11个月（即从用工之日起的第二个月起算至满一年）。  \n</Model Response>  \n\n<Reference Answer>  \n未签订劳动合同双倍工资最多11个月。DISC-LawLLM提醒您，用人单位自用工之日起超过一个月不满一年未与劳动者订立书面劳动合同的，应当向劳动者每月支付两倍的工资。\n《中华人民共和国劳动合同法》第三条订立劳动合同，应当遵循合法、公平、平等自愿、协商一致、诚实信用的原则。依法订立的劳动合同具有约束力，用人单位与劳动者应当履行劳动合同约定的义务。\n第十条建立劳动关系，应当订立书面劳动合同。已建立劳动关系，未同时订立书面劳动合同的，应当自用工之日起一个月内订立书面劳动合同。用人单位与劳动者在用工前订立劳动合同的，劳动关系自用工之日起建立。\n二、未签订劳动合同的劳动仲裁证据包括哪些\n1. 工资卡或其它工资发放记录；\n2. 用人单位为劳动者缴纳的各项社会保险费的记录；\n3. 用人单位向劳动者发放能够证明职务职位身份的证件；\n4. 填写的用人单位招工招聘等招用记录；\n5. 用人单位的考勤记录；\n6. 其他劳动者的证言；\n7. 其它能够证明双方存在事实劳动关系的证据。\n三、未签订劳动合同劳动仲裁流程\n1.提交申请书：当事人申请仲裁，应当提交书面仲裁申请书，并按照被申请人数提交副本。\n2.仲裁受理：仲裁委员会应当自收到仲裁申请之日起五日内作出受理或者不予受理的决定。仲裁委员会决定受理的，应当自作出决定之日起五日内将申诉书副本送达被申请人。决定不予受理的，应当说明理由。\n3.开庭审理：仲裁庭应当于开庭的五日前，将开庭日期、地点书面通知双方当事人。\n4.仲裁调解：仲裁庭处理劳动争议应当先行调解，在查明事实的基础上促使当事人双方自愿达成协议。调解达成协议的，仲裁庭应当根据协议内容制作调解书，调解书自送达之日起具有法律效力;调解未达成协议的，仲裁庭应当及时裁决。\n5.仲裁裁决：仲裁庭裁决劳动争议案件，应当自劳动仲裁委员会受理仲裁申请之日起四十五日内结束。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 确定相关法律法规\n关于未签订劳动合同支付双倍工资的问题，需要检查《劳动合同法》的相关规定。因此需要搜索相关法律条款以明确具体双倍工资支付的时限。<search>劳动合同法未签订劳动合同双倍工资时限</search>\n\n### 分析搜索结果\n<information>根据《劳动合同法》第82条规定，用人单位自用工之日起超过一个月但不足一年未与劳动者签订书面劳动合同的，需支付双倍工资；超过一年未签订劳动合同的，视为已签订无固定期限劳动合同。</information>基于以上信息，可得双倍工资最多支付时限为自用工之日起满一个月后的11个月（即总计12个月的范围内，1个月为普通工资期，之后为双倍工资期）。\n\n### Conclusion\n未签订劳动合同的情况下，用人单位需支付双倍工资最多为11个月（即从用工之日起的第二个月起算至满一年）。\n\n### Verification\n经过核对法律条款，《劳动合同法》第82条确实规定了未签订劳动合同支付双倍工资的具体期限为最多11个月，因此结论正确。\n</Thought Process>\n\n<Question>\n未签订劳动合同双倍工资最多几个月\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n嗯，关于未签订劳动合同，公司到底需要支付双倍工资的时限，我得先回忆和查相关的法律依据。这个应该在《劳动合同法》里有明确规定吧？不过具体的条款记不太清了，那我还是先查一下比较保险。<search>劳动合同法未签订劳动合同双倍工资时限</search>\n\n哦，看到结果了。这条信息说，根据《劳动合同法》第82条的规定，如果用人单位从用工开始，超过一个月还没给劳动者签订书面的劳动合同，就得支付双倍工资。然后，它还明确了一下，这笔双倍工资只需支付到满一年的时间点，超过一年如果还没签合同，那法律就直接视为签订了无固定期限劳动合同。嗯，也就是说双倍工资不会一直无限期支付。\n\n仔细想一下，这么说，双倍工资的计算范围是这样的：用工第一月不用支付，因为刚开始有一个缓冲期，给双方时间签合同；但从第二个月开始，到第十二个月，也就是满一年的时候，这中间的时间就需要支付双倍工资。所以总的来说，最长是11个月的双倍工资。\n\n我再检查一下条文内容是不是准确的。《劳动合同法》第82条确实是这么写的——超过1个月没签合同开始双倍工资，但不超过一年。嗯，没问题，这就能确定答案了。\n\n所以结论就是，如果未签订劳动合同，用人单位需要支付双倍工资的时间最长是11个月，从用工后的第二个月到满一年的时间点。\n</Internal Thinking>\n\n<Question>\n未签订劳动合同双倍工资最多几个月\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"确定相关法律法规\",\n      \"content\": \"关于未签订劳动合同支付双倍工资的问题，需要检查《劳动合同法》的相关规定。因此需要搜索相关法律条款以明确具体双倍工资支付的时限。<search>劳动合同法未签订劳动合同双倍工资时限</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析搜索结果\",\n      \"content\": \"<information>根据《劳动合同法》第82条规定，用人单位自用工之日起超过一个月但不足一年未与劳动者签订书面劳动合同的，需支付双倍工资；超过一年未签订劳动合同的，视为已签订无固定期限劳动合同。</information>基于以上信息，可得双倍工资最多支付时限为自用工之日起满一个月后的11个月（即总计12个月的范围内，1个月为普通工资期，之后为双倍工资期）。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"未签订劳动合同的情况下，用人单位需支付双倍工资最多为11个月（即从用工之日起的第二个月起算至满一年）。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"经过核对法律条款，《劳动合同法》第82条确实规定了未签订劳动合同支付双倍工资的具体期限为最多11个月，因此结论正确。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"嗯，关于未签订劳动合同，公司到底需要支付双倍工资的时限，我得先回忆和查相关的法律依据。这个应该在《劳动合同法》里有明确规定吧？不过具体的条款记不太清了，那我还是先查一下比较保险。<search>劳动合同法未签订劳动合同双倍工资时限</search>\\n\\n哦，看到结果了。这条信息说，根据《劳动合同法》第82条的规定，如果用人单位从用工开始，超过一个月还没给劳动者签订书面的劳动合同，就得支付双倍工资。然后，它还明确了一下，这笔双倍工资只需支付到满一年的时间点，超过一年如果还没签合同，那法律就直接视为签订了无固定期限劳动合同。嗯，也就是说双倍工资不会一直无限期支付。\\n\\n仔细想一下，这么说，双倍工资的计算范围是这样的：用工第一月不用支付，因为刚开始有一个缓冲期，给双方时间签合同；但从第二个月开始，到第十二个月，也就是满一年的时候，这中间的时间就需要支付双倍工资。所以总的来说，最长是11个月的双倍工资。\\n\\n我再检查一下条文内容是不是准确的。《劳动合同法》第82条确实是这么写的——超过1个月没签合同开始双倍工资，但不超过一年。嗯，没问题，这就能确定答案了。\\n\\n所以结论就是，如果未签订劳动合同，用人单位需要支付双倍工资的时间最长是11个月，从用工后的第二个月到满一年的时间点。\"\n}\n```",
+    "未签订劳动合同的双倍工资最多可以追溯11个月。根据《劳动合同法》第82条的规定，用人单位如果自用工之日起超过一个月未与劳动者签订书面劳动合同，需从第二个月开始支付双倍工资；支付期限最多至满一年，即用工后的第十二个月。在超过一年仍未签订书面劳动合同的情况下，法律视为双方已订立无固定期限劳动合同。因此，双倍工资的计算范围最长期限为11个月。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "确定相关法律法规",
+        "content": "关于未签订劳动合同支付双倍工资的问题，需要检查《劳动合同法》的相关规定。因此需要搜索相关法律条款以明确具体双倍工资支付的时限。<search>劳动合同法未签订劳动合同双倍工资时限</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "分析搜索结果",
+        "content": "<information>根据《劳动合同法》第82条规定，用人单位自用工之日起超过一个月但不足一年未与劳动者签订书面劳动合同的，需支付双倍工资；超过一年未签订劳动合同的，视为已签订无固定期限劳动合同。</information>基于以上信息，可得双倍工资最多支付时限为自用工之日起满一个月后的11个月（即总计12个月的范围内，1个月为普通工资期，之后为双倍工资期）。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "未签订劳动合同的情况下，用人单位需支付双倍工资最多为11个月（即从用工之日起的第二个月起算至满一年）。"
+      },
+      {
+        "action": "Verification",
+        "content": "经过核对法律条款，《劳动合同法》第82条确实规定了未签订劳动合同支付双倍工资的具体期限为最多11个月，因此结论正确。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "嗯，关于未签订劳动合同，公司到底需要支付双倍工资的时限，我得先回忆和查相关的法律依据。这个应该在《劳动合同法》里有明确规定吧？不过具体的条款记不太清了，那我还是先查一下比较保险。<search>劳动合同法未签订劳动合同双倍工资时限</search>\n\n哦，看到结果了。这条信息说，根据《劳动合同法》第82条的规定，如果用人单位从用工开始，超过一个月还没给劳动者签订书面的劳动合同，就得支付双倍工资。然后，它还明确了一下，这笔双倍工资只需支付到满一年的时间点，超过一年如果还没签合同，那法律就直接视为签订了无固定期限劳动合同。嗯，也就是说双倍工资不会一直无限期支付。\n\n仔细想一下，这么说，双倍工资的计算范围是这样的：用工第一月不用支付，因为刚开始有一个缓冲期，给双方时间签合同；但从第二个月开始，到第十二个月，也就是满一年的时候，这中间的时间就需要支付双倍工资。所以总的来说，最长是11个月的双倍工资。\n\n我再检查一下条文内容是不是准确的。《劳动合同法》第82条确实是这么写的——超过1个月没签合同开始双倍工资，但不超过一年。嗯，没问题，这就能确定答案了。\n\n所以结论就是，如果未签订劳动合同，用人单位需要支付双倍工资的时间最长是11个月，从用工后的第二个月到满一年的时间点。",
+  "Response": "未签订劳动合同的双倍工资最多可以追溯11个月。根据《劳动合同法》第82条的规定，用人单位如果自用工之日起超过一个月未与劳动者签订书面劳动合同，需从第二个月开始支付双倍工资；支付期限最多至满一年，即用工后的第十二个月。在超过一年仍未签订书面劳动合同的情况下，法律视为双方已订立无固定期限劳动合同。因此，双倍工资的计算范围最长期限为11个月。",
+  "Question": "未签订劳动合同双倍工资最多几个月"
+}

@@ -1,0 +1,89 @@
+{
+  "Open-ended Verifiable Question": "可以在公证处立遗嘱吗?",
+  "Ground-True Answer": "可以在公证处立遗嘱。公证遗嘱即遗嘱人经公证机关办理的遗嘱。公证遗嘱的方式是最严格的遗嘱方式，能确实保障遗嘱人的意思表示的真实性。　公证处有一项公证事项就是遗嘱公证,并且是五种立遗嘱方式里面法律效应最高的,当存在多份遗嘱时,以公证过后的为准。’",
+  "process_id": 1921,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "明确问题背景",
+      "content": "题目询问是否可以在公证处立遗嘱，涉及遗嘱订立、公证机构职能等法律问题。需要确认公证机构是否具备处理遗嘱的法定职能。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "检索相关法律规定",
+      "content": "为了确认公证处是否可以为立遗嘱提供服务，我需要查找法律中与遗嘱公证相关的内容，可能涉及《中华人民共和国民法典》或《中华人民共和国公证法》等法律文件。进行具体搜索。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "进行法律依据检索",
+      "content": "我将搜索关于'公证处 遗嘱'的法律条文和相关规定。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "检索结果分析",
+      "content": "根据搜索结果，《中华人民共和国公证法》明确规定公证机构的职责包括办理民事法律事务公证，而遗嘱公证正是其工作内容之一。此外，《中华人民共和国民法典》第1144条指出遗嘱可以采用公证遗嘱的形式，因此个人可以选择在公证处订立遗嘱。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "是的，可以在公证处立遗嘱。根据《中华人民共和国民法典》第1144条和《中华人民共和国公证法》的相关规定，公证处可以办理公证遗嘱订立，这是一种具备法律效力的遗嘱形式。"
+    },
+    {
+      "action": "Verification",
+      "content": "上述结论与法律条文一致，经核查我国多部法律明确规定公证处可以办理遗嘱公证，因此答案正确，确认完毕。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n可以在公证处立遗嘱吗?\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n是的，可以在公证处立遗嘱。根据《中华人民共和国民法典》第1144条和《中华人民共和国公证法》的相关规定，公证处可以办理公证遗嘱订立，这是一种具备法律效力的遗嘱形式。  \n</Model Response>  \n\n<Reference Answer>  \n可以在公证处立遗嘱。公证遗嘱即遗嘱人经公证机关办理的遗嘱。公证遗嘱的方式是最严格的遗嘱方式，能确实保障遗嘱人的意思表示的真实性。　公证处有一项公证事项就是遗嘱公证,并且是五种立遗嘱方式里面法律效应最高的,当存在多份遗嘱时,以公证过后的为准。’\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 明确问题背景\n题目询问是否可以在公证处立遗嘱，涉及遗嘱订立、公证机构职能等法律问题。需要确认公证机构是否具备处理遗嘱的法定职能。\n\n### 检索相关法律规定\n为了确认公证处是否可以为立遗嘱提供服务，我需要查找法律中与遗嘱公证相关的内容，可能涉及《中华人民共和国民法典》或《中华人民共和国公证法》等法律文件。进行具体搜索。\n\n### 进行法律依据检索\n我将搜索关于'公证处 遗嘱'的法律条文和相关规定。\n\n### 检索结果分析\n根据搜索结果，《中华人民共和国公证法》明确规定公证机构的职责包括办理民事法律事务公证，而遗嘱公证正是其工作内容之一。此外，《中华人民共和国民法典》第1144条指出遗嘱可以采用公证遗嘱的形式，因此个人可以选择在公证处订立遗嘱。\n\n### Conclusion\n是的，可以在公证处立遗嘱。根据《中华人民共和国民法典》第1144条和《中华人民共和国公证法》的相关规定，公证处可以办理公证遗嘱订立，这是一种具备法律效力的遗嘱形式。\n\n### Verification\n上述结论与法律条文一致，经核查我国多部法律明确规定公证处可以办理遗嘱公证，因此答案正确，确认完毕。\n</Thought Process>\n\n<Question>\n可以在公证处立遗嘱吗?\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n嗯，这个问题是关于遗嘱和公证处的。可以在公证处立遗嘱吗？需要好好想想。首先我知道遗嘱作为一种法律文件是很重要的，它决定了一个人在去世后财产或者一些事项的分配方式。但是立遗嘱的形式有很多种，我记得好像有口头遗嘱、自书遗嘱，还有一种叫公证遗嘱。如果是公证遗嘱，那就肯定和公证处有关吧？\n\n那我得查一下遗嘱的法律规定，先把关键词定一下，应该是‘公证处 遗嘱’，这样比较准确。再想想，应该要找哪些法律呢？《民法典》肯定要看，这是调整民事关系的大法，里面应该有遗嘱的规定。另外还有《公证法》也不能漏掉，因为公证处的职责、权限肯定要靠这部法律来规定。\n\n<search>公证处 遗嘱</search>\n\n看看搜索出来的结果。噢，这里有《民法典》的内容。根据《民法典》第1144条，遗嘱可以采用公证遗嘱的形式，所以从这条法律来看，在公证处立遗嘱是可行的。另外搜到《公证法》的规定，公证处有权办理各种民事法律事务的公证，这包括遗嘱公证。嗯，这些法律条文也挺清楚的，说明公证遗嘱是公证处的工作内容之一。\n\n<information>《民法典》第1144条指出遗嘱可采用公证遗嘱形式；《公证法》规定公证机关办理民事法律事务公证，包括遗嘱公证。</information>\n\n好了，现在有了法律依据，可以明确回答这个问题了：根据法律规定，公证处确实可以办理遗嘱公证，所以个人是可以选择在公证处立遗嘱的。而且这种遗嘱形式具有很高的法律效力，因为公证处出具的文书一般可信度很高。\n\n哇，想明白了，这个问题的答案其实挺简单的。总结一下吧，是的，可以在公证处立遗嘱，法律上明确允许，而且公证遗嘱是遗嘱的一种形式。\n</Internal Thinking>\n\n<Question>\n可以在公证处立遗嘱吗?\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"明确问题背景\",\n      \"content\": \"题目询问是否可以在公证处立遗嘱，涉及遗嘱订立、公证机构职能等法律问题。需要确认公证机构是否具备处理遗嘱的法定职能。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"检索相关法律规定\",\n      \"content\": \"为了确认公证处是否可以为立遗嘱提供服务，我需要查找法律中与遗嘱公证相关的内容，可能涉及《中华人民共和国民法典》或《中华人民共和国公证法》等法律文件。进行具体搜索。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"进行法律依据检索\",\n      \"content\": \"我将搜索关于'公证处 遗嘱'的法律条文和相关规定。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"检索结果分析\",\n      \"content\": \"根据搜索结果，《中华人民共和国公证法》明确规定公证机构的职责包括办理民事法律事务公证，而遗嘱公证正是其工作内容之一。此外，《中华人民共和国民法典》第1144条指出遗嘱可以采用公证遗嘱的形式，因此个人可以选择在公证处订立遗嘱。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"是的，可以在公证处立遗嘱。根据《中华人民共和国民法典》第1144条和《中华人民共和国公证法》的相关规定，公证处可以办理公证遗嘱订立，这是一种具备法律效力的遗嘱形式。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"上述结论与法律条文一致，经核查我国多部法律明确规定公证处可以办理遗嘱公证，因此答案正确，确认完毕。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"嗯，这个问题是关于遗嘱和公证处的。可以在公证处立遗嘱吗？需要好好想想。首先我知道遗嘱作为一种法律文件是很重要的，它决定了一个人在去世后财产或者一些事项的分配方式。但是立遗嘱的形式有很多种，我记得好像有口头遗嘱、自书遗嘱，还有一种叫公证遗嘱。如果是公证遗嘱，那就肯定和公证处有关吧？\\n\\n那我得查一下遗嘱的法律规定，先把关键词定一下，应该是‘公证处 遗嘱’，这样比较准确。再想想，应该要找哪些法律呢？《民法典》肯定要看，这是调整民事关系的大法，里面应该有遗嘱的规定。另外还有《公证法》也不能漏掉，因为公证处的职责、权限肯定要靠这部法律来规定。\\n\\n<search>公证处 遗嘱</search>\\n\\n看看搜索出来的结果。噢，这里有《民法典》的内容。根据《民法典》第1144条，遗嘱可以采用公证遗嘱的形式，所以从这条法律来看，在公证处立遗嘱是可行的。另外搜到《公证法》的规定，公证处有权办理各种民事法律事务的公证，这包括遗嘱公证。嗯，这些法律条文也挺清楚的，说明公证遗嘱是公证处的工作内容之一。\\n\\n<information>《民法典》第1144条指出遗嘱可采用公证遗嘱形式；《公证法》规定公证机关办理民事法律事务公证，包括遗嘱公证。</information>\\n\\n好了，现在有了法律依据，可以明确回答这个问题了：根据法律规定，公证处确实可以办理遗嘱公证，所以个人是可以选择在公证处立遗嘱的。而且这种遗嘱形式具有很高的法律效力，因为公证处出具的文书一般可信度很高。\\n\\n哇，想明白了，这个问题的答案其实挺简单的。总结一下吧，是的，可以在公证处立遗嘱，法律上明确允许，而且公证遗嘱是遗嘱的一种形式。\"\n}\n```",
+    "是的，可以在公证处立遗嘱。根据《民法典》第1144条的规定，遗嘱可以采取公证遗嘱的形式，而公证遗嘱是由公证处依法办理和见证的。此外，《公证法》也明确赋予公证机关办理遗嘱公证的职责。这种形式的遗嘱由于经过公证，法律效力较高，能够最大限度地减少争议。因此，如果您有遗嘱意向，选择在公证处立遗嘱是一种非常稳妥和规范的方式。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "明确问题背景",
+        "content": "题目询问是否可以在公证处立遗嘱，涉及遗嘱订立、公证机构职能等法律问题。需要确认公证机构是否具备处理遗嘱的法定职能。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "检索相关法律规定",
+        "content": "为了确认公证处是否可以为立遗嘱提供服务，我需要查找法律中与遗嘱公证相关的内容，可能涉及《中华人民共和国民法典》或《中华人民共和国公证法》等法律文件。进行具体搜索。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "进行法律依据检索",
+        "content": "我将搜索关于'公证处 遗嘱'的法律条文和相关规定。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "检索结果分析",
+        "content": "根据搜索结果，《中华人民共和国公证法》明确规定公证机构的职责包括办理民事法律事务公证，而遗嘱公证正是其工作内容之一。此外，《中华人民共和国民法典》第1144条指出遗嘱可以采用公证遗嘱的形式，因此个人可以选择在公证处订立遗嘱。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "是的，可以在公证处立遗嘱。根据《中华人民共和国民法典》第1144条和《中华人民共和国公证法》的相关规定，公证处可以办理公证遗嘱订立，这是一种具备法律效力的遗嘱形式。"
+      },
+      {
+        "action": "Verification",
+        "content": "上述结论与法律条文一致，经核查我国多部法律明确规定公证处可以办理遗嘱公证，因此答案正确，确认完毕。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "嗯，这个问题是关于遗嘱和公证处的。可以在公证处立遗嘱吗？需要好好想想。首先我知道遗嘱作为一种法律文件是很重要的，它决定了一个人在去世后财产或者一些事项的分配方式。但是立遗嘱的形式有很多种，我记得好像有口头遗嘱、自书遗嘱，还有一种叫公证遗嘱。如果是公证遗嘱，那就肯定和公证处有关吧？\n\n那我得查一下遗嘱的法律规定，先把关键词定一下，应该是‘公证处 遗嘱’，这样比较准确。再想想，应该要找哪些法律呢？《民法典》肯定要看，这是调整民事关系的大法，里面应该有遗嘱的规定。另外还有《公证法》也不能漏掉，因为公证处的职责、权限肯定要靠这部法律来规定。\n\n<search>公证处 遗嘱</search>\n\n看看搜索出来的结果。噢，这里有《民法典》的内容。根据《民法典》第1144条，遗嘱可以采用公证遗嘱的形式，所以从这条法律来看，在公证处立遗嘱是可行的。另外搜到《公证法》的规定，公证处有权办理各种民事法律事务的公证，这包括遗嘱公证。嗯，这些法律条文也挺清楚的，说明公证遗嘱是公证处的工作内容之一。\n\n<information>《民法典》第1144条指出遗嘱可采用公证遗嘱形式；《公证法》规定公证机关办理民事法律事务公证，包括遗嘱公证。</information>\n\n好了，现在有了法律依据，可以明确回答这个问题了：根据法律规定，公证处确实可以办理遗嘱公证，所以个人是可以选择在公证处立遗嘱的。而且这种遗嘱形式具有很高的法律效力，因为公证处出具的文书一般可信度很高。\n\n哇，想明白了，这个问题的答案其实挺简单的。总结一下吧，是的，可以在公证处立遗嘱，法律上明确允许，而且公证遗嘱是遗嘱的一种形式。",
+  "Response": "是的，可以在公证处立遗嘱。根据《民法典》第1144条的规定，遗嘱可以采取公证遗嘱的形式，而公证遗嘱是由公证处依法办理和见证的。此外，《公证法》也明确赋予公证机关办理遗嘱公证的职责。这种形式的遗嘱由于经过公证，法律效力较高，能够最大限度地减少争议。因此，如果您有遗嘱意向，选择在公证处立遗嘱是一种非常稳妥和规范的方式。",
+  "Question": "可以在公证处立遗嘱吗?"
+}

@@ -1,0 +1,89 @@
+{
+  "Open-ended Verifiable Question": "居住权合同应该包括的内容?",
+  "Ground-True Answer": "居住权合同一般包括下列条款：\n（一）当事人的姓名或者名称和住所；\n（二）住宅的位置；\n（三）居住的条件和要求；\n（四）居住权期限；\n（五）解决争议的方法。",
+  "process_id": 3927,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "明确居住权合同的法律框架",
+      "content": "居住权合同的内容受到相关法律法规的约束，例如《中华人民共和国民法典》中有关居住权的规定。为了更具体地确认其法律框架，我们需要检索具体法律条款。<search>民法典居住权条款</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "检索民法典居住权条款",
+      "content": "<information>《民法典》第三编合同中关于居住权的条款指出，居住权人有权按合同约定的方式占有和使用其居住目的的房屋；居住权不得出租、转让或继承，且其权利应通过书面合同设立，并办理登记手续。</information>根据此内容，居住权合同要求包括居住权的期限、居住的具体房屋、相关费用的承担方式等关键信息。同时明确合同必须以书面形式订立并登记。继续分析具体条款细节。</content>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "合同内容细节分析",
+      "content": "居住权合同内容需包括但不限于以下要素：1. 居住权人的基本信息，例如姓名、身份证号码；2. 权利义务说明，包括是否有租赁、转让或其他限制；3. 房屋的具体信息，如地址、面积、用途等；4. 居住权的期限和登记事项；5. 费用分担规定，包括维护、修缮费用；6. 排他性条款，确保其他使用权主体不存在冲突。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "综合合同要素制订规范",
+      "content": "根据法律规定与合同实践，居住权合同必须在书面中载明权利义务关系，同时应登记在不动产登记簿上，避免出现法律效力争议。因此，合同可以纳入明确的申明责任条款，解决违约或争议事宜。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "居住权合同应至少包括以下内容：1. 居住权人的基本信息；2. 居住权房屋的相关信息；3. 居住权的期限；4. 权利义务的具体说明（如限制与维护义务）；5. 费用分担方式；6. 居住权的登记相关条款；7. 违约责任和争议解决方式。合同应采用书面形式并办理不动产登记手续以保障法律效力。"
+    },
+    {
+      "action": "Verification",
+      "content": "通过法律条款检索与逻辑推导，结论内容清晰，形式与法律规定一致，结论可靠。结束分析。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n居住权合同应该包括的内容?\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n居住权合同应至少包括以下内容：1. 居住权人的基本信息；2. 居住权房屋的相关信息；3. 居住权的期限；4. 权利义务的具体说明（如限制与维护义务）；5. 费用分担方式；6. 居住权的登记相关条款；7. 违约责任和争议解决方式。合同应采用书面形式并办理不动产登记手续以保障法律效力。  \n</Model Response>  \n\n<Reference Answer>  \n居住权合同一般包括下列条款：\n（一）当事人的姓名或者名称和住所；\n（二）住宅的位置；\n（三）居住的条件和要求；\n（四）居住权期限；\n（五）解决争议的方法。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 明确居住权合同的法律框架\n居住权合同的内容受到相关法律法规的约束，例如《中华人民共和国民法典》中有关居住权的规定。为了更具体地确认其法律框架，我们需要检索具体法律条款。<search>民法典居住权条款</search>\n\n### 检索民法典居住权条款\n<information>《民法典》第三编合同中关于居住权的条款指出，居住权人有权按合同约定的方式占有和使用其居住目的的房屋；居住权不得出租、转让或继承，且其权利应通过书面合同设立，并办理登记手续。</information>根据此内容，居住权合同要求包括居住权的期限、居住的具体房屋、相关费用的承担方式等关键信息。同时明确合同必须以书面形式订立并登记。继续分析具体条款细节。</content>\n\n### 合同内容细节分析\n居住权合同内容需包括但不限于以下要素：1. 居住权人的基本信息，例如姓名、身份证号码；2. 权利义务说明，包括是否有租赁、转让或其他限制；3. 房屋的具体信息，如地址、面积、用途等；4. 居住权的期限和登记事项；5. 费用分担规定，包括维护、修缮费用；6. 排他性条款，确保其他使用权主体不存在冲突。\n\n### 综合合同要素制订规范\n根据法律规定与合同实践，居住权合同必须在书面中载明权利义务关系，同时应登记在不动产登记簿上，避免出现法律效力争议。因此，合同可以纳入明确的申明责任条款，解决违约或争议事宜。\n\n### Conclusion\n居住权合同应至少包括以下内容：1. 居住权人的基本信息；2. 居住权房屋的相关信息；3. 居住权的期限；4. 权利义务的具体说明（如限制与维护义务）；5. 费用分担方式；6. 居住权的登记相关条款；7. 违约责任和争议解决方式。合同应采用书面形式并办理不动产登记手续以保障法律效力。\n\n### Verification\n通过法律条款检索与逻辑推导，结论内容清晰，形式与法律规定一致，结论可靠。结束分析。\n</Thought Process>\n\n<Question>\n居住权合同应该包括的内容?\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n好的，要搞清楚居住权合同到底包含哪些内容，首先得从法律框架入手。居住权这东西到底是什么，有没有明确的法律条文规范呢？<search>民法典居住权条款</search>。\n\n找到条款后我确认了一下，<information>《民法典》第三编合同中关于居住权的条款指出，居住权人有权按合同约定的方式占有和使用其居住目的的房屋；居住权不得出租、转让或继承，且其权利应通过书面合同设立，并办理登记手续。</information> 嗯，这说明居住权不是普通的租赁关系，而是一种需要特别定义和规范的权利。而且，书面合同和不动产登记手续是强制性的，不登记的话这权利是没有法律效力的。\n\n接下来要考虑的是，这种居住权合同应该包含哪些关键点。按条款的要求，居住权合同得说明居住权的期限和房屋的具体信息，那比如房屋地址、面积、用途这些就是必不可少的内容了。另外，既然合同里必须载明‘使用权’，那是不是要明确限制性条款，比如不得出租或者转让呢？还有维护费用、修缮等实际使用中会遇到的问题，也应该事先明确出来。\n\n再考虑一下，合同双方的信息要不要包含？肯定要啊，居住权人是谁，合作对象是谁，这种基本信息怎么能少呢？身份证号码、名字这些基本信息肯定需要写清楚。如果涉及费用的承担，还要特别写上条款，比如谁来负责房屋的日常维护费用，或者如果房子出了问题，修缮费用怎么算。\n\n再等等，有必要加上一些保障性质的内容。比如说合同排他性条款，确保这房子的居住权不会和其他可能存在的所有权、租赁权冲突。而且，还要规定具体责任，如果有一方违约了怎么办？我觉得需要明确一些违约责任和争议解决方式，免得后续扯皮。\n\n这样梳理下来，居住权合同的内容基本清晰了。应该包括的主要内容有：居住权人的详细信息（姓名、身份证号码等）；房屋的具体信息（地址、面积、用途等）；明确的居住权期限；权利和义务的详细描述，比如要禁止租赁、转让或者继承，同时要写明维护、修缮费用由谁承担；涉及登记要求的条款，明确办理不动产登记是必要的；还可以加上关于违约责任和争议解决的条款，防止后续麻烦。总之，既要符合法律规定，也要保护双方权益，还要操作上尽量清晰明确。\n\n确认下来，这些内容就挺全面了，既符合民法典的要求，也考虑到了实际签合同中的注意事项，这样应该就没问题啦！\n</Internal Thinking>\n\n<Question>\n居住权合同应该包括的内容?\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"明确居住权合同的法律框架\",\n      \"content\": \"居住权合同的内容受到相关法律法规的约束，例如《中华人民共和国民法典》中有关居住权的规定。为了更具体地确认其法律框架，我们需要检索具体法律条款。<search>民法典居住权条款</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"检索民法典居住权条款\",\n      \"content\": \"<information>《民法典》第三编合同中关于居住权的条款指出，居住权人有权按合同约定的方式占有和使用其居住目的的房屋；居住权不得出租、转让或继承，且其权利应通过书面合同设立，并办理登记手续。</information>根据此内容，居住权合同要求包括居住权的期限、居住的具体房屋、相关费用的承担方式等关键信息。同时明确合同必须以书面形式订立并登记。继续分析具体条款细节。</content>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"合同内容细节分析\",\n      \"content\": \"居住权合同内容需包括但不限于以下要素：1. 居住权人的基本信息，例如姓名、身份证号码；2. 权利义务说明，包括是否有租赁、转让或其他限制；3. 房屋的具体信息，如地址、面积、用途等；4. 居住权的期限和登记事项；5. 费用分担规定，包括维护、修缮费用；6. 排他性条款，确保其他使用权主体不存在冲突。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"综合合同要素制订规范\",\n      \"content\": \"根据法律规定与合同实践，居住权合同必须在书面中载明权利义务关系，同时应登记在不动产登记簿上，避免出现法律效力争议。因此，合同可以纳入明确的申明责任条款，解决违约或争议事宜。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"居住权合同应至少包括以下内容：1. 居住权人的基本信息；2. 居住权房屋的相关信息；3. 居住权的期限；4. 权利义务的具体说明（如限制与维护义务）；5. 费用分担方式；6. 居住权的登记相关条款；7. 违约责任和争议解决方式。合同应采用书面形式并办理不动产登记手续以保障法律效力。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"通过法律条款检索与逻辑推导，结论内容清晰，形式与法律规定一致，结论可靠。结束分析。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"好的，要搞清楚居住权合同到底包含哪些内容，首先得从法律框架入手。居住权这东西到底是什么，有没有明确的法律条文规范呢？<search>民法典居住权条款</search>。\\n\\n找到条款后我确认了一下，<information>《民法典》第三编合同中关于居住权的条款指出，居住权人有权按合同约定的方式占有和使用其居住目的的房屋；居住权不得出租、转让或继承，且其权利应通过书面合同设立，并办理登记手续。</information> 嗯，这说明居住权不是普通的租赁关系，而是一种需要特别定义和规范的权利。而且，书面合同和不动产登记手续是强制性的，不登记的话这权利是没有法律效力的。\\n\\n接下来要考虑的是，这种居住权合同应该包含哪些关键点。按条款的要求，居住权合同得说明居住权的期限和房屋的具体信息，那比如房屋地址、面积、用途这些就是必不可少的内容了。另外，既然合同里必须载明‘使用权’，那是不是要明确限制性条款，比如不得出租或者转让呢？还有维护费用、修缮等实际使用中会遇到的问题，也应该事先明确出来。\\n\\n再考虑一下，合同双方的信息要不要包含？肯定要啊，居住权人是谁，合作对象是谁，这种基本信息怎么能少呢？身份证号码、名字这些基本信息肯定需要写清楚。如果涉及费用的承担，还要特别写上条款，比如谁来负责房屋的日常维护费用，或者如果房子出了问题，修缮费用怎么算。\\n\\n再等等，有必要加上一些保障性质的内容。比如说合同排他性条款，确保这房子的居住权不会和其他可能存在的所有权、租赁权冲突。而且，还要规定具体责任，如果有一方违约了怎么办？我觉得需要明确一些违约责任和争议解决方式，免得后续扯皮。\\n\\n这样梳理下来，居住权合同的内容基本清晰了。应该包括的主要内容有：居住权人的详细信息（姓名、身份证号码等）；房屋的具体信息（地址、面积、用途等）；明确的居住权期限；权利和义务的详细描述，比如要禁止租赁、转让或者继承，同时要写明维护、修缮费用由谁承担；涉及登记要求的条款，明确办理不动产登记是必要的；还可以加上关于违约责任和争议解决的条款，防止后续麻烦。总之，既要符合法律规定，也要保护双方权益，还要操作上尽量清晰明确。\\n\\n确认下来，这些内容就挺全面了，既符合民法典的要求，也考虑到了实际签合同中的注意事项，这样应该就没问题啦！\"\n}\n```",
+    "居住权合同是一种需要依法明确约定权利和义务的法律文件，其内容必须既符合《民法典》的相关规定，又能有效保护合同双方的合法权益。根据法律要求和实际操作需求，居住权合同通常应包含以下主要内容：\n\n1. **合同双方的基本信息**  \n   - 居住权人和房屋所有权人的姓名、身份证号或其他有效身份信息。  \n   - 双方的联系方式及地址。\n\n2. **房屋的具体信息**  \n   - 房屋的完整地址及房产登记信息。  \n   - 房屋的性质、面积、用途（如住宅用途）。  \n\n3. **居住权的期限**  \n   - 明确居住权的起止时间。  \n   - 如果设定了终身居住权，需要特别注明。\n\n4. **权利义务的具体描述**  \n   - 居住权人的主要权利，即按约定方式占有和使用房屋。  \n   - 使用限制条款，包括不得出租、转让或继承居住权。  \n\n5. **房屋维护和费用分担**  \n   - 明确房屋日常维护、修缮费用的承担方。  \n   - 其他可能产生费用的约定（如水电费、取暖费等）。\n\n6. **不动产登记条款**  \n   - 明确合同签订后，居住权人的权利须通过办理不动产登记手续生效。  \n   - 约定如何协作完成登记手续。\n\n7. **违约责任约定**  \n   - 对出现违约行为时的责任和赔偿方式进行详细规定。  \n   - 包括居住权人滥用房屋或房屋所有权人妨碍居住权行使的处理方式。\n\n8. **争议解决方式**  \n   - 明确争议解决途径，如通过协商解决、提请仲裁或诉诸法院。  \n\n9. **排他性条款**  \n   - 明确居住权的独立性和优先性，避免与其他权利（如租赁权、抵押权等）发生冲突。\n\n10. **其他约定事项**  \n    - 特定的其他要求或补充条款（如修改合同方式、代表人签字等）。\n\n综上，居住权合同需在法律框架内详细约定双方权利义务和具体操作细节，同时通过不动产登记强化其权效力，这样才能确保合同生效并具有法律保障。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "明确居住权合同的法律框架",
+        "content": "居住权合同的内容受到相关法律法规的约束，例如《中华人民共和国民法典》中有关居住权的规定。为了更具体地确认其法律框架，我们需要检索具体法律条款。<search>民法典居住权条款</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "检索民法典居住权条款",
+        "content": "<information>《民法典》第三编合同中关于居住权的条款指出，居住权人有权按合同约定的方式占有和使用其居住目的的房屋；居住权不得出租、转让或继承，且其权利应通过书面合同设立，并办理登记手续。</information>根据此内容，居住权合同要求包括居住权的期限、居住的具体房屋、相关费用的承担方式等关键信息。同时明确合同必须以书面形式订立并登记。继续分析具体条款细节。</content>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "合同内容细节分析",
+        "content": "居住权合同内容需包括但不限于以下要素：1. 居住权人的基本信息，例如姓名、身份证号码；2. 权利义务说明，包括是否有租赁、转让或其他限制；3. 房屋的具体信息，如地址、面积、用途等；4. 居住权的期限和登记事项；5. 费用分担规定，包括维护、修缮费用；6. 排他性条款，确保其他使用权主体不存在冲突。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "综合合同要素制订规范",
+        "content": "根据法律规定与合同实践，居住权合同必须在书面中载明权利义务关系，同时应登记在不动产登记簿上，避免出现法律效力争议。因此，合同可以纳入明确的申明责任条款，解决违约或争议事宜。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "居住权合同应至少包括以下内容：1. 居住权人的基本信息；2. 居住权房屋的相关信息；3. 居住权的期限；4. 权利义务的具体说明（如限制与维护义务）；5. 费用分担方式；6. 居住权的登记相关条款；7. 违约责任和争议解决方式。合同应采用书面形式并办理不动产登记手续以保障法律效力。"
+      },
+      {
+        "action": "Verification",
+        "content": "通过法律条款检索与逻辑推导，结论内容清晰，形式与法律规定一致，结论可靠。结束分析。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "好的，要搞清楚居住权合同到底包含哪些内容，首先得从法律框架入手。居住权这东西到底是什么，有没有明确的法律条文规范呢？<search>民法典居住权条款</search>。\n\n找到条款后我确认了一下，<information>《民法典》第三编合同中关于居住权的条款指出，居住权人有权按合同约定的方式占有和使用其居住目的的房屋；居住权不得出租、转让或继承，且其权利应通过书面合同设立，并办理登记手续。</information> 嗯，这说明居住权不是普通的租赁关系，而是一种需要特别定义和规范的权利。而且，书面合同和不动产登记手续是强制性的，不登记的话这权利是没有法律效力的。\n\n接下来要考虑的是，这种居住权合同应该包含哪些关键点。按条款的要求，居住权合同得说明居住权的期限和房屋的具体信息，那比如房屋地址、面积、用途这些就是必不可少的内容了。另外，既然合同里必须载明‘使用权’，那是不是要明确限制性条款，比如不得出租或者转让呢？还有维护费用、修缮等实际使用中会遇到的问题，也应该事先明确出来。\n\n再考虑一下，合同双方的信息要不要包含？肯定要啊，居住权人是谁，合作对象是谁，这种基本信息怎么能少呢？身份证号码、名字这些基本信息肯定需要写清楚。如果涉及费用的承担，还要特别写上条款，比如谁来负责房屋的日常维护费用，或者如果房子出了问题，修缮费用怎么算。\n\n再等等，有必要加上一些保障性质的内容。比如说合同排他性条款，确保这房子的居住权不会和其他可能存在的所有权、租赁权冲突。而且，还要规定具体责任，如果有一方违约了怎么办？我觉得需要明确一些违约责任和争议解决方式，免得后续扯皮。\n\n这样梳理下来，居住权合同的内容基本清晰了。应该包括的主要内容有：居住权人的详细信息（姓名、身份证号码等）；房屋的具体信息（地址、面积、用途等）；明确的居住权期限；权利和义务的详细描述，比如要禁止租赁、转让或者继承，同时要写明维护、修缮费用由谁承担；涉及登记要求的条款，明确办理不动产登记是必要的；还可以加上关于违约责任和争议解决的条款，防止后续麻烦。总之，既要符合法律规定，也要保护双方权益，还要操作上尽量清晰明确。\n\n确认下来，这些内容就挺全面了，既符合民法典的要求，也考虑到了实际签合同中的注意事项，这样应该就没问题啦！",
+  "Response": "居住权合同是一种需要依法明确约定权利和义务的法律文件，其内容必须既符合《民法典》的相关规定，又能有效保护合同双方的合法权益。根据法律要求和实际操作需求，居住权合同通常应包含以下主要内容：\n\n1. **合同双方的基本信息**  \n   - 居住权人和房屋所有权人的姓名、身份证号或其他有效身份信息。  \n   - 双方的联系方式及地址。\n\n2. **房屋的具体信息**  \n   - 房屋的完整地址及房产登记信息。  \n   - 房屋的性质、面积、用途（如住宅用途）。  \n\n3. **居住权的期限**  \n   - 明确居住权的起止时间。  \n   - 如果设定了终身居住权，需要特别注明。\n\n4. **权利义务的具体描述**  \n   - 居住权人的主要权利，即按约定方式占有和使用房屋。  \n   - 使用限制条款，包括不得出租、转让或继承居住权。  \n\n5. **房屋维护和费用分担**  \n   - 明确房屋日常维护、修缮费用的承担方。  \n   - 其他可能产生费用的约定（如水电费、取暖费等）。\n\n6. **不动产登记条款**  \n   - 明确合同签订后，居住权人的权利须通过办理不动产登记手续生效。  \n   - 约定如何协作完成登记手续。\n\n7. **违约责任约定**  \n   - 对出现违约行为时的责任和赔偿方式进行详细规定。  \n   - 包括居住权人滥用房屋或房屋所有权人妨碍居住权行使的处理方式。\n\n8. **争议解决方式**  \n   - 明确争议解决途径，如通过协商解决、提请仲裁或诉诸法院。  \n\n9. **排他性条款**  \n   - 明确居住权的独立性和优先性，避免与其他权利（如租赁权、抵押权等）发生冲突。\n\n10. **其他约定事项**  \n    - 特定的其他要求或补充条款（如修改合同方式、代表人签字等）。\n\n综上，居住权合同需在法律框架内详细约定双方权利义务和具体操作细节，同时通过不动产登记强化其权效力，这样才能确保合同生效并具有法律保障。",
+  "Question": "居住权合同应该包括的内容?"
+}

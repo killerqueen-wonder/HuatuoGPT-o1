@@ -1,0 +1,89 @@
+{
+  "Open-ended Verifiable Question": "哺乳期内子女抚养权归谁？",
+  "Ground-True Answer": "虽然在实际生活中婴儿哺乳期因人而异，两周岁以下的子女一般随母方生活，司法实践中通常将“哺乳期内的子女”理解为两周岁以下的婴幼儿。父母离婚时，哺乳期内的子女一般随母方生活，但是母方有下列情形之一的，可以随父方生活：母方患有久治不愈的传染性疾病或其他严重疾病，子女不宜与其共同生活。母方有抚养条件不尽抚养义务，而父方要求子女随其生活的。因其他原因，子女确无法随母方生活的。如母亲的生活环境明显对子女抚养不利；母亲工作性质特殊，不便于抚养子女；或者母亲违法犯罪，不利于抚养子女等。父母双方协议两周岁以下的子女随父方生活，并对子女健康成长无不利影响的。",
+  "process_id": 778,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "确定问题背景",
+      "content": "该问题涉及哺乳期子女的抚养权归属，需要明确是否存在相关法律规定或司法解释。我国法律可能对哺乳期内子女的抚养归属权有明确规定，尤其考虑到子女的年龄和生理需求。需要查阅法律依据。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "查找相关法律依据",
+      "content": "需要确认我国与哺乳期子女抚养权归属相关的法律条款及其内容，例如《民法典》中关于父母责任及子女抚养的规定或其他司法解释。<search>哺乳期 子女 抚养权 民法典</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "解读法律内容",
+      "content": "<information>《中华人民共和国民法典》第三章婚姻家庭部分及相关司法解释规定：两周岁以下的子女一般随母方生活，但母方存在特殊情况无法抚养的除外。</information>根据检索结果可知，在哺乳期（一般为两周岁以下）内，法律一般倾向让子女随母亲生活。但仍然存在例外情况：如母亲无抚养能力、不利于子女健康成长等情况。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "结合实际情况分析",
+      "content": "根据法律内容可推测：哺乳期内子女通常归母方抚养，这是基于子女生理需求和母亲哺乳的便利性。如果父方有异议，需证明母方有不适合抚养子女的情况（如心理健康问题、经济困难）。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "根据《中华人民共和国民法典》的规定，哺乳期内的子女原则上由母方抚养，但若母方存在不能履行抚养义务的特殊情况（如无经济能力或抚养子女不利），则根据子女利益原则另作判断。"
+    },
+    {
+      "action": "Verification",
+      "content": "《民法典》及相关司法解释明确两周岁以下子女一般随母方生活的规定符合实际情况。上述结论经过查阅法律文本的支撑，因此符合法律逻辑和依据，无需进一步修改。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n哺乳期内子女抚养权归谁？\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n根据《中华人民共和国民法典》的规定，哺乳期内的子女原则上由母方抚养，但若母方存在不能履行抚养义务的特殊情况（如无经济能力或抚养子女不利），则根据子女利益原则另作判断。  \n</Model Response>  \n\n<Reference Answer>  \n虽然在实际生活中婴儿哺乳期因人而异，两周岁以下的子女一般随母方生活，司法实践中通常将“哺乳期内的子女”理解为两周岁以下的婴幼儿。父母离婚时，哺乳期内的子女一般随母方生活，但是母方有下列情形之一的，可以随父方生活：母方患有久治不愈的传染性疾病或其他严重疾病，子女不宜与其共同生活。母方有抚养条件不尽抚养义务，而父方要求子女随其生活的。因其他原因，子女确无法随母方生活的。如母亲的生活环境明显对子女抚养不利；母亲工作性质特殊，不便于抚养子女；或者母亲违法犯罪，不利于抚养子女等。父母双方协议两周岁以下的子女随父方生活，并对子女健康成长无不利影响的。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 确定问题背景\n该问题涉及哺乳期子女的抚养权归属，需要明确是否存在相关法律规定或司法解释。我国法律可能对哺乳期内子女的抚养归属权有明确规定，尤其考虑到子女的年龄和生理需求。需要查阅法律依据。\n\n### 查找相关法律依据\n需要确认我国与哺乳期子女抚养权归属相关的法律条款及其内容，例如《民法典》中关于父母责任及子女抚养的规定或其他司法解释。<search>哺乳期 子女 抚养权 民法典</search>\n\n### 解读法律内容\n<information>《中华人民共和国民法典》第三章婚姻家庭部分及相关司法解释规定：两周岁以下的子女一般随母方生活，但母方存在特殊情况无法抚养的除外。</information>根据检索结果可知，在哺乳期（一般为两周岁以下）内，法律一般倾向让子女随母亲生活。但仍然存在例外情况：如母亲无抚养能力、不利于子女健康成长等情况。\n\n### 结合实际情况分析\n根据法律内容可推测：哺乳期内子女通常归母方抚养，这是基于子女生理需求和母亲哺乳的便利性。如果父方有异议，需证明母方有不适合抚养子女的情况（如心理健康问题、经济困难）。\n\n### Conclusion\n根据《中华人民共和国民法典》的规定，哺乳期内的子女原则上由母方抚养，但若母方存在不能履行抚养义务的特殊情况（如无经济能力或抚养子女不利），则根据子女利益原则另作判断。\n\n### Verification\n《民法典》及相关司法解释明确两周岁以下子女一般随母方生活的规定符合实际情况。上述结论经过查阅法律文本的支撑，因此符合法律逻辑和依据，无需进一步修改。\n</Thought Process>\n\n<Question>\n哺乳期内子女抚养权归谁？\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n嗯，关于哺乳期子女的抚养权问题，貌似是一个很常见的法律问题。想一下，哺乳期这个阶段，通常是指孩子特别小的时候吧，大概两岁以下？所以，这个阶段可能和孩子的生理需求、母亲的照顾能力关系比较大。说到这里，我觉得法律上应该对这类情况有比较明确的规定，毕竟涉及到儿童的发育和生活问题，挺重要的。不如先查查相关的法律条文？\n\n<search>哺乳期 子女 抚养权 民法典</search>\n\n哦，我找到了相关内容。<information>根据《中华人民共和国民法典》第三章婚姻家庭部分及相关司法解释的规定，两周岁以下的子女一般是随母方生活，但也有例外情况，比如母亲如果没有抚养能力或者其他情况导致不适合抚养孩子。</information>这个规定直接提到了两岁以下子女抚养问题，确实能解释哺乳期的情况。法律优先考虑的是孩子的需求，母方的主导地位可能和哺乳的便利性有关，不过也给出了具体例外。\n\n所以，按照这个法律来看，一般情况下，哺乳期内的子女是归母亲抚养的。但如果父方认为母亲不适合，比如经济条件不好、健康状况不佳，这种情况下，有可能会做出特殊的安排。\n\n回过头来想想，这其实挺有道理的。两岁以内的孩子的确很需要母亲的照料，这个阶段的吃住和发育都受母亲影响很大，法律倾向于优先给母亲抚养权也是考虑到实际需要吧。不过，法律明确指出“特殊情况”除外，也就是说，只要父亲能够举证母方确实存在重大问题，比如心理健康、经济能力差或者对子女成长不利之类，法院可能会做出有利于孩子成长的其他判决。\n\n从整体上来讲，这个规定让我觉得既有普遍性，也比较灵活。它在保护孩子利益的前提下，还考虑到了现实可能存在的复杂情况。再从字面意思看，结论应该没错：一般情况下哺乳期内孩子会随母亲生活，但也有例外情况，这就要看是否存在阻碍母方抚养的特殊问题。这个结论逻辑上说得通，跟法律内容也对得上，应该没问题。\n</Internal Thinking>\n\n<Question>\n哺乳期内子女抚养权归谁？\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"确定问题背景\", \"content\": \"该问题涉及哺乳期子女的抚养权归属，需要明确是否存在相关法律规定或司法解释。我国法律可能对哺乳期内子女的抚养归属权有明确规定，尤其考虑到子女的年龄和生理需求。需要查阅法律依据。\"},\n    {\"action\": \"Inner Thinking\", \"title\": \"查找相关法律依据\", \"content\": \"需要确认我国与哺乳期子女抚养权归属相关的法律条款及其内容，例如《民法典》中关于父母责任及子女抚养的规定或其他司法解释。<search>哺乳期 子女 抚养权 民法典</search>\"},\n    {\"action\": \"Inner Thinking\", \"title\": \"解读法律内容\", \"content\": \"<information>《中华人民共和国民法典》第三章婚姻家庭部分及相关司法解释规定：两周岁以下的子女一般随母方生活，但母方存在特殊情况无法抚养的除外。</information>根据检索结果可知，在哺乳期（一般为两周岁以下）内，法律一般倾向让子女随母亲生活。但仍然存在例外情况：如母亲无抚养能力、不利于子女健康成长等情况。\"},\n    {\"action\": \"Inner Thinking\", \"title\": \"结合实际情况分析\", \"content\": \"根据法律内容可推测：哺乳期内子女通常归母方抚养，这是基于子女生理需求和母亲哺乳的便利性。如果父方有异议，需证明母方有不适合抚养子女的情况（如心理健康问题、经济困难）。\"},\n    {\"action\": \"Final Conclusion\", \"content\": \"根据《中华人民共和国民法典》的规定，哺乳期内的子女原则上由母方抚养，但若母方存在不能履行抚养义务的特殊情况（如无经济能力或抚养子女不利），则根据子女利益原则另作判断。\"},\n    {\"action\": \"Verification\", \"content\": \"《民法典》及相关司法解释明确两周岁以下子女一般随母方生活的规定符合实际情况。上述结论经过查阅法律文本的支撑，因此符合法律逻辑和依据，无需进一步修改。\"}\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"嗯，关于哺乳期子女的抚养权问题，貌似是一个很常见的法律问题。想一下，哺乳期这个阶段，通常是指孩子特别小的时候吧，大概两岁以下？所以，这个阶段可能和孩子的生理需求、母亲的照顾能力关系比较大。说到这里，我觉得法律上应该对这类情况有比较明确的规定，毕竟涉及到儿童的发育和生活问题，挺重要的。不如先查查相关的法律条文？\\n\\n<search>哺乳期 子女 抚养权 民法典</search>\\n\\n哦，我找到了相关内容。<information>根据《中华人民共和国民法典》第三章婚姻家庭部分及相关司法解释的规定，两周岁以下的子女一般是随母方生活，但也有例外情况，比如母亲如果没有抚养能力或者其他情况导致不适合抚养孩子。</information>这个规定直接提到了两岁以下子女抚养问题，确实能解释哺乳期的情况。法律优先考虑的是孩子的需求，母方的主导地位可能和哺乳的便利性有关，不过也给出了具体例外。\\n\\n所以，按照这个法律来看，一般情况下，哺乳期内的子女是归母亲抚养的。但如果父方认为母亲不适合，比如经济条件不好、健康状况不佳，这种情况下，有可能会做出特殊的安排。\\n\\n回过头来想想，这其实挺有道理的。两岁以内的孩子的确很需要母亲的照料，这个阶段的吃住和发育都受母亲影响很大，法律倾向于优先给母亲抚养权也是考虑到实际需要吧。不过，法律明确指出“特殊情况”除外，也就是说，只要父亲能够举证母方确实存在重大问题，比如心理健康、经济能力差或者对子女成长不利之类，法院可能会做出有利于孩子成长的其他判决。\\n\\n从整体上来讲，这个规定让我觉得既有普遍性，也比较灵活。它在保护孩子利益的前提下，还考虑到了现实可能存在的复杂情况。再从字面意思看，结论应该没错：一般情况下哺乳期内孩子会随母亲生活，但也有例外情况，这就要看是否存在阻碍母方抚养的特殊问题。这个结论逻辑上说得通，跟法律内容也对得上，应该没问题。\"\n}\n```",
+    "根据《中华人民共和国民法典》以及相关司法解释的规定，哺乳期内的子女抚养权通常归母亲所有。《民法典》第三章婚姻家庭部分明确指出，未满两周岁的子女一般随母方生活。这是因为哺乳期内的孩子在生理和心理上对母亲的照顾需求较高，法律优先考虑子女的健康和利益。\n\n但需要注意的是，这一规定并非绝对。如果母亲因健康问题、经济条件不佳或者其他特殊情况不适合抚养子女，父方可以通过举证来向法院申请子女的抚养权。法院会根据子女的最佳利益原则进行综合判断，例如父母双方的经济状况、抚养能力、对子女成长的影响等，并作出最终裁定。\n\n因此，通常情况下哺乳期内的子女由母亲抚养，但特殊情况下，根据具体情况也可能由父方获得抚养权。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "确定问题背景",
+        "content": "该问题涉及哺乳期子女的抚养权归属，需要明确是否存在相关法律规定或司法解释。我国法律可能对哺乳期内子女的抚养归属权有明确规定，尤其考虑到子女的年龄和生理需求。需要查阅法律依据。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "查找相关法律依据",
+        "content": "需要确认我国与哺乳期子女抚养权归属相关的法律条款及其内容，例如《民法典》中关于父母责任及子女抚养的规定或其他司法解释。<search>哺乳期 子女 抚养权 民法典</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "解读法律内容",
+        "content": "<information>《中华人民共和国民法典》第三章婚姻家庭部分及相关司法解释规定：两周岁以下的子女一般随母方生活，但母方存在特殊情况无法抚养的除外。</information>根据检索结果可知，在哺乳期（一般为两周岁以下）内，法律一般倾向让子女随母亲生活。但仍然存在例外情况：如母亲无抚养能力、不利于子女健康成长等情况。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "结合实际情况分析",
+        "content": "根据法律内容可推测：哺乳期内子女通常归母方抚养，这是基于子女生理需求和母亲哺乳的便利性。如果父方有异议，需证明母方有不适合抚养子女的情况（如心理健康问题、经济困难）。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "根据《中华人民共和国民法典》的规定，哺乳期内的子女原则上由母方抚养，但若母方存在不能履行抚养义务的特殊情况（如无经济能力或抚养子女不利），则根据子女利益原则另作判断。"
+      },
+      {
+        "action": "Verification",
+        "content": "《民法典》及相关司法解释明确两周岁以下子女一般随母方生活的规定符合实际情况。上述结论经过查阅法律文本的支撑，因此符合法律逻辑和依据，无需进一步修改。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "嗯，关于哺乳期子女的抚养权问题，貌似是一个很常见的法律问题。想一下，哺乳期这个阶段，通常是指孩子特别小的时候吧，大概两岁以下？所以，这个阶段可能和孩子的生理需求、母亲的照顾能力关系比较大。说到这里，我觉得法律上应该对这类情况有比较明确的规定，毕竟涉及到儿童的发育和生活问题，挺重要的。不如先查查相关的法律条文？\n\n<search>哺乳期 子女 抚养权 民法典</search>\n\n哦，我找到了相关内容。<information>根据《中华人民共和国民法典》第三章婚姻家庭部分及相关司法解释的规定，两周岁以下的子女一般是随母方生活，但也有例外情况，比如母亲如果没有抚养能力或者其他情况导致不适合抚养孩子。</information>这个规定直接提到了两岁以下子女抚养问题，确实能解释哺乳期的情况。法律优先考虑的是孩子的需求，母方的主导地位可能和哺乳的便利性有关，不过也给出了具体例外。\n\n所以，按照这个法律来看，一般情况下，哺乳期内的子女是归母亲抚养的。但如果父方认为母亲不适合，比如经济条件不好、健康状况不佳，这种情况下，有可能会做出特殊的安排。\n\n回过头来想想，这其实挺有道理的。两岁以内的孩子的确很需要母亲的照料，这个阶段的吃住和发育都受母亲影响很大，法律倾向于优先给母亲抚养权也是考虑到实际需要吧。不过，法律明确指出“特殊情况”除外，也就是说，只要父亲能够举证母方确实存在重大问题，比如心理健康、经济能力差或者对子女成长不利之类，法院可能会做出有利于孩子成长的其他判决。\n\n从整体上来讲，这个规定让我觉得既有普遍性，也比较灵活。它在保护孩子利益的前提下，还考虑到了现实可能存在的复杂情况。再从字面意思看，结论应该没错：一般情况下哺乳期内孩子会随母亲生活，但也有例外情况，这就要看是否存在阻碍母方抚养的特殊问题。这个结论逻辑上说得通，跟法律内容也对得上，应该没问题。",
+  "Response": "根据《中华人民共和国民法典》以及相关司法解释的规定，哺乳期内的子女抚养权通常归母亲所有。《民法典》第三章婚姻家庭部分明确指出，未满两周岁的子女一般随母方生活。这是因为哺乳期内的孩子在生理和心理上对母亲的照顾需求较高，法律优先考虑子女的健康和利益。\n\n但需要注意的是，这一规定并非绝对。如果母亲因健康问题、经济条件不佳或者其他特殊情况不适合抚养子女，父方可以通过举证来向法院申请子女的抚养权。法院会根据子女的最佳利益原则进行综合判断，例如父母双方的经济状况、抚养能力、对子女成长的影响等，并作出最终裁定。\n\n因此，通常情况下哺乳期内的子女由母亲抚养，但特殊情况下，根据具体情况也可能由父方获得抚养权。",
+  "Question": "哺乳期内子女抚养权归谁？"
+}

@@ -1,0 +1,87 @@
+{
+  "Open-ended Verifiable Question": "怎样确定民间借款合同的利息",
+  "Ground-True Answer": "1、民间借款合同的利息可由当事人约定，但是当事人约定的借款合同的利率不能超过合同成立时一年期贷款市场报价利率的四倍。如果超过的，超过部分属于高利贷，是不合法的。\n法律依据：《最高人民法院关于审理民间借贷案件适用法律若干问题的规定》第二十五条，出借人请求借款人按照合同约定利率支付利息的，人民法院应予支持，但是双方约定的利率超过合同成立时一年期贷款市场报价利率四倍的除外。第二十八条，借贷双方对逾期利率有约定的，从其约定，但是以不超过合同成立时一年期贷款市场报价利率四倍为限。《民法典》第六百八十条，禁止高利放贷，借款的利率不得违反国家有关规定。借款合同对支付利息没有约定的，视为没有利息。借款合同对支付利息约定不明确，当事人不能达成补充协议的，按照当地或者当事人的交易方式、交易习惯、市场利率等因素确定利息;自然人之间借款的，视为没有利息。",
+  "process_id": 5152,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "确定民间借款合同利息的法律依据",
+      "content": "为了判断民间借款合同的利息如何确定，需要查找相关法律依据，包括但不限于《民法典》和最高人民法院的司法解释。首先，我们需要明确是否有具体关于民间借贷利率的规定。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "查找民间借贷利率的规定",
+      "content": "需要检索相关法律和司法解释中关于合法利率范围的规定，尤其是是否有明确提及的最高利率上限。搜索关键词：<search>民间借贷利率规定</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "content": "根据搜索结果，最高人民法院发布的《最高人民法院关于审理民间借贷案件适用法律若干问题的规定（2020修订）》中明确指出，民间借贷利率不得超过一年期贷款市场报价利率（LPR）的四倍。这成为确定民间借贷利息是否合法的主要标准。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "结合具体合同条款确定利息",
+      "content": "根据借款合同中的约定利率，需判断其是否在上述法律限定范围内。如果合同无明确约定或约定不明，则依据《民法典》第680条处理，即视为没有利息的借款。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "民间借款合同的利息需优先依据合同约定履行；如果合同约定了利率，应确认其是否超出最高人民法院规定的合法利率上限（当前为1年期LPR的4倍）。若超出限额，则超出部分无效。如果合同未约定利率，则视为无息借款。"
+    },
+    {
+      "action": "Verification",
+      "content": "依据当前法律和司法解释的相关说明，最高利率限制和合同约定是判断民间借贷利息的核心原则，结论正确无误，可以确定。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n怎样确定民间借款合同的利息\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n民间借款合同的利息需优先依据合同约定履行；如果合同约定了利率，应确认其是否超出最高人民法院规定的合法利率上限（当前为1年期LPR的4倍）。若超出限额，则超出部分无效。如果合同未约定利率，则视为无息借款。  \n</Model Response>  \n\n<Reference Answer>  \n1、民间借款合同的利息可由当事人约定，但是当事人约定的借款合同的利率不能超过合同成立时一年期贷款市场报价利率的四倍。如果超过的，超过部分属于高利贷，是不合法的。\n法律依据：《最高人民法院关于审理民间借贷案件适用法律若干问题的规定》第二十五条，出借人请求借款人按照合同约定利率支付利息的，人民法院应予支持，但是双方约定的利率超过合同成立时一年期贷款市场报价利率四倍的除外。第二十八条，借贷双方对逾期利率有约定的，从其约定，但是以不超过合同成立时一年期贷款市场报价利率四倍为限。《民法典》第六百八十条，禁止高利放贷，借款的利率不得违反国家有关规定。借款合同对支付利息没有约定的，视为没有利息。借款合同对支付利息约定不明确，当事人不能达成补充协议的，按照当地或者当事人的交易方式、交易习惯、市场利率等因素确定利息;自然人之间借款的，视为没有利息。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 确定民间借款合同利息的法律依据\n为了判断民间借款合同的利息如何确定，需要查找相关法律依据，包括但不限于《民法典》和最高人民法院的司法解释。首先，我们需要明确是否有具体关于民间借贷利率的规定。\n\n### 查找民间借贷利率的规定\n需要检索相关法律和司法解释中关于合法利率范围的规定，尤其是是否有明确提及的最高利率上限。搜索关键词：<search>民间借贷利率规定</search>\n\n### Inner Thinking\n根据搜索结果，最高人民法院发布的《最高人民法院关于审理民间借贷案件适用法律若干问题的规定（2020修订）》中明确指出，民间借贷利率不得超过一年期贷款市场报价利率（LPR）的四倍。这成为确定民间借贷利息是否合法的主要标准。\n\n### 结合具体合同条款确定利息\n根据借款合同中的约定利率，需判断其是否在上述法律限定范围内。如果合同无明确约定或约定不明，则依据《民法典》第680条处理，即视为没有利息的借款。\n\n### Conclusion\n民间借款合同的利息需优先依据合同约定履行；如果合同约定了利率，应确认其是否超出最高人民法院规定的合法利率上限（当前为1年期LPR的4倍）。若超出限额，则超出部分无效。如果合同未约定利率，则视为无息借款。\n\n### Verification\n依据当前法律和司法解释的相关说明，最高利率限制和合同约定是判断民间借贷利息的核心原则，结论正确无误，可以确定。\n</Thought Process>\n\n<Question>\n怎样确定民间借款合同的利息\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n嗯，要搞清楚民间借款合同的利息怎么定，首先得看看相关的法律规定。毕竟合同上的利率不能随便写，有法律限制的。对了，《民法典》应该会有这个方面的内容，还有最高人民法院出的司法解释可能也有提到，这些文件应该是比较权威的，得好好查查。\n\n所以，我得搜索一下相关的信息，关键词可以用“民间借贷利率规定”。这个搜索应该能找到一些法律条文或者解释之类的——嗯，应该最好是最新的版本，不然可能会跟现行法律不一致。\n\n<search>民间借贷利率规定</search>\n\n哦，看到了有意思的内容。根据搜索结果，最高人民法院在2020年修订过一个司法解释，名字是《关于审理民间借贷案件适用法律若干问题的规定》。这里面明确讲到，民间借贷的利率不能超过一年期贷款市场报价利率（LPR）的四倍。现在LPR是一个动态的数值，这么看来，最高利率的界限也会跟着变动。这一点挺关键的，也就是说只要实际利率超过这个四倍的限额，超出部分就算是无效的。这就给判断利率合法性提供了一个清晰的标准。\n\n接下来，得看看合同里面是怎么写利率的。如果合同里有明确约定，比如直接写了个百分比利率，那就简单，对照法定的LPR四倍上限去比一下，如果超过了规定，那超出的部分肯定是无效的。如果没超过，那就可以按照合同约定利息来处理。这种情况应该是优先依据合同履行，法律上也支持这种做法。\n\n不过，假如合同里面没有约定利息又怎么办呢？嗯，得查一下《民法典》的相关条款……哦，有一个第680条的规定说了：如果借款合同没有约定利息或者约定得不清楚，那默认就是无息借款。这个听起来也挺合理，毕竟既然都没写清楚，那也不能随随便便补充利息进去。\n\n总结一下吧，合同里的利息主要看约定，按照约定优先执行。但是要注意，约定的利率不能超过法律规定的一年期LPR的四倍，超出的部分不合法。如果合同没写利息，那就是无息借款。这些都得基于现行的法律和司法解释，不能凭感觉来判定。\n\n嗯，如果从法律角度来看，这些应该是基准点了，感觉结论挺稳的，也和法律的精神一致。这样就差不多清楚民间借款合同利息的判断标准了。\n</Internal Thinking>\n\n<Question>\n怎样确定民间借款合同的利息\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"确定民间借款合同利息的法律依据\",\n      \"content\": \"为了判断民间借款合同的利息如何确定，需要查找相关法律依据，包括但不限于《民法典》和最高人民法院的司法解释。首先，我们需要明确是否有具体关于民间借贷利率的规定。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"查找民间借贷利率的规定\",\n      \"content\": \"需要检索相关法律和司法解释中关于合法利率范围的规定，尤其是是否有明确提及的最高利率上限。搜索关键词：<search>民间借贷利率规定</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"content\": \"根据搜索结果，最高人民法院发布的《最高人民法院关于审理民间借贷案件适用法律若干问题的规定（2020修订）》中明确指出，民间借贷利率不得超过一年期贷款市场报价利率（LPR）的四倍。这成为确定民间借贷利息是否合法的主要标准。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"结合具体合同条款确定利息\",\n      \"content\": \"根据借款合同中的约定利率，需判断其是否在上述法律限定范围内。如果合同无明确约定或约定不明，则依据《民法典》第680条处理，即视为没有利息的借款。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"民间借款合同的利息需优先依据合同约定履行；如果合同约定了利率，应确认其是否超出最高人民法院规定的合法利率上限（当前为1年期LPR的4倍）。若超出限额，则超出部分无效。如果合同未约定利率，则视为无息借款。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"依据当前法律和司法解释的相关说明，最高利率限制和合同约定是判断民间借贷利息的核心原则，结论正确无误，可以确定。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"嗯，要搞清楚民间借款合同的利息怎么定，首先得看看相关的法律规定。毕竟合同上的利率不能随便写，有法律限制的。对了，《民法典》应该会有这个方面的内容，还有最高人民法院出的司法解释可能也有提到，这些文件应该是比较权威的，得好好查查。\\n\\n所以，我得搜索一下相关的信息，关键词可以用“民间借贷利率规定”。这个搜索应该能找到一些法律条文或者解释之类的——嗯，应该最好是最新的版本，不然可能会跟现行法律不一致。\\n\\n<search>民间借贷利率规定</search>\\n\\n哦，看到了有意思的内容。根据搜索结果，最高人民法院在2020年修订过一个司法解释，名字是《关于审理民间借贷案件适用法律若干问题的规定》。这里面明确讲到，民间借贷的利率不能超过一年期贷款市场报价利率（LPR）的四倍。现在LPR是一个动态的数值，这么看来，最高利率的界限也会跟着变动。这一点挺关键的，也就是说只要实际利率超过这个四倍的限额，超出部分就算是无效的。这就给判断利率合法性提供了一个清晰的标准。\\n\\n接下来，得看看合同里面是怎么写利率的。如果合同里有明确约定，比如直接写了个百分比利率，那就简单，对照法定的LPR四倍上限去比一下，如果超过了规定，那超出的部分肯定是无效的。如果没超过，那就可以按照合同约定利息来处理。这种情况应该是优先依据合同履行，法律上也支持这种做法。\\n\\n不过，假如合同里面没有约定利息又怎么办呢？嗯，得查一下《民法典》的相关条款……哦，有一个第680条的规定说了：如果借款合同没有约定利息或者约定得不清楚，那默认就是无息借款。这个听起来也挺合理，毕竟既然都没写清楚，那也不能随随便便补充利息进去。\\n\\n总结一下吧，合同里的利息主要看约定，按照约定优先执行。但是要注意，约定的利率不能超过法律规定的一年期LPR的四倍，超出的部分不合法。如果合同没写利息，那就是无息借款。这些都得基于现行的法律和司法解释，不能凭感觉来判定。\\n\\n嗯，如果从法律角度来看，这些应该是基准点了，感觉结论挺稳的，也和法律的精神一致。这样就差不多清楚民间借款合同利息的判断标准了。\"\n}\n```",
+    "确定民间借款合同的利息需要依据我国相关法律和司法解释，主要可以从以下几个方面来判断：\n\n### 一、优先看合同约定\n1. **明确约定利息时**：如果借款合同中明确约定了利息，按照合同约定履行。但需注意，合同约定的利率不得超过法律规定的上限。\n   \n2. **利率上限（2020年司法解释规定）**：根据《最高人民法院关于审理民间借贷案件适用法律若干问题的规定》（2020年修订版），民间借贷利率不得超过年利率LPR（贷款市场报价利率）的四倍。LPR是动态调整的，需要结合借款合同签订或履行的时间计算当期的最高合法利率。超出这一限制的部分无效。\n\n### 二、合同未约定利息时\n如果借款合同中未明确约定利息，依据我国《民法典》第680条的规定，默认认为该借款为**无息借款**。此时，借款人只需归还本金，无需支付利息。\n\n### 三、利息约定不清楚时\n如果合同对利息的约定过于含糊、不明确，根据法律规定，也视为**无息借款**处理。\n\n### 四、实际给付利息超过法定上限时\n如果出借方收取的利息已经超过LPR四倍的限制，超出部分属于**违法所得**，借款人可以依法主张返还。\n\n### 小结\n民间借款合同中，利息的确定原则如下：\n1. 合同明确约定利息，则按约定执行，但利率不得超过LPR四倍。\n2. 合同未约定或约定不明确的，视为无息借款。\n3. 实际收取的超出合法利率部分无效，超额部分可请求返还。\n\n确保仔细核对合同内容，同时关注最新的LPR变动和司法解释，以准确判断合同利息的合法性和有效性。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "确定民间借款合同利息的法律依据",
+        "content": "为了判断民间借款合同的利息如何确定，需要查找相关法律依据，包括但不限于《民法典》和最高人民法院的司法解释。首先，我们需要明确是否有具体关于民间借贷利率的规定。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "查找民间借贷利率的规定",
+        "content": "需要检索相关法律和司法解释中关于合法利率范围的规定，尤其是是否有明确提及的最高利率上限。搜索关键词：<search>民间借贷利率规定</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "content": "根据搜索结果，最高人民法院发布的《最高人民法院关于审理民间借贷案件适用法律若干问题的规定（2020修订）》中明确指出，民间借贷利率不得超过一年期贷款市场报价利率（LPR）的四倍。这成为确定民间借贷利息是否合法的主要标准。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "结合具体合同条款确定利息",
+        "content": "根据借款合同中的约定利率，需判断其是否在上述法律限定范围内。如果合同无明确约定或约定不明，则依据《民法典》第680条处理，即视为没有利息的借款。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "民间借款合同的利息需优先依据合同约定履行；如果合同约定了利率，应确认其是否超出最高人民法院规定的合法利率上限（当前为1年期LPR的4倍）。若超出限额，则超出部分无效。如果合同未约定利率，则视为无息借款。"
+      },
+      {
+        "action": "Verification",
+        "content": "依据当前法律和司法解释的相关说明，最高利率限制和合同约定是判断民间借贷利息的核心原则，结论正确无误，可以确定。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "嗯，要搞清楚民间借款合同的利息怎么定，首先得看看相关的法律规定。毕竟合同上的利率不能随便写，有法律限制的。对了，《民法典》应该会有这个方面的内容，还有最高人民法院出的司法解释可能也有提到，这些文件应该是比较权威的，得好好查查。\n\n所以，我得搜索一下相关的信息，关键词可以用“民间借贷利率规定”。这个搜索应该能找到一些法律条文或者解释之类的——嗯，应该最好是最新的版本，不然可能会跟现行法律不一致。\n\n<search>民间借贷利率规定</search>\n\n哦，看到了有意思的内容。根据搜索结果，最高人民法院在2020年修订过一个司法解释，名字是《关于审理民间借贷案件适用法律若干问题的规定》。这里面明确讲到，民间借贷的利率不能超过一年期贷款市场报价利率（LPR）的四倍。现在LPR是一个动态的数值，这么看来，最高利率的界限也会跟着变动。这一点挺关键的，也就是说只要实际利率超过这个四倍的限额，超出部分就算是无效的。这就给判断利率合法性提供了一个清晰的标准。\n\n接下来，得看看合同里面是怎么写利率的。如果合同里有明确约定，比如直接写了个百分比利率，那就简单，对照法定的LPR四倍上限去比一下，如果超过了规定，那超出的部分肯定是无效的。如果没超过，那就可以按照合同约定利息来处理。这种情况应该是优先依据合同履行，法律上也支持这种做法。\n\n不过，假如合同里面没有约定利息又怎么办呢？嗯，得查一下《民法典》的相关条款……哦，有一个第680条的规定说了：如果借款合同没有约定利息或者约定得不清楚，那默认就是无息借款。这个听起来也挺合理，毕竟既然都没写清楚，那也不能随随便便补充利息进去。\n\n总结一下吧，合同里的利息主要看约定，按照约定优先执行。但是要注意，约定的利率不能超过法律规定的一年期LPR的四倍，超出的部分不合法。如果合同没写利息，那就是无息借款。这些都得基于现行的法律和司法解释，不能凭感觉来判定。\n\n嗯，如果从法律角度来看，这些应该是基准点了，感觉结论挺稳的，也和法律的精神一致。这样就差不多清楚民间借款合同利息的判断标准了。",
+  "Response": "确定民间借款合同的利息需要依据我国相关法律和司法解释，主要可以从以下几个方面来判断：\n\n### 一、优先看合同约定\n1. **明确约定利息时**：如果借款合同中明确约定了利息，按照合同约定履行。但需注意，合同约定的利率不得超过法律规定的上限。\n   \n2. **利率上限（2020年司法解释规定）**：根据《最高人民法院关于审理民间借贷案件适用法律若干问题的规定》（2020年修订版），民间借贷利率不得超过年利率LPR（贷款市场报价利率）的四倍。LPR是动态调整的，需要结合借款合同签订或履行的时间计算当期的最高合法利率。超出这一限制的部分无效。\n\n### 二、合同未约定利息时\n如果借款合同中未明确约定利息，依据我国《民法典》第680条的规定，默认认为该借款为**无息借款**。此时，借款人只需归还本金，无需支付利息。\n\n### 三、利息约定不清楚时\n如果合同对利息的约定过于含糊、不明确，根据法律规定，也视为**无息借款**处理。\n\n### 四、实际给付利息超过法定上限时\n如果出借方收取的利息已经超过LPR四倍的限制，超出部分属于**违法所得**，借款人可以依法主张返还。\n\n### 小结\n民间借款合同中，利息的确定原则如下：\n1. 合同明确约定利息，则按约定执行，但利率不得超过LPR四倍。\n2. 合同未约定或约定不明确的，视为无息借款。\n3. 实际收取的超出合法利率部分无效，超额部分可请求返还。\n\n确保仔细核对合同内容，同时关注最新的LPR变动和司法解释，以准确判断合同利息的合法性和有效性。",
+  "Question": "怎样确定民间借款合同的利息"
+}

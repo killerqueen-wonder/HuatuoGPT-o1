@@ -1,0 +1,99 @@
+{
+  "Open-ended Verifiable Question": "赡养人如何认定",
+  "Ground-True Answer": "按照法律规定赡养人是指老年人的子女以及其他依法负有赡养义务的人。而其他依法有赡养义务的人一般指子女已经死亡或子女无力赡养的老年人的孙子女、外孙子女。所以赡养人一般在老年人的子女或者孙子女、外孙子女中确定。",
+  "process_id": 1344,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "定义赡养人的法律框架",
+      "content": "赡养人的认定与中国法律中的家庭关系和义务密切相关，通常涉及《婚姻法》和《民法典》的相关规定，需要确认赡养义务的主体及法律依据。<search>民法典 赡养义务</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "搜索民法典中关于赡养义务的规定",
+      "content": "<information>《民法典》第1057条规定，成年子女对需要赡养的父母负有赡养、照料义务，包括提供经济资助、精神慰问等。</information>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "分析赡养人认定的条件",
+      "content": "根据《民法典》第1057条，赡养人通常需要满足以下条件：1.与受赡养人有父母与子女关系；2.成年子女；3.父母需要赡养。可以结合具体案例判断这些条件是否满足。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "补充其他相关法律及例外情况",
+      "content": "除了成年子女，还有可能存在特定的法律或协议规定其他亲属、继子女或抚养关系的延伸义务。确认是否有针对例外情况的补充规定。<search>赡养义务 特殊情形</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "搜索赡养义务的例外或特殊情形",
+      "content": "<information>继子女在法律规定或双方协议情况下，可能负赡养义务；特定情况下，社会救助机构也可介入赡养问题。</information>"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "赡养人一般由法律规定的主体认定，包括成年子女对需要赡养的父母负有义务；特殊情形下可涉及继子女或其他法定义务关系。具体条件包括父母需要赡养以及子女成年。补充协议或特殊情况需结合实际问题进一步判定。"
+    },
+    {
+      "action": "Verification",
+      "content": "以上结论基于《民法典》第1057条和相关法律解释，内容准确且符合法律规定，验证通过。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n赡养人如何认定\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n赡养人一般由法律规定的主体认定，包括成年子女对需要赡养的父母负有义务；特殊情形下可涉及继子女或其他法定义务关系。具体条件包括父母需要赡养以及子女成年。补充协议或特殊情况需结合实际问题进一步判定。  \n</Model Response>  \n\n<Reference Answer>  \n按照法律规定赡养人是指老年人的子女以及其他依法负有赡养义务的人。而其他依法有赡养义务的人一般指子女已经死亡或子女无力赡养的老年人的孙子女、外孙子女。所以赡养人一般在老年人的子女或者孙子女、外孙子女中确定。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 定义赡养人的法律框架\n赡养人的认定与中国法律中的家庭关系和义务密切相关，通常涉及《婚姻法》和《民法典》的相关规定，需要确认赡养义务的主体及法律依据。<search>民法典 赡养义务</search>\n\n### 搜索民法典中关于赡养义务的规定\n<information>《民法典》第1057条规定，成年子女对需要赡养的父母负有赡养、照料义务，包括提供经济资助、精神慰问等。</information>\n\n### 分析赡养人认定的条件\n根据《民法典》第1057条，赡养人通常需要满足以下条件：1.与受赡养人有父母与子女关系；2.成年子女；3.父母需要赡养。可以结合具体案例判断这些条件是否满足。\n\n### 补充其他相关法律及例外情况\n除了成年子女，还有可能存在特定的法律或协议规定其他亲属、继子女或抚养关系的延伸义务。确认是否有针对例外情况的补充规定。<search>赡养义务 特殊情形</search>\n\n### 搜索赡养义务的例外或特殊情形\n<information>继子女在法律规定或双方协议情况下，可能负赡养义务；特定情况下，社会救助机构也可介入赡养问题。</information>\n\n### Conclusion\n赡养人一般由法律规定的主体认定，包括成年子女对需要赡养的父母负有义务；特殊情形下可涉及继子女或其他法定义务关系。具体条件包括父母需要赡养以及子女成年。补充协议或特殊情况需结合实际问题进一步判定。\n\n### Verification\n以上结论基于《民法典》第1057条和相关法律解释，内容准确且符合法律规定，验证通过。\n</Thought Process>\n\n<Question>\n赡养人如何认定\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n赡养人的认定应该从法律定义出发，嗯，那就得先看中国的法律怎么规定。搜一下，赡养义务在《民法典》里怎么说。<search>民法典 赡养义务</search>\n\n哦，看到了，原来《民法典》第1057条有明确规定啊。它说成年子女对需要赡养的父母有赡养和照料的义务，包括提供经济支持和精神慰问。这么说，认定赡养人得先看是不是父母子女关系，还要是成年子女，同时父母确实需要赡养。\n\n但是好像还有一些特殊情况，嗯，比如继子女或者其他抚养关系的人是不是也需要承担赡养义务？我记得有时候法律会有些例外或者补充规定。搜一下这方面的信息，看看有没有解释。<search>赡养义务 特殊情形</search>\n\n找到啦，信息显示继子女在某些情况下，像法律特别规定或者双方达成协议，也可能要履行赡养义务。还有社会救助机构也可以介入赡养问题，比如实在没有人能够承担义务的时候。这就补充了一些例外情况。\n\n所以整体来说，赡养人通常是成年子女，这是法律明确规定的。认定的时候要看子女成年了没有、是不是跟父母有合法的血缘或者养育关系，然后确认父母确实需要赡养。当然，也要注意特殊情况，比如继子女或者社会救助的介入。每个具体的情况还得细看法律或者协议才能判定。\n\n嗯，整个逻辑应该是没有问题，因为这些内容都直接来自《民法典》第1057条，还有搜到的其他补充解释，可以确认这就是法律上的赡养人认定的框架。很清楚了！\n</Internal Thinking>\n\n<Question>\n赡养人如何认定\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"定义赡养人的法律框架\",\n      \"content\": \"赡养人的认定与中国法律中的家庭关系和义务密切相关，通常涉及《婚姻法》和《民法典》的相关规定，需要确认赡养义务的主体及法律依据。<search>民法典 赡养义务</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"搜索民法典中关于赡养义务的规定\",\n      \"content\": \"<information>《民法典》第1057条规定，成年子女对需要赡养的父母负有赡养、照料义务，包括提供经济资助、精神慰问等。</information>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析赡养人认定的条件\",\n      \"content\": \"根据《民法典》第1057条，赡养人通常需要满足以下条件：1.与受赡养人有父母与子女关系；2.成年子女；3.父母需要赡养。可以结合具体案例判断这些条件是否满足。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"补充其他相关法律及例外情况\",\n      \"content\": \"除了成年子女，还有可能存在特定的法律或协议规定其他亲属、继子女或抚养关系的延伸义务。确认是否有针对例外情况的补充规定。<search>赡养义务 特殊情形</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"搜索赡养义务的例外或特殊情形\",\n      \"content\": \"<information>继子女在法律规定或双方协议情况下，可能负赡养义务；特定情况下，社会救助机构也可介入赡养问题。</information>\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"赡养人一般由法律规定的主体认定，包括成年子女对需要赡养的父母负有义务；特殊情形下可涉及继子女或其他法定义务关系。具体条件包括父母需要赡养以及子女成年。补充协议或特殊情况需结合实际问题进一步判定。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"以上结论基于《民法典》第1057条和相关法律解释，内容准确且符合法律规定，验证通过。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"赡养人的认定应该从法律定义出发，嗯，那就得先看中国的法律怎么规定。搜一下，赡养义务在《民法典》里怎么说。<search>民法典 赡养义务</search>\\n\\n哦，看到了，原来《民法典》第1057条有明确规定啊。它说成年子女对需要赡养的父母有赡养和照料的义务，包括提供经济支持和精神慰问。这么说，认定赡养人得先看是不是父母子女关系，还要是成年子女，同时父母确实需要赡养。\\n\\n但是好像还有一些特殊情况，嗯，比如继子女或者其他抚养关系的人是不是也需要承担赡养义务？我记得有时候法律会有些例外或者补充规定。搜一下这方面的信息，看看有没有解释。<search>赡养义务 特殊情形</search>\\n\\n找到啦，信息显示继子女在某些情况下，像法律特别规定或者双方达成协议，也可能要履行赡养义务。还有社会救助机构也可以介入赡养问题，比如实在没有人能够承担义务的时候。这就补充了一些例外情况。\\n\\n所以整体来说，赡养人通常是成年子女，这是法律明确规定的。认定的时候要看子女成年了没有、是不是跟父母有合法的血缘或者养育关系，然后确认父母确实需要赡养。当然，也要注意特殊情况，比如继子女或者社会救助的介入。每个具体的情况还得细看法律或者协议才能判定。\\n\\n嗯，整个逻辑应该是没有问题，因为这些内容都直接来自《民法典》第1057条，还有搜到的其他补充解释，可以确认这就是法律上的赡养人认定的框架。很清楚了！\"\n}\n```",
+    "根据中国《民法典》第1057条的规定，赡养人一般是指成年子女，因其对需要赡养的父母负有法定义务。这种赡养义务包括经济支持和精神慰藉。因此，赡养人的认定首先需满足以下几个要件：\n\n1. **存在父母与子女之间的法定亲缘或法律关系**：包括亲生父母子女、养父母养子女、继父母与已形成抚养教育关系的继子女等。\n\n2. **成年子女**：只有达到法定成年年龄（年满18周岁）的子女才会被认定为赡养人。\n\n3. **父母处于需要赡养的状态**：通常指父母因年老、患病或其他特殊原因失去劳动能力或生活来源，需要物质和精神上的支持。\n\n同时，《民法典》还规定，若继子女与继父母之间形成了稳定的抚养教育关系，则继子女也需履行赡养义务。此外，《民法典》还包含了对特殊情况的补充规定，如确无合适赡养义务人时，社会救助机构可能提供必要支持。\n\n综上，赡养人的认定需结合亲缘或法律关系、子女成年状态以及父母的实际需求，同时兼顾特殊关系和具体情况。具体案件中可能需依据法律、协议或判例进行进一步判断。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "定义赡养人的法律框架",
+        "content": "赡养人的认定与中国法律中的家庭关系和义务密切相关，通常涉及《婚姻法》和《民法典》的相关规定，需要确认赡养义务的主体及法律依据。<search>民法典 赡养义务</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "搜索民法典中关于赡养义务的规定",
+        "content": "<information>《民法典》第1057条规定，成年子女对需要赡养的父母负有赡养、照料义务，包括提供经济资助、精神慰问等。</information>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "分析赡养人认定的条件",
+        "content": "根据《民法典》第1057条，赡养人通常需要满足以下条件：1.与受赡养人有父母与子女关系；2.成年子女；3.父母需要赡养。可以结合具体案例判断这些条件是否满足。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "补充其他相关法律及例外情况",
+        "content": "除了成年子女，还有可能存在特定的法律或协议规定其他亲属、继子女或抚养关系的延伸义务。确认是否有针对例外情况的补充规定。<search>赡养义务 特殊情形</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "搜索赡养义务的例外或特殊情形",
+        "content": "<information>继子女在法律规定或双方协议情况下，可能负赡养义务；特定情况下，社会救助机构也可介入赡养问题。</information>"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "赡养人一般由法律规定的主体认定，包括成年子女对需要赡养的父母负有义务；特殊情形下可涉及继子女或其他法定义务关系。具体条件包括父母需要赡养以及子女成年。补充协议或特殊情况需结合实际问题进一步判定。"
+      },
+      {
+        "action": "Verification",
+        "content": "以上结论基于《民法典》第1057条和相关法律解释，内容准确且符合法律规定，验证通过。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "赡养人的认定应该从法律定义出发，嗯，那就得先看中国的法律怎么规定。搜一下，赡养义务在《民法典》里怎么说。<search>民法典 赡养义务</search>\n\n哦，看到了，原来《民法典》第1057条有明确规定啊。它说成年子女对需要赡养的父母有赡养和照料的义务，包括提供经济支持和精神慰问。这么说，认定赡养人得先看是不是父母子女关系，还要是成年子女，同时父母确实需要赡养。\n\n但是好像还有一些特殊情况，嗯，比如继子女或者其他抚养关系的人是不是也需要承担赡养义务？我记得有时候法律会有些例外或者补充规定。搜一下这方面的信息，看看有没有解释。<search>赡养义务 特殊情形</search>\n\n找到啦，信息显示继子女在某些情况下，像法律特别规定或者双方达成协议，也可能要履行赡养义务。还有社会救助机构也可以介入赡养问题，比如实在没有人能够承担义务的时候。这就补充了一些例外情况。\n\n所以整体来说，赡养人通常是成年子女，这是法律明确规定的。认定的时候要看子女成年了没有、是不是跟父母有合法的血缘或者养育关系，然后确认父母确实需要赡养。当然，也要注意特殊情况，比如继子女或者社会救助的介入。每个具体的情况还得细看法律或者协议才能判定。\n\n嗯，整个逻辑应该是没有问题，因为这些内容都直接来自《民法典》第1057条，还有搜到的其他补充解释，可以确认这就是法律上的赡养人认定的框架。很清楚了！",
+  "Response": "根据中国《民法典》第1057条的规定，赡养人一般是指成年子女，因其对需要赡养的父母负有法定义务。这种赡养义务包括经济支持和精神慰藉。因此，赡养人的认定首先需满足以下几个要件：\n\n1. **存在父母与子女之间的法定亲缘或法律关系**：包括亲生父母子女、养父母养子女、继父母与已形成抚养教育关系的继子女等。\n\n2. **成年子女**：只有达到法定成年年龄（年满18周岁）的子女才会被认定为赡养人。\n\n3. **父母处于需要赡养的状态**：通常指父母因年老、患病或其他特殊原因失去劳动能力或生活来源，需要物质和精神上的支持。\n\n同时，《民法典》还规定，若继子女与继父母之间形成了稳定的抚养教育关系，则继子女也需履行赡养义务。此外，《民法典》还包含了对特殊情况的补充规定，如确无合适赡养义务人时，社会救助机构可能提供必要支持。\n\n综上，赡养人的认定需结合亲缘或法律关系、子女成年状态以及父母的实际需求，同时兼顾特殊关系和具体情况。具体案件中可能需依据法律、协议或判例进行进一步判断。",
+  "Question": "赡养人如何认定"
+}

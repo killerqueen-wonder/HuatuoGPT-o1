@@ -1,0 +1,89 @@
+{
+  "Open-ended Verifiable Question": "什么是汇票的追索权？",
+  "Ground-True Answer": "汇票到期被拒绝付款的，持票人可以对背书人、出票人以及汇票的其他债务人行使追索权。汇票到期日前，有下列情形之一的，持票人也可以行使追索权：\n（一）汇票被拒绝承兑的；\n（二）承兑人或者付款人死亡、逃匿的；\n（三）承兑人或者付款人被依法宣告破产的或者因违法被责令终止业务活动的。\n持票人行使追索权时，应当提供被拒绝承兑或者被拒绝付款的有关证明。持票人提示承兑或者提示付款被拒绝的，承兑人或者付款人必须出具拒绝证明，或者出具退票理由书。未出具拒绝证明或者退票理由书的，应当承担由此产生的民事责任。",
+  "process_id": 9323,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "分析问题定义",
+      "content": "汇票是一种金融工具，涉及出票人、承兑人以及背书人等主体。'追索权'与汇票的法律责任相关，可能涉及债务人未履行债务时其他主体对该工具的要求权。我需要明确'追索权'的具体法律定义。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "查找有关汇票追索权的法律定义",
+      "content": "<search>汇票追索权</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "汇票追索权的法律信息检索",
+      "content": "<information>追索权是票据持有人（通常为受票人或物权占有人）在汇票发生拒绝承兑或拒绝付款等情况下，根据票据法规定，向出票人、背书人或其他义务人请求支付票据金额及相关费用的权利。此权利是确保汇票持有人权益的重要法律保障措施。</information>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "整理定义并讨论场景",
+      "content": "追索权的行使通常发生在汇票到期拒绝承兑或被持票人拒绝支付的情况下。持票人可以依据票据法向出票人及其他背书人要求补偿票据金额及费用。必须明确，适用的主体和权利范围由票据法规所规定。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "汇票的追索权是票据持有人在汇票被拒绝承兑或者拒绝付款时，依照法律规定向出票人、背书人或其他义务人追讨票据金额及相关费用的权利。这为票据持有人提供了法律保障，确保其权益在债务人无法履行付款义务时能够得到维护。"
+    },
+    {
+      "action": "Verification",
+      "content": "结论正确。基于票据法的规定，追索权的法律定义与实际适用均已依据检索结果充分确认。流程结束。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n什么是汇票的追索权？\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n汇票的追索权是票据持有人在汇票被拒绝承兑或者拒绝付款时，依照法律规定向出票人、背书人或其他义务人追讨票据金额及相关费用的权利。这为票据持有人提供了法律保障，确保其权益在债务人无法履行付款义务时能够得到维护。  \n</Model Response>  \n\n<Reference Answer>  \n汇票到期被拒绝付款的，持票人可以对背书人、出票人以及汇票的其他债务人行使追索权。汇票到期日前，有下列情形之一的，持票人也可以行使追索权：\n（一）汇票被拒绝承兑的；\n（二）承兑人或者付款人死亡、逃匿的；\n（三）承兑人或者付款人被依法宣告破产的或者因违法被责令终止业务活动的。\n持票人行使追索权时，应当提供被拒绝承兑或者被拒绝付款的有关证明。持票人提示承兑或者提示付款被拒绝的，承兑人或者付款人必须出具拒绝证明，或者出具退票理由书。未出具拒绝证明或者退票理由书的，应当承担由此产生的民事责任。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 分析问题定义\n汇票是一种金融工具，涉及出票人、承兑人以及背书人等主体。'追索权'与汇票的法律责任相关，可能涉及债务人未履行债务时其他主体对该工具的要求权。我需要明确'追索权'的具体法律定义。\n\n### 查找有关汇票追索权的法律定义\n<search>汇票追索权</search>\n\n### 汇票追索权的法律信息检索\n<information>追索权是票据持有人（通常为受票人或物权占有人）在汇票发生拒绝承兑或拒绝付款等情况下，根据票据法规定，向出票人、背书人或其他义务人请求支付票据金额及相关费用的权利。此权利是确保汇票持有人权益的重要法律保障措施。</information>\n\n### 整理定义并讨论场景\n追索权的行使通常发生在汇票到期拒绝承兑或被持票人拒绝支付的情况下。持票人可以依据票据法向出票人及其他背书人要求补偿票据金额及费用。必须明确，适用的主体和权利范围由票据法规所规定。\n\n### Conclusion\n汇票的追索权是票据持有人在汇票被拒绝承兑或者拒绝付款时，依照法律规定向出票人、背书人或其他义务人追讨票据金额及相关费用的权利。这为票据持有人提供了法律保障，确保其权益在债务人无法履行付款义务时能够得到维护。\n\n### Verification\n结论正确。基于票据法的规定，追索权的法律定义与实际适用均已依据检索结果充分确认。流程结束。\n</Thought Process>\n\n<Question>\n什么是汇票的追索权？\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n好，来看一下问题，什么是汇票的追索权？这个概念好像跟金融和法律都挺相关的，应该是某种权利。我记得汇票是金融工具，涉及到好几个主体，比如出票人、承兑人、还有背书人。这种权利可能跟汇票无法支付或者法律上的责任相关。嗯，我需要搞清楚具体什么是追索权。\n\n让我先查一下，输入关键词“汇票追索权”。<search>汇票追索权</search>\n\n现在看看能找到什么定义或相关法律解释。找到了！<information>追索权是票据持有人（通常为受票人或物权占有人）在汇票发生拒绝承兑或拒绝付款等情况下，根据票据法规定，向出票人、背书人或其他义务人请求支付票据金额及相关费用的权利。此权利是确保汇票持有人权益的重要法律保障措施。</information>\n\n哦，这样啊！从定义看，追索权是票据持有人在一些特定情况，比如汇票被拒绝承兑或者拒绝支付的时候，可以根据票据法向相关的责任人（像是出票人或背书人）要求支付汇票金额和一些额外费用的一种权利。这个权利是为了保护持票人的利益，挺重要的。\n\n还要考虑一下应用场景，比如什么情况下会行使追索权呢？这应该是汇票上写的金额到期了，但债务人（比如持票人）没支付或者拒绝支付的时候吧。这时候持票人就能依照法律向别人比如出票人或背书人要钱。哦，还有一点，法律应该规定了追索权具体能向哪些主体追讨以及可以追多少金额，这个范围好像得跟票据法直接挂钩。\n\n总结一下吧。汇票的追索权就是作为一种法律保障，确保汇票持有人在碰上拒绝承兑或拒绝付款的情况下，可以依法向出票人、背书人或者其他义务人追讨票据金额及相关成本的权利。这个过程是为了维护持票人的合法权益，特别是债务人已经无法履行承诺时。\n\n嗯，看起来这个定义没问题，逻辑也清楚，引用的法律定义都很明确，适用场景也合理。这样可以确定问题的答案了。\n</Internal Thinking>\n\n<Question>\n什么是汇票的追索权？\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析问题定义\",\n      \"content\": \"汇票是一种金融工具，涉及出票人、承兑人以及背书人等主体。'追索权'与汇票的法律责任相关，可能涉及债务人未履行债务时其他主体对该工具的要求权。我需要明确'追索权'的具体法律定义。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"查找有关汇票追索权的法律定义\",\n      \"content\": \"<search>汇票追索权</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"汇票追索权的法律信息检索\",\n      \"content\": \"<information>追索权是票据持有人（通常为受票人或物权占有人）在汇票发生拒绝承兑或拒绝付款等情况下，根据票据法规定，向出票人、背书人或其他义务人请求支付票据金额及相关费用的权利。此权利是确保汇票持有人权益的重要法律保障措施。</information>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"整理定义并讨论场景\",\n      \"content\": \"追索权的行使通常发生在汇票到期拒绝承兑或被持票人拒绝支付的情况下。持票人可以依据票据法向出票人及其他背书人要求补偿票据金额及费用。必须明确，适用的主体和权利范围由票据法规所规定。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"汇票的追索权是票据持有人在汇票被拒绝承兑或者拒绝付款时，依照法律规定向出票人、背书人或其他义务人追讨票据金额及相关费用的权利。这为票据持有人提供了法律保障，确保其权益在债务人无法履行付款义务时能够得到维护。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"结论正确。基于票据法的规定，追索权的法律定义与实际适用均已依据检索结果充分确认。流程结束。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"好，来看一下问题，什么是汇票的追索权？这个概念好像跟金融和法律都挺相关的，应该是某种权利。我记得汇票是金融工具，涉及到好几个主体，比如出票人、承兑人、还有背书人。这种权利可能跟汇票无法支付或者法律上的责任相关。嗯，我需要搞清楚具体什么是追索权。\\n\\n让我先查一下，输入关键词“汇票追索权”。<search>汇票追索权</search>\\n\\n现在看看能找到什么定义或相关法律解释。找到了！<information>追索权是票据持有人（通常为受票人或物权占有人）在汇票发生拒绝承兑或拒绝付款等情况下，根据票据法规定，向出票人、背书人或其他义务人请求支付票据金额及相关费用的权利。此权利是确保汇票持有人权益的重要法律保障措施。</information>\\n\\n哦，这样啊！从定义看，追索权是票据持有人在一些特定情况，比如汇票被拒绝承兑或者拒绝支付的时候，可以根据票据法向相关的责任人（像是出票人或背书人）要求支付汇票金额和一些额外费用的一种权利。这个权利是为了保护持票人的利益，挺重要的。\\n\\n还要考虑一下应用场景，比如什么情况下会行使追索权呢？这应该是汇票上写的金额到期了，但债务人（比如持票人）没支付或者拒绝支付的时候吧。这时候持票人就能依照法律向别人比如出票人或背书人要钱。哦，还有一点，法律应该规定了追索权具体能向哪些主体追讨以及可以追多少金额，这个范围好像得跟票据法直接挂钩。\\n\\n总结一下吧。汇票的追索权就是作为一种法律保障，确保汇票持有人在碰上拒绝承兑或拒绝付款的情况下，可以依法向出票人、背书人或者其他义务人追讨票据金额及相关成本的权利。这个过程是为了维护持票人的合法权益，特别是债务人已经无法履行承诺时。\\n\\n嗯，看起来这个定义没问题，逻辑也清楚，引用的法律定义都很明确，适用场景也合理。这样可以确定问题的答案了。\"\n}\n```",
+    "汇票的追索权是指当汇票发生拒绝承兑或拒绝付款的情况时，票据持有人（通常为受票人或物权占有人）依法向出票人、背书人以及其他义务人追讨汇票金额及相关费用的权利。这是一项由票据法规定的重要法律保障措施，旨在保护汇票持有人的权益。\n\n具体来说，当汇票到期后，如果承兑人或付款人拒绝支付汇票金额，持票人可以依据法律要求与此票据相关的责任方（如出票人、背书人等）承担支付义务。此外，追索权不仅可以用于追讨票据金额，还可以包括因追偿行为而发生的相关费用，例如利息、律师费等。这一权利的行使通常以汇票被拒付为前提，并在票据法规定的追索期限内实施。\n\n汇票的追索权是维护汇票交易安全和确保金融秩序的重要机制，特别是在票据流转中因信用问题导致支付风险时，追索权为持票人提供了法律保护。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "分析问题定义",
+        "content": "汇票是一种金融工具，涉及出票人、承兑人以及背书人等主体。'追索权'与汇票的法律责任相关，可能涉及债务人未履行债务时其他主体对该工具的要求权。我需要明确'追索权'的具体法律定义。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "查找有关汇票追索权的法律定义",
+        "content": "<search>汇票追索权</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "汇票追索权的法律信息检索",
+        "content": "<information>追索权是票据持有人（通常为受票人或物权占有人）在汇票发生拒绝承兑或拒绝付款等情况下，根据票据法规定，向出票人、背书人或其他义务人请求支付票据金额及相关费用的权利。此权利是确保汇票持有人权益的重要法律保障措施。</information>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "整理定义并讨论场景",
+        "content": "追索权的行使通常发生在汇票到期拒绝承兑或被持票人拒绝支付的情况下。持票人可以依据票据法向出票人及其他背书人要求补偿票据金额及费用。必须明确，适用的主体和权利范围由票据法规所规定。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "汇票的追索权是票据持有人在汇票被拒绝承兑或者拒绝付款时，依照法律规定向出票人、背书人或其他义务人追讨票据金额及相关费用的权利。这为票据持有人提供了法律保障，确保其权益在债务人无法履行付款义务时能够得到维护。"
+      },
+      {
+        "action": "Verification",
+        "content": "结论正确。基于票据法的规定，追索权的法律定义与实际适用均已依据检索结果充分确认。流程结束。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "好，来看一下问题，什么是汇票的追索权？这个概念好像跟金融和法律都挺相关的，应该是某种权利。我记得汇票是金融工具，涉及到好几个主体，比如出票人、承兑人、还有背书人。这种权利可能跟汇票无法支付或者法律上的责任相关。嗯，我需要搞清楚具体什么是追索权。\n\n让我先查一下，输入关键词“汇票追索权”。<search>汇票追索权</search>\n\n现在看看能找到什么定义或相关法律解释。找到了！<information>追索权是票据持有人（通常为受票人或物权占有人）在汇票发生拒绝承兑或拒绝付款等情况下，根据票据法规定，向出票人、背书人或其他义务人请求支付票据金额及相关费用的权利。此权利是确保汇票持有人权益的重要法律保障措施。</information>\n\n哦，这样啊！从定义看，追索权是票据持有人在一些特定情况，比如汇票被拒绝承兑或者拒绝支付的时候，可以根据票据法向相关的责任人（像是出票人或背书人）要求支付汇票金额和一些额外费用的一种权利。这个权利是为了保护持票人的利益，挺重要的。\n\n还要考虑一下应用场景，比如什么情况下会行使追索权呢？这应该是汇票上写的金额到期了，但债务人（比如持票人）没支付或者拒绝支付的时候吧。这时候持票人就能依照法律向别人比如出票人或背书人要钱。哦，还有一点，法律应该规定了追索权具体能向哪些主体追讨以及可以追多少金额，这个范围好像得跟票据法直接挂钩。\n\n总结一下吧。汇票的追索权就是作为一种法律保障，确保汇票持有人在碰上拒绝承兑或拒绝付款的情况下，可以依法向出票人、背书人或者其他义务人追讨票据金额及相关成本的权利。这个过程是为了维护持票人的合法权益，特别是债务人已经无法履行承诺时。\n\n嗯，看起来这个定义没问题，逻辑也清楚，引用的法律定义都很明确，适用场景也合理。这样可以确定问题的答案了。",
+  "Response": "汇票的追索权是指当汇票发生拒绝承兑或拒绝付款的情况时，票据持有人（通常为受票人或物权占有人）依法向出票人、背书人以及其他义务人追讨汇票金额及相关费用的权利。这是一项由票据法规定的重要法律保障措施，旨在保护汇票持有人的权益。\n\n具体来说，当汇票到期后，如果承兑人或付款人拒绝支付汇票金额，持票人可以依据法律要求与此票据相关的责任方（如出票人、背书人等）承担支付义务。此外，追索权不仅可以用于追讨票据金额，还可以包括因追偿行为而发生的相关费用，例如利息、律师费等。这一权利的行使通常以汇票被拒付为前提，并在票据法规定的追索期限内实施。\n\n汇票的追索权是维护汇票交易安全和确保金融秩序的重要机制，特别是在票据流转中因信用问题导致支付风险时，追索权为持票人提供了法律保护。",
+  "Question": "什么是汇票的追索权？"
+}

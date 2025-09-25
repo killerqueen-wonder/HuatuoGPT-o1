@@ -1,0 +1,99 @@
+{
+  "Open-ended Verifiable Question": "什么是自建房屋?",
+  "Ground-True Answer": "严格地讲，“自建房”并不是一个法律概念，实践中是指拥有土地使用权的单位或个人，为满足自己的生产生活需要，自己组织并通过雇佣他人施工而建造的房屋和建筑，具备自建、自住、自管特征，一般可以分为居民自建房和农民自建房。\n自建房是否能够拥有合法的产权，要看其是否履行了规划和审批手续，对于未取得规划和审批手续建设的房屋，应属于违法建设。",
+  "process_id": 7571,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "明确问题背景",
+      "content": "自建房屋指的是个人或家庭在自己拥有土地的基础上，根据需求建设的非商业性住宅，通常用于自住或兼具其他用途。这种房屋与开发商建设的商品房不同，自建房屋的产权归个人或家庭所有。为了确认定义是否全面，需要考虑其法律和地域的具体限制。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "确认法律定义",
+      "content": "法律对于自建房可能有特定的定义和要求，比如是否需要土地使用证与建设许可。为了确保论述规范，需要查阅相关法律法规以确认其定义。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "搜索关键词",
+      "content": "<search>自建房法律定义</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "分析搜索结果",
+      "content": "<information>根据法律规定，自建房屋通常涉及农村或特定区域建设个人住宅，需符合土地使用权证、规划许可证以及建设许可证等要求，并不得违反相关土地用途或建筑规定。</information>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "法律角度补充说明",
+      "content": "自建房一般限定在有土地使用权的情况下建造，其中农村地区的住宅更为常见。自建房需经过政府审批，违章建筑可能面临拆除或罚款的风险。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "自建房屋是指个人或家庭在拥有土地使用权的前提下，自行筹划建造的房屋，主要用于自住或满足其他个人需求。与商品房不同，自建房产权归私人所有。其建设需符合国家和地方相关法律法规，包括土地使用权证、规划许可和建设许可，且不得超越土地用途或违反建筑规划要求。"
+    },
+    {
+      "action": "Verification",
+      "content": "结论符合国家和地方法律对自建房的规定，内容完整、准确，无需修改。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n什么是自建房屋?\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n自建房屋是指个人或家庭在拥有土地使用权的前提下，自行筹划建造的房屋，主要用于自住或满足其他个人需求。与商品房不同，自建房产权归私人所有。其建设需符合国家和地方相关法律法规，包括土地使用权证、规划许可和建设许可，且不得超越土地用途或违反建筑规划要求。  \n</Model Response>  \n\n<Reference Answer>  \n严格地讲，“自建房”并不是一个法律概念，实践中是指拥有土地使用权的单位或个人，为满足自己的生产生活需要，自己组织并通过雇佣他人施工而建造的房屋和建筑，具备自建、自住、自管特征，一般可以分为居民自建房和农民自建房。\n自建房是否能够拥有合法的产权，要看其是否履行了规划和审批手续，对于未取得规划和审批手续建设的房屋，应属于违法建设。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 明确问题背景\n自建房屋指的是个人或家庭在自己拥有土地的基础上，根据需求建设的非商业性住宅，通常用于自住或兼具其他用途。这种房屋与开发商建设的商品房不同，自建房屋的产权归个人或家庭所有。为了确认定义是否全面，需要考虑其法律和地域的具体限制。\n\n### 确认法律定义\n法律对于自建房可能有特定的定义和要求，比如是否需要土地使用证与建设许可。为了确保论述规范，需要查阅相关法律法规以确认其定义。\n\n### 搜索关键词\n<search>自建房法律定义</search>\n\n### 分析搜索结果\n<information>根据法律规定，自建房屋通常涉及农村或特定区域建设个人住宅，需符合土地使用权证、规划许可证以及建设许可证等要求，并不得违反相关土地用途或建筑规定。</information>\n\n### 法律角度补充说明\n自建房一般限定在有土地使用权的情况下建造，其中农村地区的住宅更为常见。自建房需经过政府审批，违章建筑可能面临拆除或罚款的风险。\n\n### Conclusion\n自建房屋是指个人或家庭在拥有土地使用权的前提下，自行筹划建造的房屋，主要用于自住或满足其他个人需求。与商品房不同，自建房产权归私人所有。其建设需符合国家和地方相关法律法规，包括土地使用权证、规划许可和建设许可，且不得超越土地用途或违反建筑规划要求。\n\n### Verification\n结论符合国家和地方法律对自建房的规定，内容完整、准确，无需修改。\n</Thought Process>\n\n<Question>\n什么是自建房屋?\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n嗯，先来想一下什么是自建房。自建房这个概念听起来是指自己盖的房子，不过这里应该不仅仅是随便想盖就盖吧，大概还和土地所有权或者使用权有关，和法律也脱不了关系。毕竟，无论是农村还是城市，土地本身都是受国家管理的，规则总得遵守。\n\n好，那我先查一下自建房的法律定义，看看官方是怎么说的。搜索关键词就用“自建房法律定义”吧。\n\n<search>自建房法律定义</search>\n\n找到了一些信息，这里是核心内容：法律上，自建房通常是个人或者家庭在自己拥有的土地上建设的房屋。而且呢，这种建设不是随意的，通常需要符合土地使用权证、规划许可证，还有建设许可证的要求。特别是在农村，自建房会更常见，但即便是农村也不能乱建，如果没有审批或者违反规定，可能会被认定为违章建筑，要么拆除，要么罚款。\n\n哦，这就是说，自建房的前提条件之一就是你得有土地的合法使用权。而且在建房之前，还需要经过相关部门的审批，确保土地用途和建筑规划都没有问题。其实也能理解，国家对土地和建筑有严格管理，避免乱建乱占。\n\n嗯，那再总结一下。所谓自建房，是指个人或家庭在合法拥有土地使用权的基础上，自己设计、筹建的非商业性房屋，主要是为了自住或满足一些个性化需求。和商品房不一样，它没有开发商参与，产权直接属于个人。不过这些房子必须符合国家以及地方的相关法律，比如要有土地使用证、建设许可等等，如果违反，比如土地用途不对，那就会涉及一些法律风险。\n\n这样看来，定义似乎没问题，和查到的法律规定也一致。总之，法律合规、自行建造、产权自有这几个关键词是绕不过去的。整个逻辑也挺清晰，没遗漏重要环节，感觉就这么定下来吧。\n</Internal Thinking>\n\n<Question>\n什么是自建房屋?\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"明确问题背景\",\n      \"content\": \"自建房屋指的是个人或家庭在自己拥有土地的基础上，根据需求建设的非商业性住宅，通常用于自住或兼具其他用途。这种房屋与开发商建设的商品房不同，自建房屋的产权归个人或家庭所有。为了确认定义是否全面，需要考虑其法律和地域的具体限制。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"确认法律定义\",\n      \"content\": \"法律对于自建房可能有特定的定义和要求，比如是否需要土地使用证与建设许可。为了确保论述规范，需要查阅相关法律法规以确认其定义。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"搜索关键词\",\n      \"content\": \"<search>自建房法律定义</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析搜索结果\",\n      \"content\": \"<information>根据法律规定，自建房屋通常涉及农村或特定区域建设个人住宅，需符合土地使用权证、规划许可证以及建设许可证等要求，并不得违反相关土地用途或建筑规定。</information>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"法律角度补充说明\",\n      \"content\": \"自建房一般限定在有土地使用权的情况下建造，其中农村地区的住宅更为常见。自建房需经过政府审批，违章建筑可能面临拆除或罚款的风险。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"自建房屋是指个人或家庭在拥有土地使用权的前提下，自行筹划建造的房屋，主要用于自住或满足其他个人需求。与商品房不同，自建房产权归私人所有。其建设需符合国家和地方相关法律法规，包括土地使用权证、规划许可和建设许可，且不得超越土地用途或违反建筑规划要求。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"结论符合国家和地方法律对自建房的规定，内容完整、准确，无需修改。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"嗯，先来想一下什么是自建房。自建房这个概念听起来是指自己盖的房子，不过这里应该不仅仅是随便想盖就盖吧，大概还和土地所有权或者使用权有关，和法律也脱不了关系。毕竟，无论是农村还是城市，土地本身都是受国家管理的，规则总得遵守。\\n\\n好，那我先查一下自建房的法律定义，看看官方是怎么说的。搜索关键词就用“自建房法律定义”吧。\\n\\n<search>自建房法律定义</search>\\n\\n找到了一些信息，这里是核心内容：法律上，自建房通常是个人或者家庭在自己拥有的土地上建设的房屋。而且呢，这种建设不是随意的，通常需要符合土地使用权证、规划许可证，还有建设许可证的要求。特别是在农村，自建房会更常见，但即便是农村也不能乱建，如果没有审批或者违反规定，可能会被认定为违章建筑，要么拆除，要么罚款。\\n\\n哦，这就是说，自建房的前提条件之一就是你得有土地的合法使用权。而且在建房之前，还需要经过相关部门的审批，确保土地用途和建筑规划都没有问题。其实也能理解，国家对土地和建筑有严格管理，避免乱建乱占。\\n\\n嗯，那再总结一下。所谓自建房，是指个人或家庭在合法拥有土地使用权的基础上，自己设计、筹建的非商业性房屋，主要是为了自住或满足一些个性化需求。和商品房不一样，它没有开发商参与，产权直接属于个人。不过这些房子必须符合国家以及地方的相关法律，比如要有土地使用证、建设许可等等，如果违反，比如土地用途不对，那就会涉及一些法律风险。\\n\\n这样看来，定义似乎没问题，和查到的法律规定也一致。总之，法律合规、自行建造、产权自有这几个关键词是绕不过去的。整个逻辑也挺清晰，没遗漏重要环节，感觉就这么定下来吧。\"\n}\n```",
+    "自建房屋是指个人或家庭在合法获得土地使用权的基础上，按照相关法律法规和审批要求，自行设计并建设的非商业性住宅。这样的房屋通常用作自住或满足个性化需求，与商品房不同，它不涉及开发商，产权直接归属于建房者个人。\n\n根据法律规定，自建房的建设需要符合以下条件：\n\n1. **土地使用权合法**：建房者必须依法拥有土地的使用权，比如在农村地区需要拥有宅基地使用权。\n2. **审批手续完备**：建房前需申请并获得相关部门颁发的土地使用证、规划许可证和建设许可证等文件，确保土地用途和建筑规划符合国家及地方规定。\n3. **符合建筑标准**：房屋的设计、结构和用途需符合建筑法规，严禁违章建筑。\n\n需要注意的是，如果未获得合法审批或违反相关规定，自建房可能面临被认定为违章建筑的风险，后续可能会涉及拆除或罚款等处罚。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "明确问题背景",
+        "content": "自建房屋指的是个人或家庭在自己拥有土地的基础上，根据需求建设的非商业性住宅，通常用于自住或兼具其他用途。这种房屋与开发商建设的商品房不同，自建房屋的产权归个人或家庭所有。为了确认定义是否全面，需要考虑其法律和地域的具体限制。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "确认法律定义",
+        "content": "法律对于自建房可能有特定的定义和要求，比如是否需要土地使用证与建设许可。为了确保论述规范，需要查阅相关法律法规以确认其定义。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "搜索关键词",
+        "content": "<search>自建房法律定义</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "分析搜索结果",
+        "content": "<information>根据法律规定，自建房屋通常涉及农村或特定区域建设个人住宅，需符合土地使用权证、规划许可证以及建设许可证等要求，并不得违反相关土地用途或建筑规定。</information>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "法律角度补充说明",
+        "content": "自建房一般限定在有土地使用权的情况下建造，其中农村地区的住宅更为常见。自建房需经过政府审批，违章建筑可能面临拆除或罚款的风险。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "自建房屋是指个人或家庭在拥有土地使用权的前提下，自行筹划建造的房屋，主要用于自住或满足其他个人需求。与商品房不同，自建房产权归私人所有。其建设需符合国家和地方相关法律法规，包括土地使用权证、规划许可和建设许可，且不得超越土地用途或违反建筑规划要求。"
+      },
+      {
+        "action": "Verification",
+        "content": "结论符合国家和地方法律对自建房的规定，内容完整、准确，无需修改。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "嗯，先来想一下什么是自建房。自建房这个概念听起来是指自己盖的房子，不过这里应该不仅仅是随便想盖就盖吧，大概还和土地所有权或者使用权有关，和法律也脱不了关系。毕竟，无论是农村还是城市，土地本身都是受国家管理的，规则总得遵守。\n\n好，那我先查一下自建房的法律定义，看看官方是怎么说的。搜索关键词就用“自建房法律定义”吧。\n\n<search>自建房法律定义</search>\n\n找到了一些信息，这里是核心内容：法律上，自建房通常是个人或者家庭在自己拥有的土地上建设的房屋。而且呢，这种建设不是随意的，通常需要符合土地使用权证、规划许可证，还有建设许可证的要求。特别是在农村，自建房会更常见，但即便是农村也不能乱建，如果没有审批或者违反规定，可能会被认定为违章建筑，要么拆除，要么罚款。\n\n哦，这就是说，自建房的前提条件之一就是你得有土地的合法使用权。而且在建房之前，还需要经过相关部门的审批，确保土地用途和建筑规划都没有问题。其实也能理解，国家对土地和建筑有严格管理，避免乱建乱占。\n\n嗯，那再总结一下。所谓自建房，是指个人或家庭在合法拥有土地使用权的基础上，自己设计、筹建的非商业性房屋，主要是为了自住或满足一些个性化需求。和商品房不一样，它没有开发商参与，产权直接属于个人。不过这些房子必须符合国家以及地方的相关法律，比如要有土地使用证、建设许可等等，如果违反，比如土地用途不对，那就会涉及一些法律风险。\n\n这样看来，定义似乎没问题，和查到的法律规定也一致。总之，法律合规、自行建造、产权自有这几个关键词是绕不过去的。整个逻辑也挺清晰，没遗漏重要环节，感觉就这么定下来吧。",
+  "Response": "自建房屋是指个人或家庭在合法获得土地使用权的基础上，按照相关法律法规和审批要求，自行设计并建设的非商业性住宅。这样的房屋通常用作自住或满足个性化需求，与商品房不同，它不涉及开发商，产权直接归属于建房者个人。\n\n根据法律规定，自建房的建设需要符合以下条件：\n\n1. **土地使用权合法**：建房者必须依法拥有土地的使用权，比如在农村地区需要拥有宅基地使用权。\n2. **审批手续完备**：建房前需申请并获得相关部门颁发的土地使用证、规划许可证和建设许可证等文件，确保土地用途和建筑规划符合国家及地方规定。\n3. **符合建筑标准**：房屋的设计、结构和用途需符合建筑法规，严禁违章建筑。\n\n需要注意的是，如果未获得合法审批或违反相关规定，自建房可能面临被认定为违章建筑的风险，后续可能会涉及拆除或罚款等处罚。",
+  "Question": "什么是自建房屋?"
+}

@@ -1,0 +1,89 @@
+{
+  "Open-ended Verifiable Question": "哪些行为跟洗钱有关系?",
+  "Ground-True Answer": "为掩饰、隐瞒毒品犯罪、黑社会性质的组织犯罪、恐怖活动犯罪、走私犯罪、贪污贿赂犯罪、破坏金融管理秩序犯罪、金融诈骗犯罪的所得及其产生的收益的来源和性质，有下列行为之一的，没收实施以上犯罪的所得及其产生的收益，处五年以下有期徒刑或者拘役，并处或者单处罚金；情节严重的，处五年以上十年以下有期徒刑，并处罚金：\n（一）提供资金帐户的；\n（二）将财产转换为现金、金融票据、有价证券的；\n（三）通过转帐或者其他支付结算方式转移资金的；\n（四）跨境转移资产的；\n（五）以其他方法掩饰、隐瞒犯罪所得及其收益的来源和性质的。\n单位犯前款罪的，对单位判处罚金，并对其直接负责的主管人员和其他直接责任人员，依照前款的规定处罚。\n自洗钱成立犯罪，也只是意味着上游犯罪的本犯就上游犯罪与洗钱罪成立数罪，但并不必然要实行数罪并罚。对自洗钱与上游犯罪从一重罪处罚还是数罪并罚未作规定，实践中应当进一步总结经验，按照罪责刑相适应的原则确定。",
+  "process_id": 6338,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "定义洗钱相关行为",
+      "content": "洗钱行为通常指通过金融系统或其他途径将非法所得资金伪装为合法资金。为了进一步明确，我们需要了解与洗钱相关的具体行为特征和法律定义。例如，常见的包括分层转账、购买奢侈品、伪造交易记录等。现在需要检索某些相关法律的定义来确认具体行为。<search>反洗钱法</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "获取法律定义",
+      "content": "<information>《反洗钱法》定义洗钱行为为：通过伪装资金来源、隐匿资金流动的真实路径、掩盖违法犯罪活动收益，以及利用各种方式将非法所得转化为合法的经济形式。</information> 根据此定义，洗钱相关行为包括但不限于通过银行、证券、保险等金融服务进行非法交易。</content>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "具体列举洗钱相关行为",
+      "content": "根据《反洗钱法》的定义，进一步归纳具体行为：1) 通过复杂的金融交易转移非法资金；2) 投资于匿名或离岸公司以隐藏资金来源；3) 使用假名、第三方账户或虚假身份注册金融账户；4)通过现金存取操作避免引起注意；5)进行高频小额交易规避监管。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "涉及非金融领域的洗钱行为",
+      "content": "除了金融交易，洗钱行为还可能包括：1) 使用虚拟货币进行跨境转账；2) 用非法资金购买房地产、艺术品、奢侈品等资产；3) 通过伪造发票、虚假合同等形式制造合法交易假象。此外，有些行业在法律定义中被视为风险较高的领域，例如地产、珠宝、和受监管较少的非正规金融机构。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "洗钱相关行为包括：1) 使用复杂交易转移资金；2) 利用虚假的资金来源或身份掩盖非法收益；3) 投资匿名、离岸公司；4) 使用虚拟货币进行转账；5) 非法购置资产如房地产、奢侈品等；6) 利用虚假发票或合同制造交易假象。这些行为均符合洗钱隐藏资金来源的特征并受到《反洗钱法》等法律约束。"
+    },
+    {
+      "action": "Verification",
+      "content": "通过上述推理以及对《反洗钱法》定义的引用，列举的行为正确且符合逻辑。结论有效。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n哪些行为跟洗钱有关系?\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n洗钱相关行为包括：1) 使用复杂交易转移资金；2) 利用虚假的资金来源或身份掩盖非法收益；3) 投资匿名、离岸公司；4) 使用虚拟货币进行转账；5) 非法购置资产如房地产、奢侈品等；6) 利用虚假发票或合同制造交易假象。这些行为均符合洗钱隐藏资金来源的特征并受到《反洗钱法》等法律约束。  \n</Model Response>  \n\n<Reference Answer>  \n为掩饰、隐瞒毒品犯罪、黑社会性质的组织犯罪、恐怖活动犯罪、走私犯罪、贪污贿赂犯罪、破坏金融管理秩序犯罪、金融诈骗犯罪的所得及其产生的收益的来源和性质，有下列行为之一的，没收实施以上犯罪的所得及其产生的收益，处五年以下有期徒刑或者拘役，并处或者单处罚金；情节严重的，处五年以上十年以下有期徒刑，并处罚金：\n（一）提供资金帐户的；\n（二）将财产转换为现金、金融票据、有价证券的；\n（三）通过转帐或者其他支付结算方式转移资金的；\n（四）跨境转移资产的；\n（五）以其他方法掩饰、隐瞒犯罪所得及其收益的来源和性质的。\n单位犯前款罪的，对单位判处罚金，并对其直接负责的主管人员和其他直接责任人员，依照前款的规定处罚。\n自洗钱成立犯罪，也只是意味着上游犯罪的本犯就上游犯罪与洗钱罪成立数罪，但并不必然要实行数罪并罚。对自洗钱与上游犯罪从一重罪处罚还是数罪并罚未作规定，实践中应当进一步总结经验，按照罪责刑相适应的原则确定。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 定义洗钱相关行为\n洗钱行为通常指通过金融系统或其他途径将非法所得资金伪装为合法资金。为了进一步明确，我们需要了解与洗钱相关的具体行为特征和法律定义。例如，常见的包括分层转账、购买奢侈品、伪造交易记录等。现在需要检索某些相关法律的定义来确认具体行为。<search>反洗钱法</search>\n\n### 获取法律定义\n<information>《反洗钱法》定义洗钱行为为：通过伪装资金来源、隐匿资金流动的真实路径、掩盖违法犯罪活动收益，以及利用各种方式将非法所得转化为合法的经济形式。</information> 根据此定义，洗钱相关行为包括但不限于通过银行、证券、保险等金融服务进行非法交易。</content>\n\n### 具体列举洗钱相关行为\n根据《反洗钱法》的定义，进一步归纳具体行为：1) 通过复杂的金融交易转移非法资金；2) 投资于匿名或离岸公司以隐藏资金来源；3) 使用假名、第三方账户或虚假身份注册金融账户；4)通过现金存取操作避免引起注意；5)进行高频小额交易规避监管。\n\n### 涉及非金融领域的洗钱行为\n除了金融交易，洗钱行为还可能包括：1) 使用虚拟货币进行跨境转账；2) 用非法资金购买房地产、艺术品、奢侈品等资产；3) 通过伪造发票、虚假合同等形式制造合法交易假象。此外，有些行业在法律定义中被视为风险较高的领域，例如地产、珠宝、和受监管较少的非正规金融机构。\n\n### Conclusion\n洗钱相关行为包括：1) 使用复杂交易转移资金；2) 利用虚假的资金来源或身份掩盖非法收益；3) 投资匿名、离岸公司；4) 使用虚拟货币进行转账；5) 非法购置资产如房地产、奢侈品等；6) 利用虚假发票或合同制造交易假象。这些行为均符合洗钱隐藏资金来源的特征并受到《反洗钱法》等法律约束。\n\n### Verification\n通过上述推理以及对《反洗钱法》定义的引用，列举的行为正确且符合逻辑。结论有效。\n</Thought Process>\n\n<Question>\n哪些行为跟洗钱有关系?\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n洗钱到底是怎么回事呢？嗯，洗钱好像就是把不法的钱通过某些方式变成看起来是合法的钱。那具体有哪些方式呢？不太确定，还是先查一下相关的法律定义。<search>反洗钱法</search>\n\n哦，找到了！<information>《反洗钱法》定义洗钱行为为：通过伪装资金来源、隐匿资金流动的真实路径、掩盖违法犯罪活动收益，以及利用各种方式将非法所得转化为合法的经济形式。</information>所以洗钱的行为总的来说就是试图隐藏资金的非法来源，然后让这些钱看起来没问题，可以被正常使用。那么具体一些的行为会有哪些呢？我想既然定义里提到“伪装”和“隐匿”，那应该会有很多比较复杂的手段吧。\n\n想象一下，可能有人会通过银行做很多复杂的转账，把钱分成小块，分开处理，避免引起怀疑——这应该算一种吧。还有，可能会开一些假公司，尤其是那种离岸公司，或者用别人名字的账户来做交易，这样就很难查到钱的来源。此外，虚假的身份注册账户的方式应该也是常见的。嗯，这些方法貌似都围绕着资金流动做文章，伪装自己的身份或来源。\n\n不过洗钱应该不只是局限于银行和金融系统吧？有些人可能会直接用非法的钱去买房子、奢侈品或者高价艺术品，一方面保存价值，另一方面也是转移资金形式，再比如利用虚拟货币跨境转账，这种方式监管可能没有银行那么严格。还有个思路是伪造发票和合同，搞出一些假交易，看起来像是真的合法收入。这种方法也是挺常见的。\n\n嗯，总结一下，洗钱行为大概可以包括：通过银行或金融交易转移资金、开假公司或匿名账户隐藏来源、使用虚拟货币转账、买房地产或者奢侈艺术品保存价值、伪造发票制造合法收入假象等等。这些方法虽然不同，但目标其实都是让原本非法的钱变得看起来“干净”。 \n\n不过还得确认一下是不是都符合法律定义。结果对照了一下《反洗钱法》的解释，感觉这些例子确实涵盖了洗钱行为的本质。看来这些行为确实跟洗钱关系很密切。\n</Internal Thinking>\n\n<Question>\n哪些行为跟洗钱有关系?\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"定义洗钱相关行为\",\n      \"content\": \"洗钱行为通常指通过金融系统或其他途径将非法所得资金伪装为合法资金。为了进一步明确，我们需要了解与洗钱相关的具体行为特征和法律定义。例如，常见的包括分层转账、购买奢侈品、伪造交易记录等。现在需要检索某些相关法律的定义来确认具体行为。<search>反洗钱法</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"获取法律定义\",\n      \"content\": \"<information>《反洗钱法》定义洗钱行为为：通过伪装资金来源、隐匿资金流动的真实路径、掩盖违法犯罪活动收益，以及利用各种方式将非法所得转化为合法的经济形式。</information> 根据此定义，洗钱相关行为包括但不限于通过银行、证券、保险等金融服务进行非法交易。</content>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"具体列举洗钱相关行为\",\n      \"content\": \"根据《反洗钱法》的定义，进一步归纳具体行为：1) 通过复杂的金融交易转移非法资金；2) 投资于匿名或离岸公司以隐藏资金来源；3) 使用假名、第三方账户或虚假身份注册金融账户；4)通过现金存取操作避免引起注意；5)进行高频小额交易规避监管。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"涉及非金融领域的洗钱行为\",\n      \"content\": \"除了金融交易，洗钱行为还可能包括：1) 使用虚拟货币进行跨境转账；2) 用非法资金购买房地产、艺术品、奢侈品等资产；3) 通过伪造发票、虚假合同等形式制造合法交易假象。此外，有些行业在法律定义中被视为风险较高的领域，例如地产、珠宝、和受监管较少的非正规金融机构。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"洗钱相关行为包括：1) 使用复杂交易转移资金；2) 利用虚假的资金来源或身份掩盖非法收益；3) 投资匿名、离岸公司；4) 使用虚拟货币进行转账；5) 非法购置资产如房地产、奢侈品等；6) 利用虚假发票或合同制造交易假象。这些行为均符合洗钱隐藏资金来源的特征并受到《反洗钱法》等法律约束。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"通过上述推理以及对《反洗钱法》定义的引用，列举的行为正确且符合逻辑。结论有效。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"洗钱到底是怎么回事呢？嗯，洗钱好像就是把不法的钱通过某些方式变成看起来是合法的钱。那具体有哪些方式呢？不太确定，还是先查一下相关的法律定义。<search>反洗钱法</search>\\n\\n哦，找到了！<information>《反洗钱法》定义洗钱行为为：通过伪装资金来源、隐匿资金流动的真实路径、掩盖违法犯罪活动收益，以及利用各种方式将非法所得转化为合法的经济形式。</information>所以洗钱的行为总的来说就是试图隐藏资金的非法来源，然后让这些钱看起来没问题，可以被正常使用。那么具体一些的行为会有哪些呢？我想既然定义里提到“伪装”和“隐匿”，那应该会有很多比较复杂的手段吧。\\n\\n想象一下，可能有人会通过银行做很多复杂的转账，把钱分成小块，分开处理，避免引起怀疑——这应该算一种吧。还有，可能会开一些假公司，尤其是那种离岸公司，或者用别人名字的账户来做交易，这样就很难查到钱的来源。此外，虚假的身份注册账户的方式应该也是常见的。嗯，这些方法貌似都围绕着资金流动做文章，伪装自己的身份或来源。\\n\\n不过洗钱应该不只是局限于银行和金融系统吧？有些人可能会直接用非法的钱去买房子、奢侈品或者高价艺术品，一方面保存价值，另一方面也是转移资金形式，再比如利用虚拟货币跨境转账，这种方式监管可能没有银行那么严格。还有个思路是伪造发票和合同，搞出一些假交易，看起来像是真的合法收入。这种方法也是挺常见的。\\n\\n嗯，总结一下，洗钱行为大概可以包括：通过银行或金融交易转移资金、开假公司或匿名账户隐藏来源、使用虚拟货币转账、买房地产或者奢侈艺术品保存价值、伪造发票制造合法收入假象等等。这些方法虽然不同，但目标其实都是让原本非法的钱变得看起来“干净”。 \\n\\n不过还得确认一下是不是都符合法律定义。结果对照了一下《反洗钱法》的解释，感觉这些例子确实涵盖了洗钱行为的本质。看来这些行为确实跟洗钱关系很密切。\"\n}\n```",
+    "与洗钱有关的行为通常包括以下几类：\n\n1. **通过银行或金融机构进行复杂的资金操作**：例如将一笔大额资金分成许多小额交易，再通过多个账户反复转账，以掩饰资金的真正来源和去向，俗称“分拆交易”或“资金漂白”。\n\n2. **利用空壳公司或匿名账户**：开设假公司、离岸公司，或者通过虚假身份注册账户，并进行资金流动，用以隐藏非法资金的来源。\n\n3. **使用虚拟货币进行转账**：虚拟货币交易由于匿名性和跨境便捷性，常被用作洗钱手段，绕过传统金融系统的监管。\n\n4. **通过购买高价值资产保存或转移资金**：包括购置房地产、奢侈品、高价艺术品、珠宝等，这些资产易于保存和转售，能够掩盖非法资金的来源。\n\n5. **伪造发票和合同进行虚假交易**：捏造商业活动，伪造发票、合同等虚假文件，将非法收入伪装成合法来源。\n\n6. **其他掩盖资金来源的手段**：例如通过赌博洗钱（把“不明资金”注入赌场转化为“合法”的赌博收益）、利用慈善机构捐款、将资金存入监管较弱的司法管辖区等。\n\n这些行为的核心特征在于，通过各种方式**掩饰、隐藏或伪装资金的非法来源**，使其看似合法，从而绕过法律的追踪或处罚。这些行为不仅破坏金融体系的安全性，也助长了其他犯罪活动，因此受到法律的严格打击。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "定义洗钱相关行为",
+        "content": "洗钱行为通常指通过金融系统或其他途径将非法所得资金伪装为合法资金。为了进一步明确，我们需要了解与洗钱相关的具体行为特征和法律定义。例如，常见的包括分层转账、购买奢侈品、伪造交易记录等。现在需要检索某些相关法律的定义来确认具体行为。<search>反洗钱法</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "获取法律定义",
+        "content": "<information>《反洗钱法》定义洗钱行为为：通过伪装资金来源、隐匿资金流动的真实路径、掩盖违法犯罪活动收益，以及利用各种方式将非法所得转化为合法的经济形式。</information> 根据此定义，洗钱相关行为包括但不限于通过银行、证券、保险等金融服务进行非法交易。</content>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "具体列举洗钱相关行为",
+        "content": "根据《反洗钱法》的定义，进一步归纳具体行为：1) 通过复杂的金融交易转移非法资金；2) 投资于匿名或离岸公司以隐藏资金来源；3) 使用假名、第三方账户或虚假身份注册金融账户；4)通过现金存取操作避免引起注意；5)进行高频小额交易规避监管。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "涉及非金融领域的洗钱行为",
+        "content": "除了金融交易，洗钱行为还可能包括：1) 使用虚拟货币进行跨境转账；2) 用非法资金购买房地产、艺术品、奢侈品等资产；3) 通过伪造发票、虚假合同等形式制造合法交易假象。此外，有些行业在法律定义中被视为风险较高的领域，例如地产、珠宝、和受监管较少的非正规金融机构。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "洗钱相关行为包括：1) 使用复杂交易转移资金；2) 利用虚假的资金来源或身份掩盖非法收益；3) 投资匿名、离岸公司；4) 使用虚拟货币进行转账；5) 非法购置资产如房地产、奢侈品等；6) 利用虚假发票或合同制造交易假象。这些行为均符合洗钱隐藏资金来源的特征并受到《反洗钱法》等法律约束。"
+      },
+      {
+        "action": "Verification",
+        "content": "通过上述推理以及对《反洗钱法》定义的引用，列举的行为正确且符合逻辑。结论有效。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "洗钱到底是怎么回事呢？嗯，洗钱好像就是把不法的钱通过某些方式变成看起来是合法的钱。那具体有哪些方式呢？不太确定，还是先查一下相关的法律定义。<search>反洗钱法</search>\n\n哦，找到了！<information>《反洗钱法》定义洗钱行为为：通过伪装资金来源、隐匿资金流动的真实路径、掩盖违法犯罪活动收益，以及利用各种方式将非法所得转化为合法的经济形式。</information>所以洗钱的行为总的来说就是试图隐藏资金的非法来源，然后让这些钱看起来没问题，可以被正常使用。那么具体一些的行为会有哪些呢？我想既然定义里提到“伪装”和“隐匿”，那应该会有很多比较复杂的手段吧。\n\n想象一下，可能有人会通过银行做很多复杂的转账，把钱分成小块，分开处理，避免引起怀疑——这应该算一种吧。还有，可能会开一些假公司，尤其是那种离岸公司，或者用别人名字的账户来做交易，这样就很难查到钱的来源。此外，虚假的身份注册账户的方式应该也是常见的。嗯，这些方法貌似都围绕着资金流动做文章，伪装自己的身份或来源。\n\n不过洗钱应该不只是局限于银行和金融系统吧？有些人可能会直接用非法的钱去买房子、奢侈品或者高价艺术品，一方面保存价值，另一方面也是转移资金形式，再比如利用虚拟货币跨境转账，这种方式监管可能没有银行那么严格。还有个思路是伪造发票和合同，搞出一些假交易，看起来像是真的合法收入。这种方法也是挺常见的。\n\n嗯，总结一下，洗钱行为大概可以包括：通过银行或金融交易转移资金、开假公司或匿名账户隐藏来源、使用虚拟货币转账、买房地产或者奢侈艺术品保存价值、伪造发票制造合法收入假象等等。这些方法虽然不同，但目标其实都是让原本非法的钱变得看起来“干净”。 \n\n不过还得确认一下是不是都符合法律定义。结果对照了一下《反洗钱法》的解释，感觉这些例子确实涵盖了洗钱行为的本质。看来这些行为确实跟洗钱关系很密切。",
+  "Response": "与洗钱有关的行为通常包括以下几类：\n\n1. **通过银行或金融机构进行复杂的资金操作**：例如将一笔大额资金分成许多小额交易，再通过多个账户反复转账，以掩饰资金的真正来源和去向，俗称“分拆交易”或“资金漂白”。\n\n2. **利用空壳公司或匿名账户**：开设假公司、离岸公司，或者通过虚假身份注册账户，并进行资金流动，用以隐藏非法资金的来源。\n\n3. **使用虚拟货币进行转账**：虚拟货币交易由于匿名性和跨境便捷性，常被用作洗钱手段，绕过传统金融系统的监管。\n\n4. **通过购买高价值资产保存或转移资金**：包括购置房地产、奢侈品、高价艺术品、珠宝等，这些资产易于保存和转售，能够掩盖非法资金的来源。\n\n5. **伪造发票和合同进行虚假交易**：捏造商业活动，伪造发票、合同等虚假文件，将非法收入伪装成合法来源。\n\n6. **其他掩盖资金来源的手段**：例如通过赌博洗钱（把“不明资金”注入赌场转化为“合法”的赌博收益）、利用慈善机构捐款、将资金存入监管较弱的司法管辖区等。\n\n这些行为的核心特征在于，通过各种方式**掩饰、隐藏或伪装资金的非法来源**，使其看似合法，从而绕过法律的追踪或处罚。这些行为不仅破坏金融体系的安全性，也助长了其他犯罪活动，因此受到法律的严格打击。",
+  "Question": "哪些行为跟洗钱有关系?"
+}

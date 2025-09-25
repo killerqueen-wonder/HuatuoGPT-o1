@@ -1,0 +1,109 @@
+{
+  "Open-ended Verifiable Question": "构成重婚罪的情形由哪些？",
+  "Ground-True Answer": "1、前婚拿了结婚证+后婚也拿了结婚证，即存在两个登记的婚姻； 2、前婚拿了结婚证+后婚没有结婚证，后婚只是事实上以夫妻名义持续、稳定的共同生活居住；",
+  "process_id": 3662,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "明确问题背景",
+      "content": "问题要求分析构成重婚罪的情形。需要结合法律相关条文，以便清晰界定法律规定对重婚罪的构成条件。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "检索重婚罪的法律依据",
+      "content": "重婚罪属于刑法范畴，需要参考《中华人民共和国刑法》关于重婚罪的条款进行具体分析。准备查询相关法律条文。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "查找《中华人民共和国刑法》重婚罪条款",
+      "content": "<search>《中华人民共和国刑法》重婚罪</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "分析检索结果并提炼重要信息",
+      "content": "<information>《中华人民共和国刑法》第258条：如果有配偶者与他人登记结婚，或者明知他人有配偶而与之登记结婚，构成重婚罪。此外，虽然未登记结婚，但以夫妻名义共同生活的，也可能构成重婚罪。</information>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "梳理构成重婚罪的具体情形",
+      "content": "根据法律条款，构成重婚罪需要满足以下情形：1) 已有配偶者，再次与他人登记结婚；2) 明知他人有配偶，仍与之登记结婚；3) 未办理登记，但以夫妻名义长期同居生活也可能成立。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "概括出重婚罪的主要构成要件",
+      "content": "总结法律规定：重婚罪的构成要有主观故意，即行为人明知重婚违法；同时有客观行为，如再次登记结婚或以夫妻名义同居生活。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "重婚罪的构成情形主要包括以下三种：1) 有配偶者与他人登记结婚；2) 明知他人有配偶而仍与之登记结婚；3) 虽未登记结婚，但已与他人以夫妻名义共同生活，具有事实婚姻关系。满足上述情形之一并具备主观故意特征，即可能构成重婚罪。"
+    },
+    {
+      "action": "Verification",
+      "content": "通过法律条文复核，分析充分准确。重婚罪的构成必须具备法律规定的条件，且行为与主观故意相符。结论成立，无需修正。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n构成重婚罪的情形由哪些？\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n重婚罪的构成情形主要包括以下三种：1) 有配偶者与他人登记结婚；2) 明知他人有配偶而仍与之登记结婚；3) 虽未登记结婚，但已与他人以夫妻名义共同生活，具有事实婚姻关系。满足上述情形之一并具备主观故意特征，即可能构成重婚罪。  \n</Model Response>  \n\n<Reference Answer>  \n1、前婚拿了结婚证+后婚也拿了结婚证，即存在两个登记的婚姻； 2、前婚拿了结婚证+后婚没有结婚证，后婚只是事实上以夫妻名义持续、稳定的共同生活居住；\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 明确问题背景\n问题要求分析构成重婚罪的情形。需要结合法律相关条文，以便清晰界定法律规定对重婚罪的构成条件。\n\n### 检索重婚罪的法律依据\n重婚罪属于刑法范畴，需要参考《中华人民共和国刑法》关于重婚罪的条款进行具体分析。准备查询相关法律条文。\n\n### 查找《中华人民共和国刑法》重婚罪条款\n<search>《中华人民共和国刑法》重婚罪</search>\n\n### 分析检索结果并提炼重要信息\n<information>《中华人民共和国刑法》第258条：如果有配偶者与他人登记结婚，或者明知他人有配偶而与之登记结婚，构成重婚罪。此外，虽然未登记结婚，但以夫妻名义共同生活的，也可能构成重婚罪。</information>\n\n### 梳理构成重婚罪的具体情形\n根据法律条款，构成重婚罪需要满足以下情形：1) 已有配偶者，再次与他人登记结婚；2) 明知他人有配偶，仍与之登记结婚；3) 未办理登记，但以夫妻名义长期同居生活也可能成立。\n\n### 概括出重婚罪的主要构成要件\n总结法律规定：重婚罪的构成要有主观故意，即行为人明知重婚违法；同时有客观行为，如再次登记结婚或以夫妻名义同居生活。\n\n### Conclusion\n重婚罪的构成情形主要包括以下三种：1) 有配偶者与他人登记结婚；2) 明知他人有配偶而仍与之登记结婚；3) 虽未登记结婚，但已与他人以夫妻名义共同生活，具有事实婚姻关系。满足上述情形之一并具备主观故意特征，即可能构成重婚罪。\n\n### Verification\n通过法律条文复核，分析充分准确。重婚罪的构成必须具备法律规定的条件，且行为与主观故意相符。结论成立，无需修正。\n</Thought Process>\n\n<Question>\n构成重婚罪的情形由哪些？\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n好，先来看一下问题的背景。问的是关于重婚罪构成的情形，这涉及到法律知识，特别是《中华人民共和国刑法》相关的规定。所以我们需要找一下对应的法条，确认规定的内容。\n\n嗯，既然是刑法范围的内容，那我应该先找出《中华人民共和国刑法》中关于重婚罪的条款是什么。我记得法律条文中一般会明确列出定义和条件。那就先搜索一下吧。<search>《中华人民共和国刑法》重婚罪</search>\n\n搜索的结果出来了，来看一下具体的条文是什么。<information>《中华人民共和国刑法》第258条：如果有配偶者与他人登记结婚，或者明知他人有配偶而与之登记结婚，构成重婚罪。此外，虽然未登记结婚，但以夫妻名义共同生活的，也可能构成重婚罪。</information>\n\nOK，这里提到了构成重婚罪的几种主要情况。第一种是有配偶的情况下，又与他人进行了登记结婚。这种其实比较好理解，就是法律承认的婚姻关系已经存在了，但仍然违法再登记另一个婚姻关系。第二种是明知道对方已经有配偶了，还和对方去登记结婚，这也构成犯罪。这种情况可能更需要强调行为人的“明知”才算数。最后一种是没有去登记结婚，但是长期以夫妻名义生活在一起，也可能算是重婚罪。\n\n再想一下，这些情形里有一些共同点。比如说，行为人必须是有主观上的故意行为——无论是明知道自己有配偶，还是明知道对方已经有配偶，都表示是一种故意的行为。还有就是，在客观上必须有实际的重婚行为，比如登记结婚，或者虽然没登记但以夫妻的身份生活。那么从主观和客观这两方面来看，重婚罪的构成还是很清晰的。\n\n总结一下，目前能够确定重婚罪的构成主要包括以下几种情形：第一，有配偶的人又与他人登记结婚；第二，明知他人有配偶而仍与之登记结婚；第三，没有登记结婚但以夫妻名义共同生活。如果满足任意一种情形，并且存在主观故意和客观行为，那么就可能构成重婚罪。\n\n现在再回头看一下我的分析，似乎覆盖了问题所有的关键点：主观故意、客观行为、以及刑法的明确规定。看起来结论是没有问题的。嗯，确认无误。\n</Internal Thinking>\n\n<Question>\n构成重婚罪的情形由哪些？\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"明确问题背景\",\n      \"content\": \"问题要求分析构成重婚罪的情形。需要结合法律相关条文，以便清晰界定法律规定对重婚罪的构成条件。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"检索重婚罪的法律依据\",\n      \"content\": \"重婚罪属于刑法范畴，需要参考《中华人民共和国刑法》关于重婚罪的条款进行具体分析。准备查询相关法律条文。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"查找《中华人民共和国刑法》重婚罪条款\",\n      \"content\": \"<search>《中华人民共和国刑法》重婚罪</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析检索结果并提炼重要信息\",\n      \"content\": \"<information>《中华人民共和国刑法》第258条：如果有配偶者与他人登记结婚，或者明知他人有配偶而与之登记结婚，构成重婚罪。此外，虽然未登记结婚，但以夫妻名义共同生活的，也可能构成重婚罪。</information>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"梳理构成重婚罪的具体情形\",\n      \"content\": \"根据法律条款，构成重婚罪需要满足以下情形：1) 已有配偶者，再次与他人登记结婚；2) 明知他人有配偶，仍与之登记结婚；3) 未办理登记，但以夫妻名义长期同居生活也可能成立。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"概括出重婚罪的主要构成要件\",\n      \"content\": \"总结法律规定：重婚罪的构成要有主观故意，即行为人明知重婚违法；同时有客观行为，如再次登记结婚或以夫妻名义同居生活。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"重婚罪的构成情形主要包括以下三种：1) 有配偶者与他人登记结婚；2) 明知他人有配偶而仍与之登记结婚；3) 虽未登记结婚，但已与他人以夫妻名义共同生活，具有事实婚姻关系。满足上述情形之一并具备主观故意特征，即可能构成重婚罪。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"通过法律条文复核，分析充分准确。重婚罪的构成必须具备法律规定的条件，且行为与主观故意相符。结论成立，无需修正。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"好，先来看一下问题的背景。问的是关于重婚罪构成的情形，这涉及到法律知识，特别是《中华人民共和国刑法》相关的规定。所以我们需要找一下对应的法条，确认规定的内容。\\n\\n嗯，既然是刑法范围的内容，那我应该先找出《中华人民共和国刑法》中关于重婚罪的条款是什么。我记得法律条文中一般会明确列出定义和条件。那就先搜索一下吧。<search>《中华人民共和国刑法》重婚罪</search>\\n\\n搜索的结果出来了，来看一下具体的条文是什么。<information>《中华人民共和国刑法》第258条：如果有配偶者与他人登记结婚，或者明知他人有配偶而与之登记结婚，构成重婚罪。此外，虽然未登记结婚，但以夫妻名义共同生活的，也可能构成重婚罪。</information>\\n\\nOK，这里提到了构成重婚罪的几种主要情况。第一种是有配偶的情况下，又与他人进行了登记结婚。这种其实比较好理解，就是法律承认的婚姻关系已经存在了，但仍然违法再登记另一个婚姻关系。第二种是明知道对方已经有配偶了，还和对方去登记结婚，这也构成犯罪。这种情况可能更需要强调行为人的“明知”才算数。最后一种是没有去登记结婚，但是长期以夫妻名义生活在一起，也可能算是重婚罪。\\n\\n再想一下，这些情形里有一些共同点。比如说，行为人必须是有主观上的故意行为——无论是明知道自己有配偶，还是明知道对方已经有配偶，都表示是一种故意的行为。还有就是，在客观上必须有实际的重婚行为，比如登记结婚，或者虽然没登记但以夫妻的身份生活。那么从主观和客观这两方面来看，重婚罪的构成还是很清晰的。\\n\\n总结一下，目前能够确定重婚罪的构成主要包括以下几种情形：第一，有配偶的人又与他人登记结婚；第二，明知他人有配偶而仍与之登记结婚；第三，没有登记结婚但以夫妻名义共同生活。如果满足任意一种情形，并且存在主观故意和客观行为，那么就可能构成重婚罪。\\n\\n现在再回头看一下我的分析，似乎覆盖了问题所有的关键点：主观故意、客观行为、以及刑法的明确规定。看起来结论是没有问题的。嗯，确认无误。\"\n}\n```",
+    "根据《中华人民共和国刑法》第258条的规定，构成重婚罪的情形主要包括以下几种：\n\n1. **有配偶者与他人登记结婚**：指行为人已经处于法律承认的婚姻关系中，但仍然与其他人登记结婚，在法律层面上形成了两个婚姻关系。\n\n2. **明知他人有配偶而与之登记结婚**：指行为人在明知对方已经处于婚姻状态的情况下，仍然与对方登记结婚。\n\n3. **虽未登记结婚，但以夫妻名义共同生活**：即行为人和另一方虽然没有进行正式的婚姻登记，但以夫妻的身份共同生活，形成事实上的婚姻关系。\n\n以上情形需要满足主观上的故意（行为人明知并主动从事相关行为）以及客观上的实际行为，符合这些条件即可构成重婚罪。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "明确问题背景",
+        "content": "问题要求分析构成重婚罪的情形。需要结合法律相关条文，以便清晰界定法律规定对重婚罪的构成条件。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "检索重婚罪的法律依据",
+        "content": "重婚罪属于刑法范畴，需要参考《中华人民共和国刑法》关于重婚罪的条款进行具体分析。准备查询相关法律条文。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "查找《中华人民共和国刑法》重婚罪条款",
+        "content": "<search>《中华人民共和国刑法》重婚罪</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "分析检索结果并提炼重要信息",
+        "content": "<information>《中华人民共和国刑法》第258条：如果有配偶者与他人登记结婚，或者明知他人有配偶而与之登记结婚，构成重婚罪。此外，虽然未登记结婚，但以夫妻名义共同生活的，也可能构成重婚罪。</information>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "梳理构成重婚罪的具体情形",
+        "content": "根据法律条款，构成重婚罪需要满足以下情形：1) 已有配偶者，再次与他人登记结婚；2) 明知他人有配偶，仍与之登记结婚；3) 未办理登记，但以夫妻名义长期同居生活也可能成立。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "概括出重婚罪的主要构成要件",
+        "content": "总结法律规定：重婚罪的构成要有主观故意，即行为人明知重婚违法；同时有客观行为，如再次登记结婚或以夫妻名义同居生活。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "重婚罪的构成情形主要包括以下三种：1) 有配偶者与他人登记结婚；2) 明知他人有配偶而仍与之登记结婚；3) 虽未登记结婚，但已与他人以夫妻名义共同生活，具有事实婚姻关系。满足上述情形之一并具备主观故意特征，即可能构成重婚罪。"
+      },
+      {
+        "action": "Verification",
+        "content": "通过法律条文复核，分析充分准确。重婚罪的构成必须具备法律规定的条件，且行为与主观故意相符。结论成立，无需修正。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "好，先来看一下问题的背景。问的是关于重婚罪构成的情形，这涉及到法律知识，特别是《中华人民共和国刑法》相关的规定。所以我们需要找一下对应的法条，确认规定的内容。\n\n嗯，既然是刑法范围的内容，那我应该先找出《中华人民共和国刑法》中关于重婚罪的条款是什么。我记得法律条文中一般会明确列出定义和条件。那就先搜索一下吧。<search>《中华人民共和国刑法》重婚罪</search>\n\n搜索的结果出来了，来看一下具体的条文是什么。<information>《中华人民共和国刑法》第258条：如果有配偶者与他人登记结婚，或者明知他人有配偶而与之登记结婚，构成重婚罪。此外，虽然未登记结婚，但以夫妻名义共同生活的，也可能构成重婚罪。</information>\n\nOK，这里提到了构成重婚罪的几种主要情况。第一种是有配偶的情况下，又与他人进行了登记结婚。这种其实比较好理解，就是法律承认的婚姻关系已经存在了，但仍然违法再登记另一个婚姻关系。第二种是明知道对方已经有配偶了，还和对方去登记结婚，这也构成犯罪。这种情况可能更需要强调行为人的“明知”才算数。最后一种是没有去登记结婚，但是长期以夫妻名义生活在一起，也可能算是重婚罪。\n\n再想一下，这些情形里有一些共同点。比如说，行为人必须是有主观上的故意行为——无论是明知道自己有配偶，还是明知道对方已经有配偶，都表示是一种故意的行为。还有就是，在客观上必须有实际的重婚行为，比如登记结婚，或者虽然没登记但以夫妻的身份生活。那么从主观和客观这两方面来看，重婚罪的构成还是很清晰的。\n\n总结一下，目前能够确定重婚罪的构成主要包括以下几种情形：第一，有配偶的人又与他人登记结婚；第二，明知他人有配偶而仍与之登记结婚；第三，没有登记结婚但以夫妻名义共同生活。如果满足任意一种情形，并且存在主观故意和客观行为，那么就可能构成重婚罪。\n\n现在再回头看一下我的分析，似乎覆盖了问题所有的关键点：主观故意、客观行为、以及刑法的明确规定。看起来结论是没有问题的。嗯，确认无误。",
+  "Response": "根据《中华人民共和国刑法》第258条的规定，构成重婚罪的情形主要包括以下几种：\n\n1. **有配偶者与他人登记结婚**：指行为人已经处于法律承认的婚姻关系中，但仍然与其他人登记结婚，在法律层面上形成了两个婚姻关系。\n\n2. **明知他人有配偶而与之登记结婚**：指行为人在明知对方已经处于婚姻状态的情况下，仍然与对方登记结婚。\n\n3. **虽未登记结婚，但以夫妻名义共同生活**：即行为人和另一方虽然没有进行正式的婚姻登记，但以夫妻的身份共同生活，形成事实上的婚姻关系。\n\n以上情形需要满足主观上的故意（行为人明知并主动从事相关行为）以及客观上的实际行为，符合这些条件即可构成重婚罪。",
+  "Question": "构成重婚罪的情形由哪些？"
+}

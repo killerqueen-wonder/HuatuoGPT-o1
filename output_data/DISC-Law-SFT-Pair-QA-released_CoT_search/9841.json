@@ -1,0 +1,89 @@
+{
+  "Open-ended Verifiable Question": "主合同没有约定管辖,担保合同约定,一般如何处理?",
+  "Ground-True Answer": "1.债权人与债务人之间的主合同未约定发生纠纷时的管辖法院，而债权人与担保人之间的从合同即《担保协议》中约定了管辖条款，但依照《民法典担保解释》第21条规定：“债权人一并起诉债务人和担保人的，应当根据主合同确定管辖法院”，故本案管辖应按照主合同予以确定。2.根据《民诉法解释》第19条规定，财产租赁合同、融资租赁合同以租赁物使用地为合同履行地。合同对履行地有约定的，从其约定。车辆作为民法典确定的“特殊的动产”，按照《民法典》第225条规定，其权利公示采“登记对抗主义”，从便于法院查明事实出发，虽无法查明车辆实际使用地，可认定车辆登记地为合同履行地中华人民共和国最高人民法院民 事 裁 定 书（2022）最高法民辖54号",
+  "process_id": 9841,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "分析主合同未约定管辖问题",
+      "content": "根据问题，主合同未对管辖权进行约定，因此不能依据主合同推定管辖法院，需要审查相关法律规定或担保合同约定内容是否可以填补主合同的管辖空缺。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "分析担保合同约定管辖权的效力",
+      "content": "在主合同未约定管辖的情况下，担保合同的管辖约定是否有效需要依据合同法与民事诉讼法的相关规定。通常情况下，如果担保合同明确约定管辖且约定合法，则此约定可能对相关争议产生影响。需要明确相关法律规定对此问题的态度。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "检索关键法律规定",
+      "content": "<search>担保合同管辖权约定效力</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "分析检索结果",
+      "content": "<information>根据《民事诉讼法》第34条，如果双方当事人在合同中明确约定争议管辖法院且不违反法律规定，则此管辖约定视为有效。担保合同作为独立合同具有一定的法律效力，其管辖约定通常被视为有效，除非该约定与主合同约定或法律规定产生冲突。</information>"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "当主合同未约定管辖法院时，如果担保合同明确约定管辖法院且其约定符合《民事诉讼法》第34条的规定，则一般可以依据担保合同的约定选择管辖法院。担保合同约定具有法律效力，双方应按照约定处理争议。但如果担保合同的管辖约定与强制性法律规定冲突，则需遵守法律规定确定管辖法院。"
+    },
+    {
+      "action": "Verification",
+      "content": "通过检索相关法律条文以及分析担保合同的独立效力，可以确认结论是正确的。担保合同的管辖约定通常是有效的，尤其是在主合同未约定管辖的情况下。因此结论无误，可以结束推理过程。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n主合同没有约定管辖,担保合同约定,一般如何处理?\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n当主合同未约定管辖法院时，如果担保合同明确约定管辖法院且其约定符合《民事诉讼法》第34条的规定，则一般可以依据担保合同的约定选择管辖法院。担保合同约定具有法律效力，双方应按照约定处理争议。但如果担保合同的管辖约定与强制性法律规定冲突，则需遵守法律规定确定管辖法院。  \n</Model Response>  \n\n<Reference Answer>  \n1.债权人与债务人之间的主合同未约定发生纠纷时的管辖法院，而债权人与担保人之间的从合同即《担保协议》中约定了管辖条款，但依照《民法典担保解释》第21条规定：“债权人一并起诉债务人和担保人的，应当根据主合同确定管辖法院”，故本案管辖应按照主合同予以确定。2.根据《民诉法解释》第19条规定，财产租赁合同、融资租赁合同以租赁物使用地为合同履行地。合同对履行地有约定的，从其约定。车辆作为民法典确定的“特殊的动产”，按照《民法典》第225条规定，其权利公示采“登记对抗主义”，从便于法院查明事实出发，虽无法查明车辆实际使用地，可认定车辆登记地为合同履行地中华人民共和国最高人民法院民 事 裁 定 书（2022）最高法民辖54号\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 分析主合同未约定管辖问题\n根据问题，主合同未对管辖权进行约定，因此不能依据主合同推定管辖法院，需要审查相关法律规定或担保合同约定内容是否可以填补主合同的管辖空缺。\n\n### 分析担保合同约定管辖权的效力\n在主合同未约定管辖的情况下，担保合同的管辖约定是否有效需要依据合同法与民事诉讼法的相关规定。通常情况下，如果担保合同明确约定管辖且约定合法，则此约定可能对相关争议产生影响。需要明确相关法律规定对此问题的态度。\n\n### 检索关键法律规定\n<search>担保合同管辖权约定效力</search>\n\n### 分析检索结果\n<information>根据《民事诉讼法》第34条，如果双方当事人在合同中明确约定争议管辖法院且不违反法律规定，则此管辖约定视为有效。担保合同作为独立合同具有一定的法律效力，其管辖约定通常被视为有效，除非该约定与主合同约定或法律规定产生冲突。</information>\n\n### Conclusion\n当主合同未约定管辖法院时，如果担保合同明确约定管辖法院且其约定符合《民事诉讼法》第34条的规定，则一般可以依据担保合同的约定选择管辖法院。担保合同约定具有法律效力，双方应按照约定处理争议。但如果担保合同的管辖约定与强制性法律规定冲突，则需遵守法律规定确定管辖法院。\n\n### Verification\n通过检索相关法律条文以及分析担保合同的独立效力，可以确认结论是正确的。担保合同的管辖约定通常是有效的，尤其是在主合同未约定管辖的情况下。因此结论无误，可以结束推理过程。\n</Thought Process>\n\n<Question>\n主合同没有约定管辖,担保合同约定,一般如何处理?\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n嗯，主合同里好像没有约定管辖法院。那问题是，这种情况下要怎么确定管辖呢？得好好分析一下。首先，既然主合同没约定，那肯定没办法直接依据主合同来确定哪个法院有管辖权。这时候，得看看担保合同有没有相关约定，或者法律有没有规定可以填补主合同的这种“空白”。\n\n想到这里，我觉得有必要研究一下担保合同里面的条款。一般情况下，担保合同作为一个独立的协议，它的管辖约定应该是有一定效力的吧？但又想到这涉及到合同法以及民事诉讼法相关的内容，所以还是得小心，看看具体法律上是怎么说的。嗯，对，查询一下相关规定比较保险。\n\n<search>担保合同管辖权约定效力</search>\n\n哦，查到了。根据《民事诉讼法》第34条，如果双方当事人在合同中明确约定了管辖法院并且这个约定是合法的，不违反法律的强制性规定，那这种管辖约定是可以生效的。从这个角度看，担保合同即使和主合同独立，它如果写了管辖权的内容，只要合法，大概率也能被法院认可吧？\n\n不过得多考虑一点情况。比如担保合同的约定会不会和主合同有冲突呢？好像这里主合同没有约定啊，所以冲突问题应该不会存在。另外，担保合同的约定会不会违法？比如有没有违反强制性法律规定的内容？如果没有的话，嗯，那担保合同的约定看起来问题不大，应该是可以作为确定管辖法院的依据的。\n\n所以当主合同没有约定管辖法院的情况下，我觉得可以按照担保合同里明确写的管辖法院去认定具体的管辖，这样既符合法律，也更符合合同双方的约定意图。当然，前提是，担保合同的约定不能违反法律的强制性条款，比如地域管辖或者专属管辖这些政策性很强的规定。嗯，感觉这个推导是合理的。\n\n好，那我自我验证一下逻辑吧。查的法律条文大致是可靠的，担保合同本身在法律上也有独立性，加上《民事诉讼法》第34条对管辖约定的说明，整体分析并没有遗漏什么关键点。我的结论应该是没问题的。回答完毕！\n</Internal Thinking>\n\n<Question>\n主合同没有约定管辖,担保合同约定,一般如何处理?\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析主合同未约定管辖问题\",\n      \"content\": \"根据问题，主合同未对管辖权进行约定，因此不能依据主合同推定管辖法院，需要审查相关法律规定或担保合同约定内容是否可以填补主合同的管辖空缺。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析担保合同约定管辖权的效力\",\n      \"content\": \"在主合同未约定管辖的情况下，担保合同的管辖约定是否有效需要依据合同法与民事诉讼法的相关规定。通常情况下，如果担保合同明确约定管辖且约定合法，则此约定可能对相关争议产生影响。需要明确相关法律规定对此问题的态度。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"检索关键法律规定\",\n      \"content\": \"<search>担保合同管辖权约定效力</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析检索结果\",\n      \"content\": \"<information>根据《民事诉讼法》第34条，如果双方当事人在合同中明确约定争议管辖法院且不违反法律规定，则此管辖约定视为有效。担保合同作为独立合同具有一定的法律效力，其管辖约定通常被视为有效，除非该约定与主合同约定或法律规定产生冲突。</information>\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"当主合同未约定管辖法院时，如果担保合同明确约定管辖法院且其约定符合《民事诉讼法》第34条的规定，则一般可以依据担保合同的约定选择管辖法院。担保合同约定具有法律效力，双方应按照约定处理争议。但如果担保合同的管辖约定与强制性法律规定冲突，则需遵守法律规定确定管辖法院。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"通过检索相关法律条文以及分析担保合同的独立效力，可以确认结论是正确的。担保合同的管辖约定通常是有效的，尤其是在主合同未约定管辖的情况下。因此结论无误，可以结束推理过程。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"嗯，主合同里好像没有约定管辖法院。那问题是，这种情况下要怎么确定管辖呢？得好好分析一下。首先，既然主合同没约定，那肯定没办法直接依据主合同来确定哪个法院有管辖权。这时候，得看看担保合同有没有相关约定，或者法律有没有规定可以填补主合同的这种“空白”。\\n\\n想到这里，我觉得有必要研究一下担保合同里面的条款。一般情况下，担保合同作为一个独立的协议，它的管辖约定应该是有一定效力的吧？但又想到这涉及到合同法以及民事诉讼法相关的内容，所以还是得小心，看看具体法律上是怎么说的。嗯，对，查询一下相关规定比较保险。\\n\\n<search>担保合同管辖权约定效力</search>\\n\\n哦，查到了。根据《民事诉讼法》第34条，如果双方当事人在合同中明确约定了管辖法院并且这个约定是合法的，不违反法律的强制性规定，那这种管辖约定是可以生效的。从这个角度看，担保合同即使和主合同独立，它如果写了管辖权的内容，只要合法，大概率也能被法院认可吧？\\n\\n不过得多考虑一点情况。比如担保合同的约定会不会和主合同有冲突呢？好像这里主合同没有约定啊，所以冲突问题应该不会存在。另外，担保合同的约定会不会违法？比如有没有违反强制性法律规定的内容？如果没有的话，嗯，那担保合同的约定看起来问题不大，应该是可以作为确定管辖法院的依据的。\\n\\n所以当主合同没有约定管辖法院的情况下，我觉得可以按照担保合同里明确写的管辖法院去认定具体的管辖，这样既符合法律，也更符合合同双方的约定意图。当然，前提是，担保合同的约定不能违反法律的强制性条款，比如地域管辖或者专属管辖这些政策性很强的规定。嗯，感觉这个推导是合理的。\\n\\n好，那我自我验证一下逻辑吧。查的法律条文大致是可靠的，担保合同本身在法律上也有独立性，加上《民事诉讼法》第34条对管辖约定的说明，整体分析并没有遗漏什么关键点。我的结论应该是没问题的。回答完毕！\"\n}\n```",
+    "当主合同没有约定管辖法院，而担保合同中有明确约定管辖法院时，一般可以按照担保合同中的约定处理。但在具体实施时需要注意以下几点：\n\n1. **担保合同的独立性**  \n   根据法律规定，担保合同虽然从属性上依附于主合同，但其本身也是一份独立的合同。如果担保合同中对管辖法院进行了合法且明确的约定，只要不违反法律的强制性规定，该约定通常是有效的。\n\n2. **法律依据**  \n   《中华人民共和国民事诉讼法》第34条规定了合同管辖的安排，即合同当事人可以约定纠纷由某一具体法院管辖，前提是该法院具备实际管辖权，且不违反专属管辖等强制性规定。因此，担保合同中的管辖约定，只要符合这些条件，就可以适用于担保之争。\n\n3. **无冲突的前提**  \n   如果主合同没有约定管辖法院，而担保合同有约定两者并不冲突，那么可以直接适用担保合同的约定。但若担保合同的管辖约定有其他法律问题（例如约定的法院没有实际或法定管辖权），则该约定可能无效，此时需依据《民事诉讼法》第20条（管辖的法定原则）来确定管辖法院，如按被告住所地或合同履行地确定。\n\n4. **避免违反专属管辖规定**  \n   在某些类型的纠纷中，例如不动产担保案件，由于法律明确规定了专属管辖法院，担保合同中的管辖约定即使合法，也无法突破专属管辖的限制。此时，应以法律的强制性规定为准。\n\n总结而言，当主合同没有约定管辖法院时，担保合同中的管辖约定，只要合法且不违反强制性规定，通常是有效且优先适用的。这体现了担保合同作为独立合同的效力，同时也为纠纷的管辖提供了便利依据。当然，实际操作中仍需综合考量担保合同约定的具体内容和相关法律的适用。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "分析主合同未约定管辖问题",
+        "content": "根据问题，主合同未对管辖权进行约定，因此不能依据主合同推定管辖法院，需要审查相关法律规定或担保合同约定内容是否可以填补主合同的管辖空缺。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "分析担保合同约定管辖权的效力",
+        "content": "在主合同未约定管辖的情况下，担保合同的管辖约定是否有效需要依据合同法与民事诉讼法的相关规定。通常情况下，如果担保合同明确约定管辖且约定合法，则此约定可能对相关争议产生影响。需要明确相关法律规定对此问题的态度。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "检索关键法律规定",
+        "content": "<search>担保合同管辖权约定效力</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "分析检索结果",
+        "content": "<information>根据《民事诉讼法》第34条，如果双方当事人在合同中明确约定争议管辖法院且不违反法律规定，则此管辖约定视为有效。担保合同作为独立合同具有一定的法律效力，其管辖约定通常被视为有效，除非该约定与主合同约定或法律规定产生冲突。</information>"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "当主合同未约定管辖法院时，如果担保合同明确约定管辖法院且其约定符合《民事诉讼法》第34条的规定，则一般可以依据担保合同的约定选择管辖法院。担保合同约定具有法律效力，双方应按照约定处理争议。但如果担保合同的管辖约定与强制性法律规定冲突，则需遵守法律规定确定管辖法院。"
+      },
+      {
+        "action": "Verification",
+        "content": "通过检索相关法律条文以及分析担保合同的独立效力，可以确认结论是正确的。担保合同的管辖约定通常是有效的，尤其是在主合同未约定管辖的情况下。因此结论无误，可以结束推理过程。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "嗯，主合同里好像没有约定管辖法院。那问题是，这种情况下要怎么确定管辖呢？得好好分析一下。首先，既然主合同没约定，那肯定没办法直接依据主合同来确定哪个法院有管辖权。这时候，得看看担保合同有没有相关约定，或者法律有没有规定可以填补主合同的这种“空白”。\n\n想到这里，我觉得有必要研究一下担保合同里面的条款。一般情况下，担保合同作为一个独立的协议，它的管辖约定应该是有一定效力的吧？但又想到这涉及到合同法以及民事诉讼法相关的内容，所以还是得小心，看看具体法律上是怎么说的。嗯，对，查询一下相关规定比较保险。\n\n<search>担保合同管辖权约定效力</search>\n\n哦，查到了。根据《民事诉讼法》第34条，如果双方当事人在合同中明确约定了管辖法院并且这个约定是合法的，不违反法律的强制性规定，那这种管辖约定是可以生效的。从这个角度看，担保合同即使和主合同独立，它如果写了管辖权的内容，只要合法，大概率也能被法院认可吧？\n\n不过得多考虑一点情况。比如担保合同的约定会不会和主合同有冲突呢？好像这里主合同没有约定啊，所以冲突问题应该不会存在。另外，担保合同的约定会不会违法？比如有没有违反强制性法律规定的内容？如果没有的话，嗯，那担保合同的约定看起来问题不大，应该是可以作为确定管辖法院的依据的。\n\n所以当主合同没有约定管辖法院的情况下，我觉得可以按照担保合同里明确写的管辖法院去认定具体的管辖，这样既符合法律，也更符合合同双方的约定意图。当然，前提是，担保合同的约定不能违反法律的强制性条款，比如地域管辖或者专属管辖这些政策性很强的规定。嗯，感觉这个推导是合理的。\n\n好，那我自我验证一下逻辑吧。查的法律条文大致是可靠的，担保合同本身在法律上也有独立性，加上《民事诉讼法》第34条对管辖约定的说明，整体分析并没有遗漏什么关键点。我的结论应该是没问题的。回答完毕！",
+  "Response": "当主合同没有约定管辖法院，而担保合同中有明确约定管辖法院时，一般可以按照担保合同中的约定处理。但在具体实施时需要注意以下几点：\n\n1. **担保合同的独立性**  \n   根据法律规定，担保合同虽然从属性上依附于主合同，但其本身也是一份独立的合同。如果担保合同中对管辖法院进行了合法且明确的约定，只要不违反法律的强制性规定，该约定通常是有效的。\n\n2. **法律依据**  \n   《中华人民共和国民事诉讼法》第34条规定了合同管辖的安排，即合同当事人可以约定纠纷由某一具体法院管辖，前提是该法院具备实际管辖权，且不违反专属管辖等强制性规定。因此，担保合同中的管辖约定，只要符合这些条件，就可以适用于担保之争。\n\n3. **无冲突的前提**  \n   如果主合同没有约定管辖法院，而担保合同有约定两者并不冲突，那么可以直接适用担保合同的约定。但若担保合同的管辖约定有其他法律问题（例如约定的法院没有实际或法定管辖权），则该约定可能无效，此时需依据《民事诉讼法》第20条（管辖的法定原则）来确定管辖法院，如按被告住所地或合同履行地确定。\n\n4. **避免违反专属管辖规定**  \n   在某些类型的纠纷中，例如不动产担保案件，由于法律明确规定了专属管辖法院，担保合同中的管辖约定即使合法，也无法突破专属管辖的限制。此时，应以法律的强制性规定为准。\n\n总结而言，当主合同没有约定管辖法院时，担保合同中的管辖约定，只要合法且不违反强制性规定，通常是有效且优先适用的。这体现了担保合同作为独立合同的效力，同时也为纠纷的管辖提供了便利依据。当然，实际操作中仍需综合考量担保合同约定的具体内容和相关法律的适用。",
+  "Question": "主合同没有约定管辖,担保合同约定,一般如何处理?"
+}

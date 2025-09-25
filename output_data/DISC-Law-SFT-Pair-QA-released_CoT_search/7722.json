@@ -1,0 +1,89 @@
+{
+  "Open-ended Verifiable Question": "赌债属于夫妻共同债务吗?",
+  "Ground-True Answer": "1、赌债不属于夫妻共同债务。\n2、夫妻双方共同签名或者夫妻一方事后追认等共同意思表示所负的债务，以及夫妻一方在婚姻关系存续期间以个人名义为家庭日常生活需要所负的债务，属于夫妻共同债务。\n3、夫妻一方在婚姻关系存续期间以个人名义超出家庭日常生活需要所负的债务，不属于夫妻共同债务;但是，债权人能够证明该债务用于夫妻共同生活、共同生产经营或者基于夫妻双方共同意思表示的除外。\n补充：\n1、男女双方可以约定婚姻关系存续期间所得的财产以及婚前财产归各自所有、共同所有或者部分各自所有、部分共同所有。约定应当采用书面形式。\n2、夫妻对婚姻关系存续期间所得的财产以及婚前财产的约定，对双方具有法律约束力。\n3、夫妻对婚姻关系存续期间所得的财产约定归各自所有，夫或者妻一方对外所负的债务，相对人知道该约定的，以夫或者妻一方的个人财产清偿。\n【法律依据】\n《民法典》\n第一千零六十四条 夫妻双方共同签名或者夫妻一方事后追认等共同意思表示所负的债务，以及夫妻一方在婚姻关系存续期间以个人名义为家庭日常生活需要所负的债务，属于夫妻共同债务。\n夫妻一方在婚姻关系存续期间以个人名义超出家庭日常生活需要所负的债务，不属于夫妻共同债务;但是，债权人能够证明该债务用于夫妻共同生活、共同生产经营或者基于夫妻双方共同意思表示的除外。",
+  "process_id": 7722,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "确定夫妻共同债务的法律依据",
+      "content": "要判断赌债是否属于夫妻共同债务，首先需要明确什么是夫妻共同债务。需要查阅相关法律规定，特别是《中华人民共和国民法典》关于夫妻债务的规定。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "搜索法律定义",
+      "content": "<search>夫妻共同债务 民法典</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "分析法律定义",
+      "content": "<information>根据《中华人民共和国民法典》第1064条规定，夫妻共同债务主要指夫妻双方共同签署的债务或用于家庭共同生活的债务。而未用于家庭共同生活、未征得另一方同意的个人债务，不属于夫妻共同债务。</information>根据上述定义，夫妻共同债务的判定标准是：债务的产生是否与家庭生活相关，以及是否征得配偶同意。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "判断赌债性质",
+      "content": "赌债通常是一方因赌博行为而产生的债务。赌博一般属于个人行为，通常不会被认定为用于家庭共同生活，更难以获得配偶的同意。因此需要明确该债务的具体情况，例如是否经过另一方的批准或是否用于家庭共同利益。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "根据《民法典》的规定，赌债通常不属于夫妻共同债务，因为其通常不用于家庭共同生活，也不会征得配偶同意。"
+    },
+    {
+      "action": "Verification",
+      "content": "结论符合现行法律规定。赌债一般属于一方的个人债务，而非夫妻共同债务。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n赌债属于夫妻共同债务吗?\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n根据《民法典》的规定，赌债通常不属于夫妻共同债务，因为其通常不用于家庭共同生活，也不会征得配偶同意。  \n</Model Response>  \n\n<Reference Answer>  \n1、赌债不属于夫妻共同债务。\n2、夫妻双方共同签名或者夫妻一方事后追认等共同意思表示所负的债务，以及夫妻一方在婚姻关系存续期间以个人名义为家庭日常生活需要所负的债务，属于夫妻共同债务。\n3、夫妻一方在婚姻关系存续期间以个人名义超出家庭日常生活需要所负的债务，不属于夫妻共同债务;但是，债权人能够证明该债务用于夫妻共同生活、共同生产经营或者基于夫妻双方共同意思表示的除外。\n补充：\n1、男女双方可以约定婚姻关系存续期间所得的财产以及婚前财产归各自所有、共同所有或者部分各自所有、部分共同所有。约定应当采用书面形式。\n2、夫妻对婚姻关系存续期间所得的财产以及婚前财产的约定，对双方具有法律约束力。\n3、夫妻对婚姻关系存续期间所得的财产约定归各自所有，夫或者妻一方对外所负的债务，相对人知道该约定的，以夫或者妻一方的个人财产清偿。\n【法律依据】\n《民法典》\n第一千零六十四条 夫妻双方共同签名或者夫妻一方事后追认等共同意思表示所负的债务，以及夫妻一方在婚姻关系存续期间以个人名义为家庭日常生活需要所负的债务，属于夫妻共同债务。\n夫妻一方在婚姻关系存续期间以个人名义超出家庭日常生活需要所负的债务，不属于夫妻共同债务;但是，债权人能够证明该债务用于夫妻共同生活、共同生产经营或者基于夫妻双方共同意思表示的除外。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 确定夫妻共同债务的法律依据\n要判断赌债是否属于夫妻共同债务，首先需要明确什么是夫妻共同债务。需要查阅相关法律规定，特别是《中华人民共和国民法典》关于夫妻债务的规定。\n\n### 搜索法律定义\n<search>夫妻共同债务 民法典</search>\n\n### 分析法律定义\n<information>根据《中华人民共和国民法典》第1064条规定，夫妻共同债务主要指夫妻双方共同签署的债务或用于家庭共同生活的债务。而未用于家庭共同生活、未征得另一方同意的个人债务，不属于夫妻共同债务。</information>根据上述定义，夫妻共同债务的判定标准是：债务的产生是否与家庭生活相关，以及是否征得配偶同意。\n\n### 判断赌债性质\n赌债通常是一方因赌博行为而产生的债务。赌博一般属于个人行为，通常不会被认定为用于家庭共同生活，更难以获得配偶的同意。因此需要明确该债务的具体情况，例如是否经过另一方的批准或是否用于家庭共同利益。\n\n### Conclusion\n根据《民法典》的规定，赌债通常不属于夫妻共同债务，因为其通常不用于家庭共同生活，也不会征得配偶同意。\n\n### Verification\n结论符合现行法律规定。赌债一般属于一方的个人债务，而非夫妻共同债务。\n</Thought Process>\n\n<Question>\n赌债属于夫妻共同债务吗?\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n嗯，我需要先搞清楚什么是夫妻共同债务，这应该是判断的关键。既然是法律问题，那还是得看看民法典怎么说，我记得里面有相关的规定。让我搜一下相关内容。<search>夫妻共同债务 民法典</search>\n\n好，我找到了，根据《民法典》第1064条，夫妻共同债务包括两个主要情况：一个是夫妻双方一起签的债务，另一个是债务是用来负担家庭共同生活的。那如果债务是个人行为，又没有经过另一方的同意，在这种情况下，就应该不算夫妻共同债务吧？嗯，这条法律说得还挺明确。\n\n现在我们来看看赌债的情况。赌博一般是个人行为，它应该不太可能是为了家庭共同利益吧？而且，我觉得这么大的事情，想让配偶同意也是很困难的吧。赌债通常都是个人拿去赌的，跟家庭生活关系不大，哦对了，有些人可能会靠赌博来赚生活开销，但这种特殊情况还是得看具体证据，不能直接说是共同债务。\n\n所以啊，根据《民法典》的标准，赌债很可能会被认定为个人债务。因为对照一下，这些债务怎么都很难跟家庭生活扯上关系，也基本不会有事先取得配偶同意的情况。\n\n综合来看，赌债一般不会算夫妻共同债务，这和相关法律规定还是挺一致的。不过嘛，如果真有个特殊案例，比如赌债是用来支付家庭紧急开销的，那可能得具体分析、看实际情况了。\n</Internal Thinking>\n\n<Question>\n赌债属于夫妻共同债务吗?\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"确定夫妻共同债务的法律依据\",\n      \"content\": \"要判断赌债是否属于夫妻共同债务，首先需要明确什么是夫妻共同债务。需要查阅相关法律规定，特别是《中华人民共和国民法典》关于夫妻债务的规定。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"搜索法律定义\",\n      \"content\": \"<search>夫妻共同债务 民法典</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析法律定义\",\n      \"content\": \"<information>根据《中华人民共和国民法典》第1064条规定，夫妻共同债务主要指夫妻双方共同签署的债务或用于家庭共同生活的债务。而未用于家庭共同生活、未征得另一方同意的个人债务，不属于夫妻共同债务。</information>根据上述定义，夫妻共同债务的判定标准是：债务的产生是否与家庭生活相关，以及是否征得配偶同意。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"判断赌债性质\",\n      \"content\": \"赌债通常是一方因赌博行为而产生的债务。赌博一般属于个人行为，通常不会被认定为用于家庭共同生活，更难以获得配偶的同意。因此需要明确该债务的具体情况，例如是否经过另一方的批准或是否用于家庭共同利益。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"根据《民法典》的规定，赌债通常不属于夫妻共同债务，因为其通常不用于家庭共同生活，也不会征得配偶同意。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"结论符合现行法律规定。赌债一般属于一方的个人债务，而非夫妻共同债务。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"嗯，我需要先搞清楚什么是夫妻共同债务，这应该是判断的关键。既然是法律问题，那还是得看看民法典怎么说，我记得里面有相关的规定。让我搜一下相关内容。<search>夫妻共同债务 民法典</search>\\n\\n好，我找到了，根据《民法典》第1064条，夫妻共同债务包括两个主要情况：一个是夫妻双方一起签的债务，另一个是债务是用来负担家庭共同生活的。那如果债务是个人行为，又没有经过另一方的同意，在这种情况下，就应该不算夫妻共同债务吧？嗯，这条法律说得还挺明确。\\n\\n现在我们来看看赌债的情况。赌博一般是个人行为，它应该不太可能是为了家庭共同利益吧？而且，我觉得这么大的事情，想让配偶同意也是很困难的吧。赌债通常都是个人拿去赌的，跟家庭生活关系不大，哦对了，有些人可能会靠赌博来赚生活开销，但这种特殊情况还是得看具体证据，不能直接说是共同债务。\\n\\n所以啊，根据《民法典》的标准，赌债很可能会被认定为个人债务。因为对照一下，这些债务怎么都很难跟家庭生活扯上关系，也基本不会有事先取得配偶同意的情况。\\n\\n综合来看，赌债一般不会算夫妻共同债务，这和相关法律规定还是挺一致的。不过嘛，如果真有个特殊案例，比如赌债是用来支付家庭紧急开销的，那可能得具体分析、看实际情况了。\"\n}\n```",
+    "根据《中华人民共和国民法典》第1064条的规定，夫妻共同债务主要包括以下两种情况：一是夫妻双方共同签字或者双方共同意思表示所负的债务；二是用于家庭共同生活、生产经营等需要所负的债务。因此，判断债务是否属于夫妻共同债务，核心在于债务是否获得另一方的同意或是否用于家庭共同利益。\n\n对于赌债而言，赌博通常是个人行为，与家庭共同利益关系不大，且多数情况下也不会经过另一方同意。因此，赌债一般不能认定为夫妻共同债务，而应归属于个人债务。只有在极为特殊的情况下，例如赌债确实用于家庭必要开支或家庭急需事项，有相关证据证明其与家庭共同生活存在直接关联，才有可能被认定为夫妻共同债务。\n\n综上，赌债通常属于个人债务，而非夫妻共同债务。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "确定夫妻共同债务的法律依据",
+        "content": "要判断赌债是否属于夫妻共同债务，首先需要明确什么是夫妻共同债务。需要查阅相关法律规定，特别是《中华人民共和国民法典》关于夫妻债务的规定。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "搜索法律定义",
+        "content": "<search>夫妻共同债务 民法典</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "分析法律定义",
+        "content": "<information>根据《中华人民共和国民法典》第1064条规定，夫妻共同债务主要指夫妻双方共同签署的债务或用于家庭共同生活的债务。而未用于家庭共同生活、未征得另一方同意的个人债务，不属于夫妻共同债务。</information>根据上述定义，夫妻共同债务的判定标准是：债务的产生是否与家庭生活相关，以及是否征得配偶同意。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "判断赌债性质",
+        "content": "赌债通常是一方因赌博行为而产生的债务。赌博一般属于个人行为，通常不会被认定为用于家庭共同生活，更难以获得配偶的同意。因此需要明确该债务的具体情况，例如是否经过另一方的批准或是否用于家庭共同利益。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "根据《民法典》的规定，赌债通常不属于夫妻共同债务，因为其通常不用于家庭共同生活，也不会征得配偶同意。"
+      },
+      {
+        "action": "Verification",
+        "content": "结论符合现行法律规定。赌债一般属于一方的个人债务，而非夫妻共同债务。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "嗯，我需要先搞清楚什么是夫妻共同债务，这应该是判断的关键。既然是法律问题，那还是得看看民法典怎么说，我记得里面有相关的规定。让我搜一下相关内容。<search>夫妻共同债务 民法典</search>\n\n好，我找到了，根据《民法典》第1064条，夫妻共同债务包括两个主要情况：一个是夫妻双方一起签的债务，另一个是债务是用来负担家庭共同生活的。那如果债务是个人行为，又没有经过另一方的同意，在这种情况下，就应该不算夫妻共同债务吧？嗯，这条法律说得还挺明确。\n\n现在我们来看看赌债的情况。赌博一般是个人行为，它应该不太可能是为了家庭共同利益吧？而且，我觉得这么大的事情，想让配偶同意也是很困难的吧。赌债通常都是个人拿去赌的，跟家庭生活关系不大，哦对了，有些人可能会靠赌博来赚生活开销，但这种特殊情况还是得看具体证据，不能直接说是共同债务。\n\n所以啊，根据《民法典》的标准，赌债很可能会被认定为个人债务。因为对照一下，这些债务怎么都很难跟家庭生活扯上关系，也基本不会有事先取得配偶同意的情况。\n\n综合来看，赌债一般不会算夫妻共同债务，这和相关法律规定还是挺一致的。不过嘛，如果真有个特殊案例，比如赌债是用来支付家庭紧急开销的，那可能得具体分析、看实际情况了。",
+  "Response": "根据《中华人民共和国民法典》第1064条的规定，夫妻共同债务主要包括以下两种情况：一是夫妻双方共同签字或者双方共同意思表示所负的债务；二是用于家庭共同生活、生产经营等需要所负的债务。因此，判断债务是否属于夫妻共同债务，核心在于债务是否获得另一方的同意或是否用于家庭共同利益。\n\n对于赌债而言，赌博通常是个人行为，与家庭共同利益关系不大，且多数情况下也不会经过另一方同意。因此，赌债一般不能认定为夫妻共同债务，而应归属于个人债务。只有在极为特殊的情况下，例如赌债确实用于家庭必要开支或家庭急需事项，有相关证据证明其与家庭共同生活存在直接关联，才有可能被认定为夫妻共同债务。\n\n综上，赌债通常属于个人债务，而非夫妻共同债务。",
+  "Question": "赌债属于夫妻共同债务吗?"
+}

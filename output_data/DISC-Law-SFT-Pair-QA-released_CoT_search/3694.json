@@ -1,0 +1,99 @@
+{
+  "Open-ended Verifiable Question": "劳务合同不到期能否离职",
+  "Ground-True Answer": "辞职是劳动者的权利，劳动合同没到期可以辞职。现在的《劳动合同法》第三十二条有下列情形之一的，劳动者可以随时通知用人单位解除劳动合同：(一)在试用期内的;(二)用人单位以暴力、威胁或者非法限制人身自由的手段强迫劳动的;(三)用人单位未按照劳动合同约定支付劳动报酬或者提供劳动条件的。二、辞职争议工资待遇属于受理范围吗辞职争议工资待遇属于受理范围。《劳动争议调解仲裁法》第二条中华人民共和国境内的用人单位与劳动者发生的下列劳动争议，适用本法：(一)因确认劳动关系发生的争议;(二)因订立、履行、变更、解除和终止劳动合同发生的争议;(三)因除名、辞退和辞职、离职发生的争议;(四)因工作时间、休息休假、社会保险、福利、培训以及劳动保护发生的争议;(五)因劳动报酬、工伤医疗费、经济补偿或者赔偿金等发生的争议;(六)法律、法规规定的其他劳动争议。",
+  "process_id": 3694,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "明确问题和法律背景",
+      "content": "根据中国的劳动法，劳务合同属于劳动合同的一种形式，涉及雇员与用人单位之间的法律关系。关于是否可以提前离职，需了解劳动合同法中关于解除合同的相关条款，以及是否有提前通知的要求。涉及的关键是《劳动合同法》关于解除劳动合同的规定。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "寻找相关法律条文",
+      "content": "为了更准确回答问题，需要查找《劳动合同法》中有关劳务合同提前解除的具体条款，例如是否需要提前通知、有哪些合理理由可以提前解除合同，以及相关时间要求。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "提出搜索",
+      "content": "<search>劳动合同法提前解除合同的规定</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "分析搜索结果",
+      "content": "<information>根据《中华人民共和国劳动合同法》第37条，劳动者提前离职的条件为：劳动者可以在提前三十日以书面形式通知用人单位解除劳动合同；在试用期内，则需提前三日通知。另外，第38条规定，如果用人单位存在违法行为，比如未支付劳动报酬，劳动者有权立即解除劳动合同，不受提前通知的限制。</information>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "综合信息进行推导",
+      "content": "根据《劳动合同法》第37条，劳动者可以提前三十日以书面形式通知用人单位解除劳务合同。若劳动者处于试用期，此时间可缩短为三日。同时，第38条指出，若用人单位存在违法行为，劳动者可以立即解除合同。因此，无论劳务合同是否到期，劳动者在满足这些条件的情况下，有合法途径提前离职。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "劳务合同不到期是否能离职取决于具体情况。劳动者可以在提前三十日（试用期则为三日）以书面形式通知用人单位解除劳动合同；若用人单位存在违法行为，劳动者可立即解除合同。因此，在符合相关条件情况下，劳务合同不到期也是可以离职的。"
+    },
+    {
+      "action": "Verification",
+      "content": "结论与《劳动合同法》第37和第38条一致，明确劳动者有权提前解除合同，条件包括提前通知或用人单位存在违法行为。推论正确，验证通过。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n劳务合同不到期能否离职\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n劳务合同不到期是否能离职取决于具体情况。劳动者可以在提前三十日（试用期则为三日）以书面形式通知用人单位解除劳动合同；若用人单位存在违法行为，劳动者可立即解除合同。因此，在符合相关条件情况下，劳务合同不到期也是可以离职的。  \n</Model Response>  \n\n<Reference Answer>  \n辞职是劳动者的权利，劳动合同没到期可以辞职。现在的《劳动合同法》第三十二条有下列情形之一的，劳动者可以随时通知用人单位解除劳动合同：(一)在试用期内的;(二)用人单位以暴力、威胁或者非法限制人身自由的手段强迫劳动的;(三)用人单位未按照劳动合同约定支付劳动报酬或者提供劳动条件的。二、辞职争议工资待遇属于受理范围吗辞职争议工资待遇属于受理范围。《劳动争议调解仲裁法》第二条中华人民共和国境内的用人单位与劳动者发生的下列劳动争议，适用本法：(一)因确认劳动关系发生的争议;(二)因订立、履行、变更、解除和终止劳动合同发生的争议;(三)因除名、辞退和辞职、离职发生的争议;(四)因工作时间、休息休假、社会保险、福利、培训以及劳动保护发生的争议;(五)因劳动报酬、工伤医疗费、经济补偿或者赔偿金等发生的争议;(六)法律、法规规定的其他劳动争议。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 明确问题和法律背景\n根据中国的劳动法，劳务合同属于劳动合同的一种形式，涉及雇员与用人单位之间的法律关系。关于是否可以提前离职，需了解劳动合同法中关于解除合同的相关条款，以及是否有提前通知的要求。涉及的关键是《劳动合同法》关于解除劳动合同的规定。\n\n### 寻找相关法律条文\n为了更准确回答问题，需要查找《劳动合同法》中有关劳务合同提前解除的具体条款，例如是否需要提前通知、有哪些合理理由可以提前解除合同，以及相关时间要求。\n\n### 提出搜索\n<search>劳动合同法提前解除合同的规定</search>\n\n### 分析搜索结果\n<information>根据《中华人民共和国劳动合同法》第37条，劳动者提前离职的条件为：劳动者可以在提前三十日以书面形式通知用人单位解除劳动合同；在试用期内，则需提前三日通知。另外，第38条规定，如果用人单位存在违法行为，比如未支付劳动报酬，劳动者有权立即解除劳动合同，不受提前通知的限制。</information>\n\n### 综合信息进行推导\n根据《劳动合同法》第37条，劳动者可以提前三十日以书面形式通知用人单位解除劳务合同。若劳动者处于试用期，此时间可缩短为三日。同时，第38条指出，若用人单位存在违法行为，劳动者可以立即解除合同。因此，无论劳务合同是否到期，劳动者在满足这些条件的情况下，有合法途径提前离职。\n\n### Conclusion\n劳务合同不到期是否能离职取决于具体情况。劳动者可以在提前三十日（试用期则为三日）以书面形式通知用人单位解除劳动合同；若用人单位存在违法行为，劳动者可立即解除合同。因此，在符合相关条件情况下，劳务合同不到期也是可以离职的。\n\n### Verification\n结论与《劳动合同法》第37和第38条一致，明确劳动者有权提前解除合同，条件包括提前通知或用人单位存在违法行为。推论正确，验证通过。\n</Thought Process>\n\n<Question>\n劳务合同不到期能否离职\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n劳务合同不到期能不能离职呢？嗯，我得先想想相关的法律规定。一般来说，劳务合同是劳动合同的一种类型，那劳动法肯定能给出答案。对了，劳动合同法应该有关于提前解除合同的条款，我记得好像涉及通知提前多少天，还有什么情况可以直接解除合同。嗯，还是去查一下更准确吧。 \n\n<search>劳动合同法提前解除合同的规定</search> \n\n哦，找到了！根据《中华人民共和国劳动合同法》第37条，劳动者可以提前三十天以书面形式通知用人单位解除劳动合同。如果是在试用期的话，那通知时间就缩短为三天。另外，《劳动合同法》第38条还有一个特别的规定，说如果用人单位有违法行为，比如压工资或者不给报酬，劳动者就可以马上离职，根本不需要提前通知。 \n\n嗯，这样的话，看来问题的答案其实挺清楚了。只要劳动者提前三十天以书面通知（或者试用期内提前三天）就可以合法解除合同，不管合同有没有到期。当然，如果单位违法，离职就更简单了，直接走人就行。 \n\n这么说来，劳务合同不到期还是可以离职的，但要么提前通知，要么单位有问题。当然，要注意书面通知这种形式，别忘了！这跟法律规定是一致的。嗯，理解得没问题，感觉答案挺可靠的。\n</Internal Thinking>\n\n<Question>\n劳务合同不到期能否离职\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"明确问题和法律背景\",\n      \"content\": \"根据中国的劳动法，劳务合同属于劳动合同的一种形式，涉及雇员与用人单位之间的法律关系。关于是否可以提前离职，需了解劳动合同法中关于解除合同的相关条款，以及是否有提前通知的要求。涉及的关键是《劳动合同法》关于解除劳动合同的规定。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"寻找相关法律条文\",\n      \"content\": \"为了更准确回答问题，需要查找《劳动合同法》中有关劳务合同提前解除的具体条款，例如是否需要提前通知、有哪些合理理由可以提前解除合同，以及相关时间要求。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"提出搜索\",\n      \"content\": \"<search>劳动合同法提前解除合同的规定</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析搜索结果\",\n      \"content\": \"<information>根据《中华人民共和国劳动合同法》第37条，劳动者提前离职的条件为：劳动者可以在提前三十日以书面形式通知用人单位解除劳动合同；在试用期内，则需提前三日通知。另外，第38条规定，如果用人单位存在违法行为，比如未支付劳动报酬，劳动者有权立即解除劳动合同，不受提前通知的限制。</information>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"综合信息进行推导\",\n      \"content\": \"根据《劳动合同法》第37条，劳动者可以提前三十日以书面形式通知用人单位解除劳务合同。若劳动者处于试用期，此时间可缩短为三日。同时，第38条指出，若用人单位存在违法行为，劳动者可以立即解除合同。因此，无论劳务合同是否到期，劳动者在满足这些条件的情况下，有合法途径提前离职。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"劳务合同不到期是否能离职取决于具体情况。劳动者可以在提前三十日（试用期则为三日）以书面形式通知用人单位解除劳动合同；若用人单位存在违法行为，劳动者可立即解除合同。因此，在符合相关条件情况下，劳务合同不到期也是可以离职的。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"结论与《劳动合同法》第37和第38条一致，明确劳动者有权提前解除合同，条件包括提前通知或用人单位存在违法行为。推论正确，验证通过。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"劳务合同不到期能不能离职呢？嗯，我得先想想相关的法律规定。一般来说，劳务合同是劳动合同的一种类型，那劳动法肯定能给出答案。对了，劳动合同法应该有关于提前解除合同的条款，我记得好像涉及通知提前多少天，还有什么情况可以直接解除合同。嗯，还是去查一下更准确吧。 \\n\\n<search>劳动合同法提前解除合同的规定</search> \\n\\n哦，找到了！根据《中华人民共和国劳动合同法》第37条，劳动者可以提前三十天以书面形式通知用人单位解除劳动合同。如果是在试用期的话，那通知时间就缩短为三天。另外，《劳动合同法》第38条还有一个特别的规定，说如果用人单位有违法行为，比如压工资或者不给报酬，劳动者就可以马上离职，根本不需要提前通知。 \\n\\n嗯，这样的话，看来问题的答案其实挺清楚了。只要劳动者提前三十天以书面通知（或者试用期内提前三天）就可以合法解除合同，不管合同有没有到期。当然，如果单位违法，离职就更简单了，直接走人就行。 \\n\\n这么说来，劳务合同不到期还是可以离职的，但要么提前通知，要么单位有问题。当然，要注意书面通知这种形式，别忘了！这跟法律规定是一致的。嗯，理解得没问题，感觉答案挺可靠的。\"\n}\n```",
+    "当然可以，劳务合同不到期时，劳动者仍然有权依法提出离职。根据《中华人民共和国劳动合同法》第37条的规定，劳动者可以提前三十天以书面形式通知用人单位解除劳动合同；如果处于试用期内，则只需提前三天书面通知即可。同时，如果用人单位存在《劳动合同法》第38条规定的违法情形，例如未及时足额支付劳动报酬、未提供劳动保护条件，劳动者可以立即解除劳动合同，而无需提前通知。\n\n因此，不论劳务合同是否到期，劳动者都可以依据法律规定选择离职，只要按照规定提前通知或遇到用人单位违约情况即可。同时建议在实际操作中，保留好相关书面通知的证据，以避免与用人单位发生争议。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "明确问题和法律背景",
+        "content": "根据中国的劳动法，劳务合同属于劳动合同的一种形式，涉及雇员与用人单位之间的法律关系。关于是否可以提前离职，需了解劳动合同法中关于解除合同的相关条款，以及是否有提前通知的要求。涉及的关键是《劳动合同法》关于解除劳动合同的规定。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "寻找相关法律条文",
+        "content": "为了更准确回答问题，需要查找《劳动合同法》中有关劳务合同提前解除的具体条款，例如是否需要提前通知、有哪些合理理由可以提前解除合同，以及相关时间要求。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "提出搜索",
+        "content": "<search>劳动合同法提前解除合同的规定</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "分析搜索结果",
+        "content": "<information>根据《中华人民共和国劳动合同法》第37条，劳动者提前离职的条件为：劳动者可以在提前三十日以书面形式通知用人单位解除劳动合同；在试用期内，则需提前三日通知。另外，第38条规定，如果用人单位存在违法行为，比如未支付劳动报酬，劳动者有权立即解除劳动合同，不受提前通知的限制。</information>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "综合信息进行推导",
+        "content": "根据《劳动合同法》第37条，劳动者可以提前三十日以书面形式通知用人单位解除劳务合同。若劳动者处于试用期，此时间可缩短为三日。同时，第38条指出，若用人单位存在违法行为，劳动者可以立即解除合同。因此，无论劳务合同是否到期，劳动者在满足这些条件的情况下，有合法途径提前离职。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "劳务合同不到期是否能离职取决于具体情况。劳动者可以在提前三十日（试用期则为三日）以书面形式通知用人单位解除劳动合同；若用人单位存在违法行为，劳动者可立即解除合同。因此，在符合相关条件情况下，劳务合同不到期也是可以离职的。"
+      },
+      {
+        "action": "Verification",
+        "content": "结论与《劳动合同法》第37和第38条一致，明确劳动者有权提前解除合同，条件包括提前通知或用人单位存在违法行为。推论正确，验证通过。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "劳务合同不到期能不能离职呢？嗯，我得先想想相关的法律规定。一般来说，劳务合同是劳动合同的一种类型，那劳动法肯定能给出答案。对了，劳动合同法应该有关于提前解除合同的条款，我记得好像涉及通知提前多少天，还有什么情况可以直接解除合同。嗯，还是去查一下更准确吧。 \n\n<search>劳动合同法提前解除合同的规定</search> \n\n哦，找到了！根据《中华人民共和国劳动合同法》第37条，劳动者可以提前三十天以书面形式通知用人单位解除劳动合同。如果是在试用期的话，那通知时间就缩短为三天。另外，《劳动合同法》第38条还有一个特别的规定，说如果用人单位有违法行为，比如压工资或者不给报酬，劳动者就可以马上离职，根本不需要提前通知。 \n\n嗯，这样的话，看来问题的答案其实挺清楚了。只要劳动者提前三十天以书面通知（或者试用期内提前三天）就可以合法解除合同，不管合同有没有到期。当然，如果单位违法，离职就更简单了，直接走人就行。 \n\n这么说来，劳务合同不到期还是可以离职的，但要么提前通知，要么单位有问题。当然，要注意书面通知这种形式，别忘了！这跟法律规定是一致的。嗯，理解得没问题，感觉答案挺可靠的。",
+  "Response": "当然可以，劳务合同不到期时，劳动者仍然有权依法提出离职。根据《中华人民共和国劳动合同法》第37条的规定，劳动者可以提前三十天以书面形式通知用人单位解除劳动合同；如果处于试用期内，则只需提前三天书面通知即可。同时，如果用人单位存在《劳动合同法》第38条规定的违法情形，例如未及时足额支付劳动报酬、未提供劳动保护条件，劳动者可以立即解除劳动合同，而无需提前通知。\n\n因此，不论劳务合同是否到期，劳动者都可以依据法律规定选择离职，只要按照规定提前通知或遇到用人单位违约情况即可。同时建议在实际操作中，保留好相关书面通知的证据，以避免与用人单位发生争议。",
+  "Question": "劳务合同不到期能否离职"
+}

@@ -1,0 +1,89 @@
+{
+  "Open-ended Verifiable Question": "什么是小产权房?",
+  "Ground-True Answer": "小产权房的产权证是由乡政府或村政府颁发的，不能进行备案。基本上小产权是在一个区域内流通的产品，产权证是地方政府颁发的，就是乡产权房。小产一般分为村委持有，和村民持有两种，现在市面流通的小产权房百分之90属于这两种。\n“小产权房”按照性质来分有两类：一类是在农村集体建设用地建的房子，就是农村的宅基房，是属于农村集体组织成员的；另一种是在集体企业用地或者占用耕地违法建设的房子。",
+  "process_id": 6055,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "定义小产权房",
+      "content": "为了理解小产权房的意义，我们需要首先明确什么是产权。地产产权通常由国家颁发的正式证书来表明所有权，比如商品房的产权由房产证体现。接下来思考小产权房与商品房的区别，发现其命名中包含“产权”，但没有国家正式产权证书。因此推测小产权房应涉及地方权限或其他类型的产权局限性。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "小产权房的法律定义",
+      "content": "为了确认小产权房是否有明确的法律定义或是否在法律框架内规范，可能需要查找相关法规，例如《土地管理法》或地方性文件对该概念的说明。<search>小产权房的法律定义</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "搜索结果分析",
+      "content": "<information>小产权房通常指的是未经过国家正规的土地使用审批手续或没有依法办理产权登记的房地产。它是由乡村集体经济组织或地方政府在集体土地上建设并出售给个人的住房，且无法合法办理国家颁发的正规房产证。</information>根据上述信息，小产权房明显存在产权上的局限性，且与国有土地用途管理相关问题直接相关。</content>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "法律与风险判断",
+      "content": "由于小产权房没有国家认可的产权证书，它很可能在买卖、抵押、租赁等使用层面存在法律风险。此外，这种房产在政策或法规变动时，可能面临被拆迁、无法确权等问题。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "小产权房指的是在农村集体土地上建设，并由地方组织或个人自行出售的住房。这类房产没有国家正规的房屋产权证书，仅对购买者拥有一种内部产权或称地方产权。由于其土地性质和产权设定未依法合规，此类房屋通常存在法律风险，不能用于正式的产权交易或抵押。"
+    },
+    {
+      "action": "Verification",
+      "content": "该结论符合现有的信息。小产权房的定义及法律风险已经明确，无需进一步验证。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n什么是小产权房?\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n小产权房指的是在农村集体土地上建设，并由地方组织或个人自行出售的住房。这类房产没有国家正规的房屋产权证书，仅对购买者拥有一种内部产权或称地方产权。由于其土地性质和产权设定未依法合规，此类房屋通常存在法律风险，不能用于正式的产权交易或抵押。  \n</Model Response>  \n\n<Reference Answer>  \n小产权房的产权证是由乡政府或村政府颁发的，不能进行备案。基本上小产权是在一个区域内流通的产品，产权证是地方政府颁发的，就是乡产权房。小产一般分为村委持有，和村民持有两种，现在市面流通的小产权房百分之90属于这两种。\n“小产权房”按照性质来分有两类：一类是在农村集体建设用地建的房子，就是农村的宅基房，是属于农村集体组织成员的；另一种是在集体企业用地或者占用耕地违法建设的房子。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 定义小产权房\n为了理解小产权房的意义，我们需要首先明确什么是产权。地产产权通常由国家颁发的正式证书来表明所有权，比如商品房的产权由房产证体现。接下来思考小产权房与商品房的区别，发现其命名中包含“产权”，但没有国家正式产权证书。因此推测小产权房应涉及地方权限或其他类型的产权局限性。\n\n### 小产权房的法律定义\n为了确认小产权房是否有明确的法律定义或是否在法律框架内规范，可能需要查找相关法规，例如《土地管理法》或地方性文件对该概念的说明。<search>小产权房的法律定义</search>\n\n### 搜索结果分析\n<information>小产权房通常指的是未经过国家正规的土地使用审批手续或没有依法办理产权登记的房地产。它是由乡村集体经济组织或地方政府在集体土地上建设并出售给个人的住房，且无法合法办理国家颁发的正规房产证。</information>根据上述信息，小产权房明显存在产权上的局限性，且与国有土地用途管理相关问题直接相关。</content>\n\n### 法律与风险判断\n由于小产权房没有国家认可的产权证书，它很可能在买卖、抵押、租赁等使用层面存在法律风险。此外，这种房产在政策或法规变动时，可能面临被拆迁、无法确权等问题。\n\n### Conclusion\n小产权房指的是在农村集体土地上建设，并由地方组织或个人自行出售的住房。这类房产没有国家正规的房屋产权证书，仅对购买者拥有一种内部产权或称地方产权。由于其土地性质和产权设定未依法合规，此类房屋通常存在法律风险，不能用于正式的产权交易或抵押。\n\n### Verification\n该结论符合现有的信息。小产权房的定义及法律风险已经明确，无需进一步验证。\n</Thought Process>\n\n<Question>\n什么是小产权房?\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n嗯，我们来说说小产权房到底是什么吧。首先想到的是，这个名字里带有“产权”，似乎和房产的所有权有很大的关系。那“产权”到底是什么呢？好像跟房产证密切相关吧，因为通常买房子都会有一个产权证书，标准的商品房都是有国家颁发的正式房产证的，那小产权房的情况应该有点不同？既然叫“小产权”，是不是意味着它的产权范围或者合法性有些限制呢？感觉这个方向值得再深入看看。\n\n然后，我在想，这种房子有没有一个明确的法律定义呢？或者说，它有没有出现在相关法律文件里，比如土地管理相关的法规？为了弄清楚这个问题，我觉得应该查一下相关信息，于是我搜索了一个关键词：<search>小产权房的法律定义</search>。\n\n哦，我找到了一个信息！<information>小产权房一般是没有经过国家正规的土地使用审批手续，也没有正式办理产权登记的房子。它是在农村的集体土地上建造的，由乡村集体经济组织或者地方政府直接卖给个人的住房。不过，这种房子不能办理国家认可的房屋产权证，只能有一种内部的产权或者叫地方产权。</information>\n\n根据这个解释，小产权房的确和正式商品房不一样。它的土地是集体性质的，产权也只是内部认可，没办法像商品房那样正式确权。这让我想到一个问题：这种房子会不会在法律层面上有风险呢？比如，有没有可能遇到政策调整或者拆迁时的麻烦呢？\n\n再仔细想想，如果没有国家认可的产权证书，那可能买卖的时候会有限制，比如很难通过合法手段进行过户；抵押的时候也可能因为产权不受认可而无法办理，另外，租赁可能也面临一定的限制。说到风险，感觉这种房产在政策或者法规变化的时候，可能会面对比如拆迁赔偿缺失、产权纠纷之类的问题。这就显得不太靠谱了，至少相比正规商品房来说，风险明显更大。\n\n总结一下吧，小产权房就是在农村集体土地上建的房子，没有正规的产权证，只有一个地方性的或者内部认可的产权。由于产权性质比较特殊，这类房子通常在法律方面比较脆弱，尤其是在买卖、确权和政策变动等方面风险比较高。所以，买这种房子可能需要三思。\n\n嗯，这些信息看起来挺清楚的，我觉得这个结论成立，不需要再查更多了。\n</Internal Thinking>\n\n<Question>\n什么是小产权房?\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"定义小产权房\",\n      \"content\": \"为了理解小产权房的意义，我们需要首先明确什么是产权。地产产权通常由国家颁发的正式证书来表明所有权，比如商品房的产权由房产证体现。接下来思考小产权房与商品房的区别，发现其命名中包含“产权”，但没有国家正式产权证书。因此推测小产权房应涉及地方权限或其他类型的产权局限性。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"小产权房的法律定义\",\n      \"content\": \"为了确认小产权房是否有明确的法律定义或是否在法律框架内规范，可能需要查找相关法规，例如《土地管理法》或地方性文件对该概念的说明。<search>小产权房的法律定义</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"搜索结果分析\",\n      \"content\": \"<information>小产权房通常指的是未经过国家正规的土地使用审批手续或没有依法办理产权登记的房地产。它是由乡村集体经济组织或地方政府在集体土地上建设并出售给个人的住房，且无法合法办理国家颁发的正规房产证。</information>根据上述信息，小产权房明显存在产权上的局限性，且与国有土地用途管理相关问题直接相关。</content>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"法律与风险判断\",\n      \"content\": \"由于小产权房没有国家认可的产权证书，它很可能在买卖、抵押、租赁等使用层面存在法律风险。此外，这种房产在政策或法规变动时，可能面临被拆迁、无法确权等问题。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"小产权房指的是在农村集体土地上建设，并由地方组织或个人自行出售的住房。这类房产没有国家正规的房屋产权证书，仅对购买者拥有一种内部产权或称地方产权。由于其土地性质和产权设定未依法合规，此类房屋通常存在法律风险，不能用于正式的产权交易或抵押。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"该结论符合现有的信息。小产权房的定义及法律风险已经明确，无需进一步验证。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"嗯，我们来说说小产权房到底是什么吧。首先想到的是，这个名字里带有“产权”，似乎和房产的所有权有很大的关系。那“产权”到底是什么呢？好像跟房产证密切相关吧，因为通常买房子都会有一个产权证书，标准的商品房都是有国家颁发的正式房产证的，那小产权房的情况应该有点不同？既然叫“小产权”，是不是意味着它的产权范围或者合法性有些限制呢？感觉这个方向值得再深入看看。\\n\\n然后，我在想，这种房子有没有一个明确的法律定义呢？或者说，它有没有出现在相关法律文件里，比如土地管理相关的法规？为了弄清楚这个问题，我觉得应该查一下相关信息，于是我搜索了一个关键词：<search>小产权房的法律定义</search>。\\n\\n哦，我找到了一个信息！<information>小产权房一般是没有经过国家正规的土地使用审批手续，也没有正式办理产权登记的房子。它是在农村的集体土地上建造的，由乡村集体经济组织或者地方政府直接卖给个人的住房。不过，这种房子不能办理国家认可的房屋产权证，只能有一种内部的产权或者叫地方产权。</information>\\n\\n根据这个解释，小产权房的确和正式商品房不一样。它的土地是集体性质的，产权也只是内部认可，没办法像商品房那样正式确权。这让我想到一个问题：这种房子会不会在法律层面上有风险呢？比如，有没有可能遇到政策调整或者拆迁时的麻烦呢？\\n\\n再仔细想想，如果没有国家认可的产权证书，那可能买卖的时候会有限制，比如很难通过合法手段进行过户；抵押的时候也可能因为产权不受认可而无法办理，另外，租赁可能也面临一定的限制。说到风险，感觉这种房产在政策或者法规变化的时候，可能会面对比如拆迁赔偿缺失、产权纠纷之类的问题。这就显得不太靠谱了，至少相比正规商品房来说，风险明显更大。\\n\\n总结一下吧，小产权房就是在农村集体土地上建的房子，没有正规的产权证，只有一个地方性的或者内部认可的产权。由于产权性质比较特殊，这类房子通常在法律方面比较脆弱，尤其是在买卖、确权和政策变动等方面风险比较高。所以，买这种房子可能需要三思。\\n\\n嗯，这些信息看起来挺清楚的，我觉得这个结论成立，不需要再查更多了。\"\n}\n```",
+    "小产权房是指没有经过国家正式审批的土地使用手续，也没有办理产权登记的房子。这类房屋通常建在农村集体土地上，由乡村集体经济组织或地方政府直接向个人出售。由于用地性质是集体所有，小产权房无法获得国家颁发的房产证，权属范围仅限于集体经济组织内部，通常被称为“地方产权”或“内部产权”。\n\n值得注意的是，小产权房在法律上存在较大的风险。由于缺乏国家认可的产权证，这类房子无法进行合法的买卖过户，抵押贷款也难以办理。此外，一旦遇到政策调整或拆迁，小产权房的补偿也可能得不到保障。因此，与正规商品房相比，小产权房在交易和权属安全方面存在较多不确定性。\n\n购买小产权房时需要慎重考虑，充分评估其潜在的法律和政策风险。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "定义小产权房",
+        "content": "为了理解小产权房的意义，我们需要首先明确什么是产权。地产产权通常由国家颁发的正式证书来表明所有权，比如商品房的产权由房产证体现。接下来思考小产权房与商品房的区别，发现其命名中包含“产权”，但没有国家正式产权证书。因此推测小产权房应涉及地方权限或其他类型的产权局限性。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "小产权房的法律定义",
+        "content": "为了确认小产权房是否有明确的法律定义或是否在法律框架内规范，可能需要查找相关法规，例如《土地管理法》或地方性文件对该概念的说明。<search>小产权房的法律定义</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "搜索结果分析",
+        "content": "<information>小产权房通常指的是未经过国家正规的土地使用审批手续或没有依法办理产权登记的房地产。它是由乡村集体经济组织或地方政府在集体土地上建设并出售给个人的住房，且无法合法办理国家颁发的正规房产证。</information>根据上述信息，小产权房明显存在产权上的局限性，且与国有土地用途管理相关问题直接相关。</content>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "法律与风险判断",
+        "content": "由于小产权房没有国家认可的产权证书，它很可能在买卖、抵押、租赁等使用层面存在法律风险。此外，这种房产在政策或法规变动时，可能面临被拆迁、无法确权等问题。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "小产权房指的是在农村集体土地上建设，并由地方组织或个人自行出售的住房。这类房产没有国家正规的房屋产权证书，仅对购买者拥有一种内部产权或称地方产权。由于其土地性质和产权设定未依法合规，此类房屋通常存在法律风险，不能用于正式的产权交易或抵押。"
+      },
+      {
+        "action": "Verification",
+        "content": "该结论符合现有的信息。小产权房的定义及法律风险已经明确，无需进一步验证。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "嗯，我们来说说小产权房到底是什么吧。首先想到的是，这个名字里带有“产权”，似乎和房产的所有权有很大的关系。那“产权”到底是什么呢？好像跟房产证密切相关吧，因为通常买房子都会有一个产权证书，标准的商品房都是有国家颁发的正式房产证的，那小产权房的情况应该有点不同？既然叫“小产权”，是不是意味着它的产权范围或者合法性有些限制呢？感觉这个方向值得再深入看看。\n\n然后，我在想，这种房子有没有一个明确的法律定义呢？或者说，它有没有出现在相关法律文件里，比如土地管理相关的法规？为了弄清楚这个问题，我觉得应该查一下相关信息，于是我搜索了一个关键词：<search>小产权房的法律定义</search>。\n\n哦，我找到了一个信息！<information>小产权房一般是没有经过国家正规的土地使用审批手续，也没有正式办理产权登记的房子。它是在农村的集体土地上建造的，由乡村集体经济组织或者地方政府直接卖给个人的住房。不过，这种房子不能办理国家认可的房屋产权证，只能有一种内部的产权或者叫地方产权。</information>\n\n根据这个解释，小产权房的确和正式商品房不一样。它的土地是集体性质的，产权也只是内部认可，没办法像商品房那样正式确权。这让我想到一个问题：这种房子会不会在法律层面上有风险呢？比如，有没有可能遇到政策调整或者拆迁时的麻烦呢？\n\n再仔细想想，如果没有国家认可的产权证书，那可能买卖的时候会有限制，比如很难通过合法手段进行过户；抵押的时候也可能因为产权不受认可而无法办理，另外，租赁可能也面临一定的限制。说到风险，感觉这种房产在政策或者法规变化的时候，可能会面对比如拆迁赔偿缺失、产权纠纷之类的问题。这就显得不太靠谱了，至少相比正规商品房来说，风险明显更大。\n\n总结一下吧，小产权房就是在农村集体土地上建的房子，没有正规的产权证，只有一个地方性的或者内部认可的产权。由于产权性质比较特殊，这类房子通常在法律方面比较脆弱，尤其是在买卖、确权和政策变动等方面风险比较高。所以，买这种房子可能需要三思。\n\n嗯，这些信息看起来挺清楚的，我觉得这个结论成立，不需要再查更多了。",
+  "Response": "小产权房是指没有经过国家正式审批的土地使用手续，也没有办理产权登记的房子。这类房屋通常建在农村集体土地上，由乡村集体经济组织或地方政府直接向个人出售。由于用地性质是集体所有，小产权房无法获得国家颁发的房产证，权属范围仅限于集体经济组织内部，通常被称为“地方产权”或“内部产权”。\n\n值得注意的是，小产权房在法律上存在较大的风险。由于缺乏国家认可的产权证，这类房子无法进行合法的买卖过户，抵押贷款也难以办理。此外，一旦遇到政策调整或拆迁，小产权房的补偿也可能得不到保障。因此，与正规商品房相比，小产权房在交易和权属安全方面存在较多不确定性。\n\n购买小产权房时需要慎重考虑，充分评估其潜在的法律和政策风险。",
+  "Question": "什么是小产权房?"
+}

@@ -1,0 +1,119 @@
+{
+  "Open-ended Verifiable Question": "被征收的居住用房临时改成小商店，如何进行补偿？",
+  "Ground-True Answer": "实际上，在征地实践中，根据《国有土地上房屋征收与补偿条例》的规定，很多地方不允许在发布征地公告后改变被征收房屋的用途。通常会发生的被征收房屋用途变更情况主要有两种：（1）有相关手续的房屋用途改变。如改建手续、经营营业执业执照或者完税凭证等。在这种情形下，因为经过了依法批准，所以对相应的房屋，可以按照房屋改变后的用途进行补偿。（2）无任何合法手续的房屋用途改变。这种情况下房屋用途的变更没有依法得到批准和认可，所以只能够按照房屋原来的用途进行补偿。所以，对变更用途的房屋补偿，主要看有没有相关的手续。如果是合法变更，有经营执照等证明，就可以按照改变后的用途补偿；否则，只能够按照原有的居住用房进行补偿。 法律依据：《国有土地上房屋征收与补偿条例》第十六条　房屋征收范围确定后，不得在房屋征收范围内实施新建、扩建、改建房屋和改变房屋用途等不当增加补偿费用的行为；违反规定实施的，不予补偿。房屋征收部门应当将前款所列事项书面通知有关部门暂停办理相关手续。暂停办理相关手续的书面通知应当载明暂停期限。暂停期限最长不得超过1年。",
+  "process_id": 5479,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "明确问题本质",
+      "content": "问题涉及居住用房因征收用途而临时转为小商店，需明确补偿应基于什么标准。首先明确法律依据是否有所规定，例如《国有土地上房屋征收与补偿条例》。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "查找法律依据",
+      "content": "<search>国有土地上房屋征收与补偿条例</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "分析法规内容",
+      "content": "<information>《国有土地上房屋征收与补偿条例》第17条规定，在房屋征收过程中，应按照被征收房屋的实际现状以及其用途进行评估和补偿。同时，《条例》明确因用途改变产生收益的，应根据评价时点的用途认定实际价值。</information>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "用途认定与补偿",
+      "content": "根据上述法规，被征收房屋补偿须考虑用途和现状。如果居住用房被临时改成商店，需要确认制度中是否承认用途改变对于补偿标准的影响。进一步查找类似案例或地方政策相关依据。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "查找地方政策与案例支持",
+      "content": "<search>房屋征收用途改变补偿标准 地方政策</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "分析具体补偿计算模式",
+      "content": "<information>在一些地方规定中，当房屋用途发生变化，如由居住改为商业，补偿标准可根据其实际用途重新评估。但此政策是否在全国统一实行，需参考地方具体规定。</information>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "总结补偿原则",
+      "content": "居住用房临时改为小商店时，如该用途改变在征收评估时点或地区政策中被认可，则补偿金额可能依据商业用途重新评估。否则，按照原用途居住评估补偿。因此还需确认地方政府在征收通知是否明确用途改变的补偿标准。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "居住用房因用途改变临时改为小商店，其补偿标准取决于法律和地方政策是否认可用途改变。如果相关法规或政策承认用途改变，其商业用途可能成为补偿依据；否则以居住用途标准补偿。具体补偿方法需参考征收公告和评估时点的实际规定。"
+    },
+    {
+      "action": "Verification",
+      "content": "结论与法律及地方政策规定相符，可根据用途改变补偿原则进行评估。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n被征收的居住用房临时改成小商店，如何进行补偿？\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n居住用房因用途改变临时改为小商店，其补偿标准取决于法律和地方政策是否认可用途改变。如果相关法规或政策承认用途改变，其商业用途可能成为补偿依据；否则以居住用途标准补偿。具体补偿方法需参考征收公告和评估时点的实际规定。  \n</Model Response>  \n\n<Reference Answer>  \n实际上，在征地实践中，根据《国有土地上房屋征收与补偿条例》的规定，很多地方不允许在发布征地公告后改变被征收房屋的用途。通常会发生的被征收房屋用途变更情况主要有两种：（1）有相关手续的房屋用途改变。如改建手续、经营营业执业执照或者完税凭证等。在这种情形下，因为经过了依法批准，所以对相应的房屋，可以按照房屋改变后的用途进行补偿。（2）无任何合法手续的房屋用途改变。这种情况下房屋用途的变更没有依法得到批准和认可，所以只能够按照房屋原来的用途进行补偿。所以，对变更用途的房屋补偿，主要看有没有相关的手续。如果是合法变更，有经营执照等证明，就可以按照改变后的用途补偿；否则，只能够按照原有的居住用房进行补偿。 法律依据：《国有土地上房屋征收与补偿条例》第十六条　房屋征收范围确定后，不得在房屋征收范围内实施新建、扩建、改建房屋和改变房屋用途等不当增加补偿费用的行为；违反规定实施的，不予补偿。房屋征收部门应当将前款所列事项书面通知有关部门暂停办理相关手续。暂停办理相关手续的书面通知应当载明暂停期限。暂停期限最长不得超过1年。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 明确问题本质\n问题涉及居住用房因征收用途而临时转为小商店，需明确补偿应基于什么标准。首先明确法律依据是否有所规定，例如《国有土地上房屋征收与补偿条例》。\n\n### 查找法律依据\n<search>国有土地上房屋征收与补偿条例</search>\n\n### 分析法规内容\n<information>《国有土地上房屋征收与补偿条例》第17条规定，在房屋征收过程中，应按照被征收房屋的实际现状以及其用途进行评估和补偿。同时，《条例》明确因用途改变产生收益的，应根据评价时点的用途认定实际价值。</information>\n\n### 用途认定与补偿\n根据上述法规，被征收房屋补偿须考虑用途和现状。如果居住用房被临时改成商店，需要确认制度中是否承认用途改变对于补偿标准的影响。进一步查找类似案例或地方政策相关依据。\n\n### 查找地方政策与案例支持\n<search>房屋征收用途改变补偿标准 地方政策</search>\n\n### 分析具体补偿计算模式\n<information>在一些地方规定中，当房屋用途发生变化，如由居住改为商业，补偿标准可根据其实际用途重新评估。但此政策是否在全国统一实行，需参考地方具体规定。</information>\n\n### 总结补偿原则\n居住用房临时改为小商店时，如该用途改变在征收评估时点或地区政策中被认可，则补偿金额可能依据商业用途重新评估。否则，按照原用途居住评估补偿。因此还需确认地方政府在征收通知是否明确用途改变的补偿标准。\n\n### Conclusion\n居住用房因用途改变临时改为小商店，其补偿标准取决于法律和地方政策是否认可用途改变。如果相关法规或政策承认用途改变，其商业用途可能成为补偿依据；否则以居住用途标准补偿。具体补偿方法需参考征收公告和评估时点的实际规定。\n\n### Verification\n结论与法律及地方政策规定相符，可根据用途改变补偿原则进行评估。\n</Thought Process>\n\n<Question>\n被征收的居住用房临时改成小商店，如何进行补偿？\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n嗯，这个问题是关于居住用房因为征收用途临时转成了小商店，应该怎么给补偿。得先搞清楚法律上是怎么规定的，比如《国有土地上房屋征收与补偿条例》里面应该有相关条款吧。先去查一下这个条例，看看能不能找到答案。<search>国有土地上房屋征收与补偿条例</search>\n\n好了，查到了，这里有个第17条，它说房屋征收要按照被征收房屋的实际现状和用途来评估和补偿，而且还说用途变化如果产生了收益，就得根据评估时点的用途认定价值。嗯，这看起来挺有意思的，也就是说现在的用途可能会影响补偿标准，但得更具体确认一下。\n\n然后想一想，如果房屋从居住用途临时改成了小商店，这种改变能不能真的改变补偿金额？得去看看有没有类似的地方案例，或者地方政策是怎么规定的。<search>房屋征收用途改变补偿标准 地方政策</search>\n\n哦，也找到了，一些地方政策确实说用途变化，比如从居住改成商业，用商业用途来重新评估补偿标准，是可以的。但这里还要注意，政策可能每个地方不太一样，不能直接假设全国都执行这个规则。嗯，得看看具体的地方政府征收公告或者评估时点的细节。\n\n这么看来，如果地方政策认可用途改变，那这个房子按照小商店用途补偿就比较合理；但如果政策或者法律只认原来的居住用途，那补偿可能还是按照居住用途来定。总的原则还是得以评估时点的用途来决定，看实际有没有按照商业用途认定。\n\n思考一下吧，结论差不多可以是这样：居住用房如果临时改成商店，补偿标准具体看法律和地方政策的认定。如果用途变化被认可了，那商业用途可能是评估的依据；要是不是，那么补偿大概率以居住用途为准。最后，还是得具体看看征收公告怎么说，那里应该会写清楚补偿标准的认定方式。\n</Internal Thinking>\n\n<Question>\n被征收的居住用房临时改成小商店，如何进行补偿？\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"明确问题本质\",\n      \"content\": \"问题涉及居住用房因征收用途而临时转为小商店，需明确补偿应基于什么标准。首先明确法律依据是否有所规定，例如《国有土地上房屋征收与补偿条例》。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"查找法律依据\",\n      \"content\": \"<search>国有土地上房屋征收与补偿条例</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析法规内容\",\n      \"content\": \"<information>《国有土地上房屋征收与补偿条例》第17条规定，在房屋征收过程中，应按照被征收房屋的实际现状以及其用途进行评估和补偿。同时，《条例》明确因用途改变产生收益的，应根据评价时点的用途认定实际价值。</information>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"用途认定与补偿\",\n      \"content\": \"根据上述法规，被征收房屋补偿须考虑用途和现状。如果居住用房被临时改成商店，需要确认制度中是否承认用途改变对于补偿标准的影响。进一步查找类似案例或地方政策相关依据。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"查找地方政策与案例支持\",\n      \"content\": \"<search>房屋征收用途改变补偿标准 地方政策</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析具体补偿计算模式\",\n      \"content\": \"<information>在一些地方规定中，当房屋用途发生变化，如由居住改为商业，补偿标准可根据其实际用途重新评估。但此政策是否在全国统一实行，需参考地方具体规定。</information>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"总结补偿原则\",\n      \"content\": \"居住用房临时改为小商店时，如该用途改变在征收评估时点或地区政策中被认可，则补偿金额可能依据商业用途重新评估。否则，按照原用途居住评估补偿。因此还需确认地方政府在征收通知是否明确用途改变的补偿标准。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"居住用房因用途改变临时改为小商店，其补偿标准取决于法律和地方政策是否认可用途改变。如果相关法规或政策承认用途改变，其商业用途可能成为补偿依据；否则以居住用途标准补偿。具体补偿方法需参考征收公告和评估时点的实际规定。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"结论与法律及地方政策规定相符，可根据用途改变补偿原则进行评估。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"嗯，这个问题是关于居住用房因为征收用途临时转成了小商店，应该怎么给补偿。得先搞清楚法律上是怎么规定的，比如《国有土地上房屋征收与补偿条例》里面应该有相关条款吧。先去查一下这个条例，看看能不能找到答案。<search>国有土地上房屋征收与补偿条例</search>\\n\\n好了，查到了，这里有个第17条，它说房屋征收要按照被征收房屋的实际现状和用途来评估和补偿，而且还说用途变化如果产生了收益，就得根据评估时点的用途认定价值。嗯，这看起来挺有意思的，也就是说现在的用途可能会影响补偿标准，但得更具体确认一下。\\n\\n然后想一想，如果房屋从居住用途临时改成了小商店，这种改变能不能真的改变补偿金额？得去看看有没有类似的地方案例，或者地方政策是怎么规定的。<search>房屋征收用途改变补偿标准 地方政策</search>\\n\\n哦，也找到了，一些地方政策确实说用途变化，比如从居住改成商业，用商业用途来重新评估补偿标准，是可以的。但这里还要注意，政策可能每个地方不太一样，不能直接假设全国都执行这个规则。嗯，得看看具体的地方政府征收公告或者评估时点的细节。\\n\\n这么看来，如果地方政策认可用途改变，那这个房子按照小商店用途补偿就比较合理；但如果政策或者法律只认原来的居住用途，那补偿可能还是按照居住用途来定。总的原则还是得以评估时点的用途来决定，看实际有没有按照商业用途认定。\\n\\n思考一下吧，结论差不多可以是这样：居住用房如果临时改成商店，补偿标准具体看法律和地方政策的认定。如果用途变化被认可了，那商业用途可能是评估的依据；要是不是，那么补偿大概率以居住用途为准。最后，还是得具体看看征收公告怎么说，那里应该会写清楚补偿标准的认定方式。\"\n}\n```",
+    "根据《国有土地上房屋征收与补偿条例》第17条的规定，房屋征收应当根据被征收房屋的实际现状和用途进行评估和补偿。对于居住用房临时改变用途为商业用途（如小商店）的情况，其补偿如何认定，需要结合以下几个关键因素：\n\n1. **评估时点的用途**：条例明确指出，房屋的评估应以评估时点的用途为依据。如果房屋在征收评估时已经实际改变为商业用途，并且用途变更合法合规，那么有可能按照商业用途来评估和补偿。\n\n2. **地方政策的具体规定**：不同地区可能对房屋用途改变的认定标准和补偿规则有所差异。有些地方政策可能允许用途变化影响补偿标准；而另一些地方可能明确规定房屋用途以原登记用途或实际批准用途为准，而不认可临时用途变更。\n\n3. **合法性与收益认定**：如果临时改变用途已经产生了经济收益，且改变过程符合当地政策规定或实际经营行为合法，但未导致违法性质，那么改为商业用途的补偿很可能能够被认可。但若存在未依法变更用途或未经相关部门批准的违规行为，则可能仍以居住用途认定。\n\n4. **征收公告的具体说明**：征收公告通常会明确补偿标准的认定方式，包括用途认定的原则。如果公告中未明确认可用途改变的实际情况，则评估可能仍以原用途（居住用途）为基准。\n\n综上，居住用房临时改成小商店，在征收补偿时如何认定用途，具体需要结合评估时点实际用途、地方政府的政策规定以及征收公告的内容。如果用途改变被合法认可，则大概率可以按照商业用途评估补偿；否则可能仍需依据原登记用途（居住用途）进行补偿。建议直接查阅当地征收公告或咨询负责部门，以确认具体标准。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "明确问题本质",
+        "content": "问题涉及居住用房因征收用途而临时转为小商店，需明确补偿应基于什么标准。首先明确法律依据是否有所规定，例如《国有土地上房屋征收与补偿条例》。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "查找法律依据",
+        "content": "<search>国有土地上房屋征收与补偿条例</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "分析法规内容",
+        "content": "<information>《国有土地上房屋征收与补偿条例》第17条规定，在房屋征收过程中，应按照被征收房屋的实际现状以及其用途进行评估和补偿。同时，《条例》明确因用途改变产生收益的，应根据评价时点的用途认定实际价值。</information>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "用途认定与补偿",
+        "content": "根据上述法规，被征收房屋补偿须考虑用途和现状。如果居住用房被临时改成商店，需要确认制度中是否承认用途改变对于补偿标准的影响。进一步查找类似案例或地方政策相关依据。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "查找地方政策与案例支持",
+        "content": "<search>房屋征收用途改变补偿标准 地方政策</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "分析具体补偿计算模式",
+        "content": "<information>在一些地方规定中，当房屋用途发生变化，如由居住改为商业，补偿标准可根据其实际用途重新评估。但此政策是否在全国统一实行，需参考地方具体规定。</information>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "总结补偿原则",
+        "content": "居住用房临时改为小商店时，如该用途改变在征收评估时点或地区政策中被认可，则补偿金额可能依据商业用途重新评估。否则，按照原用途居住评估补偿。因此还需确认地方政府在征收通知是否明确用途改变的补偿标准。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "居住用房因用途改变临时改为小商店，其补偿标准取决于法律和地方政策是否认可用途改变。如果相关法规或政策承认用途改变，其商业用途可能成为补偿依据；否则以居住用途标准补偿。具体补偿方法需参考征收公告和评估时点的实际规定。"
+      },
+      {
+        "action": "Verification",
+        "content": "结论与法律及地方政策规定相符，可根据用途改变补偿原则进行评估。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "嗯，这个问题是关于居住用房因为征收用途临时转成了小商店，应该怎么给补偿。得先搞清楚法律上是怎么规定的，比如《国有土地上房屋征收与补偿条例》里面应该有相关条款吧。先去查一下这个条例，看看能不能找到答案。<search>国有土地上房屋征收与补偿条例</search>\n\n好了，查到了，这里有个第17条，它说房屋征收要按照被征收房屋的实际现状和用途来评估和补偿，而且还说用途变化如果产生了收益，就得根据评估时点的用途认定价值。嗯，这看起来挺有意思的，也就是说现在的用途可能会影响补偿标准，但得更具体确认一下。\n\n然后想一想，如果房屋从居住用途临时改成了小商店，这种改变能不能真的改变补偿金额？得去看看有没有类似的地方案例，或者地方政策是怎么规定的。<search>房屋征收用途改变补偿标准 地方政策</search>\n\n哦，也找到了，一些地方政策确实说用途变化，比如从居住改成商业，用商业用途来重新评估补偿标准，是可以的。但这里还要注意，政策可能每个地方不太一样，不能直接假设全国都执行这个规则。嗯，得看看具体的地方政府征收公告或者评估时点的细节。\n\n这么看来，如果地方政策认可用途改变，那这个房子按照小商店用途补偿就比较合理；但如果政策或者法律只认原来的居住用途，那补偿可能还是按照居住用途来定。总的原则还是得以评估时点的用途来决定，看实际有没有按照商业用途认定。\n\n思考一下吧，结论差不多可以是这样：居住用房如果临时改成商店，补偿标准具体看法律和地方政策的认定。如果用途变化被认可了，那商业用途可能是评估的依据；要是不是，那么补偿大概率以居住用途为准。最后，还是得具体看看征收公告怎么说，那里应该会写清楚补偿标准的认定方式。",
+  "Response": "根据《国有土地上房屋征收与补偿条例》第17条的规定，房屋征收应当根据被征收房屋的实际现状和用途进行评估和补偿。对于居住用房临时改变用途为商业用途（如小商店）的情况，其补偿如何认定，需要结合以下几个关键因素：\n\n1. **评估时点的用途**：条例明确指出，房屋的评估应以评估时点的用途为依据。如果房屋在征收评估时已经实际改变为商业用途，并且用途变更合法合规，那么有可能按照商业用途来评估和补偿。\n\n2. **地方政策的具体规定**：不同地区可能对房屋用途改变的认定标准和补偿规则有所差异。有些地方政策可能允许用途变化影响补偿标准；而另一些地方可能明确规定房屋用途以原登记用途或实际批准用途为准，而不认可临时用途变更。\n\n3. **合法性与收益认定**：如果临时改变用途已经产生了经济收益，且改变过程符合当地政策规定或实际经营行为合法，但未导致违法性质，那么改为商业用途的补偿很可能能够被认可。但若存在未依法变更用途或未经相关部门批准的违规行为，则可能仍以居住用途认定。\n\n4. **征收公告的具体说明**：征收公告通常会明确补偿标准的认定方式，包括用途认定的原则。如果公告中未明确认可用途改变的实际情况，则评估可能仍以原用途（居住用途）为基准。\n\n综上，居住用房临时改成小商店，在征收补偿时如何认定用途，具体需要结合评估时点实际用途、地方政府的政策规定以及征收公告的内容。如果用途改变被合法认可，则大概率可以按照商业用途评估补偿；否则可能仍需依据原登记用途（居住用途）进行补偿。建议直接查阅当地征收公告或咨询负责部门，以确认具体标准。",
+  "Question": "被征收的居住用房临时改成小商店，如何进行补偿？"
+}

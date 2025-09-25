@@ -1,0 +1,89 @@
+{
+  "Open-ended Verifiable Question": "签完三年劳动合同是不是可以提前辞职？",
+  "Ground-True Answer": "签了三年合同三年没到期劳动者可以辞职，但如果是在试用期需要提前三天通知用人单位，如果是转正之后需要提前一个月向用人单位提交书面申请才可以离职。\n法律依据：《劳动合同法》第三十六条，协商解除劳动合同。用人单位与劳动者协商一致，可以解除劳动合同。第三十七条，劳动者提前通知解除劳动合同。劳动者提前三十日以书面形式通知用人单位，可以解除劳动合同。劳动者在试用期内提前三日通知用人单位，可以解除劳动合同。第九十条，劳动者的赔偿责任。劳动者违反本法规定解除劳动合同，或者违反劳动合同中约定的保密义务或者竞业限制，给用人单位造成损失的，应当承担赔偿责任。",
+  "process_id": 8898,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "明确劳动合同的提前解除原则",
+      "content": "根据劳动合同法的原则，劳动者通常可以提前解除劳动合同。需要进一步确认法律条文或适用情形是否限制了劳动者在三年合同期内提前辞职的权利，以及是否有法定或约定程序。为此，需查询相关《劳动合同法》的具体规定。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "检索《劳动合同法》中的相关规定",
+      "content": "为了确认劳动者提前辞职的合法依据，查找《劳动合同法》中关于合同解除的具体条文内容。<search>劳动合同法 提前解除 劳动者</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "解析检索结果",
+      "content": "<information>《劳动合同法》规定：1. 根据《中华人民共和国劳动合同法》第37条，劳动者提前30日以书面形式通知用人单位，可以解除劳动合同；2. 若在试用期内，劳动者提前3日通知用人单位，也可解除合同。法律赋予劳动者单方面自主解除劳动合同的权利，但需符合法定通知程序。</information>基于此，可以判断三年劳动合同并不剥夺劳动者提前辞职的法定权利，但需满足通知期要求。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "结合劳动合同个性化条款",
+      "content": "虽然《劳动合同法》有统一规定，但还需要考虑是否存在劳动合同中与解除条款相关的约定，特别是针对提前辞职的补偿或限制性条款，这可能影响劳动者的具体辞职流程。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "签订三年劳动合同并不影响劳动者提前辞职，只要符合《中华人民共和国劳动合同法》第37条的规定，即提前30日以书面形式通知用人单位（试用期内提前3日通知），即可合法解除劳动合同。但劳动者需同时注意合同中是否有其他额外约定并依约履行。"
+    },
+    {
+      "action": "Verification",
+      "content": "结论正确无误，依据《劳动合同法》第37条，劳动者可以提前辞职，三年期的劳动合同并没有限制这种权利。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n签完三年劳动合同是不是可以提前辞职？\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n签订三年劳动合同并不影响劳动者提前辞职，只要符合《中华人民共和国劳动合同法》第37条的规定，即提前30日以书面形式通知用人单位（试用期内提前3日通知），即可合法解除劳动合同。但劳动者需同时注意合同中是否有其他额外约定并依约履行。  \n</Model Response>  \n\n<Reference Answer>  \n签了三年合同三年没到期劳动者可以辞职，但如果是在试用期需要提前三天通知用人单位，如果是转正之后需要提前一个月向用人单位提交书面申请才可以离职。\n法律依据：《劳动合同法》第三十六条，协商解除劳动合同。用人单位与劳动者协商一致，可以解除劳动合同。第三十七条，劳动者提前通知解除劳动合同。劳动者提前三十日以书面形式通知用人单位，可以解除劳动合同。劳动者在试用期内提前三日通知用人单位，可以解除劳动合同。第九十条，劳动者的赔偿责任。劳动者违反本法规定解除劳动合同，或者违反劳动合同中约定的保密义务或者竞业限制，给用人单位造成损失的，应当承担赔偿责任。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 明确劳动合同的提前解除原则\n根据劳动合同法的原则，劳动者通常可以提前解除劳动合同。需要进一步确认法律条文或适用情形是否限制了劳动者在三年合同期内提前辞职的权利，以及是否有法定或约定程序。为此，需查询相关《劳动合同法》的具体规定。\n\n### 检索《劳动合同法》中的相关规定\n为了确认劳动者提前辞职的合法依据，查找《劳动合同法》中关于合同解除的具体条文内容。<search>劳动合同法 提前解除 劳动者</search>\n\n### 解析检索结果\n<information>《劳动合同法》规定：1. 根据《中华人民共和国劳动合同法》第37条，劳动者提前30日以书面形式通知用人单位，可以解除劳动合同；2. 若在试用期内，劳动者提前3日通知用人单位，也可解除合同。法律赋予劳动者单方面自主解除劳动合同的权利，但需符合法定通知程序。</information>基于此，可以判断三年劳动合同并不剥夺劳动者提前辞职的法定权利，但需满足通知期要求。\n\n### 结合劳动合同个性化条款\n虽然《劳动合同法》有统一规定，但还需要考虑是否存在劳动合同中与解除条款相关的约定，特别是针对提前辞职的补偿或限制性条款，这可能影响劳动者的具体辞职流程。\n\n### Conclusion\n签订三年劳动合同并不影响劳动者提前辞职，只要符合《中华人民共和国劳动合同法》第37条的规定，即提前30日以书面形式通知用人单位（试用期内提前3日通知），即可合法解除劳动合同。但劳动者需同时注意合同中是否有其他额外约定并依约履行。\n\n### Verification\n结论正确无误，依据《劳动合同法》第37条，劳动者可以提前辞职，三年期的劳动合同并没有限制这种权利。\n</Thought Process>\n\n<Question>\n签完三年劳动合同是不是可以提前辞职？\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n好，既然是问劳动合同的问题，那我就想想三年合同到底会不会限制辞职。首先得确认一下法律上有什么规定，比如劳动者其实能不能主动提前解除合同。听起来好像可以提前辞职，但还是要找个凭证看看具体是怎么说的。于是我可能得去找找劳动合同法里相关的条款——可能搜一些关键词，比如<search>劳动合同法 提前解除 劳动者</search>这样会更快找到答案。\n\n嗯，搜出来的话就能知道具体法律怎么规定。<information>在《中华人民共和国劳动合同法》第37条里有提到，劳动者提前30天以书面形式通知用人单位，可以解除劳动合同；而如果是在试用期内，只需要提前3天通知即可解除合同。</information>嘿，这么看劳动合同法其实挺明确的，一般情况下劳动者想辞职是可以的，只要提前通知用人单位，而且时间要求也不是很苛刻，那么提前辞职确实合法。不过我还是觉得得再深究一下，三年的合同会不会有些额外的限制？不会因为签了个三年期的合同就被约束住了吧。\n\n然后再让我想想，除了法律条文，其实劳动合同本身有可能会多加一些个性化约定，比如辞职需要额外的赔偿或其他要求。虽然劳动法保证了劳动者自主辞职的权利，但合同里的这些额外约定可能影响具体辞职的流程。所以，要想确保辞职完全没问题，除了遵守法律规定的提前通知，最好也要仔细看看劳动合同的内容，以防有额外约束。\n\n总而言之，在法律层面上，根据《劳动合同法》第37条，签了三年劳动合同并不会限制提前辞职的权利，只要劳动者提前30天（试用期内是3天）通知用人单位，用人单位就没理由阻止你离职。但是还是得小心劳动合同里面有没有其他约定。如果没有，那就很简单，只需按法定程序走就行了。如果有约定，那只要符合法律和合同要求，辞职也是合理的。嗯，这样看来结论是确认无误的。三年劳动合同不会剥夺劳动者的提前辞职权，只要按法律规定和合同约定履行该有的通知程序就可以离职。\n</Internal Thinking>\n\n<Question>\n签完三年劳动合同是不是可以提前辞职？\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"明确劳动合同的提前解除原则\",\n      \"content\": \"根据劳动合同法的原则，劳动者通常可以提前解除劳动合同。需要进一步确认法律条文或适用情形是否限制了劳动者在三年合同期内提前辞职的权利，以及是否有法定或约定程序。为此，需查询相关《劳动合同法》的具体规定。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"检索《劳动合同法》中的相关规定\",\n      \"content\": \"为了确认劳动者提前辞职的合法依据，查找《劳动合同法》中关于合同解除的具体条文内容。<search>劳动合同法 提前解除 劳动者</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"解析检索结果\",\n      \"content\": \"<information>《劳动合同法》规定：1. 根据《中华人民共和国劳动合同法》第37条，劳动者提前30日以书面形式通知用人单位，可以解除劳动合同；2. 若在试用期内，劳动者提前3日通知用人单位，也可解除合同。法律赋予劳动者单方面自主解除劳动合同的权利，但需符合法定通知程序。</information>基于此，可以判断三年劳动合同并不剥夺劳动者提前辞职的法定权利，但需满足通知期要求。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"结合劳动合同个性化条款\",\n      \"content\": \"虽然《劳动合同法》有统一规定，但还需要考虑是否存在劳动合同中与解除条款相关的约定，特别是针对提前辞职的补偿或限制性条款，这可能影响劳动者的具体辞职流程。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"签订三年劳动合同并不影响劳动者提前辞职，只要符合《中华人民共和国劳动合同法》第37条的规定，即提前30日以书面形式通知用人单位（试用期内提前3日通知），即可合法解除劳动合同。但劳动者需同时注意合同中是否有其他额外约定并依约履行。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"结论正确无误，依据《劳动合同法》第37条，劳动者可以提前辞职，三年期的劳动合同并没有限制这种权利。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"好，既然是问劳动合同的问题，那我就想想三年合同到底会不会限制辞职。首先得确认一下法律上有什么规定，比如劳动者其实能不能主动提前解除合同。听起来好像可以提前辞职，但还是要找个凭证看看具体是怎么说的。于是我可能得去找找劳动合同法里相关的条款——可能搜一些关键词，比如<search>劳动合同法 提前解除 劳动者</search>这样会更快找到答案。\\n\\n嗯，搜出来的话就能知道具体法律怎么规定。<information>在《中华人民共和国劳动合同法》第37条里有提到，劳动者提前30天以书面形式通知用人单位，可以解除劳动合同；而如果是在试用期内，只需要提前3天通知即可解除合同。</information>嘿，这么看劳动合同法其实挺明确的，一般情况下劳动者想辞职是可以的，只要提前通知用人单位，而且时间要求也不是很苛刻，那么提前辞职确实合法。不过我还是觉得得再深究一下，三年的合同会不会有些额外的限制？不会因为签了个三年期的合同就被约束住了吧。\\n\\n然后再让我想想，除了法律条文，其实劳动合同本身有可能会多加一些个性化约定，比如辞职需要额外的赔偿或其他要求。虽然劳动法保证了劳动者自主辞职的权利，但合同里的这些额外约定可能影响具体辞职的流程。所以，要想确保辞职完全没问题，除了遵守法律规定的提前通知，最好也要仔细看看劳动合同的内容，以防有额外约束。\\n\\n总而言之，在法律层面上，根据《劳动合同法》第37条，签了三年劳动合同并不会限制提前辞职的权利，只要劳动者提前30天（试用期内是3天）通知用人单位，用人单位就没理由阻止你离职。但是还是得小心劳动合同里面有没有其他约定。如果没有，那就很简单，只需按法定程序走就行了。如果有约定，那只要符合法律和合同要求，辞职也是合理的。嗯，这样看来结论是确认无误的。三年劳动合同不会剥夺劳动者的提前辞职权，只要按法律规定和合同约定履行该有的通知程序就可以离职。\"\n}\n```",
+    "签了三年劳动合同后，劳动者仍然可以提前辞职。《中华人民共和国劳动合同法》第37条明确规定，劳动者提前30天以书面形式通知用人单位，可以解除劳动合同；如果是在试用期内，只需提前3天通知即可。因此，无论劳动合同的期限是三年还是其他时长，都不会剥夺劳动者提前辞职的权利。\n\n需要注意的是，有些劳动合同可能会对辞职程序作出特殊约定，例如关于经济赔偿或离职手续的具体要求。不过这些约定必须符合法律规定，并不能限制劳动者依法辞职的权利。因此，在辞职前，建议仔细查看劳动合同的具体条款，确认是否有额外要求。如果没有特殊约定，那么按照法律规定提前通知用人单位即可顺利辞职。如果有约定，确保履行相关条款后合理离职即可。\n\n总之，法律赋予了劳动者提前辞职的权利，签订三年劳动合同并不会构成限制，但提前通知及遵守合同约定是需要注意的关键步骤。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "明确劳动合同的提前解除原则",
+        "content": "根据劳动合同法的原则，劳动者通常可以提前解除劳动合同。需要进一步确认法律条文或适用情形是否限制了劳动者在三年合同期内提前辞职的权利，以及是否有法定或约定程序。为此，需查询相关《劳动合同法》的具体规定。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "检索《劳动合同法》中的相关规定",
+        "content": "为了确认劳动者提前辞职的合法依据，查找《劳动合同法》中关于合同解除的具体条文内容。<search>劳动合同法 提前解除 劳动者</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "解析检索结果",
+        "content": "<information>《劳动合同法》规定：1. 根据《中华人民共和国劳动合同法》第37条，劳动者提前30日以书面形式通知用人单位，可以解除劳动合同；2. 若在试用期内，劳动者提前3日通知用人单位，也可解除合同。法律赋予劳动者单方面自主解除劳动合同的权利，但需符合法定通知程序。</information>基于此，可以判断三年劳动合同并不剥夺劳动者提前辞职的法定权利，但需满足通知期要求。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "结合劳动合同个性化条款",
+        "content": "虽然《劳动合同法》有统一规定，但还需要考虑是否存在劳动合同中与解除条款相关的约定，特别是针对提前辞职的补偿或限制性条款，这可能影响劳动者的具体辞职流程。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "签订三年劳动合同并不影响劳动者提前辞职，只要符合《中华人民共和国劳动合同法》第37条的规定，即提前30日以书面形式通知用人单位（试用期内提前3日通知），即可合法解除劳动合同。但劳动者需同时注意合同中是否有其他额外约定并依约履行。"
+      },
+      {
+        "action": "Verification",
+        "content": "结论正确无误，依据《劳动合同法》第37条，劳动者可以提前辞职，三年期的劳动合同并没有限制这种权利。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "好，既然是问劳动合同的问题，那我就想想三年合同到底会不会限制辞职。首先得确认一下法律上有什么规定，比如劳动者其实能不能主动提前解除合同。听起来好像可以提前辞职，但还是要找个凭证看看具体是怎么说的。于是我可能得去找找劳动合同法里相关的条款——可能搜一些关键词，比如<search>劳动合同法 提前解除 劳动者</search>这样会更快找到答案。\n\n嗯，搜出来的话就能知道具体法律怎么规定。<information>在《中华人民共和国劳动合同法》第37条里有提到，劳动者提前30天以书面形式通知用人单位，可以解除劳动合同；而如果是在试用期内，只需要提前3天通知即可解除合同。</information>嘿，这么看劳动合同法其实挺明确的，一般情况下劳动者想辞职是可以的，只要提前通知用人单位，而且时间要求也不是很苛刻，那么提前辞职确实合法。不过我还是觉得得再深究一下，三年的合同会不会有些额外的限制？不会因为签了个三年期的合同就被约束住了吧。\n\n然后再让我想想，除了法律条文，其实劳动合同本身有可能会多加一些个性化约定，比如辞职需要额外的赔偿或其他要求。虽然劳动法保证了劳动者自主辞职的权利，但合同里的这些额外约定可能影响具体辞职的流程。所以，要想确保辞职完全没问题，除了遵守法律规定的提前通知，最好也要仔细看看劳动合同的内容，以防有额外约束。\n\n总而言之，在法律层面上，根据《劳动合同法》第37条，签了三年劳动合同并不会限制提前辞职的权利，只要劳动者提前30天（试用期内是3天）通知用人单位，用人单位就没理由阻止你离职。但是还是得小心劳动合同里面有没有其他约定。如果没有，那就很简单，只需按法定程序走就行了。如果有约定，那只要符合法律和合同要求，辞职也是合理的。嗯，这样看来结论是确认无误的。三年劳动合同不会剥夺劳动者的提前辞职权，只要按法律规定和合同约定履行该有的通知程序就可以离职。",
+  "Response": "签了三年劳动合同后，劳动者仍然可以提前辞职。《中华人民共和国劳动合同法》第37条明确规定，劳动者提前30天以书面形式通知用人单位，可以解除劳动合同；如果是在试用期内，只需提前3天通知即可。因此，无论劳动合同的期限是三年还是其他时长，都不会剥夺劳动者提前辞职的权利。\n\n需要注意的是，有些劳动合同可能会对辞职程序作出特殊约定，例如关于经济赔偿或离职手续的具体要求。不过这些约定必须符合法律规定，并不能限制劳动者依法辞职的权利。因此，在辞职前，建议仔细查看劳动合同的具体条款，确认是否有额外要求。如果没有特殊约定，那么按照法律规定提前通知用人单位即可顺利辞职。如果有约定，确保履行相关条款后合理离职即可。\n\n总之，法律赋予了劳动者提前辞职的权利，签订三年劳动合同并不会构成限制，但提前通知及遵守合同约定是需要注意的关键步骤。",
+  "Question": "签完三年劳动合同是不是可以提前辞职？"
+}

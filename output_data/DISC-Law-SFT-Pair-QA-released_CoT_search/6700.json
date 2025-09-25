@@ -1,0 +1,89 @@
+{
+  "Open-ended Verifiable Question": "把自己家的车库改造一下租给别人住可以吗?",
+  "Ground-True Answer": "房屋出租，不仅要保护租赁双方的利益关系，还要保障承租人的生命安全。有些出租人为了获取利益，私自将存在住房危险的违法建筑或者不符合安全、防灾等工程建筑强制性标准的房屋，出租给别人。为了维护房屋租赁市场的秩序，我国对此出台了相关法律予以规定。《商品房屋租赁管理办法》第六条第（三）项规定：“违反规定改变房屋使用性质的房屋不得出租。”也就是说，您私自将车库改造成出租房，明显违反了房屋的使用性质，所以您的做法是一种违法行为。同时，该法第二十二条规定：“违反本办法第八条规定的，由直辖市、市、县人民政府建设（房地产）主管部门责令限期改正，逾期不改正的,可处以五千元以上三万元以下罚款。”所以，如果您执意要将改装好的车库出租给他人，那么政府建设（房地产）主管部门有权责令您限期改正，如若逾期不改正的，您将面临被处以5000元以上3万元以下的罚款。因此，您不应该将车库改装为住房用于出租。  法律依据：《商品房屋租赁管理办法》第六条　有下列情形之一的房屋不得出租：（一）属于违法建筑的；（二）不符合安全、防灾等工程建设强制性标准的；（三）违反规定改变房屋使用性质的；（四）法律、法规规定禁止出租的其他情形。",
+  "process_id": 6700,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "确认车库改造是否合法",
+      "content": "首先需要确认是否可以将私人车库改造为居住空间，这涉及到建筑规划以及土地使用性质的相关规定，需要查看当地的建筑法规和辖区内的土地用途分区政策。<search>车库改造居住相关法规</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "查找车库改造法规",
+      "content": "<information>根据搜索结果，许多城市规定车库通常属于商业或非居住用途用地，改造为居住用途可能需要进行用途变更申请。此外，还需符合建筑安全、消防规范和卫生条件的要求。</information>基于此结果，需要进一步检查地方政府的细则或规定是否允许这种改造，并且需办理相关申请手续。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "租赁相关法律问题",
+      "content": "即使将车库改造成居住空间，也需要确认出租行为是否合法，例如需要办理租赁协议，并符合《中华人民共和国民法典》中有关房屋租赁的法律条款。<search>民法典租赁相关条款</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "查找租赁相关条款",
+      "content": "<information>根据《中华人民共和国民法典》第七章规定，房屋租赁需要明确产权归属，同时房屋租赁必须符合安全、合法的居住条件。</information>基于此结果，需要确认改造后的车库是否属于合法租赁范围，这可能涉及到物业管理或辖区监管部门的批准。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "将车库改造为居住空间并租赁给别人是理论上可行的，但需符合以下条件：1）当地建筑法规允许车库改建为居住用途，并办理用途变更相关手续；2）改造后必须符合建筑安全、消防以及卫生条件；3）租赁行为需符合《民法典》中规定的房屋租赁条款。如果符合上述条件并获得必要的批准，则可以进行租赁。建议咨询辖区内的规划部门、物业管理以及法律顾问以确保全面合规。"
+    },
+    {
+      "action": "Verification",
+      "content": "结论符合逻辑，考虑了所有必要条件和法律风险，可以结束推理。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n把自己家的车库改造一下租给别人住可以吗?\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n将车库改造为居住空间并租赁给别人是理论上可行的，但需符合以下条件：1）当地建筑法规允许车库改建为居住用途，并办理用途变更相关手续；2）改造后必须符合建筑安全、消防以及卫生条件；3）租赁行为需符合《民法典》中规定的房屋租赁条款。如果符合上述条件并获得必要的批准，则可以进行租赁。建议咨询辖区内的规划部门、物业管理以及法律顾问以确保全面合规。  \n</Model Response>  \n\n<Reference Answer>  \n房屋出租，不仅要保护租赁双方的利益关系，还要保障承租人的生命安全。有些出租人为了获取利益，私自将存在住房危险的违法建筑或者不符合安全、防灾等工程建筑强制性标准的房屋，出租给别人。为了维护房屋租赁市场的秩序，我国对此出台了相关法律予以规定。《商品房屋租赁管理办法》第六条第（三）项规定：“违反规定改变房屋使用性质的房屋不得出租。”也就是说，您私自将车库改造成出租房，明显违反了房屋的使用性质，所以您的做法是一种违法行为。同时，该法第二十二条规定：“违反本办法第八条规定的，由直辖市、市、县人民政府建设（房地产）主管部门责令限期改正，逾期不改正的,可处以五千元以上三万元以下罚款。”所以，如果您执意要将改装好的车库出租给他人，那么政府建设（房地产）主管部门有权责令您限期改正，如若逾期不改正的，您将面临被处以5000元以上3万元以下的罚款。因此，您不应该将车库改装为住房用于出租。  法律依据：《商品房屋租赁管理办法》第六条　有下列情形之一的房屋不得出租：（一）属于违法建筑的；（二）不符合安全、防灾等工程建设强制性标准的；（三）违反规定改变房屋使用性质的；（四）法律、法规规定禁止出租的其他情形。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 确认车库改造是否合法\n首先需要确认是否可以将私人车库改造为居住空间，这涉及到建筑规划以及土地使用性质的相关规定，需要查看当地的建筑法规和辖区内的土地用途分区政策。<search>车库改造居住相关法规</search>\n\n### 查找车库改造法规\n<information>根据搜索结果，许多城市规定车库通常属于商业或非居住用途用地，改造为居住用途可能需要进行用途变更申请。此外，还需符合建筑安全、消防规范和卫生条件的要求。</information>基于此结果，需要进一步检查地方政府的细则或规定是否允许这种改造，并且需办理相关申请手续。\n\n### 租赁相关法律问题\n即使将车库改造成居住空间，也需要确认出租行为是否合法，例如需要办理租赁协议，并符合《中华人民共和国民法典》中有关房屋租赁的法律条款。<search>民法典租赁相关条款</search>\n\n### 查找租赁相关条款\n<information>根据《中华人民共和国民法典》第七章规定，房屋租赁需要明确产权归属，同时房屋租赁必须符合安全、合法的居住条件。</information>基于此结果，需要确认改造后的车库是否属于合法租赁范围，这可能涉及到物业管理或辖区监管部门的批准。\n\n### Conclusion\n将车库改造为居住空间并租赁给别人是理论上可行的，但需符合以下条件：1）当地建筑法规允许车库改建为居住用途，并办理用途变更相关手续；2）改造后必须符合建筑安全、消防以及卫生条件；3）租赁行为需符合《民法典》中规定的房屋租赁条款。如果符合上述条件并获得必要的批准，则可以进行租赁。建议咨询辖区内的规划部门、物业管理以及法律顾问以确保全面合规。\n\n### Verification\n结论符合逻辑，考虑了所有必要条件和法律风险，可以结束推理。\n</Thought Process>\n\n<Question>\n把自己家的车库改造一下租给别人住可以吗?\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n好，关于把车库改造后租给别人住这件事，我得想清楚几个问题。首先，这样做合不合法？车库毕竟是本来用来停放车辆的，如果改成住房，会不会有政策上的限制呢？我觉得需要先查一下当地的相关规定，比如建筑规划和土地用途分区政策是怎么说的。<search>车库改造居住相关法规</search>\n\n嗯，搜了一下信息。<information>结果显示，许多地方规定车库一般属于商业或者非居住用途，想改成居住用途可能需要申请用途变更。而且还得符合一些硬性条件，比如建筑安全标准、消防规范、以及卫生条件。</information>哦，那看来并不是随便就能改的。我是不是得去了解一下我们这边的具体细则？最好是去打听下当地规划部门或者街道办的意见。如果需要动申请手续的话，也要提前准备好。\n\n另外一个问题是，假设车库改造后真的成了可以住的地方，那租给别人住合法吗？我记得房屋出租的话得遵守《民法典》的相关规定，而且应该还涉及到房屋所有权、租赁合同这样的要求吧？我觉得可以再查一下具体的条款。<search>民法典租赁相关条款</search>\n\n啊，找到了。<information>根据《中华人民共和国民法典》第七章的规定，房屋租赁要明确产权归属，还必须保证出租的房子能安全使用并且合法。</information>嗯……这一点有道理，毕竟租给别人住的话，如果地方不安全或者不达标，我也可能面临责任的。所以我还得确认车库改造出来的空间能够符合居住条件才行。\n\n那么综合来看，虽然把车库改造成住房然后出租理论上是有可能的，但这有几个前置条件。第一，得确认我们当地的建筑法规是否允许车库改造为居住用途，如果可以，需要去办理相应的用途变更手续。第二，改造后的车库必须满足安全、消防、卫生等法定标准。不然就是违规使用。第三，租赁方面也不能马虎，合同得写清楚，并且出租的前提是改造后的地方完全合法。\n\n总之，想要做的话要先问问专业人士，比如规划部门、物业或者律师，这样才能确保万无一失。嗯，感觉这三步缺一不可，所以得认真执行才行。\n</Internal Thinking>\n\n<Question>\n把自己家的车库改造一下租给别人住可以吗?\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"确认车库改造是否合法\",\n      \"content\": \"首先需要确认是否可以将私人车库改造为居住空间，这涉及到建筑规划以及土地使用性质的相关规定，需要查看当地的建筑法规和辖区内的土地用途分区政策。<search>车库改造居住相关法规</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"查找车库改造法规\",\n      \"content\": \"<information>根据搜索结果，许多城市规定车库通常属于商业或非居住用途用地，改造为居住用途可能需要进行用途变更申请。此外，还需符合建筑安全、消防规范和卫生条件的要求。</information>基于此结果，需要进一步检查地方政府的细则或规定是否允许这种改造，并且需办理相关申请手续。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"租赁相关法律问题\",\n      \"content\": \"即使将车库改造成居住空间，也需要确认出租行为是否合法，例如需要办理租赁协议，并符合《中华人民共和国民法典》中有关房屋租赁的法律条款。<search>民法典租赁相关条款</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"查找租赁相关条款\",\n      \"content\": \"<information>根据《中华人民共和国民法典》第七章规定，房屋租赁需要明确产权归属，同时房屋租赁必须符合安全、合法的居住条件。</information>基于此结果，需要确认改造后的车库是否属于合法租赁范围，这可能涉及到物业管理或辖区监管部门的批准。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"将车库改造为居住空间并租赁给别人是理论上可行的，但需符合以下条件：1）当地建筑法规允许车库改建为居住用途，并办理用途变更相关手续；2）改造后必须符合建筑安全、消防以及卫生条件；3）租赁行为需符合《民法典》中规定的房屋租赁条款。如果符合上述条件并获得必要的批准，则可以进行租赁。建议咨询辖区内的规划部门、物业管理以及法律顾问以确保全面合规。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"结论符合逻辑，考虑了所有必要条件和法律风险，可以结束推理。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"好，关于把车库改造后租给别人住这件事，我得想清楚几个问题。首先，这样做合不合法？车库毕竟是本来用来停放车辆的，如果改成住房，会不会有政策上的限制呢？我觉得需要先查一下当地的相关规定，比如建筑规划和土地用途分区政策是怎么说的。<search>车库改造居住相关法规</search>\\n\\n嗯，搜了一下信息。<information>结果显示，许多地方规定车库一般属于商业或者非居住用途，想改成居住用途可能需要申请用途变更。而且还得符合一些硬性条件，比如建筑安全标准、消防规范、以及卫生条件。</information>哦，那看来并不是随便就能改的。我是不是得去了解一下我们这边的具体细则？最好是去打听下当地规划部门或者街道办的意见。如果需要动申请手续的话，也要提前准备好。\\n\\n另外一个问题是，假设车库改造后真的成了可以住的地方，那租给别人住合法吗？我记得房屋出租的话得遵守《民法典》的相关规定，而且应该还涉及到房屋所有权、租赁合同这样的要求吧？我觉得可以再查一下具体的条款。<search>民法典租赁相关条款</search>\\n\\n啊，找到了。<information>根据《中华人民共和国民法典》第七章的规定，房屋租赁要明确产权归属，还必须保证出租的房子能安全使用并且合法。</information>嗯……这一点有道理，毕竟租给别人住的话，如果地方不安全或者不达标，我也可能面临责任的。所以我还得确认车库改造出来的空间能够符合居住条件才行。\\n\\n那么综合来看，虽然把车库改造成住房然后出租理论上是有可能的，但这有几个前置条件。第一，得确认我们当地的建筑法规是否允许车库改造为居住用途，如果可以，需要去办理相应的用途变更手续。第二，改造后的车库必须满足安全、消防、卫生等法定标准。不然就是违规使用。第三，租赁方面也不能马虎，合同得写清楚，并且出租的前提是改造后的地方完全合法。\\n\\n总之，想要做的话要先问问专业人士，比如规划部门、物业或者律师，这样才能确保万无一失。嗯，感觉这三步缺一不可，所以得认真执行才行。\"\n}\n```",
+    "将自家车库改造并出租给别人居住是一个可行的想法，但需要满足以下几个重要条件和程序，同时需要遵守相关法律法规：\n\n1. **车库改造为居住用途是否合法**  \n   根据许多地方的规定，车库通常属于非居住用途。如果想将车库改造为居住空间，多数情况下需要申请“土地用途分区变更”或“建筑用途变更”。同时，还必须符合建筑安全标准、消防规范以及卫生条件，确保改造后的空间适宜居住。所以，建议您先咨询当地规划部门或者街道办事处，了解具体的政策及必须办理的手续。\n\n2. **改造后的空间是否符合居住条件**  \n   即使车库用途变更合法，改造后的居住空间还需要符合相关规定，例如：  \n   - 确保建筑结构安全，能够经受必要的检查。  \n   - 配备完善的供水、供电、通风、防火等设施。  \n   - 符合法律规定的卫生条件，比如排污处理、空气流通等。  \n   如果改造后的空间未达到居住要求，则可能无法出租使用，甚至面临法律风险。\n\n3. **房屋出租是否合法**  \n   根据《中华人民共和国民法典》第七章的相关规定，出租房屋时需要确保产权归属明确，并保证出租的空间符合法律要求，包括居住用途的合法性和安全性。此外，签订租赁合同是必须的，合同需明确双方的权利义务，写清租赁期限、租金、责任分担等事项，以保护自身权益。\n\n**综合来看**，将车库改造后租给别人住是可以实现的，但需要满足以下前提：  \n- 确认改造用途的合法性，办理必要的用途变更手续；  \n- 改造后的车库必须符合所有居住条件；  \n- 出租行为合法，且签订正规的租赁合同。  \n\n建议您在实施这一计划前咨询专业人士，例如当地规划部门工作人员、物业管理人员或律师，以确保所有环节符合法律法规，避免不必要的法律风险。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "确认车库改造是否合法",
+        "content": "首先需要确认是否可以将私人车库改造为居住空间，这涉及到建筑规划以及土地使用性质的相关规定，需要查看当地的建筑法规和辖区内的土地用途分区政策。<search>车库改造居住相关法规</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "查找车库改造法规",
+        "content": "<information>根据搜索结果，许多城市规定车库通常属于商业或非居住用途用地，改造为居住用途可能需要进行用途变更申请。此外，还需符合建筑安全、消防规范和卫生条件的要求。</information>基于此结果，需要进一步检查地方政府的细则或规定是否允许这种改造，并且需办理相关申请手续。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "租赁相关法律问题",
+        "content": "即使将车库改造成居住空间，也需要确认出租行为是否合法，例如需要办理租赁协议，并符合《中华人民共和国民法典》中有关房屋租赁的法律条款。<search>民法典租赁相关条款</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "查找租赁相关条款",
+        "content": "<information>根据《中华人民共和国民法典》第七章规定，房屋租赁需要明确产权归属，同时房屋租赁必须符合安全、合法的居住条件。</information>基于此结果，需要确认改造后的车库是否属于合法租赁范围，这可能涉及到物业管理或辖区监管部门的批准。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "将车库改造为居住空间并租赁给别人是理论上可行的，但需符合以下条件：1）当地建筑法规允许车库改建为居住用途，并办理用途变更相关手续；2）改造后必须符合建筑安全、消防以及卫生条件；3）租赁行为需符合《民法典》中规定的房屋租赁条款。如果符合上述条件并获得必要的批准，则可以进行租赁。建议咨询辖区内的规划部门、物业管理以及法律顾问以确保全面合规。"
+      },
+      {
+        "action": "Verification",
+        "content": "结论符合逻辑，考虑了所有必要条件和法律风险，可以结束推理。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "好，关于把车库改造后租给别人住这件事，我得想清楚几个问题。首先，这样做合不合法？车库毕竟是本来用来停放车辆的，如果改成住房，会不会有政策上的限制呢？我觉得需要先查一下当地的相关规定，比如建筑规划和土地用途分区政策是怎么说的。<search>车库改造居住相关法规</search>\n\n嗯，搜了一下信息。<information>结果显示，许多地方规定车库一般属于商业或者非居住用途，想改成居住用途可能需要申请用途变更。而且还得符合一些硬性条件，比如建筑安全标准、消防规范、以及卫生条件。</information>哦，那看来并不是随便就能改的。我是不是得去了解一下我们这边的具体细则？最好是去打听下当地规划部门或者街道办的意见。如果需要动申请手续的话，也要提前准备好。\n\n另外一个问题是，假设车库改造后真的成了可以住的地方，那租给别人住合法吗？我记得房屋出租的话得遵守《民法典》的相关规定，而且应该还涉及到房屋所有权、租赁合同这样的要求吧？我觉得可以再查一下具体的条款。<search>民法典租赁相关条款</search>\n\n啊，找到了。<information>根据《中华人民共和国民法典》第七章的规定，房屋租赁要明确产权归属，还必须保证出租的房子能安全使用并且合法。</information>嗯……这一点有道理，毕竟租给别人住的话，如果地方不安全或者不达标，我也可能面临责任的。所以我还得确认车库改造出来的空间能够符合居住条件才行。\n\n那么综合来看，虽然把车库改造成住房然后出租理论上是有可能的，但这有几个前置条件。第一，得确认我们当地的建筑法规是否允许车库改造为居住用途，如果可以，需要去办理相应的用途变更手续。第二，改造后的车库必须满足安全、消防、卫生等法定标准。不然就是违规使用。第三，租赁方面也不能马虎，合同得写清楚，并且出租的前提是改造后的地方完全合法。\n\n总之，想要做的话要先问问专业人士，比如规划部门、物业或者律师，这样才能确保万无一失。嗯，感觉这三步缺一不可，所以得认真执行才行。",
+  "Response": "将自家车库改造并出租给别人居住是一个可行的想法，但需要满足以下几个重要条件和程序，同时需要遵守相关法律法规：\n\n1. **车库改造为居住用途是否合法**  \n   根据许多地方的规定，车库通常属于非居住用途。如果想将车库改造为居住空间，多数情况下需要申请“土地用途分区变更”或“建筑用途变更”。同时，还必须符合建筑安全标准、消防规范以及卫生条件，确保改造后的空间适宜居住。所以，建议您先咨询当地规划部门或者街道办事处，了解具体的政策及必须办理的手续。\n\n2. **改造后的空间是否符合居住条件**  \n   即使车库用途变更合法，改造后的居住空间还需要符合相关规定，例如：  \n   - 确保建筑结构安全，能够经受必要的检查。  \n   - 配备完善的供水、供电、通风、防火等设施。  \n   - 符合法律规定的卫生条件，比如排污处理、空气流通等。  \n   如果改造后的空间未达到居住要求，则可能无法出租使用，甚至面临法律风险。\n\n3. **房屋出租是否合法**  \n   根据《中华人民共和国民法典》第七章的相关规定，出租房屋时需要确保产权归属明确，并保证出租的空间符合法律要求，包括居住用途的合法性和安全性。此外，签订租赁合同是必须的，合同需明确双方的权利义务，写清租赁期限、租金、责任分担等事项，以保护自身权益。\n\n**综合来看**，将车库改造后租给别人住是可以实现的，但需要满足以下前提：  \n- 确认改造用途的合法性，办理必要的用途变更手续；  \n- 改造后的车库必须符合所有居住条件；  \n- 出租行为合法，且签订正规的租赁合同。  \n\n建议您在实施这一计划前咨询专业人士，例如当地规划部门工作人员、物业管理人员或律师，以确保所有环节符合法律法规，避免不必要的法律风险。",
+  "Question": "把自己家的车库改造一下租给别人住可以吗?"
+}

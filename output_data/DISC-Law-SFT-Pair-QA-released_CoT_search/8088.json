@@ -1,0 +1,109 @@
+{
+  "Open-ended Verifiable Question": "股东怠于履行义务，导致无法进行清算,债权人如何维权?",
+  "Ground-True Answer": "可于诉讼程序主张其对公司债务承担连带清偿责任，如上述情形是实际控制人造成，可主张实际控制人对公司债务承担相应民事责任。相关法条《公司法司法解释二》第十八条第二款、第三款有限责任公司的股东、股份有限公司的董事和控股股东因怠于履行义务，导致公司主要财产、账册、重要文件等灭失，无法进行清算，债权人主张其对公司债务承担连带清偿责任的，人民法院应依法予以支持。上述情形系实际控制人原因造成，债权人主张实际控制人对公司债务承担相应民事责任的，人民法院应依法予以支持。《九民纪要》第 14 条【怠于履行清算义务的认定】公司法司法解释（二）第18条第2款规定的“怠于履行义务”，是指有限责任公司的股东在法定清算事由出现后，在能够履行清算义务的情况下，故意拖延、拒绝履行清算义务，或者因过失导致无法进行清算的消极行为。股东举证证明其已经为履行清算义务采取了积极措施，或者小股东举证证明其既不是公司董事会或者监事会成员，也没有选派人员担任该机关成员，且从未参与公司经营管理，以不构成“怠于履行义务”为由，主张其不应当对公司债务承担连带清偿责任的，人民法院依法予以支持。《九民纪要》第 15 条【因果关系抗辩】有限责任公司的股东举证证明其“怠于履行义务”的消极不作为与“公司主要财产、账册、重要文件等灭失，无法进行清算”的结果之间没有因果关系，主张其不应对公司债务承担连带清偿责任的，人民法院依法予以支持。",
+  "process_id": 8088,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "明确债权人诉求及问题背景",
+      "content": "债权人希望通过合法途径获得清算未完成的公司所欠债务的偿付。但由于股东怠于履行清算义务，公司清算难以正常进行，债权人需要明确可采取的法律手段来维护其自身权益。先确认我国关于未清算公司及股东责任的相关法律规范。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "查阅关于公司法清算程序的法律规定",
+      "content": "<search>公司法关于公司清算和股东责任</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "分析法律规定适用情形",
+      "content": "<information>《公司法》第180条至第185条规定，公司应当在解散事由发生后依法进行清算，股东需及时成立清算组并履行清算义务；若股东怠于履行清算义务，导致债权人利益受损，债权人可向法院申请指定清算组强制清算。</information>依据上述规定，股东未按要求履行清算义务，债权人有权直接向法院提出申请进行强制清算。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "确认清算中的股东责任追究问题",
+      "content": "<search>关于股东怠于履行清算义务的法律责任</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "分析债权人如何追责股东",
+      "content": "<information>《公司法》第185条规定，因怠于履行清算义务，导致公司财产损失扩大，给债权人造成损害的，相关股东需对债权人的损害承担赔偿责任。</information>债权人可以依据该条款同时向法院提起诉讼，要求怠于清偿义务的股东个人承担赔偿责任。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "结合实际提出解决路径",
+      "content": "结合《公司法》的清算相关规定，如果股东怠于履行清算程序，债权人可通过以下两步维权：第一，申请法院强制清算，由法院指定清算组进行清算；第二，在清算完成后，如因股东怠于履行义务导致额外损失，债权人可依据《公司法》第185条要求股东进行赔偿以弥补损失。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "债权人可以通过法律途径维权：第一步，依据《公司法》第184条向法院申请强制清算，由法院指定清算组负责公司资产处理；第二步，清算完成后，如因股东怠于履行义务对债权人造成损失，可依据《公司法》第185条追究股东的赔偿责任，从而保障债权人权益。"
+    },
+    {
+      "action": "Verification",
+      "content": "通过查阅相关法律条款，《公司法》第184条和第185条明确了债权人可申请强制清算及追究股东责任的权利，逻辑严密且条文符合实际，结论无误。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n股东怠于履行义务，导致无法进行清算,债权人如何维权?\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n债权人可以通过法律途径维权：第一步，依据《公司法》第184条向法院申请强制清算，由法院指定清算组负责公司资产处理；第二步，清算完成后，如因股东怠于履行义务对债权人造成损失，可依据《公司法》第185条追究股东的赔偿责任，从而保障债权人权益。  \n</Model Response>  \n\n<Reference Answer>  \n可于诉讼程序主张其对公司债务承担连带清偿责任，如上述情形是实际控制人造成，可主张实际控制人对公司债务承担相应民事责任。相关法条《公司法司法解释二》第十八条第二款、第三款有限责任公司的股东、股份有限公司的董事和控股股东因怠于履行义务，导致公司主要财产、账册、重要文件等灭失，无法进行清算，债权人主张其对公司债务承担连带清偿责任的，人民法院应依法予以支持。上述情形系实际控制人原因造成，债权人主张实际控制人对公司债务承担相应民事责任的，人民法院应依法予以支持。《九民纪要》第 14 条【怠于履行清算义务的认定】公司法司法解释（二）第18条第2款规定的“怠于履行义务”，是指有限责任公司的股东在法定清算事由出现后，在能够履行清算义务的情况下，故意拖延、拒绝履行清算义务，或者因过失导致无法进行清算的消极行为。股东举证证明其已经为履行清算义务采取了积极措施，或者小股东举证证明其既不是公司董事会或者监事会成员，也没有选派人员担任该机关成员，且从未参与公司经营管理，以不构成“怠于履行义务”为由，主张其不应当对公司债务承担连带清偿责任的，人民法院依法予以支持。《九民纪要》第 15 条【因果关系抗辩】有限责任公司的股东举证证明其“怠于履行义务”的消极不作为与“公司主要财产、账册、重要文件等灭失，无法进行清算”的结果之间没有因果关系，主张其不应对公司债务承担连带清偿责任的，人民法院依法予以支持。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 明确债权人诉求及问题背景\n债权人希望通过合法途径获得清算未完成的公司所欠债务的偿付。但由于股东怠于履行清算义务，公司清算难以正常进行，债权人需要明确可采取的法律手段来维护其自身权益。先确认我国关于未清算公司及股东责任的相关法律规范。\n\n### 查阅关于公司法清算程序的法律规定\n<search>公司法关于公司清算和股东责任</search>\n\n### 分析法律规定适用情形\n<information>《公司法》第180条至第185条规定，公司应当在解散事由发生后依法进行清算，股东需及时成立清算组并履行清算义务；若股东怠于履行清算义务，导致债权人利益受损，债权人可向法院申请指定清算组强制清算。</information>依据上述规定，股东未按要求履行清算义务，债权人有权直接向法院提出申请进行强制清算。\n\n### 确认清算中的股东责任追究问题\n<search>关于股东怠于履行清算义务的法律责任</search>\n\n### 分析债权人如何追责股东\n<information>《公司法》第185条规定，因怠于履行清算义务，导致公司财产损失扩大，给债权人造成损害的，相关股东需对债权人的损害承担赔偿责任。</information>债权人可以依据该条款同时向法院提起诉讼，要求怠于清偿义务的股东个人承担赔偿责任。\n\n### 结合实际提出解决路径\n结合《公司法》的清算相关规定，如果股东怠于履行清算程序，债权人可通过以下两步维权：第一，申请法院强制清算，由法院指定清算组进行清算；第二，在清算完成后，如因股东怠于履行义务导致额外损失，债权人可依据《公司法》第185条要求股东进行赔偿以弥补损失。\n\n### Conclusion\n债权人可以通过法律途径维权：第一步，依据《公司法》第184条向法院申请强制清算，由法院指定清算组负责公司资产处理；第二步，清算完成后，如因股东怠于履行义务对债权人造成损失，可依据《公司法》第185条追究股东的赔偿责任，从而保障债权人权益。\n\n### Verification\n通过查阅相关法律条款，《公司法》第184条和第185条明确了债权人可申请强制清算及追究股东责任的权利，逻辑严密且条文符合实际，结论无误。\n</Thought Process>\n\n<Question>\n股东怠于履行义务，导致无法进行清算,债权人如何维权?\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n嗯，看来债权人是遇到了公司清算不正常的问题，还是因为股东没有履行清算义务，这很可能让债权人的权益受到影响。那么债权人有什么办法可以通过法律来维权呢？先从相关法律规定开始入手吧。\n\n<search>公司法关于公司清算和股东责任</search>\n\n好，我找到了一些信息。<information>《公司法》第180条到185条有提到，公司解散后应该依法进行清算，股东需要及时成立清算组并履行清算义务。如果股东不履行清算义务，债权人可以向法院申请强制清算，由法院指定清算组来负责进行清算。</information>所以从这点看，如果股东不行动，债权人可以直接求助法院，申请强制清算。嗯，这样至少可以启动清算程序。\n\n不过，问题可能不仅是清算本身。如果因为股东怠于履行清算职责，公司的财产损失扩大了，那债权人的利益是不是能额外获得赔偿呢？这一点得再查查有没有相关规定。\n\n<search>关于股东怠于履行清算义务的法律责任</search>\n\n哦，有相关法律条文。<information>《公司法》第185条说，如果股东因为怠于履行清算义务导致公司财产损失扩大，债权人可以要求这些股东个人承担赔偿责任。</information>明白了，原来法律还赋予债权人在这种情况下追究股东赔偿责任的权利。这就清楚了，债权人不仅可以启动强制清算，还有权利追究股东的个人赔偿责任。\n\n所以综合来看，解决路径是这样的：第一步，依据《公司法》第184条，债权人可以向法院申请强制清算，让法院指定清算组进行公司清算，这样可以走正式的程序解决公司资产问题；第二步，如果因为股东怠于履行清算义务给债权人造成了损失，那么清算完成后债权人可以依据《公司法》第185条追究这些股东的个人赔偿责任。这两步结合起来应该能够有效维护债权人的权益。\n\n我想再确认下这个逻辑有没有问题。通过上面查到的法律信息，《公司法》第184条和第185条确实详细规定了债权人可以采取的行动，包括申请强制清算和向股东追责。这听起来法律依据很明确，应该是可行的。嗯，没有什么疏漏，概括起来就是这样。\n</Internal Thinking>\n\n<Question>\n股东怠于履行义务，导致无法进行清算,债权人如何维权?\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"明确债权人诉求及问题背景\",\n      \"content\": \"债权人希望通过合法途径获得清算未完成的公司所欠债务的偿付。但由于股东怠于履行清算义务，公司清算难以正常进行，债权人需要明确可采取的法律手段来维护其自身权益。先确认我国关于未清算公司及股东责任的相关法律规范。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"查阅关于公司法清算程序的法律规定\",\n      \"content\": \"<search>公司法关于公司清算和股东责任</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析法律规定适用情形\",\n      \"content\": \"<information>《公司法》第180条至第185条规定，公司应当在解散事由发生后依法进行清算，股东需及时成立清算组并履行清算义务；若股东怠于履行清算义务，导致债权人利益受损，债权人可向法院申请指定清算组强制清算。</information>依据上述规定，股东未按要求履行清算义务，债权人有权直接向法院提出申请进行强制清算。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"确认清算中的股东责任追究问题\",\n      \"content\": \"<search>关于股东怠于履行清算义务的法律责任</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析债权人如何追责股东\",\n      \"content\": \"<information>《公司法》第185条规定，因怠于履行清算义务，导致公司财产损失扩大，给债权人造成损害的，相关股东需对债权人的损害承担赔偿责任。</information>债权人可以依据该条款同时向法院提起诉讼，要求怠于清偿义务的股东个人承担赔偿责任。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"结合实际提出解决路径\",\n      \"content\": \"结合《公司法》的清算相关规定，如果股东怠于履行清算程序，债权人可通过以下两步维权：第一，申请法院强制清算，由法院指定清算组进行清算；第二，在清算完成后，如因股东怠于履行义务导致额外损失，债权人可依据《公司法》第185条要求股东进行赔偿以弥补损失。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"债权人可以通过法律途径维权：第一步，依据《公司法》第184条向法院申请强制清算，由法院指定清算组负责公司资产处理；第二步，清算完成后，如因股东怠于履行义务对债权人造成损失，可依据《公司法》第185条追究股东的赔偿责任，从而保障债权人权益。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"通过查阅相关法律条款，《公司法》第184条和第185条明确了债权人可申请强制清算及追究股东责任的权利，逻辑严密且条文符合实际，结论无误。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"嗯，看来债权人是遇到了公司清算不正常的问题，还是因为股东没有履行清算义务，这很可能让债权人的权益受到影响。那么债权人有什么办法可以通过法律来维权呢？先从相关法律规定开始入手吧。\\n\\n<search>公司法关于公司清算和股东责任</search>\\n\\n好，我找到了一些信息。<information>《公司法》第180条到185条有提到，公司解散后应该依法进行清算，股东需要及时成立清算组并履行清算义务。如果股东不履行清算义务，债权人可以向法院申请强制清算，由法院指定清算组来负责进行清算。</information>所以从这点看，如果股东不行动，债权人可以直接求助法院，申请强制清算。嗯，这样至少可以启动清算程序。\\n\\n不过，问题可能不仅是清算本身。如果因为股东怠于履行清算职责，公司的财产损失扩大了，那债权人的利益是不是能额外获得赔偿呢？这一点得再查查有没有相关规定。\\n\\n<search>关于股东怠于履行清算义务的法律责任</search>\\n\\n哦，有相关法律条文。<information>《公司法》第185条说，如果股东因为怠于履行清算义务导致公司财产损失扩大，债权人可以要求这些股东个人承担赔偿责任。</information>明白了，原来法律还赋予债权人在这种情况下追究股东赔偿责任的权利。这就清楚了，债权人不仅可以启动强制清算，还有权利追究股东的个人赔偿责任。\\n\\n所以综合来看，解决路径是这样的：第一步，依据《公司法》第184条，债权人可以向法院申请强制清算，让法院指定清算组进行公司清算，这样可以走正式的程序解决公司资产问题；第二步，如果因为股东怠于履行清算义务给债权人造成了损失，那么清算完成后债权人可以依据《公司法》第185条追究这些股东的个人赔偿责任。这两步结合起来应该能够有效维护债权人的权益。\\n\\n我想再确认下这个逻辑有没有问题。通过上面查到的法律信息，《公司法》第184条和第185条确实详细规定了债权人可以采取的行动，包括申请强制清算和向股东追责。这听起来法律依据很明确，应该是可行的。嗯，没有什么疏漏，概括起来就是这样。\"\n}\n```",
+    "当股东怠于履行清算义务，导致公司无法正常清算时，债权人可以通过以下法律途径进行维权：\n\n1. **申请强制清算**  \n根据《公司法》第184条规定，公司因解散而未及时进行清算的，债权人有权向法院申请强制清算。债权人应准备相关证据材料，如债务证明、公司解散的证明等，向法院提出申请。一旦法院受理，将依法指定清算组负责开展清算工作，以维护债权人的合法权益。\n\n2. **追究股东个人赔偿责任**  \n如果因为股东怠于履行清算义务，导致公司财产损失进一步扩大或者无法清偿债务的，债权人可以根据《公司法》第185条的规定，要求这些未履行义务的股东承担相应的赔偿责任。为此，债权人需要证明：  \n   - 公司已经解散，股东未依法成立清算组进行清算；  \n   - 股东的怠职行为造成了公司财产进一步损害或债务清偿的困难；  \n   - 财产损失与股东的行为存在因果关系。\n\n具体操作上，债权人可以在清算程序结束后，对相关股东提起诉讼，要求其对公司未清偿债务范围内的实际损失承担个人赔偿责任。\n\n3. **其他可能的救济途径**  \n在复杂情况下，若存在股东恶意逃避清算或转移公司财产的情节，债权人还可以依据相关法律追究恶意股东的法律责任，包括向法院申请财产保全，查封、冻结相关资产，以防止难以挽回的损失。\n\n综上，债权人可通过申请法院强制清算启动清算程序，同时在必要时向股东追究个人赔偿责任，以全面维护自身权益。在实际操作过程中，建议债权人寻求律师协助，以确保诉求的合法性和相关证据的充分性。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "明确债权人诉求及问题背景",
+        "content": "债权人希望通过合法途径获得清算未完成的公司所欠债务的偿付。但由于股东怠于履行清算义务，公司清算难以正常进行，债权人需要明确可采取的法律手段来维护其自身权益。先确认我国关于未清算公司及股东责任的相关法律规范。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "查阅关于公司法清算程序的法律规定",
+        "content": "<search>公司法关于公司清算和股东责任</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "分析法律规定适用情形",
+        "content": "<information>《公司法》第180条至第185条规定，公司应当在解散事由发生后依法进行清算，股东需及时成立清算组并履行清算义务；若股东怠于履行清算义务，导致债权人利益受损，债权人可向法院申请指定清算组强制清算。</information>依据上述规定，股东未按要求履行清算义务，债权人有权直接向法院提出申请进行强制清算。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "确认清算中的股东责任追究问题",
+        "content": "<search>关于股东怠于履行清算义务的法律责任</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "分析债权人如何追责股东",
+        "content": "<information>《公司法》第185条规定，因怠于履行清算义务，导致公司财产损失扩大，给债权人造成损害的，相关股东需对债权人的损害承担赔偿责任。</information>债权人可以依据该条款同时向法院提起诉讼，要求怠于清偿义务的股东个人承担赔偿责任。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "结合实际提出解决路径",
+        "content": "结合《公司法》的清算相关规定，如果股东怠于履行清算程序，债权人可通过以下两步维权：第一，申请法院强制清算，由法院指定清算组进行清算；第二，在清算完成后，如因股东怠于履行义务导致额外损失，债权人可依据《公司法》第185条要求股东进行赔偿以弥补损失。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "债权人可以通过法律途径维权：第一步，依据《公司法》第184条向法院申请强制清算，由法院指定清算组负责公司资产处理；第二步，清算完成后，如因股东怠于履行义务对债权人造成损失，可依据《公司法》第185条追究股东的赔偿责任，从而保障债权人权益。"
+      },
+      {
+        "action": "Verification",
+        "content": "通过查阅相关法律条款，《公司法》第184条和第185条明确了债权人可申请强制清算及追究股东责任的权利，逻辑严密且条文符合实际，结论无误。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "嗯，看来债权人是遇到了公司清算不正常的问题，还是因为股东没有履行清算义务，这很可能让债权人的权益受到影响。那么债权人有什么办法可以通过法律来维权呢？先从相关法律规定开始入手吧。\n\n<search>公司法关于公司清算和股东责任</search>\n\n好，我找到了一些信息。<information>《公司法》第180条到185条有提到，公司解散后应该依法进行清算，股东需要及时成立清算组并履行清算义务。如果股东不履行清算义务，债权人可以向法院申请强制清算，由法院指定清算组来负责进行清算。</information>所以从这点看，如果股东不行动，债权人可以直接求助法院，申请强制清算。嗯，这样至少可以启动清算程序。\n\n不过，问题可能不仅是清算本身。如果因为股东怠于履行清算职责，公司的财产损失扩大了，那债权人的利益是不是能额外获得赔偿呢？这一点得再查查有没有相关规定。\n\n<search>关于股东怠于履行清算义务的法律责任</search>\n\n哦，有相关法律条文。<information>《公司法》第185条说，如果股东因为怠于履行清算义务导致公司财产损失扩大，债权人可以要求这些股东个人承担赔偿责任。</information>明白了，原来法律还赋予债权人在这种情况下追究股东赔偿责任的权利。这就清楚了，债权人不仅可以启动强制清算，还有权利追究股东的个人赔偿责任。\n\n所以综合来看，解决路径是这样的：第一步，依据《公司法》第184条，债权人可以向法院申请强制清算，让法院指定清算组进行公司清算，这样可以走正式的程序解决公司资产问题；第二步，如果因为股东怠于履行清算义务给债权人造成了损失，那么清算完成后债权人可以依据《公司法》第185条追究这些股东的个人赔偿责任。这两步结合起来应该能够有效维护债权人的权益。\n\n我想再确认下这个逻辑有没有问题。通过上面查到的法律信息，《公司法》第184条和第185条确实详细规定了债权人可以采取的行动，包括申请强制清算和向股东追责。这听起来法律依据很明确，应该是可行的。嗯，没有什么疏漏，概括起来就是这样。",
+  "Response": "当股东怠于履行清算义务，导致公司无法正常清算时，债权人可以通过以下法律途径进行维权：\n\n1. **申请强制清算**  \n根据《公司法》第184条规定，公司因解散而未及时进行清算的，债权人有权向法院申请强制清算。债权人应准备相关证据材料，如债务证明、公司解散的证明等，向法院提出申请。一旦法院受理，将依法指定清算组负责开展清算工作，以维护债权人的合法权益。\n\n2. **追究股东个人赔偿责任**  \n如果因为股东怠于履行清算义务，导致公司财产损失进一步扩大或者无法清偿债务的，债权人可以根据《公司法》第185条的规定，要求这些未履行义务的股东承担相应的赔偿责任。为此，债权人需要证明：  \n   - 公司已经解散，股东未依法成立清算组进行清算；  \n   - 股东的怠职行为造成了公司财产进一步损害或债务清偿的困难；  \n   - 财产损失与股东的行为存在因果关系。\n\n具体操作上，债权人可以在清算程序结束后，对相关股东提起诉讼，要求其对公司未清偿债务范围内的实际损失承担个人赔偿责任。\n\n3. **其他可能的救济途径**  \n在复杂情况下，若存在股东恶意逃避清算或转移公司财产的情节，债权人还可以依据相关法律追究恶意股东的法律责任，包括向法院申请财产保全，查封、冻结相关资产，以防止难以挽回的损失。\n\n综上，债权人可通过申请法院强制清算启动清算程序，同时在必要时向股东追究个人赔偿责任，以全面维护自身权益。在实际操作过程中，建议债权人寻求律师协助，以确保诉求的合法性和相关证据的充分性。",
+  "Question": "股东怠于履行义务，导致无法进行清算,债权人如何维权?"
+}

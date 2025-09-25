@@ -1,0 +1,79 @@
+{
+  "Open-ended Verifiable Question": "职工签订的自愿放弃社保协议是否有效？",
+  "Ground-True Answer": "职工自愿签订的自愿放弃社保协议，因其内容违法，因此是无效的。《社会保险法》第58条规定，用人单位应当自用工之日起30日内为其职工向社会保险经办机构申请办理社会保险登记。说明用人单位为职工缴纳社保是一项强制的法定义务。加之，保险法还明确规定了，职工应当参加养老保险、医疗保险、工伤保险、失业保险、生育保险，职工缴纳社保是一项权利，也是一项法定的义务。职工放弃缴纳社保的协议违反了法律法规的强制性义务，因此该协议即使不是受欺骗或者胁迫之下签订的，仍然是无效的协议。",
+  "process_id": 6218,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "明确问题的法律背景",
+      "content": "《中华人民共和国劳动法》和《社会保险法》明确要求，用人单位和职工必须依法参加社会保险。这说明，缴纳社保是法律的强制性要求，而不是可以通过私下协议放弃的权利。需要进一步了解相关法律条款，以确认是否可以通过协议放弃社保权益。<search>劳动法 社会保险法 放弃社保</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "获取相关法律信息",
+      "content": "<information>《劳动法》第72条规定：用人单位和劳动者必须依法参加社会保险，缴纳社会保险费。《社会保险法》第4条规定：任何单位和个人不得违反国家法律规定，拒绝参加社会保险和缴纳社会保险费。</information> 根据查询结果，法律明确指出用人单位和职工不得通过其他方式违反缴纳社保的义务，即便双方签署协议也无效。</content>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "分析协议效力",
+      "content": "根据上述法律条款，缴纳社保是法律强制要求，而职工与用人单位签订的协议属于民事协议。《民法典》第153条规定，违背法律强制性规定的民事法律行为无效。因此，职工签订的放弃社保的协议明显违背法律强制性规定，应属无效。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "职工签订的自愿放弃社保协议是无效的。《劳动法》和《社会保险法》明确规定，参加社会保险是法律强制性要求，不得通过协议放弃。此类协议因违背强制性法律规定而无效。"
+    },
+    {
+      "action": "Verification",
+      "content": "通过核查相关法律条款及其强制性性质，结论符合法律规定，协议无效。推理结束。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n职工签订的自愿放弃社保协议是否有效？\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n职工签订的自愿放弃社保协议是无效的。《劳动法》和《社会保险法》明确规定，参加社会保险是法律强制性要求，不得通过协议放弃。此类协议因违背强制性法律规定而无效。  \n</Model Response>  \n\n<Reference Answer>  \n职工自愿签订的自愿放弃社保协议，因其内容违法，因此是无效的。《社会保险法》第58条规定，用人单位应当自用工之日起30日内为其职工向社会保险经办机构申请办理社会保险登记。说明用人单位为职工缴纳社保是一项强制的法定义务。加之，保险法还明确规定了，职工应当参加养老保险、医疗保险、工伤保险、失业保险、生育保险，职工缴纳社保是一项权利，也是一项法定的义务。职工放弃缴纳社保的协议违反了法律法规的强制性义务，因此该协议即使不是受欺骗或者胁迫之下签订的，仍然是无效的协议。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 明确问题的法律背景\n《中华人民共和国劳动法》和《社会保险法》明确要求，用人单位和职工必须依法参加社会保险。这说明，缴纳社保是法律的强制性要求，而不是可以通过私下协议放弃的权利。需要进一步了解相关法律条款，以确认是否可以通过协议放弃社保权益。<search>劳动法 社会保险法 放弃社保</search>\n\n### 获取相关法律信息\n<information>《劳动法》第72条规定：用人单位和劳动者必须依法参加社会保险，缴纳社会保险费。《社会保险法》第4条规定：任何单位和个人不得违反国家法律规定，拒绝参加社会保险和缴纳社会保险费。</information> 根据查询结果，法律明确指出用人单位和职工不得通过其他方式违反缴纳社保的义务，即便双方签署协议也无效。</content>\n\n### 分析协议效力\n根据上述法律条款，缴纳社保是法律强制要求，而职工与用人单位签订的协议属于民事协议。《民法典》第153条规定，违背法律强制性规定的民事法律行为无效。因此，职工签订的放弃社保的协议明显违背法律强制性规定，应属无效。\n\n### Conclusion\n职工签订的自愿放弃社保协议是无效的。《劳动法》和《社会保险法》明确规定，参加社会保险是法律强制性要求，不得通过协议放弃。此类协议因违背强制性法律规定而无效。\n\n### Verification\n通过核查相关法律条款及其强制性性质，结论符合法律规定，协议无效。推理结束。\n</Thought Process>\n\n<Question>\n职工签订的自愿放弃社保协议是否有效？\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n好，我仔细想想这个问题。职工签订放弃社保的协议，能有效吗？乍一看，好像大家都有选择的自由，但是社保这件事情感觉牵涉到法律问题，所以我得先看看相关法律是怎么说的。\n\n我记得《劳动法》和《社会保险法》里面提到过参加社保是硬性要求，不过具体条款不太记得了，还是查一下比较稳妥。<search>劳动法 社会保险法 放弃社保</search>\n\n哦，找到了！《劳动法》第72条的意思很明确，用人单位和员工必须依法参加社会保险并缴纳相关费用。《社会保险法》第4条也强调，任何单位和个人不可以违反规定拒绝参加社保或者不缴费用。意思就是不给员工上社保或者员工自己放弃都属于违法行为。嗯，这一点已经清楚了，法律是有强制性要求的。\n\n接下来要看看这种情况下签的协议有没有效。其实民事协议一般有效，但我记得《民法典》有个规定，如果协议内容违反法律的强制性规定，那就会被认定为无效。我确认一下具体条款。《民法典》第153条明确说，违背法律强制性规定的民事行为是无效的。哦，原来是这样，那职工和公司之间签的这种放弃社保的协议，显然已经违反了法律的强制规定，自然不会有效。\n\n这么看来，法律不允许任何人通过协议绕过缴纳社保的义务。这种所谓的“自愿放弃”其实不能成立。无论是法律本身还是协议的效力方面，这都已经是一条明确的红线。\n\n总结一下，职工签订的这种自愿放弃社保协议是无效的，因为《劳动法》和《社会保险法》都明确规定参加社保是强制性义务，协议违背了法律的强制要求。而在民法的逻辑下，这种协议的效力肯定也站不住脚。嗯，答案应该没有问题了。\n</Internal Thinking>\n\n<Question>\n职工签订的自愿放弃社保协议是否有效？\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"明确问题的法律背景\",\n      \"content\": \"《中华人民共和国劳动法》和《社会保险法》明确要求，用人单位和职工必须依法参加社会保险。这说明，缴纳社保是法律的强制性要求，而不是可以通过私下协议放弃的权利。需要进一步了解相关法律条款，以确认是否可以通过协议放弃社保权益。<search>劳动法 社会保险法 放弃社保</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"获取相关法律信息\",\n      \"content\": \"<information>《劳动法》第72条规定：用人单位和劳动者必须依法参加社会保险，缴纳社会保险费。《社会保险法》第4条规定：任何单位和个人不得违反国家法律规定，拒绝参加社会保险和缴纳社会保险费。</information> 根据查询结果，法律明确指出用人单位和职工不得通过其他方式违反缴纳社保的义务，即便双方签署协议也无效。</content>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析协议效力\",\n      \"content\": \"根据上述法律条款，缴纳社保是法律强制要求，而职工与用人单位签订的协议属于民事协议。《民法典》第153条规定，违背法律强制性规定的民事法律行为无效。因此，职工签订的放弃社保的协议明显违背法律强制性规定，应属无效。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"职工签订的自愿放弃社保协议是无效的。《劳动法》和《社会保险法》明确规定，参加社会保险是法律强制性要求，不得通过协议放弃。此类协议因违背强制性法律规定而无效。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"通过核查相关法律条款及其强制性性质，结论符合法律规定，协议无效。推理结束。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"好，我仔细想想这个问题。职工签订放弃社保的协议，能有效吗？乍一看，好像大家都有选择的自由，但是社保这件事情感觉牵涉到法律问题，所以我得先看看相关法律是怎么说的。\\n\\n我记得《劳动法》和《社会保险法》里面提到过参加社保是硬性要求，不过具体条款不太记得了，还是查一下比较稳妥。<search>劳动法 社会保险法 放弃社保</search>\\n\\n哦，找到了！《劳动法》第72条的意思很明确，用人单位和员工必须依法参加社会保险并缴纳相关费用。《社会保险法》第4条也强调，任何单位和个人不可以违反规定拒绝参加社保或者不缴费用。意思就是不给员工上社保或者员工自己放弃都属于违法行为。嗯，这一点已经清楚了，法律是有强制性要求的。\\n\\n接下来要看看这种情况下签的协议有没有效。其实民事协议一般有效，但我记得《民法典》有个规定，如果协议内容违反法律的强制性规定，那就会被认定为无效。我确认一下具体条款。《民法典》第153条明确说，违背法律强制性规定的民事行为是无效的。哦，原来是这样，那职工和公司之间签的这种放弃社保的协议，显然已经违反了法律的强制规定，自然不会有效。\\n\\n这么看来，法律不允许任何人通过协议绕过缴纳社保的义务。这种所谓的“自愿放弃”其实不能成立。无论是法律本身还是协议的效力方面，这都已经是一条明确的红线。\\n\\n总结一下，职工签订的这种自愿放弃社保协议是无效的，因为《劳动法》和《社会保险法》都明确规定参加社保是强制性义务，协议违背了法律的强制要求。而在民法的逻辑下，这种协议的效力肯定也站不住脚。嗯，答案应该没有问题了。\"\n}\n```",
+    "职工签订的“自愿放弃社保协议”是无效的。\n\n根据《中华人民共和国劳动法》第72条的规定，用人单位和劳动者必须依法参加社会保险，并缴纳社会保险费用，这是强制性义务。《中华人民共和国社会保险法》第4条也进一步强调，任何单位和个人不得违反法律规定拒绝参加社会保险或不缴纳社会保险费用。因此，无论是用人单位不为职工参保，还是职工声称“自愿放弃”，都属于违反法律的行为。\n\n此外，根据《中华人民共和国民法典》第153条的规定，违反法律和行政法规强制性规定的民事法律行为无效。签订所谓的“自愿放弃社保协议”实质上试图绕过法律对社保缴纳的强制性要求，因此，这类协议依法认定为无效。\n\n综上，无论职工是否签署“放弃社保协议”，用人单位都负有为职工缴纳社会保险的法定义务，任何试图通过协议规避这一义务的行为均不具法律效力。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "明确问题的法律背景",
+        "content": "《中华人民共和国劳动法》和《社会保险法》明确要求，用人单位和职工必须依法参加社会保险。这说明，缴纳社保是法律的强制性要求，而不是可以通过私下协议放弃的权利。需要进一步了解相关法律条款，以确认是否可以通过协议放弃社保权益。<search>劳动法 社会保险法 放弃社保</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "获取相关法律信息",
+        "content": "<information>《劳动法》第72条规定：用人单位和劳动者必须依法参加社会保险，缴纳社会保险费。《社会保险法》第4条规定：任何单位和个人不得违反国家法律规定，拒绝参加社会保险和缴纳社会保险费。</information> 根据查询结果，法律明确指出用人单位和职工不得通过其他方式违反缴纳社保的义务，即便双方签署协议也无效。</content>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "分析协议效力",
+        "content": "根据上述法律条款，缴纳社保是法律强制要求，而职工与用人单位签订的协议属于民事协议。《民法典》第153条规定，违背法律强制性规定的民事法律行为无效。因此，职工签订的放弃社保的协议明显违背法律强制性规定，应属无效。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "职工签订的自愿放弃社保协议是无效的。《劳动法》和《社会保险法》明确规定，参加社会保险是法律强制性要求，不得通过协议放弃。此类协议因违背强制性法律规定而无效。"
+      },
+      {
+        "action": "Verification",
+        "content": "通过核查相关法律条款及其强制性性质，结论符合法律规定，协议无效。推理结束。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "好，我仔细想想这个问题。职工签订放弃社保的协议，能有效吗？乍一看，好像大家都有选择的自由，但是社保这件事情感觉牵涉到法律问题，所以我得先看看相关法律是怎么说的。\n\n我记得《劳动法》和《社会保险法》里面提到过参加社保是硬性要求，不过具体条款不太记得了，还是查一下比较稳妥。<search>劳动法 社会保险法 放弃社保</search>\n\n哦，找到了！《劳动法》第72条的意思很明确，用人单位和员工必须依法参加社会保险并缴纳相关费用。《社会保险法》第4条也强调，任何单位和个人不可以违反规定拒绝参加社保或者不缴费用。意思就是不给员工上社保或者员工自己放弃都属于违法行为。嗯，这一点已经清楚了，法律是有强制性要求的。\n\n接下来要看看这种情况下签的协议有没有效。其实民事协议一般有效，但我记得《民法典》有个规定，如果协议内容违反法律的强制性规定，那就会被认定为无效。我确认一下具体条款。《民法典》第153条明确说，违背法律强制性规定的民事行为是无效的。哦，原来是这样，那职工和公司之间签的这种放弃社保的协议，显然已经违反了法律的强制规定，自然不会有效。\n\n这么看来，法律不允许任何人通过协议绕过缴纳社保的义务。这种所谓的“自愿放弃”其实不能成立。无论是法律本身还是协议的效力方面，这都已经是一条明确的红线。\n\n总结一下，职工签订的这种自愿放弃社保协议是无效的，因为《劳动法》和《社会保险法》都明确规定参加社保是强制性义务，协议违背了法律的强制要求。而在民法的逻辑下，这种协议的效力肯定也站不住脚。嗯，答案应该没有问题了。",
+  "Response": "职工签订的“自愿放弃社保协议”是无效的。\n\n根据《中华人民共和国劳动法》第72条的规定，用人单位和劳动者必须依法参加社会保险，并缴纳社会保险费用，这是强制性义务。《中华人民共和国社会保险法》第4条也进一步强调，任何单位和个人不得违反法律规定拒绝参加社会保险或不缴纳社会保险费用。因此，无论是用人单位不为职工参保，还是职工声称“自愿放弃”，都属于违反法律的行为。\n\n此外，根据《中华人民共和国民法典》第153条的规定，违反法律和行政法规强制性规定的民事法律行为无效。签订所谓的“自愿放弃社保协议”实质上试图绕过法律对社保缴纳的强制性要求，因此，这类协议依法认定为无效。\n\n综上，无论职工是否签署“放弃社保协议”，用人单位都负有为职工缴纳社会保险的法定义务，任何试图通过协议规避这一义务的行为均不具法律效力。",
+  "Question": "职工签订的自愿放弃社保协议是否有效？"
+}

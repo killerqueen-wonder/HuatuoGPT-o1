@@ -1,0 +1,99 @@
+{
+  "Open-ended Verifiable Question": "房产抵押无效的情况有哪些？",
+  "Ground-True Answer": "(一)未按我国《民法典》要求办理抵押物登记手续。签订抵押合同后不办理抵押物登记的，抵押合同无效。(二)未经房产所有权人同意，以他人房产作抵押。这样做不但抵押关系无效，而且构成侵权。(三)未经共有人同意以共有房产作抵押。这样做不仅抵押关系无效，而且侵犯其他共有人的合法权益，由房产抵押引发侵权纠纷。(四)用于抵押的证件不齐全。",
+  "process_id": 7665,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "明确房产抵押无效的含义",
+      "content": "‘房产抵押无效’指的是在法律框架下，房屋或不动产作为抵押物时，其抵押权未能依法设立或无效的法律状态。这通常包括抵押设定时违反法律的相关规定或程序要求，需要进一步探究具体适用的情况。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "分析《民法典》中针对房产抵押的基本规定",
+      "content": "根据中国《民法典》的规定，设立房产抵押需要符合一定的条件，例如主体资格合法、抵押物存在可处分的权利、依规进行登记等。若不符合这些条件，抵押可能无效。需要确认具体条款。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "查询《民法典》中关于抵押权效力及无效情况的相关条款",
+      "content": "<search>民法典 抵押权 无效</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "分析返回的条款以明确无效的具体情形",
+      "content": "<information>《民法典》第399条规定，不动产抵押未进行登记的不生效；第397条规定了一些禁止设定抵押的情形，例如被查封、未依法取得所有权的房屋等；第398条规定，抵押合同不符合法律、行政法规强制性规定的无效。</information>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "总结房产抵押无效的常见情形",
+      "content": "根据查询结果，可归纳出以下几类情形可能导致房产抵押无效：1）抵押房产未依法登记；2）用于抵押的房产存在限制（如被查封、尚未取得所有权）；3）主体不具备设立抵押的资格；4）抵押合同违反法律强制性规定。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "房产抵押无效的情况包括但不限于以下情形：1）用于抵押的房产未依法办理抵押登记；2）抵押的房屋依法被查封或未依法取得产权；3）设定抵押的主体不具有相应法律资格；4）抵押合同存在违反法律、行政法规强制性规定的行为（如格式条款不符或存在欺诈）。这些情形均可能导致抵押权无法设立或无效。"
+    },
+    {
+      "action": "Verification",
+      "content": "通过确认《民法典》的具体条款，可以验证房产抵押无效的几种情形与法规一致，例如未办理登记、房产的权利瑕疵、合同不合法等。因此，该结论准确无误。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n房产抵押无效的情况有哪些？\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n房产抵押无效的情况包括但不限于以下情形：1）用于抵押的房产未依法办理抵押登记；2）抵押的房屋依法被查封或未依法取得产权；3）设定抵押的主体不具有相应法律资格；4）抵押合同存在违反法律、行政法规强制性规定的行为（如格式条款不符或存在欺诈）。这些情形均可能导致抵押权无法设立或无效。  \n</Model Response>  \n\n<Reference Answer>  \n(一)未按我国《民法典》要求办理抵押物登记手续。签订抵押合同后不办理抵押物登记的，抵押合同无效。(二)未经房产所有权人同意，以他人房产作抵押。这样做不但抵押关系无效，而且构成侵权。(三)未经共有人同意以共有房产作抵押。这样做不仅抵押关系无效，而且侵犯其他共有人的合法权益，由房产抵押引发侵权纠纷。(四)用于抵押的证件不齐全。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 明确房产抵押无效的含义\n‘房产抵押无效’指的是在法律框架下，房屋或不动产作为抵押物时，其抵押权未能依法设立或无效的法律状态。这通常包括抵押设定时违反法律的相关规定或程序要求，需要进一步探究具体适用的情况。\n\n### 分析《民法典》中针对房产抵押的基本规定\n根据中国《民法典》的规定，设立房产抵押需要符合一定的条件，例如主体资格合法、抵押物存在可处分的权利、依规进行登记等。若不符合这些条件，抵押可能无效。需要确认具体条款。\n\n### 查询《民法典》中关于抵押权效力及无效情况的相关条款\n<search>民法典 抵押权 无效</search>\n\n### 分析返回的条款以明确无效的具体情形\n<information>《民法典》第399条规定，不动产抵押未进行登记的不生效；第397条规定了一些禁止设定抵押的情形，例如被查封、未依法取得所有权的房屋等；第398条规定，抵押合同不符合法律、行政法规强制性规定的无效。</information>\n\n### 总结房产抵押无效的常见情形\n根据查询结果，可归纳出以下几类情形可能导致房产抵押无效：1）抵押房产未依法登记；2）用于抵押的房产存在限制（如被查封、尚未取得所有权）；3）主体不具备设立抵押的资格；4）抵押合同违反法律强制性规定。\n\n### Conclusion\n房产抵押无效的情况包括但不限于以下情形：1）用于抵押的房产未依法办理抵押登记；2）抵押的房屋依法被查封或未依法取得产权；3）设定抵押的主体不具有相应法律资格；4）抵押合同存在违反法律、行政法规强制性规定的行为（如格式条款不符或存在欺诈）。这些情形均可能导致抵押权无法设立或无效。\n\n### Verification\n通过确认《民法典》的具体条款，可以验证房产抵押无效的几种情形与法规一致，例如未办理登记、房产的权利瑕疵、合同不合法等。因此，该结论准确无误。\n</Thought Process>\n\n<Question>\n房产抵押无效的情况有哪些？\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n房产抵押无效，这个是什么情况呢？得先搞清楚什么叫抵押无效。嗯，抵押无效应该是指，房子作为抵押物时，法律上抵押权没真正成立或者直接被认定为无效吧。可能是有什么地方没按规定来，或者直接违反法律。具体有哪些情况会造成这个问题呢？我感觉有必要看看《民法典》里面的规定，它应该会直接说明抵押成立的必要条件和无效的具体情形。\n\n好，我先查一下《民法典》里和抵押相关的规定，尤其是抵押权无效的情况。<search>民法典 抵押权 无效</search>\n\n哦，找到了！<information>《民法典》第399条提到，不动产抵押如果没有去办理登记的话，抵押权就不成立，也就是说没有法律效力。另外，第397条好像提到了一些禁止抵押的情况，比如房子被查封了，或者连房子的产权都没依法取得，那肯定没办法抵押。还有第398条提到一种情况是，抵押合同如果违反了一些强制性的法律或者行政法规，那合同直接无效。</information>嗯，看起来这些条款挺清楚的，能够说明为什么抵押无效。\n\n综合一下，我觉得可以归纳出几种房产抵押无效的常见情形。比如说，第一，房子的抵押手续没有依法办登记，这样就没效果。第二，被用来抵押的房产可能有问题，比如已经被查封，又或者产权还不明确，这种情况下应该也是无效的。第三，设定抵押的人可能本身不符合资格，比如不具备处置房产的权利。最后一个情况就是合同问题，如果抵押合同的内容违反法律规定，像是写了一些强制性违法的不合理条款，合同也会被认定为无效。\n\n嗯，总结一下吧，房产抵押无效主要有几种原因：1）抵押登记手续没办好；2）房子本身有法律瑕疵，比如查封或者产权不合法；3）设立抵押的人不合资格；4）抵押合同违反法律强制性规定。这些条款和《民法典》里的内容是对得上的，所以这些情况应该是准确的。\n</Internal Thinking>\n\n<Question>\n房产抵押无效的情况有哪些？\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"明确房产抵押无效的含义\",\n      \"content\": \"‘房产抵押无效’指的是在法律框架下，房屋或不动产作为抵押物时，其抵押权未能依法设立或无效的法律状态。这通常包括抵押设定时违反法律的相关规定或程序要求，需要进一步探究具体适用的情况。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析《民法典》中针对房产抵押的基本规定\",\n      \"content\": \"根据中国《民法典》的规定，设立房产抵押需要符合一定的条件，例如主体资格合法、抵押物存在可处分的权利、依规进行登记等。若不符合这些条件，抵押可能无效。需要确认具体条款。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"查询《民法典》中关于抵押权效力及无效情况的相关条款\",\n      \"content\": \"<search>民法典 抵押权 无效</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析返回的条款以明确无效的具体情形\",\n      \"content\": \"<information>《民法典》第399条规定，不动产抵押未进行登记的不生效；第397条规定了一些禁止设定抵押的情形，例如被查封、未依法取得所有权的房屋等；第398条规定，抵押合同不符合法律、行政法规强制性规定的无效。</information>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"总结房产抵押无效的常见情形\",\n      \"content\": \"根据查询结果，可归纳出以下几类情形可能导致房产抵押无效：1）抵押房产未依法登记；2）用于抵押的房产存在限制（如被查封、尚未取得所有权）；3）主体不具备设立抵押的资格；4）抵押合同违反法律强制性规定。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"房产抵押无效的情况包括但不限于以下情形：1）用于抵押的房产未依法办理抵押登记；2）抵押的房屋依法被查封或未依法取得产权；3）设定抵押的主体不具有相应法律资格；4）抵押合同存在违反法律、行政法规强制性规定的行为（如格式条款不符或存在欺诈）。这些情形均可能导致抵押权无法设立或无效。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"通过确认《民法典》的具体条款，可以验证房产抵押无效的几种情形与法规一致，例如未办理登记、房产的权利瑕疵、合同不合法等。因此，该结论准确无误。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"房产抵押无效，这个是什么情况呢？得先搞清楚什么叫抵押无效。嗯，抵押无效应该是指，房子作为抵押物时，法律上抵押权没真正成立或者直接被认定为无效吧。可能是有什么地方没按规定来，或者直接违反法律。具体有哪些情况会造成这个问题呢？我感觉有必要看看《民法典》里面的规定，它应该会直接说明抵押成立的必要条件和无效的具体情形。\\n\\n好，我先查一下《民法典》里和抵押相关的规定，尤其是抵押权无效的情况。<search>民法典 抵押权 无效</search>\\n\\n哦，找到了！<information>《民法典》第399条提到，不动产抵押如果没有去办理登记的话，抵押权就不成立，也就是说没有法律效力。另外，第397条好像提到了一些禁止抵押的情况，比如房子被查封了，或者连房子的产权都没依法取得，那肯定没办法抵押。还有第398条提到一种情况是，抵押合同如果违反了一些强制性的法律或者行政法规，那合同直接无效。</information>嗯，看起来这些条款挺清楚的，能够说明为什么抵押无效。\\n\\n综合一下，我觉得可以归纳出几种房产抵押无效的常见情形。比如说，第一，房子的抵押手续没有依法办登记，这样就没效果。第二，被用来抵押的房产可能有问题，比如已经被查封，又或者产权还不明确，这种情况下应该也是无效的。第三，设定抵押的人可能本身不符合资格，比如不具备处置房产的权利。最后一个情况就是合同问题，如果抵押合同的内容违反法律规定，像是写了一些强制性违法的不合理条款，合同也会被认定为无效。\\n\\n嗯，总结一下吧，房产抵押无效主要有几种原因：1）抵押登记手续没办好；2）房子本身有法律瑕疵，比如查封或者产权不合法；3）设立抵押的人不合资格；4）抵押合同违反法律强制性规定。这些条款和《民法典》里的内容是对得上的，所以这些情况应该是准确的。\"\n}\n```",
+    "房产抵押无效的情况主要包括以下几类：\n\n1. **未办理抵押登记**  \n   根据《民法典》第399条规定，不动产抵押必须依法办理登记手续，否则抵押权不成立，这意味着无法产生法律效力。\n\n2. **房产本身存在法律瑕疵**  \n   根据《民法典》第397条的相关规定，以下情形的房产无法设立有效抵押：  \n   - 房产已被查封或扣押。  \n   - 抵押人对房产没有依法取得的产权（例如房产产权未明确）。  \n\n3. **抵押人不具备法律资格或处分权**  \n   如果抵押人没有完全的民事行为能力或不具备处分房产的合法权利，设立的抵押可能被认定无效。\n\n4. **抵押合同违反法律强制性规定**  \n   根据《民法典》第398条，如果抵押合同的内容违反法律或行政法规的强制性规定，例如存在非法约定或不合理条款，则该合同无效。\n\n总结而言，房产抵押无效的原因主要集中于手续不健全、房产本身不符合抵押条件、抵押人无权设立抵押以及抵押合同本身存在法律瑕疵等。办理房产抵押时需严格按照法律要求操作，以确保抵押的有效性。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "明确房产抵押无效的含义",
+        "content": "‘房产抵押无效’指的是在法律框架下，房屋或不动产作为抵押物时，其抵押权未能依法设立或无效的法律状态。这通常包括抵押设定时违反法律的相关规定或程序要求，需要进一步探究具体适用的情况。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "分析《民法典》中针对房产抵押的基本规定",
+        "content": "根据中国《民法典》的规定，设立房产抵押需要符合一定的条件，例如主体资格合法、抵押物存在可处分的权利、依规进行登记等。若不符合这些条件，抵押可能无效。需要确认具体条款。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "查询《民法典》中关于抵押权效力及无效情况的相关条款",
+        "content": "<search>民法典 抵押权 无效</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "分析返回的条款以明确无效的具体情形",
+        "content": "<information>《民法典》第399条规定，不动产抵押未进行登记的不生效；第397条规定了一些禁止设定抵押的情形，例如被查封、未依法取得所有权的房屋等；第398条规定，抵押合同不符合法律、行政法规强制性规定的无效。</information>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "总结房产抵押无效的常见情形",
+        "content": "根据查询结果，可归纳出以下几类情形可能导致房产抵押无效：1）抵押房产未依法登记；2）用于抵押的房产存在限制（如被查封、尚未取得所有权）；3）主体不具备设立抵押的资格；4）抵押合同违反法律强制性规定。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "房产抵押无效的情况包括但不限于以下情形：1）用于抵押的房产未依法办理抵押登记；2）抵押的房屋依法被查封或未依法取得产权；3）设定抵押的主体不具有相应法律资格；4）抵押合同存在违反法律、行政法规强制性规定的行为（如格式条款不符或存在欺诈）。这些情形均可能导致抵押权无法设立或无效。"
+      },
+      {
+        "action": "Verification",
+        "content": "通过确认《民法典》的具体条款，可以验证房产抵押无效的几种情形与法规一致，例如未办理登记、房产的权利瑕疵、合同不合法等。因此，该结论准确无误。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "房产抵押无效，这个是什么情况呢？得先搞清楚什么叫抵押无效。嗯，抵押无效应该是指，房子作为抵押物时，法律上抵押权没真正成立或者直接被认定为无效吧。可能是有什么地方没按规定来，或者直接违反法律。具体有哪些情况会造成这个问题呢？我感觉有必要看看《民法典》里面的规定，它应该会直接说明抵押成立的必要条件和无效的具体情形。\n\n好，我先查一下《民法典》里和抵押相关的规定，尤其是抵押权无效的情况。<search>民法典 抵押权 无效</search>\n\n哦，找到了！<information>《民法典》第399条提到，不动产抵押如果没有去办理登记的话，抵押权就不成立，也就是说没有法律效力。另外，第397条好像提到了一些禁止抵押的情况，比如房子被查封了，或者连房子的产权都没依法取得，那肯定没办法抵押。还有第398条提到一种情况是，抵押合同如果违反了一些强制性的法律或者行政法规，那合同直接无效。</information>嗯，看起来这些条款挺清楚的，能够说明为什么抵押无效。\n\n综合一下，我觉得可以归纳出几种房产抵押无效的常见情形。比如说，第一，房子的抵押手续没有依法办登记，这样就没效果。第二，被用来抵押的房产可能有问题，比如已经被查封，又或者产权还不明确，这种情况下应该也是无效的。第三，设定抵押的人可能本身不符合资格，比如不具备处置房产的权利。最后一个情况就是合同问题，如果抵押合同的内容违反法律规定，像是写了一些强制性违法的不合理条款，合同也会被认定为无效。\n\n嗯，总结一下吧，房产抵押无效主要有几种原因：1）抵押登记手续没办好；2）房子本身有法律瑕疵，比如查封或者产权不合法；3）设立抵押的人不合资格；4）抵押合同违反法律强制性规定。这些条款和《民法典》里的内容是对得上的，所以这些情况应该是准确的。",
+  "Response": "房产抵押无效的情况主要包括以下几类：\n\n1. **未办理抵押登记**  \n   根据《民法典》第399条规定，不动产抵押必须依法办理登记手续，否则抵押权不成立，这意味着无法产生法律效力。\n\n2. **房产本身存在法律瑕疵**  \n   根据《民法典》第397条的相关规定，以下情形的房产无法设立有效抵押：  \n   - 房产已被查封或扣押。  \n   - 抵押人对房产没有依法取得的产权（例如房产产权未明确）。  \n\n3. **抵押人不具备法律资格或处分权**  \n   如果抵押人没有完全的民事行为能力或不具备处分房产的合法权利，设立的抵押可能被认定无效。\n\n4. **抵押合同违反法律强制性规定**  \n   根据《民法典》第398条，如果抵押合同的内容违反法律或行政法规的强制性规定，例如存在非法约定或不合理条款，则该合同无效。\n\n总结而言，房产抵押无效的原因主要集中于手续不健全、房产本身不符合抵押条件、抵押人无权设立抵押以及抵押合同本身存在法律瑕疵等。办理房产抵押时需严格按照法律要求操作，以确保抵押的有效性。",
+  "Question": "房产抵押无效的情况有哪些？"
+}

@@ -1,0 +1,99 @@
+{
+  "Open-ended Verifiable Question": "夫妻离婚房产如何分配",
+  "Ground-True Answer": "依据《中华人民共和国民法典》第一千零八十七条离婚时，夫妻的共同财产由双方协议处理；协议不成的，由人民法院根据财产的具体情况，按照照顾子女、女方和无过错方权益的原则判决。对夫或者妻在家庭土地承包经营中享有的权益等，应当依法予以保护。",
+  "process_id": 5515,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "确定房产性质",
+      "content": "夫妻离婚房产分配需要首先明确房产属于夫妻共同财产还是个人财产。根据我国《婚姻法》和《民法典》的相关规定，婚后购买的房产一般被认定为夫妻共同财产，婚前购买的房产通常属于购买者的个人财产。应查询法律条文以确认具体原则。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "搜索房产分配相关法律依据",
+      "content": "<search>中国民法典夫妻共同财产分配</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "法律依据检索结果",
+      "content": "<information>根据《中华人民共和国民法典》第1062条，夫妻在婚姻关系存续期间所得的收入和购置的财产属于夫妻共同财产；第1063条规定个人财产包括婚前财产，一方因身体受到伤害获得的赔偿，以及遗嘱、赠与中指明的一方所有的财产等。</information>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "分析分割依据",
+      "content": "依据上述法律信息，可以确认夫妻共同财产应在离婚时平均分配，而个人财产归个人所有。如果房产属于共同财产，通常需要对其进行评估，并协商或诉讼分割。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "考量特殊情况",
+      "content": "还需判断房产是否涉及特殊情况，比如贷款购置的房产、房产中涉及父母出资、或财产协议中明确约定房产归属。对于这些情况，分割方式可能存在调整。可能需要就父母赠与部分以及未偿还贷款部分具体分析。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "夫妻离婚时，房产分配需根据房产性质判断：婚后共同购置的房产属于夫妻共同财产，应平均分割；婚前购买的房产属于个人财产，归个人所有。特殊情况如贷款购房、父母出资或协议约定需另行处理，通常结合实际情况协商解决或通过法律途径明确分割原则。"
+    },
+    {
+      "action": "Verification",
+      "content": "结论符合《民法典》中关于夫妻共同财产的相关规定及实际操作原则，确认无误。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n夫妻离婚房产如何分配\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n夫妻离婚时，房产分配需根据房产性质判断：婚后共同购置的房产属于夫妻共同财产，应平均分割；婚前购买的房产属于个人财产，归个人所有。特殊情况如贷款购房、父母出资或协议约定需另行处理，通常结合实际情况协商解决或通过法律途径明确分割原则。  \n</Model Response>  \n\n<Reference Answer>  \n依据《中华人民共和国民法典》第一千零八十七条离婚时，夫妻的共同财产由双方协议处理；协议不成的，由人民法院根据财产的具体情况，按照照顾子女、女方和无过错方权益的原则判决。对夫或者妻在家庭土地承包经营中享有的权益等，应当依法予以保护。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 确定房产性质\n夫妻离婚房产分配需要首先明确房产属于夫妻共同财产还是个人财产。根据我国《婚姻法》和《民法典》的相关规定，婚后购买的房产一般被认定为夫妻共同财产，婚前购买的房产通常属于购买者的个人财产。应查询法律条文以确认具体原则。\n\n### 搜索房产分配相关法律依据\n<search>中国民法典夫妻共同财产分配</search>\n\n### 法律依据检索结果\n<information>根据《中华人民共和国民法典》第1062条，夫妻在婚姻关系存续期间所得的收入和购置的财产属于夫妻共同财产；第1063条规定个人财产包括婚前财产，一方因身体受到伤害获得的赔偿，以及遗嘱、赠与中指明的一方所有的财产等。</information>\n\n### 分析分割依据\n依据上述法律信息，可以确认夫妻共同财产应在离婚时平均分配，而个人财产归个人所有。如果房产属于共同财产，通常需要对其进行评估，并协商或诉讼分割。\n\n### 考量特殊情况\n还需判断房产是否涉及特殊情况，比如贷款购置的房产、房产中涉及父母出资、或财产协议中明确约定房产归属。对于这些情况，分割方式可能存在调整。可能需要就父母赠与部分以及未偿还贷款部分具体分析。\n\n### Conclusion\n夫妻离婚时，房产分配需根据房产性质判断：婚后共同购置的房产属于夫妻共同财产，应平均分割；婚前购买的房产属于个人财产，归个人所有。特殊情况如贷款购房、父母出资或协议约定需另行处理，通常结合实际情况协商解决或通过法律途径明确分割原则。\n\n### Verification\n结论符合《民法典》中关于夫妻共同财产的相关规定及实际操作原则，确认无误。\n</Thought Process>\n\n<Question>\n夫妻离婚房产如何分配\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n嗯，夫妻离婚的时候，房产怎么分确实是个挺复杂的话题，得先搞清楚房子的性质。要确定它是夫妻共同财产呢，还是属于一方的个人财产。这个区别特别重要，因为法律对这两种财产分配的处理方式是不一样的。\n\n关于这个问题，我记得《民法典》里有相关规定，要先看看具体条款是怎么说的。为了确保准确，我来搜一下更详细的信息吧。\n\n<search>中国民法典夫妻共同财产分配</search>\n\n找到了！根据《中华人民共和国民法典》第1062条，夫妻在婚姻关系存续期间所得的收入以及购买的财产是夫妻共同财产。而第1063条又明确了一些属于个人财产的情形，比如婚前财产、一方因身体受到伤害获得的赔偿、还有遗嘱或赠与明确给一方的财产等等。这下关于共同财产和个人财产的界定就清楚多了。\n\n所以，如果是婚后买的房子，一般是夫妻共同财产，这种情况下，在离婚时应该平均分配。至于婚前买的房子，那应该算是那一方的个人财产，离婚后还是属于原来的房产拥有者。\n\n不过，实际操作中房产分配可能还有些复杂情况，比如房子是婚后买的，但夫妻俩有没有明确签过什么协议，说房子归谁？还有一种很常见的情况，房子可能是按揭贷款买的，涉及贷款未还清的部分，又该怎么处理呢？另外，如果房子的购置中有父母亲属的出资，比如父母帮忙一起付的首付款，分割起来也可能需要特别明确那部分出资的归属。哦，还有一种情况，如果有约定夫妻分别财产制，可能也会影响房子的归属吧。\n\n所以啦，最后的房产分割结果会根据房子的性质、有没有签署过具体协议，以及是否涉及贷款或父母出资等特别情形来进行综合判定。不过总体原则还是清晰的：夫妻共同财产在离婚时原则上是对半分的，而个人财产还是归个人！这个结论在法律框架内是完全符合《民法典》的相关规定的。\n</Internal Thinking>\n\n<Question>\n夫妻离婚房产如何分配\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"确定房产性质\",\n      \"content\": \"夫妻离婚房产分配需要首先明确房产属于夫妻共同财产还是个人财产。根据我国《婚姻法》和《民法典》的相关规定，婚后购买的房产一般被认定为夫妻共同财产，婚前购买的房产通常属于购买者的个人财产。应查询法律条文以确认具体原则。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"搜索房产分配相关法律依据\",\n      \"content\": \"<search>中国民法典夫妻共同财产分配</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"法律依据检索结果\",\n      \"content\": \"<information>根据《中华人民共和国民法典》第1062条，夫妻在婚姻关系存续期间所得的收入和购置的财产属于夫妻共同财产；第1063条规定个人财产包括婚前财产，一方因身体受到伤害获得的赔偿，以及遗嘱、赠与中指明的一方所有的财产等。</information>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析分割依据\",\n      \"content\": \"依据上述法律信息，可以确认夫妻共同财产应在离婚时平均分配，而个人财产归个人所有。如果房产属于共同财产，通常需要对其进行评估，并协商或诉讼分割。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"考量特殊情况\",\n      \"content\": \"还需判断房产是否涉及特殊情况，比如贷款购置的房产、房产中涉及父母出资、或财产协议中明确约定房产归属。对于这些情况，分割方式可能存在调整。可能需要就父母赠与部分以及未偿还贷款部分具体分析。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"夫妻离婚时，房产分配需根据房产性质判断：婚后共同购置的房产属于夫妻共同财产，应平均分割；婚前购买的房产属于个人财产，归个人所有。特殊情况如贷款购房、父母出资或协议约定需另行处理，通常结合实际情况协商解决或通过法律途径明确分割原则。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"结论符合《民法典》中关于夫妻共同财产的相关规定及实际操作原则，确认无误。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"嗯，夫妻离婚的时候，房产怎么分确实是个挺复杂的话题，得先搞清楚房子的性质。要确定它是夫妻共同财产呢，还是属于一方的个人财产。这个区别特别重要，因为法律对这两种财产分配的处理方式是不一样的。\\n\\n关于这个问题，我记得《民法典》里有相关规定，要先看看具体条款是怎么说的。为了确保准确，我来搜一下更详细的信息吧。\\n\\n<search>中国民法典夫妻共同财产分配</search>\\n\\n找到了！根据《中华人民共和国民法典》第1062条，夫妻在婚姻关系存续期间所得的收入以及购买的财产是夫妻共同财产。而第1063条又明确了一些属于个人财产的情形，比如婚前财产、一方因身体受到伤害获得的赔偿、还有遗嘱或赠与明确给一方的财产等等。这下关于共同财产和个人财产的界定就清楚多了。\\n\\n所以，如果是婚后买的房子，一般是夫妻共同财产，这种情况下，在离婚时应该平均分配。至于婚前买的房子，那应该算是那一方的个人财产，离婚后还是属于原来的房产拥有者。\\n\\n不过，实际操作中房产分配可能还有些复杂情况，比如房子是婚后买的，但夫妻俩有没有明确签过什么协议，说房子归谁？还有一种很常见的情况，房子可能是按揭贷款买的，涉及贷款未还清的部分，又该怎么处理呢？另外，如果房子的购置中有父母亲属的出资，比如父母帮忙一起付的首付款，分割起来也可能需要特别明确那部分出资的归属。哦，还有一种情况，如果有约定夫妻分别财产制，可能也会影响房子的归属吧。\\n\\n所以啦，最后的房产分割结果会根据房子的性质、有没有签署过具体协议，以及是否涉及贷款或父母出资等特别情形来进行综合判定。不过总体原则还是清晰的：夫妻共同财产在离婚时原则上是对半分的，而个人财产还是归个人！这个结论在法律框架内是完全符合《民法典》的相关规定的。\"\n}\n```",
+    "夫妻离婚时，房产的分配需要根据房产的性质以及具体情形来确定。根据《中华人民共和国民法典》的规定，主要分以下几种情况处理：\n\n### 一、明确房产性质是关键\n1. **婚后购买的房产**  \n   根据《民法典》第1062条规定，婚姻关系存续期间所购买的房产一般属于夫妻共同财产，原则上在离婚时对半分割。  \n   \n2. **婚前购买的房产**  \n   如果房子是在婚前由一方购买，且没有将房产登记为夫妻共有的情形，则属于购买方的个人财产，依据《民法典》第1063条的规定，离婚时仍归购买方所有。\n\n3. **房产是否有特殊约定**  \n   如果夫妻之间签署过婚内财产协议（例如约定房产归属或指定夫妻分别财产制），则按照协议内容进行分割。\n\n---\n\n### 二、特殊情况的处理\n1. **按揭购房**  \n   房子在婚后买入但尚未还清贷款时，贷款部分由谁偿还以及房屋增值部分如何分割，需要综合考虑。通常房屋产权价值按婚姻关系存续期间共同分担的贷款比例进行分割，其余增值部分由双方协商。\n\n2. **父母资助购房**  \n   如果房屋的购置涉及父母出资，需要明确具体出资的性质：  \n   - **赠与夫妻双方**：房产通常认定为共同财产，原则上对半分割。  \n   - **赠与一方**：如果父母明确表示出资仅是赠与自己子女，则认定为个人财产，归属受赠方。\n\n3. **夫妻投资或装修款分配**  \n   如果另一方在房产上投入了较大的资金用于装修或其他增值的改造，离婚时可以提出补偿要求，分配具体金额时需结合实际投入进行评估。\n\n---\n\n### 三、法律原则与实际操作\n离婚时房产分割的具体方案，最终还可能受到法院综合考虑夫妻双方付出、子女抚养等因素的影响。总体来说，法律原则如下：  \n- **共同财产对半分割**（双方均享有平等份额原则）；  \n- **个人财产归属个人**（明确产权归属）；  \n- **协议约定优先**（夫妻自由约定的财产分割有效）。\n\n针对房产分割问题，建议寻求专业律师帮助，结合证据及具体情况以保障权益。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "确定房产性质",
+        "content": "夫妻离婚房产分配需要首先明确房产属于夫妻共同财产还是个人财产。根据我国《婚姻法》和《民法典》的相关规定，婚后购买的房产一般被认定为夫妻共同财产，婚前购买的房产通常属于购买者的个人财产。应查询法律条文以确认具体原则。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "搜索房产分配相关法律依据",
+        "content": "<search>中国民法典夫妻共同财产分配</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "法律依据检索结果",
+        "content": "<information>根据《中华人民共和国民法典》第1062条，夫妻在婚姻关系存续期间所得的收入和购置的财产属于夫妻共同财产；第1063条规定个人财产包括婚前财产，一方因身体受到伤害获得的赔偿，以及遗嘱、赠与中指明的一方所有的财产等。</information>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "分析分割依据",
+        "content": "依据上述法律信息，可以确认夫妻共同财产应在离婚时平均分配，而个人财产归个人所有。如果房产属于共同财产，通常需要对其进行评估，并协商或诉讼分割。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "考量特殊情况",
+        "content": "还需判断房产是否涉及特殊情况，比如贷款购置的房产、房产中涉及父母出资、或财产协议中明确约定房产归属。对于这些情况，分割方式可能存在调整。可能需要就父母赠与部分以及未偿还贷款部分具体分析。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "夫妻离婚时，房产分配需根据房产性质判断：婚后共同购置的房产属于夫妻共同财产，应平均分割；婚前购买的房产属于个人财产，归个人所有。特殊情况如贷款购房、父母出资或协议约定需另行处理，通常结合实际情况协商解决或通过法律途径明确分割原则。"
+      },
+      {
+        "action": "Verification",
+        "content": "结论符合《民法典》中关于夫妻共同财产的相关规定及实际操作原则，确认无误。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "嗯，夫妻离婚的时候，房产怎么分确实是个挺复杂的话题，得先搞清楚房子的性质。要确定它是夫妻共同财产呢，还是属于一方的个人财产。这个区别特别重要，因为法律对这两种财产分配的处理方式是不一样的。\n\n关于这个问题，我记得《民法典》里有相关规定，要先看看具体条款是怎么说的。为了确保准确，我来搜一下更详细的信息吧。\n\n<search>中国民法典夫妻共同财产分配</search>\n\n找到了！根据《中华人民共和国民法典》第1062条，夫妻在婚姻关系存续期间所得的收入以及购买的财产是夫妻共同财产。而第1063条又明确了一些属于个人财产的情形，比如婚前财产、一方因身体受到伤害获得的赔偿、还有遗嘱或赠与明确给一方的财产等等。这下关于共同财产和个人财产的界定就清楚多了。\n\n所以，如果是婚后买的房子，一般是夫妻共同财产，这种情况下，在离婚时应该平均分配。至于婚前买的房子，那应该算是那一方的个人财产，离婚后还是属于原来的房产拥有者。\n\n不过，实际操作中房产分配可能还有些复杂情况，比如房子是婚后买的，但夫妻俩有没有明确签过什么协议，说房子归谁？还有一种很常见的情况，房子可能是按揭贷款买的，涉及贷款未还清的部分，又该怎么处理呢？另外，如果房子的购置中有父母亲属的出资，比如父母帮忙一起付的首付款，分割起来也可能需要特别明确那部分出资的归属。哦，还有一种情况，如果有约定夫妻分别财产制，可能也会影响房子的归属吧。\n\n所以啦，最后的房产分割结果会根据房子的性质、有没有签署过具体协议，以及是否涉及贷款或父母出资等特别情形来进行综合判定。不过总体原则还是清晰的：夫妻共同财产在离婚时原则上是对半分的，而个人财产还是归个人！这个结论在法律框架内是完全符合《民法典》的相关规定的。",
+  "Response": "夫妻离婚时，房产的分配需要根据房产的性质以及具体情形来确定。根据《中华人民共和国民法典》的规定，主要分以下几种情况处理：\n\n### 一、明确房产性质是关键\n1. **婚后购买的房产**  \n   根据《民法典》第1062条规定，婚姻关系存续期间所购买的房产一般属于夫妻共同财产，原则上在离婚时对半分割。  \n   \n2. **婚前购买的房产**  \n   如果房子是在婚前由一方购买，且没有将房产登记为夫妻共有的情形，则属于购买方的个人财产，依据《民法典》第1063条的规定，离婚时仍归购买方所有。\n\n3. **房产是否有特殊约定**  \n   如果夫妻之间签署过婚内财产协议（例如约定房产归属或指定夫妻分别财产制），则按照协议内容进行分割。\n\n---\n\n### 二、特殊情况的处理\n1. **按揭购房**  \n   房子在婚后买入但尚未还清贷款时，贷款部分由谁偿还以及房屋增值部分如何分割，需要综合考虑。通常房屋产权价值按婚姻关系存续期间共同分担的贷款比例进行分割，其余增值部分由双方协商。\n\n2. **父母资助购房**  \n   如果房屋的购置涉及父母出资，需要明确具体出资的性质：  \n   - **赠与夫妻双方**：房产通常认定为共同财产，原则上对半分割。  \n   - **赠与一方**：如果父母明确表示出资仅是赠与自己子女，则认定为个人财产，归属受赠方。\n\n3. **夫妻投资或装修款分配**  \n   如果另一方在房产上投入了较大的资金用于装修或其他增值的改造，离婚时可以提出补偿要求，分配具体金额时需结合实际投入进行评估。\n\n---\n\n### 三、法律原则与实际操作\n离婚时房产分割的具体方案，最终还可能受到法院综合考虑夫妻双方付出、子女抚养等因素的影响。总体来说，法律原则如下：  \n- **共同财产对半分割**（双方均享有平等份额原则）；  \n- **个人财产归属个人**（明确产权归属）；  \n- **协议约定优先**（夫妻自由约定的财产分割有效）。\n\n针对房产分割问题，建议寻求专业律师帮助，结合证据及具体情况以保障权益。",
+  "Question": "夫妻离婚房产如何分配"
+}

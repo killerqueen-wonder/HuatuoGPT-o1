@@ -1,0 +1,99 @@
+{
+  "Open-ended Verifiable Question": "婚后由父母出资为子女购买的不动产怎么处理",
+  "Ground-True Answer": "（一）婚后由父母出资为子女购买的不动产，产权登记在出资人子女名下的，视为只对自己子女一方的赠与，该不动产应认定为夫妻一方的个人财产。\n由双方父母出资购买的不动产，产权登记在一方子女名下的，该不动产认定为双方按照各自父母的出资份额按份所有，但当事人另有约定的除外。\n（二）夫妻一方婚前签订不动产买卖合同，以个人财产支付首付款并在银行贷款，婚后用夫妻共同财产还贷，不动产登记于首付款支付方名下的，离婚时该不动产由双方协议处理。\n不能达成协议的，人民法院可判决该不动产归产权登记一方，尚未归还的贷款为产权登记一方的个人债务。双方婚后共同还贷支付的款项，及其相应增值部分，离婚时由产权登记一方对另一方进行补偿。\n（三）一方未经另一方同意出售夫妻共有的房屋，第三人善意购买、支付合理对价并办理产权登记手续，另一方主张追回房屋的，人民法院不予支持。夫妻一方擅自处分共有的房屋造成另一方财产损失，离婚时另一方请求赔偿损失的，人民法院应予以支持。",
+  "process_id": 1905,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "明确婚姻法相关规定",
+      "content": "根据婚姻法或相关司法解释，需要判断婚后由父母出资为子女购买的不动产如何界定产权归属。我需要查询中国现行的相关规定，以明确父母出资购买房产是否视作给予夫妻双方共同财产。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "查询相关法律与司法解释",
+      "content": "根据问题，我需要检索包含婚姻法及其司法解释的条款，尤其是涉及父母出资购房情形的具体规定和处理方式。关键词为：<search>婚姻法 父母出资 不动产归属</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "检索并解读相关信息",
+      "content": "<information>《中华人民共和国婚姻法》第十八条解释父母明确说明赠与一方，并注明产权归属于某一子女的情况下，该房产被视为一方个人财产。此外，《最高人民法院关于适用〈中华人民共和国婚姻法〉若干问题的解释（二）》也规定：如房屋系父母出资且产权登记在出资人子女一方名下，视为对子女的单独赠与。</information>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "分析是否需要区分出资及登记情况",
+      "content": "根据上述信息，房产的归属关键在于：父母是否明确赠与对象及房产是否登记在某一方名下。如果登记在一方名下，通常被认定为该方的个人财产；若登记在夫妻双方名下，则可能被视为夫妻共同财产。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "结合具体情境得出初步结论",
+      "content": "婚后由父母出资购买的不动产，如果产权登记在子女一方名下，且父母明确表示赠与该方，则依法视为该方的个人财产；若登记在夫妻双方名下，则可能视为夫妻共同财产。需要根据具体case分析父母的赠与意图及产权登记情况。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "婚后由父母出资为子女购买的不动产的归属，需依据产权登记情况及父母出资时的赠与意图判断。如果产权登记在子女一方名下，并且父母明确表示赠与该子女，则该房产属于子女个人财产；如果登记在夫妻双方名下，则视为夫妻共同财产，除非有证据表明父母仅赠与子女一方。"
+    },
+    {
+      "action": "Verification",
+      "content": "结论符合《婚姻法》第十八条及司法解释的具体规定。依据明确判断标准，分析具有逻辑性，法律适用无误，因此无需进一步推导。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n婚后由父母出资为子女购买的不动产怎么处理\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n婚后由父母出资为子女购买的不动产的归属，需依据产权登记情况及父母出资时的赠与意图判断。如果产权登记在子女一方名下，并且父母明确表示赠与该子女，则该房产属于子女个人财产；如果登记在夫妻双方名下，则视为夫妻共同财产，除非有证据表明父母仅赠与子女一方。  \n</Model Response>  \n\n<Reference Answer>  \n（一）婚后由父母出资为子女购买的不动产，产权登记在出资人子女名下的，视为只对自己子女一方的赠与，该不动产应认定为夫妻一方的个人财产。\n由双方父母出资购买的不动产，产权登记在一方子女名下的，该不动产认定为双方按照各自父母的出资份额按份所有，但当事人另有约定的除外。\n（二）夫妻一方婚前签订不动产买卖合同，以个人财产支付首付款并在银行贷款，婚后用夫妻共同财产还贷，不动产登记于首付款支付方名下的，离婚时该不动产由双方协议处理。\n不能达成协议的，人民法院可判决该不动产归产权登记一方，尚未归还的贷款为产权登记一方的个人债务。双方婚后共同还贷支付的款项，及其相应增值部分，离婚时由产权登记一方对另一方进行补偿。\n（三）一方未经另一方同意出售夫妻共有的房屋，第三人善意购买、支付合理对价并办理产权登记手续，另一方主张追回房屋的，人民法院不予支持。夫妻一方擅自处分共有的房屋造成另一方财产损失，离婚时另一方请求赔偿损失的，人民法院应予以支持。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 明确婚姻法相关规定\n根据婚姻法或相关司法解释，需要判断婚后由父母出资为子女购买的不动产如何界定产权归属。我需要查询中国现行的相关规定，以明确父母出资购买房产是否视作给予夫妻双方共同财产。\n\n### 查询相关法律与司法解释\n根据问题，我需要检索包含婚姻法及其司法解释的条款，尤其是涉及父母出资购房情形的具体规定和处理方式。关键词为：<search>婚姻法 父母出资 不动产归属</search>\n\n### 检索并解读相关信息\n<information>《中华人民共和国婚姻法》第十八条解释父母明确说明赠与一方，并注明产权归属于某一子女的情况下，该房产被视为一方个人财产。此外，《最高人民法院关于适用〈中华人民共和国婚姻法〉若干问题的解释（二）》也规定：如房屋系父母出资且产权登记在出资人子女一方名下，视为对子女的单独赠与。</information>\n\n### 分析是否需要区分出资及登记情况\n根据上述信息，房产的归属关键在于：父母是否明确赠与对象及房产是否登记在某一方名下。如果登记在一方名下，通常被认定为该方的个人财产；若登记在夫妻双方名下，则可能被视为夫妻共同财产。\n\n### 结合具体情境得出初步结论\n婚后由父母出资购买的不动产，如果产权登记在子女一方名下，且父母明确表示赠与该方，则依法视为该方的个人财产；若登记在夫妻双方名下，则可能视为夫妻共同财产。需要根据具体case分析父母的赠与意图及产权登记情况。\n\n### Conclusion\n婚后由父母出资为子女购买的不动产的归属，需依据产权登记情况及父母出资时的赠与意图判断。如果产权登记在子女一方名下，并且父母明确表示赠与该子女，则该房产属于子女个人财产；如果登记在夫妻双方名下，则视为夫妻共同财产，除非有证据表明父母仅赠与子女一方。\n\n### Verification\n结论符合《婚姻法》第十八条及司法解释的具体规定。依据明确判断标准，分析具有逻辑性，法律适用无误，因此无需进一步推导。\n</Thought Process>\n\n<Question>\n婚后由父母出资为子女购买的不动产怎么处理\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n婚后如果是父母出资给子女买了一套房，那么这套房产究竟算谁的呢？嗯，这个问题听起来有点复杂，但应该可以通过法律来找答案。首先我得搞清楚，这种情况下，法律上是怎么看待父母出资的——它是属于夫妻双方的共同财产，还是只有子女一方的个人财产？\n\n哦，对了，咱们国家有《婚姻法》，还有一些司法解释，应该会提到类似的情况。我得找找具体的条款。可以试试看用关键词来搜索，比如：<search>婚姻法 父母出资 不动产归属</search>\n\n嗯，我找到了相关的法律依据。这么看吧，根据《中华人民共和国婚姻法》第十八条，如果父母在出资时明确表示，这笔钱是给自己子女用的，并且还特别注明房子的产权归子女个人所有，那房子就算子女一方的个人财产。而且，《最高人民法院关于适用〈中华人民共和国婚姻法〉若干问题的解释（二）》还有进一步的规定，说如果父母出资金买的房，登记在出资人子女的名下，那就可以视为父母单独赠与这个子女的。这两条规定比较重要。\n\n那么是不是只要父母出钱，房子登记在谁名下，就一定归谁呢？我想可能还要结合父母当时有没有明确说出赠与的意思。如果房子是登记在夫妻两个人名下，而父母并没有表示钱是专门给子女个人用的，那可能就会被认定为夫妻共同财产了。\n\n从这里我能得出一个初步判断：如果婚后父母出资购买房产，关键有两个点，一个是房子的产权最后登记在谁的名下，另一个是父母有没有明确表达，钱是只给自己子女花的。如果登记在子女一方名下，而且父母的意图也很清楚，那它应该是子女的个人财产。可如果产权登记在夫妻两个人共用名下，那通常会被视为夫妻共同财产，除非有充分证据证明父母只想赠与子女一方。\n\n看起来，这才是关键所在！根据《婚姻法》的规定和司法解释，这点分析应该是没跑偏的，逻辑上也通顺。但当然，实际情况还是得具体分析，因为每个案子可能还有别的影响因素。\n\n总结一下，婚后由父母出资买的不动产怎么处理，答案基本就是：如果房子登记在子女名下并且父母表明了钱只给子女，那是子女个人财产；如果登记在夫妻名下，一般就是夫妻共同财产。\n</Internal Thinking>\n\n<Question>\n婚后由父母出资为子女购买的不动产怎么处理\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"明确婚姻法相关规定\",\n      \"content\": \"根据婚姻法或相关司法解释，需要判断婚后由父母出资为子女购买的不动产如何界定产权归属。我需要查询中国现行的相关规定，以明确父母出资购买房产是否视作给予夫妻双方共同财产。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"查询相关法律与司法解释\",\n      \"content\": \"根据问题，我需要检索包含婚姻法及其司法解释的条款，尤其是涉及父母出资购房情形的具体规定和处理方式。关键词为：<search>婚姻法 父母出资 不动产归属</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"检索并解读相关信息\",\n      \"content\": \"<information>《中华人民共和国婚姻法》第十八条解释父母明确说明赠与一方，并注明产权归属于某一子女的情况下，该房产被视为一方个人财产。此外，《最高人民法院关于适用〈中华人民共和国婚姻法〉若干问题的解释（二）》也规定：如房屋系父母出资且产权登记在出资人子女一方名下，视为对子女的单独赠与。</information>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析是否需要区分出资及登记情况\",\n      \"content\": \"根据上述信息，房产的归属关键在于：父母是否明确赠与对象及房产是否登记在某一方名下。如果登记在一方名下，通常被认定为该方的个人财产；若登记在夫妻双方名下，则可能被视为夫妻共同财产。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"结合具体情境得出初步结论\",\n      \"content\": \"婚后由父母出资购买的不动产，如果产权登记在子女一方名下，且父母明确表示赠与该方，则依法视为该方的个人财产；若登记在夫妻双方名下，则可能视为夫妻共同财产。需要根据具体case分析父母的赠与意图及产权登记情况。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"婚后由父母出资为子女购买的不动产的归属，需依据产权登记情况及父母出资时的赠与意图判断。如果产权登记在子女一方名下，并且父母明确表示赠与该子女，则该房产属于子女个人财产；如果登记在夫妻双方名下，则视为夫妻共同财产，除非有证据表明父母仅赠与子女一方。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"结论符合《婚姻法》第十八条及司法解释的具体规定。依据明确判断标准，分析具有逻辑性，法律适用无误，因此无需进一步推导。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"婚后如果是父母出资给子女买了一套房，那么这套房产究竟算谁的呢？嗯，这个问题听起来有点复杂，但应该可以通过法律来找答案。首先我得搞清楚，这种情况下，法律上是怎么看待父母出资的——它是属于夫妻双方的共同财产，还是只有子女一方的个人财产？\\n\\n哦，对了，咱们国家有《婚姻法》，还有一些司法解释，应该会提到类似的情况。我得找找具体的条款。可以试试看用关键词来搜索，比如：<search>婚姻法 父母出资 不动产归属</search>\\n\\n嗯，我找到了相关的法律依据。这么看吧，根据《中华人民共和国婚姻法》第十八条，如果父母在出资时明确表示，这笔钱是给自己子女用的，并且还特别注明房子的产权归子女个人所有，那房子就算子女一方的个人财产。而且，《最高人民法院关于适用〈中华人民共和国婚姻法〉若干问题的解释（二）》还有进一步的规定，说如果父母出资金买的房，登记在出资人子女的名下，那就可以视为父母单独赠与这个子女的。这两条规定比较重要。\\n\\n那么是不是只要父母出钱，房子登记在谁名下，就一定归谁呢？我想可能还要结合父母当时有没有明确说出赠与的意思。如果房子是登记在夫妻两个人名下，而父母并没有表示钱是专门给子女个人用的，那可能就会被认定为夫妻共同财产了。\\n\\n从这里我能得出一个初步判断：如果婚后父母出资购买房产，关键有两个点，一个是房子的产权最后登记在谁的名下，另一个是父母有没有明确表达，钱是只给自己子女花的。如果登记在子女一方名下，而且父母的意图也很清楚，那它应该是子女的个人财产。可如果产权登记在夫妻两个人共用名下，那通常会被视为夫妻共同财产，除非有充分证据证明父母只想赠与子女一方。\\n\\n看起来，这才是关键所在！根据《婚姻法》的规定和司法解释，这点分析应该是没跑偏的，逻辑上也通顺。但当然，实际情况还是得具体分析，因为每个案子可能还有别的影响因素。\\n\\n总结一下，婚后由父母出资买的不动产怎么处理，答案基本就是：如果房子登记在子女名下并且父母表明了钱只给子女，那是子女个人财产；如果登记在夫妻名下，一般就是夫妻共同财产。\"\n}\n```",
+    "婚后由父母出资为子女购买的不动产，其归属问题在法律上需要结合多方面因素进行判断，主要包括以下几点：\n\n1. **房产登记的产权人**  \n   根据《中华人民共和国婚姻法》第十八条及其司法解释，《最高人民法院关于适用〈中华人民共和国婚姻法〉若干问题的解释（二）》明确规定，如果父母出资购买的房产 **登记在子女一方名下**，且父母明确表示此出资是赠与子女个人的，那么此房产属于子女一方的**个人财产**。\n\n2. **父母赠与意图的表达**  \n   如果父母在出资过程中明确表达，这笔钱或这套房产仅赠与给自己子女个人，而未表示赠与夫妻双方，那么这笔财产通常被认定为对子女一方的单独赠与。此种情况下，房产可以视为子女的个人财产。而如果父母表明是赠与夫妻双方，或未作任何表态，则可能会被认定为夫妻共同财产。\n\n3. **房产登记在夫妻双方名下的情形**  \n   若房子最终登记在夫妻双方的名下，即便是由一方父母全额出资购买，此时房产通常会被认定为夫妻共同财产，除非另有明确证据证明父母的赠与仅限于子女一方。\n\n**总结**：  \n- 如果房产登记在子女一方名下，且父母明确表示赠与的是子女个人，此房产属于子女个人财产；  \n- 如果房产登记在夫妻两人名下，且父母未明确表示赠与对象，则房产一般会被认定为夫妻共同财产。  \n实际处理中，证据和细节非常关键，比如父母是否书面说明赠与意图、房产证上的产权人等等，建议在此类问题上咨询专业律师，以便更精准地评估房产归属。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "明确婚姻法相关规定",
+        "content": "根据婚姻法或相关司法解释，需要判断婚后由父母出资为子女购买的不动产如何界定产权归属。我需要查询中国现行的相关规定，以明确父母出资购买房产是否视作给予夫妻双方共同财产。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "查询相关法律与司法解释",
+        "content": "根据问题，我需要检索包含婚姻法及其司法解释的条款，尤其是涉及父母出资购房情形的具体规定和处理方式。关键词为：<search>婚姻法 父母出资 不动产归属</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "检索并解读相关信息",
+        "content": "<information>《中华人民共和国婚姻法》第十八条解释父母明确说明赠与一方，并注明产权归属于某一子女的情况下，该房产被视为一方个人财产。此外，《最高人民法院关于适用〈中华人民共和国婚姻法〉若干问题的解释（二）》也规定：如房屋系父母出资且产权登记在出资人子女一方名下，视为对子女的单独赠与。</information>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "分析是否需要区分出资及登记情况",
+        "content": "根据上述信息，房产的归属关键在于：父母是否明确赠与对象及房产是否登记在某一方名下。如果登记在一方名下，通常被认定为该方的个人财产；若登记在夫妻双方名下，则可能被视为夫妻共同财产。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "结合具体情境得出初步结论",
+        "content": "婚后由父母出资购买的不动产，如果产权登记在子女一方名下，且父母明确表示赠与该方，则依法视为该方的个人财产；若登记在夫妻双方名下，则可能视为夫妻共同财产。需要根据具体case分析父母的赠与意图及产权登记情况。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "婚后由父母出资为子女购买的不动产的归属，需依据产权登记情况及父母出资时的赠与意图判断。如果产权登记在子女一方名下，并且父母明确表示赠与该子女，则该房产属于子女个人财产；如果登记在夫妻双方名下，则视为夫妻共同财产，除非有证据表明父母仅赠与子女一方。"
+      },
+      {
+        "action": "Verification",
+        "content": "结论符合《婚姻法》第十八条及司法解释的具体规定。依据明确判断标准，分析具有逻辑性，法律适用无误，因此无需进一步推导。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "婚后如果是父母出资给子女买了一套房，那么这套房产究竟算谁的呢？嗯，这个问题听起来有点复杂，但应该可以通过法律来找答案。首先我得搞清楚，这种情况下，法律上是怎么看待父母出资的——它是属于夫妻双方的共同财产，还是只有子女一方的个人财产？\n\n哦，对了，咱们国家有《婚姻法》，还有一些司法解释，应该会提到类似的情况。我得找找具体的条款。可以试试看用关键词来搜索，比如：<search>婚姻法 父母出资 不动产归属</search>\n\n嗯，我找到了相关的法律依据。这么看吧，根据《中华人民共和国婚姻法》第十八条，如果父母在出资时明确表示，这笔钱是给自己子女用的，并且还特别注明房子的产权归子女个人所有，那房子就算子女一方的个人财产。而且，《最高人民法院关于适用〈中华人民共和国婚姻法〉若干问题的解释（二）》还有进一步的规定，说如果父母出资金买的房，登记在出资人子女的名下，那就可以视为父母单独赠与这个子女的。这两条规定比较重要。\n\n那么是不是只要父母出钱，房子登记在谁名下，就一定归谁呢？我想可能还要结合父母当时有没有明确说出赠与的意思。如果房子是登记在夫妻两个人名下，而父母并没有表示钱是专门给子女个人用的，那可能就会被认定为夫妻共同财产了。\n\n从这里我能得出一个初步判断：如果婚后父母出资购买房产，关键有两个点，一个是房子的产权最后登记在谁的名下，另一个是父母有没有明确表达，钱是只给自己子女花的。如果登记在子女一方名下，而且父母的意图也很清楚，那它应该是子女的个人财产。可如果产权登记在夫妻两个人共用名下，那通常会被视为夫妻共同财产，除非有充分证据证明父母只想赠与子女一方。\n\n看起来，这才是关键所在！根据《婚姻法》的规定和司法解释，这点分析应该是没跑偏的，逻辑上也通顺。但当然，实际情况还是得具体分析，因为每个案子可能还有别的影响因素。\n\n总结一下，婚后由父母出资买的不动产怎么处理，答案基本就是：如果房子登记在子女名下并且父母表明了钱只给子女，那是子女个人财产；如果登记在夫妻名下，一般就是夫妻共同财产。",
+  "Response": "婚后由父母出资为子女购买的不动产，其归属问题在法律上需要结合多方面因素进行判断，主要包括以下几点：\n\n1. **房产登记的产权人**  \n   根据《中华人民共和国婚姻法》第十八条及其司法解释，《最高人民法院关于适用〈中华人民共和国婚姻法〉若干问题的解释（二）》明确规定，如果父母出资购买的房产 **登记在子女一方名下**，且父母明确表示此出资是赠与子女个人的，那么此房产属于子女一方的**个人财产**。\n\n2. **父母赠与意图的表达**  \n   如果父母在出资过程中明确表达，这笔钱或这套房产仅赠与给自己子女个人，而未表示赠与夫妻双方，那么这笔财产通常被认定为对子女一方的单独赠与。此种情况下，房产可以视为子女的个人财产。而如果父母表明是赠与夫妻双方，或未作任何表态，则可能会被认定为夫妻共同财产。\n\n3. **房产登记在夫妻双方名下的情形**  \n   若房子最终登记在夫妻双方的名下，即便是由一方父母全额出资购买，此时房产通常会被认定为夫妻共同财产，除非另有明确证据证明父母的赠与仅限于子女一方。\n\n**总结**：  \n- 如果房产登记在子女一方名下，且父母明确表示赠与的是子女个人，此房产属于子女个人财产；  \n- 如果房产登记在夫妻两人名下，且父母未明确表示赠与对象，则房产一般会被认定为夫妻共同财产。  \n实际处理中，证据和细节非常关键，比如父母是否书面说明赠与意图、房产证上的产权人等等，建议在此类问题上咨询专业律师，以便更精准地评估房产归属。",
+  "Question": "婚后由父母出资为子女购买的不动产怎么处理"
+}

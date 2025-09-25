@@ -1,0 +1,105 @@
+{
+  "Open-ended Verifiable Question": "鉴定材料和鉴定机构出具的鉴定意见需要经当事人质证吗？",
+  "Ground-True Answer": "需要。\n法律依据：《最高人民法院关于审理建设工程施工合同纠纷案件适用法律问题的解释（一）》第三十三条人民法院准许当事人的鉴定申请后，应当根据当事人申请及查明案件事实的需要，确定委托鉴定的事项、范围、鉴定期限等，并组织当事人对争议的鉴定材料进行质证。\n第三十四条人民法院应当组织当事人对鉴定意见进行质证。鉴定人将当事人有争议且未经质证的材料作为鉴定依据的，人民法院应当组织当事人就该部分材料进行质证。经质证认为不能作为鉴定依据的，根据该材料作出的鉴定意见不得作为认定案件事实的依据。\n《最高人民法院关于民事诉讼证据的若干规定》第三十四条第一款人民法院应当组织当事人对鉴定材料进行质证。未经质证的材料，不得作为鉴定的根据。",
+  "process_id": 7765,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "分析问题背景",
+      "content": "鉴定材料和鉴定意见在法律纠纷中通常扮演重要证据的角色。根据证据法的基本原则，所有证据在诉讼中需要经过质证，以确保其真实性、合法性和关联性。因此需要确认相关法律规定是否对鉴定材料和机构出具的意见逐一要求质证。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "搜索相关法律依据",
+      "content": "为了回答问题，需要明确我国相关法律中有关鉴定材料和鉴定意见是否需要质证的规定，例如《民事诉讼法》和《司法鉴定程序通则》。"
+    },
+    {
+      "action": "Search",
+      "content": "<search>民事诉讼法 质证 鉴定意见</search>"
+    },
+    {
+      "action": "Search",
+      "content": "<search>司法鉴定程序通则 质证</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "分析搜索结果",
+      "content": "<information>《民事诉讼法》第63条：证据包括鉴定意见，证据必须经过质证。《民事诉讼法》第94条：涉及专门性问题的，在案件审判中可以聘请鉴定机构进行鉴定，鉴定意见需要出庭说明。《司法鉴定程序通则》第28条规定：司法鉴定意见应当提交法院，并由法院组织质证，以确保真实性和公正性。</information> 根据这些法律规定，鉴定意见属于证据的一种，必须经过质证以确保证据的法律效力，同时质证程序也有助于明确鉴定意见的可信度和证据资格。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "综合法律原则和程序要求",
+      "content": "法律明确要求鉴定意见应当作为证据质证，不经过质证的鉴定意见可能无法视为有效证据。在质证过程中，当事人可以对鉴定意见的内容、程序是否合法、鉴定材料是否符合规定进行质疑或辩驳。这符合保证诉讼中证据真实性的基本原则。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "根据《民事诉讼法》和《司法鉴定程序通则》的规定，鉴定材料和鉴定机构出具的鉴定意见需要经当事人质证。未经质证的鉴定意见通常不能作为有效证据使用。质证确保鉴定过程和结论的合法性、真实性和公平性。"
+    },
+    {
+      "action": "Verification",
+      "content": "确认结论无误。相关法律规定明确要求鉴定意见必须经质证才能作为有效证据，且质证程序符合证据法的基本原则。结论正确，无需进一步推理。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n鉴定材料和鉴定机构出具的鉴定意见需要经当事人质证吗？\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n根据《民事诉讼法》和《司法鉴定程序通则》的规定，鉴定材料和鉴定机构出具的鉴定意见需要经当事人质证。未经质证的鉴定意见通常不能作为有效证据使用。质证确保鉴定过程和结论的合法性、真实性和公平性。  \n</Model Response>  \n\n<Reference Answer>  \n需要。\n法律依据：《最高人民法院关于审理建设工程施工合同纠纷案件适用法律问题的解释（一）》第三十三条人民法院准许当事人的鉴定申请后，应当根据当事人申请及查明案件事实的需要，确定委托鉴定的事项、范围、鉴定期限等，并组织当事人对争议的鉴定材料进行质证。\n第三十四条人民法院应当组织当事人对鉴定意见进行质证。鉴定人将当事人有争议且未经质证的材料作为鉴定依据的，人民法院应当组织当事人就该部分材料进行质证。经质证认为不能作为鉴定依据的，根据该材料作出的鉴定意见不得作为认定案件事实的依据。\n《最高人民法院关于民事诉讼证据的若干规定》第三十四条第一款人民法院应当组织当事人对鉴定材料进行质证。未经质证的材料，不得作为鉴定的根据。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 分析问题背景\n鉴定材料和鉴定意见在法律纠纷中通常扮演重要证据的角色。根据证据法的基本原则，所有证据在诉讼中需要经过质证，以确保其真实性、合法性和关联性。因此需要确认相关法律规定是否对鉴定材料和机构出具的意见逐一要求质证。\n\n### 搜索相关法律依据\n为了回答问题，需要明确我国相关法律中有关鉴定材料和鉴定意见是否需要质证的规定，例如《民事诉讼法》和《司法鉴定程序通则》。\n\n### Search\n<search>民事诉讼法 质证 鉴定意见</search>\n\n### Search\n<search>司法鉴定程序通则 质证</search>\n\n### 分析搜索结果\n<information>《民事诉讼法》第63条：证据包括鉴定意见，证据必须经过质证。《民事诉讼法》第94条：涉及专门性问题的，在案件审判中可以聘请鉴定机构进行鉴定，鉴定意见需要出庭说明。《司法鉴定程序通则》第28条规定：司法鉴定意见应当提交法院，并由法院组织质证，以确保真实性和公正性。</information> 根据这些法律规定，鉴定意见属于证据的一种，必须经过质证以确保证据的法律效力，同时质证程序也有助于明确鉴定意见的可信度和证据资格。\n\n### 综合法律原则和程序要求\n法律明确要求鉴定意见应当作为证据质证，不经过质证的鉴定意见可能无法视为有效证据。在质证过程中，当事人可以对鉴定意见的内容、程序是否合法、鉴定材料是否符合规定进行质疑或辩驳。这符合保证诉讼中证据真实性的基本原则。\n\n### Conclusion\n根据《民事诉讼法》和《司法鉴定程序通则》的规定，鉴定材料和鉴定机构出具的鉴定意见需要经当事人质证。未经质证的鉴定意见通常不能作为有效证据使用。质证确保鉴定过程和结论的合法性、真实性和公平性。\n\n### Verification\n确认结论无误。相关法律规定明确要求鉴定意见必须经质证才能作为有效证据，且质证程序符合证据法的基本原则。结论正确，无需进一步推理。\n</Thought Process>\n\n<Question>\n鉴定材料和鉴定机构出具的鉴定意见需要经当事人质证吗？\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n嗯，这个问题挺重要的。鉴定材料和鉴定机构出具的鉴定意见在法律纠纷中肯定是很关键的证据之一。不过，我记得好像所有的证据都需要经过质证这个程序，才能算得上真正有效的法律证据吧？而且，质证这个程序听起来就是为了保证证据的真实性和合法性。所以，现在需要具体去查查看，法律条文对这个问题有没有明确的要求。 \n\n首先，我会想到最直接的法律依据应该是《民事诉讼法》。我记得《民事诉讼法》对于证据方面有很清晰的规定，应该会提到鉴定意见是否需要质证。让我来搜索一下：<search>民事诉讼法 质证 鉴定意见</search>。\n\n搜到了！<information>《民事诉讼法》第63条规定，证据包括鉴定意见，所有证据必须经过质证。《民事诉讼法》第94条还提到，对于涉及专门问题的，可以聘请鉴定机构，而鉴定意见要在庭审中出庭说明。</information>嗯，信息到这里还挺清楚的，说明《民事诉讼法》中确实明确指出鉴定意见属于证据的一种，也明确说证据都要质证。\n\n不过，我记得司法鉴定也是有专门的程序规定的，经常被提到的《司法鉴定程序通则》里是不是也会有相关内容啊？查一下会更全面：<search>司法鉴定程序通则 质证</search>。\n\n看到了！<information>根据《司法鉴定程序通则》第28条，司法鉴定意见应该提交给法院，质证是必须的。法院会组织质证，用来确认鉴定意见的真实性和公正性。</information>哦，看起来《司法鉴定程序通则》和《民事诉讼法》是一致的。两条法律都强调了质证对于鉴定意见必不可少。没有质证，这种证据应该是不能作为有效的法律依据的。\n\n这么一看，逻辑也很清楚了。鉴定意见作为证据的一种，就像其他类型的证据一样，也需要经过质证。这一点是符合证据法的基本要求的，因为质证程序不仅能够确保证据的法律效力，还能把是否存在问题的地方暴露出来，比如鉴定材料、程序或者结论的可靠性。这是保护案件审理公平公正的一个核心环节啊。\n\n综上所述，答案是肯定的，鉴定材料和鉴定机构出具的鉴定意见是必须经过当事人质证的。如果没有质证，那么这个鉴定意见可能无法成为有效的证据。这一点无论从《民事诉讼法》，还是从《司法鉴定程序通则》的角度看，都是明确的。\n\n嗯，总结下来，结论没问题，验证完毕。\n</Internal Thinking>\n\n<Question>\n鉴定材料和鉴定机构出具的鉴定意见需要经当事人质证吗？\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析问题背景\",\n      \"content\": \"鉴定材料和鉴定意见在法律纠纷中通常扮演重要证据的角色。根据证据法的基本原则，所有证据在诉讼中需要经过质证，以确保其真实性、合法性和关联性。因此需要确认相关法律规定是否对鉴定材料和机构出具的意见逐一要求质证。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"搜索相关法律依据\",\n      \"content\": \"为了回答问题，需要明确我国相关法律中有关鉴定材料和鉴定意见是否需要质证的规定，例如《民事诉讼法》和《司法鉴定程序通则》。\"\n    },\n    {\n      \"action\": \"Search\",\n      \"content\": \"<search>民事诉讼法 质证 鉴定意见</search>\"\n    },\n    {\n      \"action\": \"Search\",\n      \"content\": \"<search>司法鉴定程序通则 质证</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析搜索结果\",\n      \"content\": \"<information>《民事诉讼法》第63条：证据包括鉴定意见，证据必须经过质证。《民事诉讼法》第94条：涉及专门性问题的，在案件审判中可以聘请鉴定机构进行鉴定，鉴定意见需要出庭说明。《司法鉴定程序通则》第28条规定：司法鉴定意见应当提交法院，并由法院组织质证，以确保真实性和公正性。</information> 根据这些法律规定，鉴定意见属于证据的一种，必须经过质证以确保证据的法律效力，同时质证程序也有助于明确鉴定意见的可信度和证据资格。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"综合法律原则和程序要求\",\n      \"content\": \"法律明确要求鉴定意见应当作为证据质证，不经过质证的鉴定意见可能无法视为有效证据。在质证过程中，当事人可以对鉴定意见的内容、程序是否合法、鉴定材料是否符合规定进行质疑或辩驳。这符合保证诉讼中证据真实性的基本原则。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"根据《民事诉讼法》和《司法鉴定程序通则》的规定，鉴定材料和鉴定机构出具的鉴定意见需要经当事人质证。未经质证的鉴定意见通常不能作为有效证据使用。质证确保鉴定过程和结论的合法性、真实性和公平性。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"确认结论无误。相关法律规定明确要求鉴定意见必须经质证才能作为有效证据，且质证程序符合证据法的基本原则。结论正确，无需进一步推理。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"嗯，这个问题挺重要的。鉴定材料和鉴定机构出具的鉴定意见在法律纠纷中肯定是很关键的证据之一。不过，我记得好像所有的证据都需要经过质证这个程序，才能算得上真正有效的法律证据吧？而且，质证这个程序听起来就是为了保证证据的真实性和合法性。所以，现在需要具体去查查看，法律条文对这个问题有没有明确的要求。 \\n\\n首先，我会想到最直接的法律依据应该是《民事诉讼法》。我记得《民事诉讼法》对于证据方面有很清晰的规定，应该会提到鉴定意见是否需要质证。让我来搜索一下：<search>民事诉讼法 质证 鉴定意见</search>。\\n\\n搜到了！<information>《民事诉讼法》第63条规定，证据包括鉴定意见，所有证据必须经过质证。《民事诉讼法》第94条还提到，对于涉及专门问题的，可以聘请鉴定机构，而鉴定意见要在庭审中出庭说明。</information>嗯，信息到这里还挺清楚的，说明《民事诉讼法》中确实明确指出鉴定意见属于证据的一种，也明确说证据都要质证。\\n\\n不过，我记得司法鉴定也是有专门的程序规定的，经常被提到的《司法鉴定程序通则》里是不是也会有相关内容啊？查一下会更全面：<search>司法鉴定程序通则 质证</search>。\\n\\n看到了！<information>根据《司法鉴定程序通则》第28条，司法鉴定意见应该提交给法院，质证是必须的。法院会组织质证，用来确认鉴定意见的真实性和公正性。</information>哦，看起来《司法鉴定程序通则》和《民事诉讼法》是一致的。两条法律都强调了质证对于鉴定意见必不可少。没有质证，这种证据应该是不能作为有效的法律依据的。\\n\\n这么一看，逻辑也很清楚了。鉴定意见作为证据的一种，就像其他类型的证据一样，也需要经过质证。这一点是符合证据法的基本要求的，因为质证程序不仅能够确保证据的法律效力，还能把是否存在问题的地方暴露出来，比如鉴定材料、程序或者结论的可靠性。这是保护案件审理公平公正的一个核心环节啊。\\n\\n综上所述，答案是肯定的，鉴定材料和鉴定机构出具的鉴定意见是必须经过当事人质证的。如果没有质证，那么这个鉴定意见可能无法成为有效的证据。这一点无论从《民事诉讼法》，还是从《司法鉴定程序通则》的角度看，都是明确的。\\n\\n嗯，总结下来，结论没问题，验证完毕。\"\n}\n```",
+    "鉴定材料和鉴定机构出具的鉴定意见需要经过当事人质证。\n\n根据《中华人民共和国民事诉讼法》第63条的规定，鉴定意见作为民事诉讼中证据的一种，必须经过质证程序，方能作为认定案件事实的依据。此外，第94条也明确提到，涉及专门性问题的鉴定意见需要在庭审中进行说明，由此可见质证程序是法定的必要环节。\n\n同时，《司法鉴定程序通则》第28条进一步明确了司法鉴定意见须提交法院，并由法院组织质证，以确保其真实性和公正性。这一规定与《民事诉讼法》的要求保持一致。\n\n综上，无论是为确保鉴定意见的真实性、合法性，还是保证审理程序的公平公正，鉴定材料及鉴定意见的质证都是必要的。如果未经质证，相关鉴定结果不能作为有效的证据使用。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "分析问题背景",
+        "content": "鉴定材料和鉴定意见在法律纠纷中通常扮演重要证据的角色。根据证据法的基本原则，所有证据在诉讼中需要经过质证，以确保其真实性、合法性和关联性。因此需要确认相关法律规定是否对鉴定材料和机构出具的意见逐一要求质证。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "搜索相关法律依据",
+        "content": "为了回答问题，需要明确我国相关法律中有关鉴定材料和鉴定意见是否需要质证的规定，例如《民事诉讼法》和《司法鉴定程序通则》。"
+      },
+      {
+        "action": "Search",
+        "content": "<search>民事诉讼法 质证 鉴定意见</search>"
+      },
+      {
+        "action": "Search",
+        "content": "<search>司法鉴定程序通则 质证</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "分析搜索结果",
+        "content": "<information>《民事诉讼法》第63条：证据包括鉴定意见，证据必须经过质证。《民事诉讼法》第94条：涉及专门性问题的，在案件审判中可以聘请鉴定机构进行鉴定，鉴定意见需要出庭说明。《司法鉴定程序通则》第28条规定：司法鉴定意见应当提交法院，并由法院组织质证，以确保真实性和公正性。</information> 根据这些法律规定，鉴定意见属于证据的一种，必须经过质证以确保证据的法律效力，同时质证程序也有助于明确鉴定意见的可信度和证据资格。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "综合法律原则和程序要求",
+        "content": "法律明确要求鉴定意见应当作为证据质证，不经过质证的鉴定意见可能无法视为有效证据。在质证过程中，当事人可以对鉴定意见的内容、程序是否合法、鉴定材料是否符合规定进行质疑或辩驳。这符合保证诉讼中证据真实性的基本原则。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "根据《民事诉讼法》和《司法鉴定程序通则》的规定，鉴定材料和鉴定机构出具的鉴定意见需要经当事人质证。未经质证的鉴定意见通常不能作为有效证据使用。质证确保鉴定过程和结论的合法性、真实性和公平性。"
+      },
+      {
+        "action": "Verification",
+        "content": "确认结论无误。相关法律规定明确要求鉴定意见必须经质证才能作为有效证据，且质证程序符合证据法的基本原则。结论正确，无需进一步推理。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "嗯，这个问题挺重要的。鉴定材料和鉴定机构出具的鉴定意见在法律纠纷中肯定是很关键的证据之一。不过，我记得好像所有的证据都需要经过质证这个程序，才能算得上真正有效的法律证据吧？而且，质证这个程序听起来就是为了保证证据的真实性和合法性。所以，现在需要具体去查查看，法律条文对这个问题有没有明确的要求。 \n\n首先，我会想到最直接的法律依据应该是《民事诉讼法》。我记得《民事诉讼法》对于证据方面有很清晰的规定，应该会提到鉴定意见是否需要质证。让我来搜索一下：<search>民事诉讼法 质证 鉴定意见</search>。\n\n搜到了！<information>《民事诉讼法》第63条规定，证据包括鉴定意见，所有证据必须经过质证。《民事诉讼法》第94条还提到，对于涉及专门问题的，可以聘请鉴定机构，而鉴定意见要在庭审中出庭说明。</information>嗯，信息到这里还挺清楚的，说明《民事诉讼法》中确实明确指出鉴定意见属于证据的一种，也明确说证据都要质证。\n\n不过，我记得司法鉴定也是有专门的程序规定的，经常被提到的《司法鉴定程序通则》里是不是也会有相关内容啊？查一下会更全面：<search>司法鉴定程序通则 质证</search>。\n\n看到了！<information>根据《司法鉴定程序通则》第28条，司法鉴定意见应该提交给法院，质证是必须的。法院会组织质证，用来确认鉴定意见的真实性和公正性。</information>哦，看起来《司法鉴定程序通则》和《民事诉讼法》是一致的。两条法律都强调了质证对于鉴定意见必不可少。没有质证，这种证据应该是不能作为有效的法律依据的。\n\n这么一看，逻辑也很清楚了。鉴定意见作为证据的一种，就像其他类型的证据一样，也需要经过质证。这一点是符合证据法的基本要求的，因为质证程序不仅能够确保证据的法律效力，还能把是否存在问题的地方暴露出来，比如鉴定材料、程序或者结论的可靠性。这是保护案件审理公平公正的一个核心环节啊。\n\n综上所述，答案是肯定的，鉴定材料和鉴定机构出具的鉴定意见是必须经过当事人质证的。如果没有质证，那么这个鉴定意见可能无法成为有效的证据。这一点无论从《民事诉讼法》，还是从《司法鉴定程序通则》的角度看，都是明确的。\n\n嗯，总结下来，结论没问题，验证完毕。",
+  "Response": "鉴定材料和鉴定机构出具的鉴定意见需要经过当事人质证。\n\n根据《中华人民共和国民事诉讼法》第63条的规定，鉴定意见作为民事诉讼中证据的一种，必须经过质证程序，方能作为认定案件事实的依据。此外，第94条也明确提到，涉及专门性问题的鉴定意见需要在庭审中进行说明，由此可见质证程序是法定的必要环节。\n\n同时，《司法鉴定程序通则》第28条进一步明确了司法鉴定意见须提交法院，并由法院组织质证，以确保其真实性和公正性。这一规定与《民事诉讼法》的要求保持一致。\n\n综上，无论是为确保鉴定意见的真实性、合法性，还是保证审理程序的公平公正，鉴定材料及鉴定意见的质证都是必要的。如果未经质证，相关鉴定结果不能作为有效的证据使用。",
+  "Question": "鉴定材料和鉴定机构出具的鉴定意见需要经当事人质证吗？"
+}

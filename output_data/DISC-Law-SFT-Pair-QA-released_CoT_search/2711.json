@@ -1,0 +1,89 @@
+{
+  "Open-ended Verifiable Question": "诉讼案件中止的情形？",
+  "Ground-True Answer": "1．一方当事人死亡，需要等待继承人表明是否参加诉讼的；\n2．一方当事人丧失诉讼行为能力，尚未确定法定代理人的；\n3．作为一方当事人的法人或者其他组织终止，尚未确定权利义务承受人的；\n4．一方当事人因不可抗拒的事由，不能参加诉讼的；\n5．本案必须以另一案的审理结果为依据，而另一案尚未审结的；\n6．其他应当中止诉讼的情形。",
+  "process_id": 2711,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "分析诉讼案件中止的定义和情形",
+      "content": "为了回答诉讼案件中止的情形，我们首先需要明确中止诉讼的法律定义及其法定适用情形。根据中国相关司法体系的规定，中止诉讼是指某种情况的发生导致法院为确保程序公平性或因不可抗力暂时停止案件的继续审理。具体情形可能被规定在《民事诉讼法》或其他适用法律中。接下来，我需要查找相关法律条文以确认具体情形。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "搜索相关法律条文",
+      "content": "<search>诉讼案件中止的情形 民事诉讼法</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "总结搜索到的信息",
+      "content": "<information>《中华人民共和国民事诉讼法》第150条列举了案件中止的情形，包括：（1）一方当事人死亡，需等待继承人表明是否参加诉讼；（2）一方当事人丧失诉讼行为能力，尚未确定法定代理人；（3）作为一方当事人的法人或其他组织终止，尚未明确权利义务承受人；（4）需要以另一案件的审理结果为依据，而该案件尚未审结；（5）其他不可抗拒的事由。</information>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "归纳中止情形",
+      "content": "结合检索结果，诉讼案件中止包括以下情形：当事人死亡或丧失行为能力需要时间确认相关事项、法人或组织终止需明确承受人、诉讼依赖其他案件的结果或因不可抗力事件无法继续。这些情形体现了公平性和程序必要性原则。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "诉讼案件中止的情形包括：（1）一方当事人死亡，需等待继承人表明参加诉讼；（2）一方当事人丧失诉讼行为能力且尚未确定法定代理人；（3）法人或其他组织作为一方当事人终止，需明确权利义务继承人；（4）案件依赖另一案件结果，该案尚未审结；（5）其他不可抗力因素。上述情形主要规制于《民事诉讼法》第150条。"
+    },
+    {
+      "action": "Verification",
+      "content": "根据《民事诉讼法》第150条条款，中止诉讼情形的列举完整且符合法律逻辑。验证正确无误。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n诉讼案件中止的情形？\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n诉讼案件中止的情形包括：（1）一方当事人死亡，需等待继承人表明参加诉讼；（2）一方当事人丧失诉讼行为能力且尚未确定法定代理人；（3）法人或其他组织作为一方当事人终止，需明确权利义务继承人；（4）案件依赖另一案件结果，该案尚未审结；（5）其他不可抗力因素。上述情形主要规制于《民事诉讼法》第150条。  \n</Model Response>  \n\n<Reference Answer>  \n1．一方当事人死亡，需要等待继承人表明是否参加诉讼的；\n2．一方当事人丧失诉讼行为能力，尚未确定法定代理人的；\n3．作为一方当事人的法人或者其他组织终止，尚未确定权利义务承受人的；\n4．一方当事人因不可抗拒的事由，不能参加诉讼的；\n5．本案必须以另一案的审理结果为依据，而另一案尚未审结的；\n6．其他应当中止诉讼的情形。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 分析诉讼案件中止的定义和情形\n为了回答诉讼案件中止的情形，我们首先需要明确中止诉讼的法律定义及其法定适用情形。根据中国相关司法体系的规定，中止诉讼是指某种情况的发生导致法院为确保程序公平性或因不可抗力暂时停止案件的继续审理。具体情形可能被规定在《民事诉讼法》或其他适用法律中。接下来，我需要查找相关法律条文以确认具体情形。\n\n### 搜索相关法律条文\n<search>诉讼案件中止的情形 民事诉讼法</search>\n\n### 总结搜索到的信息\n<information>《中华人民共和国民事诉讼法》第150条列举了案件中止的情形，包括：（1）一方当事人死亡，需等待继承人表明是否参加诉讼；（2）一方当事人丧失诉讼行为能力，尚未确定法定代理人；（3）作为一方当事人的法人或其他组织终止，尚未明确权利义务承受人；（4）需要以另一案件的审理结果为依据，而该案件尚未审结；（5）其他不可抗拒的事由。</information>\n\n### 归纳中止情形\n结合检索结果，诉讼案件中止包括以下情形：当事人死亡或丧失行为能力需要时间确认相关事项、法人或组织终止需明确承受人、诉讼依赖其他案件的结果或因不可抗力事件无法继续。这些情形体现了公平性和程序必要性原则。\n\n### Conclusion\n诉讼案件中止的情形包括：（1）一方当事人死亡，需等待继承人表明参加诉讼；（2）一方当事人丧失诉讼行为能力且尚未确定法定代理人；（3）法人或其他组织作为一方当事人终止，需明确权利义务继承人；（4）案件依赖另一案件结果，该案尚未审结；（5）其他不可抗力因素。上述情形主要规制于《民事诉讼法》第150条。\n\n### Verification\n根据《民事诉讼法》第150条条款，中止诉讼情形的列举完整且符合法律逻辑。验证正确无误。\n</Thought Process>\n\n<Question>\n诉讼案件中止的情形？\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n嗯，我想聊聊诉讼案件中止的问题。首先需要弄清楚什么情况下诉讼会中止，这个概念应该和法律有关。好像中止诉讼是指在某些情况下，法院暂时停止审理案件的行为。那么具体有哪些情况会导致诉讼中止呢？感觉这个可以去民事诉讼法里面找找看，毕竟这些规定应该是法条里有写的。好，我先搜一下相关的法律规定。\n\n<search>诉讼案件中止的情形 民事诉讼法</search>\n\n哦，找到了一些信息。《中华人民共和国民事诉讼法》第150条提到了几种诉讼中止的具体情形。我看一下内容，大致包括：（1）如果当事人一方死亡了，需要等继承人出来明确是否要继续参加诉讼；（2）如果一方当事人突然丧失诉讼行为能力，并且还没有找到他的法定代理人；（3）如果作为诉讼一方的法人或组织终止了，但继承其权利义务的人还没有明确；（4）有些案件的审理结果需要等另一个案件结案后才能决定，这种情况也会中止；（5）还有一些因不可抗力造成的情况。嗯，这些好像挺能说明问题的。\n\n<information>《中华人民共和国民事诉讼法》第150条列举了案件中止的情形，包括：（1）一方当事人死亡，需等待继承人表明是否参加诉讼；（2）一方当事人丧失诉讼行为能力，尚未确定法定代理人；（3）作为一方当事人的法人或其他组织终止，尚未明确权利义务承受人；（4）需要以另一案件的审理结果为依据，而该案件尚未审结；（5）其他不可抗拒的事由。</information>\n\n所以，这些情形归纳起来主要就是五大类吧。一是和当事人的死亡或者能力状态有关，比如死亡了或者丧失了诉讼行为能力；二是涉及法人或者组织终止，可能需要寻找到继承权利义务的人；三是诉讼程序可能依赖于另一个案件的结果；四是其他不可抗力。反过来想，这些情形背后大概是为了保证诉讼的公平性或者程序上的必要性吧。\n\n哦，关于这些法律条文提到的情形，我再稍微核实一下，这些内容和民事诉讼法150条的规定是完全一致的，看起来没有问题。我觉得可以把答案总结出来了。\n\n总体看，诉讼案件会因为以下几种情况而中止：（1）一方当事人死亡，需要等继承人决定是否继续参加诉讼；（2）当事人失去了诉讼行为能力，而且法定代理人还没确认；（3）诉讼方是法人或组织，但突然终止了，需要明确权利义务继承人；（4）案件结果需要依赖其他案件，但那个案件还没审结；（5）不可抗力情况。嗯，这些情况应该就是诉讼中止的标准范围了。\n</Internal Thinking>\n\n<Question>\n诉讼案件中止的情形？\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析诉讼案件中止的定义和情形\",\n      \"content\": \"为了回答诉讼案件中止的情形，我们首先需要明确中止诉讼的法律定义及其法定适用情形。根据中国相关司法体系的规定，中止诉讼是指某种情况的发生导致法院为确保程序公平性或因不可抗力暂时停止案件的继续审理。具体情形可能被规定在《民事诉讼法》或其他适用法律中。接下来，我需要查找相关法律条文以确认具体情形。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"搜索相关法律条文\",\n      \"content\": \"<search>诉讼案件中止的情形 民事诉讼法</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"总结搜索到的信息\",\n      \"content\": \"<information>《中华人民共和国民事诉讼法》第150条列举了案件中止的情形，包括：（1）一方当事人死亡，需等待继承人表明是否参加诉讼；（2）一方当事人丧失诉讼行为能力，尚未确定法定代理人；（3）作为一方当事人的法人或其他组织终止，尚未明确权利义务承受人；（4）需要以另一案件的审理结果为依据，而该案件尚未审结；（5）其他不可抗拒的事由。</information>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"归纳中止情形\",\n      \"content\": \"结合检索结果，诉讼案件中止包括以下情形：当事人死亡或丧失行为能力需要时间确认相关事项、法人或组织终止需明确承受人、诉讼依赖其他案件的结果或因不可抗力事件无法继续。这些情形体现了公平性和程序必要性原则。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"诉讼案件中止的情形包括：（1）一方当事人死亡，需等待继承人表明参加诉讼；（2）一方当事人丧失诉讼行为能力且尚未确定法定代理人；（3）法人或其他组织作为一方当事人终止，需明确权利义务继承人；（4）案件依赖另一案件结果，该案尚未审结；（5）其他不可抗力因素。上述情形主要规制于《民事诉讼法》第150条。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"根据《民事诉讼法》第150条条款，中止诉讼情形的列举完整且符合法律逻辑。验证正确无误。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"嗯，我想聊聊诉讼案件中止的问题。首先需要弄清楚什么情况下诉讼会中止，这个概念应该和法律有关。好像中止诉讼是指在某些情况下，法院暂时停止审理案件的行为。那么具体有哪些情况会导致诉讼中止呢？感觉这个可以去民事诉讼法里面找找看，毕竟这些规定应该是法条里有写的。好，我先搜一下相关的法律规定。\\n\\n<search>诉讼案件中止的情形 民事诉讼法</search>\\n\\n哦，找到了一些信息。《中华人民共和国民事诉讼法》第150条提到了几种诉讼中止的具体情形。我看一下内容，大致包括：（1）如果当事人一方死亡了，需要等继承人出来明确是否要继续参加诉讼；（2）如果一方当事人突然丧失诉讼行为能力，并且还没有找到他的法定代理人；（3）如果作为诉讼一方的法人或组织终止了，但继承其权利义务的人还没有明确；（4）有些案件的审理结果需要等另一个案件结案后才能决定，这种情况也会中止；（5）还有一些因不可抗力造成的情况。嗯，这些好像挺能说明问题的。\\n\\n<information>《中华人民共和国民事诉讼法》第150条列举了案件中止的情形，包括：（1）一方当事人死亡，需等待继承人表明是否参加诉讼；（2）一方当事人丧失诉讼行为能力，尚未确定法定代理人；（3）作为一方当事人的法人或其他组织终止，尚未明确权利义务承受人；（4）需要以另一案件的审理结果为依据，而该案件尚未审结；（5）其他不可抗拒的事由。</information>\\n\\n所以，这些情形归纳起来主要就是五大类吧。一是和当事人的死亡或者能力状态有关，比如死亡了或者丧失了诉讼行为能力；二是涉及法人或者组织终止，可能需要寻找到继承权利义务的人；三是诉讼程序可能依赖于另一个案件的结果；四是其他不可抗力。反过来想，这些情形背后大概是为了保证诉讼的公平性或者程序上的必要性吧。\\n\\n哦，关于这些法律条文提到的情形，我再稍微核实一下，这些内容和民事诉讼法150条的规定是完全一致的，看起来没有问题。我觉得可以把答案总结出来了。\\n\\n总体看，诉讼案件会因为以下几种情况而中止：（1）一方当事人死亡，需要等继承人决定是否继续参加诉讼；（2）当事人失去了诉讼行为能力，而且法定代理人还没确认；（3）诉讼方是法人或组织，但突然终止了，需要明确权利义务继承人；（4）案件结果需要依赖其他案件，但那个案件还没审结；（5）不可抗力情况。嗯，这些情况应该就是诉讼中止的标准范围了。\"\n}\n```",
+    "诉讼案件中止的情形根据《中华人民共和国民事诉讼法》第150条的规定，主要包括以下几种情况：\n\n1. **一方当事人死亡**：需要等待其继承人明确是否继续参加诉讼；\n2. **一方当事人丧失诉讼行为能力**：尚未确定其法定代理人；\n3. **作为诉讼一方的法人或其他组织终止**：继承其权利义务的主体尚未明确；\n4. **案件审理结果需要依据其他案件的审判结果**：而该案件尚未审结；\n5. **不可抗力**：因不可抗拒的事由使案件无法继续审理。\n\n以上情形均属于法律规定的诉讼中止情形，法院在审理过程中遇到这些情况时会依法作出中止诉讼的决定，以维护诉讼程序的合法性和公平性。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "分析诉讼案件中止的定义和情形",
+        "content": "为了回答诉讼案件中止的情形，我们首先需要明确中止诉讼的法律定义及其法定适用情形。根据中国相关司法体系的规定，中止诉讼是指某种情况的发生导致法院为确保程序公平性或因不可抗力暂时停止案件的继续审理。具体情形可能被规定在《民事诉讼法》或其他适用法律中。接下来，我需要查找相关法律条文以确认具体情形。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "搜索相关法律条文",
+        "content": "<search>诉讼案件中止的情形 民事诉讼法</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "总结搜索到的信息",
+        "content": "<information>《中华人民共和国民事诉讼法》第150条列举了案件中止的情形，包括：（1）一方当事人死亡，需等待继承人表明是否参加诉讼；（2）一方当事人丧失诉讼行为能力，尚未确定法定代理人；（3）作为一方当事人的法人或其他组织终止，尚未明确权利义务承受人；（4）需要以另一案件的审理结果为依据，而该案件尚未审结；（5）其他不可抗拒的事由。</information>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "归纳中止情形",
+        "content": "结合检索结果，诉讼案件中止包括以下情形：当事人死亡或丧失行为能力需要时间确认相关事项、法人或组织终止需明确承受人、诉讼依赖其他案件的结果或因不可抗力事件无法继续。这些情形体现了公平性和程序必要性原则。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "诉讼案件中止的情形包括：（1）一方当事人死亡，需等待继承人表明参加诉讼；（2）一方当事人丧失诉讼行为能力且尚未确定法定代理人；（3）法人或其他组织作为一方当事人终止，需明确权利义务继承人；（4）案件依赖另一案件结果，该案尚未审结；（5）其他不可抗力因素。上述情形主要规制于《民事诉讼法》第150条。"
+      },
+      {
+        "action": "Verification",
+        "content": "根据《民事诉讼法》第150条条款，中止诉讼情形的列举完整且符合法律逻辑。验证正确无误。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "嗯，我想聊聊诉讼案件中止的问题。首先需要弄清楚什么情况下诉讼会中止，这个概念应该和法律有关。好像中止诉讼是指在某些情况下，法院暂时停止审理案件的行为。那么具体有哪些情况会导致诉讼中止呢？感觉这个可以去民事诉讼法里面找找看，毕竟这些规定应该是法条里有写的。好，我先搜一下相关的法律规定。\n\n<search>诉讼案件中止的情形 民事诉讼法</search>\n\n哦，找到了一些信息。《中华人民共和国民事诉讼法》第150条提到了几种诉讼中止的具体情形。我看一下内容，大致包括：（1）如果当事人一方死亡了，需要等继承人出来明确是否要继续参加诉讼；（2）如果一方当事人突然丧失诉讼行为能力，并且还没有找到他的法定代理人；（3）如果作为诉讼一方的法人或组织终止了，但继承其权利义务的人还没有明确；（4）有些案件的审理结果需要等另一个案件结案后才能决定，这种情况也会中止；（5）还有一些因不可抗力造成的情况。嗯，这些好像挺能说明问题的。\n\n<information>《中华人民共和国民事诉讼法》第150条列举了案件中止的情形，包括：（1）一方当事人死亡，需等待继承人表明是否参加诉讼；（2）一方当事人丧失诉讼行为能力，尚未确定法定代理人；（3）作为一方当事人的法人或其他组织终止，尚未明确权利义务承受人；（4）需要以另一案件的审理结果为依据，而该案件尚未审结；（5）其他不可抗拒的事由。</information>\n\n所以，这些情形归纳起来主要就是五大类吧。一是和当事人的死亡或者能力状态有关，比如死亡了或者丧失了诉讼行为能力；二是涉及法人或者组织终止，可能需要寻找到继承权利义务的人；三是诉讼程序可能依赖于另一个案件的结果；四是其他不可抗力。反过来想，这些情形背后大概是为了保证诉讼的公平性或者程序上的必要性吧。\n\n哦，关于这些法律条文提到的情形，我再稍微核实一下，这些内容和民事诉讼法150条的规定是完全一致的，看起来没有问题。我觉得可以把答案总结出来了。\n\n总体看，诉讼案件会因为以下几种情况而中止：（1）一方当事人死亡，需要等继承人决定是否继续参加诉讼；（2）当事人失去了诉讼行为能力，而且法定代理人还没确认；（3）诉讼方是法人或组织，但突然终止了，需要明确权利义务继承人；（4）案件结果需要依赖其他案件，但那个案件还没审结；（5）不可抗力情况。嗯，这些情况应该就是诉讼中止的标准范围了。",
+  "Response": "诉讼案件中止的情形根据《中华人民共和国民事诉讼法》第150条的规定，主要包括以下几种情况：\n\n1. **一方当事人死亡**：需要等待其继承人明确是否继续参加诉讼；\n2. **一方当事人丧失诉讼行为能力**：尚未确定其法定代理人；\n3. **作为诉讼一方的法人或其他组织终止**：继承其权利义务的主体尚未明确；\n4. **案件审理结果需要依据其他案件的审判结果**：而该案件尚未审结；\n5. **不可抗力**：因不可抗拒的事由使案件无法继续审理。\n\n以上情形均属于法律规定的诉讼中止情形，法院在审理过程中遇到这些情况时会依法作出中止诉讼的决定，以维护诉讼程序的合法性和公平性。",
+  "Question": "诉讼案件中止的情形？"
+}

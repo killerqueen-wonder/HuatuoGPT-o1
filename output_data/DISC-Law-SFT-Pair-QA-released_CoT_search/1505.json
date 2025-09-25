@@ -1,0 +1,99 @@
+{
+  "Open-ended Verifiable Question": "承揽合同的特点有哪些?",
+  "Ground-True Answer": "承揽合同具有以下法律特征：一是，承揽合同是以完成一定工作并交付工作成果为目的。二是，承揽合同的标的具有特定性。三是，承揽合同具有一定的人身属性。\n承揽人应按合同约定的时间、方式、数量、质量完成交付的工作。完成定作所需的原材料，可以约定由承揽人提供或由定作人提供。承揽人提供原材料的，应按约定选购并接受定作人检查；定作人提供的，承揽人应及时检查，妥善保管，并不得更换材料。承揽人在完成工作时，应接受定作人必要的监督和检验，以保证工作符合定作人的要求。承揽人交付的工作成果应符合约定的质量，承揽人对已交付工作成果的隐蔽瑕疵及该瑕疵所造成的损害承担责任。\n定作人按照约定提供材料。定做人需支付的报酬和材料等费用的标准，合同中有约定的，按照约定的数额支付；如合同中没有约定或者约定不明确，则依通常标准支付。为了使承揽人及时完成工作成果，定作人应依约定及按诚实信用原则，积极协助承揽人工作。对承揽人完成并交付的工作成果，定作人应及时检验，对符合约定要求的，应接受该工作成果。超过约定期限领取定作物的，定作人负受领迟延责任。",
+  "process_id": 1505,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "分析承揽合同的定义",
+      "content": "承揽合同是指承揽人按照定作人提出的要求完成工作，并在提供工作成果后，定作人支付相应报酬的合同。这一基本定义决定了承揽合同具有特定的法律特征。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "讨论承揽合同的基本法律特性",
+      "content": "基于定义，承揽合同的基本特点包括：（1）合同是双务合同，承揽人和定作人分别负有对待给付义务；（2）合同具有较强的个性化，承揽工作需要按照定作人的具体需求完成；（3）工作成果一般以完成任务为主，不直接要求劳动过程；（4）承揽合同的风险一般由承揽人承担，若因工作瑕疵导致质量问题，则需承揽人负责。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "调研法律条文对承揽合同特点的具体描述",
+      "content": "承揽合同相关规定主要见于《中华人民共和国民法典》中关于合同编的规定，需要具体查找条文内容以确认。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "搜索《民法典》中有关承揽合同的条文",
+      "content": "<search>民法典 承揽合同</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "分析条文确认合同特点",
+      "content": "<information>《中华人民共和国民法典》第三编合同部分规定了承揽合同的内容，其中具体讲述了承揽合同的定义、履行义务、责任划分等内容。例如，《民法典》第七百七十条明确表述了承揽合同的内涵：承揽合同是承揽人完成工作并交付成果，定作人支付报酬的合同。这进一步说明了承揽合同的个性化要求以及成果导向性。</information>因此，可以确认承揽合同的特点包括：1）个性化需求；2）成果导向；3）双务性；4）风险归承揽人承担。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "承揽合同具有以下特点：（1）合同具有个性化和定制性，即工作内容需要按照定作人具体要求完成；（2）以成果交付为导向，合同履行关注最终成果；（3）双务性，承揽人与定作人需履行各自的给付义务；（4）风险主要由承揽人承担，承揽人需对工作瑕疵或质量问题负责。"
+    },
+    {
+      "action": "Verification",
+      "content": "通过分析《民法典》的相关条款及法律定义，特点描述与法条内容一致，结论正确。验证完成。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n承揽合同的特点有哪些?\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n承揽合同具有以下特点：（1）合同具有个性化和定制性，即工作内容需要按照定作人具体要求完成；（2）以成果交付为导向，合同履行关注最终成果；（3）双务性，承揽人与定作人需履行各自的给付义务；（4）风险主要由承揽人承担，承揽人需对工作瑕疵或质量问题负责。  \n</Model Response>  \n\n<Reference Answer>  \n承揽合同具有以下法律特征：一是，承揽合同是以完成一定工作并交付工作成果为目的。二是，承揽合同的标的具有特定性。三是，承揽合同具有一定的人身属性。\n承揽人应按合同约定的时间、方式、数量、质量完成交付的工作。完成定作所需的原材料，可以约定由承揽人提供或由定作人提供。承揽人提供原材料的，应按约定选购并接受定作人检查；定作人提供的，承揽人应及时检查，妥善保管，并不得更换材料。承揽人在完成工作时，应接受定作人必要的监督和检验，以保证工作符合定作人的要求。承揽人交付的工作成果应符合约定的质量，承揽人对已交付工作成果的隐蔽瑕疵及该瑕疵所造成的损害承担责任。\n定作人按照约定提供材料。定做人需支付的报酬和材料等费用的标准，合同中有约定的，按照约定的数额支付；如合同中没有约定或者约定不明确，则依通常标准支付。为了使承揽人及时完成工作成果，定作人应依约定及按诚实信用原则，积极协助承揽人工作。对承揽人完成并交付的工作成果，定作人应及时检验，对符合约定要求的，应接受该工作成果。超过约定期限领取定作物的，定作人负受领迟延责任。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 分析承揽合同的定义\n承揽合同是指承揽人按照定作人提出的要求完成工作，并在提供工作成果后，定作人支付相应报酬的合同。这一基本定义决定了承揽合同具有特定的法律特征。\n\n### 讨论承揽合同的基本法律特性\n基于定义，承揽合同的基本特点包括：（1）合同是双务合同，承揽人和定作人分别负有对待给付义务；（2）合同具有较强的个性化，承揽工作需要按照定作人的具体需求完成；（3）工作成果一般以完成任务为主，不直接要求劳动过程；（4）承揽合同的风险一般由承揽人承担，若因工作瑕疵导致质量问题，则需承揽人负责。\n\n### 调研法律条文对承揽合同特点的具体描述\n承揽合同相关规定主要见于《中华人民共和国民法典》中关于合同编的规定，需要具体查找条文内容以确认。\n\n### 搜索《民法典》中有关承揽合同的条文\n<search>民法典 承揽合同</search>\n\n### 分析条文确认合同特点\n<information>《中华人民共和国民法典》第三编合同部分规定了承揽合同的内容，其中具体讲述了承揽合同的定义、履行义务、责任划分等内容。例如，《民法典》第七百七十条明确表述了承揽合同的内涵：承揽合同是承揽人完成工作并交付成果，定作人支付报酬的合同。这进一步说明了承揽合同的个性化要求以及成果导向性。</information>因此，可以确认承揽合同的特点包括：1）个性化需求；2）成果导向；3）双务性；4）风险归承揽人承担。\n\n### Conclusion\n承揽合同具有以下特点：（1）合同具有个性化和定制性，即工作内容需要按照定作人具体要求完成；（2）以成果交付为导向，合同履行关注最终成果；（3）双务性，承揽人与定作人需履行各自的给付义务；（4）风险主要由承揽人承担，承揽人需对工作瑕疵或质量问题负责。\n\n### Verification\n通过分析《民法典》的相关条款及法律定义，特点描述与法条内容一致，结论正确。验证完成。\n</Thought Process>\n\n<Question>\n承揽合同的特点有哪些?\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n嗯，先从承揽合同的基本定义开始分析吧。承揽合同是那种承揽人按照定作人要求完成工作并且交付成果的合同，之后定作人支付报酬，这种安排听起来特别有个性化。既然如此，那我觉得承揽合同应该有一些与其他合同不同的特性，比如特地按照需求制作的特点，以及完成成果后才算完成义务。\n\n那接下来我得再想想它可能有哪些重要的法律特性。首先，既然是双方的约定，那显然是双务关系：一方要交成果，另一方要付钱。然后，因为合同内容需要按照定作人的具体需要完成，这种合同一定是非常注重“个性化”的。另外，还有一点，这种合同强调的是成果，而不是劳动过程，所以只要最终的东西是好的，承揽人具体怎么做应该不算合同的重点吧？最后，提到风险问题，通常来说，承揽人可能得承担更多的风险，因为要对成果质量负责。\n\n不过这些特点是不是完全正确呢？还是再确认一下法律条文会更保险。其实，《民法典》中应该有关于承揽合同的具体规定，我可以搜索一下相关条文，看看是不是有什么明确的描述。\n\n<search>民法典 承揽合同</search>\n\n哦，这里有结果了，看来《民法典》第三编合同部分确实有专门讲到承揽合同的内容。<information>根据《民法典》第七百七十条的规定，承揽合同是承揽人按照定作人的要求完成工作并交付成果，然后定作人支付报酬的合同。</information>嗯，这和我的理解是一样的，承揽合同的确是强调按照需求去完成工作。而且条款里也间接说明了承揽合同的其他特点，比如它特别关注最终成果，而不是仅仅关注过程。\n\n好，结合刚刚的定义和法条内容来看，我可以重新总结一下承揽合同的主要特点：第一，它很有个性化，因为工作是专门按照定作人要求完成的；第二，它以工作成果为导向，只要成果过关就可以；第三，这是一种双务合同，双方各自有义务；第四，风险主要由承揽人来承担，比如成果质量不符合要求，承揽人得负责。\n\n嗯，彻底理清楚了，这些特点从定义和条文内容都能得到支持，应该没有什么问题。总结一下就是：承揽合同的特点包括个性化需求、以成果交付为中心、双务性和风险归承揽人承担，确认无误！\n</Internal Thinking>\n\n<Question>\n承揽合同的特点有哪些?\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析承揽合同的定义\",\n      \"content\": \"承揽合同是指承揽人按照定作人提出的要求完成工作，并在提供工作成果后，定作人支付相应报酬的合同。这一基本定义决定了承揽合同具有特定的法律特征。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"讨论承揽合同的基本法律特性\",\n      \"content\": \"基于定义，承揽合同的基本特点包括：（1）合同是双务合同，承揽人和定作人分别负有对待给付义务；（2）合同具有较强的个性化，承揽工作需要按照定作人的具体需求完成；（3）工作成果一般以完成任务为主，不直接要求劳动过程；（4）承揽合同的风险一般由承揽人承担，若因工作瑕疵导致质量问题，则需承揽人负责。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"调研法律条文对承揽合同特点的具体描述\",\n      \"content\": \"承揽合同相关规定主要见于《中华人民共和国民法典》中关于合同编的规定，需要具体查找条文内容以确认。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"搜索《民法典》中有关承揽合同的条文\",\n      \"content\": \"<search>民法典 承揽合同</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析条文确认合同特点\",\n      \"content\": \"<information>《中华人民共和国民法典》第三编合同部分规定了承揽合同的内容，其中具体讲述了承揽合同的定义、履行义务、责任划分等内容。例如，《民法典》第七百七十条明确表述了承揽合同的内涵：承揽合同是承揽人完成工作并交付成果，定作人支付报酬的合同。这进一步说明了承揽合同的个性化要求以及成果导向性。</information>因此，可以确认承揽合同的特点包括：1）个性化需求；2）成果导向；3）双务性；4）风险归承揽人承担。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"承揽合同具有以下特点：（1）合同具有个性化和定制性，即工作内容需要按照定作人具体要求完成；（2）以成果交付为导向，合同履行关注最终成果；（3）双务性，承揽人与定作人需履行各自的给付义务；（4）风险主要由承揽人承担，承揽人需对工作瑕疵或质量问题负责。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"通过分析《民法典》的相关条款及法律定义，特点描述与法条内容一致，结论正确。验证完成。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"嗯，先从承揽合同的基本定义开始分析吧。承揽合同是那种承揽人按照定作人要求完成工作并且交付成果的合同，之后定作人支付报酬，这种安排听起来特别有个性化。既然如此，那我觉得承揽合同应该有一些与其他合同不同的特性，比如特地按照需求制作的特点，以及完成成果后才算完成义务。\\n\\n那接下来我得再想想它可能有哪些重要的法律特性。首先，既然是双方的约定，那显然是双务关系：一方要交成果，另一方要付钱。然后，因为合同内容需要按照定作人的具体需要完成，这种合同一定是非常注重“个性化”的。另外，还有一点，这种合同强调的是成果，而不是劳动过程，所以只要最终的东西是好的，承揽人具体怎么做应该不算合同的重点吧？最后，提到风险问题，通常来说，承揽人可能得承担更多的风险，因为要对成果质量负责。\\n\\n不过这些特点是不是完全正确呢？还是再确认一下法律条文会更保险。其实，《民法典》中应该有关于承揽合同的具体规定，我可以搜索一下相关条文，看看是不是有什么明确的描述。\\n\\n<search>民法典 承揽合同</search>\\n\\n哦，这里有结果了，看来《民法典》第三编合同部分确实有专门讲到承揽合同的内容。<information>根据《民法典》第七百七十条的规定，承揽合同是承揽人按照定作人的要求完成工作并交付成果，然后定作人支付报酬的合同。</information>嗯，这和我的理解是一样的，承揽合同的确是强调按照需求去完成工作。而且条款里也间接说明了承揽合同的其他特点，比如它特别关注最终成果，而不是仅仅关注过程。\\n\\n好，结合刚刚的定义和法条内容来看，我可以重新总结一下承揽合同的主要特点：第一，它很有个性化，因为工作是专门按照定作人要求完成的；第二，它以工作成果为导向，只要成果过关就可以；第三，这是一种双务合同，双方各自有义务；第四，风险主要由承揽人来承担，比如成果质量不符合要求，承揽人得负责。\\n\\n嗯，彻底理清楚了，这些特点从定义和条文内容都能得到支持，应该没有什么问题。总结一下就是：承揽合同的特点包括个性化需求、以成果交付为中心、双务性和风险归承揽人承担，确认无误！\"\n}\n```",
+    "承揽合同的特点主要包括以下几点：\n\n1. **个性化需求**：承揽合同是以满足定作人的特殊要求为前提，承揽人需根据定作人的具体指示或需求完成约定的工作，具有高度的个性化和特别定制性。\n\n2. **成果导向**：承揽合同以成果为中心，强调最终工作成果的交付。只要成果符合约定，具体的工作过程并非合同关注的重点。\n\n3. **双务性**：承揽合同是一种双务合同，双方均负有相互对应的义务。承揽人的义务是完成工作并交付成果，定作人的义务是验收成果并支付报酬。\n\n4. **风险承担由承揽人负责**：在承揽合同中，工作成果的质量和完成情况主要由承揽人负责，如果成果出现瑕疵或不能达到约定要求，通常需由承揽人承担责任。\n\n这些特点共同构成了承揽合同在法律上的基本性质。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "分析承揽合同的定义",
+        "content": "承揽合同是指承揽人按照定作人提出的要求完成工作，并在提供工作成果后，定作人支付相应报酬的合同。这一基本定义决定了承揽合同具有特定的法律特征。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "讨论承揽合同的基本法律特性",
+        "content": "基于定义，承揽合同的基本特点包括：（1）合同是双务合同，承揽人和定作人分别负有对待给付义务；（2）合同具有较强的个性化，承揽工作需要按照定作人的具体需求完成；（3）工作成果一般以完成任务为主，不直接要求劳动过程；（4）承揽合同的风险一般由承揽人承担，若因工作瑕疵导致质量问题，则需承揽人负责。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "调研法律条文对承揽合同特点的具体描述",
+        "content": "承揽合同相关规定主要见于《中华人民共和国民法典》中关于合同编的规定，需要具体查找条文内容以确认。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "搜索《民法典》中有关承揽合同的条文",
+        "content": "<search>民法典 承揽合同</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "分析条文确认合同特点",
+        "content": "<information>《中华人民共和国民法典》第三编合同部分规定了承揽合同的内容，其中具体讲述了承揽合同的定义、履行义务、责任划分等内容。例如，《民法典》第七百七十条明确表述了承揽合同的内涵：承揽合同是承揽人完成工作并交付成果，定作人支付报酬的合同。这进一步说明了承揽合同的个性化要求以及成果导向性。</information>因此，可以确认承揽合同的特点包括：1）个性化需求；2）成果导向；3）双务性；4）风险归承揽人承担。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "承揽合同具有以下特点：（1）合同具有个性化和定制性，即工作内容需要按照定作人具体要求完成；（2）以成果交付为导向，合同履行关注最终成果；（3）双务性，承揽人与定作人需履行各自的给付义务；（4）风险主要由承揽人承担，承揽人需对工作瑕疵或质量问题负责。"
+      },
+      {
+        "action": "Verification",
+        "content": "通过分析《民法典》的相关条款及法律定义，特点描述与法条内容一致，结论正确。验证完成。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "嗯，先从承揽合同的基本定义开始分析吧。承揽合同是那种承揽人按照定作人要求完成工作并且交付成果的合同，之后定作人支付报酬，这种安排听起来特别有个性化。既然如此，那我觉得承揽合同应该有一些与其他合同不同的特性，比如特地按照需求制作的特点，以及完成成果后才算完成义务。\n\n那接下来我得再想想它可能有哪些重要的法律特性。首先，既然是双方的约定，那显然是双务关系：一方要交成果，另一方要付钱。然后，因为合同内容需要按照定作人的具体需要完成，这种合同一定是非常注重“个性化”的。另外，还有一点，这种合同强调的是成果，而不是劳动过程，所以只要最终的东西是好的，承揽人具体怎么做应该不算合同的重点吧？最后，提到风险问题，通常来说，承揽人可能得承担更多的风险，因为要对成果质量负责。\n\n不过这些特点是不是完全正确呢？还是再确认一下法律条文会更保险。其实，《民法典》中应该有关于承揽合同的具体规定，我可以搜索一下相关条文，看看是不是有什么明确的描述。\n\n<search>民法典 承揽合同</search>\n\n哦，这里有结果了，看来《民法典》第三编合同部分确实有专门讲到承揽合同的内容。<information>根据《民法典》第七百七十条的规定，承揽合同是承揽人按照定作人的要求完成工作并交付成果，然后定作人支付报酬的合同。</information>嗯，这和我的理解是一样的，承揽合同的确是强调按照需求去完成工作。而且条款里也间接说明了承揽合同的其他特点，比如它特别关注最终成果，而不是仅仅关注过程。\n\n好，结合刚刚的定义和法条内容来看，我可以重新总结一下承揽合同的主要特点：第一，它很有个性化，因为工作是专门按照定作人要求完成的；第二，它以工作成果为导向，只要成果过关就可以；第三，这是一种双务合同，双方各自有义务；第四，风险主要由承揽人来承担，比如成果质量不符合要求，承揽人得负责。\n\n嗯，彻底理清楚了，这些特点从定义和条文内容都能得到支持，应该没有什么问题。总结一下就是：承揽合同的特点包括个性化需求、以成果交付为中心、双务性和风险归承揽人承担，确认无误！",
+  "Response": "承揽合同的特点主要包括以下几点：\n\n1. **个性化需求**：承揽合同是以满足定作人的特殊要求为前提，承揽人需根据定作人的具体指示或需求完成约定的工作，具有高度的个性化和特别定制性。\n\n2. **成果导向**：承揽合同以成果为中心，强调最终工作成果的交付。只要成果符合约定，具体的工作过程并非合同关注的重点。\n\n3. **双务性**：承揽合同是一种双务合同，双方均负有相互对应的义务。承揽人的义务是完成工作并交付成果，定作人的义务是验收成果并支付报酬。\n\n4. **风险承担由承揽人负责**：在承揽合同中，工作成果的质量和完成情况主要由承揽人负责，如果成果出现瑕疵或不能达到约定要求，通常需由承揽人承担责任。\n\n这些特点共同构成了承揽合同在法律上的基本性质。",
+  "Question": "承揽合同的特点有哪些?"
+}

@@ -1,0 +1,79 @@
+{
+  "Open-ended Verifiable Question": "动迁安置，现在动迁是数砖头还是数人头？",
+  "Ground-True Answer": "俗称的“数砖头”指被拆房屋价值相关的三块砖：评估价格、价格补贴、套型面积补贴。三块砖加一起为房屋价值补偿款。俗称的“数人头”指参照经济适用房申请认定标准，该户被认定为居住困难后，按照被认定人数乘以人均最低保障金额得出该户托底保障补偿款数额。如果该户房屋价值补偿款金额大于托底保障补偿款的，则以房屋价值补偿款为准，反之，则以托底保障补偿款为准（表现在协议上，就是三块砖XXXXX元，本户被认定为居住困难户，增加货币补贴款xxx元）。故而，不能笼统的说现在动迁是“数砖头”还是“数人头”。",
+  "process_id": 6298,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "明确动迁安置依据",
+      "content": "动迁安置政策一般是依据当地的法律法规和实际操作规则，因此需要确认目前动迁安置方式是否存在明确法规或政策指引。由于问题涉及‘数砖头’或‘数人头’，需明确动迁补偿是基于房屋面积还是人数。我需要查找相关法律规定或动迁补偿政策内容。搜索关键词为：<search>动迁补偿政策规定</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "查找法律法规和动迁政策",
+      "content": "搜索动迁补偿相关政策以确认具体操作依据，尤其是判断‘数砖头’（房屋面积）和‘数人头’（居民数量）的适用情形。结果如下：<information>多数地区动迁补偿方式结合房屋面积与实际居住人口的情况，具体方式依地方规定而定。</information>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "分析动迁补偿依据",
+      "content": "依据搜索结果，多数动迁政策基于两方面：1）房屋性质和面积（‘数砖头’），补偿与住房结构和面积有关；2）居住人口数量（‘数人头’），部分地方政策会考虑户籍登记人数或实际居住人口。需要综合当地政策来判断具体适用方式。若在动迁时以房屋面积为主，则倾向于数砖头；若以家庭人口为主，则倾向于数人头。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "动迁安置的方式一般结合房屋面积（‘数砖头’）和实际居民人数（‘数人头’），具体适用方式依地方政府的动迁补偿政策而定。部分地区可能更侧重房屋面积作为主要补偿依据（数砖头），而另一部分地区可能会考虑人口数量（数人头）。因此，需要查阅当地的动迁政策具体规定。"
+    },
+    {
+      "action": "Verification",
+      "content": "结论正确。动迁安置通常会依据房屋面积和居民人数的综合情况，具体政策因地区而不同。若需实际判断，需参照当地的动迁补偿规定。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n动迁安置，现在动迁是数砖头还是数人头？\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n动迁安置的方式一般结合房屋面积（‘数砖头’）和实际居民人数（‘数人头’），具体适用方式依地方政府的动迁补偿政策而定。部分地区可能更侧重房屋面积作为主要补偿依据（数砖头），而另一部分地区可能会考虑人口数量（数人头）。因此，需要查阅当地的动迁政策具体规定。  \n</Model Response>  \n\n<Reference Answer>  \n俗称的“数砖头”指被拆房屋价值相关的三块砖：评估价格、价格补贴、套型面积补贴。三块砖加一起为房屋价值补偿款。俗称的“数人头”指参照经济适用房申请认定标准，该户被认定为居住困难后，按照被认定人数乘以人均最低保障金额得出该户托底保障补偿款数额。如果该户房屋价值补偿款金额大于托底保障补偿款的，则以房屋价值补偿款为准，反之，则以托底保障补偿款为准（表现在协议上，就是三块砖XXXXX元，本户被认定为居住困难户，增加货币补贴款xxx元）。故而，不能笼统的说现在动迁是“数砖头”还是“数人头”。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 明确动迁安置依据\n动迁安置政策一般是依据当地的法律法规和实际操作规则，因此需要确认目前动迁安置方式是否存在明确法规或政策指引。由于问题涉及‘数砖头’或‘数人头’，需明确动迁补偿是基于房屋面积还是人数。我需要查找相关法律规定或动迁补偿政策内容。搜索关键词为：<search>动迁补偿政策规定</search>\n\n### 查找法律法规和动迁政策\n搜索动迁补偿相关政策以确认具体操作依据，尤其是判断‘数砖头’（房屋面积）和‘数人头’（居民数量）的适用情形。结果如下：<information>多数地区动迁补偿方式结合房屋面积与实际居住人口的情况，具体方式依地方规定而定。</information>\n\n### 分析动迁补偿依据\n依据搜索结果，多数动迁政策基于两方面：1）房屋性质和面积（‘数砖头’），补偿与住房结构和面积有关；2）居住人口数量（‘数人头’），部分地方政策会考虑户籍登记人数或实际居住人口。需要综合当地政策来判断具体适用方式。若在动迁时以房屋面积为主，则倾向于数砖头；若以家庭人口为主，则倾向于数人头。\n\n### Conclusion\n动迁安置的方式一般结合房屋面积（‘数砖头’）和实际居民人数（‘数人头’），具体适用方式依地方政府的动迁补偿政策而定。部分地区可能更侧重房屋面积作为主要补偿依据（数砖头），而另一部分地区可能会考虑人口数量（数人头）。因此，需要查阅当地的动迁政策具体规定。\n\n### Verification\n结论正确。动迁安置通常会依据房屋面积和居民人数的综合情况，具体政策因地区而不同。若需实际判断，需参照当地的动迁补偿规定。\n</Thought Process>\n\n<Question>\n动迁安置，现在动迁是数砖头还是数人头？\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n首先得弄清楚这个动迁安置到底是按什么来的，一般来说肯定得看政策规定吧，动迁补偿肯定是有依据的。不知道是看房子面积呢，还是看住的人数，这是不是地方政策规定的？嗯，先搜一下相关政策。<search>动迁补偿政策规定</search>\n\n搜到一个信息，看来多数地方的动迁补偿方式是结合房屋面积和实际居住人口来的，具体操作得看当地的具体规定。<information>多数地区动迁补偿方式结合房屋面积与实际居住人口的情况，具体方式依地方规定而定。</information>\n\n好，那我再捋一捋。如果是按照房屋面积来补偿，那应该更偏向所谓的‘数砖头’吧？意思就是根据你房子建了多少面积，结构怎么样，去决定补偿标准，面积大估计给得多。而如果是按人数来补偿，那就是‘数人头’，大概是看家庭里有几个人，有没有户口登记或者真的住在那里，这种情况可能会考虑给一家里人数更多的更多补偿。\n\n不过看起来不少地方其实两个都会考虑吧，所以这事还得具体看地方的动迁政策。如果一个地方主要是按照房子面积来算，那么就优先‘数砖头’，如果特别强调以居住人口为主，那就是‘数人头’的方式更重要。\n\n嗯，总结一下，这个动迁补偿怎么补其实要结合房屋面积和居住人口情况来看，不是单一的。地方政府会根据具体情况规定具体补偿标准，有些地方偏向看面积，有些地方偏向看住的人。要知道详细的情况还是得看看你所在地区的政策文件。\n\n这么说应该是对的，大体上没跑，补偿标准一般还是离不开房子大小和居民人数。如果真有人问这事，还是建议去查本地的动迁政策更准确。\n</Internal Thinking>\n\n<Question>\n动迁安置，现在动迁是数砖头还是数人头？\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"明确动迁安置依据\",\n      \"content\": \"动迁安置政策一般是依据当地的法律法规和实际操作规则，因此需要确认目前动迁安置方式是否存在明确法规或政策指引。由于问题涉及‘数砖头’或‘数人头’，需明确动迁补偿是基于房屋面积还是人数。我需要查找相关法律规定或动迁补偿政策内容。搜索关键词为：<search>动迁补偿政策规定</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"查找法律法规和动迁政策\",\n      \"content\": \"搜索动迁补偿相关政策以确认具体操作依据，尤其是判断‘数砖头’（房屋面积）和‘数人头’（居民数量）的适用情形。结果如下：<information>多数地区动迁补偿方式结合房屋面积与实际居住人口的情况，具体方式依地方规定而定。</information>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析动迁补偿依据\",\n      \"content\": \"依据搜索结果，多数动迁政策基于两方面：1）房屋性质和面积（‘数砖头’），补偿与住房结构和面积有关；2）居住人口数量（‘数人头’），部分地方政策会考虑户籍登记人数或实际居住人口。需要综合当地政策来判断具体适用方式。若在动迁时以房屋面积为主，则倾向于数砖头；若以家庭人口为主，则倾向于数人头。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"动迁安置的方式一般结合房屋面积（‘数砖头’）和实际居民人数（‘数人头’），具体适用方式依地方政府的动迁补偿政策而定。部分地区可能更侧重房屋面积作为主要补偿依据（数砖头），而另一部分地区可能会考虑人口数量（数人头）。因此，需要查阅当地的动迁政策具体规定。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"结论正确。动迁安置通常会依据房屋面积和居民人数的综合情况，具体政策因地区而不同。若需实际判断，需参照当地的动迁补偿规定。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"首先得弄清楚这个动迁安置到底是按什么来的，一般来说肯定得看政策规定吧，动迁补偿肯定是有依据的。不知道是看房子面积呢，还是看住的人数，这是不是地方政策规定的？嗯，先搜一下相关政策。<search>动迁补偿政策规定</search>\\n\\n搜到一个信息，看来多数地方的动迁补偿方式是结合房屋面积和实际居住人口来的，具体操作得看当地的具体规定。<information>多数地区动迁补偿方式结合房屋面积与实际居住人口的情况，具体方式依地方规定而定。</information>\\n\\n好，那我再捋一捋。如果是按照房屋面积来补偿，那应该更偏向所谓的‘数砖头’吧？意思就是根据你房子建了多少面积，结构怎么样，去决定补偿标准，面积大估计给得多。而如果是按人数来补偿，那就是‘数人头’，大概是看家庭里有几个人，有没有户口登记或者真的住在那里，这种情况可能会考虑给一家里人数更多的更多补偿。\\n\\n不过看起来不少地方其实两个都会考虑吧，所以这事还得具体看地方的动迁政策。如果一个地方主要是按照房子面积来算，那么就优先‘数砖头’，如果特别强调以居住人口为主，那就是‘数人头’的方式更重要。\\n\\n嗯，总结一下，这个动迁补偿怎么补其实要结合房屋面积和居住人口情况来看，不是单一的。地方政府会根据具体情况规定具体补偿标准，有些地方偏向看面积，有些地方偏向看住的人。要知道详细的情况还是得看看你所在地区的政策文件。\\n\\n这么说应该是对的，大体上没跑，补偿标准一般还是离不开房子大小和居民人数。如果真有人问这事，还是建议去查本地的动迁政策更准确。\"\n}\n```",
+    "动迁安置涉及“数砖头”还是“数人头”，实际上并没有一个固定的答案，而是要依据具体地区的政策规定以及安置和补偿的方式来判断。\n\n一般来说，动迁补偿政策会综合考虑房屋的面积（“数砖头”）和实际居住人口（“数人头”）两个主要因素。但具体的权重和标准，各地可能有所不同：\n\n1. **如果侧重“数砖头”**  \n   这种情况通常以房屋的产权面积为主，按照房屋的结构、性质（如普通住宅、商业用房）以及建筑面积等因素来核定补偿金额或安置标准。面积大的房屋自然补偿多，更多集中在房产本身的价值上。\n\n2. **如果侧重“数人头”**  \n   这个方式更多会考虑居住的人口情况，特别是具有户籍的实际居住人口数。对于人口较多的家庭，可能会在补偿或安置房分配上给予额外的照顾，比如按人口配额额外增加安置面积或房屋。\n\n3. **综合考虑**  \n   很多地区的政策实际上是结合两者的情况。既会根据房屋面积给予基础性的货币补偿或安置，又会考虑居住人口等情况给出额外的补偿措施。这种方式可以更公平地平衡土地价值和住户需求。\n\n**建议**：  \n由于不同地区的动迁补偿政策因地制宜，您所面临的安置方式可能会有很大差异。具体的补偿规则还需要参考当地发布的动迁安置政策文件。如果对于具体政策不太清楚，可以向拆迁办或当地住建部门咨询，以获取权威的信息。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "明确动迁安置依据",
+        "content": "动迁安置政策一般是依据当地的法律法规和实际操作规则，因此需要确认目前动迁安置方式是否存在明确法规或政策指引。由于问题涉及‘数砖头’或‘数人头’，需明确动迁补偿是基于房屋面积还是人数。我需要查找相关法律规定或动迁补偿政策内容。搜索关键词为：<search>动迁补偿政策规定</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "查找法律法规和动迁政策",
+        "content": "搜索动迁补偿相关政策以确认具体操作依据，尤其是判断‘数砖头’（房屋面积）和‘数人头’（居民数量）的适用情形。结果如下：<information>多数地区动迁补偿方式结合房屋面积与实际居住人口的情况，具体方式依地方规定而定。</information>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "分析动迁补偿依据",
+        "content": "依据搜索结果，多数动迁政策基于两方面：1）房屋性质和面积（‘数砖头’），补偿与住房结构和面积有关；2）居住人口数量（‘数人头’），部分地方政策会考虑户籍登记人数或实际居住人口。需要综合当地政策来判断具体适用方式。若在动迁时以房屋面积为主，则倾向于数砖头；若以家庭人口为主，则倾向于数人头。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "动迁安置的方式一般结合房屋面积（‘数砖头’）和实际居民人数（‘数人头’），具体适用方式依地方政府的动迁补偿政策而定。部分地区可能更侧重房屋面积作为主要补偿依据（数砖头），而另一部分地区可能会考虑人口数量（数人头）。因此，需要查阅当地的动迁政策具体规定。"
+      },
+      {
+        "action": "Verification",
+        "content": "结论正确。动迁安置通常会依据房屋面积和居民人数的综合情况，具体政策因地区而不同。若需实际判断，需参照当地的动迁补偿规定。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "首先得弄清楚这个动迁安置到底是按什么来的，一般来说肯定得看政策规定吧，动迁补偿肯定是有依据的。不知道是看房子面积呢，还是看住的人数，这是不是地方政策规定的？嗯，先搜一下相关政策。<search>动迁补偿政策规定</search>\n\n搜到一个信息，看来多数地方的动迁补偿方式是结合房屋面积和实际居住人口来的，具体操作得看当地的具体规定。<information>多数地区动迁补偿方式结合房屋面积与实际居住人口的情况，具体方式依地方规定而定。</information>\n\n好，那我再捋一捋。如果是按照房屋面积来补偿，那应该更偏向所谓的‘数砖头’吧？意思就是根据你房子建了多少面积，结构怎么样，去决定补偿标准，面积大估计给得多。而如果是按人数来补偿，那就是‘数人头’，大概是看家庭里有几个人，有没有户口登记或者真的住在那里，这种情况可能会考虑给一家里人数更多的更多补偿。\n\n不过看起来不少地方其实两个都会考虑吧，所以这事还得具体看地方的动迁政策。如果一个地方主要是按照房子面积来算，那么就优先‘数砖头’，如果特别强调以居住人口为主，那就是‘数人头’的方式更重要。\n\n嗯，总结一下，这个动迁补偿怎么补其实要结合房屋面积和居住人口情况来看，不是单一的。地方政府会根据具体情况规定具体补偿标准，有些地方偏向看面积，有些地方偏向看住的人。要知道详细的情况还是得看看你所在地区的政策文件。\n\n这么说应该是对的，大体上没跑，补偿标准一般还是离不开房子大小和居民人数。如果真有人问这事，还是建议去查本地的动迁政策更准确。",
+  "Response": "动迁安置涉及“数砖头”还是“数人头”，实际上并没有一个固定的答案，而是要依据具体地区的政策规定以及安置和补偿的方式来判断。\n\n一般来说，动迁补偿政策会综合考虑房屋的面积（“数砖头”）和实际居住人口（“数人头”）两个主要因素。但具体的权重和标准，各地可能有所不同：\n\n1. **如果侧重“数砖头”**  \n   这种情况通常以房屋的产权面积为主，按照房屋的结构、性质（如普通住宅、商业用房）以及建筑面积等因素来核定补偿金额或安置标准。面积大的房屋自然补偿多，更多集中在房产本身的价值上。\n\n2. **如果侧重“数人头”**  \n   这个方式更多会考虑居住的人口情况，特别是具有户籍的实际居住人口数。对于人口较多的家庭，可能会在补偿或安置房分配上给予额外的照顾，比如按人口配额额外增加安置面积或房屋。\n\n3. **综合考虑**  \n   很多地区的政策实际上是结合两者的情况。既会根据房屋面积给予基础性的货币补偿或安置，又会考虑居住人口等情况给出额外的补偿措施。这种方式可以更公平地平衡土地价值和住户需求。\n\n**建议**：  \n由于不同地区的动迁补偿政策因地制宜，您所面临的安置方式可能会有很大差异。具体的补偿规则还需要参考当地发布的动迁安置政策文件。如果对于具体政策不太清楚，可以向拆迁办或当地住建部门咨询，以获取权威的信息。",
+  "Question": "动迁安置，现在动迁是数砖头还是数人头？"
+}

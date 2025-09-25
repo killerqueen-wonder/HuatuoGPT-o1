@@ -1,0 +1,89 @@
+{
+  "Open-ended Verifiable Question": "如何认定事实婚姻？自 2001 年婚姻法修改后，事实婚姻还受法律保护吗？",
+  "Ground-True Answer": "我国在一定范围内承认事实婚姻的合法性。1994年2月1日之前，男女双方符合婚姻法实质要件的，按事实婚处理，不论双方共同生活时间长短，不论双方共同生活初期或者某个阶段是否符合婚姻法的实质婚姻关系要件。1994年2月1日之后，同居的双方必须补办登记，否则其同居关系不受法律保障。",
+  "process_id": 5525,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "明确事实婚姻的定义",
+      "content": "事实婚姻是指男女双方没有经过合法婚姻登记手续，但以夫妻名义共同生活，具备婚姻关系实质内容的两性关系。我国现行婚姻法是否继续对事实婚姻加以认定需要先查阅相关法律规定。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "查询2001年婚姻法的相关修改内容",
+      "content": "事实婚姻制度受到2001年修订的婚姻法的影响，有必要查明婚姻法对于未依法登记的婚姻是否继续承认其法律效力。搜索关键词如下：<search>2001年婚姻法修改内容</search>。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "查找法律及司法解释的具体内容",
+      "content": "需要进一步确认2001年婚姻法或者《婚姻法司法解释一》对于未注册婚姻关系的具体规定，搜索关键词如下：<search>婚姻法 司法解释一 事实婚姻</search>。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "确认事实婚姻受保护的前提条件",
+      "content": "<information>根据2001年修订后的《中华人民共和国婚姻法》及相关司法解释，法院通常会对1994年2月1日（《婚姻登记管理条例》开始施行）以前未进行婚姻登记但以夫妻名义共同生活的，认定为事实婚姻。1994年2月1日之后未登记的仅认定为同居关系，不自动赋予婚姻法律效力。</information>"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "根据2001年修订的《中华人民共和国婚姻法》及其司法解释，对于1994年2月1日之前形成的事实婚姻仍可认定为受法律保护的婚姻关系；但对于1994年2月1日之后没有进行婚姻登记的，则仅被认定为同居关系，不再具有婚姻的法律效力。"
+    },
+    {
+      "action": "Verification",
+      "content": "上述结论与2001年婚姻法及相关司法解释的规定一致，确认无误。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n如何认定事实婚姻？自 2001 年婚姻法修改后，事实婚姻还受法律保护吗？\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n根据2001年修订的《中华人民共和国婚姻法》及其司法解释，对于1994年2月1日之前形成的事实婚姻仍可认定为受法律保护的婚姻关系；但对于1994年2月1日之后没有进行婚姻登记的，则仅被认定为同居关系，不再具有婚姻的法律效力。  \n</Model Response>  \n\n<Reference Answer>  \n我国在一定范围内承认事实婚姻的合法性。1994年2月1日之前，男女双方符合婚姻法实质要件的，按事实婚处理，不论双方共同生活时间长短，不论双方共同生活初期或者某个阶段是否符合婚姻法的实质婚姻关系要件。1994年2月1日之后，同居的双方必须补办登记，否则其同居关系不受法律保障。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 明确事实婚姻的定义\n事实婚姻是指男女双方没有经过合法婚姻登记手续，但以夫妻名义共同生活，具备婚姻关系实质内容的两性关系。我国现行婚姻法是否继续对事实婚姻加以认定需要先查阅相关法律规定。\n\n### 查询2001年婚姻法的相关修改内容\n事实婚姻制度受到2001年修订的婚姻法的影响，有必要查明婚姻法对于未依法登记的婚姻是否继续承认其法律效力。搜索关键词如下：<search>2001年婚姻法修改内容</search>。\n\n### 查找法律及司法解释的具体内容\n需要进一步确认2001年婚姻法或者《婚姻法司法解释一》对于未注册婚姻关系的具体规定，搜索关键词如下：<search>婚姻法 司法解释一 事实婚姻</search>。\n\n### 确认事实婚姻受保护的前提条件\n<information>根据2001年修订后的《中华人民共和国婚姻法》及相关司法解释，法院通常会对1994年2月1日（《婚姻登记管理条例》开始施行）以前未进行婚姻登记但以夫妻名义共同生活的，认定为事实婚姻。1994年2月1日之后未登记的仅认定为同居关系，不自动赋予婚姻法律效力。</information>\n\n### Conclusion\n根据2001年修订的《中华人民共和国婚姻法》及其司法解释，对于1994年2月1日之前形成的事实婚姻仍可认定为受法律保护的婚姻关系；但对于1994年2月1日之后没有进行婚姻登记的，则仅被认定为同居关系，不再具有婚姻的法律效力。\n\n### Verification\n上述结论与2001年婚姻法及相关司法解释的规定一致，确认无误。\n</Thought Process>\n\n<Question>\n如何认定事实婚姻？自 2001 年婚姻法修改后，事实婚姻还受法律保护吗？\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n嗯，首先要弄清楚什么是事实婚姻。事实婚姻是指男女双方虽然没有办理法律规定的婚姻登记手续，但却以夫妻的名义共同生活，而且在实质上已经形成了婚姻关系的两性结合。那么问题来了，现在法律还认不认可这种关系呢？好像2001年的时候《婚姻法》进行了修订，不知道会不会对事实婚姻有影响。还是先查一下相关法律的规定吧。<search>2001年婚姻法修改内容</search>\n\n查到了一些内容。看上去，2001年修订后的婚姻法对未依法进行登记的婚姻关系有所改变。这让我想到，这修订会不会明确提出事实婚姻的定义，或者明确它是否还受法律保护呢？如果是相关具体内容，可能出现在《婚姻法司法解释一》里。查查看吧。<search>婚姻法 司法解释一 事实婚姻</search>\n\n哦，找到了一些重要的信息。根据资料显示，法院对于1994年之前没有进行登记，但确实以夫妻名义共同生活的，可以认定为事实婚姻。这让我想到，《婚姻登记管理条例》是在1994年2月1日开始实施的，会不会是这个条例开始严格要求婚姻登记才形成了这个分界？而对于1994年之后未经登记的关系，法律不再认定为事实婚姻，只是同居关系，而且不具有法律效力。<information>根据2001年修订后的《中华人民共和国婚姻法》及相关司法解释，法院通常会对1994年2月1日以前未进行婚姻登记但以夫妻名义共同生活的，认定为事实婚姻。1994年2月1日之后未登记的仅认定为同居关系，不自动赋予婚姻法律效力。</information>\n\n总结一下吧。对于1994年之前形成的事实婚姻，即使没有登记，还是能够受到法律保护，被合法地认定为婚姻关系。但从1994年开始实施《婚姻登记管理条例》之后，没有登记的就只能算是同居关系，无法享有婚姻的法律效力。不管怎么说，法律越来越强调登记制度的重要性，这一点还是挺明确的。\n\n嗯，再核对一下我的结论有没有偏差。从查到的婚姻法条文和相关司法解释来看，这些信息和我刚刚总结的内容是完全一致的，没有问题。\n</Internal Thinking>\n\n<Question>\n如何认定事实婚姻？自 2001 年婚姻法修改后，事实婚姻还受法律保护吗？\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"明确事实婚姻的定义\",\n      \"content\": \"事实婚姻是指男女双方没有经过合法婚姻登记手续，但以夫妻名义共同生活，具备婚姻关系实质内容的两性关系。我国现行婚姻法是否继续对事实婚姻加以认定需要先查阅相关法律规定。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"查询2001年婚姻法的相关修改内容\",\n      \"content\": \"事实婚姻制度受到2001年修订的婚姻法的影响，有必要查明婚姻法对于未依法登记的婚姻是否继续承认其法律效力。搜索关键词如下：<search>2001年婚姻法修改内容</search>。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"查找法律及司法解释的具体内容\",\n      \"content\": \"需要进一步确认2001年婚姻法或者《婚姻法司法解释一》对于未注册婚姻关系的具体规定，搜索关键词如下：<search>婚姻法 司法解释一 事实婚姻</search>。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"确认事实婚姻受保护的前提条件\",\n      \"content\": \"<information>根据2001年修订后的《中华人民共和国婚姻法》及相关司法解释，法院通常会对1994年2月1日（《婚姻登记管理条例》开始施行）以前未进行婚姻登记但以夫妻名义共同生活的，认定为事实婚姻。1994年2月1日之后未登记的仅认定为同居关系，不自动赋予婚姻法律效力。</information>\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"根据2001年修订的《中华人民共和国婚姻法》及其司法解释，对于1994年2月1日之前形成的事实婚姻仍可认定为受法律保护的婚姻关系；但对于1994年2月1日之后没有进行婚姻登记的，则仅被认定为同居关系，不再具有婚姻的法律效力。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"上述结论与2001年婚姻法及相关司法解释的规定一致，确认无误。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"嗯，首先要弄清楚什么是事实婚姻。事实婚姻是指男女双方虽然没有办理法律规定的婚姻登记手续，但却以夫妻的名义共同生活，而且在实质上已经形成了婚姻关系的两性结合。那么问题来了，现在法律还认不认可这种关系呢？好像2001年的时候《婚姻法》进行了修订，不知道会不会对事实婚姻有影响。还是先查一下相关法律的规定吧。<search>2001年婚姻法修改内容</search>\\n\\n查到了一些内容。看上去，2001年修订后的婚姻法对未依法进行登记的婚姻关系有所改变。这让我想到，这修订会不会明确提出事实婚姻的定义，或者明确它是否还受法律保护呢？如果是相关具体内容，可能出现在《婚姻法司法解释一》里。查查看吧。<search>婚姻法 司法解释一 事实婚姻</search>\\n\\n哦，找到了一些重要的信息。根据资料显示，法院对于1994年之前没有进行登记，但确实以夫妻名义共同生活的，可以认定为事实婚姻。这让我想到，《婚姻登记管理条例》是在1994年2月1日开始实施的，会不会是这个条例开始严格要求婚姻登记才形成了这个分界？而对于1994年之后未经登记的关系，法律不再认定为事实婚姻，只是同居关系，而且不具有法律效力。<information>根据2001年修订后的《中华人民共和国婚姻法》及相关司法解释，法院通常会对1994年2月1日以前未进行婚姻登记但以夫妻名义共同生活的，认定为事实婚姻。1994年2月1日之后未登记的仅认定为同居关系，不自动赋予婚姻法律效力。</information>\\n\\n总结一下吧。对于1994年之前形成的事实婚姻，即使没有登记，还是能够受到法律保护，被合法地认定为婚姻关系。但从1994年开始实施《婚姻登记管理条例》之后，没有登记的就只能算是同居关系，无法享有婚姻的法律效力。不管怎么说，法律越来越强调登记制度的重要性，这一点还是挺明确的。\\n\\n嗯，再核对一下我的结论有没有偏差。从查到的婚姻法条文和相关司法解释来看，这些信息和我刚刚总结的内容是完全一致的，没有问题。\"\n}\n```",
+    "事实婚姻，指男女双方未办理法律规定的婚姻登记手续，但以夫妻名义共同生活且已经形成稳定的两性关系。在法律层面上，2001年《中华人民共和国婚姻法》修订以及相关司法解释对事实婚姻的认定和保护进行了明确规定。\n\n根据相关法律规定及司法解释，具体认定和法律保护如下：\n\n1. **1994年2月1日之前形成的事实婚姻**  \n   如果男女双方未办理婚姻登记，但在此日期之前确以夫妻名义共同生活且符合婚姻实质要求的（如达到法定婚龄、没有法律上的婚姻禁止情形等），这种关系可以被法院认定为事实婚姻，法律视其具备正式婚姻的效力，受婚姻法保护。\n\n2. **1994年2月1日之后形成的关系**  \n   自《婚姻登记管理条例》于1994年2月1日实施后，国家严格要求婚姻登记为合法婚姻成立的必要条件。对于此日期之后未办理婚姻登记的同居关系，即使以夫妻名义共同生活，也不再被认定为事实婚姻，而是视为单纯的同居关系。这种同居关系不具有婚姻的法律效力，无法享受婚姻法给予合法配偶的权利与义务。\n\n3. **2001年婚姻法修订后的影响**  \n   2001年的婚姻法修订及《婚姻法司法解释一》再次明确了登记制度的重要性，进一步规范了婚姻关系的法律认定。因此，自修订之后，法律已不再保护1994年2月1日后未经婚姻登记的事实婚姻形式，而以依法登记作为婚姻关系合法成立的唯一标准。\n\n综上，**2001年婚姻法修订后，事实婚姻仅在1994年2月1日之前形成的情况下，仍可能受到法律保护；而1994年2月1日之后未登记而形成的同居关系，不受婚姻法保护，法律不再承认“事实婚姻”这一形式。**"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "明确事实婚姻的定义",
+        "content": "事实婚姻是指男女双方没有经过合法婚姻登记手续，但以夫妻名义共同生活，具备婚姻关系实质内容的两性关系。我国现行婚姻法是否继续对事实婚姻加以认定需要先查阅相关法律规定。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "查询2001年婚姻法的相关修改内容",
+        "content": "事实婚姻制度受到2001年修订的婚姻法的影响，有必要查明婚姻法对于未依法登记的婚姻是否继续承认其法律效力。搜索关键词如下：<search>2001年婚姻法修改内容</search>。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "查找法律及司法解释的具体内容",
+        "content": "需要进一步确认2001年婚姻法或者《婚姻法司法解释一》对于未注册婚姻关系的具体规定，搜索关键词如下：<search>婚姻法 司法解释一 事实婚姻</search>。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "确认事实婚姻受保护的前提条件",
+        "content": "<information>根据2001年修订后的《中华人民共和国婚姻法》及相关司法解释，法院通常会对1994年2月1日（《婚姻登记管理条例》开始施行）以前未进行婚姻登记但以夫妻名义共同生活的，认定为事实婚姻。1994年2月1日之后未登记的仅认定为同居关系，不自动赋予婚姻法律效力。</information>"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "根据2001年修订的《中华人民共和国婚姻法》及其司法解释，对于1994年2月1日之前形成的事实婚姻仍可认定为受法律保护的婚姻关系；但对于1994年2月1日之后没有进行婚姻登记的，则仅被认定为同居关系，不再具有婚姻的法律效力。"
+      },
+      {
+        "action": "Verification",
+        "content": "上述结论与2001年婚姻法及相关司法解释的规定一致，确认无误。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "嗯，首先要弄清楚什么是事实婚姻。事实婚姻是指男女双方虽然没有办理法律规定的婚姻登记手续，但却以夫妻的名义共同生活，而且在实质上已经形成了婚姻关系的两性结合。那么问题来了，现在法律还认不认可这种关系呢？好像2001年的时候《婚姻法》进行了修订，不知道会不会对事实婚姻有影响。还是先查一下相关法律的规定吧。<search>2001年婚姻法修改内容</search>\n\n查到了一些内容。看上去，2001年修订后的婚姻法对未依法进行登记的婚姻关系有所改变。这让我想到，这修订会不会明确提出事实婚姻的定义，或者明确它是否还受法律保护呢？如果是相关具体内容，可能出现在《婚姻法司法解释一》里。查查看吧。<search>婚姻法 司法解释一 事实婚姻</search>\n\n哦，找到了一些重要的信息。根据资料显示，法院对于1994年之前没有进行登记，但确实以夫妻名义共同生活的，可以认定为事实婚姻。这让我想到，《婚姻登记管理条例》是在1994年2月1日开始实施的，会不会是这个条例开始严格要求婚姻登记才形成了这个分界？而对于1994年之后未经登记的关系，法律不再认定为事实婚姻，只是同居关系，而且不具有法律效力。<information>根据2001年修订后的《中华人民共和国婚姻法》及相关司法解释，法院通常会对1994年2月1日以前未进行婚姻登记但以夫妻名义共同生活的，认定为事实婚姻。1994年2月1日之后未登记的仅认定为同居关系，不自动赋予婚姻法律效力。</information>\n\n总结一下吧。对于1994年之前形成的事实婚姻，即使没有登记，还是能够受到法律保护，被合法地认定为婚姻关系。但从1994年开始实施《婚姻登记管理条例》之后，没有登记的就只能算是同居关系，无法享有婚姻的法律效力。不管怎么说，法律越来越强调登记制度的重要性，这一点还是挺明确的。\n\n嗯，再核对一下我的结论有没有偏差。从查到的婚姻法条文和相关司法解释来看，这些信息和我刚刚总结的内容是完全一致的，没有问题。",
+  "Response": "事实婚姻，指男女双方未办理法律规定的婚姻登记手续，但以夫妻名义共同生活且已经形成稳定的两性关系。在法律层面上，2001年《中华人民共和国婚姻法》修订以及相关司法解释对事实婚姻的认定和保护进行了明确规定。\n\n根据相关法律规定及司法解释，具体认定和法律保护如下：\n\n1. **1994年2月1日之前形成的事实婚姻**  \n   如果男女双方未办理婚姻登记，但在此日期之前确以夫妻名义共同生活且符合婚姻实质要求的（如达到法定婚龄、没有法律上的婚姻禁止情形等），这种关系可以被法院认定为事实婚姻，法律视其具备正式婚姻的效力，受婚姻法保护。\n\n2. **1994年2月1日之后形成的关系**  \n   自《婚姻登记管理条例》于1994年2月1日实施后，国家严格要求婚姻登记为合法婚姻成立的必要条件。对于此日期之后未办理婚姻登记的同居关系，即使以夫妻名义共同生活，也不再被认定为事实婚姻，而是视为单纯的同居关系。这种同居关系不具有婚姻的法律效力，无法享受婚姻法给予合法配偶的权利与义务。\n\n3. **2001年婚姻法修订后的影响**  \n   2001年的婚姻法修订及《婚姻法司法解释一》再次明确了登记制度的重要性，进一步规范了婚姻关系的法律认定。因此，自修订之后，法律已不再保护1994年2月1日后未经婚姻登记的事实婚姻形式，而以依法登记作为婚姻关系合法成立的唯一标准。\n\n综上，**2001年婚姻法修订后，事实婚姻仅在1994年2月1日之前形成的情况下，仍可能受到法律保护；而1994年2月1日之后未登记而形成的同居关系，不受婚姻法保护，法律不再承认“事实婚姻”这一形式。**",
+  "Question": "如何认定事实婚姻？自 2001 年婚姻法修改后，事实婚姻还受法律保护吗？"
+}

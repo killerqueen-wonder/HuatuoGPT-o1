@@ -1,0 +1,109 @@
+{
+  "Open-ended Verifiable Question": "电动车转弯被直行撞如何定责任",
+  "Ground-True Answer": "按照转弯让直行的原则，电动车的责任大。关于机动车的三让原则，就是指无信号灯也无让行标志的路口，机动车的通行规则：1、左边车让右边车先行，就是当你开到路口，你要让右方来车先行，右方来车让你先行;2、转弯让直行。转弯的车辆要让直行车辆先行;3、右转让左转，右转弯的车要让左转弯的车先行。根据《道路交通事故处理程序规定》第六十条规定，公安机关交通管理部门应当根据当事人的行为对发生道路交通事故所起的作用以及过错的严重程度，确定当事人的责任。(一)因一方当事人的过错导致道路交通事故的，承担全部责任;(二)因两方或者两方以上当事人的过错发生道路交通事故的，根据其行为对事故发生的作用以及过错的严重程度，分别承担主要责任、同等责任和次要责任;(三)各方均无导致道路交通事故的过错，属于交通意外事故的，各方均无责任。 一方当事人故意造成道路交通事故的，他方无责任。二、交通事故怎样定责《道路交通安全法实施条例》：第八十九条，公安机关交通管理部门或者交通警察接到交通事故报警，应当及时赶赴现场，对未造成人身伤亡，事实清楚，并且机动车可以移动的，应当在记录事故情况后责令当事人撤离现场，恢复交通。对拒不撤离现场的，予以强制撤离。对属于前款规定情况的道路交通事故，交通警察可以适用简易程序处理，并当场出具事故认定书。当事人共同请求调解的，交通警察可以当场对损害赔偿争议进行调解。对道路交通事故造成人员伤亡和财产损失需要勘验、检查现场的，公安机关交通管理部门应当按照勘查现场工作规范进行。现场勘查完毕，应当组织清理现场，恢复交通。第九十一条，公安机关交通管理部门应当根据交通事故当事人的行为对发生交通事故所起的作用以及过错的严重程度，确定当事人的责任。第九十二条，发生交通事故后当事人逃逸的，逃逸的当事人承担全部责任。但是，有证据证明对方当事人也有过错的，可以减轻责任。当事人故意破坏、伪造现场、毁灭证据的，承担全部责任。",
+  "process_id": 6465,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "分析事故参与者的行为",
+      "content": "首先需要分析转弯电动车和直行车辆的行为。根据交通法规，转弯车辆通常需要避让直行车辆，因为直行车辆在路权方面优先。需要进一步确认具体适用的交通法规。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "查询相关交通法规",
+      "content": "<search>转弯车辆避让直行车辆交通法规</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "分析搜索结果",
+      "content": "<information>《中华人民共和国道路交通安全法》第四十条规定：机动车转弯时，必须让直行的车辆、行人优先通行。</information>根据此法规，明确转弯车辆在法律上需要对直行车辆进行避让。电动车虽属于非机动车，但在转弯行为上也可能受此规定约束，需要更详细法律确认。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "确认非机动车与机动车的避让规则",
+      "content": "<search>非机动车转弯避让机动车规则</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "分析搜索结果",
+      "content": "<information>根据《道路交通安全法实施条例》第七十二条：非机动车驾驶人转弯时应当提前减速，并且让直行车辆先行。</information>这表明转弯的电动车确实需要避让直行机动车。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "判定责任分配",
+      "content": "如果电动车在转弯过程中没有避让直行车辆而发生碰撞，根据相关法律，应主要由转弯一方承担事故责任。同时需要进一步确认碰撞时是否存在其他行为（如直行车辆超速）。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "根据《中华人民共和国道路交通安全法》第四十条和《道路交通安全法实施条例》第七十二条的规定，转弯电动车未避让直行车辆时，应承担事故的主要责任。若直行车辆也存在违法行为（如超速），则责任可能需进一步划分。"
+    },
+    {
+      "action": "Verification",
+      "content": "结论符合交通法规的规定，确定转弯电动车在未给予直行车辆优先权时将承担主要责任。整个流程判断准确，结束。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n电动车转弯被直行撞如何定责任\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n根据《中华人民共和国道路交通安全法》第四十条和《道路交通安全法实施条例》第七十二条的规定，转弯电动车未避让直行车辆时，应承担事故的主要责任。若直行车辆也存在违法行为（如超速），则责任可能需进一步划分。  \n</Model Response>  \n\n<Reference Answer>  \n按照转弯让直行的原则，电动车的责任大。关于机动车的三让原则，就是指无信号灯也无让行标志的路口，机动车的通行规则：1、左边车让右边车先行，就是当你开到路口，你要让右方来车先行，右方来车让你先行;2、转弯让直行。转弯的车辆要让直行车辆先行;3、右转让左转，右转弯的车要让左转弯的车先行。根据《道路交通事故处理程序规定》第六十条规定，公安机关交通管理部门应当根据当事人的行为对发生道路交通事故所起的作用以及过错的严重程度，确定当事人的责任。(一)因一方当事人的过错导致道路交通事故的，承担全部责任;(二)因两方或者两方以上当事人的过错发生道路交通事故的，根据其行为对事故发生的作用以及过错的严重程度，分别承担主要责任、同等责任和次要责任;(三)各方均无导致道路交通事故的过错，属于交通意外事故的，各方均无责任。 一方当事人故意造成道路交通事故的，他方无责任。二、交通事故怎样定责《道路交通安全法实施条例》：第八十九条，公安机关交通管理部门或者交通警察接到交通事故报警，应当及时赶赴现场，对未造成人身伤亡，事实清楚，并且机动车可以移动的，应当在记录事故情况后责令当事人撤离现场，恢复交通。对拒不撤离现场的，予以强制撤离。对属于前款规定情况的道路交通事故，交通警察可以适用简易程序处理，并当场出具事故认定书。当事人共同请求调解的，交通警察可以当场对损害赔偿争议进行调解。对道路交通事故造成人员伤亡和财产损失需要勘验、检查现场的，公安机关交通管理部门应当按照勘查现场工作规范进行。现场勘查完毕，应当组织清理现场，恢复交通。第九十一条，公安机关交通管理部门应当根据交通事故当事人的行为对发生交通事故所起的作用以及过错的严重程度，确定当事人的责任。第九十二条，发生交通事故后当事人逃逸的，逃逸的当事人承担全部责任。但是，有证据证明对方当事人也有过错的，可以减轻责任。当事人故意破坏、伪造现场、毁灭证据的，承担全部责任。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 分析事故参与者的行为\n首先需要分析转弯电动车和直行车辆的行为。根据交通法规，转弯车辆通常需要避让直行车辆，因为直行车辆在路权方面优先。需要进一步确认具体适用的交通法规。\n\n### 查询相关交通法规\n<search>转弯车辆避让直行车辆交通法规</search>\n\n### 分析搜索结果\n<information>《中华人民共和国道路交通安全法》第四十条规定：机动车转弯时，必须让直行的车辆、行人优先通行。</information>根据此法规，明确转弯车辆在法律上需要对直行车辆进行避让。电动车虽属于非机动车，但在转弯行为上也可能受此规定约束，需要更详细法律确认。\n\n### 确认非机动车与机动车的避让规则\n<search>非机动车转弯避让机动车规则</search>\n\n### 分析搜索结果\n<information>根据《道路交通安全法实施条例》第七十二条：非机动车驾驶人转弯时应当提前减速，并且让直行车辆先行。</information>这表明转弯的电动车确实需要避让直行机动车。\n\n### 判定责任分配\n如果电动车在转弯过程中没有避让直行车辆而发生碰撞，根据相关法律，应主要由转弯一方承担事故责任。同时需要进一步确认碰撞时是否存在其他行为（如直行车辆超速）。\n\n### Conclusion\n根据《中华人民共和国道路交通安全法》第四十条和《道路交通安全法实施条例》第七十二条的规定，转弯电动车未避让直行车辆时，应承担事故的主要责任。若直行车辆也存在违法行为（如超速），则责任可能需进一步划分。\n\n### Verification\n结论符合交通法规的规定，确定转弯电动车在未给予直行车辆优先权时将承担主要责任。整个流程判断准确，结束。\n</Thought Process>\n\n<Question>\n电动车转弯被直行撞如何定责任\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n嗯，这个问题得首先弄清楚转弯和直行车辆的具体规则。直行和转弯，哪个有优先权呢？感觉应该是直行优先吧，毕竟常听说转弯要避让直行，不过还是查一下具体法规比较保险。<search>转弯车辆避让直行车辆交通法规</search>\n\n哦，这里找到了相关规定。《中华人民共和国道路交通安全法》第四十条说，机动车在转弯的时候要让直行的车辆和行人优先通行。那看起来直行确实是有优先权的。不过电动车是非机动车，适用的规则会不会不一样呢？非机动车转弯是不是也有类似的要求？需要再查查。<search>非机动车转弯避让机动车规则</search>\n\n找到了，在《道路交通安全法实施条例》第七十二条里写着，非机动车在转弯时也要提前减速，而且还得给直行车辆让行。嗯，结合这两条规定可以确定，无论是机动车还是电动车，只要是转弯，就得让直行的先走。这条法律貌似还挺严谨的。\n\n那么如果是电动车转弯被直行车辆撞了，初步看来责任主要在电动车这边。转弯一方原则上应该避让，对吧？不过这里有个小疑问，直行车辆会不会有什么违规行为，比如超速？要是直行车超速也应该承担部分责任吧。嗯，超速责任影响事故归责是常规逻辑，合理，但得有具体证据支持。\n\n所以，总结一下，目前根据法律来看，转弯的电动车需要让直行车辆先行，事故责任主要在它的身上。当然，直行车辆如果有其他违规行为，比如超速或者违法占道，这可能也得分摊责任。整个分析感觉都挺清楚了，逻辑没问题。结论应该没啥问题，那就这样啦。\n</Internal Thinking>\n\n<Question>\n电动车转弯被直行撞如何定责任\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析事故参与者的行为\",\n      \"content\": \"首先需要分析转弯电动车和直行车辆的行为。根据交通法规，转弯车辆通常需要避让直行车辆，因为直行车辆在路权方面优先。需要进一步确认具体适用的交通法规。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"查询相关交通法规\",\n      \"content\": \"<search>转弯车辆避让直行车辆交通法规</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析搜索结果\",\n      \"content\": \"<information>《中华人民共和国道路交通安全法》第四十条规定：机动车转弯时，必须让直行的车辆、行人优先通行。</information>根据此法规，明确转弯车辆在法律上需要对直行车辆进行避让。电动车虽属于非机动车，但在转弯行为上也可能受此规定约束，需要更详细法律确认。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"确认非机动车与机动车的避让规则\",\n      \"content\": \"<search>非机动车转弯避让机动车规则</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析搜索结果\",\n      \"content\": \"<information>根据《道路交通安全法实施条例》第七十二条：非机动车驾驶人转弯时应当提前减速，并且让直行车辆先行。</information>这表明转弯的电动车确实需要避让直行机动车。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"判定责任分配\",\n      \"content\": \"如果电动车在转弯过程中没有避让直行车辆而发生碰撞，根据相关法律，应主要由转弯一方承担事故责任。同时需要进一步确认碰撞时是否存在其他行为（如直行车辆超速）。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"根据《中华人民共和国道路交通安全法》第四十条和《道路交通安全法实施条例》第七十二条的规定，转弯电动车未避让直行车辆时，应承担事故的主要责任。若直行车辆也存在违法行为（如超速），则责任可能需进一步划分。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"结论符合交通法规的规定，确定转弯电动车在未给予直行车辆优先权时将承担主要责任。整个流程判断准确，结束。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"嗯，这个问题得首先弄清楚转弯和直行车辆的具体规则。直行和转弯，哪个有优先权呢？感觉应该是直行优先吧，毕竟常听说转弯要避让直行，不过还是查一下具体法规比较保险。<search>转弯车辆避让直行车辆交通法规</search>\\n\\n哦，这里找到了相关规定。《中华人民共和国道路交通安全法》第四十条说，机动车在转弯的时候要让直行的车辆和行人优先通行。那看起来直行确实是有优先权的。不过电动车是非机动车，适用的规则会不会不一样呢？非机动车转弯是不是也有类似的要求？需要再查查。<search>非机动车转弯避让机动车规则</search>\\n\\n找到了，在《道路交通安全法实施条例》第七十二条里写着，非机动车在转弯时也要提前减速，而且还得给直行车辆让行。嗯，结合这两条规定可以确定，无论是机动车还是电动车，只要是转弯，就得让直行的先走。这条法律貌似还挺严谨的。\\n\\n那么如果是电动车转弯被直行车辆撞了，初步看来责任主要在电动车这边。转弯一方原则上应该避让，对吧？不过这里有个小疑问，直行车辆会不会有什么违规行为，比如超速？要是直行车超速也应该承担部分责任吧。嗯，超速责任影响事故归责是常规逻辑，合理，但得有具体证据支持。\\n\\n所以，总结一下，目前根据法律来看，转弯的电动车需要让直行车辆先行，事故责任主要在它的身上。当然，直行车辆如果有其他违规行为，比如超速或者违法占道，这可能也得分摊责任。整个分析感觉都挺清楚了，逻辑没问题。结论应该没啥问题，那就这样啦。\"\n}\n```",
+    "根据我国《中华人民共和国道路交通安全法》和相关法规的规定，转弯车辆在交通规则中确实需要避让直行车辆和行人。这一原则不仅适用于机动车，也同样适用于非机动车，如电动车。\n\n具体来说：\n\n1. **机动车转弯**：根据《道路交通安全法》第四十条，机动车在转弯时须让直行的车辆和行人优先通行。\n\n2. **非机动车转弯**：依据《道路交通安全法实施条例》第七十二条规定，非机动车在转弯前应减速慢行，同时也需要避让直行的车辆和行人。\n\n因此，如果电动车在转弯时与直行车辆发生碰撞，通常可以初步认定为电动车未依法避让，需承担相应责任。然而，在具体责任划分上，还需要结合以下因素进行综合判断：\n\n- 直行车辆是否存在违法行为：如果直行车辆有超速、闯红灯、违法占道等行为，这可能会影响责任的划分，直行车辆或需承担部分责任。\n- 电动车是否按规则行驶：例如，电动车是否遵守了信号灯、是否在规定车道内骑行等。\n\n### 实际事故责任认定：\n事故责任的最终认定通常需要交通管理部门根据事故当时的监控录像、现场勘察及证据材料作出裁定。如果直行车辆未有明显违规行为，电动车转弯避让不当的责任可能是主要的；而若直行车辆存在明显违法行为，则双方可能会被判定为共同责任或适当调整责任比例。\n\n总体而言，在类似事故中，转弯一方（本案中为电动车）通常需对直行车辆承担主要的避让义务，相关驾驶者在道路行驶时应时刻遵守交通规则，以避免类似事故的发生。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "分析事故参与者的行为",
+        "content": "首先需要分析转弯电动车和直行车辆的行为。根据交通法规，转弯车辆通常需要避让直行车辆，因为直行车辆在路权方面优先。需要进一步确认具体适用的交通法规。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "查询相关交通法规",
+        "content": "<search>转弯车辆避让直行车辆交通法规</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "分析搜索结果",
+        "content": "<information>《中华人民共和国道路交通安全法》第四十条规定：机动车转弯时，必须让直行的车辆、行人优先通行。</information>根据此法规，明确转弯车辆在法律上需要对直行车辆进行避让。电动车虽属于非机动车，但在转弯行为上也可能受此规定约束，需要更详细法律确认。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "确认非机动车与机动车的避让规则",
+        "content": "<search>非机动车转弯避让机动车规则</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "分析搜索结果",
+        "content": "<information>根据《道路交通安全法实施条例》第七十二条：非机动车驾驶人转弯时应当提前减速，并且让直行车辆先行。</information>这表明转弯的电动车确实需要避让直行机动车。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "判定责任分配",
+        "content": "如果电动车在转弯过程中没有避让直行车辆而发生碰撞，根据相关法律，应主要由转弯一方承担事故责任。同时需要进一步确认碰撞时是否存在其他行为（如直行车辆超速）。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "根据《中华人民共和国道路交通安全法》第四十条和《道路交通安全法实施条例》第七十二条的规定，转弯电动车未避让直行车辆时，应承担事故的主要责任。若直行车辆也存在违法行为（如超速），则责任可能需进一步划分。"
+      },
+      {
+        "action": "Verification",
+        "content": "结论符合交通法规的规定，确定转弯电动车在未给予直行车辆优先权时将承担主要责任。整个流程判断准确，结束。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "嗯，这个问题得首先弄清楚转弯和直行车辆的具体规则。直行和转弯，哪个有优先权呢？感觉应该是直行优先吧，毕竟常听说转弯要避让直行，不过还是查一下具体法规比较保险。<search>转弯车辆避让直行车辆交通法规</search>\n\n哦，这里找到了相关规定。《中华人民共和国道路交通安全法》第四十条说，机动车在转弯的时候要让直行的车辆和行人优先通行。那看起来直行确实是有优先权的。不过电动车是非机动车，适用的规则会不会不一样呢？非机动车转弯是不是也有类似的要求？需要再查查。<search>非机动车转弯避让机动车规则</search>\n\n找到了，在《道路交通安全法实施条例》第七十二条里写着，非机动车在转弯时也要提前减速，而且还得给直行车辆让行。嗯，结合这两条规定可以确定，无论是机动车还是电动车，只要是转弯，就得让直行的先走。这条法律貌似还挺严谨的。\n\n那么如果是电动车转弯被直行车辆撞了，初步看来责任主要在电动车这边。转弯一方原则上应该避让，对吧？不过这里有个小疑问，直行车辆会不会有什么违规行为，比如超速？要是直行车超速也应该承担部分责任吧。嗯，超速责任影响事故归责是常规逻辑，合理，但得有具体证据支持。\n\n所以，总结一下，目前根据法律来看，转弯的电动车需要让直行车辆先行，事故责任主要在它的身上。当然，直行车辆如果有其他违规行为，比如超速或者违法占道，这可能也得分摊责任。整个分析感觉都挺清楚了，逻辑没问题。结论应该没啥问题，那就这样啦。",
+  "Response": "根据我国《中华人民共和国道路交通安全法》和相关法规的规定，转弯车辆在交通规则中确实需要避让直行车辆和行人。这一原则不仅适用于机动车，也同样适用于非机动车，如电动车。\n\n具体来说：\n\n1. **机动车转弯**：根据《道路交通安全法》第四十条，机动车在转弯时须让直行的车辆和行人优先通行。\n\n2. **非机动车转弯**：依据《道路交通安全法实施条例》第七十二条规定，非机动车在转弯前应减速慢行，同时也需要避让直行的车辆和行人。\n\n因此，如果电动车在转弯时与直行车辆发生碰撞，通常可以初步认定为电动车未依法避让，需承担相应责任。然而，在具体责任划分上，还需要结合以下因素进行综合判断：\n\n- 直行车辆是否存在违法行为：如果直行车辆有超速、闯红灯、违法占道等行为，这可能会影响责任的划分，直行车辆或需承担部分责任。\n- 电动车是否按规则行驶：例如，电动车是否遵守了信号灯、是否在规定车道内骑行等。\n\n### 实际事故责任认定：\n事故责任的最终认定通常需要交通管理部门根据事故当时的监控录像、现场勘察及证据材料作出裁定。如果直行车辆未有明显违规行为，电动车转弯避让不当的责任可能是主要的；而若直行车辆存在明显违法行为，则双方可能会被判定为共同责任或适当调整责任比例。\n\n总体而言，在类似事故中，转弯一方（本案中为电动车）通常需对直行车辆承担主要的避让义务，相关驾驶者在道路行驶时应时刻遵守交通规则，以避免类似事故的发生。",
+  "Question": "电动车转弯被直行撞如何定责任"
+}

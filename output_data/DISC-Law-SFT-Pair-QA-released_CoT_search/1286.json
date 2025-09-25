@@ -1,0 +1,79 @@
+{
+  "Open-ended Verifiable Question": "男方出轨并有了孩子构成犯罪吗？",
+  "Ground-True Answer": "男方出轨并有了孩子构成犯罪吗?1、男方出轨并有了孩子有可能会构成犯罪，已婚男出轨生子若符合事实上的重婚条件，是违法的。2、重婚罪，是指有配偶又与他人结婚或者明知他人有配偶而与之结婚的行为。3、重婚行为有两种，一是法律上的重婚，既有配偶者又与他人登记结婚，或者是自己虽没有配偶，明知他人有配偶而与其登记结婚;二是事实上的重婚，即有配偶者虽未与他人登记结婚，但与他人公开以夫妻名义同居生活，或者是自己虽没有配偶，但明知他人有配偶而与其公开以夫妻名义同居生活。4、婚内出轨生子违反了法律规定的夫妻忠实义务，若由此导致离婚的，无过错方有权利请求损害赔偿。《民法典》第一千零九十一条有下列情形之一，导致离婚的，无过错方有权请求损害赔偿：(一)重婚;(二)与他人同居;(三)实施家庭暴力;(四)虐待、遗弃家庭成员;(五)有其他重大过错。",
+  "process_id": 1286,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "分析男方出轨的行为性质",
+      "content": "男方出轨通常指婚姻关系中的一方违反忠诚义务，与其他人发生婚外情。但从法律角度来看，婚外情本身并不直接构成犯罪，而是对夫妻关系的一种道德与法律上的侵害，需要进一步审查相关法律对这种行为的规定。需要查询婚姻法及刑法中是否明确规定婚内出轨与产生婚外子女构成犯罪的条款。<search>婚姻法 出轨 婚外子女</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "法律对婚姻中出轨及婚外子女的规定",
+      "content": "<information>《中华人民共和国婚姻法》未明确规定婚姻中出轨行为直接构成犯罪，但违反忠实义务可能导致离婚诉讼中财产分割或子女抚养权的影响。在刑法中，关于家庭关系的犯罪多集中在虐待、遗弃、重婚等行为。</information>根据上述信息，男方出轨并有婚外子女的行为本身未受到刑法直接处罚，但若该行为涉及到重婚罪或其他违法行为则可能构成犯罪。接下来需明确重婚罪的法律规定。<search>重婚罪 刑法</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "重婚罪的法律规定",
+      "content": "<information>《中华人民共和国刑法》第258条规定，明知他人有配偶而与之结婚或者有配偶而与他人登记结婚，构成重婚罪，处以二年以下有期徒刑或者拘役。未经登记且长期以夫妻名义共同生活亦可视为重婚。</information>男方出轨并有孩子，若与第三者未登记结婚或未以夫妻名义共同生活，则不构成重婚罪。因此，仅婚外情导致子女出生的行为尚不构成犯罪。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "男方出轨并有了孩子的行为本身并不构成犯罪，但若存在重婚等行为则可能涉嫌违法。根据《中华人民共和国婚姻法》及《中华人民共和国刑法》，婚外情是民事纠纷范畴，除非伴随着重婚或其他明确列举的违法行为，才会启动刑事责任追究。"
+    },
+    {
+      "action": "Verification",
+      "content": "经分析相关法律条款及规定，男方出轨与产生婚外子女的行为仅涉及道德层面及民事法律问题，没有证据表明一定构成犯罪（如重婚罪）。结论正确，无需修改。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n男方出轨并有了孩子构成犯罪吗？\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n男方出轨并有了孩子的行为本身并不构成犯罪，但若存在重婚等行为则可能涉嫌违法。根据《中华人民共和国婚姻法》及《中华人民共和国刑法》，婚外情是民事纠纷范畴，除非伴随着重婚或其他明确列举的违法行为，才会启动刑事责任追究。  \n</Model Response>  \n\n<Reference Answer>  \n男方出轨并有了孩子构成犯罪吗?1、男方出轨并有了孩子有可能会构成犯罪，已婚男出轨生子若符合事实上的重婚条件，是违法的。2、重婚罪，是指有配偶又与他人结婚或者明知他人有配偶而与之结婚的行为。3、重婚行为有两种，一是法律上的重婚，既有配偶者又与他人登记结婚，或者是自己虽没有配偶，明知他人有配偶而与其登记结婚;二是事实上的重婚，即有配偶者虽未与他人登记结婚，但与他人公开以夫妻名义同居生活，或者是自己虽没有配偶，但明知他人有配偶而与其公开以夫妻名义同居生活。4、婚内出轨生子违反了法律规定的夫妻忠实义务，若由此导致离婚的，无过错方有权利请求损害赔偿。《民法典》第一千零九十一条有下列情形之一，导致离婚的，无过错方有权请求损害赔偿：(一)重婚;(二)与他人同居;(三)实施家庭暴力;(四)虐待、遗弃家庭成员;(五)有其他重大过错。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 分析男方出轨的行为性质\n男方出轨通常指婚姻关系中的一方违反忠诚义务，与其他人发生婚外情。但从法律角度来看，婚外情本身并不直接构成犯罪，而是对夫妻关系的一种道德与法律上的侵害，需要进一步审查相关法律对这种行为的规定。需要查询婚姻法及刑法中是否明确规定婚内出轨与产生婚外子女构成犯罪的条款。<search>婚姻法 出轨 婚外子女</search>\n\n### 法律对婚姻中出轨及婚外子女的规定\n<information>《中华人民共和国婚姻法》未明确规定婚姻中出轨行为直接构成犯罪，但违反忠实义务可能导致离婚诉讼中财产分割或子女抚养权的影响。在刑法中，关于家庭关系的犯罪多集中在虐待、遗弃、重婚等行为。</information>根据上述信息，男方出轨并有婚外子女的行为本身未受到刑法直接处罚，但若该行为涉及到重婚罪或其他违法行为则可能构成犯罪。接下来需明确重婚罪的法律规定。<search>重婚罪 刑法</search>\n\n### 重婚罪的法律规定\n<information>《中华人民共和国刑法》第258条规定，明知他人有配偶而与之结婚或者有配偶而与他人登记结婚，构成重婚罪，处以二年以下有期徒刑或者拘役。未经登记且长期以夫妻名义共同生活亦可视为重婚。</information>男方出轨并有孩子，若与第三者未登记结婚或未以夫妻名义共同生活，则不构成重婚罪。因此，仅婚外情导致子女出生的行为尚不构成犯罪。\n\n### Conclusion\n男方出轨并有了孩子的行为本身并不构成犯罪，但若存在重婚等行为则可能涉嫌违法。根据《中华人民共和国婚姻法》及《中华人民共和国刑法》，婚外情是民事纠纷范畴，除非伴随着重婚或其他明确列举的违法行为，才会启动刑事责任追究。\n\n### Verification\n经分析相关法律条款及规定，男方出轨与产生婚外子女的行为仅涉及道德层面及民事法律问题，没有证据表明一定构成犯罪（如重婚罪）。结论正确，无需修改。\n</Thought Process>\n\n<Question>\n男方出轨并有了孩子构成犯罪吗？\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n男方出轨并且有了孩子，会不会构成犯罪呢？这个问题需要先弄清楚几个关键点，比如婚姻法对出轨的规定是什么？还有刑法中有没有明确涉及这样的行为？想想，首先应该查找一下相关法律条款关于出轨和婚外子女的相关内容。<search>婚姻法 出轨 婚外子女</search>\n\n嗯，搜到相关信息了。<information>《中华人民共和国婚姻法》没有明确规定男方出轨行为直接构成犯罪。不过，婚姻法要求夫妻之间负有忠实义务，如果违反了这个义务，比如出轨，可能会影响离婚诉讼中的财产分割以及孩子的抚养权问题。另外，从法律角度看，婚外情并不是刑事违法行为，比如刑法更注重家庭关系中的严重问题，例如虐待、遗弃或重婚。</information>看来婚外情属于道德问题多一些，从法律角度没有直接定性为犯罪，但得继续查一下刑法中有什么相关内容，特别是重婚罪这块可能有联系。<search>重婚罪 刑法</search>\n\n找到的重婚罪内容还挺明确的。<information>根据《中华人民共和国刑法》第258条，重婚罪是指明知对方有配偶仍与其登记结婚，或者自己有配偶还与别人登记结婚。没有登记但长期以夫妻名义共同生活也算重婚。重婚罪的处罚是二年以下有期徒刑或者拘役。</information>这么看，如果男方只是跟第三者有了孩子，但他们并没有登记结婚，也没有以夫妻名义共同生活的话，那么就不符合重婚罪的条件。所以单纯出轨并生子这件事不构成重婚，更不会被定性为刑事犯罪。\n\n不过也得从其他角度再确认一下，有没有遗漏的风险因素。比如婚外子女涉及到家庭财产纠纷或抚养关系，可能会影响离婚时的协议细节，但这还是民事纠纷的范畴，不涉及刑事责任。所以总结来看，男方出轨并有孩子这件事从法律上看，主要是道德与民事层面的问题，如果没有形成长期共同生活或者登记结婚，不构成重婚罪。\n\n综上，男方出轨生子的行为本身不算犯罪，除非确实触犯了像重婚罪这样的法律条文。嗯，这个结论不错，逻辑清楚，也符合相关法律规定，不需要修改结论了。\n</Internal Thinking>\n\n<Question>\n男方出轨并有了孩子构成犯罪吗？\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析男方出轨的行为性质\",\n      \"content\": \"男方出轨通常指婚姻关系中的一方违反忠诚义务，与其他人发生婚外情。但从法律角度来看，婚外情本身并不直接构成犯罪，而是对夫妻关系的一种道德与法律上的侵害，需要进一步审查相关法律对这种行为的规定。需要查询婚姻法及刑法中是否明确规定婚内出轨与产生婚外子女构成犯罪的条款。<search>婚姻法 出轨 婚外子女</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"法律对婚姻中出轨及婚外子女的规定\",\n      \"content\": \"<information>《中华人民共和国婚姻法》未明确规定婚姻中出轨行为直接构成犯罪，但违反忠实义务可能导致离婚诉讼中财产分割或子女抚养权的影响。在刑法中，关于家庭关系的犯罪多集中在虐待、遗弃、重婚等行为。</information>根据上述信息，男方出轨并有婚外子女的行为本身未受到刑法直接处罚，但若该行为涉及到重婚罪或其他违法行为则可能构成犯罪。接下来需明确重婚罪的法律规定。<search>重婚罪 刑法</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"重婚罪的法律规定\",\n      \"content\": \"<information>《中华人民共和国刑法》第258条规定，明知他人有配偶而与之结婚或者有配偶而与他人登记结婚，构成重婚罪，处以二年以下有期徒刑或者拘役。未经登记且长期以夫妻名义共同生活亦可视为重婚。</information>男方出轨并有孩子，若与第三者未登记结婚或未以夫妻名义共同生活，则不构成重婚罪。因此，仅婚外情导致子女出生的行为尚不构成犯罪。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"男方出轨并有了孩子的行为本身并不构成犯罪，但若存在重婚等行为则可能涉嫌违法。根据《中华人民共和国婚姻法》及《中华人民共和国刑法》，婚外情是民事纠纷范畴，除非伴随着重婚或其他明确列举的违法行为，才会启动刑事责任追究。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"经分析相关法律条款及规定，男方出轨与产生婚外子女的行为仅涉及道德层面及民事法律问题，没有证据表明一定构成犯罪（如重婚罪）。结论正确，无需修改。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"男方出轨并且有了孩子，会不会构成犯罪呢？这个问题需要先弄清楚几个关键点，比如婚姻法对出轨的规定是什么？还有刑法中有没有明确涉及这样的行为？想想，首先应该查找一下相关法律条款关于出轨和婚外子女的相关内容。<search>婚姻法 出轨 婚外子女</search>\\n\\n嗯，搜到相关信息了。<information>《中华人民共和国婚姻法》没有明确规定男方出轨行为直接构成犯罪。不过，婚姻法要求夫妻之间负有忠实义务，如果违反了这个义务，比如出轨，可能会影响离婚诉讼中的财产分割以及孩子的抚养权问题。另外，从法律角度看，婚外情并不是刑事违法行为，比如刑法更注重家庭关系中的严重问题，例如虐待、遗弃或重婚。</information>看来婚外情属于道德问题多一些，从法律角度没有直接定性为犯罪，但得继续查一下刑法中有什么相关内容，特别是重婚罪这块可能有联系。<search>重婚罪 刑法</search>\\n\\n找到的重婚罪内容还挺明确的。<information>根据《中华人民共和国刑法》第258条，重婚罪是指明知对方有配偶仍与其登记结婚，或者自己有配偶还与别人登记结婚。没有登记但长期以夫妻名义共同生活也算重婚。重婚罪的处罚是二年以下有期徒刑或者拘役。</information>这么看，如果男方只是跟第三者有了孩子，但他们并没有登记结婚，也没有以夫妻名义共同生活的话，那么就不符合重婚罪的条件。所以单纯出轨并生子这件事不构成重婚，更不会被定性为刑事犯罪。\\n\\n不过也得从其他角度再确认一下，有没有遗漏的风险因素。比如婚外子女涉及到家庭财产纠纷或抚养关系，可能会影响离婚时的协议细节，但这还是民事纠纷的范畴，不涉及刑事责任。所以总结来看，男方出轨并有孩子这件事从法律上看，主要是道德与民事层面的问题，如果没有形成长期共同生活或者登记结婚，不构成重婚罪。\\n\\n综上，男方出轨生子的行为本身不算犯罪，除非确实触犯了像重婚罪这样的法律条文。嗯，这个结论不错，逻辑清楚，也符合相关法律规定，不需要修改结论了。\"\n}\n```",
+    "男方出轨并有了孩子这一行为本身并不直接构成犯罪。从法律角度分析：\n\n1. **婚姻法的规定**：根据《中华人民共和国婚姻法》，夫妻间负有忠实义务，出轨属于违反忠实义务的行为，可能在离婚诉讼中影响财产分割和子女抚养权的判定。但婚姻法并未将出轨行为认定为犯罪，只是涉及道德和民事责任。\n\n2. **刑法的规定**：出轨行为是否构成刑事犯罪，关键在于是否触犯了刑法中的相关条文。根据《刑法》第258条规定，重婚罪成立的前提是男方已经登记结婚或明知对方已婚，还与第三者登记结婚，或者虽未登记但以夫妻关系长期共同生活。如果男方只是与第三者发生婚外关系并有了孩子，但并未登记结婚或以夫妻名义共同生活，则不符合重婚罪的构成条件，因而不构成犯罪。\n\n综上，男方出轨并有了孩子的行为，更多是违反道德和婚姻法上的忠诚义务，而非刑事犯罪行为。其后果主要体现在民事领域，如离婚诉讼中的财产分割、孩子抚养权争议等。如果情形复杂，建议咨询专业律师以获得更具体的法律建议。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "分析男方出轨的行为性质",
+        "content": "男方出轨通常指婚姻关系中的一方违反忠诚义务，与其他人发生婚外情。但从法律角度来看，婚外情本身并不直接构成犯罪，而是对夫妻关系的一种道德与法律上的侵害，需要进一步审查相关法律对这种行为的规定。需要查询婚姻法及刑法中是否明确规定婚内出轨与产生婚外子女构成犯罪的条款。<search>婚姻法 出轨 婚外子女</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "法律对婚姻中出轨及婚外子女的规定",
+        "content": "<information>《中华人民共和国婚姻法》未明确规定婚姻中出轨行为直接构成犯罪，但违反忠实义务可能导致离婚诉讼中财产分割或子女抚养权的影响。在刑法中，关于家庭关系的犯罪多集中在虐待、遗弃、重婚等行为。</information>根据上述信息，男方出轨并有婚外子女的行为本身未受到刑法直接处罚，但若该行为涉及到重婚罪或其他违法行为则可能构成犯罪。接下来需明确重婚罪的法律规定。<search>重婚罪 刑法</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "重婚罪的法律规定",
+        "content": "<information>《中华人民共和国刑法》第258条规定，明知他人有配偶而与之结婚或者有配偶而与他人登记结婚，构成重婚罪，处以二年以下有期徒刑或者拘役。未经登记且长期以夫妻名义共同生活亦可视为重婚。</information>男方出轨并有孩子，若与第三者未登记结婚或未以夫妻名义共同生活，则不构成重婚罪。因此，仅婚外情导致子女出生的行为尚不构成犯罪。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "男方出轨并有了孩子的行为本身并不构成犯罪，但若存在重婚等行为则可能涉嫌违法。根据《中华人民共和国婚姻法》及《中华人民共和国刑法》，婚外情是民事纠纷范畴，除非伴随着重婚或其他明确列举的违法行为，才会启动刑事责任追究。"
+      },
+      {
+        "action": "Verification",
+        "content": "经分析相关法律条款及规定，男方出轨与产生婚外子女的行为仅涉及道德层面及民事法律问题，没有证据表明一定构成犯罪（如重婚罪）。结论正确，无需修改。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "男方出轨并且有了孩子，会不会构成犯罪呢？这个问题需要先弄清楚几个关键点，比如婚姻法对出轨的规定是什么？还有刑法中有没有明确涉及这样的行为？想想，首先应该查找一下相关法律条款关于出轨和婚外子女的相关内容。<search>婚姻法 出轨 婚外子女</search>\n\n嗯，搜到相关信息了。<information>《中华人民共和国婚姻法》没有明确规定男方出轨行为直接构成犯罪。不过，婚姻法要求夫妻之间负有忠实义务，如果违反了这个义务，比如出轨，可能会影响离婚诉讼中的财产分割以及孩子的抚养权问题。另外，从法律角度看，婚外情并不是刑事违法行为，比如刑法更注重家庭关系中的严重问题，例如虐待、遗弃或重婚。</information>看来婚外情属于道德问题多一些，从法律角度没有直接定性为犯罪，但得继续查一下刑法中有什么相关内容，特别是重婚罪这块可能有联系。<search>重婚罪 刑法</search>\n\n找到的重婚罪内容还挺明确的。<information>根据《中华人民共和国刑法》第258条，重婚罪是指明知对方有配偶仍与其登记结婚，或者自己有配偶还与别人登记结婚。没有登记但长期以夫妻名义共同生活也算重婚。重婚罪的处罚是二年以下有期徒刑或者拘役。</information>这么看，如果男方只是跟第三者有了孩子，但他们并没有登记结婚，也没有以夫妻名义共同生活的话，那么就不符合重婚罪的条件。所以单纯出轨并生子这件事不构成重婚，更不会被定性为刑事犯罪。\n\n不过也得从其他角度再确认一下，有没有遗漏的风险因素。比如婚外子女涉及到家庭财产纠纷或抚养关系，可能会影响离婚时的协议细节，但这还是民事纠纷的范畴，不涉及刑事责任。所以总结来看，男方出轨并有孩子这件事从法律上看，主要是道德与民事层面的问题，如果没有形成长期共同生活或者登记结婚，不构成重婚罪。\n\n综上，男方出轨生子的行为本身不算犯罪，除非确实触犯了像重婚罪这样的法律条文。嗯，这个结论不错，逻辑清楚，也符合相关法律规定，不需要修改结论了。",
+  "Response": "男方出轨并有了孩子这一行为本身并不直接构成犯罪。从法律角度分析：\n\n1. **婚姻法的规定**：根据《中华人民共和国婚姻法》，夫妻间负有忠实义务，出轨属于违反忠实义务的行为，可能在离婚诉讼中影响财产分割和子女抚养权的判定。但婚姻法并未将出轨行为认定为犯罪，只是涉及道德和民事责任。\n\n2. **刑法的规定**：出轨行为是否构成刑事犯罪，关键在于是否触犯了刑法中的相关条文。根据《刑法》第258条规定，重婚罪成立的前提是男方已经登记结婚或明知对方已婚，还与第三者登记结婚，或者虽未登记但以夫妻关系长期共同生活。如果男方只是与第三者发生婚外关系并有了孩子，但并未登记结婚或以夫妻名义共同生活，则不符合重婚罪的构成条件，因而不构成犯罪。\n\n综上，男方出轨并有了孩子的行为，更多是违反道德和婚姻法上的忠诚义务，而非刑事犯罪行为。其后果主要体现在民事领域，如离婚诉讼中的财产分割、孩子抚养权争议等。如果情形复杂，建议咨询专业律师以获得更具体的法律建议。",
+  "Question": "男方出轨并有了孩子构成犯罪吗？"
+}

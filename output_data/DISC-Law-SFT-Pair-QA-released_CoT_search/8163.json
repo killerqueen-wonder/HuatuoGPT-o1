@@ -1,0 +1,89 @@
+{
+  "Open-ended Verifiable Question": "兄弟姐妹算直系亲属吗?",
+  "Ground-True Answer": "亲兄弟姐妹不是直系亲属。是旁系血亲。直系亲属，指和自己有直接血缘关系或婚姻关系的人，如配偶、父母、子女、祖父母、外祖父母。直系血亲是指彼此之间有直接血缘联系的亲属，包括己身所从出和从己身所出的两部分血亲。己身所从出的血亲，即是生育己身的各代血亲，如父母、祖父母等；从己身所出的血亲，即是己身生育的后代，如子女、孙子女等。值得注意的是，直系血亲除自然直系血亲外，还包括法律拟制的直系血亲，如养父母与养子女、养祖父母与养孙子女，有抚养关系的继父母与继子女等都是直系血亲。法律规定《民法典》一千零四十五条 【亲属、近亲属及家庭成员】亲属包括配偶、血亲和姻亲。配偶、父母、子女、兄弟姐妹、祖父母、外祖父母、孙子女、外孙子女为近亲属。配偶、父母、子女和其他共同生活的近亲属为家庭成员。",
+  "process_id": 8163,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "明确问题范围",
+      "content": "需要确认兄弟姐妹是否属于法律定义中的直系亲属。直系亲属通常涉及亲属关系的法律定义，因此需要查找相关法律或者规范性文件中直系亲属的定义。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "寻找法律定义",
+      "content": "为了更清晰地了解在法律中直系亲属的具体定义，应搜索中国法律或相关法规中对“直系亲属”的描述，例如《婚姻法》、《继承法》等。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "搜索法律条文",
+      "content": "<search>直系亲属定义 中国法律</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "分析搜索结果",
+      "content": "<information>直系亲属通常指具有直接血缘关系的亲属，包括父母、子女以及祖父母、外祖父母。兄弟姐妹不属于直系亲属，而是旁系亲属。</information>"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "兄弟姐妹不算直系亲属，而是属于旁系亲属。直系亲属在法律上一般指有直接血缘关系的亲属，如父母、子女、祖父母、外祖父母。"
+    },
+    {
+      "action": "Verification",
+      "content": "结论与法律定义一致，兄弟姐妹确实不属于直系亲属的范围，验证通过。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n兄弟姐妹算直系亲属吗?\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n兄弟姐妹不算直系亲属，而是属于旁系亲属。直系亲属在法律上一般指有直接血缘关系的亲属，如父母、子女、祖父母、外祖父母。  \n</Model Response>  \n\n<Reference Answer>  \n亲兄弟姐妹不是直系亲属。是旁系血亲。直系亲属，指和自己有直接血缘关系或婚姻关系的人，如配偶、父母、子女、祖父母、外祖父母。直系血亲是指彼此之间有直接血缘联系的亲属，包括己身所从出和从己身所出的两部分血亲。己身所从出的血亲，即是生育己身的各代血亲，如父母、祖父母等；从己身所出的血亲，即是己身生育的后代，如子女、孙子女等。值得注意的是，直系血亲除自然直系血亲外，还包括法律拟制的直系血亲，如养父母与养子女、养祖父母与养孙子女，有抚养关系的继父母与继子女等都是直系血亲。法律规定《民法典》一千零四十五条 【亲属、近亲属及家庭成员】亲属包括配偶、血亲和姻亲。配偶、父母、子女、兄弟姐妹、祖父母、外祖父母、孙子女、外孙子女为近亲属。配偶、父母、子女和其他共同生活的近亲属为家庭成员。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 明确问题范围\n需要确认兄弟姐妹是否属于法律定义中的直系亲属。直系亲属通常涉及亲属关系的法律定义，因此需要查找相关法律或者规范性文件中直系亲属的定义。\n\n### 寻找法律定义\n为了更清晰地了解在法律中直系亲属的具体定义，应搜索中国法律或相关法规中对“直系亲属”的描述，例如《婚姻法》、《继承法》等。\n\n### 搜索法律条文\n<search>直系亲属定义 中国法律</search>\n\n### 分析搜索结果\n<information>直系亲属通常指具有直接血缘关系的亲属，包括父母、子女以及祖父母、外祖父母。兄弟姐妹不属于直系亲属，而是旁系亲属。</information>\n\n### Conclusion\n兄弟姐妹不算直系亲属，而是属于旁系亲属。直系亲属在法律上一般指有直接血缘关系的亲属，如父母、子女、祖父母、外祖父母。\n\n### Verification\n结论与法律定义一致，兄弟姐妹确实不属于直系亲属的范围，验证通过。\n</Thought Process>\n\n<Question>\n兄弟姐妹算直系亲属吗?\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n兄弟姐妹是不是直系亲属呢？让我仔细想一下。直系亲属这个词听起来像是法律里的一个专有术语，所以应该有个明确的定义吧。嗯，还是先从法律入手比较可靠。像中国的《婚姻法》和《继承法》应该会有相关的规定，或者其他一些民事法律里面也有可能提到。那我得先确认一下它到底是怎么定义的。<search>直系亲属定义 中国法律</search>\n\n哦，查到了信息，看来直系亲属是指有直接血缘关系的家人，包括父母、子女，还有祖父母和外祖父母。这里没提到兄弟姐妹，嗯……所以兄弟姐妹应该不是法律意义上的直系亲属呢，或许是其他关系，比如旁系亲属？<information>直系亲属通常指具有直接血缘关系的亲属，包括父母、子女以及祖父母、外祖父母。兄弟姐妹不属于直系亲属，而是旁系亲属。</information>\n\n这样解释就更清楚了。直系亲属强调的是直接血缘，而且是上下代的关系，比如有父母—子女这种直接的亲缘链条。但是兄弟姐妹和我之间并没有上下代的血缘关系，他们是和我平等的同代亲属，这种情况法律上称为旁系亲属，挺合理的。\n\n所以结论出来了，兄弟姐妹并不是直系亲属。在法律上的定义，他们属于旁系亲属。嗯，这和我搜到的信息完全一致，看来没问题。\n</Internal Thinking>\n\n<Question>\n兄弟姐妹算直系亲属吗?\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"明确问题范围\",\n      \"content\": \"需要确认兄弟姐妹是否属于法律定义中的直系亲属。直系亲属通常涉及亲属关系的法律定义，因此需要查找相关法律或者规范性文件中直系亲属的定义。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"寻找法律定义\",\n      \"content\": \"为了更清晰地了解在法律中直系亲属的具体定义，应搜索中国法律或相关法规中对“直系亲属”的描述，例如《婚姻法》、《继承法》等。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"搜索法律条文\",\n      \"content\": \"<search>直系亲属定义 中国法律</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析搜索结果\",\n      \"content\": \"<information>直系亲属通常指具有直接血缘关系的亲属，包括父母、子女以及祖父母、外祖父母。兄弟姐妹不属于直系亲属，而是旁系亲属。</information>\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"兄弟姐妹不算直系亲属，而是属于旁系亲属。直系亲属在法律上一般指有直接血缘关系的亲属，如父母、子女、祖父母、外祖父母。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"结论与法律定义一致，兄弟姐妹确实不属于直系亲属的范围，验证通过。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"兄弟姐妹是不是直系亲属呢？让我仔细想一下。直系亲属这个词听起来像是法律里的一个专有术语，所以应该有个明确的定义吧。嗯，还是先从法律入手比较可靠。像中国的《婚姻法》和《继承法》应该会有相关的规定，或者其他一些民事法律里面也有可能提到。那我得先确认一下它到底是怎么定义的。<search>直系亲属定义 中国法律</search>\\n\\n哦，查到了信息，看来直系亲属是指有直接血缘关系的家人，包括父母、子女，还有祖父母和外祖父母。这里没提到兄弟姐妹，嗯……所以兄弟姐妹应该不是法律意义上的直系亲属呢，或许是其他关系，比如旁系亲属？<information>直系亲属通常指具有直接血缘关系的亲属，包括父母、子女以及祖父母、外祖父母。兄弟姐妹不属于直系亲属，而是旁系亲属。</information>\\n\\n这样解释就更清楚了。直系亲属强调的是直接血缘，而且是上下代的关系，比如有父母—子女这种直接的亲缘链条。但是兄弟姐妹和我之间并没有上下代的血缘关系，他们是和我平等的同代亲属，这种情况法律上称为旁系亲属，挺合理的。\\n\\n所以结论出来了，兄弟姐妹并不是直系亲属。在法律上的定义，他们属于旁系亲属。嗯，这和我搜到的信息完全一致，看来没问题。\"\n}\n```",
+    "兄弟姐妹不是直系亲属。在中国法律中，直系亲属通常指与自己有直接血缘关系并处于上下代关系的亲属，包括父母、子女以及祖父母、外祖父母。而兄弟姐妹属于旁系亲属，和自己处于同一代，没有直接上下代的血缘关系。这是法律上的明确分类。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "明确问题范围",
+        "content": "需要确认兄弟姐妹是否属于法律定义中的直系亲属。直系亲属通常涉及亲属关系的法律定义，因此需要查找相关法律或者规范性文件中直系亲属的定义。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "寻找法律定义",
+        "content": "为了更清晰地了解在法律中直系亲属的具体定义，应搜索中国法律或相关法规中对“直系亲属”的描述，例如《婚姻法》、《继承法》等。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "搜索法律条文",
+        "content": "<search>直系亲属定义 中国法律</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "分析搜索结果",
+        "content": "<information>直系亲属通常指具有直接血缘关系的亲属，包括父母、子女以及祖父母、外祖父母。兄弟姐妹不属于直系亲属，而是旁系亲属。</information>"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "兄弟姐妹不算直系亲属，而是属于旁系亲属。直系亲属在法律上一般指有直接血缘关系的亲属，如父母、子女、祖父母、外祖父母。"
+      },
+      {
+        "action": "Verification",
+        "content": "结论与法律定义一致，兄弟姐妹确实不属于直系亲属的范围，验证通过。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "兄弟姐妹是不是直系亲属呢？让我仔细想一下。直系亲属这个词听起来像是法律里的一个专有术语，所以应该有个明确的定义吧。嗯，还是先从法律入手比较可靠。像中国的《婚姻法》和《继承法》应该会有相关的规定，或者其他一些民事法律里面也有可能提到。那我得先确认一下它到底是怎么定义的。<search>直系亲属定义 中国法律</search>\n\n哦，查到了信息，看来直系亲属是指有直接血缘关系的家人，包括父母、子女，还有祖父母和外祖父母。这里没提到兄弟姐妹，嗯……所以兄弟姐妹应该不是法律意义上的直系亲属呢，或许是其他关系，比如旁系亲属？<information>直系亲属通常指具有直接血缘关系的亲属，包括父母、子女以及祖父母、外祖父母。兄弟姐妹不属于直系亲属，而是旁系亲属。</information>\n\n这样解释就更清楚了。直系亲属强调的是直接血缘，而且是上下代的关系，比如有父母—子女这种直接的亲缘链条。但是兄弟姐妹和我之间并没有上下代的血缘关系，他们是和我平等的同代亲属，这种情况法律上称为旁系亲属，挺合理的。\n\n所以结论出来了，兄弟姐妹并不是直系亲属。在法律上的定义，他们属于旁系亲属。嗯，这和我搜到的信息完全一致，看来没问题。",
+  "Response": "兄弟姐妹不是直系亲属。在中国法律中，直系亲属通常指与自己有直接血缘关系并处于上下代关系的亲属，包括父母、子女以及祖父母、外祖父母。而兄弟姐妹属于旁系亲属，和自己处于同一代，没有直接上下代的血缘关系。这是法律上的明确分类。",
+  "Question": "兄弟姐妹算直系亲属吗?"
+}

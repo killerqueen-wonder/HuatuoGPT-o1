@@ -1,0 +1,99 @@
+{
+  "Open-ended Verifiable Question": "申报工伤需要哪些材料",
+  "Ground-True Answer": "(1)工伤认定申请表;\n(2)与用人单位存在劳动关系(包括事实劳动关系)的证明材料;\n(3)医疗诊断证明或者职业病诊断证明书(或者职业病诊断鉴定书)。\n工伤认定申请表应当包括事故发生的时间、地点、原因以及职工伤害程度等基本情况。\n工伤认定申请人提供材料不完整的，社会保险行政部门应当一次性书面告知工伤认定申请人需要补正的全部材料。申请人按照书面告知要求补正材料后，社会保险行政部门应当受理。",
+  "process_id": 9431,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "明确申报工伤的基本流程和必要材料",
+      "content": "申报工伤时，需要提供与工伤相关的证明材料，包括个人信息、事故发生的情况说明、医疗证明等。首先需要确认有哪些具体的法律法规规定了申报工伤所需的材料，以确保提供材料的有效性和合法性。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "检索《工伤保险条例》中关于工伤认定材料的规定",
+      "content": "《工伤保险条例》通常是工伤申报的基础性法规，需查找其中关于‘申报工伤需要的材料’的具体规定。进行搜索以获取明确要求。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "列出必要的材料类别",
+      "content": "<search>工伤保险条例 申报材料</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "分析返回的材料要求",
+      "content": "<information>根据《工伤保险条例》第17条规定，申报工伤需要提交以下材料：1、工伤认定申请表；2、劳动合同或与用人单位存在劳动关系的证明材料；3、工伤事实的相关证明（例如事故报告、目击证人证词）；4、医疗机构出具的初次诊断证明。</information>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "组合材料清单",
+      "content": "根据条例的要求，申请工伤需要准备的材料为：1、工伤认定申请表；2、劳动关系证明；3、工伤事故报告及相关的证明；4、医疗初诊证明或其他疾病诊断的材料。此外，根据实际情况，地方主管部门可能对材料细节提出补充要求。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "申报工伤需要的材料包括：1、填写完整的《工伤认定申请表》；2、劳动合同或与用人单位存在劳动关系的证明材料；3、与工伤事故相关的证据，包括事故发生情况说明、目击证人证词等；4、医疗机构出具的初次诊断证明。此外，根据地方规定，可能需要提交身份证复印件或其他补充证明材料。"
+    },
+    {
+      "action": "Verification",
+      "content": "核对资料清单与《工伤保险条例》的条款要求一致，结论符合法规内容，过程推导合理、完整。为此确认申报工伤的材料无误。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n申报工伤需要哪些材料\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n申报工伤需要的材料包括：1、填写完整的《工伤认定申请表》；2、劳动合同或与用人单位存在劳动关系的证明材料；3、与工伤事故相关的证据，包括事故发生情况说明、目击证人证词等；4、医疗机构出具的初次诊断证明。此外，根据地方规定，可能需要提交身份证复印件或其他补充证明材料。  \n</Model Response>  \n\n<Reference Answer>  \n(1)工伤认定申请表;\n(2)与用人单位存在劳动关系(包括事实劳动关系)的证明材料;\n(3)医疗诊断证明或者职业病诊断证明书(或者职业病诊断鉴定书)。\n工伤认定申请表应当包括事故发生的时间、地点、原因以及职工伤害程度等基本情况。\n工伤认定申请人提供材料不完整的，社会保险行政部门应当一次性书面告知工伤认定申请人需要补正的全部材料。申请人按照书面告知要求补正材料后，社会保险行政部门应当受理。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 明确申报工伤的基本流程和必要材料\n申报工伤时，需要提供与工伤相关的证明材料，包括个人信息、事故发生的情况说明、医疗证明等。首先需要确认有哪些具体的法律法规规定了申报工伤所需的材料，以确保提供材料的有效性和合法性。\n\n### 检索《工伤保险条例》中关于工伤认定材料的规定\n《工伤保险条例》通常是工伤申报的基础性法规，需查找其中关于‘申报工伤需要的材料’的具体规定。进行搜索以获取明确要求。\n\n### 列出必要的材料类别\n<search>工伤保险条例 申报材料</search>\n\n### 分析返回的材料要求\n<information>根据《工伤保险条例》第17条规定，申报工伤需要提交以下材料：1、工伤认定申请表；2、劳动合同或与用人单位存在劳动关系的证明材料；3、工伤事实的相关证明（例如事故报告、目击证人证词）；4、医疗机构出具的初次诊断证明。</information>\n\n### 组合材料清单\n根据条例的要求，申请工伤需要准备的材料为：1、工伤认定申请表；2、劳动关系证明；3、工伤事故报告及相关的证明；4、医疗初诊证明或其他疾病诊断的材料。此外，根据实际情况，地方主管部门可能对材料细节提出补充要求。\n\n### Conclusion\n申报工伤需要的材料包括：1、填写完整的《工伤认定申请表》；2、劳动合同或与用人单位存在劳动关系的证明材料；3、与工伤事故相关的证据，包括事故发生情况说明、目击证人证词等；4、医疗机构出具的初次诊断证明。此外，根据地方规定，可能需要提交身份证复印件或其他补充证明材料。\n\n### Verification\n核对资料清单与《工伤保险条例》的条款要求一致，结论符合法规内容，过程推导合理、完整。为此确认申报工伤的材料无误。\n</Thought Process>\n\n<Question>\n申报工伤需要哪些材料\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n嗯，首先得搞清楚申报工伤需要准备什么材料吧，直接去找相关的法律法规可能是最靠谱的方法。一般来说，《工伤保险条例》应该是个基础性法规，这里面应该会对工伤申报的材料有明确规定。好吧，先去查查。\n\n<search>工伤保险条例 申报材料</search>\n\n找到了！根据搜索结果，看起来是在《工伤保险条例》第17条里说的，这里明确要求了申报工伤需要提交哪些材料。\n\n<information>根据《工伤保险条例》第17条规定，申报工伤需要提交以下材料：1、工伤认定申请表；2、劳动合同或与用人单位存在劳动关系的证明材料；3、工伤事实的相关证明（例如事故报告、目击证人证词）；4、医疗机构出具的初次诊断证明。</information>\n\n哦，那就简单了，整理下这些内容吧。首先，需要一份《工伤认定申请表》，这个表格可能需要从主管部门下载或者去现场领取，得确认填写完整。第二，还需要劳动合同或者能证明确实和单位存在劳动关系的材料，万一没有劳动合同的话，估计需要提供其他证明，比如工资单、工牌之类的东西。\n\n再就是工伤事实的相关证明，这个可能是最关键的一环。包括事故发生的情况说明，估计还得有目击证人的证词来补充，如果有事故的具体记录比如监控视频，那就更好了。另外最后肯定离不开医疗机构的初诊证明，有时候医生可能还会给出一些检查报告。这些东西都得妥善先备好。\n\n说起来，还得考虑一下地方的具体要求，有些地区的主管部门可能会要求额外补充材料，比如身份证复印件或者单位盖章的证明之类的，这得提前问清楚。嗯，总结一下，清单里的主要内容应该是：1、《工伤认定申请表》；2、劳动合同或者劳动关系证明材料；3、工伤事故相关证明（比如事故报告、目击证人证词）；4、医疗诊断证明。然后根据地方政策看看是不是还得补充材料。\n\n这么看核对一下条例里的要求，基本清单是符合规定的，准备材料也算是一步步清晰了。申报工伤流程应该是没太大问题了，至少材料方面算是完整了。\n</Internal Thinking>\n\n<Question>\n申报工伤需要哪些材料\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"明确申报工伤的基本流程和必要材料\",\n      \"content\": \"申报工伤时，需要提供与工伤相关的证明材料，包括个人信息、事故发生的情况说明、医疗证明等。首先需要确认有哪些具体的法律法规规定了申报工伤所需的材料，以确保提供材料的有效性和合法性。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"检索《工伤保险条例》中关于工伤认定材料的规定\",\n      \"content\": \"《工伤保险条例》通常是工伤申报的基础性法规，需查找其中关于‘申报工伤需要的材料’的具体规定。进行搜索以获取明确要求。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"列出必要的材料类别\",\n      \"content\": \"<search>工伤保险条例 申报材料</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析返回的材料要求\",\n      \"content\": \"<information>根据《工伤保险条例》第17条规定，申报工伤需要提交以下材料：1、工伤认定申请表；2、劳动合同或与用人单位存在劳动关系的证明材料；3、工伤事实的相关证明（例如事故报告、目击证人证词）；4、医疗机构出具的初次诊断证明。</information>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"组合材料清单\",\n      \"content\": \"根据条例的要求，申请工伤需要准备的材料为：1、工伤认定申请表；2、劳动关系证明；3、工伤事故报告及相关的证明；4、医疗初诊证明或其他疾病诊断的材料。此外，根据实际情况，地方主管部门可能对材料细节提出补充要求。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"申报工伤需要的材料包括：1、填写完整的《工伤认定申请表》；2、劳动合同或与用人单位存在劳动关系的证明材料；3、与工伤事故相关的证据，包括事故发生情况说明、目击证人证词等；4、医疗机构出具的初次诊断证明。此外，根据地方规定，可能需要提交身份证复印件或其他补充证明材料。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"核对资料清单与《工伤保险条例》的条款要求一致，结论符合法规内容，过程推导合理、完整。为此确认申报工伤的材料无误。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"嗯，首先得搞清楚申报工伤需要准备什么材料吧，直接去找相关的法律法规可能是最靠谱的方法。一般来说，《工伤保险条例》应该是个基础性法规，这里面应该会对工伤申报的材料有明确规定。好吧，先去查查。\\n\\n<search>工伤保险条例 申报材料</search>\\n\\n找到了！根据搜索结果，看起来是在《工伤保险条例》第17条里说的，这里明确要求了申报工伤需要提交哪些材料。\\n\\n<information>根据《工伤保险条例》第17条规定，申报工伤需要提交以下材料：1、工伤认定申请表；2、劳动合同或与用人单位存在劳动关系的证明材料；3、工伤事实的相关证明（例如事故报告、目击证人证词）；4、医疗机构出具的初次诊断证明。</information>\\n\\n哦，那就简单了，整理下这些内容吧。首先，需要一份《工伤认定申请表》，这个表格可能需要从主管部门下载或者去现场领取，得确认填写完整。第二，还需要劳动合同或者能证明确实和单位存在劳动关系的材料，万一没有劳动合同的话，估计需要提供其他证明，比如工资单、工牌之类的东西。\\n\\n再就是工伤事实的相关证明，这个可能是最关键的一环。包括事故发生的情况说明，估计还得有目击证人的证词来补充，如果有事故的具体记录比如监控视频，那就更好了。另外最后肯定离不开医疗机构的初诊证明，有时候医生可能还会给出一些检查报告。这些东西都得妥善先备好。\\n\\n说起来，还得考虑一下地方的具体要求，有些地区的主管部门可能会要求额外补充材料，比如身份证复印件或者单位盖章的证明之类的，这得提前问清楚。嗯，总结一下，清单里的主要内容应该是：1、《工伤认定申请表》；2、劳动合同或者劳动关系证明材料；3、工伤事故相关证明（比如事故报告、目击证人证词）；4、医疗诊断证明。然后根据地方政策看看是不是还得补充材料。\\n\\n这么看核对一下条例里的要求，基本清单是符合规定的，准备材料也算是一步步清晰了。申报工伤流程应该是没太大问题了，至少材料方面算是完整了。\"\n}\n```",
+    "申报工伤需要提交以下主要材料：\n\n1. **工伤认定申请表**：可以在当地工伤保险主管部门下载或领取，需填写完整并规范。\n   \n2. **劳动合同或与用人单位存在劳动关系的证明材料**：包括劳动合同、工资单、工作证、工牌等能够证明劳动关系的文件。如果没有劳动合同，可提供其他能够证明劳动关系的证据。\n   \n3. **工伤事故相关证明材料**：包括事故发生情况说明、目击证人证词、事故报告、现场记录或监控视频等，用于具体说明工伤事故的发生经过和事实。\n   \n4. **医疗机构出具的初次诊断证明**：尽量提供医院开具的伤情诊断书或其他相关医疗记录，以说明受伤情况与事故之间的联系。\n\n此外，部分地区可能根据地方规定要求提交其他补充材料，例如身份证复印件、单位盖章证明等。因此建议提前咨询所在地工伤保险主管部门，确保材料齐全。\n\n根据《工伤保险条例》第17条的规定，上述材料是工伤认定中的基本要求，提前准备好这些文件可以提高申报效率。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "明确申报工伤的基本流程和必要材料",
+        "content": "申报工伤时，需要提供与工伤相关的证明材料，包括个人信息、事故发生的情况说明、医疗证明等。首先需要确认有哪些具体的法律法规规定了申报工伤所需的材料，以确保提供材料的有效性和合法性。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "检索《工伤保险条例》中关于工伤认定材料的规定",
+        "content": "《工伤保险条例》通常是工伤申报的基础性法规，需查找其中关于‘申报工伤需要的材料’的具体规定。进行搜索以获取明确要求。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "列出必要的材料类别",
+        "content": "<search>工伤保险条例 申报材料</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "分析返回的材料要求",
+        "content": "<information>根据《工伤保险条例》第17条规定，申报工伤需要提交以下材料：1、工伤认定申请表；2、劳动合同或与用人单位存在劳动关系的证明材料；3、工伤事实的相关证明（例如事故报告、目击证人证词）；4、医疗机构出具的初次诊断证明。</information>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "组合材料清单",
+        "content": "根据条例的要求，申请工伤需要准备的材料为：1、工伤认定申请表；2、劳动关系证明；3、工伤事故报告及相关的证明；4、医疗初诊证明或其他疾病诊断的材料。此外，根据实际情况，地方主管部门可能对材料细节提出补充要求。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "申报工伤需要的材料包括：1、填写完整的《工伤认定申请表》；2、劳动合同或与用人单位存在劳动关系的证明材料；3、与工伤事故相关的证据，包括事故发生情况说明、目击证人证词等；4、医疗机构出具的初次诊断证明。此外，根据地方规定，可能需要提交身份证复印件或其他补充证明材料。"
+      },
+      {
+        "action": "Verification",
+        "content": "核对资料清单与《工伤保险条例》的条款要求一致，结论符合法规内容，过程推导合理、完整。为此确认申报工伤的材料无误。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "嗯，首先得搞清楚申报工伤需要准备什么材料吧，直接去找相关的法律法规可能是最靠谱的方法。一般来说，《工伤保险条例》应该是个基础性法规，这里面应该会对工伤申报的材料有明确规定。好吧，先去查查。\n\n<search>工伤保险条例 申报材料</search>\n\n找到了！根据搜索结果，看起来是在《工伤保险条例》第17条里说的，这里明确要求了申报工伤需要提交哪些材料。\n\n<information>根据《工伤保险条例》第17条规定，申报工伤需要提交以下材料：1、工伤认定申请表；2、劳动合同或与用人单位存在劳动关系的证明材料；3、工伤事实的相关证明（例如事故报告、目击证人证词）；4、医疗机构出具的初次诊断证明。</information>\n\n哦，那就简单了，整理下这些内容吧。首先，需要一份《工伤认定申请表》，这个表格可能需要从主管部门下载或者去现场领取，得确认填写完整。第二，还需要劳动合同或者能证明确实和单位存在劳动关系的材料，万一没有劳动合同的话，估计需要提供其他证明，比如工资单、工牌之类的东西。\n\n再就是工伤事实的相关证明，这个可能是最关键的一环。包括事故发生的情况说明，估计还得有目击证人的证词来补充，如果有事故的具体记录比如监控视频，那就更好了。另外最后肯定离不开医疗机构的初诊证明，有时候医生可能还会给出一些检查报告。这些东西都得妥善先备好。\n\n说起来，还得考虑一下地方的具体要求，有些地区的主管部门可能会要求额外补充材料，比如身份证复印件或者单位盖章的证明之类的，这得提前问清楚。嗯，总结一下，清单里的主要内容应该是：1、《工伤认定申请表》；2、劳动合同或者劳动关系证明材料；3、工伤事故相关证明（比如事故报告、目击证人证词）；4、医疗诊断证明。然后根据地方政策看看是不是还得补充材料。\n\n这么看核对一下条例里的要求，基本清单是符合规定的，准备材料也算是一步步清晰了。申报工伤流程应该是没太大问题了，至少材料方面算是完整了。",
+  "Response": "申报工伤需要提交以下主要材料：\n\n1. **工伤认定申请表**：可以在当地工伤保险主管部门下载或领取，需填写完整并规范。\n   \n2. **劳动合同或与用人单位存在劳动关系的证明材料**：包括劳动合同、工资单、工作证、工牌等能够证明劳动关系的文件。如果没有劳动合同，可提供其他能够证明劳动关系的证据。\n   \n3. **工伤事故相关证明材料**：包括事故发生情况说明、目击证人证词、事故报告、现场记录或监控视频等，用于具体说明工伤事故的发生经过和事实。\n   \n4. **医疗机构出具的初次诊断证明**：尽量提供医院开具的伤情诊断书或其他相关医疗记录，以说明受伤情况与事故之间的联系。\n\n此外，部分地区可能根据地方规定要求提交其他补充材料，例如身份证复印件、单位盖章证明等。因此建议提前咨询所在地工伤保险主管部门，确保材料齐全。\n\n根据《工伤保险条例》第17条的规定，上述材料是工伤认定中的基本要求，提前准备好这些文件可以提高申报效率。",
+  "Question": "申报工伤需要哪些材料"
+}

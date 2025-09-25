@@ -1,0 +1,99 @@
+{
+  "Open-ended Verifiable Question": "安排未成年人从事矿井作业，是否违法？",
+  "Ground-True Answer": "根据《未成年人保护法》规定，未满18周岁的为未成年人。对于年满16周岁不满18周岁的未成年人也可参加工作，但是用人单位对其应依法予以特殊保护。\n因为未成年工正处在生产发育的阶段，因此身体素质是相对较弱的，同时处于应接受义务教育时期。所以，国家对于未成年工的工作环境、工作待遇等予以更高要求的特殊保护，包括限制就业年龄、限制工作时间、上岗前培训、禁止从事特定劳动、必须定期健康检查以及用人单位应承担的严重后果等。\n安排未成年人从事矿井作业违反了《未成年工特殊保护规定》第3条第1款第8项、第15项的规定，因此用人单位属于违法行为。\n法律依据：《中华人民共和国劳动法》\n第五十八条　国家对女职工和未成年工实行特殊劳动保护。\n未成年工是指年满十六周岁未满十八周岁的劳动者。\n第六十四条　不得安排未成年工从事矿山井下、有毒有害、国家规定的第四级体力劳动强度的劳动和其他禁忌从事的劳动。\n《未成年工特殊保护规定》\n第三条 用人单位不得安排未成年工从事以下范围的劳动：\n（一）《生产性粉尘作业危害程度分级》国家标准中第一级以上的接尘作业；\n（二）《有毒作业分级》国家标准中第一级以上的有毒作业；\n（三）《高处作业分级》国家标准中第二级以上的高处作业；\n（四）《冷水作业分级》国家标准中第二级以上的冷水作业；\n（五）《高温作业分级》国家标准中第三级以上的高温作业；\n（六）《低温作业分级》国家标准中第三级以上的低温作业；\n（七）《体力劳动强度分级》国家标准中第四级体力劳动强度的作业；\n（八）矿山井下及矿山地面采石作业；\n（九）森林业中的伐木、流放及守林作业；\n（十）工作场所接触放射性物质的作业；\n（十一）有易燃易爆、化学性烧伤和热烧伤等危险性大的作业；\n（十二）地质勘探和资源勘探的野外作业；\n（十三）潜水、涵洞、涵道作业和海拔三千米以上的高原作业（不包括世居高原者）；\n（十四）连续负重每小时在六次以上并每次超过２０公斤，间断负重每次超过２５公斤的作业；\n（十五）使用凿岩机、捣固机、气镐、气铲、铆钉机、电锤的作业；\n（十六）工作中需要长时间保持低头、弯腰、上举、下蹲等强迫体位和动作频率每分钟大于五十次的流水线作业；\n（十七）锅炉司炉。",
+  "process_id": 4392,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "确定问题范围",
+      "content": "该问题涉及未成年人劳动保护，尤其是在矿井作业领域，矿井作业属于高危行业。因此需要明确相关法律法规是否允许安排未成年人从事此类工作。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "搜索适用法律",
+      "content": "需要寻找与未成年人劳动保护和矿井作业相关的法律条文，以便明确是否合法。重点应放在中国现行法律框架是否对此有相关规定。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "搜索关键法律",
+      "content": "搜索可能相关的法律，例如《中华人民共和国未成年人保护法》以及《中华人民共和国劳动法》中关于未成年劳动者的规定。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "确认法律内容",
+      "content": "通过法律条款确认是否存在禁止未成年人从事矿井作业的具体规定。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "分析法律责任",
+      "content": "如果法律明确禁止安排未成年人从事矿井作业，则此类行为属于违法，应承担相应法律责任。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "依据《中华人民共和国劳动法》第58条和《未成年人保护法》等相关法律规定，明确禁止安排未成年人从事矿井作业，违反此规定属于违法行为。"
+    },
+    {
+      "action": "Verification",
+      "content": "通过确认法律规定的内容可以明确，安排未成年人从事矿井作业属于违法行为，此结论正确。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n安排未成年人从事矿井作业，是否违法？\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n依据《中华人民共和国劳动法》第58条和《未成年人保护法》等相关法律规定，明确禁止安排未成年人从事矿井作业，违反此规定属于违法行为。  \n</Model Response>  \n\n<Reference Answer>  \n根据《未成年人保护法》规定，未满18周岁的为未成年人。对于年满16周岁不满18周岁的未成年人也可参加工作，但是用人单位对其应依法予以特殊保护。\n因为未成年工正处在生产发育的阶段，因此身体素质是相对较弱的，同时处于应接受义务教育时期。所以，国家对于未成年工的工作环境、工作待遇等予以更高要求的特殊保护，包括限制就业年龄、限制工作时间、上岗前培训、禁止从事特定劳动、必须定期健康检查以及用人单位应承担的严重后果等。\n安排未成年人从事矿井作业违反了《未成年工特殊保护规定》第3条第1款第8项、第15项的规定，因此用人单位属于违法行为。\n法律依据：《中华人民共和国劳动法》\n第五十八条　国家对女职工和未成年工实行特殊劳动保护。\n未成年工是指年满十六周岁未满十八周岁的劳动者。\n第六十四条　不得安排未成年工从事矿山井下、有毒有害、国家规定的第四级体力劳动强度的劳动和其他禁忌从事的劳动。\n《未成年工特殊保护规定》\n第三条 用人单位不得安排未成年工从事以下范围的劳动：\n（一）《生产性粉尘作业危害程度分级》国家标准中第一级以上的接尘作业；\n（二）《有毒作业分级》国家标准中第一级以上的有毒作业；\n（三）《高处作业分级》国家标准中第二级以上的高处作业；\n（四）《冷水作业分级》国家标准中第二级以上的冷水作业；\n（五）《高温作业分级》国家标准中第三级以上的高温作业；\n（六）《低温作业分级》国家标准中第三级以上的低温作业；\n（七）《体力劳动强度分级》国家标准中第四级体力劳动强度的作业；\n（八）矿山井下及矿山地面采石作业；\n（九）森林业中的伐木、流放及守林作业；\n（十）工作场所接触放射性物质的作业；\n（十一）有易燃易爆、化学性烧伤和热烧伤等危险性大的作业；\n（十二）地质勘探和资源勘探的野外作业；\n（十三）潜水、涵洞、涵道作业和海拔三千米以上的高原作业（不包括世居高原者）；\n（十四）连续负重每小时在六次以上并每次超过２０公斤，间断负重每次超过２５公斤的作业；\n（十五）使用凿岩机、捣固机、气镐、气铲、铆钉机、电锤的作业；\n（十六）工作中需要长时间保持低头、弯腰、上举、下蹲等强迫体位和动作频率每分钟大于五十次的流水线作业；\n（十七）锅炉司炉。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 确定问题范围\n该问题涉及未成年人劳动保护，尤其是在矿井作业领域，矿井作业属于高危行业。因此需要明确相关法律法规是否允许安排未成年人从事此类工作。\n\n### 搜索适用法律\n需要寻找与未成年人劳动保护和矿井作业相关的法律条文，以便明确是否合法。重点应放在中国现行法律框架是否对此有相关规定。\n\n### 搜索关键法律\n搜索可能相关的法律，例如《中华人民共和国未成年人保护法》以及《中华人民共和国劳动法》中关于未成年劳动者的规定。\n\n### 确认法律内容\n通过法律条款确认是否存在禁止未成年人从事矿井作业的具体规定。\n\n### 分析法律责任\n如果法律明确禁止安排未成年人从事矿井作业，则此类行为属于违法，应承担相应法律责任。\n\n### Conclusion\n依据《中华人民共和国劳动法》第58条和《未成年人保护法》等相关法律规定，明确禁止安排未成年人从事矿井作业，违反此规定属于违法行为。\n\n### Verification\n通过确认法律规定的内容可以明确，安排未成年人从事矿井作业属于违法行为，此结论正确。\n</Thought Process>\n\n<Question>\n安排未成年人从事矿井作业，是否违法？\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n嗯，我需要先搞清楚安排未成年人从事矿井作业是不是合法的，这个问题应该跟劳动法和未成年人保护有关吧。矿井作业听起来很危险，而且未成年人一般需要特别保护，所以感觉上可能是禁止的，但还是需要看法律具体怎么说。\n\n首先想到的是《劳动法》和《未成年人保护法》，这两个法律对未成年人的劳动应该会有规定。<search>《中华人民共和国劳动法》、《未成年人保护法》</search>\n\n找到一些信息啦。<information>《劳动法》第58条有提到保护未成年工人的条款，上面明确规定不得安排未成年工从事矿井作业。此外，《未成年人保护法》也清楚地对未成年人的身心健康和工作做了保护性规定，确保他们不会从事明显有危险的工作。</information>\n\n所以法律里面确确实实明确禁止未成年人从事矿井作业，那安排他们这样做肯定是违法的。这种违法行为可能还会涉及对企业或负责人追责，比如罚款或者其他行政处罚。\n\n另外我在想，这样的规定应该是从保护未成年人安全出发的。矿井本身事故率比较高，还有可能接触到有害物质，对未成年人的身体发育和心理健康都有影响，所以禁止应该是合理的。\n\n最后可以确认，安排未成年人从事矿井作业绝对是违法的，这已经被明确写在法律条文里。嗯，这个结论靠谱。\n</Internal Thinking>\n\n<Question>\n安排未成年人从事矿井作业，是否违法？\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"确定问题范围\",\n      \"content\": \"该问题涉及未成年人劳动保护，尤其是在矿井作业领域，矿井作业属于高危行业。因此需要明确相关法律法规是否允许安排未成年人从事此类工作。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"搜索适用法律\",\n      \"content\": \"需要寻找与未成年人劳动保护和矿井作业相关的法律条文，以便明确是否合法。重点应放在中国现行法律框架是否对此有相关规定。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"搜索关键法律\",\n      \"content\": \"搜索可能相关的法律，例如《中华人民共和国未成年人保护法》以及《中华人民共和国劳动法》中关于未成年劳动者的规定。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"确认法律内容\",\n      \"content\": \"通过法律条款确认是否存在禁止未成年人从事矿井作业的具体规定。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析法律责任\",\n      \"content\": \"如果法律明确禁止安排未成年人从事矿井作业，则此类行为属于违法，应承担相应法律责任。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"依据《中华人民共和国劳动法》第58条和《未成年人保护法》等相关法律规定，明确禁止安排未成年人从事矿井作业，违反此规定属于违法行为。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"通过确认法律规定的内容可以明确，安排未成年人从事矿井作业属于违法行为，此结论正确。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"嗯，我需要先搞清楚安排未成年人从事矿井作业是不是合法的，这个问题应该跟劳动法和未成年人保护有关吧。矿井作业听起来很危险，而且未成年人一般需要特别保护，所以感觉上可能是禁止的，但还是需要看法律具体怎么说。\\n\\n首先想到的是《劳动法》和《未成年人保护法》，这两个法律对未成年人的劳动应该会有规定。<search>《中华人民共和国劳动法》、《未成年人保护法》</search>\\n\\n找到一些信息啦。<information>《劳动法》第58条有提到保护未成年工人的条款，上面明确规定不得安排未成年工从事矿井作业。此外，《未成年人保护法》也清楚地对未成年人的身心健康和工作做了保护性规定，确保他们不会从事明显有危险的工作。</information>\\n\\n所以法律里面确确实实明确禁止未成年人从事矿井作业，那安排他们这样做肯定是违法的。这种违法行为可能还会涉及对企业或负责人追责，比如罚款或者其他行政处罚。\\n\\n另外我在想，这样的规定应该是从保护未成年人安全出发的。矿井本身事故率比较高，还有可能接触到有害物质，对未成年人的身体发育和心理健康都有影响，所以禁止应该是合理的。\\n\\n最后可以确认，安排未成年人从事矿井作业绝对是违法的，这已经被明确写在法律条文里。嗯，这个结论靠谱。\"\n}\n```",
+    "安排未成年人从事矿井作业是违法的。\n\n根据《中华人民共和国劳动法》第58条的规定，明确禁止安排未成年工从事矿井作业。未成年工是指年满16周岁但未满18周岁的劳动者。此外，《中华人民共和国未成年人保护法》也对未成年人的身心健康给予特别保护，禁止安排未成年人从事存在明显危险性或者对身体发育可能造成不良影响的工作。这些法律条文的制定，主要是为了保障未成年人的安全和健康，避免他们在危险作业环境中受到伤害。\n\n因此，无论出于何种原因，安排未成年人从事矿井作业都是违反法律的行为，并且相关责任人可能面临相应的行政处罚或其他法律后果。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "确定问题范围",
+        "content": "该问题涉及未成年人劳动保护，尤其是在矿井作业领域，矿井作业属于高危行业。因此需要明确相关法律法规是否允许安排未成年人从事此类工作。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "搜索适用法律",
+        "content": "需要寻找与未成年人劳动保护和矿井作业相关的法律条文，以便明确是否合法。重点应放在中国现行法律框架是否对此有相关规定。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "搜索关键法律",
+        "content": "搜索可能相关的法律，例如《中华人民共和国未成年人保护法》以及《中华人民共和国劳动法》中关于未成年劳动者的规定。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "确认法律内容",
+        "content": "通过法律条款确认是否存在禁止未成年人从事矿井作业的具体规定。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "分析法律责任",
+        "content": "如果法律明确禁止安排未成年人从事矿井作业，则此类行为属于违法，应承担相应法律责任。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "依据《中华人民共和国劳动法》第58条和《未成年人保护法》等相关法律规定，明确禁止安排未成年人从事矿井作业，违反此规定属于违法行为。"
+      },
+      {
+        "action": "Verification",
+        "content": "通过确认法律规定的内容可以明确，安排未成年人从事矿井作业属于违法行为，此结论正确。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "嗯，我需要先搞清楚安排未成年人从事矿井作业是不是合法的，这个问题应该跟劳动法和未成年人保护有关吧。矿井作业听起来很危险，而且未成年人一般需要特别保护，所以感觉上可能是禁止的，但还是需要看法律具体怎么说。\n\n首先想到的是《劳动法》和《未成年人保护法》，这两个法律对未成年人的劳动应该会有规定。<search>《中华人民共和国劳动法》、《未成年人保护法》</search>\n\n找到一些信息啦。<information>《劳动法》第58条有提到保护未成年工人的条款，上面明确规定不得安排未成年工从事矿井作业。此外，《未成年人保护法》也清楚地对未成年人的身心健康和工作做了保护性规定，确保他们不会从事明显有危险的工作。</information>\n\n所以法律里面确确实实明确禁止未成年人从事矿井作业，那安排他们这样做肯定是违法的。这种违法行为可能还会涉及对企业或负责人追责，比如罚款或者其他行政处罚。\n\n另外我在想，这样的规定应该是从保护未成年人安全出发的。矿井本身事故率比较高，还有可能接触到有害物质，对未成年人的身体发育和心理健康都有影响，所以禁止应该是合理的。\n\n最后可以确认，安排未成年人从事矿井作业绝对是违法的，这已经被明确写在法律条文里。嗯，这个结论靠谱。",
+  "Response": "安排未成年人从事矿井作业是违法的。\n\n根据《中华人民共和国劳动法》第58条的规定，明确禁止安排未成年工从事矿井作业。未成年工是指年满16周岁但未满18周岁的劳动者。此外，《中华人民共和国未成年人保护法》也对未成年人的身心健康给予特别保护，禁止安排未成年人从事存在明显危险性或者对身体发育可能造成不良影响的工作。这些法律条文的制定，主要是为了保障未成年人的安全和健康，避免他们在危险作业环境中受到伤害。\n\n因此，无论出于何种原因，安排未成年人从事矿井作业都是违反法律的行为，并且相关责任人可能面临相应的行政处罚或其他法律后果。",
+  "Question": "安排未成年人从事矿井作业，是否违法？"
+}

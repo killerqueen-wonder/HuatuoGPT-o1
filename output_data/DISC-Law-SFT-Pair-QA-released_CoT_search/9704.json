@@ -1,0 +1,89 @@
+{
+  "Open-ended Verifiable Question": "工伤认定需要什么材料",
+  "Ground-True Answer": "工伤认定材料需要以下材料：\n1.工伤认定申请表；\n2.与用人单位存在劳动关系（包括事实劳动关系）证明材料；\n3.医疗诊断证明或职业病诊断证明书（或职业病诊断鉴定书）。\n工伤认定书一般有正本三份，一份交给工伤职工本人，一份交给用人单位，一份劳动部门存档。\n《工伤保险条例》第十七条\n职工发生事故伤害或者按照职业病防治法规定被诊断、鉴定为职业病，所在单位应当自事故伤害发生之日或者被诊断、鉴定为职业病之日起30日内，向统筹地区社会保险行政部门提出工伤认定申请。遇有特殊情况，经报社会保险行政部门同意，申请时限可以适当延长。\n用人单位未按前款规定提出工伤认定申请的，工伤职工或者其直系亲属、工会组织在事故伤害发生之日或者被诊断、鉴定为职业病之日起1年内，可以直接向用人单位所在地统筹地区劳动保障行政部门提出工伤认定申请。",
+  "process_id": 9704,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "明确工伤认定所需材料的问题范围",
+      "content": "工伤认定主要是在劳动者发生事故或职业病后，由相关单位对事件是否属于工伤进行确认。因此需要明确哪些材料可以支持该认证过程，可能涉及事故发生的环境、个人信息和相关证据。下一步需要查找具体法律法规的要求。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "查找相关法律法规",
+      "content": "工伤认定相关材料的要求一般在《工伤保险条例》中有所规定，需要找到该条例中对于申请工伤认定所需材料的具体条款。<search>工伤保险条例</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "提取搜索到的法律信息",
+      "content": "<information>根据《工伤保险条例》第17条，有关工伤认定申请需要提交：工伤认定申请表、劳动合同文本或者其他劳动关系证明资料、医疗诊断证明，以及事故发生的相关材料如现场证据。</information>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "整合信息并总结材料列表",
+      "content": "根据《工伤保险条例》第17条，申请工伤认定一般需要以下材料：1. 工伤认定申请表；2. 用人单位与劳动者的劳动合同或劳动关系证明；3. 医疗诊断证明书；4. 与事故发生相关的证据，包括现场记录、目击证明等。上述材料主要用于确认劳动关系和事故性质。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "工伤认定需要提交以下材料：1. 工伤认定申请表；2. 劳动合同或其他证明劳动关系的材料；3. 医疗诊断证明书；4. 相关事故证据，包括现场证据及目击证明等，这些材料有助于证明事故的真实性与其工伤性质。"
+    },
+    {
+      "action": "Verification",
+      "content": "结论来源于《工伤保险条例》第17条相关规定，材料清单符合法律规定要求，因此结论正确，无需进一步修正。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n工伤认定需要什么材料\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n工伤认定需要提交以下材料：1. 工伤认定申请表；2. 劳动合同或其他证明劳动关系的材料；3. 医疗诊断证明书；4. 相关事故证据，包括现场证据及目击证明等，这些材料有助于证明事故的真实性与其工伤性质。  \n</Model Response>  \n\n<Reference Answer>  \n工伤认定材料需要以下材料：\n1.工伤认定申请表；\n2.与用人单位存在劳动关系（包括事实劳动关系）证明材料；\n3.医疗诊断证明或职业病诊断证明书（或职业病诊断鉴定书）。\n工伤认定书一般有正本三份，一份交给工伤职工本人，一份交给用人单位，一份劳动部门存档。\n《工伤保险条例》第十七条\n职工发生事故伤害或者按照职业病防治法规定被诊断、鉴定为职业病，所在单位应当自事故伤害发生之日或者被诊断、鉴定为职业病之日起30日内，向统筹地区社会保险行政部门提出工伤认定申请。遇有特殊情况，经报社会保险行政部门同意，申请时限可以适当延长。\n用人单位未按前款规定提出工伤认定申请的，工伤职工或者其直系亲属、工会组织在事故伤害发生之日或者被诊断、鉴定为职业病之日起1年内，可以直接向用人单位所在地统筹地区劳动保障行政部门提出工伤认定申请。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 明确工伤认定所需材料的问题范围\n工伤认定主要是在劳动者发生事故或职业病后，由相关单位对事件是否属于工伤进行确认。因此需要明确哪些材料可以支持该认证过程，可能涉及事故发生的环境、个人信息和相关证据。下一步需要查找具体法律法规的要求。\n\n### 查找相关法律法规\n工伤认定相关材料的要求一般在《工伤保险条例》中有所规定，需要找到该条例中对于申请工伤认定所需材料的具体条款。<search>工伤保险条例</search>\n\n### 提取搜索到的法律信息\n<information>根据《工伤保险条例》第17条，有关工伤认定申请需要提交：工伤认定申请表、劳动合同文本或者其他劳动关系证明资料、医疗诊断证明，以及事故发生的相关材料如现场证据。</information>\n\n### 整合信息并总结材料列表\n根据《工伤保险条例》第17条，申请工伤认定一般需要以下材料：1. 工伤认定申请表；2. 用人单位与劳动者的劳动合同或劳动关系证明；3. 医疗诊断证明书；4. 与事故发生相关的证据，包括现场记录、目击证明等。上述材料主要用于确认劳动关系和事故性质。\n\n### Conclusion\n工伤认定需要提交以下材料：1. 工伤认定申请表；2. 劳动合同或其他证明劳动关系的材料；3. 医疗诊断证明书；4. 相关事故证据，包括现场证据及目击证明等，这些材料有助于证明事故的真实性与其工伤性质。\n\n### Verification\n结论来源于《工伤保险条例》第17条相关规定，材料清单符合法律规定要求，因此结论正确，无需进一步修正。\n</Thought Process>\n\n<Question>\n工伤认定需要什么材料\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n工伤认定需要哪些材料呢？仔细想想，这应该和劳动者受伤后如何证明是工伤有关。工伤认定好像是一个需要通过相关单位确认的步骤，那肯定需要一些材料来支持，比如能够证明事故发生的地方和原因，还有一些个人的信息和相关证据之类的东西。嗯，我得更具体地确认一下，这些材料的具体要求应该写在相关的法律法规里。\n\n现在能想到的相关法律法规可能是《工伤保险条例》，因为这应该是处理工伤问题的主要依据。嗯，那我就去查一下，看看这个条例里面有没有明确规定工伤认定需要哪些材料。<search>工伤保险条例</search>\n\n找到了，根据<information>《工伤保险条例》第17条</information>的内容，这里面提到，要申请工伤认定，需要准备工伤认定申请表、劳动合同或者其他劳动关系证明文件、医疗机构出具的诊断证明，还有一些能证明工伤事故真实性的材料，比如事故现场的记录、目击者的证明等等。嗯，看来这个信息挺有帮助，能让我更有把握地整理材料清单了。\n\n好，那就把这些材料清单整理一下：首先，需要工伤认定申请表，这应该是整个申请过程的基础；其次，用人单位和劳动者之间的劳动合同或者能证明他们存在劳动关系的文件很重要，不然无法证明是工作相关的受伤；然后，得有一个由医院或者医生开具的医疗诊断证明书，用于说明受伤的情况；最后，还需要一些与事故发生相关的直接证据，比如事故现场的一些记录或者有第三方目击者的证明之类的东西。\n\n整理清楚了，基本可以确定提供以上这些材料，可以满足法律的要求，而且这些材料能够很好地帮助认定事故是否符合工伤的条件。我刚刚的分析是基于《工伤保险条例》第17条的内容，同时也结合了逻辑来推断需要哪些材料，应该没有问题。\n</Internal Thinking>\n\n<Question>\n工伤认定需要什么材料\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"明确工伤认定所需材料的问题范围\",\n      \"content\": \"工伤认定主要是在劳动者发生事故或职业病后，由相关单位对事件是否属于工伤进行确认。因此需要明确哪些材料可以支持该认证过程，可能涉及事故发生的环境、个人信息和相关证据。下一步需要查找具体法律法规的要求。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"查找相关法律法规\",\n      \"content\": \"工伤认定相关材料的要求一般在《工伤保险条例》中有所规定，需要找到该条例中对于申请工伤认定所需材料的具体条款。<search>工伤保险条例</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"提取搜索到的法律信息\",\n      \"content\": \"<information>根据《工伤保险条例》第17条，有关工伤认定申请需要提交：工伤认定申请表、劳动合同文本或者其他劳动关系证明资料、医疗诊断证明，以及事故发生的相关材料如现场证据。</information>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"整合信息并总结材料列表\",\n      \"content\": \"根据《工伤保险条例》第17条，申请工伤认定一般需要以下材料：1. 工伤认定申请表；2. 用人单位与劳动者的劳动合同或劳动关系证明；3. 医疗诊断证明书；4. 与事故发生相关的证据，包括现场记录、目击证明等。上述材料主要用于确认劳动关系和事故性质。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"工伤认定需要提交以下材料：1. 工伤认定申请表；2. 劳动合同或其他证明劳动关系的材料；3. 医疗诊断证明书；4. 相关事故证据，包括现场证据及目击证明等，这些材料有助于证明事故的真实性与其工伤性质。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"结论来源于《工伤保险条例》第17条相关规定，材料清单符合法律规定要求，因此结论正确，无需进一步修正。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"工伤认定需要哪些材料呢？仔细想想，这应该和劳动者受伤后如何证明是工伤有关。工伤认定好像是一个需要通过相关单位确认的步骤，那肯定需要一些材料来支持，比如能够证明事故发生的地方和原因，还有一些个人的信息和相关证据之类的东西。嗯，我得更具体地确认一下，这些材料的具体要求应该写在相关的法律法规里。\\n\\n现在能想到的相关法律法规可能是《工伤保险条例》，因为这应该是处理工伤问题的主要依据。嗯，那我就去查一下，看看这个条例里面有没有明确规定工伤认定需要哪些材料。<search>工伤保险条例</search>\\n\\n找到了，根据<information>《工伤保险条例》第17条</information>的内容，这里面提到，要申请工伤认定，需要准备工伤认定申请表、劳动合同或者其他劳动关系证明文件、医疗机构出具的诊断证明，还有一些能证明工伤事故真实性的材料，比如事故现场的记录、目击者的证明等等。嗯，看来这个信息挺有帮助，能让我更有把握地整理材料清单了。\\n\\n好，那就把这些材料清单整理一下：首先，需要工伤认定申请表，这应该是整个申请过程的基础；其次，用人单位和劳动者之间的劳动合同或者能证明他们存在劳动关系的文件很重要，不然无法证明是工作相关的受伤；然后，得有一个由医院或者医生开具的医疗诊断证明书，用于说明受伤的情况；最后，还需要一些与事故发生相关的直接证据，比如事故现场的一些记录或者有第三方目击者的证明之类的东西。\\n\\n整理清楚了，基本可以确定提供以上这些材料，可以满足法律的要求，而且这些材料能够很好地帮助认定事故是否符合工伤的条件。我刚刚的分析是基于《工伤保险条例》第17条的内容，同时也结合了逻辑来推断需要哪些材料，应该没有问题。\"\n}\n```",
+    "工伤认定需要提交以下材料：\n\n1. **工伤认定申请表**：这是申请工伤认定的基础材料，表格可以从人力资源和社会保障部门获取。\n\n2. **劳动关系证明文件**：最常见的是劳动合同；如果没有签订劳动合同，可以提供工资支付凭证、工作证、工牌、考勤记录等能证明劳动关系的材料。\n\n3. **医疗诊断证明**：由医疗机构开具的受伤后诊断证明书或职业病诊断证明书，说明伤病的具体情况。\n\n4. **相关事故材料**：包括但不限于事故发生的详细描述、事故现场记录、目击者证言、用人单位的事故报告等，目的是用以证明事故发生的事实、经过和原因。\n\n根据《工伤保险条例》第17条的规定，上述材料是工伤认定时的重要依据，申请人需在规定时间内向社会保险行政部门提交。如有特殊情况，可联系当地人社部门，了解具体要求并补充相关材料。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "明确工伤认定所需材料的问题范围",
+        "content": "工伤认定主要是在劳动者发生事故或职业病后，由相关单位对事件是否属于工伤进行确认。因此需要明确哪些材料可以支持该认证过程，可能涉及事故发生的环境、个人信息和相关证据。下一步需要查找具体法律法规的要求。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "查找相关法律法规",
+        "content": "工伤认定相关材料的要求一般在《工伤保险条例》中有所规定，需要找到该条例中对于申请工伤认定所需材料的具体条款。<search>工伤保险条例</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "提取搜索到的法律信息",
+        "content": "<information>根据《工伤保险条例》第17条，有关工伤认定申请需要提交：工伤认定申请表、劳动合同文本或者其他劳动关系证明资料、医疗诊断证明，以及事故发生的相关材料如现场证据。</information>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "整合信息并总结材料列表",
+        "content": "根据《工伤保险条例》第17条，申请工伤认定一般需要以下材料：1. 工伤认定申请表；2. 用人单位与劳动者的劳动合同或劳动关系证明；3. 医疗诊断证明书；4. 与事故发生相关的证据，包括现场记录、目击证明等。上述材料主要用于确认劳动关系和事故性质。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "工伤认定需要提交以下材料：1. 工伤认定申请表；2. 劳动合同或其他证明劳动关系的材料；3. 医疗诊断证明书；4. 相关事故证据，包括现场证据及目击证明等，这些材料有助于证明事故的真实性与其工伤性质。"
+      },
+      {
+        "action": "Verification",
+        "content": "结论来源于《工伤保险条例》第17条相关规定，材料清单符合法律规定要求，因此结论正确，无需进一步修正。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "工伤认定需要哪些材料呢？仔细想想，这应该和劳动者受伤后如何证明是工伤有关。工伤认定好像是一个需要通过相关单位确认的步骤，那肯定需要一些材料来支持，比如能够证明事故发生的地方和原因，还有一些个人的信息和相关证据之类的东西。嗯，我得更具体地确认一下，这些材料的具体要求应该写在相关的法律法规里。\n\n现在能想到的相关法律法规可能是《工伤保险条例》，因为这应该是处理工伤问题的主要依据。嗯，那我就去查一下，看看这个条例里面有没有明确规定工伤认定需要哪些材料。<search>工伤保险条例</search>\n\n找到了，根据<information>《工伤保险条例》第17条</information>的内容，这里面提到，要申请工伤认定，需要准备工伤认定申请表、劳动合同或者其他劳动关系证明文件、医疗机构出具的诊断证明，还有一些能证明工伤事故真实性的材料，比如事故现场的记录、目击者的证明等等。嗯，看来这个信息挺有帮助，能让我更有把握地整理材料清单了。\n\n好，那就把这些材料清单整理一下：首先，需要工伤认定申请表，这应该是整个申请过程的基础；其次，用人单位和劳动者之间的劳动合同或者能证明他们存在劳动关系的文件很重要，不然无法证明是工作相关的受伤；然后，得有一个由医院或者医生开具的医疗诊断证明书，用于说明受伤的情况；最后，还需要一些与事故发生相关的直接证据，比如事故现场的一些记录或者有第三方目击者的证明之类的东西。\n\n整理清楚了，基本可以确定提供以上这些材料，可以满足法律的要求，而且这些材料能够很好地帮助认定事故是否符合工伤的条件。我刚刚的分析是基于《工伤保险条例》第17条的内容，同时也结合了逻辑来推断需要哪些材料，应该没有问题。",
+  "Response": "工伤认定需要提交以下材料：\n\n1. **工伤认定申请表**：这是申请工伤认定的基础材料，表格可以从人力资源和社会保障部门获取。\n\n2. **劳动关系证明文件**：最常见的是劳动合同；如果没有签订劳动合同，可以提供工资支付凭证、工作证、工牌、考勤记录等能证明劳动关系的材料。\n\n3. **医疗诊断证明**：由医疗机构开具的受伤后诊断证明书或职业病诊断证明书，说明伤病的具体情况。\n\n4. **相关事故材料**：包括但不限于事故发生的详细描述、事故现场记录、目击者证言、用人单位的事故报告等，目的是用以证明事故发生的事实、经过和原因。\n\n根据《工伤保险条例》第17条的规定，上述材料是工伤认定时的重要依据，申请人需在规定时间内向社会保险行政部门提交。如有特殊情况，可联系当地人社部门，了解具体要求并补充相关材料。",
+  "Question": "工伤认定需要什么材料"
+}

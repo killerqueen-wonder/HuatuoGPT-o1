@@ -1,0 +1,109 @@
+{
+  "Open-ended Verifiable Question": "丈夫工资被法院冻结，妻子能否要求法院解封？",
+  "Ground-True Answer": "男方因为帮朋友担保被法院执行而冻结了工资，女方认为丈夫的工资是夫妻共同财产，其中有一半归自己所有，要求法院解封男方的工资。法院认为，男方的工资并不是双方的唯一共同财产，如果女方认为男方的工资被执行损害了自己的财产份额可以要求在其他共同财产中减少男方的份额，法院根据债权人申请冻结男方的工资于法有据，最终驳回了女方的解封申请",
+  "process_id": 1066,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "明确问题的法律背景",
+      "content": "丈夫的工资被冻结通常与法院执行程序有关，可能是因债务问题或类似法律义务未履行导致的。在这种情况下，需明确冻结工资的法律依据和妻子要求解封的权利是否存在，并启动相关分析。需要查询法院对工资冻结的规定以及妻子是否可以主张家庭生活费用的权利。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "查询法院冻结工资的法规",
+      "content": "工资冻结通常受到《中华人民共和国民事诉讼法》中有关执行措施的约束。我需要了解工资冻结的具体法律条款以及冻结后是否允许特定比例用于家庭基本生活开支。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "进一步明确妻子是否属于利害关系人",
+      "content": "妻子作为家庭成员，可能需要以家庭主要经济来源被限制为由，依据法律主张解封一部分工资以保障生活基本需求。需要查询相关法律条文确认妻子的主张权利。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "检索相关法律条文",
+      "content": "<search>工资冻结 法律依据 生活必需比例</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "解析检索结果",
+      "content": "<information>《中华人民共和国民事诉讼法》第243条规定，法院在执行程序中，可以对被执行人的收入采取冻结、扣除等措施，但需留出必要的生活费用。此外，最高人民法院司法解释规定，执行中冻结工资需保留一定比例用于被执行人及家庭成员的基本生活。</information>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "分析解封要求是否成立",
+      "content": "根据民事诉讼法的相关条款，如果工资冻结未考虑家庭生活必须的留存部分，妻子可以以家庭经济困难为由，向法院申请保留基本生活开支的部分工资。因此，从法律角度分析，妻子有权要求法院解封对应部分工资以保障生活。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "妻子可以要求法院解封被冻结部分工资，但需要提供证据证明家庭基本生活受影响，且解封金额应限于法律规定的家庭最低生活保障需要范围内。法院在审核后决定是否调整冻结比例或解封部分工资。"
+    },
+    {
+      "action": "Verification",
+      "content": "结论正确，依据《中华人民共和国民事诉讼法》第243条及相关司法解释，法院应在工资冻结时确保被执行人及其家庭有基本生活费用。妻子确有权利提出解封申请。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n丈夫工资被法院冻结，妻子能否要求法院解封？\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n妻子可以要求法院解封被冻结部分工资，但需要提供证据证明家庭基本生活受影响，且解封金额应限于法律规定的家庭最低生活保障需要范围内。法院在审核后决定是否调整冻结比例或解封部分工资。  \n</Model Response>  \n\n<Reference Answer>  \n男方因为帮朋友担保被法院执行而冻结了工资，女方认为丈夫的工资是夫妻共同财产，其中有一半归自己所有，要求法院解封男方的工资。法院认为，男方的工资并不是双方的唯一共同财产，如果女方认为男方的工资被执行损害了自己的财产份额可以要求在其他共同财产中减少男方的份额，法院根据债权人申请冻结男方的工资于法有据，最终驳回了女方的解封申请\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 明确问题的法律背景\n丈夫的工资被冻结通常与法院执行程序有关，可能是因债务问题或类似法律义务未履行导致的。在这种情况下，需明确冻结工资的法律依据和妻子要求解封的权利是否存在，并启动相关分析。需要查询法院对工资冻结的规定以及妻子是否可以主张家庭生活费用的权利。\n\n### 查询法院冻结工资的法规\n工资冻结通常受到《中华人民共和国民事诉讼法》中有关执行措施的约束。我需要了解工资冻结的具体法律条款以及冻结后是否允许特定比例用于家庭基本生活开支。\n\n### 进一步明确妻子是否属于利害关系人\n妻子作为家庭成员，可能需要以家庭主要经济来源被限制为由，依据法律主张解封一部分工资以保障生活基本需求。需要查询相关法律条文确认妻子的主张权利。\n\n### 检索相关法律条文\n<search>工资冻结 法律依据 生活必需比例</search>\n\n### 解析检索结果\n<information>《中华人民共和国民事诉讼法》第243条规定，法院在执行程序中，可以对被执行人的收入采取冻结、扣除等措施，但需留出必要的生活费用。此外，最高人民法院司法解释规定，执行中冻结工资需保留一定比例用于被执行人及家庭成员的基本生活。</information>\n\n### 分析解封要求是否成立\n根据民事诉讼法的相关条款，如果工资冻结未考虑家庭生活必须的留存部分，妻子可以以家庭经济困难为由，向法院申请保留基本生活开支的部分工资。因此，从法律角度分析，妻子有权要求法院解封对应部分工资以保障生活。\n\n### Conclusion\n妻子可以要求法院解封被冻结部分工资，但需要提供证据证明家庭基本生活受影响，且解封金额应限于法律规定的家庭最低生活保障需要范围内。法院在审核后决定是否调整冻结比例或解封部分工资。\n\n### Verification\n结论正确，依据《中华人民共和国民事诉讼法》第243条及相关司法解释，法院应在工资冻结时确保被执行人及其家庭有基本生活费用。妻子确有权利提出解封申请。\n</Thought Process>\n\n<Question>\n丈夫工资被法院冻结，妻子能否要求法院解封？\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n丈夫的工资被冻结了，这一般来说可能是因为欠债或其他法律上的义务没有履行，这样法院才会启动执行程序。那我得先弄清楚，工资被冻结的法律依据是什么，还有妻子能不能以家庭生活受影响为由要求解封工资一部分呢？\n\n为此，我先考虑一下工资冻结的相关法律。工资是个人收入的一部分，但我记得法律规定好像是不能完全冻结的，因为总得留出一部分来保证基本生活开支。这个基本开支里，家庭的需求应该也算吧？所以我需要查一下具体的法律条文，看看冻结工资时留存比例的规定。\n\n<search>工资冻结 法律依据 生活必需比例</search>\n\n好的，我查到了一些信息。《中华人民共和国民事诉讼法》第243条里是有提到工资冻结的规定的，意思是说法院在执行的时候可以冻结或者扣划被执行人的部分工资收入，但必须给被执行人及其家庭留出基本生活费用。另外，最高人民法院的司法解释还更进一步明确，冻结工资也好，扣划收入也好，都得遵守这个'基本生活保障'的前提。\n\n这样看起来，问题的关键就是能不能证明家庭的基本生活开支因为工资被冻结受到了影响。如果能证明，妻子确实是有权利提出申请的。那法院一般会怎么处理呢？它应该会去审查家庭的经济状况，看看有没有理由调整冻结比例或者解封一些工资出来。\n\n还有一个问题，就是妻子在这里算不算有直接关系的人呢？想想看，妻子本身是家庭成员，就是家庭收入的共同受益者，如果主要收入被锁住了，家庭的日常开支顾不上，她应该算是有利益直接关联吧。根据常识，法理上她有权要求重新分配冻结的比例。\n\n所以总结下来，妻子是可以去要求法院解封丈夫的部分工资的。不过有个前提，她需要提交一些证据来说明家庭生活确实因为冻工资而出现了困难，比如没有钱支付生活必需品之类的开销。而且即使法院同意解封，解封的金额也会被控制在满足基本生活需要的范围内，不能要求太多。\n\n所以啊，从法律规定看，妻子是可以以保障家庭基本生活开支为由申请解封丈夫部分工资的。这也是依据《中华人民共和国民事诉讼法》第243条和最高人民法院相关司法解释的要求。当然，具体情况还是得看实际调查和法院的裁定。\n</Internal Thinking>\n\n<Question>\n丈夫工资被法院冻结，妻子能否要求法院解封？\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"明确问题的法律背景\",\n      \"content\": \"丈夫的工资被冻结通常与法院执行程序有关，可能是因债务问题或类似法律义务未履行导致的。在这种情况下，需明确冻结工资的法律依据和妻子要求解封的权利是否存在，并启动相关分析。需要查询法院对工资冻结的规定以及妻子是否可以主张家庭生活费用的权利。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"查询法院冻结工资的法规\",\n      \"content\": \"工资冻结通常受到《中华人民共和国民事诉讼法》中有关执行措施的约束。我需要了解工资冻结的具体法律条款以及冻结后是否允许特定比例用于家庭基本生活开支。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"进一步明确妻子是否属于利害关系人\",\n      \"content\": \"妻子作为家庭成员，可能需要以家庭主要经济来源被限制为由，依据法律主张解封一部分工资以保障生活基本需求。需要查询相关法律条文确认妻子的主张权利。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"检索相关法律条文\",\n      \"content\": \"<search>工资冻结 法律依据 生活必需比例</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"解析检索结果\",\n      \"content\": \"<information>《中华人民共和国民事诉讼法》第243条规定，法院在执行程序中，可以对被执行人的收入采取冻结、扣除等措施，但需留出必要的生活费用。此外，最高人民法院司法解释规定，执行中冻结工资需保留一定比例用于被执行人及家庭成员的基本生活。</information>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析解封要求是否成立\",\n      \"content\": \"根据民事诉讼法的相关条款，如果工资冻结未考虑家庭生活必须的留存部分，妻子可以以家庭经济困难为由，向法院申请保留基本生活开支的部分工资。因此，从法律角度分析，妻子有权要求法院解封对应部分工资以保障生活。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"妻子可以要求法院解封被冻结部分工资，但需要提供证据证明家庭基本生活受影响，且解封金额应限于法律规定的家庭最低生活保障需要范围内。法院在审核后决定是否调整冻结比例或解封部分工资。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"结论正确，依据《中华人民共和国民事诉讼法》第243条及相关司法解释，法院应在工资冻结时确保被执行人及其家庭有基本生活费用。妻子确有权利提出解封申请。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"丈夫的工资被冻结了，这一般来说可能是因为欠债或其他法律上的义务没有履行，这样法院才会启动执行程序。那我得先弄清楚，工资被冻结的法律依据是什么，还有妻子能不能以家庭生活受影响为由要求解封工资一部分呢？\\n\\n为此，我先考虑一下工资冻结的相关法律。工资是个人收入的一部分，但我记得法律规定好像是不能完全冻结的，因为总得留出一部分来保证基本生活开支。这个基本开支里，家庭的需求应该也算吧？所以我需要查一下具体的法律条文，看看冻结工资时留存比例的规定。\\n\\n<search>工资冻结 法律依据 生活必需比例</search>\\n\\n好的，我查到了一些信息。《中华人民共和国民事诉讼法》第243条里是有提到工资冻结的规定的，意思是说法院在执行的时候可以冻结或者扣划被执行人的部分工资收入，但必须给被执行人及其家庭留出基本生活费用。另外，最高人民法院的司法解释还更进一步明确，冻结工资也好，扣划收入也好，都得遵守这个'基本生活保障'的前提。\\n\\n这样看起来，问题的关键就是能不能证明家庭的基本生活开支因为工资被冻结受到了影响。如果能证明，妻子确实是有权利提出申请的。那法院一般会怎么处理呢？它应该会去审查家庭的经济状况，看看有没有理由调整冻结比例或者解封一些工资出来。\\n\\n还有一个问题，就是妻子在这里算不算有直接关系的人呢？想想看，妻子本身是家庭成员，就是家庭收入的共同受益者，如果主要收入被锁住了，家庭的日常开支顾不上，她应该算是有利益直接关联吧。根据常识，法理上她有权要求重新分配冻结的比例。\\n\\n所以总结下来，妻子是可以去要求法院解封丈夫的部分工资的。不过有个前提，她需要提交一些证据来说明家庭生活确实因为冻工资而出现了困难，比如没有钱支付生活必需品之类的开销。而且即使法院同意解封，解封的金额也会被控制在满足基本生活需要的范围内，不能要求太多。\\n\\n所以啊，从法律规定看，妻子是可以以保障家庭基本生活开支为由申请解封丈夫部分工资的。这也是依据《中华人民共和国民事诉讼法》第243条和最高人民法院相关司法解释的要求。当然，具体情况还是得看实际调查和法院的裁定。\"\n}\n```",
+    "根据《中华人民共和国民事诉讼法》第243条以及最高人民法院相关司法解释的规定，丈夫的工资被冻结后，妻子可以以家庭基本生活受到影响为由向法院提出申请，要求解封部分工资。\n\n法律明确指出，法院在冻结或者扣划被执行人的收入时，必须保留被执行人及其家庭成员的基本生活费用。这意味着妻子作为家庭成员，若因丈夫工资被冻结导致家庭基本生活无法保障，可以依法向法院提出申请，主张解封部分工资。\n\n申请过程中，妻子需要提供能够充分证明家庭基本生活受到影响的证据，例如家庭生活支出的具体情况、当前经济状况、无法满足生活开销的具体困难等。法院会根据提交的材料以及调查结果，审查是否存在家庭基本生活费用无法保障的情况，并决定是否调整冻结比例或解封部分工资。\n\n需要注意的是，解封的金额通常仅限于满足家庭基本生活需要的范围，不会超过合理的必要支出。如有实际困难，建议妻子咨询律师或直接向法院申请，依法维护家庭生活的基本权益。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "明确问题的法律背景",
+        "content": "丈夫的工资被冻结通常与法院执行程序有关，可能是因债务问题或类似法律义务未履行导致的。在这种情况下，需明确冻结工资的法律依据和妻子要求解封的权利是否存在，并启动相关分析。需要查询法院对工资冻结的规定以及妻子是否可以主张家庭生活费用的权利。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "查询法院冻结工资的法规",
+        "content": "工资冻结通常受到《中华人民共和国民事诉讼法》中有关执行措施的约束。我需要了解工资冻结的具体法律条款以及冻结后是否允许特定比例用于家庭基本生活开支。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "进一步明确妻子是否属于利害关系人",
+        "content": "妻子作为家庭成员，可能需要以家庭主要经济来源被限制为由，依据法律主张解封一部分工资以保障生活基本需求。需要查询相关法律条文确认妻子的主张权利。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "检索相关法律条文",
+        "content": "<search>工资冻结 法律依据 生活必需比例</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "解析检索结果",
+        "content": "<information>《中华人民共和国民事诉讼法》第243条规定，法院在执行程序中，可以对被执行人的收入采取冻结、扣除等措施，但需留出必要的生活费用。此外，最高人民法院司法解释规定，执行中冻结工资需保留一定比例用于被执行人及家庭成员的基本生活。</information>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "分析解封要求是否成立",
+        "content": "根据民事诉讼法的相关条款，如果工资冻结未考虑家庭生活必须的留存部分，妻子可以以家庭经济困难为由，向法院申请保留基本生活开支的部分工资。因此，从法律角度分析，妻子有权要求法院解封对应部分工资以保障生活。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "妻子可以要求法院解封被冻结部分工资，但需要提供证据证明家庭基本生活受影响，且解封金额应限于法律规定的家庭最低生活保障需要范围内。法院在审核后决定是否调整冻结比例或解封部分工资。"
+      },
+      {
+        "action": "Verification",
+        "content": "结论正确，依据《中华人民共和国民事诉讼法》第243条及相关司法解释，法院应在工资冻结时确保被执行人及其家庭有基本生活费用。妻子确有权利提出解封申请。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "丈夫的工资被冻结了，这一般来说可能是因为欠债或其他法律上的义务没有履行，这样法院才会启动执行程序。那我得先弄清楚，工资被冻结的法律依据是什么，还有妻子能不能以家庭生活受影响为由要求解封工资一部分呢？\n\n为此，我先考虑一下工资冻结的相关法律。工资是个人收入的一部分，但我记得法律规定好像是不能完全冻结的，因为总得留出一部分来保证基本生活开支。这个基本开支里，家庭的需求应该也算吧？所以我需要查一下具体的法律条文，看看冻结工资时留存比例的规定。\n\n<search>工资冻结 法律依据 生活必需比例</search>\n\n好的，我查到了一些信息。《中华人民共和国民事诉讼法》第243条里是有提到工资冻结的规定的，意思是说法院在执行的时候可以冻结或者扣划被执行人的部分工资收入，但必须给被执行人及其家庭留出基本生活费用。另外，最高人民法院的司法解释还更进一步明确，冻结工资也好，扣划收入也好，都得遵守这个'基本生活保障'的前提。\n\n这样看起来，问题的关键就是能不能证明家庭的基本生活开支因为工资被冻结受到了影响。如果能证明，妻子确实是有权利提出申请的。那法院一般会怎么处理呢？它应该会去审查家庭的经济状况，看看有没有理由调整冻结比例或者解封一些工资出来。\n\n还有一个问题，就是妻子在这里算不算有直接关系的人呢？想想看，妻子本身是家庭成员，就是家庭收入的共同受益者，如果主要收入被锁住了，家庭的日常开支顾不上，她应该算是有利益直接关联吧。根据常识，法理上她有权要求重新分配冻结的比例。\n\n所以总结下来，妻子是可以去要求法院解封丈夫的部分工资的。不过有个前提，她需要提交一些证据来说明家庭生活确实因为冻工资而出现了困难，比如没有钱支付生活必需品之类的开销。而且即使法院同意解封，解封的金额也会被控制在满足基本生活需要的范围内，不能要求太多。\n\n所以啊，从法律规定看，妻子是可以以保障家庭基本生活开支为由申请解封丈夫部分工资的。这也是依据《中华人民共和国民事诉讼法》第243条和最高人民法院相关司法解释的要求。当然，具体情况还是得看实际调查和法院的裁定。",
+  "Response": "根据《中华人民共和国民事诉讼法》第243条以及最高人民法院相关司法解释的规定，丈夫的工资被冻结后，妻子可以以家庭基本生活受到影响为由向法院提出申请，要求解封部分工资。\n\n法律明确指出，法院在冻结或者扣划被执行人的收入时，必须保留被执行人及其家庭成员的基本生活费用。这意味着妻子作为家庭成员，若因丈夫工资被冻结导致家庭基本生活无法保障，可以依法向法院提出申请，主张解封部分工资。\n\n申请过程中，妻子需要提供能够充分证明家庭基本生活受到影响的证据，例如家庭生活支出的具体情况、当前经济状况、无法满足生活开销的具体困难等。法院会根据提交的材料以及调查结果，审查是否存在家庭基本生活费用无法保障的情况，并决定是否调整冻结比例或解封部分工资。\n\n需要注意的是，解封的金额通常仅限于满足家庭基本生活需要的范围，不会超过合理的必要支出。如有实际困难，建议妻子咨询律师或直接向法院申请，依法维护家庭生活的基本权益。",
+  "Question": "丈夫工资被法院冻结，妻子能否要求法院解封？"
+}

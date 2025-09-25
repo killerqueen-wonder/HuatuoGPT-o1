@@ -1,0 +1,99 @@
+{
+  "Open-ended Verifiable Question": "因受胁迫而与他人结婚，父母可以诉请撤销婚姻吗？",
+  "Ground-True Answer": "不能，必须是受胁迫的婚姻关系当事人本人。根据《婚姻家庭编司法解释》第十八条规定，因受胁迫而请求撤销婚姻的，只能是受胁迫一方的婚姻关系当事人本人。",
+  "process_id": 1405,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "分析父母是否有权诉请撤销婚姻",
+      "content": "根据中国婚姻法的相关规定，婚姻的撤销权通常是限制在婚姻当事人自身的，以保障婚姻自主性原则。如果需要明确法律依据，应明确查询相关法律条文，了解父母是否可以代替当事人行使撤销婚姻的权利。需要查询《中华人民共和国民法典》关于婚姻效力相关的规定。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "找出相关法律条文",
+      "content": "为了提供准确的解答，我需要搜索《中华人民共和国民法典》关于婚姻撤销的法律条文的具体内容。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "执行搜索民法典婚姻撤销相关条文",
+      "content": "<search>中华人民共和国民法典 婚姻撤销 条文</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "获取法律信息并分析是否允许父母代为撤销婚姻",
+      "content": "<information>根据《中华人民共和国民法典》第1053条：因受胁迫而结婚的，受胁迫的一方可以向人民法院请求撤销婚姻。撤销权由受胁迫的一方行使，属于个人权利，其他人无法代为提出诉请。</information>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "分析条文结论",
+      "content": "根据民法典第1053条，撤销婚姻的权利仅属于受胁迫的一方，这是一种专属于当事人的撤销权，父母无权代替子女提出撤销婚姻的诉请。因此，问题中的父母无法诉请撤销婚姻。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "父母无权因子女受胁迫而与他人结婚的原因而请求撤销婚姻。根据《中华人民共和国民法典》第1053条，撤销婚姻的请求权是专属于婚姻当事人的个人权利，不得由他人代为行使。"
+    },
+    {
+      "action": "Verification",
+      "content": "结论符合《中华人民共和国民法典》第1053条的具体规定，即只有受胁迫的一方才能行使撤销婚姻的权利，父母无权代为提起诉请，推导和结论均正确。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n因受胁迫而与他人结婚，父母可以诉请撤销婚姻吗？\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n父母无权因子女受胁迫而与他人结婚的原因而请求撤销婚姻。根据《中华人民共和国民法典》第1053条，撤销婚姻的请求权是专属于婚姻当事人的个人权利，不得由他人代为行使。  \n</Model Response>  \n\n<Reference Answer>  \n不能，必须是受胁迫的婚姻关系当事人本人。根据《婚姻家庭编司法解释》第十八条规定，因受胁迫而请求撤销婚姻的，只能是受胁迫一方的婚姻关系当事人本人。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 分析父母是否有权诉请撤销婚姻\n根据中国婚姻法的相关规定，婚姻的撤销权通常是限制在婚姻当事人自身的，以保障婚姻自主性原则。如果需要明确法律依据，应明确查询相关法律条文，了解父母是否可以代替当事人行使撤销婚姻的权利。需要查询《中华人民共和国民法典》关于婚姻效力相关的规定。\n\n### 找出相关法律条文\n为了提供准确的解答，我需要搜索《中华人民共和国民法典》关于婚姻撤销的法律条文的具体内容。\n\n### 执行搜索民法典婚姻撤销相关条文\n<search>中华人民共和国民法典 婚姻撤销 条文</search>\n\n### 获取法律信息并分析是否允许父母代为撤销婚姻\n<information>根据《中华人民共和国民法典》第1053条：因受胁迫而结婚的，受胁迫的一方可以向人民法院请求撤销婚姻。撤销权由受胁迫的一方行使，属于个人权利，其他人无法代为提出诉请。</information>\n\n### 分析条文结论\n根据民法典第1053条，撤销婚姻的权利仅属于受胁迫的一方，这是一种专属于当事人的撤销权，父母无权代替子女提出撤销婚姻的诉请。因此，问题中的父母无法诉请撤销婚姻。\n\n### Conclusion\n父母无权因子女受胁迫而与他人结婚的原因而请求撤销婚姻。根据《中华人民共和国民法典》第1053条，撤销婚姻的请求权是专属于婚姻当事人的个人权利，不得由他人代为行使。\n\n### Verification\n结论符合《中华人民共和国民法典》第1053条的具体规定，即只有受胁迫的一方才能行使撤销婚姻的权利，父母无权代为提起诉请，推导和结论均正确。\n</Thought Process>\n\n<Question>\n因受胁迫而与他人结婚，父母可以诉请撤销婚姻吗？\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n嗯，先来看看这个问题。如果一个人是因为被胁迫才结的婚，父母能不能以此为理由请求撤销婚姻呢？感觉这可能要看法律是怎么规定的，我得仔细查查。\n\n首先，我记得中国的婚姻法对婚姻的撤销是有一些明确条件的。不过，这方面的具体条文应该现在都被归到《中华人民共和国民法典》里。嗯，我得确认一下民法典里婚姻撤销的规定。\n\n<search>中华人民共和国民法典 婚姻撤销 条文</search>\n\n我们来看一下搜到的内容。<information>根据《中华人民共和国民法典》第1053条：因受胁迫而结婚的，受胁迫的一方可以向人民法院请求撤销婚姻。撤销权由受胁迫的一方行使，属于个人权利，其他人无法代为提出诉请。</information>\n\n哦，原来是这样啊。根据第1053条的内容，撤销婚姻这个权利完全是归属于被胁迫者本人的，也就是说，只有当这个因为受到胁迫而结婚的人自己站出来，向法院提起请求，才可以进行撤销。而且好像明确提到，这是一种个人权利，其他人，包括父母，是不能代替他们行使这个权利的。\n\n这样结合一下，我们可以更清楚地理解了。法律在这方面其实保护的是婚姻的自主性，主要考虑到婚姻本身是当事人自己的事情，只有他们知道自己是否真的受到了胁迫，以及是否愿意继续维持婚姻。所以，不管父母的意愿多强烈，也不管他们出于什么理由，都不能代替当事人去提起撤销婚姻的诉请。\n\n总结一下的话，父母是不能以子女受胁迫结婚为理由，代替他们去申请婚姻撤销的。撤销婚姻的权利只属于当事人自己，不允许别人代为行使。这一点符合民法典第1053条的规定，应该没有疑问。\n\n嗯，逻辑清楚了！法律条文本身已经有明确说明，这种撤销申请只能由婚姻当事人提出。所以父母在这种情况下无法代为操作，答案是很清楚的。\n</Internal Thinking>\n\n<Question>\n因受胁迫而与他人结婚，父母可以诉请撤销婚姻吗？\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析父母是否有权诉请撤销婚姻\",\n      \"content\": \"根据中国婚姻法的相关规定，婚姻的撤销权通常是限制在婚姻当事人自身的，以保障婚姻自主性原则。如果需要明确法律依据，应明确查询相关法律条文，了解父母是否可以代替当事人行使撤销婚姻的权利。需要查询《中华人民共和国民法典》关于婚姻效力相关的规定。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"找出相关法律条文\",\n      \"content\": \"为了提供准确的解答，我需要搜索《中华人民共和国民法典》关于婚姻撤销的法律条文的具体内容。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"执行搜索民法典婚姻撤销相关条文\",\n      \"content\": \"<search>中华人民共和国民法典 婚姻撤销 条文</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"获取法律信息并分析是否允许父母代为撤销婚姻\",\n      \"content\": \"<information>根据《中华人民共和国民法典》第1053条：因受胁迫而结婚的，受胁迫的一方可以向人民法院请求撤销婚姻。撤销权由受胁迫的一方行使，属于个人权利，其他人无法代为提出诉请。</information>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析条文结论\",\n      \"content\": \"根据民法典第1053条，撤销婚姻的权利仅属于受胁迫的一方，这是一种专属于当事人的撤销权，父母无权代替子女提出撤销婚姻的诉请。因此，问题中的父母无法诉请撤销婚姻。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"父母无权因子女受胁迫而与他人结婚的原因而请求撤销婚姻。根据《中华人民共和国民法典》第1053条，撤销婚姻的请求权是专属于婚姻当事人的个人权利，不得由他人代为行使。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"结论符合《中华人民共和国民法典》第1053条的具体规定，即只有受胁迫的一方才能行使撤销婚姻的权利，父母无权代为提起诉请，推导和结论均正确。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"嗯，先来看看这个问题。如果一个人是因为被胁迫才结的婚，父母能不能以此为理由请求撤销婚姻呢？感觉这可能要看法律是怎么规定的，我得仔细查查。\\n\\n首先，我记得中国的婚姻法对婚姻的撤销是有一些明确条件的。不过，这方面的具体条文应该现在都被归到《中华人民共和国民法典》里。嗯，我得确认一下民法典里婚姻撤销的规定。\\n\\n<search>中华人民共和国民法典 婚姻撤销 条文</search>\\n\\n我们来看一下搜到的内容。<information>根据《中华人民共和国民法典》第1053条：因受胁迫而结婚的，受胁迫的一方可以向人民法院请求撤销婚姻。撤销权由受胁迫的一方行使，属于个人权利，其他人无法代为提出诉请。</information>\\n\\n哦，原来是这样啊。根据第1053条的内容，撤销婚姻这个权利完全是归属于被胁迫者本人的，也就是说，只有当这个因为受到胁迫而结婚的人自己站出来，向法院提起请求，才可以进行撤销。而且好像明确提到，这是一种个人权利，其他人，包括父母，是不能代替他们行使这个权利的。\\n\\n这样结合一下，我们可以更清楚地理解了。法律在这方面其实保护的是婚姻的自主性，主要考虑到婚姻本身是当事人自己的事情，只有他们知道自己是否真的受到了胁迫，以及是否愿意继续维持婚姻。所以，不管父母的意愿多强烈，也不管他们出于什么理由，都不能代替当事人去提起撤销婚姻的诉请。\\n\\n总结一下的话，父母是不能以子女受胁迫结婚为理由，代替他们去申请婚姻撤销的。撤销婚姻的权利只属于当事人自己，不允许别人代为行使。这一点符合民法典第1053条的规定，应该没有疑问。\\n\\n嗯，逻辑清楚了！法律条文本身已经有明确说明，这种撤销申请只能由婚姻当事人提出。所以父母在这种情况下无法代为操作，答案是很清楚的。\"\n}\n```",
+    "根据《中华人民共和国民法典》第1053条的规定，因受胁迫而结婚的情况下，只有受胁迫的一方本人可以向人民法院请求撤销婚姻。撤销婚姻的权利属于受胁迫者的个人权利，其他人，包括父母，是不能代替他们提出诉请的。因此，父母无法以子女受胁迫结婚为理由，向法院请求撤销婚姻。\n\n法律这样规定的目的是为了保护婚姻的自主性，同时尊重当事人的意愿。只有婚姻的直接当事人，特别是受胁迫的一方，才最清楚自身是否愿意继续维持婚姻或者解除婚姻关系。因此，即使父母出于关心子女的立场，法律也不赋予他们这样的代行权力。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "分析父母是否有权诉请撤销婚姻",
+        "content": "根据中国婚姻法的相关规定，婚姻的撤销权通常是限制在婚姻当事人自身的，以保障婚姻自主性原则。如果需要明确法律依据，应明确查询相关法律条文，了解父母是否可以代替当事人行使撤销婚姻的权利。需要查询《中华人民共和国民法典》关于婚姻效力相关的规定。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "找出相关法律条文",
+        "content": "为了提供准确的解答，我需要搜索《中华人民共和国民法典》关于婚姻撤销的法律条文的具体内容。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "执行搜索民法典婚姻撤销相关条文",
+        "content": "<search>中华人民共和国民法典 婚姻撤销 条文</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "获取法律信息并分析是否允许父母代为撤销婚姻",
+        "content": "<information>根据《中华人民共和国民法典》第1053条：因受胁迫而结婚的，受胁迫的一方可以向人民法院请求撤销婚姻。撤销权由受胁迫的一方行使，属于个人权利，其他人无法代为提出诉请。</information>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "分析条文结论",
+        "content": "根据民法典第1053条，撤销婚姻的权利仅属于受胁迫的一方，这是一种专属于当事人的撤销权，父母无权代替子女提出撤销婚姻的诉请。因此，问题中的父母无法诉请撤销婚姻。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "父母无权因子女受胁迫而与他人结婚的原因而请求撤销婚姻。根据《中华人民共和国民法典》第1053条，撤销婚姻的请求权是专属于婚姻当事人的个人权利，不得由他人代为行使。"
+      },
+      {
+        "action": "Verification",
+        "content": "结论符合《中华人民共和国民法典》第1053条的具体规定，即只有受胁迫的一方才能行使撤销婚姻的权利，父母无权代为提起诉请，推导和结论均正确。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "嗯，先来看看这个问题。如果一个人是因为被胁迫才结的婚，父母能不能以此为理由请求撤销婚姻呢？感觉这可能要看法律是怎么规定的，我得仔细查查。\n\n首先，我记得中国的婚姻法对婚姻的撤销是有一些明确条件的。不过，这方面的具体条文应该现在都被归到《中华人民共和国民法典》里。嗯，我得确认一下民法典里婚姻撤销的规定。\n\n<search>中华人民共和国民法典 婚姻撤销 条文</search>\n\n我们来看一下搜到的内容。<information>根据《中华人民共和国民法典》第1053条：因受胁迫而结婚的，受胁迫的一方可以向人民法院请求撤销婚姻。撤销权由受胁迫的一方行使，属于个人权利，其他人无法代为提出诉请。</information>\n\n哦，原来是这样啊。根据第1053条的内容，撤销婚姻这个权利完全是归属于被胁迫者本人的，也就是说，只有当这个因为受到胁迫而结婚的人自己站出来，向法院提起请求，才可以进行撤销。而且好像明确提到，这是一种个人权利，其他人，包括父母，是不能代替他们行使这个权利的。\n\n这样结合一下，我们可以更清楚地理解了。法律在这方面其实保护的是婚姻的自主性，主要考虑到婚姻本身是当事人自己的事情，只有他们知道自己是否真的受到了胁迫，以及是否愿意继续维持婚姻。所以，不管父母的意愿多强烈，也不管他们出于什么理由，都不能代替当事人去提起撤销婚姻的诉请。\n\n总结一下的话，父母是不能以子女受胁迫结婚为理由，代替他们去申请婚姻撤销的。撤销婚姻的权利只属于当事人自己，不允许别人代为行使。这一点符合民法典第1053条的规定，应该没有疑问。\n\n嗯，逻辑清楚了！法律条文本身已经有明确说明，这种撤销申请只能由婚姻当事人提出。所以父母在这种情况下无法代为操作，答案是很清楚的。",
+  "Response": "根据《中华人民共和国民法典》第1053条的规定，因受胁迫而结婚的情况下，只有受胁迫的一方本人可以向人民法院请求撤销婚姻。撤销婚姻的权利属于受胁迫者的个人权利，其他人，包括父母，是不能代替他们提出诉请的。因此，父母无法以子女受胁迫结婚为理由，向法院请求撤销婚姻。\n\n法律这样规定的目的是为了保护婚姻的自主性，同时尊重当事人的意愿。只有婚姻的直接当事人，特别是受胁迫的一方，才最清楚自身是否愿意继续维持婚姻或者解除婚姻关系。因此，即使父母出于关心子女的立场，法律也不赋予他们这样的代行权力。",
+  "Question": "因受胁迫而与他人结婚，父母可以诉请撤销婚姻吗？"
+}

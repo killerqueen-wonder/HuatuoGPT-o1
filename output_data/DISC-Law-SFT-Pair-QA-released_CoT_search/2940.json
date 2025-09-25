@@ -1,0 +1,79 @@
+{
+  "Open-ended Verifiable Question": "诈骗形式怎么样才能立案",
+  "Ground-True Answer": "诈骗形式的金额达到3000元以上的才能立案。\n《最高人民法院、最高人民检察院关于办理诈骗刑事案件具体应用法律若干问题的解释》第一条规定，诈骗公私财物价值三千元至一万元以上、三万元至十万元以上、五十万元以上的，应当分别认定为刑法第二百六十六条规定的“数额较大”、“数额巨大”、“数额特别巨大”。各省、自治区、直辖市高级人民法院、人民检察院可以结合本地区经济社会发展状况，在前款规定的数额幅度内，共同研究确定本地区执行的具体数额标准，报最高人民法院、最高人民检察院备案。\n《刑法》第二百六十六条规定，诈骗公私财物，数额较大的，处三年以下有期徒刑、拘役或者管制，并处或者单处罚金。",
+  "process_id": 2940,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "确定诈骗罪的立案标准",
+      "content": "根据中华人民共和国法律，诈骗罪的立案通常需要满足以下条件：行为人具有欺骗行为，并导致他人财产损失且损失金额达到法律规定的立案标准金额。为了详细确认立案金额，我需要搜索相关法律条文涉及诈骗罪的具体规定。<search>诈骗罪立案金额</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "查找诈骗罪立案金额标准",
+      "content": "<information>诈骗罪立案金额为个人诈骗公私财物数额达到3000元至5000元以上，团伙诈骗可适用更高标准。</information>基于此信息，个人骗取财物达到一定金额即符合诈骗罪的立案条件。同时重要的是，诈骗行为需包括故意欺骗且造成实际损失。</content>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "补充行为要件与证据要求",
+      "content": "除了金额标准，诈骗罪还要求行为人具有主观故意欺骗他人，例如提供虚假信息或隐瞒事实，并导致被害人基于错误认知而做出的财产处置行为。此外，受害人通常需要提供具体证据，包括支付记录、通信记录等，这些证据能清晰指向行为人实施了诈骗行为。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "诈骗行为是否能够立案取决于以下几个关键因素：1）行为人的诈骗金额达到法律规定的最低立案标准，通常个人诈骗数额为3000至5000元以上；2）行为人必须具有主观故意并采用欺骗手段；3）受害人因欺骗行为导致财产实际损失；4）公安机关或司法机关需要根据证据判断行为是否符合诈骗罪的构成要件。"
+    },
+    {
+      "action": "Verification",
+      "content": "验证上述结论准确无误，诈骗行为确需满足金额及行为要件，同时需要相关证据支持。案件立案标准与法律规定一致，因此结论正确。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n诈骗形式怎么样才能立案\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n诈骗行为是否能够立案取决于以下几个关键因素：1）行为人的诈骗金额达到法律规定的最低立案标准，通常个人诈骗数额为3000至5000元以上；2）行为人必须具有主观故意并采用欺骗手段；3）受害人因欺骗行为导致财产实际损失；4）公安机关或司法机关需要根据证据判断行为是否符合诈骗罪的构成要件。  \n</Model Response>  \n\n<Reference Answer>  \n诈骗形式的金额达到3000元以上的才能立案。\n《最高人民法院、最高人民检察院关于办理诈骗刑事案件具体应用法律若干问题的解释》第一条规定，诈骗公私财物价值三千元至一万元以上、三万元至十万元以上、五十万元以上的，应当分别认定为刑法第二百六十六条规定的“数额较大”、“数额巨大”、“数额特别巨大”。各省、自治区、直辖市高级人民法院、人民检察院可以结合本地区经济社会发展状况，在前款规定的数额幅度内，共同研究确定本地区执行的具体数额标准，报最高人民法院、最高人民检察院备案。\n《刑法》第二百六十六条规定，诈骗公私财物，数额较大的，处三年以下有期徒刑、拘役或者管制，并处或者单处罚金。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 确定诈骗罪的立案标准\n根据中华人民共和国法律，诈骗罪的立案通常需要满足以下条件：行为人具有欺骗行为，并导致他人财产损失且损失金额达到法律规定的立案标准金额。为了详细确认立案金额，我需要搜索相关法律条文涉及诈骗罪的具体规定。<search>诈骗罪立案金额</search>\n\n### 查找诈骗罪立案金额标准\n<information>诈骗罪立案金额为个人诈骗公私财物数额达到3000元至5000元以上，团伙诈骗可适用更高标准。</information>基于此信息，个人骗取财物达到一定金额即符合诈骗罪的立案条件。同时重要的是，诈骗行为需包括故意欺骗且造成实际损失。</content>\n\n### 补充行为要件与证据要求\n除了金额标准，诈骗罪还要求行为人具有主观故意欺骗他人，例如提供虚假信息或隐瞒事实，并导致被害人基于错误认知而做出的财产处置行为。此外，受害人通常需要提供具体证据，包括支付记录、通信记录等，这些证据能清晰指向行为人实施了诈骗行为。\n\n### Conclusion\n诈骗行为是否能够立案取决于以下几个关键因素：1）行为人的诈骗金额达到法律规定的最低立案标准，通常个人诈骗数额为3000至5000元以上；2）行为人必须具有主观故意并采用欺骗手段；3）受害人因欺骗行为导致财产实际损失；4）公安机关或司法机关需要根据证据判断行为是否符合诈骗罪的构成要件。\n\n### Verification\n验证上述结论准确无误，诈骗行为确需满足金额及行为要件，同时需要相关证据支持。案件立案标准与法律规定一致，因此结论正确。\n</Thought Process>\n\n<Question>\n诈骗形式怎么样才能立案\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n诈骗行为到底是怎样才能立案呢？嗯，我得先弄清楚法律对诈骗罪的具体要求。首先，我知道诈骗罪一定涉及到财产损失，但立案的标准金额是多少呢？不太确定，我得找一下相关的法律规定。<search>诈骗罪立案金额</search>\n\n哦，这里找到了！根据信息显示，个人诈骗财物金额通常需要在3000到5000元以上才能达到立案标准，而团伙诈骗可能有更高的标准。<information>诈骗罪立案金额为个人诈骗公私财物数额达到3000元至5000元以上，团伙诈骗可适用更高标准。</information>嗯，看来金额是一个关键因素。不过仅有金额够高是不是就可以立案了呢？应该还有其他要求吧。\n\n对了，除了金额，我知道诈骗罪还得看行为是不是骗了别人，并造成了实际的经济损失。那比如行为人是不是故意欺骗别人，故意这种主观方面挺重要的吧。像他是不是隐瞒了某些关键事实，或者是提供了虚假信息，让对方做了错误的决定导致财产损失。这种情况才算诈骗行为成立啊。\n\n另外还有一个问题，受害人得有证据来证明啊。嗯，想想看，通常可能需要一些支付记录，比如转账凭证，聊天记录之类的证据。这样才能证明自己真的因为对方的骗术损失了钱，并且能够追溯到具体的人。证据应该也得很清晰，不能模糊对吧，公安机关或司法机关才有办法判断。\n\n总结一下吧：诈骗行为要立案得满足几个条件。第一，金额得符合要求，个人的话至少得骗到3000到5000元以上，团伙可能会更高；第二，行为人得是故意骗人的，故意诱导或者隐瞒事实；第三，得有实际财产损失，并且受害人需要拿出清楚的证据来支持。嗯，听起来很合理。这样分析下来，应该就对了。\n</Internal Thinking>\n\n<Question>\n诈骗形式怎么样才能立案\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"确定诈骗罪的立案标准\",\n      \"content\": \"根据中华人民共和国法律，诈骗罪的立案通常需要满足以下条件：行为人具有欺骗行为，并导致他人财产损失且损失金额达到法律规定的立案标准金额。为了详细确认立案金额，我需要搜索相关法律条文涉及诈骗罪的具体规定。<search>诈骗罪立案金额</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"查找诈骗罪立案金额标准\",\n      \"content\": \"<information>诈骗罪立案金额为个人诈骗公私财物数额达到3000元至5000元以上，团伙诈骗可适用更高标准。</information>基于此信息，个人骗取财物达到一定金额即符合诈骗罪的立案条件。同时重要的是，诈骗行为需包括故意欺骗且造成实际损失。</content>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"补充行为要件与证据要求\",\n      \"content\": \"除了金额标准，诈骗罪还要求行为人具有主观故意欺骗他人，例如提供虚假信息或隐瞒事实，并导致被害人基于错误认知而做出的财产处置行为。此外，受害人通常需要提供具体证据，包括支付记录、通信记录等，这些证据能清晰指向行为人实施了诈骗行为。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"诈骗行为是否能够立案取决于以下几个关键因素：1）行为人的诈骗金额达到法律规定的最低立案标准，通常个人诈骗数额为3000至5000元以上；2）行为人必须具有主观故意并采用欺骗手段；3）受害人因欺骗行为导致财产实际损失；4）公安机关或司法机关需要根据证据判断行为是否符合诈骗罪的构成要件。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"验证上述结论准确无误，诈骗行为确需满足金额及行为要件，同时需要相关证据支持。案件立案标准与法律规定一致，因此结论正确。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"诈骗行为到底是怎样才能立案呢？嗯，我得先弄清楚法律对诈骗罪的具体要求。首先，我知道诈骗罪一定涉及到财产损失，但立案的标准金额是多少呢？不太确定，我得找一下相关的法律规定。<search>诈骗罪立案金额</search>\\n\\n哦，这里找到了！根据信息显示，个人诈骗财物金额通常需要在3000到5000元以上才能达到立案标准，而团伙诈骗可能有更高的标准。<information>诈骗罪立案金额为个人诈骗公私财物数额达到3000元至5000元以上，团伙诈骗可适用更高标准。</information>嗯，看来金额是一个关键因素。不过仅有金额够高是不是就可以立案了呢？应该还有其他要求吧。\\n\\n对了，除了金额，我知道诈骗罪还得看行为是不是骗了别人，并造成了实际的经济损失。那比如行为人是不是故意欺骗别人，故意这种主观方面挺重要的吧。像他是不是隐瞒了某些关键事实，或者是提供了虚假信息，让对方做了错误的决定导致财产损失。这种情况才算诈骗行为成立啊。\\n\\n另外还有一个问题，受害人得有证据来证明啊。嗯，想想看，通常可能需要一些支付记录，比如转账凭证，聊天记录之类的证据。这样才能证明自己真的因为对方的骗术损失了钱，并且能够追溯到具体的人。证据应该也得很清晰，不能模糊对吧，公安机关或司法机关才有办法判断。\\n\\n总结一下吧：诈骗行为要立案得满足几个条件。第一，金额得符合要求，个人的话至少得骗到3000到5000元以上，团伙可能会更高；第二，行为人得是故意骗人的，故意诱导或者隐瞒事实；第三，得有实际财产损失，并且受害人需要拿出清楚的证据来支持。嗯，听起来很合理。这样分析下来，应该就对了。\"\n}\n```",
+    "诈骗行为能否立案通常需要满足以下几个条件：\n\n1. **诈骗金额达到立案标准**：  \n   根据我国《刑法》及相关司法解释的规定，诈骗罪的立案追诉标准主要以金额为基础。个人诈骗公私财物通常需达到3000至5000元以上，才能进入刑事立案程序。如果是团伙诈骗，立案标准可能会更高，具体金额会结合案件性质和诈骗范围进行认定。\n\n2. **行为具有主观故意与欺骗性**：  \n   行为人必须在主观上有故意实施诈骗的意图。这种意图通常体现在通过隐瞒关键事实或提供虚假信息，诱导受害人基于错误的认识作出不利于自身财产利益的决定。如果行为人仅出于疏忽或未能履行承诺，一般难以认定为诈骗。\n\n3. **造成实际财产损失**：  \n   除了行为人有欺骗故意外，受害人还需要因受骗而遭受实际的财产损失。例如，支付了款项、转移了财物等，这一点是构成诈骗罪的必要条件。如果没有造成实际财产损失，即便行为具有欺骗性，也难以达到立案要求。\n\n4. **提供充分的证据**：  \n   受害人需提供足够的证据来证明诈骗行为的存在，并能将财产损失与行为人联系起来。例如：银行转账记录、合同、聊天记录、通话录音等，这些证据能够佐证被骗事实并清晰指向具体的行为人。\n\n总结来说，诈骗行为要想立案，需要金额达到法律规定的起点标准，行为人存在主观诈骗故意且实施了有欺骗性的行为，对受害人造成了实际的财产损失，并且具备足够证据证明案件事实。如果怀疑自己遭遇诈骗，可以携带相关证据及时向公安机关报案，他们会根据案件具体情况决定是否立案调查。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "确定诈骗罪的立案标准",
+        "content": "根据中华人民共和国法律，诈骗罪的立案通常需要满足以下条件：行为人具有欺骗行为，并导致他人财产损失且损失金额达到法律规定的立案标准金额。为了详细确认立案金额，我需要搜索相关法律条文涉及诈骗罪的具体规定。<search>诈骗罪立案金额</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "查找诈骗罪立案金额标准",
+        "content": "<information>诈骗罪立案金额为个人诈骗公私财物数额达到3000元至5000元以上，团伙诈骗可适用更高标准。</information>基于此信息，个人骗取财物达到一定金额即符合诈骗罪的立案条件。同时重要的是，诈骗行为需包括故意欺骗且造成实际损失。</content>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "补充行为要件与证据要求",
+        "content": "除了金额标准，诈骗罪还要求行为人具有主观故意欺骗他人，例如提供虚假信息或隐瞒事实，并导致被害人基于错误认知而做出的财产处置行为。此外，受害人通常需要提供具体证据，包括支付记录、通信记录等，这些证据能清晰指向行为人实施了诈骗行为。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "诈骗行为是否能够立案取决于以下几个关键因素：1）行为人的诈骗金额达到法律规定的最低立案标准，通常个人诈骗数额为3000至5000元以上；2）行为人必须具有主观故意并采用欺骗手段；3）受害人因欺骗行为导致财产实际损失；4）公安机关或司法机关需要根据证据判断行为是否符合诈骗罪的构成要件。"
+      },
+      {
+        "action": "Verification",
+        "content": "验证上述结论准确无误，诈骗行为确需满足金额及行为要件，同时需要相关证据支持。案件立案标准与法律规定一致，因此结论正确。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "诈骗行为到底是怎样才能立案呢？嗯，我得先弄清楚法律对诈骗罪的具体要求。首先，我知道诈骗罪一定涉及到财产损失，但立案的标准金额是多少呢？不太确定，我得找一下相关的法律规定。<search>诈骗罪立案金额</search>\n\n哦，这里找到了！根据信息显示，个人诈骗财物金额通常需要在3000到5000元以上才能达到立案标准，而团伙诈骗可能有更高的标准。<information>诈骗罪立案金额为个人诈骗公私财物数额达到3000元至5000元以上，团伙诈骗可适用更高标准。</information>嗯，看来金额是一个关键因素。不过仅有金额够高是不是就可以立案了呢？应该还有其他要求吧。\n\n对了，除了金额，我知道诈骗罪还得看行为是不是骗了别人，并造成了实际的经济损失。那比如行为人是不是故意欺骗别人，故意这种主观方面挺重要的吧。像他是不是隐瞒了某些关键事实，或者是提供了虚假信息，让对方做了错误的决定导致财产损失。这种情况才算诈骗行为成立啊。\n\n另外还有一个问题，受害人得有证据来证明啊。嗯，想想看，通常可能需要一些支付记录，比如转账凭证，聊天记录之类的证据。这样才能证明自己真的因为对方的骗术损失了钱，并且能够追溯到具体的人。证据应该也得很清晰，不能模糊对吧，公安机关或司法机关才有办法判断。\n\n总结一下吧：诈骗行为要立案得满足几个条件。第一，金额得符合要求，个人的话至少得骗到3000到5000元以上，团伙可能会更高；第二，行为人得是故意骗人的，故意诱导或者隐瞒事实；第三，得有实际财产损失，并且受害人需要拿出清楚的证据来支持。嗯，听起来很合理。这样分析下来，应该就对了。",
+  "Response": "诈骗行为能否立案通常需要满足以下几个条件：\n\n1. **诈骗金额达到立案标准**：  \n   根据我国《刑法》及相关司法解释的规定，诈骗罪的立案追诉标准主要以金额为基础。个人诈骗公私财物通常需达到3000至5000元以上，才能进入刑事立案程序。如果是团伙诈骗，立案标准可能会更高，具体金额会结合案件性质和诈骗范围进行认定。\n\n2. **行为具有主观故意与欺骗性**：  \n   行为人必须在主观上有故意实施诈骗的意图。这种意图通常体现在通过隐瞒关键事实或提供虚假信息，诱导受害人基于错误的认识作出不利于自身财产利益的决定。如果行为人仅出于疏忽或未能履行承诺，一般难以认定为诈骗。\n\n3. **造成实际财产损失**：  \n   除了行为人有欺骗故意外，受害人还需要因受骗而遭受实际的财产损失。例如，支付了款项、转移了财物等，这一点是构成诈骗罪的必要条件。如果没有造成实际财产损失，即便行为具有欺骗性，也难以达到立案要求。\n\n4. **提供充分的证据**：  \n   受害人需提供足够的证据来证明诈骗行为的存在，并能将财产损失与行为人联系起来。例如：银行转账记录、合同、聊天记录、通话录音等，这些证据能够佐证被骗事实并清晰指向具体的行为人。\n\n总结来说，诈骗行为要想立案，需要金额达到法律规定的起点标准，行为人存在主观诈骗故意且实施了有欺骗性的行为，对受害人造成了实际的财产损失，并且具备足够证据证明案件事实。如果怀疑自己遭遇诈骗，可以携带相关证据及时向公安机关报案，他们会根据案件具体情况决定是否立案调查。",
+  "Question": "诈骗形式怎么样才能立案"
+}

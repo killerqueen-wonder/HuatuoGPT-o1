@@ -1,0 +1,107 @@
+{
+  "Open-ended Verifiable Question": "追诉时效到期可以免除刑罚吗？",
+  "Ground-True Answer": "我国刑法规定了两种追诉时效延长的情况。一、《刑法》第88条第1款规定：在人民检察院、公安机关、国家安全机关立案侦查或者在人民法院受理案件以后，逃避侦查或者审判的，不受追诉期限的限制。此种情况下，追诉时效的延长必须具备以下条件：人民检察院、公安机关、国家安全机关已经立案侦查或者人民法院已受理案件。这是此种追诉时效延长的前提条件。行为人实施了逃避侦查或者审判的行为。二、《刑法》第88条第2款规定：被害人在追诉期限内提出控告，人民法院、人民检察院、公安机关应当立案而不予立案的，不受追诉期限的限制。此种情况下，追诉时效的延长必须具备以下条件：被害人在追诉期限内向人民法院、人民检察院、公安机关提出控告。人民法院、人民检察院、公安机关应当立案而不予立案。“应当立案”是指根据刑法的规定和公认的刑法理论，被控告人的行为已经构成犯罪，应当对其进行立案侦查或者受理案件。",
+  "process_id": 951,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "解析追诉时效的法律概念",
+      "content": "追诉时效是刑法中的一个重要法律概念，是指国家机关在刑事案件发生后依法追诉犯罪的期限。超出该期限后，国家丧失对犯罪嫌疑人提起公诉或追究刑事责任的权利。需要确认与该问题相关的法律条款具体内容。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "搜索追诉时效的法律依据",
+      "content": "需要查找中国《刑法》中关于追诉时效的相关规定，以明确法律具体内容。"
+    },
+    {
+      "action": "Search",
+      "keyword": "刑法 追诉时效",
+      "content": ""
+    },
+    {
+      "action": "Information",
+      "content": "根据中国《刑法》第87条至第89条的规定：追诉时效的期限依据刑期的长短确定，例如最高刑不满五年的，追诉时效为五年；其他严重罪行的期限更长。此外，第89条规定追诉时效期满后，一般不得追究犯罪的刑事责任，但如果在追诉时效内犯罪人逃避侦查或者立案，时效应从案发后重新计算。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "分析追诉时效期满与免除刑罚的关系",
+      "content": "在追诉时效期限内未被追究刑事责任的，依法律规定不再追究刑事责任。因此，追诉时效期满实际上导致犯罪人免于被追究法律责任，将无法进行刑罚处罚。但需要进一步解读是否在所有情况下均适用免除刑罚。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "梳理追诉时效过后的可能例外情况",
+      "content": "结合法律条文内容分析：1) 若犯罪人在追诉时效内有逃避侦查或逃避刑罚的行为，则按照法律规定，时效重新计算；2) 特殊重大案件如贪污等特别规定可能不受追诉时效限制。需要确认这些例外是否改变时效到期不追责的结论。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "追诉时效到期后，一般情况下犯罪人可以免于刑罚处罚，因法律规定国家丧失追究权利。但如果犯罪人逃避侦查导致时效重新计算，或在特别法中有其他规定，则可能不适用免除刑罚的结论。"
+    },
+    {
+      "action": "Verification",
+      "content": "结论符合《刑法》第87至89条的相关内容及适用实际。因此确认，若无例外情形，追诉时效到期可以免除刑罚。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n追诉时效到期可以免除刑罚吗？\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n追诉时效到期后，一般情况下犯罪人可以免于刑罚处罚，因法律规定国家丧失追究权利。但如果犯罪人逃避侦查导致时效重新计算，或在特别法中有其他规定，则可能不适用免除刑罚的结论。  \n</Model Response>  \n\n<Reference Answer>  \n我国刑法规定了两种追诉时效延长的情况。一、《刑法》第88条第1款规定：在人民检察院、公安机关、国家安全机关立案侦查或者在人民法院受理案件以后，逃避侦查或者审判的，不受追诉期限的限制。此种情况下，追诉时效的延长必须具备以下条件：人民检察院、公安机关、国家安全机关已经立案侦查或者人民法院已受理案件。这是此种追诉时效延长的前提条件。行为人实施了逃避侦查或者审判的行为。二、《刑法》第88条第2款规定：被害人在追诉期限内提出控告，人民法院、人民检察院、公安机关应当立案而不予立案的，不受追诉期限的限制。此种情况下，追诉时效的延长必须具备以下条件：被害人在追诉期限内向人民法院、人民检察院、公安机关提出控告。人民法院、人民检察院、公安机关应当立案而不予立案。“应当立案”是指根据刑法的规定和公认的刑法理论，被控告人的行为已经构成犯罪，应当对其进行立案侦查或者受理案件。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 解析追诉时效的法律概念\n追诉时效是刑法中的一个重要法律概念，是指国家机关在刑事案件发生后依法追诉犯罪的期限。超出该期限后，国家丧失对犯罪嫌疑人提起公诉或追究刑事责任的权利。需要确认与该问题相关的法律条款具体内容。\n\n### 搜索追诉时效的法律依据\n需要查找中国《刑法》中关于追诉时效的相关规定，以明确法律具体内容。\n\n### Search\n\n\n### Information\n根据中国《刑法》第87条至第89条的规定：追诉时效的期限依据刑期的长短确定，例如最高刑不满五年的，追诉时效为五年；其他严重罪行的期限更长。此外，第89条规定追诉时效期满后，一般不得追究犯罪的刑事责任，但如果在追诉时效内犯罪人逃避侦查或者立案，时效应从案发后重新计算。\n\n### 分析追诉时效期满与免除刑罚的关系\n在追诉时效期限内未被追究刑事责任的，依法律规定不再追究刑事责任。因此，追诉时效期满实际上导致犯罪人免于被追究法律责任，将无法进行刑罚处罚。但需要进一步解读是否在所有情况下均适用免除刑罚。\n\n### 梳理追诉时效过后的可能例外情况\n结合法律条文内容分析：1) 若犯罪人在追诉时效内有逃避侦查或逃避刑罚的行为，则按照法律规定，时效重新计算；2) 特殊重大案件如贪污等特别规定可能不受追诉时效限制。需要确认这些例外是否改变时效到期不追责的结论。\n\n### Conclusion\n追诉时效到期后，一般情况下犯罪人可以免于刑罚处罚，因法律规定国家丧失追究权利。但如果犯罪人逃避侦查导致时效重新计算，或在特别法中有其他规定，则可能不适用免除刑罚的结论。\n\n### Verification\n结论符合《刑法》第87至89条的相关内容及适用实际。因此确认，若无例外情形，追诉时效到期可以免除刑罚。\n</Thought Process>\n\n<Question>\n追诉时效到期可以免除刑罚吗？\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n追诉时效是刑法里一个很重要的概念，说白了就是国家追究犯罪的期限问题。如果这个期限过了，犯罪人是不是就不用承担法律责任了？我觉得可以先从法律条文入手找找明确的依据。\n\n<search>中国 刑法 追诉时效</search>\n\n<information>《中国刑法》第87条至第89条明确规定了追诉时效的相关内容：追诉时效的期限和犯罪的法定最高刑有关系，比如最高刑不满五年的犯罪，时效是五年；最高刑五年以上不满十年的，时效是十年，等等。另外，第89条提到，如果犯罪人在追诉时效内逃避侦查或者逃避处罚，时效会重新计算，而不是终止。最后，特定类型的案件（例如非常严重的案件）可能不受追诉时效限制。</information>\n\n哦，这样的话，时效的计算确实是基于刑罚的长短严格规定的。那么如果追诉时效到期了，国家是不是就不能再追究了呢？这里的关键似乎是‘法律失去追诉权’的这一点。我需要好好理清到底有哪些可能的例外情况。\n\n从上述信息来看，第89条其实提到了一些例外情况，如果犯罪人在时效期内故意躲避调查，或者案件特别复杂、存在明确不受时效限制的法律规定，那么到期也未必无法追究。比如，一个罪犯在犯罪后一直逃亡，这十年的时效就不会正常计算，而是他开始被找到之后重新计算，这其实是保护追诉权的一个机制。\n\n另外，像重大案件，特别是比如贪污或贿赂这种涉及国家利益的大案子，我记得法律上有特别的条文可能不适用普通规定。我还应该找找看有没有针对这类罪行追诉时效延长或取消的具体规定。\n\n总体来说，如果是一种符合一般情形且未涉及比如逃跑等行为的普通犯罪，那么追诉时效期满确实应该是免于刑责的。毕竟，刑法的基本规定是，时效期满视作国家放弃追诉权。不过凡事总有例外，尤其在那些具有特殊社会影响或法律明确排除规定的情况下。但从目前获得的法律信息来看，这种情况是少数，而不是常态。\n\n嗯，这么一分析下来，我觉得可以得出这样的结论：如果追诉时效期满，而且不存在逃避侦查或特殊法律规则限制的情况，那么确实可以免除刑罚，这符合刑法87到89条的规定。但具体到每个案件，始终还需考虑是否属于例外情形。\n</Internal Thinking>\n\n<Question>\n追诉时效到期可以免除刑罚吗？\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"解析追诉时效的法律概念\",\n      \"content\": \"追诉时效是刑法中的一个重要法律概念，是指国家机关在刑事案件发生后依法追诉犯罪的期限。超出该期限后，国家丧失对犯罪嫌疑人提起公诉或追究刑事责任的权利。需要确认与该问题相关的法律条款具体内容。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"搜索追诉时效的法律依据\",\n      \"content\": \"需要查找中国《刑法》中关于追诉时效的相关规定，以明确法律具体内容。\"\n    },\n    {\n      \"action\": \"Search\",\n      \"keyword\": \"刑法 追诉时效\",\n      \"content\": \"\"\n    },\n    {\n      \"action\": \"Information\",\n      \"content\": \"根据中国《刑法》第87条至第89条的规定：追诉时效的期限依据刑期的长短确定，例如最高刑不满五年的，追诉时效为五年；其他严重罪行的期限更长。此外，第89条规定追诉时效期满后，一般不得追究犯罪的刑事责任，但如果在追诉时效内犯罪人逃避侦查或者立案，时效应从案发后重新计算。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析追诉时效期满与免除刑罚的关系\",\n      \"content\": \"在追诉时效期限内未被追究刑事责任的，依法律规定不再追究刑事责任。因此，追诉时效期满实际上导致犯罪人免于被追究法律责任，将无法进行刑罚处罚。但需要进一步解读是否在所有情况下均适用免除刑罚。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"梳理追诉时效过后的可能例外情况\",\n      \"content\": \"结合法律条文内容分析：1) 若犯罪人在追诉时效内有逃避侦查或逃避刑罚的行为，则按照法律规定，时效重新计算；2) 特殊重大案件如贪污等特别规定可能不受追诉时效限制。需要确认这些例外是否改变时效到期不追责的结论。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"追诉时效到期后，一般情况下犯罪人可以免于刑罚处罚，因法律规定国家丧失追究权利。但如果犯罪人逃避侦查导致时效重新计算，或在特别法中有其他规定，则可能不适用免除刑罚的结论。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"结论符合《刑法》第87至89条的相关内容及适用实际。因此确认，若无例外情形，追诉时效到期可以免除刑罚。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"追诉时效是刑法里一个很重要的概念，说白了就是国家追究犯罪的期限问题。如果这个期限过了，犯罪人是不是就不用承担法律责任了？我觉得可以先从法律条文入手找找明确的依据。\\n\\n<search>中国 刑法 追诉时效</search>\\n\\n<information>《中国刑法》第87条至第89条明确规定了追诉时效的相关内容：追诉时效的期限和犯罪的法定最高刑有关系，比如最高刑不满五年的犯罪，时效是五年；最高刑五年以上不满十年的，时效是十年，等等。另外，第89条提到，如果犯罪人在追诉时效内逃避侦查或者逃避处罚，时效会重新计算，而不是终止。最后，特定类型的案件（例如非常严重的案件）可能不受追诉时效限制。</information>\\n\\n哦，这样的话，时效的计算确实是基于刑罚的长短严格规定的。那么如果追诉时效到期了，国家是不是就不能再追究了呢？这里的关键似乎是‘法律失去追诉权’的这一点。我需要好好理清到底有哪些可能的例外情况。\\n\\n从上述信息来看，第89条其实提到了一些例外情况，如果犯罪人在时效期内故意躲避调查，或者案件特别复杂、存在明确不受时效限制的法律规定，那么到期也未必无法追究。比如，一个罪犯在犯罪后一直逃亡，这十年的时效就不会正常计算，而是他开始被找到之后重新计算，这其实是保护追诉权的一个机制。\\n\\n另外，像重大案件，特别是比如贪污或贿赂这种涉及国家利益的大案子，我记得法律上有特别的条文可能不适用普通规定。我还应该找找看有没有针对这类罪行追诉时效延长或取消的具体规定。\\n\\n总体来说，如果是一种符合一般情形且未涉及比如逃跑等行为的普通犯罪，那么追诉时效期满确实应该是免于刑责的。毕竟，刑法的基本规定是，时效期满视作国家放弃追诉权。不过凡事总有例外，尤其在那些具有特殊社会影响或法律明确排除规定的情况下。但从目前获得的法律信息来看，这种情况是少数，而不是常态。\\n\\n嗯，这么一分析下来，我觉得可以得出这样的结论：如果追诉时效期满，而且不存在逃避侦查或特殊法律规则限制的情况，那么确实可以免除刑罚，这符合刑法87到89条的规定。但具体到每个案件，始终还需考虑是否属于例外情形。\"\n}\n```",
+    "根据《中国刑法》第87条至第89条的规定，犯罪行为的追诉时效确实是刑法中明确规定的一项制度，一旦达到追诉时效并且不涉及特殊的法律例外情况，犯罪人可以免除刑罚。\n\n通常情况下，追诉时效的期限取决于犯罪的法定最高刑，比如最高刑不满五年的犯罪，追诉时效是五年；最高刑五年以上不满十年的，追诉时效是十年等。超过时效期限，国家将失去对犯罪行为的追诉权，犯罪人不再需要承担法律责任。然而，这里也存在一些重要的例外情形：\n\n1. 如果犯罪人在追诉时效内故意逃避侦查或处罚，比如潜逃，时效会重新计算，而不会失效。法律在这一点上保护了公权力的追诉权，避免犯罪人通过逃避行为“耗尽”时效。\n\n2. 有些特殊类型的案件，例如特别严重的犯罪，可能不受追诉时效限制。这通常适用于涉及国家安全、重大贪污贿赂犯罪等社会影响极为严重的案件，法律可能明确规定这些罪行不适用普通追诉时效。\n\n因此，结合法律的基本精神和细则，可以得出结论：在符合一般情形且未涉及逃避侦查、特殊法律规则限制的情况下，追诉时效期满后确实可以免除刑罚。这种机制体现了刑法对于稳定性和时间界限的考量，但在那些具有特殊性质的案件中，这条规则可能并不适用，需要具体问题具体分析。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "解析追诉时效的法律概念",
+        "content": "追诉时效是刑法中的一个重要法律概念，是指国家机关在刑事案件发生后依法追诉犯罪的期限。超出该期限后，国家丧失对犯罪嫌疑人提起公诉或追究刑事责任的权利。需要确认与该问题相关的法律条款具体内容。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "搜索追诉时效的法律依据",
+        "content": "需要查找中国《刑法》中关于追诉时效的相关规定，以明确法律具体内容。"
+      },
+      {
+        "action": "Search",
+        "keyword": "刑法 追诉时效",
+        "content": ""
+      },
+      {
+        "action": "Information",
+        "content": "根据中国《刑法》第87条至第89条的规定：追诉时效的期限依据刑期的长短确定，例如最高刑不满五年的，追诉时效为五年；其他严重罪行的期限更长。此外，第89条规定追诉时效期满后，一般不得追究犯罪的刑事责任，但如果在追诉时效内犯罪人逃避侦查或者立案，时效应从案发后重新计算。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "分析追诉时效期满与免除刑罚的关系",
+        "content": "在追诉时效期限内未被追究刑事责任的，依法律规定不再追究刑事责任。因此，追诉时效期满实际上导致犯罪人免于被追究法律责任，将无法进行刑罚处罚。但需要进一步解读是否在所有情况下均适用免除刑罚。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "梳理追诉时效过后的可能例外情况",
+        "content": "结合法律条文内容分析：1) 若犯罪人在追诉时效内有逃避侦查或逃避刑罚的行为，则按照法律规定，时效重新计算；2) 特殊重大案件如贪污等特别规定可能不受追诉时效限制。需要确认这些例外是否改变时效到期不追责的结论。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "追诉时效到期后，一般情况下犯罪人可以免于刑罚处罚，因法律规定国家丧失追究权利。但如果犯罪人逃避侦查导致时效重新计算，或在特别法中有其他规定，则可能不适用免除刑罚的结论。"
+      },
+      {
+        "action": "Verification",
+        "content": "结论符合《刑法》第87至89条的相关内容及适用实际。因此确认，若无例外情形，追诉时效到期可以免除刑罚。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "追诉时效是刑法里一个很重要的概念，说白了就是国家追究犯罪的期限问题。如果这个期限过了，犯罪人是不是就不用承担法律责任了？我觉得可以先从法律条文入手找找明确的依据。\n\n<search>中国 刑法 追诉时效</search>\n\n<information>《中国刑法》第87条至第89条明确规定了追诉时效的相关内容：追诉时效的期限和犯罪的法定最高刑有关系，比如最高刑不满五年的犯罪，时效是五年；最高刑五年以上不满十年的，时效是十年，等等。另外，第89条提到，如果犯罪人在追诉时效内逃避侦查或者逃避处罚，时效会重新计算，而不是终止。最后，特定类型的案件（例如非常严重的案件）可能不受追诉时效限制。</information>\n\n哦，这样的话，时效的计算确实是基于刑罚的长短严格规定的。那么如果追诉时效到期了，国家是不是就不能再追究了呢？这里的关键似乎是‘法律失去追诉权’的这一点。我需要好好理清到底有哪些可能的例外情况。\n\n从上述信息来看，第89条其实提到了一些例外情况，如果犯罪人在时效期内故意躲避调查，或者案件特别复杂、存在明确不受时效限制的法律规定，那么到期也未必无法追究。比如，一个罪犯在犯罪后一直逃亡，这十年的时效就不会正常计算，而是他开始被找到之后重新计算，这其实是保护追诉权的一个机制。\n\n另外，像重大案件，特别是比如贪污或贿赂这种涉及国家利益的大案子，我记得法律上有特别的条文可能不适用普通规定。我还应该找找看有没有针对这类罪行追诉时效延长或取消的具体规定。\n\n总体来说，如果是一种符合一般情形且未涉及比如逃跑等行为的普通犯罪，那么追诉时效期满确实应该是免于刑责的。毕竟，刑法的基本规定是，时效期满视作国家放弃追诉权。不过凡事总有例外，尤其在那些具有特殊社会影响或法律明确排除规定的情况下。但从目前获得的法律信息来看，这种情况是少数，而不是常态。\n\n嗯，这么一分析下来，我觉得可以得出这样的结论：如果追诉时效期满，而且不存在逃避侦查或特殊法律规则限制的情况，那么确实可以免除刑罚，这符合刑法87到89条的规定。但具体到每个案件，始终还需考虑是否属于例外情形。",
+  "Response": "根据《中国刑法》第87条至第89条的规定，犯罪行为的追诉时效确实是刑法中明确规定的一项制度，一旦达到追诉时效并且不涉及特殊的法律例外情况，犯罪人可以免除刑罚。\n\n通常情况下，追诉时效的期限取决于犯罪的法定最高刑，比如最高刑不满五年的犯罪，追诉时效是五年；最高刑五年以上不满十年的，追诉时效是十年等。超过时效期限，国家将失去对犯罪行为的追诉权，犯罪人不再需要承担法律责任。然而，这里也存在一些重要的例外情形：\n\n1. 如果犯罪人在追诉时效内故意逃避侦查或处罚，比如潜逃，时效会重新计算，而不会失效。法律在这一点上保护了公权力的追诉权，避免犯罪人通过逃避行为“耗尽”时效。\n\n2. 有些特殊类型的案件，例如特别严重的犯罪，可能不受追诉时效限制。这通常适用于涉及国家安全、重大贪污贿赂犯罪等社会影响极为严重的案件，法律可能明确规定这些罪行不适用普通追诉时效。\n\n因此，结合法律的基本精神和细则，可以得出结论：在符合一般情形且未涉及逃避侦查、特殊法律规则限制的情况下，追诉时效期满后确实可以免除刑罚。这种机制体现了刑法对于稳定性和时间界限的考量，但在那些具有特殊性质的案件中，这条规则可能并不适用，需要具体问题具体分析。",
+  "Question": "追诉时效到期可以免除刑罚吗？"
+}

@@ -1,0 +1,95 @@
+{
+  "Open-ended Verifiable Question": "逾期提交的证据是否应该质证？",
+  "Ground-True Answer": "答案是应该的人民法院应当对逾期提供的证据的证明价值进行审查，而不能仅以当事人的主张来确定。如果人民法院已经对一方当事人逾期提交的证据，要求对方当事人质证，这说明人民法院已组织当事人对该证据进行质证。至于对方当事人以该证据超过举证期限为由不予质证，亦系其对该证据的质证意见，而不能否定人民法院已经组织当事人对该逾期提交的证据予以质证的事实。",
+  "process_id": 6869,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "分析逾期提交证据的性质",
+      "content": "逾期提交的证据通常指案件进行过程中当事人在法律规定的期限之后仍然向法院提交的证据材料。这种行为可能涉及到违反程序规定的问题，但其是否需要质证可能取决于法院的具体裁定以及证据的性质。需要进一步查阅相关法律条文以明确逾期证据的处理规则。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "查找法律规定",
+      "content": "确认相关法律规定以明确逾期提交证据是否需要进行质证。根据中国法律的规定，质证适用于能够影响案件审判结果的证据，同时法律对于证据提交的时间节点也有明确规定。需要检索相关法规以获取详细信息。"
+    },
+    {
+      "action": "Search",
+      "content": "<search>民事诉讼法质证规则</search>"
+    },
+    {
+      "action": "Search",
+      "content": "<search>逾期提交证据处理办法</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "基于法律查找的解读",
+      "content": "<information>民事诉讼法规定中，证据应在法院指定的期限内提交；逾期提交的证据是否接受，由法院裁定是否具有合理理由或是否影响公平审判；而一旦证据被法院采纳，无论是否逾期均需要质证，否则无法确保证据合法性及采信有效性。</information>据此可得，质证为保障审判公平性的重要环节，逾期提交的证据若被采纳，仍需质证以便实质性审查。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "逾期提交的证据是否需要质证取决于法院的裁定。如果法院接受逾期提交的证据，无论其提交时间是否超期，均应进行质证，以确保证据的真实性、合法性和审判的公平性。"
+    },
+    {
+      "action": "Verification",
+      "content": "该结论符合民事诉讼法的质证原则及程序要求，且体现了公正审判的核心理念。结论可以成立。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n逾期提交的证据是否应该质证？\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n逾期提交的证据是否需要质证取决于法院的裁定。如果法院接受逾期提交的证据，无论其提交时间是否超期，均应进行质证，以确保证据的真实性、合法性和审判的公平性。  \n</Model Response>  \n\n<Reference Answer>  \n答案是应该的人民法院应当对逾期提供的证据的证明价值进行审查，而不能仅以当事人的主张来确定。如果人民法院已经对一方当事人逾期提交的证据，要求对方当事人质证，这说明人民法院已组织当事人对该证据进行质证。至于对方当事人以该证据超过举证期限为由不予质证，亦系其对该证据的质证意见，而不能否定人民法院已经组织当事人对该逾期提交的证据予以质证的事实。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 分析逾期提交证据的性质\n逾期提交的证据通常指案件进行过程中当事人在法律规定的期限之后仍然向法院提交的证据材料。这种行为可能涉及到违反程序规定的问题，但其是否需要质证可能取决于法院的具体裁定以及证据的性质。需要进一步查阅相关法律条文以明确逾期证据的处理规则。\n\n### 查找法律规定\n确认相关法律规定以明确逾期提交证据是否需要进行质证。根据中国法律的规定，质证适用于能够影响案件审判结果的证据，同时法律对于证据提交的时间节点也有明确规定。需要检索相关法规以获取详细信息。\n\n### Search\n<search>民事诉讼法质证规则</search>\n\n### Search\n<search>逾期提交证据处理办法</search>\n\n### 基于法律查找的解读\n<information>民事诉讼法规定中，证据应在法院指定的期限内提交；逾期提交的证据是否接受，由法院裁定是否具有合理理由或是否影响公平审判；而一旦证据被法院采纳，无论是否逾期均需要质证，否则无法确保证据合法性及采信有效性。</information>据此可得，质证为保障审判公平性的重要环节，逾期提交的证据若被采纳，仍需质证以便实质性审查。\n\n### Conclusion\n逾期提交的证据是否需要质证取决于法院的裁定。如果法院接受逾期提交的证据，无论其提交时间是否超期，均应进行质证，以确保证据的真实性、合法性和审判的公平性。\n\n### Verification\n该结论符合民事诉讼法的质证原则及程序要求，且体现了公正审判的核心理念。结论可以成立。\n</Thought Process>\n\n<Question>\n逾期提交的证据是否应该质证？\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n逾期提交的证据，这应该是指当事人在规定的时间内没有按时提交证据，后来又补交的情况吧。这种情况按我的理解，可能会涉及到程序上的问题，毕竟法律一般对证据的提交时间有明确规定。不过，这样的证据是不是还得质证呢？得查一下法律是怎么说的。\n\n我记得民事诉讼法里应该有相关规定，关于质证和证据提交的时间节点。我先搜一下，看看民事诉讼法在质证规则上有没有提到逾期证据的处理方式。<search>民事诉讼法质证规则</search>\n\n查到的话，看一下有没有具体说明的条文，或者逾期提交的证据是不是还能采纳？另外，为了保险起见，再搜一下关于逾期证据具体处理办法的规定。<search>逾期提交证据处理办法</search>\n\n嗯，找到了一些信息。<information>根据民事诉讼法规定，证据应该在法院指定的期限内提交。如果证据逾期提交，法院需要根据是否有正当理由以及是否影响公平审判来决定是否接受这份证据。但无论证据是否逾期，只要法院采纳了这份证据，那么审理时仍然需要对其进行质证，否则证据的真实性和合法性无法得到确认。</information>\n\n哦，原来是这样。我的理解是，即便证据是逾期提交的，只要法院决定接纳这份证据，那么后续的审理过程中还是必须要质证的，毕竟质证是审查这份证据真实性的关键环节。如果没经过质证，显然无法保证审判的公平性。\n\n总的来说，逾期提交的证据也得先过法院裁量这一关。如果法院愿意接受这份逾期证据，那么还是需要按照正常的流程进行质证。这跟证据是否逾期似乎并没有直接关系，而是重点放在证据本身是否会影响案件、公正性等方面。\n\n我觉得这个结论总体是成立的，毕竟既符合民事诉讼法的程序要求，又考虑到了公平审判的重要性。嗯，看起来挺合理的。\n</Internal Thinking>\n\n<Question>\n逾期提交的证据是否应该质证？\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析逾期提交证据的性质\",\n      \"content\": \"逾期提交的证据通常指案件进行过程中当事人在法律规定的期限之后仍然向法院提交的证据材料。这种行为可能涉及到违反程序规定的问题，但其是否需要质证可能取决于法院的具体裁定以及证据的性质。需要进一步查阅相关法律条文以明确逾期证据的处理规则。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"查找法律规定\",\n      \"content\": \"确认相关法律规定以明确逾期提交证据是否需要进行质证。根据中国法律的规定，质证适用于能够影响案件审判结果的证据，同时法律对于证据提交的时间节点也有明确规定。需要检索相关法规以获取详细信息。\"\n    },\n    {\n      \"action\": \"Search\",\n      \"content\": \"<search>民事诉讼法质证规则</search>\"\n    },\n    {\n      \"action\": \"Search\",\n      \"content\": \"<search>逾期提交证据处理办法</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"基于法律查找的解读\",\n      \"content\": \"<information>民事诉讼法规定中，证据应在法院指定的期限内提交；逾期提交的证据是否接受，由法院裁定是否具有合理理由或是否影响公平审判；而一旦证据被法院采纳，无论是否逾期均需要质证，否则无法确保证据合法性及采信有效性。</information>据此可得，质证为保障审判公平性的重要环节，逾期提交的证据若被采纳，仍需质证以便实质性审查。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"逾期提交的证据是否需要质证取决于法院的裁定。如果法院接受逾期提交的证据，无论其提交时间是否超期，均应进行质证，以确保证据的真实性、合法性和审判的公平性。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"该结论符合民事诉讼法的质证原则及程序要求，且体现了公正审判的核心理念。结论可以成立。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"逾期提交的证据，这应该是指当事人在规定的时间内没有按时提交证据，后来又补交的情况吧。这种情况按我的理解，可能会涉及到程序上的问题，毕竟法律一般对证据的提交时间有明确规定。不过，这样的证据是不是还得质证呢？得查一下法律是怎么说的。\\n\\n我记得民事诉讼法里应该有相关规定，关于质证和证据提交的时间节点。我先搜一下，看看民事诉讼法在质证规则上有没有提到逾期证据的处理方式。<search>民事诉讼法质证规则</search>\\n\\n查到的话，看一下有没有具体说明的条文，或者逾期提交的证据是不是还能采纳？另外，为了保险起见，再搜一下关于逾期证据具体处理办法的规定。<search>逾期提交证据处理办法</search>\\n\\n嗯，找到了一些信息。<information>根据民事诉讼法规定，证据应该在法院指定的期限内提交。如果证据逾期提交，法院需要根据是否有正当理由以及是否影响公平审判来决定是否接受这份证据。但无论证据是否逾期，只要法院采纳了这份证据，那么审理时仍然需要对其进行质证，否则证据的真实性和合法性无法得到确认。</information>\\n\\n哦，原来是这样。我的理解是，即便证据是逾期提交的，只要法院决定接纳这份证据，那么后续的审理过程中还是必须要质证的，毕竟质证是审查这份证据真实性的关键环节。如果没经过质证，显然无法保证审判的公平性。\\n\\n总的来说，逾期提交的证据也得先过法院裁量这一关。如果法院愿意接受这份逾期证据，那么还是需要按照正常的流程进行质证。这跟证据是否逾期似乎并没有直接关系，而是重点放在证据本身是否会影响案件、公正性等方面。\\n\\n我觉得这个结论总体是成立的，毕竟既符合民事诉讼法的程序要求，又考虑到了公平审判的重要性。嗯，看起来挺合理的。\"\n}\n```",
+    "逾期提交的证据是否应该质证，取决于法院对该证据的裁定。根据《中华人民共和国民事诉讼法》的相关规定，证据应当在法院指定的期限内提交。如果当事人在规定的期限后才提交证据，法院会根据具体情况决定是否接受逾期提交的证据。\n\n法院在裁量时主要考量两方面因素：  \n1. **是否存在正当理由**：如果提交证据的一方能够提供合理的理由证明逾期不属于恶意拖延，法院可能会接受该证据；  \n2. **是否影响公平审判**：如果逾期提交的证据会对另一方当事人的诉讼权利或案件的公平性造成重大影响，例如使对方无法及时准备反驳，法院可能拒绝采用该证据。\n\n然而，一旦法院决定接纳逾期提交的证据，无论其提交时间是否符合要求，该证据在后续程序中仍需经过质证。这是因为质证是审理证据的必经程序，其目的是通过双方当事人的辩论、陈述及对证据提出异议，确保证据的真实性、合法性与关联性得以确认。若未经质证，证据的效力无法被认定，进而可能影响裁判的公正性。\n\n因此，**逾期提交的证据，在法院裁定允许接纳的前提下，仍应按照法律规定进行质证**，这既是保障一方当事人知情权和辩护权的程序要求，也是在确保司法公正的重要步骤。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "分析逾期提交证据的性质",
+        "content": "逾期提交的证据通常指案件进行过程中当事人在法律规定的期限之后仍然向法院提交的证据材料。这种行为可能涉及到违反程序规定的问题，但其是否需要质证可能取决于法院的具体裁定以及证据的性质。需要进一步查阅相关法律条文以明确逾期证据的处理规则。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "查找法律规定",
+        "content": "确认相关法律规定以明确逾期提交证据是否需要进行质证。根据中国法律的规定，质证适用于能够影响案件审判结果的证据，同时法律对于证据提交的时间节点也有明确规定。需要检索相关法规以获取详细信息。"
+      },
+      {
+        "action": "Search",
+        "content": "<search>民事诉讼法质证规则</search>"
+      },
+      {
+        "action": "Search",
+        "content": "<search>逾期提交证据处理办法</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "基于法律查找的解读",
+        "content": "<information>民事诉讼法规定中，证据应在法院指定的期限内提交；逾期提交的证据是否接受，由法院裁定是否具有合理理由或是否影响公平审判；而一旦证据被法院采纳，无论是否逾期均需要质证，否则无法确保证据合法性及采信有效性。</information>据此可得，质证为保障审判公平性的重要环节，逾期提交的证据若被采纳，仍需质证以便实质性审查。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "逾期提交的证据是否需要质证取决于法院的裁定。如果法院接受逾期提交的证据，无论其提交时间是否超期，均应进行质证，以确保证据的真实性、合法性和审判的公平性。"
+      },
+      {
+        "action": "Verification",
+        "content": "该结论符合民事诉讼法的质证原则及程序要求，且体现了公正审判的核心理念。结论可以成立。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "逾期提交的证据，这应该是指当事人在规定的时间内没有按时提交证据，后来又补交的情况吧。这种情况按我的理解，可能会涉及到程序上的问题，毕竟法律一般对证据的提交时间有明确规定。不过，这样的证据是不是还得质证呢？得查一下法律是怎么说的。\n\n我记得民事诉讼法里应该有相关规定，关于质证和证据提交的时间节点。我先搜一下，看看民事诉讼法在质证规则上有没有提到逾期证据的处理方式。<search>民事诉讼法质证规则</search>\n\n查到的话，看一下有没有具体说明的条文，或者逾期提交的证据是不是还能采纳？另外，为了保险起见，再搜一下关于逾期证据具体处理办法的规定。<search>逾期提交证据处理办法</search>\n\n嗯，找到了一些信息。<information>根据民事诉讼法规定，证据应该在法院指定的期限内提交。如果证据逾期提交，法院需要根据是否有正当理由以及是否影响公平审判来决定是否接受这份证据。但无论证据是否逾期，只要法院采纳了这份证据，那么审理时仍然需要对其进行质证，否则证据的真实性和合法性无法得到确认。</information>\n\n哦，原来是这样。我的理解是，即便证据是逾期提交的，只要法院决定接纳这份证据，那么后续的审理过程中还是必须要质证的，毕竟质证是审查这份证据真实性的关键环节。如果没经过质证，显然无法保证审判的公平性。\n\n总的来说，逾期提交的证据也得先过法院裁量这一关。如果法院愿意接受这份逾期证据，那么还是需要按照正常的流程进行质证。这跟证据是否逾期似乎并没有直接关系，而是重点放在证据本身是否会影响案件、公正性等方面。\n\n我觉得这个结论总体是成立的，毕竟既符合民事诉讼法的程序要求，又考虑到了公平审判的重要性。嗯，看起来挺合理的。",
+  "Response": "逾期提交的证据是否应该质证，取决于法院对该证据的裁定。根据《中华人民共和国民事诉讼法》的相关规定，证据应当在法院指定的期限内提交。如果当事人在规定的期限后才提交证据，法院会根据具体情况决定是否接受逾期提交的证据。\n\n法院在裁量时主要考量两方面因素：  \n1. **是否存在正当理由**：如果提交证据的一方能够提供合理的理由证明逾期不属于恶意拖延，法院可能会接受该证据；  \n2. **是否影响公平审判**：如果逾期提交的证据会对另一方当事人的诉讼权利或案件的公平性造成重大影响，例如使对方无法及时准备反驳，法院可能拒绝采用该证据。\n\n然而，一旦法院决定接纳逾期提交的证据，无论其提交时间是否符合要求，该证据在后续程序中仍需经过质证。这是因为质证是审理证据的必经程序，其目的是通过双方当事人的辩论、陈述及对证据提出异议，确保证据的真实性、合法性与关联性得以确认。若未经质证，证据的效力无法被认定，进而可能影响裁判的公正性。\n\n因此，**逾期提交的证据，在法院裁定允许接纳的前提下，仍应按照法律规定进行质证**，这既是保障一方当事人知情权和辩护权的程序要求，也是在确保司法公正的重要步骤。",
+  "Question": "逾期提交的证据是否应该质证？"
+}

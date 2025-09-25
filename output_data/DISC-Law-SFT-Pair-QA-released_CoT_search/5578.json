@@ -1,0 +1,99 @@
+{
+  "Open-ended Verifiable Question": "未签劳动合同，申请劳动仲裁如何取证？",
+  "Ground-True Answer": "劳动者因为没有签订劳动合同，想去劳动仲裁部门起诉，没有签劳动合同劳动者只需提供工作证、工作牌、以及用数码相机拍照的值班记录、工资条、其他劳动者的证言、考勤记录、等能够证明你是公司员工的证据即可。具体需要提交劳动仲裁申请书等书面材料。",
+  "process_id": 5578,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "明确申请劳动仲裁的必要条件",
+      "content": "劳动仲裁通常需要证明劳动关系的存在，而未签订劳动合同可能会导致证明劳动关系变得复杂。根据中国法律，例如《劳动法》和《劳动合同法》，劳动关系通常需要通过实际工作记录或涉及雇主行为的证据来体现。需要确认合法性的依据，包括相关法律条款。<search>劳动法 劳动关系定义</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "获取关于劳动关系定义的信息",
+      "content": "<information>劳动关系定义在《中华人民共和国劳动法》第16条中提到，劳动关系为雇主和雇员之间基于劳动、工资报酬和管理的基本关系。如果未签订劳动合同，可以通过实际工作证明、工资支付记录等来证明。</information>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "确定可用以证明劳动关系的证据类型",
+      "content": "根据法律定义，可以使用诸如工资支付记录、工牌、工作服、考勤记录、电子邮件和聊天记录等证据来证明劳动关系的存在。这些物品需具备与雇主的明确关联性，并能够支持劳动者申请仲裁时的主张。进一步确认相关仲裁规定的支持性条款以确保证据有效性。<search>劳动仲裁证据相关规定</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "查阅劳动仲裁证据相关规定",
+      "content": "<information>根据《劳动争议调解仲裁法》第六条的规定，劳动者在仲裁中需提交能够证明劳动关系的证据。这样的证据包括工资汇款记录、工作任务记录、以及其他可以表明存在固定劳动关系的书面或电子证据。</information>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "制定申请劳动仲裁的取证策略",
+      "content": "为了申请劳动仲裁，劳动者应积极收集以下主要证据：（1）银行工资流水，证明雇主支付劳动报酬的事实；（2）公司内部聊天记录和邮件，阐明劳动任务的安排；（3）工作服、工牌等实体物品，说明劳动者身份；（4）与雇主的书面往来记录。这些证据若被认定符合劳动关系的特点，则可合理支持仲裁申请。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "未签劳动合同申请劳动仲裁，可通过以下方式取证：收集工资支付记录（银行流水）、工牌或工作服等物品、考勤记录、与雇主沟通的聊天记录或邮件等资料。这些证据需能够直接或间接证明劳动关系，并且符合劳动争议相关法律条款要求。"
+    },
+    {
+      "action": "Verification",
+      "content": "结论符合《劳动法》和《劳动争议调解仲裁法》的相关法律条款，取证方法具体且适用性强。验证结束，结论有效。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n未签劳动合同，申请劳动仲裁如何取证？\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n未签劳动合同申请劳动仲裁，可通过以下方式取证：收集工资支付记录（银行流水）、工牌或工作服等物品、考勤记录、与雇主沟通的聊天记录或邮件等资料。这些证据需能够直接或间接证明劳动关系，并且符合劳动争议相关法律条款要求。  \n</Model Response>  \n\n<Reference Answer>  \n劳动者因为没有签订劳动合同，想去劳动仲裁部门起诉，没有签劳动合同劳动者只需提供工作证、工作牌、以及用数码相机拍照的值班记录、工资条、其他劳动者的证言、考勤记录、等能够证明你是公司员工的证据即可。具体需要提交劳动仲裁申请书等书面材料。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 明确申请劳动仲裁的必要条件\n劳动仲裁通常需要证明劳动关系的存在，而未签订劳动合同可能会导致证明劳动关系变得复杂。根据中国法律，例如《劳动法》和《劳动合同法》，劳动关系通常需要通过实际工作记录或涉及雇主行为的证据来体现。需要确认合法性的依据，包括相关法律条款。<search>劳动法 劳动关系定义</search>\n\n### 获取关于劳动关系定义的信息\n<information>劳动关系定义在《中华人民共和国劳动法》第16条中提到，劳动关系为雇主和雇员之间基于劳动、工资报酬和管理的基本关系。如果未签订劳动合同，可以通过实际工作证明、工资支付记录等来证明。</information>\n\n### 确定可用以证明劳动关系的证据类型\n根据法律定义，可以使用诸如工资支付记录、工牌、工作服、考勤记录、电子邮件和聊天记录等证据来证明劳动关系的存在。这些物品需具备与雇主的明确关联性，并能够支持劳动者申请仲裁时的主张。进一步确认相关仲裁规定的支持性条款以确保证据有效性。<search>劳动仲裁证据相关规定</search>\n\n### 查阅劳动仲裁证据相关规定\n<information>根据《劳动争议调解仲裁法》第六条的规定，劳动者在仲裁中需提交能够证明劳动关系的证据。这样的证据包括工资汇款记录、工作任务记录、以及其他可以表明存在固定劳动关系的书面或电子证据。</information>\n\n### 制定申请劳动仲裁的取证策略\n为了申请劳动仲裁，劳动者应积极收集以下主要证据：（1）银行工资流水，证明雇主支付劳动报酬的事实；（2）公司内部聊天记录和邮件，阐明劳动任务的安排；（3）工作服、工牌等实体物品，说明劳动者身份；（4）与雇主的书面往来记录。这些证据若被认定符合劳动关系的特点，则可合理支持仲裁申请。\n\n### Conclusion\n未签劳动合同申请劳动仲裁，可通过以下方式取证：收集工资支付记录（银行流水）、工牌或工作服等物品、考勤记录、与雇主沟通的聊天记录或邮件等资料。这些证据需能够直接或间接证明劳动关系，并且符合劳动争议相关法律条款要求。\n\n### Verification\n结论符合《劳动法》和《劳动争议调解仲裁法》的相关法律条款，取证方法具体且适用性强。验证结束，结论有效。\n</Thought Process>\n\n<Question>\n未签劳动合同，申请劳动仲裁如何取证？\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n好，我先想想劳动仲裁这件事。如果劳动合同没签，那在申请仲裁之前肯定是要证明自己和公司之间的劳动关系，毕竟关系都没办法证明，仲裁也没得聊啊。劳动关系是个怎么定义的事儿呢？我记得好像在《劳动法》里面有提到，我还是查一下更保险吧。<search>劳动法 劳动关系定义</search>\n\n嗯，查到了。《中华人民共和国劳动法》第16条确实有定义，说劳动关系呢就是劳动者和用人单位基于劳动、工资报酬和管理之间的基本关系。那如果没签合同的话，能不能用一些实际工作记录来证明呢？工资支付记录啊，工牌啊，工作服之类的东西，听上去应该都能有效果。要不，再确认一下法律对这些证据的规定吧？比如说哪些证据是仲裁时认可的。<search>劳动仲裁证据相关规定</search>\n\n查出来了。《劳动争议调解仲裁法》第六条说得很清楚，劳动者提交的证据需要能证明劳动关系，比如工资流水记录、工作任务记录什么的。电子邮件和聊天记录也能算进去。如果这些证据足够清晰，并且能直接或间接证明劳动关系，仲裁机构应该是会采信的。\n\n接下来就是得想想具体怎么收集这些证据了。可以先从工资流水开始，银行的转账记录是最直观的证明，工资肯定都是公司支付的嘛。然后呢，公司内部可能会有一些聊天记录或者邮件，可以看看哪些能够直接指出自己的工作内容和任务安排。还有一种办法是看看有没有工牌或者工作服，这些东西带着公司标志也能证明自己确实在这家公司工作过。另外，如果有考勤记录那就更好了，这个一般也是很有力的证据。\n\n嗯，整理一下。如果要申请劳动仲裁，没签劳动合同的话，可以通过几种方式来取证：首先银行转账记录是核心证据之一；然后从内部沟通记录，比如邮件或者聊天记录里面找具体工作任务的安排；还有啥呢，哦对，还有工牌、工作服这些具有公司特征的物品。只要这些证据都能指向劳动关系，仲裁申请应该就能顺利推进。\n\n看起来这几种方法都符合《劳动法》和《劳动争议调解仲裁法》的要求，还是比较合理的。好，这么梳理下来就差不多了，我觉得应该没问题，那就按这个方向去准备证据吧！\n</Internal Thinking>\n\n<Question>\n未签劳动合同，申请劳动仲裁如何取证？\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"明确申请劳动仲裁的必要条件\",\n      \"content\": \"劳动仲裁通常需要证明劳动关系的存在，而未签订劳动合同可能会导致证明劳动关系变得复杂。根据中国法律，例如《劳动法》和《劳动合同法》，劳动关系通常需要通过实际工作记录或涉及雇主行为的证据来体现。需要确认合法性的依据，包括相关法律条款。<search>劳动法 劳动关系定义</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"获取关于劳动关系定义的信息\",\n      \"content\": \"<information>劳动关系定义在《中华人民共和国劳动法》第16条中提到，劳动关系为雇主和雇员之间基于劳动、工资报酬和管理的基本关系。如果未签订劳动合同，可以通过实际工作证明、工资支付记录等来证明。</information>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"确定可用以证明劳动关系的证据类型\",\n      \"content\": \"根据法律定义，可以使用诸如工资支付记录、工牌、工作服、考勤记录、电子邮件和聊天记录等证据来证明劳动关系的存在。这些物品需具备与雇主的明确关联性，并能够支持劳动者申请仲裁时的主张。进一步确认相关仲裁规定的支持性条款以确保证据有效性。<search>劳动仲裁证据相关规定</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"查阅劳动仲裁证据相关规定\",\n      \"content\": \"<information>根据《劳动争议调解仲裁法》第六条的规定，劳动者在仲裁中需提交能够证明劳动关系的证据。这样的证据包括工资汇款记录、工作任务记录、以及其他可以表明存在固定劳动关系的书面或电子证据。</information>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"制定申请劳动仲裁的取证策略\",\n      \"content\": \"为了申请劳动仲裁，劳动者应积极收集以下主要证据：（1）银行工资流水，证明雇主支付劳动报酬的事实；（2）公司内部聊天记录和邮件，阐明劳动任务的安排；（3）工作服、工牌等实体物品，说明劳动者身份；（4）与雇主的书面往来记录。这些证据若被认定符合劳动关系的特点，则可合理支持仲裁申请。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"未签劳动合同申请劳动仲裁，可通过以下方式取证：收集工资支付记录（银行流水）、工牌或工作服等物品、考勤记录、与雇主沟通的聊天记录或邮件等资料。这些证据需能够直接或间接证明劳动关系，并且符合劳动争议相关法律条款要求。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"结论符合《劳动法》和《劳动争议调解仲裁法》的相关法律条款，取证方法具体且适用性强。验证结束，结论有效。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"好，我先想想劳动仲裁这件事。如果劳动合同没签，那在申请仲裁之前肯定是要证明自己和公司之间的劳动关系，毕竟关系都没办法证明，仲裁也没得聊啊。劳动关系是个怎么定义的事儿呢？我记得好像在《劳动法》里面有提到，我还是查一下更保险吧。<search>劳动法 劳动关系定义</search>\\n\\n嗯，查到了。《中华人民共和国劳动法》第16条确实有定义，说劳动关系呢就是劳动者和用人单位基于劳动、工资报酬和管理之间的基本关系。那如果没签合同的话，能不能用一些实际工作记录来证明呢？工资支付记录啊，工牌啊，工作服之类的东西，听上去应该都能有效果。要不，再确认一下法律对这些证据的规定吧？比如说哪些证据是仲裁时认可的。<search>劳动仲裁证据相关规定</search>\\n\\n查出来了。《劳动争议调解仲裁法》第六条说得很清楚，劳动者提交的证据需要能证明劳动关系，比如工资流水记录、工作任务记录什么的。电子邮件和聊天记录也能算进去。如果这些证据足够清晰，并且能直接或间接证明劳动关系，仲裁机构应该是会采信的。\\n\\n接下来就是得想想具体怎么收集这些证据了。可以先从工资流水开始，银行的转账记录是最直观的证明，工资肯定都是公司支付的嘛。然后呢，公司内部可能会有一些聊天记录或者邮件，可以看看哪些能够直接指出自己的工作内容和任务安排。还有一种办法是看看有没有工牌或者工作服，这些东西带着公司标志也能证明自己确实在这家公司工作过。另外，如果有考勤记录那就更好了，这个一般也是很有力的证据。\\n\\n嗯，整理一下。如果要申请劳动仲裁，没签劳动合同的话，可以通过几种方式来取证：首先银行转账记录是核心证据之一；然后从内部沟通记录，比如邮件或者聊天记录里面找具体工作任务的安排；还有啥呢，哦对，还有工牌、工作服这些具有公司特征的物品。只要这些证据都能指向劳动关系，仲裁申请应该就能顺利推进。\\n\\n看起来这几种方法都符合《劳动法》和《劳动争议调解仲裁法》的要求，还是比较合理的。好，这么梳理下来就差不多了，我觉得应该没问题，那就按这个方向去准备证据吧！\"\n}\n```",
+    "未签劳动合同申请劳动仲裁时，取证是关键环节。根据《中华人民共和国劳动法》和《劳动争议调解仲裁法》的相关规定，你需要通过能够证明劳动关系的证据来支持仲裁申请。以下是常见且有效的取证方式：\n\n1. **工资支付记录**：银行工资转账记录是最直接的证据，可以证明公司支付过你的劳动报酬。若实际工资是通过现金方式发放，可尝试找相关的收据、工资单或其他能够记录支付情况的材料。\n\n2. **工作任务或沟通记录**：包括内部邮件、公司聊天软件的对话记录，这些文件中可能涉及到具体的工作安排、任务分配或领导指示，对于证明劳动关系具有很强的说服力。\n\n3. **工作场景相关资料**：工牌、工作服、员工入职培训记录或其他带有公司标志的物品，这些从侧面可证明你参与过公司管理、工作流程。\n\n4. **考勤记录**：若公司提供考勤系统，比如打卡记录、签到记录等，这些数据能进一步证明你曾在公司工作。\n\n5. **同事证言**：还可以寻求与公司其他员工的配合，请他们提供证词，证明你是公司员工并曾开展工作。\n\n6. **其他文件证明**：如收据、合同草稿、工作成果文件或协作的文件签字等，这些都可能包含你实际参与工作的痕迹。\n\n仲裁机构通常会对以上证据进行综合评估，确认是否能够明确指向劳动关系。在取证过程中建议注意保护隐私和避免侵害公司权利，例如获取邮件或记录时，尽量使用合法手段。\n\n最后，准备这些证据后，携带证据材料前往劳动仲裁委员会申请仲裁，同时提交仲裁申请书并陈述自己的诉求即可。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "明确申请劳动仲裁的必要条件",
+        "content": "劳动仲裁通常需要证明劳动关系的存在，而未签订劳动合同可能会导致证明劳动关系变得复杂。根据中国法律，例如《劳动法》和《劳动合同法》，劳动关系通常需要通过实际工作记录或涉及雇主行为的证据来体现。需要确认合法性的依据，包括相关法律条款。<search>劳动法 劳动关系定义</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "获取关于劳动关系定义的信息",
+        "content": "<information>劳动关系定义在《中华人民共和国劳动法》第16条中提到，劳动关系为雇主和雇员之间基于劳动、工资报酬和管理的基本关系。如果未签订劳动合同，可以通过实际工作证明、工资支付记录等来证明。</information>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "确定可用以证明劳动关系的证据类型",
+        "content": "根据法律定义，可以使用诸如工资支付记录、工牌、工作服、考勤记录、电子邮件和聊天记录等证据来证明劳动关系的存在。这些物品需具备与雇主的明确关联性，并能够支持劳动者申请仲裁时的主张。进一步确认相关仲裁规定的支持性条款以确保证据有效性。<search>劳动仲裁证据相关规定</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "查阅劳动仲裁证据相关规定",
+        "content": "<information>根据《劳动争议调解仲裁法》第六条的规定，劳动者在仲裁中需提交能够证明劳动关系的证据。这样的证据包括工资汇款记录、工作任务记录、以及其他可以表明存在固定劳动关系的书面或电子证据。</information>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "制定申请劳动仲裁的取证策略",
+        "content": "为了申请劳动仲裁，劳动者应积极收集以下主要证据：（1）银行工资流水，证明雇主支付劳动报酬的事实；（2）公司内部聊天记录和邮件，阐明劳动任务的安排；（3）工作服、工牌等实体物品，说明劳动者身份；（4）与雇主的书面往来记录。这些证据若被认定符合劳动关系的特点，则可合理支持仲裁申请。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "未签劳动合同申请劳动仲裁，可通过以下方式取证：收集工资支付记录（银行流水）、工牌或工作服等物品、考勤记录、与雇主沟通的聊天记录或邮件等资料。这些证据需能够直接或间接证明劳动关系，并且符合劳动争议相关法律条款要求。"
+      },
+      {
+        "action": "Verification",
+        "content": "结论符合《劳动法》和《劳动争议调解仲裁法》的相关法律条款，取证方法具体且适用性强。验证结束，结论有效。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "好，我先想想劳动仲裁这件事。如果劳动合同没签，那在申请仲裁之前肯定是要证明自己和公司之间的劳动关系，毕竟关系都没办法证明，仲裁也没得聊啊。劳动关系是个怎么定义的事儿呢？我记得好像在《劳动法》里面有提到，我还是查一下更保险吧。<search>劳动法 劳动关系定义</search>\n\n嗯，查到了。《中华人民共和国劳动法》第16条确实有定义，说劳动关系呢就是劳动者和用人单位基于劳动、工资报酬和管理之间的基本关系。那如果没签合同的话，能不能用一些实际工作记录来证明呢？工资支付记录啊，工牌啊，工作服之类的东西，听上去应该都能有效果。要不，再确认一下法律对这些证据的规定吧？比如说哪些证据是仲裁时认可的。<search>劳动仲裁证据相关规定</search>\n\n查出来了。《劳动争议调解仲裁法》第六条说得很清楚，劳动者提交的证据需要能证明劳动关系，比如工资流水记录、工作任务记录什么的。电子邮件和聊天记录也能算进去。如果这些证据足够清晰，并且能直接或间接证明劳动关系，仲裁机构应该是会采信的。\n\n接下来就是得想想具体怎么收集这些证据了。可以先从工资流水开始，银行的转账记录是最直观的证明，工资肯定都是公司支付的嘛。然后呢，公司内部可能会有一些聊天记录或者邮件，可以看看哪些能够直接指出自己的工作内容和任务安排。还有一种办法是看看有没有工牌或者工作服，这些东西带着公司标志也能证明自己确实在这家公司工作过。另外，如果有考勤记录那就更好了，这个一般也是很有力的证据。\n\n嗯，整理一下。如果要申请劳动仲裁，没签劳动合同的话，可以通过几种方式来取证：首先银行转账记录是核心证据之一；然后从内部沟通记录，比如邮件或者聊天记录里面找具体工作任务的安排；还有啥呢，哦对，还有工牌、工作服这些具有公司特征的物品。只要这些证据都能指向劳动关系，仲裁申请应该就能顺利推进。\n\n看起来这几种方法都符合《劳动法》和《劳动争议调解仲裁法》的要求，还是比较合理的。好，这么梳理下来就差不多了，我觉得应该没问题，那就按这个方向去准备证据吧！",
+  "Response": "未签劳动合同申请劳动仲裁时，取证是关键环节。根据《中华人民共和国劳动法》和《劳动争议调解仲裁法》的相关规定，你需要通过能够证明劳动关系的证据来支持仲裁申请。以下是常见且有效的取证方式：\n\n1. **工资支付记录**：银行工资转账记录是最直接的证据，可以证明公司支付过你的劳动报酬。若实际工资是通过现金方式发放，可尝试找相关的收据、工资单或其他能够记录支付情况的材料。\n\n2. **工作任务或沟通记录**：包括内部邮件、公司聊天软件的对话记录，这些文件中可能涉及到具体的工作安排、任务分配或领导指示，对于证明劳动关系具有很强的说服力。\n\n3. **工作场景相关资料**：工牌、工作服、员工入职培训记录或其他带有公司标志的物品，这些从侧面可证明你参与过公司管理、工作流程。\n\n4. **考勤记录**：若公司提供考勤系统，比如打卡记录、签到记录等，这些数据能进一步证明你曾在公司工作。\n\n5. **同事证言**：还可以寻求与公司其他员工的配合，请他们提供证词，证明你是公司员工并曾开展工作。\n\n6. **其他文件证明**：如收据、合同草稿、工作成果文件或协作的文件签字等，这些都可能包含你实际参与工作的痕迹。\n\n仲裁机构通常会对以上证据进行综合评估，确认是否能够明确指向劳动关系。在取证过程中建议注意保护隐私和避免侵害公司权利，例如获取邮件或记录时，尽量使用合法手段。\n\n最后，准备这些证据后，携带证据材料前往劳动仲裁委员会申请仲裁，同时提交仲裁申请书并陈述自己的诉求即可。",
+  "Question": "未签劳动合同，申请劳动仲裁如何取证？"
+}

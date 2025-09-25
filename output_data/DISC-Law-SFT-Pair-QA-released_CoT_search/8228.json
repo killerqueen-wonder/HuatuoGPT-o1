@@ -1,0 +1,105 @@
+{
+  "Open-ended Verifiable Question": "确认股权纠纷有时效吗?",
+  "Ground-True Answer": "确认股权纠纷是有诉讼时效的，一般是3年，最长不超过20年，根据《民法典》第一百八十八条 向人民法院请求保护民事权利的诉讼时效期间为三年。法律另有规定的，依照其规定。\n诉讼时效期间自权利人知道或者应当知道权利受到损害以及义务人之日起计算。法律另有规定的，依照其规定。但是，自权利受到损害之日起超过二十年的，人民法院不予保护，有特殊情况的，人民法院可以根据权利人的申请决定延长。\n第一百八十九条 当事人约定同一债务分期履行的，诉讼时效期间自最后一期履行期限届满之日起计算。\n第一百九十条 无民事行为能力人或者限制民事行为能力人对其法定代理人的请求权的诉讼时效期间，自该法定代理终止之日起计算。\n第一百九十一条 未成年人遭受性侵害的损害赔偿请求权的诉讼时效期间，自受害人年满十八周岁之日起计算。\n第一百九十二条 诉讼时效期间届满的，义务人可以提出不履行义务的抗辩。",
+  "process_id": 8228,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "确定问题范围",
+      "content": "股权纠纷通常涉及民事法律，对于时效问题，可以从我国民法典关于诉讼时效的规定入手，确认是否对股权纠纷适用诉讼时效的限制。需要研究相关法律条文的适用性。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "搜索《中华人民共和国民法典》相关规定",
+      "content": "为了明确诉讼时效在股权纠纷中的适用，需查阅《中华人民共和国民法典》第188条关于一般诉讼时效、以及其他针对股权问题可能适用的条文内容。"
+    },
+    {
+      "action": "Searching",
+      "content": "<search>中华人民共和国民法典 诉讼时效 股权纠纷</search>"
+    },
+    {
+      "action": "Information Retrieval",
+      "content": "<information>《中华人民共和国民法典》第188条规定，向人民法院请求保护民事权利的诉讼时效期间为三年，自权利人知道或者应当知道权利受到侵害之日起计算。此外，第196条规定，涉及确认不动产等特别权利的，不受诉讼时效限制。</information>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "分析股权纠纷的性质与诉讼时效的适用",
+      "content": "根据《民法典》第188条，一般民事权利保护适用三年诉讼时效；第196条指出确认权利的纠纷可能不受诉讼时效限制。股权纠纷分为两类：一种是涉及权利确认的纠纷（如确认股权归属）；另一种是涉及具体损害赔偿的纠纷。性质不同导致适用规则不同。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "股权性质与诉讼时效的逻辑判断",
+      "content": "对于确认股权归属的纠纷，其本质类似于防止权利永久性丧失，依据《民法典》第196条，不受一般诉讼时效限制。但若涉及例如股东利益受损等赔偿请求，则适用一般三年的诉讼时效。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "股权纠纷的时效问题需根据纠纷性质判定：如果是确认权利性质（即确认股权归属）的纠纷，则不受诉讼时效限制；如果是涉及股东权益损害赔偿的纠纷，则适用《民法典》第188条的一般三年诉讼时效规定。"
+    },
+    {
+      "action": "Verification",
+      "content": "结论正确。股权纠纷性质判定明确，涉及确认权利的纠纷不适用时效限制，涉及损害赔偿的纠纷适用三年一般诉讼时效。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n确认股权纠纷有时效吗?\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n股权纠纷的时效问题需根据纠纷性质判定：如果是确认权利性质（即确认股权归属）的纠纷，则不受诉讼时效限制；如果是涉及股东权益损害赔偿的纠纷，则适用《民法典》第188条的一般三年诉讼时效规定。  \n</Model Response>  \n\n<Reference Answer>  \n确认股权纠纷是有诉讼时效的，一般是3年，最长不超过20年，根据《民法典》第一百八十八条 向人民法院请求保护民事权利的诉讼时效期间为三年。法律另有规定的，依照其规定。\n诉讼时效期间自权利人知道或者应当知道权利受到损害以及义务人之日起计算。法律另有规定的，依照其规定。但是，自权利受到损害之日起超过二十年的，人民法院不予保护，有特殊情况的，人民法院可以根据权利人的申请决定延长。\n第一百八十九条 当事人约定同一债务分期履行的，诉讼时效期间自最后一期履行期限届满之日起计算。\n第一百九十条 无民事行为能力人或者限制民事行为能力人对其法定代理人的请求权的诉讼时效期间，自该法定代理终止之日起计算。\n第一百九十一条 未成年人遭受性侵害的损害赔偿请求权的诉讼时效期间，自受害人年满十八周岁之日起计算。\n第一百九十二条 诉讼时效期间届满的，义务人可以提出不履行义务的抗辩。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 确定问题范围\n股权纠纷通常涉及民事法律，对于时效问题，可以从我国民法典关于诉讼时效的规定入手，确认是否对股权纠纷适用诉讼时效的限制。需要研究相关法律条文的适用性。\n\n### 搜索《中华人民共和国民法典》相关规定\n为了明确诉讼时效在股权纠纷中的适用，需查阅《中华人民共和国民法典》第188条关于一般诉讼时效、以及其他针对股权问题可能适用的条文内容。\n\n### Searching\n<search>中华人民共和国民法典 诉讼时效 股权纠纷</search>\n\n### Information Retrieval\n<information>《中华人民共和国民法典》第188条规定，向人民法院请求保护民事权利的诉讼时效期间为三年，自权利人知道或者应当知道权利受到侵害之日起计算。此外，第196条规定，涉及确认不动产等特别权利的，不受诉讼时效限制。</information>\n\n### 分析股权纠纷的性质与诉讼时效的适用\n根据《民法典》第188条，一般民事权利保护适用三年诉讼时效；第196条指出确认权利的纠纷可能不受诉讼时效限制。股权纠纷分为两类：一种是涉及权利确认的纠纷（如确认股权归属）；另一种是涉及具体损害赔偿的纠纷。性质不同导致适用规则不同。\n\n### 股权性质与诉讼时效的逻辑判断\n对于确认股权归属的纠纷，其本质类似于防止权利永久性丧失，依据《民法典》第196条，不受一般诉讼时效限制。但若涉及例如股东利益受损等赔偿请求，则适用一般三年的诉讼时效。\n\n### Conclusion\n股权纠纷的时效问题需根据纠纷性质判定：如果是确认权利性质（即确认股权归属）的纠纷，则不受诉讼时效限制；如果是涉及股东权益损害赔偿的纠纷，则适用《民法典》第188条的一般三年诉讼时效规定。\n\n### Verification\n结论正确。股权纠纷性质判定明确，涉及确认权利的纠纷不适用时效限制，涉及损害赔偿的纠纷适用三年一般诉讼时效。\n</Thought Process>\n\n<Question>\n确认股权纠纷有时效吗?\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n嗯，股权纠纷有没有诉讼时效这个问题，得先搞清楚法律上是怎么说的。毕竟股权纠纷这种事，涉及范围可能挺复杂，所以是不是受诉讼时效限制，还是得具体看它的性质是什么。\n\n要弄明白这个问题的话，还是得先从《中华人民共和国民法典》里找找看。民法典里应该有关于诉讼时效的规定，像时效期限是多少、哪些情况例外什么的，应该都写得很清楚。好的，那我直接去查一下民法典。\n\n<search>中华人民共和国民法典 诉讼时效 股权纠纷</search>\n\n找到了！<information>《中华人民共和国民法典》第188条说，请求保护民事权利的诉讼时效一般是三年，从权利人知道或者应当知道权利被侵害时开始算时间。但是，还有个特别的——第196条说，确认某些权利（比如不动产归属）的纠纷是不受诉讼时效限制的。</information>\n\n看到这，我得想一想，股权纠纷到底属于哪种情况呢？好像从法律上来说，股权纠纷可能是两类不同的事情。一种是确认股权到底是谁的，也就是确认权利这个层面的问题。另一种呢，是比如股东觉得自己的权益被侵害了，要求赔偿，这种就不一样了，属于需要追责和索赔的性质。\n\n那这样看，应该怎么适用时效规定呢？如果是第一类，确认权利的纠纷，说到底，就是为了搞清楚股权归属这件事。这种情况听起来挺像第196条讲的那种“确认权利”的问题，既然不动产归属不受限制，那股权归属应该也差不多——这种情况下，应该是不受诉讼时效限制的。\n\n但如果是第二类，比如股东因为权益损害要求赔偿，这就不同了。它是保护民事权利的一种具体权利请求，应该还是按第188条来算时效。所以，这种情况，一般就是三年的诉讼时效期限。\n\n嗯，总结一下吧：股权纠纷有没有诉讼时效得分情况。如果是确认股权归属，这种不受诉讼时效限制；如果是赔偿类的股东权益纠纷，那就适用普通三年诉讼时效就行了。这逻辑应该是清楚的，和民法典的规定也对得上。\n</Internal Thinking>\n\n<Question>\n确认股权纠纷有时效吗?\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"确定问题范围\",\n      \"content\": \"股权纠纷通常涉及民事法律，对于时效问题，可以从我国民法典关于诉讼时效的规定入手，确认是否对股权纠纷适用诉讼时效的限制。需要研究相关法律条文的适用性。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"搜索《中华人民共和国民法典》相关规定\",\n      \"content\": \"为了明确诉讼时效在股权纠纷中的适用，需查阅《中华人民共和国民法典》第188条关于一般诉讼时效、以及其他针对股权问题可能适用的条文内容。\"\n    },\n    {\n      \"action\": \"Searching\",\n      \"content\": \"<search>中华人民共和国民法典 诉讼时效 股权纠纷</search>\"\n    },\n    {\n      \"action\": \"Information Retrieval\",\n      \"content\": \"<information>《中华人民共和国民法典》第188条规定，向人民法院请求保护民事权利的诉讼时效期间为三年，自权利人知道或者应当知道权利受到侵害之日起计算。此外，第196条规定，涉及确认不动产等特别权利的，不受诉讼时效限制。</information>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析股权纠纷的性质与诉讼时效的适用\",\n      \"content\": \"根据《民法典》第188条，一般民事权利保护适用三年诉讼时效；第196条指出确认权利的纠纷可能不受诉讼时效限制。股权纠纷分为两类：一种是涉及权利确认的纠纷（如确认股权归属）；另一种是涉及具体损害赔偿的纠纷。性质不同导致适用规则不同。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"股权性质与诉讼时效的逻辑判断\",\n      \"content\": \"对于确认股权归属的纠纷，其本质类似于防止权利永久性丧失，依据《民法典》第196条，不受一般诉讼时效限制。但若涉及例如股东利益受损等赔偿请求，则适用一般三年的诉讼时效。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"股权纠纷的时效问题需根据纠纷性质判定：如果是确认权利性质（即确认股权归属）的纠纷，则不受诉讼时效限制；如果是涉及股东权益损害赔偿的纠纷，则适用《民法典》第188条的一般三年诉讼时效规定。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"结论正确。股权纠纷性质判定明确，涉及确认权利的纠纷不适用时效限制，涉及损害赔偿的纠纷适用三年一般诉讼时效。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"嗯，股权纠纷有没有诉讼时效这个问题，得先搞清楚法律上是怎么说的。毕竟股权纠纷这种事，涉及范围可能挺复杂，所以是不是受诉讼时效限制，还是得具体看它的性质是什么。\\n\\n要弄明白这个问题的话，还是得先从《中华人民共和国民法典》里找找看。民法典里应该有关于诉讼时效的规定，像时效期限是多少、哪些情况例外什么的，应该都写得很清楚。好的，那我直接去查一下民法典。\\n\\n<search>中华人民共和国民法典 诉讼时效 股权纠纷</search>\\n\\n找到了！<information>《中华人民共和国民法典》第188条说，请求保护民事权利的诉讼时效一般是三年，从权利人知道或者应当知道权利被侵害时开始算时间。但是，还有个特别的——第196条说，确认某些权利（比如不动产归属）的纠纷是不受诉讼时效限制的。</information>\\n\\n看到这，我得想一想，股权纠纷到底属于哪种情况呢？好像从法律上来说，股权纠纷可能是两类不同的事情。一种是确认股权到底是谁的，也就是确认权利这个层面的问题。另一种呢，是比如股东觉得自己的权益被侵害了，要求赔偿，这种就不一样了，属于需要追责和索赔的性质。\\n\\n那这样看，应该怎么适用时效规定呢？如果是第一类，确认权利的纠纷，说到底，就是为了搞清楚股权归属这件事。这种情况听起来挺像第196条讲的那种“确认权利”的问题，既然不动产归属不受限制，那股权归属应该也差不多——这种情况下，应该是不受诉讼时效限制的。\\n\\n但如果是第二类，比如股东因为权益损害要求赔偿，这就不同了。它是保护民事权利的一种具体权利请求，应该还是按第188条来算时效。所以，这种情况，一般就是三年的诉讼时效期限。\\n\\n嗯，总结一下吧：股权纠纷有没有诉讼时效得分情况。如果是确认股权归属，这种不受诉讼时效限制；如果是赔偿类的股东权益纠纷，那就适用普通三年诉讼时效就行了。这逻辑应该是清楚的，和民法典的规定也对得上。\"\n}\n```",
+    "确认股权归属的纠纷一般不受诉讼时效的限制。\n\n根据《中华人民共和国民法典》第196条的规定，对于确认物权或其他权利归属的纠纷，不适用诉讼时效的限制。这类纠纷的核心在于确认股权的归属权问题，而并非具体的权利请求。因此，从法律上讲，确认股权归属这种性质的争议，不受三年普通诉讼时效的限制。\n\n需要注意的是，如果纠纷的本质是在股东权益被侵害后要求损害赔偿，则属于具体的民事权利请求，应适用《民法典》第188条的规定，遵循一般三年的诉讼时效期限计算。\n\n总结来说，确认股权的纠纷不受诉讼时效限制，而因股东权益受损提起的赔偿请求则受三年时效限制。具体问题需根据案件性质来分析适用。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "确定问题范围",
+        "content": "股权纠纷通常涉及民事法律，对于时效问题，可以从我国民法典关于诉讼时效的规定入手，确认是否对股权纠纷适用诉讼时效的限制。需要研究相关法律条文的适用性。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "搜索《中华人民共和国民法典》相关规定",
+        "content": "为了明确诉讼时效在股权纠纷中的适用，需查阅《中华人民共和国民法典》第188条关于一般诉讼时效、以及其他针对股权问题可能适用的条文内容。"
+      },
+      {
+        "action": "Searching",
+        "content": "<search>中华人民共和国民法典 诉讼时效 股权纠纷</search>"
+      },
+      {
+        "action": "Information Retrieval",
+        "content": "<information>《中华人民共和国民法典》第188条规定，向人民法院请求保护民事权利的诉讼时效期间为三年，自权利人知道或者应当知道权利受到侵害之日起计算。此外，第196条规定，涉及确认不动产等特别权利的，不受诉讼时效限制。</information>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "分析股权纠纷的性质与诉讼时效的适用",
+        "content": "根据《民法典》第188条，一般民事权利保护适用三年诉讼时效；第196条指出确认权利的纠纷可能不受诉讼时效限制。股权纠纷分为两类：一种是涉及权利确认的纠纷（如确认股权归属）；另一种是涉及具体损害赔偿的纠纷。性质不同导致适用规则不同。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "股权性质与诉讼时效的逻辑判断",
+        "content": "对于确认股权归属的纠纷，其本质类似于防止权利永久性丧失，依据《民法典》第196条，不受一般诉讼时效限制。但若涉及例如股东利益受损等赔偿请求，则适用一般三年的诉讼时效。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "股权纠纷的时效问题需根据纠纷性质判定：如果是确认权利性质（即确认股权归属）的纠纷，则不受诉讼时效限制；如果是涉及股东权益损害赔偿的纠纷，则适用《民法典》第188条的一般三年诉讼时效规定。"
+      },
+      {
+        "action": "Verification",
+        "content": "结论正确。股权纠纷性质判定明确，涉及确认权利的纠纷不适用时效限制，涉及损害赔偿的纠纷适用三年一般诉讼时效。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "嗯，股权纠纷有没有诉讼时效这个问题，得先搞清楚法律上是怎么说的。毕竟股权纠纷这种事，涉及范围可能挺复杂，所以是不是受诉讼时效限制，还是得具体看它的性质是什么。\n\n要弄明白这个问题的话，还是得先从《中华人民共和国民法典》里找找看。民法典里应该有关于诉讼时效的规定，像时效期限是多少、哪些情况例外什么的，应该都写得很清楚。好的，那我直接去查一下民法典。\n\n<search>中华人民共和国民法典 诉讼时效 股权纠纷</search>\n\n找到了！<information>《中华人民共和国民法典》第188条说，请求保护民事权利的诉讼时效一般是三年，从权利人知道或者应当知道权利被侵害时开始算时间。但是，还有个特别的——第196条说，确认某些权利（比如不动产归属）的纠纷是不受诉讼时效限制的。</information>\n\n看到这，我得想一想，股权纠纷到底属于哪种情况呢？好像从法律上来说，股权纠纷可能是两类不同的事情。一种是确认股权到底是谁的，也就是确认权利这个层面的问题。另一种呢，是比如股东觉得自己的权益被侵害了，要求赔偿，这种就不一样了，属于需要追责和索赔的性质。\n\n那这样看，应该怎么适用时效规定呢？如果是第一类，确认权利的纠纷，说到底，就是为了搞清楚股权归属这件事。这种情况听起来挺像第196条讲的那种“确认权利”的问题，既然不动产归属不受限制，那股权归属应该也差不多——这种情况下，应该是不受诉讼时效限制的。\n\n但如果是第二类，比如股东因为权益损害要求赔偿，这就不同了。它是保护民事权利的一种具体权利请求，应该还是按第188条来算时效。所以，这种情况，一般就是三年的诉讼时效期限。\n\n嗯，总结一下吧：股权纠纷有没有诉讼时效得分情况。如果是确认股权归属，这种不受诉讼时效限制；如果是赔偿类的股东权益纠纷，那就适用普通三年诉讼时效就行了。这逻辑应该是清楚的，和民法典的规定也对得上。",
+  "Response": "确认股权归属的纠纷一般不受诉讼时效的限制。\n\n根据《中华人民共和国民法典》第196条的规定，对于确认物权或其他权利归属的纠纷，不适用诉讼时效的限制。这类纠纷的核心在于确认股权的归属权问题，而并非具体的权利请求。因此，从法律上讲，确认股权归属这种性质的争议，不受三年普通诉讼时效的限制。\n\n需要注意的是，如果纠纷的本质是在股东权益被侵害后要求损害赔偿，则属于具体的民事权利请求，应适用《民法典》第188条的规定，遵循一般三年的诉讼时效期限计算。\n\n总结来说，确认股权的纠纷不受诉讼时效限制，而因股东权益受损提起的赔偿请求则受三年时效限制。具体问题需根据案件性质来分析适用。",
+  "Question": "确认股权纠纷有时效吗?"
+}

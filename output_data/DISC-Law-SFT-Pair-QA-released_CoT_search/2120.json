@@ -1,0 +1,89 @@
+{
+  "Open-ended Verifiable Question": "一方不履行合同的如何处理?",
+  "Ground-True Answer": "违反合同，守约方可以要求违约方承担违约责任。违反合同规定的，可以协商要求赔偿，一般情况下还可以根据合同中约定的违约金来进行认定，如果双方无法就有关赔偿达成一致意见的还可以起诉到法院，由法院根据实际来进行裁定处理的。法律依据《中华人民共和国民法典》第五百七十七条：当事人一方不履行合同义务或者履行合同义务不符合约定的，应当承担继续履行、采取补救措施或者赔偿损失等违约责任。第五百七十八条：当事人一方明确表示或者以自己的行为表明不履行合同义务的，对方可以在履行期限届满前请求其承担违约责任。第五百八十五条：当事人可以约定一方违约时应当根据违约情况向对方支付一定数额的违约金，也可以约定因违约产生的损失赔偿额的计算方法。约定的违约金低于造成的损失的，人民法院或者仲裁机构可以根据当事人的请求予以增加；约定的违约金过分高于造成的损失的，人民法院或者仲裁机构可以根据当事人的请求予以适当减少。当事人就迟延履行约定违约金的，违约方支付违约金后，还应当履行债务。",
+  "process_id": 2120,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "确定一方不履行合同的法律定义",
+      "content": "首先需要了解合同法律中对于'不履行合同'的定义以及相关法律条款，确认其含义和适用情形。为此需搜索相关法律内容。<search>合同不履行 法律定义</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "获取合同不履行法律定义",
+      "content": "<information>根据《中华人民共和国合同法》第107条规定，“当事人不履行合同义务或者履行合同义务不符合约定的，应当承担继续履行、采取补救措施或者赔偿损失等违约责任。”</information>合同不履行通常指违约的一种形式，可能包括完全不履行合同、迟延履行、不适当履行等情形。下一步是分析如何处理这种情况。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "分析合同不履行的处理方法",
+      "content": "根据法律，处理合同不履行通常包括三种方式：1) 要求继续履行合同义务；2) 要求采取补救措施，例如修复已造成的损害；3) 申请赔偿损失。如果协商无法解决，可通过诉讼或者仲裁途径处理。需要进一步确认是否有具体的法律条文指导这些行为。<search>合同违约处理 法律条文</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "获取合同违约处理的具体法律条文",
+      "content": "<information>《中华人民共和国合同法》第114条至第116条规定了违约金、损害赔偿以及其他责任形式的细则。此外，依据《民法典》相关条款，对于合同违约的处理包括提前约定违约金条款以及在法律允许范围内调整合同内容。</information>基于这些条款，确定处理方式需要看合同具体约定和违约行为的性质。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "当一方不履行合同时，可以根据《合同法》和《民法典》的规定采取以下措施：1) 定向要求违约方继续履行合同义务；2) 采取补救措施，修复或改善因违约造成的损害；3) 申请赔偿损失，包括通过仲裁或诉讼解决。如果合同中有违约金条款，可以要求支付约定的违约金。同时法院或仲裁机构在处理违约问题时，可能根据具体情况调整相关责任内容。"
+    },
+    {
+      "action": "Verification",
+      "content": "结论符合相关法律条款的规定，包括《合同法》第107条、114条以及《民法典》的相关内容，结合实际处理方式合理且合法。结论已验证通过。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n一方不履行合同的如何处理?\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n当一方不履行合同时，可以根据《合同法》和《民法典》的规定采取以下措施：1) 定向要求违约方继续履行合同义务；2) 采取补救措施，修复或改善因违约造成的损害；3) 申请赔偿损失，包括通过仲裁或诉讼解决。如果合同中有违约金条款，可以要求支付约定的违约金。同时法院或仲裁机构在处理违约问题时，可能根据具体情况调整相关责任内容。  \n</Model Response>  \n\n<Reference Answer>  \n违反合同，守约方可以要求违约方承担违约责任。违反合同规定的，可以协商要求赔偿，一般情况下还可以根据合同中约定的违约金来进行认定，如果双方无法就有关赔偿达成一致意见的还可以起诉到法院，由法院根据实际来进行裁定处理的。法律依据《中华人民共和国民法典》第五百七十七条：当事人一方不履行合同义务或者履行合同义务不符合约定的，应当承担继续履行、采取补救措施或者赔偿损失等违约责任。第五百七十八条：当事人一方明确表示或者以自己的行为表明不履行合同义务的，对方可以在履行期限届满前请求其承担违约责任。第五百八十五条：当事人可以约定一方违约时应当根据违约情况向对方支付一定数额的违约金，也可以约定因违约产生的损失赔偿额的计算方法。约定的违约金低于造成的损失的，人民法院或者仲裁机构可以根据当事人的请求予以增加；约定的违约金过分高于造成的损失的，人民法院或者仲裁机构可以根据当事人的请求予以适当减少。当事人就迟延履行约定违约金的，违约方支付违约金后，还应当履行债务。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 确定一方不履行合同的法律定义\n首先需要了解合同法律中对于'不履行合同'的定义以及相关法律条款，确认其含义和适用情形。为此需搜索相关法律内容。<search>合同不履行 法律定义</search>\n\n### 获取合同不履行法律定义\n<information>根据《中华人民共和国合同法》第107条规定，“当事人不履行合同义务或者履行合同义务不符合约定的，应当承担继续履行、采取补救措施或者赔偿损失等违约责任。”</information>合同不履行通常指违约的一种形式，可能包括完全不履行合同、迟延履行、不适当履行等情形。下一步是分析如何处理这种情况。\n\n### 分析合同不履行的处理方法\n根据法律，处理合同不履行通常包括三种方式：1) 要求继续履行合同义务；2) 要求采取补救措施，例如修复已造成的损害；3) 申请赔偿损失。如果协商无法解决，可通过诉讼或者仲裁途径处理。需要进一步确认是否有具体的法律条文指导这些行为。<search>合同违约处理 法律条文</search>\n\n### 获取合同违约处理的具体法律条文\n<information>《中华人民共和国合同法》第114条至第116条规定了违约金、损害赔偿以及其他责任形式的细则。此外，依据《民法典》相关条款，对于合同违约的处理包括提前约定违约金条款以及在法律允许范围内调整合同内容。</information>基于这些条款，确定处理方式需要看合同具体约定和违约行为的性质。\n\n### Conclusion\n当一方不履行合同时，可以根据《合同法》和《民法典》的规定采取以下措施：1) 定向要求违约方继续履行合同义务；2) 采取补救措施，修复或改善因违约造成的损害；3) 申请赔偿损失，包括通过仲裁或诉讼解决。如果合同中有违约金条款，可以要求支付约定的违约金。同时法院或仲裁机构在处理违约问题时，可能根据具体情况调整相关责任内容。\n\n### Verification\n结论符合相关法律条款的规定，包括《合同法》第107条、114条以及《民法典》的相关内容，结合实际处理方式合理且合法。结论已验证通过。\n</Thought Process>\n\n<Question>\n一方不履行合同的如何处理?\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n嗯，我需要先搞清楚当一方不履行合同的时候，这在法律上到底是怎么定义的。应该有具体的条款来说明这种情况是什么。我要查一下相关信息。<search>合同不履行 法律定义</search>\n\n哦，找到了！根据《中华人民共和国合同法》第107条的规定，“当事人不履行合同义务或者履行合同义务不符合约定的，应当承担继续履行、采取补救措施或者赔偿损失等违约责任。”也就是说，这里的“不履行合同”包括好几种情况：完全不履行、迟延履行或者履行得不符合合同约定。现在明白了什么是“不履行合同”了，下一步就是看看我们具体能怎么处理这种情况。\n\n处理方法的话，应该还是得从法律上找依据吧，特别是违约情况下的一些条款内容。我记得合同法里应该有专门讲违约处理的内容。再查一下更详细的内容吧。<search>合同违约处理 法律条文</search>\n\n好，有结果了！《合同法》114条到116条确实规定了违约处理的具体方式，包括违约金和损害赔偿的一些细则。另外，现在的法律还包括《民法典》的相关条款，里面提到对于违约处理，比如可以预先约定违约金，或者根据实际情况调整合同内容。这些内容真的很重要，看来合同细节还是决定了怎么处理的方式。\n\n这样总结一下，如果真的碰到一方不履行合同的情况，大体上可以有以下几个方式来应对：一是要求违约方继续履行合同，也就是把他们该做的事情补上；二是如果已经造成了损失，可以要求采取补救措施，比如修复问题；三是要求赔偿损失，比如这笔损失费怎么计算，可能依照合同约定，也可能求助仲裁或者诉讼来解决。另外，如果合同里说好了有违约金，那就可以直接要求对方支付违约金，这确实是种比较明确的方式。\n\n当然最终要完全解决问题，还需要根据情况调整，像法院或者仲裁机构可能会根据实际情况来重新定义责任，比如减少一些负担，或者改变一些合同内容。所以实际操作也有灵活性。\n\n嗯，以上内容基本符合《合同法》和《民法典》的规定，比如第107条、第114条，还有其他涉及违约责任的内容。处理方式看起来是合理合规的，也能覆盖主要的应对手段。\n</Internal Thinking>\n\n<Question>\n一方不履行合同的如何处理?\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"确定一方不履行合同的法律定义\",\n      \"content\": \"首先需要了解合同法律中对于'不履行合同'的定义以及相关法律条款，确认其含义和适用情形。为此需搜索相关法律内容。<search>合同不履行 法律定义</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"获取合同不履行法律定义\",\n      \"content\": \"<information>根据《中华人民共和国合同法》第107条规定，“当事人不履行合同义务或者履行合同义务不符合约定的，应当承担继续履行、采取补救措施或者赔偿损失等违约责任。”</information>合同不履行通常指违约的一种形式，可能包括完全不履行合同、迟延履行、不适当履行等情形。下一步是分析如何处理这种情况。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析合同不履行的处理方法\",\n      \"content\": \"根据法律，处理合同不履行通常包括三种方式：1) 要求继续履行合同义务；2) 要求采取补救措施，例如修复已造成的损害；3) 申请赔偿损失。如果协商无法解决，可通过诉讼或者仲裁途径处理。需要进一步确认是否有具体的法律条文指导这些行为。<search>合同违约处理 法律条文</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"获取合同违约处理的具体法律条文\",\n      \"content\": \"<information>《中华人民共和国合同法》第114条至第116条规定了违约金、损害赔偿以及其他责任形式的细则。此外，依据《民法典》相关条款，对于合同违约的处理包括提前约定违约金条款以及在法律允许范围内调整合同内容。</information>基于这些条款，确定处理方式需要看合同具体约定和违约行为的性质。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"当一方不履行合同时，可以根据《合同法》和《民法典》的规定采取以下措施：1) 定向要求违约方继续履行合同义务；2) 采取补救措施，修复或改善因违约造成的损害；3) 申请赔偿损失，包括通过仲裁或诉讼解决。如果合同中有违约金条款，可以要求支付约定的违约金。同时法院或仲裁机构在处理违约问题时，可能根据具体情况调整相关责任内容。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"结论符合相关法律条款的规定，包括《合同法》第107条、114条以及《民法典》的相关内容，结合实际处理方式合理且合法。结论已验证通过。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"嗯，我需要先搞清楚当一方不履行合同的时候，这在法律上到底是怎么定义的。应该有具体的条款来说明这种情况是什么。我要查一下相关信息。<search>合同不履行 法律定义</search>\\n\\n哦，找到了！根据《中华人民共和国合同法》第107条的规定，“当事人不履行合同义务或者履行合同义务不符合约定的，应当承担继续履行、采取补救措施或者赔偿损失等违约责任。”也就是说，这里的“不履行合同”包括好几种情况：完全不履行、迟延履行或者履行得不符合合同约定。现在明白了什么是“不履行合同”了，下一步就是看看我们具体能怎么处理这种情况。\\n\\n处理方法的话，应该还是得从法律上找依据吧，特别是违约情况下的一些条款内容。我记得合同法里应该有专门讲违约处理的内容。再查一下更详细的内容吧。<search>合同违约处理 法律条文</search>\\n\\n好，有结果了！《合同法》114条到116条确实规定了违约处理的具体方式，包括违约金和损害赔偿的一些细则。另外，现在的法律还包括《民法典》的相关条款，里面提到对于违约处理，比如可以预先约定违约金，或者根据实际情况调整合同内容。这些内容真的很重要，看来合同细节还是决定了怎么处理的方式。\\n\\n这样总结一下，如果真的碰到一方不履行合同的情况，大体上可以有以下几个方式来应对：一是要求违约方继续履行合同，也就是把他们该做的事情补上；二是如果已经造成了损失，可以要求采取补救措施，比如修复问题；三是要求赔偿损失，比如这笔损失费怎么计算，可能依照合同约定，也可能求助仲裁或者诉讼来解决。另外，如果合同里说好了有违约金，那就可以直接要求对方支付违约金，这确实是种比较明确的方式。\\n\\n当然最终要完全解决问题，还需要根据情况调整，像法院或者仲裁机构可能会根据实际情况来重新定义责任，比如减少一些负担，或者改变一些合同内容。所以实际操作也有灵活性。\\n\\n嗯，以上内容基本符合《合同法》和《民法典》的规定，比如第107条、第114条，还有其他涉及违约责任的内容。处理方式看起来是合理合规的，也能覆盖主要的应对手段。\"\n}\n```",
+    "当一方不履行合同时，可以根据法律规定采取以下几种处理方式：\n\n1. **要求继续履行合同**：违约方必须按照合同的约定履行相关义务。这种方式适用于合同内容仍可履行且继续履行不会导致过大损失的情况。\n\n2. **采取补救措施**：如果违约已经导致问题，比如未按约交付货物或提供服务，可以要求违约方采取具体的补救措施来修复问题。\n\n3. **赔偿损失**：如果违约行为已造成实际损害，可以要求违约方赔偿损失。赔偿金额一般需要根据损失情况计算，合同中可能明确规定赔偿标准，也可通过法院或仲裁机构裁定。\n\n4. **支付违约金**：如果合同中有约定违约金条款，可以要求对方支付违约金。此类条款为双方提前约定的惩罚性或补偿性金额，具有较强的法律约束力。\n\n5. **调整或解除合同**：在某些情况下，违约严重影响合同履行的基础，可以与对方协商调整合同内容，或者通过法律途径解除合同。\n\n以上这些处理方式依据《中华人民共和国民法典》（原《合同法》相关内容）进行，其中第107条规定了违约责任，同时114条至116条明确了违约金和损害赔偿的条款。具体处理方式建议结合合同约定以及实际情况，在必要时可寻求法律帮助或通过仲裁、诉讼程序具体解决问题。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "确定一方不履行合同的法律定义",
+        "content": "首先需要了解合同法律中对于'不履行合同'的定义以及相关法律条款，确认其含义和适用情形。为此需搜索相关法律内容。<search>合同不履行 法律定义</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "获取合同不履行法律定义",
+        "content": "<information>根据《中华人民共和国合同法》第107条规定，“当事人不履行合同义务或者履行合同义务不符合约定的，应当承担继续履行、采取补救措施或者赔偿损失等违约责任。”</information>合同不履行通常指违约的一种形式，可能包括完全不履行合同、迟延履行、不适当履行等情形。下一步是分析如何处理这种情况。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "分析合同不履行的处理方法",
+        "content": "根据法律，处理合同不履行通常包括三种方式：1) 要求继续履行合同义务；2) 要求采取补救措施，例如修复已造成的损害；3) 申请赔偿损失。如果协商无法解决，可通过诉讼或者仲裁途径处理。需要进一步确认是否有具体的法律条文指导这些行为。<search>合同违约处理 法律条文</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "获取合同违约处理的具体法律条文",
+        "content": "<information>《中华人民共和国合同法》第114条至第116条规定了违约金、损害赔偿以及其他责任形式的细则。此外，依据《民法典》相关条款，对于合同违约的处理包括提前约定违约金条款以及在法律允许范围内调整合同内容。</information>基于这些条款，确定处理方式需要看合同具体约定和违约行为的性质。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "当一方不履行合同时，可以根据《合同法》和《民法典》的规定采取以下措施：1) 定向要求违约方继续履行合同义务；2) 采取补救措施，修复或改善因违约造成的损害；3) 申请赔偿损失，包括通过仲裁或诉讼解决。如果合同中有违约金条款，可以要求支付约定的违约金。同时法院或仲裁机构在处理违约问题时，可能根据具体情况调整相关责任内容。"
+      },
+      {
+        "action": "Verification",
+        "content": "结论符合相关法律条款的规定，包括《合同法》第107条、114条以及《民法典》的相关内容，结合实际处理方式合理且合法。结论已验证通过。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "嗯，我需要先搞清楚当一方不履行合同的时候，这在法律上到底是怎么定义的。应该有具体的条款来说明这种情况是什么。我要查一下相关信息。<search>合同不履行 法律定义</search>\n\n哦，找到了！根据《中华人民共和国合同法》第107条的规定，“当事人不履行合同义务或者履行合同义务不符合约定的，应当承担继续履行、采取补救措施或者赔偿损失等违约责任。”也就是说，这里的“不履行合同”包括好几种情况：完全不履行、迟延履行或者履行得不符合合同约定。现在明白了什么是“不履行合同”了，下一步就是看看我们具体能怎么处理这种情况。\n\n处理方法的话，应该还是得从法律上找依据吧，特别是违约情况下的一些条款内容。我记得合同法里应该有专门讲违约处理的内容。再查一下更详细的内容吧。<search>合同违约处理 法律条文</search>\n\n好，有结果了！《合同法》114条到116条确实规定了违约处理的具体方式，包括违约金和损害赔偿的一些细则。另外，现在的法律还包括《民法典》的相关条款，里面提到对于违约处理，比如可以预先约定违约金，或者根据实际情况调整合同内容。这些内容真的很重要，看来合同细节还是决定了怎么处理的方式。\n\n这样总结一下，如果真的碰到一方不履行合同的情况，大体上可以有以下几个方式来应对：一是要求违约方继续履行合同，也就是把他们该做的事情补上；二是如果已经造成了损失，可以要求采取补救措施，比如修复问题；三是要求赔偿损失，比如这笔损失费怎么计算，可能依照合同约定，也可能求助仲裁或者诉讼来解决。另外，如果合同里说好了有违约金，那就可以直接要求对方支付违约金，这确实是种比较明确的方式。\n\n当然最终要完全解决问题，还需要根据情况调整，像法院或者仲裁机构可能会根据实际情况来重新定义责任，比如减少一些负担，或者改变一些合同内容。所以实际操作也有灵活性。\n\n嗯，以上内容基本符合《合同法》和《民法典》的规定，比如第107条、第114条，还有其他涉及违约责任的内容。处理方式看起来是合理合规的，也能覆盖主要的应对手段。",
+  "Response": "当一方不履行合同时，可以根据法律规定采取以下几种处理方式：\n\n1. **要求继续履行合同**：违约方必须按照合同的约定履行相关义务。这种方式适用于合同内容仍可履行且继续履行不会导致过大损失的情况。\n\n2. **采取补救措施**：如果违约已经导致问题，比如未按约交付货物或提供服务，可以要求违约方采取具体的补救措施来修复问题。\n\n3. **赔偿损失**：如果违约行为已造成实际损害，可以要求违约方赔偿损失。赔偿金额一般需要根据损失情况计算，合同中可能明确规定赔偿标准，也可通过法院或仲裁机构裁定。\n\n4. **支付违约金**：如果合同中有约定违约金条款，可以要求对方支付违约金。此类条款为双方提前约定的惩罚性或补偿性金额，具有较强的法律约束力。\n\n5. **调整或解除合同**：在某些情况下，违约严重影响合同履行的基础，可以与对方协商调整合同内容，或者通过法律途径解除合同。\n\n以上这些处理方式依据《中华人民共和国民法典》（原《合同法》相关内容）进行，其中第107条规定了违约责任，同时114条至116条明确了违约金和损害赔偿的条款。具体处理方式建议结合合同约定以及实际情况，在必要时可寻求法律帮助或通过仲裁、诉讼程序具体解决问题。",
+  "Question": "一方不履行合同的如何处理?"
+}

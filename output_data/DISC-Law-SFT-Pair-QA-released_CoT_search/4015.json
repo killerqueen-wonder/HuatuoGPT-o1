@@ -1,0 +1,79 @@
+{
+  "Open-ended Verifiable Question": "信用卡欠款会判离婚吗?",
+  "Ground-True Answer": "1、信用卡欠款不还，可能坐牢，可能不是。2、坐牢是因为不还的情形符合刑事犯罪。根据刑法第一百九十六条规定：有下列情形之一，进行信用卡诈骗活动，数额较大的，处五年以下有期徒刑或者拘役，并处二万元以上二十万元以下罚金;数额巨大或者有其他严重情节的，处五年以上十年以下有期徒刑，并处五万元以上五十万元以下罚金;数额特别巨大或者有其他特别严重情节的，处十年以上有期徒刑或者无期徒刑，并处五万元以上五十万元以下罚金或者没收财产：(一)使用伪造的信用卡的;(二)使用作废的信用卡的;(三)冒用他人信用卡的;(四)恶意透支的。前面所称恶意透支，是指持卡人以非法占有为目的，超过规定限额或者规定期限透支，并且经发卡银行催收后仍不归还的行为。所以信用卡恶意欠款行为可能会被判刑的，但坐牢不能抵消债务。信用卡公司无权处理家庭房产，但家庭有附带还款责任，家庭房产只能通过法院查封拍卖处理，会涉及夫妻双方的财产，并不会涉及到子女的财产。因此，信用卡因欠款坐牢出来之后还要还清信用卡所有欠款和罚息的。",
+  "process_id": 4015,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "分析信用卡欠款是否可直接导致离婚",
+      "content": "信用卡欠款属于夫妻一方的债务问题，但婚姻关系是否能够因此直接判定解除需要依据法律规定。一般来说，信用卡欠款需看是否属于夫妻共同债务以及是否影响夫妻双方感情的根本破裂。需要查询相关法律对离婚判决的依据进行分析。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "查询离婚判定的法律依据",
+      "content": "<search>婚姻法 夫妻债务 离婚判决依据</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "分析法律信息以判定情况",
+      "content": "<information>根据中国《婚姻法》和相关司法解释，离婚的判决主要基于夫妻双方感情是否已破裂，并非仅因为债务问题，除非债务问题涉及欺诈、重大背信行为导致家庭无法维持。对于个人债务，原则上不会直接导致离婚判决，需看是否与夫妻感情恶化相关联。</information>"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "信用卡欠款本身不会直接成为判决离婚的法律依据，除非此欠款问题严重影响了夫妻双方的感情，导致感情破裂。这种情况下，法院可能会判离婚，同时根据具体情况处理债务分担问题。"
+    },
+    {
+      "action": "Verification",
+      "content": "根据中国《婚姻法》和相关司法解释，债务问题不会直接成为离婚判决的唯一依据，需结合感情破裂等因素综合判断。因此结论正确。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n信用卡欠款会判离婚吗?\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n信用卡欠款本身不会直接成为判决离婚的法律依据，除非此欠款问题严重影响了夫妻双方的感情，导致感情破裂。这种情况下，法院可能会判离婚，同时根据具体情况处理债务分担问题。  \n</Model Response>  \n\n<Reference Answer>  \n1、信用卡欠款不还，可能坐牢，可能不是。2、坐牢是因为不还的情形符合刑事犯罪。根据刑法第一百九十六条规定：有下列情形之一，进行信用卡诈骗活动，数额较大的，处五年以下有期徒刑或者拘役，并处二万元以上二十万元以下罚金;数额巨大或者有其他严重情节的，处五年以上十年以下有期徒刑，并处五万元以上五十万元以下罚金;数额特别巨大或者有其他特别严重情节的，处十年以上有期徒刑或者无期徒刑，并处五万元以上五十万元以下罚金或者没收财产：(一)使用伪造的信用卡的;(二)使用作废的信用卡的;(三)冒用他人信用卡的;(四)恶意透支的。前面所称恶意透支，是指持卡人以非法占有为目的，超过规定限额或者规定期限透支，并且经发卡银行催收后仍不归还的行为。所以信用卡恶意欠款行为可能会被判刑的，但坐牢不能抵消债务。信用卡公司无权处理家庭房产，但家庭有附带还款责任，家庭房产只能通过法院查封拍卖处理，会涉及夫妻双方的财产，并不会涉及到子女的财产。因此，信用卡因欠款坐牢出来之后还要还清信用卡所有欠款和罚息的。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 分析信用卡欠款是否可直接导致离婚\n信用卡欠款属于夫妻一方的债务问题，但婚姻关系是否能够因此直接判定解除需要依据法律规定。一般来说，信用卡欠款需看是否属于夫妻共同债务以及是否影响夫妻双方感情的根本破裂。需要查询相关法律对离婚判决的依据进行分析。\n\n### 查询离婚判定的法律依据\n<search>婚姻法 夫妻债务 离婚判决依据</search>\n\n### 分析法律信息以判定情况\n<information>根据中国《婚姻法》和相关司法解释，离婚的判决主要基于夫妻双方感情是否已破裂，并非仅因为债务问题，除非债务问题涉及欺诈、重大背信行为导致家庭无法维持。对于个人债务，原则上不会直接导致离婚判决，需看是否与夫妻感情恶化相关联。</information>\n\n### Conclusion\n信用卡欠款本身不会直接成为判决离婚的法律依据，除非此欠款问题严重影响了夫妻双方的感情，导致感情破裂。这种情况下，法院可能会判离婚，同时根据具体情况处理债务分担问题。\n\n### Verification\n根据中国《婚姻法》和相关司法解释，债务问题不会直接成为离婚判决的唯一依据，需结合感情破裂等因素综合判断。因此结论正确。\n</Thought Process>\n\n<Question>\n信用卡欠款会判离婚吗?\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n嗯，如果是信用卡欠款，有时候会涉及到夫妻之间的债务问题。但这样能直接导致离婚吗？这需要看法律怎么规定。好像离婚判决是以夫妻感情破裂为主要依据，债务可能只是一个部分因素。不确定，我还是先查一下相关法律吧，看看有没具体的规定。<search>婚姻法 夫妻债务 离婚判决依据</search>\n\n哦，有结果了。<information>根据中国《婚姻法》和相关司法解释，法院判决离婚的核心看的是夫妻感情是否已经破裂，而不是单纯因为债务问题。除非这个债务比如信用卡欠款涉及欺诈或者比较严重的背信行为，直接影响到家庭关系，才可能导致离婚判决。另外，对个人债务，比如信用卡欠款，法律上原则上也不会直接影响离婚判决。具体情况要看是否跟夫妻感情恶化有直接关联。</information>\n\n嗯，这样的话，信用卡欠款本身似乎还不足以作为离婚的法律依据。离婚更多看感情状况，但如果因为这个债务导致了夫妻关系紧张，感情受到了比较大的影响，比如争吵、信任问题甚至欺骗，那法院可能会判定感情破裂，同时解决债务分担的问题。也就是说，信用卡欠款可能间接导致离婚，但不是直接原因。\n\n综上，信用卡欠款不会直接导致离婚，这要看它是否严重影响了夫妻感情。如果夫妻双方因为这个问题矛盾加剧导致无法继续维持婚姻，法院才可能判离婚。不过，这还是需要结合具体情况来看。\n</Internal Thinking>\n\n<Question>\n信用卡欠款会判离婚吗?\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"分析信用卡欠款是否可直接导致离婚\", \"content\": \"信用卡欠款属于夫妻一方的债务问题，但婚姻关系是否能够因此直接判定解除需要依据法律规定。一般来说，信用卡欠款需看是否属于夫妻共同债务以及是否影响夫妻双方感情的根本破裂。需要查询相关法律对离婚判决的依据进行分析。\"},\n    {\"action\": \"Inner Thinking\", \"title\": \"查询离婚判定的法律依据\", \"content\": \"<search>婚姻法 夫妻债务 离婚判决依据</search>\"},\n    {\"action\": \"Inner Thinking\", \"title\": \"分析法律信息以判定情况\", \"content\": \"<information>根据中国《婚姻法》和相关司法解释，离婚的判决主要基于夫妻双方感情是否已破裂，并非仅因为债务问题，除非债务问题涉及欺诈、重大背信行为导致家庭无法维持。对于个人债务，原则上不会直接导致离婚判决，需看是否与夫妻感情恶化相关联。</information>\"},\n    {\"action\": \"Final Conclusion\", \"content\": \"信用卡欠款本身不会直接成为判决离婚的法律依据，除非此欠款问题严重影响了夫妻双方的感情，导致感情破裂。这种情况下，法院可能会判离婚，同时根据具体情况处理债务分担问题。\"},\n    {\"action\": \"Verification\", \"content\": \"根据中国《婚姻法》和相关司法解释，债务问题不会直接成为离婚判决的唯一依据，需结合感情破裂等因素综合判断。因此结论正确。\"}\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"嗯，如果是信用卡欠款，有时候会涉及到夫妻之间的债务问题。但这样能直接导致离婚吗？这需要看法律怎么规定。好像离婚判决是以夫妻感情破裂为主要依据，债务可能只是一个部分因素。不确定，我还是先查一下相关法律吧，看看有没具体的规定。<search>婚姻法 夫妻债务 离婚判决依据</search>\\n\\n哦，有结果了。<information>根据中国《婚姻法》和相关司法解释，法院判决离婚的核心看的是夫妻感情是否已经破裂，而不是单纯因为债务问题。除非这个债务比如信用卡欠款涉及欺诈或者比较严重的背信行为，直接影响到家庭关系，才可能导致离婚判决。另外，对个人债务，比如信用卡欠款，法律上原则上也不会直接影响离婚判决。具体情况要看是否跟夫妻感情恶化有直接关联。</information>\\n\\n嗯，这样的话，信用卡欠款本身似乎还不足以作为离婚的法律依据。离婚更多看感情状况，但如果因为这个债务导致了夫妻关系紧张，感情受到了比较大的影响，比如争吵、信任问题甚至欺骗，那法院可能会判定感情破裂，同时解决债务分担的问题。也就是说，信用卡欠款可能间接导致离婚，但不是直接原因。\\n\\n综上，信用卡欠款不会直接导致离婚，这要看它是否严重影响了夫妻感情。如果夫妻双方因为这个问题矛盾加剧导致无法继续维持婚姻，法院才可能判离婚。不过，这还是需要结合具体情况来看。\"\n}\n```",
+    "信用卡欠款本身并不会直接导致法院判决离婚。根据中国《婚姻法》和相关司法解释，法院在审理离婚案件时，核心依据是夫妻感情是否确已破裂，而不是单纯因为存在债务问题。\n\n如果信用卡欠款涉及个人债务（如一方未告知另一方私自使用），一般不会直接影响离婚的法律判决，但如果这种债务引发了夫妻之间的严重矛盾，例如一方存在欺骗、隐瞒行为，导致信任危机，甚至对夫妻感情产生了根本性影响，这可能会成为法院判断夫妻感情破裂的参考因素。也就是说，债务问题本身不是离婚的决定性因素，但它可能间接引发矛盾，从而影响婚姻关系的稳定。\n\n此外，离婚案件中如果涉及共同债务，法院会同时对债务的分担进行处理。因此，具体情况还需要根据实际案件的复杂性来判断。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "分析信用卡欠款是否可直接导致离婚",
+        "content": "信用卡欠款属于夫妻一方的债务问题，但婚姻关系是否能够因此直接判定解除需要依据法律规定。一般来说，信用卡欠款需看是否属于夫妻共同债务以及是否影响夫妻双方感情的根本破裂。需要查询相关法律对离婚判决的依据进行分析。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "查询离婚判定的法律依据",
+        "content": "<search>婚姻法 夫妻债务 离婚判决依据</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "分析法律信息以判定情况",
+        "content": "<information>根据中国《婚姻法》和相关司法解释，离婚的判决主要基于夫妻双方感情是否已破裂，并非仅因为债务问题，除非债务问题涉及欺诈、重大背信行为导致家庭无法维持。对于个人债务，原则上不会直接导致离婚判决，需看是否与夫妻感情恶化相关联。</information>"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "信用卡欠款本身不会直接成为判决离婚的法律依据，除非此欠款问题严重影响了夫妻双方的感情，导致感情破裂。这种情况下，法院可能会判离婚，同时根据具体情况处理债务分担问题。"
+      },
+      {
+        "action": "Verification",
+        "content": "根据中国《婚姻法》和相关司法解释，债务问题不会直接成为离婚判决的唯一依据，需结合感情破裂等因素综合判断。因此结论正确。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "嗯，如果是信用卡欠款，有时候会涉及到夫妻之间的债务问题。但这样能直接导致离婚吗？这需要看法律怎么规定。好像离婚判决是以夫妻感情破裂为主要依据，债务可能只是一个部分因素。不确定，我还是先查一下相关法律吧，看看有没具体的规定。<search>婚姻法 夫妻债务 离婚判决依据</search>\n\n哦，有结果了。<information>根据中国《婚姻法》和相关司法解释，法院判决离婚的核心看的是夫妻感情是否已经破裂，而不是单纯因为债务问题。除非这个债务比如信用卡欠款涉及欺诈或者比较严重的背信行为，直接影响到家庭关系，才可能导致离婚判决。另外，对个人债务，比如信用卡欠款，法律上原则上也不会直接影响离婚判决。具体情况要看是否跟夫妻感情恶化有直接关联。</information>\n\n嗯，这样的话，信用卡欠款本身似乎还不足以作为离婚的法律依据。离婚更多看感情状况，但如果因为这个债务导致了夫妻关系紧张，感情受到了比较大的影响，比如争吵、信任问题甚至欺骗，那法院可能会判定感情破裂，同时解决债务分担的问题。也就是说，信用卡欠款可能间接导致离婚，但不是直接原因。\n\n综上，信用卡欠款不会直接导致离婚，这要看它是否严重影响了夫妻感情。如果夫妻双方因为这个问题矛盾加剧导致无法继续维持婚姻，法院才可能判离婚。不过，这还是需要结合具体情况来看。",
+  "Response": "信用卡欠款本身并不会直接导致法院判决离婚。根据中国《婚姻法》和相关司法解释，法院在审理离婚案件时，核心依据是夫妻感情是否确已破裂，而不是单纯因为存在债务问题。\n\n如果信用卡欠款涉及个人债务（如一方未告知另一方私自使用），一般不会直接影响离婚的法律判决，但如果这种债务引发了夫妻之间的严重矛盾，例如一方存在欺骗、隐瞒行为，导致信任危机，甚至对夫妻感情产生了根本性影响，这可能会成为法院判断夫妻感情破裂的参考因素。也就是说，债务问题本身不是离婚的决定性因素，但它可能间接引发矛盾，从而影响婚姻关系的稳定。\n\n此外，离婚案件中如果涉及共同债务，法院会同时对债务的分担进行处理。因此，具体情况还需要根据实际案件的复杂性来判断。",
+  "Question": "信用卡欠款会判离婚吗?"
+}

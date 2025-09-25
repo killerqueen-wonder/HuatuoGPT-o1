@@ -1,0 +1,109 @@
+{
+  "Open-ended Verifiable Question": "邻居看我生意好眼红加高围墙挡住了我的店铺，我该怎么办？",
+  "Ground-True Answer": "标题所描述的情况，邻居的行为极有可能构成滥用民事权利，根据《民法典》第132条规定：“民事主体不得滥用民事权利损害国家利益、社会公共利益或者他人合法权益。”，如果你邻居并非为自己生活所需要，而是纯粹的想通过加高围墙的方式以阻碍你家的生意，如此，则邻居的行为构成滥用民事权利，你有权要求邻居拆除围墙，恢复原状，甚至可要求其赔偿你的经济损失。举例说明：甲、乙为邻居，甲经营“农家乐”餐馆，迅速致富，乙不堪忍受。乙于是倾其所有，花费100万元将自家2米高的围墙加高至20米，遮挡甲的眺望，甲的生意因此一落千丈。①乙如此行使宅基地使用权的行为(加高围墙)自己所得利益极少(甚至系“负利益”)，却给甲造成极大损失，应认定为以损害他人为目的行使权利，构成权利滥用。②法律效果:甲有权请求乙恢复围墙的原状。",
+  "process_id": 3776,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "确定问题的关键点",
+      "content": "邻居加高围墙导致我的店铺受到影响，存在可能的法律纠纷或不当阻碍行为。我需要确认邻居的行为是否合法，并探讨解决方法。首先，查找相关法律规定，例如关于墙体高度的建筑法规或影响相邻住户权益的相关条款。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "查找建筑法规及相邻权相关规定",
+      "content": "<search>围墙高度限制 建筑法规 相邻关系法律</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "分析法律法规",
+      "content": "<information>《中华人民共和国民法典》第272条规定，相邻关系应遵循便利生活、生产的原则，不得侵害他人合法权益；多地城市规定围墙高度限制通常为不超过一定米数，如2.5米，具体需参考地方性法规。</information>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "初步判断邻居行为的合法性",
+      "content": "根据《民法典》与地方性法规，若邻居的围墙高度超过合法范围或明显妨碍我的商业活动，这可能构成侵害相邻权或违反建筑法规。我需要确认围墙是否超过规定高度或干扰正常使用权益。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "联系相关部门进行核实",
+      "content": "向当地城市建设规划部门或社区管理委员会报告情况，请其核实围墙高度是否超过规定，并确认此举是否违反建筑或相邻关系法律规定。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "考虑协商或法律途径解决",
+      "content": "如果核实结果表明邻居的做法违法，我可与邻居通过协商要求其修正围墙高度；若协商未果，可寻求法律援助，通过诉讼维护我的合法权益。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "邻居加高围墙可能违反建筑法规或侵害我的相邻权，首先应向相关部门核实其行为是否合法。若其违法规行为明确，可尝试与邻居协商解决或通过法律途径维护自身权益。"
+    },
+    {
+      "action": "Verification",
+      "content": "结论合理且符合中国现行法律法规的逻辑，对问题有针对性且路径明确。建议行动方案可靠。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n邻居看我生意好眼红加高围墙挡住了我的店铺，我该怎么办？\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n邻居加高围墙可能违反建筑法规或侵害我的相邻权，首先应向相关部门核实其行为是否合法。若其违法规行为明确，可尝试与邻居协商解决或通过法律途径维护自身权益。  \n</Model Response>  \n\n<Reference Answer>  \n标题所描述的情况，邻居的行为极有可能构成滥用民事权利，根据《民法典》第132条规定：“民事主体不得滥用民事权利损害国家利益、社会公共利益或者他人合法权益。”，如果你邻居并非为自己生活所需要，而是纯粹的想通过加高围墙的方式以阻碍你家的生意，如此，则邻居的行为构成滥用民事权利，你有权要求邻居拆除围墙，恢复原状，甚至可要求其赔偿你的经济损失。举例说明：甲、乙为邻居，甲经营“农家乐”餐馆，迅速致富，乙不堪忍受。乙于是倾其所有，花费100万元将自家2米高的围墙加高至20米，遮挡甲的眺望，甲的生意因此一落千丈。①乙如此行使宅基地使用权的行为(加高围墙)自己所得利益极少(甚至系“负利益”)，却给甲造成极大损失，应认定为以损害他人为目的行使权利，构成权利滥用。②法律效果:甲有权请求乙恢复围墙的原状。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 确定问题的关键点\n邻居加高围墙导致我的店铺受到影响，存在可能的法律纠纷或不当阻碍行为。我需要确认邻居的行为是否合法，并探讨解决方法。首先，查找相关法律规定，例如关于墙体高度的建筑法规或影响相邻住户权益的相关条款。\n\n### 查找建筑法规及相邻权相关规定\n<search>围墙高度限制 建筑法规 相邻关系法律</search>\n\n### 分析法律法规\n<information>《中华人民共和国民法典》第272条规定，相邻关系应遵循便利生活、生产的原则，不得侵害他人合法权益；多地城市规定围墙高度限制通常为不超过一定米数，如2.5米，具体需参考地方性法规。</information>\n\n### 初步判断邻居行为的合法性\n根据《民法典》与地方性法规，若邻居的围墙高度超过合法范围或明显妨碍我的商业活动，这可能构成侵害相邻权或违反建筑法规。我需要确认围墙是否超过规定高度或干扰正常使用权益。\n\n### 联系相关部门进行核实\n向当地城市建设规划部门或社区管理委员会报告情况，请其核实围墙高度是否超过规定，并确认此举是否违反建筑或相邻关系法律规定。\n\n### 考虑协商或法律途径解决\n如果核实结果表明邻居的做法违法，我可与邻居通过协商要求其修正围墙高度；若协商未果，可寻求法律援助，通过诉讼维护我的合法权益。\n\n### Conclusion\n邻居加高围墙可能违反建筑法规或侵害我的相邻权，首先应向相关部门核实其行为是否合法。若其违法规行为明确，可尝试与邻居协商解决或通过法律途径维护自身权益。\n\n### Verification\n结论合理且符合中国现行法律法规的逻辑，对问题有针对性且路径明确。建议行动方案可靠。\n</Thought Process>\n\n<Question>\n邻居看我生意好眼红加高围墙挡住了我的店铺，我该怎么办？\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n邻居加高了围墙，还挡住了我的店铺，这让我挺头疼的。首先，这样做有没有法律问题呢，我得先想想。从常识来看，如果影响到了别人的正常使用，可能是有争议的吧。那不如先看看法律上是怎么说的，好像有关于相邻关系的规定？嗯，我记得《民法典》里有提到相邻权，应该跟这个有关，我查一下。\n\n<search>围墙高度限制 建筑法规 相邻关系法律</search>\n\n查到的信息显示，哦，《中华人民共和国民法典》第272条确实提到了相邻关系，说相邻之间要以便利生活、生产为原则，还不能侵害他人的合法权益。另外，有些地方对围墙高度还有具体的规定，可能一般不超过2.5米左右。不过具体高度得看当地的城市规定呀。\n\n这么说来，邻居加高围墙有两种可能。如果他们建得太高，超过了当地的限制，那就是违反了建筑法规；如果虽然不超高但挡我的生意，而且很明显影响到了我的利益，那可能就触犯了关于相邻权的法条哦。嗯，现在得先确认这围墙到底有多高，以及是不是真的符合法律。\n\n要确定这些，直接去问他们显然比较难解决。我还是得联系更正式的途径，比如当地的城市建设规划部门或者社区管理委员会，汇报一下这情况。他们能有相关的权威去测量围墙的高度，而且还能检查邻居的行为是不是符合建筑规定。如果有不合规的地方，我也能把手上的证据进一步交给他们。\n\n假设经过查证后，邻居的行为确实不合法，那下一步就要思考解决方法了。我觉得首先得试着跟邻居沟通吧，万一人家态度还行，愿意主动调整围墙呢？如果协商不成，那就只能走法律途径了。到时候可能要找律师帮忙，通过诉讼方式要求邻居把围墙降低。这也算是维护我的合法权益吧。\n\n不过，在行动之前最好还是再确认这些信息是不是靠谱，尤其是地方上对围墙限高的政策，得再具体打听一下。不然贸然找邻居理论，可能反倒弄得关系更僵。\n\n总之，现在能做的就是找相关部门确认邻居的围墙是否合法，情况有了明确答案后，再考虑从协商还是法律的途径解决。这次邻居的行为确实影响到了我的店铺经营，但解决的方式要合理合法才行。\n</Internal Thinking>\n\n<Question>\n邻居看我生意好眼红加高围墙挡住了我的店铺，我该怎么办？\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"确定问题的关键点\",\n      \"content\": \"邻居加高围墙导致我的店铺受到影响，存在可能的法律纠纷或不当阻碍行为。我需要确认邻居的行为是否合法，并探讨解决方法。首先，查找相关法律规定，例如关于墙体高度的建筑法规或影响相邻住户权益的相关条款。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"查找建筑法规及相邻权相关规定\",\n      \"content\": \"<search>围墙高度限制 建筑法规 相邻关系法律</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析法律法规\",\n      \"content\": \"<information>《中华人民共和国民法典》第272条规定，相邻关系应遵循便利生活、生产的原则，不得侵害他人合法权益；多地城市规定围墙高度限制通常为不超过一定米数，如2.5米，具体需参考地方性法规。</information>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"初步判断邻居行为的合法性\",\n      \"content\": \"根据《民法典》与地方性法规，若邻居的围墙高度超过合法范围或明显妨碍我的商业活动，这可能构成侵害相邻权或违反建筑法规。我需要确认围墙是否超过规定高度或干扰正常使用权益。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"联系相关部门进行核实\",\n      \"content\": \"向当地城市建设规划部门或社区管理委员会报告情况，请其核实围墙高度是否超过规定，并确认此举是否违反建筑或相邻关系法律规定。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"考虑协商或法律途径解决\",\n      \"content\": \"如果核实结果表明邻居的做法违法，我可与邻居通过协商要求其修正围墙高度；若协商未果，可寻求法律援助，通过诉讼维护我的合法权益。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"邻居加高围墙可能违反建筑法规或侵害我的相邻权，首先应向相关部门核实其行为是否合法。若其违法规行为明确，可尝试与邻居协商解决或通过法律途径维护自身权益。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"结论合理且符合中国现行法律法规的逻辑，对问题有针对性且路径明确。建议行动方案可靠。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"邻居加高了围墙，还挡住了我的店铺，这让我挺头疼的。首先，这样做有没有法律问题呢，我得先想想。从常识来看，如果影响到了别人的正常使用，可能是有争议的吧。那不如先看看法律上是怎么说的，好像有关于相邻关系的规定？嗯，我记得《民法典》里有提到相邻权，应该跟这个有关，我查一下。\\n\\n<search>围墙高度限制 建筑法规 相邻关系法律</search>\\n\\n查到的信息显示，哦，《中华人民共和国民法典》第272条确实提到了相邻关系，说相邻之间要以便利生活、生产为原则，还不能侵害他人的合法权益。另外，有些地方对围墙高度还有具体的规定，可能一般不超过2.5米左右。不过具体高度得看当地的城市规定呀。\\n\\n这么说来，邻居加高围墙有两种可能。如果他们建得太高，超过了当地的限制，那就是违反了建筑法规；如果虽然不超高但挡我的生意，而且很明显影响到了我的利益，那可能就触犯了关于相邻权的法条哦。嗯，现在得先确认这围墙到底有多高，以及是不是真的符合法律。\\n\\n要确定这些，直接去问他们显然比较难解决。我还是得联系更正式的途径，比如当地的城市建设规划部门或者社区管理委员会，汇报一下这情况。他们能有相关的权威去测量围墙的高度，而且还能检查邻居的行为是不是符合建筑规定。如果有不合规的地方，我也能把手上的证据进一步交给他们。\\n\\n假设经过查证后，邻居的行为确实不合法，那下一步就要思考解决方法了。我觉得首先得试着跟邻居沟通吧，万一人家态度还行，愿意主动调整围墙呢？如果协商不成，那就只能走法律途径了。到时候可能要找律师帮忙，通过诉讼方式要求邻居把围墙降低。这也算是维护我的合法权益吧。\\n\\n不过，在行动之前最好还是再确认这些信息是不是靠谱，尤其是地方上对围墙限高的政策，得再具体打听一下。不然贸然找邻居理论，可能反倒弄得关系更僵。\\n\\n总之，现在能做的就是找相关部门确认邻居的围墙是否合法，情况有了明确答案后，再考虑从协商还是法律的途径解决。这次邻居的行为确实影响到了我的店铺经营，但解决的方式要合理合法才行。\"\n}\n```",
+    "根据您的描述，邻居加高围墙确实可能涉及法律问题，且对您的经营造成了明显影响。您可以从以下几个步骤来处理这一问题：\n\n**1. 确认围墙高度及合法性**  \n首先，需要确认该围墙是否符合当地有关建筑法规和规定。例如，《中华人民共和国民法典》第272条规定，相邻关系处理应以便利生活、生产为原则，并不得侵害他人的合法权益。另外，部分城市可能对围墙高度有具体限制，通常情况下居民区围墙的高度不超过2.5米左右。但具体还需以当地城市的相关规定为准。\n\n建议您联系当地的城市规划建设部门、社区管理委员会或其他相关机构，请专业人员测量围墙的实际高度，并审核其是否符合当地的建筑规范。如果围墙高度确实超出限制，或者存在侵犯相邻权的不当行为，您就能明确邻居的行为是否合法。\n\n**2. 评估围墙对店铺的实际影响**  \n如果围墙的高度虽然合法，但确实对您的店铺造成了影响，例如影响采光、通风、客流甚至经营收入，这可能也属于侵害相邻权的问题。根据法律规定，邻居的建筑行为不得对相邻人的合法权益造成明显不合理的妨碍。\n\n**3. 试着友好协商解决问题**  \n在确认围墙违规或对您的权益造成不当影响后，建议首先与邻居进行沟通。您可以说明问题的严重性，例如围墙导致您店铺生意受影响，同时尽力保持友好态度，争取通过协商解决。毕竟邻里关系的和谐对双方都很重要。如果邻居愿意主动整改围墙，这将是最直接、最高效的解决方案。\n\n**4. 采取法律途径维护权益**  \n如果沟通无果，且邻居坚持不配合，您可以考虑通过法律途径维护权益。根据《民法典》第272条的规定，您有权起诉邻居要求其降低围墙或恢复原状，以消除对您权益的妨碍。在诉讼过程中，建议委托专业律师介入，帮助您整理证据并代表您陈述法律依据，例如围墙违规或对店铺造成的不合理影响。\n\n**5. 准备相关证据**  \n无论是与邻居协商还是进行诉讼，都需要准备充分的证据支持您的主张。例如：\n- 围墙的实际高度测量结果；\n- 包括围墙对店铺采光、客流及具体经营造成影响的证明（如照片、营业数据、客户反馈等）；\n- 如果围墙违反了建筑法规，还需要获取相关规定的明确条文。\n\n**6. 注意维持邻里关系**  \n在解决问题的过程中，尽量保持冷静和理性。即使最终诉诸法律，也建议避免激化矛盾。找到合理合法的解决办法，既可以维护您的权益，也能尽量减轻邻里关系的紧张。\n\n总之，您的首要任务是确定围墙的高度及合法性，然后根据具体问题选择协商或者诉讼的方案。如果处理得当，这类问题是可以得到有效解决的。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "确定问题的关键点",
+        "content": "邻居加高围墙导致我的店铺受到影响，存在可能的法律纠纷或不当阻碍行为。我需要确认邻居的行为是否合法，并探讨解决方法。首先，查找相关法律规定，例如关于墙体高度的建筑法规或影响相邻住户权益的相关条款。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "查找建筑法规及相邻权相关规定",
+        "content": "<search>围墙高度限制 建筑法规 相邻关系法律</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "分析法律法规",
+        "content": "<information>《中华人民共和国民法典》第272条规定，相邻关系应遵循便利生活、生产的原则，不得侵害他人合法权益；多地城市规定围墙高度限制通常为不超过一定米数，如2.5米，具体需参考地方性法规。</information>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "初步判断邻居行为的合法性",
+        "content": "根据《民法典》与地方性法规，若邻居的围墙高度超过合法范围或明显妨碍我的商业活动，这可能构成侵害相邻权或违反建筑法规。我需要确认围墙是否超过规定高度或干扰正常使用权益。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "联系相关部门进行核实",
+        "content": "向当地城市建设规划部门或社区管理委员会报告情况，请其核实围墙高度是否超过规定，并确认此举是否违反建筑或相邻关系法律规定。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "考虑协商或法律途径解决",
+        "content": "如果核实结果表明邻居的做法违法，我可与邻居通过协商要求其修正围墙高度；若协商未果，可寻求法律援助，通过诉讼维护我的合法权益。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "邻居加高围墙可能违反建筑法规或侵害我的相邻权，首先应向相关部门核实其行为是否合法。若其违法规行为明确，可尝试与邻居协商解决或通过法律途径维护自身权益。"
+      },
+      {
+        "action": "Verification",
+        "content": "结论合理且符合中国现行法律法规的逻辑，对问题有针对性且路径明确。建议行动方案可靠。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "邻居加高了围墙，还挡住了我的店铺，这让我挺头疼的。首先，这样做有没有法律问题呢，我得先想想。从常识来看，如果影响到了别人的正常使用，可能是有争议的吧。那不如先看看法律上是怎么说的，好像有关于相邻关系的规定？嗯，我记得《民法典》里有提到相邻权，应该跟这个有关，我查一下。\n\n<search>围墙高度限制 建筑法规 相邻关系法律</search>\n\n查到的信息显示，哦，《中华人民共和国民法典》第272条确实提到了相邻关系，说相邻之间要以便利生活、生产为原则，还不能侵害他人的合法权益。另外，有些地方对围墙高度还有具体的规定，可能一般不超过2.5米左右。不过具体高度得看当地的城市规定呀。\n\n这么说来，邻居加高围墙有两种可能。如果他们建得太高，超过了当地的限制，那就是违反了建筑法规；如果虽然不超高但挡我的生意，而且很明显影响到了我的利益，那可能就触犯了关于相邻权的法条哦。嗯，现在得先确认这围墙到底有多高，以及是不是真的符合法律。\n\n要确定这些，直接去问他们显然比较难解决。我还是得联系更正式的途径，比如当地的城市建设规划部门或者社区管理委员会，汇报一下这情况。他们能有相关的权威去测量围墙的高度，而且还能检查邻居的行为是不是符合建筑规定。如果有不合规的地方，我也能把手上的证据进一步交给他们。\n\n假设经过查证后，邻居的行为确实不合法，那下一步就要思考解决方法了。我觉得首先得试着跟邻居沟通吧，万一人家态度还行，愿意主动调整围墙呢？如果协商不成，那就只能走法律途径了。到时候可能要找律师帮忙，通过诉讼方式要求邻居把围墙降低。这也算是维护我的合法权益吧。\n\n不过，在行动之前最好还是再确认这些信息是不是靠谱，尤其是地方上对围墙限高的政策，得再具体打听一下。不然贸然找邻居理论，可能反倒弄得关系更僵。\n\n总之，现在能做的就是找相关部门确认邻居的围墙是否合法，情况有了明确答案后，再考虑从协商还是法律的途径解决。这次邻居的行为确实影响到了我的店铺经营，但解决的方式要合理合法才行。",
+  "Response": "根据您的描述，邻居加高围墙确实可能涉及法律问题，且对您的经营造成了明显影响。您可以从以下几个步骤来处理这一问题：\n\n**1. 确认围墙高度及合法性**  \n首先，需要确认该围墙是否符合当地有关建筑法规和规定。例如，《中华人民共和国民法典》第272条规定，相邻关系处理应以便利生活、生产为原则，并不得侵害他人的合法权益。另外，部分城市可能对围墙高度有具体限制，通常情况下居民区围墙的高度不超过2.5米左右。但具体还需以当地城市的相关规定为准。\n\n建议您联系当地的城市规划建设部门、社区管理委员会或其他相关机构，请专业人员测量围墙的实际高度，并审核其是否符合当地的建筑规范。如果围墙高度确实超出限制，或者存在侵犯相邻权的不当行为，您就能明确邻居的行为是否合法。\n\n**2. 评估围墙对店铺的实际影响**  \n如果围墙的高度虽然合法，但确实对您的店铺造成了影响，例如影响采光、通风、客流甚至经营收入，这可能也属于侵害相邻权的问题。根据法律规定，邻居的建筑行为不得对相邻人的合法权益造成明显不合理的妨碍。\n\n**3. 试着友好协商解决问题**  \n在确认围墙违规或对您的权益造成不当影响后，建议首先与邻居进行沟通。您可以说明问题的严重性，例如围墙导致您店铺生意受影响，同时尽力保持友好态度，争取通过协商解决。毕竟邻里关系的和谐对双方都很重要。如果邻居愿意主动整改围墙，这将是最直接、最高效的解决方案。\n\n**4. 采取法律途径维护权益**  \n如果沟通无果，且邻居坚持不配合，您可以考虑通过法律途径维护权益。根据《民法典》第272条的规定，您有权起诉邻居要求其降低围墙或恢复原状，以消除对您权益的妨碍。在诉讼过程中，建议委托专业律师介入，帮助您整理证据并代表您陈述法律依据，例如围墙违规或对店铺造成的不合理影响。\n\n**5. 准备相关证据**  \n无论是与邻居协商还是进行诉讼，都需要准备充分的证据支持您的主张。例如：\n- 围墙的实际高度测量结果；\n- 包括围墙对店铺采光、客流及具体经营造成影响的证明（如照片、营业数据、客户反馈等）；\n- 如果围墙违反了建筑法规，还需要获取相关规定的明确条文。\n\n**6. 注意维持邻里关系**  \n在解决问题的过程中，尽量保持冷静和理性。即使最终诉诸法律，也建议避免激化矛盾。找到合理合法的解决办法，既可以维护您的权益，也能尽量减轻邻里关系的紧张。\n\n总之，您的首要任务是确定围墙的高度及合法性，然后根据具体问题选择协商或者诉讼的方案。如果处理得当，这类问题是可以得到有效解决的。",
+  "Question": "邻居看我生意好眼红加高围墙挡住了我的店铺，我该怎么办？"
+}

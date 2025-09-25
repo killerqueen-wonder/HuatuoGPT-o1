@@ -1,0 +1,89 @@
+{
+  "Open-ended Verifiable Question": "带薪休假有哪几种",
+  "Ground-True Answer": "带薪休假包括有年假、产假、丧假、婚假、工伤假、病假、护理假、产检假、哺乳假等。\n根据相关规定，机关、团体、企业、事业单位、民办非企业单位、有雇工的个体工商户等单位的职工连续工作1年以上的，享受带薪年休假。职工累计工作已满1年不满10年的，年休假5天。已满10年不满20年的，年休假10天。已满20年的，年休假15天。国家法定休假日、休息日不计入年休假的假期。带薪休假的经济意义有：\n1.满足人们需要，便于其时间安排。人们可以自由地选择出游时间和地点。\n2.促使旅游产业提高服务质量，巩固休假人员出游热情。减轻旅游产业的成本压力，促使其提高服务质量。同时巩固休假人 员的出游热情，推动旅游客源的稳定增长，从而有利于形成旅游行业可持续的良性发展。\n3.缓解旅游产业各部门的供求压力，实现旅游资源的有效配置。客观上能够起到从空间和时间上分流短时间内集中的旅游客源的作用。",
+  "process_id": 3958,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "明确问题范围",
+      "content": "带薪休假是指在员工不工作的情况下仍然获得薪酬的假期。这可能根据劳动规定、公司政策或国家法律的具体规定有所不同。首先明确带薪休假的主要类型是否包括法定假期和企业内部福利假期。需要确认我国法律中是否有明确规定带薪休假的种类。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "搜索法律条款",
+      "content": "我国关于带薪休假的主要法律依据是《劳动法》和《职工带薪年休假条例》。需要搜索这些法规内容以确认具体带薪休假的分类。<search>职工带薪年休假条例</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "分析法律规定",
+      "content": "<information>《职工带薪年休假条例》规定，职工连续工作满一年后即可享受年休假。此外，《劳动法》还规定了节假日和特殊假期，例如婚假、产假等属于带薪休假范畴。</information>根据上述信息，可以初步列出带薪休假的主要类型：年休假、婚假、产假、丧假、病假，以及法律规定的法定节假日。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "补充企业政策部分",
+      "content": "除了法律规定的带薪休假以外，企业可能额外提供其他种类的假期作为员工福利，例如探亲假、奖励假等。需要将这些内容补充到清单中，并根据具体情况调整。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "根据我国法律和企业实际情况，带薪休假主要包括以下几类：\n1. 年休假：员工连续工作满一年即可享受。\n2. 法定节假日：如春节、国庆节等。\n3. 婚假：依法享受的结婚假期。\n4. 产假：员工产后休息的假期，通常包括陪产假。\n5. 丧假：亲属去世时给予的休假。\n6. 病假：符合医疗条件的短期病假。\n此外，企业可能提供探亲假、奖励假或其他带薪休假作为福利，具体情况因企业政策而异。"
+    },
+    {
+      "action": "Verification",
+      "content": "结论符合《职工带薪年休假条例》和《劳动法》的相关规定，同时考虑了企业灵活性，结论合理并准确。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n带薪休假有哪几种\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n根据我国法律和企业实际情况，带薪休假主要包括以下几类：\n1. 年休假：员工连续工作满一年即可享受。\n2. 法定节假日：如春节、国庆节等。\n3. 婚假：依法享受的结婚假期。\n4. 产假：员工产后休息的假期，通常包括陪产假。\n5. 丧假：亲属去世时给予的休假。\n6. 病假：符合医疗条件的短期病假。\n此外，企业可能提供探亲假、奖励假或其他带薪休假作为福利，具体情况因企业政策而异。  \n</Model Response>  \n\n<Reference Answer>  \n带薪休假包括有年假、产假、丧假、婚假、工伤假、病假、护理假、产检假、哺乳假等。\n根据相关规定，机关、团体、企业、事业单位、民办非企业单位、有雇工的个体工商户等单位的职工连续工作1年以上的，享受带薪年休假。职工累计工作已满1年不满10年的，年休假5天。已满10年不满20年的，年休假10天。已满20年的，年休假15天。国家法定休假日、休息日不计入年休假的假期。带薪休假的经济意义有：\n1.满足人们需要，便于其时间安排。人们可以自由地选择出游时间和地点。\n2.促使旅游产业提高服务质量，巩固休假人员出游热情。减轻旅游产业的成本压力，促使其提高服务质量。同时巩固休假人 员的出游热情，推动旅游客源的稳定增长，从而有利于形成旅游行业可持续的良性发展。\n3.缓解旅游产业各部门的供求压力，实现旅游资源的有效配置。客观上能够起到从空间和时间上分流短时间内集中的旅游客源的作用。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 明确问题范围\n带薪休假是指在员工不工作的情况下仍然获得薪酬的假期。这可能根据劳动规定、公司政策或国家法律的具体规定有所不同。首先明确带薪休假的主要类型是否包括法定假期和企业内部福利假期。需要确认我国法律中是否有明确规定带薪休假的种类。\n\n### 搜索法律条款\n我国关于带薪休假的主要法律依据是《劳动法》和《职工带薪年休假条例》。需要搜索这些法规内容以确认具体带薪休假的分类。<search>职工带薪年休假条例</search>\n\n### 分析法律规定\n<information>《职工带薪年休假条例》规定，职工连续工作满一年后即可享受年休假。此外，《劳动法》还规定了节假日和特殊假期，例如婚假、产假等属于带薪休假范畴。</information>根据上述信息，可以初步列出带薪休假的主要类型：年休假、婚假、产假、丧假、病假，以及法律规定的法定节假日。\n\n### 补充企业政策部分\n除了法律规定的带薪休假以外，企业可能额外提供其他种类的假期作为员工福利，例如探亲假、奖励假等。需要将这些内容补充到清单中，并根据具体情况调整。\n\n### Conclusion\n根据我国法律和企业实际情况，带薪休假主要包括以下几类：\n1. 年休假：员工连续工作满一年即可享受。\n2. 法定节假日：如春节、国庆节等。\n3. 婚假：依法享受的结婚假期。\n4. 产假：员工产后休息的假期，通常包括陪产假。\n5. 丧假：亲属去世时给予的休假。\n6. 病假：符合医疗条件的短期病假。\n此外，企业可能提供探亲假、奖励假或其他带薪休假作为福利，具体情况因企业政策而异。\n\n### Verification\n结论符合《职工带薪年休假条例》和《劳动法》的相关规定，同时考虑了企业灵活性，结论合理并准确。\n</Thought Process>\n\n<Question>\n带薪休假有哪几种\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n带薪休假是什么呢？其实就是员工在请假的时候还能拿工资，不会因为休假而扣钱。这个概念听起来很简单，不过种类还挺多的，我得仔细梳理一下。先从法律规定的部分入手吧。嗯，应该看看我国有哪些关于带薪休假的明确法律规定。想到两个关键的法律，一个是《劳动法》，另一个是《职工带薪年休假条例》。这两个应该会有比较详细的内容。<search>职工带薪年休假条例</search>。\n\n刚搜到内容了。《职工带薪年休假条例》提到说，只要员工连续工作满一年，就可以享受年休假。这听起来是最基本的一类假期。还有一个《劳动法》的内容我之前了解过，它规定了法定的节假日，比如春节、国庆节这些必须给员工带薪休假的假期。此外，像婚假、产假这些也在《劳动法》里有提到，它们是特殊的带薪休假类型。嗯，总结一下的话，法律规定的带薪休假包括了年休假、法定节假日、婚假、产假、丧假，还有病假。这些都是员工依法享有的权利。\n\n不过除了法律规定的假期，一些企业也可能会提供额外的福利假期，比如探亲假、电休（调休时仍带薪）、奖励假这些，这应该算是公司根据自己的政策来额外给的吧。每个企业的情况都不一定完全一样，但只要有明确的公司制度或合同约定，这些也是可以算作带薪休假的。\n\n总结一下吧，我觉得带薪休假可以分成两大块：一块是法律规定的，像年休假、法定节假日、婚假、产假等，这些是每个员工都能享受到的，只要符合条件。另一块则是企业根据自身福利政策提供的，比如探亲假、奖励假，这完全取决于具体公司怎么设置。\n\n哦，对了，要注意法律规定的这些假期的条件，比如年休假要连续工作满一年才可以享受，病假可能需要提供医疗证明，这些细节需要员工和公司双方都明确。这么看来，基本思路理清了。带薪休假的种类看起来挺丰富呢，涵盖了工作与生活的方方面面。\n</Internal Thinking>\n\n<Question>\n带薪休假有哪几种\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"明确问题范围\",\n      \"content\": \"带薪休假是指在员工不工作的情况下仍然获得薪酬的假期。这可能根据劳动规定、公司政策或国家法律的具体规定有所不同。首先明确带薪休假的主要类型是否包括法定假期和企业内部福利假期。需要确认我国法律中是否有明确规定带薪休假的种类。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"搜索法律条款\",\n      \"content\": \"我国关于带薪休假的主要法律依据是《劳动法》和《职工带薪年休假条例》。需要搜索这些法规内容以确认具体带薪休假的分类。<search>职工带薪年休假条例</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析法律规定\",\n      \"content\": \"<information>《职工带薪年休假条例》规定，职工连续工作满一年后即可享受年休假。此外，《劳动法》还规定了节假日和特殊假期，例如婚假、产假等属于带薪休假范畴。</information>根据上述信息，可以初步列出带薪休假的主要类型：年休假、婚假、产假、丧假、病假，以及法律规定的法定节假日。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"补充企业政策部分\",\n      \"content\": \"除了法律规定的带薪休假以外，企业可能额外提供其他种类的假期作为员工福利，例如探亲假、奖励假等。需要将这些内容补充到清单中，并根据具体情况调整。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"根据我国法律和企业实际情况，带薪休假主要包括以下几类：\\n1. 年休假：员工连续工作满一年即可享受。\\n2. 法定节假日：如春节、国庆节等。\\n3. 婚假：依法享受的结婚假期。\\n4. 产假：员工产后休息的假期，通常包括陪产假。\\n5. 丧假：亲属去世时给予的休假。\\n6. 病假：符合医疗条件的短期病假。\\n此外，企业可能提供探亲假、奖励假或其他带薪休假作为福利，具体情况因企业政策而异。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"结论符合《职工带薪年休假条例》和《劳动法》的相关规定，同时考虑了企业灵活性，结论合理并准确。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"带薪休假是什么呢？其实就是员工在请假的时候还能拿工资，不会因为休假而扣钱。这个概念听起来很简单，不过种类还挺多的，我得仔细梳理一下。先从法律规定的部分入手吧。嗯，应该看看我国有哪些关于带薪休假的明确法律规定。想到两个关键的法律，一个是《劳动法》，另一个是《职工带薪年休假条例》。这两个应该会有比较详细的内容。<search>职工带薪年休假条例</search>。\\n\\n刚搜到内容了。《职工带薪年休假条例》提到说，只要员工连续工作满一年，就可以享受年休假。这听起来是最基本的一类假期。还有一个《劳动法》的内容我之前了解过，它规定了法定的节假日，比如春节、国庆节这些必须给员工带薪休假的假期。此外，像婚假、产假这些也在《劳动法》里有提到，它们是特殊的带薪休假类型。嗯，总结一下的话，法律规定的带薪休假包括了年休假、法定节假日、婚假、产假、丧假，还有病假。这些都是员工依法享有的权利。\\n\\n不过除了法律规定的假期，一些企业也可能会提供额外的福利假期，比如探亲假、电休（调休时仍带薪）、奖励假这些，这应该算是公司根据自己的政策来额外给的吧。每个企业的情况都不一定完全一样，但只要有明确的公司制度或合同约定，这些也是可以算作带薪休假的。\\n\\n总结一下吧，我觉得带薪休假可以分成两大块：一块是法律规定的，像年休假、法定节假日、婚假、产假等，这些是每个员工都能享受到的，只要符合条件。另一块则是企业根据自身福利政策提供的，比如探亲假、奖励假，这完全取决于具体公司怎么设置。\\n\\n哦，对了，要注意法律规定的这些假期的条件，比如年休假要连续工作满一年才可以享受，病假可能需要提供医疗证明，这些细节需要员工和公司双方都明确。这么看来，基本思路理清了。带薪休假的种类看起来挺丰富呢，涵盖了工作与生活的方方面面。\"\n}\n```",
+    "带薪休假通常可以分为以下几种类型：\n\n### 一、法律规定的带薪休假\n1. **年休假**  \n   根据《职工带薪年休假条例》，员工连续工作满一年可享受带薪年休假。具体天数与工作年限相关：  \n   - 工作1-10年的员工：享受5天年休假  \n   - 工作10-20年的员工：享受10天年休假  \n   - 工作满20年的员工：享受15天年休假  \n\n2. **法定节假日**  \n   根据《劳动法》，我国有11天的法定节假日，例如：春节、国庆节、劳动节等，这些假日员工应享受带薪休假。\n\n3. **婚假**  \n   员工结婚时可享受婚假，具体天数依省市规定或公司政策，通常为3天，有些地区对晚婚还有额外假期。\n\n4. **产假**  \n   根据《劳动法》和相关法规，女性员工生育时可享受一定天数的产假，天数一般为98天，部分地区可能会有延长。\n\n5. **丧假**  \n   员工直系亲属去世时可享受丧假，通常为1-3天，具体天数依地方规定或公司制度。\n\n6. **病假**  \n   员工因病需要医疗时，可根据医生证明申请病假，工资支付比例具体依据工作年限和地区规定。\n\n### 二、企业福利性质的带薪休假\n1. **探亲假**  \n   一些企业根据员工家庭情况提供探亲假，通常仅限于异地工作的员工探望父母、配偶。\n\n2. **奖励假**  \n   企业为了激励员工，可能会设立奖励性质的假期，比如绩效优异、特别贡献等情况。\n\n3. **调休假（带薪电休）**  \n   通过延长工作时间或完成额外任务积累的带薪休假，比如周末加班后安排的调休。\n\n4. **特殊福利假**  \n   某些公司可能提供额外假期，比如生日假、旅游假或纪念日假等，根据企业文化和政策决定。\n\n### 总结  \n带薪休假可以分为法律保障的假期（如年休假、产假等）和企业福利假期（如奖励假、探亲假）。法律规定的休假是员工的基本权利，而福利性质的休假则因公司政策而异。员工应仔细了解相关法规和公司制度，以充分保障自身权益并合理安排休假。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "明确问题范围",
+        "content": "带薪休假是指在员工不工作的情况下仍然获得薪酬的假期。这可能根据劳动规定、公司政策或国家法律的具体规定有所不同。首先明确带薪休假的主要类型是否包括法定假期和企业内部福利假期。需要确认我国法律中是否有明确规定带薪休假的种类。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "搜索法律条款",
+        "content": "我国关于带薪休假的主要法律依据是《劳动法》和《职工带薪年休假条例》。需要搜索这些法规内容以确认具体带薪休假的分类。<search>职工带薪年休假条例</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "分析法律规定",
+        "content": "<information>《职工带薪年休假条例》规定，职工连续工作满一年后即可享受年休假。此外，《劳动法》还规定了节假日和特殊假期，例如婚假、产假等属于带薪休假范畴。</information>根据上述信息，可以初步列出带薪休假的主要类型：年休假、婚假、产假、丧假、病假，以及法律规定的法定节假日。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "补充企业政策部分",
+        "content": "除了法律规定的带薪休假以外，企业可能额外提供其他种类的假期作为员工福利，例如探亲假、奖励假等。需要将这些内容补充到清单中，并根据具体情况调整。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "根据我国法律和企业实际情况，带薪休假主要包括以下几类：\n1. 年休假：员工连续工作满一年即可享受。\n2. 法定节假日：如春节、国庆节等。\n3. 婚假：依法享受的结婚假期。\n4. 产假：员工产后休息的假期，通常包括陪产假。\n5. 丧假：亲属去世时给予的休假。\n6. 病假：符合医疗条件的短期病假。\n此外，企业可能提供探亲假、奖励假或其他带薪休假作为福利，具体情况因企业政策而异。"
+      },
+      {
+        "action": "Verification",
+        "content": "结论符合《职工带薪年休假条例》和《劳动法》的相关规定，同时考虑了企业灵活性，结论合理并准确。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "带薪休假是什么呢？其实就是员工在请假的时候还能拿工资，不会因为休假而扣钱。这个概念听起来很简单，不过种类还挺多的，我得仔细梳理一下。先从法律规定的部分入手吧。嗯，应该看看我国有哪些关于带薪休假的明确法律规定。想到两个关键的法律，一个是《劳动法》，另一个是《职工带薪年休假条例》。这两个应该会有比较详细的内容。<search>职工带薪年休假条例</search>。\n\n刚搜到内容了。《职工带薪年休假条例》提到说，只要员工连续工作满一年，就可以享受年休假。这听起来是最基本的一类假期。还有一个《劳动法》的内容我之前了解过，它规定了法定的节假日，比如春节、国庆节这些必须给员工带薪休假的假期。此外，像婚假、产假这些也在《劳动法》里有提到，它们是特殊的带薪休假类型。嗯，总结一下的话，法律规定的带薪休假包括了年休假、法定节假日、婚假、产假、丧假，还有病假。这些都是员工依法享有的权利。\n\n不过除了法律规定的假期，一些企业也可能会提供额外的福利假期，比如探亲假、电休（调休时仍带薪）、奖励假这些，这应该算是公司根据自己的政策来额外给的吧。每个企业的情况都不一定完全一样，但只要有明确的公司制度或合同约定，这些也是可以算作带薪休假的。\n\n总结一下吧，我觉得带薪休假可以分成两大块：一块是法律规定的，像年休假、法定节假日、婚假、产假等，这些是每个员工都能享受到的，只要符合条件。另一块则是企业根据自身福利政策提供的，比如探亲假、奖励假，这完全取决于具体公司怎么设置。\n\n哦，对了，要注意法律规定的这些假期的条件，比如年休假要连续工作满一年才可以享受，病假可能需要提供医疗证明，这些细节需要员工和公司双方都明确。这么看来，基本思路理清了。带薪休假的种类看起来挺丰富呢，涵盖了工作与生活的方方面面。",
+  "Response": "带薪休假通常可以分为以下几种类型：\n\n### 一、法律规定的带薪休假\n1. **年休假**  \n   根据《职工带薪年休假条例》，员工连续工作满一年可享受带薪年休假。具体天数与工作年限相关：  \n   - 工作1-10年的员工：享受5天年休假  \n   - 工作10-20年的员工：享受10天年休假  \n   - 工作满20年的员工：享受15天年休假  \n\n2. **法定节假日**  \n   根据《劳动法》，我国有11天的法定节假日，例如：春节、国庆节、劳动节等，这些假日员工应享受带薪休假。\n\n3. **婚假**  \n   员工结婚时可享受婚假，具体天数依省市规定或公司政策，通常为3天，有些地区对晚婚还有额外假期。\n\n4. **产假**  \n   根据《劳动法》和相关法规，女性员工生育时可享受一定天数的产假，天数一般为98天，部分地区可能会有延长。\n\n5. **丧假**  \n   员工直系亲属去世时可享受丧假，通常为1-3天，具体天数依地方规定或公司制度。\n\n6. **病假**  \n   员工因病需要医疗时，可根据医生证明申请病假，工资支付比例具体依据工作年限和地区规定。\n\n### 二、企业福利性质的带薪休假\n1. **探亲假**  \n   一些企业根据员工家庭情况提供探亲假，通常仅限于异地工作的员工探望父母、配偶。\n\n2. **奖励假**  \n   企业为了激励员工，可能会设立奖励性质的假期，比如绩效优异、特别贡献等情况。\n\n3. **调休假（带薪电休）**  \n   通过延长工作时间或完成额外任务积累的带薪休假，比如周末加班后安排的调休。\n\n4. **特殊福利假**  \n   某些公司可能提供额外假期，比如生日假、旅游假或纪念日假等，根据企业文化和政策决定。\n\n### 总结  \n带薪休假可以分为法律保障的假期（如年休假、产假等）和企业福利假期（如奖励假、探亲假）。法律规定的休假是员工的基本权利，而福利性质的休假则因公司政策而异。员工应仔细了解相关法规和公司制度，以充分保障自身权益并合理安排休假。",
+  "Question": "带薪休假有哪几种"
+}

@@ -1,0 +1,109 @@
+{
+  "Open-ended Verifiable Question": "如何举报公司不交社保",
+  "Ground-True Answer": "用人单位不缴纳社保存在很大的法律风险：员工可随时向劳动监察、社保部门举报要求用人单位缴纳，处理结果往往是限期补缴;根据《劳动合同法》第三十八条规定，用人单位未依法为劳动者缴纳社会保险费的，劳动者可以解除劳动合同，用人单位还应当支付经济补偿金;如果用人单位缴纳了医疗、工伤等社会保险费，员工在职期间一旦发生此类情况，相应的费用由社保基金负担。相反，如不缴纳社保，发生了此类情况，用人单位按照社保的标准自行负担。",
+  "process_id": 5897,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "确认法律依据",
+      "content": "为了举报公司不交社保，有必要了解中国相关法律法规，例如《社会保险法》中关于单位缴纳社会保险的规定。首先搜索该法律的具体要求和条款，以便确定违法行为的法律依据。<search>社会保险法 单位缴纳</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "获取法律条款内容",
+      "content": "<information>《社会保险法》第四条规定：“用人单位和个人必须依法参加社会保险，缴纳社会保险费。”此外，第八十四条指出：“用人单位未按时足额缴纳社会保险费的，由社会保险征收机构责令限期缴纳或补足。”这些条款明确要求单位需要按规定缴纳社保，否则属于违法行为。</information>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "确定举报途径",
+      "content": "根据上述法律规定，举报公司不交社保通常可以通过劳动仲裁、社保管理机构或相关地方人力资源与社会保障局进行。搜索具体的举报机构和流程。<search>社保举报流程</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "找到举报流程和机构",
+      "content": "<information>依据地方规定，劳动者可以向当地的人力资源和社会保障局的社保部门举报，也可以拨打劳动保障监察投诉举报电话‘12333’，递交相关证据材料，如公司合同、工资表等证明其未缴纳社保的情况。</information>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "准备举报所需材料",
+      "content": "举报需要有效证据支持，例如劳动合同、工资单、未缴纳社保的证明。如果可以，了解公司具体未缴社保的时间段和相关情况。建议搜索所需证据材料的具体要求。<search>社保投诉举报所需材料</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "确认证据材料要求",
+      "content": "<information>举报需要提供以下材料：劳动合同或录用通知书、工资支付凭证（如工资单或银行流水）、公司未缴纳社保的详细时间段说明。如果与公司存在劳动纠纷，还需要提交具体的证明仲裁申请材料。</information>"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "举报公司不交社保可以采取以下步骤：1. 确定公司未缴社保的具体情况；2. 收集相关证据，例如劳动合同、工资单；3. 向当地人力资源与社会保障局社保部门进行举报，可以直接递交材料或拨打‘12333’进行投诉；4. 如果需要，可以申请劳动仲裁维护权利。依据《社会保险法》的规定，公司不交社保属于违法行为，可依法追究责任。"
+    },
+    {
+      "action": "Verification",
+      "content": "最终答案准确无误，流程符合法律规定，同时考虑了依据法律要求准备相关材料进行举报的有效性，该方案确实可解决问题，无需进一步推理。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n如何举报公司不交社保\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n举报公司不交社保可以采取以下步骤：1. 确定公司未缴社保的具体情况；2. 收集相关证据，例如劳动合同、工资单；3. 向当地人力资源与社会保障局社保部门进行举报，可以直接递交材料或拨打‘12333’进行投诉；4. 如果需要，可以申请劳动仲裁维护权利。依据《社会保险法》的规定，公司不交社保属于违法行为，可依法追究责任。  \n</Model Response>  \n\n<Reference Answer>  \n用人单位不缴纳社保存在很大的法律风险：员工可随时向劳动监察、社保部门举报要求用人单位缴纳，处理结果往往是限期补缴;根据《劳动合同法》第三十八条规定，用人单位未依法为劳动者缴纳社会保险费的，劳动者可以解除劳动合同，用人单位还应当支付经济补偿金;如果用人单位缴纳了医疗、工伤等社会保险费，员工在职期间一旦发生此类情况，相应的费用由社保基金负担。相反，如不缴纳社保，发生了此类情况，用人单位按照社保的标准自行负担。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 确认法律依据\n为了举报公司不交社保，有必要了解中国相关法律法规，例如《社会保险法》中关于单位缴纳社会保险的规定。首先搜索该法律的具体要求和条款，以便确定违法行为的法律依据。<search>社会保险法 单位缴纳</search>\n\n### 获取法律条款内容\n<information>《社会保险法》第四条规定：“用人单位和个人必须依法参加社会保险，缴纳社会保险费。”此外，第八十四条指出：“用人单位未按时足额缴纳社会保险费的，由社会保险征收机构责令限期缴纳或补足。”这些条款明确要求单位需要按规定缴纳社保，否则属于违法行为。</information>\n\n### 确定举报途径\n根据上述法律规定，举报公司不交社保通常可以通过劳动仲裁、社保管理机构或相关地方人力资源与社会保障局进行。搜索具体的举报机构和流程。<search>社保举报流程</search>\n\n### 找到举报流程和机构\n<information>依据地方规定，劳动者可以向当地的人力资源和社会保障局的社保部门举报，也可以拨打劳动保障监察投诉举报电话‘12333’，递交相关证据材料，如公司合同、工资表等证明其未缴纳社保的情况。</information>\n\n### 准备举报所需材料\n举报需要有效证据支持，例如劳动合同、工资单、未缴纳社保的证明。如果可以，了解公司具体未缴社保的时间段和相关情况。建议搜索所需证据材料的具体要求。<search>社保投诉举报所需材料</search>\n\n### 确认证据材料要求\n<information>举报需要提供以下材料：劳动合同或录用通知书、工资支付凭证（如工资单或银行流水）、公司未缴纳社保的详细时间段说明。如果与公司存在劳动纠纷，还需要提交具体的证明仲裁申请材料。</information>\n\n### Conclusion\n举报公司不交社保可以采取以下步骤：1. 确定公司未缴社保的具体情况；2. 收集相关证据，例如劳动合同、工资单；3. 向当地人力资源与社会保障局社保部门进行举报，可以直接递交材料或拨打‘12333’进行投诉；4. 如果需要，可以申请劳动仲裁维护权利。依据《社会保险法》的规定，公司不交社保属于违法行为，可依法追究责任。\n\n### Verification\n最终答案准确无误，流程符合法律规定，同时考虑了依据法律要求准备相关材料进行举报的有效性，该方案确实可解决问题，无需进一步推理。\n</Thought Process>\n\n<Question>\n如何举报公司不交社保\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n嗯，我想了解一下如果公司不给员工交社保，应该怎么举报。这个问题肯定得从法律的角度去确认，因为只有法律明确规定了公司必须交社保，才能算是违法。我得查一查相关的法律条文，尤其是《社会保险法》里有哪些具体要求。<search>社会保险法 单位缴纳</search>\n\n哦，找到了一些信息。《社会保险法》第四条明确说了，公司和个人都必须依法参加社会保险，按时缴费。然后还有第八十四条讲，用人单位如果没有按时足额缴纳社保，社保机构可以责令限期补缴或者直接追缴。这么说，这家公司确实是违法了，法律依据也很清楚。\n\n接下来我得搞清楚怎么举报这种情况，对吧？应该是向相关部门反映，比如人社局之类的。不过具体是哪个部门、流程是什么，还需要确认一下。<search>社保举报流程</search>\n\n查到了！根据资料，可以向当地的人力资源和社会保障局的社保部门投诉举报。这也包括直接拨打投诉热线‘12333’。看来很方便。另外，如果手头有相关证据，比如劳动合同、工资单这些，可以直接递交给相关部门，说明情况。\n\n哦对了，举报的时候一定要准备好证据，不然口说无凭也很难成立。我得再搜一下，这种投诉一般需要哪些材料，好准备得更充分点。<search>社保投诉举报所需材料</search>\n\n信息里面提到需要准备劳动合同或录用通知书，还有工资支付记录，比如工资单或者银行流水。如果涉及未交社保的具体时间段，也要详细写清楚。如果是劳动纠纷，这种情况还可能需要提供更详细的劳动仲裁申请材料。这些东西看起来都是很关键的，我得列个清单把它们都准备好。\n\n所以，整理一下，举报公司不交社保的话，可以按照以下步骤来：第一，先确定公司具体没交社保的情况，时间段是什么时候；第二，收集必要的证据，比如合同、工资单，记录好细节；第三，联系当地的人社局社保部门，用热线‘12333’或者亲自递交材料的方式进行举报；第四，如果公司还是不配合，可以进一步申请劳动仲裁。鉴于《社会保险法》明确规定，公司不交社保是违法的，举报这种行为完全有法律依据。\n\n好，总结下来流程很清晰，法律条款也找到了，举报途径明确，材料清单也完整了。看来这个方案是靠谱的，没问题，就按照这个来操作吧。\n</Internal Thinking>\n\n<Question>\n如何举报公司不交社保\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"确认法律依据\",\n      \"content\": \"为了举报公司不交社保，有必要了解中国相关法律法规，例如《社会保险法》中关于单位缴纳社会保险的规定。首先搜索该法律的具体要求和条款，以便确定违法行为的法律依据。<search>社会保险法 单位缴纳</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"获取法律条款内容\",\n      \"content\": \"<information>《社会保险法》第四条规定：“用人单位和个人必须依法参加社会保险，缴纳社会保险费。”此外，第八十四条指出：“用人单位未按时足额缴纳社会保险费的，由社会保险征收机构责令限期缴纳或补足。”这些条款明确要求单位需要按规定缴纳社保，否则属于违法行为。</information>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"确定举报途径\",\n      \"content\": \"根据上述法律规定，举报公司不交社保通常可以通过劳动仲裁、社保管理机构或相关地方人力资源与社会保障局进行。搜索具体的举报机构和流程。<search>社保举报流程</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"找到举报流程和机构\",\n      \"content\": \"<information>依据地方规定，劳动者可以向当地的人力资源和社会保障局的社保部门举报，也可以拨打劳动保障监察投诉举报电话‘12333’，递交相关证据材料，如公司合同、工资表等证明其未缴纳社保的情况。</information>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"准备举报所需材料\",\n      \"content\": \"举报需要有效证据支持，例如劳动合同、工资单、未缴纳社保的证明。如果可以，了解公司具体未缴社保的时间段和相关情况。建议搜索所需证据材料的具体要求。<search>社保投诉举报所需材料</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"确认证据材料要求\",\n      \"content\": \"<information>举报需要提供以下材料：劳动合同或录用通知书、工资支付凭证（如工资单或银行流水）、公司未缴纳社保的详细时间段说明。如果与公司存在劳动纠纷，还需要提交具体的证明仲裁申请材料。</information>\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"举报公司不交社保可以采取以下步骤：1. 确定公司未缴社保的具体情况；2. 收集相关证据，例如劳动合同、工资单；3. 向当地人力资源与社会保障局社保部门进行举报，可以直接递交材料或拨打‘12333’进行投诉；4. 如果需要，可以申请劳动仲裁维护权利。依据《社会保险法》的规定，公司不交社保属于违法行为，可依法追究责任。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"最终答案准确无误，流程符合法律规定，同时考虑了依据法律要求准备相关材料进行举报的有效性，该方案确实可解决问题，无需进一步推理。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"嗯，我想了解一下如果公司不给员工交社保，应该怎么举报。这个问题肯定得从法律的角度去确认，因为只有法律明确规定了公司必须交社保，才能算是违法。我得查一查相关的法律条文，尤其是《社会保险法》里有哪些具体要求。<search>社会保险法 单位缴纳</search>\\n\\n哦，找到了一些信息。《社会保险法》第四条明确说了，公司和个人都必须依法参加社会保险，按时缴费。然后还有第八十四条讲，用人单位如果没有按时足额缴纳社保，社保机构可以责令限期补缴或者直接追缴。这么说，这家公司确实是违法了，法律依据也很清楚。\\n\\n接下来我得搞清楚怎么举报这种情况，对吧？应该是向相关部门反映，比如人社局之类的。不过具体是哪个部门、流程是什么，还需要确认一下。<search>社保举报流程</search>\\n\\n查到了！根据资料，可以向当地的人力资源和社会保障局的社保部门投诉举报。这也包括直接拨打投诉热线‘12333’。看来很方便。另外，如果手头有相关证据，比如劳动合同、工资单这些，可以直接递交给相关部门，说明情况。\\n\\n哦对了，举报的时候一定要准备好证据，不然口说无凭也很难成立。我得再搜一下，这种投诉一般需要哪些材料，好准备得更充分点。<search>社保投诉举报所需材料</search>\\n\\n信息里面提到需要准备劳动合同或录用通知书，还有工资支付记录，比如工资单或者银行流水。如果涉及未交社保的具体时间段，也要详细写清楚。如果是劳动纠纷，这种情况还可能需要提供更详细的劳动仲裁申请材料。这些东西看起来都是很关键的，我得列个清单把它们都准备好。\\n\\n所以，整理一下，举报公司不交社保的话，可以按照以下步骤来：第一，先确定公司具体没交社保的情况，时间段是什么时候；第二，收集必要的证据，比如合同、工资单，记录好细节；第三，联系当地的人社局社保部门，用热线‘12333’或者亲自递交材料的方式进行举报；第四，如果公司还是不配合，可以进一步申请劳动仲裁。鉴于《社会保险法》明确规定，公司不交社保是违法的，举报这种行为完全有法律依据。\\n\\n好，总结下来流程很清晰，法律条款也找到了，举报途径明确，材料清单也完整了。看来这个方案是靠谱的，没问题，就按照这个来操作吧。\"\n}\n```",
+    "如果发现公司没有为员工缴纳社保，你可以按照以下步骤进行举报：\n\n### 1. **确认未缴社保的事实**\n   先核实公司未缴纳社保的具体情况，例如没有参保的时间段，并通过工资单、银行流水等记录实际的工资收入，以确认缴纳义务没有履行。\n\n### 2. **法律依据**\n   根据《社会保险法》第四条，用人单位和个人必须依法参加社会保险并缴纳社保；根据第八十四条，用人单位未按时足额缴纳社会保险费的，社会保险机构有权责令限期补缴或依法追缴。因此，公司未缴社保是违法行为。\n\n### 3. **收集证据**\n   举报前，准备以下材料：\n   - 劳动合同或录用通知书的复印件；\n   - 工资单、银行流水或其他能够证明劳动关系的凭证；\n   - 如果有未缴社保的具体时间段、缴纳标准的详细记录，更方便问题的解决。\n\n### 4. **举报途径**\n   你可以通过以下途径举报：\n   - **拨打12333国家社会保险服务热线**：说明问题，获得指导并提交举报；\n   - **前往当地人力资源和社会保障局（社保部门）**：携带以上证据，填写投诉申请，直接递交举报材料；\n   - **通过线上平台**：部分地区开通了在线举报途径，可以通过当地人社局官网或相关社保服务大厅提交举报。\n\n### 5. **后续处理**\n   若公司仍不整改或问题难以解决，你可以申请劳动仲裁，通过法律途径强制追缴。仲裁需要准备更详细的材料，如劳动关系的证明、未缴费的记录等。\n\n### 总结\n举报公司不交社保完全有法律依据，流程清晰且便捷。建议你尽快收集相关证据，按照上述步骤进行操作。如果需要更详细的指导，也可以咨询专业的法律服务机构。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "确认法律依据",
+        "content": "为了举报公司不交社保，有必要了解中国相关法律法规，例如《社会保险法》中关于单位缴纳社会保险的规定。首先搜索该法律的具体要求和条款，以便确定违法行为的法律依据。<search>社会保险法 单位缴纳</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "获取法律条款内容",
+        "content": "<information>《社会保险法》第四条规定：“用人单位和个人必须依法参加社会保险，缴纳社会保险费。”此外，第八十四条指出：“用人单位未按时足额缴纳社会保险费的，由社会保险征收机构责令限期缴纳或补足。”这些条款明确要求单位需要按规定缴纳社保，否则属于违法行为。</information>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "确定举报途径",
+        "content": "根据上述法律规定，举报公司不交社保通常可以通过劳动仲裁、社保管理机构或相关地方人力资源与社会保障局进行。搜索具体的举报机构和流程。<search>社保举报流程</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "找到举报流程和机构",
+        "content": "<information>依据地方规定，劳动者可以向当地的人力资源和社会保障局的社保部门举报，也可以拨打劳动保障监察投诉举报电话‘12333’，递交相关证据材料，如公司合同、工资表等证明其未缴纳社保的情况。</information>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "准备举报所需材料",
+        "content": "举报需要有效证据支持，例如劳动合同、工资单、未缴纳社保的证明。如果可以，了解公司具体未缴社保的时间段和相关情况。建议搜索所需证据材料的具体要求。<search>社保投诉举报所需材料</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "确认证据材料要求",
+        "content": "<information>举报需要提供以下材料：劳动合同或录用通知书、工资支付凭证（如工资单或银行流水）、公司未缴纳社保的详细时间段说明。如果与公司存在劳动纠纷，还需要提交具体的证明仲裁申请材料。</information>"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "举报公司不交社保可以采取以下步骤：1. 确定公司未缴社保的具体情况；2. 收集相关证据，例如劳动合同、工资单；3. 向当地人力资源与社会保障局社保部门进行举报，可以直接递交材料或拨打‘12333’进行投诉；4. 如果需要，可以申请劳动仲裁维护权利。依据《社会保险法》的规定，公司不交社保属于违法行为，可依法追究责任。"
+      },
+      {
+        "action": "Verification",
+        "content": "最终答案准确无误，流程符合法律规定，同时考虑了依据法律要求准备相关材料进行举报的有效性，该方案确实可解决问题，无需进一步推理。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "嗯，我想了解一下如果公司不给员工交社保，应该怎么举报。这个问题肯定得从法律的角度去确认，因为只有法律明确规定了公司必须交社保，才能算是违法。我得查一查相关的法律条文，尤其是《社会保险法》里有哪些具体要求。<search>社会保险法 单位缴纳</search>\n\n哦，找到了一些信息。《社会保险法》第四条明确说了，公司和个人都必须依法参加社会保险，按时缴费。然后还有第八十四条讲，用人单位如果没有按时足额缴纳社保，社保机构可以责令限期补缴或者直接追缴。这么说，这家公司确实是违法了，法律依据也很清楚。\n\n接下来我得搞清楚怎么举报这种情况，对吧？应该是向相关部门反映，比如人社局之类的。不过具体是哪个部门、流程是什么，还需要确认一下。<search>社保举报流程</search>\n\n查到了！根据资料，可以向当地的人力资源和社会保障局的社保部门投诉举报。这也包括直接拨打投诉热线‘12333’。看来很方便。另外，如果手头有相关证据，比如劳动合同、工资单这些，可以直接递交给相关部门，说明情况。\n\n哦对了，举报的时候一定要准备好证据，不然口说无凭也很难成立。我得再搜一下，这种投诉一般需要哪些材料，好准备得更充分点。<search>社保投诉举报所需材料</search>\n\n信息里面提到需要准备劳动合同或录用通知书，还有工资支付记录，比如工资单或者银行流水。如果涉及未交社保的具体时间段，也要详细写清楚。如果是劳动纠纷，这种情况还可能需要提供更详细的劳动仲裁申请材料。这些东西看起来都是很关键的，我得列个清单把它们都准备好。\n\n所以，整理一下，举报公司不交社保的话，可以按照以下步骤来：第一，先确定公司具体没交社保的情况，时间段是什么时候；第二，收集必要的证据，比如合同、工资单，记录好细节；第三，联系当地的人社局社保部门，用热线‘12333’或者亲自递交材料的方式进行举报；第四，如果公司还是不配合，可以进一步申请劳动仲裁。鉴于《社会保险法》明确规定，公司不交社保是违法的，举报这种行为完全有法律依据。\n\n好，总结下来流程很清晰，法律条款也找到了，举报途径明确，材料清单也完整了。看来这个方案是靠谱的，没问题，就按照这个来操作吧。",
+  "Response": "如果发现公司没有为员工缴纳社保，你可以按照以下步骤进行举报：\n\n### 1. **确认未缴社保的事实**\n   先核实公司未缴纳社保的具体情况，例如没有参保的时间段，并通过工资单、银行流水等记录实际的工资收入，以确认缴纳义务没有履行。\n\n### 2. **法律依据**\n   根据《社会保险法》第四条，用人单位和个人必须依法参加社会保险并缴纳社保；根据第八十四条，用人单位未按时足额缴纳社会保险费的，社会保险机构有权责令限期补缴或依法追缴。因此，公司未缴社保是违法行为。\n\n### 3. **收集证据**\n   举报前，准备以下材料：\n   - 劳动合同或录用通知书的复印件；\n   - 工资单、银行流水或其他能够证明劳动关系的凭证；\n   - 如果有未缴社保的具体时间段、缴纳标准的详细记录，更方便问题的解决。\n\n### 4. **举报途径**\n   你可以通过以下途径举报：\n   - **拨打12333国家社会保险服务热线**：说明问题，获得指导并提交举报；\n   - **前往当地人力资源和社会保障局（社保部门）**：携带以上证据，填写投诉申请，直接递交举报材料；\n   - **通过线上平台**：部分地区开通了在线举报途径，可以通过当地人社局官网或相关社保服务大厅提交举报。\n\n### 5. **后续处理**\n   若公司仍不整改或问题难以解决，你可以申请劳动仲裁，通过法律途径强制追缴。仲裁需要准备更详细的材料，如劳动关系的证明、未缴费的记录等。\n\n### 总结\n举报公司不交社保完全有法律依据，流程清晰且便捷。建议你尽快收集相关证据，按照上述步骤进行操作。如果需要更详细的指导，也可以咨询专业的法律服务机构。",
+  "Question": "如何举报公司不交社保"
+}

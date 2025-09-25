@@ -1,0 +1,79 @@
+{
+  "Open-ended Verifiable Question": "2023股东大会通过决议违反法律规定如何处理?",
+  "Ground-True Answer": "股东大会通过决议违反法律规定如何处理依据我国公司法的规定，股东大会通过的决议违反法律规定的，作出的决议是无效的，股东可以自决议作出之日起六十日内，请求人民法院撤销。《中华人民共和国公司法》第二十二条 公司股东会或者股东大会、董事会的决议内容违反法律、行政法规的无效。股东会或者股东大会、董事会的会议召集程序、表决方式违反法律、行政法规或者公司章程，或者决议内容违反公司章程的，股东可以自决议作出之日起六十日内，请求人民法院撤销。股东依照前款规定提起诉讼的，人民法院可以应公司的请求，要求股东提供相应担保。公司根据股东会或者股东大会、董事会决议已办理变更登记的，人民法院宣告该决议无效或者撤销该决议后，公司应当向公司登记机关申请撤销变更登记。股东大会的召开要满足哪些条件才算有效召开1、股东大会会议由董事会召集，董事长主持;董事长不能履行职务或者不履行职务的，由副董事长主持;副董事长不能履行职务或者不履行职务的，由半数以上董事共同推举一名董事主持。董事会不能履行或者不履行召集股东大会会议职责的，监事会应当及时召集和主持;监事会不召集和主持的，连续90日以上单独或者合计持有公司10%以上股份的股东可以自行召集和主持。2、召开股东大会会议，应当将会议召开的时间、地点和审议的事项于会议召开20日前通知各股东;临时股东大会应当于会议召开15日前通知各股东;发行无记名股票的，应当于会议召开30日前公告会议召开的时间、地点和审议事项。",
+  "process_id": 1331,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "明确问题范围",
+      "content": "股东大会决议违反法律规定这一情形需要明确适用的法律法规。例如公司法、合同法等相关规定对股东大会决议的效力可能有所约束。我需要确认有哪些具体法律规定适用该情形。<search>股东大会决议效力 公司法</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "审查股东大会决议效力相关规定",
+      "content": "<information>《中华人民共和国公司法》第22条：公司决议内容违反法律、行政法规的，或者股东会、股东大会或者董事会决议程序违反法律、行政法规、公司章程的，股东可以请求人民法院予以撤销。</information>基于搜索结果，股东大会决议如果违反法律规定，可以通过司法途径请求撤销。下一步是审查具体司法处理机制。<search>股东大会决议撤销司法程序</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "确认司法维权程序",
+      "content": "<information>相关司法实践中，股东通常可以向公司所在地的人民法院提起诉讼，要求撤销决议。根据《民事诉讼法》的相关规定，诉讼请求需要符合法定程序，包括提交诉状、提供决议违法的证据等。</information>司法途径是主要处理方式，股东需要合法提出诉讼，并提交决议违法的证据。接下来总结主要处理办法。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "根据《中华人民共和国公司法》第22条的规定，股东大会通过的决议如果违反法律规定，股东可以向人民法院提起诉讼，请求撤销该决议。诉讼请求应符合法定程序，包括提交诉状、提供证据等。解决流程主要涵盖法律审查与司法维权两个步骤。"
+    },
+    {
+      "action": "Verification",
+      "content": "该结论符合《公司法》第22条规定和司法实践处理流程，最终结论正确。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n2023股东大会通过决议违反法律规定如何处理?\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n根据《中华人民共和国公司法》第22条的规定，股东大会通过的决议如果违反法律规定，股东可以向人民法院提起诉讼，请求撤销该决议。诉讼请求应符合法定程序，包括提交诉状、提供证据等。解决流程主要涵盖法律审查与司法维权两个步骤。  \n</Model Response>  \n\n<Reference Answer>  \n股东大会通过决议违反法律规定如何处理依据我国公司法的规定，股东大会通过的决议违反法律规定的，作出的决议是无效的，股东可以自决议作出之日起六十日内，请求人民法院撤销。《中华人民共和国公司法》第二十二条 公司股东会或者股东大会、董事会的决议内容违反法律、行政法规的无效。股东会或者股东大会、董事会的会议召集程序、表决方式违反法律、行政法规或者公司章程，或者决议内容违反公司章程的，股东可以自决议作出之日起六十日内，请求人民法院撤销。股东依照前款规定提起诉讼的，人民法院可以应公司的请求，要求股东提供相应担保。公司根据股东会或者股东大会、董事会决议已办理变更登记的，人民法院宣告该决议无效或者撤销该决议后，公司应当向公司登记机关申请撤销变更登记。股东大会的召开要满足哪些条件才算有效召开1、股东大会会议由董事会召集，董事长主持;董事长不能履行职务或者不履行职务的，由副董事长主持;副董事长不能履行职务或者不履行职务的，由半数以上董事共同推举一名董事主持。董事会不能履行或者不履行召集股东大会会议职责的，监事会应当及时召集和主持;监事会不召集和主持的，连续90日以上单独或者合计持有公司10%以上股份的股东可以自行召集和主持。2、召开股东大会会议，应当将会议召开的时间、地点和审议的事项于会议召开20日前通知各股东;临时股东大会应当于会议召开15日前通知各股东;发行无记名股票的，应当于会议召开30日前公告会议召开的时间、地点和审议事项。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 明确问题范围\n股东大会决议违反法律规定这一情形需要明确适用的法律法规。例如公司法、合同法等相关规定对股东大会决议的效力可能有所约束。我需要确认有哪些具体法律规定适用该情形。<search>股东大会决议效力 公司法</search>\n\n### 审查股东大会决议效力相关规定\n<information>《中华人民共和国公司法》第22条：公司决议内容违反法律、行政法规的，或者股东会、股东大会或者董事会决议程序违反法律、行政法规、公司章程的，股东可以请求人民法院予以撤销。</information>基于搜索结果，股东大会决议如果违反法律规定，可以通过司法途径请求撤销。下一步是审查具体司法处理机制。<search>股东大会决议撤销司法程序</search>\n\n### 确认司法维权程序\n<information>相关司法实践中，股东通常可以向公司所在地的人民法院提起诉讼，要求撤销决议。根据《民事诉讼法》的相关规定，诉讼请求需要符合法定程序，包括提交诉状、提供决议违法的证据等。</information>司法途径是主要处理方式，股东需要合法提出诉讼，并提交决议违法的证据。接下来总结主要处理办法。\n\n### Conclusion\n根据《中华人民共和国公司法》第22条的规定，股东大会通过的决议如果违反法律规定，股东可以向人民法院提起诉讼，请求撤销该决议。诉讼请求应符合法定程序，包括提交诉状、提供证据等。解决流程主要涵盖法律审查与司法维权两个步骤。\n\n### Verification\n该结论符合《公司法》第22条规定和司法实践处理流程，最终结论正确。\n</Thought Process>\n\n<Question>\n2023股东大会通过决议违反法律规定如何处理?\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n嗯，股东大会通过的决议如果违反了法律，应该可以采取一些法律措施来处理吧。我记得《公司法》里面提到了相关内容，但具体是什么规定呢？得先查一下涉及股东大会决议效力的相关内容。<search>股东大会决议效力 公司法</search>\n\n哦，搜到了！看法律条文，《中华人民共和国公司法》第22条提到：如果股东会、股东大会或者董事会通过的决议违反了法律或者行政法规，股东可以请求人民法院撤销该决议。这样的话，似乎只要决议的内容违法，或者程序上有问题，就可以申请撤销。那接下来我需要搞清楚到底要怎么处理，是不是需要走诉讼程序？\n\n那就再查一下，看看这个撤销决议的司法处理具体是什么流程。<search>股东大会决议撤销司法程序</search>\n\n有了！根据搜到的内容，一般来说，股东如果认为决议违法，就可以带着相关证据去公司所在地的人民法院起诉，请求撤销这项决议。提交诉状的时候要准备好证据材料，证明决议违法或者违反程序。这个过程听起来感觉有点复杂，但根据《民事诉讼法》的规定，应该是可以操作的。\n\n这么总结一下吧。根据《公司法》第22条，如果觉得股东大会通过的决议内容违法，或者程序不对，那么股东是可以通过法律途径解决的。具体来说，就是向法院提起诉讼，要求撤销决议。不过需要注意的是，走司法程序时，要确保自己有足够的证据支持自己的诉求。而且，提交诉讼的时候，程序合规性也很重要。\n\n嗯，这样看来问题的处理其实还算清晰，就是得搞清楚决议是否真的存在违法或者程序问题，然后准备相关材料去法院起诉。这和我的搜索结果以及法律条文规定都是对得上的，看来可以按照这个思路解决问题。\n</Internal Thinking>\n\n<Question>\n2023股东大会通过决议违反法律规定如何处理?\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"明确问题范围\",\n      \"content\": \"股东大会决议违反法律规定这一情形需要明确适用的法律法规。例如公司法、合同法等相关规定对股东大会决议的效力可能有所约束。我需要确认有哪些具体法律规定适用该情形。<search>股东大会决议效力 公司法</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"审查股东大会决议效力相关规定\",\n      \"content\": \"<information>《中华人民共和国公司法》第22条：公司决议内容违反法律、行政法规的，或者股东会、股东大会或者董事会决议程序违反法律、行政法规、公司章程的，股东可以请求人民法院予以撤销。</information>基于搜索结果，股东大会决议如果违反法律规定，可以通过司法途径请求撤销。下一步是审查具体司法处理机制。<search>股东大会决议撤销司法程序</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"确认司法维权程序\",\n      \"content\": \"<information>相关司法实践中，股东通常可以向公司所在地的人民法院提起诉讼，要求撤销决议。根据《民事诉讼法》的相关规定，诉讼请求需要符合法定程序，包括提交诉状、提供决议违法的证据等。</information>司法途径是主要处理方式，股东需要合法提出诉讼，并提交决议违法的证据。接下来总结主要处理办法。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"根据《中华人民共和国公司法》第22条的规定，股东大会通过的决议如果违反法律规定，股东可以向人民法院提起诉讼，请求撤销该决议。诉讼请求应符合法定程序，包括提交诉状、提供证据等。解决流程主要涵盖法律审查与司法维权两个步骤。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"该结论符合《公司法》第22条规定和司法实践处理流程，最终结论正确。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"嗯，股东大会通过的决议如果违反了法律，应该可以采取一些法律措施来处理吧。我记得《公司法》里面提到了相关内容，但具体是什么规定呢？得先查一下涉及股东大会决议效力的相关内容。<search>股东大会决议效力 公司法</search>\\n\\n哦，搜到了！看法律条文，《中华人民共和国公司法》第22条提到：如果股东会、股东大会或者董事会通过的决议违反了法律或者行政法规，股东可以请求人民法院撤销该决议。这样的话，似乎只要决议的内容违法，或者程序上有问题，就可以申请撤销。那接下来我需要搞清楚到底要怎么处理，是不是需要走诉讼程序？\\n\\n那就再查一下，看看这个撤销决议的司法处理具体是什么流程。<search>股东大会决议撤销司法程序</search>\\n\\n有了！根据搜到的内容，一般来说，股东如果认为决议违法，就可以带着相关证据去公司所在地的人民法院起诉，请求撤销这项决议。提交诉状的时候要准备好证据材料，证明决议违法或者违反程序。这个过程听起来感觉有点复杂，但根据《民事诉讼法》的规定，应该是可以操作的。\\n\\n这么总结一下吧。根据《公司法》第22条，如果觉得股东大会通过的决议内容违法，或者程序不对，那么股东是可以通过法律途径解决的。具体来说，就是向法院提起诉讼，要求撤销决议。不过需要注意的是，走司法程序时，要确保自己有足够的证据支持自己的诉求。而且，提交诉讼的时候，程序合规性也很重要。\\n\\n嗯，这样看来问题的处理其实还算清晰，就是得搞清楚决议是否真的存在违法或者程序问题，然后准备相关材料去法院起诉。这和我的搜索结果以及法律条文规定都是对得上的，看来可以按照这个思路解决问题。\"\n}\n```",
+    "如果股东大会通过的决议违反了法律规定或者存在程序瑕疵，根据《中华人民共和国公司法》第22条的相关规定，股东可以依法请求法院撤销该决议。以下是具体处理方式和流程：\n\n### 1. **法律依据**\n依据《中华人民共和国公司法》第22条：\n- 如果股东会、股东大会或者董事会作出的决议内容违反了法律、行政法规的强制性规定，或者在召集程序、表决程序中违法，股东可以向人民法院请求撤销该决议。\n\n### 2. **可起诉撤销的情形**\n- **内容违法**：决议涉及事项与法律或行政法规的强制性规定相抵触。\n- **程序违法**：决议在召集程序、通知程序、表决程序等方面存在瑕疵，例如未依法通知股东参会、未达到必要的表决比例等。\n\n### 3. **法律程序**\n股东如果认为股东大会决议违法，可以采取以下步骤：\n1. **提交诉讼**：股东需向公司住所地人民法院提起诉讼（属于民事案件）。\n2. **准备材料**：提交诉状时，需准备以下材料：\n   - 证明股东身份的文件（如股份证明）。\n   - 股东大会决议的文本。\n   - 证明决议违法或程序违规的相关证据（如会议通知、表决记录等）。\n3. **诉讼时限**：根据规定，股东需在决议作出之日起60日内提出撤销申请，逾期可能丧失诉讼权利。\n4. **法院审理与裁决**：法院将审查决议是否确实存在违法内容或程序问题。如果认定确有问题，就会作出撤销决议的判决。\n\n### 4. **注意事项**\n- **证据充分性**：提起诉讼前，股东需确保手中掌握足够的证据支持自己的主张。\n- **起诉主体**：具备诉讼权利的通常是对决议有直接利害关系的股东。\n- **合法权益保护**：即使决议被撤销，对该决议所产生的其他合法效力仍需进一步明确处理。\n\n综上，如果认为股东大会通过的决议存在违法或程序问题，建议及时搜集相关证据并在法定期限内向法院提起撤销诉讼，依法维护自身合法权益。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "明确问题范围",
+        "content": "股东大会决议违反法律规定这一情形需要明确适用的法律法规。例如公司法、合同法等相关规定对股东大会决议的效力可能有所约束。我需要确认有哪些具体法律规定适用该情形。<search>股东大会决议效力 公司法</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "审查股东大会决议效力相关规定",
+        "content": "<information>《中华人民共和国公司法》第22条：公司决议内容违反法律、行政法规的，或者股东会、股东大会或者董事会决议程序违反法律、行政法规、公司章程的，股东可以请求人民法院予以撤销。</information>基于搜索结果，股东大会决议如果违反法律规定，可以通过司法途径请求撤销。下一步是审查具体司法处理机制。<search>股东大会决议撤销司法程序</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "确认司法维权程序",
+        "content": "<information>相关司法实践中，股东通常可以向公司所在地的人民法院提起诉讼，要求撤销决议。根据《民事诉讼法》的相关规定，诉讼请求需要符合法定程序，包括提交诉状、提供决议违法的证据等。</information>司法途径是主要处理方式，股东需要合法提出诉讼，并提交决议违法的证据。接下来总结主要处理办法。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "根据《中华人民共和国公司法》第22条的规定，股东大会通过的决议如果违反法律规定，股东可以向人民法院提起诉讼，请求撤销该决议。诉讼请求应符合法定程序，包括提交诉状、提供证据等。解决流程主要涵盖法律审查与司法维权两个步骤。"
+      },
+      {
+        "action": "Verification",
+        "content": "该结论符合《公司法》第22条规定和司法实践处理流程，最终结论正确。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "嗯，股东大会通过的决议如果违反了法律，应该可以采取一些法律措施来处理吧。我记得《公司法》里面提到了相关内容，但具体是什么规定呢？得先查一下涉及股东大会决议效力的相关内容。<search>股东大会决议效力 公司法</search>\n\n哦，搜到了！看法律条文，《中华人民共和国公司法》第22条提到：如果股东会、股东大会或者董事会通过的决议违反了法律或者行政法规，股东可以请求人民法院撤销该决议。这样的话，似乎只要决议的内容违法，或者程序上有问题，就可以申请撤销。那接下来我需要搞清楚到底要怎么处理，是不是需要走诉讼程序？\n\n那就再查一下，看看这个撤销决议的司法处理具体是什么流程。<search>股东大会决议撤销司法程序</search>\n\n有了！根据搜到的内容，一般来说，股东如果认为决议违法，就可以带着相关证据去公司所在地的人民法院起诉，请求撤销这项决议。提交诉状的时候要准备好证据材料，证明决议违法或者违反程序。这个过程听起来感觉有点复杂，但根据《民事诉讼法》的规定，应该是可以操作的。\n\n这么总结一下吧。根据《公司法》第22条，如果觉得股东大会通过的决议内容违法，或者程序不对，那么股东是可以通过法律途径解决的。具体来说，就是向法院提起诉讼，要求撤销决议。不过需要注意的是，走司法程序时，要确保自己有足够的证据支持自己的诉求。而且，提交诉讼的时候，程序合规性也很重要。\n\n嗯，这样看来问题的处理其实还算清晰，就是得搞清楚决议是否真的存在违法或者程序问题，然后准备相关材料去法院起诉。这和我的搜索结果以及法律条文规定都是对得上的，看来可以按照这个思路解决问题。",
+  "Response": "如果股东大会通过的决议违反了法律规定或者存在程序瑕疵，根据《中华人民共和国公司法》第22条的相关规定，股东可以依法请求法院撤销该决议。以下是具体处理方式和流程：\n\n### 1. **法律依据**\n依据《中华人民共和国公司法》第22条：\n- 如果股东会、股东大会或者董事会作出的决议内容违反了法律、行政法规的强制性规定，或者在召集程序、表决程序中违法，股东可以向人民法院请求撤销该决议。\n\n### 2. **可起诉撤销的情形**\n- **内容违法**：决议涉及事项与法律或行政法规的强制性规定相抵触。\n- **程序违法**：决议在召集程序、通知程序、表决程序等方面存在瑕疵，例如未依法通知股东参会、未达到必要的表决比例等。\n\n### 3. **法律程序**\n股东如果认为股东大会决议违法，可以采取以下步骤：\n1. **提交诉讼**：股东需向公司住所地人民法院提起诉讼（属于民事案件）。\n2. **准备材料**：提交诉状时，需准备以下材料：\n   - 证明股东身份的文件（如股份证明）。\n   - 股东大会决议的文本。\n   - 证明决议违法或程序违规的相关证据（如会议通知、表决记录等）。\n3. **诉讼时限**：根据规定，股东需在决议作出之日起60日内提出撤销申请，逾期可能丧失诉讼权利。\n4. **法院审理与裁决**：法院将审查决议是否确实存在违法内容或程序问题。如果认定确有问题，就会作出撤销决议的判决。\n\n### 4. **注意事项**\n- **证据充分性**：提起诉讼前，股东需确保手中掌握足够的证据支持自己的主张。\n- **起诉主体**：具备诉讼权利的通常是对决议有直接利害关系的股东。\n- **合法权益保护**：即使决议被撤销，对该决议所产生的其他合法效力仍需进一步明确处理。\n\n综上，如果认为股东大会通过的决议存在违法或程序问题，建议及时搜集相关证据并在法定期限内向法院提起撤销诉讼，依法维护自身合法权益。",
+  "Question": "2023股东大会通过决议违反法律规定如何处理?"
+}

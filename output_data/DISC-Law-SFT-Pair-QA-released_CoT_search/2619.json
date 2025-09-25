@@ -1,0 +1,109 @@
+{
+  "Open-ended Verifiable Question": "公司合同未履行完毕,就注销,合同之债与股东清算之债的区别?",
+  "Ground-True Answer": "合同之债：即债务人企业收了债权人企业的预收货款，却未履行交付义务，双方之间的合同关系仍处于有效状态。如果此时解除合同，则债务人企业就负有向债权人企业返还所有款项或扣除成本返还部分款项之义务，此为合同之债。若债务人企业一直未予以处理该合同，既未交付货物也未通知债权人企业解除，则合同之债则一直未确定，直到债务人企业注销。根据相关公司法的规定，企业一旦注销则具有合法清算的义务，付款条件未成就的也视为已成就，因此，注销这一刻，债务人企业未履行的合同之债则确定了。清算责任之债：若债务人企业的股东罔顾清算责任，未及时清算或以虚假的清算手续办理清算的，则债务人企业的股东就要对因违法清算造成的债权人企业无法清收的合同之债的损失承担赔偿责任。 因此，清算责任之债表面上是侵权之债，其需要满足2个要件：1、债务人企业存在合同之债，且未过诉讼时效；\n2、债务人企业股东怠于清算或违法清算导致合同之债无法清偿。",
+  "process_id": 2619,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "明确合同之债的定义和特点",
+      "content": "合同之债是基于双方合法合意达成的协议产生的债务关系，其主要义务是在合同中约定的标的内容上予以履行。它通常以特定履行或赔偿损失为主要履行方式，且其追偿途径主要基于合同法的相关规定。需要明确合同之债的清偿与责任主体。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "明确股东清算之债的定义和特点",
+      "content": "股东清算之债是公司依法注销清算过程中产生的债务，往往基于公司在注销程序中对外未清偿债务或未履行的合同义务。此类债务的追责方式主要涉及公司法和民事执行法的条款，可能牵涉到股东的补充清偿义务。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "需要了解公司注销与清算过程中股东的责任",
+      "content": "由于注销公司往往需要进行清算，如果清算过程中未履行合同之债，股东可能启动补充清偿责任。因此，需要对公司法关于公司清算和股东责任的规定进行说明。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "检索相关法规",
+      "content": "<search>公司法注销清算及股东补充责任</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "法律搜索结论",
+      "content": "<information>《中华人民共和国公司法》第184条规定公司解散应依法清算，第185条至187条规定了清算责任人的义务。此外，第20条规定股东在公司资本不足时对此承担补充责任。</information>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "分析合同之债与股东清算之债的区别",
+      "content": "合同之债是一般合同关系的履行义务，其主体是公司；而股东清算之债是在公司注销时未能履行合同之债或其他债务时，因清算程序不当而追责至股东个人。前者是基础债务关系，后者是基于公司法中的补充清偿责任而产生的股东个人义务。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "合同之债是公司基于合同关系直接产生的履行义务，主体为公司本身；而股东清算之债则是公司清算不当、责任未尽时，股东被追责的补充责任，主体为公司股东，根源在于清算瑕疵。二者在法律基础、责任主体和追偿方式上有所不同。"
+    },
+    {
+      "action": "Verification",
+      "content": "结论和法律逻辑一致，符合《公司法》的规定，区别清晰，推理正确。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n公司合同未履行完毕,就注销,合同之债与股东清算之债的区别?\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n合同之债是公司基于合同关系直接产生的履行义务，主体为公司本身；而股东清算之债则是公司清算不当、责任未尽时，股东被追责的补充责任，主体为公司股东，根源在于清算瑕疵。二者在法律基础、责任主体和追偿方式上有所不同。  \n</Model Response>  \n\n<Reference Answer>  \n合同之债：即债务人企业收了债权人企业的预收货款，却未履行交付义务，双方之间的合同关系仍处于有效状态。如果此时解除合同，则债务人企业就负有向债权人企业返还所有款项或扣除成本返还部分款项之义务，此为合同之债。若债务人企业一直未予以处理该合同，既未交付货物也未通知债权人企业解除，则合同之债则一直未确定，直到债务人企业注销。根据相关公司法的规定，企业一旦注销则具有合法清算的义务，付款条件未成就的也视为已成就，因此，注销这一刻，债务人企业未履行的合同之债则确定了。清算责任之债：若债务人企业的股东罔顾清算责任，未及时清算或以虚假的清算手续办理清算的，则债务人企业的股东就要对因违法清算造成的债权人企业无法清收的合同之债的损失承担赔偿责任。 因此，清算责任之债表面上是侵权之债，其需要满足2个要件：1、债务人企业存在合同之债，且未过诉讼时效；\n2、债务人企业股东怠于清算或违法清算导致合同之债无法清偿。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 明确合同之债的定义和特点\n合同之债是基于双方合法合意达成的协议产生的债务关系，其主要义务是在合同中约定的标的内容上予以履行。它通常以特定履行或赔偿损失为主要履行方式，且其追偿途径主要基于合同法的相关规定。需要明确合同之债的清偿与责任主体。\n\n### 明确股东清算之债的定义和特点\n股东清算之债是公司依法注销清算过程中产生的债务，往往基于公司在注销程序中对外未清偿债务或未履行的合同义务。此类债务的追责方式主要涉及公司法和民事执行法的条款，可能牵涉到股东的补充清偿义务。\n\n### 需要了解公司注销与清算过程中股东的责任\n由于注销公司往往需要进行清算，如果清算过程中未履行合同之债，股东可能启动补充清偿责任。因此，需要对公司法关于公司清算和股东责任的规定进行说明。\n\n### 检索相关法规\n<search>公司法注销清算及股东补充责任</search>\n\n### 法律搜索结论\n<information>《中华人民共和国公司法》第184条规定公司解散应依法清算，第185条至187条规定了清算责任人的义务。此外，第20条规定股东在公司资本不足时对此承担补充责任。</information>\n\n### 分析合同之债与股东清算之债的区别\n合同之债是一般合同关系的履行义务，其主体是公司；而股东清算之债是在公司注销时未能履行合同之债或其他债务时，因清算程序不当而追责至股东个人。前者是基础债务关系，后者是基于公司法中的补充清偿责任而产生的股东个人义务。\n\n### Conclusion\n合同之债是公司基于合同关系直接产生的履行义务，主体为公司本身；而股东清算之债则是公司清算不当、责任未尽时，股东被追责的补充责任，主体为公司股东，根源在于清算瑕疵。二者在法律基础、责任主体和追偿方式上有所不同。\n\n### Verification\n结论和法律逻辑一致，符合《公司法》的规定，区别清晰，推理正确。\n</Thought Process>\n\n<Question>\n公司合同未履行完毕,就注销,合同之债与股东清算之债的区别?\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n嗯，首先要搞清楚什么是合同之债。合同之债是指基于双方合意达成的合同产生的法律关系，也就是说，双方就某件事达成了一致，那就得按照合同约定去履行。如果不履行，那可能就会涉及到赔偿损失或者其他补救措施。这里的核心主体其实是公司，它是和合同相对方签约的主体，所以主要义务是在公司身上。\n\n不过，让我想一想，这要是公司注销了，合同还没履行完怎么办？好像就得从股东责任这方面去说了。注销公司通常是需要清算的吧，清算就是要把公司还欠的账结清，债还完，才能合法注销。如果清算不规范，比如还欠别人的钱却走完注销流程，那就可能出现股东清算之债了。\n\n那股东清算之债到底是什么呢？感觉和合同之债还是有些不同。让我查找一下相关法律规定再说吧，最好看下《公司法》。\n\n<search>公司法注销清算及股东补充责任</search>\n\n<information>《中华人民共和国公司法》第184条规定公司解散应依法清算，第185至187条具体强调了清算责任人的义务。如果清算不当，第20条也明确了，公司股东在公司财产不足以清偿债务时，得承担补充赔偿责任。</information>\n\n哦，有点明白了。就是说，股东清算之债主要是公司在清算过程中要么债务没全还清、要么没有依法完成清算，导致债权人没办法追偿时，让股东针对不足部分承担‘补充责任’。从这里看，这其实不是公司原本的合同直接关系，而是由于清算失误才延伸出的一种责任，主体也不再是公司而是股东了。\n\n再想一想，这就可以总结出来区别了。合同之债更基础，它是合同引发的债务关系，责任主体是公司本身。而股东清算之债只能出现在公司清算时，且一般是在清算不合法规或者疏漏的情况下由股东出来兜底，它的责任主体是股东，是一种附加的补充责任。两者的法律基础也不完全一样，合同之债主要看《合同法》相关规定，而股东清算之债得看《公司法》。\n\n综上，我觉得这个逻辑还算顺畅。合同之债属于一般合同履行问题，股东清算之债则是清算不当引发的补充责任，两者在主体、基础关系以及法律条文依据上都有明显区别。\n</Internal Thinking>\n\n<Question>\n公司合同未履行完毕,就注销,合同之债与股东清算之债的区别?\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"明确合同之债的定义和特点\",\n      \"content\": \"合同之债是基于双方合法合意达成的协议产生的债务关系，其主要义务是在合同中约定的标的内容上予以履行。它通常以特定履行或赔偿损失为主要履行方式，且其追偿途径主要基于合同法的相关规定。需要明确合同之债的清偿与责任主体。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"明确股东清算之债的定义和特点\",\n      \"content\": \"股东清算之债是公司依法注销清算过程中产生的债务，往往基于公司在注销程序中对外未清偿债务或未履行的合同义务。此类债务的追责方式主要涉及公司法和民事执行法的条款，可能牵涉到股东的补充清偿义务。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"需要了解公司注销与清算过程中股东的责任\",\n      \"content\": \"由于注销公司往往需要进行清算，如果清算过程中未履行合同之债，股东可能启动补充清偿责任。因此，需要对公司法关于公司清算和股东责任的规定进行说明。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"检索相关法规\",\n      \"content\": \"<search>公司法注销清算及股东补充责任</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"法律搜索结论\",\n      \"content\": \"<information>《中华人民共和国公司法》第184条规定公司解散应依法清算，第185条至187条规定了清算责任人的义务。此外，第20条规定股东在公司资本不足时对此承担补充责任。</information>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析合同之债与股东清算之债的区别\",\n      \"content\": \"合同之债是一般合同关系的履行义务，其主体是公司；而股东清算之债是在公司注销时未能履行合同之债或其他债务时，因清算程序不当而追责至股东个人。前者是基础债务关系，后者是基于公司法中的补充清偿责任而产生的股东个人义务。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"合同之债是公司基于合同关系直接产生的履行义务，主体为公司本身；而股东清算之债则是公司清算不当、责任未尽时，股东被追责的补充责任，主体为公司股东，根源在于清算瑕疵。二者在法律基础、责任主体和追偿方式上有所不同。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"结论和法律逻辑一致，符合《公司法》的规定，区别清晰，推理正确。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"嗯，首先要搞清楚什么是合同之债。合同之债是指基于双方合意达成的合同产生的法律关系，也就是说，双方就某件事达成了一致，那就得按照合同约定去履行。如果不履行，那可能就会涉及到赔偿损失或者其他补救措施。这里的核心主体其实是公司，它是和合同相对方签约的主体，所以主要义务是在公司身上。\\n\\n不过，让我想一想，这要是公司注销了，合同还没履行完怎么办？好像就得从股东责任这方面去说了。注销公司通常是需要清算的吧，清算就是要把公司还欠的账结清，债还完，才能合法注销。如果清算不规范，比如还欠别人的钱却走完注销流程，那就可能出现股东清算之债了。\\n\\n那股东清算之债到底是什么呢？感觉和合同之债还是有些不同。让我查找一下相关法律规定再说吧，最好看下《公司法》。\\n\\n<search>公司法注销清算及股东补充责任</search>\\n\\n<information>《中华人民共和国公司法》第184条规定公司解散应依法清算，第185至187条具体强调了清算责任人的义务。如果清算不当，第20条也明确了，公司股东在公司财产不足以清偿债务时，得承担补充赔偿责任。</information>\\n\\n哦，有点明白了。就是说，股东清算之债主要是公司在清算过程中要么债务没全还清、要么没有依法完成清算，导致债权人没办法追偿时，让股东针对不足部分承担‘补充责任’。从这里看，这其实不是公司原本的合同直接关系，而是由于清算失误才延伸出的一种责任，主体也不再是公司而是股东了。\\n\\n再想一想，这就可以总结出来区别了。合同之债更基础，它是合同引发的债务关系，责任主体是公司本身。而股东清算之债只能出现在公司清算时，且一般是在清算不合法规或者疏漏的情况下由股东出来兜底，它的责任主体是股东，是一种附加的补充责任。两者的法律基础也不完全一样，合同之债主要看《合同法》相关规定，而股东清算之债得看《公司法》。\\n\\n综上，我觉得这个逻辑还算顺畅。合同之债属于一般合同履行问题，股东清算之债则是清算不当引发的补充责任，两者在主体、基础关系以及法律条文依据上都有明显区别。\"\n}\n```",
+    "合同之债与股东清算之债确实有所不同，主要区别可以从以下几方面来具体分析：\n\n1. **法律关系的性质与基础**  \n   - **合同之债**：合同之债是基于合同约定产生的债权债务关系，其法律依据主要是《民法典》（原《合同法》）中关于合同的相关规定。只要合同依法成立并生效，双方就负有按约履行合同义务的责任。这里的责任主体是合同的一方，即通常是公司作为签约方。  \n   - **股东清算之债**：股东清算之债并非直接来源于合同，而是源于公司解散过程中清算不当或未依法清算的情况下，有关债务未能清偿时，债权人向公司股东追责的法律关系。其核心依据是《公司法》的相关规定，特别是关于股东在公司财产不足以清偿债务时可能承担的补充责任。\n\n2. **责任主体不同**  \n   - **合同之债**：责任主体为公司。作为签约的一方，公司对合同未履行的后果负主要责任，股东在公司存续期间一般不对公司的合同债务承担连带责任。  \n   - **股东清算之债**：责任主体为股东。这种责任的本质是一种补充责任，只有在公司资产不足以清偿债务，且公司未依法清算、导致债务未能及时清偿的情况下，股东才可能被追究责任。\n\n3. **发生的原因与时间点**  \n   - **合同之债**：发生于合同达成并生效后，因一方不履行、履行不当或其他违约情形而产生，属于公司存续期间的正常合同履行问题。  \n   - **股东清算之债**：发生于公司注销、解散时，主要因清算程序违法或遗漏债权人利益而引发。这种债务只有在公司解散无法清偿其债务、且清算存在疏漏时才会被追究。\n\n4. **法律后果与责任承担**  \n   - **合同之债**：债权人可以通过诉讼要求公司履行合同或者承担违约责任，补偿合同未履行带来的损失。在公司发生注销、清算前，责任主要在公司，无关股东。  \n   - **股东清算之债**：若公司已注销而合同债务未履行完毕，债权人可能因清算程序违法而陷入无法追偿的困境，此时股东需对公司未清偿债务的不足部分承担补充责任，但其赔偿范围以股东获得的清算收益为限。\n\n**总结**  \n合同之债是公司作为合同方，因履约义务引发的直接债务关系，通常责任主体为公司本身；而股东清算之债是因公司在注销时未依法清偿债务、未合理清算而延伸出的股东对公司债务的补充责任。两者在发生原因、法律依据、责任主体及产生时间点等方面存在显著差异。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "明确合同之债的定义和特点",
+        "content": "合同之债是基于双方合法合意达成的协议产生的债务关系，其主要义务是在合同中约定的标的内容上予以履行。它通常以特定履行或赔偿损失为主要履行方式，且其追偿途径主要基于合同法的相关规定。需要明确合同之债的清偿与责任主体。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "明确股东清算之债的定义和特点",
+        "content": "股东清算之债是公司依法注销清算过程中产生的债务，往往基于公司在注销程序中对外未清偿债务或未履行的合同义务。此类债务的追责方式主要涉及公司法和民事执行法的条款，可能牵涉到股东的补充清偿义务。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "需要了解公司注销与清算过程中股东的责任",
+        "content": "由于注销公司往往需要进行清算，如果清算过程中未履行合同之债，股东可能启动补充清偿责任。因此，需要对公司法关于公司清算和股东责任的规定进行说明。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "检索相关法规",
+        "content": "<search>公司法注销清算及股东补充责任</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "法律搜索结论",
+        "content": "<information>《中华人民共和国公司法》第184条规定公司解散应依法清算，第185条至187条规定了清算责任人的义务。此外，第20条规定股东在公司资本不足时对此承担补充责任。</information>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "分析合同之债与股东清算之债的区别",
+        "content": "合同之债是一般合同关系的履行义务，其主体是公司；而股东清算之债是在公司注销时未能履行合同之债或其他债务时，因清算程序不当而追责至股东个人。前者是基础债务关系，后者是基于公司法中的补充清偿责任而产生的股东个人义务。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "合同之债是公司基于合同关系直接产生的履行义务，主体为公司本身；而股东清算之债则是公司清算不当、责任未尽时，股东被追责的补充责任，主体为公司股东，根源在于清算瑕疵。二者在法律基础、责任主体和追偿方式上有所不同。"
+      },
+      {
+        "action": "Verification",
+        "content": "结论和法律逻辑一致，符合《公司法》的规定，区别清晰，推理正确。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "嗯，首先要搞清楚什么是合同之债。合同之债是指基于双方合意达成的合同产生的法律关系，也就是说，双方就某件事达成了一致，那就得按照合同约定去履行。如果不履行，那可能就会涉及到赔偿损失或者其他补救措施。这里的核心主体其实是公司，它是和合同相对方签约的主体，所以主要义务是在公司身上。\n\n不过，让我想一想，这要是公司注销了，合同还没履行完怎么办？好像就得从股东责任这方面去说了。注销公司通常是需要清算的吧，清算就是要把公司还欠的账结清，债还完，才能合法注销。如果清算不规范，比如还欠别人的钱却走完注销流程，那就可能出现股东清算之债了。\n\n那股东清算之债到底是什么呢？感觉和合同之债还是有些不同。让我查找一下相关法律规定再说吧，最好看下《公司法》。\n\n<search>公司法注销清算及股东补充责任</search>\n\n<information>《中华人民共和国公司法》第184条规定公司解散应依法清算，第185至187条具体强调了清算责任人的义务。如果清算不当，第20条也明确了，公司股东在公司财产不足以清偿债务时，得承担补充赔偿责任。</information>\n\n哦，有点明白了。就是说，股东清算之债主要是公司在清算过程中要么债务没全还清、要么没有依法完成清算，导致债权人没办法追偿时，让股东针对不足部分承担‘补充责任’。从这里看，这其实不是公司原本的合同直接关系，而是由于清算失误才延伸出的一种责任，主体也不再是公司而是股东了。\n\n再想一想，这就可以总结出来区别了。合同之债更基础，它是合同引发的债务关系，责任主体是公司本身。而股东清算之债只能出现在公司清算时，且一般是在清算不合法规或者疏漏的情况下由股东出来兜底，它的责任主体是股东，是一种附加的补充责任。两者的法律基础也不完全一样，合同之债主要看《合同法》相关规定，而股东清算之债得看《公司法》。\n\n综上，我觉得这个逻辑还算顺畅。合同之债属于一般合同履行问题，股东清算之债则是清算不当引发的补充责任，两者在主体、基础关系以及法律条文依据上都有明显区别。",
+  "Response": "合同之债与股东清算之债确实有所不同，主要区别可以从以下几方面来具体分析：\n\n1. **法律关系的性质与基础**  \n   - **合同之债**：合同之债是基于合同约定产生的债权债务关系，其法律依据主要是《民法典》（原《合同法》）中关于合同的相关规定。只要合同依法成立并生效，双方就负有按约履行合同义务的责任。这里的责任主体是合同的一方，即通常是公司作为签约方。  \n   - **股东清算之债**：股东清算之债并非直接来源于合同，而是源于公司解散过程中清算不当或未依法清算的情况下，有关债务未能清偿时，债权人向公司股东追责的法律关系。其核心依据是《公司法》的相关规定，特别是关于股东在公司财产不足以清偿债务时可能承担的补充责任。\n\n2. **责任主体不同**  \n   - **合同之债**：责任主体为公司。作为签约的一方，公司对合同未履行的后果负主要责任，股东在公司存续期间一般不对公司的合同债务承担连带责任。  \n   - **股东清算之债**：责任主体为股东。这种责任的本质是一种补充责任，只有在公司资产不足以清偿债务，且公司未依法清算、导致债务未能及时清偿的情况下，股东才可能被追究责任。\n\n3. **发生的原因与时间点**  \n   - **合同之债**：发生于合同达成并生效后，因一方不履行、履行不当或其他违约情形而产生，属于公司存续期间的正常合同履行问题。  \n   - **股东清算之债**：发生于公司注销、解散时，主要因清算程序违法或遗漏债权人利益而引发。这种债务只有在公司解散无法清偿其债务、且清算存在疏漏时才会被追究。\n\n4. **法律后果与责任承担**  \n   - **合同之债**：债权人可以通过诉讼要求公司履行合同或者承担违约责任，补偿合同未履行带来的损失。在公司发生注销、清算前，责任主要在公司，无关股东。  \n   - **股东清算之债**：若公司已注销而合同债务未履行完毕，债权人可能因清算程序违法而陷入无法追偿的困境，此时股东需对公司未清偿债务的不足部分承担补充责任，但其赔偿范围以股东获得的清算收益为限。\n\n**总结**  \n合同之债是公司作为合同方，因履约义务引发的直接债务关系，通常责任主体为公司本身；而股东清算之债是因公司在注销时未依法清偿债务、未合理清算而延伸出的股东对公司债务的补充责任。两者在发生原因、法律依据、责任主体及产生时间点等方面存在显著差异。",
+  "Question": "公司合同未履行完毕,就注销,合同之债与股东清算之债的区别?"
+}

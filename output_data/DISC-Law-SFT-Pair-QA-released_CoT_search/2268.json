@@ -1,0 +1,89 @@
+{
+  "Open-ended Verifiable Question": "缴纳工伤保险的基数是什么?",
+  "Ground-True Answer": "工伤保险费的计算基数：本单位职工工资总额  一般情况下，企业按照工资总额缴纳工伤保险费，单位的职工工资总额不会有明显变化。影响“职工工资总额”的主要因素就是职工人数，如果单位一直足额缴费，除非缴费人数有明显的变化，企业的工伤保险费总数变化不大。  特殊情况下，某些行业难以按工资照工资总额缴纳——指建筑、服务、矿山等行业中难以直接按照工资总额计算缴纳工伤保险费的建筑施工企业、小型服务企业、小型矿山企业等，有按项目工程造价、有按营业面积、有按总产量或吨矿量来计算的，其缴纳工伤保险费的具体方式详见：人力资源和社会保障部令第10号《部分行业企业工伤保险费缴纳办法》（2011-1-1）中的规定。",
+  "process_id": 2268,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "明确问题核心",
+      "content": "缴纳工伤保险的基数涉及确定基于何种工资标准进行缴费。通常这一基数是依据劳动者的工资，但具体规定依据《工伤保险条例》或其他地方政府的相关实施细则，需要确认法律依据和具体适用范围。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "检索法律依据",
+      "content": "需要确认法规中关于工伤保险缴费基数的标准及其确定方式，特别是《工伤保险条例》或者地方政策的补充内容。搜索关键词是：<search>工伤保险 缴费基数</search>。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "获取信息",
+      "content": "从搜索中提取相关法规信息，特别注意基数是否与职工实际工资、最低工资或者其他确定规定相挂钩。<information>《工伤保险条例》第十二条规定，工伤保险的缴费基数一般按照职工本人上一年度月平均工资来确定；若职工工资低于用人单位所在地区的最低工资标准，则按最低工资标准缴纳。部分地方政府细则可能规定缴费基数上限和下限，需核查地方性规定。</information>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "分析缴费基数范围",
+      "content": "结合上述《工伤保险条例》第十二条，缴纳工伤保险的基数通常是以职工上一年度的月平均工资为准，但需要特别留意，不得低于最低工资。在部分城市，可能还规定了基数的上限，比如不超过社会平均工资的某一倍数，这属于地方性规定。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "缴纳工伤保险的基数通常按照职工上一年度的月平均工资计算，但不得低于用人单位所在地的最低工资标准。在具体实施中，还需要结合地方性规定，判断是否有基数上限限制。"
+    },
+    {
+      "action": "Verification",
+      "content": "通过进一步查阅工伤保险相关条例和地方政策，确认上述基数范围的确定方式符合实际执行标准，可以确认逻辑和内容无误，结论正确。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n缴纳工伤保险的基数是什么?\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n缴纳工伤保险的基数通常按照职工上一年度的月平均工资计算，但不得低于用人单位所在地的最低工资标准。在具体实施中，还需要结合地方性规定，判断是否有基数上限限制。  \n</Model Response>  \n\n<Reference Answer>  \n工伤保险费的计算基数：本单位职工工资总额  一般情况下，企业按照工资总额缴纳工伤保险费，单位的职工工资总额不会有明显变化。影响“职工工资总额”的主要因素就是职工人数，如果单位一直足额缴费，除非缴费人数有明显的变化，企业的工伤保险费总数变化不大。  特殊情况下，某些行业难以按工资照工资总额缴纳——指建筑、服务、矿山等行业中难以直接按照工资总额计算缴纳工伤保险费的建筑施工企业、小型服务企业、小型矿山企业等，有按项目工程造价、有按营业面积、有按总产量或吨矿量来计算的，其缴纳工伤保险费的具体方式详见：人力资源和社会保障部令第10号《部分行业企业工伤保险费缴纳办法》（2011-1-1）中的规定。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 明确问题核心\n缴纳工伤保险的基数涉及确定基于何种工资标准进行缴费。通常这一基数是依据劳动者的工资，但具体规定依据《工伤保险条例》或其他地方政府的相关实施细则，需要确认法律依据和具体适用范围。\n\n### 检索法律依据\n需要确认法规中关于工伤保险缴费基数的标准及其确定方式，特别是《工伤保险条例》或者地方政策的补充内容。搜索关键词是：<search>工伤保险 缴费基数</search>。\n\n### 获取信息\n从搜索中提取相关法规信息，特别注意基数是否与职工实际工资、最低工资或者其他确定规定相挂钩。<information>《工伤保险条例》第十二条规定，工伤保险的缴费基数一般按照职工本人上一年度月平均工资来确定；若职工工资低于用人单位所在地区的最低工资标准，则按最低工资标准缴纳。部分地方政府细则可能规定缴费基数上限和下限，需核查地方性规定。</information>\n\n### 分析缴费基数范围\n结合上述《工伤保险条例》第十二条，缴纳工伤保险的基数通常是以职工上一年度的月平均工资为准，但需要特别留意，不得低于最低工资。在部分城市，可能还规定了基数的上限，比如不超过社会平均工资的某一倍数，这属于地方性规定。\n\n### Conclusion\n缴纳工伤保险的基数通常按照职工上一年度的月平均工资计算，但不得低于用人单位所在地的最低工资标准。在具体实施中，还需要结合地方性规定，判断是否有基数上限限制。\n\n### Verification\n通过进一步查阅工伤保险相关条例和地方政策，确认上述基数范围的确定方式符合实际执行标准，可以确认逻辑和内容无误，结论正确。\n</Thought Process>\n\n<Question>\n缴纳工伤保险的基数是什么?\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n嗯，让我想想这个问题，其实工伤保险的缴费基数就是要搞清楚用什么标准来计算缴费。毕竟不同地区可能会有细节上的政策差异，但核心应该是根据职工的工资水平去算，这就得查一下相关的法律和规定了。\n\n那我先试着搜索一下吧，关键词可以用“工伤保险 缴费基数”。这样应该可以直接找到相关的法律依据或者政策说明。<search>工伤保险 缴费基数</search>\n\n好，我找到了一些内容，有提到《工伤保险条例》，尤其是第十二条。具体说的是，工伤保险的缴费基数一般按照职工本人上一年度的月平均工资来算。如果工资低于最低工资标准，那就按最低工资来算。有意思的是，这里还提到，部分地方政府可能会对缴费基数设置上下限的规定。比如，可能规定不能高于社会平均工资的某个倍数，这部分应该需要结合具体地方政策去确认。<information>《工伤保险条例》第十二条规定，工伤保险的缴费基数一般按照职工本人上一年度月平均工资来确定；若职工工资低于用人单位所在地区的最低工资标准，则按最低工资标准缴纳。部分地方政府细则可能规定缴费基数上限和下限，需核查地方性规定。</information>\n\n这样看下来，大致可以总结一下，工伤保险的缴费基数基本上是以职工上一年度的月平均工资作为基础的。不过需要注意两个要点：第一，工资如果低于最低工资标准，就得按最低工资计算；第二，有些地区可能还有限制，比如一个上限，可能是当地社会平均工资的某个倍数，这部分要注意地方具体政策。\n\n所以简单来说，缴费基数还是看职工上一年的工资水平，但不得低于最低工资，而且可能还要考虑有没有额外的地方性规定。现在看起来这个逻辑是通的。不过为了更保险，最好还是再核对一下当地的工伤保险政策或实施细则，确保没有遗漏的内容。\n</Internal Thinking>\n\n<Question>\n缴纳工伤保险的基数是什么?\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"明确问题核心\",\n      \"content\": \"缴纳工伤保险的基数涉及确定基于何种工资标准进行缴费。通常这一基数是依据劳动者的工资，但具体规定依据《工伤保险条例》或其他地方政府的相关实施细则，需要确认法律依据和具体适用范围。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"检索法律依据\",\n      \"content\": \"需要确认法规中关于工伤保险缴费基数的标准及其确定方式，特别是《工伤保险条例》或者地方政策的补充内容。搜索关键词是：<search>工伤保险 缴费基数</search>。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"获取信息\",\n      \"content\": \"从搜索中提取相关法规信息，特别注意基数是否与职工实际工资、最低工资或者其他确定规定相挂钩。<information>《工伤保险条例》第十二条规定，工伤保险的缴费基数一般按照职工本人上一年度月平均工资来确定；若职工工资低于用人单位所在地区的最低工资标准，则按最低工资标准缴纳。部分地方政府细则可能规定缴费基数上限和下限，需核查地方性规定。</information>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析缴费基数范围\",\n      \"content\": \"结合上述《工伤保险条例》第十二条，缴纳工伤保险的基数通常是以职工上一年度的月平均工资为准，但需要特别留意，不得低于最低工资。在部分城市，可能还规定了基数的上限，比如不超过社会平均工资的某一倍数，这属于地方性规定。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"缴纳工伤保险的基数通常按照职工上一年度的月平均工资计算，但不得低于用人单位所在地的最低工资标准。在具体实施中，还需要结合地方性规定，判断是否有基数上限限制。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"通过进一步查阅工伤保险相关条例和地方政策，确认上述基数范围的确定方式符合实际执行标准，可以确认逻辑和内容无误，结论正确。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"嗯，让我想想这个问题，其实工伤保险的缴费基数就是要搞清楚用什么标准来计算缴费。毕竟不同地区可能会有细节上的政策差异，但核心应该是根据职工的工资水平去算，这就得查一下相关的法律和规定了。\\n\\n那我先试着搜索一下吧，关键词可以用“工伤保险 缴费基数”。这样应该可以直接找到相关的法律依据或者政策说明。<search>工伤保险 缴费基数</search>\\n\\n好，我找到了一些内容，有提到《工伤保险条例》，尤其是第十二条。具体说的是，工伤保险的缴费基数一般按照职工本人上一年度的月平均工资来算。如果工资低于最低工资标准，那就按最低工资来算。有意思的是，这里还提到，部分地方政府可能会对缴费基数设置上下限的规定。比如，可能规定不能高于社会平均工资的某个倍数，这部分应该需要结合具体地方政策去确认。<information>《工伤保险条例》第十二条规定，工伤保险的缴费基数一般按照职工本人上一年度月平均工资来确定；若职工工资低于用人单位所在地区的最低工资标准，则按最低工资标准缴纳。部分地方政府细则可能规定缴费基数上限和下限，需核查地方性规定。</information>\\n\\n这样看下来，大致可以总结一下，工伤保险的缴费基数基本上是以职工上一年度的月平均工资作为基础的。不过需要注意两个要点：第一，工资如果低于最低工资标准，就得按最低工资计算；第二，有些地区可能还有限制，比如一个上限，可能是当地社会平均工资的某个倍数，这部分要注意地方具体政策。\\n\\n所以简单来说，缴费基数还是看职工上一年的工资水平，但不得低于最低工资，而且可能还要考虑有没有额外的地方性规定。现在看起来这个逻辑是通的。不过为了更保险，最好还是再核对一下当地的工伤保险政策或实施细则，确保没有遗漏的内容。\"\n}\n```",
+    "缴纳工伤保险的基数通常是根据职工本人上一年度的月平均工资来确定。如果职工工资低于用人单位所在地区的最低工资标准，则应按照最低工资标准缴纳。此外，不同地区可能根据地方政策设置工伤保险缴费基数的上限和下限，例如规定基数不得高于当地社会平均工资的一定倍数或低于特定比例。建议在理解总体原则的基础上，进一步查询所在地区的具体规定，确保遵守当地的相关政策要求。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "明确问题核心",
+        "content": "缴纳工伤保险的基数涉及确定基于何种工资标准进行缴费。通常这一基数是依据劳动者的工资，但具体规定依据《工伤保险条例》或其他地方政府的相关实施细则，需要确认法律依据和具体适用范围。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "检索法律依据",
+        "content": "需要确认法规中关于工伤保险缴费基数的标准及其确定方式，特别是《工伤保险条例》或者地方政策的补充内容。搜索关键词是：<search>工伤保险 缴费基数</search>。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "获取信息",
+        "content": "从搜索中提取相关法规信息，特别注意基数是否与职工实际工资、最低工资或者其他确定规定相挂钩。<information>《工伤保险条例》第十二条规定，工伤保险的缴费基数一般按照职工本人上一年度月平均工资来确定；若职工工资低于用人单位所在地区的最低工资标准，则按最低工资标准缴纳。部分地方政府细则可能规定缴费基数上限和下限，需核查地方性规定。</information>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "分析缴费基数范围",
+        "content": "结合上述《工伤保险条例》第十二条，缴纳工伤保险的基数通常是以职工上一年度的月平均工资为准，但需要特别留意，不得低于最低工资。在部分城市，可能还规定了基数的上限，比如不超过社会平均工资的某一倍数，这属于地方性规定。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "缴纳工伤保险的基数通常按照职工上一年度的月平均工资计算，但不得低于用人单位所在地的最低工资标准。在具体实施中，还需要结合地方性规定，判断是否有基数上限限制。"
+      },
+      {
+        "action": "Verification",
+        "content": "通过进一步查阅工伤保险相关条例和地方政策，确认上述基数范围的确定方式符合实际执行标准，可以确认逻辑和内容无误，结论正确。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "嗯，让我想想这个问题，其实工伤保险的缴费基数就是要搞清楚用什么标准来计算缴费。毕竟不同地区可能会有细节上的政策差异，但核心应该是根据职工的工资水平去算，这就得查一下相关的法律和规定了。\n\n那我先试着搜索一下吧，关键词可以用“工伤保险 缴费基数”。这样应该可以直接找到相关的法律依据或者政策说明。<search>工伤保险 缴费基数</search>\n\n好，我找到了一些内容，有提到《工伤保险条例》，尤其是第十二条。具体说的是，工伤保险的缴费基数一般按照职工本人上一年度的月平均工资来算。如果工资低于最低工资标准，那就按最低工资来算。有意思的是，这里还提到，部分地方政府可能会对缴费基数设置上下限的规定。比如，可能规定不能高于社会平均工资的某个倍数，这部分应该需要结合具体地方政策去确认。<information>《工伤保险条例》第十二条规定，工伤保险的缴费基数一般按照职工本人上一年度月平均工资来确定；若职工工资低于用人单位所在地区的最低工资标准，则按最低工资标准缴纳。部分地方政府细则可能规定缴费基数上限和下限，需核查地方性规定。</information>\n\n这样看下来，大致可以总结一下，工伤保险的缴费基数基本上是以职工上一年度的月平均工资作为基础的。不过需要注意两个要点：第一，工资如果低于最低工资标准，就得按最低工资计算；第二，有些地区可能还有限制，比如一个上限，可能是当地社会平均工资的某个倍数，这部分要注意地方具体政策。\n\n所以简单来说，缴费基数还是看职工上一年的工资水平，但不得低于最低工资，而且可能还要考虑有没有额外的地方性规定。现在看起来这个逻辑是通的。不过为了更保险，最好还是再核对一下当地的工伤保险政策或实施细则，确保没有遗漏的内容。",
+  "Response": "缴纳工伤保险的基数通常是根据职工本人上一年度的月平均工资来确定。如果职工工资低于用人单位所在地区的最低工资标准，则应按照最低工资标准缴纳。此外，不同地区可能根据地方政策设置工伤保险缴费基数的上限和下限，例如规定基数不得高于当地社会平均工资的一定倍数或低于特定比例。建议在理解总体原则的基础上，进一步查询所在地区的具体规定，确保遵守当地的相关政策要求。",
+  "Question": "缴纳工伤保险的基数是什么?"
+}

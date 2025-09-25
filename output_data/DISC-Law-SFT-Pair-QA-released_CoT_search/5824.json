@@ -1,0 +1,89 @@
+{
+  "Open-ended Verifiable Question": "集体劳动合同如何生效？",
+  "Ground-True Answer": "集体合同并非双方签订后立即生效，因为这涉及一个公司全体员工的重大利益，所以集体合同双方签字后必须在7日内由用人单位一式三份报送当地劳动行政部门审查。由该部门对集体合同的内容及程序进行审查，当地劳动行政部门如果对集体合同的内容及程序没有异议，则该集体合同自第16日起自行生效。如果该部门对集体合同存在异议，则在送达用人单位的集体合同审查意见书中明确无效的条款，并要求合同双方再次平等协商，确定合法合理、内容和程序正当的集体合同后，再次报送劳动行政部门审查。\n法律依据：《中华人民共和国劳动合同法》\n第五十一条　【集体合同的订立和内容】企业职工一方与用人单位通过平等协商，可以就劳动报酬、工作时间、休息休假、劳动安全卫生、保险福利等事项订立集体合同。集体合同草案应当提交职工代表大会或者全体职工讨论通过。\n集体合同由工会代表企业职工一方与用人单位订立；尚未建立工会的用人单位，由上级工会指导劳动者推举的代表与用人单位订立。\n第五十四条　【集体合同的报送和生效】集体合同订立后，应当报送劳动行政部门；劳动行政部门自收到集体合同文本之日起十五日内未提出异议的，集体合同即行生效。\n依法订立的集体合同对用人单位和劳动者具有约束力。行业性、区域性集体合同对当地本行业、本区域的用人单位和劳动者具有约束力。",
+  "process_id": 5824,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "明确集体劳动合同的法律依据",
+      "content": "首先需要确认集体劳动合同的生效依据所在的法律条款。通常与劳动法、劳动合同法以及集体合同相关的法律法规直接相关。需要查看相关法律中对生效条件的要求。<search>《劳动合同法》集体合同生效条件</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "查找法律依据",
+      "content": "查询《劳动合同法》中有关集体合同的条款，具体是针对集体劳动合同的生效条件的规定。通过分析相应条款，得出其是否有签订主体、内容审查、审批或备案相关的要求。<information>根据《中华人民共和国劳动合同法》第五十四条规定，集体合同由企业和工会或职工代表协商签订，并需提交当地劳动行政部门审核；如劳动行政部门在15日内未提出异议，则合同生效。</information>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "拆分生效条件分析",
+      "content": "根据《劳动合同法》的条款，集体劳动合同的生效需要满足以下条件：1. 合同由具有合法资质的双方主体签订（企业与工会或职工代表）。2. 将合同提交当地劳动行政部门进行审核。3. 在行政部门审核后15日内未提出异议，则合同视为生效。这表明，行政审核虽然必要，但是采用的是默示同意原则。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "总结集体劳动合同生效流程",
+      "content": "结合以上分析，集体劳动合同从协商签订到生效的流程为：签订——提交劳动行政部门审核——15日内未提出异议则生效。这一规定既保护了集体协商的自治，也保障了劳动行政部门的监管权。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "根据现行法律，集体劳动合同的生效条件包括以下步骤：1. 由企业与工会或职工代表协商签订；2. 合同需提交当地劳动行政部门审核；3. 若劳动行政部门在15日内未提出异议，合同即视为生效。这一生效机制体现了法律的程序要求和默示同意原则。"
+    },
+    {
+      "action": "Verification",
+      "content": "答案符合《劳动合同法》第五十四条的规定，关于签订主体、审核程序和时间节点的描述完整且精确，结论无误。流程清晰，符合要求，无需进一步修正。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n集体劳动合同如何生效？\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n根据现行法律，集体劳动合同的生效条件包括以下步骤：1. 由企业与工会或职工代表协商签订；2. 合同需提交当地劳动行政部门审核；3. 若劳动行政部门在15日内未提出异议，合同即视为生效。这一生效机制体现了法律的程序要求和默示同意原则。  \n</Model Response>  \n\n<Reference Answer>  \n集体合同并非双方签订后立即生效，因为这涉及一个公司全体员工的重大利益，所以集体合同双方签字后必须在7日内由用人单位一式三份报送当地劳动行政部门审查。由该部门对集体合同的内容及程序进行审查，当地劳动行政部门如果对集体合同的内容及程序没有异议，则该集体合同自第16日起自行生效。如果该部门对集体合同存在异议，则在送达用人单位的集体合同审查意见书中明确无效的条款，并要求合同双方再次平等协商，确定合法合理、内容和程序正当的集体合同后，再次报送劳动行政部门审查。\n法律依据：《中华人民共和国劳动合同法》\n第五十一条　【集体合同的订立和内容】企业职工一方与用人单位通过平等协商，可以就劳动报酬、工作时间、休息休假、劳动安全卫生、保险福利等事项订立集体合同。集体合同草案应当提交职工代表大会或者全体职工讨论通过。\n集体合同由工会代表企业职工一方与用人单位订立；尚未建立工会的用人单位，由上级工会指导劳动者推举的代表与用人单位订立。\n第五十四条　【集体合同的报送和生效】集体合同订立后，应当报送劳动行政部门；劳动行政部门自收到集体合同文本之日起十五日内未提出异议的，集体合同即行生效。\n依法订立的集体合同对用人单位和劳动者具有约束力。行业性、区域性集体合同对当地本行业、本区域的用人单位和劳动者具有约束力。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 明确集体劳动合同的法律依据\n首先需要确认集体劳动合同的生效依据所在的法律条款。通常与劳动法、劳动合同法以及集体合同相关的法律法规直接相关。需要查看相关法律中对生效条件的要求。<search>《劳动合同法》集体合同生效条件</search>\n\n### 查找法律依据\n查询《劳动合同法》中有关集体合同的条款，具体是针对集体劳动合同的生效条件的规定。通过分析相应条款，得出其是否有签订主体、内容审查、审批或备案相关的要求。<information>根据《中华人民共和国劳动合同法》第五十四条规定，集体合同由企业和工会或职工代表协商签订，并需提交当地劳动行政部门审核；如劳动行政部门在15日内未提出异议，则合同生效。</information>\n\n### 拆分生效条件分析\n根据《劳动合同法》的条款，集体劳动合同的生效需要满足以下条件：1. 合同由具有合法资质的双方主体签订（企业与工会或职工代表）。2. 将合同提交当地劳动行政部门进行审核。3. 在行政部门审核后15日内未提出异议，则合同视为生效。这表明，行政审核虽然必要，但是采用的是默示同意原则。\n\n### 总结集体劳动合同生效流程\n结合以上分析，集体劳动合同从协商签订到生效的流程为：签订——提交劳动行政部门审核——15日内未提出异议则生效。这一规定既保护了集体协商的自治，也保障了劳动行政部门的监管权。\n\n### Conclusion\n根据现行法律，集体劳动合同的生效条件包括以下步骤：1. 由企业与工会或职工代表协商签订；2. 合同需提交当地劳动行政部门审核；3. 若劳动行政部门在15日内未提出异议，合同即视为生效。这一生效机制体现了法律的程序要求和默示同意原则。\n\n### Verification\n答案符合《劳动合同法》第五十四条的规定，关于签订主体、审核程序和时间节点的描述完整且精确，结论无误。流程清晰，符合要求，无需进一步修正。\n</Thought Process>\n\n<Question>\n集体劳动合同如何生效？\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n嗯，集体劳动合同是怎么生效的？这涉及到法律规定啊，得看看相关的法律条文才行。这个应该和《劳动合同法》有关，还是先来搜一下具体的生效条件吧。<search>《劳动合同法》集体合同生效条件</search>\n\n哦，搜到了！这里说的是《中华人民共和国劳动合同法》第五十四条。这条似乎很关键，它明确规定了集体劳动合同生效需要满足的程序和条件。好，我们仔细看看具体内容。<information>根据《中华人民共和国劳动合同法》第五十四条规定，集体合同由企业和工会或职工代表协商签订，并需提交当地劳动行政部门审核；如劳动行政部门在15日内未提出异议，则合同生效。</information>\n\n嗯，稍微整理一下思路。按照这条法律，集体劳动合同的生效主要有几点要求。\n\n首先，签订主体是重点。合同需要由合法的主体来签订，也就是企业和工会或者职工代表。这说明，合同不是随便谁都能签订的，得看双方是否具有签订的资质。\n\n然后，签订合同后，并不是立刻就生效的，还得把合同提交给当地劳动行政部门进行审核。这一步的作用可能是为了让行政部门对合同的内容进行把关，确保合同的合法性和合规性。\n\n第三，这里的审核程序有点特别。通常我们以为审核会有明确的批准过程，但根据法律条文，如果劳动行政部门在收到合同后15日内不提出任何异议，那合同就默认生效了。也就是说，监管部门的“沉默”被视作一种“同意”。\n\n所以，整体流程看下来，集体劳动合同的生效需要经过签订、提交审核、等待15日三个步骤。这个设计其实很有意思，既允许用人单位和劳动者代表自主协商，又通过默示的方式减少了行政干预的繁琐性。\n\n总结下，生效条件主要是：第一，企业和工会或职工代表协商签订合同；第二，把合同提交到劳动行政部门审核；第三，如果劳动行政部门15天内没有提出任何异议，那合同就会自动生效。嗯，这么看，法律条文写得还挺明确的。\n\n再核对一下，这些理解是不是符合《劳动合同法》第五十四条的规定。从条文内容来看，我对关键点的判断是没问题的，比如主体资格、审核必要性以及15天默示同意的设置，跟法律内容对应得上。逻辑也通顺，没有明显的遗漏。这就可以确定答案没问题了！\n</Internal Thinking>\n\n<Question>\n集体劳动合同如何生效？\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"明确集体劳动合同的法律依据\",\n      \"content\": \"首先需要确认集体劳动合同的生效依据所在的法律条款。通常与劳动法、劳动合同法以及集体合同相关的法律法规直接相关。需要查看相关法律中对生效条件的要求。<search>《劳动合同法》集体合同生效条件</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"查找法律依据\",\n      \"content\": \"查询《劳动合同法》中有关集体合同的条款，具体是针对集体劳动合同的生效条件的规定。通过分析相应条款，得出其是否有签订主体、内容审查、审批或备案相关的要求。<information>根据《中华人民共和国劳动合同法》第五十四条规定，集体合同由企业和工会或职工代表协商签订，并需提交当地劳动行政部门审核；如劳动行政部门在15日内未提出异议，则合同生效。</information>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"拆分生效条件分析\",\n      \"content\": \"根据《劳动合同法》的条款，集体劳动合同的生效需要满足以下条件：1. 合同由具有合法资质的双方主体签订（企业与工会或职工代表）。2. 将合同提交当地劳动行政部门进行审核。3. 在行政部门审核后15日内未提出异议，则合同视为生效。这表明，行政审核虽然必要，但是采用的是默示同意原则。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"总结集体劳动合同生效流程\",\n      \"content\": \"结合以上分析，集体劳动合同从协商签订到生效的流程为：签订——提交劳动行政部门审核——15日内未提出异议则生效。这一规定既保护了集体协商的自治，也保障了劳动行政部门的监管权。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"根据现行法律，集体劳动合同的生效条件包括以下步骤：1. 由企业与工会或职工代表协商签订；2. 合同需提交当地劳动行政部门审核；3. 若劳动行政部门在15日内未提出异议，合同即视为生效。这一生效机制体现了法律的程序要求和默示同意原则。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"答案符合《劳动合同法》第五十四条的规定，关于签订主体、审核程序和时间节点的描述完整且精确，结论无误。流程清晰，符合要求，无需进一步修正。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"嗯，集体劳动合同是怎么生效的？这涉及到法律规定啊，得看看相关的法律条文才行。这个应该和《劳动合同法》有关，还是先来搜一下具体的生效条件吧。<search>《劳动合同法》集体合同生效条件</search>\\n\\n哦，搜到了！这里说的是《中华人民共和国劳动合同法》第五十四条。这条似乎很关键，它明确规定了集体劳动合同生效需要满足的程序和条件。好，我们仔细看看具体内容。<information>根据《中华人民共和国劳动合同法》第五十四条规定，集体合同由企业和工会或职工代表协商签订，并需提交当地劳动行政部门审核；如劳动行政部门在15日内未提出异议，则合同生效。</information>\\n\\n嗯，稍微整理一下思路。按照这条法律，集体劳动合同的生效主要有几点要求。\\n\\n首先，签订主体是重点。合同需要由合法的主体来签订，也就是企业和工会或者职工代表。这说明，合同不是随便谁都能签订的，得看双方是否具有签订的资质。\\n\\n然后，签订合同后，并不是立刻就生效的，还得把合同提交给当地劳动行政部门进行审核。这一步的作用可能是为了让行政部门对合同的内容进行把关，确保合同的合法性和合规性。\\n\\n第三，这里的审核程序有点特别。通常我们以为审核会有明确的批准过程，但根据法律条文，如果劳动行政部门在收到合同后15日内不提出任何异议，那合同就默认生效了。也就是说，监管部门的“沉默”被视作一种“同意”。\\n\\n所以，整体流程看下来，集体劳动合同的生效需要经过签订、提交审核、等待15日三个步骤。这个设计其实很有意思，既允许用人单位和劳动者代表自主协商，又通过默示的方式减少了行政干预的繁琐性。\\n\\n总结下，生效条件主要是：第一，企业和工会或职工代表协商签订合同；第二，把合同提交到劳动行政部门审核；第三，如果劳动行政部门15天内没有提出任何异议，那合同就会自动生效。嗯，这么看，法律条文写得还挺明确的。\\n\\n再核对一下，这些理解是不是符合《劳动合同法》第五十四条的规定。从条文内容来看，我对关键点的判断是没问题的，比如主体资格、审核必要性以及15天默示同意的设置，跟法律内容对应得上。逻辑也通顺，没有明显的遗漏。这就可以确定答案没问题了！\"\n}\n```",
+    "根据《中华人民共和国劳动合同法》第五十四条规定，集体劳动合同的生效需要满足以下条件：\n\n1. **签订主体合法**：合同须由企业与工会或者职工代表协商签订，确保双方具备签订集体合同的法律资格。\n\n2. **提交审核程序**：合同签订之后，需要提交至当地劳动行政部门进行审核，以确保集体合同内容的合法性和合规性。\n\n3. **默示同意机制**：在劳动行政部门收到集体合同后，如果其在15日内未提出任何异议，则合同自动生效。这意味着行政部门的“沉默”即视为同意合同内容。\n\n因此，集体劳动合同的生效需要经过**签订、提交审核、等待审核结果（包括默示同意）**三个步骤，最终确认内容合法合规。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "明确集体劳动合同的法律依据",
+        "content": "首先需要确认集体劳动合同的生效依据所在的法律条款。通常与劳动法、劳动合同法以及集体合同相关的法律法规直接相关。需要查看相关法律中对生效条件的要求。<search>《劳动合同法》集体合同生效条件</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "查找法律依据",
+        "content": "查询《劳动合同法》中有关集体合同的条款，具体是针对集体劳动合同的生效条件的规定。通过分析相应条款，得出其是否有签订主体、内容审查、审批或备案相关的要求。<information>根据《中华人民共和国劳动合同法》第五十四条规定，集体合同由企业和工会或职工代表协商签订，并需提交当地劳动行政部门审核；如劳动行政部门在15日内未提出异议，则合同生效。</information>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "拆分生效条件分析",
+        "content": "根据《劳动合同法》的条款，集体劳动合同的生效需要满足以下条件：1. 合同由具有合法资质的双方主体签订（企业与工会或职工代表）。2. 将合同提交当地劳动行政部门进行审核。3. 在行政部门审核后15日内未提出异议，则合同视为生效。这表明，行政审核虽然必要，但是采用的是默示同意原则。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "总结集体劳动合同生效流程",
+        "content": "结合以上分析，集体劳动合同从协商签订到生效的流程为：签订——提交劳动行政部门审核——15日内未提出异议则生效。这一规定既保护了集体协商的自治，也保障了劳动行政部门的监管权。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "根据现行法律，集体劳动合同的生效条件包括以下步骤：1. 由企业与工会或职工代表协商签订；2. 合同需提交当地劳动行政部门审核；3. 若劳动行政部门在15日内未提出异议，合同即视为生效。这一生效机制体现了法律的程序要求和默示同意原则。"
+      },
+      {
+        "action": "Verification",
+        "content": "答案符合《劳动合同法》第五十四条的规定，关于签订主体、审核程序和时间节点的描述完整且精确，结论无误。流程清晰，符合要求，无需进一步修正。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "嗯，集体劳动合同是怎么生效的？这涉及到法律规定啊，得看看相关的法律条文才行。这个应该和《劳动合同法》有关，还是先来搜一下具体的生效条件吧。<search>《劳动合同法》集体合同生效条件</search>\n\n哦，搜到了！这里说的是《中华人民共和国劳动合同法》第五十四条。这条似乎很关键，它明确规定了集体劳动合同生效需要满足的程序和条件。好，我们仔细看看具体内容。<information>根据《中华人民共和国劳动合同法》第五十四条规定，集体合同由企业和工会或职工代表协商签订，并需提交当地劳动行政部门审核；如劳动行政部门在15日内未提出异议，则合同生效。</information>\n\n嗯，稍微整理一下思路。按照这条法律，集体劳动合同的生效主要有几点要求。\n\n首先，签订主体是重点。合同需要由合法的主体来签订，也就是企业和工会或者职工代表。这说明，合同不是随便谁都能签订的，得看双方是否具有签订的资质。\n\n然后，签订合同后，并不是立刻就生效的，还得把合同提交给当地劳动行政部门进行审核。这一步的作用可能是为了让行政部门对合同的内容进行把关，确保合同的合法性和合规性。\n\n第三，这里的审核程序有点特别。通常我们以为审核会有明确的批准过程，但根据法律条文，如果劳动行政部门在收到合同后15日内不提出任何异议，那合同就默认生效了。也就是说，监管部门的“沉默”被视作一种“同意”。\n\n所以，整体流程看下来，集体劳动合同的生效需要经过签订、提交审核、等待15日三个步骤。这个设计其实很有意思，既允许用人单位和劳动者代表自主协商，又通过默示的方式减少了行政干预的繁琐性。\n\n总结下，生效条件主要是：第一，企业和工会或职工代表协商签订合同；第二，把合同提交到劳动行政部门审核；第三，如果劳动行政部门15天内没有提出任何异议，那合同就会自动生效。嗯，这么看，法律条文写得还挺明确的。\n\n再核对一下，这些理解是不是符合《劳动合同法》第五十四条的规定。从条文内容来看，我对关键点的判断是没问题的，比如主体资格、审核必要性以及15天默示同意的设置，跟法律内容对应得上。逻辑也通顺，没有明显的遗漏。这就可以确定答案没问题了！",
+  "Response": "根据《中华人民共和国劳动合同法》第五十四条规定，集体劳动合同的生效需要满足以下条件：\n\n1. **签订主体合法**：合同须由企业与工会或者职工代表协商签订，确保双方具备签订集体合同的法律资格。\n\n2. **提交审核程序**：合同签订之后，需要提交至当地劳动行政部门进行审核，以确保集体合同内容的合法性和合规性。\n\n3. **默示同意机制**：在劳动行政部门收到集体合同后，如果其在15日内未提出任何异议，则合同自动生效。这意味着行政部门的“沉默”即视为同意合同内容。\n\n因此，集体劳动合同的生效需要经过**签订、提交审核、等待审核结果（包括默示同意）**三个步骤，最终确认内容合法合规。",
+  "Question": "集体劳动合同如何生效？"
+}

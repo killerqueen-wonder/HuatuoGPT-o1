@@ -1,0 +1,97 @@
+{
+  "Open-ended Verifiable Question": "什么情况下可以协议离婚？",
+  "Ground-True Answer": "★双方须为合法夫妻并且具有完全民事行为能力（备注：协议离婚必须有《结婚证》，双方为通常意义上的“正常人”，一方为精神病人或限制民事行为能力人不能走“协议离婚”途径） ★双方必须具有离婚的共同意愿（备注：协议离婚属于“一别两宽各自欢”，结婚时“两情相悦”，离婚时亦不能“一厢情愿”） ★双方对子女抚养、财产及债务处理等事项已经协商一致（备注：在未处理好“子女抚养”“财产有争议”“债务承担不能达成一致”的情况下，协议离婚也不是想离就能离的） ★离婚协议内容不能违反法律规定且不得损害他人利益（备注：离婚协议中约定的“离婚后x年不能再婚”“再婚后不得生育子女”“再婚后所生育子女没有继承权”等内容因违反了法律的规定而无效） ★双方的结婚登记是在中国内地办理的（备注：想要在中国内地办理协议离婚手续的，首先您得在中国内地办理结婚登记，在国外结婚的不能办理“协议离婚”，符合一定条件的情况下，可以在中国法院起诉离婚）",
+  "process_id": 4458,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "分析协议离婚的条件",
+      "content": "协议离婚是夫妻双方通过协商一致来解除婚姻关系的一种方式。要达成协议离婚，通常需要满足一定的法律条件，例如婚姻关系合法成立、双方自愿离婚以及对子女抚养和财产分割达成一致。需要进一步确立具体法律依据。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "查找协议离婚的法律依据",
+      "content": "协议离婚的法律规定通常会体现在婚姻法或与离婚相关的法律文件中。中国大陆依据《中华人民共和国民法典》的相关规定进行裁定。此处需要查找民法典对协议离婚的详细要求。"
+    },
+    {
+      "action": "Search",
+      "content": "<search>中华人民共和国民法典协议离婚</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "整理查到的法律信息",
+      "content": "<information>《中华人民共和国民法典》第1076条规定，协议离婚需满足以下条件：1）双方自愿；2）对子女抚养、财产分割等问题达成协议；3）办理离婚登记。满足这些条件后，可向婚姻登记机关申请离婚登记。</information>根据以上条款，可明确协议离婚的主要条件及程序。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "结合信息总结协议离婚的必要条件",
+      "content": "协议离婚需要夫妻双方自愿且协商一致，具体条件包括：(1) 婚姻关系合法有效；(2) 双方同意离婚；(3) 对与婚姻相关的问题如子女抚养、财产分割作出妥善安排；(4) 到婚姻登记机关亲自办理离婚登记手续。这些条件构成了执行协议离婚的法律基础。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "在《中华人民共和国民法典》第1076条的规定下，协议离婚需满足以下条件：1. 双方自愿离婚；2. 对与婚姻相关的事项，如子女抚养、财产分割等，达成书面协议；3. 双方共同到婚姻登记机关申请办理离婚手续。"
+    },
+    {
+      "action": "Verification",
+      "content": "通过明确的法律条文可知，上述条件充分说明了协议离婚的适用情形，结论是准确的。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n什么情况下可以协议离婚？\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n在《中华人民共和国民法典》第1076条的规定下，协议离婚需满足以下条件：1. 双方自愿离婚；2. 对与婚姻相关的事项，如子女抚养、财产分割等，达成书面协议；3. 双方共同到婚姻登记机关申请办理离婚手续。  \n</Model Response>  \n\n<Reference Answer>  \n★双方须为合法夫妻并且具有完全民事行为能力（备注：协议离婚必须有《结婚证》，双方为通常意义上的“正常人”，一方为精神病人或限制民事行为能力人不能走“协议离婚”途径） ★双方必须具有离婚的共同意愿（备注：协议离婚属于“一别两宽各自欢”，结婚时“两情相悦”，离婚时亦不能“一厢情愿”） ★双方对子女抚养、财产及债务处理等事项已经协商一致（备注：在未处理好“子女抚养”“财产有争议”“债务承担不能达成一致”的情况下，协议离婚也不是想离就能离的） ★离婚协议内容不能违反法律规定且不得损害他人利益（备注：离婚协议中约定的“离婚后x年不能再婚”“再婚后不得生育子女”“再婚后所生育子女没有继承权”等内容因违反了法律的规定而无效） ★双方的结婚登记是在中国内地办理的（备注：想要在中国内地办理协议离婚手续的，首先您得在中国内地办理结婚登记，在国外结婚的不能办理“协议离婚”，符合一定条件的情况下，可以在中国法院起诉离婚）\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 分析协议离婚的条件\n协议离婚是夫妻双方通过协商一致来解除婚姻关系的一种方式。要达成协议离婚，通常需要满足一定的法律条件，例如婚姻关系合法成立、双方自愿离婚以及对子女抚养和财产分割达成一致。需要进一步确立具体法律依据。\n\n### 查找协议离婚的法律依据\n协议离婚的法律规定通常会体现在婚姻法或与离婚相关的法律文件中。中国大陆依据《中华人民共和国民法典》的相关规定进行裁定。此处需要查找民法典对协议离婚的详细要求。\n\n### Search\n<search>中华人民共和国民法典协议离婚</search>\n\n### 整理查到的法律信息\n<information>《中华人民共和国民法典》第1076条规定，协议离婚需满足以下条件：1）双方自愿；2）对子女抚养、财产分割等问题达成协议；3）办理离婚登记。满足这些条件后，可向婚姻登记机关申请离婚登记。</information>根据以上条款，可明确协议离婚的主要条件及程序。\n\n### 结合信息总结协议离婚的必要条件\n协议离婚需要夫妻双方自愿且协商一致，具体条件包括：(1) 婚姻关系合法有效；(2) 双方同意离婚；(3) 对与婚姻相关的问题如子女抚养、财产分割作出妥善安排；(4) 到婚姻登记机关亲自办理离婚登记手续。这些条件构成了执行协议离婚的法律基础。\n\n### Conclusion\n在《中华人民共和国民法典》第1076条的规定下，协议离婚需满足以下条件：1. 双方自愿离婚；2. 对与婚姻相关的事项，如子女抚养、财产分割等，达成书面协议；3. 双方共同到婚姻登记机关申请办理离婚手续。\n\n### Verification\n通过明确的法律条文可知，上述条件充分说明了协议离婚的适用情形，结论是准确的。\n</Thought Process>\n\n<Question>\n什么情况下可以协议离婚？\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n嗯，如果要协议离婚的话，首先得知道有什么条件。协议离婚听起来就是双方协商好，觉得婚姻关系要结束，然后去办手续。不过具体法律上应该有明确规定吧，总不能随随便便就离了，我得去确认一下。\n\n我记得中国的离婚相关规定好像都在《中华人民共和国民法典》里面，还是找一下具体条款更靠谱。应该搜的是协议离婚相关的内容，这样更精确一点。<search>中华人民共和国民法典协议离婚</search>\n\n找到了！<information>根据《中华人民共和国民法典》第1076条，协议离婚需要符合几个条件：第一，必须是双方自愿，同意离婚；第二，双方要对涉及婚姻关系的问题，比如子女的抚养、财产分割这些，达成一致并形成书面协议；第三，是得去婚姻登记机关办离婚手续。</information>这一条说明得很清楚。\n\n也就是说，协议离婚首先得符合法律上的婚姻关系，就是双方必须是合法夫妻，不然谈不上离婚。而且必须是双方都同意离婚，都愿意结束婚姻，不能一方强迫另一方。另外，除了离婚双方之外，涉及的子女问题，比如由谁抚养孩子，经济上的安排，还有婚姻财产怎么分配，都要事先处理好，不能留问题。最后，得一步一步走流程，两人一起去婚姻登记机关办理离婚手续，这样离婚才能正式生效。\n\n嗯，这样看下来，协议离婚就是双方自愿加上协商一致再加上法律规定的程序。所以总结一下，如果双方是合法夫妻，而且对离婚这件事本身，以及子女、财产等具体问题能协商达成一致，再按照法律程序去办理手续，完全可以协议离婚。这些条件让整个过程更明确，也符合法律要求嘛。\n</Internal Thinking>\n\n<Question>\n什么情况下可以协议离婚？\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析协议离婚的条件\",\n      \"content\": \"协议离婚是夫妻双方通过协商一致来解除婚姻关系的一种方式。要达成协议离婚，通常需要满足一定的法律条件，例如婚姻关系合法成立、双方自愿离婚以及对子女抚养和财产分割达成一致。需要进一步确立具体法律依据。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"查找协议离婚的法律依据\",\n      \"content\": \"协议离婚的法律规定通常会体现在婚姻法或与离婚相关的法律文件中。中国大陆依据《中华人民共和国民法典》的相关规定进行裁定。此处需要查找民法典对协议离婚的详细要求。\"\n    },\n    {\n      \"action\": \"Search\",\n      \"content\": \"<search>中华人民共和国民法典协议离婚</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"整理查到的法律信息\",\n      \"content\": \"<information>《中华人民共和国民法典》第1076条规定，协议离婚需满足以下条件：1）双方自愿；2）对子女抚养、财产分割等问题达成协议；3）办理离婚登记。满足这些条件后，可向婚姻登记机关申请离婚登记。</information>根据以上条款，可明确协议离婚的主要条件及程序。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"结合信息总结协议离婚的必要条件\",\n      \"content\": \"协议离婚需要夫妻双方自愿且协商一致，具体条件包括：(1) 婚姻关系合法有效；(2) 双方同意离婚；(3) 对与婚姻相关的问题如子女抚养、财产分割作出妥善安排；(4) 到婚姻登记机关亲自办理离婚登记手续。这些条件构成了执行协议离婚的法律基础。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"在《中华人民共和国民法典》第1076条的规定下，协议离婚需满足以下条件：1. 双方自愿离婚；2. 对与婚姻相关的事项，如子女抚养、财产分割等，达成书面协议；3. 双方共同到婚姻登记机关申请办理离婚手续。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"通过明确的法律条文可知，上述条件充分说明了协议离婚的适用情形，结论是准确的。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"嗯，如果要协议离婚的话，首先得知道有什么条件。协议离婚听起来就是双方协商好，觉得婚姻关系要结束，然后去办手续。不过具体法律上应该有明确规定吧，总不能随随便便就离了，我得去确认一下。\\n\\n我记得中国的离婚相关规定好像都在《中华人民共和国民法典》里面，还是找一下具体条款更靠谱。应该搜的是协议离婚相关的内容，这样更精确一点。<search>中华人民共和国民法典协议离婚</search>\\n\\n找到了！<information>根据《中华人民共和国民法典》第1076条，协议离婚需要符合几个条件：第一，必须是双方自愿，同意离婚；第二，双方要对涉及婚姻关系的问题，比如子女的抚养、财产分割这些，达成一致并形成书面协议；第三，是得去婚姻登记机关办离婚手续。</information>这一条说明得很清楚。\\n\\n也就是说，协议离婚首先得符合法律上的婚姻关系，就是双方必须是合法夫妻，不然谈不上离婚。而且必须是双方都同意离婚，都愿意结束婚姻，不能一方强迫另一方。另外，除了离婚双方之外，涉及的子女问题，比如由谁抚养孩子，经济上的安排，还有婚姻财产怎么分配，都要事先处理好，不能留问题。最后，得一步一步走流程，两人一起去婚姻登记机关办理离婚手续，这样离婚才能正式生效。\\n\\n嗯，这样看下来，协议离婚就是双方自愿加上协商一致再加上法律规定的程序。所以总结一下，如果双方是合法夫妻，而且对离婚这件事本身，以及子女、财产等具体问题能协商达成一致，再按照法律程序去办理手续，完全可以协议离婚。这些条件让整个过程更明确，也符合法律要求嘛。\"\n}\n```",
+    "协议离婚的情况包括以下几个条件：\n\n1. **双方自愿同意离婚**：协议离婚的前提是夫妻双方必须自愿，不能有任何一方强迫或胁迫对方，完全基于双方真实意愿。\n\n2. **对子女抚养、财产分割等问题达成一致**：离婚不仅涉及婚姻关系的解除，还包括子女的抚养权、探望权安排，以及共同财产、债务处理等。这些问题在办理协议离婚之前必须通过协商达成一致，并且形成书面协议。\n\n3. **合法夫妻关系**：协议离婚的双方首先需要在法律上是合法的婚姻关系，假如婚姻关系本身无效或者不存在，就不适用协议离婚。\n\n4. **到婚姻登记机关办理手续**：协议离婚必须按照规定，到一方户籍所在地的婚姻登记机关共同提出离婚申请，并完成相关手续后才能正式解除婚姻关系。\n\n这一规定明确在《中华人民共和国民法典》第1076条中进行了规范。简单来说，只有在双方都愿意离婚、婚姻中涉及的子女和财产问题解决妥当，并履行法律要求的手续时，才可以协议离婚。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "分析协议离婚的条件",
+        "content": "协议离婚是夫妻双方通过协商一致来解除婚姻关系的一种方式。要达成协议离婚，通常需要满足一定的法律条件，例如婚姻关系合法成立、双方自愿离婚以及对子女抚养和财产分割达成一致。需要进一步确立具体法律依据。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "查找协议离婚的法律依据",
+        "content": "协议离婚的法律规定通常会体现在婚姻法或与离婚相关的法律文件中。中国大陆依据《中华人民共和国民法典》的相关规定进行裁定。此处需要查找民法典对协议离婚的详细要求。"
+      },
+      {
+        "action": "Search",
+        "content": "<search>中华人民共和国民法典协议离婚</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "整理查到的法律信息",
+        "content": "<information>《中华人民共和国民法典》第1076条规定，协议离婚需满足以下条件：1）双方自愿；2）对子女抚养、财产分割等问题达成协议；3）办理离婚登记。满足这些条件后，可向婚姻登记机关申请离婚登记。</information>根据以上条款，可明确协议离婚的主要条件及程序。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "结合信息总结协议离婚的必要条件",
+        "content": "协议离婚需要夫妻双方自愿且协商一致，具体条件包括：(1) 婚姻关系合法有效；(2) 双方同意离婚；(3) 对与婚姻相关的问题如子女抚养、财产分割作出妥善安排；(4) 到婚姻登记机关亲自办理离婚登记手续。这些条件构成了执行协议离婚的法律基础。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "在《中华人民共和国民法典》第1076条的规定下，协议离婚需满足以下条件：1. 双方自愿离婚；2. 对与婚姻相关的事项，如子女抚养、财产分割等，达成书面协议；3. 双方共同到婚姻登记机关申请办理离婚手续。"
+      },
+      {
+        "action": "Verification",
+        "content": "通过明确的法律条文可知，上述条件充分说明了协议离婚的适用情形，结论是准确的。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "嗯，如果要协议离婚的话，首先得知道有什么条件。协议离婚听起来就是双方协商好，觉得婚姻关系要结束，然后去办手续。不过具体法律上应该有明确规定吧，总不能随随便便就离了，我得去确认一下。\n\n我记得中国的离婚相关规定好像都在《中华人民共和国民法典》里面，还是找一下具体条款更靠谱。应该搜的是协议离婚相关的内容，这样更精确一点。<search>中华人民共和国民法典协议离婚</search>\n\n找到了！<information>根据《中华人民共和国民法典》第1076条，协议离婚需要符合几个条件：第一，必须是双方自愿，同意离婚；第二，双方要对涉及婚姻关系的问题，比如子女的抚养、财产分割这些，达成一致并形成书面协议；第三，是得去婚姻登记机关办离婚手续。</information>这一条说明得很清楚。\n\n也就是说，协议离婚首先得符合法律上的婚姻关系，就是双方必须是合法夫妻，不然谈不上离婚。而且必须是双方都同意离婚，都愿意结束婚姻，不能一方强迫另一方。另外，除了离婚双方之外，涉及的子女问题，比如由谁抚养孩子，经济上的安排，还有婚姻财产怎么分配，都要事先处理好，不能留问题。最后，得一步一步走流程，两人一起去婚姻登记机关办理离婚手续，这样离婚才能正式生效。\n\n嗯，这样看下来，协议离婚就是双方自愿加上协商一致再加上法律规定的程序。所以总结一下，如果双方是合法夫妻，而且对离婚这件事本身，以及子女、财产等具体问题能协商达成一致，再按照法律程序去办理手续，完全可以协议离婚。这些条件让整个过程更明确，也符合法律要求嘛。",
+  "Response": "协议离婚的情况包括以下几个条件：\n\n1. **双方自愿同意离婚**：协议离婚的前提是夫妻双方必须自愿，不能有任何一方强迫或胁迫对方，完全基于双方真实意愿。\n\n2. **对子女抚养、财产分割等问题达成一致**：离婚不仅涉及婚姻关系的解除，还包括子女的抚养权、探望权安排，以及共同财产、债务处理等。这些问题在办理协议离婚之前必须通过协商达成一致，并且形成书面协议。\n\n3. **合法夫妻关系**：协议离婚的双方首先需要在法律上是合法的婚姻关系，假如婚姻关系本身无效或者不存在，就不适用协议离婚。\n\n4. **到婚姻登记机关办理手续**：协议离婚必须按照规定，到一方户籍所在地的婚姻登记机关共同提出离婚申请，并完成相关手续后才能正式解除婚姻关系。\n\n这一规定明确在《中华人民共和国民法典》第1076条中进行了规范。简单来说，只有在双方都愿意离婚、婚姻中涉及的子女和财产问题解决妥当，并履行法律要求的手续时，才可以协议离婚。",
+  "Question": "什么情况下可以协议离婚？"
+}

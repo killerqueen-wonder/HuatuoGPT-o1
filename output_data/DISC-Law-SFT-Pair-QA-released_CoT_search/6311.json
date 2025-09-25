@@ -1,0 +1,99 @@
+{
+  "Open-ended Verifiable Question": "什么是国有资本控股？",
+  "Ground-True Answer": "“国有控股”可分为两种：一种是“国有绝对控股”，另一类是“国有相对控股（含协议控制）”。（1）国有绝对控股，是指在企业的全部资本中，国家资本（股本）所占比例大于50%的企业。（2）国有相对控股（含协议控制），是指在企业的全部资本中，国家资本（股本）所占的比例虽未大于50%，但相对大于企业中的其他经济成分所占比例的企业（相对控股）；或者虽不大于其他经济成分，但根据协议规定，由国家拥有实际控制权的企业（协议控制）。",
+  "process_id": 6311,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "确定问题范围",
+      "content": "‘国有资本控股’可能与企业所有权和管理权中的国家角色有关。需要明确这一概念的具体定义，包括何时被认为是控股状态。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "分析‘控股’的含义",
+      "content": "在一般企业管理和财务领域内，‘控股’通常意味着某实体（如国家）持有企业的股权达到一定比例，足以对企业重大决策施加决定性影响。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "判断定义信息是否需法律支持",
+      "content": "这一概念是否有法律法规基础？需要明确‘国有资本控股’是否在中国法律或经济文件中有官方解释。搜索与此相关的法律法规，如《中华人民共和国公司法》或国资委文件。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "搜索相关法律法规",
+      "content": "需要查找中国相关法律条文、国资委指南或其他权威文件中关于‘国有资本控股’的说明。执行搜索：<search>国有资本控股定义</search>。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "整合搜索结果",
+      "content": "<information>‘国有资本控股’是指国家通过直接或间接持有企业的股权，使国家资本成为企业最大股东，从而对企业的重大决策施加控制性影响。根据国资委的相关文件，如果国家资本持股比例超过50%，或虽低于50%但通过协议、董事会结构等对企业具有实质控制权，也属于国有资本控股。</information>。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "‘国有资本控股’是指国家资本通过直接或间接形式持有企业超过50%的股权，或尽管持股比例低于50%，但通过协议安排、董事会控制等形式对企业的重大决策能施加控制力。这种控股状态使得国家成为企业的控制性股东，从而在企业的战略方向、资源分配以及重大事项决策中起到主导作用。"
+    },
+    {
+      "action": "Verification",
+      "content": "该结论与企业管理实践和中国国资管理规定一致，准确反映‘国有资本控股’的含义与应用场景，正确无误。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n什么是国有资本控股？\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n‘国有资本控股’是指国家资本通过直接或间接形式持有企业超过50%的股权，或尽管持股比例低于50%，但通过协议安排、董事会控制等形式对企业的重大决策能施加控制力。这种控股状态使得国家成为企业的控制性股东，从而在企业的战略方向、资源分配以及重大事项决策中起到主导作用。  \n</Model Response>  \n\n<Reference Answer>  \n“国有控股”可分为两种：一种是“国有绝对控股”，另一类是“国有相对控股（含协议控制）”。（1）国有绝对控股，是指在企业的全部资本中，国家资本（股本）所占比例大于50%的企业。（2）国有相对控股（含协议控制），是指在企业的全部资本中，国家资本（股本）所占的比例虽未大于50%，但相对大于企业中的其他经济成分所占比例的企业（相对控股）；或者虽不大于其他经济成分，但根据协议规定，由国家拥有实际控制权的企业（协议控制）。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 确定问题范围\n‘国有资本控股’可能与企业所有权和管理权中的国家角色有关。需要明确这一概念的具体定义，包括何时被认为是控股状态。\n\n### 分析‘控股’的含义\n在一般企业管理和财务领域内，‘控股’通常意味着某实体（如国家）持有企业的股权达到一定比例，足以对企业重大决策施加决定性影响。\n\n### 判断定义信息是否需法律支持\n这一概念是否有法律法规基础？需要明确‘国有资本控股’是否在中国法律或经济文件中有官方解释。搜索与此相关的法律法规，如《中华人民共和国公司法》或国资委文件。\n\n### 搜索相关法律法规\n需要查找中国相关法律条文、国资委指南或其他权威文件中关于‘国有资本控股’的说明。执行搜索：<search>国有资本控股定义</search>。\n\n### 整合搜索结果\n<information>‘国有资本控股’是指国家通过直接或间接持有企业的股权，使国家资本成为企业最大股东，从而对企业的重大决策施加控制性影响。根据国资委的相关文件，如果国家资本持股比例超过50%，或虽低于50%但通过协议、董事会结构等对企业具有实质控制权，也属于国有资本控股。</information>。\n\n### Conclusion\n‘国有资本控股’是指国家资本通过直接或间接形式持有企业超过50%的股权，或尽管持股比例低于50%，但通过协议安排、董事会控制等形式对企业的重大决策能施加控制力。这种控股状态使得国家成为企业的控制性股东，从而在企业的战略方向、资源分配以及重大事项决策中起到主导作用。\n\n### Verification\n该结论与企业管理实践和中国国资管理规定一致，准确反映‘国有资本控股’的含义与应用场景，正确无误。\n</Thought Process>\n\n<Question>\n什么是国有资本控股？\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n嗯，‘国有资本控股’这几个字听起来和企业的所有权结构还有国家在企业管理中的角色有关。所以，我得先搞清楚‘控股’到底意味着什么。控股这个词一般应该和股权比例有关吧，通常是指持有一定数量的股份，可以影响甚至决定企业的重大决策。那具体占多少算控股呢？或者，有没有其他方式不用持有太多股份也能做到控股呢？\n\n不过，这里提到的是‘国有资本控股’，涉及到国家的角色。所以，这是不是和国有企业有某种联系？感觉可能要看看法律怎么说，比如《公司法》是不是有相关定义？国资委应该也管这块，查查它的文件会有帮助。总之，得验证一下有没有权威的法律条文或者官方文件对‘国有资本控股’给出明确解释。\n\n好，现在我要搜索一下看看是不是有明确的法律基础。先搜索这个关键词——<search>国有资本控股定义</search>，应该会有一些相关结果跳出来。\n\n找到一些信息了。<information>‘国有资本控股’是指国家通过直接或间接持有企业的股权，使国家资本成为企业最大股东，以此对企业的重大决策具备控制性影响。根据国资委发布的相关文件，如果国家资本持股比例超过50%，这种情况下就称为控股。如果持股比例低于50%，但国家通过一些协议安排，比如控制董事会决策权或者其它手段，同样可以对公司形成实际控制，这也算一种控股状态。</information>嗯，这个解释好像挺清晰，基本明确‘国有资本控股’既可以是通过股权比例超过50%的方式实现在表面上的控制，也可以是通过实质控制权，比如掌握董事会权力等途径来实现。\n\n这样的话，我能得出一个比较完整的定义了。‘国有资本控股’就是国家通过直接或间接的方式对企业在股权或决策上起到实质性的控制作用。一般来说如果国家控股比例大于50%很直观地这家企业属于国有控股，但即便低于50%，只要国家能够通过其它手段对企业重大决策有绝对的话语权，那么也属于国有资本控股。\n\n整体来看，这个定义跟实际的企业管理实践和国家对于国有资本监管的规定还是很一致的，应该没有偏差。这些法律文件和经济学的理论还是能很好地支持这个解释。\n</Internal Thinking>\n\n<Question>\n什么是国有资本控股？\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"确定问题范围\",\n      \"content\": \"‘国有资本控股’可能与企业所有权和管理权中的国家角色有关。需要明确这一概念的具体定义，包括何时被认为是控股状态。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析‘控股’的含义\",\n      \"content\": \"在一般企业管理和财务领域内，‘控股’通常意味着某实体（如国家）持有企业的股权达到一定比例，足以对企业重大决策施加决定性影响。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"判断定义信息是否需法律支持\",\n      \"content\": \"这一概念是否有法律法规基础？需要明确‘国有资本控股’是否在中国法律或经济文件中有官方解释。搜索与此相关的法律法规，如《中华人民共和国公司法》或国资委文件。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"搜索相关法律法规\",\n      \"content\": \"需要查找中国相关法律条文、国资委指南或其他权威文件中关于‘国有资本控股’的说明。执行搜索：<search>国有资本控股定义</search>。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"整合搜索结果\",\n      \"content\": \"<information>‘国有资本控股’是指国家通过直接或间接持有企业的股权，使国家资本成为企业最大股东，从而对企业的重大决策施加控制性影响。根据国资委的相关文件，如果国家资本持股比例超过50%，或虽低于50%但通过协议、董事会结构等对企业具有实质控制权，也属于国有资本控股。</information>。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"‘国有资本控股’是指国家资本通过直接或间接形式持有企业超过50%的股权，或尽管持股比例低于50%，但通过协议安排、董事会控制等形式对企业的重大决策能施加控制力。这种控股状态使得国家成为企业的控制性股东，从而在企业的战略方向、资源分配以及重大事项决策中起到主导作用。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"该结论与企业管理实践和中国国资管理规定一致，准确反映‘国有资本控股’的含义与应用场景，正确无误。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"嗯，‘国有资本控股’这几个字听起来和企业的所有权结构还有国家在企业管理中的角色有关。所以，我得先搞清楚‘控股’到底意味着什么。控股这个词一般应该和股权比例有关吧，通常是指持有一定数量的股份，可以影响甚至决定企业的重大决策。那具体占多少算控股呢？或者，有没有其他方式不用持有太多股份也能做到控股呢？\\n\\n不过，这里提到的是‘国有资本控股’，涉及到国家的角色。所以，这是不是和国有企业有某种联系？感觉可能要看看法律怎么说，比如《公司法》是不是有相关定义？国资委应该也管这块，查查它的文件会有帮助。总之，得验证一下有没有权威的法律条文或者官方文件对‘国有资本控股’给出明确解释。\\n\\n好，现在我要搜索一下看看是不是有明确的法律基础。先搜索这个关键词——<search>国有资本控股定义</search>，应该会有一些相关结果跳出来。\\n\\n找到一些信息了。<information>‘国有资本控股’是指国家通过直接或间接持有企业的股权，使国家资本成为企业最大股东，以此对企业的重大决策具备控制性影响。根据国资委发布的相关文件，如果国家资本持股比例超过50%，这种情况下就称为控股。如果持股比例低于50%，但国家通过一些协议安排，比如控制董事会决策权或者其它手段，同样可以对公司形成实际控制，这也算一种控股状态。</information>嗯，这个解释好像挺清晰，基本明确‘国有资本控股’既可以是通过股权比例超过50%的方式实现在表面上的控制，也可以是通过实质控制权，比如掌握董事会权力等途径来实现。\\n\\n这样的话，我能得出一个比较完整的定义了。‘国有资本控股’就是国家通过直接或间接的方式对企业在股权或决策上起到实质性的控制作用。一般来说如果国家控股比例大于50%很直观地这家企业属于国有控股，但即便低于50%，只要国家能够通过其它手段对企业重大决策有绝对的话语权，那么也属于国有资本控股。\\n\\n整体来看，这个定义跟实际的企业管理实践和国家对于国有资本监管的规定还是很一致的，应该没有偏差。这些法律文件和经济学的理论还是能很好地支持这个解释。\"\n}\n```",
+    "国有资本控股是指国家通过直接或间接持有企业的股权，确保国家资本在企业中具有控制性影响。具体来说，当国家持有企业的股权比例超过50%时，即可通过多数持股在法律意义上对企业形成控制，这种形式被称为明显控股。此外，即使国家持股比例低于50%，但通过特定的协议安排（如控制董事会的决策权或管理团队的任命权）等方式实现对企业重大决策的实质控制，也属于国有资本控股。\n\n这种控股模式主要体现国家对特定企业的战略性掌控，以保障国有资产的安全性和增值能力，同时实现对国民经济命脉的控制。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "确定问题范围",
+        "content": "‘国有资本控股’可能与企业所有权和管理权中的国家角色有关。需要明确这一概念的具体定义，包括何时被认为是控股状态。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "分析‘控股’的含义",
+        "content": "在一般企业管理和财务领域内，‘控股’通常意味着某实体（如国家）持有企业的股权达到一定比例，足以对企业重大决策施加决定性影响。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "判断定义信息是否需法律支持",
+        "content": "这一概念是否有法律法规基础？需要明确‘国有资本控股’是否在中国法律或经济文件中有官方解释。搜索与此相关的法律法规，如《中华人民共和国公司法》或国资委文件。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "搜索相关法律法规",
+        "content": "需要查找中国相关法律条文、国资委指南或其他权威文件中关于‘国有资本控股’的说明。执行搜索：<search>国有资本控股定义</search>。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "整合搜索结果",
+        "content": "<information>‘国有资本控股’是指国家通过直接或间接持有企业的股权，使国家资本成为企业最大股东，从而对企业的重大决策施加控制性影响。根据国资委的相关文件，如果国家资本持股比例超过50%，或虽低于50%但通过协议、董事会结构等对企业具有实质控制权，也属于国有资本控股。</information>。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "‘国有资本控股’是指国家资本通过直接或间接形式持有企业超过50%的股权，或尽管持股比例低于50%，但通过协议安排、董事会控制等形式对企业的重大决策能施加控制力。这种控股状态使得国家成为企业的控制性股东，从而在企业的战略方向、资源分配以及重大事项决策中起到主导作用。"
+      },
+      {
+        "action": "Verification",
+        "content": "该结论与企业管理实践和中国国资管理规定一致，准确反映‘国有资本控股’的含义与应用场景，正确无误。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "嗯，‘国有资本控股’这几个字听起来和企业的所有权结构还有国家在企业管理中的角色有关。所以，我得先搞清楚‘控股’到底意味着什么。控股这个词一般应该和股权比例有关吧，通常是指持有一定数量的股份，可以影响甚至决定企业的重大决策。那具体占多少算控股呢？或者，有没有其他方式不用持有太多股份也能做到控股呢？\n\n不过，这里提到的是‘国有资本控股’，涉及到国家的角色。所以，这是不是和国有企业有某种联系？感觉可能要看看法律怎么说，比如《公司法》是不是有相关定义？国资委应该也管这块，查查它的文件会有帮助。总之，得验证一下有没有权威的法律条文或者官方文件对‘国有资本控股’给出明确解释。\n\n好，现在我要搜索一下看看是不是有明确的法律基础。先搜索这个关键词——<search>国有资本控股定义</search>，应该会有一些相关结果跳出来。\n\n找到一些信息了。<information>‘国有资本控股’是指国家通过直接或间接持有企业的股权，使国家资本成为企业最大股东，以此对企业的重大决策具备控制性影响。根据国资委发布的相关文件，如果国家资本持股比例超过50%，这种情况下就称为控股。如果持股比例低于50%，但国家通过一些协议安排，比如控制董事会决策权或者其它手段，同样可以对公司形成实际控制，这也算一种控股状态。</information>嗯，这个解释好像挺清晰，基本明确‘国有资本控股’既可以是通过股权比例超过50%的方式实现在表面上的控制，也可以是通过实质控制权，比如掌握董事会权力等途径来实现。\n\n这样的话，我能得出一个比较完整的定义了。‘国有资本控股’就是国家通过直接或间接的方式对企业在股权或决策上起到实质性的控制作用。一般来说如果国家控股比例大于50%很直观地这家企业属于国有控股，但即便低于50%，只要国家能够通过其它手段对企业重大决策有绝对的话语权，那么也属于国有资本控股。\n\n整体来看，这个定义跟实际的企业管理实践和国家对于国有资本监管的规定还是很一致的，应该没有偏差。这些法律文件和经济学的理论还是能很好地支持这个解释。",
+  "Response": "国有资本控股是指国家通过直接或间接持有企业的股权，确保国家资本在企业中具有控制性影响。具体来说，当国家持有企业的股权比例超过50%时，即可通过多数持股在法律意义上对企业形成控制，这种形式被称为明显控股。此外，即使国家持股比例低于50%，但通过特定的协议安排（如控制董事会的决策权或管理团队的任命权）等方式实现对企业重大决策的实质控制，也属于国有资本控股。\n\n这种控股模式主要体现国家对特定企业的战略性掌控，以保障国有资产的安全性和增值能力，同时实现对国民经济命脉的控制。",
+  "Question": "什么是国有资本控股？"
+}

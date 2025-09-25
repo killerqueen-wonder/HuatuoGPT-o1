@@ -1,0 +1,89 @@
+{
+  "Open-ended Verifiable Question": "定金和订金哪个是不退的",
+  "Ground-True Answer": "定金是不退的。定金是双方当事人约定的一方给付定金给另一方作为债权的担保，但是定金的数额不得超过主合同标的额的百分之二十。订金则是一方当事人的单方行为，不具有担保性质。\n法律依据：\n《中华人民共和国民法典》第五百八十六条\n当事人可以约定一方向对方给付定金作为债权的担保。定金合同自实际交付定金时成立。\n定金的数额由当事人约定；但是，不得超过主合同标的额的百分之二十，超过部分不产生定金的效力。实际交付的定金数额多于或者少于约定数额的，视为变更约定的定金数额。",
+  "process_id": 1575,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "区分定金和订金的法律定义",
+      "content": "首先需要确定定金和订金在法律上的定义和用途。根据一般法律规定，'定金'通常属于担保性质，受《合同法》约束，而'订金'则没有法律强制性约束力，通常作为一种预付性质的款项。为进一步确认定金是否具有不退还的性质，有必要查询相关法律条款。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "查找定金相关法律规定",
+      "content": "<search>定金 法律规定</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "分析法律结果",
+      "content": "<information>定金的法律性质在《合同法》第115条中规定，定金具有担保作用。如果合同因付款方责任无法履行，收款方可不退定金；而如果因收款方责任无法履行，则须双倍返还定金。</information>基于以上信息可以确认定金在某些情况下是不退的，但需视具体责任情况而定。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "验证订金性质",
+      "content": "相比于定金，订金通常作为商业交易中非法律担保的预付款。如果交易无法履行，订金一般会被原路退还，因为它不具备定金的担保性质。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "定金在法律上具有担保性质，存在无法退还或需要双倍返还的情况，具体取决于合同履行责任方。而订金通常为预付款性质，无法律强制规定不退还。因此，若问哪个是不退的，答案是定金。"
+    },
+    {
+      "action": "Verification",
+      "content": "通过法律条款与交易实际分析验证，结论无误：定金是不退的（在付款方违约情况下），而订金通常应退还。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n定金和订金哪个是不退的\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n定金在法律上具有担保性质，存在无法退还或需要双倍返还的情况，具体取决于合同履行责任方。而订金通常为预付款性质，无法律强制规定不退还。因此，若问哪个是不退的，答案是定金。  \n</Model Response>  \n\n<Reference Answer>  \n定金是不退的。定金是双方当事人约定的一方给付定金给另一方作为债权的担保，但是定金的数额不得超过主合同标的额的百分之二十。订金则是一方当事人的单方行为，不具有担保性质。\n法律依据：\n《中华人民共和国民法典》第五百八十六条\n当事人可以约定一方向对方给付定金作为债权的担保。定金合同自实际交付定金时成立。\n定金的数额由当事人约定；但是，不得超过主合同标的额的百分之二十，超过部分不产生定金的效力。实际交付的定金数额多于或者少于约定数额的，视为变更约定的定金数额。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 区分定金和订金的法律定义\n首先需要确定定金和订金在法律上的定义和用途。根据一般法律规定，'定金'通常属于担保性质，受《合同法》约束，而'订金'则没有法律强制性约束力，通常作为一种预付性质的款项。为进一步确认定金是否具有不退还的性质，有必要查询相关法律条款。\n\n### 查找定金相关法律规定\n<search>定金 法律规定</search>\n\n### 分析法律结果\n<information>定金的法律性质在《合同法》第115条中规定，定金具有担保作用。如果合同因付款方责任无法履行，收款方可不退定金；而如果因收款方责任无法履行，则须双倍返还定金。</information>基于以上信息可以确认定金在某些情况下是不退的，但需视具体责任情况而定。\n\n### 验证订金性质\n相比于定金，订金通常作为商业交易中非法律担保的预付款。如果交易无法履行，订金一般会被原路退还，因为它不具备定金的担保性质。\n\n### Conclusion\n定金在法律上具有担保性质，存在无法退还或需要双倍返还的情况，具体取决于合同履行责任方。而订金通常为预付款性质，无法律强制规定不退还。因此，若问哪个是不退的，答案是定金。\n\n### Verification\n通过法律条款与交易实际分析验证，结论无误：定金是不退的（在付款方违约情况下），而订金通常应退还。\n</Thought Process>\n\n<Question>\n定金和订金哪个是不退的\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\nOK，首先来想一下，定金和订金在我们平时生活中的意义到底有什么不同呢？听起来很相似，但应该是有些区别的。既然这样，那就先从法律层面上弄清楚它们的定义吧。首先，我记得好像是有法律明确规定定金的性质的，倒是订金没有听说过相关法律。为了确认，这里需要搜一下具体的法律条款。\n\n<search>定金 法律规定</search>\n\n嗯，查到了。<information>定金的法律性质在《合同法》第115条里有说明，说它是一种担保。如果是付款方的责任导致合同不能履行，收款方可以不退定金；但是如果换成是收款方的责任，那收款方不仅要退定金，还得双倍赔偿。</information> 哦，看样子定金确实相比订金有点特别，它等于是合同履行的一种保障机制。如果付款方违约，定金就不退，但如果收款方有责任，那对方损失会更大。\n\n那接下来再看看订金吧。订金好像更多出现在交易或者预付款的场景里。我记得市面上的一些资料里说过，订金不像定金那样能归入到法律担保范围。换句话说，订金是不是更随意一点，没有明确的法律条文支撑？从这个角度来看，交易无法履行时，订金按理说是应该退还的——因为它本质上是预付款，而不是一种担保。\n\n这么一想，定金和订金的法律效力差别还是很大的，关键点就在于：定金有约束力，是受《合同法》保护的，而订金基本没有法律担保作用。所以，如果要问哪个是不退的，答案应该是定金——当然前提是付款方这边违约了。订金的话，通常都会退还。\n\n捋一下总结一下：定金具备担保性质，在付款方责任导致合同无法履行的情况下，真的是可以不退的。订金的话，更多是预付款的性质，法律层面并没有强制承认它不可退，所以交易失败了一般还是能退的。嗯，这样看来，答案清楚了，如果问哪个是不退的，就是定金。\n\n最后再验证一下，想想有哪些遗漏吗？不，没有遗漏的环节。整个过程从定义、法律条文的理解到实际的交易情况分析，这个结论应该是稳妥的。定金是不退的（在特定条件下），订金通常会退还。\n</Internal Thinking>\n\n<Question>\n定金和订金哪个是不退的\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\", \n      \"title\": \"区分定金和订金的法律定义\", \n      \"content\": \"首先需要确定定金和订金在法律上的定义和用途。根据一般法律规定，'定金'通常属于担保性质，受《合同法》约束，而'订金'则没有法律强制性约束力，通常作为一种预付性质的款项。为进一步确认定金是否具有不退还的性质，有必要查询相关法律条款。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"查找定金相关法律规定\",\n      \"content\": \"<search>定金 法律规定</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析法律结果\",\n      \"content\": \"<information>定金的法律性质在《合同法》第115条中规定，定金具有担保作用。如果合同因付款方责任无法履行，收款方可不退定金；而如果因收款方责任无法履行，则须双倍返还定金。</information>基于以上信息可以确认定金在某些情况下是不退的，但需视具体责任情况而定。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"验证订金性质\",\n      \"content\": \"相比于定金，订金通常作为商业交易中非法律担保的预付款。如果交易无法履行，订金一般会被原路退还，因为它不具备定金的担保性质。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"定金在法律上具有担保性质，存在无法退还或需要双倍返还的情况，具体取决于合同履行责任方。而订金通常为预付款性质，无法律强制规定不退还。因此，若问哪个是不退的，答案是定金。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"通过法律条款与交易实际分析验证，结论无误：定金是不退的（在付款方违约情况下），而订金通常应退还。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"OK，首先来想一下，定金和订金在我们平时生活中的意义到底有什么不同呢？听起来很相似，但应该是有些区别的。既然这样，那就先从法律层面上弄清楚它们的定义吧。首先，我记得好像是有法律明确规定定金的性质的，倒是订金没有听说过相关法律。为了确认，这里需要搜一下具体的法律条款。\\n\\n<search>定金 法律规定</search>\\n\\n嗯，查到了。<information>定金的法律性质在《合同法》第115条里有说明，说它是一种担保。如果是付款方的责任导致合同不能履行，收款方可以不退定金；但是如果换成是收款方的责任，那收款方不仅要退定金，还得双倍赔偿。</information> 哦，看样子定金确实相比订金有点特别，它等于是合同履行的一种保障机制。如果付款方违约，定金就不退，但如果收款方有责任，那对方损失会更大。\\n\\n那接下来再看看订金吧。订金好像更多出现在交易或者预付款的场景里。我记得市面上的一些资料里说过，订金不像定金那样能归入到法律担保范围。换句话说，订金是不是更随意一点，没有明确的法律条文支撑？从这个角度来看，交易无法履行时，订金按理说是应该退还的——因为它本质上是预付款，而不是一种担保。\\n\\n这么一想，定金和订金的法律效力差别还是很大的，关键点就在于：定金有约束力，是受《合同法》保护的，而订金基本没有法律担保作用。所以，如果要问哪个是不退的，答案应该是定金——当然前提是付款方这边违约了。订金的话，通常都会退还。\\n\\n捋一下总结一下：定金具备担保性质，在付款方责任导致合同无法履行的情况下，真的是可以不退的。订金的话，更多是预付款的性质，法律层面并没有强制承认它不可退，所以交易失败了一般还是能退的。嗯，这样看来，答案清楚了，如果问哪个是不退的，就是定金。\\n\\n最后再验证一下，想想有哪些遗漏吗？不，没有遗漏的环节。整个过程从定义、法律条文的理解到实际的交易情况分析，这个结论应该是稳妥的。定金是不退的（在特定条件下），订金通常会退还。\"\n}\n```",
+    "定金在特定条件下是不退的，而订金通常是可以退还的。\n\n根据《合同法》第115条的规定，定金具有法律上的担保性质。如果因付款方的责任导致合同无法履行，收款方有权不退定金；而如果因收款方的责任导致合同无法履行，收款方不仅要返还定金，还需承担双倍返还的法律义务。而订金并没有明确的法律规定担保其效力，更多是作为一种预付款，通常在交易无法完成时是可以退还的。因此，从法律和实践的层面来看，定金是不退的（在付款方违约时），而订金则不会自动具备不退的属性。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "区分定金和订金的法律定义",
+        "content": "首先需要确定定金和订金在法律上的定义和用途。根据一般法律规定，'定金'通常属于担保性质，受《合同法》约束，而'订金'则没有法律强制性约束力，通常作为一种预付性质的款项。为进一步确认定金是否具有不退还的性质，有必要查询相关法律条款。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "查找定金相关法律规定",
+        "content": "<search>定金 法律规定</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "分析法律结果",
+        "content": "<information>定金的法律性质在《合同法》第115条中规定，定金具有担保作用。如果合同因付款方责任无法履行，收款方可不退定金；而如果因收款方责任无法履行，则须双倍返还定金。</information>基于以上信息可以确认定金在某些情况下是不退的，但需视具体责任情况而定。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "验证订金性质",
+        "content": "相比于定金，订金通常作为商业交易中非法律担保的预付款。如果交易无法履行，订金一般会被原路退还，因为它不具备定金的担保性质。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "定金在法律上具有担保性质，存在无法退还或需要双倍返还的情况，具体取决于合同履行责任方。而订金通常为预付款性质，无法律强制规定不退还。因此，若问哪个是不退的，答案是定金。"
+      },
+      {
+        "action": "Verification",
+        "content": "通过法律条款与交易实际分析验证，结论无误：定金是不退的（在付款方违约情况下），而订金通常应退还。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "OK，首先来想一下，定金和订金在我们平时生活中的意义到底有什么不同呢？听起来很相似，但应该是有些区别的。既然这样，那就先从法律层面上弄清楚它们的定义吧。首先，我记得好像是有法律明确规定定金的性质的，倒是订金没有听说过相关法律。为了确认，这里需要搜一下具体的法律条款。\n\n<search>定金 法律规定</search>\n\n嗯，查到了。<information>定金的法律性质在《合同法》第115条里有说明，说它是一种担保。如果是付款方的责任导致合同不能履行，收款方可以不退定金；但是如果换成是收款方的责任，那收款方不仅要退定金，还得双倍赔偿。</information> 哦，看样子定金确实相比订金有点特别，它等于是合同履行的一种保障机制。如果付款方违约，定金就不退，但如果收款方有责任，那对方损失会更大。\n\n那接下来再看看订金吧。订金好像更多出现在交易或者预付款的场景里。我记得市面上的一些资料里说过，订金不像定金那样能归入到法律担保范围。换句话说，订金是不是更随意一点，没有明确的法律条文支撑？从这个角度来看，交易无法履行时，订金按理说是应该退还的——因为它本质上是预付款，而不是一种担保。\n\n这么一想，定金和订金的法律效力差别还是很大的，关键点就在于：定金有约束力，是受《合同法》保护的，而订金基本没有法律担保作用。所以，如果要问哪个是不退的，答案应该是定金——当然前提是付款方这边违约了。订金的话，通常都会退还。\n\n捋一下总结一下：定金具备担保性质，在付款方责任导致合同无法履行的情况下，真的是可以不退的。订金的话，更多是预付款的性质，法律层面并没有强制承认它不可退，所以交易失败了一般还是能退的。嗯，这样看来，答案清楚了，如果问哪个是不退的，就是定金。\n\n最后再验证一下，想想有哪些遗漏吗？不，没有遗漏的环节。整个过程从定义、法律条文的理解到实际的交易情况分析，这个结论应该是稳妥的。定金是不退的（在特定条件下），订金通常会退还。",
+  "Response": "定金在特定条件下是不退的，而订金通常是可以退还的。\n\n根据《合同法》第115条的规定，定金具有法律上的担保性质。如果因付款方的责任导致合同无法履行，收款方有权不退定金；而如果因收款方的责任导致合同无法履行，收款方不仅要返还定金，还需承担双倍返还的法律义务。而订金并没有明确的法律规定担保其效力，更多是作为一种预付款，通常在交易无法完成时是可以退还的。因此，从法律和实践的层面来看，定金是不退的（在付款方违约时），而订金则不会自动具备不退的属性。",
+  "Question": "定金和订金哪个是不退的"
+}

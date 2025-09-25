@@ -1,0 +1,99 @@
+{
+  "Open-ended Verifiable Question": "担保的法律责任有哪些?",
+  "Ground-True Answer": "担保的法律责任根据担保的方式有所不同：\n1.保证人的责任\n在一般保证的借款合同纠纷中，保证人承担的法律责任是代为履行偿还贷款本息及其他费用的义务。\n2.抵押人的责任\n债务人不履行义务时，抵押权人有权将该抵押物折价或者拍卖、变卖该抵押物的价款优先受偿。\n3.出质人的责任\n在质押担保中，债务人不按时履行清偿的，质押权人有权将质押动产折价或拍卖、变卖，或者将质押权利兑现、转让，所得价款先受偿。",
+  "process_id": 4376,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "明确担保的概念与类型",
+      "content": "担保是一种为了保障债权实现而对债权人提供的法律保障措施，它包括物的担保和人的担保两种形式。常见的法律担保形式包括抵押、质押和保证。明确担保的分类后，可以进一步探讨其法律责任。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "梳理担保中涉及的主要法律责任",
+      "content": "担保法律责任主要集中于担保人的义务与违约责任。例如，在物的担保中，抵押权人或质押权人需在债务人无法履行义务时承担后续还款或资产变现的次级责任；在人的担保中，保证人根据保证合同可能承担连带责任或一般责任。针对担保的法律责任具体内容，需要进一步明确相关法律依据。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "查询中国法律中关于担保人的法律责任规定",
+      "content": "为了准确回答担保的法律责任内容，我需要查阅相关法律法规，例如《民法典》中的担保制度。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "提取《民法典》中关于担保责任的主要条文",
+      "content": "<search>《民法典》担保法律责任</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "分析查阅内容并总结法律责任分类",
+      "content": "<information>根据《民法典》相关规定，担保法律责任包括以下内容：（1）保证合同中的责任：在一般保证中，保证人责任以债务人未履行其主要债务为前提；在连带责任保证中，债权人可直接要求保证人履行担保义务。（2）物的担保责任：债务人不还债时，债权人可依法拍卖、变卖担保物品优先受偿。（3）其他责任：若担保人因过失导致担保无效，可能需要承担相应赔偿责任。</information>"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "担保的法律责任主要包括：（1）保证责任，分为一般保证和连带保证责任；（2）物的担保责任，在债务人违约时需通过担保物优先受偿；（3）存在过失时的赔偿责任，例如因担保合同无效导致债权人损失时可能产生的赔偿责任。这些责任根据具体担保合同及法律规定有所不同。"
+    },
+    {
+      "action": "Verification",
+      "content": "根据《民法典》的确切条文分析，上述结论全面涵盖了担保相关的主要法律责任，逻辑清晰，无需补充或调整。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n担保的法律责任有哪些?\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n担保的法律责任主要包括：（1）保证责任，分为一般保证和连带保证责任；（2）物的担保责任，在债务人违约时需通过担保物优先受偿；（3）存在过失时的赔偿责任，例如因担保合同无效导致债权人损失时可能产生的赔偿责任。这些责任根据具体担保合同及法律规定有所不同。  \n</Model Response>  \n\n<Reference Answer>  \n担保的法律责任根据担保的方式有所不同：\n1.保证人的责任\n在一般保证的借款合同纠纷中，保证人承担的法律责任是代为履行偿还贷款本息及其他费用的义务。\n2.抵押人的责任\n债务人不履行义务时，抵押权人有权将该抵押物折价或者拍卖、变卖该抵押物的价款优先受偿。\n3.出质人的责任\n在质押担保中，债务人不按时履行清偿的，质押权人有权将质押动产折价或拍卖、变卖，或者将质押权利兑现、转让，所得价款先受偿。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 明确担保的概念与类型\n担保是一种为了保障债权实现而对债权人提供的法律保障措施，它包括物的担保和人的担保两种形式。常见的法律担保形式包括抵押、质押和保证。明确担保的分类后，可以进一步探讨其法律责任。\n\n### 梳理担保中涉及的主要法律责任\n担保法律责任主要集中于担保人的义务与违约责任。例如，在物的担保中，抵押权人或质押权人需在债务人无法履行义务时承担后续还款或资产变现的次级责任；在人的担保中，保证人根据保证合同可能承担连带责任或一般责任。针对担保的法律责任具体内容，需要进一步明确相关法律依据。\n\n### 查询中国法律中关于担保人的法律责任规定\n为了准确回答担保的法律责任内容，我需要查阅相关法律法规，例如《民法典》中的担保制度。\n\n### 提取《民法典》中关于担保责任的主要条文\n<search>《民法典》担保法律责任</search>\n\n### 分析查阅内容并总结法律责任分类\n<information>根据《民法典》相关规定，担保法律责任包括以下内容：（1）保证合同中的责任：在一般保证中，保证人责任以债务人未履行其主要债务为前提；在连带责任保证中，债权人可直接要求保证人履行担保义务。（2）物的担保责任：债务人不还债时，债权人可依法拍卖、变卖担保物品优先受偿。（3）其他责任：若担保人因过失导致担保无效，可能需要承担相应赔偿责任。</information>\n\n### Conclusion\n担保的法律责任主要包括：（1）保证责任，分为一般保证和连带保证责任；（2）物的担保责任，在债务人违约时需通过担保物优先受偿；（3）存在过失时的赔偿责任，例如因担保合同无效导致债权人损失时可能产生的赔偿责任。这些责任根据具体担保合同及法律规定有所不同。\n\n### Verification\n根据《民法典》的确切条文分析，上述结论全面涵盖了担保相关的主要法律责任，逻辑清晰，无需补充或调整。\n</Thought Process>\n\n<Question>\n担保的法律责任有哪些?\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n担保责任是个挺重要的话题，想清楚这个问题，我得从担保的概念开始弄明白。担保说白了就是用来保护债权人利益的一种手段，毕竟有时候债务人可能不按约定履行债务，需要有保证人或者担保物来做个保障。担保一般分成两大类：物的担保，比如抵押、质押，还有人的担保，比如保证。我想先明确这些基本类型，这样后面分析起来思路更清晰。\n\n接下来就得琢磨担保责任的核心内容了。担保责任主要是围绕担保人的义务以及违约以后的后果来展开的。假如是物的担保，比如抵押的话，要是在债务人不能还钱时，债权人可以依靠担保物来优先受偿。而如果是人的担保，比如保证合同，担保人就可能要根据合同的具体约定承担责任，包括一般保证责任和连带责任。嗯，也就是说，不同类型的担保责任在法律上的表现形式会有些差别。\n\n不过，要想更准确地知道法律是怎么规定的，我得引用下相关的法规。中国的《民法典》中专门有关于担保制度的条文，这应该能解释清楚不同类型担保的法律责任。像连带责任保证和一般保证的区别，还有抵押、质押的法律依据，这些都有依据可循。我先查查看，输入“《民法典》担保法律责任”应该是个好起点。\n\n<search>《民法典》担保法律责任</search>\n\n查到的信息显示，根据《民法典》的相关条文，担保责任更具体地分为几方面：（1）在保证合同中，如果是一般保证，保证人的责任是在债务人被确认无能力履约后才开始的；但如果保证是连带责任，债权人可以直接要求保证人履行义务，不需要先追债务人。（2）如果是物的担保，比如抵押或者质押，当债务人不还款，债权人有权拍卖或者变卖担保物，并依据优先权去受偿。（3）此外，如果担保人因为自己的某些失误，比如提供了虚假担保，或者让担保行为无效，导致债权人损失，担保人可能需要承担赔偿责任。\n\n<information>根据《民法典》相关规定，担保法律责任包括以下内容：（1）保证合同中的责任：在一般保证中，保证人责任以债务人未履行其主要债务为前提；在连带责任保证中，债权人可直接要求保证人履行担保义务。（2）物的担保责任：债务人不还债时，债权人可依法拍卖、变卖担保物品优先受偿。（3）其他责任：若担保人因过失导致担保无效，可能需要承担相应赔偿责任。</information>\n\n整理下这些信息，担保的法律责任大致可以分成三类：首先是保证人的责任，分为一般保证和连带保证，法律上对二者的要求是不一样的；其次是物的担保责任，这种情况下是以担保物的价值优先保障债权；最后是担保行为无效或不当所导致的赔偿责任。\n\n回头看看，内容应该没遗漏，基本能覆盖担保责任的常见情况，而且和《民法典》的规定是对应的。嗯，看起来这些结论还是比较全面和清晰的，就不用再补充什么了。\n</Internal Thinking>\n\n<Question>\n担保的法律责任有哪些?\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"明确担保的概念与类型\",\n      \"content\": \"担保是一种为了保障债权实现而对债权人提供的法律保障措施，它包括物的担保和人的担保两种形式。常见的法律担保形式包括抵押、质押和保证。明确担保的分类后，可以进一步探讨其法律责任。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"梳理担保中涉及的主要法律责任\",\n      \"content\": \"担保法律责任主要集中于担保人的义务与违约责任。例如，在物的担保中，抵押权人或质押权人需在债务人无法履行义务时承担后续还款或资产变现的次级责任；在人的担保中，保证人根据保证合同可能承担连带责任或一般责任。针对担保的法律责任具体内容，需要进一步明确相关法律依据。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"查询中国法律中关于担保人的法律责任规定\",\n      \"content\": \"为了准确回答担保的法律责任内容，我需要查阅相关法律法规，例如《民法典》中的担保制度。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"提取《民法典》中关于担保责任的主要条文\",\n      \"content\": \"<search>《民法典》担保法律责任</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析查阅内容并总结法律责任分类\",\n      \"content\": \"<information>根据《民法典》相关规定，担保法律责任包括以下内容：（1）保证合同中的责任：在一般保证中，保证人责任以债务人未履行其主要债务为前提；在连带责任保证中，债权人可直接要求保证人履行担保义务。（2）物的担保责任：债务人不还债时，债权人可依法拍卖、变卖担保物品优先受偿。（3）其他责任：若担保人因过失导致担保无效，可能需要承担相应赔偿责任。</information>\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"担保的法律责任主要包括：（1）保证责任，分为一般保证和连带保证责任；（2）物的担保责任，在债务人违约时需通过担保物优先受偿；（3）存在过失时的赔偿责任，例如因担保合同无效导致债权人损失时可能产生的赔偿责任。这些责任根据具体担保合同及法律规定有所不同。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"根据《民法典》的确切条文分析，上述结论全面涵盖了担保相关的主要法律责任，逻辑清晰，无需补充或调整。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"担保责任是个挺重要的话题，想清楚这个问题，我得从担保的概念开始弄明白。担保说白了就是用来保护债权人利益的一种手段，毕竟有时候债务人可能不按约定履行债务，需要有保证人或者担保物来做个保障。担保一般分成两大类：物的担保，比如抵押、质押，还有人的担保，比如保证。我想先明确这些基本类型，这样后面分析起来思路更清晰。\\n\\n接下来就得琢磨担保责任的核心内容了。担保责任主要是围绕担保人的义务以及违约以后的后果来展开的。假如是物的担保，比如抵押的话，要是在债务人不能还钱时，债权人可以依靠担保物来优先受偿。而如果是人的担保，比如保证合同，担保人就可能要根据合同的具体约定承担责任，包括一般保证责任和连带责任。嗯，也就是说，不同类型的担保责任在法律上的表现形式会有些差别。\\n\\n不过，要想更准确地知道法律是怎么规定的，我得引用下相关的法规。中国的《民法典》中专门有关于担保制度的条文，这应该能解释清楚不同类型担保的法律责任。像连带责任保证和一般保证的区别，还有抵押、质押的法律依据，这些都有依据可循。我先查查看，输入“《民法典》担保法律责任”应该是个好起点。\\n\\n<search>《民法典》担保法律责任</search>\\n\\n查到的信息显示，根据《民法典》的相关条文，担保责任更具体地分为几方面：（1）在保证合同中，如果是一般保证，保证人的责任是在债务人被确认无能力履约后才开始的；但如果保证是连带责任，债权人可以直接要求保证人履行义务，不需要先追债务人。（2）如果是物的担保，比如抵押或者质押，当债务人不还款，债权人有权拍卖或者变卖担保物，并依据优先权去受偿。（3）此外，如果担保人因为自己的某些失误，比如提供了虚假担保，或者让担保行为无效，导致债权人损失，担保人可能需要承担赔偿责任。\\n\\n<information>根据《民法典》相关规定，担保法律责任包括以下内容：（1）保证合同中的责任：在一般保证中，保证人责任以债务人未履行其主要债务为前提；在连带责任保证中，债权人可直接要求保证人履行担保义务。（2）物的担保责任：债务人不还债时，债权人可依法拍卖、变卖担保物品优先受偿。（3）其他责任：若担保人因过失导致担保无效，可能需要承担相应赔偿责任。</information>\\n\\n整理下这些信息，担保的法律责任大致可以分成三类：首先是保证人的责任，分为一般保证和连带保证，法律上对二者的要求是不一样的；其次是物的担保责任，这种情况下是以担保物的价值优先保障债权；最后是担保行为无效或不当所导致的赔偿责任。\\n\\n回头看看，内容应该没遗漏，基本能覆盖担保责任的常见情况，而且和《民法典》的规定是对应的。嗯，看起来这些结论还是比较全面和清晰的，就不用再补充什么了。\"\n}\n```",
+    "根据《民法典》的相关规定，担保的法律责任主要可以分为以下几类：\n\n1. **保证责任**  \n   - **一般保证**: 一般保证的保证人承担责任以债务人未履行其主要债务为前提，通常需要债权人先针对债务人请求履行或者通过法律程序确认债务人无力履行后，保证人才能承担保证责任。  \n   - **连带责任保证**: 在连带责任保证中，债权人可以直接要求保证人承担担保责任，而无需先向债务人追偿。这种方式对债权人的权利保护力度更高，但对保证人的责任较重。\n\n2. **物的担保责任**  \n   物的担保主要包括抵押和质押。当债务人未履行债务时，债权人有权通过法律程序对担保物品采取处置措施（如拍卖、变卖），并依照担保物的价值优先受偿。这种担保责任强调担保物的价值作为保障手段，与债务人或担保人的个人偿付能力无关。\n\n3. **其他责任**  \n   在某些情况下，如果担保人因自己的过失、欺诈或其他原因导致担保行为无效，从而给债权人造成损失，担保人可能需要承担相应的赔偿责任。例如，提供虚假担保文件或未合理审查担保行为的有效性，均可能导致额外赔偿责任的产生。\n\n综上，担保的法律责任主要依据担保的类型而有所不同，包括保证责任（一般保证和连带责任保证）、物的担保责任以及因担保不当导致的赔偿责任。每种类型在法律上均有明确规定，以确保债权人的合法权益得到保障。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "明确担保的概念与类型",
+        "content": "担保是一种为了保障债权实现而对债权人提供的法律保障措施，它包括物的担保和人的担保两种形式。常见的法律担保形式包括抵押、质押和保证。明确担保的分类后，可以进一步探讨其法律责任。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "梳理担保中涉及的主要法律责任",
+        "content": "担保法律责任主要集中于担保人的义务与违约责任。例如，在物的担保中，抵押权人或质押权人需在债务人无法履行义务时承担后续还款或资产变现的次级责任；在人的担保中，保证人根据保证合同可能承担连带责任或一般责任。针对担保的法律责任具体内容，需要进一步明确相关法律依据。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "查询中国法律中关于担保人的法律责任规定",
+        "content": "为了准确回答担保的法律责任内容，我需要查阅相关法律法规，例如《民法典》中的担保制度。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "提取《民法典》中关于担保责任的主要条文",
+        "content": "<search>《民法典》担保法律责任</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "分析查阅内容并总结法律责任分类",
+        "content": "<information>根据《民法典》相关规定，担保法律责任包括以下内容：（1）保证合同中的责任：在一般保证中，保证人责任以债务人未履行其主要债务为前提；在连带责任保证中，债权人可直接要求保证人履行担保义务。（2）物的担保责任：债务人不还债时，债权人可依法拍卖、变卖担保物品优先受偿。（3）其他责任：若担保人因过失导致担保无效，可能需要承担相应赔偿责任。</information>"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "担保的法律责任主要包括：（1）保证责任，分为一般保证和连带保证责任；（2）物的担保责任，在债务人违约时需通过担保物优先受偿；（3）存在过失时的赔偿责任，例如因担保合同无效导致债权人损失时可能产生的赔偿责任。这些责任根据具体担保合同及法律规定有所不同。"
+      },
+      {
+        "action": "Verification",
+        "content": "根据《民法典》的确切条文分析，上述结论全面涵盖了担保相关的主要法律责任，逻辑清晰，无需补充或调整。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "担保责任是个挺重要的话题，想清楚这个问题，我得从担保的概念开始弄明白。担保说白了就是用来保护债权人利益的一种手段，毕竟有时候债务人可能不按约定履行债务，需要有保证人或者担保物来做个保障。担保一般分成两大类：物的担保，比如抵押、质押，还有人的担保，比如保证。我想先明确这些基本类型，这样后面分析起来思路更清晰。\n\n接下来就得琢磨担保责任的核心内容了。担保责任主要是围绕担保人的义务以及违约以后的后果来展开的。假如是物的担保，比如抵押的话，要是在债务人不能还钱时，债权人可以依靠担保物来优先受偿。而如果是人的担保，比如保证合同，担保人就可能要根据合同的具体约定承担责任，包括一般保证责任和连带责任。嗯，也就是说，不同类型的担保责任在法律上的表现形式会有些差别。\n\n不过，要想更准确地知道法律是怎么规定的，我得引用下相关的法规。中国的《民法典》中专门有关于担保制度的条文，这应该能解释清楚不同类型担保的法律责任。像连带责任保证和一般保证的区别，还有抵押、质押的法律依据，这些都有依据可循。我先查查看，输入“《民法典》担保法律责任”应该是个好起点。\n\n<search>《民法典》担保法律责任</search>\n\n查到的信息显示，根据《民法典》的相关条文，担保责任更具体地分为几方面：（1）在保证合同中，如果是一般保证，保证人的责任是在债务人被确认无能力履约后才开始的；但如果保证是连带责任，债权人可以直接要求保证人履行义务，不需要先追债务人。（2）如果是物的担保，比如抵押或者质押，当债务人不还款，债权人有权拍卖或者变卖担保物，并依据优先权去受偿。（3）此外，如果担保人因为自己的某些失误，比如提供了虚假担保，或者让担保行为无效，导致债权人损失，担保人可能需要承担赔偿责任。\n\n<information>根据《民法典》相关规定，担保法律责任包括以下内容：（1）保证合同中的责任：在一般保证中，保证人责任以债务人未履行其主要债务为前提；在连带责任保证中，债权人可直接要求保证人履行担保义务。（2）物的担保责任：债务人不还债时，债权人可依法拍卖、变卖担保物品优先受偿。（3）其他责任：若担保人因过失导致担保无效，可能需要承担相应赔偿责任。</information>\n\n整理下这些信息，担保的法律责任大致可以分成三类：首先是保证人的责任，分为一般保证和连带保证，法律上对二者的要求是不一样的；其次是物的担保责任，这种情况下是以担保物的价值优先保障债权；最后是担保行为无效或不当所导致的赔偿责任。\n\n回头看看，内容应该没遗漏，基本能覆盖担保责任的常见情况，而且和《民法典》的规定是对应的。嗯，看起来这些结论还是比较全面和清晰的，就不用再补充什么了。",
+  "Response": "根据《民法典》的相关规定，担保的法律责任主要可以分为以下几类：\n\n1. **保证责任**  \n   - **一般保证**: 一般保证的保证人承担责任以债务人未履行其主要债务为前提，通常需要债权人先针对债务人请求履行或者通过法律程序确认债务人无力履行后，保证人才能承担保证责任。  \n   - **连带责任保证**: 在连带责任保证中，债权人可以直接要求保证人承担担保责任，而无需先向债务人追偿。这种方式对债权人的权利保护力度更高，但对保证人的责任较重。\n\n2. **物的担保责任**  \n   物的担保主要包括抵押和质押。当债务人未履行债务时，债权人有权通过法律程序对担保物品采取处置措施（如拍卖、变卖），并依照担保物的价值优先受偿。这种担保责任强调担保物的价值作为保障手段，与债务人或担保人的个人偿付能力无关。\n\n3. **其他责任**  \n   在某些情况下，如果担保人因自己的过失、欺诈或其他原因导致担保行为无效，从而给债权人造成损失，担保人可能需要承担相应的赔偿责任。例如，提供虚假担保文件或未合理审查担保行为的有效性，均可能导致额外赔偿责任的产生。\n\n综上，担保的法律责任主要依据担保的类型而有所不同，包括保证责任（一般保证和连带责任保证）、物的担保责任以及因担保不当导致的赔偿责任。每种类型在法律上均有明确规定，以确保债权人的合法权益得到保障。",
+  "Question": "担保的法律责任有哪些?"
+}

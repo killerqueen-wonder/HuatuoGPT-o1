@@ -1,0 +1,99 @@
+{
+  "Open-ended Verifiable Question": "自动离职可以要求公司发工资吗?",
+  "Ground-True Answer": "自离可以拿到上月工资，劳动关系双方依法解除或终止劳动合同时，用人单位应在解除或终止劳动合同时一次付清劳动者工资。当月自离，不但可以拿到上个月的工资，就是当月的也可以拿到。劳动者须提前一个月书面通知用人单位。如果用人单位不给，劳动者可以向劳动机关投诉。劳动关系双方依法解除或终止劳动合同时，用人单位应在解除或终止劳动合同时一次付清劳动者工资。职工自动离职给企业造成了损失，企业要求职工赔偿或交付违约金而发生的争议，称为自动离职争议。",
+  "process_id": 2148,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "明确自动离职的概念",
+      "content": "自动离职通常是指员工未履行正常的离职手续而擅自离开单位，这可能被用来描述旷工多日或失联的情况。在这种情况下，用人单位一般会认为劳动关系自动终止。然而，从法律上看，中国劳动法中并没有明确规定‘自动离职’这个概念，因此需要进一步考察用人单位是否按照规定解除了劳动合同。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "用人单位是否需要支付工资",
+      "content": "根据《中华人民共和国劳动法》和《工资支付暂行规定》，用人单位有义务支付员工劳动期间的工资，即使员工离职后，单位仍应该支付离职前未发放的工资。如果单位以员工‘自动离职’为由拒绝支付工资，则可能涉及违法行为，需要明确相关法律依据。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "搜索相关法律法规",
+      "content": "需要确认与自动离职相关的法律条款，看有没有明确规定公司是否有义务支付工资。进行如下搜索：<search>‘劳动法 自动离职 工资支付’</search>。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "查看搜索结果",
+      "content": "<information>《中华人民共和国劳动合同法》第三十八条明确规定，用人单位未按时足额支付劳动报酬，劳动者可解除合同并要求支付报酬。此外，《工资支付暂行规定》要求工资不得拖欠，即使是特殊情况下未办离职手续，劳动者工资权利仍需维护。</information>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "分析自动离职是否影响工资支付",
+      "content": "根据《劳动法》和《工资支付暂行规定》的规定，只要员工确实提供劳动，那么未办理正式离职手续或被认定存在‘自动离职’的情形，并不构成用人单位拒绝支付员工工资的合法理由。因此，用人单位仍需支付员工在职期间的工资。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "员工‘自动离职’后，仍可以要求公司支付其离职前的工资。法律规定，用人单位无论员工是否办理离职手续，都有义务支付员工提供劳动的报酬。"
+    },
+    {
+      "action": "Verification",
+      "content": "结论符合《劳动法》和《工资支付暂行规定》的相关要求，能够确保员工的合法权益。因此结论成立。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n自动离职可以要求公司发工资吗?\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n员工‘自动离职’后，仍可以要求公司支付其离职前的工资。法律规定，用人单位无论员工是否办理离职手续，都有义务支付员工提供劳动的报酬。  \n</Model Response>  \n\n<Reference Answer>  \n自离可以拿到上月工资，劳动关系双方依法解除或终止劳动合同时，用人单位应在解除或终止劳动合同时一次付清劳动者工资。当月自离，不但可以拿到上个月的工资，就是当月的也可以拿到。劳动者须提前一个月书面通知用人单位。如果用人单位不给，劳动者可以向劳动机关投诉。劳动关系双方依法解除或终止劳动合同时，用人单位应在解除或终止劳动合同时一次付清劳动者工资。职工自动离职给企业造成了损失，企业要求职工赔偿或交付违约金而发生的争议，称为自动离职争议。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 明确自动离职的概念\n自动离职通常是指员工未履行正常的离职手续而擅自离开单位，这可能被用来描述旷工多日或失联的情况。在这种情况下，用人单位一般会认为劳动关系自动终止。然而，从法律上看，中国劳动法中并没有明确规定‘自动离职’这个概念，因此需要进一步考察用人单位是否按照规定解除了劳动合同。\n\n### 用人单位是否需要支付工资\n根据《中华人民共和国劳动法》和《工资支付暂行规定》，用人单位有义务支付员工劳动期间的工资，即使员工离职后，单位仍应该支付离职前未发放的工资。如果单位以员工‘自动离职’为由拒绝支付工资，则可能涉及违法行为，需要明确相关法律依据。\n\n### 搜索相关法律法规\n需要确认与自动离职相关的法律条款，看有没有明确规定公司是否有义务支付工资。进行如下搜索：<search>‘劳动法 自动离职 工资支付’</search>。\n\n### 查看搜索结果\n<information>《中华人民共和国劳动合同法》第三十八条明确规定，用人单位未按时足额支付劳动报酬，劳动者可解除合同并要求支付报酬。此外，《工资支付暂行规定》要求工资不得拖欠，即使是特殊情况下未办离职手续，劳动者工资权利仍需维护。</information>\n\n### 分析自动离职是否影响工资支付\n根据《劳动法》和《工资支付暂行规定》的规定，只要员工确实提供劳动，那么未办理正式离职手续或被认定存在‘自动离职’的情形，并不构成用人单位拒绝支付员工工资的合法理由。因此，用人单位仍需支付员工在职期间的工资。\n\n### Conclusion\n员工‘自动离职’后，仍可以要求公司支付其离职前的工资。法律规定，用人单位无论员工是否办理离职手续，都有义务支付员工提供劳动的报酬。\n\n### Verification\n结论符合《劳动法》和《工资支付暂行规定》的相关要求，能够确保员工的合法权益。因此结论成立。\n</Thought Process>\n\n<Question>\n自动离职可以要求公司发工资吗?\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n这个问题要先搞清楚什么是自动离职。自动离职听起来像是员工自己没按照正规的手续离开了，公司认为员工没有再来上班，就算劳动关系结束了。但这是不是合法的呢？中国劳动法里好像没有明确提到所谓‘自动离职’这个概念，所以得理清楚这里面的法律关系才行。\n\n嗯，按照一般情况来说，离职不管是不是‘自动的’，只要员工之前工作了，公司就应该发工资吧。毕竟劳动是劳动，是劳动就得有报酬。法律会不会有哪条规定支持这点呢？我查一下相关的法律法规看有没有具体说过这种情况。搜索一下关键词吧：<search>‘劳动法 自动离职 工资支付’</search>。\n\n好，现在看一下搜索结果。<information>《中华人民共和国劳动合同法》第三十八条上写得很清楚，如果用人单位没有按时足额支付劳动报酬，劳动者可以解除劳动合同并有权要求拿到工资。另外，《工资支付暂行规定》也说明了工资不能拖欠，即便员工离职时没有办手续，但只要提供过劳动，工资权利还是要得到保护的。</information>嗯，这些法规听起来很有帮助。\n\n所以说，即使员工离开公司时没走正规的离职流程或者被认定为‘自动离职’，用人单位还是得把之前没发的工资付了。这是法律上对劳动者权益的保护，公司不能因为员工没办理离职手续就不给钱，这应该是违法的。\n\n这样的话结论就比较清晰了：只要员工之前确实投入了劳动，即便后来出现了类似‘自动离职’的情况，离职前工资还是可以依法要求支付的。嗯，这些法规的条文都支持这个结论，看起来我的分析没有问题。\n\n所以总的来说，员工‘自动离职’后依然有权要求公司支付离职前的工资。法律从劳动者角度出发，保障了员工的基本权益。\n</Internal Thinking>\n\n<Question>\n自动离职可以要求公司发工资吗?\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"明确自动离职的概念\",\n      \"content\": \"自动离职通常是指员工未履行正常的离职手续而擅自离开单位，这可能被用来描述旷工多日或失联的情况。在这种情况下，用人单位一般会认为劳动关系自动终止。然而，从法律上看，中国劳动法中并没有明确规定‘自动离职’这个概念，因此需要进一步考察用人单位是否按照规定解除了劳动合同。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"用人单位是否需要支付工资\",\n      \"content\": \"根据《中华人民共和国劳动法》和《工资支付暂行规定》，用人单位有义务支付员工劳动期间的工资，即使员工离职后，单位仍应该支付离职前未发放的工资。如果单位以员工‘自动离职’为由拒绝支付工资，则可能涉及违法行为，需要明确相关法律依据。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"搜索相关法律法规\",\n      \"content\": \"需要确认与自动离职相关的法律条款，看有没有明确规定公司是否有义务支付工资。进行如下搜索：<search>‘劳动法 自动离职 工资支付’</search>。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"查看搜索结果\",\n      \"content\": \"<information>《中华人民共和国劳动合同法》第三十八条明确规定，用人单位未按时足额支付劳动报酬，劳动者可解除合同并要求支付报酬。此外，《工资支付暂行规定》要求工资不得拖欠，即使是特殊情况下未办离职手续，劳动者工资权利仍需维护。</information>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析自动离职是否影响工资支付\",\n      \"content\": \"根据《劳动法》和《工资支付暂行规定》的规定，只要员工确实提供劳动，那么未办理正式离职手续或被认定存在‘自动离职’的情形，并不构成用人单位拒绝支付员工工资的合法理由。因此，用人单位仍需支付员工在职期间的工资。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"员工‘自动离职’后，仍可以要求公司支付其离职前的工资。法律规定，用人单位无论员工是否办理离职手续，都有义务支付员工提供劳动的报酬。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"结论符合《劳动法》和《工资支付暂行规定》的相关要求，能够确保员工的合法权益。因此结论成立。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"这个问题要先搞清楚什么是自动离职。自动离职听起来像是员工自己没按照正规的手续离开了，公司认为员工没有再来上班，就算劳动关系结束了。但这是不是合法的呢？中国劳动法里好像没有明确提到所谓‘自动离职’这个概念，所以得理清楚这里面的法律关系才行。\\n\\n嗯，按照一般情况来说，离职不管是不是‘自动的’，只要员工之前工作了，公司就应该发工资吧。毕竟劳动是劳动，是劳动就得有报酬。法律会不会有哪条规定支持这点呢？我查一下相关的法律法规看有没有具体说过这种情况。搜索一下关键词吧：<search>‘劳动法 自动离职 工资支付’</search>。\\n\\n好，现在看一下搜索结果。<information>《中华人民共和国劳动合同法》第三十八条上写得很清楚，如果用人单位没有按时足额支付劳动报酬，劳动者可以解除劳动合同并有权要求拿到工资。另外，《工资支付暂行规定》也说明了工资不能拖欠，即便员工离职时没有办手续，但只要提供过劳动，工资权利还是要得到保护的。</information>嗯，这些法规听起来很有帮助。\\n\\n所以说，即使员工离开公司时没走正规的离职流程或者被认定为‘自动离职’，用人单位还是得把之前没发的工资付了。这是法律上对劳动者权益的保护，公司不能因为员工没办理离职手续就不给钱，这应该是违法的。\\n\\n这样的话结论就比较清晰了：只要员工之前确实投入了劳动，即便后来出现了类似‘自动离职’的情况，离职前工资还是可以依法要求支付的。嗯，这些法规的条文都支持这个结论，看起来我的分析没有问题。\\n\\n所以总的来说，员工‘自动离职’后依然有权要求公司支付离职前的工资。法律从劳动者角度出发，保障了员工的基本权益。\"\n}\n```",
+    "可以。\n\n根据《中华人民共和国劳动合同法》和《工资支付暂行规定》的相关规定，即使员工因被公司认为“自动离职”而未完成正式的离职手续，只要员工之前已经提供了劳动，用人单位就有义务依法支付劳动者离职前的工资，不能因为所谓“自动离职”而拖欠或拒发。\n\n《劳动合同法》第三十八条明确指出，用人单位必须按时足额支付劳动报酬，员工离职的原因并不会剥夺其索取劳动报酬的权利；同时，《工资支付暂行规定》第九条规定，用人单位应按规定支付工资，不得因任何理由拖欠。因此，只要劳动者存在真实的劳动事实，用人单位就必须履行支付义务。\n\n综上，即使是“自动离职”，员工依然有权要求用人单位支付离职前的工资，这属于劳动者的基本权益，受到法律保护。如果公司拒绝支付，劳动者可以向劳动监察部门投诉或申请劳动仲裁维护自己的权益。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "明确自动离职的概念",
+        "content": "自动离职通常是指员工未履行正常的离职手续而擅自离开单位，这可能被用来描述旷工多日或失联的情况。在这种情况下，用人单位一般会认为劳动关系自动终止。然而，从法律上看，中国劳动法中并没有明确规定‘自动离职’这个概念，因此需要进一步考察用人单位是否按照规定解除了劳动合同。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "用人单位是否需要支付工资",
+        "content": "根据《中华人民共和国劳动法》和《工资支付暂行规定》，用人单位有义务支付员工劳动期间的工资，即使员工离职后，单位仍应该支付离职前未发放的工资。如果单位以员工‘自动离职’为由拒绝支付工资，则可能涉及违法行为，需要明确相关法律依据。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "搜索相关法律法规",
+        "content": "需要确认与自动离职相关的法律条款，看有没有明确规定公司是否有义务支付工资。进行如下搜索：<search>‘劳动法 自动离职 工资支付’</search>。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "查看搜索结果",
+        "content": "<information>《中华人民共和国劳动合同法》第三十八条明确规定，用人单位未按时足额支付劳动报酬，劳动者可解除合同并要求支付报酬。此外，《工资支付暂行规定》要求工资不得拖欠，即使是特殊情况下未办离职手续，劳动者工资权利仍需维护。</information>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "分析自动离职是否影响工资支付",
+        "content": "根据《劳动法》和《工资支付暂行规定》的规定，只要员工确实提供劳动，那么未办理正式离职手续或被认定存在‘自动离职’的情形，并不构成用人单位拒绝支付员工工资的合法理由。因此，用人单位仍需支付员工在职期间的工资。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "员工‘自动离职’后，仍可以要求公司支付其离职前的工资。法律规定，用人单位无论员工是否办理离职手续，都有义务支付员工提供劳动的报酬。"
+      },
+      {
+        "action": "Verification",
+        "content": "结论符合《劳动法》和《工资支付暂行规定》的相关要求，能够确保员工的合法权益。因此结论成立。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "这个问题要先搞清楚什么是自动离职。自动离职听起来像是员工自己没按照正规的手续离开了，公司认为员工没有再来上班，就算劳动关系结束了。但这是不是合法的呢？中国劳动法里好像没有明确提到所谓‘自动离职’这个概念，所以得理清楚这里面的法律关系才行。\n\n嗯，按照一般情况来说，离职不管是不是‘自动的’，只要员工之前工作了，公司就应该发工资吧。毕竟劳动是劳动，是劳动就得有报酬。法律会不会有哪条规定支持这点呢？我查一下相关的法律法规看有没有具体说过这种情况。搜索一下关键词吧：<search>‘劳动法 自动离职 工资支付’</search>。\n\n好，现在看一下搜索结果。<information>《中华人民共和国劳动合同法》第三十八条上写得很清楚，如果用人单位没有按时足额支付劳动报酬，劳动者可以解除劳动合同并有权要求拿到工资。另外，《工资支付暂行规定》也说明了工资不能拖欠，即便员工离职时没有办手续，但只要提供过劳动，工资权利还是要得到保护的。</information>嗯，这些法规听起来很有帮助。\n\n所以说，即使员工离开公司时没走正规的离职流程或者被认定为‘自动离职’，用人单位还是得把之前没发的工资付了。这是法律上对劳动者权益的保护，公司不能因为员工没办理离职手续就不给钱，这应该是违法的。\n\n这样的话结论就比较清晰了：只要员工之前确实投入了劳动，即便后来出现了类似‘自动离职’的情况，离职前工资还是可以依法要求支付的。嗯，这些法规的条文都支持这个结论，看起来我的分析没有问题。\n\n所以总的来说，员工‘自动离职’后依然有权要求公司支付离职前的工资。法律从劳动者角度出发，保障了员工的基本权益。",
+  "Response": "可以。\n\n根据《中华人民共和国劳动合同法》和《工资支付暂行规定》的相关规定，即使员工因被公司认为“自动离职”而未完成正式的离职手续，只要员工之前已经提供了劳动，用人单位就有义务依法支付劳动者离职前的工资，不能因为所谓“自动离职”而拖欠或拒发。\n\n《劳动合同法》第三十八条明确指出，用人单位必须按时足额支付劳动报酬，员工离职的原因并不会剥夺其索取劳动报酬的权利；同时，《工资支付暂行规定》第九条规定，用人单位应按规定支付工资，不得因任何理由拖欠。因此，只要劳动者存在真实的劳动事实，用人单位就必须履行支付义务。\n\n综上，即使是“自动离职”，员工依然有权要求用人单位支付离职前的工资，这属于劳动者的基本权益，受到法律保护。如果公司拒绝支付，劳动者可以向劳动监察部门投诉或申请劳动仲裁维护自己的权益。",
+  "Question": "自动离职可以要求公司发工资吗?"
+}

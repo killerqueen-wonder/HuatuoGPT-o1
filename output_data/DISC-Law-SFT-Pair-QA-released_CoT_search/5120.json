@@ -1,0 +1,99 @@
+{
+  "Open-ended Verifiable Question": "要怎么确认合同效力的诉讼时效",
+  "Ground-True Answer": "合同是否有效由人民法院通过判决或仲裁机构通过裁决确认，一方在起诉时合同效力并不确定，一方或双方也无权自行确定。因此当事人只能按照合同约定的期限主张权利，时效期间应从约定的履行期限届满之次日起计算三年。【法律依据】根据《民法典》第一百八十八条：向人民法院请求保护民事权利的诉讼时效期间为三年。法律另有规定的，依照其规定。诉讼时效期间自权利人知道或者应当知道权利受到损害以及义务人之日起计算。法律另有规定的，依照其规定。但是，自权利受到损害之日起超过二十年的，人民法院不予保护，有特殊情况的，人民法院可以根据权利人的申请决定延长。",
+  "process_id": 5120,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "分析确认合同效力诉讼时效的法律基础",
+      "content": "首先，关于合同效力问题的诉讼时效，应当明确所属的法律规定范围。根据中国《民法典》，诉讼时效与确认合同效力的相关条款可能涉及合同是否有效、效力瑕疵以及特定的民事主体权利，因此需要查找《民法典》中关于诉讼时效以及合同相关效力条款的规定。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "查找《民法典》中关于诉讼时效的条款",
+      "content": "为了明确诉讼时效的起算点和具体期限，需要读取《民法典》中关于通用诉讼时效及合同效力争议的规定作为依据。<search>民法典 诉讼时效</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "查找《民法典》中关于合同效力的条款",
+      "content": "确认合同效力的诉讼中，合同是否有效的争议可能涉及合同成立的基本要件、法定无效情形等规定，因此需要查询《民法典》中关于合同效力的条款。<search>民法典 合同有效性</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "整合相关法律信息",
+      "content": "<information>民法典中规定的普通诉讼时效为三年，起算点为权利人知道或应当知道其权利被侵害之日。此外，《民法典》第五百零二条规定合同的有效性应符合合法性、自愿性、公平性等原则；而合同无效通常与违反法律法规、违背公序良俗相关。</information> 根据这些规定，涉及确认合同效力的诉讼时效问题需要结合具体的权利被侵害时间以及合同效力瑕疵的具体情形判断。普通的确认权诉讼通常适用三年时效。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "结合实际适用场景分析",
+      "content": "确认合同效力的诉讼，如果涉及无效合同，可以认为诉讼时效不适用，因为无效合同自始无效，违约或无效状态持续存在。但如果是效力欠缺（如可撤销合同），相关权利的主张可能受三年普通诉讼时效的限制。因此，需要结合合同争议的类型进一步区分。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "确认合同效力的诉讼时效一般适用《民法典》的普通诉讼时效，即三年，起算点为权利人知道或应当知道其权利被侵害之日。如果争议为确认合同无效，合同无效自始即为无效，不受诉讼时效限制；而如果涉及可撤销合同的撤销权主张，则可能受三年时效限制。"
+    },
+    {
+      "action": "Verification",
+      "content": "结论符合《民法典》有关诉讼时效和合同效力条款的规定，整体逻辑与法律规定一致，因此确认结论有效。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n要怎么确认合同效力的诉讼时效\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n确认合同效力的诉讼时效一般适用《民法典》的普通诉讼时效，即三年，起算点为权利人知道或应当知道其权利被侵害之日。如果争议为确认合同无效，合同无效自始即为无效，不受诉讼时效限制；而如果涉及可撤销合同的撤销权主张，则可能受三年时效限制。  \n</Model Response>  \n\n<Reference Answer>  \n合同是否有效由人民法院通过判决或仲裁机构通过裁决确认，一方在起诉时合同效力并不确定，一方或双方也无权自行确定。因此当事人只能按照合同约定的期限主张权利，时效期间应从约定的履行期限届满之次日起计算三年。【法律依据】根据《民法典》第一百八十八条：向人民法院请求保护民事权利的诉讼时效期间为三年。法律另有规定的，依照其规定。诉讼时效期间自权利人知道或者应当知道权利受到损害以及义务人之日起计算。法律另有规定的，依照其规定。但是，自权利受到损害之日起超过二十年的，人民法院不予保护，有特殊情况的，人民法院可以根据权利人的申请决定延长。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 分析确认合同效力诉讼时效的法律基础\n首先，关于合同效力问题的诉讼时效，应当明确所属的法律规定范围。根据中国《民法典》，诉讼时效与确认合同效力的相关条款可能涉及合同是否有效、效力瑕疵以及特定的民事主体权利，因此需要查找《民法典》中关于诉讼时效以及合同相关效力条款的规定。\n\n### 查找《民法典》中关于诉讼时效的条款\n为了明确诉讼时效的起算点和具体期限，需要读取《民法典》中关于通用诉讼时效及合同效力争议的规定作为依据。<search>民法典 诉讼时效</search>\n\n### 查找《民法典》中关于合同效力的条款\n确认合同效力的诉讼中，合同是否有效的争议可能涉及合同成立的基本要件、法定无效情形等规定，因此需要查询《民法典》中关于合同效力的条款。<search>民法典 合同有效性</search>\n\n### 整合相关法律信息\n<information>民法典中规定的普通诉讼时效为三年，起算点为权利人知道或应当知道其权利被侵害之日。此外，《民法典》第五百零二条规定合同的有效性应符合合法性、自愿性、公平性等原则；而合同无效通常与违反法律法规、违背公序良俗相关。</information> 根据这些规定，涉及确认合同效力的诉讼时效问题需要结合具体的权利被侵害时间以及合同效力瑕疵的具体情形判断。普通的确认权诉讼通常适用三年时效。\n\n### 结合实际适用场景分析\n确认合同效力的诉讼，如果涉及无效合同，可以认为诉讼时效不适用，因为无效合同自始无效，违约或无效状态持续存在。但如果是效力欠缺（如可撤销合同），相关权利的主张可能受三年普通诉讼时效的限制。因此，需要结合合同争议的类型进一步区分。\n\n### Conclusion\n确认合同效力的诉讼时效一般适用《民法典》的普通诉讼时效，即三年，起算点为权利人知道或应当知道其权利被侵害之日。如果争议为确认合同无效，合同无效自始即为无效，不受诉讼时效限制；而如果涉及可撤销合同的撤销权主张，则可能受三年时效限制。\n\n### Verification\n结论符合《民法典》有关诉讼时效和合同效力条款的规定，整体逻辑与法律规定一致，因此确认结论有效。\n</Thought Process>\n\n<Question>\n要怎么确认合同效力的诉讼时效\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n嗯，我得先搞清楚确认合同效力这种诉讼有没有诉讼时效的限制。这得看看法律是怎么规定的，估计得从《民法典》里面找相关的条文。合同效力问题应该属于民法范围吧，那我就以《民法典》为主要依据了。接下来，我需要从两个方向入手，一方面是诉讼时效的规则，另一方面是合同效力的规定。\n\n先说诉讼时效。这应该是个基础问题，因为合同效力争议最终还是得受诉讼时效限制才行。所以我要查《民法典》里关于诉讼时效的内容，看看普通的诉讼时效是几年，从什么时候开始算。<search>民法典 诉讼时效</search> 接着我还要弄明白，诉讼时效的起算点是怎么确定的，是以当事人发现问题的时间算，还是从问题发生那天开始？这个应该会很关键。\n\n再说合同效力的部分。合同的效力好像和合同是否符合法律要求密切相关，比如合同的合法性、自愿性这些，印象中《民法典》里面有提到。还有，合同无效或者合同有效可能有什么特定的情形吧，最好也一并查一下。<search>民法典 合同有效性</search>\n\n好了，查到的内容如下：\n<information>民法典中规定的普通诉讼时效为三年，起算点从权利人知道或应当知道权利被侵害那天算起。另外，《民法典》第五百零二条提到了合同的有效性需满足合法性、意思表示真实、诚实信用等原则。如果合同违背法律法规或者公序良俗，会被认定为无效。</information> 那么，结合这些内容来看，确认合同效力的诉讼时效问题可能要分情形分析。\n\n比如，如果是确认合同无效的情况，无效合同自始无效，这种情况下应该不受诉讼时效限制才对。因为既然合同无效是规定在法律上的，就不存在有效期限或时效的限制。但要是合同存在效力瑕疵，比如属于可撤销合同，那当事人可能得在三年内主张自己的权利，否则可能超过时效导致权利丧失。这样理解的话，对合同的效力争议，不是所有情形都适用诉讼时效，而是得分情况看具体的权利性质。\n\n嗯，回头再检查一下分析是否符合法律逻辑。确定无误了：基本逻辑就是确认合同效力中，有些情况适用三年的普通诉讼时效，比如针对效力瑕疵的争议；但针对合同无效这种问题，因为无效合同自始无效，不受时效约束。这样一分析，就清楚了。\n</Internal Thinking>\n\n<Question>\n要怎么确认合同效力的诉讼时效\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析确认合同效力诉讼时效的法律基础\",\n      \"content\": \"首先，关于合同效力问题的诉讼时效，应当明确所属的法律规定范围。根据中国《民法典》，诉讼时效与确认合同效力的相关条款可能涉及合同是否有效、效力瑕疵以及特定的民事主体权利，因此需要查找《民法典》中关于诉讼时效以及合同相关效力条款的规定。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"查找《民法典》中关于诉讼时效的条款\",\n      \"content\": \"为了明确诉讼时效的起算点和具体期限，需要读取《民法典》中关于通用诉讼时效及合同效力争议的规定作为依据。<search>民法典 诉讼时效</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"查找《民法典》中关于合同效力的条款\",\n      \"content\": \"确认合同效力的诉讼中，合同是否有效的争议可能涉及合同成立的基本要件、法定无效情形等规定，因此需要查询《民法典》中关于合同效力的条款。<search>民法典 合同有效性</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"整合相关法律信息\",\n      \"content\": \"<information>民法典中规定的普通诉讼时效为三年，起算点为权利人知道或应当知道其权利被侵害之日。此外，《民法典》第五百零二条规定合同的有效性应符合合法性、自愿性、公平性等原则；而合同无效通常与违反法律法规、违背公序良俗相关。</information> 根据这些规定，涉及确认合同效力的诉讼时效问题需要结合具体的权利被侵害时间以及合同效力瑕疵的具体情形判断。普通的确认权诉讼通常适用三年时效。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"结合实际适用场景分析\",\n      \"content\": \"确认合同效力的诉讼，如果涉及无效合同，可以认为诉讼时效不适用，因为无效合同自始无效，违约或无效状态持续存在。但如果是效力欠缺（如可撤销合同），相关权利的主张可能受三年普通诉讼时效的限制。因此，需要结合合同争议的类型进一步区分。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"确认合同效力的诉讼时效一般适用《民法典》的普通诉讼时效，即三年，起算点为权利人知道或应当知道其权利被侵害之日。如果争议为确认合同无效，合同无效自始即为无效，不受诉讼时效限制；而如果涉及可撤销合同的撤销权主张，则可能受三年时效限制。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"结论符合《民法典》有关诉讼时效和合同效力条款的规定，整体逻辑与法律规定一致，因此确认结论有效。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"嗯，我得先搞清楚确认合同效力这种诉讼有没有诉讼时效的限制。这得看看法律是怎么规定的，估计得从《民法典》里面找相关的条文。合同效力问题应该属于民法范围吧，那我就以《民法典》为主要依据了。接下来，我需要从两个方向入手，一方面是诉讼时效的规则，另一方面是合同效力的规定。\\n\\n先说诉讼时效。这应该是个基础问题，因为合同效力争议最终还是得受诉讼时效限制才行。所以我要查《民法典》里关于诉讼时效的内容，看看普通的诉讼时效是几年，从什么时候开始算。<search>民法典 诉讼时效</search> 接着我还要弄明白，诉讼时效的起算点是怎么确定的，是以当事人发现问题的时间算，还是从问题发生那天开始？这个应该会很关键。\\n\\n再说合同效力的部分。合同的效力好像和合同是否符合法律要求密切相关，比如合同的合法性、自愿性这些，印象中《民法典》里面有提到。还有，合同无效或者合同有效可能有什么特定的情形吧，最好也一并查一下。<search>民法典 合同有效性</search>\\n\\n好了，查到的内容如下：\\n<information>民法典中规定的普通诉讼时效为三年，起算点从权利人知道或应当知道权利被侵害那天算起。另外，《民法典》第五百零二条提到了合同的有效性需满足合法性、意思表示真实、诚实信用等原则。如果合同违背法律法规或者公序良俗，会被认定为无效。</information> 那么，结合这些内容来看，确认合同效力的诉讼时效问题可能要分情形分析。\\n\\n比如，如果是确认合同无效的情况，无效合同自始无效，这种情况下应该不受诉讼时效限制才对。因为既然合同无效是规定在法律上的，就不存在有效期限或时效的限制。但要是合同存在效力瑕疵，比如属于可撤销合同，那当事人可能得在三年内主张自己的权利，否则可能超过时效导致权利丧失。这样理解的话，对合同的效力争议，不是所有情形都适用诉讼时效，而是得分情况看具体的权利性质。\\n\\n嗯，回头再检查一下分析是否符合法律逻辑。确定无误了：基本逻辑就是确认合同效力中，有些情况适用三年的普通诉讼时效，比如针对效力瑕疵的争议；但针对合同无效这种问题，因为无效合同自始无效，不受时效约束。这样一分析，就清楚了。\"\n}\n```",
+    "关于确认合同效力是否受诉讼时效限制的问题，需要结合具体情形进行分析。\n\n首先，依据《中华人民共和国民法典》的相关规定，对于诉讼时效的通用规则，普通诉讼时效为三年，起算点是权利人知道或应当知道权利受到侵害之日。此外，合同效力的争议主要受到合同是否符合法律要求的限制，例如《民法典》第五百零二条规定了合同的合法性、意思表示真实、诚实信用等原则，且违背法律法规或公序良俗的合同会被认定为无效。\n\n针对合同效力的诉讼时效问题，可以分以下两种情形：\n\n1. **确认合同无效的诉讼：**  \n   合同无效的性质是“自始无效”，具有法律上的确定性，不受诉讼时效的限制。无效合同的法律后果是自合同成立以来就不具有法律效力，因此主张合同无效及其相关法律后果的诉讼无需考虑三年的诉讼时效限制。\n\n2. **确认合同存在效力瑕疵（如可撤销合同）的诉讼：**  \n   如果合同因存在意思表示不真实、受欺诈胁迫或显失公平等问题属于可撤销合同，则需要注意诉讼时效的规定。根据《民法典》的诉讼时效规则，当事人应当在知道或应当知道其权利受到侵害的三年内主张权利，如果超过三年未主张，可能会失去法律上的救济权。\n\n总之，在确认合同效力的诉讼中是否适用诉讼时效，关键在于合同效力的具体类型。如果是主张合同无效（自始无效），则不受诉讼时效约束；而如果是涉及具体的效力瑕疵并需撤销合同，则需在三年的诉讼时效内提出相关主张。建议具体情况具体分析，必要时咨询专业律师以获取针对性的法律意见。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "分析确认合同效力诉讼时效的法律基础",
+        "content": "首先，关于合同效力问题的诉讼时效，应当明确所属的法律规定范围。根据中国《民法典》，诉讼时效与确认合同效力的相关条款可能涉及合同是否有效、效力瑕疵以及特定的民事主体权利，因此需要查找《民法典》中关于诉讼时效以及合同相关效力条款的规定。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "查找《民法典》中关于诉讼时效的条款",
+        "content": "为了明确诉讼时效的起算点和具体期限，需要读取《民法典》中关于通用诉讼时效及合同效力争议的规定作为依据。<search>民法典 诉讼时效</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "查找《民法典》中关于合同效力的条款",
+        "content": "确认合同效力的诉讼中，合同是否有效的争议可能涉及合同成立的基本要件、法定无效情形等规定，因此需要查询《民法典》中关于合同效力的条款。<search>民法典 合同有效性</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "整合相关法律信息",
+        "content": "<information>民法典中规定的普通诉讼时效为三年，起算点为权利人知道或应当知道其权利被侵害之日。此外，《民法典》第五百零二条规定合同的有效性应符合合法性、自愿性、公平性等原则；而合同无效通常与违反法律法规、违背公序良俗相关。</information> 根据这些规定，涉及确认合同效力的诉讼时效问题需要结合具体的权利被侵害时间以及合同效力瑕疵的具体情形判断。普通的确认权诉讼通常适用三年时效。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "结合实际适用场景分析",
+        "content": "确认合同效力的诉讼，如果涉及无效合同，可以认为诉讼时效不适用，因为无效合同自始无效，违约或无效状态持续存在。但如果是效力欠缺（如可撤销合同），相关权利的主张可能受三年普通诉讼时效的限制。因此，需要结合合同争议的类型进一步区分。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "确认合同效力的诉讼时效一般适用《民法典》的普通诉讼时效，即三年，起算点为权利人知道或应当知道其权利被侵害之日。如果争议为确认合同无效，合同无效自始即为无效，不受诉讼时效限制；而如果涉及可撤销合同的撤销权主张，则可能受三年时效限制。"
+      },
+      {
+        "action": "Verification",
+        "content": "结论符合《民法典》有关诉讼时效和合同效力条款的规定，整体逻辑与法律规定一致，因此确认结论有效。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "嗯，我得先搞清楚确认合同效力这种诉讼有没有诉讼时效的限制。这得看看法律是怎么规定的，估计得从《民法典》里面找相关的条文。合同效力问题应该属于民法范围吧，那我就以《民法典》为主要依据了。接下来，我需要从两个方向入手，一方面是诉讼时效的规则，另一方面是合同效力的规定。\n\n先说诉讼时效。这应该是个基础问题，因为合同效力争议最终还是得受诉讼时效限制才行。所以我要查《民法典》里关于诉讼时效的内容，看看普通的诉讼时效是几年，从什么时候开始算。<search>民法典 诉讼时效</search> 接着我还要弄明白，诉讼时效的起算点是怎么确定的，是以当事人发现问题的时间算，还是从问题发生那天开始？这个应该会很关键。\n\n再说合同效力的部分。合同的效力好像和合同是否符合法律要求密切相关，比如合同的合法性、自愿性这些，印象中《民法典》里面有提到。还有，合同无效或者合同有效可能有什么特定的情形吧，最好也一并查一下。<search>民法典 合同有效性</search>\n\n好了，查到的内容如下：\n<information>民法典中规定的普通诉讼时效为三年，起算点从权利人知道或应当知道权利被侵害那天算起。另外，《民法典》第五百零二条提到了合同的有效性需满足合法性、意思表示真实、诚实信用等原则。如果合同违背法律法规或者公序良俗，会被认定为无效。</information> 那么，结合这些内容来看，确认合同效力的诉讼时效问题可能要分情形分析。\n\n比如，如果是确认合同无效的情况，无效合同自始无效，这种情况下应该不受诉讼时效限制才对。因为既然合同无效是规定在法律上的，就不存在有效期限或时效的限制。但要是合同存在效力瑕疵，比如属于可撤销合同，那当事人可能得在三年内主张自己的权利，否则可能超过时效导致权利丧失。这样理解的话，对合同的效力争议，不是所有情形都适用诉讼时效，而是得分情况看具体的权利性质。\n\n嗯，回头再检查一下分析是否符合法律逻辑。确定无误了：基本逻辑就是确认合同效力中，有些情况适用三年的普通诉讼时效，比如针对效力瑕疵的争议；但针对合同无效这种问题，因为无效合同自始无效，不受时效约束。这样一分析，就清楚了。",
+  "Response": "关于确认合同效力是否受诉讼时效限制的问题，需要结合具体情形进行分析。\n\n首先，依据《中华人民共和国民法典》的相关规定，对于诉讼时效的通用规则，普通诉讼时效为三年，起算点是权利人知道或应当知道权利受到侵害之日。此外，合同效力的争议主要受到合同是否符合法律要求的限制，例如《民法典》第五百零二条规定了合同的合法性、意思表示真实、诚实信用等原则，且违背法律法规或公序良俗的合同会被认定为无效。\n\n针对合同效力的诉讼时效问题，可以分以下两种情形：\n\n1. **确认合同无效的诉讼：**  \n   合同无效的性质是“自始无效”，具有法律上的确定性，不受诉讼时效的限制。无效合同的法律后果是自合同成立以来就不具有法律效力，因此主张合同无效及其相关法律后果的诉讼无需考虑三年的诉讼时效限制。\n\n2. **确认合同存在效力瑕疵（如可撤销合同）的诉讼：**  \n   如果合同因存在意思表示不真实、受欺诈胁迫或显失公平等问题属于可撤销合同，则需要注意诉讼时效的规定。根据《民法典》的诉讼时效规则，当事人应当在知道或应当知道其权利受到侵害的三年内主张权利，如果超过三年未主张，可能会失去法律上的救济权。\n\n总之，在确认合同效力的诉讼中是否适用诉讼时效，关键在于合同效力的具体类型。如果是主张合同无效（自始无效），则不受诉讼时效约束；而如果是涉及具体的效力瑕疵并需撤销合同，则需在三年的诉讼时效内提出相关主张。建议具体情况具体分析，必要时咨询专业律师以获取针对性的法律意见。",
+  "Question": "要怎么确认合同效力的诉讼时效"
+}

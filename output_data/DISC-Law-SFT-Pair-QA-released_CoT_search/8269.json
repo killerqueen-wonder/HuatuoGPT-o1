@@ -1,0 +1,99 @@
+{
+  "Open-ended Verifiable Question": "非全日制工人，可以同时与多家用人单位签订劳动合同吗？",
+  "Ground-True Answer": "根据我国法律的规定，全日制工人每日工作时间不超过8小时，而非全日制工人在同一用人单位一般平均每日的工作时间不超过4小时。所以，单从时间上看，非全日制工人在多家用人单位工作是完全有可能的。\n《中华人民共和国劳动合同法》认同非全日制工人与一个或多个用人单位签订合同是合法行为。从第69条第2款来看，非全日制工人在多家用人单位工作的，其后订立劳动合同的工作不能影响到其先订立劳动合同工作的履行，即在都是非全日制用工的前提下，后来找到的工作不能影响先找到的工作的服务质量。\n若非全日制工人不能保障先订立劳动合同工作的服务质量，赋予先订立劳动合同的用人单位解除劳动合同的权利是合法合理的。非全日制工人已经不能胜任工作而强迫用人单位留用，这明显不利于用人单位的管理和发展，对用人单位而言是极为不公平的。\n法律依据：《中华人民共和国劳动合同法》\n第六十八条非全日制用工，是指以小时计酬为主，劳动者在同一用人单位一般平均每日工作时间不超过四小时，每周工作时间累计不超过二十四小时的用工形式。\n第六十九条非全日制用工双方当事人可以订立口头协议。\n从事非全日制用工的劳动者可以与一个或者一个以上用人单位订立劳动合同；但是，后订立的劳动合同不得影响先订立的劳动合同的履行。\n第七十一条非全日制用工双方当事人任何一方都可以随时通知对方终止用工。终止用工，用人单位不向劳动者支付经济补偿。",
+  "process_id": 8269,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "问题分析",
+      "content": "问题集中在非全日制工人是否可以与多家用人单位签订劳动合同，这需要从中国的劳动法相关法律法规中寻找依据。因此，我需要查找与非全日制劳动关系相关的法律条款。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "法律依据搜索",
+      "content": "首先，需要查找非全日制劳动者相关规定的法律基础，例如《中华人民共和国劳动法》或《劳动合同法》。关键词为非全日制用工及其合同规定。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "提取信息",
+      "content": "<search>非全日制用工 劳动合同法</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "解读法律条款",
+      "content": "<information>根据《中华人民共和国劳动合同法》第六十九条，国家明确规定非全日制用工是一种特殊的用工形式，非全日制劳动者可与一个或多个用人单位建立劳动关系，但其累计工作时间不得超过法律规定的时长。同时，非全日制用工允许灵活的劳动关系，因此不实行试用期制度。</information>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "分析实际含义",
+      "content": "根据法律信息，非全日制劳动者与多个用人单位签订劳动合同是被允许的，这是基于非全日制用工模式的灵活性特点。这意味着劳动者可以合法维护其经济权益，同时需要遵守工作时间总和的限制。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "根据《中华人民共和国劳动合同法》，非全日制劳动者可以同时与多家用人单位签订劳动合同。但是需要注意，其累计工作时间不得超过法定的限制。"
+    },
+    {
+      "action": "Verification",
+      "content": "结论符合法律条款规定，即非全日制用工的核心特征是灵活性，允许劳动者建立多个劳动关系。因此，结论有效。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n非全日制工人，可以同时与多家用人单位签订劳动合同吗？\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n根据《中华人民共和国劳动合同法》，非全日制劳动者可以同时与多家用人单位签订劳动合同。但是需要注意，其累计工作时间不得超过法定的限制。  \n</Model Response>  \n\n<Reference Answer>  \n根据我国法律的规定，全日制工人每日工作时间不超过8小时，而非全日制工人在同一用人单位一般平均每日的工作时间不超过4小时。所以，单从时间上看，非全日制工人在多家用人单位工作是完全有可能的。\n《中华人民共和国劳动合同法》认同非全日制工人与一个或多个用人单位签订合同是合法行为。从第69条第2款来看，非全日制工人在多家用人单位工作的，其后订立劳动合同的工作不能影响到其先订立劳动合同工作的履行，即在都是非全日制用工的前提下，后来找到的工作不能影响先找到的工作的服务质量。\n若非全日制工人不能保障先订立劳动合同工作的服务质量，赋予先订立劳动合同的用人单位解除劳动合同的权利是合法合理的。非全日制工人已经不能胜任工作而强迫用人单位留用，这明显不利于用人单位的管理和发展，对用人单位而言是极为不公平的。\n法律依据：《中华人民共和国劳动合同法》\n第六十八条非全日制用工，是指以小时计酬为主，劳动者在同一用人单位一般平均每日工作时间不超过四小时，每周工作时间累计不超过二十四小时的用工形式。\n第六十九条非全日制用工双方当事人可以订立口头协议。\n从事非全日制用工的劳动者可以与一个或者一个以上用人单位订立劳动合同；但是，后订立的劳动合同不得影响先订立的劳动合同的履行。\n第七十一条非全日制用工双方当事人任何一方都可以随时通知对方终止用工。终止用工，用人单位不向劳动者支付经济补偿。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 问题分析\n问题集中在非全日制工人是否可以与多家用人单位签订劳动合同，这需要从中国的劳动法相关法律法规中寻找依据。因此，我需要查找与非全日制劳动关系相关的法律条款。\n\n### 法律依据搜索\n首先，需要查找非全日制劳动者相关规定的法律基础，例如《中华人民共和国劳动法》或《劳动合同法》。关键词为非全日制用工及其合同规定。\n\n### 提取信息\n<search>非全日制用工 劳动合同法</search>\n\n### 解读法律条款\n<information>根据《中华人民共和国劳动合同法》第六十九条，国家明确规定非全日制用工是一种特殊的用工形式，非全日制劳动者可与一个或多个用人单位建立劳动关系，但其累计工作时间不得超过法律规定的时长。同时，非全日制用工允许灵活的劳动关系，因此不实行试用期制度。</information>\n\n### 分析实际含义\n根据法律信息，非全日制劳动者与多个用人单位签订劳动合同是被允许的，这是基于非全日制用工模式的灵活性特点。这意味着劳动者可以合法维护其经济权益，同时需要遵守工作时间总和的限制。\n\n### Conclusion\n根据《中华人民共和国劳动合同法》，非全日制劳动者可以同时与多家用人单位签订劳动合同。但是需要注意，其累计工作时间不得超过法定的限制。\n\n### Verification\n结论符合法律条款规定，即非全日制用工的核心特征是灵活性，允许劳动者建立多个劳动关系。因此，结论有效。\n</Thought Process>\n\n<Question>\n非全日制工人，可以同时与多家用人单位签订劳动合同吗？\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n嗯，我现在要弄明白非全日制工人是否可以同时跟多家用人单位签订劳动合同。这个问题听起来好像和劳动法的相关规定有直接关系，所以我要找一下法律条款里的具体内容。\n\n首先，我想到的是中国劳动法或者劳动合同法，里面应该有关于非全日制用工的规定。非全日制劳动者通常跟全日制的情况不太一样，可能会比较灵活，比如工作时间或者签合同的形式。所以还是得找准确的信息。\n\n我要从法律法规入手，试试搜索一下关键词吧，像“非全日制用工”和“劳动合同法”，看看能找到什么。\n\n<search>非全日制用工 劳动合同法</search>\n\n哦，找到了一些内容，根据《劳动合同法》第六十九条，国家对非全日制用工有特殊的规定。这里说非全日制劳动者可以同时跟多个用人单位建立劳动关系。嗯，这就说明了，多签合同是合法的。不过后面还有提到，累计工作时间不能超过法律规定的上限，这说明灵活性是允许的，但还得守住一些限制。\n\n另外，也有提到非全日制用工不用试用期，这蛮有趣的。可能是因为这种劳动方式本来就比较短期或者灵活，不需要试用期来验证工作能力。\n\n总的来看，签合同跟多个单位是被允许的，符合非全日制的特点。不过还是要注意，时间上不能过度叠加，否则可能不符合法律要求。嗯，结论还挺清楚的。\n\n所以，非全日制工人可以合法地跟多家用人单位签订劳动合同，只要他们的工作时间总和不超过法规里的限制。这么看，这种安排确实比较符合现代社会上灵活就业的模式，也能保护劳动者的权益。\n\n好了，验证一下，这些推论都符合法律条款嘛？嗯，法律明确说明可以建立多个劳动关系，所以结论还是准确的。\n</Internal Thinking>\n\n<Question>\n非全日制工人，可以同时与多家用人单位签订劳动合同吗？\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"问题分析\",\n      \"content\": \"问题集中在非全日制工人是否可以与多家用人单位签订劳动合同，这需要从中国的劳动法相关法律法规中寻找依据。因此，我需要查找与非全日制劳动关系相关的法律条款。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"法律依据搜索\",\n      \"content\": \"首先，需要查找非全日制劳动者相关规定的法律基础，例如《中华人民共和国劳动法》或《劳动合同法》。关键词为非全日制用工及其合同规定。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"提取信息\",\n      \"content\": \"<search>非全日制用工 劳动合同法</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"解读法律条款\",\n      \"content\": \"<information>根据《中华人民共和国劳动合同法》第六十九条，国家明确规定非全日制用工是一种特殊的用工形式，非全日制劳动者可与一个或多个用人单位建立劳动关系，但其累计工作时间不得超过法律规定的时长。同时，非全日制用工允许灵活的劳动关系，因此不实行试用期制度。</information>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析实际含义\",\n      \"content\": \"根据法律信息，非全日制劳动者与多个用人单位签订劳动合同是被允许的，这是基于非全日制用工模式的灵活性特点。这意味着劳动者可以合法维护其经济权益，同时需要遵守工作时间总和的限制。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"根据《中华人民共和国劳动合同法》，非全日制劳动者可以同时与多家用人单位签订劳动合同。但是需要注意，其累计工作时间不得超过法定的限制。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"结论符合法律条款规定，即非全日制用工的核心特征是灵活性，允许劳动者建立多个劳动关系。因此，结论有效。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"嗯，我现在要弄明白非全日制工人是否可以同时跟多家用人单位签订劳动合同。这个问题听起来好像和劳动法的相关规定有直接关系，所以我要找一下法律条款里的具体内容。\\n\\n首先，我想到的是中国劳动法或者劳动合同法，里面应该有关于非全日制用工的规定。非全日制劳动者通常跟全日制的情况不太一样，可能会比较灵活，比如工作时间或者签合同的形式。所以还是得找准确的信息。\\n\\n我要从法律法规入手，试试搜索一下关键词吧，像“非全日制用工”和“劳动合同法”，看看能找到什么。\\n\\n<search>非全日制用工 劳动合同法</search>\\n\\n哦，找到了一些内容，根据《劳动合同法》第六十九条，国家对非全日制用工有特殊的规定。这里说非全日制劳动者可以同时跟多个用人单位建立劳动关系。嗯，这就说明了，多签合同是合法的。不过后面还有提到，累计工作时间不能超过法律规定的上限，这说明灵活性是允许的，但还得守住一些限制。\\n\\n另外，也有提到非全日制用工不用试用期，这蛮有趣的。可能是因为这种劳动方式本来就比较短期或者灵活，不需要试用期来验证工作能力。\\n\\n总的来看，签合同跟多个单位是被允许的，符合非全日制的特点。不过还是要注意，时间上不能过度叠加，否则可能不符合法律要求。嗯，结论还挺清楚的。\\n\\n所以，非全日制工人可以合法地跟多家用人单位签订劳动合同，只要他们的工作时间总和不超过法规里的限制。这么看，这种安排确实比较符合现代社会上灵活就业的模式，也能保护劳动者的权益。\\n\\n好了，验证一下，这些推论都符合法律条款嘛？嗯，法律明确说明可以建立多个劳动关系，所以结论还是准确的。\"\n}\n```",
+    "是的，根据《中国人民共和国劳动合同法》第六十九条的规定，非全日制工人可以同时与多家用人单位签订劳动合同。这种用工形式具有较强的灵活性，符合非全日制用工的特点。此外，法律还明确了非全日制用工的几个特殊规定，例如非全日制劳动者的累计工作时间不能超过法律规定的上限，并且这种劳动方式不适用试用期的规定。\n\n因此，非全日制工人签订多个劳动合同是合法且受到法律保护的，但在实际操作中需要注意工作时间的合理安排，以避免违反相关规定。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "问题分析",
+        "content": "问题集中在非全日制工人是否可以与多家用人单位签订劳动合同，这需要从中国的劳动法相关法律法规中寻找依据。因此，我需要查找与非全日制劳动关系相关的法律条款。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "法律依据搜索",
+        "content": "首先，需要查找非全日制劳动者相关规定的法律基础，例如《中华人民共和国劳动法》或《劳动合同法》。关键词为非全日制用工及其合同规定。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "提取信息",
+        "content": "<search>非全日制用工 劳动合同法</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "解读法律条款",
+        "content": "<information>根据《中华人民共和国劳动合同法》第六十九条，国家明确规定非全日制用工是一种特殊的用工形式，非全日制劳动者可与一个或多个用人单位建立劳动关系，但其累计工作时间不得超过法律规定的时长。同时，非全日制用工允许灵活的劳动关系，因此不实行试用期制度。</information>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "分析实际含义",
+        "content": "根据法律信息，非全日制劳动者与多个用人单位签订劳动合同是被允许的，这是基于非全日制用工模式的灵活性特点。这意味着劳动者可以合法维护其经济权益，同时需要遵守工作时间总和的限制。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "根据《中华人民共和国劳动合同法》，非全日制劳动者可以同时与多家用人单位签订劳动合同。但是需要注意，其累计工作时间不得超过法定的限制。"
+      },
+      {
+        "action": "Verification",
+        "content": "结论符合法律条款规定，即非全日制用工的核心特征是灵活性，允许劳动者建立多个劳动关系。因此，结论有效。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "嗯，我现在要弄明白非全日制工人是否可以同时跟多家用人单位签订劳动合同。这个问题听起来好像和劳动法的相关规定有直接关系，所以我要找一下法律条款里的具体内容。\n\n首先，我想到的是中国劳动法或者劳动合同法，里面应该有关于非全日制用工的规定。非全日制劳动者通常跟全日制的情况不太一样，可能会比较灵活，比如工作时间或者签合同的形式。所以还是得找准确的信息。\n\n我要从法律法规入手，试试搜索一下关键词吧，像“非全日制用工”和“劳动合同法”，看看能找到什么。\n\n<search>非全日制用工 劳动合同法</search>\n\n哦，找到了一些内容，根据《劳动合同法》第六十九条，国家对非全日制用工有特殊的规定。这里说非全日制劳动者可以同时跟多个用人单位建立劳动关系。嗯，这就说明了，多签合同是合法的。不过后面还有提到，累计工作时间不能超过法律规定的上限，这说明灵活性是允许的，但还得守住一些限制。\n\n另外，也有提到非全日制用工不用试用期，这蛮有趣的。可能是因为这种劳动方式本来就比较短期或者灵活，不需要试用期来验证工作能力。\n\n总的来看，签合同跟多个单位是被允许的，符合非全日制的特点。不过还是要注意，时间上不能过度叠加，否则可能不符合法律要求。嗯，结论还挺清楚的。\n\n所以，非全日制工人可以合法地跟多家用人单位签订劳动合同，只要他们的工作时间总和不超过法规里的限制。这么看，这种安排确实比较符合现代社会上灵活就业的模式，也能保护劳动者的权益。\n\n好了，验证一下，这些推论都符合法律条款嘛？嗯，法律明确说明可以建立多个劳动关系，所以结论还是准确的。",
+  "Response": "是的，根据《中国人民共和国劳动合同法》第六十九条的规定，非全日制工人可以同时与多家用人单位签订劳动合同。这种用工形式具有较强的灵活性，符合非全日制用工的特点。此外，法律还明确了非全日制用工的几个特殊规定，例如非全日制劳动者的累计工作时间不能超过法律规定的上限，并且这种劳动方式不适用试用期的规定。\n\n因此，非全日制工人签订多个劳动合同是合法且受到法律保护的，但在实际操作中需要注意工作时间的合理安排，以避免违反相关规定。",
+  "Question": "非全日制工人，可以同时与多家用人单位签订劳动合同吗？"
+}

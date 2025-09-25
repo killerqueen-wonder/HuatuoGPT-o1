@@ -1,0 +1,89 @@
+{
+  "Open-ended Verifiable Question": "房产公证需要提交的材料?",
+  "Ground-True Answer": "1.当事人各方的身份证明；\n2.涉及房地产开发的，提交土地使用权证明、国家有关机关核发的建设工程规划许可证、建设工程许可证等；\n3.涉及房地产预售、销售的，提交房地产预售、销售许可证等；\n4.涉及房地产权属转移的，提交房地产所有权证明；\n5.涉及房地产担保的，提交房地产所有权及使用权证明。的风险将会很大，不过户的话房产的所有权还是原业主的。",
+  "process_id": 8350,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "明确房产公证的目的",
+      "content": "房产公证通常用于保障房屋交易、继承、赠与或其他形式的法律行为的合法性和真实性。根据具体目的，提交的材料可能会有所不同，比如继承和买卖所需材料会有所区分。需要查找相关法律规定以确认提交材料清单。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "查找国家或地区相关法律规定",
+      "content": "<search>房产公证所需材料规定</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "分析搜索结果",
+      "content": "<information>房产公证需要提供：1. 权利人或利害关系人的身份证明（如身份证、护照）；2. 房屋产权证书；3. 相关合同或协议（如买卖合同、赠与协议）；4. 涉及继承等事项时还需提供死亡证明、继承关系证明（如户口簿、结婚证）；5. 其他依据具体用途可能需要的补充材料。</information> 在出具材料时，这些通常需要提供原件和复印件。此外，当事人需亲自到场公证。</information>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "总结材料清单",
+      "content": "根据搜索结果，主要提交材料包括：身份证明、产权证明（如房本）、与房屋相关的法律协议文件，以及根据用途可能需要的补充材料（如继承关系证明等）。下一步是确认这些文件是否均为常规要求并能适用于不同用途。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "房产公证需要提交的材料通常包括以下：1. 权利人或利害关系人的身份证明（如身份证、护照）；2. 房屋产权证书；3. 相关合同或协议（如买卖合同、赠与协议）；4. 涉及继承事项时需提供死亡证明与继承关系证明（如户口簿、结婚证）；5. 补充材料根据具体用途可能包括贷款文件等。在实际办理时，当事人需携带材料的原件和复印件，并亲自到场办理公证。"
+    },
+    {
+      "action": "Verification",
+      "content": "通过上述推理，确认所需材料涵盖房产公证的所有情形且符合通常规定，结论成立。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n房产公证需要提交的材料?\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n房产公证需要提交的材料通常包括以下：1. 权利人或利害关系人的身份证明（如身份证、护照）；2. 房屋产权证书；3. 相关合同或协议（如买卖合同、赠与协议）；4. 涉及继承事项时需提供死亡证明与继承关系证明（如户口簿、结婚证）；5. 补充材料根据具体用途可能包括贷款文件等。在实际办理时，当事人需携带材料的原件和复印件，并亲自到场办理公证。  \n</Model Response>  \n\n<Reference Answer>  \n1.当事人各方的身份证明；\n2.涉及房地产开发的，提交土地使用权证明、国家有关机关核发的建设工程规划许可证、建设工程许可证等；\n3.涉及房地产预售、销售的，提交房地产预售、销售许可证等；\n4.涉及房地产权属转移的，提交房地产所有权证明；\n5.涉及房地产担保的，提交房地产所有权及使用权证明。的风险将会很大，不过户的话房产的所有权还是原业主的。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 明确房产公证的目的\n房产公证通常用于保障房屋交易、继承、赠与或其他形式的法律行为的合法性和真实性。根据具体目的，提交的材料可能会有所不同，比如继承和买卖所需材料会有所区分。需要查找相关法律规定以确认提交材料清单。\n\n### 查找国家或地区相关法律规定\n<search>房产公证所需材料规定</search>\n\n### 分析搜索结果\n<information>房产公证需要提供：1. 权利人或利害关系人的身份证明（如身份证、护照）；2. 房屋产权证书；3. 相关合同或协议（如买卖合同、赠与协议）；4. 涉及继承等事项时还需提供死亡证明、继承关系证明（如户口簿、结婚证）；5. 其他依据具体用途可能需要的补充材料。</information> 在出具材料时，这些通常需要提供原件和复印件。此外，当事人需亲自到场公证。</information>\n\n### 总结材料清单\n根据搜索结果，主要提交材料包括：身份证明、产权证明（如房本）、与房屋相关的法律协议文件，以及根据用途可能需要的补充材料（如继承关系证明等）。下一步是确认这些文件是否均为常规要求并能适用于不同用途。\n\n### Conclusion\n房产公证需要提交的材料通常包括以下：1. 权利人或利害关系人的身份证明（如身份证、护照）；2. 房屋产权证书；3. 相关合同或协议（如买卖合同、赠与协议）；4. 涉及继承事项时需提供死亡证明与继承关系证明（如户口簿、结婚证）；5. 补充材料根据具体用途可能包括贷款文件等。在实际办理时，当事人需携带材料的原件和复印件，并亲自到场办理公证。\n\n### Verification\n通过上述推理，确认所需材料涵盖房产公证的所有情形且符合通常规定，结论成立。\n</Thought Process>\n\n<Question>\n房产公证需要提交的材料?\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n好，先来想一想房产公证到底是干什么的。它应该是为了在法律上保证房屋交易、继承、赠与等一些操作的真实性和合法性吧。因为公证后文件的法律效力比较强，应该也能避免纠纷。不同用途肯定需要的材料可能会有区别，比如继承和买卖用到的文件估计会不一样，所以重点还是搞清楚到底需要带什么材料。\n\n那怎么办呢？看来只能搜一搜具体的规定了，可能不同国家或者地区会有差异。我试着搜索一下吧——<search>房产公证所需材料规定</search>，看看能找到些什么信息。\n\n找到了一些内容，仔细看看。<information>房产公证通常需要提供以下材料：第一，权利人或利害关系人的身份证明，像身份证、护照之类的；第二，房屋产权证书，这一点不用想一定要带的；第三，如果涉及买卖、赠与这种情况，得有相关合同或协议，比如买卖合同、赠与协议；第四，如果是继承的情况，还需要有死亡证明和能证明继承关系的文件，比如户口簿或者结婚证；最后，根据具体的用途可能还会要求额外的一些补充材料。此外，这些材料通常要求提交原件和复印件，还得本人亲自去公证处。</information>\n\n嗯，这些信息听起来挺全面的，收集的要求也在情理之中。身份证明、房本和与交易类型相关的文件，感觉这是重点。特别是继承的时候还得有额外的一些证明，比如死亡证明、户籍证明，如果有纠纷的话可能手续会更麻烦一些。还提到了提交原件和复印件，这个一定要记得，不然大老远跑去，少带文件就糟糕了。\n\n再总结一下吧，总的来说，房产公证应该少不了这些材料：第一，权利人或者利害关系人的身份证，比如身份证、护照；第二，房屋产权证书，也就是房本；第三，和房屋相关的法律文件，比如你买卖房子的话得有买卖合同，赠与的话需要赠与协议；第四，涉及继承的还需要额外准备死亡证明、户口簿或者其他能证明继承关系的文件；第五，根据你具体的用途可能还得再准备一些其他文件，比如贷款文件之类的。\n\n最后，我觉得这个总结应该挺全的了，适用于大多数用途的房产公证。如果要去办理的话，记得把所有要求的原件和复印件都准备好，还要人亲自去，这样应该就不会有什么大问题了！\n</Internal Thinking>\n\n<Question>\n房产公证需要提交的材料?\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"明确房产公证的目的\",\n      \"content\": \"房产公证通常用于保障房屋交易、继承、赠与或其他形式的法律行为的合法性和真实性。根据具体目的，提交的材料可能会有所不同，比如继承和买卖所需材料会有所区分。需要查找相关法律规定以确认提交材料清单。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"查找国家或地区相关法律规定\",\n      \"content\": \"<search>房产公证所需材料规定</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析搜索结果\",\n      \"content\": \"<information>房产公证需要提供：1. 权利人或利害关系人的身份证明（如身份证、护照）；2. 房屋产权证书；3. 相关合同或协议（如买卖合同、赠与协议）；4. 涉及继承等事项时还需提供死亡证明、继承关系证明（如户口簿、结婚证）；5. 其他依据具体用途可能需要的补充材料。</information> 在出具材料时，这些通常需要提供原件和复印件。此外，当事人需亲自到场公证。</information>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"总结材料清单\",\n      \"content\": \"根据搜索结果，主要提交材料包括：身份证明、产权证明（如房本）、与房屋相关的法律协议文件，以及根据用途可能需要的补充材料（如继承关系证明等）。下一步是确认这些文件是否均为常规要求并能适用于不同用途。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"房产公证需要提交的材料通常包括以下：1. 权利人或利害关系人的身份证明（如身份证、护照）；2. 房屋产权证书；3. 相关合同或协议（如买卖合同、赠与协议）；4. 涉及继承事项时需提供死亡证明与继承关系证明（如户口簿、结婚证）；5. 补充材料根据具体用途可能包括贷款文件等。在实际办理时，当事人需携带材料的原件和复印件，并亲自到场办理公证。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"通过上述推理，确认所需材料涵盖房产公证的所有情形且符合通常规定，结论成立。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"好，先来想一想房产公证到底是干什么的。它应该是为了在法律上保证房屋交易、继承、赠与等一些操作的真实性和合法性吧。因为公证后文件的法律效力比较强，应该也能避免纠纷。不同用途肯定需要的材料可能会有区别，比如继承和买卖用到的文件估计会不一样，所以重点还是搞清楚到底需要带什么材料。\\n\\n那怎么办呢？看来只能搜一搜具体的规定了，可能不同国家或者地区会有差异。我试着搜索一下吧——<search>房产公证所需材料规定</search>，看看能找到些什么信息。\\n\\n找到了一些内容，仔细看看。<information>房产公证通常需要提供以下材料：第一，权利人或利害关系人的身份证明，像身份证、护照之类的；第二，房屋产权证书，这一点不用想一定要带的；第三，如果涉及买卖、赠与这种情况，得有相关合同或协议，比如买卖合同、赠与协议；第四，如果是继承的情况，还需要有死亡证明和能证明继承关系的文件，比如户口簿或者结婚证；最后，根据具体的用途可能还会要求额外的一些补充材料。此外，这些材料通常要求提交原件和复印件，还得本人亲自去公证处。</information>\\n\\n嗯，这些信息听起来挺全面的，收集的要求也在情理之中。身份证明、房本和与交易类型相关的文件，感觉这是重点。特别是继承的时候还得有额外的一些证明，比如死亡证明、户籍证明，如果有纠纷的话可能手续会更麻烦一些。还提到了提交原件和复印件，这个一定要记得，不然大老远跑去，少带文件就糟糕了。\\n\\n再总结一下吧，总的来说，房产公证应该少不了这些材料：第一，权利人或者利害关系人的身份证，比如身份证、护照；第二，房屋产权证书，也就是房本；第三，和房屋相关的法律文件，比如你买卖房子的话得有买卖合同，赠与的话需要赠与协议；第四，涉及继承的还需要额外准备死亡证明、户口簿或者其他能证明继承关系的文件；第五，根据你具体的用途可能还得再准备一些其他文件，比如贷款文件之类的。\\n\\n最后，我觉得这个总结应该挺全的了，适用于大多数用途的房产公证。如果要去办理的话，记得把所有要求的原件和复印件都准备好，还要人亲自去，这样应该就不会有什么大问题了！\"\n}\n```",
+    "房产公证需要提交的材料通常包括以下几个方面，具体根据用途可能略有调整：\n\n1. **身份证明文件**  \n   权利人或利害关系人的有效身份证明，如身份证、护照等。\n\n2. **房屋产权证明**  \n   房屋产权证书（俗称房产证）或与产权相关的其他合法文件。\n\n3. **交易或操作相关文件**  \n   - 如果涉及房屋买卖，需要提供买卖合同或协议；  \n   - 如果是赠与，则需要赠与协议；  \n   - 如果是继承，需要提供死亡证明以及能证明继承人与被继承人关系的文件（如户口簿、结婚证等）。\n\n4. **必要的补充文件**  \n   根据具体用途，有时还需提交其他材料，例如贷款相关文件、法院判决书等。\n\n5. **材料原件和复印件**  \n   通常要求提供上述文件的原件及复印件，部分公证处可能会要求备份更多份复印件，需提前确认。\n\n6. **公证双方或相关方亲自到场**  \n   办理房产公证时，相关人员需本人亲自到场，特殊情况下可以提交由委托公证律师代办的授权书。\n\n建议在办理公证前，提前与公证处联系确认具体要求，确保材料充分准备，避免重复往返。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "明确房产公证的目的",
+        "content": "房产公证通常用于保障房屋交易、继承、赠与或其他形式的法律行为的合法性和真实性。根据具体目的，提交的材料可能会有所不同，比如继承和买卖所需材料会有所区分。需要查找相关法律规定以确认提交材料清单。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "查找国家或地区相关法律规定",
+        "content": "<search>房产公证所需材料规定</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "分析搜索结果",
+        "content": "<information>房产公证需要提供：1. 权利人或利害关系人的身份证明（如身份证、护照）；2. 房屋产权证书；3. 相关合同或协议（如买卖合同、赠与协议）；4. 涉及继承等事项时还需提供死亡证明、继承关系证明（如户口簿、结婚证）；5. 其他依据具体用途可能需要的补充材料。</information> 在出具材料时，这些通常需要提供原件和复印件。此外，当事人需亲自到场公证。</information>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "总结材料清单",
+        "content": "根据搜索结果，主要提交材料包括：身份证明、产权证明（如房本）、与房屋相关的法律协议文件，以及根据用途可能需要的补充材料（如继承关系证明等）。下一步是确认这些文件是否均为常规要求并能适用于不同用途。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "房产公证需要提交的材料通常包括以下：1. 权利人或利害关系人的身份证明（如身份证、护照）；2. 房屋产权证书；3. 相关合同或协议（如买卖合同、赠与协议）；4. 涉及继承事项时需提供死亡证明与继承关系证明（如户口簿、结婚证）；5. 补充材料根据具体用途可能包括贷款文件等。在实际办理时，当事人需携带材料的原件和复印件，并亲自到场办理公证。"
+      },
+      {
+        "action": "Verification",
+        "content": "通过上述推理，确认所需材料涵盖房产公证的所有情形且符合通常规定，结论成立。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "好，先来想一想房产公证到底是干什么的。它应该是为了在法律上保证房屋交易、继承、赠与等一些操作的真实性和合法性吧。因为公证后文件的法律效力比较强，应该也能避免纠纷。不同用途肯定需要的材料可能会有区别，比如继承和买卖用到的文件估计会不一样，所以重点还是搞清楚到底需要带什么材料。\n\n那怎么办呢？看来只能搜一搜具体的规定了，可能不同国家或者地区会有差异。我试着搜索一下吧——<search>房产公证所需材料规定</search>，看看能找到些什么信息。\n\n找到了一些内容，仔细看看。<information>房产公证通常需要提供以下材料：第一，权利人或利害关系人的身份证明，像身份证、护照之类的；第二，房屋产权证书，这一点不用想一定要带的；第三，如果涉及买卖、赠与这种情况，得有相关合同或协议，比如买卖合同、赠与协议；第四，如果是继承的情况，还需要有死亡证明和能证明继承关系的文件，比如户口簿或者结婚证；最后，根据具体的用途可能还会要求额外的一些补充材料。此外，这些材料通常要求提交原件和复印件，还得本人亲自去公证处。</information>\n\n嗯，这些信息听起来挺全面的，收集的要求也在情理之中。身份证明、房本和与交易类型相关的文件，感觉这是重点。特别是继承的时候还得有额外的一些证明，比如死亡证明、户籍证明，如果有纠纷的话可能手续会更麻烦一些。还提到了提交原件和复印件，这个一定要记得，不然大老远跑去，少带文件就糟糕了。\n\n再总结一下吧，总的来说，房产公证应该少不了这些材料：第一，权利人或者利害关系人的身份证，比如身份证、护照；第二，房屋产权证书，也就是房本；第三，和房屋相关的法律文件，比如你买卖房子的话得有买卖合同，赠与的话需要赠与协议；第四，涉及继承的还需要额外准备死亡证明、户口簿或者其他能证明继承关系的文件；第五，根据你具体的用途可能还得再准备一些其他文件，比如贷款文件之类的。\n\n最后，我觉得这个总结应该挺全的了，适用于大多数用途的房产公证。如果要去办理的话，记得把所有要求的原件和复印件都准备好，还要人亲自去，这样应该就不会有什么大问题了！",
+  "Response": "房产公证需要提交的材料通常包括以下几个方面，具体根据用途可能略有调整：\n\n1. **身份证明文件**  \n   权利人或利害关系人的有效身份证明，如身份证、护照等。\n\n2. **房屋产权证明**  \n   房屋产权证书（俗称房产证）或与产权相关的其他合法文件。\n\n3. **交易或操作相关文件**  \n   - 如果涉及房屋买卖，需要提供买卖合同或协议；  \n   - 如果是赠与，则需要赠与协议；  \n   - 如果是继承，需要提供死亡证明以及能证明继承人与被继承人关系的文件（如户口簿、结婚证等）。\n\n4. **必要的补充文件**  \n   根据具体用途，有时还需提交其他材料，例如贷款相关文件、法院判决书等。\n\n5. **材料原件和复印件**  \n   通常要求提供上述文件的原件及复印件，部分公证处可能会要求备份更多份复印件，需提前确认。\n\n6. **公证双方或相关方亲自到场**  \n   办理房产公证时，相关人员需本人亲自到场，特殊情况下可以提交由委托公证律师代办的授权书。\n\n建议在办理公证前，提前与公证处联系确认具体要求，确保材料充分准备，避免重复往返。",
+  "Question": "房产公证需要提交的材料?"
+}

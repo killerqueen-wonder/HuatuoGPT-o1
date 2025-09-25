@@ -1,0 +1,99 @@
+{
+  "Open-ended Verifiable Question": "任命公司法定代表人应满足哪些资格要求？",
+  "Ground-True Answer": "法定代表人指依法律或法人章程规定代表法人行使职权的负责人。我国法律实行单一法定代表人制，一般认为法人的正职行政负责人为其惟一法定代表人。如公司为董事长或执行董事或经理(公司法第13条)，而证券交易所的法定代表人为总经理(证券法第107条)。公司法定代表人的任职资格是：1.具有完全民事行为能力；2.具有管理公司的能力和专业知识；3.财务状况良好，无不良信用记录；4.法律规定的其他任职条件。公司法定代表人依照公司章程的规定，由董事长、执行董事或者经理担任，并依法登记。不能担任公司法定代表人的情形有：1.无民事行为能力或者限制民事行为能力的；2.正在执行刑罚或者刑事强制措施的；3.被公安机关或者国家安全机关通缉的；4.因贪污贿赂罪、侵犯财产罪或者破坏社会主义市场经济秩序罪被判处刑罚，执行期满不超过5年的；因其他罪被判处刑罚，执行期满不超过3年的；或者因犯罪被判剥夺政治权利，执行期满不超过5年的；5.作为经营不善破产清算的企业的法定代表人或董事、经理，对企业破产负有个人责任，自企业破产清算完成之日起不超过3年；6.作为因违法被吊销营业执照的企业的法定代表人，对企业的违法行为承担个人责任，自企业被吊销营业执照之日起不超过3年；7.个人负债金额大，到期未清偿的；8.法律、国务院规定不得担任法定代表人的。根据《公司法》第十三条，公司法定代表人依照公司章程的规定，由董事长、执行董事或者经理担任，并依法登记。公司法定代表人变更，应当办理变更登记。",
+  "process_id": 3145,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "分析问题的关键点",
+      "content": "任命公司法定代表人涉及相关法律法规的要求，因此需要明确其资格条件的来源。通常，这些资格条件由《中华人民共和国公司法》或其他相关法规规定，涉及法定代表人的法律责任、行为能力、以及是否存在法律禁止的情形。需要进一步确认具体规定。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "确认相关法律法规的名称",
+      "content": "考虑到公司法定代表人资格条件的问题，我需查阅《中华人民共和国公司法》的相关条款，以获得最准确的信息。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "检索法律内容",
+      "content": "<search>中华人民共和国公司法 法定代表人 资格条件</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "分析检索结果",
+      "content": "<information>根据《中华人民共和国公司法》的相关规定，法定代表人需满足以下条件：（1）具备完全民事行为能力；（2）未被列为失信被执行人；（3）未因违法行为被吊销营业执照、责令关闭且未满三年；（4）未因经济犯罪被判处刑罚，其刑罚执行未满五年；（5）法律、行政法规或国务院规定的其他条件。</information>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "结合具体要求进行总结",
+      "content": "结合搜索所得结果，可以得出法定代表人的具体资格要求：完全民事行为能力、无重大违法或失信记录、未被执行特定刑罚。同时，资格条件可能受其他法律或行政规定补充限制。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "任命公司法定代表人应满足以下资格要求：（1）具备完全民事行为能力；（2）未被列为失信被执行人；（3）未因违法行为被吊销营业执照、责令关闭且未满三年；（4）未因经济犯罪被判处刑罚，其刑罚执行未满五年；（5）法律、行政法规或国务院规定的其他条件。"
+    },
+    {
+      "action": "Verification",
+      "content": "确认以上内容符合《中华人民共和国公司法》的相关规定，并结合实际操作中没有破坏性逻辑错误，答案准确无误。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n任命公司法定代表人应满足哪些资格要求？\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n任命公司法定代表人应满足以下资格要求：（1）具备完全民事行为能力；（2）未被列为失信被执行人；（3）未因违法行为被吊销营业执照、责令关闭且未满三年；（4）未因经济犯罪被判处刑罚，其刑罚执行未满五年；（5）法律、行政法规或国务院规定的其他条件。  \n</Model Response>  \n\n<Reference Answer>  \n法定代表人指依法律或法人章程规定代表法人行使职权的负责人。我国法律实行单一法定代表人制，一般认为法人的正职行政负责人为其惟一法定代表人。如公司为董事长或执行董事或经理(公司法第13条)，而证券交易所的法定代表人为总经理(证券法第107条)。公司法定代表人的任职资格是：1.具有完全民事行为能力；2.具有管理公司的能力和专业知识；3.财务状况良好，无不良信用记录；4.法律规定的其他任职条件。公司法定代表人依照公司章程的规定，由董事长、执行董事或者经理担任，并依法登记。不能担任公司法定代表人的情形有：1.无民事行为能力或者限制民事行为能力的；2.正在执行刑罚或者刑事强制措施的；3.被公安机关或者国家安全机关通缉的；4.因贪污贿赂罪、侵犯财产罪或者破坏社会主义市场经济秩序罪被判处刑罚，执行期满不超过5年的；因其他罪被判处刑罚，执行期满不超过3年的；或者因犯罪被判剥夺政治权利，执行期满不超过5年的；5.作为经营不善破产清算的企业的法定代表人或董事、经理，对企业破产负有个人责任，自企业破产清算完成之日起不超过3年；6.作为因违法被吊销营业执照的企业的法定代表人，对企业的违法行为承担个人责任，自企业被吊销营业执照之日起不超过3年；7.个人负债金额大，到期未清偿的；8.法律、国务院规定不得担任法定代表人的。根据《公司法》第十三条，公司法定代表人依照公司章程的规定，由董事长、执行董事或者经理担任，并依法登记。公司法定代表人变更，应当办理变更登记。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 分析问题的关键点\n任命公司法定代表人涉及相关法律法规的要求，因此需要明确其资格条件的来源。通常，这些资格条件由《中华人民共和国公司法》或其他相关法规规定，涉及法定代表人的法律责任、行为能力、以及是否存在法律禁止的情形。需要进一步确认具体规定。\n\n### 确认相关法律法规的名称\n考虑到公司法定代表人资格条件的问题，我需查阅《中华人民共和国公司法》的相关条款，以获得最准确的信息。\n\n### 检索法律内容\n<search>中华人民共和国公司法 法定代表人 资格条件</search>\n\n### 分析检索结果\n<information>根据《中华人民共和国公司法》的相关规定，法定代表人需满足以下条件：（1）具备完全民事行为能力；（2）未被列为失信被执行人；（3）未因违法行为被吊销营业执照、责令关闭且未满三年；（4）未因经济犯罪被判处刑罚，其刑罚执行未满五年；（5）法律、行政法规或国务院规定的其他条件。</information>\n\n### 结合具体要求进行总结\n结合搜索所得结果，可以得出法定代表人的具体资格要求：完全民事行为能力、无重大违法或失信记录、未被执行特定刑罚。同时，资格条件可能受其他法律或行政规定补充限制。\n\n### Conclusion\n任命公司法定代表人应满足以下资格要求：（1）具备完全民事行为能力；（2）未被列为失信被执行人；（3）未因违法行为被吊销营业执照、责令关闭且未满三年；（4）未因经济犯罪被判处刑罚，其刑罚执行未满五年；（5）法律、行政法规或国务院规定的其他条件。\n\n### Verification\n确认以上内容符合《中华人民共和国公司法》的相关规定，并结合实际操作中没有破坏性逻辑错误，答案准确无误。\n</Thought Process>\n\n<Question>\n任命公司法定代表人应满足哪些资格要求？\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n任命公司法定代表人，好像挺重要的，得搞清楚法律上对此有什么具体要求。想起来应该是《中华人民共和国公司法》里面有规定吧，毕竟这是管公司事务的主要法律。\n\n首先，法定代表人的资格应该和法律责任有很大关系，毕竟他代表公司行使权利，还得承担相关法律义务。那么需要查一查他需要具备什么条件，比如行为能力、诚信记录，还有有没有法律禁止的特定情形。\n\n嗯，那就搜索一下看看吧，直接用关键词“中华人民共和国公司法 法定代表人 资格条件”来查。<search>中华人民共和国公司法 法定代表人 资格条件</search>\n\n找到了一些内容了，读一读。<information>根据《中华人民共和国公司法》的相关规定，法定代表人需满足以下条件：（1）具备完全民事行为能力；（2）未被列为失信被执行人；（3）未因违法行为被吊销营业执照、责令关闭且未满三年；（4）未因经济犯罪被判处刑罚，其刑罚执行未满五年；（5）法律、行政法规或国务院规定的其他条件。</information> 嗯，信息还是比较清晰，先整理一下吧。\n\n首先，完全民事行为能力，这个应该是最低限度的要求吧，没有这个“门槛”其他责任都没法承担；然后失信被执行人，这个规定应该是防止那些不守信用的人继续担任公司高层，合理；接着是违法行为，比如被吊销执照或者以前有经济犯罪记录，也挺符合逻辑，毕竟这些是严重的负面记录，不适宜代表公司。\n\n最后，还提到了法律、行政法规或者国务院的其他要求，这说明特定行业可能还有额外限制，比如有些行业可能对法定代表人的专业背景或者资质有特别要求，比如金融行业可能要求更严格的资质证明，哦这也可以理解。\n\n总结一下吧。公司法定代表人需要满足这些条件：（1）具备完全民事行为能力；（2）未被列为失信被执行人；（3）未因违法行为被吊销营业执照、责令关闭且未满三年；（4）未因经济犯罪被判处刑罚，其刑罚执行未满五年；（5）还要遵守法律、行政法规或国务院规定的其他条件。看起来挺全面，该有的限制都有。\n\n嗯，这个总结基本符合《中华人民共和国公司法》，应该是准确的，信息来源也可靠，感觉没有问题。\n</Internal Thinking>\n\n<Question>\n任命公司法定代表人应满足哪些资格要求？\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析问题的关键点\",\n      \"content\": \"任命公司法定代表人涉及相关法律法规的要求，因此需要明确其资格条件的来源。通常，这些资格条件由《中华人民共和国公司法》或其他相关法规规定，涉及法定代表人的法律责任、行为能力、以及是否存在法律禁止的情形。需要进一步确认具体规定。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"确认相关法律法规的名称\",\n      \"content\": \"考虑到公司法定代表人资格条件的问题，我需查阅《中华人民共和国公司法》的相关条款，以获得最准确的信息。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"检索法律内容\",\n      \"content\": \"<search>中华人民共和国公司法 法定代表人 资格条件</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析检索结果\",\n      \"content\": \"<information>根据《中华人民共和国公司法》的相关规定，法定代表人需满足以下条件：（1）具备完全民事行为能力；（2）未被列为失信被执行人；（3）未因违法行为被吊销营业执照、责令关闭且未满三年；（4）未因经济犯罪被判处刑罚，其刑罚执行未满五年；（5）法律、行政法规或国务院规定的其他条件。</information>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"结合具体要求进行总结\",\n      \"content\": \"结合搜索所得结果，可以得出法定代表人的具体资格要求：完全民事行为能力、无重大违法或失信记录、未被执行特定刑罚。同时，资格条件可能受其他法律或行政规定补充限制。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"任命公司法定代表人应满足以下资格要求：（1）具备完全民事行为能力；（2）未被列为失信被执行人；（3）未因违法行为被吊销营业执照、责令关闭且未满三年；（4）未因经济犯罪被判处刑罚，其刑罚执行未满五年；（5）法律、行政法规或国务院规定的其他条件。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"确认以上内容符合《中华人民共和国公司法》的相关规定，并结合实际操作中没有破坏性逻辑错误，答案准确无误。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"任命公司法定代表人，好像挺重要的，得搞清楚法律上对此有什么具体要求。想起来应该是《中华人民共和国公司法》里面有规定吧，毕竟这是管公司事务的主要法律。\\n\\n首先，法定代表人的资格应该和法律责任有很大关系，毕竟他代表公司行使权利，还得承担相关法律义务。那么需要查一查他需要具备什么条件，比如行为能力、诚信记录，还有有没有法律禁止的特定情形。\\n\\n嗯，那就搜索一下看看吧，直接用关键词“中华人民共和国公司法 法定代表人 资格条件”来查。<search>中华人民共和国公司法 法定代表人 资格条件</search>\\n\\n找到了一些内容了，读一读。<information>根据《中华人民共和国公司法》的相关规定，法定代表人需满足以下条件：（1）具备完全民事行为能力；（2）未被列为失信被执行人；（3）未因违法行为被吊销营业执照、责令关闭且未满三年；（4）未因经济犯罪被判处刑罚，其刑罚执行未满五年；（5）法律、行政法规或国务院规定的其他条件。</information> 嗯，信息还是比较清晰，先整理一下吧。\\n\\n首先，完全民事行为能力，这个应该是最低限度的要求吧，没有这个“门槛”其他责任都没法承担；然后失信被执行人，这个规定应该是防止那些不守信用的人继续担任公司高层，合理；接着是违法行为，比如被吊销执照或者以前有经济犯罪记录，也挺符合逻辑，毕竟这些是严重的负面记录，不适宜代表公司。\\n\\n最后，还提到了法律、行政法规或者国务院的其他要求，这说明特定行业可能还有额外限制，比如有些行业可能对法定代表人的专业背景或者资质有特别要求，比如金融行业可能要求更严格的资质证明，哦这也可以理解。\\n\\n总结一下吧。公司法定代表人需要满足这些条件：（1）具备完全民事行为能力；（2）未被列为失信被执行人；（3）未因违法行为被吊销营业执照、责令关闭且未满三年；（4）未因经济犯罪被判处刑罚，其刑罚执行未满五年；（5）还要遵守法律、行政法规或国务院规定的其他条件。看起来挺全面，该有的限制都有。\\n\\n嗯，这个总结基本符合《中华人民共和国公司法》，应该是准确的，信息来源也可靠，感觉没有问题。\"\n}\n```",
+    "根据《中华人民共和国公司法》的相关规定，任命公司法定代表人需满足以下资格要求：\n\n1. **具备完全民事行为能力**：法定代表人必须具备独立承担民事责任的能力，这是最基本的法律要求。\n\n2. **未被列为失信被执行人**：即个人信用状况良好，未因未履行生效法律文书确定的义务被列入失信名单。\n\n3. **未因违法行为被吊销营业执照或责令关闭且未满三年**：如果个人曾因违法行为导致公司执照被吊销或公司被勒令关闭，且从处罚之日起未满三年，则不得担任法定代表人。\n\n4. **未因经济犯罪被判处刑罚，且刑罚执行未满五年**：如个人曾因经济犯罪被判刑，则必须在刑罚执行完毕后满五年才能担任法定代表人。\n\n5. **符合法律、行政法规或国务院规定的其他条件**：特定行业或领域可能会受特定的法律、行政法规或国务院的具体规定约束。例如，一些特殊行业可能需要更高的资质或背景要求。\n\n因此，法定代表人需要具备良好的行为能力、信用记录和法律合规背景，同时需满足行业相关的具体规定。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "分析问题的关键点",
+        "content": "任命公司法定代表人涉及相关法律法规的要求，因此需要明确其资格条件的来源。通常，这些资格条件由《中华人民共和国公司法》或其他相关法规规定，涉及法定代表人的法律责任、行为能力、以及是否存在法律禁止的情形。需要进一步确认具体规定。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "确认相关法律法规的名称",
+        "content": "考虑到公司法定代表人资格条件的问题，我需查阅《中华人民共和国公司法》的相关条款，以获得最准确的信息。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "检索法律内容",
+        "content": "<search>中华人民共和国公司法 法定代表人 资格条件</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "分析检索结果",
+        "content": "<information>根据《中华人民共和国公司法》的相关规定，法定代表人需满足以下条件：（1）具备完全民事行为能力；（2）未被列为失信被执行人；（3）未因违法行为被吊销营业执照、责令关闭且未满三年；（4）未因经济犯罪被判处刑罚，其刑罚执行未满五年；（5）法律、行政法规或国务院规定的其他条件。</information>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "结合具体要求进行总结",
+        "content": "结合搜索所得结果，可以得出法定代表人的具体资格要求：完全民事行为能力、无重大违法或失信记录、未被执行特定刑罚。同时，资格条件可能受其他法律或行政规定补充限制。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "任命公司法定代表人应满足以下资格要求：（1）具备完全民事行为能力；（2）未被列为失信被执行人；（3）未因违法行为被吊销营业执照、责令关闭且未满三年；（4）未因经济犯罪被判处刑罚，其刑罚执行未满五年；（5）法律、行政法规或国务院规定的其他条件。"
+      },
+      {
+        "action": "Verification",
+        "content": "确认以上内容符合《中华人民共和国公司法》的相关规定，并结合实际操作中没有破坏性逻辑错误，答案准确无误。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "任命公司法定代表人，好像挺重要的，得搞清楚法律上对此有什么具体要求。想起来应该是《中华人民共和国公司法》里面有规定吧，毕竟这是管公司事务的主要法律。\n\n首先，法定代表人的资格应该和法律责任有很大关系，毕竟他代表公司行使权利，还得承担相关法律义务。那么需要查一查他需要具备什么条件，比如行为能力、诚信记录，还有有没有法律禁止的特定情形。\n\n嗯，那就搜索一下看看吧，直接用关键词“中华人民共和国公司法 法定代表人 资格条件”来查。<search>中华人民共和国公司法 法定代表人 资格条件</search>\n\n找到了一些内容了，读一读。<information>根据《中华人民共和国公司法》的相关规定，法定代表人需满足以下条件：（1）具备完全民事行为能力；（2）未被列为失信被执行人；（3）未因违法行为被吊销营业执照、责令关闭且未满三年；（4）未因经济犯罪被判处刑罚，其刑罚执行未满五年；（5）法律、行政法规或国务院规定的其他条件。</information> 嗯，信息还是比较清晰，先整理一下吧。\n\n首先，完全民事行为能力，这个应该是最低限度的要求吧，没有这个“门槛”其他责任都没法承担；然后失信被执行人，这个规定应该是防止那些不守信用的人继续担任公司高层，合理；接着是违法行为，比如被吊销执照或者以前有经济犯罪记录，也挺符合逻辑，毕竟这些是严重的负面记录，不适宜代表公司。\n\n最后，还提到了法律、行政法规或者国务院的其他要求，这说明特定行业可能还有额外限制，比如有些行业可能对法定代表人的专业背景或者资质有特别要求，比如金融行业可能要求更严格的资质证明，哦这也可以理解。\n\n总结一下吧。公司法定代表人需要满足这些条件：（1）具备完全民事行为能力；（2）未被列为失信被执行人；（3）未因违法行为被吊销营业执照、责令关闭且未满三年；（4）未因经济犯罪被判处刑罚，其刑罚执行未满五年；（5）还要遵守法律、行政法规或国务院规定的其他条件。看起来挺全面，该有的限制都有。\n\n嗯，这个总结基本符合《中华人民共和国公司法》，应该是准确的，信息来源也可靠，感觉没有问题。",
+  "Response": "根据《中华人民共和国公司法》的相关规定，任命公司法定代表人需满足以下资格要求：\n\n1. **具备完全民事行为能力**：法定代表人必须具备独立承担民事责任的能力，这是最基本的法律要求。\n\n2. **未被列为失信被执行人**：即个人信用状况良好，未因未履行生效法律文书确定的义务被列入失信名单。\n\n3. **未因违法行为被吊销营业执照或责令关闭且未满三年**：如果个人曾因违法行为导致公司执照被吊销或公司被勒令关闭，且从处罚之日起未满三年，则不得担任法定代表人。\n\n4. **未因经济犯罪被判处刑罚，且刑罚执行未满五年**：如个人曾因经济犯罪被判刑，则必须在刑罚执行完毕后满五年才能担任法定代表人。\n\n5. **符合法律、行政法规或国务院规定的其他条件**：特定行业或领域可能会受特定的法律、行政法规或国务院的具体规定约束。例如，一些特殊行业可能需要更高的资质或背景要求。\n\n因此，法定代表人需要具备良好的行为能力、信用记录和法律合规背景，同时需满足行业相关的具体规定。",
+  "Question": "任命公司法定代表人应满足哪些资格要求？"
+}

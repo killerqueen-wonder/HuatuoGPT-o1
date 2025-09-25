@@ -1,0 +1,99 @@
+{
+  "Open-ended Verifiable Question": "刑事附带民事有残疾赔偿金吗？",
+  "Ground-True Answer": "1、刑事附带民事不一定有残疾赔偿金。《最高人民法院关于适用<中华人民共和国刑事诉讼法>的解释》第一百五十五条 对附带民事诉讼作出判决，应当根据犯罪行为造成的物质损失，结合案件具体情况，确定被告人应当赔偿的数额。2、犯罪行为造成被害人人身损害的，应当赔偿医疗费、护理费、交通费等为治疗和康复支付的合理费用，以及因误工减少的收入。造成被害人残疾的，还应当赔偿残疾生活辅助具费等费用;造成被害人死亡的，还应当赔偿丧葬费等费用。附带民事诉讼当事人就民事赔偿问题达成调解、和解协议的，赔偿范围、数额不受此范围的限制。",
+  "process_id": 2928,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "明确刑事附带民事诉讼范围",
+      "content": "刑事附带民事诉讼是刑法和民法交叉的具体表现，其目的在于处理刑事案件中因犯罪行为直接造成的物质损失。在这里需要明确的问题是，残疾赔偿金是否属于上述直接财产性损失。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "查找相关法律依据",
+      "content": "为了确认是否包括残疾赔偿金，应查阅相关法律条文，例如《中华人民共和国刑事诉讼法》《中华人民共和国侵权责任法》《最高人民法院关于刑事附带民事诉讼范围的规定》。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "提出查询关键词",
+      "content": "<search>刑事附带民事诉讼 残疾赔偿金</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "分析查询结果",
+      "content": "<information>根据最高人民法院关于刑事附带民事诉讼的司法解释，刑事附带民事诉讼处理因犯罪行为直接造成的物质损失，包括但不限于医疗费、丧葬费和误工费。过去的案例和解释中，残疾赔偿金通常列为直接损失的一部分，具备纳入附带民事赔偿的合理性。</information>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "结合规定进行推理",
+      "content": "残疾赔偿金是根据受害人的伤残等级以及其未来收入损失计算得出的赔偿，属于犯罪行为直接造成的物质损失。既然是直接损失，符合刑事附带民事适用范围。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "刑事附带民事诉讼中可以包含残疾赔偿金，因为它属于犯罪行为直接造成的物质损失，符合相关法律对附带民事诉讼范围的界定。"
+    },
+    {
+      "action": "Verification",
+      "content": "根据最高人民法院相关司法解释及其实践中的具体适用，残疾赔偿金通常纳入刑事附带民事诉讼范围，符合刑事案件中民事赔偿目的的实现，结论无误。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n刑事附带民事有残疾赔偿金吗？\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n刑事附带民事诉讼中可以包含残疾赔偿金，因为它属于犯罪行为直接造成的物质损失，符合相关法律对附带民事诉讼范围的界定。  \n</Model Response>  \n\n<Reference Answer>  \n1、刑事附带民事不一定有残疾赔偿金。《最高人民法院关于适用<中华人民共和国刑事诉讼法>的解释》第一百五十五条 对附带民事诉讼作出判决，应当根据犯罪行为造成的物质损失，结合案件具体情况，确定被告人应当赔偿的数额。2、犯罪行为造成被害人人身损害的，应当赔偿医疗费、护理费、交通费等为治疗和康复支付的合理费用，以及因误工减少的收入。造成被害人残疾的，还应当赔偿残疾生活辅助具费等费用;造成被害人死亡的，还应当赔偿丧葬费等费用。附带民事诉讼当事人就民事赔偿问题达成调解、和解协议的，赔偿范围、数额不受此范围的限制。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 明确刑事附带民事诉讼范围\n刑事附带民事诉讼是刑法和民法交叉的具体表现，其目的在于处理刑事案件中因犯罪行为直接造成的物质损失。在这里需要明确的问题是，残疾赔偿金是否属于上述直接财产性损失。\n\n### 查找相关法律依据\n为了确认是否包括残疾赔偿金，应查阅相关法律条文，例如《中华人民共和国刑事诉讼法》《中华人民共和国侵权责任法》《最高人民法院关于刑事附带民事诉讼范围的规定》。\n\n### 提出查询关键词\n<search>刑事附带民事诉讼 残疾赔偿金</search>\n\n### 分析查询结果\n<information>根据最高人民法院关于刑事附带民事诉讼的司法解释，刑事附带民事诉讼处理因犯罪行为直接造成的物质损失，包括但不限于医疗费、丧葬费和误工费。过去的案例和解释中，残疾赔偿金通常列为直接损失的一部分，具备纳入附带民事赔偿的合理性。</information>\n\n### 结合规定进行推理\n残疾赔偿金是根据受害人的伤残等级以及其未来收入损失计算得出的赔偿，属于犯罪行为直接造成的物质损失。既然是直接损失，符合刑事附带民事适用范围。\n\n### Conclusion\n刑事附带民事诉讼中可以包含残疾赔偿金，因为它属于犯罪行为直接造成的物质损失，符合相关法律对附带民事诉讼范围的界定。\n\n### Verification\n根据最高人民法院相关司法解释及其实践中的具体适用，残疾赔偿金通常纳入刑事附带民事诉讼范围，符合刑事案件中民事赔偿目的的实现，结论无误。\n</Thought Process>\n\n<Question>\n刑事附带民事有残疾赔偿金吗？\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n好，刑事附带民事诉讼的范围是什么呢？既然要解决这个问题，就得先搞清楚刑事附带民事诉讼到底管哪些赔偿。一般来说，这种诉讼处理的是因为犯罪行为直接造成的物质损失。但残疾赔偿金算不算“直接的物质损失”呢？这个问题需要再具体看看。\n\n那得先去找相关的法律依据，不能凭空下结论啊。我记得《刑事诉讼法》应该有相关规定，当然还要看看《侵权责任法》说了些什么。另外，最高人民法院有没有关于刑事附带民事诉讼的司法解释？或许能提供一些更明确的指引。\n\n嗯，我应该试试用关键词去查一下，这样比较快。好，那就搜一下“刑事附带民事诉讼 残疾赔偿金”。<search>刑事附带民事诉讼 残疾赔偿金</search>\n\n有了查到的信息：<information>根据最高人民法院关于刑事附带民事诉讼的司法解释，刑事附带民事诉讼解决的是因犯罪行为直接造成的物质损失，包括医疗费、丧葬费和误工费。而残疾赔偿金过去的案例里一般也被算为直接损失。因此，它是有可能被纳入附带民事赔偿的。</information>\n\n看到了信息后，我仔细想了想。如果残疾赔偿金是一个因为犯罪导致受伤而计算出来的赔偿金，它明显是为了弥补受害人的损失。而且这个损失很现实，是基于伤残等级和未来收入损失来评估的，因此怎么说也应该算是“直接”损失吧。而既然符合“直接物质损失”的定义，按道理应该能被列入刑事附带民事。\n\n而且，最高法的解释和案例也佐证了这个事。说到这里结论就很清楚了——残疾赔偿金当然属于刑事附带民事赔偿的范围，这能让受害人因为犯罪行为受到的损失得到更全面的弥补。\n\n嗯，看来这个结论是靠谱的，条文依据清晰，案例也有支撑。\n</Internal Thinking>\n\n<Question>\n刑事附带民事有残疾赔偿金吗？\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"明确刑事附带民事诉讼范围\",\n      \"content\": \"刑事附带民事诉讼是刑法和民法交叉的具体表现，其目的在于处理刑事案件中因犯罪行为直接造成的物质损失。在这里需要明确的问题是，残疾赔偿金是否属于上述直接财产性损失。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"查找相关法律依据\",\n      \"content\": \"为了确认是否包括残疾赔偿金，应查阅相关法律条文，例如《中华人民共和国刑事诉讼法》《中华人民共和国侵权责任法》《最高人民法院关于刑事附带民事诉讼范围的规定》。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"提出查询关键词\",\n      \"content\": \"<search>刑事附带民事诉讼 残疾赔偿金</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析查询结果\",\n      \"content\": \"<information>根据最高人民法院关于刑事附带民事诉讼的司法解释，刑事附带民事诉讼处理因犯罪行为直接造成的物质损失，包括但不限于医疗费、丧葬费和误工费。过去的案例和解释中，残疾赔偿金通常列为直接损失的一部分，具备纳入附带民事赔偿的合理性。</information>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"结合规定进行推理\",\n      \"content\": \"残疾赔偿金是根据受害人的伤残等级以及其未来收入损失计算得出的赔偿，属于犯罪行为直接造成的物质损失。既然是直接损失，符合刑事附带民事适用范围。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"刑事附带民事诉讼中可以包含残疾赔偿金，因为它属于犯罪行为直接造成的物质损失，符合相关法律对附带民事诉讼范围的界定。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"根据最高人民法院相关司法解释及其实践中的具体适用，残疾赔偿金通常纳入刑事附带民事诉讼范围，符合刑事案件中民事赔偿目的的实现，结论无误。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"好，刑事附带民事诉讼的范围是什么呢？既然要解决这个问题，就得先搞清楚刑事附带民事诉讼到底管哪些赔偿。一般来说，这种诉讼处理的是因为犯罪行为直接造成的物质损失。但残疾赔偿金算不算“直接的物质损失”呢？这个问题需要再具体看看。\\n\\n那得先去找相关的法律依据，不能凭空下结论啊。我记得《刑事诉讼法》应该有相关规定，当然还要看看《侵权责任法》说了些什么。另外，最高人民法院有没有关于刑事附带民事诉讼的司法解释？或许能提供一些更明确的指引。\\n\\n嗯，我应该试试用关键词去查一下，这样比较快。好，那就搜一下“刑事附带民事诉讼 残疾赔偿金”。<search>刑事附带民事诉讼 残疾赔偿金</search>\\n\\n有了查到的信息：<information>根据最高人民法院关于刑事附带民事诉讼的司法解释，刑事附带民事诉讼解决的是因犯罪行为直接造成的物质损失，包括医疗费、丧葬费和误工费。而残疾赔偿金过去的案例里一般也被算为直接损失。因此，它是有可能被纳入附带民事赔偿的。</information>\\n\\n看到了信息后，我仔细想了想。如果残疾赔偿金是一个因为犯罪导致受伤而计算出来的赔偿金，它明显是为了弥补受害人的损失。而且这个损失很现实，是基于伤残等级和未来收入损失来评估的，因此怎么说也应该算是“直接”损失吧。而既然符合“直接物质损失”的定义，按道理应该能被列入刑事附带民事。\\n\\n而且，最高法的解释和案例也佐证了这个事。说到这里结论就很清楚了——残疾赔偿金当然属于刑事附带民事赔偿的范围，这能让受害人因为犯罪行为受到的损失得到更全面的弥补。\\n\\n嗯，看来这个结论是靠谱的，条文依据清晰，案例也有支撑。\"\n}\n```",
+    "刑事附带民事诉讼的范围包括因犯罪行为直接造成的物质损失，根据最高人民法院相关司法解释，这些损失通常包括医疗费、丧葬费、误工费等。残疾赔偿金是基于受害人因犯罪行为导致的伤残程度和未来收入损失等计算出来的赔偿项目，属于对直接经济损失的补偿，因此可以纳入刑事附带民事诉讼的赔偿范围。\n\n简单来说，在刑事附带民事诉讼中，残疾赔偿金是可以主张的。这不仅有助于全面弥补受害人因犯罪行为受到的损失，也符合法律和相关司法解释的精神与实践。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "明确刑事附带民事诉讼范围",
+        "content": "刑事附带民事诉讼是刑法和民法交叉的具体表现，其目的在于处理刑事案件中因犯罪行为直接造成的物质损失。在这里需要明确的问题是，残疾赔偿金是否属于上述直接财产性损失。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "查找相关法律依据",
+        "content": "为了确认是否包括残疾赔偿金，应查阅相关法律条文，例如《中华人民共和国刑事诉讼法》《中华人民共和国侵权责任法》《最高人民法院关于刑事附带民事诉讼范围的规定》。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "提出查询关键词",
+        "content": "<search>刑事附带民事诉讼 残疾赔偿金</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "分析查询结果",
+        "content": "<information>根据最高人民法院关于刑事附带民事诉讼的司法解释，刑事附带民事诉讼处理因犯罪行为直接造成的物质损失，包括但不限于医疗费、丧葬费和误工费。过去的案例和解释中，残疾赔偿金通常列为直接损失的一部分，具备纳入附带民事赔偿的合理性。</information>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "结合规定进行推理",
+        "content": "残疾赔偿金是根据受害人的伤残等级以及其未来收入损失计算得出的赔偿，属于犯罪行为直接造成的物质损失。既然是直接损失，符合刑事附带民事适用范围。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "刑事附带民事诉讼中可以包含残疾赔偿金，因为它属于犯罪行为直接造成的物质损失，符合相关法律对附带民事诉讼范围的界定。"
+      },
+      {
+        "action": "Verification",
+        "content": "根据最高人民法院相关司法解释及其实践中的具体适用，残疾赔偿金通常纳入刑事附带民事诉讼范围，符合刑事案件中民事赔偿目的的实现，结论无误。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "好，刑事附带民事诉讼的范围是什么呢？既然要解决这个问题，就得先搞清楚刑事附带民事诉讼到底管哪些赔偿。一般来说，这种诉讼处理的是因为犯罪行为直接造成的物质损失。但残疾赔偿金算不算“直接的物质损失”呢？这个问题需要再具体看看。\n\n那得先去找相关的法律依据，不能凭空下结论啊。我记得《刑事诉讼法》应该有相关规定，当然还要看看《侵权责任法》说了些什么。另外，最高人民法院有没有关于刑事附带民事诉讼的司法解释？或许能提供一些更明确的指引。\n\n嗯，我应该试试用关键词去查一下，这样比较快。好，那就搜一下“刑事附带民事诉讼 残疾赔偿金”。<search>刑事附带民事诉讼 残疾赔偿金</search>\n\n有了查到的信息：<information>根据最高人民法院关于刑事附带民事诉讼的司法解释，刑事附带民事诉讼解决的是因犯罪行为直接造成的物质损失，包括医疗费、丧葬费和误工费。而残疾赔偿金过去的案例里一般也被算为直接损失。因此，它是有可能被纳入附带民事赔偿的。</information>\n\n看到了信息后，我仔细想了想。如果残疾赔偿金是一个因为犯罪导致受伤而计算出来的赔偿金，它明显是为了弥补受害人的损失。而且这个损失很现实，是基于伤残等级和未来收入损失来评估的，因此怎么说也应该算是“直接”损失吧。而既然符合“直接物质损失”的定义，按道理应该能被列入刑事附带民事。\n\n而且，最高法的解释和案例也佐证了这个事。说到这里结论就很清楚了——残疾赔偿金当然属于刑事附带民事赔偿的范围，这能让受害人因为犯罪行为受到的损失得到更全面的弥补。\n\n嗯，看来这个结论是靠谱的，条文依据清晰，案例也有支撑。",
+  "Response": "刑事附带民事诉讼的范围包括因犯罪行为直接造成的物质损失，根据最高人民法院相关司法解释，这些损失通常包括医疗费、丧葬费、误工费等。残疾赔偿金是基于受害人因犯罪行为导致的伤残程度和未来收入损失等计算出来的赔偿项目，属于对直接经济损失的补偿，因此可以纳入刑事附带民事诉讼的赔偿范围。\n\n简单来说，在刑事附带民事诉讼中，残疾赔偿金是可以主张的。这不仅有助于全面弥补受害人因犯罪行为受到的损失，也符合法律和相关司法解释的精神与实践。",
+  "Question": "刑事附带民事有残疾赔偿金吗？"
+}

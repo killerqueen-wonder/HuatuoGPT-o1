@@ -1,0 +1,99 @@
+{
+  "Open-ended Verifiable Question": "恋爱中送给对方财物,分手后产生纠纷怎么办?",
+  "Ground-True Answer": "1、一般如无明确约定，从法律上定义为赠与。虽然当事人没有缔结婚姻关系，但财物由于赠与关系成立，不能通过法律手段强行索回。2、如果基于双方合意或习俗，一方为结婚送另一方聘金而最终没有登记结婚，则应当返还。《婚姻法解释二》第十条　当事人请求返还按照习俗给付的彩礼的，如果查明属于以下情形，人民法院应当予以支持：(一)双方未办理结婚登记手续的;(二)双方办理结婚登记手续但确未共同生活的;(三)婚前给付并导致给付人生活困难的。适用前款第(二)、(三)项的规定，应当以双方离婚为条件。",
+  "process_id": 2955,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "明确财物性质",
+      "content": "首先需要明确在恋爱中赠送给对方的财物性质。根据我国法律，它可能被视为赠与或者具有一定附加条件的赠与。如果是赠与，一般情况下是无条件的，赠与人不能随意要求返还。但如果是因特定目的或附加条件的赠与（如订婚、承诺结婚等特定条件），那么条件未成就时，可能存在返还的法律依据。接下来，需要查询赠与相关的法律规定。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "查询《中华人民共和国民法典》中关于赠与的规定",
+      "content": "需要具体了解法律对于赠与合同的约定及特殊情况下赠与的撤回规则。查询相关法律条文。"
+    },
+    {
+      "action": "Search",
+      "title": "赠与法律依据查询",
+      "content": "<search>赠与 民法典</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "分析适用的法律条文",
+      "content": "<information>《中华人民共和国民法典》第六百五十七条至六百六十三条规定了赠与合同的内容，包括赠与合同的性质、撤销权、因重大误解或欺诈、胁迫等原因撤销赠与的情形。</information>根据法律，普通赠与合同在交付后不能撤回，但附条件的赠与若条件未成就，赠与人可要求返还。订婚或结婚相关赠与一般视为附有特定目的/条件的赠与，若目的无法实现，例如分手，则可能要求退还赠与财物。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "确认纠纷解决方式",
+      "content": "无论是否涉及附条件赠与，该类纠纷通过协商、调解、仲裁或诉讼方式解决。尤其是在法院判定中，法官会根据赠与的性质、取证情况及公平原则判定。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "恋爱中赠与的财物如因分手产生纠纷，首先需确认赠与是否附条件（如订婚、承诺结婚）。如属无附加条件的赠与，财物一般不需返还；如附条件且分手后条件无法达成，赠与方可主张财物返还或赔偿。最佳方式是协商解决，同时也可通过法院提起诉讼，由法官依据具体情形、证据及法律规定处理。"
+    },
+    {
+      "action": "Verification",
+      "content": "结论与法律和实际情况相符。分析完整且深入，给出的建议可操作，推导清晰。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n恋爱中送给对方财物,分手后产生纠纷怎么办?\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n恋爱中赠与的财物如因分手产生纠纷，首先需确认赠与是否附条件（如订婚、承诺结婚）。如属无附加条件的赠与，财物一般不需返还；如附条件且分手后条件无法达成，赠与方可主张财物返还或赔偿。最佳方式是协商解决，同时也可通过法院提起诉讼，由法官依据具体情形、证据及法律规定处理。  \n</Model Response>  \n\n<Reference Answer>  \n1、一般如无明确约定，从法律上定义为赠与。虽然当事人没有缔结婚姻关系，但财物由于赠与关系成立，不能通过法律手段强行索回。2、如果基于双方合意或习俗，一方为结婚送另一方聘金而最终没有登记结婚，则应当返还。《婚姻法解释二》第十条　当事人请求返还按照习俗给付的彩礼的，如果查明属于以下情形，人民法院应当予以支持：(一)双方未办理结婚登记手续的;(二)双方办理结婚登记手续但确未共同生活的;(三)婚前给付并导致给付人生活困难的。适用前款第(二)、(三)项的规定，应当以双方离婚为条件。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 明确财物性质\n首先需要明确在恋爱中赠送给对方的财物性质。根据我国法律，它可能被视为赠与或者具有一定附加条件的赠与。如果是赠与，一般情况下是无条件的，赠与人不能随意要求返还。但如果是因特定目的或附加条件的赠与（如订婚、承诺结婚等特定条件），那么条件未成就时，可能存在返还的法律依据。接下来，需要查询赠与相关的法律规定。\n\n### 查询《中华人民共和国民法典》中关于赠与的规定\n需要具体了解法律对于赠与合同的约定及特殊情况下赠与的撤回规则。查询相关法律条文。\n\n### 赠与法律依据查询\n<search>赠与 民法典</search>\n\n### 分析适用的法律条文\n<information>《中华人民共和国民法典》第六百五十七条至六百六十三条规定了赠与合同的内容，包括赠与合同的性质、撤销权、因重大误解或欺诈、胁迫等原因撤销赠与的情形。</information>根据法律，普通赠与合同在交付后不能撤回，但附条件的赠与若条件未成就，赠与人可要求返还。订婚或结婚相关赠与一般视为附有特定目的/条件的赠与，若目的无法实现，例如分手，则可能要求退还赠与财物。\n\n### 确认纠纷解决方式\n无论是否涉及附条件赠与，该类纠纷通过协商、调解、仲裁或诉讼方式解决。尤其是在法院判定中，法官会根据赠与的性质、取证情况及公平原则判定。\n\n### Conclusion\n恋爱中赠与的财物如因分手产生纠纷，首先需确认赠与是否附条件（如订婚、承诺结婚）。如属无附加条件的赠与，财物一般不需返还；如附条件且分手后条件无法达成，赠与方可主张财物返还或赔偿。最佳方式是协商解决，同时也可通过法院提起诉讼，由法官依据具体情形、证据及法律规定处理。\n\n### Verification\n结论与法律和实际情况相符。分析完整且深入，给出的建议可操作，推导清晰。\n</Thought Process>\n\n<Question>\n恋爱中送给对方财物,分手后产生纠纷怎么办?\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n嗯，先想一下这在法律上到底算什么性质，恋爱时送的东西，是不是可以直接要回来？感觉法律上可能会说这是赠与，不过不知道有没有什么特别情况。如果是普通的赠与，那可能对方完全不需要返还，可是如果这礼物是带着某种条件的，比如订婚或者准备结婚，那条件没达成，是不是就可以要求归还了？嗯，这得查一下具体法律条文看看，应该在民法典里有明确的规定。\n\n<search>赠与 民法典</search>\n\n好，查到了！信息显示《中华人民共和国民法典》第六百五十七条到六百六十三条的规定，详细讲了赠与合同的内容。嗯，有点复杂，不过总体来说，普通的赠与合同如果是已经交付给对方，就不能随便撤销。但有一种特殊情况，就是附条件的赠与。比如说，礼物是基于订婚或者结婚的目的赠送的，如果最后没能实现这个目的，赠与人是可以要求返还的。这种带条件的赠与应该比普通赠与更有可能符合分手后要求返还财物的逻辑。\n\n我再想想，如果真闹到纠纷该怎么解决？一般这种事应该先试着协商解决吧，双方把话说开，看看能不能达成一致。但如果双方无法处理好，就可能需要仲裁或诉讼了。如果走到这个阶段，法院应该会根据赠与本身的性质还有提供的证据来判断是否需要返还。法官会从公平原则出发，考虑很多因素。\n\n这样现在更清楚了。如果是普通的赠与，没有附加条件，那么分手后是很难要求对方还东西的；但是如果可以证明财物是附条件的，比如是基于订婚或结婚目的的，那分手后条件不成就就可以主张返还。这种事最好还是以和平方式解决，通过协商，如果实在不行，法院也会按照实际情况处理。\n\n嗯，结论还是比较明确的。恋爱中赠送的财物如果涉及纠纷，关键要弄明白赠与的性质。如果是附带条件的，又因为分手条件未能满足，就有法律依据要求归还，否则可能就当作普通赠与不能撤销了。协商是最好的方法，如果不行也可以通过法律途径解决。整体分析下来这逻辑没问题，很符合实际情况。\n</Internal Thinking>\n\n<Question>\n恋爱中送给对方财物,分手后产生纠纷怎么办?\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"明确财物性质\",\n      \"content\": \"首先需要明确在恋爱中赠送给对方的财物性质。根据我国法律，它可能被视为赠与或者具有一定附加条件的赠与。如果是赠与，一般情况下是无条件的，赠与人不能随意要求返还。但如果是因特定目的或附加条件的赠与（如订婚、承诺结婚等特定条件），那么条件未成就时，可能存在返还的法律依据。接下来，需要查询赠与相关的法律规定。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"查询《中华人民共和国民法典》中关于赠与的规定\",\n      \"content\": \"需要具体了解法律对于赠与合同的约定及特殊情况下赠与的撤回规则。查询相关法律条文。\"\n    },\n    {\n      \"action\": \"Search\",\n      \"title\": \"赠与法律依据查询\",\n      \"content\": \"<search>赠与 民法典</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析适用的法律条文\",\n      \"content\": \"<information>《中华人民共和国民法典》第六百五十七条至六百六十三条规定了赠与合同的内容，包括赠与合同的性质、撤销权、因重大误解或欺诈、胁迫等原因撤销赠与的情形。</information>根据法律，普通赠与合同在交付后不能撤回，但附条件的赠与若条件未成就，赠与人可要求返还。订婚或结婚相关赠与一般视为附有特定目的/条件的赠与，若目的无法实现，例如分手，则可能要求退还赠与财物。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"确认纠纷解决方式\",\n      \"content\": \"无论是否涉及附条件赠与，该类纠纷通过协商、调解、仲裁或诉讼方式解决。尤其是在法院判定中，法官会根据赠与的性质、取证情况及公平原则判定。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"恋爱中赠与的财物如因分手产生纠纷，首先需确认赠与是否附条件（如订婚、承诺结婚）。如属无附加条件的赠与，财物一般不需返还；如附条件且分手后条件无法达成，赠与方可主张财物返还或赔偿。最佳方式是协商解决，同时也可通过法院提起诉讼，由法官依据具体情形、证据及法律规定处理。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"结论与法律和实际情况相符。分析完整且深入，给出的建议可操作，推导清晰。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"嗯，先想一下这在法律上到底算什么性质，恋爱时送的东西，是不是可以直接要回来？感觉法律上可能会说这是赠与，不过不知道有没有什么特别情况。如果是普通的赠与，那可能对方完全不需要返还，可是如果这礼物是带着某种条件的，比如订婚或者准备结婚，那条件没达成，是不是就可以要求归还了？嗯，这得查一下具体法律条文看看，应该在民法典里有明确的规定。\\n\\n<search>赠与 民法典</search>\\n\\n好，查到了！信息显示《中华人民共和国民法典》第六百五十七条到六百六十三条的规定，详细讲了赠与合同的内容。嗯，有点复杂，不过总体来说，普通的赠与合同如果是已经交付给对方，就不能随便撤销。但有一种特殊情况，就是附条件的赠与。比如说，礼物是基于订婚或者结婚的目的赠送的，如果最后没能实现这个目的，赠与人是可以要求返还的。这种带条件的赠与应该比普通赠与更有可能符合分手后要求返还财物的逻辑。\\n\\n我再想想，如果真闹到纠纷该怎么解决？一般这种事应该先试着协商解决吧，双方把话说开，看看能不能达成一致。但如果双方无法处理好，就可能需要仲裁或诉讼了。如果走到这个阶段，法院应该会根据赠与本身的性质还有提供的证据来判断是否需要返还。法官会从公平原则出发，考虑很多因素。\\n\\n这样现在更清楚了。如果是普通的赠与，没有附加条件，那么分手后是很难要求对方还东西的；但是如果可以证明财物是附条件的，比如是基于订婚或结婚目的的，那分手后条件不成就就可以主张返还。这种事最好还是以和平方式解决，通过协商，如果实在不行，法院也会按照实际情况处理。\\n\\n嗯，结论还是比较明确的。恋爱中赠送的财物如果涉及纠纷，关键要弄明白赠与的性质。如果是附带条件的，又因为分手条件未能满足，就有法律依据要求归还，否则可能就当作普通赠与不能撤销了。协商是最好的方法，如果不行也可以通过法律途径解决。整体分析下来这逻辑没问题，很符合实际情况。\"\n}\n```",
+    "恋爱期间送给对方的财物在分手后产生纠纷可以参考以下处理方式：\n\n### 1. **明确财物性质**  \n首先，要确定赠与的性质。在法律上，恋爱期间的赠与通常分为以下两种情况：  \n- **普通赠与**：如果赠送的财物是基于好感、自愿，而没有附加任何条件或约定目标，这种赠与一旦交付，对方通常不需要返还。  \n- **附条件赠与**：如果财物的赠与明确附带特定条件（如订婚或结婚），而后来条件未达成，根据《中华人民共和国民法典》第六百五十九条的规定，赠与人在条件未实现时可以要求返还财物。\n\n### 2. **协商解决优先**  \n如果赠与性质不明确或双方对财物归属产生争议，建议先试着协商。在协商中可以就财物的归还、分配达成一致，避免矛盾升级。有效沟通不仅能够节省时间，也可以减少彼此之间的冲突。\n\n### 3. **法律途径解决**  \n如果双方协商无法解决，可以向法院提起诉讼。在诉讼中，关键在于证明赠与的目的和性质：\n- 如果赠与附条件（如基于订婚或准备结婚），且条件未能实现（如分手等原因），赠与人可以请求返还财物。\n- 法院会根据证据（支付凭证、聊天记录等）综合判断是否符合法律规定的情形，从公平原则出发处理纠纷。\n\n### 4. **实际处理中的注意事项**  \n- **费用较高的财物**：如房子、车子等贵重物品，纠纷通常较复杂，界定赠与性质时需特别注意，是以赠与合同形式约定的，还是双方口头约定的附条件赠与。  \n- **普通礼物**：如鲜花、饰品等小额礼物，法律通常倾向于认定为普通赠与，返还的可能性较低。\n\n### 总结  \n恋爱期间的财物纠纷，其处理结果取决于财物的性质以及赠与是否附加条件。如果赠与为普通性质，归属通常不变；若有证据证明财物是附带条件的，可以依据法律要求返还。建议优先通过协商解决问题，无法解决时可求助法律途径。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "明确财物性质",
+        "content": "首先需要明确在恋爱中赠送给对方的财物性质。根据我国法律，它可能被视为赠与或者具有一定附加条件的赠与。如果是赠与，一般情况下是无条件的，赠与人不能随意要求返还。但如果是因特定目的或附加条件的赠与（如订婚、承诺结婚等特定条件），那么条件未成就时，可能存在返还的法律依据。接下来，需要查询赠与相关的法律规定。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "查询《中华人民共和国民法典》中关于赠与的规定",
+        "content": "需要具体了解法律对于赠与合同的约定及特殊情况下赠与的撤回规则。查询相关法律条文。"
+      },
+      {
+        "action": "Search",
+        "title": "赠与法律依据查询",
+        "content": "<search>赠与 民法典</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "分析适用的法律条文",
+        "content": "<information>《中华人民共和国民法典》第六百五十七条至六百六十三条规定了赠与合同的内容，包括赠与合同的性质、撤销权、因重大误解或欺诈、胁迫等原因撤销赠与的情形。</information>根据法律，普通赠与合同在交付后不能撤回，但附条件的赠与若条件未成就，赠与人可要求返还。订婚或结婚相关赠与一般视为附有特定目的/条件的赠与，若目的无法实现，例如分手，则可能要求退还赠与财物。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "确认纠纷解决方式",
+        "content": "无论是否涉及附条件赠与，该类纠纷通过协商、调解、仲裁或诉讼方式解决。尤其是在法院判定中，法官会根据赠与的性质、取证情况及公平原则判定。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "恋爱中赠与的财物如因分手产生纠纷，首先需确认赠与是否附条件（如订婚、承诺结婚）。如属无附加条件的赠与，财物一般不需返还；如附条件且分手后条件无法达成，赠与方可主张财物返还或赔偿。最佳方式是协商解决，同时也可通过法院提起诉讼，由法官依据具体情形、证据及法律规定处理。"
+      },
+      {
+        "action": "Verification",
+        "content": "结论与法律和实际情况相符。分析完整且深入，给出的建议可操作，推导清晰。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "嗯，先想一下这在法律上到底算什么性质，恋爱时送的东西，是不是可以直接要回来？感觉法律上可能会说这是赠与，不过不知道有没有什么特别情况。如果是普通的赠与，那可能对方完全不需要返还，可是如果这礼物是带着某种条件的，比如订婚或者准备结婚，那条件没达成，是不是就可以要求归还了？嗯，这得查一下具体法律条文看看，应该在民法典里有明确的规定。\n\n<search>赠与 民法典</search>\n\n好，查到了！信息显示《中华人民共和国民法典》第六百五十七条到六百六十三条的规定，详细讲了赠与合同的内容。嗯，有点复杂，不过总体来说，普通的赠与合同如果是已经交付给对方，就不能随便撤销。但有一种特殊情况，就是附条件的赠与。比如说，礼物是基于订婚或者结婚的目的赠送的，如果最后没能实现这个目的，赠与人是可以要求返还的。这种带条件的赠与应该比普通赠与更有可能符合分手后要求返还财物的逻辑。\n\n我再想想，如果真闹到纠纷该怎么解决？一般这种事应该先试着协商解决吧，双方把话说开，看看能不能达成一致。但如果双方无法处理好，就可能需要仲裁或诉讼了。如果走到这个阶段，法院应该会根据赠与本身的性质还有提供的证据来判断是否需要返还。法官会从公平原则出发，考虑很多因素。\n\n这样现在更清楚了。如果是普通的赠与，没有附加条件，那么分手后是很难要求对方还东西的；但是如果可以证明财物是附条件的，比如是基于订婚或结婚目的的，那分手后条件不成就就可以主张返还。这种事最好还是以和平方式解决，通过协商，如果实在不行，法院也会按照实际情况处理。\n\n嗯，结论还是比较明确的。恋爱中赠送的财物如果涉及纠纷，关键要弄明白赠与的性质。如果是附带条件的，又因为分手条件未能满足，就有法律依据要求归还，否则可能就当作普通赠与不能撤销了。协商是最好的方法，如果不行也可以通过法律途径解决。整体分析下来这逻辑没问题，很符合实际情况。",
+  "Response": "恋爱期间送给对方的财物在分手后产生纠纷可以参考以下处理方式：\n\n### 1. **明确财物性质**  \n首先，要确定赠与的性质。在法律上，恋爱期间的赠与通常分为以下两种情况：  \n- **普通赠与**：如果赠送的财物是基于好感、自愿，而没有附加任何条件或约定目标，这种赠与一旦交付，对方通常不需要返还。  \n- **附条件赠与**：如果财物的赠与明确附带特定条件（如订婚或结婚），而后来条件未达成，根据《中华人民共和国民法典》第六百五十九条的规定，赠与人在条件未实现时可以要求返还财物。\n\n### 2. **协商解决优先**  \n如果赠与性质不明确或双方对财物归属产生争议，建议先试着协商。在协商中可以就财物的归还、分配达成一致，避免矛盾升级。有效沟通不仅能够节省时间，也可以减少彼此之间的冲突。\n\n### 3. **法律途径解决**  \n如果双方协商无法解决，可以向法院提起诉讼。在诉讼中，关键在于证明赠与的目的和性质：\n- 如果赠与附条件（如基于订婚或准备结婚），且条件未能实现（如分手等原因），赠与人可以请求返还财物。\n- 法院会根据证据（支付凭证、聊天记录等）综合判断是否符合法律规定的情形，从公平原则出发处理纠纷。\n\n### 4. **实际处理中的注意事项**  \n- **费用较高的财物**：如房子、车子等贵重物品，纠纷通常较复杂，界定赠与性质时需特别注意，是以赠与合同形式约定的，还是双方口头约定的附条件赠与。  \n- **普通礼物**：如鲜花、饰品等小额礼物，法律通常倾向于认定为普通赠与，返还的可能性较低。\n\n### 总结  \n恋爱期间的财物纠纷，其处理结果取决于财物的性质以及赠与是否附加条件。如果赠与为普通性质，归属通常不变；若有证据证明财物是附带条件的，可以依据法律要求返还。建议优先通过协商解决问题，无法解决时可求助法律途径。",
+  "Question": "恋爱中送给对方财物,分手后产生纠纷怎么办?"
+}

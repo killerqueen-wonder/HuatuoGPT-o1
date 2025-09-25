@@ -1,0 +1,89 @@
+{
+  "Open-ended Verifiable Question": "工程合同诈骗可以取保候审吗?",
+  "Ground-True Answer": "取保候审也是有相应的条件要求的，并不是所有的犯罪嫌疑人都会申请，如果仅仅是因为合同诈骗的话，只要不是被判处的特别严重，都是可以申请取保候审的。取保候审的条件要求(一)非暴力犯罪的。相对于暴力犯罪而言，盗窃、抢夺、诈骗等非暴力犯罪的案件在办理取保候审时更容易一些；(二)可能判处3年以下有期徒刑的。实践中90%以上审判时取保候审的被告人可能会被判缓刑，而缓刑的前提是拘役、3年以下有期徒刑。如果审理期间办理了取保候审，而判决时因不能缓刑而判3年以上的实刑，之后再被收监，就会令被告人产生对法律的不理解、对法不可知的恐惧以及对法无定律的迷惑，也不利于其改造。所以，司法实践中，有可能判处3年以上有期徒刑的，也很难取保候审。(三)存在重大疾病，严重危及生命健康的。司法实践中，以这个理由申请取保候审的，只有严重到危及生命健康的，才会批准取保候审。(四)怀孕的妇女。(五)认罪的。如果不认罪，一般很难取保候审。(六)财产案件，退赃，积极交纳罚金的。(七)人身损害案件，积极赔偿被害人，并争取到被害人谅解的。",
+  "process_id": 2117,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "分析工程合同诈骗是否符合取保候审条件",
+      "content": "首先，需要明确工程合同诈骗属于什么性质的犯罪。根据中国刑法，合同诈骗罪属于经济犯罪范畴。其次，取保候审适用条件主要包括犯罪嫌疑人或被告人符合以下任一条件：不致发生社会危险性；患有严重疾病、自行生活困难；孕妇或哺乳期妇女；监外执行或有其他特殊情况。需要查阅相关法律条文是否对合同诈骗罪有特殊限制。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "查询取保候审适用条件的相关法规",
+      "content": "<search>取保候审适用条件</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "评估合同诈骗罪是否受取保候审限制",
+      "content": "<information>根据《刑事诉讼法》第67条，取保候审适用于可能判处管制、拘役或者有期徒刑，执行程序上不需要羁押的犯罪嫌疑人或被告人，以及符合特殊情形的其他人员。此外，取保候审的前提是嫌疑人或被告人不具有社会危险性。</information>根据该条文，合同诈骗罪虽可能是严重经济犯罪，但若不具有社会危险性(如没有继续诈骗行为的可能)，仍可申请取保候审。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "结合罪行及实际情况分析可能性",
+      "content": "合同诈骗罪的定罪和量刑有轻重之分，若案件性质较轻、金额较少且当事人主动退赔损失等，符合取保候审的可能性会提升。此外，如果犯罪嫌疑人因健康状况、生活困难等原因达到了法律规定的特殊情形，也会增加申请成功的可能性。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "根据《刑事诉讼法》第67条规定，工程合同诈骗案件的犯罪嫌疑人或被告人，如果不具有社会危险性或者符合特殊情况，如患严重疾病、为孕妇等，可以申请取保候审。实际取保候审的成功与否取决于案件具体情况、司法机构对社会危险性的评估以及嫌疑人履行相关法律手续的能力。"
+    },
+    {
+      "action": "Verification",
+      "content": "总结逻辑链条，分析过法律依据（刑事诉讼法第67条）后确认结论准确无误。工程合同诈骗在指定条件下是可以申请取保候审的，最终决定权在司法机关。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n工程合同诈骗可以取保候审吗?\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n根据《刑事诉讼法》第67条规定，工程合同诈骗案件的犯罪嫌疑人或被告人，如果不具有社会危险性或者符合特殊情况，如患严重疾病、为孕妇等，可以申请取保候审。实际取保候审的成功与否取决于案件具体情况、司法机构对社会危险性的评估以及嫌疑人履行相关法律手续的能力。  \n</Model Response>  \n\n<Reference Answer>  \n取保候审也是有相应的条件要求的，并不是所有的犯罪嫌疑人都会申请，如果仅仅是因为合同诈骗的话，只要不是被判处的特别严重，都是可以申请取保候审的。取保候审的条件要求(一)非暴力犯罪的。相对于暴力犯罪而言，盗窃、抢夺、诈骗等非暴力犯罪的案件在办理取保候审时更容易一些；(二)可能判处3年以下有期徒刑的。实践中90%以上审判时取保候审的被告人可能会被判缓刑，而缓刑的前提是拘役、3年以下有期徒刑。如果审理期间办理了取保候审，而判决时因不能缓刑而判3年以上的实刑，之后再被收监，就会令被告人产生对法律的不理解、对法不可知的恐惧以及对法无定律的迷惑，也不利于其改造。所以，司法实践中，有可能判处3年以上有期徒刑的，也很难取保候审。(三)存在重大疾病，严重危及生命健康的。司法实践中，以这个理由申请取保候审的，只有严重到危及生命健康的，才会批准取保候审。(四)怀孕的妇女。(五)认罪的。如果不认罪，一般很难取保候审。(六)财产案件，退赃，积极交纳罚金的。(七)人身损害案件，积极赔偿被害人，并争取到被害人谅解的。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 分析工程合同诈骗是否符合取保候审条件\n首先，需要明确工程合同诈骗属于什么性质的犯罪。根据中国刑法，合同诈骗罪属于经济犯罪范畴。其次，取保候审适用条件主要包括犯罪嫌疑人或被告人符合以下任一条件：不致发生社会危险性；患有严重疾病、自行生活困难；孕妇或哺乳期妇女；监外执行或有其他特殊情况。需要查阅相关法律条文是否对合同诈骗罪有特殊限制。\n\n### 查询取保候审适用条件的相关法规\n<search>取保候审适用条件</search>\n\n### 评估合同诈骗罪是否受取保候审限制\n<information>根据《刑事诉讼法》第67条，取保候审适用于可能判处管制、拘役或者有期徒刑，执行程序上不需要羁押的犯罪嫌疑人或被告人，以及符合特殊情形的其他人员。此外，取保候审的前提是嫌疑人或被告人不具有社会危险性。</information>根据该条文，合同诈骗罪虽可能是严重经济犯罪，但若不具有社会危险性(如没有继续诈骗行为的可能)，仍可申请取保候审。\n\n### 结合罪行及实际情况分析可能性\n合同诈骗罪的定罪和量刑有轻重之分，若案件性质较轻、金额较少且当事人主动退赔损失等，符合取保候审的可能性会提升。此外，如果犯罪嫌疑人因健康状况、生活困难等原因达到了法律规定的特殊情形，也会增加申请成功的可能性。\n\n### Conclusion\n根据《刑事诉讼法》第67条规定，工程合同诈骗案件的犯罪嫌疑人或被告人，如果不具有社会危险性或者符合特殊情况，如患严重疾病、为孕妇等，可以申请取保候审。实际取保候审的成功与否取决于案件具体情况、司法机构对社会危险性的评估以及嫌疑人履行相关法律手续的能力。\n\n### Verification\n总结逻辑链条，分析过法律依据（刑事诉讼法第67条）后确认结论准确无误。工程合同诈骗在指定条件下是可以申请取保候审的，最终决定权在司法机关。\n</Thought Process>\n\n<Question>\n工程合同诈骗可以取保候审吗?\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n首先要搞清楚工程合同诈骗在法律上是什么性质的犯罪。好像这种情况属于经济类犯罪，特别是合同诈骗罪，根据刑法规定，是一种专门针对经济领域的罪名。然后想到取保候审是刑事案件里面的一个程序，有特定的条件，所以应该去看看法律怎么规定它的适用条件。\n\n搜索一下吧，关键词可以是“取保候审适用条件”。<search>取保候审适用条件</search>\n\n找到了！根据刑事诉讼法第67条提到的内容，取保候审的适用人群包括那些可能只判管制、拘役或者有期徒刑，同时在刑事程序中不需要羁押的嫌疑人。还有呢，如果嫌疑人有特殊情况，比如重病、自理困难，或者是孕妇、正在哺乳的母亲，也可以申请取保候审。不过前置条件是嫌疑人不能具有社会危险性。<information>根据《刑事诉讼法》第67条，取保候审适用于可能判处管制、拘役或者有期徒刑，执行程序上不需要羁押的犯罪嫌疑人或被告人，以及符合特殊情形的其他人员。此外，取保候审的前提是嫌疑人或被告人不具有社会危险性。</information>\n\n再看看合同诈骗罪本身有没有什么特殊限制吧，毕竟它是经济犯罪，可能有些不同。嗯，看起来并没有直接说诈骗罪就一定不能取保。原来合同诈骗罪也是可以申请取保候审的，只要不具有社会危险性，比如没有进一步实施新的诈骗行为的可能性，就有机会。\n\n这里想到一个问题，合同诈骗罪的严重程度好像会有不同，比如金额大小、是否使用暴力威胁，或者有没有主动赔偿受害人损失，这些可能都会影响案件的性质。如果案件相对轻，比如金额不高，嫌疑人还主动退赔，那么被批准取保的可能性似乎会更高。\n\n另外，还有一种情况是，当事人如果符合特殊条件，比如健康状况不佳、有重大疾病，或者是孕妇、哺乳期妇女，那就算案件本身不轻，也可能因为这些原因申请成功。\n\n这样总结一下吧，虽然工程合同诈骗罪可能较为严重，只要满足取保候审的条件，比如社会危险性低或者有特殊情况，就可以依法申请。嗯，关键是具体情况具体分析，司法机关还得评估到底有没有社会危险性，最后决定权还是在他们手上。\n</Internal Thinking>\n\n<Question>\n工程合同诈骗可以取保候审吗?\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析工程合同诈骗是否符合取保候审条件\",\n      \"content\": \"首先，需要明确工程合同诈骗属于什么性质的犯罪。根据中国刑法，合同诈骗罪属于经济犯罪范畴。其次，取保候审适用条件主要包括犯罪嫌疑人或被告人符合以下任一条件：不致发生社会危险性；患有严重疾病、自行生活困难；孕妇或哺乳期妇女；监外执行或有其他特殊情况。需要查阅相关法律条文是否对合同诈骗罪有特殊限制。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"查询取保候审适用条件的相关法规\",\n      \"content\": \"<search>取保候审适用条件</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"评估合同诈骗罪是否受取保候审限制\",\n      \"content\": \"<information>根据《刑事诉讼法》第67条，取保候审适用于可能判处管制、拘役或者有期徒刑，执行程序上不需要羁押的犯罪嫌疑人或被告人，以及符合特殊情形的其他人员。此外，取保候审的前提是嫌疑人或被告人不具有社会危险性。</information>根据该条文，合同诈骗罪虽可能是严重经济犯罪，但若不具有社会危险性(如没有继续诈骗行为的可能)，仍可申请取保候审。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"结合罪行及实际情况分析可能性\",\n      \"content\": \"合同诈骗罪的定罪和量刑有轻重之分，若案件性质较轻、金额较少且当事人主动退赔损失等，符合取保候审的可能性会提升。此外，如果犯罪嫌疑人因健康状况、生活困难等原因达到了法律规定的特殊情形，也会增加申请成功的可能性。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"根据《刑事诉讼法》第67条规定，工程合同诈骗案件的犯罪嫌疑人或被告人，如果不具有社会危险性或者符合特殊情况，如患严重疾病、为孕妇等，可以申请取保候审。实际取保候审的成功与否取决于案件具体情况、司法机构对社会危险性的评估以及嫌疑人履行相关法律手续的能力。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"总结逻辑链条，分析过法律依据（刑事诉讼法第67条）后确认结论准确无误。工程合同诈骗在指定条件下是可以申请取保候审的，最终决定权在司法机关。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"首先要搞清楚工程合同诈骗在法律上是什么性质的犯罪。好像这种情况属于经济类犯罪，特别是合同诈骗罪，根据刑法规定，是一种专门针对经济领域的罪名。然后想到取保候审是刑事案件里面的一个程序，有特定的条件，所以应该去看看法律怎么规定它的适用条件。\\n\\n搜索一下吧，关键词可以是“取保候审适用条件”。<search>取保候审适用条件</search>\\n\\n找到了！根据刑事诉讼法第67条提到的内容，取保候审的适用人群包括那些可能只判管制、拘役或者有期徒刑，同时在刑事程序中不需要羁押的嫌疑人。还有呢，如果嫌疑人有特殊情况，比如重病、自理困难，或者是孕妇、正在哺乳的母亲，也可以申请取保候审。不过前置条件是嫌疑人不能具有社会危险性。<information>根据《刑事诉讼法》第67条，取保候审适用于可能判处管制、拘役或者有期徒刑，执行程序上不需要羁押的犯罪嫌疑人或被告人，以及符合特殊情形的其他人员。此外，取保候审的前提是嫌疑人或被告人不具有社会危险性。</information>\\n\\n再看看合同诈骗罪本身有没有什么特殊限制吧，毕竟它是经济犯罪，可能有些不同。嗯，看起来并没有直接说诈骗罪就一定不能取保。原来合同诈骗罪也是可以申请取保候审的，只要不具有社会危险性，比如没有进一步实施新的诈骗行为的可能性，就有机会。\\n\\n这里想到一个问题，合同诈骗罪的严重程度好像会有不同，比如金额大小、是否使用暴力威胁，或者有没有主动赔偿受害人损失，这些可能都会影响案件的性质。如果案件相对轻，比如金额不高，嫌疑人还主动退赔，那么被批准取保的可能性似乎会更高。\\n\\n另外，还有一种情况是，当事人如果符合特殊条件，比如健康状况不佳、有重大疾病，或者是孕妇、哺乳期妇女，那就算案件本身不轻，也可能因为这些原因申请成功。\\n\\n这样总结一下吧，虽然工程合同诈骗罪可能较为严重，只要满足取保候审的条件，比如社会危险性低或者有特殊情况，就可以依法申请。嗯，关键是具体情况具体分析，司法机关还得评估到底有没有社会危险性，最后决定权还是在他们手上。\"\n}\n```",
+    "工程合同诈骗罪是否可以取保候审，需要根据具体情况来判断。根据《刑事诉讼法》第67条的规定，取保候审适用于以下情况：  \n\n1. 犯罪嫌疑人或被告人涉嫌的罪行可能判处管制、拘役或有期徒刑，且不需要羁押；  \n2. 嫌疑人或被告人具有特殊情形（如重病、自理困难、孕妇或正在哺乳婴儿的妇女）；  \n3. 不具有社会危险性，即不会对社会公共安全、他人生命及财产安全造成威胁。\n\n合同诈骗罪属于经济犯罪，没有法律禁止申请取保候审的特殊规定。因此，只要嫌疑人或被告人符合以上条件，原则上是可以依法申请取保候审的。  \n\n具体来说，如果工程合同诈骗的涉案金额较小、嫌疑人积极退赔受害人损失、配合法律调查，或具备如健康不佳、孕产等特殊情形，且司法机关评估认为其不具有社会危险性，那么申请取保候审成功的可能性会较大。但如果案件情节严重，例如涉案金额巨大或多次实施诈骗，司法机关可能会认为嫌疑人存在较高的社会危险性，此时一般不会批准取保候审。\n\n因此，是否能够取保候审，关键在于案件具体情况以及司法机关的综合评估。建议当事人或家属可以通过律师了解更多细节，并依据实际情况依法提交取保候审申请书。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "分析工程合同诈骗是否符合取保候审条件",
+        "content": "首先，需要明确工程合同诈骗属于什么性质的犯罪。根据中国刑法，合同诈骗罪属于经济犯罪范畴。其次，取保候审适用条件主要包括犯罪嫌疑人或被告人符合以下任一条件：不致发生社会危险性；患有严重疾病、自行生活困难；孕妇或哺乳期妇女；监外执行或有其他特殊情况。需要查阅相关法律条文是否对合同诈骗罪有特殊限制。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "查询取保候审适用条件的相关法规",
+        "content": "<search>取保候审适用条件</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "评估合同诈骗罪是否受取保候审限制",
+        "content": "<information>根据《刑事诉讼法》第67条，取保候审适用于可能判处管制、拘役或者有期徒刑，执行程序上不需要羁押的犯罪嫌疑人或被告人，以及符合特殊情形的其他人员。此外，取保候审的前提是嫌疑人或被告人不具有社会危险性。</information>根据该条文，合同诈骗罪虽可能是严重经济犯罪，但若不具有社会危险性(如没有继续诈骗行为的可能)，仍可申请取保候审。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "结合罪行及实际情况分析可能性",
+        "content": "合同诈骗罪的定罪和量刑有轻重之分，若案件性质较轻、金额较少且当事人主动退赔损失等，符合取保候审的可能性会提升。此外，如果犯罪嫌疑人因健康状况、生活困难等原因达到了法律规定的特殊情形，也会增加申请成功的可能性。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "根据《刑事诉讼法》第67条规定，工程合同诈骗案件的犯罪嫌疑人或被告人，如果不具有社会危险性或者符合特殊情况，如患严重疾病、为孕妇等，可以申请取保候审。实际取保候审的成功与否取决于案件具体情况、司法机构对社会危险性的评估以及嫌疑人履行相关法律手续的能力。"
+      },
+      {
+        "action": "Verification",
+        "content": "总结逻辑链条，分析过法律依据（刑事诉讼法第67条）后确认结论准确无误。工程合同诈骗在指定条件下是可以申请取保候审的，最终决定权在司法机关。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "首先要搞清楚工程合同诈骗在法律上是什么性质的犯罪。好像这种情况属于经济类犯罪，特别是合同诈骗罪，根据刑法规定，是一种专门针对经济领域的罪名。然后想到取保候审是刑事案件里面的一个程序，有特定的条件，所以应该去看看法律怎么规定它的适用条件。\n\n搜索一下吧，关键词可以是“取保候审适用条件”。<search>取保候审适用条件</search>\n\n找到了！根据刑事诉讼法第67条提到的内容，取保候审的适用人群包括那些可能只判管制、拘役或者有期徒刑，同时在刑事程序中不需要羁押的嫌疑人。还有呢，如果嫌疑人有特殊情况，比如重病、自理困难，或者是孕妇、正在哺乳的母亲，也可以申请取保候审。不过前置条件是嫌疑人不能具有社会危险性。<information>根据《刑事诉讼法》第67条，取保候审适用于可能判处管制、拘役或者有期徒刑，执行程序上不需要羁押的犯罪嫌疑人或被告人，以及符合特殊情形的其他人员。此外，取保候审的前提是嫌疑人或被告人不具有社会危险性。</information>\n\n再看看合同诈骗罪本身有没有什么特殊限制吧，毕竟它是经济犯罪，可能有些不同。嗯，看起来并没有直接说诈骗罪就一定不能取保。原来合同诈骗罪也是可以申请取保候审的，只要不具有社会危险性，比如没有进一步实施新的诈骗行为的可能性，就有机会。\n\n这里想到一个问题，合同诈骗罪的严重程度好像会有不同，比如金额大小、是否使用暴力威胁，或者有没有主动赔偿受害人损失，这些可能都会影响案件的性质。如果案件相对轻，比如金额不高，嫌疑人还主动退赔，那么被批准取保的可能性似乎会更高。\n\n另外，还有一种情况是，当事人如果符合特殊条件，比如健康状况不佳、有重大疾病，或者是孕妇、哺乳期妇女，那就算案件本身不轻，也可能因为这些原因申请成功。\n\n这样总结一下吧，虽然工程合同诈骗罪可能较为严重，只要满足取保候审的条件，比如社会危险性低或者有特殊情况，就可以依法申请。嗯，关键是具体情况具体分析，司法机关还得评估到底有没有社会危险性，最后决定权还是在他们手上。",
+  "Response": "工程合同诈骗罪是否可以取保候审，需要根据具体情况来判断。根据《刑事诉讼法》第67条的规定，取保候审适用于以下情况：  \n\n1. 犯罪嫌疑人或被告人涉嫌的罪行可能判处管制、拘役或有期徒刑，且不需要羁押；  \n2. 嫌疑人或被告人具有特殊情形（如重病、自理困难、孕妇或正在哺乳婴儿的妇女）；  \n3. 不具有社会危险性，即不会对社会公共安全、他人生命及财产安全造成威胁。\n\n合同诈骗罪属于经济犯罪，没有法律禁止申请取保候审的特殊规定。因此，只要嫌疑人或被告人符合以上条件，原则上是可以依法申请取保候审的。  \n\n具体来说，如果工程合同诈骗的涉案金额较小、嫌疑人积极退赔受害人损失、配合法律调查，或具备如健康不佳、孕产等特殊情形，且司法机关评估认为其不具有社会危险性，那么申请取保候审成功的可能性会较大。但如果案件情节严重，例如涉案金额巨大或多次实施诈骗，司法机关可能会认为嫌疑人存在较高的社会危险性，此时一般不会批准取保候审。\n\n因此，是否能够取保候审，关键在于案件具体情况以及司法机关的综合评估。建议当事人或家属可以通过律师了解更多细节，并依据实际情况依法提交取保候审申请书。",
+  "Question": "工程合同诈骗可以取保候审吗?"
+}

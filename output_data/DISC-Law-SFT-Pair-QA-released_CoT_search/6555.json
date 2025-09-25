@@ -1,0 +1,99 @@
+{
+  "Open-ended Verifiable Question": "婚姻关系是什么?",
+  "Ground-True Answer": "婚姻关系是指由合法婚姻而产生的男女之间的人身和财产方面的权利义务关系。夫妻关系是家庭产生的前提，是的基础和核心。夫妻在家庭中地位平等。夫妻关系包括夫妻人身关系和夫妻财产关系两个方面的内容。\n1.夫妻人身关系：夫妻人身关系是指没有直接财产内容、夫妻在身份上的权利义务关系。具体包括夫妻双方都有各用自己姓名的权利;双方都有参加生产、工作、学习和社会活动的自由，一方不得对他方加以限制和干涉;双方都有抚养教育子女和管教、保护未成年子女的权利和义务;双方都有实行计划生育的义务。\n2.夫妻财产关系：夫妻财产关系是指夫妻之间在财产方面的权利义务关系。它是夫妻人身关系引起的法律后果，直接体现一定的经济内容。",
+  "process_id": 6555,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "理解婚姻关系的基本概念",
+      "content": "婚姻关系是一种法律认可的社会或家庭关系，通常指由婚姻行为或法律程序所确立的一段关系。它涉及夫妻之间的权利义务、家庭伦理及财产分配等多方面内容。为了进一步解答，需要确认婚姻关系在法律或伦理上的具体定义背景。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "查询婚姻关系的法律定义",
+      "content": "在不同法律体系下，婚姻关系的定义有所不同。为了提供准确答案，需查找相关法律规范中对于婚姻关系的定义。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "提出查询关键字",
+      "content": "<search>婚姻关系 法律定义</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "获取查询结果并分析",
+      "content": "<information>婚姻关系在《中华人民共和国民法典》中被定义为由合法登记产生的家庭核心关系。基于《民法典》第1041条，婚姻关系是以一男一女结婚为核心建立的合法夫妻关系，其基本原则包括自由、平等、忠诚和相互扶助。</information>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "总结婚姻关系的特点",
+      "content": "根据《中华人民共和国民法典》，婚姻关系具有以下特点：（1）合法性：需经法律认可的登记程序确立；（2）独特性：基于男女双方的自愿选择；（3）权利义务性：包括夫妻关系中的经济、生活扶助和财产分配等内容；（4）伦理性：强调夫妻之间的忠诚和互助精神，这是强化家庭纽带的重要部分。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "婚姻关系是由婚姻法规定及法律程序认可的夫妻之间的特定社会关系，其主要特征包括合法性、独特性、权利义务性及伦理性。该关系产生于合法婚姻登记，并受到法律保护，由此形成以家庭为单位的社会基础结构。"
+    },
+    {
+      "action": "Verification",
+      "content": "经过对定义和《民法典》相关条款的分析，结论正确且符合法律体系的描述。无需进一步补充。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n婚姻关系是什么?\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n婚姻关系是由婚姻法规定及法律程序认可的夫妻之间的特定社会关系，其主要特征包括合法性、独特性、权利义务性及伦理性。该关系产生于合法婚姻登记，并受到法律保护，由此形成以家庭为单位的社会基础结构。  \n</Model Response>  \n\n<Reference Answer>  \n婚姻关系是指由合法婚姻而产生的男女之间的人身和财产方面的权利义务关系。夫妻关系是家庭产生的前提，是的基础和核心。夫妻在家庭中地位平等。夫妻关系包括夫妻人身关系和夫妻财产关系两个方面的内容。\n1.夫妻人身关系：夫妻人身关系是指没有直接财产内容、夫妻在身份上的权利义务关系。具体包括夫妻双方都有各用自己姓名的权利;双方都有参加生产、工作、学习和社会活动的自由，一方不得对他方加以限制和干涉;双方都有抚养教育子女和管教、保护未成年子女的权利和义务;双方都有实行计划生育的义务。\n2.夫妻财产关系：夫妻财产关系是指夫妻之间在财产方面的权利义务关系。它是夫妻人身关系引起的法律后果，直接体现一定的经济内容。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 理解婚姻关系的基本概念\n婚姻关系是一种法律认可的社会或家庭关系，通常指由婚姻行为或法律程序所确立的一段关系。它涉及夫妻之间的权利义务、家庭伦理及财产分配等多方面内容。为了进一步解答，需要确认婚姻关系在法律或伦理上的具体定义背景。\n\n### 查询婚姻关系的法律定义\n在不同法律体系下，婚姻关系的定义有所不同。为了提供准确答案，需查找相关法律规范中对于婚姻关系的定义。\n\n### 提出查询关键字\n<search>婚姻关系 法律定义</search>\n\n### 获取查询结果并分析\n<information>婚姻关系在《中华人民共和国民法典》中被定义为由合法登记产生的家庭核心关系。基于《民法典》第1041条，婚姻关系是以一男一女结婚为核心建立的合法夫妻关系，其基本原则包括自由、平等、忠诚和相互扶助。</information>\n\n### 总结婚姻关系的特点\n根据《中华人民共和国民法典》，婚姻关系具有以下特点：（1）合法性：需经法律认可的登记程序确立；（2）独特性：基于男女双方的自愿选择；（3）权利义务性：包括夫妻关系中的经济、生活扶助和财产分配等内容；（4）伦理性：强调夫妻之间的忠诚和互助精神，这是强化家庭纽带的重要部分。\n\n### Conclusion\n婚姻关系是由婚姻法规定及法律程序认可的夫妻之间的特定社会关系，其主要特征包括合法性、独特性、权利义务性及伦理性。该关系产生于合法婚姻登记，并受到法律保护，由此形成以家庭为单位的社会基础结构。\n\n### Verification\n经过对定义和《民法典》相关条款的分析，结论正确且符合法律体系的描述。无需进一步补充。\n</Thought Process>\n\n<Question>\n婚姻关系是什么?\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n嗯，婚姻关系应该是一个很重要的概念吧，尤其是在法律或者伦理层面。好像它不仅仅是两个人在一起那么简单，而且会涉及一些家庭、权利义务之类的问题。让我想一下，具体来说它应该怎么定义呢？\n\n婚姻应该是伴侣之间的法律关系吧？但这样说好像还不够具体，还是得从法律的角度来看。要不我查一下相关法律是怎么定义的，这样解释起来更精确。嗯，搜索一下相关的关键词可能有帮助。\n\n<search>婚姻关系 法律定义</search>\n\n哦，有了。这么看来，《中华人民共和国民法典》里对婚姻关系有明确定义。据《民法典》第1041条，婚姻关系的核心是合法登记。这就意味着夫妻关系必须是通过登记程序才能成立，否则就不受法律保护。啊，除此之外，还提到了一些原则，比如自由、平等、忠诚和互相扶助。这些原则听起来好像不仅仅是法律上的约束，还涉及到夫妻之间的伦理和情感联结。\n\n嗯，我梳理下它的特点。首先，婚姻关系需要合法登记，这是一种法律行为，没有登记就不算。其次，它很独特，建立在男女双方的自愿基础上，法律上不能强迫结婚。然后是它所包含的权利和义务，比如夫妻之间经济上要互相扶助，生活上也要共同面对问题。最后还有伦理方面，忠诚和互助算是维系夫妻感情的核心吧。这些特点确实让婚姻关系不仅仅是法律条文，还包含了很多伦理和情感要求。\n\n所以总结一下吧，婚姻关系是通过法律上的婚姻登记确立的关系，同时也受到一些基本伦理原则的约束。它的存在不是单纯的形式，而是要构建家庭和社会的核心结构。看起来这个定义挺合理，既从法律角度说明了合法性，也覆盖了情感和伦理层面的内容。\n\n嗯，感觉答案应该对了，逻辑也很清晰。法律条款确认过了，没有问题，我觉得没什么需要补充的了。\n</Internal Thinking>\n\n<Question>\n婚姻关系是什么?\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"理解婚姻关系的基本概念\",\n      \"content\": \"婚姻关系是一种法律认可的社会或家庭关系，通常指由婚姻行为或法律程序所确立的一段关系。它涉及夫妻之间的权利义务、家庭伦理及财产分配等多方面内容。为了进一步解答，需要确认婚姻关系在法律或伦理上的具体定义背景。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"查询婚姻关系的法律定义\",\n      \"content\": \"在不同法律体系下，婚姻关系的定义有所不同。为了提供准确答案，需查找相关法律规范中对于婚姻关系的定义。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"提出查询关键字\",\n      \"content\": \"<search>婚姻关系 法律定义</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"获取查询结果并分析\",\n      \"content\": \"<information>婚姻关系在《中华人民共和国民法典》中被定义为由合法登记产生的家庭核心关系。基于《民法典》第1041条，婚姻关系是以一男一女结婚为核心建立的合法夫妻关系，其基本原则包括自由、平等、忠诚和相互扶助。</information>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"总结婚姻关系的特点\",\n      \"content\": \"根据《中华人民共和国民法典》，婚姻关系具有以下特点：（1）合法性：需经法律认可的登记程序确立；（2）独特性：基于男女双方的自愿选择；（3）权利义务性：包括夫妻关系中的经济、生活扶助和财产分配等内容；（4）伦理性：强调夫妻之间的忠诚和互助精神，这是强化家庭纽带的重要部分。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"婚姻关系是由婚姻法规定及法律程序认可的夫妻之间的特定社会关系，其主要特征包括合法性、独特性、权利义务性及伦理性。该关系产生于合法婚姻登记，并受到法律保护，由此形成以家庭为单位的社会基础结构。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"经过对定义和《民法典》相关条款的分析，结论正确且符合法律体系的描述。无需进一步补充。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"嗯，婚姻关系应该是一个很重要的概念吧，尤其是在法律或者伦理层面。好像它不仅仅是两个人在一起那么简单，而且会涉及一些家庭、权利义务之类的问题。让我想一下，具体来说它应该怎么定义呢？\\n\\n婚姻应该是伴侣之间的法律关系吧？但这样说好像还不够具体，还是得从法律的角度来看。要不我查一下相关法律是怎么定义的，这样解释起来更精确。嗯，搜索一下相关的关键词可能有帮助。\\n\\n<search>婚姻关系 法律定义</search>\\n\\n哦，有了。这么看来，《中华人民共和国民法典》里对婚姻关系有明确定义。据《民法典》第1041条，婚姻关系的核心是合法登记。这就意味着夫妻关系必须是通过登记程序才能成立，否则就不受法律保护。啊，除此之外，还提到了一些原则，比如自由、平等、忠诚和互相扶助。这些原则听起来好像不仅仅是法律上的约束，还涉及到夫妻之间的伦理和情感联结。\\n\\n嗯，我梳理下它的特点。首先，婚姻关系需要合法登记，这是一种法律行为，没有登记就不算。其次，它很独特，建立在男女双方的自愿基础上，法律上不能强迫结婚。然后是它所包含的权利和义务，比如夫妻之间经济上要互相扶助，生活上也要共同面对问题。最后还有伦理方面，忠诚和互助算是维系夫妻感情的核心吧。这些特点确实让婚姻关系不仅仅是法律条文，还包含了很多伦理和情感要求。\\n\\n所以总结一下吧，婚姻关系是通过法律上的婚姻登记确立的关系，同时也受到一些基本伦理原则的约束。它的存在不是单纯的形式，而是要构建家庭和社会的核心结构。看起来这个定义挺合理，既从法律角度说明了合法性，也覆盖了情感和伦理层面的内容。\\n\\n嗯，感觉答案应该对了，逻辑也很清晰。法律条款确认过了，没有问题，我觉得没什么需要补充的了。\"\n}\n```",
+    "婚姻关系是由法律层面正式确立的一种特殊人际关系，通常指通过合法婚姻登记程序建立的夫妻关系。根据《中华人民共和国民法典》第1041条，婚姻关系以合法登记为核心，只有经婚姻登记机关依法注册登记后，夫妻关系才能成立并受到法律的保护。\n\n婚姻关系具有以下主要特点：\n\n1. **合法性**：婚姻关系必须通过婚姻登记程序确立，这是法律承认的必要条件，未登记的结合不受法律保护。\n   \n2. **自愿性**：婚姻以男女双方自愿为基础，法律禁止任何形式的强迫婚姻。\n\n3. **权利与义务**：婚姻关系中的夫妻负有相互扶助、共同承担家庭责任的义务，包括经济支持、共同生活及育儿安排等。\n\n4. **伦理原则**：婚姻关系除了法律要求，还包含如忠诚、平等、互相尊重和关爱的伦理原则，这些原则有助于维系家庭和感情的稳定。\n\n此外，婚姻关系不仅关乎夫妻个人，还涉及家庭的建立与社会责任，对个人幸福和社会结构都有重要意义。因此，从法律到伦理，婚姻关系不仅是两个人的结合，也是一种带有深远社会影响的制度安排。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "理解婚姻关系的基本概念",
+        "content": "婚姻关系是一种法律认可的社会或家庭关系，通常指由婚姻行为或法律程序所确立的一段关系。它涉及夫妻之间的权利义务、家庭伦理及财产分配等多方面内容。为了进一步解答，需要确认婚姻关系在法律或伦理上的具体定义背景。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "查询婚姻关系的法律定义",
+        "content": "在不同法律体系下，婚姻关系的定义有所不同。为了提供准确答案，需查找相关法律规范中对于婚姻关系的定义。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "提出查询关键字",
+        "content": "<search>婚姻关系 法律定义</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "获取查询结果并分析",
+        "content": "<information>婚姻关系在《中华人民共和国民法典》中被定义为由合法登记产生的家庭核心关系。基于《民法典》第1041条，婚姻关系是以一男一女结婚为核心建立的合法夫妻关系，其基本原则包括自由、平等、忠诚和相互扶助。</information>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "总结婚姻关系的特点",
+        "content": "根据《中华人民共和国民法典》，婚姻关系具有以下特点：（1）合法性：需经法律认可的登记程序确立；（2）独特性：基于男女双方的自愿选择；（3）权利义务性：包括夫妻关系中的经济、生活扶助和财产分配等内容；（4）伦理性：强调夫妻之间的忠诚和互助精神，这是强化家庭纽带的重要部分。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "婚姻关系是由婚姻法规定及法律程序认可的夫妻之间的特定社会关系，其主要特征包括合法性、独特性、权利义务性及伦理性。该关系产生于合法婚姻登记，并受到法律保护，由此形成以家庭为单位的社会基础结构。"
+      },
+      {
+        "action": "Verification",
+        "content": "经过对定义和《民法典》相关条款的分析，结论正确且符合法律体系的描述。无需进一步补充。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "嗯，婚姻关系应该是一个很重要的概念吧，尤其是在法律或者伦理层面。好像它不仅仅是两个人在一起那么简单，而且会涉及一些家庭、权利义务之类的问题。让我想一下，具体来说它应该怎么定义呢？\n\n婚姻应该是伴侣之间的法律关系吧？但这样说好像还不够具体，还是得从法律的角度来看。要不我查一下相关法律是怎么定义的，这样解释起来更精确。嗯，搜索一下相关的关键词可能有帮助。\n\n<search>婚姻关系 法律定义</search>\n\n哦，有了。这么看来，《中华人民共和国民法典》里对婚姻关系有明确定义。据《民法典》第1041条，婚姻关系的核心是合法登记。这就意味着夫妻关系必须是通过登记程序才能成立，否则就不受法律保护。啊，除此之外，还提到了一些原则，比如自由、平等、忠诚和互相扶助。这些原则听起来好像不仅仅是法律上的约束，还涉及到夫妻之间的伦理和情感联结。\n\n嗯，我梳理下它的特点。首先，婚姻关系需要合法登记，这是一种法律行为，没有登记就不算。其次，它很独特，建立在男女双方的自愿基础上，法律上不能强迫结婚。然后是它所包含的权利和义务，比如夫妻之间经济上要互相扶助，生活上也要共同面对问题。最后还有伦理方面，忠诚和互助算是维系夫妻感情的核心吧。这些特点确实让婚姻关系不仅仅是法律条文，还包含了很多伦理和情感要求。\n\n所以总结一下吧，婚姻关系是通过法律上的婚姻登记确立的关系，同时也受到一些基本伦理原则的约束。它的存在不是单纯的形式，而是要构建家庭和社会的核心结构。看起来这个定义挺合理，既从法律角度说明了合法性，也覆盖了情感和伦理层面的内容。\n\n嗯，感觉答案应该对了，逻辑也很清晰。法律条款确认过了，没有问题，我觉得没什么需要补充的了。",
+  "Response": "婚姻关系是由法律层面正式确立的一种特殊人际关系，通常指通过合法婚姻登记程序建立的夫妻关系。根据《中华人民共和国民法典》第1041条，婚姻关系以合法登记为核心，只有经婚姻登记机关依法注册登记后，夫妻关系才能成立并受到法律的保护。\n\n婚姻关系具有以下主要特点：\n\n1. **合法性**：婚姻关系必须通过婚姻登记程序确立，这是法律承认的必要条件，未登记的结合不受法律保护。\n   \n2. **自愿性**：婚姻以男女双方自愿为基础，法律禁止任何形式的强迫婚姻。\n\n3. **权利与义务**：婚姻关系中的夫妻负有相互扶助、共同承担家庭责任的义务，包括经济支持、共同生活及育儿安排等。\n\n4. **伦理原则**：婚姻关系除了法律要求，还包含如忠诚、平等、互相尊重和关爱的伦理原则，这些原则有助于维系家庭和感情的稳定。\n\n此外，婚姻关系不仅关乎夫妻个人，还涉及家庭的建立与社会责任，对个人幸福和社会结构都有重要意义。因此，从法律到伦理，婚姻关系不仅是两个人的结合，也是一种带有深远社会影响的制度安排。",
+  "Question": "婚姻关系是什么?"
+}

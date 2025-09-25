@@ -1,0 +1,109 @@
+{
+  "Open-ended Verifiable Question": "用人单位与职工达成协议由职工“自愿申请”不参加社会保险，将社会保险费用计入工资发放的行为是否合法有",
+  "Ground-True Answer": "用人单位与职工达成协议，由职工“自愿申请”不参加社会保险，将社会保险费用计入工资发放的行为是否合法有效？社会保险费是社会保险基金的主要来源，用人单位能否按时足额加纳社会保险费，关系到社会保险基金的安全和有效运行，而社会保险基金是广大群众的保命钱，是社会保险制度的物质基础，关系到参保职工的切身利益和社会稳定。因此，用人单位或者劳动者不缴纳社会保险费，不仅损害劳动者权益，更将损害社会公共利益，侵犯了国家社会保险基金的安全性和完整性。不缴纳社会保险，短期来看，劳动者能够拿到手里的工资多了，但在劳动者年老、疾病、失业、生育等情形下极易失去社会保障，这些风险个人往往难以凭自立救济的方式应对。从用人单位角度来看，用工成本似乎降低了，但实际上，不仅不能免除法定缴费义务，在劳动者发生人身伤亡构成工伤的情形下，用人单位将会产生更大损失。《劳动合同法》第26条规定，违反法律、行政法规强制性规定的或者用人单位免除自己的法定责任、排除劳动者权利的约定无效。因此，即使用人单位与劳动者之间存在社保补贴形式的约定或者劳动者书面承诺放弃参加社会保险，因不符合法律规定，均属无效，用人单位还是应当为劳动者补缴有关社会保险费，但之前已经支付给劳动者的社会补贴，劳动者应当予以返还。",
+  "process_id": 5618,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "分析用人单位是否可以规避参加社会保险的法律义务",
+      "content": "根据实践经验，劳动法和社会保险相关法律通常要求用人单位必须依法为职工参加社会保险。为了确认这一点并寻求具体条文支持，需要检索中国现行与社会保险相关的法律与法规。例如《中华人民共和国社会保险法》。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "检索《中华人民共和国社会保险法》相关规定",
+      "content": "<search>中华人民共和国社会保险法</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "分析《社会保险法》中雇主责任相关条款",
+      "content": "<information>《中华人民共和国社会保险法》第58条明确规定，用人单位应当依法为劳动者办理社会保险登记，并按时足额缴纳社会保险费。用人单位不得以任何形式与劳动者约定放弃社会保险权益。</information>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "确认“自愿”协议是否有效",
+      "content": "《社会保险法》规定明确，用人单位和职工不能通过协议约定规避社会保险缴纳义务，因此即使职工“自愿申请”不参加社会保险，也属于违法行为。还需要确认是否存在其他法律如劳动法补充此结论。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "检索《中华人民共和国劳动法》相关规定",
+      "content": "<search>中华人民共和国劳动法</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "分析《劳动法》中关于社会保险的补充规定",
+      "content": "<information>《中华人民共和国劳动法》第72条规定，用人单位和劳动者必须依法参加社会保险，并缴纳社会保险费。用人单位不得以任何理由、形式降低或者剥夺劳动者的社会保险权益。</information>"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "根据《中华人民共和国社会保险法》第58条和《中华人民共和国劳动法》第72条，用人单位与职工达成“自愿申请”不参加社会保险的协议属于违法行为。这种行为无论是以任何形式达成，都不能减轻或免除用人单位依法为职工缴纳社会保险的法定义务。"
+    },
+    {
+      "action": "Verification",
+      "content": "验证结论符合现行法律规定，符合社会保险法和劳动法的强制性要求，最终结论有效且无误。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n用人单位与职工达成协议由职工“自愿申请”不参加社会保险，将社会保险费用计入工资发放的行为是否合法有\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n根据《中华人民共和国社会保险法》第58条和《中华人民共和国劳动法》第72条，用人单位与职工达成“自愿申请”不参加社会保险的协议属于违法行为。这种行为无论是以任何形式达成，都不能减轻或免除用人单位依法为职工缴纳社会保险的法定义务。  \n</Model Response>  \n\n<Reference Answer>  \n用人单位与职工达成协议，由职工“自愿申请”不参加社会保险，将社会保险费用计入工资发放的行为是否合法有效？社会保险费是社会保险基金的主要来源，用人单位能否按时足额加纳社会保险费，关系到社会保险基金的安全和有效运行，而社会保险基金是广大群众的保命钱，是社会保险制度的物质基础，关系到参保职工的切身利益和社会稳定。因此，用人单位或者劳动者不缴纳社会保险费，不仅损害劳动者权益，更将损害社会公共利益，侵犯了国家社会保险基金的安全性和完整性。不缴纳社会保险，短期来看，劳动者能够拿到手里的工资多了，但在劳动者年老、疾病、失业、生育等情形下极易失去社会保障，这些风险个人往往难以凭自立救济的方式应对。从用人单位角度来看，用工成本似乎降低了，但实际上，不仅不能免除法定缴费义务，在劳动者发生人身伤亡构成工伤的情形下，用人单位将会产生更大损失。《劳动合同法》第26条规定，违反法律、行政法规强制性规定的或者用人单位免除自己的法定责任、排除劳动者权利的约定无效。因此，即使用人单位与劳动者之间存在社保补贴形式的约定或者劳动者书面承诺放弃参加社会保险，因不符合法律规定，均属无效，用人单位还是应当为劳动者补缴有关社会保险费，但之前已经支付给劳动者的社会补贴，劳动者应当予以返还。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 分析用人单位是否可以规避参加社会保险的法律义务\n根据实践经验，劳动法和社会保险相关法律通常要求用人单位必须依法为职工参加社会保险。为了确认这一点并寻求具体条文支持，需要检索中国现行与社会保险相关的法律与法规。例如《中华人民共和国社会保险法》。\n\n### 检索《中华人民共和国社会保险法》相关规定\n<search>中华人民共和国社会保险法</search>\n\n### 分析《社会保险法》中雇主责任相关条款\n<information>《中华人民共和国社会保险法》第58条明确规定，用人单位应当依法为劳动者办理社会保险登记，并按时足额缴纳社会保险费。用人单位不得以任何形式与劳动者约定放弃社会保险权益。</information>\n\n### 确认“自愿”协议是否有效\n《社会保险法》规定明确，用人单位和职工不能通过协议约定规避社会保险缴纳义务，因此即使职工“自愿申请”不参加社会保险，也属于违法行为。还需要确认是否存在其他法律如劳动法补充此结论。\n\n### 检索《中华人民共和国劳动法》相关规定\n<search>中华人民共和国劳动法</search>\n\n### 分析《劳动法》中关于社会保险的补充规定\n<information>《中华人民共和国劳动法》第72条规定，用人单位和劳动者必须依法参加社会保险，并缴纳社会保险费。用人单位不得以任何理由、形式降低或者剥夺劳动者的社会保险权益。</information>\n\n### Conclusion\n根据《中华人民共和国社会保险法》第58条和《中华人民共和国劳动法》第72条，用人单位与职工达成“自愿申请”不参加社会保险的协议属于违法行为。这种行为无论是以任何形式达成，都不能减轻或免除用人单位依法为职工缴纳社会保险的法定义务。\n\n### Verification\n验证结论符合现行法律规定，符合社会保险法和劳动法的强制性要求，最终结论有效且无误。\n</Thought Process>\n\n<Question>\n用人单位与职工达成协议由职工“自愿申请”不参加社会保险，将社会保险费用计入工资发放的行为是否合法有\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n嗯，这个问题挺常见的。用人单位是不是可以通过某种方式让员工“自愿”不参加社会保险？总觉得这样的行为听上去不太符合法律规定，不过还得看看具体法条是怎么说的。\n\n首先，我记得好像《中华人民共和国社会保险法》有明文规定哪些情况下必须缴纳社会保险。为了准确一点，我得去看看这个法律的具体条款。<search>中华人民共和国社会保险法</search>\n\n哦，这里找到了相关条款。《社会保险法》第58条提到，用人单位需要依法为职工办理社会保险登记，并且按时足额缴纳社会保险费用。而且特别提到，用人单位不能通过任何方式和劳动者约定放弃社会保险的权益。这条说得很清楚了，那么所谓的“自愿申请不参加社会保险”从法律上讲不可能是合法的。\n\n但我还是觉得需要更稳妥一些，比如再去查《劳动法》，看看有没有补充说明。毕竟《社会保险法》是针对社保方面的，而《劳动法》覆盖的范围更大，可能对雇佣关系的要求有进一步说明。<search>中华人民共和国劳动法</search>\n\n找到了！根据《劳动法》第72条，这里明确写着“用人单位和劳动者必须依法参加社会保险，并缴纳社会保险费”。而且还强调了不能以任何理由、形式剥夺或降低劳动者的社会保险权益。这就和《社会保险法》的逻辑是一致的，说明不能通过所谓“协议”来规避这些义务。\n\n现在整体看下来，”自愿申请”这种说法根本站不住脚，不管是单位窍门还是职工自己提出的申请都不行。法律设定的社会保险缴纳义务是强制性的，不能规避。为了进一步确认，我重新理了一下思路，《社会保险法》第58条和《劳动法》第72条都清晰指出了用人单位这方面的责任，而且也明确说明无论协议如何制定，都不能免除义务。\n\n结论很清楚了，无论这个“自愿申请”的方式多么合理看起来，都违反了法律强制要求。社会保险本身是职工的一项法定权利，不应被剥夺或替代。如果真有这样的情况发生，法律上肯定不会支持。\n</Internal Thinking>\n\n<Question>\n用人单位与职工达成协议由职工“自愿申请”不参加社会保险，将社会保险费用计入工资发放的行为是否合法有\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析用人单位是否可以规避参加社会保险的法律义务\",\n      \"content\": \"根据实践经验，劳动法和社会保险相关法律通常要求用人单位必须依法为职工参加社会保险。为了确认这一点并寻求具体条文支持，需要检索中国现行与社会保险相关的法律与法规。例如《中华人民共和国社会保险法》。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"检索《中华人民共和国社会保险法》相关规定\",\n      \"content\": \"<search>中华人民共和国社会保险法</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析《社会保险法》中雇主责任相关条款\",\n      \"content\": \"<information>《中华人民共和国社会保险法》第58条明确规定，用人单位应当依法为劳动者办理社会保险登记，并按时足额缴纳社会保险费。用人单位不得以任何形式与劳动者约定放弃社会保险权益。</information>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"确认“自愿”协议是否有效\",\n      \"content\": \"《社会保险法》规定明确，用人单位和职工不能通过协议约定规避社会保险缴纳义务，因此即使职工“自愿申请”不参加社会保险，也属于违法行为。还需要确认是否存在其他法律如劳动法补充此结论。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"检索《中华人民共和国劳动法》相关规定\",\n      \"content\": \"<search>中华人民共和国劳动法</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析《劳动法》中关于社会保险的补充规定\",\n      \"content\": \"<information>《中华人民共和国劳动法》第72条规定，用人单位和劳动者必须依法参加社会保险，并缴纳社会保险费。用人单位不得以任何理由、形式降低或者剥夺劳动者的社会保险权益。</information>\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"根据《中华人民共和国社会保险法》第58条和《中华人民共和国劳动法》第72条，用人单位与职工达成“自愿申请”不参加社会保险的协议属于违法行为。这种行为无论是以任何形式达成，都不能减轻或免除用人单位依法为职工缴纳社会保险的法定义务。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"验证结论符合现行法律规定，符合社会保险法和劳动法的强制性要求，最终结论有效且无误。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"嗯，这个问题挺常见的。用人单位是不是可以通过某种方式让员工“自愿”不参加社会保险？总觉得这样的行为听上去不太符合法律规定，不过还得看看具体法条是怎么说的。\\n\\n首先，我记得好像《中华人民共和国社会保险法》有明文规定哪些情况下必须缴纳社会保险。为了准确一点，我得去看看这个法律的具体条款。<search>中华人民共和国社会保险法</search>\\n\\n哦，这里找到了相关条款。《社会保险法》第58条提到，用人单位需要依法为职工办理社会保险登记，并且按时足额缴纳社会保险费用。而且特别提到，用人单位不能通过任何方式和劳动者约定放弃社会保险的权益。这条说得很清楚了，那么所谓的“自愿申请不参加社会保险”从法律上讲不可能是合法的。\\n\\n但我还是觉得需要更稳妥一些，比如再去查《劳动法》，看看有没有补充说明。毕竟《社会保险法》是针对社保方面的，而《劳动法》覆盖的范围更大，可能对雇佣关系的要求有进一步说明。<search>中华人民共和国劳动法</search>\\n\\n找到了！根据《劳动法》第72条，这里明确写着“用人单位和劳动者必须依法参加社会保险，并缴纳社会保险费”。而且还强调了不能以任何理由、形式剥夺或降低劳动者的社会保险权益。这就和《社会保险法》的逻辑是一致的，说明不能通过所谓“协议”来规避这些义务。\\n\\n现在整体看下来，”自愿申请”这种说法根本站不住脚，不管是单位窍门还是职工自己提出的申请都不行。法律设定的社会保险缴纳义务是强制性的，不能规避。为了进一步确认，我重新理了一下思路，《社会保险法》第58条和《劳动法》第72条都清晰指出了用人单位这方面的责任，而且也明确说明无论协议如何制定，都不能免除义务。\\n\\n结论很清楚了，无论这个“自愿申请”的方式多么合理看起来，都违反了法律强制要求。社会保险本身是职工的一项法定权利，不应被剥夺或替代。如果真有这样的情况发生，法律上肯定不会支持。\"\n}\n```",
+    "用人单位与职工达成协议，由职工“自愿申请”不参加社会保险，并将保险费用计入工资发放，是**不合法的**。以下是主要原因及法律依据：\n\n1. **社会保险缴纳的强制性**  \n   《中华人民共和国社会保险法》第58条规定：用人单位应当依法为其职工办理社会保险登记，并按时足额缴纳社会保险费用。该条明确指出，用人单位不能通过任何形式免除自己为职工缴纳社会保险费用的义务，也不得与劳动者约定免除这种法定义务。因此，即便是劳动者提出“自愿申请”，这一行为也无法使用人单位免除社保缴费义务。\n\n2. **劳动法的相关规定**  \n   《中华人民共和国劳动法》第72条同样明确规定：“用人单位和劳动者必须依法参加社会保险，并缴纳社会保险费。”这进一步表明，无论是用人单位还是职工，双方都必须依法参与社会保险，任何约定规避这一义务的行为均属违法。\n\n3. **“自愿放弃”的约定无效**  \n   我国法律保护劳动者的社会保险权益，并规定任何变相剥夺或放弃这些权益的条款无效。根据《社会保险法》第26条，用人单位不得通过与职工约定或变通形式降低或规避职工的社会保险权利。因此，“自愿申请不参保”不具备法律效力。\n\n4. **法律后果**  \n   用人单位若未按规定缴纳社会保险费用，劳动者有权向人力资源和社会保障局投诉。根据《社会保险法》第84条，用人单位未依法缴纳社会保险费的，劳动行政部门有权责令限期缴纳；逾期未缴纳的，还需加收滞纳金，同时可能面临进一步的行政处罚。\n\n**综上所述**，所谓“自愿申请不参加社会保险”的做法，实际上是用人单位为了规避法定义务的违规行为，无论形式如何包装，都无法改变其违法性质。劳动者的社保权益受到法律的强制保护，不应通过协议或其他方式被剥夺。如果用人单位存在此类情况，劳动者可以依法维护自己的权益。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "分析用人单位是否可以规避参加社会保险的法律义务",
+        "content": "根据实践经验，劳动法和社会保险相关法律通常要求用人单位必须依法为职工参加社会保险。为了确认这一点并寻求具体条文支持，需要检索中国现行与社会保险相关的法律与法规。例如《中华人民共和国社会保险法》。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "检索《中华人民共和国社会保险法》相关规定",
+        "content": "<search>中华人民共和国社会保险法</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "分析《社会保险法》中雇主责任相关条款",
+        "content": "<information>《中华人民共和国社会保险法》第58条明确规定，用人单位应当依法为劳动者办理社会保险登记，并按时足额缴纳社会保险费。用人单位不得以任何形式与劳动者约定放弃社会保险权益。</information>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "确认“自愿”协议是否有效",
+        "content": "《社会保险法》规定明确，用人单位和职工不能通过协议约定规避社会保险缴纳义务，因此即使职工“自愿申请”不参加社会保险，也属于违法行为。还需要确认是否存在其他法律如劳动法补充此结论。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "检索《中华人民共和国劳动法》相关规定",
+        "content": "<search>中华人民共和国劳动法</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "分析《劳动法》中关于社会保险的补充规定",
+        "content": "<information>《中华人民共和国劳动法》第72条规定，用人单位和劳动者必须依法参加社会保险，并缴纳社会保险费。用人单位不得以任何理由、形式降低或者剥夺劳动者的社会保险权益。</information>"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "根据《中华人民共和国社会保险法》第58条和《中华人民共和国劳动法》第72条，用人单位与职工达成“自愿申请”不参加社会保险的协议属于违法行为。这种行为无论是以任何形式达成，都不能减轻或免除用人单位依法为职工缴纳社会保险的法定义务。"
+      },
+      {
+        "action": "Verification",
+        "content": "验证结论符合现行法律规定，符合社会保险法和劳动法的强制性要求，最终结论有效且无误。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "嗯，这个问题挺常见的。用人单位是不是可以通过某种方式让员工“自愿”不参加社会保险？总觉得这样的行为听上去不太符合法律规定，不过还得看看具体法条是怎么说的。\n\n首先，我记得好像《中华人民共和国社会保险法》有明文规定哪些情况下必须缴纳社会保险。为了准确一点，我得去看看这个法律的具体条款。<search>中华人民共和国社会保险法</search>\n\n哦，这里找到了相关条款。《社会保险法》第58条提到，用人单位需要依法为职工办理社会保险登记，并且按时足额缴纳社会保险费用。而且特别提到，用人单位不能通过任何方式和劳动者约定放弃社会保险的权益。这条说得很清楚了，那么所谓的“自愿申请不参加社会保险”从法律上讲不可能是合法的。\n\n但我还是觉得需要更稳妥一些，比如再去查《劳动法》，看看有没有补充说明。毕竟《社会保险法》是针对社保方面的，而《劳动法》覆盖的范围更大，可能对雇佣关系的要求有进一步说明。<search>中华人民共和国劳动法</search>\n\n找到了！根据《劳动法》第72条，这里明确写着“用人单位和劳动者必须依法参加社会保险，并缴纳社会保险费”。而且还强调了不能以任何理由、形式剥夺或降低劳动者的社会保险权益。这就和《社会保险法》的逻辑是一致的，说明不能通过所谓“协议”来规避这些义务。\n\n现在整体看下来，”自愿申请”这种说法根本站不住脚，不管是单位窍门还是职工自己提出的申请都不行。法律设定的社会保险缴纳义务是强制性的，不能规避。为了进一步确认，我重新理了一下思路，《社会保险法》第58条和《劳动法》第72条都清晰指出了用人单位这方面的责任，而且也明确说明无论协议如何制定，都不能免除义务。\n\n结论很清楚了，无论这个“自愿申请”的方式多么合理看起来，都违反了法律强制要求。社会保险本身是职工的一项法定权利，不应被剥夺或替代。如果真有这样的情况发生，法律上肯定不会支持。",
+  "Response": "用人单位与职工达成协议，由职工“自愿申请”不参加社会保险，并将保险费用计入工资发放，是**不合法的**。以下是主要原因及法律依据：\n\n1. **社会保险缴纳的强制性**  \n   《中华人民共和国社会保险法》第58条规定：用人单位应当依法为其职工办理社会保险登记，并按时足额缴纳社会保险费用。该条明确指出，用人单位不能通过任何形式免除自己为职工缴纳社会保险费用的义务，也不得与劳动者约定免除这种法定义务。因此，即便是劳动者提出“自愿申请”，这一行为也无法使用人单位免除社保缴费义务。\n\n2. **劳动法的相关规定**  \n   《中华人民共和国劳动法》第72条同样明确规定：“用人单位和劳动者必须依法参加社会保险，并缴纳社会保险费。”这进一步表明，无论是用人单位还是职工，双方都必须依法参与社会保险，任何约定规避这一义务的行为均属违法。\n\n3. **“自愿放弃”的约定无效**  \n   我国法律保护劳动者的社会保险权益，并规定任何变相剥夺或放弃这些权益的条款无效。根据《社会保险法》第26条，用人单位不得通过与职工约定或变通形式降低或规避职工的社会保险权利。因此，“自愿申请不参保”不具备法律效力。\n\n4. **法律后果**  \n   用人单位若未按规定缴纳社会保险费用，劳动者有权向人力资源和社会保障局投诉。根据《社会保险法》第84条，用人单位未依法缴纳社会保险费的，劳动行政部门有权责令限期缴纳；逾期未缴纳的，还需加收滞纳金，同时可能面临进一步的行政处罚。\n\n**综上所述**，所谓“自愿申请不参加社会保险”的做法，实际上是用人单位为了规避法定义务的违规行为，无论形式如何包装，都无法改变其违法性质。劳动者的社保权益受到法律的强制保护，不应通过协议或其他方式被剥夺。如果用人单位存在此类情况，劳动者可以依法维护自己的权益。",
+  "Question": "用人单位与职工达成协议由职工“自愿申请”不参加社会保险，将社会保险费用计入工资发放的行为是否合法有"
+}

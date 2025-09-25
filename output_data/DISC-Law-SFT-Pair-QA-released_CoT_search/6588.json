@@ -1,0 +1,101 @@
+{
+  "Open-ended Verifiable Question": "儿女不赡养老人怎么样办",
+  "Ground-True Answer": "1、子女不赡养老人，老人可以将其子女起诉至人民法院，要求履行赡养义务。\n法律依据：《中华人民共和国民法典》第一千零六十七条：父母不履行抚养义务的，未成年子女或者不能独立生活的成年子女，有要求父母给付抚养费的权利。成年子女不履行赡养义务的，缺乏劳动能力或者生活困难的父母，有要求成年子女给付赡养费的权利。《中华人民共和国民事诉讼法》第三条：人民法院受理公民之间、法人之间、其他组织之间以及他们相互之间因财产关系和人身关系提起的民事诉讼，适用本法的规定。",
+  "process_id": 6588,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "明确问题背景和相关法律义务",
+      "content": "从题目来看，儿女不赡养老人的情况下需要明确涉及的法律义务。根据中国法律，赡养父母是子女的法定义务，因此需要查阅相关法律，例如《中华人民共和国民法典》的规定，以确认具体的法律依据。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "查找法律依据",
+      "content": "为了确认是否存在明确的法律要求子女赡养老人，我需要搜索《中华人民共和国民法典》第26章相关条款。",
+      "search": "中华人民共和国民法典 赡养老人"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "获取法律信息并分析",
+      "content": "<information>《中华人民共和国民法典》第1067条规定：‘成年子女对父母负有赡养、扶助和保护的义务。’此外，《中华人民共和国老年人权益保障法》第11条也明确要求家庭成员应当关心老年人的精神需求，不得忽视或者虐待老年人。根据这些规定，成年人不履行赡养义务是违法的。</information> 结合上述信息，子女有法定义务赡养老人。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "确定老人可以采取的法律途径",
+      "content": "根据上述法律，老人可以依法维权，如果发现儿女不履行赡养义务，可以通过以下方式解决问题：第一，尝试与子女进行沟通和调解；第二，向社区或居委会寻求帮助；第三，通过法院提起诉讼，要求子女履行赡养义务。为确认准确性，我需要搜索相关诉讼的具体程序。<search>赡养费诉讼程序</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "查找赡养费诉讼程序信息",
+      "content": "<information>赡养费诉讼程序包括以下步骤：1. 准备起诉书，明确诉讼请求，例如要求子女支付赡养费；2. 向被告住所地人民法院提起诉讼；3. 提供相关证据，包括亲属关系证明（如户口本、身份证）和需要赡养的情况证明（如生活困难的证据）。法院会根据事实和法律要求子女履行义务。</information> 根据这些规则，老人可以依法起诉子女，维护自身合法权益。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "根据《中华人民共和国民法典》和《中华人民共和国老年人权益保障法》，赡养父母是子女的法定义务。若子女不履行赡养义务，老人可以通过多种方式维权，包括沟通调解、向社区寻求帮助，以及通过法院提起诉讼要求履行赡养义务。在诉讼中需要提供相关证明，例如亲属关系证据和赡养需求的证据。"
+    },
+    {
+      "action": "Verification",
+      "content": "结论与法律依据一致，并结合了诉讼程序提供的实践路径，为老人的维权提供了明确的指导，结论正确。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n儿女不赡养老人怎么样办\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n根据《中华人民共和国民法典》和《中华人民共和国老年人权益保障法》，赡养父母是子女的法定义务。若子女不履行赡养义务，老人可以通过多种方式维权，包括沟通调解、向社区寻求帮助，以及通过法院提起诉讼要求履行赡养义务。在诉讼中需要提供相关证明，例如亲属关系证据和赡养需求的证据。  \n</Model Response>  \n\n<Reference Answer>  \n1、子女不赡养老人，老人可以将其子女起诉至人民法院，要求履行赡养义务。\n法律依据：《中华人民共和国民法典》第一千零六十七条：父母不履行抚养义务的，未成年子女或者不能独立生活的成年子女，有要求父母给付抚养费的权利。成年子女不履行赡养义务的，缺乏劳动能力或者生活困难的父母，有要求成年子女给付赡养费的权利。《中华人民共和国民事诉讼法》第三条：人民法院受理公民之间、法人之间、其他组织之间以及他们相互之间因财产关系和人身关系提起的民事诉讼，适用本法的规定。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 明确问题背景和相关法律义务\n从题目来看，儿女不赡养老人的情况下需要明确涉及的法律义务。根据中国法律，赡养父母是子女的法定义务，因此需要查阅相关法律，例如《中华人民共和国民法典》的规定，以确认具体的法律依据。\n\n### 查找法律依据\n为了确认是否存在明确的法律要求子女赡养老人，我需要搜索《中华人民共和国民法典》第26章相关条款。\n\n### 获取法律信息并分析\n<information>《中华人民共和国民法典》第1067条规定：‘成年子女对父母负有赡养、扶助和保护的义务。’此外，《中华人民共和国老年人权益保障法》第11条也明确要求家庭成员应当关心老年人的精神需求，不得忽视或者虐待老年人。根据这些规定，成年人不履行赡养义务是违法的。</information> 结合上述信息，子女有法定义务赡养老人。\n\n### 确定老人可以采取的法律途径\n根据上述法律，老人可以依法维权，如果发现儿女不履行赡养义务，可以通过以下方式解决问题：第一，尝试与子女进行沟通和调解；第二，向社区或居委会寻求帮助；第三，通过法院提起诉讼，要求子女履行赡养义务。为确认准确性，我需要搜索相关诉讼的具体程序。<search>赡养费诉讼程序</search>\n\n### 查找赡养费诉讼程序信息\n<information>赡养费诉讼程序包括以下步骤：1. 准备起诉书，明确诉讼请求，例如要求子女支付赡养费；2. 向被告住所地人民法院提起诉讼；3. 提供相关证据，包括亲属关系证明（如户口本、身份证）和需要赡养的情况证明（如生活困难的证据）。法院会根据事实和法律要求子女履行义务。</information> 根据这些规则，老人可以依法起诉子女，维护自身合法权益。\n\n### Conclusion\n根据《中华人民共和国民法典》和《中华人民共和国老年人权益保障法》，赡养父母是子女的法定义务。若子女不履行赡养义务，老人可以通过多种方式维权，包括沟通调解、向社区寻求帮助，以及通过法院提起诉讼要求履行赡养义务。在诉讼中需要提供相关证明，例如亲属关系证据和赡养需求的证据。\n\n### Verification\n结论与法律依据一致，并结合了诉讼程序提供的实践路径，为老人的维权提供了明确的指导，结论正确。\n</Thought Process>\n\n<Question>\n儿女不赡养老人怎么样办\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n嗯，儿女不赡养老人这个问题首先得从法律上看看有没有明确的规定，因为赡养父母好像是子女的义务。而且中国应该有相关的法律，像《民法典》这种，这些法律一般会规定成年人对父母的责任。我得确认一下具体条款怎么说，才好进一步分析这个问题。所以，先去查一下《中华人民共和国民法典》第26章里的内容，应该有答案。<search>《中华人民共和国民法典》第26章相关条款</search>\n\n哦，找到了，《民法典》里确实有规定！<information>《中华人民共和国民法典》第1067条提到成年子女对父母负有赡养、扶助和保护的义务。另外还有《老年人权益保障法》第11条，也明确说了家庭成员不能忽视或者虐待老人，还需要关注老年人的精神需求。</information>这个很清楚了，法律的确要求子女必须赡养父母。所以如果儿女不履行义务，就是违反法律规定了。\n\n接着我想知道老人如果遇到这种情况，该怎么维护自己的权利。法律既然有这个规定，那应该也有解决途径吧，比如起诉什么的？可是具体怎么操作我还不太清楚，还是先查一下有关赡养费的诉讼程序吧。<search>赡养费诉讼程序</search>\n\n嗯，这下明白了。<information>根据赡养费诉讼程序，要先写好起诉书，清楚地列出诉讼请求，比如要求子女支付赡养费，然后拿着材料去子女住所地的人民法院提起诉讼。还需要准备相关证据，包括证明亲子关系的材料，比如户口本、身份证，还有老人需要赡养的证明，比如生活困难情况的证据。法院会根据事实判子女履行法律义务。</information>这样看来，老人是可以通过法律途径来要求子女赡养自己的。\n\n不过在正式诉讼之前，也许最好还是先尝试和子女进行沟通，也许情况不是特别极端，通过商量可以解决问题。如果沟通失败，可以找社区或者居委会帮忙调解。如果真的走到要起诉的地步，那就按照刚刚查到的流程向法院提起诉讼，确保把证据准备充分。\n\n所以总结一下，根据《民法典》和《老年人权益保障法》，成年子女有法定义务赡养父母。如果不履行，老人可以通过沟通、社区调解或者通过法院起诉来维护自己的权益。法律规定得很明确，所以老人是可以依法维权的。\n</Internal Thinking>\n\n<Question>\n儿女不赡养老人怎么样办\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"明确问题背景和相关法律义务\",\n      \"content\": \"从题目来看，儿女不赡养老人的情况下需要明确涉及的法律义务。根据中国法律，赡养父母是子女的法定义务，因此需要查阅相关法律，例如《中华人民共和国民法典》的规定，以确认具体的法律依据。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"查找法律依据\",\n      \"content\": \"为了确认是否存在明确的法律要求子女赡养老人，我需要搜索《中华人民共和国民法典》第26章相关条款。\",\n      \"search\": \"中华人民共和国民法典 赡养老人\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"获取法律信息并分析\",\n      \"content\": \"<information>《中华人民共和国民法典》第1067条规定：‘成年子女对父母负有赡养、扶助和保护的义务。’此外，《中华人民共和国老年人权益保障法》第11条也明确要求家庭成员应当关心老年人的精神需求，不得忽视或者虐待老年人。根据这些规定，成年人不履行赡养义务是违法的。</information> 结合上述信息，子女有法定义务赡养老人。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"确定老人可以采取的法律途径\",\n      \"content\": \"根据上述法律，老人可以依法维权，如果发现儿女不履行赡养义务，可以通过以下方式解决问题：第一，尝试与子女进行沟通和调解；第二，向社区或居委会寻求帮助；第三，通过法院提起诉讼，要求子女履行赡养义务。为确认准确性，我需要搜索相关诉讼的具体程序。<search>赡养费诉讼程序</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"查找赡养费诉讼程序信息\",\n      \"content\": \"<information>赡养费诉讼程序包括以下步骤：1. 准备起诉书，明确诉讼请求，例如要求子女支付赡养费；2. 向被告住所地人民法院提起诉讼；3. 提供相关证据，包括亲属关系证明（如户口本、身份证）和需要赡养的情况证明（如生活困难的证据）。法院会根据事实和法律要求子女履行义务。</information> 根据这些规则，老人可以依法起诉子女，维护自身合法权益。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"根据《中华人民共和国民法典》和《中华人民共和国老年人权益保障法》，赡养父母是子女的法定义务。若子女不履行赡养义务，老人可以通过多种方式维权，包括沟通调解、向社区寻求帮助，以及通过法院提起诉讼要求履行赡养义务。在诉讼中需要提供相关证明，例如亲属关系证据和赡养需求的证据。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"结论与法律依据一致，并结合了诉讼程序提供的实践路径，为老人的维权提供了明确的指导，结论正确。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"嗯，儿女不赡养老人这个问题首先得从法律上看看有没有明确的规定，因为赡养父母好像是子女的义务。而且中国应该有相关的法律，像《民法典》这种，这些法律一般会规定成年人对父母的责任。我得确认一下具体条款怎么说，才好进一步分析这个问题。所以，先去查一下《中华人民共和国民法典》第26章里的内容，应该有答案。<search>《中华人民共和国民法典》第26章相关条款</search>\\n\\n哦，找到了，《民法典》里确实有规定！<information>《中华人民共和国民法典》第1067条提到成年子女对父母负有赡养、扶助和保护的义务。另外还有《老年人权益保障法》第11条，也明确说了家庭成员不能忽视或者虐待老人，还需要关注老年人的精神需求。</information>这个很清楚了，法律的确要求子女必须赡养父母。所以如果儿女不履行义务，就是违反法律规定了。\\n\\n接着我想知道老人如果遇到这种情况，该怎么维护自己的权利。法律既然有这个规定，那应该也有解决途径吧，比如起诉什么的？可是具体怎么操作我还不太清楚，还是先查一下有关赡养费的诉讼程序吧。<search>赡养费诉讼程序</search>\\n\\n嗯，这下明白了。<information>根据赡养费诉讼程序，要先写好起诉书，清楚地列出诉讼请求，比如要求子女支付赡养费，然后拿着材料去子女住所地的人民法院提起诉讼。还需要准备相关证据，包括证明亲子关系的材料，比如户口本、身份证，还有老人需要赡养的证明，比如生活困难情况的证据。法院会根据事实判子女履行法律义务。</information>这样看来，老人是可以通过法律途径来要求子女赡养自己的。\\n\\n不过在正式诉讼之前，也许最好还是先尝试和子女进行沟通，也许情况不是特别极端，通过商量可以解决问题。如果沟通失败，可以找社区或者居委会帮忙调解。如果真的走到要起诉的地步，那就按照刚刚查到的流程向法院提起诉讼，确保把证据准备充分。\\n\\n所以总结一下，根据《民法典》和《老年人权益保障法》，成年子女有法定义务赡养父母。如果不履行，老人可以通过沟通、社区调解或者通过法院起诉来维护自己的权益。法律规定得很明确，所以老人是可以依法维权的。\"\n}\n```",
+    "根据《中华人民共和国民法典》第1067条的规定，成年子女对父母负有赡养、扶助和保护的法定义务。此外，《老年人权益保障法》第11条也明确要求家庭成员不得忽视、虐待老年人，且需关注老年人的物质和精神需求。因此，如果儿女不履行赡养义务，老人可以采取以下步骤维护自己的权益：\n\n1. **沟通协商**：建议老人首先尝试与子女进行直接沟通，了解原因，看是否可以通过平和的方式达成赡养协议。\n\n2. **寻求社区或基层组织帮助**：若沟通无果，可以请求社区、村委会或居委会等基层组织进行调解，这些组织在家庭矛盾解决中具有一定的作用。\n\n3. **诉诸法律**：如果前述方法均无法解决问题，老人可以通过法律途径起诉不履行义务的子女，要求支付赡养费。\n\n   - **起诉流程**：\n     - 准备**起诉状**：在起诉书中列明事实和诉求，比如要求支付赡养费。\n     - 准备相关证据：包括亲子关系证明（如户口本、身份证）和老人需要赡养的证明（如收入状况或生活困难的证据）。\n     - 到子女住所地的人民法院提起诉讼。\n\n4. **法院裁决与执行**：法院会根据案件事实和法律规定判决子女履行赡养义务。如果子女拒不履行判决，老人可以申请法院强制执行。\n\n赡养父母不仅是法律义务，也是道德要求。如果遇到儿女不赡养的情况，老人有权通过上述合法手段维护自己的权益，同时也希望子女能尊重家庭责任，承担起对父母的关爱与照顾。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "明确问题背景和相关法律义务",
+        "content": "从题目来看，儿女不赡养老人的情况下需要明确涉及的法律义务。根据中国法律，赡养父母是子女的法定义务，因此需要查阅相关法律，例如《中华人民共和国民法典》的规定，以确认具体的法律依据。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "查找法律依据",
+        "content": "为了确认是否存在明确的法律要求子女赡养老人，我需要搜索《中华人民共和国民法典》第26章相关条款。",
+        "search": "中华人民共和国民法典 赡养老人"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "获取法律信息并分析",
+        "content": "<information>《中华人民共和国民法典》第1067条规定：‘成年子女对父母负有赡养、扶助和保护的义务。’此外，《中华人民共和国老年人权益保障法》第11条也明确要求家庭成员应当关心老年人的精神需求，不得忽视或者虐待老年人。根据这些规定，成年人不履行赡养义务是违法的。</information> 结合上述信息，子女有法定义务赡养老人。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "确定老人可以采取的法律途径",
+        "content": "根据上述法律，老人可以依法维权，如果发现儿女不履行赡养义务，可以通过以下方式解决问题：第一，尝试与子女进行沟通和调解；第二，向社区或居委会寻求帮助；第三，通过法院提起诉讼，要求子女履行赡养义务。为确认准确性，我需要搜索相关诉讼的具体程序。<search>赡养费诉讼程序</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "查找赡养费诉讼程序信息",
+        "content": "<information>赡养费诉讼程序包括以下步骤：1. 准备起诉书，明确诉讼请求，例如要求子女支付赡养费；2. 向被告住所地人民法院提起诉讼；3. 提供相关证据，包括亲属关系证明（如户口本、身份证）和需要赡养的情况证明（如生活困难的证据）。法院会根据事实和法律要求子女履行义务。</information> 根据这些规则，老人可以依法起诉子女，维护自身合法权益。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "根据《中华人民共和国民法典》和《中华人民共和国老年人权益保障法》，赡养父母是子女的法定义务。若子女不履行赡养义务，老人可以通过多种方式维权，包括沟通调解、向社区寻求帮助，以及通过法院提起诉讼要求履行赡养义务。在诉讼中需要提供相关证明，例如亲属关系证据和赡养需求的证据。"
+      },
+      {
+        "action": "Verification",
+        "content": "结论与法律依据一致，并结合了诉讼程序提供的实践路径，为老人的维权提供了明确的指导，结论正确。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "嗯，儿女不赡养老人这个问题首先得从法律上看看有没有明确的规定，因为赡养父母好像是子女的义务。而且中国应该有相关的法律，像《民法典》这种，这些法律一般会规定成年人对父母的责任。我得确认一下具体条款怎么说，才好进一步分析这个问题。所以，先去查一下《中华人民共和国民法典》第26章里的内容，应该有答案。<search>《中华人民共和国民法典》第26章相关条款</search>\n\n哦，找到了，《民法典》里确实有规定！<information>《中华人民共和国民法典》第1067条提到成年子女对父母负有赡养、扶助和保护的义务。另外还有《老年人权益保障法》第11条，也明确说了家庭成员不能忽视或者虐待老人，还需要关注老年人的精神需求。</information>这个很清楚了，法律的确要求子女必须赡养父母。所以如果儿女不履行义务，就是违反法律规定了。\n\n接着我想知道老人如果遇到这种情况，该怎么维护自己的权利。法律既然有这个规定，那应该也有解决途径吧，比如起诉什么的？可是具体怎么操作我还不太清楚，还是先查一下有关赡养费的诉讼程序吧。<search>赡养费诉讼程序</search>\n\n嗯，这下明白了。<information>根据赡养费诉讼程序，要先写好起诉书，清楚地列出诉讼请求，比如要求子女支付赡养费，然后拿着材料去子女住所地的人民法院提起诉讼。还需要准备相关证据，包括证明亲子关系的材料，比如户口本、身份证，还有老人需要赡养的证明，比如生活困难情况的证据。法院会根据事实判子女履行法律义务。</information>这样看来，老人是可以通过法律途径来要求子女赡养自己的。\n\n不过在正式诉讼之前，也许最好还是先尝试和子女进行沟通，也许情况不是特别极端，通过商量可以解决问题。如果沟通失败，可以找社区或者居委会帮忙调解。如果真的走到要起诉的地步，那就按照刚刚查到的流程向法院提起诉讼，确保把证据准备充分。\n\n所以总结一下，根据《民法典》和《老年人权益保障法》，成年子女有法定义务赡养父母。如果不履行，老人可以通过沟通、社区调解或者通过法院起诉来维护自己的权益。法律规定得很明确，所以老人是可以依法维权的。",
+  "Response": "根据《中华人民共和国民法典》第1067条的规定，成年子女对父母负有赡养、扶助和保护的法定义务。此外，《老年人权益保障法》第11条也明确要求家庭成员不得忽视、虐待老年人，且需关注老年人的物质和精神需求。因此，如果儿女不履行赡养义务，老人可以采取以下步骤维护自己的权益：\n\n1. **沟通协商**：建议老人首先尝试与子女进行直接沟通，了解原因，看是否可以通过平和的方式达成赡养协议。\n\n2. **寻求社区或基层组织帮助**：若沟通无果，可以请求社区、村委会或居委会等基层组织进行调解，这些组织在家庭矛盾解决中具有一定的作用。\n\n3. **诉诸法律**：如果前述方法均无法解决问题，老人可以通过法律途径起诉不履行义务的子女，要求支付赡养费。\n\n   - **起诉流程**：\n     - 准备**起诉状**：在起诉书中列明事实和诉求，比如要求支付赡养费。\n     - 准备相关证据：包括亲子关系证明（如户口本、身份证）和老人需要赡养的证明（如收入状况或生活困难的证据）。\n     - 到子女住所地的人民法院提起诉讼。\n\n4. **法院裁决与执行**：法院会根据案件事实和法律规定判决子女履行赡养义务。如果子女拒不履行判决，老人可以申请法院强制执行。\n\n赡养父母不仅是法律义务，也是道德要求。如果遇到儿女不赡养的情况，老人有权通过上述合法手段维护自己的权益，同时也希望子女能尊重家庭责任，承担起对父母的关爱与照顾。",
+  "Question": "儿女不赡养老人怎么样办"
+}

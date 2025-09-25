@@ -1,0 +1,89 @@
+{
+  "Open-ended Verifiable Question": "取保候审的程序是什么?",
+  "Ground-True Answer": "1、申请\n这一阶段一般处于每个诉讼阶段结束之后，最为常见的是犯罪嫌疑人被强制到案之后。2、听审与抗辩\n听审并非保释程序的必经阶段，因为在犯罪嫌疑人或被告人符合获准保释条件的情况下，法官没有必要举行听审，而可以直接决定保释。3、裁定\n不论法官是否同意保释都必须作出正式裁定，因为这一裁定将成为被告人申请救济的基础。若法官准予保释，则裁定中必须明确被保释人所应遵守的条件以及违反保释规定后的处罚;若法官不准许保释，则其必须明示否决的理由。\n所以申请取保候审的时间一般只需要3天就可以走完所有的程序，并且只有符合取保候审的条件才能够受理取保候审。执行取保候审的机关主要是户籍所在地的公安机关。",
+  "process_id": 3258,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "理解问题并确定取保候审相关法律依据",
+      "content": "取保候审是一项刑事诉讼制度，其程序受到相关法律规定约束。在中国，通常由《中华人民共和国刑事诉讼法》和相关司法解释规定取保候审程序。因此，需要查阅《刑事诉讼法》以进一步明确其规定。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "检索取保候审相关法律规定",
+      "content": "<search>刑事诉讼法 取保候审</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "分析检索到的法律规定",
+      "content": "<information>《中华人民共和国刑事诉讼法》第65条规定，对犯罪嫌疑人、被告人取保候审可以由公安机关、人民检察院和人民法院负责决定。提出申请后，需要根据犯罪嫌疑人或被告人情况是否符合条件进行批准，例如案件性质、行为是否足以妨碍侦查、是否具备固定住址等要素。取保候审执行机构还需要求提供保证人或者缴纳保证金。</information>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "总结取保候审申请程序",
+      "content": "根据《刑事诉讼法》的相关规定，取保候审的程序包括以下步骤：1. 提出申请，犯罪嫌疑人或者其代理人、辩护人可以申请取保候审；2. 审核审批，决定机关根据犯罪嫌疑人或被告人的情况进行审查是否符合取保候审条件；3. 执行决定，按规定提供保证金或保证人；4. 监督实施，执行机关负责监督取保候审期间的行为并确保出庭要求。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "取保候审程序包括：申请人或其代理人提出申请，由公安机关、检察院或法院进行审查决定；决定后，需要缴纳保证金或安排保证人；执行机关对嫌疑人或被告人在取保候审期间的行为进行监督，以确保案件进展和出庭等要求。"
+    },
+    {
+      "action": "Verification",
+      "content": "通过核对《中华人民共和国刑事诉讼法》中的规定可以验证以上结论，与法律条文和实际执行一致。因此，结论正确，不需要进一步修改。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n取保候审的程序是什么?\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n取保候审程序包括：申请人或其代理人提出申请，由公安机关、检察院或法院进行审查决定；决定后，需要缴纳保证金或安排保证人；执行机关对嫌疑人或被告人在取保候审期间的行为进行监督，以确保案件进展和出庭等要求。  \n</Model Response>  \n\n<Reference Answer>  \n1、申请\n这一阶段一般处于每个诉讼阶段结束之后，最为常见的是犯罪嫌疑人被强制到案之后。2、听审与抗辩\n听审并非保释程序的必经阶段，因为在犯罪嫌疑人或被告人符合获准保释条件的情况下，法官没有必要举行听审，而可以直接决定保释。3、裁定\n不论法官是否同意保释都必须作出正式裁定，因为这一裁定将成为被告人申请救济的基础。若法官准予保释，则裁定中必须明确被保释人所应遵守的条件以及违反保释规定后的处罚;若法官不准许保释，则其必须明示否决的理由。\n所以申请取保候审的时间一般只需要3天就可以走完所有的程序，并且只有符合取保候审的条件才能够受理取保候审。执行取保候审的机关主要是户籍所在地的公安机关。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 理解问题并确定取保候审相关法律依据\n取保候审是一项刑事诉讼制度，其程序受到相关法律规定约束。在中国，通常由《中华人民共和国刑事诉讼法》和相关司法解释规定取保候审程序。因此，需要查阅《刑事诉讼法》以进一步明确其规定。\n\n### 检索取保候审相关法律规定\n<search>刑事诉讼法 取保候审</search>\n\n### 分析检索到的法律规定\n<information>《中华人民共和国刑事诉讼法》第65条规定，对犯罪嫌疑人、被告人取保候审可以由公安机关、人民检察院和人民法院负责决定。提出申请后，需要根据犯罪嫌疑人或被告人情况是否符合条件进行批准，例如案件性质、行为是否足以妨碍侦查、是否具备固定住址等要素。取保候审执行机构还需要求提供保证人或者缴纳保证金。</information>\n\n### 总结取保候审申请程序\n根据《刑事诉讼法》的相关规定，取保候审的程序包括以下步骤：1. 提出申请，犯罪嫌疑人或者其代理人、辩护人可以申请取保候审；2. 审核审批，决定机关根据犯罪嫌疑人或被告人的情况进行审查是否符合取保候审条件；3. 执行决定，按规定提供保证金或保证人；4. 监督实施，执行机关负责监督取保候审期间的行为并确保出庭要求。\n\n### Conclusion\n取保候审程序包括：申请人或其代理人提出申请，由公安机关、检察院或法院进行审查决定；决定后，需要缴纳保证金或安排保证人；执行机关对嫌疑人或被告人在取保候审期间的行为进行监督，以确保案件进展和出庭等要求。\n\n### Verification\n通过核对《中华人民共和国刑事诉讼法》中的规定可以验证以上结论，与法律条文和实际执行一致。因此，结论正确，不需要进一步修改。\n</Thought Process>\n\n<Question>\n取保候审的程序是什么?\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n嗯，取保候审好像是一种刑事诉讼中的制度，跟嫌疑人或者被告人暂时不用羁押有关。要知道具体程序，还是得看看法律上是怎么规定的。中国这方面应该主要是《中华人民共和国刑事诉讼法》里的内容吧，或者可能还有一些司法解释。这就让我搜索一下具体的内容吧。<search>刑事诉讼法 取保候审</search>\n\n看到了！<information>根据《中华人民共和国刑事诉讼法》第65条的规定，取保候审是由公安机关、检察院或法院来决定的。这意味着这些机构有权利根据实际情况批不批准申请。不过呢，批准的时候也不是随便就能同意的。他们会看犯罪嫌疑人或者被告人的具体情况，比如这件案子是什么性质的，他的行为会不会妨碍侦查，或者人是不是有固定住址。批准的时候，还需要保证人或者缴纳保证金作为条件。</information>\n\n我大概了解了。原来申请取保候审要经过这么几个步骤。首先肯定是要有人提出申请，对吧？嫌疑人自己，或者他说他有代理人、律师这类人也可以帮他申请。然后这些有权处理的机关——包括公安、检察院或者法院——会去审查，看看申请的人符不符合条件。如果条件符合的话，他们就会决定批下来，接着就是提供保证人或者交保证金这一步了。最后，决定让他取保候审那方还得监督他一段时间，确保他的行为不乱来，比如按时出庭，配合调查这些。\n\n这么梳理下来，我感觉整个程序应该就是：申请、审核决定、提供保证人或保证金，然后执行监督四个主要的部分。再涂画一句，就是想申请的人提出需求，有权机关审查后决定是不是可以，然后得遵守一些规定才能实施。\n\n嗯，其实这个程序说的应该挺清楚了呢。而且核查了一下，都和原来的法律规定对得上。总体来说，没什么问题了，就这样！\n</Internal Thinking>\n\n<Question>\n取保候审的程序是什么?\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"理解问题并确定取保候审相关法律依据\",\n      \"content\": \"取保候审是一项刑事诉讼制度，其程序受到相关法律规定约束。在中国，通常由《中华人民共和国刑事诉讼法》和相关司法解释规定取保候审程序。因此，需要查阅《刑事诉讼法》以进一步明确其规定。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"检索取保候审相关法律规定\",\n      \"content\": \"<search>刑事诉讼法 取保候审</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析检索到的法律规定\",\n      \"content\": \"<information>《中华人民共和国刑事诉讼法》第65条规定，对犯罪嫌疑人、被告人取保候审可以由公安机关、人民检察院和人民法院负责决定。提出申请后，需要根据犯罪嫌疑人或被告人情况是否符合条件进行批准，例如案件性质、行为是否足以妨碍侦查、是否具备固定住址等要素。取保候审执行机构还需要求提供保证人或者缴纳保证金。</information>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"总结取保候审申请程序\",\n      \"content\": \"根据《刑事诉讼法》的相关规定，取保候审的程序包括以下步骤：1. 提出申请，犯罪嫌疑人或者其代理人、辩护人可以申请取保候审；2. 审核审批，决定机关根据犯罪嫌疑人或被告人的情况进行审查是否符合取保候审条件；3. 执行决定，按规定提供保证金或保证人；4. 监督实施，执行机关负责监督取保候审期间的行为并确保出庭要求。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"取保候审程序包括：申请人或其代理人提出申请，由公安机关、检察院或法院进行审查决定；决定后，需要缴纳保证金或安排保证人；执行机关对嫌疑人或被告人在取保候审期间的行为进行监督，以确保案件进展和出庭等要求。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"通过核对《中华人民共和国刑事诉讼法》中的规定可以验证以上结论，与法律条文和实际执行一致。因此，结论正确，不需要进一步修改。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"嗯，取保候审好像是一种刑事诉讼中的制度，跟嫌疑人或者被告人暂时不用羁押有关。要知道具体程序，还是得看看法律上是怎么规定的。中国这方面应该主要是《中华人民共和国刑事诉讼法》里的内容吧，或者可能还有一些司法解释。这就让我搜索一下具体的内容吧。<search>刑事诉讼法 取保候审</search>\\n\\n看到了！<information>根据《中华人民共和国刑事诉讼法》第65条的规定，取保候审是由公安机关、检察院或法院来决定的。这意味着这些机构有权利根据实际情况批不批准申请。不过呢，批准的时候也不是随便就能同意的。他们会看犯罪嫌疑人或者被告人的具体情况，比如这件案子是什么性质的，他的行为会不会妨碍侦查，或者人是不是有固定住址。批准的时候，还需要保证人或者缴纳保证金作为条件。</information>\\n\\n我大概了解了。原来申请取保候审要经过这么几个步骤。首先肯定是要有人提出申请，对吧？嫌疑人自己，或者他说他有代理人、律师这类人也可以帮他申请。然后这些有权处理的机关——包括公安、检察院或者法院——会去审查，看看申请的人符不符合条件。如果条件符合的话，他们就会决定批下来，接着就是提供保证人或者交保证金这一步了。最后，决定让他取保候审那方还得监督他一段时间，确保他的行为不乱来，比如按时出庭，配合调查这些。\\n\\n这么梳理下来，我感觉整个程序应该就是：申请、审核决定、提供保证人或保证金，然后执行监督四个主要的部分。再涂画一句，就是想申请的人提出需求，有权机关审查后决定是不是可以，然后得遵守一些规定才能实施。\\n\\n嗯，其实这个程序说的应该挺清楚了呢。而且核查了一下，都和原来的法律规定对得上。总体来说，没什么问题了，就这样！\"\n}\n```",
+    "取保候审的程序根据《中华人民共和国刑事诉讼法》的规定，大致可分为以下几个主要步骤：\n\n1. **申请**：  \n   取保候审可以由犯罪嫌疑人、被告人本人提出申请，也可以由其辩护人、近亲属等代理人代为申请。该申请通常需要提交书面材料，说明申请的理由和依据。\n\n2. **审查决定**：  \n   公安机关、人民检察院或人民法院作为有权决定机关，会根据申请进行审查。重点审查是否符合取保候审的适用条件，例如是否可能妨碍侦查、起诉、审判，是否具有社会危险性，是否有固定住所，是否符合法定情形等。如果符合条件，有权决定的机关会作出批准决定。\n\n3. **提供保证条件**：  \n   取保候审的实施需要犯罪嫌疑人或被告人提供保证条件，具体包括：\n   - 提供保证人：即由具有担保能力且无刑事案件在身的自然人作为保证人，保证行为人的守法。\n   - 缴纳保证金：嫌疑人或被告人缴纳一定数量的保证金作为履行义务的担保。\n\n4. **执行和监督**：  \n   决定机关批准取保候审后，被取保候审人需要履行相关义务，包括：\n   - 遵守规定的活动范围；\n   - 按照要求随传随到；\n   - 不干扰证人作证、不毁灭证据；\n   - 遵守其他取保候审的规定。  \n   批准机关会负责对取保候审期间的行为进行监督，确保其配合案件的正常办理。\n\n以上是取保候审的基本程序，需要注意的是，具体操作可能因案件不同而有所细节调整或补充。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "理解问题并确定取保候审相关法律依据",
+        "content": "取保候审是一项刑事诉讼制度，其程序受到相关法律规定约束。在中国，通常由《中华人民共和国刑事诉讼法》和相关司法解释规定取保候审程序。因此，需要查阅《刑事诉讼法》以进一步明确其规定。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "检索取保候审相关法律规定",
+        "content": "<search>刑事诉讼法 取保候审</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "分析检索到的法律规定",
+        "content": "<information>《中华人民共和国刑事诉讼法》第65条规定，对犯罪嫌疑人、被告人取保候审可以由公安机关、人民检察院和人民法院负责决定。提出申请后，需要根据犯罪嫌疑人或被告人情况是否符合条件进行批准，例如案件性质、行为是否足以妨碍侦查、是否具备固定住址等要素。取保候审执行机构还需要求提供保证人或者缴纳保证金。</information>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "总结取保候审申请程序",
+        "content": "根据《刑事诉讼法》的相关规定，取保候审的程序包括以下步骤：1. 提出申请，犯罪嫌疑人或者其代理人、辩护人可以申请取保候审；2. 审核审批，决定机关根据犯罪嫌疑人或被告人的情况进行审查是否符合取保候审条件；3. 执行决定，按规定提供保证金或保证人；4. 监督实施，执行机关负责监督取保候审期间的行为并确保出庭要求。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "取保候审程序包括：申请人或其代理人提出申请，由公安机关、检察院或法院进行审查决定；决定后，需要缴纳保证金或安排保证人；执行机关对嫌疑人或被告人在取保候审期间的行为进行监督，以确保案件进展和出庭等要求。"
+      },
+      {
+        "action": "Verification",
+        "content": "通过核对《中华人民共和国刑事诉讼法》中的规定可以验证以上结论，与法律条文和实际执行一致。因此，结论正确，不需要进一步修改。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "嗯，取保候审好像是一种刑事诉讼中的制度，跟嫌疑人或者被告人暂时不用羁押有关。要知道具体程序，还是得看看法律上是怎么规定的。中国这方面应该主要是《中华人民共和国刑事诉讼法》里的内容吧，或者可能还有一些司法解释。这就让我搜索一下具体的内容吧。<search>刑事诉讼法 取保候审</search>\n\n看到了！<information>根据《中华人民共和国刑事诉讼法》第65条的规定，取保候审是由公安机关、检察院或法院来决定的。这意味着这些机构有权利根据实际情况批不批准申请。不过呢，批准的时候也不是随便就能同意的。他们会看犯罪嫌疑人或者被告人的具体情况，比如这件案子是什么性质的，他的行为会不会妨碍侦查，或者人是不是有固定住址。批准的时候，还需要保证人或者缴纳保证金作为条件。</information>\n\n我大概了解了。原来申请取保候审要经过这么几个步骤。首先肯定是要有人提出申请，对吧？嫌疑人自己，或者他说他有代理人、律师这类人也可以帮他申请。然后这些有权处理的机关——包括公安、检察院或者法院——会去审查，看看申请的人符不符合条件。如果条件符合的话，他们就会决定批下来，接着就是提供保证人或者交保证金这一步了。最后，决定让他取保候审那方还得监督他一段时间，确保他的行为不乱来，比如按时出庭，配合调查这些。\n\n这么梳理下来，我感觉整个程序应该就是：申请、审核决定、提供保证人或保证金，然后执行监督四个主要的部分。再涂画一句，就是想申请的人提出需求，有权机关审查后决定是不是可以，然后得遵守一些规定才能实施。\n\n嗯，其实这个程序说的应该挺清楚了呢。而且核查了一下，都和原来的法律规定对得上。总体来说，没什么问题了，就这样！",
+  "Response": "取保候审的程序根据《中华人民共和国刑事诉讼法》的规定，大致可分为以下几个主要步骤：\n\n1. **申请**：  \n   取保候审可以由犯罪嫌疑人、被告人本人提出申请，也可以由其辩护人、近亲属等代理人代为申请。该申请通常需要提交书面材料，说明申请的理由和依据。\n\n2. **审查决定**：  \n   公安机关、人民检察院或人民法院作为有权决定机关，会根据申请进行审查。重点审查是否符合取保候审的适用条件，例如是否可能妨碍侦查、起诉、审判，是否具有社会危险性，是否有固定住所，是否符合法定情形等。如果符合条件，有权决定的机关会作出批准决定。\n\n3. **提供保证条件**：  \n   取保候审的实施需要犯罪嫌疑人或被告人提供保证条件，具体包括：\n   - 提供保证人：即由具有担保能力且无刑事案件在身的自然人作为保证人，保证行为人的守法。\n   - 缴纳保证金：嫌疑人或被告人缴纳一定数量的保证金作为履行义务的担保。\n\n4. **执行和监督**：  \n   决定机关批准取保候审后，被取保候审人需要履行相关义务，包括：\n   - 遵守规定的活动范围；\n   - 按照要求随传随到；\n   - 不干扰证人作证、不毁灭证据；\n   - 遵守其他取保候审的规定。  \n   批准机关会负责对取保候审期间的行为进行监督，确保其配合案件的正常办理。\n\n以上是取保候审的基本程序，需要注意的是，具体操作可能因案件不同而有所细节调整或补充。",
+  "Question": "取保候审的程序是什么?"
+}

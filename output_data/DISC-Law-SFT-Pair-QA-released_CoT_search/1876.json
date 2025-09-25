@@ -1,0 +1,99 @@
+{
+  "Open-ended Verifiable Question": "什么是票据的背书？",
+  "Ground-True Answer": "背书是指持票人为将票据权利转让给他人或者将一定的票据权利授予他人行使，而在票据背面或者粘单上记载有关事项并签章的行为。背书按照目的不同分为转让背书和非转让背书，转让背书是以持票人将票据权利转让给他人为目的；非转让背书是将特定的票据权利授予他人行使，包括委托收款背书和质押背书。无论何种目的，都应当记载背书事项并交付票据。\n背书由背书人签章并记载背书日期。背书未记载日期的，视为在汇票到期日前背书。汇票以背书转让或者以背书将一定的汇票权利授予他人行使时，必须记载被背书人名称。以背书转让的汇票，背书应当连续。持票人以背书的连续，证明其汇票权利；非经背书转让，而以其他合法方式取得汇票的，依法举证，证明其汇票权利。以背书转让的汇票，后手应当对其直接前手背书的真实性负责。后手是指在票据签章人之后签章的其他票据债务人。\n背书不得附有条件。背书时附有条件的，所附条件不具有汇票上的效力。将汇票金额的一部分转让的背书或者将汇票金额分别转让给二人以上的背书无效。背书人在汇票上记载“不得转让”字样，其后手再背书转让的，原背书人对后手的被背书人不承担保证责任。\n背书记载“委托收款”字样的，被背书人有权代背书人行使被委托的汇票权利。但是，被背书人不得再以背书转让汇票权利。汇票可以设定质押；质押时应当以背书记载“质押”字样。被背书人依法实现其质权时，可以行使汇票权利。\n汇票被拒绝承兑、被拒绝付款或者超过付款提示期限的，不得背书转让；背书转让的，背书人应当承担汇票责任。",
+  "process_id": 1876,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "分析票据背书的基本概念",
+      "content": "票据的背书是指票据持有人通过在票据背面或粘单上签字并注明相关事项，进行票据权利转让或确认的一种法律行为。这个行为通常涉及两个方面：第一，背书人将自己的票据权利转让给受让人；第二，背书人通过签字承担一定程度的担保责任。需要进一步明确此定义的法律依据和背景。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "查询相关法律定义",
+      "content": "要进一步验证票据背书的法律含义及其操作规则，我们需要从法律法规角度查询具体定义和规范依据。具体内容可能涉及《票据法》或其他相关法律制度。因此，我将搜索票据法中关于背书的规定。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "搜索《票据法》关于背书的条款",
+      "content": "<search>票据法 背书</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "分析《票据法》中的定义和规则",
+      "content": "<information>票据法中明确规定，背书是持票人以转让票据权利或为特定目的而在票据背面或粘单上签章并记载有关事项的行为。背书必须完整且符合相关形式要求，包括记载事项、签章和交付。此外，背书还可以分为两种形式：转让背书和非转让背书（如仅表明代理或担保目的）。</information>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "综合明确票据背书的定义",
+      "content": "结合查询结果可以看出，票据背书的核心是在票据流通中实现权利转让或附加特定用途（如授权代理或提供担保）。这一行为一般需要满足书写形式、合法交付和明确用途等条件。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "票据的背书是指票据持票人以转让票据权利或为特定目的为目的，在票据背面或粘单上签章并记载相关事项的法律行为。背书通常需满足法律规定的形式要件，并承担相应的法律后果。背书可以分为转让背书和非转让背书，用于不同的实际需求。"
+    },
+    {
+      "action": "Verification",
+      "content": "根据《票据法》关于背书的定义和规则，此结论是准确的，与相关法律条款内容一致，无需进一步修订。结果验证通过。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n什么是票据的背书？\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n票据的背书是指票据持票人以转让票据权利或为特定目的为目的，在票据背面或粘单上签章并记载相关事项的法律行为。背书通常需满足法律规定的形式要件，并承担相应的法律后果。背书可以分为转让背书和非转让背书，用于不同的实际需求。  \n</Model Response>  \n\n<Reference Answer>  \n背书是指持票人为将票据权利转让给他人或者将一定的票据权利授予他人行使，而在票据背面或者粘单上记载有关事项并签章的行为。背书按照目的不同分为转让背书和非转让背书，转让背书是以持票人将票据权利转让给他人为目的；非转让背书是将特定的票据权利授予他人行使，包括委托收款背书和质押背书。无论何种目的，都应当记载背书事项并交付票据。\n背书由背书人签章并记载背书日期。背书未记载日期的，视为在汇票到期日前背书。汇票以背书转让或者以背书将一定的汇票权利授予他人行使时，必须记载被背书人名称。以背书转让的汇票，背书应当连续。持票人以背书的连续，证明其汇票权利；非经背书转让，而以其他合法方式取得汇票的，依法举证，证明其汇票权利。以背书转让的汇票，后手应当对其直接前手背书的真实性负责。后手是指在票据签章人之后签章的其他票据债务人。\n背书不得附有条件。背书时附有条件的，所附条件不具有汇票上的效力。将汇票金额的一部分转让的背书或者将汇票金额分别转让给二人以上的背书无效。背书人在汇票上记载“不得转让”字样，其后手再背书转让的，原背书人对后手的被背书人不承担保证责任。\n背书记载“委托收款”字样的，被背书人有权代背书人行使被委托的汇票权利。但是，被背书人不得再以背书转让汇票权利。汇票可以设定质押；质押时应当以背书记载“质押”字样。被背书人依法实现其质权时，可以行使汇票权利。\n汇票被拒绝承兑、被拒绝付款或者超过付款提示期限的，不得背书转让；背书转让的，背书人应当承担汇票责任。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 分析票据背书的基本概念\n票据的背书是指票据持有人通过在票据背面或粘单上签字并注明相关事项，进行票据权利转让或确认的一种法律行为。这个行为通常涉及两个方面：第一，背书人将自己的票据权利转让给受让人；第二，背书人通过签字承担一定程度的担保责任。需要进一步明确此定义的法律依据和背景。\n\n### 查询相关法律定义\n要进一步验证票据背书的法律含义及其操作规则，我们需要从法律法规角度查询具体定义和规范依据。具体内容可能涉及《票据法》或其他相关法律制度。因此，我将搜索票据法中关于背书的规定。\n\n### 搜索《票据法》关于背书的条款\n<search>票据法 背书</search>\n\n### 分析《票据法》中的定义和规则\n<information>票据法中明确规定，背书是持票人以转让票据权利或为特定目的而在票据背面或粘单上签章并记载有关事项的行为。背书必须完整且符合相关形式要求，包括记载事项、签章和交付。此外，背书还可以分为两种形式：转让背书和非转让背书（如仅表明代理或担保目的）。</information>\n\n### 综合明确票据背书的定义\n结合查询结果可以看出，票据背书的核心是在票据流通中实现权利转让或附加特定用途（如授权代理或提供担保）。这一行为一般需要满足书写形式、合法交付和明确用途等条件。\n\n### Conclusion\n票据的背书是指票据持票人以转让票据权利或为特定目的为目的，在票据背面或粘单上签章并记载相关事项的法律行为。背书通常需满足法律规定的形式要件，并承担相应的法律后果。背书可以分为转让背书和非转让背书，用于不同的实际需求。\n\n### Verification\n根据《票据法》关于背书的定义和规则，此结论是准确的，与相关法律条款内容一致，无需进一步修订。结果验证通过。\n</Thought Process>\n\n<Question>\n什么是票据的背书？\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n票据的背书是什么呢？首先，我知道这是一个和票据有关的法律行为，好像是和权利的转让或者确认有关系的行为。所以，我先从定义入手，脑海中浮现的基本概念是这样的：背书应该是持票人在票据上签字，表明要转让它或者为了某些目的而记载一些信息。这种行为是带有法律效力的，需要符合一定的规定。不过，我不太确定这是不是全面，需要查一下更权威的定义。\n\n嗯，比较靠谱的信息源应该是《票据法》。毕竟法律会有更具体的规范。让我先搜索一下票据法里面关于“背书”的规定吧。<search>票据法 背书</search>\n\n哦，我找到了一些相关的内容！<information>票据法中明确规定，背书是持票人以转让票据权利或为特定目的而在票据背面或粘单上签章并记载有关事项的行为。背书必须完整且符合相关形式要求，包括记载事项、签章和交付。此外，背书还可以分为两种形式：转让背书和非转让背书（如仅表明代理或担保目的）。</information>\n\n看来，背书这个行为确实涉及到转让或者特定用途，比如授权代理或担保。特别是，法律提到了形式很重要，得在票据背面或者粘单上签章，而且是要记载一些必要的信息。我刚才的理解跟这个意思差不多，只是漏了一些重要细节，比如它还有分种类：转让背书和非转让背书。转让背书应该就是单纯地把权利交给别人，而非转让背书好像可以用于特殊目的，比如仅仅是给人授权而不是完全转让，确实挺有意思。\n\n让我稍微整理一下，总结下这个概念。票据的背书是持票人对票据进行的一种法律行为，它的目的主要有两个：要么是把票据权利转让给别人，要么是为了实现其他特定目的的一种附带记载行为。这个过程需要在票据背面或者粘单上完成，而且必须签章并写明相关事项才有效。法律上对这种行为是有明确要求的，它不但有形式要求，还可能涉及背书人需要承担一些担保责任。\n\n最后确认一下，我觉得以上的结论跟《票据法》的内容完全贴合，没有出现明显问题。不需要修改什么了，感觉可以放心定论。嗯，总结起来，概念很清晰，如果有人再问我什么是票据背书，我大概可以直接就解释给他听了。\n</Internal Thinking>\n\n<Question>\n什么是票据的背书？\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析票据背书的基本概念\",\n      \"content\": \"票据的背书是指票据持有人通过在票据背面或粘单上签字并注明相关事项，进行票据权利转让或确认的一种法律行为。这个行为通常涉及两个方面：第一，背书人将自己的票据权利转让给受让人；第二，背书人通过签字承担一定程度的担保责任。需要进一步明确此定义的法律依据和背景。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"查询相关法律定义\",\n      \"content\": \"要进一步验证票据背书的法律含义及其操作规则，我们需要从法律法规角度查询具体定义和规范依据。具体内容可能涉及《票据法》或其他相关法律制度。因此，我将搜索票据法中关于背书的规定。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"搜索《票据法》关于背书的条款\",\n      \"content\": \"<search>票据法 背书</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析《票据法》中的定义和规则\",\n      \"content\": \"<information>票据法中明确规定，背书是持票人以转让票据权利或为特定目的而在票据背面或粘单上签章并记载有关事项的行为。背书必须完整且符合相关形式要求，包括记载事项、签章和交付。此外，背书还可以分为两种形式：转让背书和非转让背书（如仅表明代理或担保目的）。</information>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"综合明确票据背书的定义\",\n      \"content\": \"结合查询结果可以看出，票据背书的核心是在票据流通中实现权利转让或附加特定用途（如授权代理或提供担保）。这一行为一般需要满足书写形式、合法交付和明确用途等条件。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"票据的背书是指票据持票人以转让票据权利或为特定目的为目的，在票据背面或粘单上签章并记载相关事项的法律行为。背书通常需满足法律规定的形式要件，并承担相应的法律后果。背书可以分为转让背书和非转让背书，用于不同的实际需求。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"根据《票据法》关于背书的定义和规则，此结论是准确的，与相关法律条款内容一致，无需进一步修订。结果验证通过。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"票据的背书是什么呢？首先，我知道这是一个和票据有关的法律行为，好像是和权利的转让或者确认有关系的行为。所以，我先从定义入手，脑海中浮现的基本概念是这样的：背书应该是持票人在票据上签字，表明要转让它或者为了某些目的而记载一些信息。这种行为是带有法律效力的，需要符合一定的规定。不过，我不太确定这是不是全面，需要查一下更权威的定义。\\n\\n嗯，比较靠谱的信息源应该是《票据法》。毕竟法律会有更具体的规范。让我先搜索一下票据法里面关于“背书”的规定吧。<search>票据法 背书</search>\\n\\n哦，我找到了一些相关的内容！<information>票据法中明确规定，背书是持票人以转让票据权利或为特定目的而在票据背面或粘单上签章并记载有关事项的行为。背书必须完整且符合相关形式要求，包括记载事项、签章和交付。此外，背书还可以分为两种形式：转让背书和非转让背书（如仅表明代理或担保目的）。</information>\\n\\n看来，背书这个行为确实涉及到转让或者特定用途，比如授权代理或担保。特别是，法律提到了形式很重要，得在票据背面或者粘单上签章，而且是要记载一些必要的信息。我刚才的理解跟这个意思差不多，只是漏了一些重要细节，比如它还有分种类：转让背书和非转让背书。转让背书应该就是单纯地把权利交给别人，而非转让背书好像可以用于特殊目的，比如仅仅是给人授权而不是完全转让，确实挺有意思。\\n\\n让我稍微整理一下，总结下这个概念。票据的背书是持票人对票据进行的一种法律行为，它的目的主要有两个：要么是把票据权利转让给别人，要么是为了实现其他特定目的的一种附带记载行为。这个过程需要在票据背面或者粘单上完成，而且必须签章并写明相关事项才有效。法律上对这种行为是有明确要求的，它不但有形式要求，还可能涉及背书人需要承担一些担保责任。\\n\\n最后确认一下，我觉得以上的结论跟《票据法》的内容完全贴合，没有出现明显问题。不需要修改什么了，感觉可以放心定论。嗯，总结起来，概念很清晰，如果有人再问我什么是票据背书，我大概可以直接就解释给他听了。\"\n}\n```",
+    "票据的背书是指持票人为将票据权利转让给他人或为实现其他特定目的，在票据背面或粘单上签章并记载相关事项的法律行为。根据《票据法》的规定，背书必须符合法定形式要求，包括签章和必要的记载事项，同时需要将票据实际交付给受让人方可生效。\n\n背书主要有两种形式：  \n1. **转让背书**：用于将票据上的全部权利转让给他人。  \n2. **非转让背书**：不以权利转让为目的，例如用于授权代理或设立担保等特定情形。\n\n此外，票据的背书人通常需要承担一定的担保责任，即在票据未被兑付时，可能需要履行清偿义务。因此，背书不仅是票据流通的重要手段，也对背书人和受让人具有重要的法律约束力。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "分析票据背书的基本概念",
+        "content": "票据的背书是指票据持有人通过在票据背面或粘单上签字并注明相关事项，进行票据权利转让或确认的一种法律行为。这个行为通常涉及两个方面：第一，背书人将自己的票据权利转让给受让人；第二，背书人通过签字承担一定程度的担保责任。需要进一步明确此定义的法律依据和背景。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "查询相关法律定义",
+        "content": "要进一步验证票据背书的法律含义及其操作规则，我们需要从法律法规角度查询具体定义和规范依据。具体内容可能涉及《票据法》或其他相关法律制度。因此，我将搜索票据法中关于背书的规定。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "搜索《票据法》关于背书的条款",
+        "content": "<search>票据法 背书</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "分析《票据法》中的定义和规则",
+        "content": "<information>票据法中明确规定，背书是持票人以转让票据权利或为特定目的而在票据背面或粘单上签章并记载有关事项的行为。背书必须完整且符合相关形式要求，包括记载事项、签章和交付。此外，背书还可以分为两种形式：转让背书和非转让背书（如仅表明代理或担保目的）。</information>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "综合明确票据背书的定义",
+        "content": "结合查询结果可以看出，票据背书的核心是在票据流通中实现权利转让或附加特定用途（如授权代理或提供担保）。这一行为一般需要满足书写形式、合法交付和明确用途等条件。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "票据的背书是指票据持票人以转让票据权利或为特定目的为目的，在票据背面或粘单上签章并记载相关事项的法律行为。背书通常需满足法律规定的形式要件，并承担相应的法律后果。背书可以分为转让背书和非转让背书，用于不同的实际需求。"
+      },
+      {
+        "action": "Verification",
+        "content": "根据《票据法》关于背书的定义和规则，此结论是准确的，与相关法律条款内容一致，无需进一步修订。结果验证通过。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "票据的背书是什么呢？首先，我知道这是一个和票据有关的法律行为，好像是和权利的转让或者确认有关系的行为。所以，我先从定义入手，脑海中浮现的基本概念是这样的：背书应该是持票人在票据上签字，表明要转让它或者为了某些目的而记载一些信息。这种行为是带有法律效力的，需要符合一定的规定。不过，我不太确定这是不是全面，需要查一下更权威的定义。\n\n嗯，比较靠谱的信息源应该是《票据法》。毕竟法律会有更具体的规范。让我先搜索一下票据法里面关于“背书”的规定吧。<search>票据法 背书</search>\n\n哦，我找到了一些相关的内容！<information>票据法中明确规定，背书是持票人以转让票据权利或为特定目的而在票据背面或粘单上签章并记载有关事项的行为。背书必须完整且符合相关形式要求，包括记载事项、签章和交付。此外，背书还可以分为两种形式：转让背书和非转让背书（如仅表明代理或担保目的）。</information>\n\n看来，背书这个行为确实涉及到转让或者特定用途，比如授权代理或担保。特别是，法律提到了形式很重要，得在票据背面或者粘单上签章，而且是要记载一些必要的信息。我刚才的理解跟这个意思差不多，只是漏了一些重要细节，比如它还有分种类：转让背书和非转让背书。转让背书应该就是单纯地把权利交给别人，而非转让背书好像可以用于特殊目的，比如仅仅是给人授权而不是完全转让，确实挺有意思。\n\n让我稍微整理一下，总结下这个概念。票据的背书是持票人对票据进行的一种法律行为，它的目的主要有两个：要么是把票据权利转让给别人，要么是为了实现其他特定目的的一种附带记载行为。这个过程需要在票据背面或者粘单上完成，而且必须签章并写明相关事项才有效。法律上对这种行为是有明确要求的，它不但有形式要求，还可能涉及背书人需要承担一些担保责任。\n\n最后确认一下，我觉得以上的结论跟《票据法》的内容完全贴合，没有出现明显问题。不需要修改什么了，感觉可以放心定论。嗯，总结起来，概念很清晰，如果有人再问我什么是票据背书，我大概可以直接就解释给他听了。",
+  "Response": "票据的背书是指持票人为将票据权利转让给他人或为实现其他特定目的，在票据背面或粘单上签章并记载相关事项的法律行为。根据《票据法》的规定，背书必须符合法定形式要求，包括签章和必要的记载事项，同时需要将票据实际交付给受让人方可生效。\n\n背书主要有两种形式：  \n1. **转让背书**：用于将票据上的全部权利转让给他人。  \n2. **非转让背书**：不以权利转让为目的，例如用于授权代理或设立担保等特定情形。\n\n此外，票据的背书人通常需要承担一定的担保责任，即在票据未被兑付时，可能需要履行清偿义务。因此，背书不仅是票据流通的重要手段，也对背书人和受让人具有重要的法律约束力。",
+  "Question": "什么是票据的背书？"
+}

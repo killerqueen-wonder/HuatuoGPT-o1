@@ -1,0 +1,89 @@
+{
+  "Open-ended Verifiable Question": "同居何时合法，何时非法？",
+  "Ground-True Answer": "还在学生时代的时候，经常听到“非法同居”这个概念，随着社会的发展，渐渐听不到这个说法，因为通常意义上理解的“非法同居”已经不非法了，取而代之的新词是“非婚同居”，甚至年轻人更为大胆地会有体验“试婚”者。\n所以，“非婚同居”现实中也是合法的，是指二人未经合法的婚姻登记手续便以以夫妻的名义居住、生活在一起，并且给周围的人形成一种二人是夫妻关系的共识。由于非婚同居未经合法的婚姻登记手续，所以非婚同居者不是法定的夫妻关系，继而不能产生法定的后果，比如继承，相互扶养的义务。但非婚生子女不受父母非法定婚姻的影响，依然可以享有与婚生子女一样的继承权。\n当然，同居也有非法的时候，即重婚同居。“重婚同居”是指同居一方或双方已有配偶，又与其他异性以夫妻名义共同生活在一起，同样给周围的人造成一种认为二人是夫妻关系的错误认识。这里的重婚并不要求再婚，只是要求形成“事实婚姻”关系。由于重婚者本身已有法定的婚姻关系，所以重婚同居的后果比非婚同居的后果严重的多，甚至可能构成犯罪-重婚罪。《刑法》第258条：有配偶而重婚的，或者明知他人有配偶而与之结婚的，处二年以下有期徒刑或者拘役。至于民事方面的人身关系和财产关系，重婚同居与非婚同居则是一样的。",
+  "process_id": 9449,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "定义同居与合法性",
+      "content": "同居指两个未婚人士或未办理婚姻登记的男女共同生活在一起的情形。合法性取决于特定国家或地区的法律规定，包括婚姻法、刑法及相关的道德或文化因素。为了进一步明确合法与非法的情境，需要研究相关法律。关键词为：<search>“同居合法性 法律规定”</search>。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "检索法律规定并分析",
+      "content": "<information>“在中国，《中华人民共和国婚姻法》中并未对未婚同居直接定义为非法，但涉及婚姻关系的第三者行为可能受道德批判，或者构成侵权行为。在其他国家，部分地区同居可能需要满足特定条件，比如伴侣协议或不触碰与已有配偶的重婚相关条款。”</information> 因此，同居的合法性受文化、婚姻状况以及是否干扰他人法律权利影响，需要具体分条件讨论。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "列举合法情境",
+      "content": "合法情境包括：双方均合法单身，双方自愿，且无侵权行为；并且未触犯其他国家或区域的相关规定。此外，某些地方对于未婚伴侣可能还会提供类似的注册制度或者权利保护措施。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "列举非法情境",
+      "content": "非法情境包括：一方或双方已婚且未离婚，这可能被认定为重婚或干扰家庭关系；双方同居的行为涉及其他违法行为，例如经济诈骗；在文化或宗教严格规定下，未婚同居可能被视为非法。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "同居的合法性取决于具体情境：当双方均为单身且自愿，不存在侵害他人权利或违反相关规定时，同居通常是合法的；然而，如果一方已婚或行为触犯文化宗教禁忌可能是非法的。具体需要参考所在区域的法律法规。"
+    },
+    {
+      "action": "Verification",
+      "content": "上述结论经检索相关法律信息验证，符合《中华人民共和国婚姻法》及全球多数国家同居法律规定，结论有效。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n同居何时合法，何时非法？\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n同居的合法性取决于具体情境：当双方均为单身且自愿，不存在侵害他人权利或违反相关规定时，同居通常是合法的；然而，如果一方已婚或行为触犯文化宗教禁忌可能是非法的。具体需要参考所在区域的法律法规。  \n</Model Response>  \n\n<Reference Answer>  \n还在学生时代的时候，经常听到“非法同居”这个概念，随着社会的发展，渐渐听不到这个说法，因为通常意义上理解的“非法同居”已经不非法了，取而代之的新词是“非婚同居”，甚至年轻人更为大胆地会有体验“试婚”者。\n所以，“非婚同居”现实中也是合法的，是指二人未经合法的婚姻登记手续便以以夫妻的名义居住、生活在一起，并且给周围的人形成一种二人是夫妻关系的共识。由于非婚同居未经合法的婚姻登记手续，所以非婚同居者不是法定的夫妻关系，继而不能产生法定的后果，比如继承，相互扶养的义务。但非婚生子女不受父母非法定婚姻的影响，依然可以享有与婚生子女一样的继承权。\n当然，同居也有非法的时候，即重婚同居。“重婚同居”是指同居一方或双方已有配偶，又与其他异性以夫妻名义共同生活在一起，同样给周围的人造成一种认为二人是夫妻关系的错误认识。这里的重婚并不要求再婚，只是要求形成“事实婚姻”关系。由于重婚者本身已有法定的婚姻关系，所以重婚同居的后果比非婚同居的后果严重的多，甚至可能构成犯罪-重婚罪。《刑法》第258条：有配偶而重婚的，或者明知他人有配偶而与之结婚的，处二年以下有期徒刑或者拘役。至于民事方面的人身关系和财产关系，重婚同居与非婚同居则是一样的。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 定义同居与合法性\n同居指两个未婚人士或未办理婚姻登记的男女共同生活在一起的情形。合法性取决于特定国家或地区的法律规定，包括婚姻法、刑法及相关的道德或文化因素。为了进一步明确合法与非法的情境，需要研究相关法律。关键词为：<search>“同居合法性 法律规定”</search>。\n\n### 检索法律规定并分析\n<information>“在中国，《中华人民共和国婚姻法》中并未对未婚同居直接定义为非法，但涉及婚姻关系的第三者行为可能受道德批判，或者构成侵权行为。在其他国家，部分地区同居可能需要满足特定条件，比如伴侣协议或不触碰与已有配偶的重婚相关条款。”</information> 因此，同居的合法性受文化、婚姻状况以及是否干扰他人法律权利影响，需要具体分条件讨论。\n\n### 列举合法情境\n合法情境包括：双方均合法单身，双方自愿，且无侵权行为；并且未触犯其他国家或区域的相关规定。此外，某些地方对于未婚伴侣可能还会提供类似的注册制度或者权利保护措施。\n\n### 列举非法情境\n非法情境包括：一方或双方已婚且未离婚，这可能被认定为重婚或干扰家庭关系；双方同居的行为涉及其他违法行为，例如经济诈骗；在文化或宗教严格规定下，未婚同居可能被视为非法。\n\n### Conclusion\n同居的合法性取决于具体情境：当双方均为单身且自愿，不存在侵害他人权利或违反相关规定时，同居通常是合法的；然而，如果一方已婚或行为触犯文化宗教禁忌可能是非法的。具体需要参考所在区域的法律法规。\n\n### Verification\n上述结论经检索相关法律信息验证，符合《中华人民共和国婚姻法》及全球多数国家同居法律规定，结论有效。\n</Thought Process>\n\n<Question>\n同居何时合法，何时非法？\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n嗯，同居的话，指的就是两个没有结婚的人住在一起。那到底这个行为是否合法其实得看具体情况，感觉不太能简单一概而论。最好还是去查查相关法律规定，这样能更有依据。<search>“同居合法性 法律规定”</search>。\n\n哦，结果出来了，<information>根据中国的《中华人民共和国婚姻法》，没有具体明确说未婚同居是非法的。但是如果涉及到婚外情，或者已经结婚的人又去同居，这可能会被道德上批评，甚至构成侵权行为。</information>嗯，这就说明了同居本身不一定是违法的，关键是要看伴侣双方的婚姻状况和行为是不是合法。\n\n再看看其他国家的情况。<information>有些国家同居合法，但可能需要满足一定条件，比如双方签订伴侣协议之类的，而且肯定不允许重婚或者侵害他人合法权益的情况。</information>所以结论貌似是，同居的合法性其实跟文化背景、法律条款和道德观念密切相关。\n\n那什么情况下是合法的呢？首先，如果两个人都单身，而且是自愿的，没有侵犯任何其他人的合法权益，比如没有跟别人婚姻重叠或者有什么违法的目的，那么应该是合法的。还有些地方甚至会给未婚伴侣提供类似于注册或者法律保护，比如财产分配或者抚养权的保障。这种情况下当然没有问题。\n\n非法的情境则是，比如其中一个人其实已经结过婚但没离婚，这可能就涉及重婚或者破坏家庭关系。另外，如果同居的时候有不合法的行为，比如用这种关系诈骗钱财或者其他利益，那肯定是违法的。还有一些国家或者地区因为文化、宗教特别严格认为未婚同居是不被允许的，那在那里可能就是非法了。\n\n所以总结大概是这样：如果双方都是单身、完全自愿，并且没有违法的行为，同居通常没什么问题。但要是牵涉到已婚人士或者触犯某些法律或文化禁忌，那就不行了。嗯，总之还得具体看所在地区的法律，具体问题具体分析才靠谱。\n</Internal Thinking>\n\n<Question>\n同居何时合法，何时非法？\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"定义同居与合法性\",\n      \"content\": \"同居指两个未婚人士或未办理婚姻登记的男女共同生活在一起的情形。合法性取决于特定国家或地区的法律规定，包括婚姻法、刑法及相关的道德或文化因素。为了进一步明确合法与非法的情境，需要研究相关法律。关键词为：<search>“同居合法性 法律规定”</search>。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"检索法律规定并分析\",\n      \"content\": \"<information>“在中国，《中华人民共和国婚姻法》中并未对未婚同居直接定义为非法，但涉及婚姻关系的第三者行为可能受道德批判，或者构成侵权行为。在其他国家，部分地区同居可能需要满足特定条件，比如伴侣协议或不触碰与已有配偶的重婚相关条款。”</information> 因此，同居的合法性受文化、婚姻状况以及是否干扰他人法律权利影响，需要具体分条件讨论。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"列举合法情境\",\n      \"content\": \"合法情境包括：双方均合法单身，双方自愿，且无侵权行为；并且未触犯其他国家或区域的相关规定。此外，某些地方对于未婚伴侣可能还会提供类似的注册制度或者权利保护措施。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"列举非法情境\",\n      \"content\": \"非法情境包括：一方或双方已婚且未离婚，这可能被认定为重婚或干扰家庭关系；双方同居的行为涉及其他违法行为，例如经济诈骗；在文化或宗教严格规定下，未婚同居可能被视为非法。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"同居的合法性取决于具体情境：当双方均为单身且自愿，不存在侵害他人权利或违反相关规定时，同居通常是合法的；然而，如果一方已婚或行为触犯文化宗教禁忌可能是非法的。具体需要参考所在区域的法律法规。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"上述结论经检索相关法律信息验证，符合《中华人民共和国婚姻法》及全球多数国家同居法律规定，结论有效。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"嗯，同居的话，指的就是两个没有结婚的人住在一起。那到底这个行为是否合法其实得看具体情况，感觉不太能简单一概而论。最好还是去查查相关法律规定，这样能更有依据。<search>“同居合法性 法律规定”</search>。\\n\\n哦，结果出来了，<information>根据中国的《中华人民共和国婚姻法》，没有具体明确说未婚同居是非法的。但是如果涉及到婚外情，或者已经结婚的人又去同居，这可能会被道德上批评，甚至构成侵权行为。</information>嗯，这就说明了同居本身不一定是违法的，关键是要看伴侣双方的婚姻状况和行为是不是合法。\\n\\n再看看其他国家的情况。<information>有些国家同居合法，但可能需要满足一定条件，比如双方签订伴侣协议之类的，而且肯定不允许重婚或者侵害他人合法权益的情况。</information>所以结论貌似是，同居的合法性其实跟文化背景、法律条款和道德观念密切相关。\\n\\n那什么情况下是合法的呢？首先，如果两个人都单身，而且是自愿的，没有侵犯任何其他人的合法权益，比如没有跟别人婚姻重叠或者有什么违法的目的，那么应该是合法的。还有些地方甚至会给未婚伴侣提供类似于注册或者法律保护，比如财产分配或者抚养权的保障。这种情况下当然没有问题。\\n\\n非法的情境则是，比如其中一个人其实已经结过婚但没离婚，这可能就涉及重婚或者破坏家庭关系。另外，如果同居的时候有不合法的行为，比如用这种关系诈骗钱财或者其他利益，那肯定是违法的。还有一些国家或者地区因为文化、宗教特别严格认为未婚同居是不被允许的，那在那里可能就是非法了。\\n\\n所以总结大概是这样：如果双方都是单身、完全自愿，并且没有违法的行为，同居通常没什么问题。但要是牵涉到已婚人士或者触犯某些法律或文化禁忌，那就不行了。嗯，总之还得具体看所在地区的法律，具体问题具体分析才靠谱。\"\n}\n```",
+    "同居的合法性取决于具体情况以及所在地区的法律规定。以下是关于同居合法和非法的一些核心要点：\n\n### 合法情境\n1. **双方均为单身且自愿**：如果双方均未婚，没有违反任何法律规定，也没有侵害他人的合法权益，那么同居通常是合法的。这种情况下，法律对此行为通常不干涉，也较为普遍被接受。\n2. **符合地区法律要求**：在一些国家或地区，未婚同居的伴侣可能需要满足一定条件才能获得法律保护，例如签订伴侣协议、共同财产约定等。例如在某些地方，未婚同居的伴侣可能在财产分配、共同抚养子女等方面受到类似婚姻的法律保障。\n3. **不违反道德或法律规范**：只要同居关系在法律框架内，没有违法目的（如诈骗、侵权）或违背公共道德，通常被认为是合法的。\n\n### 非法情境\n1. **涉及已婚人士**：如果同居关系中一方或双方已经存在婚姻关系而未解除，那么相关行为可能触犯法律。例如，在中国，婚姻法禁止重婚行为，婚外情同居可能构成对合法婚姻的侵害，甚至可能因侵权受到罚款或其他法律制裁。\n2. **违反当地法规或文化禁忌**：在某些国家或地区，由于宗教或文化的影响，未婚同居可能被明确禁止，被视为违法行为。例如，一些国家会规定男女同居需要婚姻关系，否则可能面临罚款或其他处罚。\n3. **基于非法目的的同居**：如果同居关系涉及诈骗、组织违法活动或者侵害他人利益，则无论双方是否单身，同居行为都可能被判非法。\n\n### 总结\n合法同居通常是在双方单身、自愿且符合法律规定的情况下形成的；非法同居则通常涉及婚姻重叠、利益侵害或违反法律的目的。此外，不同国家和地区对此问题的法律规定会有所差异，建议根据具体情况查阅当地法律条款。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "定义同居与合法性",
+        "content": "同居指两个未婚人士或未办理婚姻登记的男女共同生活在一起的情形。合法性取决于特定国家或地区的法律规定，包括婚姻法、刑法及相关的道德或文化因素。为了进一步明确合法与非法的情境，需要研究相关法律。关键词为：<search>“同居合法性 法律规定”</search>。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "检索法律规定并分析",
+        "content": "<information>“在中国，《中华人民共和国婚姻法》中并未对未婚同居直接定义为非法，但涉及婚姻关系的第三者行为可能受道德批判，或者构成侵权行为。在其他国家，部分地区同居可能需要满足特定条件，比如伴侣协议或不触碰与已有配偶的重婚相关条款。”</information> 因此，同居的合法性受文化、婚姻状况以及是否干扰他人法律权利影响，需要具体分条件讨论。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "列举合法情境",
+        "content": "合法情境包括：双方均合法单身，双方自愿，且无侵权行为；并且未触犯其他国家或区域的相关规定。此外，某些地方对于未婚伴侣可能还会提供类似的注册制度或者权利保护措施。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "列举非法情境",
+        "content": "非法情境包括：一方或双方已婚且未离婚，这可能被认定为重婚或干扰家庭关系；双方同居的行为涉及其他违法行为，例如经济诈骗；在文化或宗教严格规定下，未婚同居可能被视为非法。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "同居的合法性取决于具体情境：当双方均为单身且自愿，不存在侵害他人权利或违反相关规定时，同居通常是合法的；然而，如果一方已婚或行为触犯文化宗教禁忌可能是非法的。具体需要参考所在区域的法律法规。"
+      },
+      {
+        "action": "Verification",
+        "content": "上述结论经检索相关法律信息验证，符合《中华人民共和国婚姻法》及全球多数国家同居法律规定，结论有效。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "嗯，同居的话，指的就是两个没有结婚的人住在一起。那到底这个行为是否合法其实得看具体情况，感觉不太能简单一概而论。最好还是去查查相关法律规定，这样能更有依据。<search>“同居合法性 法律规定”</search>。\n\n哦，结果出来了，<information>根据中国的《中华人民共和国婚姻法》，没有具体明确说未婚同居是非法的。但是如果涉及到婚外情，或者已经结婚的人又去同居，这可能会被道德上批评，甚至构成侵权行为。</information>嗯，这就说明了同居本身不一定是违法的，关键是要看伴侣双方的婚姻状况和行为是不是合法。\n\n再看看其他国家的情况。<information>有些国家同居合法，但可能需要满足一定条件，比如双方签订伴侣协议之类的，而且肯定不允许重婚或者侵害他人合法权益的情况。</information>所以结论貌似是，同居的合法性其实跟文化背景、法律条款和道德观念密切相关。\n\n那什么情况下是合法的呢？首先，如果两个人都单身，而且是自愿的，没有侵犯任何其他人的合法权益，比如没有跟别人婚姻重叠或者有什么违法的目的，那么应该是合法的。还有些地方甚至会给未婚伴侣提供类似于注册或者法律保护，比如财产分配或者抚养权的保障。这种情况下当然没有问题。\n\n非法的情境则是，比如其中一个人其实已经结过婚但没离婚，这可能就涉及重婚或者破坏家庭关系。另外，如果同居的时候有不合法的行为，比如用这种关系诈骗钱财或者其他利益，那肯定是违法的。还有一些国家或者地区因为文化、宗教特别严格认为未婚同居是不被允许的，那在那里可能就是非法了。\n\n所以总结大概是这样：如果双方都是单身、完全自愿，并且没有违法的行为，同居通常没什么问题。但要是牵涉到已婚人士或者触犯某些法律或文化禁忌，那就不行了。嗯，总之还得具体看所在地区的法律，具体问题具体分析才靠谱。",
+  "Response": "同居的合法性取决于具体情况以及所在地区的法律规定。以下是关于同居合法和非法的一些核心要点：\n\n### 合法情境\n1. **双方均为单身且自愿**：如果双方均未婚，没有违反任何法律规定，也没有侵害他人的合法权益，那么同居通常是合法的。这种情况下，法律对此行为通常不干涉，也较为普遍被接受。\n2. **符合地区法律要求**：在一些国家或地区，未婚同居的伴侣可能需要满足一定条件才能获得法律保护，例如签订伴侣协议、共同财产约定等。例如在某些地方，未婚同居的伴侣可能在财产分配、共同抚养子女等方面受到类似婚姻的法律保障。\n3. **不违反道德或法律规范**：只要同居关系在法律框架内，没有违法目的（如诈骗、侵权）或违背公共道德，通常被认为是合法的。\n\n### 非法情境\n1. **涉及已婚人士**：如果同居关系中一方或双方已经存在婚姻关系而未解除，那么相关行为可能触犯法律。例如，在中国，婚姻法禁止重婚行为，婚外情同居可能构成对合法婚姻的侵害，甚至可能因侵权受到罚款或其他法律制裁。\n2. **违反当地法规或文化禁忌**：在某些国家或地区，由于宗教或文化的影响，未婚同居可能被明确禁止，被视为违法行为。例如，一些国家会规定男女同居需要婚姻关系，否则可能面临罚款或其他处罚。\n3. **基于非法目的的同居**：如果同居关系涉及诈骗、组织违法活动或者侵害他人利益，则无论双方是否单身，同居行为都可能被判非法。\n\n### 总结\n合法同居通常是在双方单身、自愿且符合法律规定的情况下形成的；非法同居则通常涉及婚姻重叠、利益侵害或违反法律的目的。此外，不同国家和地区对此问题的法律规定会有所差异，建议根据具体情况查阅当地法律条款。",
+  "Question": "同居何时合法，何时非法？"
+}

@@ -1,0 +1,99 @@
+{
+  "Open-ended Verifiable Question": "配偶死亡婚姻关系证明怎么开",
+  "Ground-True Answer": "开具配偶死亡婚姻关系证明的方式有：可以凭医院证明或者事故证明，火化证明等死亡证明到你的户口所在地注销户口，注销户口后，户口本的婚姻关系就会改为丧偶，就可以证明婚姻关系。\n离婚和一方死亡均是婚姻终止的情形之一，既然死亡，婚姻自动终止，无须离婚。婚姻自由，只要符合结婚的法律条件，完全可以再婚，没有时间限制。",
+  "process_id": 5831,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "明确婚姻关系证明的定义和使用场景",
+      "content": "婚姻关系证明是一种法律文书，用于证明某人婚姻状态的合法性，如是否已经结婚或配偶是否已亡。此文件可能在继承财产、保险理赔或户籍变更等情况下被要求。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "确定开具婚姻关系证明的机构",
+      "content": "通常婚姻关系证明由民政局或公安机关开具，但需要具体了解相关法律文件及规定才能确认。准备搜索相关规定，以确认详细流程。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "查找婚姻关系证明与配偶死亡证明的相关法律或政策",
+      "content": "<search>婚姻关系证明办理规定</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "获取搜索结果",
+      "content": "<information>根据《婚姻登记条例》，婚姻关系证明可以由户籍所在地公安机关或婚姻登记机关开具。在配偶死亡的情况下，需持相关死亡证明文件（如由医院或民政局开具的死亡医学证明书或火化证明）和个人身份证明文件前往办理。</information>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "整理配偶死亡的婚姻关系证明开具步骤",
+      "content": "根据《婚姻登记条例》，步骤如下：1. 准备材料，包括死亡证明文件（如医院或殡仪馆开具的死亡医学证明书或火化证明书）、身份证和结婚证；2. 前往户籍所在地公安机关或婚姻登记机关；3. 提交证明申请并填写相关表格；4. 完成费用支付（如适用）；5. 等待审核和开具证明。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "配偶死亡的婚姻关系证明应前往户籍所在地公安机关或民政局婚姻登记机关，由申请人携带配偶的死亡证明文件（如死亡医学证明或火化证明）、个人身份证以及结婚证办理。办理时需提交申请并填写相关表格，等待审核后获得证明文件。"
+    },
+    {
+      "action": "Verification",
+      "content": "根据法律法规及实际操作步骤，结论正确。婚姻关系证明办理确需相关死亡证明和身份证明文件，且应由公安机关或民政局处理。验证通过。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n配偶死亡婚姻关系证明怎么开\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n配偶死亡的婚姻关系证明应前往户籍所在地公安机关或民政局婚姻登记机关，由申请人携带配偶的死亡证明文件（如死亡医学证明或火化证明）、个人身份证以及结婚证办理。办理时需提交申请并填写相关表格，等待审核后获得证明文件。  \n</Model Response>  \n\n<Reference Answer>  \n开具配偶死亡婚姻关系证明的方式有：可以凭医院证明或者事故证明，火化证明等死亡证明到你的户口所在地注销户口，注销户口后，户口本的婚姻关系就会改为丧偶，就可以证明婚姻关系。\n离婚和一方死亡均是婚姻终止的情形之一，既然死亡，婚姻自动终止，无须离婚。婚姻自由，只要符合结婚的法律条件，完全可以再婚，没有时间限制。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 明确婚姻关系证明的定义和使用场景\n婚姻关系证明是一种法律文书，用于证明某人婚姻状态的合法性，如是否已经结婚或配偶是否已亡。此文件可能在继承财产、保险理赔或户籍变更等情况下被要求。\n\n### 确定开具婚姻关系证明的机构\n通常婚姻关系证明由民政局或公安机关开具，但需要具体了解相关法律文件及规定才能确认。准备搜索相关规定，以确认详细流程。\n\n### 查找婚姻关系证明与配偶死亡证明的相关法律或政策\n<search>婚姻关系证明办理规定</search>\n\n### 获取搜索结果\n<information>根据《婚姻登记条例》，婚姻关系证明可以由户籍所在地公安机关或婚姻登记机关开具。在配偶死亡的情况下，需持相关死亡证明文件（如由医院或民政局开具的死亡医学证明书或火化证明）和个人身份证明文件前往办理。</information>\n\n### 整理配偶死亡的婚姻关系证明开具步骤\n根据《婚姻登记条例》，步骤如下：1. 准备材料，包括死亡证明文件（如医院或殡仪馆开具的死亡医学证明书或火化证明书）、身份证和结婚证；2. 前往户籍所在地公安机关或婚姻登记机关；3. 提交证明申请并填写相关表格；4. 完成费用支付（如适用）；5. 等待审核和开具证明。\n\n### Conclusion\n配偶死亡的婚姻关系证明应前往户籍所在地公安机关或民政局婚姻登记机关，由申请人携带配偶的死亡证明文件（如死亡医学证明或火化证明）、个人身份证以及结婚证办理。办理时需提交申请并填写相关表格，等待审核后获得证明文件。\n\n### Verification\n根据法律法规及实际操作步骤，结论正确。婚姻关系证明办理确需相关死亡证明和身份证明文件，且应由公安机关或民政局处理。验证通过。\n</Thought Process>\n\n<Question>\n配偶死亡婚姻关系证明怎么开\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n嗯，配偶去世后需要开婚姻关系证明，这个怎么操作呢？首先得搞清楚什么是婚姻关系证明，它是用来证明婚姻状态的，比如结婚了没，或者配偶是否去世。这种证明可能在一些场景下会被要求，比如继承遗产、保险理赔或者办理户籍变更。嗯，这些场景应该都有可能需要。\n\n接下来想想，应该去哪里开这个证明呢？民政局或者公安机关听起来是比较靠谱的地方。它们管理婚姻登记和户籍，应该负责任。但具体流程还是得再查一下相关法规或者政策才有十足把握。\n\n那我搜索一下，找找是否有明确规定。<search>婚姻关系证明办理规定</search>\n\n哦，找到了！<information>根据《婚姻登记条例》，婚姻关系证明可以由户籍所在地公安机关或者办理婚姻登记的民政局开具。如果配偶已经去世，还需要携带配偶的死亡证明，比如医院开具的死亡医学证明书或者殡仪馆的火化证明。另外，个人身份证和结婚证也要带上。</information>\n\n嗯，这样看下来，步骤倒是挺清楚的。第一步，得先准备好材料，包括配偶的死亡证明（比如死亡医学证明书或者火化证明）、自己的身份证、还有结婚证。然后第二步，去户籍所在地的公安机关或者民政局提交申请，估计现场可能还需要填写一些表格。第三步，要是有费用的话，得支付（不过不知道这时候需不需要费用，可以再问问工作人员）。最后一步就是等待审核了，审批通过后应该就能拿到婚姻关系证明了。\n\n啊，对了，这些步骤都符合搜到的政策信息，也比较合逻辑，看来没问题。好，整理一下结论。配偶去世后，需要到户籍所在地公安机关或者办理婚姻登记的民政局开婚姻关系证明。记得带上配偶的死亡证明、自己的身份证和结婚证。办理的时候要提交申请，可能填表和缴费，最后等审核结果。非常清楚了。\n</Internal Thinking>\n\n<Question>\n配偶死亡婚姻关系证明怎么开\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"明确婚姻关系证明的定义和使用场景\",\n      \"content\": \"婚姻关系证明是一种法律文书，用于证明某人婚姻状态的合法性，如是否已经结婚或配偶是否已亡。此文件可能在继承财产、保险理赔或户籍变更等情况下被要求。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"确定开具婚姻关系证明的机构\",\n      \"content\": \"通常婚姻关系证明由民政局或公安机关开具，但需要具体了解相关法律文件及规定才能确认。准备搜索相关规定，以确认详细流程。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"查找婚姻关系证明与配偶死亡证明的相关法律或政策\",\n      \"content\": \"<search>婚姻关系证明办理规定</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"获取搜索结果\",\n      \"content\": \"<information>根据《婚姻登记条例》，婚姻关系证明可以由户籍所在地公安机关或婚姻登记机关开具。在配偶死亡的情况下，需持相关死亡证明文件（如由医院或民政局开具的死亡医学证明书或火化证明）和个人身份证明文件前往办理。</information>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"整理配偶死亡的婚姻关系证明开具步骤\",\n      \"content\": \"根据《婚姻登记条例》，步骤如下：1. 准备材料，包括死亡证明文件（如医院或殡仪馆开具的死亡医学证明书或火化证明书）、身份证和结婚证；2. 前往户籍所在地公安机关或婚姻登记机关；3. 提交证明申请并填写相关表格；4. 完成费用支付（如适用）；5. 等待审核和开具证明。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"配偶死亡的婚姻关系证明应前往户籍所在地公安机关或民政局婚姻登记机关，由申请人携带配偶的死亡证明文件（如死亡医学证明或火化证明）、个人身份证以及结婚证办理。办理时需提交申请并填写相关表格，等待审核后获得证明文件。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"根据法律法规及实际操作步骤，结论正确。婚姻关系证明办理确需相关死亡证明和身份证明文件，且应由公安机关或民政局处理。验证通过。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"嗯，配偶去世后需要开婚姻关系证明，这个怎么操作呢？首先得搞清楚什么是婚姻关系证明，它是用来证明婚姻状态的，比如结婚了没，或者配偶是否去世。这种证明可能在一些场景下会被要求，比如继承遗产、保险理赔或者办理户籍变更。嗯，这些场景应该都有可能需要。\\n\\n接下来想想，应该去哪里开这个证明呢？民政局或者公安机关听起来是比较靠谱的地方。它们管理婚姻登记和户籍，应该负责任。但具体流程还是得再查一下相关法规或者政策才有十足把握。\\n\\n那我搜索一下，找找是否有明确规定。<search>婚姻关系证明办理规定</search>\\n\\n哦，找到了！<information>根据《婚姻登记条例》，婚姻关系证明可以由户籍所在地公安机关或者办理婚姻登记的民政局开具。如果配偶已经去世，还需要携带配偶的死亡证明，比如医院开具的死亡医学证明书或者殡仪馆的火化证明。另外，个人身份证和结婚证也要带上。</information>\\n\\n嗯，这样看下来，步骤倒是挺清楚的。第一步，得先准备好材料，包括配偶的死亡证明（比如死亡医学证明书或者火化证明）、自己的身份证、还有结婚证。然后第二步，去户籍所在地的公安机关或者民政局提交申请，估计现场可能还需要填写一些表格。第三步，要是有费用的话，得支付（不过不知道这时候需不需要费用，可以再问问工作人员）。最后一步就是等待审核了，审批通过后应该就能拿到婚姻关系证明了。\\n\\n啊，对了，这些步骤都符合搜到的政策信息，也比较合逻辑，看来没问题。好，整理一下结论。配偶去世后，需要到户籍所在地公安机关或者办理婚姻登记的民政局开婚姻关系证明。记得带上配偶的死亡证明、自己的身份证和结婚证。办理的时候要提交申请，可能填表和缴费，最后等审核结果。非常清楚了。\"\n}\n```",
+    "配偶去世后，办理婚姻关系证明的操作流程如下：\n\n1. **确定办理机构**：婚姻关系证明通常由配偶户籍所在地的公安机关或办理婚姻登记的民政局负责开具。\n\n2. **准备材料**：需要以下材料：\n   - 配偶的死亡证明（如医院开具的死亡医学证明书或殡仪馆的火化证明）。\n   - 本人的身份证。\n   - 结婚证（证明婚姻关系的存在）。\n\n3. **办理步骤**：  \n   - 带齐上述材料，前往办理机构提交申请。  \n   - 在现场填写相关的申请表格。  \n   - 如果涉及费用，可咨询工作人员（部分地区可能免费但某些地方可能需要缴纳工本费）。\n\n4. **审核和领取**：提交材料后，等待工作人员审核。通过后会为您开具婚姻关系证明，可当场领取或按通知时间领取。\n\n建议在办理前通过电话或线下咨询具体的办理机构，确认需要的材料和可能的费用，以避免因材料不足导致额外麻烦。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "明确婚姻关系证明的定义和使用场景",
+        "content": "婚姻关系证明是一种法律文书，用于证明某人婚姻状态的合法性，如是否已经结婚或配偶是否已亡。此文件可能在继承财产、保险理赔或户籍变更等情况下被要求。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "确定开具婚姻关系证明的机构",
+        "content": "通常婚姻关系证明由民政局或公安机关开具，但需要具体了解相关法律文件及规定才能确认。准备搜索相关规定，以确认详细流程。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "查找婚姻关系证明与配偶死亡证明的相关法律或政策",
+        "content": "<search>婚姻关系证明办理规定</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "获取搜索结果",
+        "content": "<information>根据《婚姻登记条例》，婚姻关系证明可以由户籍所在地公安机关或婚姻登记机关开具。在配偶死亡的情况下，需持相关死亡证明文件（如由医院或民政局开具的死亡医学证明书或火化证明）和个人身份证明文件前往办理。</information>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "整理配偶死亡的婚姻关系证明开具步骤",
+        "content": "根据《婚姻登记条例》，步骤如下：1. 准备材料，包括死亡证明文件（如医院或殡仪馆开具的死亡医学证明书或火化证明书）、身份证和结婚证；2. 前往户籍所在地公安机关或婚姻登记机关；3. 提交证明申请并填写相关表格；4. 完成费用支付（如适用）；5. 等待审核和开具证明。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "配偶死亡的婚姻关系证明应前往户籍所在地公安机关或民政局婚姻登记机关，由申请人携带配偶的死亡证明文件（如死亡医学证明或火化证明）、个人身份证以及结婚证办理。办理时需提交申请并填写相关表格，等待审核后获得证明文件。"
+      },
+      {
+        "action": "Verification",
+        "content": "根据法律法规及实际操作步骤，结论正确。婚姻关系证明办理确需相关死亡证明和身份证明文件，且应由公安机关或民政局处理。验证通过。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "嗯，配偶去世后需要开婚姻关系证明，这个怎么操作呢？首先得搞清楚什么是婚姻关系证明，它是用来证明婚姻状态的，比如结婚了没，或者配偶是否去世。这种证明可能在一些场景下会被要求，比如继承遗产、保险理赔或者办理户籍变更。嗯，这些场景应该都有可能需要。\n\n接下来想想，应该去哪里开这个证明呢？民政局或者公安机关听起来是比较靠谱的地方。它们管理婚姻登记和户籍，应该负责任。但具体流程还是得再查一下相关法规或者政策才有十足把握。\n\n那我搜索一下，找找是否有明确规定。<search>婚姻关系证明办理规定</search>\n\n哦，找到了！<information>根据《婚姻登记条例》，婚姻关系证明可以由户籍所在地公安机关或者办理婚姻登记的民政局开具。如果配偶已经去世，还需要携带配偶的死亡证明，比如医院开具的死亡医学证明书或者殡仪馆的火化证明。另外，个人身份证和结婚证也要带上。</information>\n\n嗯，这样看下来，步骤倒是挺清楚的。第一步，得先准备好材料，包括配偶的死亡证明（比如死亡医学证明书或者火化证明）、自己的身份证、还有结婚证。然后第二步，去户籍所在地的公安机关或者民政局提交申请，估计现场可能还需要填写一些表格。第三步，要是有费用的话，得支付（不过不知道这时候需不需要费用，可以再问问工作人员）。最后一步就是等待审核了，审批通过后应该就能拿到婚姻关系证明了。\n\n啊，对了，这些步骤都符合搜到的政策信息，也比较合逻辑，看来没问题。好，整理一下结论。配偶去世后，需要到户籍所在地公安机关或者办理婚姻登记的民政局开婚姻关系证明。记得带上配偶的死亡证明、自己的身份证和结婚证。办理的时候要提交申请，可能填表和缴费，最后等审核结果。非常清楚了。",
+  "Response": "配偶去世后，办理婚姻关系证明的操作流程如下：\n\n1. **确定办理机构**：婚姻关系证明通常由配偶户籍所在地的公安机关或办理婚姻登记的民政局负责开具。\n\n2. **准备材料**：需要以下材料：\n   - 配偶的死亡证明（如医院开具的死亡医学证明书或殡仪馆的火化证明）。\n   - 本人的身份证。\n   - 结婚证（证明婚姻关系的存在）。\n\n3. **办理步骤**：  \n   - 带齐上述材料，前往办理机构提交申请。  \n   - 在现场填写相关的申请表格。  \n   - 如果涉及费用，可咨询工作人员（部分地区可能免费但某些地方可能需要缴纳工本费）。\n\n4. **审核和领取**：提交材料后，等待工作人员审核。通过后会为您开具婚姻关系证明，可当场领取或按通知时间领取。\n\n建议在办理前通过电话或线下咨询具体的办理机构，确认需要的材料和可能的费用，以避免因材料不足导致额外麻烦。",
+  "Question": "配偶死亡婚姻关系证明怎么开"
+}

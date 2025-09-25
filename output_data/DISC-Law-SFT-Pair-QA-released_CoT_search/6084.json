@@ -1,0 +1,79 @@
+{
+  "Open-ended Verifiable Question": "夫妻间签署的忠诚协议是否有法律效力？",
+  "Ground-True Answer": "现实生活中很多人纠结另一半对自己的爱会不会变，为增强对方的安全感双方会签订忠诚协议书，约定在婚姻关系存续期间如果出现了背叛另一方的不道德行为，要赔偿对方的名誉损失及精神损失费。那么此类协议若对方发生了背叛配偶的行为，另一方能否依据协议要求赔偿呢？民法典第1043条规定夫妻应当互相忠实，在司法实践中持有不同观点，最高人民法院倾向于认定忠诚协议属于情感道德范畴，当事人若自觉自愿履行为自己的行为付出经济上的代价法律不会干涉，但法院不能赋予忠诚协议强制执行力，否则法律将沦为情感游戏的裁判，若法院受理此类案件会面临尴尬而危险的举证困境和一系列社会负面影响，可能会引发对个人隐私权严重的侵犯或因情感纠葛直接演变为刑事案件。更有甚者如法律赋予忠诚协议强制执行力从另一层面来看可能会被作为私房钱的索取工具，这不仅会加大婚姻成本，也会使建立在双方感情和信任基础上的婚姻关系变质，因此忠诚协议是否履行全凭债务人自愿。",
+  "process_id": 6084,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "分析忠诚协议的性质",
+      "content": "夫妻间签署的忠诚协议通常涉及双方对婚姻忠诚的承诺或约定，但该类协议的性质需明确是否属于关于人身权利的道德约束或具有法律约束力的合同。需要进一步调查相关法律对道德约束或个人承诺在婚姻法中的效力。<search>婚姻法关于夫妻约定的法律效力</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "检索婚姻法规定",
+      "content": "<information>根据婚姻法和民法典的相关规定，中国法律允许夫妻对财产进行协议约定，但人身权利方面的约定通常具有道德性，而非法律约束力。例如忠诚协议涉及个人行为约束，可能超出法院的强制执行范围。</information>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "评估忠诚协议的法律效力",
+      "content": "忠诚协议的法律效力取决于协议中是否存在违反法律禁止性规定的条款。如果协议仅为双方道德约束，不涉及财产分割或法律其他义务，其强制性效力可能较低，仅具有参考价值；如果协议侵犯了个人自由或违反公序良俗，则可能被认定为无效。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "夫妻间签署的忠诚协议通常不具有法律强制执行力，更多具有道德约束的意义，但具体效力需结合协议内容以及是否触发财产约定或法律义务来判断。对于人身权利的协议，法院一般不予执行；涉及法律调整的内容，则可能产生部分法律效力。"
+    },
+    {
+      "action": "Verification",
+      "content": "结论合理，符合中国婚姻法和民法典的相关规定，夫妻间的忠诚协议主要是道德或情感约束，而不是法律层面上的强制协议。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n夫妻间签署的忠诚协议是否有法律效力？\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n夫妻间签署的忠诚协议通常不具有法律强制执行力，更多具有道德约束的意义，但具体效力需结合协议内容以及是否触发财产约定或法律义务来判断。对于人身权利的协议，法院一般不予执行；涉及法律调整的内容，则可能产生部分法律效力。  \n</Model Response>  \n\n<Reference Answer>  \n现实生活中很多人纠结另一半对自己的爱会不会变，为增强对方的安全感双方会签订忠诚协议书，约定在婚姻关系存续期间如果出现了背叛另一方的不道德行为，要赔偿对方的名誉损失及精神损失费。那么此类协议若对方发生了背叛配偶的行为，另一方能否依据协议要求赔偿呢？民法典第1043条规定夫妻应当互相忠实，在司法实践中持有不同观点，最高人民法院倾向于认定忠诚协议属于情感道德范畴，当事人若自觉自愿履行为自己的行为付出经济上的代价法律不会干涉，但法院不能赋予忠诚协议强制执行力，否则法律将沦为情感游戏的裁判，若法院受理此类案件会面临尴尬而危险的举证困境和一系列社会负面影响，可能会引发对个人隐私权严重的侵犯或因情感纠葛直接演变为刑事案件。更有甚者如法律赋予忠诚协议强制执行力从另一层面来看可能会被作为私房钱的索取工具，这不仅会加大婚姻成本，也会使建立在双方感情和信任基础上的婚姻关系变质，因此忠诚协议是否履行全凭债务人自愿。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 分析忠诚协议的性质\n夫妻间签署的忠诚协议通常涉及双方对婚姻忠诚的承诺或约定，但该类协议的性质需明确是否属于关于人身权利的道德约束或具有法律约束力的合同。需要进一步调查相关法律对道德约束或个人承诺在婚姻法中的效力。<search>婚姻法关于夫妻约定的法律效力</search>\n\n### 检索婚姻法规定\n<information>根据婚姻法和民法典的相关规定，中国法律允许夫妻对财产进行协议约定，但人身权利方面的约定通常具有道德性，而非法律约束力。例如忠诚协议涉及个人行为约束，可能超出法院的强制执行范围。</information>\n\n### 评估忠诚协议的法律效力\n忠诚协议的法律效力取决于协议中是否存在违反法律禁止性规定的条款。如果协议仅为双方道德约束，不涉及财产分割或法律其他义务，其强制性效力可能较低，仅具有参考价值；如果协议侵犯了个人自由或违反公序良俗，则可能被认定为无效。\n\n### Conclusion\n夫妻间签署的忠诚协议通常不具有法律强制执行力，更多具有道德约束的意义，但具体效力需结合协议内容以及是否触发财产约定或法律义务来判断。对于人身权利的协议，法院一般不予执行；涉及法律调整的内容，则可能产生部分法律效力。\n\n### Verification\n结论合理，符合中国婚姻法和民法典的相关规定，夫妻间的忠诚协议主要是道德或情感约束，而不是法律层面上的强制协议。\n</Thought Process>\n\n<Question>\n夫妻间签署的忠诚协议是否有法律效力？\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n嗯，夫妻之间签个忠诚协议，这听起来像是彼此对婚姻的一种承诺吧，但它到底算是法律上的合同，还是只是个道德上的约定呢？这个问题好像不是那么简单，得先搞清楚它在法律里的定位。好像得去查一下婚姻法或者民法典有啥规定。<search>婚姻法关于夫妻约定的法律效力</search>\n\n哦，根据搜到的信息，婚姻法和民法典确实有些提示。这里面写了夫妻可以对财产问题签协议，比如婚前财产公证啊，或者婚后共同财产怎么分啥的，这种协议是法律认可的，能有法律效力的。但是，涉及到人身方面的约定，好像法律上一般不去管，比如一方要求另一方必须对婚姻忠诚，这更像是一种道德层面的承诺。也就是说，签个忠诚协议，如果只是约定对婚姻要专一，实际执行起来可能很难让法律来帮忙。\n\n不过，这也让我想到一个问题。如果这个协议里包含了一些具体内容，比如违反忠诚可能要付出某种赔偿，这算不算跟财产有关？如果跟财产挂钩了，会不会变得更具有法律效力？还是说，这种条款会不会被认定为无效的？法律应该还有些限制，不能违反一些基本原则。拿道德上的事去大规模约束别人个人自由，这可能不太被允许吧，比如公序良俗这些概念。看来还得具体看协议里写的内容。\n\n所以，现在来看，这种协议的性质可能分两种情况：要么是纯道德层面的约束，没有法律效力，签了也主要靠双方自觉；要么是牵涉到财产的协议部分，可能会有一定的法律效力，但还得看条款是不是合规。\n\n嗯，这个分析差不多可以总结了。总体来说，中国法律对夫妻忠诚协议这种东西还是偏向于认为它是道德上的约定，法律一般不会强制执行它。不过，如果协议涉及财产分割或法律上的义务，可能会有法律上的依据来执行。但前提是这些内容得合法、合规，不能搞一些违法的附加条件。这应该算是比较符合婚姻法和民法典的规定吧，好像挺合理的。\n</Internal Thinking>\n\n<Question>\n夫妻间签署的忠诚协议是否有法律效力？\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析忠诚协议的性质\",\n      \"content\": \"夫妻间签署的忠诚协议通常涉及双方对婚姻忠诚的承诺或约定，但该类协议的性质需明确是否属于关于人身权利的道德约束或具有法律约束力的合同。需要进一步调查相关法律对道德约束或个人承诺在婚姻法中的效力。<search>婚姻法关于夫妻约定的法律效力</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"检索婚姻法规定\",\n      \"content\": \"<information>根据婚姻法和民法典的相关规定，中国法律允许夫妻对财产进行协议约定，但人身权利方面的约定通常具有道德性，而非法律约束力。例如忠诚协议涉及个人行为约束，可能超出法院的强制执行范围。</information>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"评估忠诚协议的法律效力\",\n      \"content\": \"忠诚协议的法律效力取决于协议中是否存在违反法律禁止性规定的条款。如果协议仅为双方道德约束，不涉及财产分割或法律其他义务，其强制性效力可能较低，仅具有参考价值；如果协议侵犯了个人自由或违反公序良俗，则可能被认定为无效。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"夫妻间签署的忠诚协议通常不具有法律强制执行力，更多具有道德约束的意义，但具体效力需结合协议内容以及是否触发财产约定或法律义务来判断。对于人身权利的协议，法院一般不予执行；涉及法律调整的内容，则可能产生部分法律效力。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"结论合理，符合中国婚姻法和民法典的相关规定，夫妻间的忠诚协议主要是道德或情感约束，而不是法律层面上的强制协议。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"嗯，夫妻之间签个忠诚协议，这听起来像是彼此对婚姻的一种承诺吧，但它到底算是法律上的合同，还是只是个道德上的约定呢？这个问题好像不是那么简单，得先搞清楚它在法律里的定位。好像得去查一下婚姻法或者民法典有啥规定。<search>婚姻法关于夫妻约定的法律效力</search>\\n\\n哦，根据搜到的信息，婚姻法和民法典确实有些提示。这里面写了夫妻可以对财产问题签协议，比如婚前财产公证啊，或者婚后共同财产怎么分啥的，这种协议是法律认可的，能有法律效力的。但是，涉及到人身方面的约定，好像法律上一般不去管，比如一方要求另一方必须对婚姻忠诚，这更像是一种道德层面的承诺。也就是说，签个忠诚协议，如果只是约定对婚姻要专一，实际执行起来可能很难让法律来帮忙。\\n\\n不过，这也让我想到一个问题。如果这个协议里包含了一些具体内容，比如违反忠诚可能要付出某种赔偿，这算不算跟财产有关？如果跟财产挂钩了，会不会变得更具有法律效力？还是说，这种条款会不会被认定为无效的？法律应该还有些限制，不能违反一些基本原则。拿道德上的事去大规模约束别人个人自由，这可能不太被允许吧，比如公序良俗这些概念。看来还得具体看协议里写的内容。\\n\\n所以，现在来看，这种协议的性质可能分两种情况：要么是纯道德层面的约束，没有法律效力，签了也主要靠双方自觉；要么是牵涉到财产的协议部分，可能会有一定的法律效力，但还得看条款是不是合规。\\n\\n嗯，这个分析差不多可以总结了。总体来说，中国法律对夫妻忠诚协议这种东西还是偏向于认为它是道德上的约定，法律一般不会强制执行它。不过，如果协议涉及财产分割或法律上的义务，可能会有法律上的依据来执行。但前提是这些内容得合法、合规，不能搞一些违法的附加条件。这应该算是比较符合婚姻法和民法典的规定吧，好像挺合理的。\"\n}\n```",
+    "夫妻间签署的忠诚协议在法律上的效力取决于协议的具体内容。根据中国《民法典》和相关法律规定，夫妻可以就婚姻关系中的财产问题签订协议，例如婚前财产公证或婚后财产分割方式，这类协议在法律层面是有效的，可以受到法律保护。\n\n然而，涉及到人身关系的约定，例如要求一方对婚姻忠诚或承担婚姻破裂的责任，通常属于道德约定，法律一般不会强制执行。这是因为夫妻的人身关系属于高度个人化的领域，法律对这种约束的干预有限。如果忠诚协议中存在类似“违约支付赔偿”或牵涉财产处分的条款，具体条款是否具有法律效力则需满足合法、合规的条件，例如不得违反法律的强制性规定或公序良俗原则。\n\n总结来说，夫妻忠诚协议在法律上的效力主要分两种情况：\n1. **纯道德约定**：对婚姻忠诚的承诺属道德层面的约束，法律一般不予干涉或强制执行。\n2. **涉及财产相关条款**：若协议中对财产分割或违约赔偿进行了明确约定，可能具有法律效力，但具体条款需符合法律规定，不得违反公序良俗。\n\n最终，忠诚协议更多是一种夫妻间表达爱与承诺的方式，其实际效力依然需要依据具体内容来判断。如果涉及财产分割或法律义务，建议在协议制定时咨询专业律师以确保其效力和合法性。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "分析忠诚协议的性质",
+        "content": "夫妻间签署的忠诚协议通常涉及双方对婚姻忠诚的承诺或约定，但该类协议的性质需明确是否属于关于人身权利的道德约束或具有法律约束力的合同。需要进一步调查相关法律对道德约束或个人承诺在婚姻法中的效力。<search>婚姻法关于夫妻约定的法律效力</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "检索婚姻法规定",
+        "content": "<information>根据婚姻法和民法典的相关规定，中国法律允许夫妻对财产进行协议约定，但人身权利方面的约定通常具有道德性，而非法律约束力。例如忠诚协议涉及个人行为约束，可能超出法院的强制执行范围。</information>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "评估忠诚协议的法律效力",
+        "content": "忠诚协议的法律效力取决于协议中是否存在违反法律禁止性规定的条款。如果协议仅为双方道德约束，不涉及财产分割或法律其他义务，其强制性效力可能较低，仅具有参考价值；如果协议侵犯了个人自由或违反公序良俗，则可能被认定为无效。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "夫妻间签署的忠诚协议通常不具有法律强制执行力，更多具有道德约束的意义，但具体效力需结合协议内容以及是否触发财产约定或法律义务来判断。对于人身权利的协议，法院一般不予执行；涉及法律调整的内容，则可能产生部分法律效力。"
+      },
+      {
+        "action": "Verification",
+        "content": "结论合理，符合中国婚姻法和民法典的相关规定，夫妻间的忠诚协议主要是道德或情感约束，而不是法律层面上的强制协议。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "嗯，夫妻之间签个忠诚协议，这听起来像是彼此对婚姻的一种承诺吧，但它到底算是法律上的合同，还是只是个道德上的约定呢？这个问题好像不是那么简单，得先搞清楚它在法律里的定位。好像得去查一下婚姻法或者民法典有啥规定。<search>婚姻法关于夫妻约定的法律效力</search>\n\n哦，根据搜到的信息，婚姻法和民法典确实有些提示。这里面写了夫妻可以对财产问题签协议，比如婚前财产公证啊，或者婚后共同财产怎么分啥的，这种协议是法律认可的，能有法律效力的。但是，涉及到人身方面的约定，好像法律上一般不去管，比如一方要求另一方必须对婚姻忠诚，这更像是一种道德层面的承诺。也就是说，签个忠诚协议，如果只是约定对婚姻要专一，实际执行起来可能很难让法律来帮忙。\n\n不过，这也让我想到一个问题。如果这个协议里包含了一些具体内容，比如违反忠诚可能要付出某种赔偿，这算不算跟财产有关？如果跟财产挂钩了，会不会变得更具有法律效力？还是说，这种条款会不会被认定为无效的？法律应该还有些限制，不能违反一些基本原则。拿道德上的事去大规模约束别人个人自由，这可能不太被允许吧，比如公序良俗这些概念。看来还得具体看协议里写的内容。\n\n所以，现在来看，这种协议的性质可能分两种情况：要么是纯道德层面的约束，没有法律效力，签了也主要靠双方自觉；要么是牵涉到财产的协议部分，可能会有一定的法律效力，但还得看条款是不是合规。\n\n嗯，这个分析差不多可以总结了。总体来说，中国法律对夫妻忠诚协议这种东西还是偏向于认为它是道德上的约定，法律一般不会强制执行它。不过，如果协议涉及财产分割或法律上的义务，可能会有法律上的依据来执行。但前提是这些内容得合法、合规，不能搞一些违法的附加条件。这应该算是比较符合婚姻法和民法典的规定吧，好像挺合理的。",
+  "Response": "夫妻间签署的忠诚协议在法律上的效力取决于协议的具体内容。根据中国《民法典》和相关法律规定，夫妻可以就婚姻关系中的财产问题签订协议，例如婚前财产公证或婚后财产分割方式，这类协议在法律层面是有效的，可以受到法律保护。\n\n然而，涉及到人身关系的约定，例如要求一方对婚姻忠诚或承担婚姻破裂的责任，通常属于道德约定，法律一般不会强制执行。这是因为夫妻的人身关系属于高度个人化的领域，法律对这种约束的干预有限。如果忠诚协议中存在类似“违约支付赔偿”或牵涉财产处分的条款，具体条款是否具有法律效力则需满足合法、合规的条件，例如不得违反法律的强制性规定或公序良俗原则。\n\n总结来说，夫妻忠诚协议在法律上的效力主要分两种情况：\n1. **纯道德约定**：对婚姻忠诚的承诺属道德层面的约束，法律一般不予干涉或强制执行。\n2. **涉及财产相关条款**：若协议中对财产分割或违约赔偿进行了明确约定，可能具有法律效力，但具体条款需符合法律规定，不得违反公序良俗。\n\n最终，忠诚协议更多是一种夫妻间表达爱与承诺的方式，其实际效力依然需要依据具体内容来判断。如果涉及财产分割或法律义务，建议在协议制定时咨询专业律师以确保其效力和合法性。",
+  "Question": "夫妻间签署的忠诚协议是否有法律效力？"
+}

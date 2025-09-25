@@ -1,0 +1,119 @@
+{
+  "Open-ended Verifiable Question": "在试用合同中标的物在试用期间内有哪些风险负担",
+  "Ground-True Answer": "主要有三点：第一，试用买卖约定由买受人试用标的物从而可以检验标的物。在一般买卖中，出卖人并无让买受人认可标的物的义务。第二，试用买卖合同以买受人认可标的物为生效条件。试用买卖合同虽经双方当事人意思表示一致而成立，但其是否生效则以买受人对标的物是否满意为前提。第三，试用买卖合同与试用买卖预约合同也有较大区别同。在试用买卖合同中，在买受人试用时买卖合同已经成立，经买受人试验认可标物后买卖合同生效。而试用买卖预约合同则为预约合同，买受人试用时买卖合同并不成立，买受人经试用认可标的物后，只是产生订立买卖合同的义务。所以，在试用合同的适用期间内，虽然合同只是成立但未生效，所有权并未发生转移，但是由于法律的特殊规定，在当事人对此期间的风险承担没有相应的约定时，就适用我国《民法典》交付主义的一般规则，由买受人承担相应的责任。",
+  "process_id": 2102,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "理解问题背景",
+      "content": "试用合同通常是一种特殊的买卖合同形式，允许购货方在一定期限内试用标的物。在试用期间，标的物可能面临损坏、灭失等风险，因此需要梳理试用期间的风险负担规则。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "解读试用合同的法律性质",
+      "content": "试用合同本质上属于买卖合同的一种，但其具有试用期特点，与一般买卖合同有区别。需要了解试用合同中特定期间风险负担的相关法律条文。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "初步定位相关法律法规",
+      "content": "风险负担问题通常在合同法或民法典中有所规定，这可以明确特定情况下的风险分配原则。需要搜索是否有相关法律条款明确规定试用合同中风险负担的内容。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "展开法律条文检索",
+      "content": "针对试用合同标的物风险问题，可能涉及到《中华人民共和国民法典》第三编合同相关条文，特别是标的物交付与风险承担的相关内容。进一步需要检索标的物风险转移与试用约定的相关条款。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "检索《中华人民共和国民法典》的具体条款",
+      "content": "<search>中华人民共和国民法典 试用合同 风险负担</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "分析检索结果",
+      "content": "<information>民法典第六百四十五条规定：在试用期间，标的物的风险由出卖人承担，但是因试用人使用不当导致标的物毁损、灭失的，风险由试用人承担。</information>基于此条文，我们可以看出法律对试用期间标的物风险负担有明确规定，以标的物所有权人为责任主体，同时考虑实际使用不当情形。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "总结试用合同标的物风险负担内容",
+      "content": "根据《民法典》第六百四十五条，在试用期间，标的物的毁损、灭失风险原则上由出卖人承担；但如果试用人因使用不当导致的风险，则由试用人承担。这规定体现了合同双方的公平原则，并具体区分了免责与责任情形。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "在试用合同中，试用期间内标的物的风险由出卖人承担。但如果因试用人的使用不当导致标的物毁损或灭失，则风险由试用人承担。这一规则体现了依法分配风险负担，以保护商品所有者的利益，并督促试用人谨慎使用标的物。"
+    },
+    {
+      "action": "Verification",
+      "content": "上述结论与法律条文吻合，试用期间标的物风险负担的分配依据《民法典》第六百四十五条明确无误，分析过程和结果无误。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n在试用合同中标的物在试用期间内有哪些风险负担\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n在试用合同中，试用期间内标的物的风险由出卖人承担。但如果因试用人的使用不当导致标的物毁损或灭失，则风险由试用人承担。这一规则体现了依法分配风险负担，以保护商品所有者的利益，并督促试用人谨慎使用标的物。  \n</Model Response>  \n\n<Reference Answer>  \n主要有三点：第一，试用买卖约定由买受人试用标的物从而可以检验标的物。在一般买卖中，出卖人并无让买受人认可标的物的义务。第二，试用买卖合同以买受人认可标的物为生效条件。试用买卖合同虽经双方当事人意思表示一致而成立，但其是否生效则以买受人对标的物是否满意为前提。第三，试用买卖合同与试用买卖预约合同也有较大区别同。在试用买卖合同中，在买受人试用时买卖合同已经成立，经买受人试验认可标物后买卖合同生效。而试用买卖预约合同则为预约合同，买受人试用时买卖合同并不成立，买受人经试用认可标的物后，只是产生订立买卖合同的义务。所以，在试用合同的适用期间内，虽然合同只是成立但未生效，所有权并未发生转移，但是由于法律的特殊规定，在当事人对此期间的风险承担没有相应的约定时，就适用我国《民法典》交付主义的一般规则，由买受人承担相应的责任。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 理解问题背景\n试用合同通常是一种特殊的买卖合同形式，允许购货方在一定期限内试用标的物。在试用期间，标的物可能面临损坏、灭失等风险，因此需要梳理试用期间的风险负担规则。\n\n### 解读试用合同的法律性质\n试用合同本质上属于买卖合同的一种，但其具有试用期特点，与一般买卖合同有区别。需要了解试用合同中特定期间风险负担的相关法律条文。\n\n### 初步定位相关法律法规\n风险负担问题通常在合同法或民法典中有所规定，这可以明确特定情况下的风险分配原则。需要搜索是否有相关法律条款明确规定试用合同中风险负担的内容。\n\n### 展开法律条文检索\n针对试用合同标的物风险问题，可能涉及到《中华人民共和国民法典》第三编合同相关条文，特别是标的物交付与风险承担的相关内容。进一步需要检索标的物风险转移与试用约定的相关条款。\n\n### 检索《中华人民共和国民法典》的具体条款\n<search>中华人民共和国民法典 试用合同 风险负担</search>\n\n### 分析检索结果\n<information>民法典第六百四十五条规定：在试用期间，标的物的风险由出卖人承担，但是因试用人使用不当导致标的物毁损、灭失的，风险由试用人承担。</information>基于此条文，我们可以看出法律对试用期间标的物风险负担有明确规定，以标的物所有权人为责任主体，同时考虑实际使用不当情形。\n\n### 总结试用合同标的物风险负担内容\n根据《民法典》第六百四十五条，在试用期间，标的物的毁损、灭失风险原则上由出卖人承担；但如果试用人因使用不当导致的风险，则由试用人承担。这规定体现了合同双方的公平原则，并具体区分了免责与责任情形。\n\n### Conclusion\n在试用合同中，试用期间内标的物的风险由出卖人承担。但如果因试用人的使用不当导致标的物毁损或灭失，则风险由试用人承担。这一规则体现了依法分配风险负担，以保护商品所有者的利益，并督促试用人谨慎使用标的物。\n\n### Verification\n上述结论与法律条文吻合，试用期间标的物风险负担的分配依据《民法典》第六百四十五条明确无误，分析过程和结果无误。\n</Thought Process>\n\n<Question>\n在试用合同中标的物在试用期间内有哪些风险负担\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n试用合同，这种合同还挺普遍的，尤其在购买大件商品或者服务的时候，卖家会允许买家试用一段时间再决定是否购买。既然是试用，那就难免要考虑试用期内如果标的物发生了损坏、灭失，会是谁来承担这个风险呢？这应该是个挺典型的法律问题，得查一下相关规定。\n\n试用合同属于买卖合同的一种，但它又有点特别：毕竟是一种“先试后买”的形式，在本质上和普通的交易合同应该是一样的，只不过加了个试用期的“前置条件”。所以，要确定风险具体由谁来承担，还是得从合同法或者民法去找依据。\n\n先回忆一下，之前了解过民法典相关内容，好像有提到标的物交付和风险负担的问题。试用合同和风险负担两者挂钩的话，优先去民法典里找找看，应该会有规范。\n\n搜索就很关键了。关键字的话，试用合同、风险负担，这两个是最相关的。所以我直接搜一下：<search>中华人民共和国民法典 试用合同 风险负担</search>\n\n嗯，找到条文了！<information>民法典第六百四十五条规定：在试用期间，标的物的风险由出卖人承担，但是因试用人使用不当导致标的物毁损、灭失的，风险由试用人承担。</information>\n\n看完条文，可以确认试用合同中的标的物风险责任问题是有明确规定的。第六百四十五条说得很清楚：在试用期间，原则上风险还是出卖人来承担。但如果东西是在试用人不当使用的情况下受损或者灭失，那就是试用人的责任了。\n\n这就挺有道理的，因为试用期间，标的物的所有权通常还在出卖人那里。毕竟买不买还没最后确定，东西还是原主的，风险自然归原主人。可是，如果是因为试用人操作不当，比如乱用、强行拆解啥的，那责任归试用人就说得通了，毕竟这是人为因素导致的。\n\n总结一下，试用期内标的物的风险由出卖人承担，但如果因为试用人弄坏了东西，或者弄丢了，那就要由试用人负责。这种分配方式看着确实很公平，也体现了民法典在规定责任上的合理性。这样的话，也能促使试用人在使用过程中更小心，避免随便破坏标的物。\n\n总之，法律上的规定和逻辑还是挺清楚的，这样的归责方式既保护了出卖人的利益，也平衡了试用人的责任，蛮合理的。\n</Internal Thinking>\n\n<Question>\n在试用合同中标的物在试用期间内有哪些风险负担\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"理解问题背景\",\n      \"content\": \"试用合同通常是一种特殊的买卖合同形式，允许购货方在一定期限内试用标的物。在试用期间，标的物可能面临损坏、灭失等风险，因此需要梳理试用期间的风险负担规则。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"解读试用合同的法律性质\",\n      \"content\": \"试用合同本质上属于买卖合同的一种，但其具有试用期特点，与一般买卖合同有区别。需要了解试用合同中特定期间风险负担的相关法律条文。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"初步定位相关法律法规\",\n      \"content\": \"风险负担问题通常在合同法或民法典中有所规定，这可以明确特定情况下的风险分配原则。需要搜索是否有相关法律条款明确规定试用合同中风险负担的内容。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"展开法律条文检索\",\n      \"content\": \"针对试用合同标的物风险问题，可能涉及到《中华人民共和国民法典》第三编合同相关条文，特别是标的物交付与风险承担的相关内容。进一步需要检索标的物风险转移与试用约定的相关条款。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"检索《中华人民共和国民法典》的具体条款\",\n      \"content\": \"<search>中华人民共和国民法典 试用合同 风险负担</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析检索结果\",\n      \"content\": \"<information>民法典第六百四十五条规定：在试用期间，标的物的风险由出卖人承担，但是因试用人使用不当导致标的物毁损、灭失的，风险由试用人承担。</information>基于此条文，我们可以看出法律对试用期间标的物风险负担有明确规定，以标的物所有权人为责任主体，同时考虑实际使用不当情形。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"总结试用合同标的物风险负担内容\",\n      \"content\": \"根据《民法典》第六百四十五条，在试用期间，标的物的毁损、灭失风险原则上由出卖人承担；但如果试用人因使用不当导致的风险，则由试用人承担。这规定体现了合同双方的公平原则，并具体区分了免责与责任情形。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"在试用合同中，试用期间内标的物的风险由出卖人承担。但如果因试用人的使用不当导致标的物毁损或灭失，则风险由试用人承担。这一规则体现了依法分配风险负担，以保护商品所有者的利益，并督促试用人谨慎使用标的物。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"上述结论与法律条文吻合，试用期间标的物风险负担的分配依据《民法典》第六百四十五条明确无误，分析过程和结果无误。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"试用合同，这种合同还挺普遍的，尤其在购买大件商品或者服务的时候，卖家会允许买家试用一段时间再决定是否购买。既然是试用，那就难免要考虑试用期内如果标的物发生了损坏、灭失，会是谁来承担这个风险呢？这应该是个挺典型的法律问题，得查一下相关规定。\\n\\n试用合同属于买卖合同的一种，但它又有点特别：毕竟是一种“先试后买”的形式，在本质上和普通的交易合同应该是一样的，只不过加了个试用期的“前置条件”。所以，要确定风险具体由谁来承担，还是得从合同法或者民法去找依据。\\n\\n先回忆一下，之前了解过民法典相关内容，好像有提到标的物交付和风险负担的问题。试用合同和风险负担两者挂钩的话，优先去民法典里找找看，应该会有规范。\\n\\n搜索就很关键了。关键字的话，试用合同、风险负担，这两个是最相关的。所以我直接搜一下：<search>中华人民共和国民法典 试用合同 风险负担</search>\\n\\n嗯，找到条文了！<information>民法典第六百四十五条规定：在试用期间，标的物的风险由出卖人承担，但是因试用人使用不当导致标的物毁损、灭失的，风险由试用人承担。</information>\\n\\n看完条文，可以确认试用合同中的标的物风险责任问题是有明确规定的。第六百四十五条说得很清楚：在试用期间，原则上风险还是出卖人来承担。但如果东西是在试用人不当使用的情况下受损或者灭失，那就是试用人的责任了。\\n\\n这就挺有道理的，因为试用期间，标的物的所有权通常还在出卖人那里。毕竟买不买还没最后确定，东西还是原主的，风险自然归原主人。可是，如果是因为试用人操作不当，比如乱用、强行拆解啥的，那责任归试用人就说得通了，毕竟这是人为因素导致的。\\n\\n总结一下，试用期内标的物的风险由出卖人承担，但如果因为试用人弄坏了东西，或者弄丢了，那就要由试用人负责。这种分配方式看着确实很公平，也体现了民法典在规定责任上的合理性。这样的话，也能促使试用人在使用过程中更小心，避免随便破坏标的物。\\n\\n总之，法律上的规定和逻辑还是挺清楚的，这样的归责方式既保护了出卖人的利益，也平衡了试用人的责任，蛮合理的。\"\n}\n```",
+    "在试用合同中，根据《中华人民共和国民法典》第六百四十五条的规定，试用期间标的物的风险负担具体如下：\n\n1. **一般原则**：在试用期间，标的物的风险由出卖人承担。这是因为在试用期间，标的物的所有权尚未转移给试用人，仍属于出卖人，因此原则上标的物的毁损、灭失风险归出卖人负责。\n\n2. **例外情况**：如果标的物的毁损或灭失是因试用人使用不当导致的，则试用人需承担相应的风险。这里的“使用不当”可以包括试用人未按照正常方式操作、恶意或过失行为导致标的物损坏或丢失等情形。\n\n这种风险分配的安排体现了公平原则：试用期间出卖人作为标的物的所有权人，承担一般风险是合理的；但若风险因试用人的不当行为发生，则让试用人承担也符合法律的归责逻辑。因此，在试用期间，试用人应谨慎使用标的物，以免因自身行为导致风险责任转移。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "理解问题背景",
+        "content": "试用合同通常是一种特殊的买卖合同形式，允许购货方在一定期限内试用标的物。在试用期间，标的物可能面临损坏、灭失等风险，因此需要梳理试用期间的风险负担规则。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "解读试用合同的法律性质",
+        "content": "试用合同本质上属于买卖合同的一种，但其具有试用期特点，与一般买卖合同有区别。需要了解试用合同中特定期间风险负担的相关法律条文。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "初步定位相关法律法规",
+        "content": "风险负担问题通常在合同法或民法典中有所规定，这可以明确特定情况下的风险分配原则。需要搜索是否有相关法律条款明确规定试用合同中风险负担的内容。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "展开法律条文检索",
+        "content": "针对试用合同标的物风险问题，可能涉及到《中华人民共和国民法典》第三编合同相关条文，特别是标的物交付与风险承担的相关内容。进一步需要检索标的物风险转移与试用约定的相关条款。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "检索《中华人民共和国民法典》的具体条款",
+        "content": "<search>中华人民共和国民法典 试用合同 风险负担</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "分析检索结果",
+        "content": "<information>民法典第六百四十五条规定：在试用期间，标的物的风险由出卖人承担，但是因试用人使用不当导致标的物毁损、灭失的，风险由试用人承担。</information>基于此条文，我们可以看出法律对试用期间标的物风险负担有明确规定，以标的物所有权人为责任主体，同时考虑实际使用不当情形。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "总结试用合同标的物风险负担内容",
+        "content": "根据《民法典》第六百四十五条，在试用期间，标的物的毁损、灭失风险原则上由出卖人承担；但如果试用人因使用不当导致的风险，则由试用人承担。这规定体现了合同双方的公平原则，并具体区分了免责与责任情形。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "在试用合同中，试用期间内标的物的风险由出卖人承担。但如果因试用人的使用不当导致标的物毁损或灭失，则风险由试用人承担。这一规则体现了依法分配风险负担，以保护商品所有者的利益，并督促试用人谨慎使用标的物。"
+      },
+      {
+        "action": "Verification",
+        "content": "上述结论与法律条文吻合，试用期间标的物风险负担的分配依据《民法典》第六百四十五条明确无误，分析过程和结果无误。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "试用合同，这种合同还挺普遍的，尤其在购买大件商品或者服务的时候，卖家会允许买家试用一段时间再决定是否购买。既然是试用，那就难免要考虑试用期内如果标的物发生了损坏、灭失，会是谁来承担这个风险呢？这应该是个挺典型的法律问题，得查一下相关规定。\n\n试用合同属于买卖合同的一种，但它又有点特别：毕竟是一种“先试后买”的形式，在本质上和普通的交易合同应该是一样的，只不过加了个试用期的“前置条件”。所以，要确定风险具体由谁来承担，还是得从合同法或者民法去找依据。\n\n先回忆一下，之前了解过民法典相关内容，好像有提到标的物交付和风险负担的问题。试用合同和风险负担两者挂钩的话，优先去民法典里找找看，应该会有规范。\n\n搜索就很关键了。关键字的话，试用合同、风险负担，这两个是最相关的。所以我直接搜一下：<search>中华人民共和国民法典 试用合同 风险负担</search>\n\n嗯，找到条文了！<information>民法典第六百四十五条规定：在试用期间，标的物的风险由出卖人承担，但是因试用人使用不当导致标的物毁损、灭失的，风险由试用人承担。</information>\n\n看完条文，可以确认试用合同中的标的物风险责任问题是有明确规定的。第六百四十五条说得很清楚：在试用期间，原则上风险还是出卖人来承担。但如果东西是在试用人不当使用的情况下受损或者灭失，那就是试用人的责任了。\n\n这就挺有道理的，因为试用期间，标的物的所有权通常还在出卖人那里。毕竟买不买还没最后确定，东西还是原主的，风险自然归原主人。可是，如果是因为试用人操作不当，比如乱用、强行拆解啥的，那责任归试用人就说得通了，毕竟这是人为因素导致的。\n\n总结一下，试用期内标的物的风险由出卖人承担，但如果因为试用人弄坏了东西，或者弄丢了，那就要由试用人负责。这种分配方式看着确实很公平，也体现了民法典在规定责任上的合理性。这样的话，也能促使试用人在使用过程中更小心，避免随便破坏标的物。\n\n总之，法律上的规定和逻辑还是挺清楚的，这样的归责方式既保护了出卖人的利益，也平衡了试用人的责任，蛮合理的。",
+  "Response": "在试用合同中，根据《中华人民共和国民法典》第六百四十五条的规定，试用期间标的物的风险负担具体如下：\n\n1. **一般原则**：在试用期间，标的物的风险由出卖人承担。这是因为在试用期间，标的物的所有权尚未转移给试用人，仍属于出卖人，因此原则上标的物的毁损、灭失风险归出卖人负责。\n\n2. **例外情况**：如果标的物的毁损或灭失是因试用人使用不当导致的，则试用人需承担相应的风险。这里的“使用不当”可以包括试用人未按照正常方式操作、恶意或过失行为导致标的物损坏或丢失等情形。\n\n这种风险分配的安排体现了公平原则：试用期间出卖人作为标的物的所有权人，承担一般风险是合理的；但若风险因试用人的不当行为发生，则让试用人承担也符合法律的归责逻辑。因此，在试用期间，试用人应谨慎使用标的物，以免因自身行为导致风险责任转移。",
+  "Question": "在试用合同中标的物在试用期间内有哪些风险负担"
+}

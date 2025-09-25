@@ -1,0 +1,99 @@
+{
+  "Open-ended Verifiable Question": "劳动法没有签合同怎样赔偿?",
+  "Ground-True Answer": "1.如果用人单位自用工之日起超过一年没有签订劳动合同的，视为签订无固定期限劳动合同，自应当订立无固定期限劳动合同之日起向劳动者每月支付二倍的工资；自用工之日起超过一个月不满一年未签订的，向劳动者每月支付二倍的工资。支付双倍工资一般不超过11个月。2.法律依据：《中华人民共和国劳动合同法》第八十二条的规定，用人单位自用工之日起超过一个月不满一年未与劳动者订立书面劳动合同的，应当向劳动者每月支付二倍的工资。 用人单位违反本法规定不与劳动者订立无固定期限劳动合同的，自应当订立无固定期限劳动合同之日起向劳动者每月支付二倍的工资。二、劳动法辞退员工补偿的规定有哪些劳动法辞退员工补偿的规定是根据相关法律，如果劳动者在用工期间没有过错的，用人单位辞退劳动者要按照每满一年支付一个月工资的标准向劳动者支付经济补偿金。经济补偿按劳动者在本单位工作的年限，每满一年支付一个月工资的标准向劳动者支付。六个月以上不满一年的，按一年计算；不满六个月的，向劳动者支付半个月工资的经济补偿。",
+  "process_id": 9768,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "明确是否涉及劳动合同法",
+      "content": "根据中国劳动法，如果用人单位未与劳动者签订劳动合同，存在法律责任。一种常见的情况是违反《劳动合同法》第十条的规定，需要具体确认该法条是否适用该情况。这里需要查询：《劳动合同法》第十条及相关法律条文对未签订合同的赔偿规定。<search>劳动合同法第十条 未签合同赔偿</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "检索《劳动合同法》的相关规定",
+      "content": "<information>《劳动合同法》第十条规定，用人单位应当自劳动者入职之日起一个月内签订劳动合同。若超过一个月且未签订，则需向劳动者支付双倍工资。同时，《劳动合同法》第八十二条还进一步明确，在未签订劳动合同期间的双倍工资最多支持11个月。</information>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "核对双倍工资的支付标准",
+      "content": "结合上述内容，可以确定未签订劳动合同的赔偿通常包括支付劳动者未签订劳动合同期间的双倍工资，劳动者可以依法要求赔偿。此赔偿需满足的条件包括：劳动者已实际工作且与用人单位形成事实劳动关系，而用人单位未在法定期限内签订合同。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "补充其他可能的赔偿条款",
+      "content": "除了双倍工资赔偿，用人单位还可能需要支付经济补偿金或承担违法解除劳动关系所导致的赔偿责任。这取决于具体情况，例如劳动者是否被解雇或辞退，是否涉及其他违约事项，以及《劳动合同法》第四十七条及相关条款的适用范围。<search>劳动合同法第四十七条 经济补偿金</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "检索经济补偿金的支付依据",
+      "content": "<information>《劳动合同法》第四十七条规定，经济补偿金的支付标准一般为按劳动者在本单位工作的年限，每满一年支付一个月工资。如果用人单位违法解除劳动合同，支付经济补偿金是法律强制要求。</information>"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "根据《劳动合同法》第十条和第八十二条的规定，用人单位未与劳动者签订劳动合同的赔偿包括未签合同期间的双倍工资（最多支持11个月）。此外，《劳动合同法》第四十七条还明确了劳动者依据工龄享受经济补偿金的权利，如果存在违法解除劳动关系，则用人单位还须支付额外的赔偿金。"
+    },
+    {
+      "action": "Verification",
+      "content": "结论符合《劳动合同法》第十条、第八十二条和第四十七条的相关规定，未签合同的赔偿具体包括未签订合同期间的双倍工资和可能的经济补偿金，无需进一步调整。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n劳动法没有签合同怎样赔偿?\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n根据《劳动合同法》第十条和第八十二条的规定，用人单位未与劳动者签订劳动合同的赔偿包括未签合同期间的双倍工资（最多支持11个月）。此外，《劳动合同法》第四十七条还明确了劳动者依据工龄享受经济补偿金的权利，如果存在违法解除劳动关系，则用人单位还须支付额外的赔偿金。  \n</Model Response>  \n\n<Reference Answer>  \n1.如果用人单位自用工之日起超过一年没有签订劳动合同的，视为签订无固定期限劳动合同，自应当订立无固定期限劳动合同之日起向劳动者每月支付二倍的工资；自用工之日起超过一个月不满一年未签订的，向劳动者每月支付二倍的工资。支付双倍工资一般不超过11个月。2.法律依据：《中华人民共和国劳动合同法》第八十二条的规定，用人单位自用工之日起超过一个月不满一年未与劳动者订立书面劳动合同的，应当向劳动者每月支付二倍的工资。 用人单位违反本法规定不与劳动者订立无固定期限劳动合同的，自应当订立无固定期限劳动合同之日起向劳动者每月支付二倍的工资。二、劳动法辞退员工补偿的规定有哪些劳动法辞退员工补偿的规定是根据相关法律，如果劳动者在用工期间没有过错的，用人单位辞退劳动者要按照每满一年支付一个月工资的标准向劳动者支付经济补偿金。经济补偿按劳动者在本单位工作的年限，每满一年支付一个月工资的标准向劳动者支付。六个月以上不满一年的，按一年计算；不满六个月的，向劳动者支付半个月工资的经济补偿。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 明确是否涉及劳动合同法\n根据中国劳动法，如果用人单位未与劳动者签订劳动合同，存在法律责任。一种常见的情况是违反《劳动合同法》第十条的规定，需要具体确认该法条是否适用该情况。这里需要查询：《劳动合同法》第十条及相关法律条文对未签订合同的赔偿规定。<search>劳动合同法第十条 未签合同赔偿</search>\n\n### 检索《劳动合同法》的相关规定\n<information>《劳动合同法》第十条规定，用人单位应当自劳动者入职之日起一个月内签订劳动合同。若超过一个月且未签订，则需向劳动者支付双倍工资。同时，《劳动合同法》第八十二条还进一步明确，在未签订劳动合同期间的双倍工资最多支持11个月。</information>\n\n### 核对双倍工资的支付标准\n结合上述内容，可以确定未签订劳动合同的赔偿通常包括支付劳动者未签订劳动合同期间的双倍工资，劳动者可以依法要求赔偿。此赔偿需满足的条件包括：劳动者已实际工作且与用人单位形成事实劳动关系，而用人单位未在法定期限内签订合同。\n\n### 补充其他可能的赔偿条款\n除了双倍工资赔偿，用人单位还可能需要支付经济补偿金或承担违法解除劳动关系所导致的赔偿责任。这取决于具体情况，例如劳动者是否被解雇或辞退，是否涉及其他违约事项，以及《劳动合同法》第四十七条及相关条款的适用范围。<search>劳动合同法第四十七条 经济补偿金</search>\n\n### 检索经济补偿金的支付依据\n<information>《劳动合同法》第四十七条规定，经济补偿金的支付标准一般为按劳动者在本单位工作的年限，每满一年支付一个月工资。如果用人单位违法解除劳动合同，支付经济补偿金是法律强制要求。</information>\n\n### Conclusion\n根据《劳动合同法》第十条和第八十二条的规定，用人单位未与劳动者签订劳动合同的赔偿包括未签合同期间的双倍工资（最多支持11个月）。此外，《劳动合同法》第四十七条还明确了劳动者依据工龄享受经济补偿金的权利，如果存在违法解除劳动关系，则用人单位还须支付额外的赔偿金。\n\n### Verification\n结论符合《劳动合同法》第十条、第八十二条和第四十七条的相关规定，未签合同的赔偿具体包括未签订合同期间的双倍工资和可能的经济补偿金，无需进一步调整。\n</Thought Process>\n\n<Question>\n劳动法没有签合同怎样赔偿?\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n好，来理清楚这个问题。首先，要确认未签订劳动合同的情况是不是涉及到劳动法律的保护，这就要看看《劳动合同法》是怎么规定的。这种情况下，跟劳动者没签合同是挺常见的一种争议，那就先查一下相关法条吧，比如《劳动合同法》第十条，看看里面有没有明确说明。<search>劳动合同法第十条 未签合同赔偿</search>\n\n好了，找到了！根据<information>《劳动合同法》第十条规定，用人单位必须在劳动者入职之日起一个月内与其签订劳动合同。如果超过一个月还没签合同，那就得支付劳动者双倍工资。</information>哦，对了，这还不算完，刚才想起来第八十二条也可能有提到类似的内容，那继续确认一下更多具体内容会比较稳妥。\n\n嗯<information>查到了！《劳动合同法》第八十二条也明确说，未签劳动合同的双倍工资赔偿期限最多只能支持11个月。</information>所以总结下来，如果公司不按时签合同的话，劳动者是可以主张未签合同期间的双倍工资的，但要注意时间限制。\n\n接着再想一下，除了双倍工资，还会不会有别的赔偿？比如如果用人单位违法解除劳动关系，劳动者是不是还能申请经济补偿金？这个也是大家常问的问题，那就继续查一下《劳动合同法》中跟经济补偿金相关的条款，比如第四十七条。<search>劳动合同法第四十七条 经济补偿金</search>\n\n哦，找到了这个条款！<information>《劳动合同法》第四十七条规定，经济补偿金的标准是按照劳动者的工作年限，每满一年支付一个月工资。如果用人单位违法解除劳动合同，是必须支付这一笔补偿的。</information>这样的话就很清楚了，只要确定劳动者工龄和工资标准，就可以计算出经济补偿金的具体金额。\n\n现在把这些信息结合起来，看是否有遗漏。未签劳动合同的赔偿是包括两个部分的：第一是未签合同期间的双倍工资，这里法律限定了最长支持11个月；第二，如果用人单位还违法解除劳动关系，那就还要根据工龄支付经济补偿金。此外，对于任何特殊情况，比如说用人单位存在恶意行为或者劳动者因为这些问题遭受了重大损失，还可能有额外的索赔机会，这些需要结合具体情况判断。\n\n综上，按照《劳动合同法》的规定，未签劳动合同的赔偿可以涵盖未签期间的双倍工资和经济补偿金，这些条款都已经在法律里面明确列出来了。接下去如果有进一步的情况，比如如何举证、提起诉讼等，那可能还需要研究相应的劳动争议处理程序。\n</Internal Thinking>\n\n<Question>\n劳动法没有签合同怎样赔偿?\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"明确是否涉及劳动合同法\",\n      \"content\": \"根据中国劳动法，如果用人单位未与劳动者签订劳动合同，存在法律责任。一种常见的情况是违反《劳动合同法》第十条的规定，需要具体确认该法条是否适用该情况。这里需要查询：《劳动合同法》第十条及相关法律条文对未签订合同的赔偿规定。<search>劳动合同法第十条 未签合同赔偿</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"检索《劳动合同法》的相关规定\",\n      \"content\": \"<information>《劳动合同法》第十条规定，用人单位应当自劳动者入职之日起一个月内签订劳动合同。若超过一个月且未签订，则需向劳动者支付双倍工资。同时，《劳动合同法》第八十二条还进一步明确，在未签订劳动合同期间的双倍工资最多支持11个月。</information>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"核对双倍工资的支付标准\",\n      \"content\": \"结合上述内容，可以确定未签订劳动合同的赔偿通常包括支付劳动者未签订劳动合同期间的双倍工资，劳动者可以依法要求赔偿。此赔偿需满足的条件包括：劳动者已实际工作且与用人单位形成事实劳动关系，而用人单位未在法定期限内签订合同。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"补充其他可能的赔偿条款\",\n      \"content\": \"除了双倍工资赔偿，用人单位还可能需要支付经济补偿金或承担违法解除劳动关系所导致的赔偿责任。这取决于具体情况，例如劳动者是否被解雇或辞退，是否涉及其他违约事项，以及《劳动合同法》第四十七条及相关条款的适用范围。<search>劳动合同法第四十七条 经济补偿金</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"检索经济补偿金的支付依据\",\n      \"content\": \"<information>《劳动合同法》第四十七条规定，经济补偿金的支付标准一般为按劳动者在本单位工作的年限，每满一年支付一个月工资。如果用人单位违法解除劳动合同，支付经济补偿金是法律强制要求。</information>\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"根据《劳动合同法》第十条和第八十二条的规定，用人单位未与劳动者签订劳动合同的赔偿包括未签合同期间的双倍工资（最多支持11个月）。此外，《劳动合同法》第四十七条还明确了劳动者依据工龄享受经济补偿金的权利，如果存在违法解除劳动关系，则用人单位还须支付额外的赔偿金。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"结论符合《劳动合同法》第十条、第八十二条和第四十七条的相关规定，未签合同的赔偿具体包括未签订合同期间的双倍工资和可能的经济补偿金，无需进一步调整。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"好，来理清楚这个问题。首先，要确认未签订劳动合同的情况是不是涉及到劳动法律的保护，这就要看看《劳动合同法》是怎么规定的。这种情况下，跟劳动者没签合同是挺常见的一种争议，那就先查一下相关法条吧，比如《劳动合同法》第十条，看看里面有没有明确说明。<search>劳动合同法第十条 未签合同赔偿</search>\\n\\n好了，找到了！根据<information>《劳动合同法》第十条规定，用人单位必须在劳动者入职之日起一个月内与其签订劳动合同。如果超过一个月还没签合同，那就得支付劳动者双倍工资。</information>哦，对了，这还不算完，刚才想起来第八十二条也可能有提到类似的内容，那继续确认一下更多具体内容会比较稳妥。\\n\\n嗯<information>查到了！《劳动合同法》第八十二条也明确说，未签劳动合同的双倍工资赔偿期限最多只能支持11个月。</information>所以总结下来，如果公司不按时签合同的话，劳动者是可以主张未签合同期间的双倍工资的，但要注意时间限制。\\n\\n接着再想一下，除了双倍工资，还会不会有别的赔偿？比如如果用人单位违法解除劳动关系，劳动者是不是还能申请经济补偿金？这个也是大家常问的问题，那就继续查一下《劳动合同法》中跟经济补偿金相关的条款，比如第四十七条。<search>劳动合同法第四十七条 经济补偿金</search>\\n\\n哦，找到了这个条款！<information>《劳动合同法》第四十七条规定，经济补偿金的标准是按照劳动者的工作年限，每满一年支付一个月工资。如果用人单位违法解除劳动合同，是必须支付这一笔补偿的。</information>这样的话就很清楚了，只要确定劳动者工龄和工资标准，就可以计算出经济补偿金的具体金额。\\n\\n现在把这些信息结合起来，看是否有遗漏。未签劳动合同的赔偿是包括两个部分的：第一是未签合同期间的双倍工资，这里法律限定了最长支持11个月；第二，如果用人单位还违法解除劳动关系，那就还要根据工龄支付经济补偿金。此外，对于任何特殊情况，比如说用人单位存在恶意行为或者劳动者因为这些问题遭受了重大损失，还可能有额外的索赔机会，这些需要结合具体情况判断。\\n\\n综上，按照《劳动合同法》的规定，未签劳动合同的赔偿可以涵盖未签期间的双倍工资和经济补偿金，这些条款都已经在法律里面明确列出来了。接下去如果有进一步的情况，比如如何举证、提起诉讼等，那可能还需要研究相应的劳动争议处理程序。\"\n}\n```",
+    "根据《劳动合同法》的规定，用人单位未与劳动者签订劳动合同可能面临以下赔偿责任：\n\n1. **双倍工资赔偿**  \n   根据《劳动合同法》第十条和第八十二条，用人单位必须在劳动者入职一个月内与其签订劳动合同。如果超过一个月仍未签订合同，用人单位需要支付劳动者从入职满一个月后的双倍工资。这项双倍工资赔偿的计算最长支持11个月，即劳动者最多可以主张11个月的双倍工资。\n\n2. **经济补偿金**  \n   如果未签订劳动合同且用人单位违法解除劳动关系，根据《劳动合同法》第四十七条，劳动者可以主张经济补偿金。经济补偿金标准是按照劳动者的实际工作年限，每满一年支付一个月工资。不满一年的按照工作时长折算支付。\n\n**举例**：  \n假设劳动者月薪为5000元，入职后用人单位没有及时签订劳动合同，劳动关系持续了一年并因违法解除劳动合同终止。那么赔偿可能包括：\n- 双倍工资：双倍薪资从第二个月开始计算，最长支持11个月，赔偿金额为：5000元 × 11个月 = 55000元。\n- 经济补偿金：按1年工作年限计算，经济补偿金为：5000元 × 1 = 5000元。\n\n合计赔偿金额为：55000元（双倍工资）+ 5000元（经济补偿金）= 60000元。\n\n**其他注意事项**：  \n劳动者如果希望主张上述赔偿，需要保留相关证明，用于举证劳动关系的存在（如工资发放记录、工作邮件、工作证等）。\n\n综上，未签订劳动合同的赔偿主要包括双倍工资赔偿和可能的经济补偿金。在实际操作中，需要根据具体情况计算详细金额，并结合劳动争议处理程序进一步维权。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "明确是否涉及劳动合同法",
+        "content": "根据中国劳动法，如果用人单位未与劳动者签订劳动合同，存在法律责任。一种常见的情况是违反《劳动合同法》第十条的规定，需要具体确认该法条是否适用该情况。这里需要查询：《劳动合同法》第十条及相关法律条文对未签订合同的赔偿规定。<search>劳动合同法第十条 未签合同赔偿</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "检索《劳动合同法》的相关规定",
+        "content": "<information>《劳动合同法》第十条规定，用人单位应当自劳动者入职之日起一个月内签订劳动合同。若超过一个月且未签订，则需向劳动者支付双倍工资。同时，《劳动合同法》第八十二条还进一步明确，在未签订劳动合同期间的双倍工资最多支持11个月。</information>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "核对双倍工资的支付标准",
+        "content": "结合上述内容，可以确定未签订劳动合同的赔偿通常包括支付劳动者未签订劳动合同期间的双倍工资，劳动者可以依法要求赔偿。此赔偿需满足的条件包括：劳动者已实际工作且与用人单位形成事实劳动关系，而用人单位未在法定期限内签订合同。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "补充其他可能的赔偿条款",
+        "content": "除了双倍工资赔偿，用人单位还可能需要支付经济补偿金或承担违法解除劳动关系所导致的赔偿责任。这取决于具体情况，例如劳动者是否被解雇或辞退，是否涉及其他违约事项，以及《劳动合同法》第四十七条及相关条款的适用范围。<search>劳动合同法第四十七条 经济补偿金</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "检索经济补偿金的支付依据",
+        "content": "<information>《劳动合同法》第四十七条规定，经济补偿金的支付标准一般为按劳动者在本单位工作的年限，每满一年支付一个月工资。如果用人单位违法解除劳动合同，支付经济补偿金是法律强制要求。</information>"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "根据《劳动合同法》第十条和第八十二条的规定，用人单位未与劳动者签订劳动合同的赔偿包括未签合同期间的双倍工资（最多支持11个月）。此外，《劳动合同法》第四十七条还明确了劳动者依据工龄享受经济补偿金的权利，如果存在违法解除劳动关系，则用人单位还须支付额外的赔偿金。"
+      },
+      {
+        "action": "Verification",
+        "content": "结论符合《劳动合同法》第十条、第八十二条和第四十七条的相关规定，未签合同的赔偿具体包括未签订合同期间的双倍工资和可能的经济补偿金，无需进一步调整。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "好，来理清楚这个问题。首先，要确认未签订劳动合同的情况是不是涉及到劳动法律的保护，这就要看看《劳动合同法》是怎么规定的。这种情况下，跟劳动者没签合同是挺常见的一种争议，那就先查一下相关法条吧，比如《劳动合同法》第十条，看看里面有没有明确说明。<search>劳动合同法第十条 未签合同赔偿</search>\n\n好了，找到了！根据<information>《劳动合同法》第十条规定，用人单位必须在劳动者入职之日起一个月内与其签订劳动合同。如果超过一个月还没签合同，那就得支付劳动者双倍工资。</information>哦，对了，这还不算完，刚才想起来第八十二条也可能有提到类似的内容，那继续确认一下更多具体内容会比较稳妥。\n\n嗯<information>查到了！《劳动合同法》第八十二条也明确说，未签劳动合同的双倍工资赔偿期限最多只能支持11个月。</information>所以总结下来，如果公司不按时签合同的话，劳动者是可以主张未签合同期间的双倍工资的，但要注意时间限制。\n\n接着再想一下，除了双倍工资，还会不会有别的赔偿？比如如果用人单位违法解除劳动关系，劳动者是不是还能申请经济补偿金？这个也是大家常问的问题，那就继续查一下《劳动合同法》中跟经济补偿金相关的条款，比如第四十七条。<search>劳动合同法第四十七条 经济补偿金</search>\n\n哦，找到了这个条款！<information>《劳动合同法》第四十七条规定，经济补偿金的标准是按照劳动者的工作年限，每满一年支付一个月工资。如果用人单位违法解除劳动合同，是必须支付这一笔补偿的。</information>这样的话就很清楚了，只要确定劳动者工龄和工资标准，就可以计算出经济补偿金的具体金额。\n\n现在把这些信息结合起来，看是否有遗漏。未签劳动合同的赔偿是包括两个部分的：第一是未签合同期间的双倍工资，这里法律限定了最长支持11个月；第二，如果用人单位还违法解除劳动关系，那就还要根据工龄支付经济补偿金。此外，对于任何特殊情况，比如说用人单位存在恶意行为或者劳动者因为这些问题遭受了重大损失，还可能有额外的索赔机会，这些需要结合具体情况判断。\n\n综上，按照《劳动合同法》的规定，未签劳动合同的赔偿可以涵盖未签期间的双倍工资和经济补偿金，这些条款都已经在法律里面明确列出来了。接下去如果有进一步的情况，比如如何举证、提起诉讼等，那可能还需要研究相应的劳动争议处理程序。",
+  "Response": "根据《劳动合同法》的规定，用人单位未与劳动者签订劳动合同可能面临以下赔偿责任：\n\n1. **双倍工资赔偿**  \n   根据《劳动合同法》第十条和第八十二条，用人单位必须在劳动者入职一个月内与其签订劳动合同。如果超过一个月仍未签订合同，用人单位需要支付劳动者从入职满一个月后的双倍工资。这项双倍工资赔偿的计算最长支持11个月，即劳动者最多可以主张11个月的双倍工资。\n\n2. **经济补偿金**  \n   如果未签订劳动合同且用人单位违法解除劳动关系，根据《劳动合同法》第四十七条，劳动者可以主张经济补偿金。经济补偿金标准是按照劳动者的实际工作年限，每满一年支付一个月工资。不满一年的按照工作时长折算支付。\n\n**举例**：  \n假设劳动者月薪为5000元，入职后用人单位没有及时签订劳动合同，劳动关系持续了一年并因违法解除劳动合同终止。那么赔偿可能包括：\n- 双倍工资：双倍薪资从第二个月开始计算，最长支持11个月，赔偿金额为：5000元 × 11个月 = 55000元。\n- 经济补偿金：按1年工作年限计算，经济补偿金为：5000元 × 1 = 5000元。\n\n合计赔偿金额为：55000元（双倍工资）+ 5000元（经济补偿金）= 60000元。\n\n**其他注意事项**：  \n劳动者如果希望主张上述赔偿，需要保留相关证明，用于举证劳动关系的存在（如工资发放记录、工作邮件、工作证等）。\n\n综上，未签订劳动合同的赔偿主要包括双倍工资赔偿和可能的经济补偿金。在实际操作中，需要根据具体情况计算详细金额，并结合劳动争议处理程序进一步维权。",
+  "Question": "劳动法没有签合同怎样赔偿?"
+}

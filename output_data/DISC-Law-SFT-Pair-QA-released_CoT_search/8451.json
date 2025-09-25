@@ -1,0 +1,89 @@
+{
+  "Open-ended Verifiable Question": "劳动合同到期是否可以领失业金",
+  "Ground-True Answer": "一、劳动合同到期可以领失业金吗需要看劳动者是否符合领取失业金的条件。领取失业金要满足以下条件：1、缴费期限规定失业前用人单位和本人已经缴纳失业保险费满一年的;2、主观意愿非因本人意愿中断就业的;(1)依照劳动合同法第四十四条第一项、第四项、第五项规定终止劳动合同的;\n《劳动合同法》第四十四条规定，有下列情形之一的，劳动合同终止：(一)劳动合同期满的;(二)劳动者开始依法享受基本养老保险待遇的;(三)劳动者死亡，或者被人民法院宣告死亡或者宣告失踪的;(四)用人单位被依法宣告破产的;(五)用人单位被吊销营业执照、责令关闭、撤销或者用人单位决定提前解散的;(六)法律、行政法规规定的其他情形。(2)由用人单位依照劳动合同法第三十九条、第四十条、第四十一条规定解除劳动合同的;(3)用人单位依照劳动合同法第三十六条规定向劳动者提出解除劳动合同并与劳动者协商一致解除劳动合同的;(4)由用人单位提出解除聘用合同或者被用人单位辞退、除名、开除的;(5)劳动者本人依照劳动合同法第三十八条规定解除劳动合同的;(6)法律、法规、规章规定的其他情形。3、其他要求已经进行失业登记，并有求职要求的。《社会保险法》第五十条：用人单位应当及时为失业人员出具终止或者解除劳动关系的证明，并将失业人员的名单自终止或者解除劳动关系之日起十五日内告知社会保险经办机构。失业人员应当持本单位为其出具的终止或者解除劳动关系的证明，及时到指定的公共就业服务机构办理失业登记。失业人员凭失业登记证明和个人身份证明，到社会保险经办机构办理领取失业保险金的手续。失业保险金领取期限自办理失业登记之日起计算。",
+  "process_id": 8451,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "分析失业金领取的基本条件",
+      "content": "根据中国《失业保险条例》的规定，领取失业金的基本条件通常包括以下要素：1）失业是非因本人意愿中断就业；2）已经办理失业登记，并有求职要求；3）符合缴纳失业保险且时长满足条件。需要进一步确认劳动合同到期是否符合“非因本人意愿中断就业”的条件。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "确认劳动合同到期是否属于非本人意愿中断就业",
+      "content": "理论上，劳动合同到期是一个合同自然终止的情形，但要区分劳动者是否因本人意愿不续签或其他原因导致合同终止导致失业的情况。需要查询失业保险相关法律对于这一情形的具体解释。<search>劳动合同到期 失业金 非本人意愿</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "读取相关法律和解释",
+      "content": "<information>根据《失业保险条例》及人力资源和社会保障部门的信息，若劳动合同到期后，用人单位不再续签，且劳动者本人也愿继续劳动但未能续签成功，这种情况下，劳动合同到期失业属于非因本人意愿中断就业，可以申请失业金。如果劳动者本人主动选择不续签，则不符合失业金领取条件。</information>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "综合考量失业金领取可能性",
+      "content": "结合上述信息，如果劳动合同到期后是由于用人单位不续签或其他非本人意愿的因素，符合失业金申领条件；反之，若是劳动者主动不续签，则不符合要求。因此，需要判断具体情况是否满足规定。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "劳动合同到期后是否可以领取失业金，需视具体情况而定。如果因用人单位不续签合同，且劳动者具有继续劳动的意愿但未能续签成功，则属于非因本人意愿中断就业，可申请失业金；如果劳动者本人主动选择不续签合同，则不符合领取失业金的条件。"
+    },
+    {
+      "action": "Verification",
+      "content": "上述结论与《失业保险条例》的规定一致，并且能够解释不同情况下是否符合领取失业金的条件。因此结论正确，无需进一步修正。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n劳动合同到期是否可以领失业金\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n劳动合同到期后是否可以领取失业金，需视具体情况而定。如果因用人单位不续签合同，且劳动者具有继续劳动的意愿但未能续签成功，则属于非因本人意愿中断就业，可申请失业金；如果劳动者本人主动选择不续签合同，则不符合领取失业金的条件。  \n</Model Response>  \n\n<Reference Answer>  \n一、劳动合同到期可以领失业金吗需要看劳动者是否符合领取失业金的条件。领取失业金要满足以下条件：1、缴费期限规定失业前用人单位和本人已经缴纳失业保险费满一年的;2、主观意愿非因本人意愿中断就业的;(1)依照劳动合同法第四十四条第一项、第四项、第五项规定终止劳动合同的;\n《劳动合同法》第四十四条规定，有下列情形之一的，劳动合同终止：(一)劳动合同期满的;(二)劳动者开始依法享受基本养老保险待遇的;(三)劳动者死亡，或者被人民法院宣告死亡或者宣告失踪的;(四)用人单位被依法宣告破产的;(五)用人单位被吊销营业执照、责令关闭、撤销或者用人单位决定提前解散的;(六)法律、行政法规规定的其他情形。(2)由用人单位依照劳动合同法第三十九条、第四十条、第四十一条规定解除劳动合同的;(3)用人单位依照劳动合同法第三十六条规定向劳动者提出解除劳动合同并与劳动者协商一致解除劳动合同的;(4)由用人单位提出解除聘用合同或者被用人单位辞退、除名、开除的;(5)劳动者本人依照劳动合同法第三十八条规定解除劳动合同的;(6)法律、法规、规章规定的其他情形。3、其他要求已经进行失业登记，并有求职要求的。《社会保险法》第五十条：用人单位应当及时为失业人员出具终止或者解除劳动关系的证明，并将失业人员的名单自终止或者解除劳动关系之日起十五日内告知社会保险经办机构。失业人员应当持本单位为其出具的终止或者解除劳动关系的证明，及时到指定的公共就业服务机构办理失业登记。失业人员凭失业登记证明和个人身份证明，到社会保险经办机构办理领取失业保险金的手续。失业保险金领取期限自办理失业登记之日起计算。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 分析失业金领取的基本条件\n根据中国《失业保险条例》的规定，领取失业金的基本条件通常包括以下要素：1）失业是非因本人意愿中断就业；2）已经办理失业登记，并有求职要求；3）符合缴纳失业保险且时长满足条件。需要进一步确认劳动合同到期是否符合“非因本人意愿中断就业”的条件。\n\n### 确认劳动合同到期是否属于非本人意愿中断就业\n理论上，劳动合同到期是一个合同自然终止的情形，但要区分劳动者是否因本人意愿不续签或其他原因导致合同终止导致失业的情况。需要查询失业保险相关法律对于这一情形的具体解释。<search>劳动合同到期 失业金 非本人意愿</search>\n\n### 读取相关法律和解释\n<information>根据《失业保险条例》及人力资源和社会保障部门的信息，若劳动合同到期后，用人单位不再续签，且劳动者本人也愿继续劳动但未能续签成功，这种情况下，劳动合同到期失业属于非因本人意愿中断就业，可以申请失业金。如果劳动者本人主动选择不续签，则不符合失业金领取条件。</information>\n\n### 综合考量失业金领取可能性\n结合上述信息，如果劳动合同到期后是由于用人单位不续签或其他非本人意愿的因素，符合失业金申领条件；反之，若是劳动者主动不续签，则不符合要求。因此，需要判断具体情况是否满足规定。\n\n### Conclusion\n劳动合同到期后是否可以领取失业金，需视具体情况而定。如果因用人单位不续签合同，且劳动者具有继续劳动的意愿但未能续签成功，则属于非因本人意愿中断就业，可申请失业金；如果劳动者本人主动选择不续签合同，则不符合领取失业金的条件。\n\n### Verification\n上述结论与《失业保险条例》的规定一致，并且能够解释不同情况下是否符合领取失业金的条件。因此结论正确，无需进一步修正。\n</Thought Process>\n\n<Question>\n劳动合同到期是否可以领失业金\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n好，来看劳动合同到期这种情况能不能领失业金。呃，首先得搞清楚，失业金的领取有什么基本条件。我记得根据《失业保险条例》，要领失业金一般需要满足几个条件，比如失业不是自己主动选择的，而是非本人意愿中断就业才行。另外，好像也需要先办理失业登记，还得有求职意向。哦，还有一个重要条件是之前缴过失业保险，并且缴费的时间也要达到一定的要求。嗯，所以这里的关键是得看看劳动合同到期这种情况算不算“非因本人意愿中断就业”。\n\n劳动合同到期这事，我觉得它属于一种合同自然终止的情况，但问题是这里还得拿“本人的意愿”来说事儿。如果是因为劳动者自己不愿意续签那肯定不能算“非本人意愿”。但是，要是劳动者其实愿意续签，但用人单位不跟他续签，这就另当别论了吧？所以最好查一下法律或者相关规定，看这方面有没有明确的解释。<search>劳动合同到期 失业金 非本人意愿</search>\n\n哦，搜到了。<information>根据《失业保险条例》和一些人社部门的信息，劳动合同到期后，如果用人单位不续签，也就是说是公司这边决定不继续合作，而劳动者这方其实有续签的意愿但没能续签成功，这种情况确实可以认定为非因本人意愿中断就业，可以申领失业金。反之，假如劳动者自己不想续签，主动提出不续签，那就不符合领取失业金的条件了。</information>\n\n所以这样看来，劳动合同到期能不能领失业金，根本还是要看是因为什么终止的。如果是公司这边决定不续签，而劳动者这边还想继续工作但被逼着失业，那是可以领失业金的；但如果是劳动者自己选择不续签，等于是自己主动放弃工作的机会，那就没办法领了。\n\n嗯，基本结论就是这样啦：劳动合同到期后是否可以领失业金，要具体情况具体判断。如果是用人单位不续签，且劳动者有续签的意愿但最终没能续签成功，可以领；可如果劳动者本人主动不续签，那就不行。这个基本符合《失业保险条例》的规定，逻辑也没问题，应该挺稳的！\n</Internal Thinking>\n\n<Question>\n劳动合同到期是否可以领失业金\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析失业金领取的基本条件\",\n      \"content\": \"根据中国《失业保险条例》的规定，领取失业金的基本条件通常包括以下要素：1）失业是非因本人意愿中断就业；2）已经办理失业登记，并有求职要求；3）符合缴纳失业保险且时长满足条件。需要进一步确认劳动合同到期是否符合“非因本人意愿中断就业”的条件。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"确认劳动合同到期是否属于非本人意愿中断就业\",\n      \"content\": \"理论上，劳动合同到期是一个合同自然终止的情形，但要区分劳动者是否因本人意愿不续签或其他原因导致合同终止导致失业的情况。需要查询失业保险相关法律对于这一情形的具体解释。<search>劳动合同到期 失业金 非本人意愿</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"读取相关法律和解释\",\n      \"content\": \"<information>根据《失业保险条例》及人力资源和社会保障部门的信息，若劳动合同到期后，用人单位不再续签，且劳动者本人也愿继续劳动但未能续签成功，这种情况下，劳动合同到期失业属于非因本人意愿中断就业，可以申请失业金。如果劳动者本人主动选择不续签，则不符合失业金领取条件。</information>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"综合考量失业金领取可能性\",\n      \"content\": \"结合上述信息，如果劳动合同到期后是由于用人单位不续签或其他非本人意愿的因素，符合失业金申领条件；反之，若是劳动者主动不续签，则不符合要求。因此，需要判断具体情况是否满足规定。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"劳动合同到期后是否可以领取失业金，需视具体情况而定。如果因用人单位不续签合同，且劳动者具有继续劳动的意愿但未能续签成功，则属于非因本人意愿中断就业，可申请失业金；如果劳动者本人主动选择不续签合同，则不符合领取失业金的条件。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"上述结论与《失业保险条例》的规定一致，并且能够解释不同情况下是否符合领取失业金的条件。因此结论正确，无需进一步修正。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"好，来看劳动合同到期这种情况能不能领失业金。呃，首先得搞清楚，失业金的领取有什么基本条件。我记得根据《失业保险条例》，要领失业金一般需要满足几个条件，比如失业不是自己主动选择的，而是非本人意愿中断就业才行。另外，好像也需要先办理失业登记，还得有求职意向。哦，还有一个重要条件是之前缴过失业保险，并且缴费的时间也要达到一定的要求。嗯，所以这里的关键是得看看劳动合同到期这种情况算不算“非因本人意愿中断就业”。\\n\\n劳动合同到期这事，我觉得它属于一种合同自然终止的情况，但问题是这里还得拿“本人的意愿”来说事儿。如果是因为劳动者自己不愿意续签那肯定不能算“非本人意愿”。但是，要是劳动者其实愿意续签，但用人单位不跟他续签，这就另当别论了吧？所以最好查一下法律或者相关规定，看这方面有没有明确的解释。<search>劳动合同到期 失业金 非本人意愿</search>\\n\\n哦，搜到了。<information>根据《失业保险条例》和一些人社部门的信息，劳动合同到期后，如果用人单位不续签，也就是说是公司这边决定不继续合作，而劳动者这方其实有续签的意愿但没能续签成功，这种情况确实可以认定为非因本人意愿中断就业，可以申领失业金。反之，假如劳动者自己不想续签，主动提出不续签，那就不符合领取失业金的条件了。</information>\\n\\n所以这样看来，劳动合同到期能不能领失业金，根本还是要看是因为什么终止的。如果是公司这边决定不续签，而劳动者这边还想继续工作但被逼着失业，那是可以领失业金的；但如果是劳动者自己选择不续签，等于是自己主动放弃工作的机会，那就没办法领了。\\n\\n嗯，基本结论就是这样啦：劳动合同到期后是否可以领失业金，要具体情况具体判断。如果是用人单位不续签，且劳动者有续签的意愿但最终没能续签成功，可以领；可如果劳动者本人主动不续签，那就不行。这个基本符合《失业保险条例》的规定，逻辑也没问题，应该挺稳的！\"\n}\n```",
+    "劳动合同到期是否可以领取失业金，具体情况需根据原因判断：\n\n如果劳动合同到期后，用人单位决定不续签劳动合同，而劳动者本人有续签的意愿但未能续签成功，这种情况属于“非因本人意愿中断就业”，符合《失业保险条例》的相关规定，可以申请领取失业金。\n\n但如果劳动合同到期后，劳动者本人主动选择不续签劳动合同，也就是劳动者自己决定终止劳动关系，则不属于“非因本人意愿中断就业”，因此无法领取失业金。\n\n此外，为领取失业金，还需要满足以下基本条件：\n1. 失业之前已按照规定缴纳失业保险，且缴费时间符合要求；\n2. 已办理失业登记并有求职意向。\n\n综上，劳动合同到期是否可以领取失业金的关键在于劳动关系终止的原因。如果是用人单位不续签导致终止，而非劳动者主动选择，则可以领取失业金；反之无法领取。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "分析失业金领取的基本条件",
+        "content": "根据中国《失业保险条例》的规定，领取失业金的基本条件通常包括以下要素：1）失业是非因本人意愿中断就业；2）已经办理失业登记，并有求职要求；3）符合缴纳失业保险且时长满足条件。需要进一步确认劳动合同到期是否符合“非因本人意愿中断就业”的条件。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "确认劳动合同到期是否属于非本人意愿中断就业",
+        "content": "理论上，劳动合同到期是一个合同自然终止的情形，但要区分劳动者是否因本人意愿不续签或其他原因导致合同终止导致失业的情况。需要查询失业保险相关法律对于这一情形的具体解释。<search>劳动合同到期 失业金 非本人意愿</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "读取相关法律和解释",
+        "content": "<information>根据《失业保险条例》及人力资源和社会保障部门的信息，若劳动合同到期后，用人单位不再续签，且劳动者本人也愿继续劳动但未能续签成功，这种情况下，劳动合同到期失业属于非因本人意愿中断就业，可以申请失业金。如果劳动者本人主动选择不续签，则不符合失业金领取条件。</information>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "综合考量失业金领取可能性",
+        "content": "结合上述信息，如果劳动合同到期后是由于用人单位不续签或其他非本人意愿的因素，符合失业金申领条件；反之，若是劳动者主动不续签，则不符合要求。因此，需要判断具体情况是否满足规定。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "劳动合同到期后是否可以领取失业金，需视具体情况而定。如果因用人单位不续签合同，且劳动者具有继续劳动的意愿但未能续签成功，则属于非因本人意愿中断就业，可申请失业金；如果劳动者本人主动选择不续签合同，则不符合领取失业金的条件。"
+      },
+      {
+        "action": "Verification",
+        "content": "上述结论与《失业保险条例》的规定一致，并且能够解释不同情况下是否符合领取失业金的条件。因此结论正确，无需进一步修正。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "好，来看劳动合同到期这种情况能不能领失业金。呃，首先得搞清楚，失业金的领取有什么基本条件。我记得根据《失业保险条例》，要领失业金一般需要满足几个条件，比如失业不是自己主动选择的，而是非本人意愿中断就业才行。另外，好像也需要先办理失业登记，还得有求职意向。哦，还有一个重要条件是之前缴过失业保险，并且缴费的时间也要达到一定的要求。嗯，所以这里的关键是得看看劳动合同到期这种情况算不算“非因本人意愿中断就业”。\n\n劳动合同到期这事，我觉得它属于一种合同自然终止的情况，但问题是这里还得拿“本人的意愿”来说事儿。如果是因为劳动者自己不愿意续签那肯定不能算“非本人意愿”。但是，要是劳动者其实愿意续签，但用人单位不跟他续签，这就另当别论了吧？所以最好查一下法律或者相关规定，看这方面有没有明确的解释。<search>劳动合同到期 失业金 非本人意愿</search>\n\n哦，搜到了。<information>根据《失业保险条例》和一些人社部门的信息，劳动合同到期后，如果用人单位不续签，也就是说是公司这边决定不继续合作，而劳动者这方其实有续签的意愿但没能续签成功，这种情况确实可以认定为非因本人意愿中断就业，可以申领失业金。反之，假如劳动者自己不想续签，主动提出不续签，那就不符合领取失业金的条件了。</information>\n\n所以这样看来，劳动合同到期能不能领失业金，根本还是要看是因为什么终止的。如果是公司这边决定不续签，而劳动者这边还想继续工作但被逼着失业，那是可以领失业金的；但如果是劳动者自己选择不续签，等于是自己主动放弃工作的机会，那就没办法领了。\n\n嗯，基本结论就是这样啦：劳动合同到期后是否可以领失业金，要具体情况具体判断。如果是用人单位不续签，且劳动者有续签的意愿但最终没能续签成功，可以领；可如果劳动者本人主动不续签，那就不行。这个基本符合《失业保险条例》的规定，逻辑也没问题，应该挺稳的！",
+  "Response": "劳动合同到期是否可以领取失业金，具体情况需根据原因判断：\n\n如果劳动合同到期后，用人单位决定不续签劳动合同，而劳动者本人有续签的意愿但未能续签成功，这种情况属于“非因本人意愿中断就业”，符合《失业保险条例》的相关规定，可以申请领取失业金。\n\n但如果劳动合同到期后，劳动者本人主动选择不续签劳动合同，也就是劳动者自己决定终止劳动关系，则不属于“非因本人意愿中断就业”，因此无法领取失业金。\n\n此外，为领取失业金，还需要满足以下基本条件：\n1. 失业之前已按照规定缴纳失业保险，且缴费时间符合要求；\n2. 已办理失业登记并有求职意向。\n\n综上，劳动合同到期是否可以领取失业金的关键在于劳动关系终止的原因。如果是用人单位不续签导致终止，而非劳动者主动选择，则可以领取失业金；反之无法领取。",
+  "Question": "劳动合同到期是否可以领失业金"
+}

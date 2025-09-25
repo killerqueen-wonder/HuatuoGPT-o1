@@ -1,0 +1,109 @@
+{
+  "Open-ended Verifiable Question": "可以拒绝加班吗?",
+  "Ground-True Answer": "公司安排加班，做为员工的你，可以拒绝吗？可以！因为劳动法四十一条规定，用人单位由于生产经营需要，经与工会和劳动者协商后可以延长工作时间，一般每日不得超过一小时；因特殊原因需要延长工作时间的，在保障劳动者身体健康的条件下延长工作时间每日不得超过三小时，但是每月不得超过三十六小时。如果你拒绝加班被单位解除了，单位属于违法解除，你可以获得违法解除的赔偿金。",
+  "process_id": 9537,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "识别核心问题",
+      "content": "问题的核心是劳动者是否可以拒绝加班，需要从法律规定和实践中的具体情境入手分析。首先需要了解法律对加班的规定，以及在什么情况下劳动者有合法权利拒绝。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "研究相关法律条款",
+      "content": "中华人民共和国劳动法和劳动合同法相关条款可能对加班的合法性和规范性作出了规定，需要先查阅这些法律。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "查找加班相关的法律规定",
+      "content": "<search>劳动法 加班规定</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "分析查到的信息",
+      "content": "<information>根据《中华人民共和国劳动法》第三十六条、第十一章有关内容：1. 正常工作时间每日不超过8小时，每周不超过44小时；2. 用人单位要安排加班的，必须征得劳动者同意，并支付加班费；3. 劳动者在特殊情况下（如危及健康或违反法律规定）可以拒绝不合理加班。</information>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "明确加班是否需要强制",
+      "content": "根据法律，加班通常需要征得劳动者同意，用人单位不能强迫劳动者加班。同时，用人单位安排加班的前提是符合法律规定，包括支付加班报酬等。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "针对健康和家庭等特殊情境",
+      "content": "如果加班会对劳动者健康造成威胁，或者劳动者有正当理由（如家庭紧急情况），劳动者可以依法拒绝不合理的加班安排。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "根据《中华人民共和国劳动法》的规定，劳动者有权拒绝用人单位的强制加班，尤其是用人单位未支付加班费或是加班安排违反法律规定的情况下。此外，如果加班导致健康风险或特殊紧急情况，劳动者可以提出拒绝。"
+    },
+    {
+      "action": "Verification",
+      "content": "通过查阅《中华人民共和国劳动法》的具体条款，确认劳动者确实可以在特定条件下拒绝加班。结论准确无误。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n可以拒绝加班吗?\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n根据《中华人民共和国劳动法》的规定，劳动者有权拒绝用人单位的强制加班，尤其是用人单位未支付加班费或是加班安排违反法律规定的情况下。此外，如果加班导致健康风险或特殊紧急情况，劳动者可以提出拒绝。  \n</Model Response>  \n\n<Reference Answer>  \n公司安排加班，做为员工的你，可以拒绝吗？可以！因为劳动法四十一条规定，用人单位由于生产经营需要，经与工会和劳动者协商后可以延长工作时间，一般每日不得超过一小时；因特殊原因需要延长工作时间的，在保障劳动者身体健康的条件下延长工作时间每日不得超过三小时，但是每月不得超过三十六小时。如果你拒绝加班被单位解除了，单位属于违法解除，你可以获得违法解除的赔偿金。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 识别核心问题\n问题的核心是劳动者是否可以拒绝加班，需要从法律规定和实践中的具体情境入手分析。首先需要了解法律对加班的规定，以及在什么情况下劳动者有合法权利拒绝。\n\n### 研究相关法律条款\n中华人民共和国劳动法和劳动合同法相关条款可能对加班的合法性和规范性作出了规定，需要先查阅这些法律。\n\n### 查找加班相关的法律规定\n<search>劳动法 加班规定</search>\n\n### 分析查到的信息\n<information>根据《中华人民共和国劳动法》第三十六条、第十一章有关内容：1. 正常工作时间每日不超过8小时，每周不超过44小时；2. 用人单位要安排加班的，必须征得劳动者同意，并支付加班费；3. 劳动者在特殊情况下（如危及健康或违反法律规定）可以拒绝不合理加班。</information>\n\n### 明确加班是否需要强制\n根据法律，加班通常需要征得劳动者同意，用人单位不能强迫劳动者加班。同时，用人单位安排加班的前提是符合法律规定，包括支付加班报酬等。\n\n### 针对健康和家庭等特殊情境\n如果加班会对劳动者健康造成威胁，或者劳动者有正当理由（如家庭紧急情况），劳动者可以依法拒绝不合理的加班安排。\n\n### Conclusion\n根据《中华人民共和国劳动法》的规定，劳动者有权拒绝用人单位的强制加班，尤其是用人单位未支付加班费或是加班安排违反法律规定的情况下。此外，如果加班导致健康风险或特殊紧急情况，劳动者可以提出拒绝。\n\n### Verification\n通过查阅《中华人民共和国劳动法》的具体条款，确认劳动者确实可以在特定条件下拒绝加班。结论准确无误。\n</Thought Process>\n\n<Question>\n可以拒绝加班吗?\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n嗯，劳动者到底能不能拒绝加班呢？这个问题挺常见的，得看看相关的法律怎么说。先简单理一下思路：加班这个事情，既然是劳动关系的一部分，那法律肯定会有规范，得去找《中华人民共和国劳动法》和《劳动合同法》相关的规定才行。不如先搜搜看吧。\n\n<search>劳动法 加班规定</search>\n\n哦，好像找到了相关的法律信息。根据《中华人民共和国劳动法》第三十六条，还有第十一章的规定，总结一下：\n1. 正常情况下，每天工作时间是不超过8小时的，每周不应该超过44小时。\n2. 如果用人单位安排加班，需要先征得劳动者的同意，不能强迫的。\n3. 如果劳动者拒绝加班，有些特殊情况是可以被法律支持的，比如健康问题、或者说加班安排本身不合法。\n\n那就是说，加班这件事不能强制，是需要劳动者同意的。而且从描述来看，这种安排还有前提，比如必须支付加班工资之类的。如果用人单位根本不符合这些要求，那劳动者是有权拒绝的。\n\n再想想，如果遇到身体健康的问题，比如过度劳累影响身体，或者说家庭里有急事需要处理，这种情况下算不算合理地拒绝加班？回头再看看最开始的法律信息，确实提到了健康可能是一个重要的正当理由。而且，如果用人单位安排的加班基本上不符合法规，比如时间超过了法律规定或者不支付加班费，劳动者更应该有权拒绝。\n\n哦，还有，既然说到支付加班费，那好像是一个特别关键的点。如果单位根本不付钱，或者给出的补偿不符合规定，那是不是直接就属于违法了？这里的逻辑应该是很清楚的：一个是程序上的合法性，比如要征得劳动者同意；另一个是内容上的合法性，比如要正常支付合理的加班费。如果这两点都满足不了，劳动者就可以大大方方地拒绝。\n\n综合以上分析，答案还是挺明确的：加班不是强制的，只要劳动者觉得不合理、不合法，就有权利拒绝，特别是涉及健康或者利益受损的时候。法律是站在劳动者这一边的，关键就是具体情况要看是不是符合法律的这些条件。\n</Internal Thinking>\n\n<Question>\n可以拒绝加班吗?\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"识别核心问题\",\n      \"content\": \"问题的核心是劳动者是否可以拒绝加班，需要从法律规定和实践中的具体情境入手分析。首先需要了解法律对加班的规定，以及在什么情况下劳动者有合法权利拒绝。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"研究相关法律条款\",\n      \"content\": \"中华人民共和国劳动法和劳动合同法相关条款可能对加班的合法性和规范性作出了规定，需要先查阅这些法律。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"查找加班相关的法律规定\",\n      \"content\": \"<search>劳动法 加班规定</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析查到的信息\",\n      \"content\": \"<information>根据《中华人民共和国劳动法》第三十六条、第十一章有关内容：1. 正常工作时间每日不超过8小时，每周不超过44小时；2. 用人单位要安排加班的，必须征得劳动者同意，并支付加班费；3. 劳动者在特殊情况下（如危及健康或违反法律规定）可以拒绝不合理加班。</information>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"明确加班是否需要强制\",\n      \"content\": \"根据法律，加班通常需要征得劳动者同意，用人单位不能强迫劳动者加班。同时，用人单位安排加班的前提是符合法律规定，包括支付加班报酬等。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"针对健康和家庭等特殊情境\",\n      \"content\": \"如果加班会对劳动者健康造成威胁，或者劳动者有正当理由（如家庭紧急情况），劳动者可以依法拒绝不合理的加班安排。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"根据《中华人民共和国劳动法》的规定，劳动者有权拒绝用人单位的强制加班，尤其是用人单位未支付加班费或是加班安排违反法律规定的情况下。此外，如果加班导致健康风险或特殊紧急情况，劳动者可以提出拒绝。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"通过查阅《中华人民共和国劳动法》的具体条款，确认劳动者确实可以在特定条件下拒绝加班。结论准确无误。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"嗯，劳动者到底能不能拒绝加班呢？这个问题挺常见的，得看看相关的法律怎么说。先简单理一下思路：加班这个事情，既然是劳动关系的一部分，那法律肯定会有规范，得去找《中华人民共和国劳动法》和《劳动合同法》相关的规定才行。不如先搜搜看吧。\\n\\n<search>劳动法 加班规定</search>\\n\\n哦，好像找到了相关的法律信息。根据《中华人民共和国劳动法》第三十六条，还有第十一章的规定，总结一下：\\n1. 正常情况下，每天工作时间是不超过8小时的，每周不应该超过44小时。\\n2. 如果用人单位安排加班，需要先征得劳动者的同意，不能强迫的。\\n3. 如果劳动者拒绝加班，有些特殊情况是可以被法律支持的，比如健康问题、或者说加班安排本身不合法。\\n\\n那就是说，加班这件事不能强制，是需要劳动者同意的。而且从描述来看，这种安排还有前提，比如必须支付加班工资之类的。如果用人单位根本不符合这些要求，那劳动者是有权拒绝的。\\n\\n再想想，如果遇到身体健康的问题，比如过度劳累影响身体，或者说家庭里有急事需要处理，这种情况下算不算合理地拒绝加班？回头再看看最开始的法律信息，确实提到了健康可能是一个重要的正当理由。而且，如果用人单位安排的加班基本上不符合法规，比如时间超过了法律规定或者不支付加班费，劳动者更应该有权拒绝。\\n\\n哦，还有，既然说到支付加班费，那好像是一个特别关键的点。如果单位根本不付钱，或者给出的补偿不符合规定，那是不是直接就属于违法了？这里的逻辑应该是很清楚的：一个是程序上的合法性，比如要征得劳动者同意；另一个是内容上的合法性，比如要正常支付合理的加班费。如果这两点都满足不了，劳动者就可以大大方方地拒绝。\\n\\n综合以上分析，答案还是挺明确的：加班不是强制的，只要劳动者觉得不合理、不合法，就有权利拒绝，特别是涉及健康或者利益受损的时候。法律是站在劳动者这一边的，关键就是具体情况要看是不是符合法律的这些条件。\"\n}\n```",
+    "劳动者是可以拒绝加班的，尤其是在加班安排不合法或不合理的情况下。《中华人民共和国劳动法》对此有明确规定：\n\n1. **加班须征得同意**：用人单位安排加班需要事先征得劳动者的同意，不能强制要求劳动者加班。\n\n2. **加班时间受限**：法律规定劳动者每日工作时间不得超过8小时，每周工作时间不得超过44小时。在特殊情况下的加班时间也有总时长限制，且必须符合规定。\n\n3. **合法补偿是前提**：用人单位安排加班，必须依法支付加班费。如果未按法律规定给予加班补偿，劳动者可以拒绝加班要求。\n\n4. **特殊情况有正当理由**：如果劳动者因为健康问题、家庭突发急事或其他合理理由无法加班，拒绝是被法律支持的。而用人单位违反相关条款（如超时安排或不支付报酬），劳动者的拒绝更是完全合法的。\n\n综上所述，加班不是强制性的。如果用人单位的要求不符合法律规定，劳动者有权拒绝。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "识别核心问题",
+        "content": "问题的核心是劳动者是否可以拒绝加班，需要从法律规定和实践中的具体情境入手分析。首先需要了解法律对加班的规定，以及在什么情况下劳动者有合法权利拒绝。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "研究相关法律条款",
+        "content": "中华人民共和国劳动法和劳动合同法相关条款可能对加班的合法性和规范性作出了规定，需要先查阅这些法律。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "查找加班相关的法律规定",
+        "content": "<search>劳动法 加班规定</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "分析查到的信息",
+        "content": "<information>根据《中华人民共和国劳动法》第三十六条、第十一章有关内容：1. 正常工作时间每日不超过8小时，每周不超过44小时；2. 用人单位要安排加班的，必须征得劳动者同意，并支付加班费；3. 劳动者在特殊情况下（如危及健康或违反法律规定）可以拒绝不合理加班。</information>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "明确加班是否需要强制",
+        "content": "根据法律，加班通常需要征得劳动者同意，用人单位不能强迫劳动者加班。同时，用人单位安排加班的前提是符合法律规定，包括支付加班报酬等。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "针对健康和家庭等特殊情境",
+        "content": "如果加班会对劳动者健康造成威胁，或者劳动者有正当理由（如家庭紧急情况），劳动者可以依法拒绝不合理的加班安排。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "根据《中华人民共和国劳动法》的规定，劳动者有权拒绝用人单位的强制加班，尤其是用人单位未支付加班费或是加班安排违反法律规定的情况下。此外，如果加班导致健康风险或特殊紧急情况，劳动者可以提出拒绝。"
+      },
+      {
+        "action": "Verification",
+        "content": "通过查阅《中华人民共和国劳动法》的具体条款，确认劳动者确实可以在特定条件下拒绝加班。结论准确无误。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "嗯，劳动者到底能不能拒绝加班呢？这个问题挺常见的，得看看相关的法律怎么说。先简单理一下思路：加班这个事情，既然是劳动关系的一部分，那法律肯定会有规范，得去找《中华人民共和国劳动法》和《劳动合同法》相关的规定才行。不如先搜搜看吧。\n\n<search>劳动法 加班规定</search>\n\n哦，好像找到了相关的法律信息。根据《中华人民共和国劳动法》第三十六条，还有第十一章的规定，总结一下：\n1. 正常情况下，每天工作时间是不超过8小时的，每周不应该超过44小时。\n2. 如果用人单位安排加班，需要先征得劳动者的同意，不能强迫的。\n3. 如果劳动者拒绝加班，有些特殊情况是可以被法律支持的，比如健康问题、或者说加班安排本身不合法。\n\n那就是说，加班这件事不能强制，是需要劳动者同意的。而且从描述来看，这种安排还有前提，比如必须支付加班工资之类的。如果用人单位根本不符合这些要求，那劳动者是有权拒绝的。\n\n再想想，如果遇到身体健康的问题，比如过度劳累影响身体，或者说家庭里有急事需要处理，这种情况下算不算合理地拒绝加班？回头再看看最开始的法律信息，确实提到了健康可能是一个重要的正当理由。而且，如果用人单位安排的加班基本上不符合法规，比如时间超过了法律规定或者不支付加班费，劳动者更应该有权拒绝。\n\n哦，还有，既然说到支付加班费，那好像是一个特别关键的点。如果单位根本不付钱，或者给出的补偿不符合规定，那是不是直接就属于违法了？这里的逻辑应该是很清楚的：一个是程序上的合法性，比如要征得劳动者同意；另一个是内容上的合法性，比如要正常支付合理的加班费。如果这两点都满足不了，劳动者就可以大大方方地拒绝。\n\n综合以上分析，答案还是挺明确的：加班不是强制的，只要劳动者觉得不合理、不合法，就有权利拒绝，特别是涉及健康或者利益受损的时候。法律是站在劳动者这一边的，关键就是具体情况要看是不是符合法律的这些条件。",
+  "Response": "劳动者是可以拒绝加班的，尤其是在加班安排不合法或不合理的情况下。《中华人民共和国劳动法》对此有明确规定：\n\n1. **加班须征得同意**：用人单位安排加班需要事先征得劳动者的同意，不能强制要求劳动者加班。\n\n2. **加班时间受限**：法律规定劳动者每日工作时间不得超过8小时，每周工作时间不得超过44小时。在特殊情况下的加班时间也有总时长限制，且必须符合规定。\n\n3. **合法补偿是前提**：用人单位安排加班，必须依法支付加班费。如果未按法律规定给予加班补偿，劳动者可以拒绝加班要求。\n\n4. **特殊情况有正当理由**：如果劳动者因为健康问题、家庭突发急事或其他合理理由无法加班，拒绝是被法律支持的。而用人单位违反相关条款（如超时安排或不支付报酬），劳动者的拒绝更是完全合法的。\n\n综上所述，加班不是强制性的。如果用人单位的要求不符合法律规定，劳动者有权拒绝。",
+  "Question": "可以拒绝加班吗?"
+}

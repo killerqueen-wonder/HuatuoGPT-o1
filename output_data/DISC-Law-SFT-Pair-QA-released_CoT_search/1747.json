@@ -1,0 +1,137 @@
+{
+  "Open-ended Verifiable Question": "高利贷利息多少?",
+  "Ground-True Answer": "一般高*贷的年利率在36%以上，借款100元，一年要支出36元以上的利息。个别的利率可达100%—200%。我国历史上高*贷年利一般都达100%，而且是“利滚利”，即借款100元一年后要还200元，如果到期不能归还，第二年要还400元，第三年就是800元。高*贷信用之所以有这样高的利息，是由当时的经济条件决定的。由于前资本主义是自给自足的自然经济，劳动生产力水平低，生产规模小，小生产者一般都经受不住意外事故的冲击(如天灾人祸)，一旦遇到意外事故，就无法维持原来的简单再生产，无法维持生活。在这样的情况下，小生产者(农民和其他小手工业者)就不得不向放高*贷者借钱或实物，以维持生产和生活。放高*贷者正是看到了借者为了维持生存这一点，就无情地抬高利率。如果借钱的人不是为了生活和生存，而是向资本主义生产方式那样，借钱是为了投资，获取利润，那么贷款的利率高了，使得投资的利润大部分或全部被高*贷的利息侵吞，借钱的人就不借了，贷款的利率自然也高不上去。多少利息算高*贷关于高*贷究竟利息多少，这是高*贷利息怎么算的关键问题。首先，《中国人民银行关于取缔地下钱庄及打击高*贷行为的通知》中规定：民间个人借贷利率由借贷双方协商确定，但双方协商的利率不得超过中国人民银行公布的金融机构同期、同档次贷款利率(不含浮动)的4倍。超过上述标准的，应界定为高利借贷行为。也就是说，高*贷的利率依个人交易而定，但是都超过了国家法定贷款利率的4倍，否则，不构成高*贷行为。",
+  "process_id": 1747,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "定义高利贷",
+      "content": "高利贷通常指的是超出法定利率上限的贷款，具体上限因国家和地区的法律规定而有所不同。在回答问题前，需要明确查询与高利贷相关的法律定义。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "查询中国关于高利贷的法律规定",
+      "content": "确定中国法律下关于高利贷及其利率的详细规定，尤其是民间借贷的利率范围。"
+    },
+    {
+      "action": "Inner Thinking",
+      "content": "需要查询最高法院发布的司法解释，以明确合法利率与高利贷利率的界限。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "搜索相关法律或司法解释",
+      "content": "<search>中国民间借贷利率司法解释</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "获取搜索结果",
+      "content": "<information>根据中国最高人民法院的《关于审理民间借贷案件适用法律若干问题的规定》，2020年最新司法解释规定：民间借贷的年利率以不超过一年期贷款市场报价利率（LPR）的4倍为上限。超出该上限的利率不受法律保护。</information>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "换算具体利率范围",
+      "content": "根据上述解释，合法民间借贷的利率上限是以央行发布的一年期贷款市场报价利率（LPR）的4倍计算。如果实际利率超过这一上限，则可能构成高利贷。我们需要查明最新的LPR值以计算上限利率。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "搜索最新LPR值",
+      "content": "<search>最新一年期贷款市场报价利率 LPR</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "获取最新LPR的数据",
+      "content": "<information>截至2023年10月，全国银行间同业拆借中心公布的一年期LPR为3.45%。</information>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "计算高利贷界限利率",
+      "content": "根据司法解释，以最新LPR值3.45%的4倍计算，高利贷的法律界限是：3.45% × 4 = 13.8%。因此，年利率超过13.8%的借贷即被视为高利贷，不受法律保护。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "根据中国法律，当前高利贷的标准是年利率超过13.8%。该利率是以2023年10月最新一年期LPR 3.45%的4倍计算得出，任何贷款利率超过这一界限的部分均不受法律保护。"
+    },
+    {
+      "action": "Verification",
+      "content": "结论与中国司法解释及最新LPR数据一致，高利贷的法律定义和计算过程正确无误，回答结束。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n高利贷利息多少?\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n根据中国法律，当前高利贷的标准是年利率超过13.8%。该利率是以2023年10月最新一年期LPR 3.45%的4倍计算得出，任何贷款利率超过这一界限的部分均不受法律保护。  \n</Model Response>  \n\n<Reference Answer>  \n一般高*贷的年利率在36%以上，借款100元，一年要支出36元以上的利息。个别的利率可达100%—200%。我国历史上高*贷年利一般都达100%，而且是“利滚利”，即借款100元一年后要还200元，如果到期不能归还，第二年要还400元，第三年就是800元。高*贷信用之所以有这样高的利息，是由当时的经济条件决定的。由于前资本主义是自给自足的自然经济，劳动生产力水平低，生产规模小，小生产者一般都经受不住意外事故的冲击(如天灾人祸)，一旦遇到意外事故，就无法维持原来的简单再生产，无法维持生活。在这样的情况下，小生产者(农民和其他小手工业者)就不得不向放高*贷者借钱或实物，以维持生产和生活。放高*贷者正是看到了借者为了维持生存这一点，就无情地抬高利率。如果借钱的人不是为了生活和生存，而是向资本主义生产方式那样，借钱是为了投资，获取利润，那么贷款的利率高了，使得投资的利润大部分或全部被高*贷的利息侵吞，借钱的人就不借了，贷款的利率自然也高不上去。多少利息算高*贷关于高*贷究竟利息多少，这是高*贷利息怎么算的关键问题。首先，《中国人民银行关于取缔地下钱庄及打击高*贷行为的通知》中规定：民间个人借贷利率由借贷双方协商确定，但双方协商的利率不得超过中国人民银行公布的金融机构同期、同档次贷款利率(不含浮动)的4倍。超过上述标准的，应界定为高利借贷行为。也就是说，高*贷的利率依个人交易而定，但是都超过了国家法定贷款利率的4倍，否则，不构成高*贷行为。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 定义高利贷\n高利贷通常指的是超出法定利率上限的贷款，具体上限因国家和地区的法律规定而有所不同。在回答问题前，需要明确查询与高利贷相关的法律定义。\n\n### 查询中国关于高利贷的法律规定\n确定中国法律下关于高利贷及其利率的详细规定，尤其是民间借贷的利率范围。\n\n### Inner Thinking\n需要查询最高法院发布的司法解释，以明确合法利率与高利贷利率的界限。\n\n### 搜索相关法律或司法解释\n<search>中国民间借贷利率司法解释</search>\n\n### 获取搜索结果\n<information>根据中国最高人民法院的《关于审理民间借贷案件适用法律若干问题的规定》，2020年最新司法解释规定：民间借贷的年利率以不超过一年期贷款市场报价利率（LPR）的4倍为上限。超出该上限的利率不受法律保护。</information>\n\n### 换算具体利率范围\n根据上述解释，合法民间借贷的利率上限是以央行发布的一年期贷款市场报价利率（LPR）的4倍计算。如果实际利率超过这一上限，则可能构成高利贷。我们需要查明最新的LPR值以计算上限利率。\n\n### 搜索最新LPR值\n<search>最新一年期贷款市场报价利率 LPR</search>\n\n### 获取最新LPR的数据\n<information>截至2023年10月，全国银行间同业拆借中心公布的一年期LPR为3.45%。</information>\n\n### 计算高利贷界限利率\n根据司法解释，以最新LPR值3.45%的4倍计算，高利贷的法律界限是：3.45% × 4 = 13.8%。因此，年利率超过13.8%的借贷即被视为高利贷，不受法律保护。\n\n### Conclusion\n根据中国法律，当前高利贷的标准是年利率超过13.8%。该利率是以2023年10月最新一年期LPR 3.45%的4倍计算得出，任何贷款利率超过这一界限的部分均不受法律保护。\n\n### Verification\n结论与中国司法解释及最新LPR数据一致，高利贷的法律定义和计算过程正确无误，回答结束。\n</Thought Process>\n\n<Question>\n高利贷利息多少?\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n嗯，高利贷是啥意思呢？高利贷一般指超出法律规定的利率上限的贷款，但不同国家和地区的定义可能不一样。既然问题是关于中国的，那我得先确认一下，在中国到底什么样的利率算是高利贷。\n\n那我先查一下中国的法律对民间借贷利率是怎么规定的吧。记得最高人民法院曾经有发布过与这方面相关的司法解释，应该能找到明确的法律依据。<search>中国民间借贷利率司法解释</search>\n\n哦，看到了！<information>根据中国最高人民法院的《关于审理民间借贷案件适用法律若干问题的规定》，2020年有新的司法解释，它说民间借贷的年利率不能超过一年期贷款市场报价利率（LPR）的4倍。超出这个范围的利率，法律是不支持的。</information>\n\n明白了！也就是说，如果某笔贷款的利率超过LPR的4倍，那就是高利贷，法律不会保护这种高利贷款的利息。所以接下来我得看看目前的LPR是多少，这样才能计算出高利贷的标准。\n\n我来搜一下最新的LPR数据，应该是央行每个月会公布的那种利率。<search>最新一年期贷款市场报价利率 LPR</search>\n\n找到了更新的数据！<information>截至2023年10月，全国银行间同业拆借中心公布的一年期LPR为3.45%。</information>\n\n嗯，现在有了LPR的具体数值了，根据司法解释，计算一下吧。年利率的上限就是3.45%的4倍。拿计算器一按，3.45% × 4 = 13.8%。就是说，现在的高利贷利率标准是年利率超过13.8%。\n\n如果有人借款的年利率超过了13.8%，那超出的部分就不合法，也就属于高利贷范畴了。根据法律，那部分利息是无效的，也不能强制借款人还。\n\n总结一下吧：根据2023年10月的数据，中国高利贷的年利率标准是超过13.8%。这个数字是根据最高法院司法解释规定的LPR的4倍计算出来的，最新的一年期LPR是3.45%。问题搞清楚了！\n</Internal Thinking>\n\n<Question>\n高利贷利息多少?\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"定义高利贷\",\n      \"content\": \"高利贷通常指的是超出法定利率上限的贷款，具体上限因国家和地区的法律规定而有所不同。在回答问题前，需要明确查询与高利贷相关的法律定义。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"查询中国关于高利贷的法律规定\",\n      \"content\": \"确定中国法律下关于高利贷及其利率的详细规定，尤其是民间借贷的利率范围。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"content\": \"需要查询最高法院发布的司法解释，以明确合法利率与高利贷利率的界限。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"搜索相关法律或司法解释\",\n      \"content\": \"<search>中国民间借贷利率司法解释</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"获取搜索结果\",\n      \"content\": \"<information>根据中国最高人民法院的《关于审理民间借贷案件适用法律若干问题的规定》，2020年最新司法解释规定：民间借贷的年利率以不超过一年期贷款市场报价利率（LPR）的4倍为上限。超出该上限的利率不受法律保护。</information>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"换算具体利率范围\",\n      \"content\": \"根据上述解释，合法民间借贷的利率上限是以央行发布的一年期贷款市场报价利率（LPR）的4倍计算。如果实际利率超过这一上限，则可能构成高利贷。我们需要查明最新的LPR值以计算上限利率。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"搜索最新LPR值\",\n      \"content\": \"<search>最新一年期贷款市场报价利率 LPR</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"获取最新LPR的数据\",\n      \"content\": \"<information>截至2023年10月，全国银行间同业拆借中心公布的一年期LPR为3.45%。</information>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"计算高利贷界限利率\",\n      \"content\": \"根据司法解释，以最新LPR值3.45%的4倍计算，高利贷的法律界限是：3.45% × 4 = 13.8%。因此，年利率超过13.8%的借贷即被视为高利贷，不受法律保护。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"根据中国法律，当前高利贷的标准是年利率超过13.8%。该利率是以2023年10月最新一年期LPR 3.45%的4倍计算得出，任何贷款利率超过这一界限的部分均不受法律保护。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"结论与中国司法解释及最新LPR数据一致，高利贷的法律定义和计算过程正确无误，回答结束。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"嗯，高利贷是啥意思呢？高利贷一般指超出法律规定的利率上限的贷款，但不同国家和地区的定义可能不一样。既然问题是关于中国的，那我得先确认一下，在中国到底什么样的利率算是高利贷。\\n\\n那我先查一下中国的法律对民间借贷利率是怎么规定的吧。记得最高人民法院曾经有发布过与这方面相关的司法解释，应该能找到明确的法律依据。<search>中国民间借贷利率司法解释</search>\\n\\n哦，看到了！<information>根据中国最高人民法院的《关于审理民间借贷案件适用法律若干问题的规定》，2020年有新的司法解释，它说民间借贷的年利率不能超过一年期贷款市场报价利率（LPR）的4倍。超出这个范围的利率，法律是不支持的。</information>\\n\\n明白了！也就是说，如果某笔贷款的利率超过LPR的4倍，那就是高利贷，法律不会保护这种高利贷款的利息。所以接下来我得看看目前的LPR是多少，这样才能计算出高利贷的标准。\\n\\n我来搜一下最新的LPR数据，应该是央行每个月会公布的那种利率。<search>最新一年期贷款市场报价利率 LPR</search>\\n\\n找到了更新的数据！<information>截至2023年10月，全国银行间同业拆借中心公布的一年期LPR为3.45%。</information>\\n\\n嗯，现在有了LPR的具体数值了，根据司法解释，计算一下吧。年利率的上限就是3.45%的4倍。拿计算器一按，3.45% × 4 = 13.8%。就是说，现在的高利贷利率标准是年利率超过13.8%。\\n\\n如果有人借款的年利率超过了13.8%，那超出的部分就不合法，也就属于高利贷范畴了。根据法律，那部分利息是无效的，也不能强制借款人还。\\n\\n总结一下吧：根据2023年10月的数据，中国高利贷的年利率标准是超过13.8%。这个数字是根据最高法院司法解释规定的LPR的4倍计算出来的，最新的一年期LPR是3.45%。问题搞清楚了！\"\n}\n```",
+    "根据2023年10月的最新数据，中国对高利贷的认定标准是年利率超过13.8%。这是按照最高人民法院《关于审理民间借贷案件适用法律若干问题的规定》，将一年期贷款市场报价利率（LPR）的4倍作为上限计算得出的。目前的一年期LPR是3.45%，因此其4倍即为13.8%。超出这个利率的部分，法律不予支持。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "定义高利贷",
+        "content": "高利贷通常指的是超出法定利率上限的贷款，具体上限因国家和地区的法律规定而有所不同。在回答问题前，需要明确查询与高利贷相关的法律定义。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "查询中国关于高利贷的法律规定",
+        "content": "确定中国法律下关于高利贷及其利率的详细规定，尤其是民间借贷的利率范围。"
+      },
+      {
+        "action": "Inner Thinking",
+        "content": "需要查询最高法院发布的司法解释，以明确合法利率与高利贷利率的界限。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "搜索相关法律或司法解释",
+        "content": "<search>中国民间借贷利率司法解释</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "获取搜索结果",
+        "content": "<information>根据中国最高人民法院的《关于审理民间借贷案件适用法律若干问题的规定》，2020年最新司法解释规定：民间借贷的年利率以不超过一年期贷款市场报价利率（LPR）的4倍为上限。超出该上限的利率不受法律保护。</information>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "换算具体利率范围",
+        "content": "根据上述解释，合法民间借贷的利率上限是以央行发布的一年期贷款市场报价利率（LPR）的4倍计算。如果实际利率超过这一上限，则可能构成高利贷。我们需要查明最新的LPR值以计算上限利率。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "搜索最新LPR值",
+        "content": "<search>最新一年期贷款市场报价利率 LPR</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "获取最新LPR的数据",
+        "content": "<information>截至2023年10月，全国银行间同业拆借中心公布的一年期LPR为3.45%。</information>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "计算高利贷界限利率",
+        "content": "根据司法解释，以最新LPR值3.45%的4倍计算，高利贷的法律界限是：3.45% × 4 = 13.8%。因此，年利率超过13.8%的借贷即被视为高利贷，不受法律保护。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "根据中国法律，当前高利贷的标准是年利率超过13.8%。该利率是以2023年10月最新一年期LPR 3.45%的4倍计算得出，任何贷款利率超过这一界限的部分均不受法律保护。"
+      },
+      {
+        "action": "Verification",
+        "content": "结论与中国司法解释及最新LPR数据一致，高利贷的法律定义和计算过程正确无误，回答结束。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "嗯，高利贷是啥意思呢？高利贷一般指超出法律规定的利率上限的贷款，但不同国家和地区的定义可能不一样。既然问题是关于中国的，那我得先确认一下，在中国到底什么样的利率算是高利贷。\n\n那我先查一下中国的法律对民间借贷利率是怎么规定的吧。记得最高人民法院曾经有发布过与这方面相关的司法解释，应该能找到明确的法律依据。<search>中国民间借贷利率司法解释</search>\n\n哦，看到了！<information>根据中国最高人民法院的《关于审理民间借贷案件适用法律若干问题的规定》，2020年有新的司法解释，它说民间借贷的年利率不能超过一年期贷款市场报价利率（LPR）的4倍。超出这个范围的利率，法律是不支持的。</information>\n\n明白了！也就是说，如果某笔贷款的利率超过LPR的4倍，那就是高利贷，法律不会保护这种高利贷款的利息。所以接下来我得看看目前的LPR是多少，这样才能计算出高利贷的标准。\n\n我来搜一下最新的LPR数据，应该是央行每个月会公布的那种利率。<search>最新一年期贷款市场报价利率 LPR</search>\n\n找到了更新的数据！<information>截至2023年10月，全国银行间同业拆借中心公布的一年期LPR为3.45%。</information>\n\n嗯，现在有了LPR的具体数值了，根据司法解释，计算一下吧。年利率的上限就是3.45%的4倍。拿计算器一按，3.45% × 4 = 13.8%。就是说，现在的高利贷利率标准是年利率超过13.8%。\n\n如果有人借款的年利率超过了13.8%，那超出的部分就不合法，也就属于高利贷范畴了。根据法律，那部分利息是无效的，也不能强制借款人还。\n\n总结一下吧：根据2023年10月的数据，中国高利贷的年利率标准是超过13.8%。这个数字是根据最高法院司法解释规定的LPR的4倍计算出来的，最新的一年期LPR是3.45%。问题搞清楚了！",
+  "Response": "根据2023年10月的最新数据，中国对高利贷的认定标准是年利率超过13.8%。这是按照最高人民法院《关于审理民间借贷案件适用法律若干问题的规定》，将一年期贷款市场报价利率（LPR）的4倍作为上限计算得出的。目前的一年期LPR是3.45%，因此其4倍即为13.8%。超出这个利率的部分，法律不予支持。",
+  "Question": "高利贷利息多少?"
+}

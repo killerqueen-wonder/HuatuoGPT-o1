@@ -1,0 +1,89 @@
+{
+  "Open-ended Verifiable Question": "哪些费用不适合认定为彩礼?",
+  "Ground-True Answer": "1.当地并无给付彩礼的风俗习惯，一方在婚前自愿给付另一方的财物；2.男女双方在交往期间，一方为表情达意而赠与对方的定情物、信物及其他财物；3.男女双方在交往过程中请客花费等人情往来的消费性支出及其他维系发展情感的必要支出；4.一方及家人在特定节日等时点给付对方和家人的礼物和礼金；5.男女双方在筹备、举办婚礼过程中为款待、宴请亲友所支出的相关费用。",
+  "process_id": 9777,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "明确彩礼的法律定义",
+      "content": "彩礼通常是指在婚姻缔结前，由男方家庭向女方家庭支付的一种具有特定文化或地域习俗的赠予行为。从法律角度看，根据我国的民法典和相关司法解释，彩礼的认定需要符合特定要求，比如明确的赠与目的与婚姻关系相关。以下需要确认相关法律条文是否规定了哪些费用可以或不可以作为彩礼认定。 <search>彩礼认定 民法典</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "查找法律规定",
+      "content": "<information>根据相关司法解释，包括《最高人民法院关于适用〈中华人民共和国民法典〉婚姻家庭编的解释（一）》的内容，可以将彩礼认定为男方基于婚姻缔结支付的财物，但需基于特定条件，如支付时双方未办理结婚登记或支付后未共同生活等，且与婚姻关联性较强。</information>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "区分哪些费用与彩礼无关",
+      "content": "基于上述司法解释，彩礼的本质应与婚姻缔结直接相关。因此，以下费用不适合认定为彩礼：1. 与婚姻缔结无直接关联的普通生活费用，如医疗费或日常用品。2. 婚礼筹备中的共同开支，如男方支付的婚宴费用。3. 单方面赠与的非婚姻目的的财产，如简单亲情赠与的财物或节日红包。可以进一步确认是否存在更多细节定义。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "综合整理规则进行判断",
+      "content": "彩礼需与婚姻直接关系密切，如果是普通生活费用或其他与婚姻缔结无直接关涉的款项，不能作为彩礼认定。同时，这种认定也需结合支付目的以及双方是否履行了相关婚姻登记手续进一步确认。综合上述规则推导出不适合作为彩礼的具体费用类型。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "不适合认定为彩礼的费用包括：1. 普通日常生活费用（如医疗费、日常用品费用）、2. 婚姻缔结过程中用于共同开支的费用（如婚宴费用）、3. 单纯的亲情或节日赠与（如红包或礼物）。"
+    },
+    {
+      "action": "Verification",
+      "content": "通过反复核对法律定义，确认彩礼的认定需限定于与婚姻缔结直接相关且具备特定赠与目的的财物。以上结论正确，不需进一步修正。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n哪些费用不适合认定为彩礼?\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n不适合认定为彩礼的费用包括：1. 普通日常生活费用（如医疗费、日常用品费用）、2. 婚姻缔结过程中用于共同开支的费用（如婚宴费用）、3. 单纯的亲情或节日赠与（如红包或礼物）。  \n</Model Response>  \n\n<Reference Answer>  \n1.当地并无给付彩礼的风俗习惯，一方在婚前自愿给付另一方的财物；2.男女双方在交往期间，一方为表情达意而赠与对方的定情物、信物及其他财物；3.男女双方在交往过程中请客花费等人情往来的消费性支出及其他维系发展情感的必要支出；4.一方及家人在特定节日等时点给付对方和家人的礼物和礼金；5.男女双方在筹备、举办婚礼过程中为款待、宴请亲友所支出的相关费用。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 明确彩礼的法律定义\n彩礼通常是指在婚姻缔结前，由男方家庭向女方家庭支付的一种具有特定文化或地域习俗的赠予行为。从法律角度看，根据我国的民法典和相关司法解释，彩礼的认定需要符合特定要求，比如明确的赠与目的与婚姻关系相关。以下需要确认相关法律条文是否规定了哪些费用可以或不可以作为彩礼认定。 <search>彩礼认定 民法典</search>\n\n### 查找法律规定\n<information>根据相关司法解释，包括《最高人民法院关于适用〈中华人民共和国民法典〉婚姻家庭编的解释（一）》的内容，可以将彩礼认定为男方基于婚姻缔结支付的财物，但需基于特定条件，如支付时双方未办理结婚登记或支付后未共同生活等，且与婚姻关联性较强。</information>\n\n### 区分哪些费用与彩礼无关\n基于上述司法解释，彩礼的本质应与婚姻缔结直接相关。因此，以下费用不适合认定为彩礼：1. 与婚姻缔结无直接关联的普通生活费用，如医疗费或日常用品。2. 婚礼筹备中的共同开支，如男方支付的婚宴费用。3. 单方面赠与的非婚姻目的的财产，如简单亲情赠与的财物或节日红包。可以进一步确认是否存在更多细节定义。\n\n### 综合整理规则进行判断\n彩礼需与婚姻直接关系密切，如果是普通生活费用或其他与婚姻缔结无直接关涉的款项，不能作为彩礼认定。同时，这种认定也需结合支付目的以及双方是否履行了相关婚姻登记手续进一步确认。综合上述规则推导出不适合作为彩礼的具体费用类型。\n\n### Conclusion\n不适合认定为彩礼的费用包括：1. 普通日常生活费用（如医疗费、日常用品费用）、2. 婚姻缔结过程中用于共同开支的费用（如婚宴费用）、3. 单纯的亲情或节日赠与（如红包或礼物）。\n\n### Verification\n通过反复核对法律定义，确认彩礼的认定需限定于与婚姻缔结直接相关且具备特定赠与目的的财物。以上结论正确，不需进一步修正。\n</Thought Process>\n\n<Question>\n哪些费用不适合认定为彩礼?\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n嗯，首先得搞清楚什么是彩礼。从我们国家的法律来看，彩礼一般是指男方在婚姻缔结之前给女方家庭的一些财物，这种赠予通常有文化习俗上的背景，或者地域传统。嗯，法律上对彩礼应该是有更明确的定义吧？比如哪些情况或者费用能算是彩礼，哪些不能。<search>彩礼认定 民法典</search>\n\n哦，我找到了相关的信息。《最高人民法院关于适用〈中华人民共和国民法典〉婚姻家庭编的解释（一）》里面提到，彩礼可以理解为男方为了婚姻缔结而支付的财物，但是这要满足一些条件。比如说像双方没有办理结婚登记，或者支付了彩礼但最后没能共同生活，才可能被认定为彩礼。这里有一个重点是，支付目的必须跟婚姻关系密切相关。\n\n所以，嗯，彩礼到底和哪些费用可以区分开呢？比如，有些费用是不是实际上跟婚姻没啥直接关系？我觉得像普通消费，比如一些生活必需品的购买，或者医疗费，这些都应该不算彩礼吧？毕竟没有婚姻那个“捆绑性”。还有，像婚宴费用这种，本质上是男女双方共同参与的开销，也应该不能算是彩礼。对了，还有节日红包，这种看起来更像是一般的亲情赠与，也不是专门为了婚姻缔结。\n\n仔细想想，法律上认定为彩礼的关键不就是得跟婚姻关系直接挂钩吗？如果脱离了这个目的，比如那些没有针对婚姻本身支付的费用，法律上不可能算是彩礼吧？嗯，从这里我觉得可以整理出一条简单的判断规则：彩礼一定要符合“和婚姻直接相关”这个条件。如果不满足这个条件，比如看起来是普通生活开销的费用，或者是双方共同筹备婚礼期间的开支，法律应该会直接把它排除在外。\n\n嗯，整理一下吧：不适合认定为彩礼的费用应该包括这种类型的——比如，普通日常生活费用像医疗费或者买日用品；还有婚礼筹备里双方一起花的开支，比如婚宴的费用；以及完全没有婚姻目的的单方面赠与，比如节日红包或者亲情送的财物。\n\n我觉得从法律的定义来说，这些分类是合理的。仔细核对了一下相关规定的内容，看起来对于“彩礼”的认定都要基于和婚姻缔结有关的特定目的，这应该不会有问题。嗯，没有要修正的地方，结论应该就是这样。\n</Internal Thinking>\n\n<Question>\n哪些费用不适合认定为彩礼?\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"明确彩礼的法律定义\",\n      \"content\": \"彩礼通常是指在婚姻缔结前，由男方家庭向女方家庭支付的一种具有特定文化或地域习俗的赠予行为。从法律角度看，根据我国的民法典和相关司法解释，彩礼的认定需要符合特定要求，比如明确的赠与目的与婚姻关系相关。以下需要确认相关法律条文是否规定了哪些费用可以或不可以作为彩礼认定。 <search>彩礼认定 民法典</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"查找法律规定\",\n      \"content\": \"<information>根据相关司法解释，包括《最高人民法院关于适用〈中华人民共和国民法典〉婚姻家庭编的解释（一）》的内容，可以将彩礼认定为男方基于婚姻缔结支付的财物，但需基于特定条件，如支付时双方未办理结婚登记或支付后未共同生活等，且与婚姻关联性较强。</information>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"区分哪些费用与彩礼无关\",\n      \"content\": \"基于上述司法解释，彩礼的本质应与婚姻缔结直接相关。因此，以下费用不适合认定为彩礼：1. 与婚姻缔结无直接关联的普通生活费用，如医疗费或日常用品。2. 婚礼筹备中的共同开支，如男方支付的婚宴费用。3. 单方面赠与的非婚姻目的的财产，如简单亲情赠与的财物或节日红包。可以进一步确认是否存在更多细节定义。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"综合整理规则进行判断\",\n      \"content\": \"彩礼需与婚姻直接关系密切，如果是普通生活费用或其他与婚姻缔结无直接关涉的款项，不能作为彩礼认定。同时，这种认定也需结合支付目的以及双方是否履行了相关婚姻登记手续进一步确认。综合上述规则推导出不适合作为彩礼的具体费用类型。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"不适合认定为彩礼的费用包括：1. 普通日常生活费用（如医疗费、日常用品费用）、2. 婚姻缔结过程中用于共同开支的费用（如婚宴费用）、3. 单纯的亲情或节日赠与（如红包或礼物）。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"通过反复核对法律定义，确认彩礼的认定需限定于与婚姻缔结直接相关且具备特定赠与目的的财物。以上结论正确，不需进一步修正。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"嗯，首先得搞清楚什么是彩礼。从我们国家的法律来看，彩礼一般是指男方在婚姻缔结之前给女方家庭的一些财物，这种赠予通常有文化习俗上的背景，或者地域传统。嗯，法律上对彩礼应该是有更明确的定义吧？比如哪些情况或者费用能算是彩礼，哪些不能。<search>彩礼认定 民法典</search>\\n\\n哦，我找到了相关的信息。《最高人民法院关于适用〈中华人民共和国民法典〉婚姻家庭编的解释（一）》里面提到，彩礼可以理解为男方为了婚姻缔结而支付的财物，但是这要满足一些条件。比如说像双方没有办理结婚登记，或者支付了彩礼但最后没能共同生活，才可能被认定为彩礼。这里有一个重点是，支付目的必须跟婚姻关系密切相关。\\n\\n所以，嗯，彩礼到底和哪些费用可以区分开呢？比如，有些费用是不是实际上跟婚姻没啥直接关系？我觉得像普通消费，比如一些生活必需品的购买，或者医疗费，这些都应该不算彩礼吧？毕竟没有婚姻那个“捆绑性”。还有，像婚宴费用这种，本质上是男女双方共同参与的开销，也应该不能算是彩礼。对了，还有节日红包，这种看起来更像是一般的亲情赠与，也不是专门为了婚姻缔结。\\n\\n仔细想想，法律上认定为彩礼的关键不就是得跟婚姻关系直接挂钩吗？如果脱离了这个目的，比如那些没有针对婚姻本身支付的费用，法律上不可能算是彩礼吧？嗯，从这里我觉得可以整理出一条简单的判断规则：彩礼一定要符合“和婚姻直接相关”这个条件。如果不满足这个条件，比如看起来是普通生活开销的费用，或者是双方共同筹备婚礼期间的开支，法律应该会直接把它排除在外。\\n\\n嗯，整理一下吧：不适合认定为彩礼的费用应该包括这种类型的——比如，普通日常生活费用像医疗费或者买日用品；还有婚礼筹备里双方一起花的开支，比如婚宴的费用；以及完全没有婚姻目的的单方面赠与，比如节日红包或者亲情送的财物。\\n\\n我觉得从法律的定义来说，这些分类是合理的。仔细核对了一下相关规定的内容，看起来对于“彩礼”的认定都要基于和婚姻缔结有关的特定目的，这应该不会有问题。嗯，没有要修正的地方，结论应该就是这样。\"\n}\n```",
+    "不适合认定为彩礼的费用主要包括以下几类：\n\n1. **普通的日常生活开销**：如医疗费用、生活必需品的购买费用等，这些与婚姻缔结无直接关联，仅为一般性的生活支出，不能算作彩礼。\n\n2. **婚礼筹备期间的共同开支**：如婚宴费用、婚礼布置费用等，这些通常是男女双方共同承担或用于婚礼活动本身的花销，目的不完全是单方为了婚姻缔结支付，因此不能认定为彩礼。\n\n3. **非婚姻目的的赠与**：如节日红包、平时的礼物、亲情赠与等不以婚姻为目的的财物往来，这类支出属于日常人情交往，法律上不会将其作为彩礼处理。\n\n4. **其他与婚姻无直接关联的花费**：如支付用于学习、培训或其他投资性质的费用，这些与婚姻关系的建立并无直接联系，同样不视为彩礼。\n\n根据《中华人民共和国民法典》及相关司法解释，彩礼的核心认定标准是“与婚姻缔结直接相关”，如果无法证明支付行为与婚姻结合有明确联系，这些费用均不适合被认定为彩礼。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "明确彩礼的法律定义",
+        "content": "彩礼通常是指在婚姻缔结前，由男方家庭向女方家庭支付的一种具有特定文化或地域习俗的赠予行为。从法律角度看，根据我国的民法典和相关司法解释，彩礼的认定需要符合特定要求，比如明确的赠与目的与婚姻关系相关。以下需要确认相关法律条文是否规定了哪些费用可以或不可以作为彩礼认定。 <search>彩礼认定 民法典</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "查找法律规定",
+        "content": "<information>根据相关司法解释，包括《最高人民法院关于适用〈中华人民共和国民法典〉婚姻家庭编的解释（一）》的内容，可以将彩礼认定为男方基于婚姻缔结支付的财物，但需基于特定条件，如支付时双方未办理结婚登记或支付后未共同生活等，且与婚姻关联性较强。</information>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "区分哪些费用与彩礼无关",
+        "content": "基于上述司法解释，彩礼的本质应与婚姻缔结直接相关。因此，以下费用不适合认定为彩礼：1. 与婚姻缔结无直接关联的普通生活费用，如医疗费或日常用品。2. 婚礼筹备中的共同开支，如男方支付的婚宴费用。3. 单方面赠与的非婚姻目的的财产，如简单亲情赠与的财物或节日红包。可以进一步确认是否存在更多细节定义。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "综合整理规则进行判断",
+        "content": "彩礼需与婚姻直接关系密切，如果是普通生活费用或其他与婚姻缔结无直接关涉的款项，不能作为彩礼认定。同时，这种认定也需结合支付目的以及双方是否履行了相关婚姻登记手续进一步确认。综合上述规则推导出不适合作为彩礼的具体费用类型。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "不适合认定为彩礼的费用包括：1. 普通日常生活费用（如医疗费、日常用品费用）、2. 婚姻缔结过程中用于共同开支的费用（如婚宴费用）、3. 单纯的亲情或节日赠与（如红包或礼物）。"
+      },
+      {
+        "action": "Verification",
+        "content": "通过反复核对法律定义，确认彩礼的认定需限定于与婚姻缔结直接相关且具备特定赠与目的的财物。以上结论正确，不需进一步修正。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "嗯，首先得搞清楚什么是彩礼。从我们国家的法律来看，彩礼一般是指男方在婚姻缔结之前给女方家庭的一些财物，这种赠予通常有文化习俗上的背景，或者地域传统。嗯，法律上对彩礼应该是有更明确的定义吧？比如哪些情况或者费用能算是彩礼，哪些不能。<search>彩礼认定 民法典</search>\n\n哦，我找到了相关的信息。《最高人民法院关于适用〈中华人民共和国民法典〉婚姻家庭编的解释（一）》里面提到，彩礼可以理解为男方为了婚姻缔结而支付的财物，但是这要满足一些条件。比如说像双方没有办理结婚登记，或者支付了彩礼但最后没能共同生活，才可能被认定为彩礼。这里有一个重点是，支付目的必须跟婚姻关系密切相关。\n\n所以，嗯，彩礼到底和哪些费用可以区分开呢？比如，有些费用是不是实际上跟婚姻没啥直接关系？我觉得像普通消费，比如一些生活必需品的购买，或者医疗费，这些都应该不算彩礼吧？毕竟没有婚姻那个“捆绑性”。还有，像婚宴费用这种，本质上是男女双方共同参与的开销，也应该不能算是彩礼。对了，还有节日红包，这种看起来更像是一般的亲情赠与，也不是专门为了婚姻缔结。\n\n仔细想想，法律上认定为彩礼的关键不就是得跟婚姻关系直接挂钩吗？如果脱离了这个目的，比如那些没有针对婚姻本身支付的费用，法律上不可能算是彩礼吧？嗯，从这里我觉得可以整理出一条简单的判断规则：彩礼一定要符合“和婚姻直接相关”这个条件。如果不满足这个条件，比如看起来是普通生活开销的费用，或者是双方共同筹备婚礼期间的开支，法律应该会直接把它排除在外。\n\n嗯，整理一下吧：不适合认定为彩礼的费用应该包括这种类型的——比如，普通日常生活费用像医疗费或者买日用品；还有婚礼筹备里双方一起花的开支，比如婚宴的费用；以及完全没有婚姻目的的单方面赠与，比如节日红包或者亲情送的财物。\n\n我觉得从法律的定义来说，这些分类是合理的。仔细核对了一下相关规定的内容，看起来对于“彩礼”的认定都要基于和婚姻缔结有关的特定目的，这应该不会有问题。嗯，没有要修正的地方，结论应该就是这样。",
+  "Response": "不适合认定为彩礼的费用主要包括以下几类：\n\n1. **普通的日常生活开销**：如医疗费用、生活必需品的购买费用等，这些与婚姻缔结无直接关联，仅为一般性的生活支出，不能算作彩礼。\n\n2. **婚礼筹备期间的共同开支**：如婚宴费用、婚礼布置费用等，这些通常是男女双方共同承担或用于婚礼活动本身的花销，目的不完全是单方为了婚姻缔结支付，因此不能认定为彩礼。\n\n3. **非婚姻目的的赠与**：如节日红包、平时的礼物、亲情赠与等不以婚姻为目的的财物往来，这类支出属于日常人情交往，法律上不会将其作为彩礼处理。\n\n4. **其他与婚姻无直接关联的花费**：如支付用于学习、培训或其他投资性质的费用，这些与婚姻关系的建立并无直接联系，同样不视为彩礼。\n\n根据《中华人民共和国民法典》及相关司法解释，彩礼的核心认定标准是“与婚姻缔结直接相关”，如果无法证明支付行为与婚姻结合有明确联系，这些费用均不适合被认定为彩礼。",
+  "Question": "哪些费用不适合认定为彩礼?"
+}

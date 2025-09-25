@@ -1,0 +1,99 @@
+{
+  "Open-ended Verifiable Question": "离婚后又复婚，财产归属的认定？",
+  "Ground-True Answer": "关于案涉房屋的定性，有两种观点：一种观点认为：案涉房产属于夫妻共同财产。案涉房产系原、被告离婚前共同所购，原属于夫妻共同财产，原、被告离婚协议是双方在自愿基础上的约定，虽有法律效力，但并不是严格意义上按照法律规定进行的财产分割，且离婚后房屋未变更登记至原告名下，房屋未过户，不发生物权变动的效力。原、被告离婚又复婚，实际上只是结婚登记时间的变化，婚姻关系的中断再延续，对其婚姻实质并无影响。第二种观点认为：案涉房产属于原告婚前财产。案涉房产已经离婚协议处置给原告一方，虽未过户，但产生法律效果，原、被告复婚后，该房产仍应视为原告一方的婚前个人财产。司法实践中大多数认定，第一次离婚的时候分割财产属于双方自愿，即使没有变更登记，也属于有效的约定。",
+  "process_id": 3062,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "明确问题背景",
+      "content": "题目涉及离婚、复婚后财产归属问题，需结合《中华人民共和国民法典》中有关离婚财产分割和复婚财产归属的规定来分析，明确是否为婚前财产或夫妻共同财产。首先，需要明确相关法律基础。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "搜索离婚财产分割相关法律依据",
+      "content": "需要明确离婚时，夫妻共同财产如何分割以及离婚后分割财产的性质。搜索关键词为《民法典 离婚 财产分割》。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "搜索复婚后财产性质的法律依据",
+      "content": "需要明确复婚后财产是否重新被认定为夫妻共同财产，以及复婚是否改变原本分割后财产的归属。搜索关键词为《民法典 复婚 财产归属》。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "结合搜索结果分析法律适用",
+      "content": "基于搜索结果，结合对离婚财产分割和复婚后财产归属的法律规定进行分析，以明确财产如何认定。需要进一步判断婚姻关系存续期间发生的财产变化情况。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "综合情况归纳财产归属",
+      "content": "根据分析，判断离婚时的分割财产应属于个人财产的范围，复婚后是否属于夫妻共同财产主要与是否重新发生财产混同有关。如果无明确意愿重新将分割财产混同为共同财产，则其本质上仍为个人财产。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "根据《中华人民共和国民法典》的相关规定，离婚后，已经依法分割的夫妻共同财产一般归属个人财产，即离婚协议或判决中分至一方的财产归该方个人所有。复婚后，该财产原则上仍为其个人财产，除非双方明确表示或实际发生财产混同，重新变成夫妻共同财产。因此，离婚又复婚后，财产是否属于共同财产主要取决于复婚后的财产管理方式和双方的明示意愿。"
+    },
+    {
+      "action": "Verification",
+      "content": "结论正确。离婚后分割的财产法律上归属明确，不因复婚自动转为夫妻共同财产，前提是双方未有新的混同或特殊约定。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n离婚后又复婚，财产归属的认定？\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n根据《中华人民共和国民法典》的相关规定，离婚后，已经依法分割的夫妻共同财产一般归属个人财产，即离婚协议或判决中分至一方的财产归该方个人所有。复婚后，该财产原则上仍为其个人财产，除非双方明确表示或实际发生财产混同，重新变成夫妻共同财产。因此，离婚又复婚后，财产是否属于共同财产主要取决于复婚后的财产管理方式和双方的明示意愿。  \n</Model Response>  \n\n<Reference Answer>  \n关于案涉房屋的定性，有两种观点：一种观点认为：案涉房产属于夫妻共同财产。案涉房产系原、被告离婚前共同所购，原属于夫妻共同财产，原、被告离婚协议是双方在自愿基础上的约定，虽有法律效力，但并不是严格意义上按照法律规定进行的财产分割，且离婚后房屋未变更登记至原告名下，房屋未过户，不发生物权变动的效力。原、被告离婚又复婚，实际上只是结婚登记时间的变化，婚姻关系的中断再延续，对其婚姻实质并无影响。第二种观点认为：案涉房产属于原告婚前财产。案涉房产已经离婚协议处置给原告一方，虽未过户，但产生法律效果，原、被告复婚后，该房产仍应视为原告一方的婚前个人财产。司法实践中大多数认定，第一次离婚的时候分割财产属于双方自愿，即使没有变更登记，也属于有效的约定。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 明确问题背景\n题目涉及离婚、复婚后财产归属问题，需结合《中华人民共和国民法典》中有关离婚财产分割和复婚财产归属的规定来分析，明确是否为婚前财产或夫妻共同财产。首先，需要明确相关法律基础。\n\n### 搜索离婚财产分割相关法律依据\n需要明确离婚时，夫妻共同财产如何分割以及离婚后分割财产的性质。搜索关键词为《民法典 离婚 财产分割》。\n\n### 搜索复婚后财产性质的法律依据\n需要明确复婚后财产是否重新被认定为夫妻共同财产，以及复婚是否改变原本分割后财产的归属。搜索关键词为《民法典 复婚 财产归属》。\n\n### 结合搜索结果分析法律适用\n基于搜索结果，结合对离婚财产分割和复婚后财产归属的法律规定进行分析，以明确财产如何认定。需要进一步判断婚姻关系存续期间发生的财产变化情况。\n\n### 综合情况归纳财产归属\n根据分析，判断离婚时的分割财产应属于个人财产的范围，复婚后是否属于夫妻共同财产主要与是否重新发生财产混同有关。如果无明确意愿重新将分割财产混同为共同财产，则其本质上仍为个人财产。\n\n### Conclusion\n根据《中华人民共和国民法典》的相关规定，离婚后，已经依法分割的夫妻共同财产一般归属个人财产，即离婚协议或判决中分至一方的财产归该方个人所有。复婚后，该财产原则上仍为其个人财产，除非双方明确表示或实际发生财产混同，重新变成夫妻共同财产。因此，离婚又复婚后，财产是否属于共同财产主要取决于复婚后的财产管理方式和双方的明示意愿。\n\n### Verification\n结论正确。离婚后分割的财产法律上归属明确，不因复婚自动转为夫妻共同财产，前提是双方未有新的混同或特殊约定。\n</Thought Process>\n\n<Question>\n离婚后又复婚，财产归属的认定？\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n嗯，离婚以后如果又复婚了，财产的归属问题好像会比较复杂。先想一想这个问题具体会涉及什么法律内容吧。首先离婚时，夫妻共同财产不是会被分割吗？而分割后的财产既可能成为个人财产，也可能会因为某些情况变化，所以要看看法律有没有明确的说法。然后再去想复婚之后，离婚时分割的财产是否会变为夫妻共同财产。这得具体查查才知道。\n\n那么，先从离婚时财产分割的规则开始搞清楚吧。我记得《中华人民共和国民法典》里是有关于夫妻共同财产分割的规定的——嗯，应该查一下对这种情况有什么说法。搜一下关键词，比如《民法典 离婚 财产分割》。\n\n<search>《民法典 离婚 财产分割》</search>\n\n<information>搜到的信息显示，《民法典》规定，夫妻离婚时，夫妻共同财产由双方协议分割；协商不成的情况下，由法院根据具体情况依法判决。而离婚后，分割后的财产一般归各自所有，也就是说，如果一个人分到了某样财产，那这东西原则上就属于这个人的个人财产了。</information>\n\n哦，那就是说，财产在离婚分割之后就变成了个人财产，除非复婚后又有一些特别的改变吧。那么现在的问题就是，复婚之后，原先离婚时分割的财产还是不是个人财产。如果复婚了，会不会把之前已经分清的财产变回夫妻共同的？也得去找找看法律上有没有明确的条文。\n\n这部分可以查查复婚后财产认定的规则，看看《民法典》有没有什么特别的规定。搜个关键词，比如《民法典 复婚 财产归属》。\n\n<search>《民法典 复婚 财产归属》</search>\n\n<information>哦，搜到的结果说，《民法典》对于复婚后的财产归属问题也有一些原则性的指导。虽然夫妻复婚会恢复婚姻关系，但并不会改变婚前、婚后的财产本质。如果夫妻双方没有特别约定或者没有实际发生财产混同（比如把财产放到一起共同使用、管理），离婚后分到的个人财产仍视为个人财产，不会自动转为夫妻共同财产。</information>\n\n所以如果我们结合上面的两部分看，离婚后分割的财产是依据法律划分的，归属非常明确是个人财产。复婚之后，财产的本质不会自动改变，除非双方有特殊约定或者让财产混同使用，那才可能变为夫妻共同财产。所以复婚后，这个问题的关键就是看有没有明确约定或者实际发生了财产混同。\n\n嗯，总结下来，离婚时分割的财产应该算个人财产，复婚并不会自动改变这个归属。法律上似乎还是比较保护离婚时的分割结果的嘛。不过要注意，如果复婚后双方有主动混同财产管理的行为，或者特别约定了将原个人财产变为夫妻共同财产，那么性质就会发生改变。所以具体问题还是得看实际操作的情况。\n</Internal Thinking>\n\n<Question>\n离婚后又复婚，财产归属的认定？\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"明确问题背景\",\n      \"content\": \"题目涉及离婚、复婚后财产归属问题，需结合《中华人民共和国民法典》中有关离婚财产分割和复婚财产归属的规定来分析，明确是否为婚前财产或夫妻共同财产。首先，需要明确相关法律基础。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"搜索离婚财产分割相关法律依据\",\n      \"content\": \"需要明确离婚时，夫妻共同财产如何分割以及离婚后分割财产的性质。搜索关键词为《民法典 离婚 财产分割》。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"搜索复婚后财产性质的法律依据\",\n      \"content\": \"需要明确复婚后财产是否重新被认定为夫妻共同财产，以及复婚是否改变原本分割后财产的归属。搜索关键词为《民法典 复婚 财产归属》。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"结合搜索结果分析法律适用\",\n      \"content\": \"基于搜索结果，结合对离婚财产分割和复婚后财产归属的法律规定进行分析，以明确财产如何认定。需要进一步判断婚姻关系存续期间发生的财产变化情况。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"综合情况归纳财产归属\",\n      \"content\": \"根据分析，判断离婚时的分割财产应属于个人财产的范围，复婚后是否属于夫妻共同财产主要与是否重新发生财产混同有关。如果无明确意愿重新将分割财产混同为共同财产，则其本质上仍为个人财产。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"根据《中华人民共和国民法典》的相关规定，离婚后，已经依法分割的夫妻共同财产一般归属个人财产，即离婚协议或判决中分至一方的财产归该方个人所有。复婚后，该财产原则上仍为其个人财产，除非双方明确表示或实际发生财产混同，重新变成夫妻共同财产。因此，离婚又复婚后，财产是否属于共同财产主要取决于复婚后的财产管理方式和双方的明示意愿。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"结论正确。离婚后分割的财产法律上归属明确，不因复婚自动转为夫妻共同财产，前提是双方未有新的混同或特殊约定。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"嗯，离婚以后如果又复婚了，财产的归属问题好像会比较复杂。先想一想这个问题具体会涉及什么法律内容吧。首先离婚时，夫妻共同财产不是会被分割吗？而分割后的财产既可能成为个人财产，也可能会因为某些情况变化，所以要看看法律有没有明确的说法。然后再去想复婚之后，离婚时分割的财产是否会变为夫妻共同财产。这得具体查查才知道。\\n\\n那么，先从离婚时财产分割的规则开始搞清楚吧。我记得《中华人民共和国民法典》里是有关于夫妻共同财产分割的规定的——嗯，应该查一下对这种情况有什么说法。搜一下关键词，比如《民法典 离婚 财产分割》。\\n\\n<search>《民法典 离婚 财产分割》</search>\\n\\n<information>搜到的信息显示，《民法典》规定，夫妻离婚时，夫妻共同财产由双方协议分割；协商不成的情况下，由法院根据具体情况依法判决。而离婚后，分割后的财产一般归各自所有，也就是说，如果一个人分到了某样财产，那这东西原则上就属于这个人的个人财产了。</information>\\n\\n哦，那就是说，财产在离婚分割之后就变成了个人财产，除非复婚后又有一些特别的改变吧。那么现在的问题就是，复婚之后，原先离婚时分割的财产还是不是个人财产。如果复婚了，会不会把之前已经分清的财产变回夫妻共同的？也得去找找看法律上有没有明确的条文。\\n\\n这部分可以查查复婚后财产认定的规则，看看《民法典》有没有什么特别的规定。搜个关键词，比如《民法典 复婚 财产归属》。\\n\\n<search>《民法典 复婚 财产归属》</search>\\n\\n<information>哦，搜到的结果说，《民法典》对于复婚后的财产归属问题也有一些原则性的指导。虽然夫妻复婚会恢复婚姻关系，但并不会改变婚前、婚后的财产本质。如果夫妻双方没有特别约定或者没有实际发生财产混同（比如把财产放到一起共同使用、管理），离婚后分到的个人财产仍视为个人财产，不会自动转为夫妻共同财产。</information>\\n\\n所以如果我们结合上面的两部分看，离婚后分割的财产是依据法律划分的，归属非常明确是个人财产。复婚之后，财产的本质不会自动改变，除非双方有特殊约定或者让财产混同使用，那才可能变为夫妻共同财产。所以复婚后，这个问题的关键就是看有没有明确约定或者实际发生了财产混同。\\n\\n嗯，总结下来，离婚时分割的财产应该算个人财产，复婚并不会自动改变这个归属。法律上似乎还是比较保护离婚时的分割结果的嘛。不过要注意，如果复婚后双方有主动混同财产管理的行为，或者特别约定了将原个人财产变为夫妻共同财产，那么性质就会发生改变。所以具体问题还是得看实际操作的情况。\"\n}\n```",
+    "离婚后又复婚的情况下，财产的归属问题可以分以下几个方面来分析：\n\n根据《中华人民共和国民法典》相关规定：\n\n1. **离婚时分割的财产归属**  \n   离婚时，夫妻共同财产会依据法律规定，由双方协商分割；如协商不成，法院会根据具体情况依法判决。分割后的财产原则上归各自所有，也就是说，离婚后分到的财产视为个人财产，不再属于夫妻共同财产。\n\n2. **复婚后财产是否发生变化**  \n   复婚后，夫妻关系虽然重新建立，但离婚时分割的个人财产不会自动转为夫妻共同财产。《民法典》明确表示，婚前和婚后的财产归属原则取决于其性质及夫妻之间的约定。如果没有特别的约定，或者双方未将个人财产混同使用和管理（如共同投资或将财产明确进行联合控制），原离婚时分割的个人财产仍然保持个人财产属性。\n\n3. **特殊情况的处理**  \n   如果复婚后，夫妻双方约定将原来的个人财产转变为夫妻共同财产或实际发生了财产混同管理（如收入合并、共同经营或共同投入到家庭财产使用中），那么这些财产可能被认定为夫妻共同财产。\n\n总结：  \n离婚后分割的个人财产在复婚之后仍然维持其个人财产属性，除非复婚后双方在法律上有明确约定，或者实际发生了财产混同使用的情况。因此，复婚后的财产归属问题具体的认定还是要结合双方的实际行为及是否存在明确的约定来判断。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "明确问题背景",
+        "content": "题目涉及离婚、复婚后财产归属问题，需结合《中华人民共和国民法典》中有关离婚财产分割和复婚财产归属的规定来分析，明确是否为婚前财产或夫妻共同财产。首先，需要明确相关法律基础。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "搜索离婚财产分割相关法律依据",
+        "content": "需要明确离婚时，夫妻共同财产如何分割以及离婚后分割财产的性质。搜索关键词为《民法典 离婚 财产分割》。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "搜索复婚后财产性质的法律依据",
+        "content": "需要明确复婚后财产是否重新被认定为夫妻共同财产，以及复婚是否改变原本分割后财产的归属。搜索关键词为《民法典 复婚 财产归属》。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "结合搜索结果分析法律适用",
+        "content": "基于搜索结果，结合对离婚财产分割和复婚后财产归属的法律规定进行分析，以明确财产如何认定。需要进一步判断婚姻关系存续期间发生的财产变化情况。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "综合情况归纳财产归属",
+        "content": "根据分析，判断离婚时的分割财产应属于个人财产的范围，复婚后是否属于夫妻共同财产主要与是否重新发生财产混同有关。如果无明确意愿重新将分割财产混同为共同财产，则其本质上仍为个人财产。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "根据《中华人民共和国民法典》的相关规定，离婚后，已经依法分割的夫妻共同财产一般归属个人财产，即离婚协议或判决中分至一方的财产归该方个人所有。复婚后，该财产原则上仍为其个人财产，除非双方明确表示或实际发生财产混同，重新变成夫妻共同财产。因此，离婚又复婚后，财产是否属于共同财产主要取决于复婚后的财产管理方式和双方的明示意愿。"
+      },
+      {
+        "action": "Verification",
+        "content": "结论正确。离婚后分割的财产法律上归属明确，不因复婚自动转为夫妻共同财产，前提是双方未有新的混同或特殊约定。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "嗯，离婚以后如果又复婚了，财产的归属问题好像会比较复杂。先想一想这个问题具体会涉及什么法律内容吧。首先离婚时，夫妻共同财产不是会被分割吗？而分割后的财产既可能成为个人财产，也可能会因为某些情况变化，所以要看看法律有没有明确的说法。然后再去想复婚之后，离婚时分割的财产是否会变为夫妻共同财产。这得具体查查才知道。\n\n那么，先从离婚时财产分割的规则开始搞清楚吧。我记得《中华人民共和国民法典》里是有关于夫妻共同财产分割的规定的——嗯，应该查一下对这种情况有什么说法。搜一下关键词，比如《民法典 离婚 财产分割》。\n\n<search>《民法典 离婚 财产分割》</search>\n\n<information>搜到的信息显示，《民法典》规定，夫妻离婚时，夫妻共同财产由双方协议分割；协商不成的情况下，由法院根据具体情况依法判决。而离婚后，分割后的财产一般归各自所有，也就是说，如果一个人分到了某样财产，那这东西原则上就属于这个人的个人财产了。</information>\n\n哦，那就是说，财产在离婚分割之后就变成了个人财产，除非复婚后又有一些特别的改变吧。那么现在的问题就是，复婚之后，原先离婚时分割的财产还是不是个人财产。如果复婚了，会不会把之前已经分清的财产变回夫妻共同的？也得去找找看法律上有没有明确的条文。\n\n这部分可以查查复婚后财产认定的规则，看看《民法典》有没有什么特别的规定。搜个关键词，比如《民法典 复婚 财产归属》。\n\n<search>《民法典 复婚 财产归属》</search>\n\n<information>哦，搜到的结果说，《民法典》对于复婚后的财产归属问题也有一些原则性的指导。虽然夫妻复婚会恢复婚姻关系，但并不会改变婚前、婚后的财产本质。如果夫妻双方没有特别约定或者没有实际发生财产混同（比如把财产放到一起共同使用、管理），离婚后分到的个人财产仍视为个人财产，不会自动转为夫妻共同财产。</information>\n\n所以如果我们结合上面的两部分看，离婚后分割的财产是依据法律划分的，归属非常明确是个人财产。复婚之后，财产的本质不会自动改变，除非双方有特殊约定或者让财产混同使用，那才可能变为夫妻共同财产。所以复婚后，这个问题的关键就是看有没有明确约定或者实际发生了财产混同。\n\n嗯，总结下来，离婚时分割的财产应该算个人财产，复婚并不会自动改变这个归属。法律上似乎还是比较保护离婚时的分割结果的嘛。不过要注意，如果复婚后双方有主动混同财产管理的行为，或者特别约定了将原个人财产变为夫妻共同财产，那么性质就会发生改变。所以具体问题还是得看实际操作的情况。",
+  "Response": "离婚后又复婚的情况下，财产的归属问题可以分以下几个方面来分析：\n\n根据《中华人民共和国民法典》相关规定：\n\n1. **离婚时分割的财产归属**  \n   离婚时，夫妻共同财产会依据法律规定，由双方协商分割；如协商不成，法院会根据具体情况依法判决。分割后的财产原则上归各自所有，也就是说，离婚后分到的财产视为个人财产，不再属于夫妻共同财产。\n\n2. **复婚后财产是否发生变化**  \n   复婚后，夫妻关系虽然重新建立，但离婚时分割的个人财产不会自动转为夫妻共同财产。《民法典》明确表示，婚前和婚后的财产归属原则取决于其性质及夫妻之间的约定。如果没有特别的约定，或者双方未将个人财产混同使用和管理（如共同投资或将财产明确进行联合控制），原离婚时分割的个人财产仍然保持个人财产属性。\n\n3. **特殊情况的处理**  \n   如果复婚后，夫妻双方约定将原来的个人财产转变为夫妻共同财产或实际发生了财产混同管理（如收入合并、共同经营或共同投入到家庭财产使用中），那么这些财产可能被认定为夫妻共同财产。\n\n总结：  \n离婚后分割的个人财产在复婚之后仍然维持其个人财产属性，除非复婚后双方在法律上有明确约定，或者实际发生了财产混同使用的情况。因此，复婚后的财产归属问题具体的认定还是要结合双方的实际行为及是否存在明确的约定来判断。",
+  "Question": "离婚后又复婚，财产归属的认定？"
+}

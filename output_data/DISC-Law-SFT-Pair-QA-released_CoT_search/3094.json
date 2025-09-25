@@ -1,0 +1,109 @@
+{
+  "Open-ended Verifiable Question": "股权转让可能涉及到的限制措施有哪些?",
+  "Ground-True Answer": "1.标的企业性质与股权转让。法律对特定类型企业行为能力的限制投射于投资领域，表现为对国有产权转让、三资企业股权转让设定有审批、备案、信息披露、交易场所限制等特殊要求，直接影响到股权转让协议的效力与履行。如国有产权转让需经国资监管机构审核、进行产权评估，且原则上在产权市场公开进行；外商投资企业股权转让应履行报批义务，未经批准，协议不生效等。2.特定经营范围与股权转让。特定行业存在准入与转让的限制，如典当行转让股权，应当经省级商务主管部门批准，未经批准无权申请变更登记。忽略此类规范的限制，有时会导致股权转让行为无效，有时会造成履行障碍，最终影响股权转让的实现。由此，公司经营范围也应引起股权交易双方的注意。",
+  "process_id": 3094,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "确认股权转让可能受限制的原因类别",
+      "content": "股权转让的限制措施可能来源于法律法规的规定、公司章程的约定、以及合同或者股东协议等安排。因此需要详细分析这三个类别来回答问题。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "分析法律法规对股权转让的限制",
+      "content": "法律法规可能对某些公司类型（如国有企业、有限责任公司等）的股权转让进行限制。此外，《公司法》、《证券法》等法律对股权的交易程序和条件作出具体规定。可能需要具体查询相关法律。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "查询《中华人民共和国公司法》中涉及股权转让的相关规定",
+      "content": "<search>公司法 股权转让 限制</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "结合结果分析公司法中的限制",
+      "content": "<information>根据公司法的规定，有限责任公司股权转让需经过其他股东过半数同意，属于法定限制。股东既可以通过章程明确转让流程，也可能在章程中增设其他限制条件。</information>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "分析公司章程的限制性规定",
+      "content": "公司章程是公司内部治理的重要文件，它可能约定股权转让的优先购买权、具体程序、是否需要董事会或股东会的批准等内容。例如，部分公司章程中可能直接限制一定比例的股权不能转让或者要求特殊批准。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "分析合同或股东协议中的限制",
+      "content": "在实际操作中，股东可能通过合同或协议，约定对股权转让进行限制。例如右先购买权、限制性出售条款、不可转让期条款等约束往往通过协议明示。需要因具体协议而异。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "股权转让可能涉及的限制措施主要包括以下几类：1. 法律法规的限制，例如《公司法》中对有限责任公司的股东转让要求经过其他股东同意；2. 公司章程的限制，公司可根据内部治理需要制定特定条款；3. 合同或股东协议中的限制，如优先购买权、不可转让期等协议性约束。"
+    },
+    {
+      "action": "Verification",
+      "content": "通过法律法规、公司章程、合同协议等多个维度，分析股权转让受限原因，逻辑清晰且符合实际操作，因此结论正确且完整。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n股权转让可能涉及到的限制措施有哪些?\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n股权转让可能涉及的限制措施主要包括以下几类：1. 法律法规的限制，例如《公司法》中对有限责任公司的股东转让要求经过其他股东同意；2. 公司章程的限制，公司可根据内部治理需要制定特定条款；3. 合同或股东协议中的限制，如优先购买权、不可转让期等协议性约束。  \n</Model Response>  \n\n<Reference Answer>  \n1.标的企业性质与股权转让。法律对特定类型企业行为能力的限制投射于投资领域，表现为对国有产权转让、三资企业股权转让设定有审批、备案、信息披露、交易场所限制等特殊要求，直接影响到股权转让协议的效力与履行。如国有产权转让需经国资监管机构审核、进行产权评估，且原则上在产权市场公开进行；外商投资企业股权转让应履行报批义务，未经批准，协议不生效等。2.特定经营范围与股权转让。特定行业存在准入与转让的限制，如典当行转让股权，应当经省级商务主管部门批准，未经批准无权申请变更登记。忽略此类规范的限制，有时会导致股权转让行为无效，有时会造成履行障碍，最终影响股权转让的实现。由此，公司经营范围也应引起股权交易双方的注意。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 确认股权转让可能受限制的原因类别\n股权转让的限制措施可能来源于法律法规的规定、公司章程的约定、以及合同或者股东协议等安排。因此需要详细分析这三个类别来回答问题。\n\n### 分析法律法规对股权转让的限制\n法律法规可能对某些公司类型（如国有企业、有限责任公司等）的股权转让进行限制。此外，《公司法》、《证券法》等法律对股权的交易程序和条件作出具体规定。可能需要具体查询相关法律。\n\n### 查询《中华人民共和国公司法》中涉及股权转让的相关规定\n<search>公司法 股权转让 限制</search>\n\n### 结合结果分析公司法中的限制\n<information>根据公司法的规定，有限责任公司股权转让需经过其他股东过半数同意，属于法定限制。股东既可以通过章程明确转让流程，也可能在章程中增设其他限制条件。</information>\n\n### 分析公司章程的限制性规定\n公司章程是公司内部治理的重要文件，它可能约定股权转让的优先购买权、具体程序、是否需要董事会或股东会的批准等内容。例如，部分公司章程中可能直接限制一定比例的股权不能转让或者要求特殊批准。\n\n### 分析合同或股东协议中的限制\n在实际操作中，股东可能通过合同或协议，约定对股权转让进行限制。例如右先购买权、限制性出售条款、不可转让期条款等约束往往通过协议明示。需要因具体协议而异。\n\n### Conclusion\n股权转让可能涉及的限制措施主要包括以下几类：1. 法律法规的限制，例如《公司法》中对有限责任公司的股东转让要求经过其他股东同意；2. 公司章程的限制，公司可根据内部治理需要制定特定条款；3. 合同或股东协议中的限制，如优先购买权、不可转让期等协议性约束。\n\n### Verification\n通过法律法规、公司章程、合同协议等多个维度，分析股权转让受限原因，逻辑清晰且符合实际操作，因此结论正确且完整。\n</Thought Process>\n\n<Question>\n股权转让可能涉及到的限制措施有哪些?\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n嗯，股权转让可能会受一些限制，这些限制一般来源于法律法规、公司章程和合同或者股东间协议。我得先从这些维度逐步分析一下。\n\n先看看法律法规方面，这应该是最基础的。比如像有限责任公司，好像股权转让的自由度会受到一定的约束。我记得《公司法》里对此有规定，再加上国有企业可能还会有额外的法律限制。具体内容我还是去查一下更保险。<search>公司法 股权转让 限制</search>\n\n哎，刚刚看了下搜索结果，发现《公司法》确实对有限责任公司的股权转让有些规定，比如说股东如果想转让股权，需要征得其他股东过半数同意，这属于一种法定的限制啊。还有，这个流程在章程里可以明确下来，也可以在章程里额外增加其他限制条件。<information>根据公司法的规定，有限责任公司股权转让需经过其他股东过半数同意，属于法定限制。股东既可以通过章程明确转让流程，也可能在章程中增设其他限制条件。</information>\n\n那说到公司章程，它比较灵活，是公司内部根据自己情况制定的规则，可能会约定一些具体的转让程序。比如要求董事会或股东会批准，或者规定一定比例的股权不能转让。哦对，有些章程还会提到优先购买权，就是现有股东有权优先买入转让的股权。这部分挺重要，得具体看公司章程里的条文怎么写。\n\n还有合同或股东协议这一块，因为这是股东之间或者和第三方的约定嘛，往往包含一些很具体的条款，比如优先购买权、限制性出售条款、不可转让期这种。比如如果协议里明确约定某段时间股权不能转让，那真的就受限了。这种限制通常很个性化，完全取决于合同内容。\n\n所以总结下来，股权转让的限制原因通常分为三大类：法律法规层面的约束，比如《公司法》的规定；公司章程里的具体条款安排，可以决定转让流程或特殊限制；最后是合同或股东协议约定的内容，这种是比较灵活和因公司而异的。这样分析下来感觉挺清晰的，我觉得这个思路不错，结论也实现了全面覆盖。\n</Internal Thinking>\n\n<Question>\n股权转让可能涉及到的限制措施有哪些?\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"确认股权转让可能受限制的原因类别\",\n      \"content\": \"股权转让的限制措施可能来源于法律法规的规定、公司章程的约定、以及合同或者股东协议等安排。因此需要详细分析这三个类别来回答问题。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析法律法规对股权转让的限制\",\n      \"content\": \"法律法规可能对某些公司类型（如国有企业、有限责任公司等）的股权转让进行限制。此外，《公司法》、《证券法》等法律对股权的交易程序和条件作出具体规定。可能需要具体查询相关法律。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"查询《中华人民共和国公司法》中涉及股权转让的相关规定\",\n      \"content\": \"<search>公司法 股权转让 限制</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"结合结果分析公司法中的限制\",\n      \"content\": \"<information>根据公司法的规定，有限责任公司股权转让需经过其他股东过半数同意，属于法定限制。股东既可以通过章程明确转让流程，也可能在章程中增设其他限制条件。</information>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析公司章程的限制性规定\",\n      \"content\": \"公司章程是公司内部治理的重要文件，它可能约定股权转让的优先购买权、具体程序、是否需要董事会或股东会的批准等内容。例如，部分公司章程中可能直接限制一定比例的股权不能转让或者要求特殊批准。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析合同或股东协议中的限制\",\n      \"content\": \"在实际操作中，股东可能通过合同或协议，约定对股权转让进行限制。例如右先购买权、限制性出售条款、不可转让期条款等约束往往通过协议明示。需要因具体协议而异。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"股权转让可能涉及的限制措施主要包括以下几类：1. 法律法规的限制，例如《公司法》中对有限责任公司的股东转让要求经过其他股东同意；2. 公司章程的限制，公司可根据内部治理需要制定特定条款；3. 合同或股东协议中的限制，如优先购买权、不可转让期等协议性约束。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"通过法律法规、公司章程、合同协议等多个维度，分析股权转让受限原因，逻辑清晰且符合实际操作，因此结论正确且完整。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"嗯，股权转让可能会受一些限制，这些限制一般来源于法律法规、公司章程和合同或者股东间协议。我得先从这些维度逐步分析一下。\\n\\n先看看法律法规方面，这应该是最基础的。比如像有限责任公司，好像股权转让的自由度会受到一定的约束。我记得《公司法》里对此有规定，再加上国有企业可能还会有额外的法律限制。具体内容我还是去查一下更保险。<search>公司法 股权转让 限制</search>\\n\\n哎，刚刚看了下搜索结果，发现《公司法》确实对有限责任公司的股权转让有些规定，比如说股东如果想转让股权，需要征得其他股东过半数同意，这属于一种法定的限制啊。还有，这个流程在章程里可以明确下来，也可以在章程里额外增加其他限制条件。<information>根据公司法的规定，有限责任公司股权转让需经过其他股东过半数同意，属于法定限制。股东既可以通过章程明确转让流程，也可能在章程中增设其他限制条件。</information>\\n\\n那说到公司章程，它比较灵活，是公司内部根据自己情况制定的规则，可能会约定一些具体的转让程序。比如要求董事会或股东会批准，或者规定一定比例的股权不能转让。哦对，有些章程还会提到优先购买权，就是现有股东有权优先买入转让的股权。这部分挺重要，得具体看公司章程里的条文怎么写。\\n\\n还有合同或股东协议这一块，因为这是股东之间或者和第三方的约定嘛，往往包含一些很具体的条款，比如优先购买权、限制性出售条款、不可转让期这种。比如如果协议里明确约定某段时间股权不能转让，那真的就受限了。这种限制通常很个性化，完全取决于合同内容。\\n\\n所以总结下来，股权转让的限制原因通常分为三大类：法律法规层面的约束，比如《公司法》的规定；公司章程里的具体条款安排，可以决定转让流程或特殊限制；最后是合同或股东协议约定的内容，这种是比较灵活和因公司而异的。这样分析下来感觉挺清晰的，我觉得这个思路不错，结论也实现了全面覆盖。\"\n}\n```",
+    "股权转让可能涉及的限制措施通常来源于以下三个层面：\n\n1. **法律法规的限制**  \n   根据《公司法》的规定，有限责任公司的股权转让受到一定限制。例如：  \n   - **对外转让需取得其他股东过半数同意**：有限责任公司股东向股东以外的人转让股权，需经其他股东过半数同意。如果其他股东不同意转让，则必须购买转让的股权；否则视为同意。  \n   - **优先购买权**：其他股东对被转让的股权拥有优先购买权，若多个股东主张优先权，他们可按出资比例购买。     \n\n2. **公司章程的限制**  \n   公司章程是公司内部管理的重要文件，可能会对股权转让作出更详细或更严格的规定。常见的限制类型包括：  \n   - **转让审批要求**：规定股权转让需要经股东会或董事会批准。  \n   - **特别比例限制**：部分公司可能在章程中明确约定，一定比例的股权不得转让或者只能转让给特定对象。  \n   - **强化优先购买权规则**：有些公司可能通过章程进一步细化其他股东的优先购买权程序或范围。  \n\n3. **合同或股东协议的限制**  \n   在股东间协议或投资协议中，股权转让的限制往往更具个性化和约定性，常见的条款包括：  \n   - **优先购买权条款**：与法律规定的类似，但可能对行使条件、期限等有更具体的约定。  \n   - **限制性出售条款**：如“不可转让期”或禁止向特定类型的第三方转让。  \n   - **共同出售权和随售权**：当股东计划转让股权时，其他股东可选择一同出售（共同出售权）或被要求一同出售（随售权）。  \n\n总之，股权转让的限制措施综合体现了法律法规的要求、章程的具体规定以及当事人之间合同的约定。实际操作中，应根据公司性质及相关文件进行具体分析。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "确认股权转让可能受限制的原因类别",
+        "content": "股权转让的限制措施可能来源于法律法规的规定、公司章程的约定、以及合同或者股东协议等安排。因此需要详细分析这三个类别来回答问题。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "分析法律法规对股权转让的限制",
+        "content": "法律法规可能对某些公司类型（如国有企业、有限责任公司等）的股权转让进行限制。此外，《公司法》、《证券法》等法律对股权的交易程序和条件作出具体规定。可能需要具体查询相关法律。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "查询《中华人民共和国公司法》中涉及股权转让的相关规定",
+        "content": "<search>公司法 股权转让 限制</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "结合结果分析公司法中的限制",
+        "content": "<information>根据公司法的规定，有限责任公司股权转让需经过其他股东过半数同意，属于法定限制。股东既可以通过章程明确转让流程，也可能在章程中增设其他限制条件。</information>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "分析公司章程的限制性规定",
+        "content": "公司章程是公司内部治理的重要文件，它可能约定股权转让的优先购买权、具体程序、是否需要董事会或股东会的批准等内容。例如，部分公司章程中可能直接限制一定比例的股权不能转让或者要求特殊批准。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "分析合同或股东协议中的限制",
+        "content": "在实际操作中，股东可能通过合同或协议，约定对股权转让进行限制。例如右先购买权、限制性出售条款、不可转让期条款等约束往往通过协议明示。需要因具体协议而异。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "股权转让可能涉及的限制措施主要包括以下几类：1. 法律法规的限制，例如《公司法》中对有限责任公司的股东转让要求经过其他股东同意；2. 公司章程的限制，公司可根据内部治理需要制定特定条款；3. 合同或股东协议中的限制，如优先购买权、不可转让期等协议性约束。"
+      },
+      {
+        "action": "Verification",
+        "content": "通过法律法规、公司章程、合同协议等多个维度，分析股权转让受限原因，逻辑清晰且符合实际操作，因此结论正确且完整。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "嗯，股权转让可能会受一些限制，这些限制一般来源于法律法规、公司章程和合同或者股东间协议。我得先从这些维度逐步分析一下。\n\n先看看法律法规方面，这应该是最基础的。比如像有限责任公司，好像股权转让的自由度会受到一定的约束。我记得《公司法》里对此有规定，再加上国有企业可能还会有额外的法律限制。具体内容我还是去查一下更保险。<search>公司法 股权转让 限制</search>\n\n哎，刚刚看了下搜索结果，发现《公司法》确实对有限责任公司的股权转让有些规定，比如说股东如果想转让股权，需要征得其他股东过半数同意，这属于一种法定的限制啊。还有，这个流程在章程里可以明确下来，也可以在章程里额外增加其他限制条件。<information>根据公司法的规定，有限责任公司股权转让需经过其他股东过半数同意，属于法定限制。股东既可以通过章程明确转让流程，也可能在章程中增设其他限制条件。</information>\n\n那说到公司章程，它比较灵活，是公司内部根据自己情况制定的规则，可能会约定一些具体的转让程序。比如要求董事会或股东会批准，或者规定一定比例的股权不能转让。哦对，有些章程还会提到优先购买权，就是现有股东有权优先买入转让的股权。这部分挺重要，得具体看公司章程里的条文怎么写。\n\n还有合同或股东协议这一块，因为这是股东之间或者和第三方的约定嘛，往往包含一些很具体的条款，比如优先购买权、限制性出售条款、不可转让期这种。比如如果协议里明确约定某段时间股权不能转让，那真的就受限了。这种限制通常很个性化，完全取决于合同内容。\n\n所以总结下来，股权转让的限制原因通常分为三大类：法律法规层面的约束，比如《公司法》的规定；公司章程里的具体条款安排，可以决定转让流程或特殊限制；最后是合同或股东协议约定的内容，这种是比较灵活和因公司而异的。这样分析下来感觉挺清晰的，我觉得这个思路不错，结论也实现了全面覆盖。",
+  "Response": "股权转让可能涉及的限制措施通常来源于以下三个层面：\n\n1. **法律法规的限制**  \n   根据《公司法》的规定，有限责任公司的股权转让受到一定限制。例如：  \n   - **对外转让需取得其他股东过半数同意**：有限责任公司股东向股东以外的人转让股权，需经其他股东过半数同意。如果其他股东不同意转让，则必须购买转让的股权；否则视为同意。  \n   - **优先购买权**：其他股东对被转让的股权拥有优先购买权，若多个股东主张优先权，他们可按出资比例购买。     \n\n2. **公司章程的限制**  \n   公司章程是公司内部管理的重要文件，可能会对股权转让作出更详细或更严格的规定。常见的限制类型包括：  \n   - **转让审批要求**：规定股权转让需要经股东会或董事会批准。  \n   - **特别比例限制**：部分公司可能在章程中明确约定，一定比例的股权不得转让或者只能转让给特定对象。  \n   - **强化优先购买权规则**：有些公司可能通过章程进一步细化其他股东的优先购买权程序或范围。  \n\n3. **合同或股东协议的限制**  \n   在股东间协议或投资协议中，股权转让的限制往往更具个性化和约定性，常见的条款包括：  \n   - **优先购买权条款**：与法律规定的类似，但可能对行使条件、期限等有更具体的约定。  \n   - **限制性出售条款**：如“不可转让期”或禁止向特定类型的第三方转让。  \n   - **共同出售权和随售权**：当股东计划转让股权时，其他股东可选择一同出售（共同出售权）或被要求一同出售（随售权）。  \n\n总之，股权转让的限制措施综合体现了法律法规的要求、章程的具体规定以及当事人之间合同的约定。实际操作中，应根据公司性质及相关文件进行具体分析。",
+  "Question": "股权转让可能涉及到的限制措施有哪些?"
+}

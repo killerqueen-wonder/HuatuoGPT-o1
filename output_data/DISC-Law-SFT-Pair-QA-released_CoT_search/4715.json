@@ -1,0 +1,99 @@
+{
+  "Open-ended Verifiable Question": "消费者投诉注意什么问题",
+  "Ground-True Answer": "１、投诉要及时：消费者因购买、使用商品或接受服务，其权益受到损害时，应及时向所在地的受理产品质量问题部门投诉。及时投诉有利于正确判断商品损坏程度与正常磨损的区别，能够比较准确地说明情况，特别是有关服务质量等问题尤其重要。\n２、要实事求是：消费者权益受到损害时，无论与责任人——生产单位或销售、经营者进行协商，或向受理产品质量问题部门投诉，应实事求是说明或写明情况，不夸大，不缩小，不歪曲，不隐瞒事实真相。\n３、要求和意见要合理合法：投诉理由要正当，符合《产品质量法》、《消费者权益保护法》、《部分商品修理更换退货责任规定》等国家有关法律、法规。\n４、材料要完备：投诉时向受理部门写出文字材料，提供购货时的发票或售货凭证。\n５、证据要确凿：\n（１）提供有关产品造成损害的证据；\n（２）提供损害是由产品或服务缺陷造成的证据。",
+  "process_id": 4715,
+  "verify": [
+    true
+  ],
+  "Long_CoT": [
+    {
+      "action": "Inner Thinking",
+      "title": "明确投诉范围和依据",
+      "content": "消费者在投诉时需要明确投诉的范围和依据，通常与《消费者权益保护法》相关。例如，投诉涉及产品质量、服务问题或违法合同条款等，因此宜先查询相关法律条文。<search>消费者权益保护法</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "分析相关法律条文",
+      "content": "<information>消费者权益保护法规定消费者投诉权包括保障安全权、知情权、选择权、公平交易权和依法求偿权等。消费者在发起投诉前，需检查是否合理符合这些权利。</information> 根据以上信息，消费者应确认自己的权益是否受到了侵犯，比如产品是否存在安全隐患或服务能否满足协议约定，从而有依据发起投诉。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "准备相关证据",
+      "content": "消费者还需要准备充足的证据支持投诉内容，例如：购买发票、合同、服务记录或照片等，以证明商品或服务确实存在问题且责任方可追溯。证据越充分越有利于投诉成功。"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "选择合理的投诉渠道",
+      "content": "应选择正确的投诉渠道，如商家的客户服务部门、市场监管部门或消协组织。根据不同问题涉及的范围，渠道可能有所不同。可搜寻与具体投诉问题相关的监管部门。<search>市场监督管理部门职责</search>"
+    },
+    {
+      "action": "Inner Thinking",
+      "title": "注意投诉语言表达",
+      "content": "投诉需明确简洁，语言需重点突出所遇问题及所需解决方案。同时避免不必要的情绪化，保持专业和尊重为宜，以增加沟通效率。"
+    },
+    {
+      "action": "Final Conclusion",
+      "content": "消费者投诉时应注意明确投诉内容和法律依据，准备充足证据支持，选择适当的投诉渠道，以及保持专业的语言表达。遵循这些步骤可以有效提高投诉的成功率。"
+    },
+    {
+      "action": "Verification",
+      "content": "经核对以上步骤符合问题逻辑，结论完整无误，结束流程。"
+    }
+  ],
+  "gpt4_query_cot": [
+    "<question>\n消费者投诉注意什么问题\n</question>\n\nPlease respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **\"Inner Thinking\"**, **\"Final Conclusion\"**, and **\"Verification\"**:\n\n- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>\"keyword\"</search>, where \"keyword\" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>\"search results\"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>\"final answer\"</answer>.\n- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.\n- **'Verification'**: At this stage, you verify the conclusion from the \"Final Conclusion\" step. If the conclusion holds, end the process. If not, return to \"Inner Thinking\" for further reasoning. No title is required here.\n\nThe output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:\n```json\n{\n  \"CoT\": [\n    {\"action\": \"Inner Thinking\", \"title\": \"...\", \"content\": \"...\"},\n    ...,\n    {\"action\": \"Final Conclusion\", \"content\": \"...\"},\n    {\"action\": \"Verification\", \"content\": \"...\"}\n  ]\n}\n```",
+    "<Model Response>  \n消费者投诉时应注意明确投诉内容和法律依据，准备充足证据支持，选择适当的投诉渠道，以及保持专业的语言表达。遵循这些步骤可以有效提高投诉的成功率。  \n</Model Response>  \n\n<Reference Answer>  \n１、投诉要及时：消费者因购买、使用商品或接受服务，其权益受到损害时，应及时向所在地的受理产品质量问题部门投诉。及时投诉有利于正确判断商品损坏程度与正常磨损的区别，能够比较准确地说明情况，特别是有关服务质量等问题尤其重要。\n２、要实事求是：消费者权益受到损害时，无论与责任人——生产单位或销售、经营者进行协商，或向受理产品质量问题部门投诉，应实事求是说明或写明情况，不夸大，不缩小，不歪曲，不隐瞒事实真相。\n３、要求和意见要合理合法：投诉理由要正当，符合《产品质量法》、《消费者权益保护法》、《部分商品修理更换退货责任规定》等国家有关法律、法规。\n４、材料要完备：投诉时向受理部门写出文字材料，提供购货时的发票或售货凭证。\n５、证据要确凿：\n（１）提供有关产品造成损害的证据；\n（２）提供损害是由产品或服务缺陷造成的证据。\n</Reference Answer>  \n\nYou are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output \"True\" if the response is correct, and \"False\" otherwise.",
+    "<Thought Process>\n### 明确投诉范围和依据\n消费者在投诉时需要明确投诉的范围和依据，通常与《消费者权益保护法》相关。例如，投诉涉及产品质量、服务问题或违法合同条款等，因此宜先查询相关法律条文。<search>消费者权益保护法</search>\n\n### 分析相关法律条文\n<information>消费者权益保护法规定消费者投诉权包括保障安全权、知情权、选择权、公平交易权和依法求偿权等。消费者在发起投诉前，需检查是否合理符合这些权利。</information> 根据以上信息，消费者应确认自己的权益是否受到了侵犯，比如产品是否存在安全隐患或服务能否满足协议约定，从而有依据发起投诉。\n\n### 准备相关证据\n消费者还需要准备充足的证据支持投诉内容，例如：购买发票、合同、服务记录或照片等，以证明商品或服务确实存在问题且责任方可追溯。证据越充分越有利于投诉成功。\n\n### 选择合理的投诉渠道\n应选择正确的投诉渠道，如商家的客户服务部门、市场监管部门或消协组织。根据不同问题涉及的范围，渠道可能有所不同。可搜寻与具体投诉问题相关的监管部门。<search>市场监督管理部门职责</search>\n\n### 注意投诉语言表达\n投诉需明确简洁，语言需重点突出所遇问题及所需解决方案。同时避免不必要的情绪化，保持专业和尊重为宜，以增加沟通效率。\n\n### Conclusion\n消费者投诉时应注意明确投诉内容和法律依据，准备充足证据支持，选择适当的投诉渠道，以及保持专业的语言表达。遵循这些步骤可以有效提高投诉的成功率。\n\n### Verification\n经核对以上步骤符合问题逻辑，结论完整无误，结束流程。\n</Thought Process>\n\n<Question>\n消费者投诉注意什么问题\n</Question>\n\nThe <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:\n\n1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.\n2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as \"hmm,\" \"oh,\" \"also,\" or \"wait.\"\n3. Preserve all essential intermediate steps , including <search>\"keyword\"</search> and <information>\"search results\"</information> tags.\n4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.\n\nReturn directly the revised natural thinking in JSON format as follows:\n```json\n{\n  \"NaturalReasoning\": \"...\"\n}\n```",
+    "<Internal Thinking>\n嗯，消费者在投诉时，首先必须搞清楚投诉的范围是什么，以及有什么依据可以支持自己的主张。像是《消费者权益保护法》这样的法律应该很重要，得先确认它里面提到过哪些权利可以用啊。行，我搜一下，看看这个法里对消费者有什么保障。<search>消费者权益保护法</search>\n\n好，搜到了一些内容。《消费者权益保护法》说消费者有五个主要的权利，其中包括保障安全权、知情权、选择权、公平交易权和依法求偿权。也就是说，我要先看看自己的问题是不是跟这些权利有关。比如我买了东西发现它有质量问题，那可能就涉及到安全权或公平交易权。服务不给力或者违反约定的话，也跟知情权或者选择权有关系。嗯，感觉有依据的话投诉会更有说服力。\n\n不过光知道理论还不够，还得有证据支持。比如说，发票、合同这些东西一定不能丢，要有交易的记录才行。不止是纸面文件，像照片或者视频也可以用，特别是用来说明问题的具体情况和商家责任。嗯，证据还是越多越好，越清晰越保险，毕竟这是证明问题的强力武器。\n\n然后，渠道也要选对。如果是直接对商家有问题，那最合适的可能是联系他们客户服务部门试试看，但如果感觉他们不作为或者问题涉及法律，那就要找像市场监管部门这样的官方机构才行。还有消费者协会专门处理这些事，它们可以提供更多指导。嗯，应该要查一下具体的市场监管部门职责，不然可能不知道找谁。<search>市场监督管理部门职责</search>\n\n还有个特别实际的点，就是注意投诉的表达方式。语言方面要尽量简洁明确，不绕圈子，直接说遇到的问题，能具体就具体，也要清楚自己希望对方怎么解决。情绪虽然难免，但最好还是别太情绪化，毕竟对方也会更愿意听专业而有条理的说法，这样才能提高解决的效率。\n\n说到这儿，整个流程感觉就比较清晰了。总体而言呢，消费者在投诉时确实要注意几个关键点：明确自己的权利和投诉依据，准备好详细的证据支持，选对投诉渠道，最后在表达时尽量专业又准确。做好这些，成功率肯定比乱投诉要高很多！\n</Internal Thinking>\n\n<Question>\n消费者投诉注意什么问题\n</Question>\n\nThe <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."
+  ],
+  "gpt4_response_cot": [
+    "```json\n{\n  \"CoT\": [\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"明确投诉范围和依据\",\n      \"content\": \"消费者在投诉时需要明确投诉的范围和依据，通常与《消费者权益保护法》相关。例如，投诉涉及产品质量、服务问题或违法合同条款等，因此宜先查询相关法律条文。<search>消费者权益保护法</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"分析相关法律条文\",\n      \"content\": \"<information>消费者权益保护法规定消费者投诉权包括保障安全权、知情权、选择权、公平交易权和依法求偿权等。消费者在发起投诉前，需检查是否合理符合这些权利。</information> 根据以上信息，消费者应确认自己的权益是否受到了侵犯，比如产品是否存在安全隐患或服务能否满足协议约定，从而有依据发起投诉。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"准备相关证据\",\n      \"content\": \"消费者还需要准备充足的证据支持投诉内容，例如：购买发票、合同、服务记录或照片等，以证明商品或服务确实存在问题且责任方可追溯。证据越充分越有利于投诉成功。\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"选择合理的投诉渠道\",\n      \"content\": \"应选择正确的投诉渠道，如商家的客户服务部门、市场监管部门或消协组织。根据不同问题涉及的范围，渠道可能有所不同。可搜寻与具体投诉问题相关的监管部门。<search>市场监督管理部门职责</search>\"\n    },\n    {\n      \"action\": \"Inner Thinking\",\n      \"title\": \"注意投诉语言表达\",\n      \"content\": \"投诉需明确简洁，语言需重点突出所遇问题及所需解决方案。同时避免不必要的情绪化，保持专业和尊重为宜，以增加沟通效率。\"\n    },\n    {\n      \"action\": \"Final Conclusion\",\n      \"content\": \"消费者投诉时应注意明确投诉内容和法律依据，准备充足证据支持，选择适当的投诉渠道，以及保持专业的语言表达。遵循这些步骤可以有效提高投诉的成功率。\"\n    },\n    {\n      \"action\": \"Verification\",\n      \"content\": \"经核对以上步骤符合问题逻辑，结论完整无误，结束流程。\"\n    }\n  ]\n}\n```",
+    "True",
+    "```json\n{\n  \"NaturalReasoning\": \"嗯，消费者在投诉时，首先必须搞清楚投诉的范围是什么，以及有什么依据可以支持自己的主张。像是《消费者权益保护法》这样的法律应该很重要，得先确认它里面提到过哪些权利可以用啊。行，我搜一下，看看这个法里对消费者有什么保障。<search>消费者权益保护法</search>\\n\\n好，搜到了一些内容。《消费者权益保护法》说消费者有五个主要的权利，其中包括保障安全权、知情权、选择权、公平交易权和依法求偿权。也就是说，我要先看看自己的问题是不是跟这些权利有关。比如我买了东西发现它有质量问题，那可能就涉及到安全权或公平交易权。服务不给力或者违反约定的话，也跟知情权或者选择权有关系。嗯，感觉有依据的话投诉会更有说服力。\\n\\n不过光知道理论还不够，还得有证据支持。比如说，发票、合同这些东西一定不能丢，要有交易的记录才行。不止是纸面文件，像照片或者视频也可以用，特别是用来说明问题的具体情况和商家责任。嗯，证据还是越多越好，越清晰越保险，毕竟这是证明问题的强力武器。\\n\\n然后，渠道也要选对。如果是直接对商家有问题，那最合适的可能是联系他们客户服务部门试试看，但如果感觉他们不作为或者问题涉及法律，那就要找像市场监管部门这样的官方机构才行。还有消费者协会专门处理这些事，它们可以提供更多指导。嗯，应该要查一下具体的市场监管部门职责，不然可能不知道找谁。<search>市场监督管理部门职责</search>\\n\\n还有个特别实际的点，就是注意投诉的表达方式。语言方面要尽量简洁明确，不绕圈子，直接说遇到的问题，能具体就具体，也要清楚自己希望对方怎么解决。情绪虽然难免，但最好还是别太情绪化，毕竟对方也会更愿意听专业而有条理的说法，这样才能提高解决的效率。\\n\\n说到这儿，整个流程感觉就比较清晰了。总体而言呢，消费者在投诉时确实要注意几个关键点：明确自己的权利和投诉依据，准备好详细的证据支持，选对投诉渠道，最后在表达时尽量专业又准确。做好这些，成功率肯定比乱投诉要高很多！\"\n}\n```",
+    "消费者在投诉时需要注意以下几个关键问题：\n\n1. **明确投诉的依据和范围**  \n   投诉前需了解自身的权利，尤其是《消费者权益保护法》规定的保障安全权、知情权、选择权、公平交易权、和依法求偿权。确保投诉的内容与这些权利相关。根据具体问题，识别问题是否涉及质量、安全、服务、信息披露等方面，从法律上找到支持自己的依据。\n\n2. **准备充分的证据**  \n   投诉的有效性很大程度上取决于证据。消费者应该保留相关交易记录，包括发票、合同、电子订单截图等。同时，如果涉及质量问题，可提供照片、视频等实物问题的证明。证据越充分、越清晰，投诉成功的可能性就越高。\n\n3. **选择合适的投诉渠道**  \n   投诉时应选择最适合的渠道。如果是针对商家服务问题，建议先与商家客服直接沟通解决；如果商家不予处理或问题涉及法律，应向市场监管部门或消费者协会投诉。市场监督管理部门通常负责处理合同纠纷、虚假广告、产品质量问题等事务。\n\n4. **表达方式精准、理性**  \n   投诉过程中语言应简练且明确，描述问题时尽量具体，清楚讲述事实与诉求。避免情绪化表达，应以理性、专业的态度与对方沟通，这样更容易让对方接受并有效解决问题。\n\n总的来说，消费者需要在投诉时清楚自己争取的权利，准备有力的证明材料，选择有效的沟通渠道，并以专业的态度进行表达，以提高投诉的成功率。"
+  ],
+  "response_struct": [
+    [
+      {
+        "action": "Inner Thinking",
+        "title": "明确投诉范围和依据",
+        "content": "消费者在投诉时需要明确投诉的范围和依据，通常与《消费者权益保护法》相关。例如，投诉涉及产品质量、服务问题或违法合同条款等，因此宜先查询相关法律条文。<search>消费者权益保护法</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "分析相关法律条文",
+        "content": "<information>消费者权益保护法规定消费者投诉权包括保障安全权、知情权、选择权、公平交易权和依法求偿权等。消费者在发起投诉前，需检查是否合理符合这些权利。</information> 根据以上信息，消费者应确认自己的权益是否受到了侵犯，比如产品是否存在安全隐患或服务能否满足协议约定，从而有依据发起投诉。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "准备相关证据",
+        "content": "消费者还需要准备充足的证据支持投诉内容，例如：购买发票、合同、服务记录或照片等，以证明商品或服务确实存在问题且责任方可追溯。证据越充分越有利于投诉成功。"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "选择合理的投诉渠道",
+        "content": "应选择正确的投诉渠道，如商家的客户服务部门、市场监管部门或消协组织。根据不同问题涉及的范围，渠道可能有所不同。可搜寻与具体投诉问题相关的监管部门。<search>市场监督管理部门职责</search>"
+      },
+      {
+        "action": "Inner Thinking",
+        "title": "注意投诉语言表达",
+        "content": "投诉需明确简洁，语言需重点突出所遇问题及所需解决方案。同时避免不必要的情绪化，保持专业和尊重为宜，以增加沟通效率。"
+      },
+      {
+        "action": "Final Conclusion",
+        "content": "消费者投诉时应注意明确投诉内容和法律依据，准备充足证据支持，选择适当的投诉渠道，以及保持专业的语言表达。遵循这些步骤可以有效提高投诉的成功率。"
+      },
+      {
+        "action": "Verification",
+        "content": "经核对以上步骤符合问题逻辑，结论完整无误，结束流程。"
+      }
+    ]
+  ],
+  "response_type": [
+    "Init_CoT"
+  ],
+  "prior_fail_try": [],
+  "Complex_CoT": "嗯，消费者在投诉时，首先必须搞清楚投诉的范围是什么，以及有什么依据可以支持自己的主张。像是《消费者权益保护法》这样的法律应该很重要，得先确认它里面提到过哪些权利可以用啊。行，我搜一下，看看这个法里对消费者有什么保障。<search>消费者权益保护法</search>\n\n好，搜到了一些内容。《消费者权益保护法》说消费者有五个主要的权利，其中包括保障安全权、知情权、选择权、公平交易权和依法求偿权。也就是说，我要先看看自己的问题是不是跟这些权利有关。比如我买了东西发现它有质量问题，那可能就涉及到安全权或公平交易权。服务不给力或者违反约定的话，也跟知情权或者选择权有关系。嗯，感觉有依据的话投诉会更有说服力。\n\n不过光知道理论还不够，还得有证据支持。比如说，发票、合同这些东西一定不能丢，要有交易的记录才行。不止是纸面文件，像照片或者视频也可以用，特别是用来说明问题的具体情况和商家责任。嗯，证据还是越多越好，越清晰越保险，毕竟这是证明问题的强力武器。\n\n然后，渠道也要选对。如果是直接对商家有问题，那最合适的可能是联系他们客户服务部门试试看，但如果感觉他们不作为或者问题涉及法律，那就要找像市场监管部门这样的官方机构才行。还有消费者协会专门处理这些事，它们可以提供更多指导。嗯，应该要查一下具体的市场监管部门职责，不然可能不知道找谁。<search>市场监督管理部门职责</search>\n\n还有个特别实际的点，就是注意投诉的表达方式。语言方面要尽量简洁明确，不绕圈子，直接说遇到的问题，能具体就具体，也要清楚自己希望对方怎么解决。情绪虽然难免，但最好还是别太情绪化，毕竟对方也会更愿意听专业而有条理的说法，这样才能提高解决的效率。\n\n说到这儿，整个流程感觉就比较清晰了。总体而言呢，消费者在投诉时确实要注意几个关键点：明确自己的权利和投诉依据，准备好详细的证据支持，选对投诉渠道，最后在表达时尽量专业又准确。做好这些，成功率肯定比乱投诉要高很多！",
+  "Response": "消费者在投诉时需要注意以下几个关键问题：\n\n1. **明确投诉的依据和范围**  \n   投诉前需了解自身的权利，尤其是《消费者权益保护法》规定的保障安全权、知情权、选择权、公平交易权、和依法求偿权。确保投诉的内容与这些权利相关。根据具体问题，识别问题是否涉及质量、安全、服务、信息披露等方面，从法律上找到支持自己的依据。\n\n2. **准备充分的证据**  \n   投诉的有效性很大程度上取决于证据。消费者应该保留相关交易记录，包括发票、合同、电子订单截图等。同时，如果涉及质量问题，可提供照片、视频等实物问题的证明。证据越充分、越清晰，投诉成功的可能性就越高。\n\n3. **选择合适的投诉渠道**  \n   投诉时应选择最适合的渠道。如果是针对商家服务问题，建议先与商家客服直接沟通解决；如果商家不予处理或问题涉及法律，应向市场监管部门或消费者协会投诉。市场监督管理部门通常负责处理合同纠纷、虚假广告、产品质量问题等事务。\n\n4. **表达方式精准、理性**  \n   投诉过程中语言应简练且明确，描述问题时尽量具体，清楚讲述事实与诉求。避免情绪化表达，应以理性、专业的态度与对方沟通，这样更容易让对方接受并有效解决问题。\n\n总的来说，消费者需要在投诉时清楚自己争取的权利，准备有力的证明材料，选择有效的沟通渠道，并以专业的态度进行表达，以提高投诉的成功率。",
+  "Question": "消费者投诉注意什么问题"
+}
