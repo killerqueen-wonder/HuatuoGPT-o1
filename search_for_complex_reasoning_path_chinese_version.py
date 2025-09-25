@@ -263,7 +263,7 @@ def main():
     parser.add_argument("--efficient_search", type=bool, default=True, help="Enable efficient search strategy.")
     parser.add_argument("--num_process", type=int, default=5, help="Number of parallel processes.")
     parser.add_argument("--limit_num", type=int, help="Limit the number of processed items.")
-    parser.add_argument("--out_path", type=str,default='', help=" the path to save output data")
+    parser.add_argument("--out_path", type=str,default='', help="the path to save output data")
     
     args = parser.parse_args()
 
