@@ -474,7 +474,8 @@ def main():
 
      # Merge and save final output
     final_data = merge_saved_files(save_dir)
-    output_path = f"{task_name}_{len(final_data)}.json"
+    # output_path = f"{task_name}_{len(final_data)}.json"
+    output_path = f"{args.out_path}/{task_name}_{len(final_data)}.json"
     print(f"Processed {len(final_data)} items. Saving to {output_path}")
 
     with open(output_path, 'w', encoding='utf-8') as file:

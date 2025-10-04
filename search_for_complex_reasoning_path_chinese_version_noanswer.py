@@ -21,30 +21,21 @@ import copy
 from openai import OpenAI
 
 class GPT:
-    def __init__(self, model_name, api_url, api_key):
+    def __init__(self, model_name, api_url, api_key,temperature):
         self.model_name = model_name
         self.api_url = api_url
         self.api_key = api_key
+        self.temperature = temperature
         print(f"Using model: {self.model_name}")
 
     def call(self, content, additional_args={}):
-        # headers = {
-        #     "Content-Type": "application/json",
-        #     "Authorization": f"Bearer {self.api_key}"
-        # }
-        # payload = {
-        #     "model": self.model_name,
-        #     "messages": [{'role': 'user', 'content': content}],
-        #     **additional_args,
-        # }
-        # response = requests.post(self.api_url, headers=headers, json=payload)
-        # response_data = response.json()
+        
         client = OpenAI(api_key=self.api_key, base_url=self.api_url)
 
         response = client.chat.completions.create(
             model=self.model_name,
             messages=[{"role": "user", "content": content}],
-            
+            temperature=self.temperature,
             stream=False
         )
         response_data=response.choices[0].message.content
@@ -58,30 +49,31 @@ class GPT:
     def retry_call(self, content, additional_args={"max_tokens": 8192}):
         return self.call(content, additional_args)
 
-search_prompt='''When, during your reasoning process, you need to look up information about a new entity(such as a law or regulation), output the object to be searched using the following format: <search>"keyword"</search>, where "keyword" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>"search results"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>"final answer"</answer>.'''
-
-verify_prompt = """<Model Response>  
-{}  
-</Model Response>  
-
-<Reference Answer>  
-{}
-</Reference Answer>  
-
-You are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output "True" if the response is correct, and "False" otherwise."""
 
 
 query_prompt_init = """<question>
 {}
 </question>
 
-Please respond to the above question <question> using the Chain of Thought (CoT) reasoning method. Your response should consist of multiple steps, each of which includes three types of actions: **"Inner Thinking"**, **"Final Conclusion"**, and **"Verification"**:
+请使用链式思维（Chain of Thought, CoT）推理方法来回答上述问题<question>。你的回答应包含多个步骤，每个步骤由三种行动类型组成：“内部思考”、“最终结论”和“验证”：
 
-- **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>"keyword"</search>, where "keyword" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>"search results"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>"final answer"</answer>.
-- **'Final Conclusion'**: At this stage, you summarize the correct reasoning from previous 'Inner Thinking' steps and provide the final answer. No title is required here.
-- **'Verification'**: At this stage, you verify the conclusion from the "Final Conclusion" step. If the conclusion holds, end the process. If not, return to "Inner Thinking" for further reasoning. No title is required here.
+1.内部思考（Inner Thinking）：
+将推理过程拆解为多个简洁步骤。每一步应以一个简短标题开头，以明确当前思考目的。
+当推理中需要查找某个新的法律实体（如法律、法规等）时，请使用以下格式输出要查询的对象：
+<search>“关键词”</search>，其中“关键词”应替换为需要查询的主题。
+然后在知识库中检索该关键词，并将检索结果填入：
+<information>“搜索结果”</information>。
+根据返回的搜索结果继续推理，形成“思考–搜索–再思考”的循环。
+当你判断可以给出最终答案时，请使用以下格式输出：
+<answer>“最终答案”</answer>。
 
-The output format must strictly follow the JSON structure below, and all content within the JSON fields should be written in **Chinese**:
+2.最终结论（Final Conclusion）：
+在此阶段，总结前面“内部思考”步骤中的正确推理，并给出最终答案。此部分不需要标题。
+
+3.验证（Verification）：
+在此阶段，验证“最终结论”步骤中的结论是否成立。若结论正确，则结束推理；若不成立，则返回“内部思考”阶段继续推理。此部分不需要标题。
+
+###输出格式必须严格遵循以下JSON结构，且JSON字段中的所有内容都必须用中文书写：
 ```json
 {{
   "CoT": [
@@ -93,79 +85,6 @@ The output format must strictly follow the JSON structure below, and all content
 }}
 ```"""
 
-
-
-gen_prompt_rethink_Exploring_New_Path = """<question>
-{}
-</question>
-
-<previous reasoning>
-{}
-<previous reasoning>
-
-<response requirements>
-Your response must include the following steps, each composed of three types of actions: **"Inner Thinking"**, **"Final Conclusion"**, and **"Verification"**:
-
-1. **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>"keyword"</search>, where "keyword" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>"search results"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>"final answer"</answer>.
-2. **Final Conclusion**: Summarize the correct reasoning from all previous 'Inner Thinking' steps and provide the final answer. No title is needed for this section.
-3. **Verification**: Verify the accuracy of the "Final Conclusion". If it holds, conclude the process. Otherwise, return to "Inner Thinking" for further refinement.
-
-</response requirements>
-
-<question> represents the question to be answered, and <previous reasoning> contains your prior reasoning. Your task is to continue from the current 'Verification' step. I have manually reviewed the reasoning and determined that the **Final Conclusion** is false. Your 'Verification' results must align with mine. Proceed to refine the reasoning by exploring new approaches to solving this problem and construct a new Final Conclusion.
-
-### Output Format
-Strictly follow the JSON structure below. All content within the JSON fields must be written in **Chinese**. You do not need to repeat your previous reasoning. Begin directly from the next 'Verification' stage.
-
-```json
-{{
-"CoT": [
-    {{"action": "Verification", "content": "..."}},
-    {{"action": "Inner Thinking", "title": "...", "content": "..."}},
-    ...,
-    {{"action": "Final Conclusion", "content": "..."}},
-    {{"action": "Verification", "content": "..."}}
-]
-}}
-```"""
-
-
-
-gen_prompt_w_label = """<question>
-{}
-</question>
-
-<previous reasoning>
-{}
-</previous reasoning>
-
-<response requirements>
-Your response must include the following steps, each composed of three types of actions: **"Inner Thinking"**, **"Final Conclusion"**, and **"Verification"**:
-
-1. **Inner Thinking**: Break down the reasoning process into multiple concise steps. Each step should start with a brief title to clarify its purpose.When, during your reasoning process, you need to look up information about a new legal entity(such as a law or regulation), output the object to be searched using the following format: <search>"keyword"</search>, where "keyword" should be replaced with the subject you need to search. Then search your knowledge base for that keyword and place the search results into: <information>"search results"</information>. Based on the returned search results, continue your reasoning. Repeat the think–search–think cycle. When you judge that you can produce the final answer, output it as: <answer>"final answer"</answer>.
-2. **Final Conclusion**: Summarize the correct reasoning from all previous 'Inner Thinking' steps and provide the final answer. No title is needed for this section.
-3. **Verification**: Verify the accuracy of the "Final Conclusion". If it holds, conclude the process. Otherwise, return to "Inner Thinking" for further refinement.
-
-</response requirements>
-
-<question> represents the question to be answered, and <previous reasoning> contains your prior reasoning. Your task is to continue from the current 'Verification' step. Now, I'll secretly tell you that the labeled answer is "{}", but you must pretend not to know. Your 'Verification' requires careful consideration, and if incorrect, you need to provide new Inner Thinking steps and a new Final Conclusion to ensure the final answer aligns with the correct one.
-
-### Output Format
-Strictly follow the JSON structure below. All content within the JSON fields must be written in **Chinese**. You do not need to repeat your previous reasoning. Begin directly from the next 'Verification' stage.
-
-```json
-{{
-"CoT": [
-    {{"action": "Verification", "content": "..."}},
-    {{"action": "Inner Thinking", "title": "...", "content": "..."}},
-    ...,
-    {{"action": "Final Conclusion", "content": "..."}},
-    {{"action": "Verification", "content": "..."}}
-]
-}}
-```"""
-
-
 reformat_to_complex_cot_prompt = """<Thought Process>
 {}
 </Thought Process>
@@ -174,14 +93,14 @@ reformat_to_complex_cot_prompt = """<Thought Process>
 {}
 </Question>
 
-The <Thought Process> above reflects the model's reasoning based on the <Question>. Your task is to rewrite the <Thought Process> to resemble a more human-like, intuitive natural thinking process in Chinese. The new version should:
+上述的<Thought Process>反映了模型基于<Question>的推理过程。你的任务是将这个<Thought Process>改写为更符合人类直觉、自然思考风格的中文版本。新的版本应当：
 
-1. Be presented as step-by-step reasoning, with each thought on a new line separated by a line break.
-2. Avoid structured titles or formatting, focusing on natural transitions. Use casual and natural language for transitions or validations, such as "hmm," "oh," "also," or "wait."
-3. Preserve all essential intermediate steps , including <search>"keyword"</search> and <information>"search results"</information> tags.
-4. Expand the content, making the reasoning richer, more detailed, and logically clear while still being conversational and intuitive.
+1.以逐步推理的方式呈现，每个思考步骤独立成行，用换行符分隔。
+2.不使用结构化标题或格式，保持自然的过渡。使用一些口语化、自然的衔接词，如“嗯”、“哦”、“另外”、“等等”等。
+3.保留所有关键的中间步骤，包括<search>“关键词”</search>和<information>“搜索结果”</information>标签。
+4.扩展原内容，使推理更丰富、细节更充分、逻辑更清晰，同时保持对话式、直觉化的思维风格。
 
-Return directly the revised natural thinking in JSON format as follows:
+直接以以下JSON格式返回改写后的自然思维内容：
 ```json
 {{
   "NaturalReasoning": "..."
@@ -196,12 +115,36 @@ get_final_response_prompt = """<Internal Thinking>
 {}
 </Question>
 
-The <Internal Thinking> represents your internal thoughts about the <Question>. Based on this, generate a rich and high-quality final response to the user in Chinese. If there is a clear answer, provide it first. Ensure your final response closely follows the <Question>. The response style should resemble GPT-4's style as much as possible. Output only your final response, without any additional content."""
+<Internal Thinking>代表了你对<Question>的内部思考过程。基于此,请用中文生成一个丰富且高质量的最终回答。如果有明确的答案,请先提供答案。确保你的最终回答紧密贴合<Question>的内容。只输出你的最终回答,不要包含任何额外内容。
+"""
 
-# search strategies
+response_quarity_rank_prompt='''
+你的任务是评判回答的质量。根据<Question>标签内的问题，和<response>标签内的回答，给出以下几个方面的得分：
+1.准确，专业。该回答多大程度上引用条例正确且有效，引用法条来源明确，符合客观事实。最高得分5，最低得分0.
+2.匹配问题，完整作答。该回答多大程度上针对问题作答，没有遗漏关键点，没有偏题离题。多大程度上考虑到问题的主要方面，以及可能的额外情况，前提条件和后续步骤，潜在的风险。最高得分5，最低得分0.
+3.逻辑清晰，推理合理。该回答多大程度上根据前提依据，合理推导结论，推理过程清晰有层次（例如“事实-法律-结论”）。最高得分5，最低得分0.
+4.实用。该回答多大程度上提供可行的解决方案和路径。最高得分5，最低得分0.
+最后给出以上四项标准的得分数字，不要解释，不要其他内容。
 
-search_strategies = [('Exploring New Paths',gen_prompt_rethink_Exploring_New_Path)]
-# search_strategies = [('Backtracking',gen_prompt_rethink_Backtracking),('Exploring New Paths',gen_prompt_rethink_Exploring_New_Path),('Verification',gen_prompt_rethink_Verification),('Correction',gen_prompt_rethink_Correction)]
+##严格按照json格式输出，以下是范例输出：
+{{
+"Accuracy":4,
+"Relative":5,
+"Reasoning":2,
+"Practicality":3
+}}
+
+评判以下问题和回答：
+<Question>
+{}
+</Question>
+<response>
+{}
+</response>
+
+
+'''
+
 
 
 
@@ -222,6 +165,7 @@ def parse_gpt_response(response):
         return True,da
     except Exception as e:
         print(e)
+        print(f"[debug]{response[:2000]}")
         traceback.print_exc()
         return False,None
 
@@ -234,10 +178,11 @@ def parse_gpt_response_reformat(response):
         da = json.loads(response.replace('\n',''))
 
         assert isinstance(da["NaturalReasoning"],str), "NaturalReasoning should be str"
-        assert '\n' in da["NaturalReasoning"], "NaturalReasoning should have \\n"
+        # assert '\n' in da["NaturalReasoning"], "NaturalReasoning should have \\n"
         return True,da
     except Exception as e:
         print(e)
+        print(f"[debug][reformat]{response[:2000]}")
         traceback.print_exc()
         return False,None 
     
@@ -263,15 +208,16 @@ def main():
     parser.add_argument("--efficient_search", type=bool, default=True, help="Enable efficient search strategy.")
     parser.add_argument("--num_process", type=int, default=5, help="Number of parallel processes.")
     parser.add_argument("--limit_num", type=int, help="Limit the number of processed items.")
+    parser.add_argument("--temperature", default=0.1,help="temperature of model")
     parser.add_argument("--out_path", type=str,default='', help="the path to save output data")
     
     args = parser.parse_args()
 
+    
     def filter_data(tmpdata):
         filtered_data = []
         for da in tmpdata:
-            if 'question' not in da :
-            # if 'Open-ended Verifiable Question' not in da or 'Ground-True Answer' not in da:
+            if 'Open-ended Verifiable Question' not in da :
                 continue
             filtered_data.append(da)
 
@@ -314,7 +260,7 @@ def main():
     task_name = f'{os.path.split(args.data_path)[-1].replace(".json","")}_CoT_search'
     save_dir = f'{args.out_path}/{task_name}'
 
-    gpt_instance = GPT(model_name=args.model_name, api_url=args.api_url, api_key=args.api_key)
+    gpt_instance = GPT(model_name=args.model_name, api_url=args.api_url, api_key=args.api_key,temperature=args.temperature)
 
         
     global wrongtime
@@ -330,7 +276,7 @@ def main():
             d['response_struct'] = []
             d['response_type'] = []
             d['prior_fail_try'] = []
-            d['Open-ended Verifiable Question']=d['question']
+            # d['Open-ended Verifiable Question']=d['question']
 
             save_path = os.path.join(save_dir, str(d['process_id']) + ".json")
 
@@ -376,6 +322,12 @@ def main():
                         d['gpt4_response_cot'].append(response)
                         d["Response"] = response
                         d['Question'] = d['Open-ended Verifiable Question']
+                        #evaluate the response
+                        evaluate=response_quarity_rank_prompt.format(d['Question'],response)
+                        evaluation=gpt_instance.retry_call(evaluate)
+                        d["evaluation"] = evaluation
+                        # print(f"[debug]{evaluation}")
+
                         break
 
             with open(save_path, mode="w", encoding="utf-8") as fw:
@@ -422,12 +374,11 @@ def main():
 
      # Merge and save final output
     final_data = merge_saved_files(save_dir)
-    output_path = f"{task_name}_{len(final_data)}.json"
+    output_path = f"{args.out_path}/{task_name}_{len(final_data)}.json"
     print(f"Processed {len(final_data)} items. Saving to {output_path}")
 
     with open(output_path, 'w', encoding='utf-8') as file:
         json.dump(final_data, file, ensure_ascii=False, indent=2)
-
 
 if __name__ == '__main__':
     main()
