@@ -146,7 +146,19 @@ response_quarity_rank_prompt='''
 '''
 
 
-
+def fix_json_braces(text: str) -> str:
+    """
+    检查JSON文本中每个'}'之前的字符，
+    若不是引号'"'，则在'}'前补一个'"'。
+    """
+    result = []
+    for i, ch in enumerate(text):
+        if ch == '}':
+            # 前一个字符存在且不是双引号
+            if i > 0 and text[i - 1] != '"':
+                result.append('"')  # 插入引号
+        result.append(ch)
+    return ''.join(result)
 
 def extract_bracket_content(text):
         # Extract content between the first '{' and the last '}'
@@ -154,20 +166,45 @@ def extract_bracket_content(text):
         return match.group(0) if match else None
 
 def parse_gpt_response(response):
+    def load_and_validate(text):
+        if text[0] != '{':
+            text = extract_bracket_content(text)
+        data = json.loads(text.replace('\n', ''))
+        cot = data.get("CoT")
+        assert isinstance(cot, list), "CoT should be list"
+        assert cot[-3]['action'] == 'Inner Thinking'
+        assert cot[-2]['action'] == 'Final Conclusion'
+        assert cot[-1]['action'] == 'Verification'
+        return data
+
     try:
-        if '{' != response[0]:
-            response = extract_bracket_content(response)
-        da = json.loads(response.replace('\n',''))
-        assert isinstance(da["CoT"],list), "CoT should be list"
-        assert da['CoT'][-3]['action'] == 'Inner Thinking', 'Inner Thinking should be the third last action'
-        assert da['CoT'][-2]['action'] == 'Final Conclusion', 'Final Conclusion should be the second last action'
-        assert da['CoT'][-1]['action'] == 'Verification', 'Verification should be the last action'
-        return True,da
-    except Exception as e:
-        print(e)
-        print(f"[debug]{response[:2000]}")
-        traceback.print_exc()
-        return False,None
+        return True, load_and_validate(response)
+    except Exception:
+        try:
+            fixed = fix_json_braces(response)
+            return True, load_and_validate(fixed)
+        except Exception as e:
+            print(e)
+            print(f"[debug]{response[:2000]}")
+            traceback.print_exc()
+            return False, None
+    
+
+# def parse_gpt_response(response):
+#     try:
+#         if '{' != response[0]:
+#             response = extract_bracket_content(response)
+#         da = json.loads(response.replace('\n',''))
+#         assert isinstance(da["CoT"],list), "CoT should be list"
+#         assert da['CoT'][-3]['action'] == 'Inner Thinking', 'Inner Thinking should be the third last action'
+#         assert da['CoT'][-2]['action'] == 'Final Conclusion', 'Final Conclusion should be the second last action'
+#         assert da['CoT'][-1]['action'] == 'Verification', 'Verification should be the last action'
+#         return True,da
+#     except Exception as e:
+#         print(e)
+#         print(f"[debug]{response[:2000]}")
+#         traceback.print_exc()
+#         return False,None
 
 def parse_gpt_response_reformat(response):
     try:
@@ -328,11 +365,18 @@ def main():
                         d["evaluation"] = evaluation
                         # print(f"[debug]{evaluation}")
 
+                        #only save data with final COT
+                        with open(save_path, mode="w", encoding="utf-8") as fw:
+                            json.dump(d, fw, ensure_ascii=False,indent=2)
+                            wrongtime = 0
+
+
+
                         break
 
-            with open(save_path, mode="w", encoding="utf-8") as fw:
-                json.dump(d, fw, ensure_ascii=False,indent=2)
-                wrongtime = 0
+            # with open(save_path, mode="w", encoding="utf-8") as fw:
+            #     json.dump(d, fw, ensure_ascii=False,indent=2)
+            #     wrongtime = 0
 
         except Exception as e:
             traceback.print_exc()
@@ -368,6 +412,9 @@ def main():
 
     input_data = deduplicate_data(data, processed_data)
     print(f"Items remaining for processing: {len(input_data)}")
+
+    #process todo files
+    data=input_data
 
     with ThreadPoolExecutor(max_workers=args.num_process) as executor:
         list(tqdm(executor.map(write_piece_order_data, data), total=len(data), desc="Processing samples", unit="sample"))
