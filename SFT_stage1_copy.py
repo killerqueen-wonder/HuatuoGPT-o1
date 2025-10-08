@@ -141,7 +141,28 @@ def train(args):
 
     tokenizer = AutoTokenizer.from_pretrained(args.model_path, trust_remote_code=True)
 
-    model = AutoModelForCausalLM.from_pretrained(args.model_path, trust_remote_code=True)
+    if args.resume_ckpt:
+        resume_ckpt = getattr(args, "resume_ckpt", None)
+        accelerator.print(f"[INFO] Resume from checkpoint: {resume_ckpt}")
+
+        # 1. 加载模型参数
+        ckpt_model_dir = os.path.join(resume_ckpt, "tfmr")
+        model = AutoModelForCausalLM.from_pretrained(ckpt_model_dir, trust_remote_code=True)
+        tokenizer = AutoTokenizer.from_pretrained(ckpt_model_dir, trust_remote_code=True)
+
+        # 2. 加载训练状态
+        state_path = os.path.join(resume_ckpt, "training_state.pt")
+        if os.path.exists(state_path):
+            state = torch.load(state_path, map_location="cpu")
+            start_epoch = state.get("epoch", 0)
+            start_step = state.get("step", 0)
+            global_step = state.get("global_step", 0)
+            accelerator.print(f"[INFO] Loaded state: epoch={start_epoch}, step={start_step}, global_step={global_step}")
+        else:
+            accelerator.print(f"[WARN] training_state.pt not found under {resume_ckpt}")
+
+    else:
+        model = AutoModelForCausalLM.from_pretrained(args.model_path, trust_remote_code=True)
 
     # open gradient checkpointing
     model.gradient_checkpointing_enable()
@@ -186,22 +207,48 @@ def train(args):
                     oldest_checkpoint = checkpoint_files[0]
                     shutil.rmtree(os.path.join(args.output_dir, oldest_checkpoint))        
             os.makedirs(save_dir, exist_ok=True)
+
+            
             output_dir = os.path.join(save_dir, 'tfmr')
             if accelerator.state.deepspeed_plugin.zero_stage!=3:
                 model.save_pretrained(output_dir,state_dict=accelerator.get_state_dict(model))
             tokenizer.save_pretrained(output_dir)
+
+            # 如果 args.model_path 不存在，尝试用 TRANSFORMERS_CACHE 补全路径
+            model_path_to_copy = args.model_path
+            if not os.path.exists(model_path_to_copy):
+                cache_dir = os.environ.get("TRANSFORMERS_CACHE", "~/.cache/huggingface")
+                model_path_to_copy = os.path.join(cache_dir, "models--" + args.model_path.replace("/", "--"))
+                model_path_to_copy = os.path.expanduser(model_path_to_copy)
+
             copy_files = []
-            for item in os.listdir(args.model_path):
-                if os.path.exists(os.path.join(output_dir,item)):
-                    continue
-                if item.startswith("pytorch_model") and item.endswith(".bin"):
-                    continue
-                if item.endswith(".index.json") or item.endswith(".safetensors"):
-                    continue
-                s = os.path.join(args.model_path, item)
-                if os.path.isfile(s):
-                    shutil.copy(s, os.path.join(output_dir,item))
-                copy_files.append(item)
+            # for item in os.listdir(args.model_path):
+            #     if os.path.exists(os.path.join(output_dir,item)):
+            #         continue
+            #     if item.startswith("pytorch_model") and item.endswith(".bin"):
+            #         continue
+            #     if item.endswith(".index.json") or item.endswith(".safetensors"):
+            #         continue
+            #     s = os.path.join(args.model_path, item)
+            #     if os.path.isfile(s):
+            #         shutil.copy(s, os.path.join(output_dir,item))
+            #     copy_files.append(item)
+
+            if os.path.exists(model_path_to_copy):
+                for item in os.listdir(model_path_to_copy):
+                    src_path = os.path.join(model_path_to_copy, item)
+                    dst_path = os.path.join(output_dir, item)
+                    if os.path.exists(dst_path):
+                        continue
+                    if item.startswith("pytorch_model") and item.endswith(".bin"):
+                        continue
+                    if item.endswith(".index.json") or item.endswith(".safetensors"):
+                        continue
+                    if os.path.isfile(src_path):
+                        shutil.copy(src_path, dst_path)
+                        copy_files.append(item)
+            else:
+                print(f"[Warning] 模型路径 {model_path_to_copy} 不存在，跳过原始模型文件拷贝")
             print(f'huggingface model save in {output_dir}, copy file:{copy_files}')
 
         if accelerator.state.deepspeed_plugin.zero_stage==3:
@@ -262,6 +309,8 @@ if __name__ == '__main__':
 
     # Model Args
     parser.add_argument('--model_path', required=True, type=str)
+    parser.add_argument('--resume_ckpt', default=None, type=str, help='path to checkpoint dir to resume from')
+
 
     # Data Args
     parser.add_argument('--data_path', required=True, type=str)
