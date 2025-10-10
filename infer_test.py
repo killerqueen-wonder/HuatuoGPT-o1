@@ -22,7 +22,7 @@ def test_qwen3_inference(model_path, question, device="cuda"):
     with torch.no_grad():
         output_ids = model.generate(
             **inputs,
-            max_new_tokens=1024,
+            max_new_tokens=4096,
             temperature=0.2,
             top_p=0.9,
             do_sample=True,
