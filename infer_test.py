@@ -41,6 +41,6 @@ if __name__ == "__main__":
     
     parser = argparse.ArgumentParser()
     parser.add_argument("--model_path", type=str,default='')
-    parser.add_argument("--question", type=str,default='question')
+    parser.add_argument("--question", type=str,default=f'{question}')
     args = parser.parse_args()
     test_qwen3_inference(args.model_path, args.question)
