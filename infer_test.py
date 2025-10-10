@@ -2,7 +2,7 @@ import torch
 from transformers import AutoTokenizer, AutoModelForCausalLM
 import argparse
 
-def test_qwen3_inference(model_path, question, device="cuda"):
+def test_qwen3_inference(model_path, question, max_new_tokens,temperature,device="cuda"):
     # 加载分词器和模型
     tokenizer = AutoTokenizer.from_pretrained(model_path, trust_remote_code=True)
     model = AutoModelForCausalLM.from_pretrained(model_path, torch_dtype=torch.bfloat16, device_map=device, trust_remote_code=True)
@@ -22,8 +22,8 @@ def test_qwen3_inference(model_path, question, device="cuda"):
     with torch.no_grad():
         output_ids = model.generate(
             **inputs,
-            max_new_tokens=4096,
-            temperature=0.2,
+            max_new_tokens=max_new_tokens,
+            temperature=temperature,
             top_p=0.9,
             do_sample=True,
             repetition_penalty=1.05
@@ -42,5 +42,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--model_path", type=str,default='')
     parser.add_argument("--question", type=str,default=f'{question}')
+    parser.add_argument("--max_new_tokens", type=int,default=2048)
+    parser.add_argument("--temperature", default=0.2)
     args = parser.parse_args()
-    test_qwen3_inference(args.model_path, args.question)
+    test_qwen3_inference(args.model_path, args.question,args.max_new_tokens,args.temperature)
