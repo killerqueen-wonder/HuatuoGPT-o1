@@ -232,10 +232,30 @@ def train(args):
                 copy_files.append(item)
             print(f'huggingface model save in {output_dir}, copy file:{copy_files}')
 
-        if accelerator.state.deepspeed_plugin.zero_stage==3:
-            unwrap_model = accelerator.unwrap_model(model)
-            unwrap_model.save_pretrained(os.path.join(save_dir, f'tfmr'),is_main_process=accelerator.is_main_process,save_function=accelerator.save,state_dict=accelerator.get_state_dict(model))
+        # if accelerator.state.deepspeed_plugin.zero_stage==3:
+        #     unwrap_model = accelerator.unwrap_model(model)
+        #     unwrap_model.save_pretrained(os.path.join(save_dir, f'tfmr'),is_main_process=accelerator.is_main_process,save_function=accelerator.save,state_dict=accelerator.get_state_dict(model))
             
+        
+        if accelerator.state.deepspeed_plugin.zero_stage == 3:
+            # 等待所有进程到达保存点
+            accelerator.wait_for_everyone()
+
+            if accelerator.is_main_process:
+                # 先从 accelerator 获取已聚合的 state_dict（跨 rank 合并）
+                state_dict = accelerator.get_state_dict(model)
+                unwrap_model = accelerator.unwrap_model(model)
+                unwrap_model.save_pretrained(
+                    os.path.join(save_dir, 'tfmr'),
+                    state_dict=state_dict,
+                    save_function=accelerator.save,
+                    safe_serialization=True
+                )
+
+            # 确保其他 rank 在主进程写入完成后再继续
+            # accelerator.wait_for_everyone()
+
+
         accelerator.wait_for_everyone()
         accelerator.save({"epoch": epoch, "step": step, "global_step": global_step}, os.path.join(save_dir, "training_state.pt"))
         accelerator.print(f'checkpoint checkpoint-{epoch}-{global_step} is saved...')
