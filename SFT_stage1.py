@@ -202,65 +202,65 @@ def train(args):
 
     metric = SFTMetric(device=torch.cuda.current_device())
 
-    def save_checkpoint(epoch, step, global_step):
-        save_dir = os.path.join(args.output_dir, f"checkpoint-{epoch}-{global_step}")
+    # def save_checkpoint(epoch, step, global_step):
+    #     save_dir = os.path.join(args.output_dir, f"checkpoint-{epoch}-{global_step}")
 
-        if accelerator.is_main_process:
-            checkpoint_files = os.listdir(args.output_dir)
-            checkpoint_files = [file for file in checkpoint_files if file.startswith("checkpoint-")]
-            num_checkpoints = len(checkpoint_files)
-            if args.max_ckpts>0:
-                if num_checkpoints >= args.max_ckpts:
-                    checkpoint_files.sort(key=lambda x: os.path.getctime(os.path.join(args.output_dir, x)))
-                    oldest_checkpoint = checkpoint_files[0]
-                    shutil.rmtree(os.path.join(args.output_dir, oldest_checkpoint))        
-            os.makedirs(save_dir, exist_ok=True)
-            output_dir = os.path.join(save_dir, 'tfmr')
-            if accelerator.state.deepspeed_plugin.zero_stage!=3:
-                model.save_pretrained(output_dir,state_dict=accelerator.get_state_dict(model))
-            tokenizer.save_pretrained(output_dir)
-            copy_files = []
-            for item in os.listdir(args.model_path):
-                if os.path.exists(os.path.join(output_dir,item)):
-                    continue
-                if item.startswith("pytorch_model") and item.endswith(".bin"):
-                    continue
-                if item.endswith(".index.json") or item.endswith(".safetensors"):
-                    continue
-                s = os.path.join(args.model_path, item)
-                if os.path.isfile(s):
-                    shutil.copy(s, os.path.join(output_dir,item))
-                copy_files.append(item)
-            print(f'huggingface model save in {output_dir}, copy file:{copy_files}')
+    #     if accelerator.is_main_process:
+    #         checkpoint_files = os.listdir(args.output_dir)
+    #         checkpoint_files = [file for file in checkpoint_files if file.startswith("checkpoint-")]
+    #         num_checkpoints = len(checkpoint_files)
+    #         if args.max_ckpts>0:
+    #             if num_checkpoints >= args.max_ckpts:
+    #                 checkpoint_files.sort(key=lambda x: os.path.getctime(os.path.join(args.output_dir, x)))
+    #                 oldest_checkpoint = checkpoint_files[0]
+    #                 shutil.rmtree(os.path.join(args.output_dir, oldest_checkpoint))        
+    #         os.makedirs(save_dir, exist_ok=True)
+    #         output_dir = os.path.join(save_dir, 'tfmr')
+    #         if accelerator.state.deepspeed_plugin.zero_stage!=3:
+    #             model.save_pretrained(output_dir,state_dict=accelerator.get_state_dict(model))
+    #         tokenizer.save_pretrained(output_dir)
+    #         copy_files = []
+    #         for item in os.listdir(args.model_path):
+    #             if os.path.exists(os.path.join(output_dir,item)):
+    #                 continue
+    #             if item.startswith("pytorch_model") and item.endswith(".bin"):
+    #                 continue
+    #             if item.endswith(".index.json") or item.endswith(".safetensors"):
+    #                 continue
+    #             s = os.path.join(args.model_path, item)
+    #             if os.path.isfile(s):
+    #                 shutil.copy(s, os.path.join(output_dir,item))
+    #             copy_files.append(item)
+    #         print(f'huggingface model save in {output_dir}, copy file:{copy_files}')
 
-        # if accelerator.state.deepspeed_plugin.zero_stage==3:
-        #     unwrap_model = accelerator.unwrap_model(model)
-        #     unwrap_model.save_pretrained(os.path.join(save_dir, f'tfmr'),is_main_process=accelerator.is_main_process,save_function=accelerator.save,state_dict=accelerator.get_state_dict(model))
+    #     # if accelerator.state.deepspeed_plugin.zero_stage==3:
+    #     #     unwrap_model = accelerator.unwrap_model(model)
+    #     #     unwrap_model.save_pretrained(os.path.join(save_dir, f'tfmr'),is_main_process=accelerator.is_main_process,save_function=accelerator.save,state_dict=accelerator.get_state_dict(model))
             
         
-        if accelerator.state.deepspeed_plugin.zero_stage == 3:
-            # 等待所有进程到达保存点
-            accelerator.wait_for_everyone()
+    #     if accelerator.state.deepspeed_plugin.zero_stage == 3:
+    #         # 等待所有进程到达保存点
+    #         accelerator.wait_for_everyone()
             
 
-            if accelerator.is_main_process:
-                # 先从 accelerator 获取已聚合的 state_dict（跨 rank 合并）
-                state_dict = accelerator.get_state_dict(model)
-                unwrap_model = accelerator.unwrap_model(model)
-                unwrap_model.save_pretrained(
-                    os.path.join(save_dir, 'tfmr'),
-                    state_dict=state_dict,
-                    save_function=accelerator.save,
-                    safe_serialization=True
-                )
+    #         if accelerator.is_main_process:
+    #             # 先从 accelerator 获取已聚合的 state_dict（跨 rank 合并）
+    #             state_dict = accelerator.get_state_dict(model)
+    #             unwrap_model = accelerator.unwrap_model(model)
+    #             unwrap_model.save_pretrained(
+    #                 os.path.join(save_dir, 'tfmr'),
+    #                 state_dict=state_dict,
+    #                 save_function=accelerator.save,
+    #                 safe_serialization=True
+    #             )
 
-            # 确保其他 rank 在主进程写入完成后再继续
-            # accelerator.wait_for_everyone()
+    #         # 确保其他 rank 在主进程写入完成后再继续
+    #         # accelerator.wait_for_everyone()
 
 
-        accelerator.wait_for_everyone()
-        accelerator.save({"epoch": epoch, "step": step, "global_step": global_step}, os.path.join(save_dir, "training_state.pt"))
-        accelerator.print(f'checkpoint checkpoint-{epoch}-{global_step} is saved...')
+    #     accelerator.wait_for_everyone()
+    #     accelerator.save({"epoch": epoch, "step": step, "global_step": global_step}, os.path.join(save_dir, "training_state.pt"))
+    #     accelerator.print(f'checkpoint checkpoint-{epoch}-{global_step} is saved...')
 
     def save_checkpoint(epoch, step, global_step):
         # === 统一保存路径 ===
