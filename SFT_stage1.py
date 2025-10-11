@@ -204,6 +204,7 @@ def train(args):
 
     def save_checkpoint(epoch, step, global_step):
         save_dir = os.path.join(args.output_dir, f"checkpoint-{epoch}-{global_step}")
+
         if accelerator.is_main_process:
             checkpoint_files = os.listdir(args.output_dir)
             checkpoint_files = [file for file in checkpoint_files if file.startswith("checkpoint-")]
@@ -240,6 +241,7 @@ def train(args):
         if accelerator.state.deepspeed_plugin.zero_stage == 3:
             # 等待所有进程到达保存点
             accelerator.wait_for_everyone()
+            
 
             if accelerator.is_main_process:
                 # 先从 accelerator 获取已聚合的 state_dict（跨 rank 合并）
@@ -259,6 +261,67 @@ def train(args):
         accelerator.wait_for_everyone()
         accelerator.save({"epoch": epoch, "step": step, "global_step": global_step}, os.path.join(save_dir, "training_state.pt"))
         accelerator.print(f'checkpoint checkpoint-{epoch}-{global_step} is saved...')
+
+    def save_checkpoint(epoch, step, global_step):
+        # === 统一保存路径 ===
+        save_dir = os.path.join(args.output_dir, f"checkpoint-{epoch}-{global_step}")
+
+        # --- 所有 rank 同步，防止部分进程提前 ---
+        accelerator.wait_for_everyone()
+
+        # --- 所有 rank 都必须执行 get_state_dict（collective 操作） ---
+        state_dict = accelerator.get_state_dict(model)
+
+        if accelerator.is_main_process:
+            # 若超出最大保存数量，删除最旧的
+            checkpoint_files = [f for f in os.listdir(args.output_dir) if f.startswith("checkpoint-")]
+            if args.max_ckpts > 0 and len(checkpoint_files) >= args.max_ckpts:
+                checkpoint_files.sort(key=lambda x: os.path.getctime(os.path.join(args.output_dir, x)))
+                oldest_checkpoint = checkpoint_files[0]
+                shutil.rmtree(os.path.join(args.output_dir, oldest_checkpoint), ignore_errors=True)
+
+            os.makedirs(save_dir, exist_ok=True)
+            output_dir = os.path.join(save_dir, "tfmr")
+
+            # --- 保存模型（仅主进程执行写入） ---
+            unwrap_model = accelerator.unwrap_model(model)
+            unwrap_model.save_pretrained(
+                output_dir,
+                state_dict=state_dict,
+                save_function=accelerator.save,
+                safe_serialization=True
+            )
+
+            # --- 保存 tokenizer ---
+            tokenizer.save_pretrained(output_dir)
+
+            # --- 拷贝除权重外的辅助文件 ---
+            copy_files = []
+            for item in os.listdir(args.model_path):
+                if os.path.exists(os.path.join(output_dir, item)):
+                    continue
+                if item.startswith("pytorch_model") and item.endswith(".bin"):
+                    continue
+                if item.endswith(".index.json") or item.endswith(".safetensors"):
+                    continue
+                src = os.path.join(args.model_path, item)
+                if os.path.isfile(src):
+                    shutil.copy(src, os.path.join(output_dir, item))
+                    copy_files.append(item)
+
+            print(f"HuggingFace model saved in {output_dir}, copied: {copy_files}")
+
+        # --- 等待主进程完成写入 ---
+        accelerator.wait_for_everyone()
+
+        # --- 保存训练状态（所有 rank 都能安全调用 accelerator.save） ---
+        accelerator.save(
+            {"epoch": epoch, "step": step, "global_step": global_step},
+            os.path.join(save_dir, "training_state.pt")
+        )
+
+        accelerator.print(f"Checkpoint checkpoint-{epoch}-{global_step} saved.")
+
 
     accelerator.print(accelerator.deepspeed_config)
     model.train()
