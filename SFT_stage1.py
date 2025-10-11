@@ -166,7 +166,10 @@ def train(args):
 
     tokenizer = AutoTokenizer.from_pretrained(args.model_path, trust_remote_code=True)
 
-    model = AutoModelForCausalLM.from_pretrained(args.model_path,torch_dtype="auto",device_map="auto", trust_remote_code=True)
+    model = AutoModelForCausalLM.from_pretrained(args.model_path,
+                                                 torch_dtype="auto",
+                                                #  device_map="auto", 
+                                                 trust_remote_code=True)
 
     # open gradient checkpointing
     model.gradient_checkpointing_enable()
