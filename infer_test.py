@@ -5,7 +5,7 @@ import argparse
 def test_qwen3_inference(model_path, question, max_new_tokens,temperature,device="cuda"):
     # 加载分词器和模型
     tokenizer = AutoTokenizer.from_pretrained(model_path, trust_remote_code=True)
-    model = AutoModelForCausalLM.from_pretrained(model_path, torch_dtype=torch.bfloat16, device_map=device, trust_remote_code=True,use_savetensors=True)
+    model = AutoModelForCausalLM.from_pretrained(model_path, torch_dtype=torch.bfloat16, device_map=device, trust_remote_code=True)
     model.eval()
 
     # 构造输入
