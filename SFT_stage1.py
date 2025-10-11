@@ -42,6 +42,7 @@ class Train_dataset(torch.utils.data.Dataset):
         # 如果从Base LLMs训练，选择 llama3-instruct作为模版
         chat_template_llama3 = "{% set loop_messages = messages %}{% for message in loop_messages %}{% set content = '<|start_header_id|>' + message['role'] + '<|end_header_id|>\n\n'+ message['content'] | trim + '<|eot_id|>' %}{% if loop.index0 == 0 %}{% set content = bos_token + content %}{% endif %}{{ content }}{% endfor %}{% if add_generation_prompt %}{{ '<|start_header_id|>assistant<|end_header_id|>\n\n' }}{% endif %}"
         if not tokenizer.chat_template:
+            print('[debug]find no chat_templete')
             tokenizer.chat_template = chat_template_llama3
             
         self.template = Template(tokenizer.chat_template)
