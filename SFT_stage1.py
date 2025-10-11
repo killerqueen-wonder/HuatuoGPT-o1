@@ -61,12 +61,35 @@ class Train_dataset(torch.utils.data.Dataset):
         a = self.get_response(da)
         assert q is not None and a is not None, f'q:{q} a:{a}'
 
-        input =  self.template.render(messages=[{"role": "user", "content": q},{"role": "assistant", "content": a}],bos_token=self.tokenizer.bos_token,add_generation_prompt=False)
-        input_ids = self.tokenizer.encode(input,add_special_tokens= False)
+        # input =  self.template.render(messages=[{"role": "user", "content": q},{"role": "assistant", "content": a}],bos_token=self.tokenizer.bos_token,add_generation_prompt=False)
+        # input_ids = self.tokenizer.encode(input,add_special_tokens= False)
 
-        query = self.template.render(messages=[{"role": "user", "content": q}],bos_token=self.tokenizer.bos_token,add_generation_prompt=True)
-        query_ids = self.tokenizer.encode(query,add_special_tokens= False)
+        # query = self.template.render(messages=[{"role": "user", "content": q}],bos_token=self.tokenizer.bos_token,add_generation_prompt=True)
+        # query_ids = self.tokenizer.encode(query,add_special_tokens= False)
+        
+        # Qwen3 直接使用 chat_template
+        messages_full = [
+            {"role": "user", "content": q},
+            {"role": "assistant", "content": a}
+        ]
+        messages_query = [
+            {"role": "user", "content": q}
+        ]
 
+        # 构造完整样本（user + assistant）
+        input_ids = self.tokenizer.apply_chat_template(
+            messages_full,
+            tokenize=True,
+            add_generation_prompt=False
+        )
+
+        # 构造query部分（只保留user，用于mask标签）
+        query_ids = self.tokenizer.apply_chat_template(
+            messages_query,
+            tokenize=True,
+            add_generation_prompt=True
+        )    
+           
         labels = [-100]*len(query_ids) + input_ids[len(query_ids):]
         assert len(labels) == len(input_ids)
         return {"input_ids": input_ids[-self.max_seq_len:], "labels": labels[-self.max_seq_len:]}        
@@ -75,6 +98,7 @@ class Train_dataset(torch.utils.data.Dataset):
         data = [ self.get_prompt(da) for da in batch]
         input_ids = [item["input_ids"] for item in data]
         labels = [item["labels"] for item in data]
+
         max_len = max(len(x) for x in input_ids)
         max_len = min(max_len,self.max_seq_len)
         input_ids = [ item[:max_len] + [self.tokenizer.eos_token_id]*(max_len-len(item)) for item in input_ids]
