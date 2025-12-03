@@ -51,8 +51,10 @@ class Train_dataset(torch.utils.data.Dataset):
         return self.data[index]
 
     def get_response(self,da):
-        temp = '## Thinking\n\n{}\n\n## Final Response\n\n{}'
+        # temp = '## Thinking\n\n{}\n\n## Final Response\n\n{}'
+        temp = '## Thinking\n\n{}\n\n## Final Response\n<answer>\n{}\n</answer>'
         return temp.format(da['Complex_CoT'],da['Response'])
+        
 
 
     def get_prompt(self,da):
