@@ -159,7 +159,7 @@ def train(args):
     accelerator = Accelerator(mixed_precision='bf16', gradient_accumulation_steps=args.gradient_accumulation_steps) 
 
     if accelerator.is_main_process:
-        wandb.init(project = args.experiment_name, config=args, dir=args.log_dir, mode="offline")
+        wandb.init(project = args.experiment_name, config=args, dir=args.log_dir, mode="online")
     
     accelerator.print(f'args:\n{args}')
 
