@@ -56,8 +56,9 @@ class GPT:
         client = OpenAI(api_key=self.api_key, base_url=self.api_url)
         messages=[{"role": "user", "content": content}]
         RAG_time=0
-        while True:
-            # 第一次调用API
+        max_turns = 7  # 防止死循环，设置最大轮数
+        while RAG_time < max_turns:
+            
             response = client.chat.completions.create(
                 model=self.model_name,
                 messages=messages,
@@ -85,7 +86,7 @@ class GPT:
                     
                     if function_name == "search_law":
                         query = function_args.get("query")
-                        
+                        print(f"[debug]  [第{RAG_time}轮] ...")
                         # --- 执行本地代码 ---
                         function_response = self.local_rag_search(query,self.retrieve_path)
                         # ------------------
@@ -99,7 +100,9 @@ class GPT:
                         })
 
 
-                        print(f'[debug] tool_call.id: /n {tool_call.id}')
+                        args = json.loads(tool_call.function.arguments)
+                        print(f"[debug]模型思考: {args.get('thought')}")
+                        print(f"[debug]执行搜索: {args.get('query')}")
                         print(f'[debug] RAG content: /n {function_response}')
                 
                 # C. 循环继续：带着工具结果再次请求DeepSeek，让它继续生成答案
@@ -111,6 +114,7 @@ class GPT:
                 print(f'[debug]RAG time:{RAG_time}')
                 print(f"DeepSeek: {response_message.content}")
                 return response_message.content
+        print('[debug]到达推理上限。')
 
     def local_rag_search(self,query_text,retrieve_path, topk=5):
         """
@@ -195,6 +199,23 @@ query_prompt_init = """<question>
 }}
 ```"""
 
+query_prompt_init = """
+你是一个严谨的法律AI助手。你的任务是回答法律问题，必须基于事实，严禁编造法律条文。
+
+### 核心指令：
+1. **必须使用工具**：回答任何涉及具体法律条文、案例或事实的问题时，**必须**调用 `search_law` 工具。不要依赖你训练时的内部知识，因为那可能是过时或不准确的。
+2. **多轮迭代检索**：
+   - 不要试图一次性把所有关键词都搜完。
+   - 先搜索最核心的概念。
+   - 观察工具返回的结果。如果结果不够全面或缺少细节，**请再次调用工具**，换一个关键词搜索。
+   - 只有当你收集了足够的信息（法条、解释）后，才能生成最终回答。
+   - 搜索次数总上限是六次。
+3. **拒绝编造**：如果你搜索了三次依然没有找到相关条文，请直接承认未找到，修改思考思路，搜索其他条文。不要编造内容。
+
+### 回答流程：
+- 遇到问题 -> 分析需要查什么 -> **调用工具** (此时你会暂停) -> 接收工具结果 -> 分析结果 -> 发现还需要查别的 -> **再次调用工具** ... -> 最终整合信息回答。
+"""
+
 reformat_to_complex_cot_prompt = """<Thought Process>
 {}
 </Thought Process>
@@ -230,36 +251,6 @@ get_final_response_prompt = """<Internal Thinking>
 
 
 
-#封装本地RAG工具函数
-def local_rag_search(query_text,retrieve_path, topk=3):
-    """
-    实际执行本地API调用的函数
-    """
-    
-    payload = {
-        "queries": [query_text],  # 注意：你的API似乎接受列表
-        "topk": topk,
-        "return_scores": True
-    }
-    
-    try:
-        print(f"  [Local Execution] 正在检索: {query_text} ...")
-        response = requests.post(
-            retrieve_path,
-            json=payload,
-            proxies={"http": None, "https": None},
-            timeout=500
-        )
-        response.raise_for_status()
-        json_data = response.json()
-        
-        # 提取关键信息返回字符串，避免token过长
-        results = json_data.get("result", [])
-        # 这里建议做简单的格式化，把list转成字符串给大模型
-        return json.dumps(results, ensure_ascii=False)
-        
-    except Exception as e:
-        return f"检索出错: {str(e)}"
 
 #定义工具描述 (Schema) - 这是发给DeepSeek看的说明书
 tools_schema = [
@@ -271,76 +262,21 @@ tools_schema = [
             "parameters": {
                 "type": "object",
                 "properties": {
+                    "thought": {
+                        "type": "string",
+                        "description": "调用此工具前的思考过程。说明为什么要搜这个，以及期望得到什么。" 
+                    },
                     "query": {
                         "type": "string",
-                        "description": "用于检索的查询关键词或句子"
+                        "description": "用于检索的查询关键词"
                     }
                 },
-                "required": ["query"]
+                "required": ["thought", "query"]
             }
         }
     }
 ]
 
-# 3. 主推理流程
-def chat_with_rag(client, model_name, user_query):
-    # 初始化消息列表
-    messages = [
-        {"role": "system", "content": "你是一个专业的法律AI。遇到不确定的法律事实，必须调用搜索工具。请根据检索结果进行推理。"},
-        {"role": "user", "content": user_query}
-    ]
-
-    print(f"User: {user_query}")
-
-    while True:
-        # 第一次调用API
-        response = client.chat.completions.create(
-            model=model_name,
-            messages=messages,
-            tools=tools_schema,       # 关键设置：挂载工具
-            tool_choice="auto",       # 关键设置：让模型自己决定是否用工具
-            temperature=0.0,          # 建议设低，保证工具调用格式稳定
-            stream=False
-        )
-
-        response_message = response.choices[0].message
-        
-        # 检查模型是否想调用工具
-        tool_calls = response_message.tool_calls
-
-        if tool_calls:
-            # A. 模型想调用工具 -> 我们在本地执行
-            
-            # 必须把模型的这个“意图”加到历史消息里，否则API会报错
-            messages.append(response_message) 
-            
-            for tool_call in tool_calls:
-                function_name = tool_call.function.name
-                function_args = json.loads(tool_call.function.arguments)
-                
-                if function_name == "search_legal_knowledge_base":
-                    query = function_args.get("query")
-                    
-                    # --- 执行本地代码 ---
-                    function_response = local_rag_search(query)
-                    # ------------------
-                    
-                    # B. 将工具运行结果构造成消息
-                    messages.append({
-                        "role": "tool",
-                        "tool_call_id": tool_call.id, # 必须对应ID
-                        "name": function_name,
-                        "content": function_response
-                    })
-            
-            # C. 循环继续：带着工具结果再次请求DeepSeek，让它继续生成答案
-            print("  [System] 工具结果已提交，等待模型归纳...")
-            continue
-            
-        else:
-            # 模型不想调用工具了，直接输出最终回答
-            print(f"DeepSeek: {response_message.content}")
-            return response_message.content
 
 def fix_json_braces(text: str) -> str:
     """
