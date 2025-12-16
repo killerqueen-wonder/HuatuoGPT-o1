@@ -55,13 +55,7 @@ class GPT:
         
         client = OpenAI(api_key=self.api_key, base_url=self.api_url)
         messages=[{"role": "user", "content": content}]
-        # response = client.chat.completions.create(
-        #     model=self.model_name,
-        #     messages=[{"role": "user", "content": content}],
-        #     temperature=self.temperature,
-        #     stream=False
-        # )
-        # response_data=response.choices[0].message.content
+        RAG_time=0
         while True:
             # 第一次调用API
             response = client.chat.completions.create(
@@ -72,7 +66,7 @@ class GPT:
                 temperature=0.0,          # 建议设低，保证工具调用格式稳定
                 stream=False
             )
-            RAG_time=0
+            
             response_message = response.choices[0].message
             
             # 检查模型是否想调用工具
@@ -114,6 +108,7 @@ class GPT:
                 
             else:
                 # 模型不想调用工具了，直接输出最终回答
+                print(f'[debug]RAG time:{RAG_time}')
                 print(f"DeepSeek: {response_message.content}")
                 return response_message.content
 
@@ -531,7 +526,7 @@ def main():
 
             
             
-            if True:
+            if False:
                 # Generate complex CoT and final response (Complex_CoT, response)
                 sos = get_stream_of_search(d['Long_CoT'])
                 query = reformat_to_complex_cot_prompt.format(sos,d['Open-ended Verifiable Question'])
