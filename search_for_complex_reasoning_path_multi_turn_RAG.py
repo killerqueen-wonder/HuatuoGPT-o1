@@ -136,7 +136,7 @@ class GPT:
             
             # 提取关键信息返回字符串，避免token过长
             results = json_data.get("result", [])
-            # 这里建议做简单的格式化，把list转成字符串给大模型
+
             def _passages2string(retrieval_result):
                 format_reference = ''
                 for idx, doc_item in enumerate(retrieval_result):
@@ -170,8 +170,11 @@ query_prompt_init = """<question>
 请使用链式思维（Chain of Thought, CoT）推理方法来回答上述问题<question>。你的回答应包含多个步骤，每个步骤由三种行动类型组成：“内部思考”、“最终结论”和“验证”：
 
 1.内部思考（Inner Thinking）：
-将推理过程拆解为多个简洁步骤。每一步应以一个简短标题开头，以明确当前思考目的。
-当推理过程中涉及到法律时，必须使用工具"search_law"检索，以确认法律原文。
+将推理过程拆解为多个简洁步骤，你必须遵守思考-检索-思考-回答的推理模式。每一步应以一个简短标题开头，以明确当前思考目的。
+思考：对问题进行推理，尝试解答。推理过程中，如果你发现涉及某些法律条文，则进入检索步骤。
+检索：暂停当前推理，使用工具"search_law"检索，以确认法律原文。
+系统将返回最相关的搜索结果。根据返回的结果，继续下一步思考。
+再次思考：基于检索结果，继续对问题进行推理。如果没有帮助，则修改关键词重新检索,不要重复检索已经检索过的关键词；如果有把握得到最终答案，则进入回答。
 
 
 2.最终结论（Final Conclusion）：
@@ -603,8 +606,9 @@ def main():
     output_path = f"{args.out_path}/{task_name}_{len(final_data)}.json"
     print(f"Processed {len(final_data)} items. Saving to {output_path}")
 
-    with open(output_path, 'w', encoding='utf-8') as file:
-        json.dump(final_data, file, ensure_ascii=False, indent=2)
+    if args.out_path:
+        with open(output_path, 'w', encoding='utf-8') as file:
+            json.dump(final_data, file, ensure_ascii=False, indent=2)
 
 if __name__ == '__main__':
     main()
