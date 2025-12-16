@@ -72,7 +72,7 @@ class GPT:
                 temperature=0.0,          # 建议设低，保证工具调用格式稳定
                 stream=False
             )
-
+            RAG_time=0
             response_message = response.choices[0].message
             
             # 检查模型是否想调用工具
@@ -87,6 +87,7 @@ class GPT:
                 for tool_call in tool_calls:
                     function_name = tool_call.function.name
                     function_args = json.loads(tool_call.function.arguments)
+                    RAG_time += 1
                     
                     if function_name == "search_law":
                         query = function_args.get("query")
@@ -112,10 +113,15 @@ class GPT:
                 print(f"DeepSeek: {response_message.content}")
                 return response_message.content
 
-    def local_rag_search(query_text,retrieve_path, topk=5):
+    def local_rag_search(self,query_text,retrieve_path, topk=5):
         """
         实际执行本地API调用的函数
         """
+
+        print(f"DEBUG TYPE Check: query_text type is {type(query_text)}")
+        print(f"DEBUG VALUE Check: query_text value is {query_text}")
+        if not isinstance(query_text, str):
+            return "Error: Query must be a string."
         
         payload = {
             "queries": [query_text],  # 注意：你的API似乎接受列表
