@@ -103,6 +103,10 @@ class GPT:
                             "name": function_name,
                             "content": function_response
                         })
+
+
+                        print(f'[debug] tool_call.id: /n {tool_call.id}')
+                        print(f'[debug] RAG content: /n {function_response}')
                 
                 # C. 循环继续：带着工具结果再次请求DeepSeek，让它继续生成答案
                 print("  [System] 工具结果已提交，等待模型归纳...")
@@ -117,11 +121,6 @@ class GPT:
         """
         实际执行本地API调用的函数
         """
-
-        print(f"DEBUG TYPE Check: query_text type is {type(query_text)}")
-        print(f"DEBUG VALUE Check: query_text value is {query_text}")
-        if not isinstance(query_text, str):
-            return "Error: Query must be a string."
         
         payload = {
             "queries": [query_text],  # 注意：你的API似乎接受列表
@@ -143,7 +142,22 @@ class GPT:
             # 提取关键信息返回字符串，避免token过长
             results = json_data.get("result", [])
             # 这里建议做简单的格式化，把list转成字符串给大模型
-            return json.dumps(results, ensure_ascii=False)
+            def _passages2string(retrieval_result):
+                format_reference = ''
+                for idx, doc_item in enumerate(retrieval_result):
+                                
+                    content = doc_item['document']['content']
+                    title = content.split("\n")[0]
+                    text = "\n".join(content.split("\n")[1:])
+                    
+                    score=doc_item['score']
+                    score=(round(float(score), 4))
+                    
+                    format_reference += f"Doc {idx+1}(Title: {title}) {text}\n score={score}\n"
+                return format_reference
+            
+            return _passages2string(results[0])
+            
             
         except Exception as e:
             return f"检索出错: {str(e)}"
