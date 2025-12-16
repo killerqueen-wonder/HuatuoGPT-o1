@@ -51,10 +51,14 @@ class GPT:
         return self.call(content, additional_args)
     
     
-    def call_RAG(self, content, additional_args={}):
+    def call_RAG(self, content, user_query,additional_args={}):
         
         client = OpenAI(api_key=self.api_key, base_url=self.api_url)
-        messages=[{"role": "user", "content": content}]
+        # messages=[{"role": "user", "content": content}]
+        messages = [
+            {"role": "system", "content": content}, # 使用上面修改后的 prompt
+            {"role": "user", "content": user_query}
+        ]
         RAG_time=0
         max_turns = 7  # 防止死循环，设置最大轮数
         while RAG_time < max_turns:
@@ -162,8 +166,8 @@ class GPT:
             return f"检索出错: {str(e)}"
 
     @retry(wait_fixed=3000, stop_max_attempt_number=3)
-    def retry_call_RAG(self, content, additional_args={"max_tokens": 8192}):
-        return self.call_RAG(content, additional_args)
+    def retry_call_RAG(self, content,user_query, additional_args={"max_tokens": 8192}):
+        return self.call_RAG(content, user_query,additional_args)
 
 
 
@@ -441,25 +445,35 @@ def main():
             save_path = os.path.join(save_dir, str(d['process_id']) + ".json")
 
             # init reason
-            query = query_prompt_init.format(d['Open-ended Verifiable Question'])
+            query = query_prompt_init
             d['gpt4_query_cot'].append(query)
+            user_query=d['Open-ended Verifiable Question']
+            d['gpt4_query_cot'].append(user_query)
+            # query = query_prompt_init.format(d['Open-ended Verifiable Question'])
+            # d['gpt4_query_cot'].append(query)
 
 
-            for ii in range(retry_time):
-                #多轮检索推理
-                response = gpt_instance.retry_call_RAG(query)
-                if ii == 0:
-                    d['gpt4_response_cot'].append(response)
-                flag, struct = parse_gpt_response(response)
-                if flag:
-                    d['response_struct'].append(struct["CoT"])
-                    d['Long_CoT'] =  struct["CoT"]
-                    d['response_type'].append('Init_CoT')
-                    break
-                else:
-                    print(f'retrying Init_CoT',flush=True)
-            if not flag:
-                raise Exception('init error')
+            # for ii in range(retry_time):
+            #     #多轮检索推理
+            #     response = gpt_instance.retry_call_RAG(query)
+            #     if ii == 0:
+            #         d['gpt4_response_cot'].append(response)
+            #     flag, struct = parse_gpt_response(response)
+            #     if flag:
+            #         d['response_struct'].append(struct["CoT"])
+            #         d['Long_CoT'] =  struct["CoT"]
+            #         d['response_type'].append('Init_CoT')
+            #         break
+            #     else:
+            #         print(f'retrying Init_CoT',flush=True)
+            # if not flag:
+            #     raise Exception('init error')
+
+            
+            #多轮检索推理
+            response = gpt_instance.retry_call_RAG(query,user_query)
+            d['Long_CoT']=response
+                    
 
             
 
