@@ -21,12 +21,13 @@ import copy
 from openai import OpenAI
 
 class GPT:
-    def __init__(self, model_name, api_url, api_key,retrieve_path,temperature):
+    def __init__(self, model_name, api_url, api_key,retrieve_path,temperature,topk):
         self.model_name = model_name
         self.api_url = api_url
         self.api_key = api_key
         self.retrieve_path=retrieve_path
         self.temperature = temperature
+        self.topk=topk
         print(f"Using model: {self.model_name}")
 
     def call(self, content, additional_args={}):
@@ -92,7 +93,7 @@ class GPT:
                         query = function_args.get("query")
                         print(f"[debug]  [第{RAG_time}轮] ...")
                         # --- 执行本地代码 ---
-                        function_response = self.local_rag_search(query,self.retrieve_path)
+                        function_response = self.local_rag_search(query,self.retrieve_path,topk=self.topk)
                         # ------------------
                         
                         # B. 将工具运行结果构造成消息
@@ -381,6 +382,7 @@ def main():
     parser.add_argument("--out_path", type=str,default='', help="the path to save output data")
     parser.add_argument("--retrieve_path", type=str,default= "http://127.0.0.1:8006/retrieve")
     parser.add_argument("--test_query", type=str,default= "")
+    parser.add_argument("--topk", type=int,default= 5)
     
     args = parser.parse_args()
 
@@ -435,7 +437,8 @@ def main():
                        api_url=args.api_url, 
                        api_key=args.api_key,
                        retrieve_path=args.retrieve_path,
-                       temperature=args.temperature)
+                       temperature=args.temperature,
+                       topk=args.topk)
 
         
     global wrongtime
