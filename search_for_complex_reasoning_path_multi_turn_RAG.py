@@ -62,6 +62,7 @@ class GPT:
         ]
         RAG_time=0
         max_turns = 7  # 防止死循环，设置最大轮数
+        print(f"[debug]user_query: {user_query}")
         while RAG_time < max_turns:
             
             response = client.chat.completions.create(
@@ -107,7 +108,7 @@ class GPT:
 
                         args = json.loads(tool_call.function.arguments)
 
-                        print(f"[debug]user_query: {user_query}")
+                        
                         print(f"[debug]上一次有效文本编号: {args.get('reflect')}")
                         print(f"[debug]模型思考: {args.get('thought')}")
                         print(f"[debug]执行搜索: {args.get('query')}")
