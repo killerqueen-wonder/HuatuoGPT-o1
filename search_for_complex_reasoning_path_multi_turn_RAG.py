@@ -105,6 +105,7 @@ class GPT:
 
 
                         args = json.loads(tool_call.function.arguments)
+                        print(f"[debug]上一次有效文本编号: {args.get('reflect')}")
                         print(f"[debug]模型思考: {args.get('thought')}")
                         print(f"[debug]执行搜索: {args.get('query')}")
                         print(f'[debug] RAG content: /n {function_response}')
@@ -273,9 +274,13 @@ tools_schema = [
                     "query": {
                         "type": "string",
                         "description": "用于检索的查询关键词"
-                    }
+                    },
+                    "reflect": {
+                        "type": "int",
+                        "description": "如果是第一次检索，则返回0；否则返回上一次检索中最有效的返回文本编号，以1为第一份文本，以此类推。"
+                    },
                 },
-                "required": ["thought", "query"]
+                "required": ["thought", "query","reflect"]
             }
         }
     }
@@ -478,6 +483,9 @@ def main():
             #多轮检索推理
             response = gpt_instance.retry_call_RAG(query,user_query)
             d['Long_CoT']=response
+
+            #整理多轮推理，合成完整逻辑
+
                     
 
             
