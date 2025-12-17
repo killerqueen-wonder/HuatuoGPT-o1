@@ -135,7 +135,7 @@ class GPT:
         }
         
         try:
-            print(f"  [Local Execution] 正在检索: {query_text} ...")
+            
             response = requests.post(
                 retrieve_path,
                 json=payload,
@@ -159,7 +159,8 @@ class GPT:
                     score=doc_item['score']
                     score=(round(float(score), 4))
                     
-                    format_reference += f"Doc {idx+1}(Title: {title}) {text}\n score={score}\n"
+                    # format_reference += f"Doc {idx+1}(Title: {title}) {text}\n score={score}\n"
+                    format_reference += f"Doc {idx+1}({content}) "
                 return format_reference
             
             return _passages2string(results[0])
