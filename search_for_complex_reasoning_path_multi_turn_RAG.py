@@ -149,7 +149,8 @@ class GPT:
             results = json_data.get("result", [])
 
             def _passages2string(retrieval_result):
-                format_reference = ''
+                # format_reference = ''
+                format_reference = []
                 for idx, doc_item in enumerate(retrieval_result):
                                 
                     content = doc_item['document']['content']
@@ -160,7 +161,7 @@ class GPT:
                     score=(round(float(score), 4))
                     
                     # format_reference += f"Doc {idx+1}(Title: {title}) {text}\n score={score}\n"
-                    format_reference += f"Doc {idx+1}(content: {content})\n "
+                    format_reference.append(f"Doc {idx+1}(content: {content})\n ")
                 return format_reference
             
             return _passages2string(results[0])
