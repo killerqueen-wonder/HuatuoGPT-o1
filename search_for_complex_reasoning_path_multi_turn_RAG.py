@@ -119,7 +119,7 @@ class GPT:
             else:
                 # 模型不想调用工具了，直接输出最终回答
                 print(f'[debug]RAG time:{RAG_time}')
-                print(f"DeepSeek: {response_message.content}")
+                print(f"[debug]DeepSeek: {response_message.content}")
                 return response_message.content
         print('[debug]到达推理上限。')
 
@@ -160,7 +160,7 @@ class GPT:
                     score=(round(float(score), 4))
                     
                     # format_reference += f"Doc {idx+1}(Title: {title}) {text}\n score={score}\n"
-                    format_reference += f"Doc {idx+1}({content}) "
+                    format_reference += f"Doc {idx+1}(content: {content})\n "
                 return format_reference
             
             return _passages2string(results[0])
@@ -219,7 +219,7 @@ query_prompt_init = """
    - 只有当你收集了足够的信息（法条、解释）后，才能生成最终回答。
    - 搜索次数总上限是六次。
 3. **拒绝编造**：如果你搜索了三次依然没有找到相关条文，请直接承认未找到，修改思考思路，搜索其他条文。不要编造内容。
-4. **有理有据**：在最终回答时，引用检索到的法律条文原文，允许引用某法条的部分内容，但不能增减或修改原文。
+4. **有理有据**：在最终回答时，引用检索到的法律条文原文，格式为“（法律名）（条目）（引用内容）”，例如“中华人民共和国刑法 第一百三十三条　【交通肇事罪】违反交通运输管理法规，因而发生重大事故，致人重伤、死亡或者使公私财产遭受重大损失的，处三年以下有期徒刑或者拘役。”允许引用某法条的部分内容，但不能增减或修改原文。
 
 ### 回答流程：
 - 遇到问题 -> 分析需要查什么 -> **调用工具** (此时你会暂停) -> 接收工具结果 -> 分析结果 -> 发现还需要查别的 -> **再次调用工具** ... -> 最终整合信息回答。
