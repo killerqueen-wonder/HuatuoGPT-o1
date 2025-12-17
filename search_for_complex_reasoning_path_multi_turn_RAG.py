@@ -207,11 +207,11 @@ query_prompt_init = """
 你是一个严谨的法律AI助手。你的任务是回答法律问题，必须基于事实，严禁编造法律条文。
 
 ### 核心指令：
-1. **必须使用工具**：回答任何涉及具体法律条文、案例或事实的问题时，**必须**调用 `search_law` 工具。不要依赖你训练时的内部知识，因为那可能是过时或不准确的。
+1. **必须使用工具**：回答任何涉及具体法律条文的问题时，**必须**调用 `search_law` 工具。不要依赖你训练时的内部知识，因为那可能是过时或不准确的。
 2. **多轮迭代检索**：
    - 不要试图一次性把所有关键词都搜完。
    - 先搜索最核心的概念。
-   - 观察工具返回的结果。如果结果不够全面或缺少细节，**请再次调用工具**，换一个关键词搜索。
+   - 观察工具返回的结果。如果结果不够全面或缺少细节，**请再次调用工具**，如果没有帮助，则修改关键词重新检索,不要重复检索已经检索过的关键词。
    - 只有当你收集了足够的信息（法条、解释）后，才能生成最终回答。
    - 搜索次数总上限是六次。
 3. **拒绝编造**：如果你搜索了三次依然没有找到相关条文，请直接承认未找到，修改思考思路，搜索其他条文。不要编造内容。
@@ -262,13 +262,13 @@ tools_schema = [
         "type": "function",
         "function": {
             "name": "search_law",
-            "description": "这是一个法律知识检索工具。当回答需要具体的法律条文时，必须使用此工具。DeepSeek应该自主决定搜索关键词。例如“刑法 盗窃罪”。",
+            "description": "这是一个法律知识检索工具。当回答需要具体的法律条文时，必须使用此工具。DeepSeek应该自主决定搜索关键词。例如“刑法 盗窃罪”，“民法典 第一百三十三条” 。",
             "parameters": {
                 "type": "object",
                 "properties": {
                     "thought": {
                         "type": "string",
-                        "description": "调用此工具前的思考过程。说明为什么要搜这个，以及期望得到什么。" 
+                        "description": "调用此工具前的思考过程。说明基于前面的哪些内容，在推理问题的过程中为什么要搜这个，以及期望得到什么。注意前后逻辑连贯通顺。" 
                     },
                     "query": {
                         "type": "string",
@@ -370,6 +370,7 @@ def main():
     parser.add_argument("--temperature", default=0.1,help="temperature of model")
     parser.add_argument("--out_path", type=str,default='', help="the path to save output data")
     parser.add_argument("--retrieve_path", type=str,default= "http://127.0.0.1:8006/retrieve")
+    parser.add_argument("--test_query", type=str,default= "")
     
     args = parser.parse_args()
 
@@ -445,9 +446,13 @@ def main():
             save_path = os.path.join(save_dir, str(d['process_id']) + ".json")
 
             # init reason
-            query = query_prompt_init
+            query = query_prompt_init#系统指令
             d['gpt4_query_cot'].append(query)
-            user_query=d['Open-ended Verifiable Question']
+
+            if args.test_query:
+                user_query=args.test_query#使用测试问题
+            else:
+                user_query=d['Open-ended Verifiable Question']#用户问题
             d['gpt4_query_cot'].append(user_query)
             # query = query_prompt_init.format(d['Open-ended Verifiable Question'])
             # d['gpt4_query_cot'].append(query)
