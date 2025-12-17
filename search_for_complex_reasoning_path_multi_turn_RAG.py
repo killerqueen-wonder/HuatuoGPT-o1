@@ -105,6 +105,8 @@ class GPT:
 
 
                         args = json.loads(tool_call.function.arguments)
+
+                        print(f"[debug]user_query: {user_query}")
                         print(f"[debug]上一次有效文本编号: {args.get('reflect')}")
                         print(f"[debug]模型思考: {args.get('thought')}")
                         print(f"[debug]执行搜索: {args.get('query')}")
