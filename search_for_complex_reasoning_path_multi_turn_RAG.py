@@ -282,8 +282,11 @@ tools_schema = [
                         "description": "用于检索的查询关键词"
                     },
                     "reflect": {
-                        "type": "int",
-                        "description": "如果是第一次检索，则返回0；否则返回上一次检索中最有效的返回文本编号，以1为第一份文本，以此类推。如果上一次检索的文本全部无效，则返回0."
+                        "type": "array",
+                        "items": {
+                            "type": "integer"
+                        },
+                        "description": "返回上一次检索中对推理有帮助的所有文本的编号（从1开始）。如果是第一次检索或没有有帮助的文本，则返回空数组[]。"
                     },
                 },
                 "required": ["thought", "query","reflect"]
