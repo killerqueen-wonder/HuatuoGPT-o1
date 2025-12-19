@@ -473,7 +473,7 @@ def main():
             d['response_struct'] = []
             d['response_type'] = []
             d['prior_fail_try'] = []
-            d['Open-ended Verifiable Question']=d['question']
+
 
             save_path = os.path.join(save_dir, str(d['process_id']) + ".json")
 
