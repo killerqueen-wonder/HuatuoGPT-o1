@@ -28,11 +28,13 @@ class GPT:
         self.retrieve_path=retrieve_path
         self.temperature = temperature
         self.topk=topk
+        self.client = OpenAI(api_key=self.api_key, base_url=self.api_url)
         print(f"Using model: {self.model_name}")
 
     def call(self, content, additional_args={}):
         
-        client = OpenAI(api_key=self.api_key, base_url=self.api_url)
+        # client = OpenAI(api_key=self.api_key, base_url=self.api_url)
+        client = self.client
 
         response = client.chat.completions.create(
             model=self.model_name,
@@ -54,7 +56,8 @@ class GPT:
     
     def call_RAG(self, content, user_query,additional_args={}):
         
-        client = OpenAI(api_key=self.api_key, base_url=self.api_url)
+        # client = OpenAI(api_key=self.api_key, base_url=self.api_url)
+        client = self.client
         # messages=[{"role": "user", "content": content}]
         messages = [
             {"role": "system", "content": content}, # 使用上面修改后的 prompt
@@ -115,15 +118,22 @@ class GPT:
                         print(f"[debug]执行搜索: {args.get('query')}")
                         print(f'[debug] RAG content: /n {function_response}')
 
-                        current_turn["effect_last"]=args.get('reflect')
-                        current_turn["thought"]=args.get('thought')
-                        current_turn["search"]=args.get('query')
-                        current_turn["information"]=function_response
+                        # current_turn["effect_last"]=args.get('reflect')
+                        # current_turn["thought"]=args.get('thought')
+                        # current_turn["search"]=args.get('query')
+                        # current_turn["information"]=function_response
+                        current_turn = {
+                            "thought": function_args.get('thought', ""),
+                            "search": function_args.get('query', ""),
+                            "effect_last": function_args.get('reflect', []),
+                            "information": function_response
+                        }
+                        long_cot.append(current_turn)
                 
                 # C. 循环继续：带着工具结果再次请求DeepSeek，让它继续生成答案
                 print("  [System] 工具结果已提交，等待模型归纳...")
 
-                long_cot.append(current_turn)
+
                 continue
                 
             else:
@@ -131,13 +141,9 @@ class GPT:
                 print(f'[debug]RAG time:{RAG_time}')
                 print(f"[debug]DeepSeek: {response_message.content}")
 
-                # current_turn={}
-                # current_turn["final_response"]=response_message.content
-
                 # long_cot.append(current_turn)
 
                 return long_cot,response_message.content,RAG_time
-                return response_message.content
         print('[debug]到达推理上限。')
 
     def local_rag_search(self,query_text,retrieve_path, topk=5):
@@ -193,37 +199,7 @@ class GPT:
 
 
 
-query_prompt_init = """<question>
-{}
-</question>
 
-请使用链式思维（Chain of Thought, CoT）推理方法来回答上述问题<question>。你的回答应包含多个步骤，每个步骤由三种行动类型组成：“内部思考”、“最终结论”和“验证”：
-
-1.内部思考（Inner Thinking）：
-将推理过程拆解为多个简洁步骤，你必须遵守思考-检索-思考-回答的推理模式。每一步应以一个简短标题开头，以明确当前思考目的。
-思考：对问题进行推理，尝试解答。推理过程中，如果你发现涉及某些法律条文，则进入检索步骤。
-检索：暂停当前推理，使用工具"search_law"检索，以确认法律原文。
-系统将返回最相关的搜索结果。根据返回的结果，继续下一步思考。
-再次思考：基于检索结果，继续对问题进行推理。如果没有帮助，则修改关键词重新检索,不要重复检索已经检索过的关键词；如果有把握得到最终答案，则进入回答。
-
-
-2.最终结论（Final Conclusion）：
-在此阶段，总结前面“内部思考”步骤中的正确推理，并给出最终答案。此部分不需要标题。
-
-3.验证（Verification）：
-在此阶段，验证“最终结论”步骤中的结论是否成立。若结论正确，则结束推理；若不成立，则返回“内部思考”阶段继续推理。此部分不需要标题。
-
-###输出格式必须严格遵循以下JSON结构，且JSON字段中的所有内容都必须用中文书写：
-```json
-{{
-  "CoT": [
-    {{"action": "Inner Thinking", "title": "...", "content": "..."}},
-    ...,
-    {{"action": "Final Conclusion", "content": "..."}},
-    {{"action": "Verification", "content": "..."}}
-  ]
-}}
-```"""
 
 query_prompt_init = """
 你是一个严谨的法律AI助手。你的任务是回答法律问题，必须基于事实，严禁编造法律条文。
