@@ -219,28 +219,6 @@ query_prompt_init = """
 - 遇到问题 -> 分析需要查什么 -> **调用工具** (此时你会暂停) -> 接收工具结果 -> 分析结果 -> 发现还需要查别的 -> **再次调用工具** ... -> 最终整合信息回答。
 """
 
-reformat_to_complex_cot_prompt = """<Thought Process>
-{}
-</Thought Process>
-
-<Question>
-{}
-</Question>
-
-上述的<Thought Process>反映了模型基于<Question>的推理过程。你的任务是将这个<Thought Process>改写为更符合人类直觉、自然思考风格的中文版本。新的版本应当：
-
-1.以逐步推理的方式呈现，每个思考步骤独立成行，用换行符分隔。
-2.不使用结构化标题或格式，保持自然的过渡。使用一些口语化、自然的衔接词，如“嗯”、“哦”、“另外”、“等等”等。
-3.保留所有关键的中间步骤，包括<search>“关键词”</search>和<information>“搜索结果”</information>标签。
-4.扩展原内容，使推理更丰富、细节更充分、逻辑更清晰，同时保持对话式、直觉化的思维风格。
-
-直接以以下JSON格式返回改写后的自然思维内容：
-```json
-{{
-  "NaturalReasoning": "..."
-}}
-```"""
-
 get_final_response_prompt = """<Internal Thinking>
 {}
 </Internal Thinking>
@@ -288,79 +266,6 @@ tools_schema = [
 ]
 
 
-def fix_json_braces(text: str) -> str:
-    """
-    检查JSON文本中每个'}'之前的字符，
-    若不是引号'"'，则在'}'前补一个'"'。
-    """
-    result = []
-    for i, ch in enumerate(text):
-        if ch == '}':
-            # 前一个字符存在且不是双引号
-            if i > 0 and text[i - 1] != '"':
-                result.append('"')  # 插入引号
-        result.append(ch)
-    return ''.join(result)
-
-def extract_bracket_content(text):
-        # Extract content between the first '{' and the last '}'
-        match = re.search(r'\{.*\}', text, re.DOTALL)
-        return match.group(0) if match else None
-
-def parse_gpt_response(response):
-    def load_and_validate(text):
-        if text[0] != '{':
-            text = extract_bracket_content(text)
-        data = json.loads(text.replace('\n', ''))
-        cot = data.get("CoT")
-        assert isinstance(cot, list), "CoT should be list"
-        assert cot[-3]['action'] == 'Inner Thinking'
-        assert cot[-2]['action'] == 'Final Conclusion'
-        assert cot[-1]['action'] == 'Verification'
-        return data
-
-    try:
-        return True, load_and_validate(response)
-    except Exception:
-        try:
-            fixed = fix_json_braces(response)
-            return True, load_and_validate(fixed)
-        except Exception as e:
-            print(e)
-            print(f"[debug]{response[:2000]}")
-            traceback.print_exc()
-            return False, None
-    
-
-
-
-def parse_gpt_response_reformat(response):
-    try:
-        if not response:
-            raise ValueError("Empty response received from GPT")
-        if '{' != response[0]:
-            response = extract_bracket_content(response)
-        da = json.loads(response.replace('\n',''))
-
-        assert isinstance(da["NaturalReasoning"],str), "NaturalReasoning should be str"
-        # assert '\n' in da["NaturalReasoning"], "NaturalReasoning should have \\n"
-        return True,da
-    except Exception as e:
-        print(e)
-        print(f"[debug][reformat]{response[:2000]}")
-        traceback.print_exc()
-        return False,None 
-    
-
-def get_stream_of_search(longcot):
-    temp = '### {}\n{}\n'
-    resstr = []
-    for x in longcot:
-        if 'title' in x:
-            resstr.append(temp.format(x['title'],x['content']))
-        else:
-            resstr.append(temp.format(x['action'].replace('Final Conclusion','Conclusion'),x['content']))
-    return '\n'.join(resstr).strip()
 
 def main():
     parser = argparse.ArgumentParser()
@@ -442,13 +347,11 @@ def main():
         global wrongtime
         try:
             retry_time = 1
-            d['verify'] = []
-            d['Long_CoT'] = []
             d['gpt4_query_cot'] = []
-            d['gpt4_response_cot'] = []
-            d['response_struct'] = []
-            d['response_type'] = []
-            d['prior_fail_try'] = []
+            d['Long_CoT'] = []
+            d["Response"] =[]
+            d['Rag_Time'] = []
+            d['Question'] = []
 
 
             save_path = os.path.join(save_dir, str(d['process_id']) + ".json")
@@ -479,14 +382,18 @@ def main():
                     # 1. 直接添加 thought
                     if turn.get("thought"):
                         new_elements.append(str(turn["thought"]))
+                        new_elements.append('\n')
+
                     
                     # 2. 处理 search，添加 <search> 标签
                     if turn.get("search"):
                         new_elements.append(f"<search>{turn['search']}</search>")
+                        new_elements.append('\n')
                     
                     # 3. 处理 information，添加 <information> 标签
                     if turn.get("information"):
                         new_elements.append(f"<information>{turn['information']}</information>")
+                        new_elements.append('\n')
 
                 # 将所有部分连接成一个完整的字符串
                 d['Complex_CoT']= "".join(new_elements)
@@ -495,41 +402,6 @@ def main():
             with open(save_path, mode="w", encoding="utf-8") as fw:
                 json.dump(d, fw, ensure_ascii=False,indent=2)
                 wrongtime = 0
-
-
-                
-                
-            
-            if False:
-                # Generate complex CoT and final response (Complex_CoT, response)
-                sos = get_stream_of_search(d['Long_CoT'])
-                query = reformat_to_complex_cot_prompt.format(sos,d['Open-ended Verifiable Question'])
-                d['gpt4_query_cot'].append(query)
-                for ii in range(retry_time):
-                    #转换为口语
-                    response = gpt_instance.retry_call(query)
-                    flag, struct = parse_gpt_response_reformat(response)
-                    if flag:
-                        d['gpt4_response_cot'].append(response)
-                        d["Complex_CoT"] = struct["NaturalReasoning"]
-                        # get response
-                        query = get_final_response_prompt.format(d['Complex_CoT'],d['Open-ended Verifiable Question'])
-                        d['gpt4_query_cot'].append(query)
-                        #总结
-                        response = gpt_instance.retry_call(query)
-                        d['gpt4_response_cot'].append(response)
-                        d["Response"] = response
-                        d['Question'] = d['Open-ended Verifiable Question']
-                        
-
-                        #only save data with final COT
-                        with open(save_path, mode="w", encoding="utf-8") as fw:
-                            json.dump(d, fw, ensure_ascii=False,indent=2)
-                            wrongtime = 0
-
-
-
-                        break
 
         except Exception as e:
             traceback.print_exc()
