@@ -63,8 +63,9 @@ class GPT:
         RAG_time=0
         max_turns = 7  # 防止死循环，设置最大轮数
         print(f"[debug]user_query: {user_query}")
+        long_cot=[]#记录多轮检索推理
         while RAG_time < max_turns:
-            
+            current_turn={}
             response = client.chat.completions.create(
                 model=self.model_name,
                 messages=messages,
@@ -113,15 +114,29 @@ class GPT:
                         print(f"[debug]模型思考: {args.get('thought')}")
                         print(f"[debug]执行搜索: {args.get('query')}")
                         print(f'[debug] RAG content: /n {function_response}')
+
+                        current_turn["effect_last"]=args.get('reflect')
+                        current_turn["thought"]=args.get('thought')
+                        current_turn["search"]=args.get('query')
+                        current_turn["information"]=function_response
                 
                 # C. 循环继续：带着工具结果再次请求DeepSeek，让它继续生成答案
                 print("  [System] 工具结果已提交，等待模型归纳...")
+
+                long_cot.append(current_turn)
                 continue
                 
             else:
                 # 模型不想调用工具了，直接输出最终回答
                 print(f'[debug]RAG time:{RAG_time}')
                 print(f"[debug]DeepSeek: {response_message.content}")
+
+                # current_turn={}
+                # current_turn["final_response"]=response_message.content
+
+                # long_cot.append(current_turn)
+
+                return long_cot,response_message.content,RAG_time
                 return response_message.content
         print('[debug]到达推理上限。')
 
@@ -458,7 +473,7 @@ def main():
             d['response_struct'] = []
             d['response_type'] = []
             d['prior_fail_try'] = []
-            # d['Open-ended Verifiable Question']=d['question']
+            d['Open-ended Verifiable Question']=d['question']
 
             save_path = os.path.join(save_dir, str(d['process_id']) + ".json")
 
@@ -471,38 +486,43 @@ def main():
             else:
                 user_query=d['Open-ended Verifiable Question']#用户问题
             d['gpt4_query_cot'].append(user_query)
-            # query = query_prompt_init.format(d['Open-ended Verifiable Question'])
-            # d['gpt4_query_cot'].append(query)
-
-
-            # for ii in range(retry_time):
-            #     #多轮检索推理
-            #     response = gpt_instance.retry_call_RAG(query)
-            #     if ii == 0:
-            #         d['gpt4_response_cot'].append(response)
-            #     flag, struct = parse_gpt_response(response)
-            #     if flag:
-            #         d['response_struct'].append(struct["CoT"])
-            #         d['Long_CoT'] =  struct["CoT"]
-            #         d['response_type'].append('Init_CoT')
-            #         break
-            #     else:
-            #         print(f'retrying Init_CoT',flush=True)
-            # if not flag:
-            #     raise Exception('init error')
 
             
             #多轮检索推理
-            response = gpt_instance.retry_call_RAG(query,user_query)
-            d['Long_CoT']=response
+            Long_CoT,response,rag_time = gpt_instance.retry_call_RAG(query,user_query)
+            d['Long_CoT']=Long_CoT
+            d["Response"]=response
+            d['Rag_Time']=rag_time
 
             #整理多轮推理，合成完整逻辑
+            d['Question']=user_query
+            if True:#完整记录
+                new_elements = []
 
+                for turn in Long_CoT:
+                    # 1. 直接添加 thought
+                    if turn.get("thought"):
+                        new_elements.append(str(turn["thought"]))
                     
+                    # 2. 处理 search，添加 <search> 标签
+                    if turn.get("search"):
+                        new_elements.append(f"<search>{turn['search']}</search>")
+                    
+                    # 3. 处理 information，添加 <information> 标签
+                    if turn.get("information"):
+                        new_elements.append(f"<information>{turn['information']}</information>")
 
-            
+                # 将所有部分连接成一个完整的字符串
+                d['Complex_CoT']== "".join(new_elements)
 
-            
+            #only save data with final COT
+            with open(save_path, mode="w", encoding="utf-8") as fw:
+                json.dump(d, fw, ensure_ascii=False,indent=2)
+                wrongtime = 0
+
+
+                
+                
             
             if False:
                 # Generate complex CoT and final response (Complex_CoT, response)
