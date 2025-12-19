@@ -513,7 +513,7 @@ def main():
                         new_elements.append(f"<information>{turn['information']}</information>")
 
                 # 将所有部分连接成一个完整的字符串
-                d['Complex_CoT']== "".join(new_elements)
+                d['Complex_CoT']= "".join(new_elements)
 
             #only save data with final COT
             with open(save_path, mode="w", encoding="utf-8") as fw:
