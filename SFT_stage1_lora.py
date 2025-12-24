@@ -104,6 +104,7 @@ class Train_dataset(torch.utils.data.Dataset):
         labels = [item["labels"] for item in data]
 
         max_len = max(len(x) for x in input_ids)
+        print(f"[debug]max_len={max_len}===========================================")
         max_len = min(max_len,self.max_seq_len)
         print(f"[debug]max_len={max_len}===========================================")
         input_ids = [ item[:max_len] + [self.tokenizer.eos_token_id]*(max_len-len(item)) for item in input_ids]
