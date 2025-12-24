@@ -387,7 +387,12 @@ def main():
                         new_elements.append('\n')
 
                 # 将所有部分连接成一个完整的字符串
-                d['Complex_CoT']= "".join(new_elements)
+                
+                def convert_escapes(text):
+                    text = text.replace('\\n', '\n')  # 将 \\n 替换为换行符
+                    text = text.replace('\\u3000', '\u3000')  # 将 \\u3000 替换为全角空格
+                    return text
+                d['Complex_CoT']= convert_escapes("".join(new_elements))
 
             #only save data with final COT
             with open(save_path, mode="w", encoding="utf-8") as fw:
