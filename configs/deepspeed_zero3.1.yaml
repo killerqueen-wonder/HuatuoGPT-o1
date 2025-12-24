@@ -1,30 +1,7 @@
 compute_environment: LOCAL_MACHINE
 debug: false
 deepspeed_config:
-  deepspeed_multinode_launcher: standard
-  # 关键优化 1：降低缓冲区大小，释放连续显存空间
-  # 默认 5e8 (500MB) 太大，改为 2e7 (20MB)
-  reduce_bucket_size: 20000000
-  allgather_bucket_size: 20000000
-  
-  # 关键优化 2：开启完整的 CPU 卸载
-  offload_optimizer_device: cpu
-  offload_param_device: cpu
-  
-  # 关键优化 3：细化 ZeRO-3 参数控制
-  zero3_init_flag: true
-  zero3_max_live_parameters: 100000000  # 限制活跃参数量
-  zero3_max_reuse_distance: 100000000
-  zero3_prefetch_bucket_size: 20000000
-  zero3_save_16bit_model: true
-  
-  # 基础设置
-  zero_stage: 3
-  gradient_accumulation_steps: 16  # 建议调高，因为单卡 batch 降到了 1
-  gradient_clipping: 1.0
-  train_micro_batch_size_per_gpu: 1 # 必须设为 1，解决 2200+ 长度的 OOM
-  train_batch_size: 64 # 总 Batch Size = num_gpus * micro_batch * grad_accum
-
+  deepspeed_config_file: .\deepspeed_config.json
 distributed_type: DEEPSPEED
 downcast_bf16: 'no'
 machine_rank: 0
