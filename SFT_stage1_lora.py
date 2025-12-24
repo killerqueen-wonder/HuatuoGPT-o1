@@ -156,10 +156,10 @@ class SFTMetric:
         return acc, loss
 
 
-
+from peft import LoraConfig, get_peft_model, TaskType
 
 def train(args):
-    # 1. 初始化 Accelerator
+    # 1. 初始化 Accelerator (确保 gradient_accumulation_steps 与 yaml 一致)
     accelerator = Accelerator(mixed_precision='bf16', gradient_accumulation_steps=args.gradient_accumulation_steps) 
 
     if accelerator.is_main_process:
@@ -170,22 +170,20 @@ def train(args):
     # 2. 加载 Tokenizer
     tokenizer = AutoTokenizer.from_pretrained(args.model_path, trust_remote_code=True)
 
-    # 3. 加载模型
+    # 3. 加载基座模型
     model = AutoModelForCausalLM.from_pretrained(
         args.model_path,
         torch_dtype="auto",
         trust_remote_code=True
     )
 
-    # 4. 配置 LoRA
-    accelerator.print("正在配置 LoRA...")
+    # 4. 注入 LoRA (解决 OOM 的核心)
     peft_config = LoraConfig(
         task_type=TaskType.CAUSAL_LM,
         inference_mode=False,
-        r=16,               # LoRA Rank
-        lora_alpha=32,      # 常用 r 的 2 倍
+        r=16, 
+        lora_alpha=32, 
         lora_dropout=0.05,
-        # 针对 Qwen3 结构，覆盖所有核心线性层
         target_modules=["q_proj", "k_proj", "v_proj", "o_proj", "gate_proj", "up_proj", "down_proj"],
     )
     model = get_peft_model(model, peft_config)
@@ -193,12 +191,12 @@ def train(args):
     if accelerator.is_main_process:
         model.print_trainable_parameters()
 
-    # 5. 开启 Gradient Checkpointing (必须在加载 LoRA 后)
+    # 5. 显存优化配置
     if args.gradient_checkpointing:
         model.gradient_checkpointing_enable()
         model.enable_input_require_grads()
 
-    # 6. 设置优化器 (此时只更新 LoRA 参数)
+    # 6. 优化器定义 (仅包含 LoRA 参数)
     no_decay = ["bias", "LayerNorm.weight"]
     optimizer_grouped_parameters = [
         {
@@ -212,7 +210,7 @@ def train(args):
     ]
     optimizer = torch.optim.AdamW(optimizer_grouped_parameters, lr=args.learning_rate)
 
-    # 7. 准备数据
+    # 7. 数据加载
     train_dataset = Train_dataset(args, tokenizer)
     train_dataloader = DataLoader(train_dataset, batch_size=args.train_bsz_per_gpu, shuffle=True, drop_last=True, collate_fn=train_dataset.collate_fn)
 
@@ -224,12 +222,13 @@ def train(args):
         num_training_steps=num_training_steps
     )
     
-    # 9. 准备 Accelerator 环境
+    # 9. 关键步：使用 accelerator.prepare 包装所有组件
+    # DeepSpeed 引擎会在此步骤接管 optimizer 和 scheduler 的步进逻辑
     model, optimizer, train_dataloader, lr_scheduler = accelerator.prepare(model, optimizer, train_dataloader, lr_scheduler)
 
     metric = SFTMetric(device=torch.cuda.current_device())
 
-    # 10. 定义 LoRA 专用保存逻辑
+    # 10. LoRA 专用保存逻辑
     def save_checkpoint(epoch, step, global_step):
         save_dir = os.path.join(args.output_dir, f"checkpoint-{epoch}-{global_step}")
         accelerator.wait_for_everyone()
@@ -237,7 +236,7 @@ def train(args):
         if accelerator.is_main_process:
             os.makedirs(save_dir, exist_ok=True)
             output_dir = os.path.join(save_dir, "tfmr")
-            # 仅保存 LoRA 适配器权重
+            # 仅保存 LoRA 权重，极快且省空间
             unwrapped_model = accelerator.unwrap_model(model)
             unwrapped_model.save_pretrained(
                 output_dir, 
@@ -246,51 +245,52 @@ def train(args):
             )
             tokenizer.save_pretrained(output_dir)
             
-            # 拷贝一些基础配置文件（如 generation_config.json 等），不拷贝 16GB 的主权重
-            for item in ["config.json", "generation_config.json", "tokenizer_config.json", "special_tokens_map.json"]:
+            # 拷贝必要的基础配置
+            for item in ["config.json", "generation_config.json", "tokenizer_config.json"]:
                 src = os.path.join(args.model_path, item)
                 if os.path.exists(src):
                     shutil.copy(src, os.path.join(output_dir, item))
 
         accelerator.wait_for_everyone()
         accelerator.save({"epoch": epoch, "step": step, "global_step": global_step}, os.path.join(save_dir, "training_state.pt"))
-        accelerator.print(f"LoRA Adapter saved at {save_dir}")
 
-    # 11. 训练循环
+    # 11. 训练循环 (移除了 accumulate 上下文)
     model.train()
     global_step = 0
     for epoch in range(args.n_epochs):
-        train_dataloader_iterator = tqdm(enumerate(train_dataloader), total=len(train_dataloader)) if accelerator.is_main_process else enumerate(train_dataloader)
+        train_iter = tqdm(enumerate(train_dataloader), total=len(train_dataloader)) if accelerator.is_main_process else enumerate(train_dataloader)
         
-        for batch_cnt, batch in train_dataloader_iterator:
+        for batch_cnt, batch in train_iter:
             input_ids = batch['input_ids']
             labels = batch['labels']
 
-            with accelerator.accumulate(model):
-                output = model(input_ids=input_ids, labels=labels, return_dict=True, use_cache=False)
-                loss = output.loss
-                
-                # 显存优化：计算 metric 时 detach logits，防止占用显存
-                with torch.no_grad():
-                    # 只有在主进程记录时才计算，或者 detach 后计算以防 backward 挂掉
-                    metric.update(output.logits.detach(), labels, loss.detach())
-                
-                accelerator.backward(loss)
-                optimizer.step()
-                lr_scheduler.step()
-                optimizer.zero_grad()
+            # 前向传播
+            output = model(input_ids=input_ids, labels=labels, return_dict=True, use_cache=False)
+            loss = output.loss
+            
+            # 更新指标 (使用 detach() 释放显存)
+            with torch.no_grad():
+                metric.update(output.logits.detach(), labels, loss.detach())
+            
+            # 反向传播 (DeepSpeed 内部处理梯度累积)
+            accelerator.backward(loss)
+
+            # 优化器步进
+            # 在 DeepSpeed 模式下，这些函数内部会自动判断是否达到了累积步数
+            optimizer.step()
+            lr_scheduler.step()
+            optimizer.zero_grad()
 
             global_step += 1
-            acc, train_loss = metric.get_metric(reset=(global_step % 10 == 0)) # 没 10 步重置一次统计
+            acc, train_loss = metric.get_metric(reset=(global_step % 10 == 0))
 
             if accelerator.is_main_process:
-                train_dataloader_iterator.set_postfix(
-                    epoch=epoch, loss=round(train_loss, 4), acc=round(acc, 4), lr=lr_scheduler.get_last_lr()[0]
-                )
+                train_iter.set_postfix(epoch=epoch, loss=round(train_loss, 4), acc=round(acc, 4), lr=lr_scheduler.get_last_lr()[0])
                 if global_step % 5 == 0:
                     wandb.log({'loss': train_loss, 'acc': acc, 'lr': lr_scheduler.get_last_lr()[0]}, step=global_step)
 
         save_checkpoint(epoch, batch_cnt, global_step)
+
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Args of sft')
