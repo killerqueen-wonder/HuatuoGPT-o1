@@ -195,8 +195,10 @@ def train(args):
 
     # 5. 显存优化配置
     if args.gradient_checkpointing:
+        print("[debug]优化显存，gradient_checkpointing================================")
         model.gradient_checkpointing_enable()
         model.enable_input_require_grads()
+        model.config.use_cache = False
 
     # 6. 优化器定义 (仅包含 LoRA 参数)
     no_decay = ["bias", "LayerNorm.weight"]
