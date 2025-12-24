@@ -387,7 +387,7 @@ if __name__ == '__main__':
     parser.add_argument('--max_seq_len', default=8192, type=int)
     parser.add_argument('--gradient_checkpointing', action='store_true')
     parser.add_argument('--gradient_accumulation_steps', default=8, type=int)
-    parser.add_argument('--train_bsz_per_gpu', default=2, type=int)
+    parser.add_argument('--train_bsz_per_gpu', default=1, type=int)
     parser.add_argument('--weight_decay', default=0.1, type=float)
     parser.add_argument('--learning_rate', default=5e-6, type=float)
     parser.add_argument('--warmup_rates', default=0.05, type=float)
