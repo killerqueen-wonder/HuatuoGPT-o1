@@ -59,7 +59,8 @@ class Train_dataset(torch.utils.data.Dataset):
 
     def get_prompt(self,da):
 
-        q = da['Question']
+        # q = da['Question']
+        q = da['Open-ended Verifiable Question']
         a = self.get_response(da)
         assert q is not None and a is not None, f'q:{q} a:{a}'
 
