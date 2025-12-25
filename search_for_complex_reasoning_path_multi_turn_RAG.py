@@ -99,6 +99,10 @@ class GPT:
             reasoning_content = response.choices[0].message.reasoning_content
             content = response.choices[0].message.content
 
+            #保存初次reasoning
+            if len(long_cot)==0:
+                long_cot.append(reasoning_content)
+
             # 检查模型是否想调用工具
             tool_calls = response_message.tool_calls
 
@@ -133,15 +137,15 @@ class GPT:
 
                         
                         print(f"[debug]上一次有效文本编号: {args.get('reflect')}")
-                        # print(f"[debug]模型思考: {args.get('thought')}")
-                        print(f"[debug]模型思考: {reasoning_content}")
+                        print(f"[debug]模型思考: {args.get('thought')}")
+                        # print(f"[debug]模型思考: {reasoning_content}")
                         
                         print(f"[debug]执行搜索: {args.get('query')}")
                         print(f'[debug] RAG content: /n {function_response}')
 
                         current_turn = {
-                            # "thought": function_args.get('thought', ""),
-                            "thought": reasoning_content,
+                            "thought": function_args.get('thought', ""),
+                            # "thought": reasoning_content,
                             "search": function_args.get('query', ""),
                             "effect_last": function_args.get('reflect', []),
                             "information": function_response
@@ -283,14 +287,17 @@ tools_schema = [
             "parameters": {
                 "type": "object",
                 "properties": {
-                    
+                    "thought": {
+                        "type": "string",
+                        "description": "调用此工具前的思考过程。说明基于前面的哪些内容，在推理问题的过程中为什么要搜这个，以及期望得到什么。注意前后逻辑连贯通顺。" 
+                    },
                     "query": {
                         "type": "string",
                         "description": "用于检索的查询关键词"
                     },
                     
                 },
-                "required": ["query"]
+                "required": ["query","thought"]
             }
         }
     }
