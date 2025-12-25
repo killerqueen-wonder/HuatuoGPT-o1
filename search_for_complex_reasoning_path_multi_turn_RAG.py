@@ -101,7 +101,7 @@ class GPT:
 
             #保存初次reasoning
             if len(long_cot)==0:
-                long_cot.append(reasoning_content)
+                long_cot.append({"reasoning": reasoning_content})
 
             # 检查模型是否想调用工具
             tool_calls = response_message.tool_calls
