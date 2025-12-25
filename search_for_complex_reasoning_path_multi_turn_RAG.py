@@ -297,7 +297,7 @@ tools_schema = [
                     },
                     
                 },
-                "required": ["query","thought"]
+                "required": ["thought","query"]
             }
         }
     }
