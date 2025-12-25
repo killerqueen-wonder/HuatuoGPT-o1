@@ -287,17 +287,18 @@ tools_schema = [
             "parameters": {
                 "type": "object",
                 "properties": {
-                    "thought": {
-                        "type": "string",
-                        "description": "调用此工具前的思考过程。说明基于前面的哪些内容，在推理问题的过程中为什么要搜这个，以及期望得到什么。注意前后逻辑连贯通顺。" 
-                    },
+                    # "thought": {
+                    #     "type": "string",
+                    #     "description": "调用此工具前的思考过程。说明基于前面的哪些内容，在推理问题的过程中为什么要搜这个，以及期望得到什么。注意前后逻辑连贯通顺。" 
+                    # },
                     "query": {
                         "type": "string",
                         "description": "用于检索的查询关键词"
                     },
                     
                 },
-                "required": ["thought","query"]
+                # "required": ["thought","query"]
+                "required": ["query"]
             }
         }
     }
