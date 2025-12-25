@@ -68,6 +68,9 @@ class GPT:
         print(f"[debug]user_query: {user_query}")
         long_cot=[]#记录多轮检索推理
         while RAG_time < max_turns:
+
+            #清除massage的reasoning content
+
             current_turn={}
             response = client.chat.completions.create(
                 model=self.model_name,
@@ -79,22 +82,23 @@ class GPT:
             )
 
             #测试
-            if hasattr(response, 'usage') and response.usage:
-                token_details = {
-                    "input_tokens": getattr(response.usage, 'prompt_tokens', 0),
-                    "output_tokens": getattr(response.usage, 'completion_tokens', 0),
-                    "total_tokens": getattr(response.usage, 'total_tokens', 0),
-                    "reasoning_tokens": getattr(response.usage, 'reasoning_tokens', None)  # 如果有推理token计数
-                }
-                print('[debug]',token_details)
-            else:
-                token_details = "未获取到token信息"
-                print('[debug]',token_details)
+            # if hasattr(response, 'usage') and response.usage:
+            #     token_details = {
+            #         "input_tokens": getattr(response.usage, 'prompt_tokens', 0),
+            #         "output_tokens": getattr(response.usage, 'completion_tokens', 0),
+            #         "total_tokens": getattr(response.usage, 'total_tokens', 0),
+            #         "reasoning_tokens": getattr(response.usage, 'reasoning_tokens', None)  # 如果有推理token计数
+            #     }
+            #     print('[debug]',token_details)
+            # else:
+            #     token_details = "未获取到token信息"
+            #     print('[debug]',token_details)
             print('[debug]  response:',response)
 
             response_message = response.choices[0].message
             reasoning_content = response.choices[0].message.reasoning_content
-            
+            content = response.choices[0].message.content
+
             # 检查模型是否想调用工具
             tool_calls = response_message.tool_calls
 
@@ -286,7 +290,7 @@ tools_schema = [
                     },
                     
                 },
-                "required": ["thought", "query","reflect"]
+                "required": ["query"]
             }
         }
     }
