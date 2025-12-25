@@ -64,7 +64,7 @@ class GPT:
             {"role": "user", "content": user_query}
         ]
         RAG_time=0
-        max_turns = 7  # 防止死循环，设置最大轮数
+        max_turns = 3  # 防止死循环，设置最大轮数
         print(f"[debug]user_query: {user_query}")
         long_cot=[]#记录多轮检索推理
         while RAG_time < max_turns:
@@ -111,11 +111,11 @@ class GPT:
                 
                 # 必须把模型的这个“意图”加到历史消息里，否则API会报错
                 messages.append(response_message) 
-                
+                RAG_time += 1
                 for tool_call in tool_calls:
                     function_name = tool_call.function.name
                     function_args = json.loads(tool_call.function.arguments)
-                    RAG_time += 1
+                    
                     
                     if function_name == "search_law":
                         query = function_args.get("query")
@@ -296,7 +296,7 @@ tools_schema = [
                     },
                     "query": {
                         "type": "string",
-                        "description": "用于检索的查询关键词"
+                        "description": "想要查找的法律条文的检索关键词"
                     },
                     
                 },
