@@ -60,7 +60,7 @@ class GPT:
         client = self.client
         # messages=[{"role": "user", "content": content}]
         messages = [
-            {"role": "system", "content": content}, # 使用上面修改后的 prompt
+            {"role": "system", "content": content}, 
             {"role": "user", "content": user_query}
         ]
         RAG_time=0
@@ -77,7 +77,7 @@ class GPT:
                 messages=messages,
                 tools=tools_schema,       # 关键设置：挂载工具
                 tool_choice="auto",       # 关键设置：让模型自己决定是否用工具
-                temperature=0.1,          # 建议设低，保证工具调用格式稳定
+                temperature=0.0,          # 建议设低，保证工具调用格式稳定
                 stream=False
             )
 
