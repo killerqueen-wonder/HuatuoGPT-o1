@@ -296,16 +296,9 @@ tools_schema = [
                     },
                     "query": {
                         "type": "string",
-                        "description": "想要查找的法律条文的检索关键词"
+                        "description": "用于检索的查询关键词"
                     },
-                    # "reflect": {
-                    #     "type": "array",
-                    #     "items": {
-                    #         "type": "integer"
-                    #     },
-                    #     "description": "返回上一次检索中对推理有帮助的所有文本的编号（从1开始）。如果是第一次检索或没有有帮助的文本，则返回空数组[]。"
-                    # },
-                    
+
                 },
                 # "required": ["thought","query"]
                 "required": ["query"]
