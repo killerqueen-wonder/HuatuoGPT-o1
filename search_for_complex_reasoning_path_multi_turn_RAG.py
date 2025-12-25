@@ -85,7 +85,7 @@ class GPT:
                     "total_tokens": getattr(response.usage, 'total_tokens', 0),
                     "reasoning_tokens": getattr(response.usage, 'reasoning_tokens', None)  # 如果有推理token计数
                 }
-                print('[debug]',{token_details})
+                print('[debug]',token_details)
             else:
                 token_details = "未获取到token信息"
                 print('[debug]',token_details)
