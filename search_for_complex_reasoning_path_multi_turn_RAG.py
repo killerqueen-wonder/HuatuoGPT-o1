@@ -166,7 +166,9 @@ class GPT:
                 # long_cot.append(current_turn)
 
                 return long_cot,response_message.content,RAG_time
+        
         print('[debug]到达推理上限。')
+        return long_cot,response_message.content,RAG_time
 
     def local_rag_search(self,query_text,retrieve_path, topk=5):
         """
