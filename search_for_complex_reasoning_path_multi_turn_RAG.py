@@ -74,9 +74,10 @@ class GPT:
                 messages=messages,
                 tools=tools_schema,       # 关键设置：挂载工具
                 tool_choice="auto",       # 关键设置：让模型自己决定是否用工具
-                temperature=0.0,          # 建议设低，保证工具调用格式稳定
+                temperature=0.1,          # 建议设低，保证工具调用格式稳定
                 stream=False
             )
+
             #测试
             if hasattr(response, 'usage') and response.usage:
                 token_details = {
@@ -92,6 +93,7 @@ class GPT:
             print('[debug]  response:',response)
 
             response_message = response.choices[0].message
+            reasoning_content = response.choices[0].message.reasoning_content
             
             # 检查模型是否想调用工具
             tool_calls = response_message.tool_calls
@@ -127,16 +129,15 @@ class GPT:
 
                         
                         print(f"[debug]上一次有效文本编号: {args.get('reflect')}")
-                        print(f"[debug]模型思考: {args.get('thought')}")
+                        # print(f"[debug]模型思考: {args.get('thought')}")
+                        print(f"[debug]模型思考: {reasoning_content}")
+                        
                         print(f"[debug]执行搜索: {args.get('query')}")
                         print(f'[debug] RAG content: /n {function_response}')
 
-                        # current_turn["effect_last"]=args.get('reflect')
-                        # current_turn["thought"]=args.get('thought')
-                        # current_turn["search"]=args.get('query')
-                        # current_turn["information"]=function_response
                         current_turn = {
-                            "thought": function_args.get('thought', ""),
+                            # "thought": function_args.get('thought', ""),
+                            "thought": reasoning_content,
                             "search": function_args.get('query', ""),
                             "effect_last": function_args.get('reflect', []),
                             "information": function_response
@@ -238,30 +239,52 @@ query_prompt_init = """
 
 
 #定义工具描述 (Schema) - 这是发给DeepSeek看的说明书
+# tools_schema = [
+#     {
+#         "type": "function",
+#         "function": {
+#             "name": "search_law",
+#             "description": "这是一个法律知识检索工具。当回答需要具体的法律条文时，必须使用此工具。DeepSeek应该自主决定搜索关键词。例如“刑法 盗窃罪”，“民法典 第一百三十三条” 。",
+#             "parameters": {
+#                 "type": "object",
+#                 "properties": {
+#                     "thought": {
+#                         "type": "string",
+#                         "description": "调用此工具前的思考过程。说明基于前面的哪些内容，在推理问题的过程中为什么要搜这个，以及期望得到什么。注意前后逻辑连贯通顺。" 
+#                     },
+#                     "query": {
+#                         "type": "string",
+#                         "description": "用于检索的查询关键词"
+#                     },
+#                     "reflect": {
+#                         "type": "array",
+#                         "items": {
+#                             "type": "integer"
+#                         },
+#                         "description": "返回上一次检索中对推理有帮助的所有文本的编号（从1开始）。如果是第一次检索或没有有帮助的文本，则返回空数组[]。"
+#                     },
+#                 },
+#                 "required": ["thought", "query","reflect"]
+#             }
+#         }
+#     }
+# ]
+
 tools_schema = [
     {
         "type": "function",
         "function": {
             "name": "search_law",
-            "description": "这是一个法律知识检索工具。当回答需要具体的法律条文时，必须使用此工具。DeepSeek应该自主决定搜索关键词。例如“刑法 盗窃罪”，“民法典 第一百三十三条” 。",
+            "description": "这是一个法律知识检索工具。当回答需要具体的法律条文或法律解释时，必须使用此工具，以确认法律原文。DeepSeek应该自主决定搜索关键词。例如“刑法 盗窃罪”，“民法典 第一百三十三条” 。工具会返回检索到的法律条文和解释。",
             "parameters": {
                 "type": "object",
                 "properties": {
-                    "thought": {
-                        "type": "string",
-                        "description": "调用此工具前的思考过程。说明基于前面的哪些内容，在推理问题的过程中为什么要搜这个，以及期望得到什么。注意前后逻辑连贯通顺。" 
-                    },
+                    
                     "query": {
                         "type": "string",
                         "description": "用于检索的查询关键词"
                     },
-                    "reflect": {
-                        "type": "array",
-                        "items": {
-                            "type": "integer"
-                        },
-                        "description": "返回上一次检索中对推理有帮助的所有文本的编号（从1开始）。如果是第一次检索或没有有帮助的文本，则返回空数组[]。"
-                    },
+                    
                 },
                 "required": ["thought", "query","reflect"]
             }
