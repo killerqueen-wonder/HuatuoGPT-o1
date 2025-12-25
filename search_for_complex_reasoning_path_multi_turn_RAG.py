@@ -283,14 +283,14 @@ tools_schema = [
         "type": "function",
         "function": {
             "name": "search_law",
-            "description": "这是一个法律知识检索工具。当回答需要具体的法律条文或法律解释时，必须使用此工具，以确认法律原文。DeepSeek应该自主决定搜索关键词。例如“刑法 盗窃罪”，“民法典 第一百三十三条” 。工具会返回检索到的法律条文和解释。",
+            "description": "这是一个法律知识检索工具。当回答需要具体的法律条文或法律解释时，必须使用此工具，以确认法律原文。输入搜索关键词，例如“刑法 盗窃罪”，“民法典 第一百三十三条” 。工具会返回检索到的法律条文和解释。",
             "parameters": {
                 "type": "object",
                 "properties": {
-                    # "thought": {
-                    #     "type": "string",
-                    #     "description": "调用此工具前的思考过程。说明基于前面的哪些内容，在推理问题的过程中为什么要搜这个，以及期望得到什么。注意前后逻辑连贯通顺。" 
-                    # },
+                    "thought": {
+                        "type": "string",
+                        "description": "解释调用此工具前的思考过程。说明基于前面的哪些内容，在推理问题的过程中为什么要搜这个，以及期望得到什么。注意前后逻辑连贯通顺。" 
+                    },
                     "query": {
                         "type": "string",
                         "description": "用于检索的查询关键词"
@@ -418,6 +418,13 @@ def main():
                 new_elements = []
 
                 for turn in Long_CoT:
+
+
+                    # 1. 直接添加 reasoning
+                    if turn.get("reasoning"):
+                        new_elements.append(str(turn["reasoning"]))
+                        new_elements.append('\n')
+
                     # 1. 直接添加 thought
                     if turn.get("thought"):
                         new_elements.append(str(turn["thought"]))
