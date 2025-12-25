@@ -67,9 +67,8 @@ class GPT:
         max_turns = 3  # 防止死循环，设置最大轮数
         print(f"[debug]user_query: {user_query}")
         long_cot=[]#记录多轮检索推理
+        reasoning_content=''
         while RAG_time < max_turns:
-
-            #清除massage的reasoning content
 
             current_turn={}
             response = client.chat.completions.create(
