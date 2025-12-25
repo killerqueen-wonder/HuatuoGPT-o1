@@ -80,18 +80,7 @@ class GPT:
                 stream=False
             )
 
-            #测试
-            # if hasattr(response, 'usage') and response.usage:
-            #     token_details = {
-            #         "input_tokens": getattr(response.usage, 'prompt_tokens', 0),
-            #         "output_tokens": getattr(response.usage, 'completion_tokens', 0),
-            #         "total_tokens": getattr(response.usage, 'total_tokens', 0),
-            #         "reasoning_tokens": getattr(response.usage, 'reasoning_tokens', None)  # 如果有推理token计数
-            #     }
-            #     print('[debug]',token_details)
-            # else:
-            #     token_details = "未获取到token信息"
-            #     print('[debug]',token_details)
+            
             print('[debug]  response:',response)
 
             response_message = response.choices[0].message
