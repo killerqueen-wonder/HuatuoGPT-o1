@@ -59,7 +59,7 @@ class LLM:
         with torch.no_grad():
             output_ids = self.model.generate(
                 **inputs, 
-                max_new_tokens=128, 
+                max_new_tokens=1280, 
                 do_sample=False,  # 任务倾向于确定性输出，建议关闭采样
                 temperature=0.0   # 配合 do_sample=False
             )
@@ -101,7 +101,7 @@ def filter_LLM(information: list, thinking: str, llm: LLM):
 {information}
 
 请找出在思维链中没有被提及、且对得出结论没有帮助的文档编号。
-输出要求：仅输出无关文档的阿拉伯数字编号列表，例如 [1, 3]。如果全部相关，输出 []。不要输出任何解释。"""
+输出要求：仅输出无关文档的阿拉伯数字编号列表，例如 [1, 3]。如果全部相关，输出 []。注意：直接输出列表，不要给出任何解释。"""
 
     res = llm.gen(prompt)
     print(f"[Debug] 模型原始回复: {res}")
