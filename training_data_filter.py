@@ -198,7 +198,7 @@ class LLM:
 
             inputs = self.left_tokenizer(text, return_tensors="pt")
             inputs = inputs.to('cuda')
-            response_ids = self.model.generate(**inputs, max_new_tokens=8000)[0][len(inputs.input_ids[0]):].tolist()
+            response_ids = self.model.generate(**inputs, max_new_tokens=80)[0][len(inputs.input_ids[0]):].tolist()
             response = self.left_tokenizer.decode(response_ids, skip_special_tokens=False)
 
 
