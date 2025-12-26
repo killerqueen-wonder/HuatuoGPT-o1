@@ -223,13 +223,17 @@ def print_filter_statistics(stats):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument('--model_path', default="/caizhenyang/panghuaiwen/legal_LLM/RL_ckp/legal_exam-search-r1-ppo-qwen3-8b-em/global_step_100/actor", type=str)
+    parser.add_argument('--input_json_file', default='', type=str)
+    parser.add_argument('--output_json_file', default='', type=str)
     args = parser.parse_args()
     
     llm= LLM(args.model_path)
+    input_json_file=args.input_json_file
+    output_json_file=args.output_json_file
 
-    # 筛去rag time=0
-    input_json_file = r"D:\学习资料\DS课程\法律大模型\data\SFT_COT\output_data\DISC-Law-SFT-Pair-QA-released-train1000_CoT_search_399.json"
-    output_json_file = r"D:\学习资料\DS课程\法律大模型\data\SFT_COT\output_data\DISC-Law-SFT-Pair-QA-released-train1000_CoT_search_399_filtered.json"
+    
+    # input_json_file = r"/caizhenyang/panghuaiwen/legal_LLM/dataset/dataset/DISC-Law-SFT-Pair-QA-released-train1000_CoT_search_399_filtered_239.json"
+    # output_json_file = r"/caizhenyang/panghuaiwen/legal_LLM/dataset/dataset/DISC-Law-SFT-Pair-QA-released-train1000_CoT_search_399_filtered_info.json"
 
     try:
         # 筛选数据
