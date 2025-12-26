@@ -125,7 +125,7 @@ def filter_LLM(information:list,thinking,llm):
             {thinking}
             以下是法律文档：
             {information}
-            输出与思维链完全无关的文档编号列表（从1开始），例如[1,3]，不要输出解释和其他内容。
+            输出与思维链完全无关的文档编号列表（从1开始,阿拉伯数字的列表），例如[1,3]，不要输出解释和其他内容。
             '''
     res=llm.gen(prompt)
     print(f"[debug]llm res:{res}")
