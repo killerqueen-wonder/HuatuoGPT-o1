@@ -128,7 +128,7 @@ def filter_LLM(information:list,thinking,llm):
             输出与思维链完全无关的文档编号列表（从1开始），例如[1,3]，不要输出解释和其他内容。
             '''
     res=llm.gen(prompt)
-    print("[debug]llm res:{res}")
+    print(f"[debug]llm res:{res}")
 
     def extract_numbers(text):
         """
@@ -222,7 +222,7 @@ def print_filter_statistics(stats):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument('--model_path', default="/caizhenyang/panghuaiwen/legal_LLM/RL_ckp/legal_exam-search-r1-ppo-qwen3-8b-em/global_step_100/actor", type=str)
+    parser.add_argument('--model_path', default="", type=str)
     parser.add_argument('--input_json_file', default='', type=str)
     parser.add_argument('--output_json_file', default='', type=str)
     args = parser.parse_args()
