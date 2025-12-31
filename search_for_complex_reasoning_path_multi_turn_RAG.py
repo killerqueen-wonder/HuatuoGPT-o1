@@ -64,7 +64,7 @@ class GPT:
             {"role": "user", "content": user_query}
         ]
         RAG_time=0
-        max_turns = 3  # 防止死循环，设置最大轮数
+        max_turns = 7  # 防止死循环，设置最大轮数
         print(f"[debug]user_query: {user_query}")
         long_cot=[]#记录多轮检索推理
         reasoning_content=''
