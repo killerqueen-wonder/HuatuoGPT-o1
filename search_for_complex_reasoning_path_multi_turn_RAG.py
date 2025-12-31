@@ -84,7 +84,8 @@ class GPT:
             print('[debug]  response:',response)
 
             response_message = response.choices[0].message
-            reasoning_content = response.choices[0].message.reasoning_content
+            # reasoning_content = response.choices[0].message.reasoning_content
+            reasoning_content = getattr(response_message, 'reasoning_content', "")
             content = response.choices[0].message.content
 
             #保存初次reasoning
