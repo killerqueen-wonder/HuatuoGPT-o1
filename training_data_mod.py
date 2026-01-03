@@ -215,7 +215,7 @@ def print_filter_statistics(stats):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="法律文档 RAG 数据清洗工具")
-    parser.add_argument('--model_path', type=str, required=True, help="LLM 模型本地路径")
+    parser.add_argument('--model_path', type=str,  help="LLM 模型本地路径")
     parser.add_argument('--input_json_file', type=str, required=True, help="输入 JSON 文件路径")
     parser.add_argument('--output_json_file', type=str, required=True, help="输出 JSON 文件路径")
     
