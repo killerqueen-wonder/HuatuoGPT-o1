@@ -3,7 +3,9 @@ import re
 import torch
 import argparse
 from transformers import AutoModelForCausalLM, AutoTokenizer
-
+"""
+重新打标签，以及LLM去除冗余RAG文本。
+"""
 class LLM:
     """
     大语言模型封装类，支持 Qwen 系列模型及标准 Transformers 模型
@@ -215,7 +217,7 @@ def print_filter_statistics(stats):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="法律文档 RAG 数据清洗工具")
-    parser.add_argument('--model_path', type=str,  help="LLM 模型本地路径")
+    parser.add_argument('--model_path', type=str,default=None,  help="LLM 模型本地路径")
     parser.add_argument('--input_json_file', type=str, required=True, help="输入 JSON 文件路径")
     parser.add_argument('--output_json_file', type=str, required=True, help="输出 JSON 文件路径")
     
@@ -223,8 +225,8 @@ if __name__ == "__main__":
     
     try:
         # 初始化模型
-        # llm_engine = LLM(args.model_path)
-        llm_engine=None
+        llm_engine = LLM(args.model_path)
+        # llm_engine=None
         
         # 执行清洗
         stats = filter_ragtime_zero(args.input_json_file, args.output_json_file, llm_engine)
