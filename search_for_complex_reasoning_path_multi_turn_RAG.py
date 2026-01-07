@@ -232,8 +232,23 @@ query_prompt_init = """
 - 遇到问题 -> 分析需要查什么 -> **调用工具** (此时你会暂停) -> 接收工具结果 -> 分析结果 -> 发现还需要查别的 -> **再次调用工具** ... -> 最终整合信息回答。
 """
 
+# verify_prompt = """<Model Response>  
+# {}  
+# </Model Response>  
 
+# <Reference Answer>  
+# {}
+# </Reference Answer>  
 
+# You are provided with a model-generated response (<Model Response>) and a reference answer (<Reference Answer>). Compare the model response with the reference answer and determine its correctness. Your task is to simply output "True" if the response is correct, and "False" otherwise."""
+
+gen_prompt_w_label='''
+回答以下问题：{}
+
+提示：{}
+
+注意：你必须在假装不知道提示的情况下，通过一步步思考和检索得到符合提示的最终答案。
+'''
 
 
 
@@ -314,6 +329,7 @@ def main():
     parser.add_argument("--retrieve_path", type=str,default= "http://127.0.0.1:8006/retrieve")
     parser.add_argument("--test_query", type=str,default= "")
     parser.add_argument("--topk", type=int,default= 5)
+    # parser.add_argument("--verify", type=bool,default= True)
     
     args = parser.parse_args()
 
@@ -370,6 +386,18 @@ def main():
                        retrieve_path=args.retrieve_path,
                        temperature=args.temperature,
                        topk=args.topk)
+    
+    # def verify_gpt(conclusion,answer,d):
+    #     query = verify_prompt.format(conclusion,answer)
+    #     response = gpt_instance.retry_call(query)
+    #     d['gpt4_query_cot'].append(query)
+    #     d['gpt4_response_cot'].append(response)
+    #     if 'true' in response.lower():
+    #         d['verify'].append(True)
+    #         return True
+    #     else:
+    #         d['verify'].append(False)
+    #         return False
 
         
     global wrongtime
@@ -378,7 +406,9 @@ def main():
         global wrongtime
         try:
             retry_time = 1
+            # d['verify'] = []
             d['gpt4_query_cot'] = []
+            d['gpt4_response_cot'] = []
             d['Long_CoT'] = []
             d["Response"] =[]
             d['Rag_Time'] = []
@@ -395,6 +425,10 @@ def main():
                 user_query=args.test_query#使用测试问题
             else:
                 user_query=d['Open-ended Verifiable Question']#用户问题
+
+            if d['Ground-True Answer']:
+                user_query=gen_prompt_w_label.format(user_query,d['Ground-True Answer'])
+            
             d['gpt4_query_cot'].append(user_query)
 
             
