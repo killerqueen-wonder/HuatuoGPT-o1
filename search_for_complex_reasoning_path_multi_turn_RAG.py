@@ -127,12 +127,14 @@ class GPT:
                         
                         print(f"[debug]上一次有效文本编号: {args.get('reflect')}")
                         print(f"[debug]模型思考: {args.get('thought')}")
+                        print(f"[debug]模型内容: {content}")
                         # print(f"[debug]模型思考: {reasoning_content}")
                         
                         print(f"[debug]执行搜索: {args.get('query')}")
                         print(f'[debug] RAG content: /n {function_response}')
 
                         current_turn = {
+                            "reasoning": content,
                             "thought": function_args.get('thought', ""),
                             # "thought": reasoning_content,
                             "search": function_args.get('query', ""),
