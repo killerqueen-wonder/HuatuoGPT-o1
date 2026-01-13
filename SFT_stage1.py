@@ -3,7 +3,7 @@ import json
 import torch
 import logging
 import argparse
-
+import re
 from tqdm import tqdm
 import torch.distributed as dist
 from torch.utils.data import Dataset, DataLoader
@@ -24,6 +24,7 @@ logging.basicConfig(level='INFO')
 
 
 class Train_dataset(torch.utils.data.Dataset):
+
     def __init__(self, config, tokenizer):
         self.config = config
         self.tokenizer = tokenizer
@@ -118,6 +119,141 @@ class Train_dataset(torch.utils.data.Dataset):
     
     def __len__(self):
         return len(self.data)
+
+class Train_dataset(torch.utils.data.Dataset):
+    def __init__(self, config, tokenizer):
+        self.config = config
+        self.tokenizer = tokenizer
+        with open(config.data_path) as f:
+            self.data = json.load(f)
+        
+        newdata = []
+        for da in self.data:
+            newdata.append(da)
+        print('过滤掉', len(self.data), len(newdata))
+        self.data = newdata
+
+        self.max_seq_len = self.config.max_seq_len
+        self.debug = 0
+
+        # 如果从Base LLMs训练，选择 llama3-instruct作为模版
+        chat_template_llama3 = "{% set loop_messages = messages %}{% for message in loop_messages %}{% set content = '<|start_header_id|>' + message['role'] + '<|end_header_id|>\n\n'+ message['content'] | trim + '<|eot_id|>' %}{% if loop.index0 == 0 %}{% set content = bos_token + content %}{% endif %}{{ content }}{% endfor %}{% if add_generation_prompt %}{{ '<|start_header_id|>assistant<|end_header_id|>\n\n' }}{% endif %}"
+        if not tokenizer.chat_template:
+            print('[debug]find no chat_templete')
+            tokenizer.chat_template = chat_template_llama3
+            
+        self.template = Template(tokenizer.chat_template)
+
+    def __len__(self):
+        return len(self.data)
+
+    def __getitem__(self, index):
+        return self.data[index]
+
+    def get_response(self, da):
+        # 保持原有的 Thinking + Answer 结构
+        temp = '## Thinking\n\n{}\n\n## Final Response\n<answer>\n{}\n</answer>'
+        return temp.format(da['Complex_CoT'], da['Response'])
+
+    def get_prompt(self, da):
+        q = da['Open-ended Verifiable Question']
+        a = self.get_response(da)
+        assert q is not None and a is not None, f'q:{q} a:{a}'
+
+        # 1. 构造完整序列和 Query 序列（用于获取 offset）
+        messages_query = [{"role": "user", "content": q}]
+        query_ids = self.tokenizer.apply_chat_template(
+            messages_query,
+            tokenize=True,
+            add_generation_prompt=True
+        )
+
+        messages_full = [
+            {"role": "user", "content": q},
+            {"role": "assistant", "content": a}
+        ]
+        input_ids = self.tokenizer.apply_chat_template(
+            messages_full,
+            tokenize=True,
+            add_generation_prompt=False
+        )
+
+        # 2. 对回答 'a' 进行单独分词，获取字符级偏移量 (Offset Mapping)
+        # 这一步是为了精确定位 <information> 标签在 Token 序列中的位置
+        encoded_a = self.tokenizer(
+            a, 
+            add_special_tokens=False, 
+            return_offsets_mapping=True
+        )
+        tokens_a = encoded_a['input_ids']
+        offsets_a = encoded_a['offset_mapping']
+
+        # 3. 找出 'a' 中所有需要 Mask 的字符区间
+        # 使用正则表达式匹配 <information>...</information>
+        mask_spans = []
+        for match in re.finditer(r'<information>.*?</information>', a, re.DOTALL):
+            mask_spans.append(match.span()) # 存储 (start_char_idx, end_char_idx)
+
+        # 4. 构造 Assistant 部分的 Labels
+        assistant_labels = []
+        for i, (start, end) in enumerate(offsets_a):
+            # 检查当前 Token 的字符区间是否落在任何一个 mask_span 内
+            is_masked = False
+            for s_start, s_end in mask_spans:
+                # 只要 Token 与 Mask 区间有交集，就 Mask 掉（也可以根据需求调优为全包含）
+                if max(start, s_start) < min(end, s_end):
+                    is_masked = True
+                    break
+            
+            if is_masked:
+                assistant_labels.append(-100)
+            else:
+                assistant_labels.append(tokens_a[i])
+
+        # 5. 拼接完整的 Labels
+        # Labels 结构 = [Query部分的Mask] + [Assistant部分的处理后Labels] + [剩余Token(如EOS)的保留]
+        # 注意：input_ids 的长度通常比 len(query_ids) + len(tokens_a) 略长（因为有角色结束符或EOS）
+        labels = [-100] * len(query_ids)
+        
+        # 将处理过的 assistant labels 放入相应位置
+        labels.extend(assistant_labels)
+        
+        # 补齐剩余的 token（通常是序列末尾的 <|eot_id|> 或 <|im_end|>）
+        remaining_len = len(input_ids) - len(labels)
+        if remaining_len > 0:
+            labels.extend(input_ids[len(labels):])
+
+        # 最终长度对齐检查
+        assert len(labels) == len(input_ids), f"Length mismatch: labels({len(labels)}) != input_ids({len(input_ids)})"
+
+        return {
+            "input_ids": input_ids[-self.max_seq_len:], 
+            "labels": labels[-self.max_seq_len:]
+        }
+
+    def collate_fn(self, batch):
+        data = [self.get_prompt(da) for da in batch]
+        input_ids = [item["input_ids"] for item in data]
+        labels = [item["labels"] for item in data]
+
+        max_len = max(len(x) for x in input_ids)
+        max_len = min(max_len, self.max_seq_len)
+        
+        input_ids = [item[:max_len] + [self.tokenizer.eos_token_id] * (max_len - len(item)) for item in input_ids]
+        labels = [item[:max_len] + [-100] * (max_len - len(item)) for item in labels]
+        
+        if self.debug < 3:
+            print('--- Debug Sample ---')
+            # 解码查看被 Mask 后的文本（-100 会被替换为特定字符以便观察）
+            decoded_labels = self.tokenizer.decode([0 if x == -100 else x for x in labels[-1]])
+            print('Input:', self.tokenizer.decode(input_ids[-1]))
+            print('Labels (Filtered):', decoded_labels)
+            self.debug += 1
+
+        return {
+            "input_ids": torch.LongTensor(input_ids),
+            "labels": torch.LongTensor(labels),
+        }
 
 class SFTMetric:
     def __init__(self, device):
