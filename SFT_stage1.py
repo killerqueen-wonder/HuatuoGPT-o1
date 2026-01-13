@@ -23,107 +23,119 @@ logger = logging.getLogger(__name__)
 logging.basicConfig(level='INFO')
 
 
-class Train_dataset(torch.utils.data.Dataset):
+# class Train_dataset(torch.utils.data.Dataset):
 
+#     def __init__(self, config, tokenizer):
+#         self.config = config
+#         self.tokenizer = tokenizer
+#         with open(config.data_path) as f:
+#             self.data = json.load(f)
+        
+#         newdata = []
+#         for da in self.data:
+#             newdata.append(da)
+#         print('过滤掉',len(self.data),len(newdata))
+#         self.data = newdata
+
+#         self.max_seq_len = self.config.max_seq_len
+#         self.debug = 0
+
+#         # 如果从Base LLMs训练，选择 llama3-instruct作为模版
+#         chat_template_llama3 = "{% set loop_messages = messages %}{% for message in loop_messages %}{% set content = '<|start_header_id|>' + message['role'] + '<|end_header_id|>\n\n'+ message['content'] | trim + '<|eot_id|>' %}{% if loop.index0 == 0 %}{% set content = bos_token + content %}{% endif %}{{ content }}{% endfor %}{% if add_generation_prompt %}{{ '<|start_header_id|>assistant<|end_header_id|>\n\n' }}{% endif %}"
+#         if not tokenizer.chat_template:
+#             print('[debug]find no chat_templete')
+#             tokenizer.chat_template = chat_template_llama3
+            
+#         self.template = Template(tokenizer.chat_template)
+
+#     def __getitem__(self, index):
+#         return self.data[index]
+
+#     def get_response(self,da):
+#         # temp = '## Thinking\n\n{}\n\n## Final Response\n\n{}'
+#         temp = '## Thinking\n\n{}\n\n## Final Response\n<answer>\n{}\n</answer>'
+#         return temp.format(da['Complex_CoT'],da['Response'])
+        
+
+
+#     def get_prompt(self,da):
+
+#         # q = da['Question']
+#         q = da['Open-ended Verifiable Question']
+#         a = self.get_response(da)
+#         assert q is not None and a is not None, f'q:{q} a:{a}'
+
+#         # Qwen3 直接使用 chat_template
+#         messages_full = [
+#             {"role": "user", "content": q},
+#             {"role": "assistant", "content": a}
+#         ]
+#         messages_query = [
+#             {"role": "user", "content": q}
+#         ]
+
+#         # 构造完整样本（user + assistant）
+#         input_ids = self.tokenizer.apply_chat_template(
+#             messages_full,
+#             tokenize=True,
+#             add_generation_prompt=False
+#         )
+
+#         # 构造query部分（只保留user，用于mask标签）
+#         query_ids = self.tokenizer.apply_chat_template(
+#             messages_query,
+#             tokenize=True,
+#             add_generation_prompt=True
+#         )    
+           
+#         labels = [-100]*len(query_ids) + input_ids[len(query_ids):]
+#         assert len(labels) == len(input_ids)
+#         return {"input_ids": input_ids[-self.max_seq_len:], "labels": labels[-self.max_seq_len:]}        
+
+#     def collate_fn(self, batch):
+#         data = [ self.get_prompt(da) for da in batch]
+#         input_ids = [item["input_ids"] for item in data]
+#         labels = [item["labels"] for item in data]
+
+#         max_len = max(len(x) for x in input_ids)
+#         max_len = min(max_len,self.max_seq_len)
+#         input_ids = [ item[:max_len] + [self.tokenizer.eos_token_id]*(max_len-len(item)) for item in input_ids]
+#         labels = [ item[:max_len] + [-100]*(max_len-len(item)) for item in labels]
+#         if self.debug < 3:
+#             print('input_ids',self.tokenizer.decode(input_ids[-1]))
+#             print('labels',self.tokenizer.decode([0 if x == -100 else x for x in labels[-1]]))
+#             self.debug += 1
+
+#         return {
+#                 "input_ids": torch.LongTensor(input_ids),
+#                 "labels": torch.LongTensor(labels),
+#             }
+    
+#     def __len__(self):
+#         return len(self.data)
+
+
+class Train_dataset(torch.utils.data.Dataset):
     def __init__(self, config, tokenizer):
         self.config = config
         self.tokenizer = tokenizer
         with open(config.data_path) as f:
-            self.data = json.load(f)
+            raw_data = json.load(f)
         
-        newdata = []
-        for da in self.data:
-            newdata.append(da)
-        print('过滤掉',len(self.data),len(newdata))
-        self.data = newdata
+        # --- 修复点 1: 初始化时过滤脏数据 ---
+        self.data = []
+        required_keys = ['Open-ended Verifiable Question', 'Complex_CoT', 'Response']
+        for da in raw_data:
+            if all(k in da and da[k] is not None for k in required_keys):
+                self.data.append(da)
+        
+        print(f'[Dataset] 原始数据: {len(raw_data)}, 过滤后有效数据: {len(self.data)}')
 
         self.max_seq_len = self.config.max_seq_len
         self.debug = 0
 
-        # 如果从Base LLMs训练，选择 llama3-instruct作为模版
-        chat_template_llama3 = "{% set loop_messages = messages %}{% for message in loop_messages %}{% set content = '<|start_header_id|>' + message['role'] + '<|end_header_id|>\n\n'+ message['content'] | trim + '<|eot_id|>' %}{% if loop.index0 == 0 %}{% set content = bos_token + content %}{% endif %}{{ content }}{% endfor %}{% if add_generation_prompt %}{{ '<|start_header_id|>assistant<|end_header_id|>\n\n' }}{% endif %}"
-        if not tokenizer.chat_template:
-            print('[debug]find no chat_templete')
-            tokenizer.chat_template = chat_template_llama3
-            
-        self.template = Template(tokenizer.chat_template)
-
-    def __getitem__(self, index):
-        return self.data[index]
-
-    def get_response(self,da):
-        # temp = '## Thinking\n\n{}\n\n## Final Response\n\n{}'
-        temp = '## Thinking\n\n{}\n\n## Final Response\n<answer>\n{}\n</answer>'
-        return temp.format(da['Complex_CoT'],da['Response'])
-        
-
-
-    def get_prompt(self,da):
-
-        # q = da['Question']
-        q = da['Open-ended Verifiable Question']
-        a = self.get_response(da)
-        assert q is not None and a is not None, f'q:{q} a:{a}'
-
-        # Qwen3 直接使用 chat_template
-        messages_full = [
-            {"role": "user", "content": q},
-            {"role": "assistant", "content": a}
-        ]
-        messages_query = [
-            {"role": "user", "content": q}
-        ]
-
-        # 构造完整样本（user + assistant）
-        input_ids = self.tokenizer.apply_chat_template(
-            messages_full,
-            tokenize=True,
-            add_generation_prompt=False
-        )
-
-        # 构造query部分（只保留user，用于mask标签）
-        query_ids = self.tokenizer.apply_chat_template(
-            messages_query,
-            tokenize=True,
-            add_generation_prompt=True
-        )    
-           
-        labels = [-100]*len(query_ids) + input_ids[len(query_ids):]
-        assert len(labels) == len(input_ids)
-        return {"input_ids": input_ids[-self.max_seq_len:], "labels": labels[-self.max_seq_len:]}        
-
-    def collate_fn(self, batch):
-        data = [ self.get_prompt(da) for da in batch]
-        input_ids = [item["input_ids"] for item in data]
-        labels = [item["labels"] for item in data]
-
-        max_len = max(len(x) for x in input_ids)
-        max_len = min(max_len,self.max_seq_len)
-        input_ids = [ item[:max_len] + [self.tokenizer.eos_token_id]*(max_len-len(item)) for item in input_ids]
-        labels = [ item[:max_len] + [-100]*(max_len-len(item)) for item in labels]
-        if self.debug < 3:
-            print('input_ids',self.tokenizer.decode(input_ids[-1]))
-            print('labels',self.tokenizer.decode([0 if x == -100 else x for x in labels[-1]]))
-            self.debug += 1
-
-        return {
-                "input_ids": torch.LongTensor(input_ids),
-                "labels": torch.LongTensor(labels),
-            }
-    
     def __len__(self):
         return len(self.data)
-
-
-class Train_dataset(torch.utils.data.Dataset):
-    def __init__(self, config, tokenizer):
-        self.config = config
-        self.tokenizer = tokenizer
-        with open(config.data_path) as f:
-            self.data = json.load(f)
-        
-        self.max_seq_len = self.config.max_seq_len
-        self.debug = 0
 
     def __getitem__(self, index):
         return self.data[index]
@@ -133,82 +145,63 @@ class Train_dataset(torch.utils.data.Dataset):
         return temp.format(da['Complex_CoT'], da['Response'])
 
     def get_prompt(self, da):
-        q = da['Open-ended Verifiable Question']
-        a = self.get_response(da)
+        # --- 修复点 2: 增加异常保护 ---
+        try:
+            q = da['Open-ended Verifiable Question']
+            a = self.get_response(da)
 
-        # 1. 使用 apply_chat_template 生成完整的文本（不进行 tokenize）
-        messages = [
-            {"role": "user", "content": q},
-            {"role": "assistant", "content": a}
-        ]
-        
-        # 这一步拿到的是带有模板的完整字符串
-        full_text = self.tokenizer.apply_chat_template(
-            messages, 
-            tokenize=False, 
-            add_generation_prompt=False
-        )
-
-        # 2. 找到 Assistant 回答在完整字符串中的起始位置
-        # 我们需要知道从哪里开始是助理的回答，从而避开对 Query 的 Mask
-        query_prompt = self.tokenizer.apply_chat_template(
-            [{"role": "user", "content": q}], 
-            tokenize=False, 
-            add_generation_prompt=True
-        )
-        assistant_start_idx = len(query_prompt)
-
-        # 3. 对完整字符串进行统一分词，获取 offsets
-        # padding=False, truncation=False 保证我们拿到原始的对齐信息
-        encoding = self.tokenizer(
-            full_text,
-            return_offsets_mapping=True,
-            add_special_tokens=False 
-        )
-        
-        input_ids = encoding['input_ids']
-        offsets = encoding['offset_mapping']
-        
-        # 4. 预先定位所有 <information> 标签在 full_text 中的绝对位置
-        # 注意：这里在 full_text 里找，包含了模板偏移量
-        mask_spans = []
-        for match in re.finditer(r'<information>.*?</information>', full_text, re.DOTALL):
-            mask_spans.append(match.span())
-
-        # 5. 构造 Labels
-        labels = []
-        for i, (start, end) in enumerate(offsets):
-            # 场景 A: 处于 Query 部分 -> Mask
-            if start < assistant_start_idx:
-                labels.append(-100)
-                continue
+            messages = [
+                {"role": "user", "content": q},
+                {"role": "assistant", "content": a}
+            ]
             
-            # 场景 B: 处于 Assistant 部分 -> 检查是否在 <information> 块内
-            is_in_info_block = False
-            for s_start, s_end in mask_spans:
-                if max(start, s_start) < min(end, s_end):
-                    is_in_info_block = True
-                    break
+            full_text = self.tokenizer.apply_chat_template(messages, tokenize=False, add_generation_prompt=False)
+            query_prompt = self.tokenizer.apply_chat_template([{"role": "user", "content": q}], tokenize=False, add_generation_prompt=True)
+            assistant_start_idx = len(query_prompt)
+
+            encoding = self.tokenizer(full_text, return_offsets_mapping=True, add_special_tokens=False)
+            input_ids = encoding['input_ids']
+            offsets = encoding['offset_mapping']
             
-            if is_in_info_block:
-                labels.append(-100)
-            else:
-                labels.append(input_ids[i])
+            mask_spans = []
+            for match in re.finditer(r'<information>.*?</information>', full_text, re.DOTALL):
+                mask_spans.append(match.span())
 
-        # 6. 最后进行截断处理（建议从头部截断，或者根据需求保留尾部）
-        # 这样能保证 input_ids 和 labels 的对齐关系始终一致
-        if len(input_ids) > self.max_seq_len:
-            input_ids = input_ids[:self.max_seq_len]
-            labels = labels[:self.max_seq_len]
+            labels = []
+            for i, (start, end) in enumerate(offsets):
+                if start < assistant_start_idx:
+                    labels.append(-100)
+                    continue
+                
+                is_in_info_block = False
+                for s_start, s_end in mask_spans:
+                    if max(start, s_start) < min(end, s_end):
+                        is_in_info_block = True
+                        break
+                labels.append(-100 if is_in_info_block else input_ids[i])
 
-        return {"input_ids": input_ids, "labels": labels}
+            if len(input_ids) > self.max_seq_len:
+                input_ids = input_ids[:self.max_seq_len]
+                labels = labels[:self.max_seq_len]
+
+            # 确保返回正确的键名
+            return {"input_ids": input_ids, "labels": labels}
+
+        except Exception as e:
+            # 如果某条数据处理失败，返回一个极简的空样本防止 collate_fn 崩溃
+            print(f"Error processing sample: {e}")
+            return {"input_ids": [self.tokenizer.eos_token_id], "labels": [-100]}
 
     def collate_fn(self, batch):
-        # 这里的 batch 处理逻辑保持不变，只需处理 Padding
-        input_ids = [torch.tensor(item["input_ids"]) for item in batch]
-        labels = [torch.tensor(item["labels"]) for item in batch]
+        processed_batch = []
+        for da in batch:
+            item = self.get_prompt(da)
+            # --- 修复点 3: 这里的 item 必须包含 input_ids ---
+            processed_batch.append(item)
 
-        # 使用 pad_sequence 自动填充
+        input_ids = [torch.tensor(item["input_ids"]) for item in processed_batch]
+        labels = [torch.tensor(item["labels"]) for item in processed_batch]
+
         input_ids_padded = torch.nn.utils.rnn.pad_sequence(
             input_ids, batch_first=True, padding_value=self.tokenizer.eos_token_id
         )
@@ -216,23 +209,10 @@ class Train_dataset(torch.utils.data.Dataset):
             labels, batch_first=True, padding_value=-100
         )
 
-        if self.debug < 3:
-            print("\n--- Masking Check ---")
-            idx = -1
-            # 找到第一个不是 -100 的位置，打印周围的 Token
-            for i, val in enumerate(labels_padded[idx]):
-                if val != -100:
-                    print(f"First unmasked token at {i}: {self.tokenizer.decode([val])}")
-                    break
-            self.debug += 1
-
         return {
             "input_ids": input_ids_padded,
             "labels": labels_padded,
         }
-    def __len__(self):
-        return len(self.data)
-
 
 class SFTMetric:
     def __init__(self, device):
@@ -319,66 +299,6 @@ def train(args):
     global_step = 0
 
     metric = SFTMetric(device=torch.cuda.current_device())
-
-    # def save_checkpoint(epoch, step, global_step):
-    #     save_dir = os.path.join(args.output_dir, f"checkpoint-{epoch}-{global_step}")
-
-    #     if accelerator.is_main_process:
-    #         checkpoint_files = os.listdir(args.output_dir)
-    #         checkpoint_files = [file for file in checkpoint_files if file.startswith("checkpoint-")]
-    #         num_checkpoints = len(checkpoint_files)
-    #         if args.max_ckpts>0:
-    #             if num_checkpoints >= args.max_ckpts:
-    #                 checkpoint_files.sort(key=lambda x: os.path.getctime(os.path.join(args.output_dir, x)))
-    #                 oldest_checkpoint = checkpoint_files[0]
-    #                 shutil.rmtree(os.path.join(args.output_dir, oldest_checkpoint))        
-    #         os.makedirs(save_dir, exist_ok=True)
-    #         output_dir = os.path.join(save_dir, 'tfmr')
-    #         if accelerator.state.deepspeed_plugin.zero_stage!=3:
-    #             model.save_pretrained(output_dir,state_dict=accelerator.get_state_dict(model))
-    #         tokenizer.save_pretrained(output_dir)
-    #         copy_files = []
-    #         for item in os.listdir(args.model_path):
-    #             if os.path.exists(os.path.join(output_dir,item)):
-    #                 continue
-    #             if item.startswith("pytorch_model") and item.endswith(".bin"):
-    #                 continue
-    #             if item.endswith(".index.json") or item.endswith(".safetensors"):
-    #                 continue
-    #             s = os.path.join(args.model_path, item)
-    #             if os.path.isfile(s):
-    #                 shutil.copy(s, os.path.join(output_dir,item))
-    #             copy_files.append(item)
-    #         print(f'huggingface model save in {output_dir}, copy file:{copy_files}')
-
-    #     # if accelerator.state.deepspeed_plugin.zero_stage==3:
-    #     #     unwrap_model = accelerator.unwrap_model(model)
-    #     #     unwrap_model.save_pretrained(os.path.join(save_dir, f'tfmr'),is_main_process=accelerator.is_main_process,save_function=accelerator.save,state_dict=accelerator.get_state_dict(model))
-            
-        
-    #     if accelerator.state.deepspeed_plugin.zero_stage == 3:
-    #         # 等待所有进程到达保存点
-    #         accelerator.wait_for_everyone()
-            
-
-    #         if accelerator.is_main_process:
-    #             # 先从 accelerator 获取已聚合的 state_dict（跨 rank 合并）
-    #             state_dict = accelerator.get_state_dict(model)
-    #             unwrap_model = accelerator.unwrap_model(model)
-    #             unwrap_model.save_pretrained(
-    #                 os.path.join(save_dir, 'tfmr'),
-    #                 state_dict=state_dict,
-    #                 save_function=accelerator.save,
-    #                 safe_serialization=True
-    #             )
-
-    #         # 确保其他 rank 在主进程写入完成后再继续
-    #         # accelerator.wait_for_everyone()
-
-
-    #     accelerator.wait_for_everyone()
-    #     accelerator.save({"epoch": epoch, "step": step, "global_step": global_step}, os.path.join(save_dir, "training_state.pt"))
-    #     accelerator.print(f'checkpoint checkpoint-{epoch}-{global_step} is saved...')
 
     def save_checkpoint(epoch, step, global_step):
         # === 统一保存路径 ===
