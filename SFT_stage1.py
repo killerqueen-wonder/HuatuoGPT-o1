@@ -131,6 +131,9 @@ class Train_dataset(torch.utils.data.Dataset):
         self.max_seq_len = self.config.max_seq_len
         self.debug = 0
 
+    def __getitem__(self, index):
+        return self.data[index]
+
     def get_response(self, da):
         temp = '## Thinking\n\n{}\n\n## Final Response\n<answer>\n{}\n</answer>'
         return temp.format(da['Complex_CoT'], da['Response'])
