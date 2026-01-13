@@ -233,6 +233,8 @@ class Train_dataset(torch.utils.data.Dataset):
             "input_ids": input_ids_padded,
             "labels": labels_padded,
         }
+    def __len__(self):
+        return len(self.data)
 
 
 class SFTMetric:
