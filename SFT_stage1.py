@@ -208,15 +208,30 @@ class Train_dataset(torch.utils.data.Dataset):
         labels_padded = torch.nn.utils.rnn.pad_sequence(
             labels, batch_first=True, padding_value=-100
         )
+        
+
         if self.debug < 3:
-            print("\n--- Masking Check ---")
-            idx = -1
-            # 找到第一个不是 -100 的位置，打印周围的 Token
-            for i, val in enumerate(labels_padded[idx]):
-                if val != -100:
-                    print(f"First unmasked token at {i}: {self.tokenizer.decode([val])}")
-                    break
-            self.debug += 1
+            # 只在主进程（Rank 0）打印，避免多卡日志刷屏
+            if not dist.is_initialized() or dist.get_rank() == 0:
+                print(f'\n{"="*20} Debug Sample {self.debug} {"="*20}')
+                
+                # 获取最后一条数据的 input 和 label (从 Tensor 转回 list)
+                sample_input = input_ids_padded[-1].tolist()
+                sample_label = labels_padded[-1].tolist()
+
+                # 解码 Input
+                full_text = self.tokenizer.decode(sample_input, skip_special_tokens=False)
+                
+                # 解码 Label: 将 -100 替换为 0 (通常是 '!' 或 '<unk>') 
+                # 这样解码后，凡是原来的 Query 或 Mask 部分，都会变成对应的占位符
+                # 只有模型真正计算 Loss 的部分会显示出明文
+                learnable_text = self.tokenizer.decode([0 if x == -100 else x for x in sample_label])
+
+                print(f'Final Input:\n{full_text[:500]}...') # 截取前 500 字，防止刷屏
+                print(f'\nWhat Model Learns (Labels):\n{learnable_text[:500]}...')
+                print(f'{"="*55}\n')
+                
+                self.debug += 1
 
         return {
             "input_ids": input_ids_padded,
