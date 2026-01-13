@@ -227,8 +227,8 @@ class Train_dataset(torch.utils.data.Dataset):
                 # 只有模型真正计算 Loss 的部分会显示出明文
                 learnable_text = self.tokenizer.decode([0 if x == -100 else x for x in sample_label])
 
-                print(f'Final Input:\n{full_text[:500]}...') # 截取前 500 字，防止刷屏
-                print(f'\nWhat Model Learns (Labels):\n{learnable_text[:500]}...')
+                print(f'Final Input:\n{full_text}') # 截取前 500 字，防止刷屏
+                print(f'\nWhat Model Learns (Labels):\n{learnable_text}')
                 print(f'{"="*55}\n')
                 
                 self.debug += 1
