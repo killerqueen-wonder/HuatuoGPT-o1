@@ -65,12 +65,6 @@ class Train_dataset(torch.utils.data.Dataset):
         a = self.get_response(da)
         assert q is not None and a is not None, f'q:{q} a:{a}'
 
-        # input =  self.template.render(messages=[{"role": "user", "content": q},{"role": "assistant", "content": a}],bos_token=self.tokenizer.bos_token,add_generation_prompt=False)
-        # input_ids = self.tokenizer.encode(input,add_special_tokens= False)
-
-        # query = self.template.render(messages=[{"role": "user", "content": q}],bos_token=self.tokenizer.bos_token,add_generation_prompt=True)
-        # query_ids = self.tokenizer.encode(query,add_special_tokens= False)
-        
         # Qwen3 直接使用 chat_template
         messages_full = [
             {"role": "user", "content": q},
@@ -121,123 +115,123 @@ class Train_dataset(torch.utils.data.Dataset):
         return len(self.data)
 
 
-class Train_dataset(torch.utils.data.Dataset):
-    def __init__(self, config, tokenizer):
-        self.config = config
-        self.tokenizer = tokenizer
-        with open(config.data_path) as f:
-            self.data = json.load(f)
+# class Train_dataset(torch.utils.data.Dataset):
+#     def __init__(self, config, tokenizer):
+#         self.config = config
+#         self.tokenizer = tokenizer
+#         with open(config.data_path) as f:
+#             self.data = json.load(f)
         
-        self.max_seq_len = self.config.max_seq_len
-        self.debug = 0
+#         self.max_seq_len = self.config.max_seq_len
+#         self.debug = 0
 
-    def __getitem__(self, index):
-        return self.data[index]
+#     def __getitem__(self, index):
+#         return self.data[index]
 
-    def get_response(self, da):
-        temp = '## Thinking\n\n{}\n\n## Final Response\n<answer>\n{}\n</answer>'
-        return temp.format(da['Complex_CoT'], da['Response'])
+#     def get_response(self, da):
+#         temp = '## Thinking\n\n{}\n\n## Final Response\n<answer>\n{}\n</answer>'
+#         return temp.format(da['Complex_CoT'], da['Response'])
 
-    def get_prompt(self, da):
-        q = da['Open-ended Verifiable Question']
-        a = self.get_response(da)
+#     def get_prompt(self, da):
+#         q = da['Open-ended Verifiable Question']
+#         a = self.get_response(da)
 
-        # 1. 使用 apply_chat_template 生成完整的文本（不进行 tokenize）
-        messages = [
-            {"role": "user", "content": q},
-            {"role": "assistant", "content": a}
-        ]
+#         # 1. 使用 apply_chat_template 生成完整的文本（不进行 tokenize）
+#         messages = [
+#             {"role": "user", "content": q},
+#             {"role": "assistant", "content": a}
+#         ]
         
-        # 这一步拿到的是带有模板的完整字符串
-        full_text = self.tokenizer.apply_chat_template(
-            messages, 
-            tokenize=False, 
-            add_generation_prompt=False
-        )
+#         # 这一步拿到的是带有模板的完整字符串
+#         full_text = self.tokenizer.apply_chat_template(
+#             messages, 
+#             tokenize=False, 
+#             add_generation_prompt=False
+#         )
 
-        # 2. 找到 Assistant 回答在完整字符串中的起始位置
-        # 我们需要知道从哪里开始是助理的回答，从而避开对 Query 的 Mask
-        query_prompt = self.tokenizer.apply_chat_template(
-            [{"role": "user", "content": q}], 
-            tokenize=False, 
-            add_generation_prompt=True
-        )
-        assistant_start_idx = len(query_prompt)
+#         # 2. 找到 Assistant 回答在完整字符串中的起始位置
+#         # 我们需要知道从哪里开始是助理的回答，从而避开对 Query 的 Mask
+#         query_prompt = self.tokenizer.apply_chat_template(
+#             [{"role": "user", "content": q}], 
+#             tokenize=False, 
+#             add_generation_prompt=True
+#         )
+#         assistant_start_idx = len(query_prompt)
 
-        # 3. 对完整字符串进行统一分词，获取 offsets
-        # padding=False, truncation=False 保证我们拿到原始的对齐信息
-        encoding = self.tokenizer(
-            full_text,
-            return_offsets_mapping=True,
-            add_special_tokens=False 
-        )
+#         # 3. 对完整字符串进行统一分词，获取 offsets
+#         # padding=False, truncation=False 保证我们拿到原始的对齐信息
+#         encoding = self.tokenizer(
+#             full_text,
+#             return_offsets_mapping=True,
+#             add_special_tokens=False 
+#         )
         
-        input_ids = encoding['input_ids']
-        offsets = encoding['offset_mapping']
+#         input_ids = encoding['input_ids']
+#         offsets = encoding['offset_mapping']
         
-        # 4. 预先定位所有 <information> 标签在 full_text 中的绝对位置
-        # 注意：这里在 full_text 里找，包含了模板偏移量
-        mask_spans = []
-        for match in re.finditer(r'<information>.*?</information>', full_text, re.DOTALL):
-            mask_spans.append(match.span())
+#         # 4. 预先定位所有 <information> 标签在 full_text 中的绝对位置
+#         # 注意：这里在 full_text 里找，包含了模板偏移量
+#         mask_spans = []
+#         for match in re.finditer(r'<information>.*?</information>', full_text, re.DOTALL):
+#             mask_spans.append(match.span())
 
-        # 5. 构造 Labels
-        labels = []
-        for i, (start, end) in enumerate(offsets):
-            # 场景 A: 处于 Query 部分 -> Mask
-            if start < assistant_start_idx:
-                labels.append(-100)
-                continue
+#         # 5. 构造 Labels
+#         labels = []
+#         for i, (start, end) in enumerate(offsets):
+#             # 场景 A: 处于 Query 部分 -> Mask
+#             if start < assistant_start_idx:
+#                 labels.append(-100)
+#                 continue
             
-            # 场景 B: 处于 Assistant 部分 -> 检查是否在 <information> 块内
-            is_in_info_block = False
-            for s_start, s_end in mask_spans:
-                if max(start, s_start) < min(end, s_end):
-                    is_in_info_block = True
-                    break
+#             # 场景 B: 处于 Assistant 部分 -> 检查是否在 <information> 块内
+#             is_in_info_block = False
+#             for s_start, s_end in mask_spans:
+#                 if max(start, s_start) < min(end, s_end):
+#                     is_in_info_block = True
+#                     break
             
-            if is_in_info_block:
-                labels.append(-100)
-            else:
-                labels.append(input_ids[i])
+#             if is_in_info_block:
+#                 labels.append(-100)
+#             else:
+#                 labels.append(input_ids[i])
 
-        # 6. 最后进行截断处理（建议从头部截断，或者根据需求保留尾部）
-        # 这样能保证 input_ids 和 labels 的对齐关系始终一致
-        if len(input_ids) > self.max_seq_len:
-            input_ids = input_ids[:self.max_seq_len]
-            labels = labels[:self.max_seq_len]
+#         # 6. 最后进行截断处理（建议从头部截断，或者根据需求保留尾部）
+#         # 这样能保证 input_ids 和 labels 的对齐关系始终一致
+#         if len(input_ids) > self.max_seq_len:
+#             input_ids = input_ids[:self.max_seq_len]
+#             labels = labels[:self.max_seq_len]
 
-        return {"input_ids": input_ids, "labels": labels}
+#         return {"input_ids": input_ids, "labels": labels}
 
-    def collate_fn(self, batch):
-        # 这里的 batch 处理逻辑保持不变，只需处理 Padding
-        input_ids = [torch.tensor(item["input_ids"]) for item in batch]
-        labels = [torch.tensor(item["labels"]) for item in batch]
+#     def collate_fn(self, batch):
+#         # 这里的 batch 处理逻辑保持不变，只需处理 Padding
+#         input_ids = [torch.tensor(item["input_ids"]) for item in batch]
+#         labels = [torch.tensor(item["labels"]) for item in batch]
 
-        # 使用 pad_sequence 自动填充
-        input_ids_padded = torch.nn.utils.rnn.pad_sequence(
-            input_ids, batch_first=True, padding_value=self.tokenizer.eos_token_id
-        )
-        labels_padded = torch.nn.utils.rnn.pad_sequence(
-            labels, batch_first=True, padding_value=-100
-        )
+#         # 使用 pad_sequence 自动填充
+#         input_ids_padded = torch.nn.utils.rnn.pad_sequence(
+#             input_ids, batch_first=True, padding_value=self.tokenizer.eos_token_id
+#         )
+#         labels_padded = torch.nn.utils.rnn.pad_sequence(
+#             labels, batch_first=True, padding_value=-100
+#         )
 
-        if self.debug < 3:
-            print("\n--- Masking Check ---")
-            idx = -1
-            # 找到第一个不是 -100 的位置，打印周围的 Token
-            for i, val in enumerate(labels_padded[idx]):
-                if val != -100:
-                    print(f"First unmasked token at {i}: {self.tokenizer.decode([val])}")
-                    break
-            self.debug += 1
+#         if self.debug < 3:
+#             print("\n--- Masking Check ---")
+#             idx = -1
+#             # 找到第一个不是 -100 的位置，打印周围的 Token
+#             for i, val in enumerate(labels_padded[idx]):
+#                 if val != -100:
+#                     print(f"First unmasked token at {i}: {self.tokenizer.decode([val])}")
+#                     break
+#             self.debug += 1
 
-        return {
-            "input_ids": input_ids_padded,
-            "labels": labels_padded,
-        }
-    def __len__(self):
-        return len(self.data)
+#         return {
+#             "input_ids": input_ids_padded,
+#             "labels": labels_padded,
+#         }
+#     def __len__(self):
+#         return len(self.data)
 
 
 class SFTMetric:
