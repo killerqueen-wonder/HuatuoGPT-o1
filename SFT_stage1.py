@@ -208,6 +208,15 @@ class Train_dataset(torch.utils.data.Dataset):
         labels_padded = torch.nn.utils.rnn.pad_sequence(
             labels, batch_first=True, padding_value=-100
         )
+        if self.debug < 3:
+            print("\n--- Masking Check ---")
+            idx = -1
+            # 找到第一个不是 -100 的位置，打印周围的 Token
+            for i, val in enumerate(labels_padded[idx]):
+                if val != -100:
+                    print(f"First unmasked token at {i}: {self.tokenizer.decode([val])}")
+                    break
+            self.debug += 1
 
         return {
             "input_ids": input_ids_padded,
