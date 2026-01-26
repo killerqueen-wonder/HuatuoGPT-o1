@@ -110,7 +110,9 @@ class GPT:
                         query = function_args.get("query")
                         print(f"[debug]  [第{RAG_time}轮] ...")
                         # --- 执行本地代码 ---
-                        function_response = self.local_rag_search(query,self.retrieve_path,topk=self.topk)
+                        function_response = self.local_rag_search(query,self.retrieve_path,
+                                                                  context=function_args.get('thought', ""),#前次思考作为语境
+                                                                  topk=self.topk)
                         # ------------------
                         
                         # B. 将工具运行结果构造成消息
@@ -166,7 +168,7 @@ class GPT:
         print('[debug]到达推理上限。')
         return long_cot,response_message.content,RAG_time
 
-    def local_rag_search(self,query_text,retrieve_path, topk=5):
+    def local_rag_search(self,query_text,retrieve_path, context,topk=5):
         """
         实际执行本地API调用的函数
         """
@@ -174,7 +176,8 @@ class GPT:
         payload = {
             "queries": [query_text],  # 注意：你的API似乎接受列表
             "topk": topk,
-            "return_scores": True
+            "return_scores": True,
+            "context":[context]
         }
         
         try:
