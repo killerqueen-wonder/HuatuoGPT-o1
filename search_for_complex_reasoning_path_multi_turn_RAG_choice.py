@@ -168,6 +168,7 @@ class GPT:
                 return long_cot,ans,RAG_time
         
         print('[debug]到达推理上限。')
+        print(f"[debug]DeepSeek: {response_message.content}")
         return long_cot,response_message.content,RAG_time
 
     def local_rag_search(self,query_text,retrieve_path, context,topk=5):
@@ -439,7 +440,7 @@ def main():
             save_path = os.path.join(save_dir, str(d['process_id']) + ".json")
 
             # init reason
-            query = query_prompt_init.format(max_turn=args.max_turn)#系统指令
+            query = query_prompt_init.format(max_turn=args.max_turn-1)#系统指令
             d['gpt4_query_cot'].append(query)
 
             if args.test_query:
