@@ -125,7 +125,7 @@ class GPT:
                         args = json.loads(tool_call.function.arguments)
 
                         
-                        print(f"[debug]上一次有效文本编号: {args.get('reflect')}")
+                        # print(f"[debug]上一次有效文本编号: {args.get('reflect')}")
                         print(f"[debug]模型思考: {args.get('thought')}")
                         print(f"[debug]模型内容: {content}")
                         # print(f"[debug]模型思考: {reasoning_content}")
@@ -138,7 +138,7 @@ class GPT:
                             "thought": function_args.get('thought', ""),
                             # "thought": reasoning_content,
                             "search": function_args.get('query', ""),
-                            "effect_last": function_args.get('reflect', []),
+                            # "effect_last": function_args.get('reflect', []),
                             "information": function_response
                         }
                         long_cot.append(current_turn)
@@ -154,9 +154,14 @@ class GPT:
                 print(f'[debug]RAG time:{RAG_time}')
                 print(f"[debug]DeepSeek: {response_message.content}")
 
-                # long_cot.append(current_turn)
+                ans,thought=extract_answer_and_text(response_message.content)
+                current_turn = {
+                            "thought": thought
+                        }
+                long_cot.append(current_turn)
+                print(f"[debug]extract answer: {ans}")
 
-                return long_cot,response_message.content,RAG_time
+                return long_cot,ans,RAG_time
         
         print('[debug]到达推理上限。')
         return long_cot,response_message.content,RAG_time
@@ -213,7 +218,19 @@ class GPT:
         return self.call_RAG(content, user_query,additional_args)
 
 
-
+def extract_answer_and_text(text):
+    # 使用正则匹配 <answer>[内容]</answer>
+    pattern = r'<answer>\[(.*?)\]</answer>'
+    match = re.search(pattern, text)
+    
+    if match:
+        # 提取中括号内的内容
+        answer_content = match.group(1)
+        # 移除整个<answer>标签部分，得到剩余文本
+        remaining_text = re.sub(pattern, '', text).strip()
+        return answer_content, remaining_text
+    
+    return None, text
 
 
 query_prompt_init = """
@@ -240,7 +257,7 @@ gen_prompt_w_label='''
 
 提示：{}
 
-注意：你必须在假装不知道提示的情况下，通过一步步思考和检索得到符合提示的最终答案。
+注意：你必须在假装不知道提示的情况下，通过一步步思考和检索得到符合提示的最终答案。用以下示例格式输出最终答案：<answer>[A,C]</answer>
 '''
 
 
@@ -428,7 +445,7 @@ def main():
             #多轮检索推理
             Long_CoT,response,rag_time = gpt_instance.retry_call_RAG(query,user_query)
             d['Long_CoT']=Long_CoT
-            d["Response"]=response
+            d["Response"]=response#这部分会标记<answer>
             d['Rag_Time']=rag_time
 
             #整理多轮推理，合成完整逻辑
