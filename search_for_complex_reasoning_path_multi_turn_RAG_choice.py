@@ -21,13 +21,14 @@ import copy
 from openai import OpenAI
 
 class GPT:
-    def __init__(self, model_name, api_url, api_key,retrieve_path,temperature,topk):
+    def __init__(self, model_name, api_url, api_key,retrieve_path,temperature,topk,max_turn):
         self.model_name = model_name
         self.api_url = api_url
         self.api_key = api_key
         self.retrieve_path=retrieve_path
         self.temperature = temperature
         self.topk=topk
+        self.max_turn=max_turn
         self.client = OpenAI(api_key=self.api_key, base_url=self.api_url)
         print(f"Using model: {self.model_name}")
 
@@ -64,7 +65,7 @@ class GPT:
             {"role": "user", "content": user_query}
         ]
         RAG_time=0
-        max_turns = 7  # 防止死循环，设置最大轮数
+        max_turns = self.max_turn  # 防止死循环，设置最大轮数
         print(f"[debug]user_query: {user_query}")
         long_cot=[]#记录多轮检索推理
         reasoning_content=''
@@ -128,8 +129,9 @@ class GPT:
 
                         
                         # print(f"[debug]上一次有效文本编号: {args.get('reflect')}")
-                        print(f"[debug]模型思考: {args.get('thought')}")
                         print(f"[debug]模型内容: {content}")
+                        print(f"[debug]模型思考: {args.get('thought')}")
+                        
                         # print(f"[debug]模型思考: {reasoning_content}")
                         
                         print(f"[debug]执行搜索: {args.get('query')}")
@@ -249,7 +251,7 @@ query_prompt_init = """
    - 先搜索最核心的概念。不要用缩写词，尽量用完整的，最有特点的，区别于其他法条的关键词。搜索关键词示例：“刑法 盗窃罪”、“最高人民法院关于适用〈民事诉讼法〉的解释 第501条”。
    - 观察工具返回的结果。如果结果不够全面或缺少细节，**请再次调用工具**，如果没有帮助，则修改关键词重新检索,不要重复检索已经检索过的关键词。
    - 只有当你收集了足够的信息（法条、解释）后，才能生成最终回答。
-   - 搜索次数总上限是六次。
+   - 搜索次数总上限是{max_turn}次。
 3. **拒绝编造**：如果你搜索了三次依然没有找到相关条文，请直接承认未找到，修改思考思路，搜索其他条文。不要编造内容。
 4. **有理有据**：在最终回答时，引用检索到的法律条文原文，格式为“（法律名）（条目）（引用内容）”，例如“中华人民共和国刑法 第一百三十三条　【交通肇事罪】违反交通运输管理法规，因而发生重大事故，致人重伤、死亡或者使公私财产遭受重大损失的，处三年以下有期徒刑或者拘役。”允许引用某法条的部分内容，但不能增减或修改原文。
 
@@ -345,6 +347,8 @@ def main():
     parser.add_argument("--retrieve_path", type=str,default= "http://127.0.0.1:8006/retrieve")
     parser.add_argument("--test_query", type=str,default= "")
     parser.add_argument("--topk", type=int,default= 5)
+    parser.add_argument("--max_turn", type=int,default= 7)
+
     # parser.add_argument("--verify", type=bool,default= True)
     
     args = parser.parse_args()
@@ -401,7 +405,8 @@ def main():
                        api_key=args.api_key,
                        retrieve_path=args.retrieve_path,
                        temperature=args.temperature,
-                       topk=args.topk)
+                       topk=args.topk,
+                       max_turn=args.max_turn)
     
     # def verify_gpt(conclusion,answer,d):
     #     query = verify_prompt.format(conclusion,answer)
@@ -434,7 +439,7 @@ def main():
             save_path = os.path.join(save_dir, str(d['process_id']) + ".json")
 
             # init reason
-            query = query_prompt_init#系统指令
+            query = query_prompt_init.format(max_turn=args.max_turn)#系统指令
             d['gpt4_query_cot'].append(query)
 
             if args.test_query:
