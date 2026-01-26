@@ -179,6 +179,9 @@ class GPT:
             "return_scores": True,
             "context":[context]
         }
+        print(f'正在检索:{query_text}')
+        if context:
+            print(f'语境信息:{context}')
         
         try:
             
