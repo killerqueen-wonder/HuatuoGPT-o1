@@ -69,9 +69,12 @@ class GPT:
         print(f"[debug]user_query: {user_query}")
         long_cot=[]#记录多轮检索推理
         reasoning_content=''
-        while RAG_time < max_turns:
+        while RAG_time <= max_turns:
 
             current_turn={}
+            if RAG_time == max_turns:
+                messages.append({"role": "user", "content": "跳过检索阶段。注意：接下来总结以上思考，必须给出最终回答！"})
+
             response = client.chat.completions.create(
                 model=self.model_name,
                 messages=messages,
@@ -182,9 +185,9 @@ class GPT:
             "return_scores": True,
             "context":[context]
         }
-        print(f'正在检索:{query_text}')
-        if context:
-            print(f'语境信息:{context}')
+        # print(f'正在检索:{query_text}')
+        # if context:
+        #     print(f'语境信息:{context}')
         
         try:
             
@@ -470,12 +473,12 @@ def main():
 
                     # 1. 直接添加 reasoning
                     if turn.get("reasoning"):
-                        new_elements.append(str(turn["reasoning"]))
+                        new_elements.append(f'<thought>{str(turn["reasoning"])}</thought>')
                         new_elements.append('\n')
 
                     # 1. 直接添加 thought
                     if turn.get("thought"):
-                        new_elements.append(str(turn["thought"]))
+                        new_elements.append(f'<thought>{str(turn["thought"])}</thought>')
                         new_elements.append('\n')
 
                     
