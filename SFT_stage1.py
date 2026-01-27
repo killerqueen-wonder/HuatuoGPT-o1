@@ -210,7 +210,7 @@ class Train_dataset(torch.utils.data.Dataset):
         )
         
 
-        if self.debug < 3:
+        if self.debug < 1:
             # 只在主进程（Rank 0）打印，避免多卡日志刷屏
             if not dist.is_initialized() or dist.get_rank() == 0:
                 print(f'\n{"="*20} Debug Sample {self.debug} {"="*20}')
