@@ -85,7 +85,7 @@ def extract_numbers(text):
             pass
 
     print(f'[debug] 匹配数字列表失败，模型回复为：{text}')
-    return None
+    return []
 
 def filter_LLM(information: list, thinking: str, llm: LLM):
     """
@@ -110,11 +110,11 @@ def filter_LLM(information: list, thinking: str, llm: LLM):
     # 根据模型返回的“无关编号”进行过滤
     # 注意：模型返回的是 1-based index
 
-    # if fail_indices == None:
-    #     #可能被截断，用无思考模式
-    #     prompt=prompt + "  /no_think"
-    #     res = llm.gen(prompt)
-    #     fail_indices = extract_numbers(res)
+    if fail_indices == []:
+        #可能被截断，用无思考模式
+        prompt=prompt + "  /no_think"
+        res = llm.gen(prompt)
+        fail_indices = extract_numbers(res)
 
     print(f"[Debug] 模型原始回复: {res}")    
     filtered_info = [item for i, item in enumerate(information, start=1) if i not in fail_indices]
