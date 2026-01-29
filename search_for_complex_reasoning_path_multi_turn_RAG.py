@@ -231,8 +231,8 @@ class GPT:
 
 
 def extract_answer_and_text(text):
-    # 使用正则匹配 <answer>[内容]</answer>
-    pattern = r'<answer>\[(.*?)\]</answer>'
+    # 使用正则匹配 <answer>内容</answer>
+    pattern = r'<answer>(.*?)</answer>'
     match = re.search(pattern, text)
     
     if match:
@@ -269,7 +269,7 @@ gen_prompt_w_label='''
 
 提示：{}
 
-注意：你必须在假装不知道提示的情况下，通过一步步思考和检索得到符合提示的最终答案。用以下示例格式输出最终答案：<answer>[该案例涉及危险驾驶罪...]</answer>
+注意：你必须在假装不知道提示的情况下，通过一步步思考和检索得到符合提示的最终答案。用以下示例格式输出最终答案：<answer>该案例涉及危险驾驶罪...</answer>
 '''
 
 
