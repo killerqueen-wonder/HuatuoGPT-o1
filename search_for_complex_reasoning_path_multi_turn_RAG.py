@@ -233,7 +233,7 @@ class GPT:
 def extract_answer_and_text(text):
     # 使用正则匹配 <answer>内容</answer>
     pattern = r'<answer>(.*?)</answer>'
-    match = re.search(pattern, text)
+    match = re.search(pattern, text, re.DOTALL)  # 添加 re.DOTALL
     
     if match:
         # 提取中括号内的内容
