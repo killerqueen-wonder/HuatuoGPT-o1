@@ -366,6 +366,7 @@ def main():
 
             if args.test_query:#测试模式
                 user_query = args.test_query
+                user_query = gen_prompt_w_label.format(user_query, '')
             else:#正常流程
                 user_query = d['Open-ended Verifiable Question']
                 if d.get('Ground-True Answer'):
