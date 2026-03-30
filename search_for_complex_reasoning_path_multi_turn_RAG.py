@@ -360,13 +360,12 @@ def main():
             query = query_prompt_init.format(max_turn=args.max_turn-1)
             d['gpt4_query_cot'].append(query)
 
-            if args.test_query:
+            if args.test_query:#测试模式
                 user_query = args.test_query
-            else:
+            else:#正常流程
                 user_query = d['Open-ended Verifiable Question']
-
-            if d.get('Ground-True Answer'):
-                user_query = gen_prompt_w_label.format(user_query, d['Ground-True Answer'])
+                if d.get('Ground-True Answer'):
+                    user_query = gen_prompt_w_label.format(user_query, d['Ground-True Answer'])
             
             d['gpt4_query_cot'].append(user_query)
 
