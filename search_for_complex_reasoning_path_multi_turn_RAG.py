@@ -54,7 +54,9 @@ class GPT:
         max_turns = self.max_turn
         print(f"\n[debug]user_query: {user_query}")
         long_cot = [] 
-        global_doc_id = 1
+        
+        law_doc_counter = 1
+        all_legal_docs = {}
         
         while RAG_time <= max_turns:
             current_turn = {}
@@ -109,14 +111,12 @@ class GPT:
                     }
                     
                     print(f"[debug]  [第{RAG_time}轮] 执行搜索...")
-                    # if syllogism_data:
-                    #     print(f"[debug]检测到三段论生成，将在后续组装时替换法条占位符")
                     
-                    # 执行本地检索，同时获取用于展示的文本和原始法条字典
-                    function_response, raw_docs, global_doc_id = self.local_rag_search(
-                        api_payload, self.retrieve_path, global_doc_id
-                    )
+                    function_response, raw_docs, law_doc_counter = self.local_rag_search(api_payload, self.retrieve_path, law_doc_counter)
                     print(f'[debug] RAG 返回:\n{str(function_response)[:200]}...\n')
+                    
+                    if raw_docs:
+                        all_legal_docs.update(raw_docs)
 
                 except json.JSONDecodeError as e:
                     print(f"[debug] JSON 解析失败: {e}")
@@ -129,6 +129,19 @@ class GPT:
                     search_query = search_json_str
                     raw_docs = {}
 
+                # 替换本轮 syllogism 中的法条占位符
+                if syllogism_data:
+                    def replace_law_in_place(match):
+                        doc_id = match.group(1)
+                        return all_legal_docs.get(doc_id, match.group(0))
+                    
+                    temp_syll_str = json.dumps(syllogism_data, ensure_ascii=False) if isinstance(syllogism_data, dict) else str(syllogism_data)
+                    temp_syll_str = re.sub(r'\[法条参考\s*(\d+)\]', replace_law_in_place, temp_syll_str)
+                    try:
+                        syllogism_data = json.loads(temp_syll_str)
+                    except:
+                        syllogism_data = temp_syll_str
+
                 messages.append({"role": "assistant", "content": content})
                 messages.append({
                     "role": "user",
@@ -140,33 +153,37 @@ class GPT:
                     "syllogism": syllogism_data,
                     "search": search_json_str, 
                     "information": function_response,
-                    "raw_docs": raw_docs  # 记录本轮查到的原始法条，供下一轮生成三段论时替换使用
+                    "raw_docs": raw_docs
                 }
                 long_cot.append(current_turn)
                 continue
                 
             else:
-                thought_text = re.sub(r'<syllogism>.*?</syllogism>', '', content, flags=re.DOTALL | re.IGNORECASE).strip()
-                ans, thought_text = extract_answer_and_text(thought_text)
+                # 最后一轮，替换 syllogism 占位符（如果存在）
+                if syllogism_data:
+                    def replace_law_final(match):
+                        doc_id = match.group(1)
+                        return all_legal_docs.get(doc_id, match.group(0))
+                    
+                    temp_syll_str = json.dumps(syllogism_data, ensure_ascii=False) if isinstance(syllogism_data, dict) else str(syllogism_data)
+                    temp_syll_str = re.sub(r'\[法条参考\s*(\d+)\]', replace_law_final, temp_syll_str)
+                    try:
+                        syllogism_data = json.loads(temp_syll_str)
+                    except:
+                        syllogism_data = temp_syll_str
                 
                 current_turn = {
-                    "thought": thought_text,
+                    "final_content": content,
                     "syllogism": syllogism_data
                 }
                 long_cot.append(current_turn)
                 
                 print(f'[debug] RAG 总轮数: {RAG_time}')
-                print(f"[debug] 提取到的最终答案: {ans[:100] if ans else 'None'}")
+                return long_cot, RAG_time
 
-                return long_cot, content, RAG_time
-        
-        return long_cot, content, RAG_time
-
+        return long_cot, RAG_time
 
     def local_rag_search(self, payload, retrieve_path, start_doc_id=1):
-        """
-        返回: (格式化后的字符串给模型看, 原始文档字典给脚本做替换用, 下一个可用的法条ID)
-        """
         try:
             response = requests.post(
                 retrieve_path,
@@ -190,15 +207,15 @@ class GPT:
                 results = json_data.get("result", [])
                 format_reference = []
                 raw_docs_dict = {}
-                current_doc_id = start_doc_id # 从传入的起始ID开始编号
+                current_doc_id = start_doc_id
                 
                 for idx, doc_item in enumerate(results):
                     content = doc_item.get('document', {}).get('content', '')
                     score = doc_item.get('score', 0.0)
                     doc_id = str(current_doc_id)
                     format_reference.append(f"法条参考 {doc_id} (相关度: {score:.4f}):\n{content}\n")
-                    raw_docs_dict[doc_id] = content  # 保存原文本供替换
-                    current_doc_id += 1 # 每处理一条，ID递增
+                    raw_docs_dict[doc_id] = content
+                    current_doc_id += 1
                 
                 if not format_reference:
                     return "【法律检索结果】未找到相关的法律条文，请尝试更换关键词。", {}, start_doc_id
@@ -212,17 +229,6 @@ class GPT:
     @retry(wait_fixed=3000, stop_max_attempt_number=3)
     def retry_call_RAG(self, content, user_query, additional_args={"max_tokens": 8192}):
         return self.call_RAG(content, user_query, additional_args)
-
-
-def extract_answer_and_text(text):
-    pattern = r'<answer>(.*?)</answer>'
-    match = re.search(pattern, text, re.DOTALL)
-    
-    if match:
-        answer_content = match.group(1)
-        remaining_text = re.sub(pattern, '', text).strip()
-        return answer_content, remaining_text
-    return None, text
 
 # ！！！ 更新后的 Prompt ！！！
 query_prompt_init = """
@@ -361,9 +367,7 @@ def main():
         global wrongtime
         try:
             d['gpt4_query_cot'] = []
-            d['gpt4_response_cot'] = []
             d['Long_CoT'] = []
-            d["Response"] =[]
             d['Rag_Time'] = []
 
             save_path = os.path.join(save_dir, str(d['process_id']) + ".json")
@@ -371,53 +375,33 @@ def main():
             query = query_prompt_init.format(max_turn=args.max_turn-1)
             d['gpt4_query_cot'].append(query)
 
-            if args.test_query:#测试模式
+            if args.test_query:
                 user_query = args.test_query
                 user_query = gen_prompt_w_label.format(user_query, '')
-            else:#正常流程
+            else:
                 user_query = d['Open-ended Verifiable Question']
                 if d.get('Ground-True Answer'):
                     user_query = gen_prompt_w_label.format(user_query, d['Ground-True Answer'])
             
             d['gpt4_query_cot'].append(user_query)
 
-            Long_CoT, response, rag_time = gpt_instance.retry_call_RAG(query, user_query)
+            Long_CoT, rag_time = gpt_instance.retry_call_RAG(query, user_query)
             d['Long_CoT'] = Long_CoT
-            d["Response"] = response 
             d['Rag_Time'] = rag_time
 
-            # 组装完整的推理路径
             if True:
                 new_elements = []
-                all_legal_docs = {} # 维护最近一次法律检索拿到的原文件字典
 
                 for turn in Long_CoT:
-                    # 如果这轮有执行法律检索，更新原文件字典缓存
-                    if turn.get("raw_docs"):
-                        all_legal_docs.update(turn["raw_docs"])
-
                     if turn.get("reasoning"):
                         new_elements.append(f'<THOUGHT>{str(turn["reasoning"])}</THOUGHT>\n')
 
                     if turn.get("thought") and turn.get("thought") != turn.get("reasoning"):
                         new_elements.append(f'<THOUGHT>{str(turn["thought"])}</THOUGHT>\n')
                         
-                    # 处理三段论标签，执行占位符替换
                     if turn.get("syllogism"):
                         syll_data = turn["syllogism"]
-                        if isinstance(syll_data, dict):
-                            syll_str = json.dumps(syll_data, ensure_ascii=False, indent=2)
-                        else:
-                            syll_str = str(syll_data)
-                        
-                        # 正则替换：寻找 [法条参考 X] 格式并替换为真实的法条原文
-                        def replace_law(match):
-                            doc_id = match.group(1)
-                            # 如果缓存中有该序号对应的法条则替换，否则保留原样（容错）
-                            return all_legal_docs.get(doc_id, match.group(0))
-                        
-                        syll_str = re.sub(r'\[法条参考\s*(\d+)\]', replace_law, syll_str)
-                        
+                        syll_str = json.dumps(syll_data, ensure_ascii=False, indent=2) if isinstance(syll_data, dict) else str(syll_data)
                         new_elements.append(f"<syllogism>\n{syll_str}\n</syllogism>\n")
                     
                     if turn.get("search"):
@@ -425,6 +409,9 @@ def main():
                     
                     if turn.get("information"):
                         new_elements.append(f"<information>\n{turn['information']}\n</information>\n")
+                        
+                    if turn.get("final_content"):
+                        new_elements.append(f"{str(turn['final_content'])}\n")
 
                 def convert_escapes(text):
                     text = text.replace('\\n', '\n')  
@@ -458,7 +445,7 @@ def main():
             try:
                 with open(os.path.join(save_dir, file_path), encoding="utf-8") as f:
                     da = json.loads(f.read())
-                    assert 'Complex_CoT' in da and 'Response' in da
+                    assert 'Complex_CoT' in da
                     res.append(da)
             except Exception as e:
                 continue
