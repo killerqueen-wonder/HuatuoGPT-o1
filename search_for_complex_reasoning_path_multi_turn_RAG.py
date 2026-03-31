@@ -54,6 +54,7 @@ class GPT:
         max_turns = self.max_turn
         print(f"\n[debug]user_query: {user_query}")
         long_cot = [] 
+        global_doc_id = 1
         
         while RAG_time <= max_turns:
             current_turn = {}
@@ -108,11 +109,13 @@ class GPT:
                     }
                     
                     print(f"[debug]  [第{RAG_time}轮] 执行搜索...")
-                    if syllogism_data:
-                        print(f"[debug]检测到三段论生成，将在后续组装时替换法条占位符")
+                    # if syllogism_data:
+                    #     print(f"[debug]检测到三段论生成，将在后续组装时替换法条占位符")
                     
                     # 执行本地检索，同时获取用于展示的文本和原始法条字典
-                    function_response, raw_docs = self.local_rag_search(api_payload, self.retrieve_path)
+                    function_response, raw_docs, global_doc_id = self.local_rag_search(
+                        api_payload, self.retrieve_path, global_doc_id
+                    )
                     print(f'[debug] RAG 返回:\n{str(function_response)[:200]}...\n')
 
                 except json.JSONDecodeError as e:
@@ -159,9 +162,10 @@ class GPT:
         
         return long_cot, content, RAG_time
 
-    def local_rag_search(self, payload, retrieve_path):
+
+    def local_rag_search(self, payload, retrieve_path, start_doc_id=1):
         """
-        返回: (格式化后的字符串给模型看, 原始文档字典给脚本做替换用)
+        返回: (格式化后的字符串给模型看, 原始文档字典给脚本做替换用, 下一个可用的法条ID)
         """
         try:
             response = requests.post(
@@ -174,33 +178,36 @@ class GPT:
             json_data = response.json()
             
             if "error" in json_data:
-                return f"检索返回错误：{json_data['error']}", {}
+                return f"检索返回错误：{json_data['error']}", {}, start_doc_id
 
             req_type = json_data.get("检索类型", "")
 
             if req_type == "类案检索":
                 summary = json_data.get("llm_summary", "未检索到匹配的类案分析结果。")
-                return f"【类案检索分析报告】\n{summary}", {}
+                return f"【类案检索分析报告】\n{summary}", {}, start_doc_id
 
             elif req_type == "法律检索":
                 results = json_data.get("result", [])
                 format_reference = []
                 raw_docs_dict = {}
+                current_doc_id = start_doc_id # 从传入的起始ID开始编号
+                
                 for idx, doc_item in enumerate(results):
                     content = doc_item.get('document', {}).get('content', '')
                     score = doc_item.get('score', 0.0)
-                    doc_id = str(idx + 1)
+                    doc_id = str(current_doc_id)
                     format_reference.append(f"法条参考 {doc_id} (相关度: {score:.4f}):\n{content}\n")
                     raw_docs_dict[doc_id] = content  # 保存原文本供替换
+                    current_doc_id += 1 # 每处理一条，ID递增
                 
                 if not format_reference:
-                    return "【法律检索结果】未找到相关的法律条文，请尝试更换关键词。", {}
-                return "【法律检索结果】\n" + "\n".join(format_reference), raw_docs_dict
+                    return "【法律检索结果】未找到相关的法律条文，请尝试更换关键词。", {}, start_doc_id
+                return "【法律检索结果】\n" + "\n".join(format_reference), raw_docs_dict, current_doc_id
             else:
-                return f"未知的检索类型返回，原始数据: {str(json_data)[:200]}", {}
+                return f"未知的检索类型返回，原始数据: {str(json_data)[:200]}", {}, start_doc_id
                 
         except Exception as e:
-            return f"检索请求出错: {str(e)}", {}
+            return f"检索请求出错: {str(e)}", {}, start_doc_id
 
     @retry(wait_fixed=3000, stop_max_attempt_number=3)
     def retry_call_RAG(self, content, user_query, additional_args={"max_tokens": 8192}):
@@ -382,12 +389,12 @@ def main():
             # 组装完整的推理路径
             if True:
                 new_elements = []
-                latest_legal_docs = {} # 维护最近一次法律检索拿到的原文件字典
+                all_legal_docs = {} # 维护最近一次法律检索拿到的原文件字典
 
                 for turn in Long_CoT:
                     # 如果这轮有执行法律检索，更新原文件字典缓存
                     if turn.get("raw_docs"):
-                        latest_legal_docs = turn["raw_docs"]
+                        all_legal_docs.update(turn["raw_docs"])
 
                     if turn.get("reasoning"):
                         new_elements.append(f'<THOUGHT>{str(turn["reasoning"])}</THOUGHT>\n')
@@ -407,7 +414,7 @@ def main():
                         def replace_law(match):
                             doc_id = match.group(1)
                             # 如果缓存中有该序号对应的法条则替换，否则保留原样（容错）
-                            return latest_legal_docs.get(doc_id, match.group(0))
+                            return all_legal_docs.get(doc_id, match.group(0))
                         
                         syll_str = re.sub(r'\[法条参考\s*(\d+)\]', replace_law, syll_str)
                         
