@@ -305,7 +305,7 @@ def main():
     parser.add_argument("--api_url", type=str, default="https://api.openai.com/v1/chat/completions", help="OpenAI API URL.")
     parser.add_argument("--num_process", type=int, default=5, help="Number of parallel processes.")
     parser.add_argument("--init_num", type=int, default=0, help="Start index of the data to process.")
-    parser.add_argument("--limit_num", type=int, help="Limit the number of processed items.")
+    parser.add_argument("--limit_num", type=int, help="End index of the data to process (exclusive).")
     parser.add_argument("--temperature", default=0.1, help="temperature of model")
     parser.add_argument("--out_path", type=str, default='', help="the path to save output data")
     parser.add_argument("--retrieve_path", type=str, default= "http://127.0.0.1:8006/retrieve")
@@ -347,9 +347,10 @@ def main():
         tmp_id += 1
     data = filter_data(tmpdata)
 
+    # 将 init_num 作为起始 index，limit_num 直接作为终止 index
     start_idx = args.init_num
     if args.limit_num is not None:
-        end_idx = start_idx + args.limit_num
+        end_idx = args.limit_num  
         data = data[start_idx:end_idx]
     else:
         data = data[start_idx:]
@@ -358,8 +359,8 @@ def main():
     #     data = data[:args.limit_num]
         
     task_name = f'{os.path.split(args.data_path)[-1].replace(".json","")}_CoT_search'
-    # 计算结束编号（如果没设 limit_num，则标记为 end）
-    end_idx = args.init_num + args.limit_num if args.limit_num else "end"
+    # 结束编号直接取 limit_num（如果没设，则标记为 end）
+    end_idx = args.limit_num if args.limit_num is not None else "end"
     
     # 在临时文件夹名中加入起始和结束编号，实现进程隔离
     chunk_name = f"{task_name}_{args.init_num}_to_{end_idx}"
