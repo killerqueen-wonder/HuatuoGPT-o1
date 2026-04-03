@@ -304,6 +304,7 @@ def main():
     parser.add_argument("--api_key", type=str, required=True, help="OpenAI API key.")
     parser.add_argument("--api_url", type=str, default="https://api.openai.com/v1/chat/completions", help="OpenAI API URL.")
     parser.add_argument("--num_process", type=int, default=5, help="Number of parallel processes.")
+    parser.add_argument("--init_num", type=int, default=0, help="Start index of the data to process.")
     parser.add_argument("--limit_num", type=int, help="Limit the number of processed items.")
     parser.add_argument("--temperature", default=0.1, help="temperature of model")
     parser.add_argument("--out_path", type=str, default='', help="the path to save output data")
@@ -346,11 +347,23 @@ def main():
         tmp_id += 1
     data = filter_data(tmpdata)
 
-    if args.limit_num:
-        data = data[:args.limit_num]
+    start_idx = args.init_num
+    if args.limit_num is not None:
+        end_idx = start_idx + args.limit_num
+        data = data[start_idx:end_idx]
+    else:
+        data = data[start_idx:]
+
+    # if args.limit_num:
+    #     data = data[:args.limit_num]
         
     task_name = f'{os.path.split(args.data_path)[-1].replace(".json","")}_CoT_search'
-    save_dir = f'{args.out_path}/{task_name}' if args.out_path else f'./{task_name}'
+    # 计算结束编号（如果没设 limit_num，则标记为 end）
+    end_idx = args.init_num + args.limit_num if args.limit_num else "end"
+    
+    # 在临时文件夹名中加入起始和结束编号，实现进程隔离
+    chunk_name = f"{task_name}_{args.init_num}_to_{end_idx}"
+    save_dir = f'{args.out_path}/{chunk_name}' if args.out_path else f'./{chunk_name}'
 
     gpt_instance = GPT(model_name=args.model_name, 
                        api_url=args.api_url, 
@@ -465,7 +478,7 @@ def main():
         list(tqdm(executor.map(write_piece_order_data, data), total=len(data), desc="Processing samples", unit="sample"))
 
     final_data = merge_saved_files(save_dir)
-    output_path = f"{args.out_path if args.out_path else '.'}/{task_name}_{len(final_data)}.json"
+    output_path = f"{args.out_path if args.out_path else '.'}/{task_name}_[{args.init_num}-{end_idx}]_success_{len(final_data)}.json"
     print(f"Processed {len(final_data)} items. Saving to {output_path}")
 
     with open(output_path, 'w', encoding='utf-8') as file:
