@@ -124,7 +124,7 @@ class Train_dataset(torch.utils.data.Dataset):
         
         # --- 修复点 1: 初始化时过滤脏数据 ---
         self.data = []
-        required_keys = ['Open-ended Verifiable Question', 'Complex_CoT', 'Response']
+        required_keys = ['Open-ended Verifiable Question', 'Complex_CoT']
         for da in raw_data:
             if all(k in da and da[k] is not None for k in required_keys):
                 self.data.append(da)
