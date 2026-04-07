@@ -141,8 +141,9 @@ class Train_dataset(torch.utils.data.Dataset):
         return self.data[index]
 
     def get_response(self, da):
-        temp = '## Thinking\n\n{}\n\n## Final Response\n<answer>\n{}\n</answer>'
-        return temp.format(da['Complex_CoT'], da['Response'])
+        # temp = '## Thinking\n\n{}\n\n## Final Response\n<answer>\n{}\n</answer>'
+        # return temp.format(da['Complex_CoT'], da['Response'])
+        return (da['Complex_CoT'])
 
     def get_prompt(self, da):
         # --- 修复点 2: 增加异常保护 ---
