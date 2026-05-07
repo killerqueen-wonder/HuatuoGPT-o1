@@ -114,7 +114,7 @@ def main():
     else:
         data = data[start_idx:]
         
-    task_name = f'{os.path.split(args.data_path)[-1].replace(".json","")}_CoT_Direct'
+    task_name = f'{os.path.split(args.data_path)[-1].replace(".json","")}_CoT_no_search'
     end_idx = args.limit_num if args.limit_num is not None else "end"
     
     chunk_name = f"{task_name}_{args.init_num}_to_{end_idx}"
